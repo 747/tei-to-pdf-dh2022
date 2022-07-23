@@ -139,10 +139,9 @@
                 <hi rend="bold">Figure 1</hi>. MeiliSearch (https://www.meilisearch.com) provides advanced search functionalities and Strapi allows for digital asset management while providing a backend to the presentation layer. The presentation layer was developed using AngularJS (
                 <ref target="https://angularjs.org/">https://angularjs.org/</ref>).  The component-based structure of Angular makes specific sections of code highly reusable across our application and for future frontend developments. The AngularJS layer interacts with the data sources via a GraphQL (https://graphql.org/) thus ensuring data consistency.
             </p>
-            <p style="text-align: center;">
-                 
+            <figure>
                 <graphic n="1001" width="14.605cm" height="19.473333333333333cm" url="Pictures/35e09f1d8366fe95a9561250f46e50a9.png" rend="inline"/>
-            </p>
+            </figure>
             <p style="text-align: center;">
                 <hi rend="bold" style="font-size:9pt">Figure 1</hi>
                 . Software stack schema and information flow. 

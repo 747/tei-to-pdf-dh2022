@@ -87,9 +87,9 @@
                 <head> Presentation of the Stylo-sophy</head>
             </div>
             <div>
-                <p style="text-align: left; ">
-                    <graphic n="1001" width="16.002cm" height="11.631083333333333cm" url="Pictures/33dbb373073c043c01407fe249793438.png" rend="block"/>Figure 1. Login page of Stylo
-                </p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="11.631083333333333cm" url="Pictures/33dbb373073c043c01407fe249793438.png" rend="block"/><head>Figure 1. Login page of Stylo</head>
+                </figure>
                 <p style="text-align: left; ">Stylo is a tool designed to transform the digital workflow of scholarly journals in the humanities and social sciences. As a WYSIWYM (What You See Is What You Mean
                     <hi rend="italic">)</hi> semantic text editor for the humanities, it aims to improve the academic publishing chain.
                 </p>
@@ -97,9 +97,9 @@
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Tool principles</head>
-                <p style="text-align: left; ">
-                    <graphic n="1002" width="16.002cm" height="20.027194444444444cm" url="Pictures/f0d8cf7712450ead4a810136b3d44365.png" rend="block"/>Figure 2. Stylo editing organisation
-                </p>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="20.027194444444444cm" url="Pictures/f0d8cf7712450ead4a810136b3d44365.png" rend="block"/><head>Figure 2. Stylo editing organisation</head>
+                </figure>
                 <p style="text-align: left; ">Built on modular, low-tech and standard editing tools and formats, such as Markdown, BibTeX, Pandoc, Hypothes.is and Latex, Stylo integrates best practices in writing and publishing on the web into a single interface. Through the implementation of the formats and the conversion technologies already used by the community, it allows the free flow of documents that are not locked into a particular format. Stylo includes features such as sharing, versioning, change tracking, bibliographic reference management, annotation for revisions, multi-format export, metadata aligned with authorities (LOC, Wikidata, ORCID, ...) and online semantic tagging.</p>
             </div>
             <div type="div1" rend="DH-Heading1">

@@ -1315,7 +1315,8 @@
                         <xsl:sort select="."/>
                         
                         <fo:block text-align-last="justify"><xsl:call-template name="text"/>
-                            <xsl:value-of select="parent::name"/><xsl:text> </xsl:text>
+                            <!-- <xsl:value-of select="parent::name"/><xsl:text> </xsl:text> -->
+                            <xsl:value-of select="parent::name/surname"/><xsl:text>, </xsl:text><xsl:value-of select="parent::name/forename"/><xsl:text> </xsl:text><!-- DH2022 mod -->
                             <fo:leader leader-pattern="dots"/>
                             <xsl:for-each select="current-group()">
                                 <fo:basic-link internal-destination="{parent::name/parent::author/@n}">

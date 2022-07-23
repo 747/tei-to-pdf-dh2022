@@ -98,9 +98,9 @@
                     <hi rend="italic">The History of Sir Charles Grandison</hi> in the SaDDL web interface
                 </p>
                 <p style="text-align: left; ">Recommendations of related works are also included on the website. The website gives context to the data, helping to ensure informed use in future applications, and offers downloads of JSON files for individual books, as shown in Figure 2, and links to the full dataset. Project code and instructions for accessing the dataset are made available at the University of Denver’s Massive Text Lab Github organization. Future work will deduplicate the corpus and further scholarly work over large-scale digital libraries, with implications for use across other collections.</p>
-                <p style="text-align: left; ">
+                <figure>
                     <graphic n="1002" width="15.24cm" height="10.018888888888888cm" url="Pictures/6e569619a18f54929c57d200bf9c817d.png" rend="inline"/>
-                </p>
+                </figure>
                 <p style="text-align: left; ">Figure 2: A portion of the JSON file for 
                     <hi rend="italic" xml:space="preserve">The History of Sir Charles Grandison </hi>from the SaDDL web interface
                 </p>

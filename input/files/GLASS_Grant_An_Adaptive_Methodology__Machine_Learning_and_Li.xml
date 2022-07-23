@@ -204,20 +204,22 @@
                     <hi rend="italic color(212121) background(white)" style="font-size:12pt">Robinson Cruso</hi>
                     <hi rend="color(212121) background(white)" style="font-size:12pt" xml:space="preserve">e which we posit is due to the nature of the sentence-level embeddings - the representation learnt is more about the similarity in the stylistic/linguistic/grammatical/lexical sense than about the plot. </hi>
                 </p>
-                <p>
+                <figure>
                     <graphic n="1002" width="16.126355555555556cm" height="8.116930555555555cm" url="Pictures/e9d67e43c5d88f15ba309e7300083c04.png" rend="inline"/>
-                    <lb/>
-                    <hi rend="bold color(222222)" style="font-size:12pt">Figure 1: Results of Initial Method Across Different Texts (1.0 being closest to the original text) USE-Universal Sentence Encoder.</hi>
-                </p>
+                    <head>
+                        <hi rend="bold color(222222)" style="font-size:12pt">Figure 1: Results of Initial Method Across Different Texts (1.0 being closest to the original text) USE-Universal Sentence Encoder.</hi>
+                    </head>
+                </figure>
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Final Results</head>
                 <p>The model performs exceptionally well on the validation and test sets, identifying the adaptations (denoted by class 1 in Figure 2) with near perfect precision and recall.</p>
-                <p>
+                <figure>
                     <graphic n="1003" width="15.980833333333333cm" height="3.8946666666666667cm" url="Pictures/9c3785581c8c787921715b4a21b44225.png" rend="inline"/>
-                    <lb/>
-                    <hi rend="bold color(212121) background(white)" style="font-size:12pt">Figure 2: The classification results from the mode. 0 denotes non-adaptations and 1 denotes adaptations</hi>
-                </p>
+                    <head>
+                        <hi rend="bold color(212121) background(white)" style="font-size:12pt">Figure 2: The classification results from the mode. 0 denotes non-adaptations and 1 denotes adaptations</hi>
+                    </head>
+                </figure>
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>
