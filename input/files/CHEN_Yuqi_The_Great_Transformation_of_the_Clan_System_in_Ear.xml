@@ -167,77 +167,77 @@
             <p style="text-align: center;">
                 <hi rend="bold" xml:space="preserve">Table 3. </hi>Metrics of the co-occurrence networks of clan signs
             </p>
-            <table rend="rules">
+            <table rend="rules" n="span_all">
                 <row>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Period
                     </cell>
-                    <cell style="text-align: center;">Clan signs</cell>
-                    <cell style="text-align: center;">Edges</cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">Clan signs</cell>
+                    <cell rend="center">Edges</cell>
+                    <cell rend="center">
                         Density
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Average degree
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Average weighted degree
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Average path length
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Modularity
                     </cell>
                 </row>
                 <row>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         <anchor xml:id="OLE_LINK16"/>
                         <anchor xml:id="Hlk90123254"/>1300 – 1046 BC
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         137
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         261
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         0.028
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         3.810
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         7.737
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         3.079
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         0.708
                     </cell>
                 </row>
                 <row>
-                    <cell style="text-align: center;">1046 – 900 BC</cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">1046 – 900 BC</cell>
+                    <cell rend="center">
                         130
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         428
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         0.051
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         6.585
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         13.631
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         2.657
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         0.526
                     </cell>
                 </row>
@@ -254,114 +254,114 @@
             <p style="text-align: center;">
                 <hi rend="bold" xml:space="preserve">Table 4. </hi>Kulczynski similarity between the clan groups in different periods
             </p>
-            <table rend="rules">
+            <table rend="rules" n="span_all">
                 <row>
-                    <cell style="text-align: center;"/>
-                    <cell style="text-align: center;">
+                    <cell rend="center"/>
+                    <cell rend="center">
                         Group 1
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Group 2
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Group 3
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Group 4
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Group 5
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Group 6
                     </cell>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Group 7
                     </cell>
                 </row>
                 <row>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Group A
                     </cell>
-                    <cell style="text-align: center;">0.042</cell>
-                    <cell style="text-align: center;">0.091</cell>
-                    <cell style="text-align: center;">0.091</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0.072</cell>
-                    <cell style="text-align: center;">0.099</cell>
-                    <cell style="text-align: center;">0</cell>
+                    <cell rend="center">0.042</cell>
+                    <cell rend="center">0.091</cell>
+                    <cell rend="center">0.091</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0.072</cell>
+                    <cell rend="center">0.099</cell>
+                    <cell rend="center">0</cell>
                 </row>
                 <row>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Group B
                     </cell>
-                    <cell style="text-align: center;">0.053</cell>
-                    <cell style="text-align: center;">0.111</cell>
-                    <cell style="text-align: center;">0.111</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0.126</cell>
+                    <cell rend="center">0.053</cell>
+                    <cell rend="center">0.111</cell>
+                    <cell rend="center">0.111</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0.126</cell>
                 </row>
                 <row>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Group C
                     </cell>
-                    <cell style="text-align: center;">0.056</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0.085</cell>
-                    <cell style="text-align: center;">0.170</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
+                    <cell rend="center">0.056</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0.085</cell>
+                    <cell rend="center">0.170</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
                 </row>
                 <row>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Group D
                     </cell>
-                    <cell style="text-align: center;">0.060</cell>
-                    <cell style="text-align: center;">0.063</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0.133</cell>
+                    <cell rend="center">0.060</cell>
+                    <cell rend="center">0.063</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0.133</cell>
                 </row>
                 <row>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Group E
                     </cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0.142</cell>
-                    <cell style="text-align: center;">0.071</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0.125</cell>
-                    <cell style="text-align: center;">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0.142</cell>
+                    <cell rend="center">0.071</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0.125</cell>
+                    <cell rend="center">0</cell>
                 </row>
                 <row>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Group F
                     </cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0.159</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0.159</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
                 </row>
                 <row>
-                    <cell style="text-align: center;">
+                    <cell rend="center">
                         Group G
                     </cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
-                    <cell style="text-align: center;">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
+                    <cell rend="center">0</cell>
                 </row>
             </table>
             <p>Cultural and political changes from the late Shang to the early Western Zhou dynasty is called “the Great Transformation from Shang to Zhou” by some scholars (Wang, 1923). With methods of network analysis, we examined this traditional topic from a new angle and displayed it in a visual way. The results showed us how deeply the Zhou conquest of Shang changed the inter-clan associations and the entire clan system of the Shang people.</p>

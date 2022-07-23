@@ -125,7 +125,15 @@
             <div type="div1" rend="DH-Heading1">
                 <head>Corpus</head>
                 <p style="text-align: left; ">We begin by organizing a corpus suited to the problem. Instead of only looking at the four disputed essays, we retrieve all texts published under the pen names Du Ying and Du. These essays were published at roughly the same time and in similar publication venues. We are, in effect, expanding the range of texts we intend to consider using authorship attribution analysis. This is appropriate as we are dealing with texts whose authorship is at least somewhat uncertain. Twenty-one essays in total are recovered and comprise the “test set,” the essays whose authorship we intend to predict. Table 1 lists the texts.</p>
-                <table rend="rules">
+                <table rend="rules" n="span_all">
+                    <note type="direction">
+                        <width unit="pt">60</width>
+                        <width unit="pt">50</width>
+                        <width unit="pt">233</width>
+                        <width unit="pt">81</width>
+                        <width unit="pt">40</width>
+                        <width unit="pt">40</width>
+                    </note>
                     <row>
                         <cell style="text-align: left;" rend="DH-Default">Author</cell>
                         <cell style="text-align: left;" rend="DH-Default">Purpose</cell>
@@ -539,7 +547,7 @@
                     <row>
                         <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1907.11.30</cell>
-                        <cell style="text-align: left;" rend="DH-Default">An Extraordinary Stratagem to Prevent Illicit Sex</cell>
+                        <cell style="text-align: left;" rend="DH-Default">An Ex&#173;traor&#173;di&#173;nary Stratagem to Prevent Illicit Sex</cell>
                         <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
                         <cell style="text-align: left;" rend="DH-Default">–</cell>
                     </row>
@@ -616,7 +624,7 @@
                     <row>
                         <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1912.02.16</cell>
-                        <cell style="text-align: left;" rend="DH-Default">The Ordinary Folks’ Responsibility</cell>
+                        <cell style="text-align: left;" rend="DH-Default">The Ordinary Folks’ Re&#173;spon&#173;si&#173;bil&#173;i&#173;ty</cell>
                         <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
                         <cell style="text-align: left;" rend="DH-Default">low confidence</cell>
                     </row>

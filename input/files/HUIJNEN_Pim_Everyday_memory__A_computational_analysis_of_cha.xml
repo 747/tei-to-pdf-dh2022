@@ -110,7 +110,21 @@
                 <p style="text-align: left; ">
                     <hi rend="italic" style="font-size:10pt">Table 1: Most common trigrams ending in ‘year(s) ago’ with their English translation from a sample of 10,000 documents from the national newspaper De Telegraaf per decade per million trigrams, 1890-1980.</hi>
                 </p>
-                <table rend="rules">
+                <table rend="rules" n="span_all">
+                    <note type="direction">
+                        <width unit="pt">92</width>
+                        <width unit="pt">92</width>
+                        <width unit="pt">32</width>
+                        <width unit="pt">32</width>
+                        <width unit="pt">32</width>
+                        <width unit="pt">32</width>
+                        <width unit="pt">32</width>
+                        <width unit="pt">32</width>
+                        <width unit="pt">32</width>
+                        <width unit="pt">32</width>
+                        <width unit="pt">32</width>
+                        <width unit="pt">32</width>
+                    </note>
                     <row>
                         <cell style="text-align: left;" rend="DH-Default">Trigram</cell>
                         <cell style="text-align: left;" rend="DH-Default">English translation</cell>
@@ -305,7 +319,7 @@
                     <hi rend="italic" style="font-size:10pt">, 1893-1989. For similar diagrams (figures 1-4) for other newspapers, see: https://github.com/PimHuijnen/looking_back_newspapers/tree/main/Data.</hi>
                 </p>
                 <figure>
-                    <graphic n="1001" width="16.002cm" height="10.668cm" url="Pictures/eaf204fb81e915b310257effe2586912.png" rend="inline"/>
+                    <graphic n="1001" url="Pictures/eaf204fb81e915b310257effe2586912.png" rend="inline"/>
                 </figure>
                 <p style="text-align: left; ">
                     <hi rend="italic" style="font-size:10pt" xml:space="preserve">Figure 2: Frequency over time of ‘n years ago’, where n stands for decades from ten to one hundred, per million words in a sample of 10,000 documents per year of the national newspaper </hi>
@@ -313,7 +327,7 @@
                     <hi rend="italic" style="font-size:10pt">, 1893-1989.</hi>
                 </p>
                 <figure>
-                    <graphic n="1002" width="16.002cm" height="10.668cm" url="Pictures/93ee9a8fb8797bc28dc8571c2ddd5578.png" rend="inline"/>
+                    <graphic n="1002" url="Pictures/93ee9a8fb8797bc28dc8571c2ddd5578.png" rend="inline"/>
                 </figure>
                 <p style="text-align: left; ">
                     <hi rend="italic" style="font-size:10pt" xml:space="preserve">Figure 3: Frequency over time of ‘n years ago’, where n stands for one, ten, one hundred and two hundred, per million words in a sample of 10,000 documents per year of the national newspaper </hi>
@@ -321,7 +335,7 @@
                     <hi rend="italic" style="font-size:10pt">, 1893-1989.</hi>
                 </p>
                 <figure>
-                    <graphic n="1003" width="16.002cm" height="10.668cm" url="Pictures/1afe63690720d69de7c7200153283a75.png" rend="inline"/>
+                    <graphic n="1003" url="Pictures/1afe63690720d69de7c7200153283a75.png" rend="inline"/>
                 </figure>
                 <p style="text-align: left; ">
                     <hi rend="italic" style="font-size:10pt" xml:space="preserve">Figure 4: Frequency over time of ‘four years ago’ per million words in a sample of 10,000 documents per year of the national newspaper </hi>
@@ -329,7 +343,7 @@
                     <hi rend="italic" style="font-size:10pt">, 1893-1989.</hi>
                 </p>
                 <figure>
-                    <graphic n="1004" width="16.002cm" height="10.668cm" url="Pictures/4f02ccdd9b8814188633c82db6643ee2.png" rend="inline"/>
+                    <graphic n="1004" url="Pictures/4f02ccdd9b8814188633c82db6643ee2.png" rend="inline"/>
                 </figure>
                 <p style="text-align: left; ">
                     <hi rend="italic" style="font-size:10pt" xml:space="preserve">Figure 5: Frequency over time of dates (in years) that are referred to via the phrase ‘n years ago’, where n stands for years from one to twenty and decades from twenty to two hundred, per million words in a sample of 10,000 documents per year of the national newspaper </hi>
@@ -337,7 +351,7 @@
                     <hi rend="italic" style="font-size:10pt">, 1893-1989.</hi>
                 </p>
                 <figure>
-                    <graphic n="1005" width="12.601222222222223cm" height="25.200680555555557cm" url="Pictures/77af8cf0e722e1b0f579b8ee1a833960.png" rend="inline"/>
+                    <graphic n="1005" url="Pictures/77af8cf0e722e1b0f579b8ee1a833960.png" rend="inline"/>
                 </figure>
             </div>
         </body>

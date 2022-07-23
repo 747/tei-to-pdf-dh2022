@@ -274,11 +274,15 @@
                 <hi rend="color(#000000)"> However, while our crops have a great variety of aspect ratios, the HRCenterNet expects at least nearly-squared rectangles. Hence, we cut the original images into 250x250 px tiles with a 50 px overlap (both horizontally and vertically, Fig. 3c). Bounding boxes (Fig. 3d) found in the overlapping sections are filtered during the non-maximum suppression (NMS) operation already included in the HRCenterNet pipeline (Fig. 3e).</hi>
             </p>
             <table rend="frame" xml:id="Table1">
+                <note type="direction">
+                    <width unit="pt">12</width>
+                    <width unit="pt">231</width><!-- 3.375in - 12pt -->
+                </note>
                 <row>
                     <cell rend="end color(#000000)">a </cell>
                     <cell rend="color(#000000)">
                         <figure>
-                            <graphic url="Pictures/f431abbd0582765c87d36f5ee79ab461.png"/>
+                            <graphic url="Pictures/f431abbd0582765c87d36f5ee79ab461.png" height="1in"/>
                         </figure>
                     </cell>
                 </row>
@@ -286,7 +290,7 @@
                     <cell rend="end color(#000000)">b </cell>
                     <cell rend="color(#000000)">
                         <figure>
-                            <graphic url="Pictures/2bcd7873638f561912eb93d4a35356ff.png"/>
+                            <graphic url="Pictures/2bcd7873638f561912eb93d4a35356ff.png" height="1in"/>
                         </figure>
                     </cell>
                 </row>
@@ -294,7 +298,7 @@
                     <cell rend="end color(#000000)">c </cell>
                     <cell rend="color(#000000)">
                         <figure>
-                            <graphic url="Pictures/c86e0fdabcae3b2dad97ed5369366be4.png"/>
+                            <graphic url="Pictures/c86e0fdabcae3b2dad97ed5369366be4.png" height="1in"/>
                         </figure>
                     </cell>
                 </row>
@@ -302,7 +306,7 @@
                     <cell rend="end color(#000000)">d </cell>
                     <cell rend="color(#000000)">
                         <figure>
-                            <graphic url="Pictures/f088e4707a71f7c12f0a0c177e3c9d67.png"/>
+                            <graphic url="Pictures/f088e4707a71f7c12f0a0c177e3c9d67.png" height="1in"/>
                         </figure>
                     </cell>
                 </row>
@@ -310,7 +314,7 @@
                     <cell rend="end color(#000000)">e </cell>
                     <cell rend="color(#000000)">
                         <figure>
-                            <graphic url="Pictures/0a5d82f98d6b62cd7f84566ac555f366.png"/>
+                            <graphic url="Pictures/0a5d82f98d6b62cd7f84566ac555f366.png" height="1in"/>
                         </figure>
                     </cell>
                 </row>
@@ -321,12 +325,12 @@
                 <row>
                     <cell rend="center">
                         <figure>
-                            <graphic url="Pictures/f51c737e55e4fad308332f9bd8181587.png"/>
+                            <graphic url="Pictures/f51c737e55e4fad308332f9bd8181587.png" width="1.5in"/>
                         </figure>
                     </cell>
                     <cell rend="center">
                         <figure>
-                            <graphic url="Pictures/7e200243353b770fe0cd8dd0d1131e65.png"/>
+                            <graphic url="Pictures/7e200243353b770fe0cd8dd0d1131e65.png" width="1.5in"/>
                         </figure>
                     </cell>
                 </row>

@@ -117,26 +117,10 @@
                 <hi rend="italic">other than</hi> Japanese, from volumes human-cataloged as Japanese. This second study also surfaced a substantial number of algorithmically-introduced errors, assignable to a different set of error categories.
             </p>
             <p>What is the research cost of these errors in terms of misidentified language materials? Figure 1 summarizes our initial calculations. HathiTrust contains 559,718 volumes human-identified as Japanese, consisting of 249,252,918 pages. There are also 176,300,305 pages algorithmically-identified as Japanese, spanning 623,623 volumes. The intersection of these sets is the degree of agreement between these two methods of identifying Japanese language materials: there are 168,026,395 pages in common, coming from 501,150 volumes. This mismatch indicates that scholars are likely to miss a substantial amount of text from either search methodology.</p>
-            <p style="text-align: left;"> =================================================</p>
-            <p style="text-align: left;"> Query Term | Volumes | Pages</p>
-            <p style="text-align: left;"> =================================================</p>
-            <p style="text-align: left;">
-                volumelanguage_htrcstrings:jpn
-                <hi style="font-family:Consolas" xml:space="preserve">| </hi>559,718 | 249,252,918
-            </p>
-            <p style="text-align: left;">
-                ja_htrctokentext:*
-                <hi style="font-family:Consolas" xml:space="preserve">| </hi>623,623 | 176,300,305
-            </p>
-            <p style="text-align: left;">
-                ja_htrctokentext:* AND
-                <hi style="font-family:Consolas" xml:space="preserve">| </hi>501,150 | 168,026,395
-                <lb/>
-                volumelanguage_htrcstrings:jpn
-                <lb/>
-                 ====================================================
-            </p>
-            <p>Figure 1. Summary of potentially “missing” Japanese-language materials between two methods of retrieval.</p>
+            <figure>
+                <graphic url="Pictures/BAINBRIDGE-david-figure-1.png"/>
+                <p>Figure 1. Summary of potentially “missing” Japanese-language materials between two methods of retrieval.</p>
+            </figure>
             <p>The error rates found through both these analyses are high enough that we are considering changes both in the Workset Builder interface (to provide caveats for researchers upon executing page-level language searches), and in the production pipeline for the next release of the EF dataset: to employ newer and different language-detection packages (an approach that appears promising in pilot tests), and to seek access to an altogether new source of language detection: that often—but not always—is provided during the initial OCR processes, and encoded in metadata not previously available to us.</p>
             <p>While we stand by the decisions that led us to favor human language identification at the volume level, and algorithmic language identification at the page level, we are nonetheless inspired to refine and qualify both process and presentation of this important dataset.</p>
         </body>

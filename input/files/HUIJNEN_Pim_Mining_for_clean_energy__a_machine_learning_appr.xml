@@ -108,7 +108,7 @@
                 <p>Table 1: Dataset after prediction of topicality: newspaper articles on goal, natural gas, petrol for the 1960s-1990s.</p>
                 <table rend="rules">
                     <row>
-                        <cell style="text-align: center;" rend="DH-Default">Decade</cell>
+                        <cell rend="center DH-Default">Decade</cell>
                         <cell style="text-align: left;" rend="DH-Default">Type of fossil fuel</cell>
                         <cell style="text-align: left;" rend="DH-Default">Size (MB)</cell>
                         <cell style="text-align: left;" rend="DH-Default">No. paragraphs</cell>

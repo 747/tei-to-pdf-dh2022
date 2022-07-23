@@ -84,6 +84,15 @@
                 <p>With an advent of deep learning in natural language processing, the ways in which a text could be represented became much more complex and much less transparent. From simple estimations of word frequency distributions, methods shifted to context-aware embeddings and neural network generalizations. These opaque representations made their way to the authorship attribution with obvious improvements across different tasks (Benzebouchi et al. 2018; Gómez-Adorno et al. 2018; Kiros et al. 2014; Posadas-Durán et al. 2017). Yet, this improvement did not bring us closer to understanding of authorial style. Rather the opposite happened, and we have obscured the reasons for feature effectiveness in attribution tasks.</p>
                 <p>In this study we want to ask how much of the contextual information matters for authorship attribution in a conservative setting (authors represented by a few large fictional texts). We propose a simple experimental setup with a basic word embedding model that represents words by their contexts (or co-occurrence with other words in immediate proximity); in such a setup, each word is represented by a vector of coordinates in a semantic space, instead of using traditional word frequencies. In order to get to a text-wide vector representation, we use several tactics, derived from sentence/paragraph embedding approach (Le &amp; Mikolov 2014) and is similar to “timestamping” tokens (Dubossarsky et al. 2019). Our approach mostly boils down to adding quasi-tokens that are tied to each specific text in the corpus: they act as sponges, soaking word occurrences from their immediate context. We use this sponges as “text embeddings” that share the same vector space with actual words from the corpus. Having control on text and context representation, we manipulate the underlying words (by randomly shuffling them or changing the principles of quasi-tokens distributions).</p>
                 <table rend="frame" xml:id="Table1">
+                    <note type="direction">
+                        <width unit="pt">58</width>
+                        <width unit="pt">34</width>
+                        <width unit="pt">34</width>
+                        <width unit="pt">34</width>
+                        <width unit="pt">34</width>
+                        <width unit="pt">34</width>
+                        <width unit="pt">15</width>
+                    </note>
                     <row role="label">
                         <cell/>
                         <cell>D

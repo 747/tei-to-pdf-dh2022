@@ -203,6 +203,14 @@
                         <note xml:id="ftn6" place="foot" n="6">Although we chose Wikibase as a suitable environment for this task, we wish to highlight that our approach may also be adapted to other systems.</note> For instance, statements based on self-identification should be designated as preferred compared to statements that are based on records or assumptions. Queries would then, by default, only return the highest-ranked statements. Those wishing to go further in their analysis may explicitly query the gender qualifiers attached to a statement and receive the full range of nuances that the model is able to represent (Table 1).
                     </p>
                     <table rend="frame" xml:id="Table2">
+                        <note type="direction">
+                            <width unit="pt">30</width>
+                            <width unit="pt">41</width>
+                            <width unit="pt">41</width>
+                            <width unit="pt">41</width>
+                            <width unit="pt">43</width>
+                            <width unit="pt">47</width>
+                        </note>
                         <row>
                             <cell rend="center">Figure</cell>
                             <cell>Item</cell>

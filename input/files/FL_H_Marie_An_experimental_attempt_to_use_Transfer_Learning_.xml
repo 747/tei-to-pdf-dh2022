@@ -103,41 +103,41 @@
                 </p>
                 <table rend="rules">
                     <row>
-                        <cell style="text-align: center;">
+                        <cell rend="center">
                             <hi rend="bold">Token category</hi>
                         </cell>
-                        <cell style="text-align: center;">big</cell>
-                        <cell style="text-align: center;">small</cell>
+                        <cell rend="center">big</cell>
+                        <cell rend="center">small</cell>
                     </row>
                     <row>
-                        <cell style="text-align: center;">Person</cell>
-                        <cell style="text-align: center;">9397</cell>
-                        <cell style="text-align: center;">3683</cell>
+                        <cell rend="center">Person</cell>
+                        <cell rend="center">9397</cell>
+                        <cell rend="center">3683</cell>
                     </row>
                     <row>
-                        <cell style="text-align: center;">Place</cell>
-                        <cell style="text-align: center;">3056</cell>
-                        <cell style="text-align: center;">1092</cell>
+                        <cell rend="center">Place</cell>
+                        <cell rend="center">3056</cell>
+                        <cell rend="center">1092</cell>
                     </row>
                     <row>
-                        <cell style="text-align: center;">Organisation</cell>
-                        <cell style="text-align: center;">635</cell>
-                        <cell style="text-align: center;">269</cell>
+                        <cell rend="center">Organisation</cell>
+                        <cell rend="center">635</cell>
+                        <cell rend="center">269</cell>
                     </row>
                     <row>
-                        <cell style="text-align: center;">Work</cell>
-                        <cell style="text-align: center;">654</cell>
-                        <cell style="text-align: center;">294</cell>
+                        <cell rend="center">Work</cell>
+                        <cell rend="center">654</cell>
+                        <cell rend="center">294</cell>
                     </row>
                     <row>
-                        <cell style="text-align: center;">unlabeled</cell>
-                        <cell style="text-align: center;">190970</cell>
-                        <cell style="text-align: center;">52271</cell>
+                        <cell rend="center">unlabeled</cell>
+                        <cell rend="center">190970</cell>
+                        <cell rend="center">52271</cell>
                     </row>
                     <row>
-                        <cell style="text-align: center;">total</cell>
-                        <cell style="text-align: center;">204712</cell>
-                        <cell style="text-align: center;">57609</cell>
+                        <cell rend="center">total</cell>
+                        <cell rend="center">204712</cell>
+                        <cell rend="center">57609</cell>
                     </row>
                 </table>
                 <p style="text-align: left; ">Table 1: Composition of the big and small set of training data used as ground truth for NER model training</p>
