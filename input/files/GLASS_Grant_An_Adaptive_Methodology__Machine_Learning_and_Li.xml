@@ -144,11 +144,11 @@
                         </p>
                     </note>
                     <hi rend="color(222222)" style="font-size:12pt" xml:space="preserve">. This data is freely available through the ECCO-TCP website and was verified through the corresponding CSV file, a preview of which is included in Table 1. </hi>
-                    <lb/>
-                    <lb/>
-                    <graphic n="1001" width="16.51cm" height="8.89cm" url="Pictures/eb7917ff5b9bb2de119e88d568fa28c5.png" rend="inline"/>
                 </p>
-                <p>Table 1: ECCO-TCP CSV File describing all the data in the corpus.</p>
+                <figure>
+                    <graphic n="1001" width="16.51cm" height="8.89cm" url="Pictures/eb7917ff5b9bb2de119e88d568fa28c5.png" rend="inline"/>
+                    <head>Table 1: ECCO-TCP CSV File describing all the data in the corpus.</head>
+                </figure>
                 <p>
                     <hi rend="color(222222)" style="font-size:12pt" xml:space="preserve">The next corpus included 1,484 texts drawn from a variety of variations of </hi>
                     <hi rend="italic color(222222)" style="font-size:12pt" xml:space="preserve">Robinson Crusoe, </hi>

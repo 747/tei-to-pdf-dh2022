@@ -126,7 +126,7 @@
                 </p>
                 <p>For the needs of the textual analysis of the text, the HTR output, after careful human correction, was then segmented into words, normalised (abbreviations expanded, allographs normalised), lemmatised and POS-tagged using deep learning methods (Table 1). Even if the scores obtained are high, cumulative errors through the different steps might remain an issue.</p>
                 <table rend="frame" xml:id="Table1">
-                    <head>Table 1: Word accuracy is indicated with respect to the in-domain test set (samples set apart from training material). Table 2: Results of the leave-one-out evaluation on the text of the songs, using character 3-grams, lemmas, part-of-speech 3-grams and lemmatised function words Table 3: Benchmark of musical features for musical stylometry Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
+                    <head>Table 1: Word accuracy is indicated with respect to the in-domain test set (samples set apart from training material).</head>
                     <row role="label">
                         <cell rend="center bold">Step</cell>
                         <cell rend="center bold">Word acc</cell>
@@ -189,7 +189,7 @@
                     <hi rend="italic">et al.</hi>, 2021a). Both exploratory and supervised analyses, the latter using a linear SVM , were performed to shed more light on the attribution of these components. To compensate for the imbalance between the available samples for all four authors, various upsampling and downsampling strategies (alone or in combination) were experimented, and Tomek links removal (Tomek, 1976), in combination with class weights, was found to be the best performing. Evaluation was done using a leave-one-out approach, and the models reached a global accuracy of 0.79, with a F1 score of 0.93 for Thibaut and 0.76 for Gace (Table 2).
                 </p>
                 <table rend="frame" xml:id="Table2">
-                    <head> Table 2: Results of the leave-one-out evaluation on the text of the songs, using character 3-grams, lemmas, part-of-speech 3-grams and lemmatised function words Table 3: Benchmark of musical features for musical stylometry Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
+                    <head> Table 2: Results of the leave-one-out evaluation on the text of the songs, using character 3-grams, lemmas, part-of-speech 3-grams and lemmatised function words</head>
                     <row>
                         <cell/>
                         <cell cols="4" rend="center bold">character 3-grams</cell>
@@ -259,7 +259,6 @@
                     </row>
                 </table>
                 <table rend="frame" xml:id="Table3">
-                    <head> Table 2: Results of the leave-one-out evaluation on the text of the songs, using character 3-grams, lemmas, part-of-speech 3-grams and lemmatised function words Table 3: Benchmark of musical features for musical stylometry Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
                     <row>
                         <cell/>
                         <cell cols="4" rend="center bold">Lemmas (all)</cell>
@@ -329,7 +328,6 @@
                     </row>
                 </table>
                 <table rend="frame" xml:id="Table4">
-                    <head> Table 2: Results of the leave-one-out evaluation on the text of the songs, using character 3-grams, lemmas, part-of-speech 3-grams and lemmatised function words Table 3: Benchmark of musical features for musical stylometry Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
                     <row>
                         <cell/>
                         <cell cols="4" rend="center bold">POS 3-grams</cell>
@@ -399,7 +397,6 @@
                     </row>
                 </table>
                 <table rend="frame" xml:id="Table5">
-                    <head>Table 2: Results of the leave-one-out evaluation on the text of the songs, using character 3-grams, lemmas, part-of-speech 3-grams and lemmatised function words Table 3: Benchmark of musical features for musical stylometry Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
                     <row>
                         <cell/>
                         <cell cols="4" rend="center bold">Lemmas (function words)</cell>
@@ -502,7 +499,7 @@
                     <hi rend="italic">trouvères</hi>) is a much less waymarked field. It is supposed that all composers integrate some little elements consciously or unconsciously in their compositions. A recent study observed that the troubadour Bernard de Ventadorn used in most of this songs three ascendants sounds at the beginning of verses (Chaillou-Amadieu 2016). Such methodology can be automated and show promise for the joint stylometry of text and music. In order to identify relevant features, experiments have been conducted with a variety of variables: notes, intervals, octaves n-grams, with the inclusion of syllable boundaries in the absence of noted measure, all extracted from MEI neumes notation. They were done on two different dataset: a small, controlled dataset (3x10 melodies of supposedly three authors), and an enlarged and more difficult dataset (117 melodies, with imbalanced training set of six authors).
                 </p>
                 <table rend="frame" xml:id="Table6">
-                    <head>Table 3: Benchmark of musical features for musical stylometry Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
+                    <head>Table 3: Benchmark of musical features for musical stylometry</head>
                     <row>
                         <cell/>
                         <cell cols="6" rend="center bold">Smaller set</cell>
@@ -545,7 +542,6 @@
                     </row>
                 </table>
                 <table rend="frame" xml:id="Table7">
-                    <head>Table 3: Benchmark of musical features for musical stylometry Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
                     <row>
                         <cell/>
                         <cell cols="6" rend="center bold">Larger set</cell>

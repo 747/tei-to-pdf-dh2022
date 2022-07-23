@@ -96,9 +96,12 @@
             <div type="div1" rend="DH-Heading1">
                 <head>Results</head>
                 <p style="text-align: left; text-align: justify;">We find that the six-class model has markedly more problems recognizing SPD and Union (see Table 2). Furthermore, SPD paragraphs are often misclassified as Union, while the inverse is not as frequent (see Figure 2). This might be because both are Germany’s largest catch-all-parties, with the other parties having a more distinct vocabulary. Altogether, much of the models’ confusion falls in line with overlapping political positions, e.g., paragraphs from FDP and AfD are misclassified as Union, while the Greens are never mistaken for the former two. On the other hand, Linke and AfD may be mistaken for each other
-                    <graphic n="1003" width="9.480902777777779cm" height="10.158236111111112cm" url="Pictures/409d62268584fc4d71aaa5d3d9861896.jpg" rend="block"/>
-                    <graphic n="1004" width="9.618133333333333cm" height="6.028266666666667cm" url="Pictures/c854f26e12b092c22258fa49c1afa44c.jpg" rend="block"/> due to their oppositional language. Thus, it is an open question to what extent the model makes decisions based on policy or language.
+                     due to their oppositional language. Thus, it is an open question to what extent the model makes decisions based on policy or language.
                 </p>
+                <figure>
+                    <graphic n="1003" width="9.480902777777779cm" height="10.158236111111112cm" url="Pictures/409d62268584fc4d71aaa5d3d9861896.jpg" rend="block"/>
+                    <graphic n="1004" width="9.618133333333333cm" height="6.028266666666667cm" url="Pictures/c854f26e12b092c22258fa49c1afa44c.jpg" rend="block"/>
+                </figure>
                 <p style="text-align: left; ">The three-class model achieves better classification results (see Table 3), which is not surprising, since the task is easier with less parties to choose from. However, SPD paragraphs are still harder to predict.</p>
                 <figure>
                     <graphic n="1005" width="9.584266666666666cm" height="4.6058666666666666cm" url="Pictures/9be7433a31a46de4e946020e1b1da1a2.jpg" rend="block"/>

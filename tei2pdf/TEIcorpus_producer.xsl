@@ -452,7 +452,14 @@
     <xsl:template match="note[@place='foot' or @place='end']" mode="notes">
         <xsl:param name="tei_id" tunnel="yes"/>
         <note xml:id="{concat($tei_id, '-', @xml:id)}" n="{@n}" rend="{@place}">
-            <xsl:apply-templates select="node()[not(normalize-space(.)='ENDNOTES')]"/><!-- ad-hoc condition to ignore unneeded headings -->
+            <xsl:choose>
+                <xsl:when test="not(p)">
+                    <p><xsl:apply-templates/></p>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates select="node()[not(normalize-space(.)='ENDNOTES')]"/><!-- ad-hoc condition to ignore unneeded headings -->
+                </xsl:otherwise>
+            </xsl:choose>
         </note>
     </xsl:template>
     

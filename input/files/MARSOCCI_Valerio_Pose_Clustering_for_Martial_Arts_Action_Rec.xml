@@ -127,8 +127,10 @@
                 <graphic n="1005" width="15.927916666666667cm" height="8.964083333333333cm" url="Pictures/577066fcd725df555352db68cdad4890.jpeg" rend="inline"/>
             </figure>
             <p style="text-align: center;">Fig. 4 -  Pose spotting (Kata), pose 1: the frames corresponding to the query pose are correctly detected for a threshold of 0.1.
-                <graphic n="1006" width="15.927916666666667cm" height="8.964083333333333cm" url="Pictures/58b2279f335518d73068e6fda9a1b95e.jpeg" rend="inline"/>
             </p>
+            <figure>
+                <graphic n="1006" width="15.927916666666667cm" height="8.964083333333333cm" url="Pictures/58b2279f335518d73068e6fda9a1b95e.jpeg" rend="inline"/>
+            </figure>
             <p style="text-align: center;">Fig. 5 -  Pose spotting (Kata), pose 2: the frames corresponding to the query pose are correctly detected for a threshold of 0.1.</p>
             <p>Conclusions</p>
             <p>Considering the aforementioned results, the downstream applications for martial arts of our framework are immediately intuitive: indeed, it could be used to compare a performed sequence to the ideal sequence of gestures, and the single poses could be compared to the coded poses too, to correct possible errors during the execution of a progression.</p>

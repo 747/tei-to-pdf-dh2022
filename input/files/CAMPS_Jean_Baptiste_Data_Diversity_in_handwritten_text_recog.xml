@@ -141,7 +141,7 @@
                     </p>
                     <p>This diversity is also very present in the Oriflamms macro-dataset, containing 120 111 lines from no less than 779 manuscripts (Table 1). This dataset has been composed along several different projects over a substantial interval of time, and is a mix of aligned preexisting normalised editions (without abbreviations) and graphemic transcriptions (including abbreviations and their expansion). It is composed of both French, Latin and bilingual texts.</p>
                     <table rend="frame" xml:id="Table1">
-                        <head>Table 1: Composition of the cremma-medieval, Oriflamms and st-victor macro-datasets [For this abstract, only corpora in bold have been used] Table 2: Distribution of corpora into the four main datasets Table 3: Facsimile with ground truth abbreviated and extended and abbreviated and extended predictions from an extract of latin corpus of St Victor (BnF, Latin 14525, fol. 41va). Table 3: Facsimile with ground truth abbreviated and extended and abbreviated and extended predictions from an extract of latin corpus of St Victor. </head>
+                        <head>Table 1: Composition of the cremma-medieval, Oriflamms and st-victor macro-datasets [For this abstract, only corpora in bold have been used]</head>
                         <row role="label">
                             <cell rend="bold">Corpus</cell>
                             <cell rend="bold">Editors</cell>
@@ -416,8 +416,6 @@
                     <item>lowercasing;</item>
                     <item>normalising unicode (NFKD);</item>
                     <item>making substitutions based on an equivalence table and the use of “chocoMUFIn” (Clérice and Pinche 2021). In particular,</item>
-                </list>
-                <list type="unordered">
                     <item>
                         <list type="unordered">
                             <item>normalisation of allographs (hypernormalised);</item>
@@ -434,7 +432,7 @@
                 </list>
                 <p>We have divided our corpus into four training datasets to perform our evaluations and see potential benefits of fine-tuning for such an approach, on Latin or French texts and on abbreviated or expanded texts. The distribution of each corpus is described in table 2.</p>
                 <table rend="frame" xml:id="Table2">
-                    <head>Table 2: Distribution of corpora into the four main datasets Table 3: Facsimile with ground truth abbreviated and extended and abbreviated and extended predictions from an extract of latin corpus of St Victor (BnF, Latin 14525, fol. 41va). Table 3: Facsimile with ground truth abbreviated and extended and abbreviated and extended predictions from an extract of latin corpus of St Victor. </head>
+                    <head>Table 2: Distribution of corpora into the four main datasets</head>
                     <row role="label">
                         <cell/>
                         <cell rend="bold">Abbr (Lines)</cell>
@@ -510,9 +508,9 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/bf361bc87947c63ed7be3441d089a420.png"/>
+                        <head>Figure 1: Matrix of the cross evaluation of models</head>
                     </figure>
                 </p>
-                <p>Figure 1: Matrix of the cross evaluation of models</p>
                 <p>
                     <figure>
                         <graphic url="Pictures/1523574800007192d3b92edf9eb04cae.png"/>
@@ -537,7 +535,7 @@
                     </figure>
                 </p>
                 <table rend="frame" xml:id="Table3">
-                    <head>Table 3: Facsimile with ground truth abbreviated and extended and abbreviated and extended predictions from an extract of latin corpus of St Victor (BnF, Latin 14525, fol. 41va). Table 3: Facsimile with ground truth abbreviated and extended and abbreviated and extended predictions from an extract of latin corpus of St Victor. </head>
+                    <head>Table 3: Facsimile with ground truth abbreviated and extended and abbreviated and extended predictions from an extract of latin corpus of St Victor (BnF, Latin 14525, fol. 41va).</head>
                     <row role="label">
                         <cell rend="bold">GT Abbr</cell>
                         <cell rend="bold">GT Expan</cell>

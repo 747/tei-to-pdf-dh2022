@@ -492,12 +492,12 @@
     
     <xsl:template name="smallcaps">
         <xsl:attribute name="font-variant">small-caps</xsl:attribute>
-        <!-- <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute> -->
+        <!-- <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute> --><!-- DH2022 mod -->
     </xsl:template>
     
     <xsl:template name="bold">
         <xsl:attribute name="font-weight">bold</xsl:attribute>
-        <!-- <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute> -->
+        <!-- <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute> --><!-- DH2022 mod -->
     </xsl:template>
     
     <!-- Figures -->
@@ -532,15 +532,25 @@
     
     <!-- Tables -->
     <xsl:template name="table_smaller">
-        <xsl:attribute name="space-before">.2in</xsl:attribute>
+        <!-- <xsl:attribute name="space-before">.2in</xsl:attribute> --><!-- DH2022 mod -->
         <xsl:attribute name="space-after">.2in</xsl:attribute>
         <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute>
     </xsl:template>
 
     <xsl:template name="table">
-        <xsl:attribute name="space-before">.2in</xsl:attribute>
+        <!-- <xsl:attribute name="space-before">.2in</xsl:attribute> --><!-- DH2022 mod -->
         <xsl:attribute name="space-after">.2in</xsl:attribute>
         <xsl:attribute name="keep-together.within-column">1</xsl:attribute>
+        <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute>
+    </xsl:template>
+
+    <xsl:template name="table_no_head"><!-- DH2022 mod -->
+        <xsl:attribute name="space-before">.2in</xsl:attribute>
+    </xsl:template>
+
+    <xsl:template name="table_head"><!-- DH2022 mod -->
+        <xsl:attribute name="space-before">.2in</xsl:attribute>
+        <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute>
     </xsl:template>
     
@@ -1713,10 +1723,15 @@
     </xsl:template> -->
 
     <!-- DH2022: enables combinatory stylings -->
-    <xsl:template match="hi">
+    <xsl:template match="hi|cell">
         <xsl:variable name="styles" select="tokenize(@rend, ' ')"/>
         <xsl:choose>
-            <xsl:when test="$styles=('italic', 'bold', 'underline', 'smallcaps', 'superscript', 'super', 'sup', 'subscript', 'sub', 'Hebrew', 'Chinese', 'TChinese', 'Japanese', 'Korean', 'math', 'fraction', 'math_alt_font', 'Deva')">
+            <xsl:when test="$styles=(
+                'italic', 'bold', 'underline', 'smallcaps',
+                'superscript', 'super', 'sup', 'subscript', 'sub',
+                'Hebrew', 'Chinese', 'TChinese', 'Japanese', 'Korean', 'math', 'fraction', 'math_alt_font', 'Deva',
+                'center', 'end'
+            )">
                 <fo:inline>
                     <xsl:if test="$styles='italic'">
                         <xsl:call-template name="italic"/>
@@ -1769,9 +1784,14 @@
                         <xsl:when test="$styles='Deva'">
                             <xsl:call-template name="devanagari"/>
                         </xsl:when>
-                        <xsl:otherwise>
-
-                        </xsl:otherwise>
+                    </xsl:choose>
+                    <xsl:choose>
+                        <xsl:when test="$styles='center'">
+                            <xsl:attribute name="text-align">center</xsl:attribute>
+                        </xsl:when>
+                        <xsl:when test="$styles='end'">
+                            <xsl:attribute name="text-align">right</xsl:attribute>
+                        </xsl:when>
                     </xsl:choose>
                     <xsl:apply-templates/>
                 </fo:inline>
@@ -1842,10 +1862,11 @@
     <xsl:template match="table">
       <xsl:for-each select="head">
           <!-- <fo:block><xsl:call-template name="subsubhead"/><xsl:apply-templates select="."/></fo:block> -->
-          <fo:block><xsl:call-template name="figure_head"/><xsl:apply-templates select="."/></fo:block>
+          <fo:block><xsl:call-template name="table_head"/><xsl:apply-templates select="."/></fo:block>
       </xsl:for-each>
         
         <fo:table>
+            <xsl:if test="not(head)"><xsl:call-template name="table_no_head"/></xsl:if>
             <xsl:choose>
                 <xsl:when test="@n='text_smaller'">
                     <xsl:call-template name="table_smaller"/>
@@ -1859,6 +1880,12 @@
                         <fo:table-row>
                             <xsl:for-each select="cell">
                                 <fo:table-cell><xsl:call-template name="cell"/>
+                                    <xsl:if test="@cols"><!-- DH2022 mod -->
+                                        <xsl:attribute name="number-columns-spanned"><xsl:value-of select="@cols"/></xsl:attribute>
+                                    </xsl:if>
+                                    <xsl:if test="@rows"><!-- DH2022 mod -->
+                                        <xsl:attribute name="number-rows-spanned"><xsl:value-of select="@rows"/></xsl:attribute>
+                                    </xsl:if>
                                     <fo:block>
                                         <xsl:if test="ancestor::table[@n='text_smaller']"><xsl:call-template name="text_smaller"/></xsl:if>
                                         <xsl:apply-templates select="."/>
