@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Rule-based Speaker Identification for Speech, Thought and Writing in German Literary Texts</title>
+                <author>
+                    <persName>
+                        <surname>Sluyter-Gäthje</surname>
+                        <forename>Henny</forename>
+                    </persName>
+                    <affiliation>University of Potsdam</affiliation>
+                    <email>sluytergaeth@uni-potsdam.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-14T08:02:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Speaker Identification</term>
+                    <term>Computational Literary Studies</term>
+                    <term>Computational Linguistics</term>
+                    <term>Rule-Based</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>software development</term>
+                    <term>systems</term>
+                    <term>analysis and methods</term>
+                    <term>speech processing analysis and methods</term>
+                    <term>Linguistics</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>1. Introduction</p>
+            <p>To study storyworlds created in literary texts, the analysis of characters and their interaction is one of the most fundamental aspects. A character’s voice in a storyworld can be expressed by speech, thought or writing (STW), the representation of which can take on different forms depending on how truthful it is to the original utterance (Genette, 1983: 171-173). The following types can be differentiated: direct (most truthful), indirect, reported (least truthful) and free indirect (mixture of direct and indirect) STW.</p>
+            <p>A basis for the automatic processing of storyworlds is the identification of STW units and the attribution to their producers, i.e. the characters. While successful approaches for the recognition of STW units do exist, most speaker attribution systems are limited to direct or indirect speech. In this work, we develop rule-based speaker identification systems for the attribution of not only speech but also thought and writing, not limited to direct and indirect but also including reported and free indirect representations in German literary texts. </p>
+            <p>2. Related Work</p>
+            <p>The task of speaker attribution can be divided into two subtasks: the identification of speakers –finding the textual mention of a speaker– and the resolution of speakers –resolving the textual mention to a speaker entity. This work is concerned with speaker identification. Early approaches to speaker attribution mostly relied on pattern matching (e.g. Krestel et al., 2008). Elson and McKeown (2010) presented a first machine learning (ML) approach which formed the basis for follow-up work (direct: O’Keefe et al., 2012; He et al., 2013; Yeung and Lee, 2017; Ek et al., 2018; indirect: Pareti et al., 2013; Newell et al., 2018). Krug et al. (2016) experimented with a rule-based approach for the attribution of direct speech units in German literary texts which could outperform their ML approaches. Similarly, Muzny et al. (2017) built a state-of-the-art system for the domain of English literature which attributed speakers for direct speech in a rule-based way. </p>
+            <p>3. Approach</p>
+            <p>This work builds on the approaches of Krug et al. (2016) and Muzny et al. (2017) by adapting and extending the rules they presented. Additionally, we formulate new rules. All rules are compiled, manually evaluated and improved in an iterative way with the help of the 
+                <ref target="https://github.com/redewiedergabe/corpus">Corpus Redewiedergabe</ref> (Brunner et al., 2020a). For each representation type (direct, indirect, reported and free indirect) we build one system with a different set and a different order of rules; a rule can only be applied once. Similar to related work, our systems rely heavily on linguistic annotations (see figure 01) and on predefined word lists (e.g. to identify animate nouns). A final evaluation was performed on a held-out test set extracted from the Corpus Redewiedergabe. The full pipeline of the systems, including 
+                <ref target="https://github.com/redewiedergabe/tagger">the recognition of STW units</ref> (Brunner et al., 2020b), is shown in figure 01. The 
+                <ref target="https://github.com/hsluytergaethje/speaker_identification">systems</ref> are publicly available alongside an extensive description of the rules.
+            </p>
+            <figure>
+                <graphic n="1001" width="15.920861111111112cm" height="4.764263888888889cm" url="Pictures/49a2633e6ad82a269676dfce386320e5.png" rend="inline"/>
+                <head>Pipeline of the speaker identification systems for the annotation of raw text.</head>
+            </figure>
+            <p>4. Results</p>
+            <figure>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Author</cell>
+                        <cell style="text-align: left;" rend="DH-Default">STW type</cell>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            <p>Performance</p>
+                            <p>Range</p>
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            <p>STW</p>
+                            <p>medium</p>
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">Domain</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Language</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Pareti et al. (2013)</cell>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            <p>Direct</p>
+                            <p>Indirect</p>
+                            <p>Mixed</p>
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            <p>
+                                <hi rend="bold">85 – 91</hi>
+                            </p>
+                            <p>74 – 79</p>
+                            <p>65 – 81</p>
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">Speech</cell>
+                        <cell style="text-align: left;" rend="DH-Default">News</cell>
+                        <cell style="text-align: left;" rend="DH-Default">English</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Krug et al. (2016)</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Direct</cell>
+                        <cell style="text-align: left;" rend="DH-Default">78.4</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Speech</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Literature</cell>
+                        <cell style="text-align: left;" rend="DH-Default">German</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Muzny et al. (2017)</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Direct</cell>
+                        <cell style="text-align: left;" rend="DH-Default">76 – 85</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Speech</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Literature</cell>
+                        <cell style="text-align: left;" rend="DH-Default">English</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            <p>This work</p>
+                            <p>with gold</p>
+                            <p>STW annotations</p>
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            <p>Direct</p>
+                            <p>Indirect</p>
+                            <p>Reported</p>
+                            <p>Free indirect</p>
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            <p>63.91</p>
+                            <p>82.2</p>
+                            <p>71.38</p>
+                            <p>50.0</p>
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            <p>Speech,</p>
+                            <p>Thought,</p>
+                            <p>Writing</p>
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">Literature</cell>
+                        <cell style="text-align: left;" rend="DH-Default">German</cell>
+                    </row>
+                </table>
+                <head>Comparison of the accuracies of speaker attribution systems that were used in setups comparable to this work. Accuracy ranges are indicated as some systems were applied to different data sets with varying success. Maximum values are marked in bold.</head>
+            </figure>
+            <p>As shown in figure 02 our systems achieve the best performance for attributing indirect, reported and free indirect STW. The direct system could be improved, for example when handling conversational patterns. The full pipeline achieves a comparable performance.</p>
+            <p>5. Future Work </p>
+            <p>The pipeline itself could be improved (e.g. by extending the predefined word lists) and the systems could be tested on and eventually adapted to another domain. For comparative purposes, neural networks that use semantic word representations could be trained for the task of speaker identification. Finally, the systems could be extended to also resolve speakers. The systems can be used as is to perform analyses in the field of Computational Literary Studies e.g. to address gender related research questions (cf. Schumacher and Flüh, 2020).</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Akbik, A., Vollgraf, R. and Blythe, D.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2018). Contextual String Embeddings for Sequence Labeling. In </hi>
+                        <hi rend="italic" style="font-size:11pt">27th International Conference on Computational Linguistics</hi>
+                        . COLING 2018. Santa Fe, New Mexico, USA: Association for Computational Linguistics, pp. 1638–49.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Brunner, A., Engelberg, S., et al.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2020). Corpus REDEWIEDERGABE. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of the 12th International Conference on Language Resources and Evaluation (LREC’20)</hi>
+                        . LREC. Marseille, France: European Language Resources Association, pp. 803–12.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Brunner, A., Duyen, N., et al.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2020). To Bert or Not to Bert–Comparing Contextual Embeddings in a Deep Learning Architecture for the Automatic Recognition of Four Types of Speech, Thought and Writing Representation. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of the 16th Conference on Natural Language Processing (KONVENS 2020)</hi>
+                        . Konvens. Zurich, Switzerland.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Ek, A. et al.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2018). Identifying Speakers and Addressees in Dialogues Extracted from Literary Fiction. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)</hi>
+                        . LREC. Miyazaki, Japan.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Elson, D. and McKeown, K.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2010). Automatic Attribution of Quoted Speech in Literary Narrative. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Twenty-Fourth AAAI Conference on Artificial Intelligence</hi>
+                        . AAAI. AAAI Press, pp. 1013–9.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Genette, G.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (1990). </hi>
+                        <hi rend="italic" style="font-size:11pt">Narrative Discourse: An Essay in Method</hi>
+                        . 1. publ., 4. print. Ithaca: Cornell University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">He, H., Barbosa, D. and Kondrak, G.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2013). Identification of Speakers in Novels. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics</hi>
+                        . Sofia, Buldaria: Association for Computational Linguistics, pp. 1312–20.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Krestel, R., Bergler, S. and Witte, R.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2008). Minding the Source: Automatic Tagging of Reported Speech in Newspaper Articles. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of the Sixth International Conference on Language Resources and Evaluation (LREC’08)</hi>
+                        . Marrakech, Morocco: European Language Resources Association.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Krug, M. et al.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2016). Attribuierung Direkter Reden in Deutschen Romanen Des 18.-20. Jahrhunderts. Methoden Zur Bestimmung Des Sprechers Und Des Angesprochenen. In </hi>
+                        <hi rend="italic" style="font-size:11pt">DHd 2016, Modellierung - Vernetzung - Visualisierung, Die Digital Humanities Als Fächerübergreifendes Forschungsparadigma, Konferenzabstracts</hi>
+                        . 124-130. DHd. Leipzip, Germany.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Muzny, F. et al.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2017). A Two-Stage Sieve Approach for Quote Attribution. In </hi>
+                        <hi rend="italic" style="font-size:11pt">In Proceedings of the 15th Conference of the European Chapter of the Association for Computation al Linguistics</hi>
+                        . Valencia, Spain: Association for Computational Linguistics, pp. 460–70.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Newell, C., Cowlishaw, T. and Man, D.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2018). Quote Extraction and Analysis for News. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of KDD Workshop on Data Science Journalism and Media (DSJM)</hi>
+                        . New York, NY, USA: Association for Computing Machinery.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">O’Keefe, T. et al.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2012). A Sequence Labelling Approach to Quote Attribution. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of the 2012 Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning</hi>
+                        . Jeju Island, Korea: Association for Computational Linguistics, pp. 790–9.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Pareti, S. et al.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2013). Automatically Detecting and Attributing Indirect Quotations. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing</hi>
+                        . Seattle, Washington, USA: Association for Computational Linguistics, pp. 989–99.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Schumacher, M. and Flüh, M.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2020). M*w Figurengender Zwischen Stereotypisierung Und Literarischen Und Theoretischen Spielräumen: Genderstereotypen Und -Bewertungen in Der Literatur Des 19. Jahrhunderts. In </hi>
+                        <hi rend="italic" style="font-size:11pt">DHd 2020, Spielräume, Digital Humanities Zwischen Modellierung Und Interpretation, Konferenzabstracts</hi>
+                        . Paderborn, Germany, pp. 162–6.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Sennrich, R., Volk, M. and Schneider, G.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2013). Exploiting Synergies between Open Resources for German Dependency Parsing, Pos-Tagging, and Morphological Analysis. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of the International Conference Recent Advances in Natural Language Processing RANLP 2013</hi>
+                        . Shoumen, Bulgaria: INCOMA Ltd, pp. 601–9.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Yeung, C. Y. and Lee, J.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2017). Identifying Speakers and Listeners of Quoted Speech in Literary Works. In </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of the Eighth International Joint Conference on Natural Language Processing</hi>
+                        . Taipei, Taiwan: Asian Federation of Natural Language Processing, pp. 325–9.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

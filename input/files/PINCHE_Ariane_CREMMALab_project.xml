@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">CREMMALab project</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Pinche</surname>
+                        <forename>Ariane</forename>
+                    </persName>
+                    <affiliation>Ecole nationale des chartes, France</affiliation>
+                    <email>ariane.pinche@chartes.psl.eu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T15:44:22.909562045</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>HTR</term>
+                    <term>medieval</term>
+                    <term>manuscript</term>
+                    <term>transcription</term>
+                    <term>data</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>data</term>
+                    <term>object</term>
+                    <term>and artefact preservation</term>
+                    <term>Humanities computing</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Within the infrastructure of the CREMMA project (Consortium for Handwriting Recognition of Ancient Materials) supported by the DIM (research funded by the Île-de-France Region) MAP (Ancient and Heritage Materials), the CREMMALab
+                <note xml:id="ftn1" place="foot" n="1"> Presentation project : &lt;
+                    <ref target="https://cremmalab.hypotheses.org/">https://cremmalab.hypotheses.org</ref>&gt;
+                </note> project combines research questions, creation and release of data from French medieval literary manuscripts for HTR (see the 
+                <hi rend="italic">cremma-medieval</hi> repository on Github : 
+                <ptr target="https://github.com/HTR-United/cremma-medieval"/>).
+            </p>
+            <p>The challenge of HTR is still to be taken up because of the great variety of writings, the poor readability, even for a human reader, of handwritten documents, whether due to the degradation of the source or the lack of homogeneity of the writing. Finally, the production of training data is extremely costly. However, the technical progress of the last few years in AI and neural networks allows us to produce data that significantly reduces manual work. In the Humanities, if some tools have emerged such as Transkribus (Kahle and al.), 2017) or Kraken (Kiessling, 2019) and its interface eScriptorium (Kiessling et al., 2019), developed at the EPHE, PSL university, we lack data on medieval documents to train performant models. So, producing training data is today a major issue.</p>
+            <p>The objective of the CREMMALab project is to propose open training data and HTR models for medieval documents. All data and models produced by the project are already available in the 
+                <hi rend="italic">cremma-medieval</hi> repository on HTR-united (Chagué et al., 2021). The CREMMALab project implements transcription protocols to optimize the training of HTR models and to eventually produce homogeneous and shareable data. As a first step towards the FAIR principles, through the 
+                <hi rend="italic">cremma-medieva</hi>l repository, we have set up some tools to ensure the citability, the durability and the quality of the data. Thus, data are described (language, date, type of document, transcription method, number of transcribed lines etc.). Then thanks to continuous integration tools, the compatibility of the XML data is checked (HTRUX), as well as the uniformity of the character sets used in the corpus (chocoMufin). Through the gathering of a corpus of medieval manuscripts, the learning process of the HTR algorithms is examined to evaluate the problems related to the constitution of training data: how to transcribe, handle abbreviations, segment words and so on. We also seek to determine thresholds of ground truth lines needed to meet quality goals, and also to evaluate the impact of the training corpus on the quality and genericity of the models.
+            </p>
+            <p>
+                <hi rend="italic">Bicerin</hi>, an HTR model for medieval French manuscripts, is already available. It has been trained on eleven manuscripts written between the 13
+                <hi rend="sup">th</hi> and 14
+                <hi rend="sup">th</hi> centuries in Gothic script (about 18400 transcribed lines, see table 1). Its accuracy (CER) on this corpus is 95.38 % (dev score). This generic model, which still needs to be improved produces predictions for similar out-of-domain sources (Chantilly, Bibliothèque du Château, ms. 734, 14
+                <hi rend="sup">e</hi> siècle) with an accuracy of 83 % (test score, see figure 1). A quick customization, requiring the addition of only two folios (336 transcribed lines) achieves an accuracy of 91 % (test score with the same sample as the first experiment, see figure 2). Most of the recognition problems come from specific difficulties due to the manuscript : word segmentation, distinction between 
+                <hi rend="italic">u</hi> and 
+                <hi rend="italic">n</hi>, abbreviations and reproduction quality. 
+            </p>
+            <p>The model can also be customized on a document which, at first sight, might seem incompatible with the training corpus. The manuscript codex 909 from the University of Pennsylvania was written in France at the end of the 15
+                <hi rend="sup">th </hi>century, or at the very beginning of the 16th century. It is written in 
+                <hi rend="italic">B</hi>
+                <hi rend="italic">âtarde </hi>(this script is a hybrid of the formal style with a cursive script). Applied directly, the model shows an accuracy of 80 % (test score, figure image 3). However, 
+                <hi rend="italic">Bicerin</hi> is very flexible, and with a customization from the addition of two folios (320 manually transcribed lines), we get an accuracy of 97 % (test score with the same sample as the precedent experience, see figure 4). The high recognition of this writing is certainly related to the regularity of the writing and the quality of the support and the reproduction, two criteria that seem to be more important for HTR than the type of writing. 
+            </p>
+            <p>In the future, we hope to increase the number and diversity of our training data to improve the genericity of the model and its robustness. We also hope to determine its breakpoints and to delimit contexts in which a generic model is enough and those in which it is relevant to create a personalization or another model from scratch.</p>
+            <div type="div1" rend="DH-Heading">
+                <head>Annexes </head>
+                <p>Table 1 : Cremma medieval corpus</p>
+                <table rend="frame" xml:id="Tableau1">
+                    <row>
+                        <cell>Manuscript</cell>
+                        <cell>Date</cell>
+                        <cell>Transcribed Lines</cell>
+                    </row>
+                    <row>
+                        <cell>BnF, ms fr. 17229</cell>
+                        <cell>13th</cell>
+                        <cell>161</cell>
+                    </row>
+                    <row>
+                        <cell>BnF, ms fr. 13496</cell>
+                        <cell>13th</cell>
+                        <cell>159</cell>
+                    </row>
+                    <row>
+                        <cell>BnF, ms fr. 411</cell>
+                        <cell>14th</cell>
+                        <cell>153</cell>
+                    </row>
+                    <row>
+                        <cell>BnF, Arsenal 3516</cell>
+                        <cell> 13th</cell>
+                        <cell>1991</cell>
+                    </row>
+                    <row>
+                        <cell>BnF, ms fr. 22549</cell>
+                        <cell>14th</cell>
+                        <cell>411</cell>
+                    </row>
+                    <row>
+                        <cell>BnF, ms fr. 24428</cell>
+                        <cell>13th</cell>
+                        <cell>1295</cell>
+                    </row>
+                    <row>
+                        <cell>BnF, ms fr. 412</cell>
+                        <cell>13th</cell>
+                        <cell>4551</cell>
+                    </row>
+                    <row>
+                        <cell>BnF, ms fr. 844 </cell>
+                        <cell>13th</cell>
+                        <cell>1026</cell>
+                    </row>
+                    <row>
+                        <cell>Cologny, bodmer, 168</cell>
+                        <cell>13th</cell>
+                        <cell>1927</cell>
+                    </row>
+                    <row>
+                        <cell>Vaticane, Reg. Lat., 1616</cell>
+                        <cell>14th</cell>
+                        <cell>1726</cell>
+                    </row>
+                </table>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/359c0f2694848406827a5e50a70396ed.png"/>
+                        <head>Bicerin model prediction on Chantilly, ms. 734</head>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/21158ae4228db59ff35bbfc3815da4a8.png"/>
+                        <head>Bicerin model prediction on Philadelphy, university of pennsylvania, ms codex 909</head>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/dc1b09947c8753bb7d50e5e2ca32629f.png"/>
+                        <head>Finetuned model prediction on Chantilly, ms. 734</head>
+                    </figure>
+                    <figure>
+                        <graphic url="Pictures/5c851d18b11de2f8c4325134fa123634.png"/>
+                        <head>Finetuned model prediction on Philadelphy, university of pennsylvania, ms codex 909</head>
+                    </figure>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Bulacu, M., &amp; Schomaker, L.</hi> (2007), “Automatic Handwriting Identification on Medieval Documents”, 
+                        <hi rend="italic">14th International Conference on Image Analysis and Processing (ICIAP)</hi>, 2007, 279‑284, &lt;https://doi.org/10.1109/ICIAP.2007.4362792&gt;.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Chagué, A., Clérice, T., &amp; Chiffoleau, F.</hi> (2021), 
+                        <hi rend="italic">HTR-United, a centralization effort of HTR and OCR ground-truth repositories mainly for French languages</hi>, &lt;https://github.com/HTR-United/htr-united&gt; (Original work published 2020)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Dome, S., &amp; Sathe, A. P</hi>. (2021), “Optical Charater Recognition using Tesseract and Classification”, 
+                        <hi rend="italic">International Conference on Emerging Smart Computing and Informatics (ESCI)</hi>, 2021, 153–158. 
+                        <ptr target="https://doi.org/10.1109/ESCI50559.2021.9397008"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fischer, A., Wuthrich, M., Liwicki, M., Frinken, V., Bunke, H., Viehhauser, G., &amp; Stolz, M.</hi> (2009). “Automatic Transcription of Handwritten Medieval Documents”, 
+                        <hi rend="italic">15</hi>
+                        <hi rend="sup italic">th</hi>
+                        <hi rend="italic"> International Conference on Virtual Systems and Multimedia</hi>, 2009, 137–142, &lt;https://doi.org/10.1109/VSMM.2009.26&gt;.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kahle, P., Colutto, S., Hackl, G., &amp; Mühlberger, G. </hi>(2017). “Transkribus—A Service Platform for Transcription, Recognition and Retrieval of Historical Documents”, 
+                        <hi rend="italic">14</hi>
+                        <hi rend="sup italic">th</hi>
+                        <hi rend="italic"> IAPR International Conference on Document Analysis and Recognition (ICDAR)</hi>, 2017, 4, 19–24, &lt;
+                        <ptr target="https://doi.org/10.1109/ICDAR.2017.307"/>&gt;.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kestemont, M., Christlein, V., &amp; Stutzmann, D.</hi> (2017), « Artificial Paleography: Computational Approaches to Identifying Script Types in Medieval Manuscripts. 
+                        <hi rend="italic">Speculum »</hi>, 92(S1), S86–S109. 
+                        <ptr target="https://doi.org/10.1086/694112"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kiessling, B.</hi> (2019), “Kraken—An Universal Text Recognizer for the Humanities”, 
+                        <hi rend="italic">DH2019</hi>, Utrecht, &lt;https://dev.clariah.nl/files/dh2019/boa/0673.html&gt;.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kiessling, B., Tissot, R., Stokes, P., &amp; </hi>
+                        <hi rend="bold">S</hi>
+                        <hi rend="bold">toekl, </hi>
+                        <hi rend="bold">D. </hi>(2019), “eScriptorium: An Open Source Platform for Historical Document Analysis”, 
+                        <hi rend="italic">International Conference on Document Analysis and Recognition Workshops (ICDARW)</hi>, 2019, 19–19, &lt;https://doi.org/10.1109/ICDARW.2019.10032&gt;.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pinche, A., &amp; Clérice, T. </hi>(2021), “HTR-United/cremma-medieval: 1.0.1 Bicerin (DOI)”, 
+                        <hi rend="italic">Zenodo,</hi> &lt;
+                        <ptr target="https://doi.org/10.5281/zenodo.5235186"/>&gt;.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ströbel, P. B., Clematide, S., &amp; Volk, M.</hi> (2020), « How Much Data Do You Need? About the Creation of a Ground Truth for Black Letter and the Effectiveness of Neural OCR », 
+                        <hi rend="italic">Proceedings of the 12th Language Resources and Evaluation Conference</hi>, 3551–3559. 
+                        <ptr target="https://aclanthology.org/2020.lrec-1.436"/>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

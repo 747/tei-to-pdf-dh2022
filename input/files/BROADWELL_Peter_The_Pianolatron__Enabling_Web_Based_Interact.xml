@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Pianolatron: Enabling Web-Based Interactive Performances of Digitized Player Piano Rolls</title>
+                <author>
+                    <persName>
+                        <surname>Abraham</surname>
+                        <forename>Vijoy</forename>
+                    </persName>
+                    <affiliation>Stanford University, United States of America</affiliation>
+                    <email>vijoy@stanford.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Arul</surname>
+                        <forename>Kumaran</forename>
+                    </persName>
+                    <affiliation>Stanford University, United States of America</affiliation>
+                    <email>karul2@stanford.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Barth</surname>
+                        <forename>George</forename>
+                    </persName>
+                    <affiliation>Stanford University, United States of America</affiliation>
+                    <email>barth@stanford.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Broadwell</surname>
+                        <forename>Peter</forename>
+                    </persName>
+                    <affiliation>Stanford University, United States of America</affiliation>
+                    <email>broadwell@stanford.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wiles</surname>
+                        <forename>Simon</forename>
+                    </persName>
+                    <affiliation>Stanford University, United States of America</affiliation>
+                    <email>simon.wiles@stanford.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Music Performance</term>
+                    <term>Interactivity</term>
+                    <term>MIDI</term>
+                    <term>IIIF</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Interface design</term>
+                    <term>development</term>
+                    <term>and analysis</term>
+                    <term>music and sound digitization</term>
+                    <term>encoding</term>
+                    <term>and analysis</term>
+                    <term>Musicology</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The Pianolatron (
+                <ref target="https://pianolatron.stanford.edu">
+                    <hi rend="color(1155CC)">pianolatron.stanford.edu</hi>
+                </ref>) is a web browser application developed by library-based researchers in collaboration with faculty principal investigators from the Department of Music. The project’s objective is to make the world’s largest library-based collection of digitized historical player piano rolls more fully accessible to scholars and the general public. The app plays a digitized roll based on data from an image pre-processing step that detects the positions of the punch holes on the roll and converts them into MIDI events, which the app then synthesizes into a musical performance in real time via high-fidelity piano sound samples. IIIF protocols facilitate synchronization of the audio playback with a scrolling animation of the high-resolution roll image served from a digital repository. Supplementary animated graphics of a piano keyboard and pedals as well as color-coded overlay visualizations on the rolls illustrate the effect of each perforation on the music that is heard during playback.
+            </p>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="12.22198611111111cm" url="Pictures/f2019d43c5fb2ee07178c63e22016f96.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left;">
+                <hi rend="bold" style="font-size:12pt">Figure 1.</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> The Pianolatron app playing a reproducing piano roll: the punch holes controlling dynamics and pedaling on the left and right margins of the roll are highlighted in green and orange, respectively, while the note perforations in the center of the roll are highlighted on a color scale to indicate the velocity with which the keys were struck (blue = soft, red = loud)</hi>
+            </p>
+            <p style="text-align: left;">“Reproducing” player piano rolls, which encode the expressive nuances of a live performance,  provide the most detailed remaining evidence of the performing practices of pianists and composers who were active in the nineteenth century; they were only superseded by advances in electronic sound recording and playback in the late 1920s. Rolls for the more common “pianola” player pianos, which could be found on every continent by the early twentieth century, enabled interactive performance of programmed piano tunes on a home console and are a key source of information about the popular tastes of the era.</p>
+            <p style="text-align: left;">
+                The academic and hobbyist communities who study piano rolls and players have produced other software tools to convert scanned piano roll images into playable MIDI files and to visualize some aspects of the roll playback process for certain rolls, but the Pianolatron is the first application able to run in a web browser on any modern computer or large tablet that can play back any scanned roll in synchrony with its image. Furthermore, the application provides controls for on-the-fly modification of roll speed (tempo), volume levels and pedaling, enabling interactive performance of a roll in the same manner as an early twentieth-century expert “pianolist”—a role and activity that was roughly equivalent in popularity and effect to modern DJing. For reproducing rolls, the app exposes even more fine-grained options to allow manipulation of the parameters of the physical/pneumatic expression systems originally used to encode and replay the musical details of a live performance. The workings of many of the systems that player piano companies developed to record in-studio performances by famous pianists for reproduction on piano rolls have been lost to history, so the ability to experiment with different settings within the app and immediately to hear (and see) their effects on the roll playback represents a major contribution to ongoing research into these topics.
+            </p>
+            <figure>
+                <graphic n="1002" width="15.910277777777777cm" height="12.453055555555556cm" url="Pictures/990c5f57bd0e160716e2dec455384c08.png" rend="inline"/>
+            </figure>
+            <p>
+                <hi rend="bold">Figure 2.</hi> A detailed view of the optional research-oriented visualizations the Pianolatron can display on a reproducing roll: the dark green curves represent the bass and treble velocity (volume) levels as calculated according to the expression punch holes that are highlighted in green on the left and right margins of the roll; these generally align well with the black “hand nuance” dynamics curves seen in the middle of the image, which were stenciled onto the roll when it was first printed in 1905
+            </p>
+            <p>The Pianolatron player app currently enables interactive playback of nearly 1,000 piano rolls, and this number will continue to increase as new rolls are scanned and added to the collection. The use of IIIF to access the roll images also means that the app potentially can play and visualize scanned piano rolls from any repository worldwide that makes its images available via IIIF. Furthermore, the modular design of the application’s source code and data files, which are fully available on Github (
+                <ref target="https://github.com/sul-cidr/pianolatron/">
+                    <hi rend="color(1155CC)">github.com/sul-cidr/pianolatron</hi>
+                </ref>), encourages contributions from external researchers.
+            </p>
+            <p>The Pianolatron application is written in the Svelte Javascript framework, which provides the modularity and support for multiple independent interactive components offered by popular frameworks such as React, Vue and Angular, while placing fewer computational demands on the web browser.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:12pt">Colmenares, G., et al.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2011). Computational Modeling of Reproducing Piano Rolls. </hi>
+                        <hi rend="italic" style="font-size:12pt">Computer Music Journal</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 35(1): 58–75.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:12pt">Nettheim, N.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2019). Overcoming Piano-Roll Limitations: Pachmann Plays Sabouroff’s Polka. </hi>
+                        <hi rend="italic" style="font-size:12pt">Music Performance Research</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 9: 128-161.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:12pt">Phillips, P.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2017). </hi>
+                        <hi rend="italic" style="font-size:12pt">Piano Rolls and Contemporary Player Pianos: The Catalogues, Technologies, Archiving and Accessibility</hi>
+                        . Ph.D. thesis, University of Sydney.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:12pt">Shi, Z., Arul, K., Smith, J.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2017). Modeling and Digitizing Reproducing Piano Rolls. </hi>
+                        <hi rend="italic" style="font-size:12pt">The 18th International Society for Music Information Retrieval Conference (ISMIR)</hi>
+                        . National University of Singapore, pp. 197-203.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <lb/>
+                        <hi rend="bold" style="font-size:12pt">Shi, Z., et al.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2019). SUPRA: Digitizing the Stanford University Piano Roll Archive. </hi>
+                        <hi rend="italic" style="font-size:12pt">The 20th International Society for Music Information Retrieval Conference (ISMIR)</hi>
+                        . Delft, Netherlands, pp. 517-523.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

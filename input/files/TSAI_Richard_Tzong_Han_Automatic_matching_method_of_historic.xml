@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Automatic matching method of historical event text with its corresponding thematic maps developed for the application of the ShiJi Spatio-Temporal Information Platform</title>
+                <author>
+                    <persName>
+                        <surname>Tsai</surname>
+                        <forename>Jung-Yi</forename>
+                    </persName>
+                    <affiliation>Center for GIS, Research Center for Humanities and Social Sciences, Academia Sinica, Taiwan</affiliation>
+                    <email>jungyitsai@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pai</surname>
+                        <forename>Pi-Ling</forename>
+                    </persName>
+                    <affiliation>Center for GIS, Research Center for Humanities and Social Sciences, Academia Sinica, Taiwan</affiliation>
+                    <email>lingpai@gate.sinica.edu.tw</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Liao</surname>
+                        <forename>Hsiung-Ming</forename>
+                    </persName>
+                    <affiliation>Center for GIS, Research Center for Humanities and Social Sciences, Academia Sinica, Taiwan</affiliation>
+                    <email>veevee@gate.sinica.edu.tw</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chen</surname>
+                        <forename>You-Jun</forename>
+                    </persName>
+                    <affiliation>Center for GIS, Research Center for Humanities and Social Sciences, Academia Sinica, Taiwan; Department of Mathematics, University of California, Los Angeles, CA, USA</affiliation>
+                    <email>naomichen.yj@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tsai</surname>
+                        <forename>Richard Tzong-Han</forename>
+                    </persName>
+                    <affiliation>Center for GIS, Research Center for Humanities and Social Sciences, Academia Sinica, Taiwan; Department of Computer Science and Information Engineering, National Central University, Taiwan</affiliation>
+                    <email>thtsai@g.ncu.edu.tw</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fan</surname>
+                        <forename>I-Chun</forename>
+                    </persName>
+                    <affiliation>Institute of History and Philology, Academia Sinica, Taiwan</affiliation>
+                    <email>mhfanbbc@ccvax.sinica.edu.tw</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>TF-IDF</term>
+                    <term>Consine Similarity</term>
+                    <term>Relevance of Map to Documents</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>information retrieval and querying algorithms and methods</term>
+                    <term>text mining and analysis</term>
+                    <term>Computer science</term>
+                    <term>Geography and geo-humanities</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; text-align: justify;">The powerful data integration function of the spatio-temporal information technology has gradually been affirmed for its importance in the historical research and application of digital humanities under the establishment of a large number of digital historical text archives. Since spatio-temporal information is an important attribute of historical events, and historical maps are important carriers for presenting historical events, after extracting thematic events from historical texts, various thematic event maps can be generated based on the place name database and basic digital historical maps of Chinese Civilization in Time and Space (CCTS) (Academia Sinica, 2002). In addition, we can construct a thematic spatio-temporal platform to integrate and present event text with its corresponding maps.</p>
+            <p style="text-align: left; text-align: justify;">The ShiJi Spatio-Temporal Information Platform is an integrated system of thematic historical maps and texts to present the historical events recorded in Records of the Grand Historian (Chinese name ShiJi) (Jung-Yi Tsai et al., 2021). The original data on the platform is mainly based on the dataset compiled by Historian Professor Panqing Xu, with a total of 1,260 historical events and 360 thematic maps (Xu, P. -Q., 2010). There is a one-to-many relationship between the text and the maps, and after the initial manual comparison, there are still about 760 historical events that cannot be clearly related to the thematic maps. Therefore, we designed a set of preprocessing procedures and algorithms for automatically sorting applicable maps to match historical events with the thematic maps.</p>
+            <p style="text-align: left; text-align: justify;">There are two parts to preprocessing. First, we define the spatial scope of the historical event using the coordinates of place names in the event text, and evaluate the proportion of the place name coordinates of the historical event covered in the thematic maps, so as to quickly filter out irrelevant maps. The spatial overlap ratio of the event and the map is set to 0.8, that is, the thematic map where more than 80% of the place names of an event is located will be considered valid. Another preprocessing is to use the OCR tool (Rakpong Kittinaradorn, 2020) to extract the text annotations in the thematic maps for the subsequent matching algorithms.</p>
+            <p style="text-align: left; text-align: justify;">In the automatic map matching algorithms designed in this research, the first step is to extract the place names in the text and the map based on the CCTS place name database; the second is to convert the place names in the text and the map into TF-IDF vector (Kim and Gil, 2019), and then calculate the cosine similarity to find the maps that overlap with the main location of the historical event. The third step is to convert the place names in the text and the map into one-hot vector, and then calculate the cosine similarity of the place name distribution, so as to improve the appearance of the place names appearing on the map; finally, we integrate the cosine similarity of the place names from the map and the text to sort the applicable maps.</p>
+            <p style="text-align: left; text-align: justify;">From the dataset processed above, we select some examples with more spatial attributes to perform mean reciprocal rank ( MRR ) (Valcarce et al., 2020) experimental calculation, such as the “Appointing Pei Gong to Attack the West” in the Battle of Julu (207 BC), and the “Xiang Yu Marching to Xi” in the Hongmen Banquet (206 BC). The MRR calculated in this way is close to 80%. Through experiments, we also discovered some interesting spatio-temporal characteristics of historical events. For example, for the automatic map matching algorithms of the event “Appointing Pei Gong to Attack the West”'' in the Battle of Julu, thematic maps with the same attack direction and route were found.</p>
+            <p style="text-align: left; text-align: justify;">The automatic matching framework between the historical event text and the corresponding thematic map developed in this research has been implemented in ShiJi. In the future, it is expected to be further applied to the automatic linking of various historical texts and historical maps, to continuously improve the structure of this research, and to explore related research topics.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Academia Sinica</hi> (2002). 
+                        <hi rend="italic">Chinese Civilization in Time and Space (CCTS)</hi>. 
+                        <ref target="https://ctext.org/static/shanghai2018/liaohsiungming-geohumanities.pptx">https://ctext.org/static/shanghai2018/liaohsiungming-geohumanities.pptx</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Jung-Yi Tsai, Pi-Ling Pai, Hsiung-Ming Liao, You-Jun Chen, Richard Tzong-Han Tsai, and I-Chun Fan</hi> (2021). Construction of ShiJi Spatiotemporal Information Platform on the Framework of Research-oriented Knowledge Bases. 
+                        <hi rend="italic">JADH 2021</hi>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kim, S.-W. and Gil, J.-M.</hi> (2019). Research paper classification systems based on TF-IDF and LDA schemes. 
+                        <hi rend="italic">Human-Centric Computing and Information Sciences</hi>, 
+                        <hi rend="bold">9</hi>(1). Springer: 1–21.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rakpong Kittinaradorn</hi> (2020). 
+                        <hi rend="italic">EasyOCR</hi>. 
+                        <ref target="https://github.com/JaidedAI/EasyOCR">https://github.com/JaidedAI/EasyOCR</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Valcarce, D., Bellogín, A., Parapar, J. and Castells, P.</hi> (2020). Assessing ranking metrics in top-N recommendation. 
+                        <hi rend="italic">Information Retrieval Journal</hi>, 
+                        <hi rend="bold">23</hi>(4). Springer: 411–48.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Xu, P. -Q.</hi> (2010). 
+                        <hi rend="italic">Atlas of ShiJi</hi>. Beijing: Seismological Press.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Machines Reading Maps: from text on maps to linked spatial data</title>
+                <author>
+                    <persName>
+                        <surname>Chiang</surname>
+                        <forename>Yao-Yi</forename>
+                    </persName>
+                    <affiliation>University of Minnesota</affiliation>
+                    <email>yaoyi@umn.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Holmes-Wong</surname>
+                        <forename>Deborah</forename>
+                    </persName>
+                    <affiliation>University of Southern California</affiliation>
+                    <email>dhwong@usc.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kim</surname>
+                        <forename>Jina</forename>
+                    </persName>
+                    <affiliation>University of Minnesota</affiliation>
+                    <email>kim01479@umn.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Li</surname>
+                        <forename>Zekun</forename>
+                    </persName>
+                    <affiliation>University of Minnesota</affiliation>
+                    <email>li002666@umn.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>McDonough</surname>
+                        <forename>Katherine</forename>
+                    </persName>
+                    <affiliation>The Alan Turing Institute</affiliation>
+                    <email>kmcdonough@turing.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Simon</surname>
+                        <forename>Rainer</forename>
+                    </persName>
+                    <affiliation>Austrian Institute of Technology</affiliation>
+                    <email>rainer.simon@ait.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vitale</surname>
+                        <forename>Valeria</forename>
+                    </persName>
+                    <affiliation>The Alan Turing Institute</affiliation>
+                    <email>vvitale@turing.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T20:31:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>MachineLearning</term>
+                    <term>LOD</term>
+                    <term>annotation</term>
+                    <term>geography</term>
+                    <term>antiquities</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>BCE-4th Century</term>
+                    <term>5th-14th Century</term>
+                    <term>19th Century</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>Geography and geo-humanities</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: justify;">Maps constitute a significant body of global cultural heritage, and the number of digitized maps is only growing. However, the lack of metadata makes the right maps hard to find: the content of many collections therefore remains opaque to researchers and the general public alike. In this paper, we discuss a digital workflow to create machine-readable data from text on maps, both as a means to make cartographic collections more accessible and interconnected, and as a source of unique historical, geographical and anthropological information.</p>
+            <p style="text-align: justify;">Usually, critical investigation of maps continues on a small scale,  through the close ‘reading’ of a few items. Digitisation has brought attention to place names featured on historical maps as well as other textual labels that represent a key source for analyzing ‘platial’ knowledge. But how can we create large-scale datasets and systematically explore that information? </p>
+            <p style="text-align: justify;">Projects like 
+                <hi rend="italic">GB1900</hi> or the National Library of Scotland’s 
+                <ref target="https://maps_transcription_nls.mailchimpsites.com/">
+                    <hi rend="color(1155CC)">Map Transcription Projects</hi>
+                </ref> use volunteers to transcribe words printed on maps (Aucott &amp; Southall 2019). Such efforts are resource intensive and hardly scalable. At the same time, the graphic style of historical maps presents a number of challenges that have hindered automatic recognition of text on maps. 
+                <hi rend="italic" xml:space="preserve">Machines Reading Maps </hi>(MRM) has been working to address these issues by improving and extending existing technologies, and applying standards and best practice to make our outputs FAIR (findable, accessible, interoperable, reusable). 
+            </p>
+            <p style="text-align: justify;">Setting aside the artificial opposition between manual and automatic annotation as mutually exclusive modes of working with maps, MRM’s workflow explores what can be gained from their interaction. We integrate a custom version of the annotation platform 
+                <hi rend="italic">Recogito</hi> (Vitale et al., 2021) with 
+                <hi rend="italic">mapKurator</hi>, a machine learning (ML) pipeline for automatic text detection and entity linking (Li et al., 2020). 
+                <hi rend="italic">MapKurator</hi> suggests an initial set of text-bounding polygons, and users can accept, edit or delete these suggestions in 
+                <hi rend="italic">Recogito</hi>. Further bespoke 
+                <hi rend="italic">Recogito</hi> features enable one to capture a) how labels interact with each other and with visual elements (like colors and icons), and b) what semiotic functions labels perform (e.g. locative or complementary) (
+                <hi rend="color(222222)">Schlichtmann, 2018)</hi>. Structured data produced through this “deep annotation” are used to analyze geo-historical issues like industrialisation (Hosseini et al. 2021). Manually-annotated text data from maps may provide training data to improve and evaluate ML methods, but they also function as valuable datasets in their own right, particularly for smaller map corpora that can be annotated without recourse to ML. 
+            </p>
+            <p style="text-align: justify;">Using our ML approach we predict 1) the 
+                <hi rend="italic">type</hi> of content map text describes (i.e. roads, buildings, mountains) and, for unique features, 2) links in knowledge bases such as gazetteers or Wikidata. Through this process, we unlock the potential for users to find and interpret maps by the thousands based on search by semantic types. Using the links to specific instances of places, cultural institutions can feed this data back into their catalogs to document and study the geographical coverage of their collections. One could also explore differences between existing metadata and reported locations of map labels. 
+            </p>
+            <p style="text-align: justify;">In a historical research case study, we use this method to analyze labels on large-scale British Ordnance Survey (OS) maps, investigating attitudes towards historical sites during the nineteenth-century (Fleet 2011), how maps communicate national historical narratives, and the fabrication of a common idea of “The Past” (Eggert 2009). Combining manual and automatic annotation provides rich information about the distribution of historical sites as types of places. Text data (including its location, spelling, fonts, and classifications) about historical sites enrich our understanding of the ways that early OS maps represented certain periods (Anglo-Saxon, Roman or Medieval). A diachronic analysis of the text labels offers initial answers about patterns in national-scale coverage of these cartographic features and prompts further questions about the historical, social, and cultural dynamics influencing the inclusion of antiquities on OS maps and their reception among the public.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-size:10pt">Aucott, P., &amp; Southall, H.</hi>
+                        <hi rend="color(222222)" style="font-size:10pt" xml:space="preserve"> (2019). Locating past places in Britain: creating and evaluating the GB1900 Gazetteer. </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">International Journal of Humanities and Arts Computing</hi>
+                        <hi rend="color(222222)" style="font-size:10pt" xml:space="preserve">, </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">13</hi>
+                        <hi rend="color(222222)" style="font-size:10pt">(1-2), 69-94.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-size:10pt" xml:space="preserve">Eggert, P. </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">(2009). Securing the past: conservation in art, architecture and literature.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-size:10pt">Fleet, C.</hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt" xml:space="preserve"> (2011). Guest Editorial: Mapping and Antiquities in Scotland. Scottish Geographical Journal, 127(2), 85-86.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-size:10pt">Li, Z., Chiang, Y. Y., Tavakkol, S., Shbita, B., Uhl, J. H., Leyk, S., &amp; Knoblock, C. A.</hi>
+                        <hi rend="color(222222)" style="font-size:10pt" xml:space="preserve"> (2020, August). An Automatic Approach for Generating Rich, Linked Geo-Metadata from Historical Map Images. In </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery &amp; Data Mining</hi>
+                        <hi rend="color(222222)" style="font-size:10pt" xml:space="preserve"> (pp. 3290-3298).</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-size:10pt">Hosseini, K., McDonough, K., van Strien, D., Vane, O., &amp; Wilson, D. C.</hi>
+                        <hi rend="color(222222)" style="font-size:10pt" xml:space="preserve"> (2021). Maps of a nation? the digitized ordnance survey for new historical research. </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">Journal of Victorian Culture</hi>
+                        <hi rend="color(222222)" style="font-size:10pt" xml:space="preserve">, </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">26</hi>
+                        <hi rend="color(222222)" style="font-size:10pt">(2), 284-299.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-size:10pt" xml:space="preserve">Schlichtmann, H. </hi>
+                        <hi rend="color(222222)" style="font-size:10pt" xml:space="preserve">(2018). Background to the semiotic study of maps. </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">meta-carto-semiotics</hi>
+                        <hi rend="color(222222)" style="font-size:10pt" xml:space="preserve">, </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">11</hi>
+                        <hi rend="color(222222)" style="font-size:10pt">(1), 1-12.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-size:10pt">Vitale, V., Soto, P. D., Simon, R., Barker, E., Isaksen, L., &amp; Kahn, R.</hi>
+                        <hi rend="color(222222)" style="font-size:10pt" xml:space="preserve"> (2021). Pelagios–Connecting Histories of Place. Part I: Methods and Tools. </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">International Journal of Humanities and Arts Computing</hi>
+                        <hi rend="color(222222)" style="font-size:10pt" xml:space="preserve">, </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">15</hi>
+                        <hi rend="color(222222)" style="font-size:10pt">(1-2), 5-32.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

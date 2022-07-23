@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>EthicsBot: Provoking Ethical Reflection on AI</title>
+                <author>
+                    <persName>
+                        <surname>Mousavi</surname>
+                        <forename>Emad</forename>
+                    </persName>
+                    <affiliation>University of Alberta, Canada</affiliation>
+                    <email>emousavi@ualberta.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Verdini</surname>
+                        <forename>Paolo</forename>
+                    </persName>
+                    <affiliation>University of Alberta, Canada</affiliation>
+                    <email>verdini@ualberta.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wang</surname>
+                        <forename>Jingwei</forename>
+                    </persName>
+                    <affiliation>University of Alberta, Canada</affiliation>
+                    <email>jingwei2@ualberta.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Barnard</surname>
+                        <forename>Sara</forename>
+                    </persName>
+                    <affiliation>University of Alberta, Canada</affiliation>
+                    <email>sbarnard@ualberta.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Rockwell</surname>
+                        <forename>Geoffrey</forename>
+                    </persName>
+                    <affiliation>University of Alberta, Canada</affiliation>
+                    <email>grockwel@ualberta.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-06-07T04:17:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Artificial Intelligence</term>
+                    <term>Ethics</term>
+                    <term>Chatbot</term>
+                    <term>EthicsBot</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>Humanities computing</term>
+                    <term>Philosophy</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>A conversational agent (chatbot) is an artificial intelligent software which can simulate a conversation with a user in natural language. With the rapid advances of technology especially in the field of artificial intelligence, chatbots are becoming ever more present in our everyday lives often with a focus on being more and more human-like and assisting their users in everyday activities. In this paper, we will present the EthicsBot project that developed a set of chatbots meant to provoke reflection on the ethics of AI by generating provocative ethical statements in response to input. Our paper will consist of a combination of reflections on how a tool might do ethics and demonstrations of the experimental chatbots developed. In particular we will:</p>
+                <list rend="bulleted">
+                    <item>We will start by reflecting on what it means to build tools to assist in ethics.</item>
+                    <item>Then we will demonstrate two versions of the EthicsBot that we built.</item>
+                    <item>Finally we will discuss how we are assessing the output of the EthicsBot.</item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Reflections on AI ethics</head>
+                <p>As the title of Mittelstadt 2019 paper argues, 
+                    <hi rend="Quote_Char">"Principles alone cannot guarantee ethical AI."</hi> He and others have documented the explosion of AI Ethics principles published by different types of organizations over the last years. These range from those published by Google after the Google Duplex controversy (Griffin, 2018) to the Rome Call on AI Ethics (Rome Call For AI Ethics, 2021). 
+                </p>
+                <p>The genesis of the EthicsBot was an experiment with training a machine with all these sets of AI ethics principles to see whether it might generate provocative new statements following the playful example of Janelle Shane of AI Weirdness (Shane, 2018). Our thinking was that an interface that generated statements based on a seed issue would help the user reflect on that issue much as various thinking tools (De Bono 2015, Ramsay 2011) purport to do. The underlying assumption is that an important part of getting beyond principle to doing ethics is the thinking through of different positions or statements about an ethical issue. Even if the responses were random, bordering on nonsensical, at times the human tendency to make sense (Fyfe, et al, 2008) would benefit the person seeking to think something through. In fact, an AI that was not perfect would itself be an advantage as it would illustrate for the interlocutor the puzzling inconsistency of machine learning. This raised the question of how would we know if the answers generated were, in fact, provocative of reflection, grammatical or not?</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Speculative interfaces</head>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="7.538861111111111cm" url="Pictures/28581174d558355f358cf55974f5c27c.png" rend="inline"/>
+                </figure>
+                <p>In order to train an ethics bot we used a list of AI ethics principles in Hagendorff (Hagendorff, 2020) and Mittelstadt (Mittelstadt, 2019) to gather a corpus. Finding this dataset rather dry we added a second collection of open source “giant brain” type science fiction novels from the Internet Archive. In the presentation we will show two different interfaces we developed. The first was meant as a public web site (a demo of which could be  reached here: https://www.youtube.com/watch?v=vDIMDAInPy8) where users could enter a seed, generate statements, and then select those to keep in a public transcript. The second is a Google Colab notebook that exposes the code so that others can adapt the code. In the end the best results came from the chatbot that used the Generative Pre-trained Transformer 2 -  GPT-2 -  (GPT-2, 2019) model and our texts on ethics in artificial intelligence. We will review how the code works and go over some of the typical responses it generates depending on the input.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>What is in a provocation?</head>
+                <p>We will then return to a variant of our earlier question: can the EthicsBot provoke ethical thought? To explore this question, we are now curating a set of responses and have asked a panel of experts in the field of ethics in artificial intelligence to assess the responses generated by the EthicsBot based using a rubric similar to what would be used for assessing responses of undergraduate philosophy students in an ethics course. The idea is to compare the responses of the ethics bot to short answer exam questions of the sort “Discuss whether AIs should be regulated?” In principle, if the EthicsBot can approximate an undergraduate quick answer to a seed issue, then it should be capable of responses that could further a user’s ethical thinking. What, however, are we assuming about the doing of ethics?  </p>
+                <p>We will conclude the paper by sharing a compilation of the expert panel’s assessments of the EthicsBot’s responses and their reflections on the usefulness of the chatbot. A sample of how we are gathering the responses from our panel of experts can be reached here: 
+                    <ref target="https://forms.gle/TRVx43awwYAwaVKBA">
+                        <hi rend="color(1155CC)">https://forms.gle/TRVx43awwYAwaVKBA</hi>
+                    </ref> 
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <anchor xml:id="Hlk105018252"/>
+                        <hi rend="bold">Bono, D. E.</hi> (2015). 
+                        <hi rend="italic">Lateral Thinking: Creativity Step by Step</hi> (Reissue ed.). Harper Colophon.
+                    </bibl>
+                    <bibl>
+                        <anchor xml:id="Hlk105018285"/>
+                        <hi rend="bold" xml:space="preserve">Fyfe, S., Williams, C., Mason, O., &amp; Pickup, G. </hi>(2008). Apophenia, theory of mind and schizotypy: Perceiving meaning and intentionality in randomness. 
+                        <hi rend="italic">Cortex</hi>, 
+                        <hi rend="italic">44</hi>(10), 1316-1325. doi: 10.1016/j.cortex.2007.07.009
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Griffin, A. </hi>(2018). 
+                        <hi rend="italic">Google Duplex: Why people are so terrified by new human-sounding robot assistant</hi>. The Independent. https://www.independent.co.uk/life-style/gadgets-and-tech/news/google-duplex-why-explained-controversy-objections-ai-artificial-intelligence-robot-a8347566.html
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">GPT-2: 1.5B Release. </hi>(2019). Retrieved 5 December 2021, from https://openai.com/blog/gpt-2-1-5b-release/
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Hagendorff, T. </hi>(2020). The Ethics of AI Ethics: An Evaluation of Guidelines. 
+                        <hi rend="italic">Minds and Machines</hi>, 
+                        <hi rend="italic">30</hi>(1), 99–120. https://doi.org/10.1007/s11023-020-09517-8
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Mittelstadt, B. </hi>(2019). "Principles alone cannot guarantee ethical AI." 
+                        <hi rend="italic">Nature Machine Intelligence.</hi> 1: 501-507.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Ramsay, S. </hi>(2011). 
+                        <hi rend="italic">Reading Machines: Toward an Algorithmic Criticism (Topics in the Digital Humanities)</hi> (1st ed.). University of Illinois Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Rome Call For AI Ethics. </hi>(2021). Retrieved 18 November 2021, from https://www.romecall.org/
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Shane, J. </hi>(2018). Opinion | Ruth Bader Hat Guy? Let Our Algorithm Choose Your Halloween Costume (Published 2018). Retrieved 11 December 2021, from https://www.nytimes.com/interactive/2018/10/26/opinion/halloween-spooky-costumes-machine-learning-generator.html
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

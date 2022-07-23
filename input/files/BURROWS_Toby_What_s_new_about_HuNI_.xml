@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>What’s new about HuNI?</title>
+                <author>
+                    <persName>
+                        <surname>Burrows</surname>
+                        <forename>Toby</forename>
+                    </persName>
+                    <affiliation>University of Oxford, United Kingdom; University of Western Australia</affiliation>
+                    <email>toby.burrows@uwa.edu.au</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Verhoeven</surname>
+                        <forename>Deb</forename>
+                    </persName>
+                    <affiliation>University of Alberta</affiliation>
+                    <email>deb.verhoeven@ualberta.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-16T17:10:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Knowledge graphs</term>
+                    <term>Data linkage</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Australia/Oceania</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>curricular and pedagogical development and analysis</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>Feminist studies</term>
+                    <term>Gender and sexuality studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Over the past ten years, humanities researchers in Australia have established a large interconnected database of cultural information and used it to create detailed networks of relationships between the people, places and objects it describes. This aggregated knowledge base is called the Humanities Network Infrastructure (HuNI — “honey”): 
+                <ref target="https://huni.net.au/">https://huni.net.au/</ref> There are nearly eighteen million nodes in the HuNI knowledge graph, drawn from thirty-three data sources which reflect the perspectives of different disciplines across the humanities and creative arts with new data sources being added each year. HuNI uses the neo4j graph database software to create and manage its knowledge graph. 
+            </p>
+            <p style="text-align: left; ">Using HuNI is not just a matter of exploring the knowledge graph through filtering and browsing. Users can actively create links between nodes, assemble nodes into personal collections, and download these collections for use in other environments. HuNI collections are a form of categorization or classification which feeds back into the graph itself. There is no prescribed ontology or taxonomy for categorizing entities; users can invent their own approach and share it with others. Among the 180 public collections constructed so far are some based around specific people (“James Cassius Williamson 1870-1913: networks and connections”), some based on specific places (“Efate”, in the New Hebrides), and some based on themes and topics: “Blast Si(gh)te: bodies in time-space” – a collection of entities related to the effect of nuclear testing on indigenous people in Outback South Australia in the 1950s – and “Australian fashion 1850-1950”.</p>
+            <p style="text-align: left; ">HuNI has been designed to support the underlying precepts of humanities research, especially complexity, contestation, and connection. Multiple interpretations of relationships – including conflicting ones – can be represented. Connections do not have to be “right” or “authoritative”, or even logical. User-generated links can be as creative and complex and nuanced and contrary as the multitude of HuNI users themselves. HuNI also encourages other users to contest these links and provide alternative interpretations of how entities are connected. </p>
+            <p style="text-align: left; ">This poster presents and demonstrates several recent important developments which extend and transform HuNI in significant new ways. A CSV upload feature enables HuNI users to contribute new nodes to the HuNI knowledge graph. Previously, users have only been able to create links between existing nodes, but now they will able to add collections of nodes as well. This will significantly enhance the ability of users to shape the HuNI knowledge graph and to express their own perspectives in it.</p>
+            <p style="text-align: left; ">From 2022, Canadian data will begin to appear alongside the existing Australian data. This will enable links and connections to be made between the knowledge of two countries which share a common British colonial past (Donaghy 1995), and in which the indigenous knowledge of Canadian First Nations and Australian Aboriginal and Torres Strait Islander peoples is of comparable importance (Smith 2021). </p>
+            <p style="text-align: left; ">Programmes at several universities including University of Melbourne and University of Technology Sydney (UTS) have recently been developed for using HuNI in teaching relational approaches in digital historical research. At the University of Alberta, HuNI is used within courses offered to students of Digital Humanities, Women’s and Gender Studies, and Library and Information Science to understand how data and power are mutually implicated, especially when data is integrated, exchanged and interoperated (Posner 2015). Using HuNI, students experiment with vernacular ontologies to explore how the relational capacity of data might also play a role in social change. </p>
+            <p style="text-align: left; ">There are very few experimental humanities tools that have survived for ten years, as HuNI has. This is especially significant since the more that users contribute to the HuNI knowledge graph the greater the value of the application. HuNI enables researchers to both browse and create knowledge — through a combination of human- and system-generated “connections”. To this vision HuNI also contributes the additive nature of graph databases in which new kinds of relationships can be proposed and included without disrupting the overall functionality of the knowledge base. The HuNI knowledge graph is designed for the kind of information “meandering” and serendipitous encounters which are at the heart of humanities research (Verhoeven 2016). The latest enhancements reinforce these design goals, while greatly extending HuNI’s reach into the international user community.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Donaghy, G.</hi> (1995). 
+                        <hi rend="italic">Parallel Paths: Canada-Australian Relations since the 1890s</hi>. Ottawa: Historical Section, Department of Foreign Affairs and International Trade.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Posner, M.</hi> (2015). The radical potential of the Digital Humanities: the most challenging computing problem is the interrogation of power. 
+                        <hi rend="italic">The Impact Blog, The London School of Economics and Political Science</hi>, 
+                        <ref target="http://blogs.lse.ac.uk/impactofsocialsciences/2015/08/12/the-radical-unrealizedpotential-of-digital-humanities/">http://blogs.lse.ac.uk/impactofsocialsciences/2015/08/12/the-radical-unrealizedpotential-of-digital-humanities/</ref> (accessed 16 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Smith, L. T.</hi> (2021). 
+                        <hi rend="italic">Decolonizing Methodologies: Research and Indigenous Peoples</hi>. 3rd ed. London: Bloomsbury.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Verhoeven, D.</hi> (2016). As luck would have it: serendipity and solace in digital research infrastructure. 
+                        <hi rend="italic">Feminist Media Histories,</hi> 2(1): 7–28.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

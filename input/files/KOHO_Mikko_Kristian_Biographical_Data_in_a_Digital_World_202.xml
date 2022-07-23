@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Biographical Data in a Digital World 2022 (BD 2022) Workshop</title>
+                <author>
+                    <persName>
+                        <surname>Daza</surname>
+                        <forename>Angel</forename>
+                    </persName>
+                    <affiliation>Vrije Universiteit Amsterdam, The Nethelands</affiliation>
+                    <email>j.a.dazaarevalo@vu.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fokkens</surname>
+                        <forename>Antske</forename>
+                    </persName>
+                    <affiliation>Vrije Universiteit Amsterdam, The Nethelands; Eindhoven University of Technology, The Nethelands</affiliation>
+                    <email>antske.fokkens@vu.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hadden</surname>
+                        <forename>Richard</forename>
+                    </persName>
+                    <affiliation>Austrian Academy of Sciences, Austria</affiliation>
+                    <email>richard.hadden@oeaw.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hyvönen</surname>
+                        <forename>Eero</forename>
+                    </persName>
+                    <affiliation>Aalto University, Finland; Helsinki Centre for Digital Humanities (HELDIG), University of Helsinki, Finland</affiliation>
+                    <email>eero.hyvonen@aalto.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Koho</surname>
+                        <forename>Mikko</forename>
+                    </persName>
+                    <affiliation>Aalto University, Finland</affiliation>
+                    <email>mikko.koho@aalto.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wandl-Vogt</surname>
+                        <forename>Eveline</forename>
+                    </persName>
+                    <affiliation>Ars Electronica Research Institute, Austria; Austrian Academy of Sciences, Austria</affiliation>
+                    <email>eveline.wandl-vogt@oeaw.ac.at</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T13:34:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>biographies</term>
+                    <term>prosopography</term>
+                    <term>history</term>
+                    <term>entity reconciliation</term>
+                    <term>data analysis</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>digital biography</term>
+                    <term>personography</term>
+                    <term>and prosopography</term>
+                    <term>natural language processing</term>
+                    <term>Computer science</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Biographical and prosopographical (Verboven et al., 2007) data are invaluable sources for historical research as they provide us with essential information on thousands of historical figures: from the cultural heroes of a nation to the many thousands of other significant, yet lesser-known figures who were influential in domains such as the arts, politics, humanities, or natural sciences. Their historical life paths can provide crucial context for tangible heritage objects, which have been created, owned, or influenced by historical actors, or which depict or refer to them. The events of individual biographies can further be aggregated into (histories of) larger contextual composites: groups (e.g., guilds, family histories), institutions (e.g., art schools, universities, religious orders, political movements, companies) and regional entities (from cities to whole countries).</p>
+            <p>Computational analysis of biographies has opened up new and interesting research directions (Warren, 2018; Fokkens et al., 2017; Tamper et al., 2022). Individuals share common characteristics that can be relatively easily identified and used for information retrieval and data analysis, such as date of birth, occupation, social networks, and locations. Tools and approaches from the digital humanities can be used for both quantitative analyses of such data and for providing leads for more qualitative research questions. New methods of spatial analysis may result in new research questions.</p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Workshop Goals</head>
+                <p>This workshop has two main goals. First, previous events on biographical data and digital humanities have revealed that groups working in this domain have different strengths. Though many groups bring researchers from different domains together, some groups mainly consist of domain experts with a lot of knowledge of history, library studies or literature. Other teams are primarily made up of researchers specialized in automatic analysis, formal modeling or visualization. Bringing these groups together increases insights for both types of groups. Technical experts contribute insights on best practices to deal with typical challenges of the domain. Domain experts on what analyses they need, which potential technological challenges are problematic for their research questions and which are not. Second, there is keen interest in cross-national research on biographical information. Most resources are national resources and though many are open, sharing information also means understanding each other’s data representation, linking related information, etc.</p>
+                <p>The
+                    <hi rend="italic" xml:space="preserve"> Biographical Data Workshop: modeling, sharing and analyzing people’s lives </hi>held at Digital Humanities 2016 in Krakow led to valuable steps on both these points. Among others, the first steps were made that ultimately led to active international collaboration (e.g., the InTaVia project: 
+                    <ref target="https://intavia.eu/">https://intavia.eu/</ref>). Our motivation for organizing this follow-up is two-fold. First, the advances of methods and availability of new resources in the last six years leads us to expect that new interactive sessions of knowledge exchange will have the same beneficiary effect as previous events. Second, the workshop and 
+                    <hi rend="italic" xml:space="preserve">Biographical Data in a Digital World </hi>conference series were, in terms of participants, rather European centric with some participants from America. It is our hope that a workshop at the current location will strengthen connections with researchers from Asia. In addition to the general increase of the network of expertise in this domain, steps towards connecting resources for Asia would open new horizons for new comparative research.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Workshop Organization</head>
+                <p>The workshop will be divided into three sessions. </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Preliminary schedule</head>
+                    <list rend="numbered">
+                        <item>(morning) The participating researchers get the chance to present their work. Depending on the number of submissions, this will be done through (short) presentations or in two poster sessions (where we aim to schedule posters of researchers of existing networks in the same session, to increase options for new connections). </item>
+                        <item>(afternoon) The session consists of two interactive themed sessions. In the first round, we have technically oriented themes (data linking and sharing, data analysis and data visualization), where technical experts meet with various domain experts. In the second round, sessions are organized around use cases from the humanities, where humanity scholars meet with a team with different technical expertise.</item>
+                        <item>(afternoon) Work groups will share their insights from the interactive sessions with the rest of the participants.</item>
+                    </list>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Submissions, proceedings, and workshop participation</head>
+                    <p>We solicit abstract submissions for the poster session through its own call for participation. Possibilities of peer-reviewed proceedings based on the workshop will be discussed with participants during the workshop.</p>
+                    <p>The contributions will be submitted through the main conference ConfTool system: 
+                        <ref target="https://www.conftool.pro/dh2022/">https://www.conftool.pro/dh2022/</ref>.
+                        <lb/>At least one author of each paper needs to register to the DH 2022 conference in order to participate in the workshop. The workshop is open for all conference participants. We reach out for close collaboration with the ADHO Geohumanities SIG (
+                        <ref target="https://geohumanities.org/">https://geohumanities.org/</ref>). 
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Logistics</head>
+                    <div type="div3" rend="DH-Heading3">
+                        <head>Important dates</head>
+                        <list rend="bulleted">
+                            <item>March 4: Call for abstracts and requests for participation </item>
+                            <item>April 14: Deadline for abstracts </item>
+                            <item>April 29: Notification of acceptance (peer-review results)</item>
+                            <item>July 25/26: The workshop takes place</item>
+                        </list>
+                    </div>
+                    <div type="div3" rend="DH-Heading3">
+                        <head>Intended audience </head>
+                        <p>The target audience of the workshop are researchers working with biographical or prosopographical data. The audience is expected to consist of DH-focused researchers and computer scientists, as well as social science and humanities researchers.</p>
+                    </div>
+                    <div type="div3" rend="DH-Heading3">
+                        <head>Expected number of participants </head>
+                        <p>Estimating the number of participants physically present is difficult due to COVID, but the previous BD workshops have had dozens of attending participants; there will be more with the planned possibility for online access.</p>
+                    </div>
+                    <div type="div3" rend="DH-Heading3">
+                        <head>Intended length</head>
+                        <p>One day.</p>
+                    </div>
+                    <div type="div3" rend="DH-Heading3">
+                        <head>Budget</head>
+                        <p>The workshop is self-financing.</p>
+                    </div>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Topics</head>
+                    <p>Topics of interest include, but are not limited to:</p>
+                    <list rend="bulleted">
+                        <item>Digitizing and structuring biographical data</item>
+                        <item>Standards, vocabularies and best practices for processing biographical data</item>
+                        <item>Biographies and Linked Data</item>
+                        <item>Crowdsourcing biographical data</item>
+                        <item>Automatic biography generation</item>
+                        <item>Using biographical and prosopographical data for quantitative analyses</item>
+                        <item>Canonization of people and events in history</item>
+                        <item>Use of big data for biographical research</item>
+                        <item>Dealing with biographical data in heterogeneous datasets</item>
+                        <item>Creating and maintaining biographical dictionaries</item>
+                        <item>Enriching biographies from external sources</item>
+                        <item>Reconciling persons between biographical dictionaries</item>
+                        <item>Reconciling names against a biographical dictionary</item>
+                        <item>Visualizing biographical and prosopographical data</item>
+                        <item>Network analysis of biographical data</item>
+                        <item>Biographies and spatial analysis</item>
+                        <item>Biographies across countries and cultures</item>
+                    </list>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Organizers</head>
+                <p>
+                    <hi rend="bold">Angel Daza</hi>, Vrije Universiteit Amsterdam (
+                    <ref target="mailto:j.a.dazaarevalo@vu.nl">j.a.dazaarevalo@vu.nl</ref>). Angel Daza is a computer scientist with expertise in Natural Language Processing. He completed his Ph.D. research at Universität Heidelberg where he worked on multilingual models for Semantic Role Labeling. He recently joined as a postdoc for the Computational Linguistics &amp; Text Mining Lab at VU and is part of the In/Tangible European Heritage Visual Analysis, Curation &amp; Communication project (InTaVia).
+                </p>
+                <p>
+                    <hi rend="bold">Antske Fokkens</hi>, VU University Amsterdam and Eindhoven University of Technology (antske.fokkens@vu.nl) holds a University Research Chair on Computational Linguistic Methods. The chair specifically focuses on methodological aspects of language technologies when they are used in other disciplines (such as history, literature and library studies). She was one of the main researchers in the BiographyNet project and currently leads the Text Mining package of the InTavia project. Together with Historian Serge ter Braake she initiated the Biographical Data in a Digital World conference series and is co-chair of the DARIAH EU working group analyzing and linking biographical data. 
+                </p>
+                <p>
+                    <hi rend="bold">Richard Hadden</hi>, Austrian Academy of Sciences (richard.hadden@oeaw.ac.at). Richard Hadden is a Digital Humanities researcher. He completed a PhD in textual scholarship and large-scale digitisation and knowledge representation at Maynooth University, Ireland. He joined the Austrian Centre for Digital Humanities and Cultural Heritage in 2020, as a postdoctoral researcher in digital prosopography. He currently works on several prosopographical and biographical projects as the ACDH-CH, including development of the IPIF prosopographical data format.
+                    <lb/>
+                    <ref target="https://www.oeaw.ac.at/acdh/team/current-team/richard-hadden">https://www.oeaw.ac.at/acdh/team/current-team/richard-hadden</ref>
+                </p>
+                <p>
+                    <hi rend="bold">Eero Hyvönen</hi>, Helsinki Centre for Digital Humanities (HELDIG) and Aalto University (
+                    <ref target="mailto:eero.hyvonen@aalto.fi">eero.hyvonen@aalto.fi</ref>). Eero Hyvönen is professor of semantic media technology in Aalto University and director of the Helsinki Centre for Digital Humanities (HELDIG); he has been involved in developing several biographical and prosopographical systems for DH research, based on Semantic Web technologies, Linked Data, and Artificial Intelligence.
+                    <lb/>
+                    <ref target="https://seco.cs.aalto.fi/u/eahyvone/">https://seco.cs.aalto.fi/u/eahyvone/</ref>
+                </p>
+                <p>
+                    <hi rend="bold">Mikko Koho</hi>, Aalto University (mikko.koho@aalto.fi). Mikko Koho is a Staff Scientist at Aalto University, Department of Computer Science. Research focuses on Linked Data, ontologies, and data modelling, as well as data analysis in multidisciplinary Digital Humanities research.
+                    <lb/>
+                    <ref target="https://seco.cs.aalto.fi/u/mkoho/">https://seco.cs.aalto.fi/u/mkoho/</ref>
+                </p>
+                <p>
+                    <hi rend="bold">Eveline Wandl-Vogt</hi>, (eveline.wandl-vogt@oeaw.ac.at) foundress and director of Ars Electronica Research Institute knowledge for humanity, research manager and experimental researcher at Austrian Academy of Sciences, affiliate at metalab at Harvard, foundress and co-chair of DARIAH EU working group analyzing and linking biographical data, network and open innovation facilitator eg for biographical and prosopographical data, is challenging the genre against an art driven and open innovation background.
+                    <lb/>
+                    <ref target="https://www.linkedin.com/in/evelinewandlvogt">https://www.linkedin.com/in/evelinewandlvogt</ref>
+                </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Confirmed Program Committee members</head>
+                    <list rend="bulleted">
+                        <item>Paul Arthur, Edith Cowan University, Australia</item>
+                        <item>Angel Daza, Vrije Universiteit Amsterdam, The Netherlands</item>
+                        <item>Thierry Declerck, German Research Center for Artificial Intelligence (DFKI), Germany</item>
+                        <item>Antske Fokkens, Vrije Universiteit Amsterdam, The Netherlands</item>
+                        <item>Richard Hadden, Austrian Academy of Sciences, Austria</item>
+                        <item>Eero Hyvönen, University of Helsinki and Aalto University, Finland</item>
+                        <item>Mikko Koho, Aalto University, Finland</item>
+                        <item>Lik Hang Tsui, City University of Hong Kong, Hong Kong</item>
+                        <item>Eveline Wandl-Vogt, Ars Electronica Research Institute and Austrian Academy of Sciences, Austria</item>
+                        <item>Hongsu Wang, Harvard University, USA</item>
+                    </list>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Fokkens, A. S., ter Braake, S., Ockeloen, C. J., Vossen, P. T. J. M., Legêne, S., Schreiber, G. and de Boer, V. (2017). BiographyNet: Extracting Relations between People and Events. In Bernád, Á. Z., Gruber, C. and Kaiser, M. (eds), Europa baut auf Biographien: Aspekte, Bausteine, Normen und Standards für eine europäische Biographik. Wien: New Academic Press, pp. 193-224.</bibl>
+                    <bibl>Tamper, M., Leskinen, P., Hyvönen, E., Valjus, R. and Keravuori, K. (2022): Analyzing Biography Collection Historiographically as Linked Data: Case National Biography of Finland. Semantic Web. Accepted for publication.</bibl>
+                    <bibl>Verboven, K., Carlier, M. and Dumolyn, J. (2007). A Short Manual to the Art of Prosopography. In Keats-Rohan, K.S.B. (ed), Prosopography Approaches and Applications. A Handbook. Oxford: Occasional Publications of the Unit for Prosopographical Research, pp. 35-70.</bibl>
+                    <bibl>Warren, C. N. (2018). Historiography’s Two Voices: Data Infrastructure and History at Scale in the Oxford Dictionary of National Biography (ODNB). Journal of Cultural Analytics, 3(1).
+                        <lb/>
+                        <ref target="https://doi.org/10.22148/16.028">https://doi.org/10.22148/16.028</ref> (accessed 28 April 2022).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

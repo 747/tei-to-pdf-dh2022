@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Development of a <hi rend="italic">Devanāgarī</hi> Optical Character Recognition (OCR) System</title>
+                <author>
+                    <persName>
+                        <surname>Kato</surname>
+                        <forename>Takahiro</forename>
+                    </persName>
+                    <affiliation>The University of Tokyo, Japan</affiliation>
+                    <email>tkhrkt@l.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tomonari</surname>
+                        <forename>Yūki</forename>
+                    </persName>
+                    <affiliation>The University of Tokyo, Japan</affiliation>
+                    <email>mitriibhaavii@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Taniguchi</surname>
+                        <forename>Chikamitsu</forename>
+                    </persName>
+                    <affiliation>The University of Tokyo, Japan</affiliation>
+                    <email>tanigutiti@g.ecc.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Osawa</surname>
+                        <forename>Tomejiro</forename>
+                    </persName>
+                    <affiliation>Toppan Inc.</affiliation>
+                    <email>tomejiro.osawa@toppan.co.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fujimaki</surname>
+                        <forename>Satoshi</forename>
+                    </persName>
+                    <affiliation>Toppan Inc.</affiliation>
+                    <email>satoshi.fujimaki@toppan.co.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Okada</surname>
+                        <forename>Takashi</forename>
+                    </persName>
+                    <affiliation>Toppan Inc.</affiliation>
+                    <email>takashi_3.okada@toppan.co.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hashimoto</surname>
+                        <forename>Emi</forename>
+                    </persName>
+                    <affiliation>Toppan Inc.</affiliation>
+                    <email>emi_1.hashimoto@toppan.co.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-22T13:32:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Devanāgarī</term>
+                    <term>Sanskrit</term>
+                    <term>AI-OCR</term>
+                    <term>Optical Character Recognition</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>digital archiving</term>
+                    <term>image processing and analysis</term>
+                    <term>Asian studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>This poster outlines the objectives of the research project titled “Development of a 
+                <hi rend="italic">Devanāgarī</hi> Optical Character Recognition (OCR) System.” 
+            </p>
+            <p>
+                <hi rend="italic">Devanāgarī</hi> is an abugida script, which has been adopted as the writing system of several languages such as Hindī, Marāṭhī, Nepālī, and Sanskrit. Recently, digitizing Sanskrit texts written in 
+                <hi rend="italic">Devanāgarī</hi> has been one of the most pressing and important tasks in the field of Sanskrit philology. Prosopographical Database for Indic Texts (PANDiT), Sanskrit Knowledge-System Project, and Göttingen Register of Electronic Text in Indian Languages (GRETIL) are some of the leading research projects.
+            </p>
+            <p> However, owing to the costs associated with time and human labor, building a database based on manually input text data is challenging. We have seen this in some preceding projects led by scholars in Germany, India, and Japan. We expect that the existing 
+                <hi rend="italic">Devanāgarī</hi> OCR systems, developed often based on the contemporary Indic languages such as Hindī ([1][2]), may not accurately recognize the more complicated Sanskrit consonant clusters.
+            </p>
+            <p> In light of this situation, a team comprising Sanskrit language experts from the University of Tokyo and AI-OCR developers from Toppan Inc. have undertaken a cooperative research project. This project aims to develop a 
+                <hi rend="italic">Devanāgarī</hi> OCR system and establish a Sanskrit text database automatically digitized by the OCR.
+            </p>
+            <p>In this poster presentation, we will</p>
+            <list rend="bulleted">
+                <item>Review the writing system of 
+                    <hi rend="italic">Devanāgārī</hi> and describe how we correlate each combining letter with the Unicode encoding scheme. We took each letter as a composite of several elements. In this case, our experience of the Chinese character—a character consisting of multiple and irregularly ordered elements—served effectively. In this regard, we set a unit of letter called the “character shape.”
+                </item>
+                <item>Introduce and evaluate preceding and on-going OCR software such as the “Sanskrit OCR” run by ind.senz and “Google Document OCR.” According to our detailed analysis of these software programs, there are some specific cases where these OCRs frequently fail to recognize the letters. For example: some combined letters with the vowel sign 
+                    “<hi rend="italic">i</hi> (<hi rend="Deva">ि</hi>),” where the sequence of letter elements (right to left, e.g. 
+                    <hi rend="italic">k+i</hi>) goes against the stroke order (left to right, e. g. 
+                    <hi rend="Deva">ि</hi>+<hi rend="Deva">क</hi>, 
+                    <hi rend="italic">i+k</hi>); some irregularly typeset dots, which indicate the nasal sound 
+                    (<hi rend="italic">anusvāra</hi>), and some lengthy consonant clusters such as 
+                    (<hi rend="Deva">र्त्स्न्य</hi>, 
+                    <hi rend="italic">rtsny-a</hi>). Focusing on these inadequacies that were insufficiently handled by the preceding studies, we show our design of an AI-OCR model, highlighting the uniqueness of this project.
+                </item>
+                <item>Expound the process of designing the “training data” through which an AI-OCR is generated. We obtained the training data from books included in Ānanda Āśrama Sanskrit Series, most of which were printed in metal typesetting. The strategy on how we define the “character shape” in the typesetting shall be explained in detail. An AI-OCR was generated through machine learning using the datasets prepared through the above process. Following is a brief overview of the outcomes obtained from the generated AI-OCR model.</item>
+            </list>
+            <p>Outcomes of Single Character Recognition (as of February 15, 2022)</p>
+            <p> Out of the 2,434 sample letters:</p>
+            <p> a. 2,340 letters exactly recognized* (Accuracy rate 96.14 %)</p>
+            <p> b. 2,397 letters correctly listed** (Accuracy rate 98.48 %)</p>
+            <p> * Only when each letter is listed as the first choice.</p>
+            <p> ** Including cases where the correct letter is listed as a candidate.</p>
+            <p>Based on the comparison, "Google Document OCR" and "Sanskrit OCR" showed an accuracy rate of 95.00 % and 89.92 %, respectively, on average for the common samples in this presentation. Once the factors affecting the accuracy are understood, we will outline the adjustments needed to improve the accuracy rate of the AI-OCR.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Bansal, V and Sinha, M. (2001). A Complete OCR for Printed Hindi Text in Devanagari Script. 
+                        <hi rend="italic">Proceedings of Sixth International Conference on Document Analysis and Recognition</hi>, pp. 800-804.
+                    </bibl>
+                    <bibl>Suryaprakash Kompalli, Sankalp Nayak, Srirangaraj Setlur and Venu Govindaraju (2005). Challenges in OCR of Devanagari documents. 
+                        <hi rend="italic">Eighth International Conference on Document Analysis and Recognition (ICDAR'05),</hi> pp. 327-331.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

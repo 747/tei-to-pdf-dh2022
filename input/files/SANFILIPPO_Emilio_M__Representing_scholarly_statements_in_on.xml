@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Representing scholarly statements in ontologies for data management: The case of musicology </title>
+                <author>
+                    <persName>
+                        <surname>Sanfilippo</surname>
+                        <forename>Emilio M.</forename>
+                    </persName>
+                    <affiliation>Laboratory for Applied Ontology ISTC-CNR, Italy</affiliation>
+                    <email>emilio.sanfilippo@cnr.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Freedman</surname>
+                        <forename>Richard</forename>
+                    </persName>
+                    <affiliation>Haverford College, USA</affiliation>
+                    <email>rfreedma@haverford.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-12T16:11:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>ontology</term>
+                    <term>early music</term>
+                    <term>classical music</term>
+                    <term>analytic claim</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>data modeling</term>
+                    <term>semantic analysis</term>
+                    <term>Informatics</term>
+                    <term>Musicology</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi style="font-size:11pt" xml:space="preserve">Music analysts need to document </hi>
+                <hi rend="bold" style="font-size:11pt">statements</hi>
+                <hi style="font-size:11pt" xml:space="preserve"> about subjects relevant in their area of expertise. And since researchers frequently assume different and even contradictory perspectives on the same subject, the representation of both the </hi>
+                <hi rend="bold" style="font-size:11pt">work</hi>
+                <hi style="font-size:11pt" xml:space="preserve"> and the intellectual responsibility for claims made about it is crucial. The use of Semantic Web (SW) technologies has made data more accessible and discoverable. But only recently has anyone attempted to model interpretive claims (Cristofaro et al., 2021). The </hi>
+                <hi rend="italic" style="font-size:11pt">Ontology for Analytic Claims in Music</hi>
+                <hi style="font-size:11pt" xml:space="preserve"> (OMAC) is a SW ontology (under development) to fill this gap, proposing innovative ways of modeling both musical works and the interpretive arguments about them. For space limits, we cannot document the entire ontology here. We will limit to the introduction of some aspects; readers can refer to the Web repository for more information (</hi>
+                <ref target="https://github.com/emiliosanfilippo/OMAC">
+                    <hi rend="color(1155CC)" style="font-size:11pt">https://github.com/emiliosanfilippo/OMAC</hi>
+                </ref>
+                ).
+            </p>
+            <p>
+                <hi style="font-size:11pt" xml:space="preserve">At the current state, OMAC consists of two modules, the Musical Work module for musical works, and the Analytic Claim module for scholarly arguments. The latter can take the form of assertions about, e.g., </hi>
+                <hi rend="bold" style="font-size:11pt">authorship</hi>
+                <hi style="font-size:11pt" xml:space="preserve">, </hi>
+                <hi rend="bold" style="font-size:11pt">chronology</hi>
+                <hi style="font-size:11pt" xml:space="preserve">, and </hi>
+                <hi rend="bold" style="font-size:11pt">similarity</hi>
+                , all of which figure in qualitative arguments made by analysts and critics. OMAC can be extended with further elements relevant from a musical perspective, including performances. To maximize the reuse of SW resources, we adopted elements from DBpedia, Dublin Core, etc. We have not reused ontologies based on FRBR (Bekiari et al., 2017) like the Music Ontology (Raimond et al., 2007) because of the ambiguous manner in which FRBR treats works (Sanfilippo, 2021). 
+            </p>
+            <p style="text-align: left;">
+                <lb/>The Musical Work module in OMAC models the 
+                <hi rend="bold">authorial</hi> structure of works, namely, the division by the composer of a work into (sub-)sections (Fig. 1). A Renaissance Mass, for instance, consists of customary five sections (
+                <hi rend="italic">Kyrie</hi>, 
+                <hi rend="italic">Gloria</hi>, 
+                <hi rend="italic">Credo</hi>, 
+                <hi rend="italic">Sanctus</hi>, and 
+                <hi rend="italic">Agnus Dei</hi>), some of which are in turn divided into subsections. No claim about this subdivision is necessary, as they are dimensions of the authorial text. Once modeled in OMAC, it is possible to reason over data, e.g., automatically deducing the structure of a whole work.
+            </p>
+            <figure>
+                <graphic n="1001" width="9.226005555555556cm" height="6.053655555555555cm" url="Pictures/aaf41bbdadc58588ecfb50e62e29cb2a.png" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                <hi rend="bold">Figure 1</hi> - Authorial structure of musical entities (partial view)
+            </p>
+            <p style="text-align: left;">Analytic claims could relate to an entire work or some of its parts. Two different scholars, for instance, might each argue that a work was by a different composer or that it was created in one year or another. Scholars also might want to make a claim about a single pattern in a piece, fragments that could never be called authorial. For instance, participants in the research 
+                <hi rend="italic">Citations: The Renaissance Imitation Mass</hi> (
+                <ref target="http://crimproject.org/">
+                    <hi rend="color(1155CC)">http://crimproject.org/</hi>
+                </ref>) are interested in identifying small passages in pairs of works, showing how one composer borrowed from (and transformed) the work of another. In the context of this analytic project, scholars make specific claims about the connections between what they call a 
+                <hi rend="bold">model</hi> and its 
+                <hi rend="bold">derivative</hi>.  But such assertions are in principle a claim about 
+                <hi rend="bold">similarity</hi>, and as such should be made discoverable as instances of this more general musical principle. Indeed, scholars might want to make many different kinds of similarity claims, which might concern borrowing, or quotation, or simply shared style. In OMAC such claims can be modeled in a logical way that gives critical assertions a declared (and thus computable) structure, as shown in Figure 2.
+            </p>
+            <figure>
+                <graphic n="1002" width="11.22481111111111cm" height="3.2929916666666665cm" url="Pictures/35439662f47bd752bdfd64bedf288f69.png" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                <hi rend="bold">Figure 2</hi> - Similarity claims in OMAC (partial view)
+            </p>
+            <p style="text-align: left;">OMAC takes its place in the broader context of recent discussion of how best to model critical assertions (and not simply works) in a digital environment. A proposal by Masolo et al. (2018), for instance, argues that scholarly observations are 
+                <hi rend="bold">epistemological states</hi>, i.e., the classification of an entity under a property as the result of an analytic process. For instance, the similarity relation between two musical entities is an observation made by an analyst but it does not represent something that is necessarily true. In addition, nothing prevents an analyst from reviewing or discarding their claim, or other analysts in formulating different and conflicting claims about the same phenomena.
+            </p>
+            <p style="text-align: left;">Future research will enrich the structure of OMAC (including an explicit treatment of events) and contribute to the development of a digital space to share musicological data. In addition, as a lesson learnt from OMAC, the representation of claims can be generalized and tuned to other areas in the humanities in such a way to make the ontology broader and reusable across projects.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Bekiari, C., Doerr, M., Le Boeuf, P., and Riva, P.</hi>  (2017). Definition of FRBRoo: A conceptual model for bibliographic information in object-oriented formalism
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" xml:space="preserve">Cristofaro, S., Sanfilippo, E.M., Sichera, P., and Spampinato, D. </hi>(2021). Towards the representation of claims in ontologies for the digital humanities. In 
+                        <hi rend="italic">Proc. of the Int. Joint Workshop on Semantic Web and Ontology Design for Cultural Heritage (SWODCH)</hi>, CEUR vol. 2949
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Masolo, C., Botti Benevides, A., and Porello, D.</hi> (2018). The interplay between models and observations. 
+                        <hi rend="italic">Applied Ontology</hi>, 
+                        <hi rend="italic">13</hi>(1), 41-71
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Raimond, Y., Abdallah, S. A., Sandler, M. B., and Giasson, F.</hi> (2007). The Music Ontology. In 
+                        <hi rend="italic">ISMIR</hi> (Vol. 2007, p. 8th)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Sanfilippo, E. M. </hi>(2021). Ontologies for information entities: State of the art and open challenges. 
+                        <hi rend="italic">Applied ontology</hi>, vol. 16, no. 2, pp. 111-135, 2021
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

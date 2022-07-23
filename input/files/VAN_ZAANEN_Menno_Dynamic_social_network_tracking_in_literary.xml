@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Dynamic social network tracking in literary texts</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>van Zaanen</surname>
+                        <forename>Menno</forename>
+                    </persName>
+                    <affiliation>South African Centre for Digital Language Resources, South Africa</affiliation>
+                    <email>menno.vanzaanen@nwu.ac.za</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-12T16:07:41.674229760</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>social networks</term>
+                    <term>literary analysis</term>
+                    <term>grammatical inference</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Africa</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>natural language processing</term>
+                    <term>text mining and analysis</term>
+                    <term>Linguistics</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Close and distant reading are often seen as opposites. The former is typically a fine-grained, manual analysis applied to small amounts of texts, whereas the latter performs more coarse-grained computational analyses of large amounts of texts. The close reading approach allows readers to focus on specific aspects in the text, resulting in detailed investigations. The distant reading approach, in contrast, can be used to identify large patterns, which are typically hard to identify explicitly by people due to practical limitations. Both approaches have their advantages and disadvantages. The research presented here describes a distant reading method that aims to provide information, e.g., to help direct a close reading approach.</p>
+            <p>When analyzing literature, one may be interested in the power relationships between characters in the text. There are several ways of investigating this. One of these focuses on social network analysis (e.g., Agarwal et al. (2012)), which requires the identification of a social network from the text. Ven et al. (2018) provide a simple approach that creates a social network by automatically identifying characters (using a Named Entity Recognition system) and their relationships through character co-occurrence within sentences.</p>
+            <p>One of the limitations of Ven et al. (2018)’s approach is that the social network is only created after analyzing the entire text. Relationships between the characters, however, may change throughout the text, which cannot be represented through a static social network based on the text as a whole.</p>
+            <p>Here, we provide a more flexible approach that creates social networks while allowing investigations into changes throughout the text. We first split the text in sentences, which defines the granularity of the timeline. Next, we identify all named entities (i.e., characters) in the text and keep track of which sentences they occur in (e.g., through numbering). Next, we create a finite state machine with one start and one end state. For each character, we create a path from the start to the end state with as many states as there are sentences in the text. Character markers are placed on those states in which the character occurs. To identify relationships between the characters, we merge states from different paths (which each represent locations of occurrences per character). Merging of two states marked with characters indicates that there is a relationship between these characters.</p>
+            <p>State merging takes two states in a finite state machine and replaces both by a new state. All edges going into and out of both merged states are attached to the new state. This is a common technique in the field of grammatical inference (Higuera, 2010; Heinz et al., 2015), but it has also been applied, for instance, in machine translation (Zaanen and Somers, 2005). Changing the criteria that drive the selection of states to be merged has an impact on the shape of the finite state machine after merging.</p>
+            <p>After merging states according to the selection criteria, we can count the number of (merged) states marked with multiple characters. This count represents a co-occurrence count, which describes the strength of the relationship between two characters. Performing state merging only on states with marked characters that have the same sentence number, and counting merged states throughout the entire machine, results exactly in the system of Ven et al. (2018).</p>
+            <p>The finite state machine representation has several benefits. First, we can follow the changes in the social network in the text by passing through the finite state machine from start to end node. Second, it provides more flexibility in the identification of evidence for relationships between characters. For instance, we can decide to merge states when characters occur in sentences that are close together (i.e., characters are related if they occur close together in a text, but not necessarily in the same sentence). Modifying the state merging criteria influences how the relationships between characters are measured.</p>
+            <p>Even given the added flexibility of this approach, there are still several open problems (most similar to those of Ven et al. (2018)). First, named entity recognition is not perfect, so occurrences of characters may be missed or spurious characters introduced, leading to noise in the data. Second, there are multiple ways to refer to a character, such as a first names, nick names, last names, descriptions (e.g., “the wizard”), or anaphora (“he”, “she”, etc.) (Bipasha, 2019). Finally, the state merging criteria have an impact on how the strength of the relationships is measured. More research is needed in these areas.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Agarwal, A., Corvalan, A., Jensen, J. and Rambow, O.</hi> (2012). Social network analysis of Alice in Wonderland. In, 
+                        <hi rend="italic">Proceedings of the Naacl-Hlt 2012 Workshop on Computational Linguistics for Literature.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bipasha, T. T.</hi> (2019). Extracting social network from literary prose University of Arkansas PhD thesis.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Heinz, J., Higuera, C. de la and Zaanen, M. van</hi> (2015). 
+                        <hi rend="italic">Grammatical Inference for Computational Linguistics.</hi> Vol. 8. (Synthesis Lectures on Human Language Technologies 4). Morgan &amp; Claypool Publishers.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Higuera, C. de la</hi> (2010). 
+                        <hi rend="italic">Grammatical Inference: Learning Automata and Grammars.</hi> Cambridge, UK: Cambridge University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ven, I. van de, Lim, C., Steenbakker, M. and Zaanen, M. van</hi> (2018). Negotiating close and distant reading: Heteroglossia and networks in Zadie Smith’s White Teeth. In, 
+                        <hi rend="italic">Digital Humanities Benelux, Dhbenelux.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Zaanen, M. van and Somers, H.</hi> (2005). DEMOCRAT: Deciding between multiple outputs created by automatic translation. In, 
+                        <hi rend="italic">The Tenth Machine Translation Summit, Proceedings of Conference; Phuket, Thailand.</hi> pp. 173–80.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">The European Open Science Cloud (EOSC) and Its Implications for the Digital Humanities and Social Sciences</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Barbot</surname>
+                        <forename>Laure</forename>
+                    </persName>
+                    <affiliation>DARIAH-EU</affiliation>
+                    <email>laure.barbot@dariah.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gray</surname>
+                        <forename>Edward</forename>
+                    </persName>
+                    <affiliation>Huma-Num CNRS</affiliation>
+                    <email>edward.gray@dariah.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fischer</surname>
+                        <forename>Frank</forename>
+                    </persName>
+                    <affiliation>Freie Universität Berlin; DARIAH-EU</affiliation>
+                    <email>fr.fischer@fu-berlin.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Broeder</surname>
+                        <forename>Daan</forename>
+                    </persName>
+                    <affiliation>CLARIN ERIC</affiliation>
+                    <email>daan.broeder@di.huc.knaw.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ďurčo</surname>
+                        <forename>Matej</forename>
+                    </persName>
+                    <affiliation>Austrian Centre for Digital Humanities and Cultural Heritage</affiliation>
+                    <email>matej.durco@oeaw.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kleemola</surname>
+                        <forename>Mari</forename>
+                    </persName>
+                    <affiliation>Finnish Social Science Data Archive at Tampere University</affiliation>
+                    <email>Mari.Kleemola@staff.uta.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Thiel</surname>
+                        <forename>Carsten</forename>
+                    </persName>
+                    <affiliation>CESSDA ERIC</affiliation>
+                    <email>carsten.thiel@cessda.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>König</surname>
+                        <forename>Alexander</forename>
+                    </persName>
+                    <affiliation>CLARIN ERIC</affiliation>
+                    <email>alex@clarin.eu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-19T13:04:58.342215145</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Panel</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>European Open Science Cloud</term>
+                    <term>Infrastructure</term>
+                    <term>FAIR Principles</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>data publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1">
+                <head>
+                    <anchor xml:id="id_docs-internal-guid-65d18228-7fff-966e-a7d8-1321d871c3f2"/>Introduction
+                </head>
+                <p>(Frank Fischer)</p>
+                <p>The European Open Science Cloud (EOSC), officially launched in November 2018, is an initiative of the European Commission aiming to develop an infrastructure that makes access to scientific data easier and more efficient and is geared towards open science. The planned infrastructure bundles services of different providers and is following a system-of-systems approach. Under the Horizon 2020 framework programme, five cluster projects from the sciences are being funded to connect research communities of different fields to the EOSC. One of these projects is SSHOC – the Social Sciences and Humanities Open Cloud.</p>
+                <p>The five European Research Infrastructure Consortia CESSDA, CLARIN, DARIAH, ESS and SHARE as well as 20 other European partner institutions have come together to connect their communities to the EOSC via SSHOC. In this panel, we will discuss its emerging role for the Digital Humanities and related fields and the different facets needed to design, coordinate and operate this domain-specific infrastructure and cloud. A panel of speakers will discuss the following topics:</p>
+            </div>
+            <div type="div1">
+                <head>The SSH Open Marketplace – Contextualised practical knowledge for day-to-day research in the Digital Humanities</head>
+                <p>(Laure Barbot, Edward Gray, Klaus Illmayer, Alexander König)</p>
+                <p>
+                    <hi rend="color(#000000)">Tool directories and discovery portals have a long history in the Digital Humanities. There is a clear demand for them in the community but their sustainability beyond project fundings and their collective maintenance is challenging (Dombrowski, 2019; Edmond, 2016). In the enabling EOSC environment, in which research and data infrastructures find a suitable framework to provide research services, DARIAH, CLARIN and CESSDA </hi>
+                    <hi rend="color(#000000)">developed</hi>
+                    <hi rend="color(#000000)"> the SSH Open Marketplace, accessible at </hi>
+                    <ptr target="https://marketplace.sshopencloud.eu/"/>
+                    <hi rend="color(#000000)">, a new take on discovery platforms for tools, services, training materials, datasets and digital workflows (Kálmán et al., 2019). While crowd-based maintenance of content is one of the </hi>
+                    <hi rend="color(#000000)">few</hi>
+                    <hi rend="color(#000000)"> ways to ensure the quality of a "social marketplace for services" (Blanke, 2011), the SSH Open Marketplace relies on a set of rewards and incentives and a small, but funded, editorial team in order to avoid pure volunteer work of its contributors.</hi>
+                </p>
+            </div>
+            <div type="div1">
+                <head>The Sharing of Services and Data Between SSH Infrastructures</head>
+                <p>(Daan Broeder)</p>
+                <p>By sharing infrastructure resources we gain considerable advantages:</p>
+                <list type="unordered">
+                    <item>(1) scaling advantage: increasing the potential use and impact of (expensive) datasets and maximizing the investment needed for developing services and</item>
+                    <item>(2) offering SSH researchers new choices and opportunities with regards to data creation and analysis.</item>
+                </list>
+                <p>This concerns not only newly created services and datasets, e.g. the SSH Open Marketplace, but also existing resources which were prepared to serve a wider audience. Within the SSHOC project, a couple of services originally developed for the CLARIN community were generalised to address additional user scenarios and provide new functionalities. Recommendations and tools for creating and managing SSH vocabularies were aligned through an SSH Vocabulary Commons initiative. SSHOC also provided an opportunity for new and emerging communities to discover and investigate what and how already established communities have arranged their infrastructure and what is useful for them.</p>
+            </div>
+            <div type="div1">
+                <head>Data Repository/Service Certification</head>
+                <p>(Mari Kleemola)</p>
+                <p>FAIR data (Findable, Accessible, Interoperable, Reusable) is essential for the success of the EOSC, but the demand for high quality and FAIR data and metadata is global. However, the FAIR principles do not take into account the inevitable changes in the data environment and in the needs of data users. Any digital system that accepts, stores and provides access to data can be termed a 'digital repository' in the broadest sense. Only an organisation that meets clear criteria, including the provision of active long-term preservation measures for a designated community, can be termed a “trustworthy digital repository”. Trustworthy digital repositories play a key role in enabling data to become and remain FAIR over time within all disciplines, including SSH. Reaching FAIRness and trustworthiness is a journey that requires expertise, investment and cooperation. Many actors and multiple tiers of data storage, protection and preservation are needed to address the long tail of at-risk data and metadata. Setting standards and pass/fail criteria is not sufficient; compliance with trustworthiness standards is best supported by community efforts such as repository certification through CoreTrustSeal, existing coordination networks for digital repositories in disciplinary contexts and other global, regional and national networks.</p>
+            </div>
+            <div type="div1">
+                <head>Technology and Services</head>
+                <p>(Carsten Thiel)</p>
+                <p>Research Infrastructures are increasingly digital, providing virtual access to resources at physical places like libraries and archives. Developing the technology that makes this possible is a fundamental part of building modern infrastructures and enabling interdisciplinary research requires interoperability on the technical level. But delivering added value to the researcher requires more than bare technology. In collaboration across disciplines, both within the SSHOC project and the wider EOSC landscape, the focus has shifted towards the service layer, combining tools with training and support into a complete package that addresses end user needs. As domain infrastructures, CESSDA, CLARIN and DARIAH are uniquely positioned between researchers, resources and tools to process them in order to sustainably ensure open research.</p>
+            </div>
+            <div type="div1">
+                <head>EOSC FUTURE – Connecting Scientific Projects to EOSC Core Services</head>
+                <p>(Matej Ďurčo)</p>
+                <p>To connect thematic services to the EOSC basic agnostic components are needed. The EOSC Architecture provides the so-called EOSC-Core layer offering fundamental building blocks such as an AAI (Authentication and Authorization Infrastructure), Helpdesk and Monitoring. By easily integrating these core services, science projects benefit from an interoperable and more stable infrastructural environment. The domain-oriented cluster projects are at the crossroads between agnostic service providers and research communities to overcome the "last mile challenge" (Koureas, 2016) and build mid-level tools and platforms that serve the needs of individual research communities (Lamanna, 2021).</p>
+            </div>
+        </body>
+    </text>
+</TEI>

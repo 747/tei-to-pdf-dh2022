@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Roaring Sounds and Rippling Strength: A Digital Story of the North American Taiko Drumming Community</title>
+                <author>
+                    <persName>
+                        <surname>Yoon</surname>
+                        <forename>Joshua</forename>
+                    </persName>
+                    <affiliation/>
+                    <email/>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-14T02:25:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>ADHO Bursary Application</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>spatial &amp; spatio-temporal analysis</term>
+                    <term>modeling and visualization</term>
+                    <term>Asian studies</term>
+                    <term>Cultural studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Exactly seventy years ago in Japan, Grandmaster Daihachi Oguchi founded Osuwa Daiko, the first ever 
+                <hi rend="italic">kumi-daiko</hi>, or ensemble drumming, group in the world (Bender, 2012). Many of his artistic teachings, repertoire, and philosophical practices endure to this day thanks to the countless number of students he personally trained throughout his lifetime, some of whom later became leaders of their own right. One student of his, Grandmaster Seiichi Tanaka, was the first to introduce the 
+                <hi rend="italic">taiko</hi>, which is the Japanese word for drum, to North Americans when he founded San Francisco Taiko Dojo in 1968 (Varian, 2013). Soon after, two more taiko groups from the United States, namely Kinnara Taiko (1969) and San Jose Taiko (1973), were established largely due to the monumental efforts of 
+                <hi rend="italic">sansei</hi>, or third-generation Japanese Americans, who felt empowered and heard when immersed within the artform (Ahlgren, 2018). These original pioneers were inspired to invent a unique philosophy for playing and learning taiko, which would be passed down to newer generations of taiko players throughout the rest of the continent that were at first largely of Asian descent and politically active (Wong, 2019). In the present, there are now hundreds of taiko groups scattered across North America, whose members represent a wide spectrum of racial and ethnic backgrounds, and numerous artists who have taken up taiko as their full-time profession (Walker, 2016). While recent scholarly work has made considerable strides towards elucidating the role in which taiko has played in addressing identity politics (Konagaya, 2001) (Terada, 2001), challenging gender roles (Wong, 2000) (Yoon, 2009), and reclaiming Asian American cultural heritage (Izumi, 2001) (Yoon, 2001), there is still a noticeable gap in our understanding of how a community of taiko practitioners has grown and spread from a multi-dimensional point of view. Furthermore, there is currently a lack of digital resources that make the holistic legacies of taiko artists more easily accessible to general audiences. 
+            </p>
+            <p> To this end, I have adopted a set of interdisciplinary tactics to digital scholarship that begins to successfully capture the story of how the taiko artform has expanded and evolved in North America. As an independent scholar and volunteer of the Taiko Community Alliance (TCA), I primarily use open-source digital tools to further empower the greater taiko community through several aims. One aim is to develop a comprehensive time-series map that displays when and where taiko ensembles formed over its rich 53-year history. Using custom-built software that ingests archival materials, a dynamic movie that shows the locations of each group and different moments is produced. Such a resource is becoming useful for new members interested in locating and joining a nearby taiko group. Another aim further examines the impact the original ensembles had on subsequent groups that were later founded. By using previous taiko census campaigns conducted by TCA, a database that contains individual players, names of groups that each of them was a part of, and the years in which they retained some form of membership is created. With the help of open-source programs like Gephi, static and dynamic social networks show moments when edges form and break off between groups that share common members. This effort has further yielded useful quantitative analysis on identifying the degree and directionality of influence certain taiko groups have had on other ensembles, and for uncovering distinct collections of groups using standard community detection algorithms. And the final aim is to reveal significant factors that were instrumental in sustaining the taiko community over the course of decades using a mixed-methods research approach, which places both qualitative and quantitative data on near equal footing. By analyzing publicly available online materials, electronic interviews, and census data, an intriguing model of symbiosis emerges between taiko groups that reside on college campuses and others that are largely community-based. Some important takeaways include the following: (1) many founders of collegiate groups received taiko instruction in some form as young children and adolescents from older taiko players, and (2) a sizable number of collegiate players continue being involved in taiko after graduating. Such a symbiotic relationship is reasonably hypothesized to not be strictly exclusive to the taiko community and may be an appropriate model to adhere to for other communities of practice that are strategizing their own longevity.</p>
+            <p> There are several useful applications that can branch off this work. One ongoing avenue of research concerns unearthing salient features of North American taiko’s relationship with the rest of the world, which includes Southeast Asia, Europe, South America, and Oceania, using graph-based methods. Another immediate application is building upon the digital toolset presented earlier to create a historic map of taiko groups from all around the world. And finally, there is considerable interest in cultivating a more mature understanding of how taiko communities in both Japan and North America co-evolved over time. I hope my efforts offer novel insights into the diverse range of social dynamics that are at play within the taiko network and showcase the power of digital tools in enhancing visibility for a community of artists that are continuously looking for new opportunities to share and advance the artform. In addition, I hope to (re)ignite conversations on how the field of digital studies and humanities can better preserve and amplify the legacies of underrepresented groups that rarely receive the attention they deserve. We bear the responsibility as digital scholars to preserve the past of those who have continuously been marginalized and to continuously challenge sweeping notions of what it means to be accepted as a citizen of their community.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Ahlgren, A. K.</hi> (2018). Drumming Asian America: 
+                        <hi rend="italic">Taiko, Performance, and Cultural Politics</hi>, Oxford: Oxford University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bender, S.</hi> (2012). Taiko Boom: 
+                        <hi rend="italic">Japanese Drumming in Place and Motion</hi>, Berkeley: University of California Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Izumi, M.</hi> (2001). Reconsidering Ethnic Culture and Community: A Case Study on Japanese Canadian Taiko Drumming. 
+                        <hi rend="italic">Journal of Asian American Studies,</hi> 4: 35-56.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Konagaya, H.</hi> (2001). Taiko as Performance: Creating Japanese American Traditions, 
+                        <hi rend="italic">Japanese Journal of American Studies,</hi> pp. 105-124.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Terada, Y.</hi> (2001). Shifting Identities of Taiko Music in North America, 
+                        <hi rend="italic">Senri Ethnological Reports,</hi> 22: 37-59.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Varian, H.</hi> (2013). 
+                        <hi rend="italic">The Way of Taiko</hi>, Berkeley: Stone Bridge.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Walker, K.</hi> (2016). Taiko in the USA and Canada: Key Findings from the Taiko Census 2016, Technical Report.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wong, D.</hi> (2000). Taiko and the Asian/American Body: Drums, Rising Sun, and the Question of Gender. 
+                        <hi rend="italic">The World of Music,</hi> 42 (3).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Wong, D.</hi> (2019). Louder and Faster: 
+                        <hi rend="italic">Pain, Joy, and the Body Politic in Asian American Taiko</hi>, University of California Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Yoon, P. J.</hi> (2009), Asian Masculinities and Parodic Possibility in Odaiko Solos and Filmic Representations. 
+                        <hi rend="italic">Asian Musi: Music and the Asian Diaspora</hi>, 40(1) pp. 100-130.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Yoon, P. J.</hi> (2001). She’s Really Become Japanese Now!’ Taiko Drumming and Asian American Identifications. 
+                        <hi rend="italic">American Music</hi>, pp. 417-438.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

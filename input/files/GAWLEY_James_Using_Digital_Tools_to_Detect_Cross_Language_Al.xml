@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Using Digital Tools to Detect Cross-Language Allusions in Voltaire</title>
+                <author>
+                    <persName>
+                        <surname>Gawley</surname>
+                        <forename>James</forename>
+                    </persName>
+                    <affiliation>Sorbonne University, France</affiliation>
+                    <email>james.gawley@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-06-03T08:48:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>intertextuality</term>
+                    <term>allusion</term>
+                    <term>poetry</term>
+                    <term>literary studies</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>French</term>
+                    <term>BCE-4th Century</term>
+                    <term>18th Century</term>
+                    <term>text mining and analysis</term>
+                    <term>Literary studies</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>This paper presents a webtool called Tesserae-OBVIL, which successfully detects cross-language allusions between the epic 
+                <hi rend="italic">Henriade</hi> of Voltaire, written in French, and the 
+                <hi rend="italic">Aeneid</hi> of Vergil, in Latin.
+            </p>
+            <p>In 1717 C.E., during his imprisonment in the bastille, Voltaire began composing 
+                <hi rend="italic">La Henriade</hi>, drawing heavily on Vergil’s 
+                <hi rend="italic">Aeneid</hi>. Voltaire’s
+                <hi rend="italic" xml:space="preserve"> Henriade </hi>was designed to establish France as the cultural heir to Ancient Rome and himself as its most important writer. The poem enjoyed massive contemporary success, yet 
+                <hi rend="italic">La Henriade</hi> receives little critical or popular attention. The problem is that Voltaire relied on a French reader with knowledge of the classical tradition and an eye for spotting allusions to classical poetry in particular. Today that reader is largely gone. In fact, the only scholar to approach the question of Voltaire’s use of Vergil is O.R. Taylor, who included references to Vergil as footnotes to his edition (Taylor, 1970: pp.149-159). The present study uses digital tools to help recreate the expertise that Voltaire took for granted.
+            </p>
+            <p>Tesserae-OBVIL is an online search tool designed to search for Latin allusions in French poetry. Unlike other tools for similarity detection and cross-language document alignment, Tesserae-OBVIL does not look for passages with the largest proportion of shared language. Because poetic allusion is intentionally subtle, it is necessary instead to search for a small number of words that are meaningful indicators of a connection. In its most common search pattern, Tesserae-OBVIL locates places where two or more words are shared between a target and source poem, within a single line or phrase. Meaningful allusions are sorted from coincidental language by filtering the search results according to the rarity of the shared words and their proximity to one another within the line or phrase.</p>
+            <p>Tesserae-OBVIL was derived from an open-source project called Tesserae, developed at the University at Buffalo (http://tesserae.caset.buffalo.edu/). When it was first deployed, the original Tesserae software was considered successful because it was able to reproduce roughly 32% of the known parallels between Lucan’s 
+                <hi rend="italic">Pharsalia</hi> and Virgil’s 
+                <hi rend="italic">Aeneid</hi> (Coffee, 2018)
+                <hi rend="italic">.</hi> Tesserae search results were then used to substantively expand the list of known allusions between these poems. Tesserae’s cross-language tool fared more poorly, recovering some 11% of Latin-to-Greek allusions between Virgil and Homer (Gawley, Forstall, and Clark, 2014).
+            </p>
+            <p>The Tesserae-OBVIL software is much more successful at detecting cross-language allusion than the original Tesserae software. To perform a search, words in French are matched with ‘translations’ in Latin, which are essentially cross-language synonyms. The basic search algorithm is unchanged: for a match to exist, there must be two words shared between the poems within a single phrase; for the match to score well, those words must be relatively rare and they must be close together.</p>
+            <p>The Tesserae-OBVIL search results were compared against a list of allusions between Voltaire and Virgil assembled by O.R. Taylor (Taylor, 1970). 
+                <anchor xml:id="Tesserae_Outline"/>Tesserae-OBVIL was able to recover 69% of Taylor’s list. The full set of search results can be retrieved at https://obvil.huma-num.fr/tesserae-obvil/cgi-bin/read_bin.pl?session=0000004a. The missing 31% largely comprises parallels where shared language is more figurative than direct. For example, in line 160 of the Henriade I, the French word ‘matelots’ is not quite a translation of the Latin 
+                <hi rend="italic">manus iuventum</hi> (‘band of youths’), nor is ‘s’empressent’ really a synonym for 
+                <hi rend="italic">emicat</hi> (‘leapt’), though in both cases the same underlying concept is being described: “Les matelots ardents s’empressent sur le bord ;” 
+                <hi rend="italic">Hen</hi>. I, 160. Cf. 
+                <hi rend="italic">Iuvenum manus emicat ardens / litus in Hesperium;</hi> (“The band of youths leapt eagerly to the Hesperian shore;”) 
+                <hi rend="italic">Aen</hi>. VI, 5-6. Yet even with these exceptions, the success rate of the Tesserae-OBVIL software is still more than twice that of the original Tesserae software in a Latin-to-Latin context, and roughly six times as successful as Tesserae’s cross-language module.
+            </p>
+            <p>The allusions discovered using Tesserae-OBVIL add a great deal of meaning to our reading of 
+                <hi rend="italic">La Henriade</hi>. Voltaire’s biting irony is one of the reasons for his enduring popularity, but because in this case it comes in the form of complex allusions, the poet’s trademark wit has hitherto passed unnoted in the scholarly literature. Some explicitly deny the presence of irony in the text (Lahouati and Mironneau, 2002: pp. 4). Yet as this presentation will demonstrate, irony is very present in Voltaire’s first epic poem. Voltaire inverts of classical tropes and recasts heroic roles in a way that makes an ironic statement about France as an empire and about the reliability of authority. Both classicism and religion were important sources of authority in the world in which he composed the 
+                <hi rend="italic">Henriade</hi>; Voltaire repeatedly references those authorities in contexts that deflate their importance.
+            </p>
+            <p>
+                <hi rend="italic">La Henriade</hi> was conceived and composed in the Bastille, where Voltaire was imprisoned for writing verses critical of the regent. It is interesting to consider the layered irony of Voltaire’s allusions in light of this imprisonment. Perhaps his sudden, indefinite confinement unnerved Voltaire, so that he preferred ambiguous praise to direct criticism at this moment in his life. Or perhaps his patriotic aim in composing 
+                <hi rend="italic">La Henriade</hi> was quite sincere, yet complicated by anxieties over the absolute power of a monarch. Whatever his motives, Voltaire’s use of classical literature adds an ironic undertone to the 
+                <hi rend="italic">Henriade</hi>, and that ironic voice may account for the poem’s tremendous success among an audience who appreciated its allusions. The Tesserae-OBVIL software presented here offers us the opportunity to recover that ironic context and, we may hope, to restore some of 
+                <hi rend="italic">La Henriade</hi>’s notoriety.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Coffee, N.</hi> (2018). “An Agenda for the Study of Intertextuality”, 
+                        <hi rend="italic">Transactions of the American Philological Association</hi>, 148.1: 205-223.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Gawley, J., Forstall, C., and Clark, K.</hi> (2014). “Automating the Search for Cross-Language Text Reuse.” 
+                        <hi rend="italic">Digital Humanities</hi>. Lausannem, July 2014.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Lahouati, G. and Mironneau, P. </hi>(2002). “De l’urgence de lire 
+                        <hi rend="italic">La Henriade</hi>”, 
+                        <hi rend="italic">Voltaire Revue</hi>, 2002.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Taylor, O.R.</hi> (1988). 
+                        <hi rend="italic">La Henriade</hi>, Genève.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

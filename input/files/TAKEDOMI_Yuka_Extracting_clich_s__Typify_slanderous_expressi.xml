@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Extracting clichés: Typify slanderous expressions against the confessions in the #MeToo movement </title>
+                <author>
+                    <persName>
+                        <surname>Takedomi</surname>
+                        <forename>Yuka</forename>
+                    </persName>
+                    <affiliation>National Institute of Informatics, Japan</affiliation>
+                    <email>yuka_takedomi@nii.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Suda</surname>
+                        <forename>Towa</forename>
+                    </persName>
+                    <affiliation>National Institute of Informatics, Japan</affiliation>
+                    <email>sudatowa@nii.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kurita</surname>
+                        <forename>Kazuhiro</forename>
+                    </persName>
+                    <affiliation>National Institute of Informatics, Japan</affiliation>
+                    <email>kurita@nii.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kobayashi</surname>
+                        <forename>Ryota</forename>
+                    </persName>
+                    <affiliation>The University of Tokyo/ JST PRESTO,</affiliation>
+                    <email>r-koba@edu.k.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Matsuda</surname>
+                        <forename>Tomohiro</forename>
+                    </persName>
+                    <affiliation>National Institute of Informatics, Japan</affiliation>
+                    <email>tm0407@nii.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Uno</surname>
+                        <forename>Takeaki</forename>
+                    </persName>
+                    <affiliation>National Institute of Informatics, Japan</affiliation>
+                    <email>uno@nii.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Feminism</term>
+                    <term>Backlash</term>
+                    <term>Social Media</term>
+                    <term>Text Analysis</term>
+                    <term>Text Mining</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>social media analysis and methods</term>
+                    <term>text mining and analysis</term>
+                    <term>Feminist studies</term>
+                    <term>Informatics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: justify;">
+                The #Metoo movement, which burgeoned on social networking sites in October 2017, saw a series of private confessions and a large number of people experiencing the massive social movement. This movement became a milestone of the possibilities of transnational solidarity and had an unparalleled and powerful impact on society. In contrast, it has provoked a huge backlash, with social networking sites becoming the place of a wide variety of slanderous exchanges; some hurled abuse, others criticized that the confessions seemed unreliable and undermined their value.
+            </p>
+            <p style="text-align: justify;">The offensive expressions seriously impact the persons to whom they are directly addressed and those around them. People shrank at outrageous attacks, their dignity is violated, and they are often forced to be silent. However, if we can confirm any patterns in the abusive expressions and actions of others, which we currently perceive only as absurdity, and if we can make sure that these are clichés, our fear and psychological damage may be alleviated. Furthermore, if we wish to dispirit this kind of slander, we must begin by understanding the mechanisms of slander. Then how do we understand the apparent variety of slanderous expressions that have appeared on social networking sites in the #MeToo movement?</p>
+            <p style="text-align: justify;">The appearance of slanderous expressions is diverse. However, there seem to be some typical psychological mechanisms and styles of expression that lead to those writing. Kate Manne, for example, uses the methods of analytic philosophy to examine the logic of misogyny and present a typology of the system (Manne, 2017). She argues that excessive bashing occurs when women visibly resist or violate social norms. In her view, these attacks are "not a matter of the psychology of individuals," but by the collective surveillance of women and the punishment of those who do not comply. She further distinguishes misogyny as a "law enforcement" branch; a combative system that attacks violators of the patriarchal order, and sexism as a "justificatory" branch of a patriarchal order; a theoretical system that justifies and theorizes patriarchal social norms and gender roles.</p>
+            <p style="text-align: justify;">In this research, we aim to understand the typology theory obtained in the field of humanities, as exemplified above, from the quantitative point of view in the case of the #Metoo movement on Twitter. That is, we examine correspondences between qualitative theory and quantitative results from the Twitter data. </p>
+            <p style="text-align: justify;">First, we collect social media posts (tweets) on Twitter about the following cases that have been popular in the #Metoo movement in Japan: 1) A case of Shiori Ito, who later became the symbol of Japan's #MeToo movement; she held a press conference in May 2017 accusing the journalist and published the book, 2) #KuToo movement; Yumi Ishikawa started a campaign to outlaw corporate practices that force women to wear high heels as sexual discrimination or harassment, 3) Flower Demo; The acquittals in four sexual assault cases in March 2019 triggered a nationwide grassroots movement.</p>
+            <p style="text-align: justify;">
+                Next, we extract slanderous words by discovering topics from the Twitter data. Specifically, we will apply topic models (e.g.,Latent Dirichlet Allocation, clustering algorithm (Blei, 2012)) and topic mining methods (e.g., Data Polishing (Uno, 2017; Hashimoto, 2021.)) for automatically finding the topics. By referring to the qualitative study of humanities, we typify and interpret the micro topics. In this way, we add objective explanations with an exhaustive approach to the concepts of the qualitative approach. At the same time, we apply the concepts from the qualitative approach to make sense of the typologies that are difficult to understand by using the exhaustive approach. In this way, we aim to fill in the methodological gaps between the two approaches and to get a better overall picture of slander.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: justify;">
+                        Blei, D. M. (2012). Probabilistic topic models. Communications of the ACM, 55, 77-84.
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        Hashimoto, T., Shepard D., Kuboyama, T., Shin, K., Kobayashi, R., and Uno T. (2021). Analyzing Temporal Patterns of Topic Diversity using Graph Clustering, The Journal of Supercomputing, 77, 4375-4388.
+                    </bibl>
+                    <bibl style="text-align: justify;">Manne, K. (2017). Down Girl: The Logic of Misogyny. Oxford University Press.</bibl>
+                    <bibl style="text-align: justify;">
+                        Uno, T., Maegawa, H., Nakahara, T., Hamuro, Y., Yoshinaka, R., and Tatsuta, M. (2017). Micro-clustering by Data Polishing. IEEE BigData 2017, 1012-1018.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

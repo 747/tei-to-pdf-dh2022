@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Small Data projects/Big Data research: contemporary problems and historical solutions</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>O'Donnell</surname>
+                        <forename>Daniel</forename>
+                    </persName>
+                    <affiliation>Humanities Innovation Lab, University of Lethbridge, Canada</affiliation>
+                    <email>daniel.odonnell@uleth.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Woods</surname>
+                        <forename>Nathan</forename>
+                    </persName>
+                    <affiliation>Humanities Innovation Lab, University of Lethbridge, Canada</affiliation>
+                    <email>nathan.woods@uleth.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bordalejo</surname>
+                        <forename>Barbara</forename>
+                    </persName>
+                    <affiliation>Humanities Innovation Lab, University of Lethbridge, Canada</affiliation>
+                    <email>barbara.bordalejo@uleth.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T12:15:00.697081793</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>data</term>
+                    <term>big data</term>
+                    <term>small data</term>
+                    <term>open science infrastructure</term>
+                    <term>humanities</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>data publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>Library &amp; information science</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <anchor xml:id="id_docs-internal-guid-c4b2288e-7fff-1290-10f1-e6458690786c"/>Humanist resistance to understanding the material they work with as “data” is well-documented (e.g. Marche, 2012; Fish, 2012). As O’Donnell has argued, 
+            </p>
+            <quote>In other domains, data are generated through experiment, observation, and measurement. Darwin goes to the Galapagos Islands, observes the finches, and fills notebooks with what he sees. His notes (i.e. his “data”)... are “the facts, numbers, letters, and symbols that describe an object, idea, condition, situation, or other factors.” Given the extent to which they are generated, it has been argued that they might be described better as capta, “taken,” than data, “given.”</quote>
+            <quote>The material of humanities research traditionally is much more datum than captum, finch than note…. [S]uch material... is often unique and its interpretation is usually provisional, depending on broader understandings of purpose, context and form that are themselves open to analysis, argument and modification. In the humanities, we more often end up debating why we think something is a finch than [listing] what we can conclude from observing it (O’Donnell, 2016).</quote>
+            <p>Scale is an important result of this distinction. While experimental and observational approaches to data generation can produce immense datasets, the more dialogic approach taken traditionally by Humanities and Cultural Heritage (HCH) researchers often leads to the development of relatively small, closely analysed datasets or even datapoints — the edition of a single novel or shipping register; a collection of comics; the oeuvre of a single artist or school (Borgman, 2015; Borgman, 2007; Golub and Liu, 2021). </p>
+            <p>This difference often results in a mismatch between research infrastructures and the needs of many small-data HCH researchers and users. The evolution of Open Science/Scholarship Infrastructure (OSI) offers a case in point. OSI typically assumes a research workflow and understanding of the purpose and nature of data in which data is clearly distinct from analysis and, traditionally, represents the raw material of research rather than a research output in its own right (Flanders, 2009; Jockers and Flanders, 2013). OSI, in this use case, provides a forum for the registration and publication of what was in many cases previously unpublished and considered unpublishable (Gray et al., 2002; Kratz and Strasser, 2015).</p>
+            <p>This is different from the typical understanding of the role of “data” (whether recognised as such or not by the researchers) in traditional small-data HCH editions and exhibits. In these projects “data,” which in this case we are defining as the mediated and curated representation of primary texts and objects intended to be used by others as a proxy for access to the originals, is understood to be a principal research output in its own right. In contrast to the workflow contemplated by contemporary OSI, in which data precedes and is published separately from analysis, in this workflow data is commonly given pride of place: published with the accompanying analysis and intended to be used directly by the end-user. In these cases, “analysis” is, if anything, often treated almost as a form of metadata rather than a distinct set of results derived from an underlying dataset. </p>
+            <p>This paper explores the question of Research Data Management (RDM) in this context: for small-data projects involving the representation of HCH texts and objects. Our primary focus is the understanding of what we will call “data” (regardless of the views of the researchers themselves about this terminology) inherent in such projects’ research and publication workflows (O’Donnell, 2018). We will expand on the distinction drawn above between “capta” and “data” (recognising at the same time the instability of the each term’s valency, cf. O’Donnell, 2016 and Drucker, 2011) and focus on how such “representational data” is captured, reproduced, and used in traditional HCH “primary-source” research workflows and use cases such as editions, catalogues, and exhibits. </p>
+            <p>The paper contrasts this analysis of HCH small-data practices and use cases with the understanding of data and research/RDM workflows implied or described by various specific examples of OSI (e.g. Zenodo, Figshare, Open Science Framework, Humanities Commons). We use this contrast to identify ways in which OSI can be adapted to support such small-data work and make it available for “big data” research (for an example of this adaptation within the sciences themselves, see Ferguson et al., 2014; Seltmann et al., 2013; Biodiversity Literature Repository, 2013; Cui et al., 2010).  </p>
+            <p>This is not the first time HCH researchers have struggled with this problem. An important part of the paper is an exploration of how such adaptations have been made in the past. While the contemporary conversation around big data has focused on features such as quantification, automisation, standard graphical representation of data patterns, and the compilation of large datasets, we build upon recent scholarship in the history of science that reframes the pre-history of this current conversation to consider alternate precedents (Aronova et al., 2010). </p>
+            <p>Our focus in that case is on  HCH  projects — such as the Oxford English Dictionary (OED) and the Corpus Inscriptionum Latinarum (Daston, 2017) — that created big data projects built from distributed data networks. As the architects of these projects demonstrated in the 19th century, it is possible, often with considerable effort, to reuse such work for big-data ends. The OED, after all, is a ‘big data’ project built on the basis of a collection (i.e. a ‘dataset’) of 1.8 million quotations collected from thousands of books (i.e. ‘small-data’ projects; see Oxford English Dictionary; Trench, 1860). These data networks compiled individual quotations and inscriptions as published compendia or editions.  </p>
+            <p>By exploring these big data precedents in the history of the humanities, our paper contributes in critical and practical ways to the contemporary and ongoing discussion on the organisation of data projects in Digital Humanities (Antonijević, 2015; Antonijević Ubois, 2016; Borgman, 2015; Posner, 2013). While recent scholarship has focused on the work of organising big data Digital Humanities projects, we argue this conversation has often conflated issues of RDM with issues of digital practices in knowledge production. In our concluding discussion, we explore how these earlier examples of data management might enrich contemporary discussion, particularly around the development of scholarly tools and research data management infrastructure. In reframing how digital practice and data might be related and combined, we reconsider in practical and historical terms how broader genealogies suggest alternative portraits of how humanities data is compiled, organised, used and shared. </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Antonijević, S.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2015). </hi>
+                        <hi rend="color(#000000) italic">Amongst Digital Humanists: An Ethnographic Study of Digital Knowledge Production</hi>
+                        <hi rend="color(#000000)">. First published. Basingstoke New York, NY: Palgrave Macmillan doi:10.1057/9781137484185.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Antonijević Ubois, S.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2016). Developing Research Tools via Voices from the Field Text </hi>
+                        <hi rend="color(#000000) italic">Dh+lib</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">World. https://acrl.ala.org/dh/2016/07/29/developing-research-tools-via-voices-from-the-field/ (accessed 20 April 2022).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Aronova, E., Baker, K. S. and Oreskes, N.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2010). Big Science and Big Data in Biology: From the International Geophysical Year through the International Biological Program to the Long-Term Ecological Research (LTER) Network, 1957–Present. </hi>
+                        <hi rend="color(#000000) italic">Historical Studies in the Natural Sciences</hi>
+                        <hi rend="color(#000000)">, </hi>
+                        <hi rend="color(#000000) bold">40</hi>
+                        <hi rend="color(#000000)">: 183–224 doi:10.1525/hsns.2010.40.2.183.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Biodiversity Literature Repository</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2013). </hi>
+                        <hi rend="color(#000000) italic">Biodiversity Literature Repository [Project] </hi>
+                        <hi rend="color(#000000)">https://zenodo.org/record/3475439.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Borgman, C. L.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2007). </hi>
+                        <hi rend="color(#000000) italic">Scholarship in the Digital Age: Information, Infrastructure, and the Internet</hi>
+                        <hi rend="color(#000000)">. Cambridge, Mass: MIT Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Borgman, C. L.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2015). </hi>
+                        <hi rend="color(#000000) italic">Big Data, Little Data, No Data: Scholarship in the Networked World</hi>
+                        <hi rend="color(#000000)">. MIT press https://cloudfront.escholarship.org/dist/prd/content/qt6vt1h4wt/qt6vt1h4wt.pdf.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Cui, H., Jiang, K. (Yang) and Sanyal, P. P.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2010). From text to RDF triple store: An application for biodiversity literature. </hi>
+                        <hi rend="color(#000000) italic">Proceedings of the American Society for Information Science and Technology</hi>
+                        <hi rend="color(#000000)">, </hi>
+                        <hi rend="color(#000000) bold">47</hi>
+                        <hi rend="color(#000000)">(1): 1–2 doi:10.1002/meet.14504701415.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Daston, L.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2017). The Immortal Archive: Nineteenth-Century Science Imagines the Future. </hi>
+                        <hi rend="color(#000000) italic">Science in the Archives: Pasts, Presents, Futures</hi>
+                        <hi rend="color(#000000)">. London and Chicago: UChicago Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Drucker, J.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2011). Humanities Approaches to Graphical Display. </hi>
+                        <hi rend="color(#000000) italic">Digital Humanities Quarterly</hi>
+                        <hi rend="color(#000000)">, </hi>
+                        <hi rend="color(#000000) bold">005</hi>
+                        <hi rend="color(#000000)">(1).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Ferguson, A. R., Nielson, J. L., Cragin, M. H., Bandrowski, A. E. and Martone, M. E.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2014). Big data from small data: data-sharing in the ‘long tail’ of neuroscience. </hi>
+                        <hi rend="color(#000000) italic">Nature Neuroscience</hi>
+                        <hi rend="color(#000000)">, </hi>
+                        <hi rend="color(#000000) bold">17</hi>
+                        <hi rend="color(#000000)">(11). Nature Research: 1442–47 doi:10.1038/nn.3838.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Fish, S.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2012). Mind Your P’s and B’s: The Digital Humanities and Interpretation </hi>
+                        <hi rend="color(#000000) italic">Opinionator </hi>
+                        <hi rend="color(#000000)">https://bit.ly/3gKM3mC (accessed 30 March 2013).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Flanders, J.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2009). The Productive Unease of 21st-century Digital Scholarship. , </hi>
+                        <hi rend="color(#000000) bold">3</hi>
+                        <hi rend="color(#000000)">(3) http://digitalhumanities.org/dhq/vol/3/3/000055/000055.html (accessed 12 May 2013).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Golub, K. and Liu, Y.-H.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021). </hi>
+                        <hi rend="color(#000000) italic">Information and Knowledge Organisation in Digital Humanities: Global Perspectives</hi>
+                        <hi rend="color(#000000)">. 1st ed. London: Routledge doi:10.4324/9781003131816. https://www.taylorfrancis.com/books/9781003131816 (accessed 17 January 2022).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Gray, J., Szalay, A. S., Thakar, A. R., Stoughton, C., and others</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2002). Online scientific data curation, publication, and archiving. </hi>
+                        <hi rend="color(#000000) italic">Virtual Observatories</hi>
+                        <hi rend="color(#000000)">, vol. 4846. International Society for Optics and Photonics, pp. 103–07.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Jockers, M. and Flanders, J.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2013). A Matter of Scale. </hi>
+                        <hi rend="color(#000000) italic">Faculty Publications – Department of English </hi>
+                        <hi rend="color(#000000)">https://digitalcommons.unl.edu/englishfacpubs/106.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Kratz, J. E. and Strasser, C.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2015). Researcher Perspectives on Publication and Peer Review of Data. </hi>
+                        <hi rend="color(#000000) italic">PLOS ONE</hi>
+                        <hi rend="color(#000000)">, </hi>
+                        <hi rend="color(#000000) bold">10</hi>
+                        <hi rend="color(#000000)">(2). Public Library of Science: e0117619 doi:10.1371/journal.pone.0117619.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Marche, S.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2012). </hi>
+                        <hi rend="color(#000000) italic">Literature Is Not Data: Against Digital Humanities - Los Angeles Review of Books</hi>
+                        <hi rend="color(#000000)">. </hi>
+                        <hi rend="color(#000000) italic">Los Angeles Review of Books </hi>
+                        <hi rend="color(#000000)">https://lareviewofbooks.org/article/literature-is-not-data-against-digital-humanities/.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">O’Donnell, D. P.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2016). The bird in hand: Humanities research in the age of Open Data. In Figshare (ed), </hi>
+                        <hi rend="color(#000000) italic">The State of Open Data Report</hi>
+                        <hi rend="color(#000000)">. Digital Science, pp. 38–39 doi:10.6084/m9.figshare.4036398.v1. https://figshare.com/articles/The_State_of_Open_Data_Report/4036398.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">O’Donnell, D. P.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2018). Humanities Data and their Research Use Paper presented at the Open Science Infrastuctures for Big Cultural Data, International Masterclass, Plovdiv, Bulgaria https://zenodo.org/record/2246390 (accessed 14 January 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Oxford English Dictionary </hi>
+                        <hi rend="color(#000000) italic">History of the OED</hi>
+                        <hi rend="color(#000000)">. </hi>
+                        <hi rend="color(#000000) italic">Oxford English Dictionary </hi>
+                        <hi rend="color(#000000)">https://public.oed.com/history/.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Posner, M.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2013). No Half Measures: Overcoming Common Challenges to Doing Digital Humanities in the Library. </hi>
+                        <hi rend="color(#000000) italic">Journal of Library Administration</hi>
+                        <hi rend="color(#000000)">, </hi>
+                        <hi rend="color(#000000) bold">53</hi>
+                        <hi rend="color(#000000)">(1): 43–52 doi:10.1080/01930826.2013.756694.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Seltmann, K. C., Pénzes, Z., Yoder, M. J., Bertone, M. A. and Deans, A. R.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2013). Utilizing Descriptive Statements from the Biodiversity Heritage Library to Expand the </hi>
+                        <hi rend="color(#000000)">Hymenoptera Anatomy Ontology. (Ed.) Moreau, C. S. </hi>
+                        <hi rend="color(#000000) italic">PLoS ONE</hi>
+                        <hi rend="color(#000000)">, </hi>
+                        <hi rend="color(#000000) bold">8</hi>
+                        <hi rend="color(#000000)">(2): e55674 doi:10.1371/journal.pone.0055674.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Trench, R. C.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(1860). </hi>
+                        <hi rend="color(#000000) italic">On Some Deficiencies in Our English Dictionaries: Being the Substance of Two Papers Read Before the Philological Society, Nov. 5, and Nov. 19, 1857</hi>
+                        <hi rend="color(#000000)">. </hi>
+                        <hi rend="color(#000000) italic">Oxford English Dictionary</hi>
+                        <hi rend="color(#000000)">. J. W. Parker and son https://public.oed.com/history/archives/on-some-deficiencies/appendix/.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

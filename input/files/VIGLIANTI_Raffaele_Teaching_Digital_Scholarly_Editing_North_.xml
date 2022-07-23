@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Teaching Digital Scholarly Editing North and South Through Minimal Computing</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Viglianti</surname>
+                        <forename>Raffaele</forename>
+                    </persName>
+                    <affiliation>University of Maryland, United States of America</affiliation>
+                    <email>rviglian@umd.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>del Rio Riande</surname>
+                        <forename>Gimena</forename>
+                    </persName>
+                    <affiliation>Consejo Nacional de Investigaciones Científicas y Técnicas, Argentina</affiliation>
+                    <email>gdelrio@conicet.gov.ar</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-25T09:41:22.572095846</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>global digital humanities</term>
+                    <term>minimal computing</term>
+                    <term>scholarly editing</term>
+                    <term>digital scholarly editions</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>South America</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>physical &amp; minimal computing</term>
+                    <term>scholarly editing and editions development</term>
+                    <term>analysis</term>
+                    <term>and methods</term>
+                    <term>Education/ pedagogy</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Abstract</head>
+                <p>In this paper, we present our reflections on whether minimal computing as a practice can extend beyond “computing done under some technological constraints” (Minimal Computing Working Group, 2021) to serving as a common ground between different digital humanities research and pedagogical dynamics between the so called Global North and South. We explore this question by commenting on our experience in developing and teaching a bilingual undergraduate course to students enrolled from both the University of Maryland, College Park in the United States and Universidad del Salvador in Buenos Aires, Argentina. The class has so far undergone two iterations (2020 - 2021) and has introduced students to global digital humanities, digital publishing and textual scholarship of bilingual Spanish and English texts, and presented minimal computing applied to Digital Scholarly Editions (DSEs) as a shared set of values including: use of open technologies, ownership of data and code, and reduction in computing infrastructure.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Scholarly Editing Through an Open and Global Lens</head>
+                <p>The debate over a “global digital humanities” resulted in a considerable shift in 2013 when the Global Outlook Digital Humanities (GO::DH) Special Interest Group of the Alliance for the Digital Humanities Organizations (ADHO) was founded. Nonetheless, despite the benefits that we could expect from a global digital humanities, it is crucial to remember that the concept of the “global” is complex and even contradictory, especially when related to technology in all its facets, including software architecture, infrastructure as hardware, and infrastructure as long-term preservation of software. </p>
+                <p>While not all textual scholars might rely on the same definition for DSEs, they recognize their features and uses (Sahle, 2016). Free, open standards such as the ones developed by the Text Encoding Initiative (TEI), along with eXtensible Markup Language (XML) technologies, such as eXtensible Stylesheet Language Transformations (XSLT) and XQuery, and dedicated software have characterized the digital editing field. The scholarly editions themselves, however, haven’t always been successful as open products of research. While it is common practice to make TEI data publicly available, the debate over how DSEs need to be structured to be truly “open” is still ongoing and best practices have yet to be established. DSEs require substantial infrastructure and advanced technical skills, while diverse needs, capacities, priorities, languages, and academic traditions may require different features at a global scale. With that in mind, how can DSEs become global? How can DSEs be minimal?</p>
+                <p>We propose minimal computing as a shared set of values such as the use of open technologies, ownership of data and code, and reduction in computing infrastructure. A minimal computing approach can moreover contribute to strengthening the bonds between the digital humanities community to open source software and hardware (OSSH) or other grassroots innovation movements that in many different regions, like Latin America or Africa, have been leading or co-creating open science projects inside academia (Arancio, 2021). In developing our syllabus, we focused on the following question: Could minimal computing provide a set of shared principles and technologies to empower students and scholars to work autonomously on and have more control over the future of their own projects? We further considered: What if minimal computing extended beyond “computing done under some technological constraints” by standing at the core of a global Digital Humanities commons, overcoming notions such as center and periphery, North and South? and more broadly: Could minimal computing serve as a common ground for Northern and Southern digital humanists?</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Teaching Digital Publishing with Minimal Computing</head>
+                <p>In December 2019, we proposed a course titled Digital Publishing with Minimal Computing: Humanities at a Global Scale to the Global Classroom Initiative (GCI) program at the University of Maryland. This program offers support for the development of courses to be taught in collaboration with a higher education institution outside of the United States, with the goal of establishing courses that expose students to work that is cross-cultural, project-based, and virtual; the GCI argues that these courses mirror the work students will encounter throughout their lives. While this outcome is somewhat dependent on the students’ career choices and opportunities, it is evident that “globalization shrinks the world, bringing a wider range of cultures into closer contact than ever before” (UNESCO, 2013). Thus, preparing students to participate in a globalized world is a worthwhile goal, particularly if this can be done in a way that fosters intercultural competences.</p>
+                <p>The course has received funding for at least three iterations between 2020 and 2022, with a blend of online and in-person learning. It is centered around a group project in which students collaborate virtually to create a bilingual (Spanish and English) digital edition of a multilingual colonial era text, a travelogue written by a Basque trader called Acarette Du Biscay, 
+                    <hi rend="italic">An Account of a Voyage up the River de la Plata</hi>, with a truly multilingual publishing history.
+                </p>
+                <p>Teaching through a minimal computing lens, moreover, greatly benefits from projects that exhort students to think both globally and locally by recognizing the technological affordances they have access to (as well as why and how) and by confronting the limitations and constraints that work against them, whether in hardware, software, education, network capacity, power, or indeed self-imposed limitations for pedagogical purposes. The nature of the cross-border collaboration between students is online and virtual, given their geographical separation. They attend virtual lectures and collaborate online via messaging and code sharing platforms, with the support of the instructors. This kind of engagement is often referred to as “Virtual Exchange” (Bassani and Buchem, 2019; O’Dowd, 2018) or “Collaborative Online International Learning” (COIL) (Guth, 2013).</p>
+                <p>Our continued challenge is uncovering how our work teaching minimal computing can effectively advance a more open and global digital humanities. We aim at moving beyond the limits of the course itself, by upholding approaches to pedagogy and digital humanities research that work towards what we claim should be a core tenet for the global digital humanities community: technology owned by no one and used and contributed to by all.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Arancio, </hi>
+                        <hi rend="bold">J.</hi>
+                        <hi rend="bold"> C.</hi> (2021). 
+                        <hi rend="italic">Opening up the tools for doing science: The case of the global open science hardware movement.</hi> International Journal of Engineering, Social Justice and Peace, 8(2), pp. 1-27. https://ojs.library.queensu.ca/index.php/IJESJP/article/view/13997/9834.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bassani, </hi>
+                        <hi rend="bold">P. S.</hi>
+                        <hi rend="bold"> and Buchem, </hi>
+                        <hi rend="bold">I. </hi>(2019). Virtual Exchanges in Higher Education: Developing Intercultural Skills of Students Across Borders Through Online Collaboration. 
+                        <hi rend="italic">Revista Interuniversitaria de Investigación en Tecnología Educativa,</hi> 6. https://doi.org/10.6018/riite.377771.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Guth, </hi>
+                        <hi rend="bold">S.</hi> (2013). 
+                        <hi rend="italic">The COIL Institute for Globally Networked Learning in the Humanities</hi>. SUNY - COIL Center-SUNY Research Foundation. http://coil.suny.edu/sites/default/files/case_study_report.pdf.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Minimal Computing Working Group. </hi>(2021). 
+                        <hi rend="italic">About. What is Minimal Computing?</hi> https://go-dh.github.io/mincomp/about.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">O’Dowd, R. </hi>(2018). From Telecollaboration to Virtual Exchange: State-of-the-art and the Role of UNICollaboration in Moving Forward. 
+                        <hi rend="italic">Journal of Virtual eExchange</hi>, 1: 1–23. https://doi.org/10.14705/rpnet.2018.jve.1.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sahle, </hi>
+                        <hi rend="bold">P.</hi> (2016). What is a Scholarly Digital Edition? In Pierazzo, E. and Driscoll, M. 
+                        <hi rend="italic">Digital Scholarly Editing: Theories and Practices</hi>, pp. 19–40. Cambridge, UK: Open Book Publishers. https://jstor.org/stable/j.ctt1fzhh6v.6.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">UNESCO</hi>, 
+                        <hi rend="bold">Leeds-Hurwitz, W. and Stenou, </hi>
+                        <hi rend="bold">K.</hi>
+                        <hi rend="bold"> </hi>(2013). 
+                        <hi rend="italic">Intercultural Competences: Conceptual and Operational Framework.</hi> https://unesdoc.unesco.org/ark:/48223/pf0000219768.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

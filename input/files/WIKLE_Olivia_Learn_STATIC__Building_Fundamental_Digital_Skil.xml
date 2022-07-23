@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Learn-STATIC: Building Fundamental Digital Skills in the Humanities Classroom</title>
+                <author>
+                    <persName>
+                        <surname>Wikle</surname>
+                        <forename>Olivia M.</forename>
+                    </persName>
+                    <affiliation>University of Idaho, United States of America</affiliation>
+                    <email>omwikle@uidaho.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Williamson</surname>
+                        <forename>Evan Peter</forename>
+                    </persName>
+                    <affiliation>University of Idaho, United States of America</affiliation>
+                    <email>ewilliamson@uidaho.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Becker</surname>
+                        <forename>Devin</forename>
+                    </persName>
+                    <affiliation>University of Idaho, United States of America</affiliation>
+                    <email>dbecker@uidaho.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Thornhill</surname>
+                        <forename>Kate</forename>
+                    </persName>
+                    <affiliation>University of Oregon, United States of America</affiliation>
+                    <email>kmthorn@uoregon.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hayden</surname>
+                        <forename>Gabriele</forename>
+                    </persName>
+                    <affiliation>University of Oregon, United States of America</affiliation>
+                    <email>ghayden@uoregon.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T18:57:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital humanities pedagogy</term>
+                    <term>static web</term>
+                    <term>minimal computing</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>curricular and pedagogical development and analysis</term>
+                    <term>physical &amp; minimal computing</term>
+                    <term>Education/ pedagogy</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Static web technologies offer an exciting opportunity for DH instructors to incorporate transferable digital and data literacy skills into their classrooms, while producing low-cost, low-maintenance interactive web projects that are sustainable even for institutions with limited resources (Wikle et al., 2020). As an alternative to dynamic web applications, static websites are composed of flat HTML, CSS, and JavaScript files that are produced using a static site generator such as 
+                <ref target="https://jekyllrb.com/">Jekyll</ref>, and hosted on a simple—often free—server such as 
+                <ref target="https://pages.github.com/">GitHub Pages</ref>. The code and data that Jekyll uses to generate a site's files is typically contained in a repository that can be stored and collaboratively edited on 
+                <ref target="https://github.com/">GitHub</ref>, 
+                <ref target="https://about.gitlab.com/">GitLab</ref>, or other code hosting sites. 
+            </p>
+            <p style="text-align: left; ">By virtue of their being static, the site's files will remain secure and functional over the long term with little maintenance, making statically-generated sites an ideal solution for classroom projects which usually undergo a period of intense semester-long development followed by long periods of minimal maintenance. Along with these economic and time-saving benefits, teaching with static web tools allows instructors the flexibility to introduce increasingly complex concepts of data management, web development, and computing to students. Depending on how a project is framed and taught, students may encounter anything from basic tutorials on spreadsheet formulas, to Git, GitHub, 
+                <ref target="https://www.markdownguide.org/">Markdown</ref>, 
+                <ref target="https://yaml.org/">YAML</ref>, HTML, CSS, 
+                <ref target="https://shopify.github.io/liquid/">Liquid</ref>, and Jekyll. The incorporation of these technical concepts addresses a gap in DH instruction, which all too often succeeds at teaching the "buttonology" of a specific DH platform without also investing in teaching transferable digital literacy skills that empower students to think more critically about the digital projects they use (Russell and Hensley, 2017). By contrast, when students engage with static web technologies and data structures alongside the more traditional DH methods of determining and curating humanities data (Posner, 2015), they gain the invaluable experience of exploring how their data is consumed, transformed, and output in the form of substantial, interactive web projects, and learn to bring the same spirit of critical inquiry that they focus on humanities content to their understanding of the tools and processes they use to manipulate and share digital content.
+            </p>
+            <p style="text-align: left; ">Static web technology is not new to DH: static web templates such as 
+                <ref target="https://minicomp.github.io/ed/">Ed</ref> (for publishing digital editions), 
+                <ref target="https://minicomp.github.io/wax/">Wax</ref> (for creating digital exhibits), 
+                <ref target="https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/">CollectionBuilder</ref> (for building digital collections), and 
+                <ref target="https://uidaholib.github.io/oral-history-as-data/">Oral History as Data</ref> (for curating and visualizing oral histories) embody a 
+                <ref target="http://go-dh.github.io/mincomp/about/">minimal computing</ref> ethos by reducing unnecessary reliance on databases or excessive processing power to more directly meet the unique needs of a project (Gil, 2015). However, few models or example lesson plans exist that demonstrate how to incorporate static web tools and development practices into the DH classroom.
+            </p>
+            <p style="text-align: left; ">The Learn-STATIC initiative, funded by a 2021 National Endowment for the Humanities (NEH) Digital Humanities Advancement Grant and piloted by librarians at the University of Idaho and University of Oregon, aims to address this lack of resources by creating a series of open-source learning sequences for using static web tools in the DH classroom, each complete with reusable code stored in a GitHub repository, an example lesson plan, and documentation tailored specifically for instructors' and students' use in the classroom. Each learning sequence focuses on one of the following topics: digital oral histories, text analysis, digital collections, and digital project recovery, and provides a practical way forward for instructors new to using or teaching static web tools, as the step-by-step documentation for each project walks students through a variety of activities including curating spreadsheets of data, uploading data to the project's GitHub repository, and configuring and hosting the project site on GitHub Pages.</p>
+            <p style="text-align: left; ">This presentation will introduce the Learn-STATIC learning sequences, report on their effectiveness in the classroom, and demonstrate how they accomplish the advantages of static web laid out above. Ultimately, we hope that Learn-STATIC will reach beyond the initial learning sequences presented here, to serve as a collaborative initiative that invites DH practitioners to share their own creative adaptations of static web tools for DH pedagogy.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Gil, A.</hi> (2015). The User, the Learner and the Machines We Make. 
+                        <hi rend="italic">Minimal Computing</hi>. https://go-dh.github.io/mincomp/thoughts/2015/05/21/user-vs-learner/.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Posner, M.</hi> (2015). Humanities Data: A Necessary Contradiction. 
+                        <hi rend="italic">Miriam Posner's Blog</hi>. https://miriamposner.com/blog/humanities-data-a-necessary-contradiction/.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Russell, J. E. and Hensley, M. K.</hi> (2017). Beyond Buttonology: Digital Humanities, Digital Pedagogy, and the ACRL Framework. 
+                        <hi rend="italic">College &amp; Research Libraries News</hi>. https://crln.acrl.org/index.php/crlnews/article/view/16833.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Wikle, O., Williamson, E. and Becker, B.</hi> (2020). What is Static Web and What's it Doing in the Digital Humanities Classroom? 
+                        <hi rend="italic">dh+lib</hi>. https://acrl.ala.org/dh/2020/06/22/what-is-static-web-and-whats-it-doing-in-the-digital-humanities-classroom/.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

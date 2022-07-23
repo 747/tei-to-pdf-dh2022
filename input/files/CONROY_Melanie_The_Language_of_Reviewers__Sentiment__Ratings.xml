@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Language of Reviewers: Sentiment, Ratings, and Style in Japanese-Language Amazon Video Reviews</title>
+                <author>
+                    <persName>
+                        <surname>Conroy</surname>
+                        <forename>Melanie</forename>
+                    </persName>
+                    <affiliation>University of Memphis, United States of America</affiliation>
+                    <email>mrconroy@memphis.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nishi</surname>
+                        <forename>Hironori</forename>
+                    </persName>
+                    <affiliation>University of Memphis, United States of America</affiliation>
+                    <email>hnishi1@memphis.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T15:42:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>stylometry</term>
+                    <term>online reviews</term>
+                    <term>sentiment analysis</term>
+                    <term>video</term>
+                    <term>ratings</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>attribution studies and stylometric analysis</term>
+                    <term>text mining and analysis</term>
+                    <term>Asian studies</term>
+                    <term>Cultural studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">Online reviews have been analyzed for many traits that are linked to review quality: evidence of repetition, sarcasm, and of other markers of speech that may indicate the reviewer’s insincerity, the use of bots, or a low-quality review (Wu, Van der Heijden, &amp; Korfiatis, 2011; Li &amp; Shimizu 2018; Lin &amp; Kalwani, 2018). Within DH, Amazon reviews have been studied for what they tell us about the products reviewed, particularly books and their reception (Finn, 2011). We are interested in what the reviews can tell us about the process and style of reviewing, particularly in non-English languages. In this short talk, we offer some preliminary conclusions from our analysis of language, topics, and sentiments in video reviews in the Japanese-language portion of the 
+                    <ref target="https://www.amazon.science/publications/the-multilingual-amazon-reviews-corpus">Multilingual Amazon Reviews Corpus</ref> (Keung et al., 2020). Large-scale analyses of Amazon reviews have previously shown that there are fewer Japanese-language reviews on Amazon than English-language reviews (Lin &amp; Kalwani, 2018); otherwise, reviews share many traits across languages (Keung et al., 2020).
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Length of reviews</head>
+                <figure>
+                    <graphic n="1001" width="15.372291666666667cm" height="9.500075cm" url="Pictures/c85db3e81bf89da43b3e8c47091d0744.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Figure 1 shows the average length of reviews, the max review length, the min review length, and the average number of characters in a review’s title by star level in the 2,600 Japanese-language video reviews. Two- and three-star reviews are longer; many one-star reviews are quite short, or even vulgarly dismissive of the work being reviewed, yet some authors of one-star reviews feel the need to go into great detail about the lack of merit of the work reviewed (see max).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Topics of reviews</head>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="9.914819444444445cm" url="Pictures/7b8826fef1dc01d0b51b89a664fa6410.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Figure 2 shows the distribution of main topics of Amazon video reviews. At all rating levels, there are diverse reasons for liking or disliking videos, as well as reviewers who failed to give any reason at all. The story was the most commonly referenced factor across all rating levels. Four-star and five-star reviews were more likely to reference acting or specific actors. One-star and two-star ratings more often referred to elements of production such as the adaptation, direction, editing, or cinematography, or problems with the audio or video quality. There were also many reviews referencing Amazon or the process of renting or buying the video in the mid-rated reviews. Five-star reviews often gave no reason for that rating or referenced themes.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Sentiments in reviews</head>
+                <p style="text-align: left; ">We see both surprising and unsurprising patterns in the distribution of the predominant sentiment associated with each review, which was detected using key words and confirmed by a human reader, and which varied considerably (see figure 3). Three-star and lower reviews are more likely to be highly critical or express disappointment, boredom, or a failure to finish watching. One-star reviews are the most likely to express confusion or uncertainty about the quality or purpose of the video. Five-star reviews were mostly enthusiastic. Yet there is much evidence that the text of reviews does not align with the numerical rating given. A number of five-star reviews contain text that is mostly critical of the film. Critical reviews are more likely to be two-star or three-star reviews than one-star. Nostalgia or familiarity was the predominant sentiment in many of the reviews associated with the highest ratings.</p>
+                <figure>
+                    <graphic n="1003" width="16.002cm" height="8.777111111111111cm" url="Pictures/88d7e3b7b2953fea5f206fb671ada331.PNG" rend="inline"/>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusions</head>
+                <p style="text-align: left; ">While many reviewers’ ratings and sentiment aligned, there were other reviews that gave no reasons for their rating and lots that expressed boredom or judgment without referencing qualities of the video. In other words, many reviewers were happy to express their approval or judgment of a video without feeling the need to justify their criticism. Some others gave very high numerical ratings but remained critical in the text of the review. Likewise, the praise for themes and actors in positive reviews and the frequent criticism of the crew and production in negative reviews were also notable. The presence of numerical ratings in this dataset allows us to compare the rhetoric of reviewers and their ratings, as well as to locate reviews whose ratings do not align with the sentiment expressed in the review; such “misaligned” ratings can often tell us a lot about internet-based criticism of cultural works and which aspects of the work these critics target. Finally, we can compare these aligned and misaligned ratings across cultures to see whether critics in other cultures use the same rhetoric.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Finn, E.</hi> (2011). Reading, writing and reputation: literary networks in contemporary American fiction. 
+                        <hi rend="italic">
+                            <hi rend="color(222222)" style="font-family:Arial, sans-serif">Digital Humanities 2011: Conference Abstracts</hi>
+                            <hi rend="color(222222)" style="font-family:Arial, sans-serif">. Stanford: Stanford University, pp.</hi>
+                        </hi>47-49.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Keung, P., Lu, Y., Szarvas, G., &amp; Smith. N. A.</hi> (2020). The multilingual Amazon reviews corpus. 
+                        <hi rend="italic">Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing</hi>. 
+                        <hi rend="color(212529)">Association for Computational Linguistics, pp. 4563-4568.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Li, Z., &amp; Shimizu, A.</hi> (2018). Impact of online customer reviews on sales outcomes: an empirical study based on prospect theory. 
+                        <hi rend="italic">The Review of Socionetwork Strategies</hi>, 12(2): 135-151.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Lin, H. C., &amp; Kalwani, M. U.</hi> (2018). Culturally contingent electronic word-of-mouth signaling and screening: a comparative study of product reviews in the United States and Japan. 
+                        <hi rend="italic">Journal of International Marketing</hi>, 26(2): 80-102.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Wu, P. F., Van der Heijden, H., &amp; Korfiatis, N.</hi> (2011). The influences of negativity and review quality on the helpfulness of online reviews. 
+                        <hi rend="italic">International Conference on Information Systems</hi>, 2011, 10 pages.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

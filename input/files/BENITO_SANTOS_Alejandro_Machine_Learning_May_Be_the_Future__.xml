@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Machine Learning May Be the Future, but Can It Be the Past? What Machine Learning Systems May Mean for the Historical Concept of Provenance</title>
+                <author>
+                    <persName>
+                        <surname>Benito-Santos</surname>
+                        <forename>Alejandro</forename>
+                    </persName>
+                    <affiliation>VisUSAL Research Group, Universidad de Salamanca, Spain</affiliation>
+                    <email>abenito@usal.es</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Doran</surname>
+                        <forename>Michelle</forename>
+                    </persName>
+                    <affiliation>Trinity Long Room Hub Arts &amp; Humanities Research Institute, University of Dublin Trinity College</affiliation>
+                    <email>doranm1@tcd.ie</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Edmond</surname>
+                        <forename>Jennifer</forename>
+                    </persName>
+                    <affiliation>Trinity Long Room Hub Arts &amp; Humanities Research Institute, University of Dublin Trinity College</affiliation>
+                    <email>edmondj@tcd.ie</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Therón</surname>
+                        <forename>Roberto</forename>
+                    </persName>
+                    <affiliation>VisUSAL Research Group, Universidad de Salamanca, Spain</affiliation>
+                    <email>theron@usal.es</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T11:03:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>machine learning</term>
+                    <term>historical provenance</term>
+                    <term>causality</term>
+                    <term>uncertainty representation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>meta-criticism (reflections on digital humanities and humanities computing)</term>
+                    <term>Computer science</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">With a few limited exceptions 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"UgexX94v","properties":{"formattedCitation":"(Blanke et al., 2020)","plainCitation":"(Blanke et al., 2020)","noteIndex":0},"citationItems":[{"id":17141,"uris":["http://zotero.org/users/4711545/items/7G2VEEV5"],"itemData":{"id":17141,"type":"article-journal","abstract":"This article addresses an important challenge in artificial intelligence research in the humanities, which has impeded progress with supervised methods. It introduces a novel method to creating test collections from smaller subsets. This method is based on what we will introduce as distant supervision’ and will allow us to improve computational modelling in the digital humanities by including new methods of supervised learning. Using recurrent neural networks, we generated a training corpus and were able to train a highly accurate model that qualitatively and quantitatively improved a baseline model. To demonstrate our new approach experimentally, we employ a real-life research question based on existing humanities collections. We use neural network based sentiment analysis to decode Holocaust memories and present a methodology to combine supervised and unsupervised sentiment analysis to analyse the oral history interviews of the United States Holocaust Memorial Museum. Finally, we employed three advanced methods of computational semantics. These helped us decipher the decisions by the neural network and understand, for instance, the complex sentiments around family memories in the testimonies.","container-title":"Digital Scholarship in the Humanities","DOI":"10.1093/llc/fqy082","ISSN":"2055-7671","issue":"1","journalAbbreviation":"Digital Scholarship in the Humanities","page":"17-33","source":"Silverchair","title":"Understanding memories of the Holocaust—A new approach to neural networks in the digital humanities","volume":"35","author":[{"family":"Blanke","given":"Tobias"},{"family":"Bryant","given":"Michael"},{"family":"Hedges","given":"Mark"}],"issued":{"date-parts":[["2020",4,1]]},"citation-key":"blanke_understanding_2020"}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Blanke et al., 2020), the application of machine learning (ML) within the historical research process maintains a strong human-in-the-loop element that limits the extent of its proliferation. Part of the reason for this is surely the omnipresence of certain kinds of uncertainty in historical research, which the traditions of historiography have developed powerful (albeit analogue) tools to manage. As Myles Lavan recently suggested, the persistence of these longstanding methods may not be ‘a mistaken belief that uncertainty about the past is qualitatively different from that faced by other disciplines,’ 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"G1ZwBFoB","properties":{"formattedCitation":"(Lavan, 2019)","plainCitation":"(Lavan, 2019)","noteIndex":0},"citationItems":[{"id":17135,"uris":["http://zotero.org/users/4711545/items/W33SZ6TC"],"itemData":{"id":17135,"type":"article-journal","abstract":"The subjective interpretation of probability—increasingly influential in other fields—makes probability a useful tool of historical analysis. It provides a framework that can accommodate the significant epistemic uncertainty involved in estimating historical quantities, especially (but not only) regarding periods for which we have limited data. Conceptualizing uncertainty in terms of probability distributions is a useful discipline because it forces historians to consider the degree of uncertainty as well as to identify a most-likely value. It becomes even more useful when multiple uncertain quantities are combined in a single analysis, a common occurrence in ancient history. Though it may appear a radical departure from current practice, it builds upon a probabilism that is already latent in historical reasoning. Most estimates of quantities in ancient history are implicit expressions of probability distributions, insofar as they represent the value judged to be most likely, given the available evidence. But the traditional point-estimate approach leaves historians’ beliefs about the likelihood of other possible values unclear or unexamined.","container-title":"The Journal of Interdisciplinary History","DOI":"10.1162/jinh_a_01377","ISSN":"0022-1953","issue":"1","journalAbbreviation":"The Journal of Interdisciplinary History","page":"91-111","source":"Silverchair","title":"Epistemic Uncertainty, Subjective Probability, and Ancient History","volume":"50","author":[{"family":"Lavan","given":"Myles"}],"issued":{"date-parts":[["2019",5,1]]},"citation-key":"lavan_epistemic_2019"}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Lavan, 2019) however. Instead, we propose that ML/AI methods challenge one of the most fundamental and foundational elements of historical research, namely provenance, in ways that are not simple to resolve or document. In historical research, provenance typically refers to the record of where an object, collection, or dataset has come from and the places and ‘experiences’ (additions, transformations, deletions, etc.) it has had since its original documentation. The entry of ML methods into DH might be changing the limits and implications of this definition. 
+            </p>
+            <p style="text-align: left; ">For such methods to be meaningfully applied to historical research, provenance needs to be reconsidered, modelled from multiple perspectives, and documented differently from the current standards in computer science. Specifically, data transformations that are no longer performed by human actors but by autonomous or semi-autonomous computational systems need to be captured to enable provenance management. Conversely, historians’ reliance on provenance requires that we (a) agree upon a shared definition of data provenance and (b) ensure that ML systems designed for use in this specific context maintain legibility. Such a negotiation between research fields will require more than the current research in explainable AI promises to deliver, making the computational provenance not only be reconstructed but also comprehensible in the multidisciplinary space of DH.</p>
+            <p style="text-align: left; ">The research project “PROgressive VIsual DEcision-Making in Digital Humanities” (PROVIDEDH, 2017-2021) has contributed to this requirement by proposing a Visual Analytics (VA) approach to representing and managing uncertainty in DH research and demonstrating how a better communication of human or machine-induced uncertainty can enhance the user experience for humanities scholars using ML models. Among other outputs, the project developed an HCI-inspired uncertainty taxonomy (see Figure 1) differentiating between two main types of uncertainty: human-made and technology-made, which correspond to aleatoric (irreducible) and epistemic (reducible) uncertainty as per previous works in the literature 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"ExepC1DY","properties":{"formattedCitation":"(Edmond, 2019; Ther\\uc0\\u243{}n S\\uc0\\u225{}nchez et al., 2019; Simon et al., 2018)","plainCitation":"(Edmond, 2019; Therón Sánchez et al., 2019; Simon et al., 2018)","noteIndex":0},"citationItems":[{"id":16145,"uris":["http://zotero.org/users/4711545/items/D9IZXK9J"],"itemData":{"id":16145,"type":"article-journal","abstract":"This paper takes a high-level view of both the sources and status of uncertainty in historical research and the manners in which possible negative effects of this omnipresent characteristic might be managed and mitigated. It draws upon both the experience of a number of digital projects and research into the many-faceted concept of uncertainty in data, and in particular, it explores the conflicting strategies for the management of uncertainty in historical research processes that are reflected in the historiographical and digital humanities literature. Its intention is to support a dialogue between the humanities and computer science, able to realise the promise of digital humanities without a reversion to a new positivism in disciplines such as history and literary studies and it therefore concludes with recommendations for the developers of research tools and environments for digital history.","container-title":"Informatics","DOI":"10.3390/informatics6030036","issue":"3","language":"en","page":"36","source":"www.mdpi.com","title":"Strategies and Recommendations for the Management of Uncertainty in Research Tools and Environments for Digital History","volume":"6","author":[{"family":"Edmond","given":"Jennifer"}],"issued":{"date-parts":[["2019",9]]},"citation-key":"edmond_strategies_2019"}},{"id":2939,"uris":["http://zotero.org/users/4711545/items/ITBRW42G"],"itemData":{"id":2939,"type":"article-journal","abstract":"As visualization becomes widespread in a broad range of cross-disciplinary academic domains, such as the digital humanities (DH), critical voices have been raised on the perils of neglecting the uncertain character of data in the visualization design process. Visualizations that, purposely or not, obscure or remove uncertainty in its different forms from the scholars&rsquo; vision may negatively affect the manner in which humanities scholars regard computational methods as useful tools in their daily work. In this paper, we address the issue of uncertainty representation in the context of the humanities from a theoretical perspective, in an attempt to provide the foundations of a framework that allows for the construction of ecological interface designs which are able to expose the computational power of the algorithms at play while, at the same time, respecting the particularities and needs of humanistic research. To this end, we review past uncertainty taxonomies in other domains typically related to the humanities and visualization, such as cartography and GIScience. From this review, we select an uncertainty taxonomy related to the humanities that we link to recent research in visualization for the DH. Finally, we bring a novel analytics method developed by other authors (Progressive Visual Analytics) into question, which we argue can be a good candidate to resolve the aforementioned difficulties in DH practice.","container-title":"Informatics","DOI":"10.3390/informatics6030031","issue":"3","language":"en","note":"tex.ids= theron_sanchez_towards_2019","page":"31","source":"www.mdpi.com","title":"Towards an Uncertainty-Aware Visualization in the Digital Humanities","volume":"6","author":[{"family":"Therón Sánchez","given":"Roberto"},{"family":"Benito-Santos","given":"Alejandro"},{"family":"Santamaría Vicente","given":"Rodrigo Santamaría"},{"family":"Losada Gómez","given":"Antonio"}],"issued":{"date-parts":[["2019",9]]},"citation-key":"theron_sanchez_towards_2019"}},{"id":17046,"uris":["http://zotero.org/users/4711545/items/JA3FG6E9"],"itemData":{"id":17046,"type":"book","abstract":"The first part of the book defines the concept of uncertainties and the mathematical frameworks that will be used for uncertainty modeling. The application to system reliability assessment illustrates the concept. In the second part, evidential networks as a new tool to model uncertainty in reliability and risk analysis is proposed and described. Then it is applied on SIS performance assessment and in risk analysis of a heat sink. In the third part, Bayesian and evidential networks are used to deal with important measures evaluation in the context of uncertainties.","ISBN":"978-1-119-48935-1","language":"en","note":"Google-Books-ID: w0RKDwAAQBAJ","number-of-pages":"255","publisher":"John Wiley & Sons","source":"Google Books","title":"Data Uncertainty and Important Measures","author":[{"family":"Simon","given":"Christophe"},{"family":"Weber","given":"Philippe"},{"family":"Sallak","given":"Mohamed"}],"issued":{"date-parts":[["2018",1,19]]},"citation-key":"simon_data_2018"}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Edmond, 2019; Therón Sánchez et al., 2019; Simon et al., 2018) (Edmond, 2019; Therón Sánchez et al., 2019; Simon, 2017). 
+            </p>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="9.202208333333333cm" url="Pictures/9a180c907434ca9bbe3b7e26bcf7952a.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">
+                <anchor xml:id="Ref101357069"/>Figure 1: Proposed uncertainty model. Top: human-induced uncertainty with four predefined categories that map to the epistemic categories previously introduced by Fisher and others. Users can add more categories on a per-project basis if required. Bottom: Machine-induced uncertainty showing the results of applying N different algorithms to the data.
+            </p>
+            <p style="text-align: left; ">The first uncertainty category, technology-induced, can be mapped to aleatoric uncertainty (well-defined objects in Fisher’s 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"YPIuYRNc","properties":{"formattedCitation":"(Fisher, 1999)","plainCitation":"(Fisher, 1999)","noteIndex":0},"citationItems":[{"id":778,"uris":["http://zotero.org/users/4711545/items/NSIF4K8A"],"itemData":{"id":778,"type":"article-journal","container-title":"Geographical information systems","page":"191–205","title":"Models of uncertainty in spatial data","volume":"1","author":[{"family":"Fisher","given":"Peter F"}],"issued":{"date-parts":[["1999"]]},"citation-key":"fisher_models_1999"}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Fisher, 1999) taxonomy) and results from applying computational algorithms to the data, which often give their results with a variable degree of bounded uncertainty (e.g., topic models). For this reason, this type of uncertainty is better represented as a continuous probability distribution. In addition, this representation allows a better understanding of speculative runs of a given algorithm and enhances the what-if analysis process. For example, a researcher could parametrise an algorithm with a fixed set of inputs and launch it several times, obtaining a range of mean values and deviations encoded in a probability distribution function (PDF), which, if correctly displayed, would allow her to get an idea of how the algorithm behaves. Analogously, the algorithm could be parametrised with a variable set of inputs created by the user running the computation or by other researchers. This operation mode would answer the questions of “what happens if I run the algorithm n times using my assumptions?” or “what happens if I run the algorithm n times using another person’s assumptions?” As in the case of running the algorithm with the same parameters many times, the results of multiple runs with different parameters could also be summarised in a continuous PDF, allowing the desired kind of what-if analysis. We argue this kind of insights are highly valuable, specifically in the case of probabilistic algorithms, such as topic models or word embeddings, and whose results –and thus, interpretations– can vary significantly between different runs 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"TNGT6Gyz","properties":{"formattedCitation":"(Alexander and Gleicher, 2016)","plainCitation":"(Alexander and Gleicher, 2016)","noteIndex":0},"citationItems":[{"id":2797,"uris":["http://zotero.org/users/4711545/items/K65VI6CL"],"itemData":{"id":2797,"type":"article-journal","abstract":"Topic modeling, a method of statistically extracting thematic content from a large collection of texts, is used for a wide variety of tasks within text analysis. Though there are a growing number of tools and techniques for exploring single models, comparisons between models are generally reduced to a small set of numerical metrics. These metrics may or may not reflect a model's performance on the analyst's intended task, and can therefore be insufficient to diagnose what causes differences between models. In this paper, we explore task-centric topic model comparison, considering how we can both provide detail for a more nuanced understanding of differences and address the wealth of tasks for which topic models are used. We derive comparison tasks from single-model uses of topic models, which predominantly fall into the categories of understanding topics, understanding similarity, and understanding change. Finally, we provide several visualization techniques that facilitate these tasks, including buddy plots, which combine color and position encodings to allow analysts to readily view changes in document similarity.","container-title":"IEEE Transactions on Visualization and Computer Graphics","DOI":"10.1109/TVCG.2015.2467618","ISSN":"1077-2626","issue":"1","note":"tex.ids= alexander_task-driven_2016","page":"320-329","source":"IEEE Xplore","title":"Task-Driven Comparison of Topic Models","volume":"22","author":[{"family":"Alexander","given":"E."},{"family":"Gleicher","given":"M."}],"issued":{"date-parts":[["2016",1]]},"citation-key":"alexander_task-driven_2016"}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Alexander and Gleicher, 2016).
+            </p>
+            <p style="text-align: left; ">The other category, human-induced uncertainty, arises from 1) direct interpretations of the raw data (which in turn may be based on others’ previous interpretations and grounded expert knowledge of the user), 2) interpretations of computational analyses performed on the data, or 3) most likely, a combination of the two. Human actors report this category on a 5-point Likert scale, which is thus best modelled as a discrete PDF. The relationships of dependency between the categories in our taxonomy are bidirectional and self-recurring since, for example, input parameters and data — and therefore the results — are derived from a user’s previous interpretations of textual data and related machine- or human-generated annotations. In turn, these interpretations must necessarily be built upon previous insight obtained by the same or other users who apply computational techniques to the data. This creates a temporal belief network 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"0OdNM1ZK","properties":{"formattedCitation":"(Druzdzel and Simon, 1993; Pearl and Mackenzie, 2018)","plainCitation":"(Druzdzel and Simon, 1993; Pearl and Mackenzie, 2018)","noteIndex":0},"citationItems":[{"id":16779,"uris":["http://zotero.org/users/4711545/items/QWL49PGG"],"itemData":{"id":16779,"type":"chapter","abstract":"We address the problem of causal interpretation of the graphical structure of Bayesian belief networks (BBNs). We review the concept of causality explicated in the domain of structural equations models and show that it is applicable to BBNs. In this view, which we call mechanism-based, causality is defined within models and causal asymmetries arise when mechanisms are placed in the context of a system. We lay the link between structural equations models and BBNs models and formulate the conditions under which the latter can be given causal interpretation.","container-title":"Uncertainty in Artificial Intelligence","ISBN":"978-1-4832-1451-1","language":"en","note":"DOI: 10.1016/B978-1-4832-1451-1.50005-6","page":"3-11","publisher":"Morgan Kaufmann","source":"ScienceDirect","title":"Causality in Bayesian Belief Networks","URL":"http://www.sciencedirect.com/science/article/pii/B9781483214511500056","author":[{"family":"Druzdzel","given":"Marek J."},{"family":"Simon","given":"Herbert A."}],"editor":[{"family":"Heckerman","given":"David"},{"family":"Mamdani","given":"Abe"}],"accessed":{"date-parts":[["2020",12,2]]},"issued":{"date-parts":[["1993",1,1]]},"citation-key":"druzdzel_causality_1993"}},{"id":17140,"uris":["http://zotero.org/users/4711545/items/JHJTVK5F"],"itemData":{"id":17140,"type":"book","abstract":"A Turing Award-winning computer scientist and statistician shows how understanding causality has revolutionized science and will revolutionize artificial intelligence\"Correlation is not causation.\" This mantra, chanted by scientists for more than a century, has led to a virtual prohibition on causal talk. Today, that taboo is dead. The causal revolution, instigated by Judea Pearl and his colleagues, has cut through a century of confusion and established causality--the study of cause and effect--on a firm scientific basis. His work explains how we can know easy things, like whether it was rain or a sprinkler that made a sidewalk wet; and how to answer hard questions, like whether a drug cured an illness. Pearl's work enables us to know not just whether one thing causes another: it lets us explore the world that is and the worlds that could have been. It shows us the essence of human thought and key to artificial intelligence. Anyone who wants to understand either needs The Book of Why.","edition":"1st","event-place":"USA","ISBN":"978-0-465-09760-9","number-of-pages":"432","publisher":"Basic Books, Inc.","publisher-place":"USA","source":"ACM Digital Library","title":"The Book of Why: The New Science of Cause and Effect","title-short":"The Book of Why","author":[{"family":"Pearl","given":"Judea"},{"family":"Mackenzie","given":"Dana"}],"issued":{"date-parts":[["2018"]]},"citation-key":"pearl_book_2018"}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Druzdzel and Simon, 1993; Pearl and Mackenzie, 2018) (see Figure 2) in which the actors’ perspectives are fixated on the different versions of a dataset.
+            </p>
+            <figure>
+                <graphic n="1002" width="16.002cm" height="9.861902777777777cm" url="Pictures/1678db51d68bc37c27130592ed625676.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">
+                <anchor xml:id="Ref101422147"/>Figure 2: A Bayesian Belief Network formed by different interactions of a machine and human actors with the data. Each of these interactions produces a new version of the data, which may, in turn, be used as an input by another actor to create a more recent version. 
+            </p>
+            <p style="text-align: left; ">Our taxonomy was evaluated in different user studies 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"aJdK2tO1","properties":{"formattedCitation":"(Benito-Santos et al., 2021)","plainCitation":"(Benito-Santos et al., 2021)","noteIndex":0},"citationItems":[{"id":17081,"uris":["http://zotero.org/users/4711545/items/2HQPRCTY"],"itemData":{"id":17081,"type":"article-journal","abstract":"The capture, modelling and visualisation of uncertainty has become a hot topic in many areas of science, such as the digital humanities (DH). Fuelled by critical voices among the DH community, DH scholars are becoming more aware of the intrinsic advantages that incorporating the notion of uncertainty into their workflows may bring. Additionally, the increasing availability of ubiquitous, web-based technologies has given rise to many collaborative tools that aim to support DH scholars in performing remote work alongside distant peers from other parts of the world. In this context, this paper describes two user studies seeking to evaluate a taxonomy of textual uncertainty aimed at enabling remote collaborations on digital humanities (DH) research objects in a digital medium. Our study focuses on the task of free annotation of uncertainty in texts in two different scenarios, seeking to establish the requirements of the underlying data and uncertainty models that would be needed to implement a hypothetical collaborative annotation system (CAS) that uses information visualisation and visual analytics techniques to leverage the cognitive effort implied by these tasks. To identify user needs and other requirements, we held two user-driven design experiences with DH experts and lay users, focusing on the annotation of uncertainty in historical recipes and literary texts. The lessons learned from these experiments are gathered in a series of insights and observations on how these different user groups collaborated to adapt an uncertainty taxonomy to solve the proposed exercises. Furthermore, we extract a series of recommendations and future lines of work that we share with the community in an attempt to establish a common agenda of DH research that focuses on collaboration around the idea of uncertainty.","container-title":"Information","DOI":"10.3390/info12110436","issue":"11","language":"en","note":"number: 11\npublisher: Multidisciplinary Digital Publishing Institute","page":"436","source":"www.mdpi.com","title":"Evaluating a Taxonomy of Textual Uncertainty for Collaborative Visualisation in the Digital Humanities","volume":"12","author":[{"family":"Benito-Santos","given":"Alejandro"},{"family":"Doran","given":"Michelle"},{"family":"Rocha","given":"Aleyda"},{"family":"Wandl-Vogt","given":"Eveline"},{"family":"Edmond","given":"Jennifer"},{"family":"Therón","given":"Roberto"}],"issued":{"date-parts":[["2021",11]]},"citation-key":"benito-santos_evaluating_2021"}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Benito-Santos et al., 2021), and it can be used by other researchers in a digital research platform (
+                <ref target="https://providedh.ehum.psnc.pl/">https://providedh.ehum.psnc.pl/</ref>). Although this kind of encoding may still feel foreign to many researchers trained in the traditions of historical methods, it will only be through this kind of convergence between the affordances and constraints of ML on the one said, and the values and tolerances of historical research on the other, that we will be able to see more widespread integration of ML into historical research workflows.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="Bibliography">
+                        <?biblio ADDIN ZOTERO_BIBL {"uncited":[],"omitted":[],"custom":[]} CSL_BIBLIOGRAPHY?>
+                        <hi rend="bold">Alexander, E. and Gleicher, M.</hi> (2016). Task-Driven Comparison of Topic Models. 
+                        <hi rend="italic">IEEE Transactions on Visualization and Computer Graphics</hi>, 
+                        <hi rend="bold">22</hi>(1): 320–29 doi:10.1109/TVCG.2015.2467618.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Benito-Santos, A., Doran, M., Rocha, A., Wandl-Vogt, E., Edmond, J. and Therón, R.</hi> (2021). Evaluating a Taxonomy of Textual Uncertainty for Collaborative Visualisation in the Digital Humanities. 
+                        <hi rend="italic">Information</hi>, 
+                        <hi rend="bold">12</hi>(11). Multidisciplinary Digital Publishing Institute: 436 doi:10.3390/info12110436.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Blanke, T., Bryant, M. and Hedges, M.</hi> (2020). Understanding memories of the Holocaust—A new approach to neural networks in the digital humanities. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 
+                        <hi rend="bold">35</hi>(1): 17–33 doi:10.1093/llc/fqy082.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Druzdzel, M. J. and Simon, H. A.</hi> (1993). Causality in Bayesian Belief Networks. In Heckerman, D. and Mamdani, A. (eds), 
+                        <hi rend="italic">Uncertainty in Artificial Intelligence</hi>. Morgan Kaufmann, pp. 3–11 doi:10.1016/B978-1-4832-1451-1.50005-6. http://www.sciencedirect.com/science/article/pii/B9781483214511500056 (accessed 2 December 2020).
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Edmond, J.</hi> (2019). Strategies and Recommendations for the Management of Uncertainty in Research Tools and Environments for Digital History. 
+                        <hi rend="italic">Informatics</hi>, 
+                        <hi rend="bold">6</hi>(3): 36 doi:10.3390/informatics6030036.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Fisher, P. F.</hi> (1999). Models of uncertainty in spatial data. 
+                        <hi rend="italic">Geographical Information Systems</hi>, 
+                        <hi rend="bold">1</hi>: 191–205.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Lavan, M.</hi> (2019). Epistemic Uncertainty, Subjective Probability, and Ancient History. 
+                        <hi rend="italic">The Journal of Interdisciplinary History</hi>, 
+                        <hi rend="bold">50</hi>(1): 91–111 doi:10.1162/jinh_a_01377.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Pearl, J. and Mackenzie, D.</hi> (2018). 
+                        <hi rend="italic">The Book of Why: The New Science of Cause and Effect</hi>. 1st ed. USA: Basic Books, Inc.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Simon, C., Weber, P. and Sallak, M.</hi> (2018). 
+                        <hi rend="italic">Data Uncertainty and Important Measures</hi>. John Wiley &amp; Sons.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Therón Sánchez, R., Benito-Santos, A., Santamaría Vicente, R. S. and Losada Gómez, A.</hi> (2019). Towards an Uncertainty-Aware Visualization in the Digital Humanities. 
+                        <hi rend="italic">Informatics</hi>, 
+                        <hi rend="bold">6</hi>(3): 31 doi:10.3390/informatics6030031.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

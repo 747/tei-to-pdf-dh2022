@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Processing tangles in the <hi rend="italic">Frankenstein Variorum</hi></title>
+                <author>
+                    <persName>
+                        <surname>Beshero-Bondar</surname>
+                        <forename>Elisa Eileen</forename>
+                    </persName>
+                    <affiliation>Penn State Erie, The Behrend College, United States of America</affiliation>
+                    <email>eeb4@psu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Borgia</surname>
+                        <forename>Mia</forename>
+                    </persName>
+                    <affiliation>Penn State Erie, The Behrend College, United States of America</affiliation>
+                    <email>mqb5995@psu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chan</surname>
+                        <forename>Jacqueline</forename>
+                    </persName>
+                    <affiliation>Penn State Erie, The Behrend College, United States of America</affiliation>
+                    <email>jkc5782@psu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Viglianti</surname>
+                        <forename>Raffaele</forename>
+                    </persName>
+                    <affiliation>Maryland Institute for Technology in the Humanities, University of Maryland, United States of America</affiliation>
+                    <email>rviglian@umd.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-29T04:38:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>computer-aided collation</term>
+                    <term>Gothenburg Model</term>
+                    <term>XSLT</term>
+                    <term>critical edition</term>
+                    <term>TEI</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>19th Century</term>
+                    <term>Contemporary</term>
+                    <term>scholarly editing and editions development</term>
+                    <term>analysis</term>
+                    <term>and methods</term>
+                    <term>text encoding and markup language creation</term>
+                    <term>deployment</term>
+                    <term>and analysis</term>
+                    <term>Humanities computing</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Computer-aided collation is like a power loom that inevitably tangles up threads caught in the machinery. Automating a tedious process magnifies the complexity of error-correction, calling for new tooling to help us smooth the weaving process. For the DH 2022 conference we seek to share our efforts in the 
+                <hi rend="italic" xml:space="preserve">Frankenstein Variorum </hi>project (hereafter referred to as 
+                <hi rend="italic">FV</hi>) to automate corrections to machine-assisted collation and thereby to refine our collation pre-processing and post-processing algorithms. 
+            </p>
+            <p>
+                <hi rend="italic" xml:space="preserve">FV </hi>began during the recent 1818-2018 bicentennial celebrating the first publication of Mary Shelley's novel and exists now as a partial working prototype. We are constructing a digital variorum edition that highlights alterations to the novel 
+                <hi rend="italic">Frankenstein</hi> over five key moments from its first drafting in 1816 to its author’s final revisions by 1831. Source "threads" for the 
+                <hi rend="italic">FV</hi> collation "weave" include two well established digital editions:
+                <ref target="http://knarf.english.upenn.edu/"> the Pennsylvania Electronic Edition (
+                    <hi rend="italic">PAEE</hi>)
+                </ref> an early hypertext edition produced at the University of Pennsylvania in the mid 1990s by Stuart Curran and Jack Lynch, and
+                <ref target="http://shelleygodwinarchive.org/contents/frankenstein/"> the Shelley-Godwin Archive's edition of the manuscript notebooks (
+                    <hi rend="italic">S-GA</hi>)
+                </ref> published in 2013 by the University of Maryland. That interface relies on a backend processing pipeline that involves the software collateX in collating textual data, including markup, from each edition. To finalize our work requires iterative efforts to refine our collation and post-processing algorithms.
+            </p>
+            <p>The Gothenburg Model, conceptualized by the developers of collateX and Juxta in 2009 (see
+                <ref target="https://collatex.net/doc/" xml:space="preserve"> https://collatex.net/doc/</ref>) , organizes a series of distinct and iterative stages in a workflow for automated collation. These stages involve tokenizing and normalizing the texts to be collated, determining at what points the texts align and diverge, and visualizing the results of collation.  Our current efforts on the 
+                <hi rend="italic">FV</hi> involve post-processing the software-generated collation data. We seek to automate the identification of common patterns of misalignment and to produce a more accurate rendering of collation units mapped to the S-GA edition.
+            </p>
+            <p> </p>
+            <p>At ADHO 2022, we wish to discuss these two efforts with 
+                <hi rend="italic">1. improving collation alignment</hi>, and 
+                <hi rend="italic" xml:space="preserve">2. improving our visualization of the S-GA edition </hi>within our variorum.
+            </p>
+            <p>
+                <hi rend="italic" xml:space="preserve">1. Improving collation alignment: </hi>We are applying XSLT to seek out patterns of “spurious alignment” generated by our collation software, collateX. The collation algorithm tends to err optimistically, seeking alignment of completely divergent passages on single words like “and” or “the.” One solution to this is to remove these words entirely during the pre-processing stage, but we rejected this approach because we consider the changes from “and” to “or”, or “the” to “an” to be significant. Since we generate collation output as critical apparatus markup in TEI-conformant XML, we are opting to locate patterns of divergence using XSLT as a post-processing stage. 
+                <lb/> 
+            </p>
+            <p>
+                <hi rend="italic" xml:space="preserve">2. Improving our visualization of the S-GA edition: </hi> Representing the 
+                <hi rend="italic" xml:space="preserve">S-GA </hi>edition accurately is a challenge because we needed to 
+                <hi rend="italic">re-sequence</hi> its encoding to prepare it for tokenization and normalization in our collation algorithm. In the 
+                <hi rend="italic">S-GA</hi>'s TEI markup, marginalia in the manuscript notebook pages were encoded at the ends of each page file, and they were given attributes that indicate their insertion points in the running flow of the text. It was necessary to re-sequence the order of text on the page to move the marginalia from the end of each file to its insertion point so that we could prepare a continuous sequence of text—the thread of the 
+                <hi rend="italic">S-GA</hi>—to compare with the threads of the other four editions. Resequencing the 
+                <hi rend="italic" xml:space="preserve">S-GA </hi>meant following a clearly signaled trail of ids and pointers in the original encoding. While it would indeed be convenient to display the re-sequenced TEI in our edition viewer, we seek instead to 
+                <hi rend="italic" xml:space="preserve">map </hi>our collation data back onto the original source document by pulling the source document’s code into our reading interface. We seek to apply the information we learned from the collation to point back to specific passages in the source document, identifying them by line and string position in the original files in order to pull those particular passages into our interface viewer. This is an ambitious challenge involving stand-off pointers that require counting characters in the source document for precise identification of a variant passage in the 
+                <hi rend="italic">S-GA</hi>’s original encoding. 
+            </p>
+            <p> </p>
+            <p>We need to improve our stand-off pointing mechanism to the 
+                <hi rend="italic">S-GA</hi> edition. Our interface needs to pinpoint in the original
+                <hi rend="italic" xml:space="preserve"> S-GA</hi> files the precise location of the variant passages identified by the collation process. To improve this, we are revisiting the process of re-sequencing the document in the first place. We are retracing our steps in the early XSLT written for the project and set clearer markers to identify the locations of marginalia passages in the original 
+                <hi rend="italic">S-GA</hi> files. Those markers need to be delivered to the collation output XML, to assist in calculating the XPath and string locations of variant passages in the source S
+                <hi rend="italic">-GA</hi>.
+            </p>
+            <p>At ADHO 2022 we will share our efforts in both of these areas, in the hope of encouraging lively discussion in the text scholarly community. If we are to smooth the tangled webs of collation, perhaps we need to be able to follow our own complex algorithms backwards to the threading of the machine.</p>
+        </body>
+    </text>
+</TEI>

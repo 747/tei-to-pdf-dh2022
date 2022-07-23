@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Book Barcoding: A Framework for the Visual Collation and Woodblock Tracking of Japanese Printed Books</title>
+                <author>
+                    <persName>
+                        <surname>Kitamoto</surname>
+                        <forename>Asanobu</forename>
+                    </persName>
+                    <affiliation>ROIS-DS Center for Open Data in the Humanities, Japan; National Institute of Informatics</affiliation>
+                    <email>kitamoto@nii.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>book barcoding</term>
+                    <term>visual collation</term>
+                    <term>woodblock tracking</term>
+                    <term>bibliographic study</term>
+                    <term>computer vision</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>cultural analytics</term>
+                    <term>image processing and analysis</term>
+                    <term>Computer science</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">Printed books have played a central role in the distribution of knowledge. In the publishing industry during the Japanese Edo period (1603-1868), woodblock printing became more popular than movable type printing because it fits better with the features of the Japanese language. However, because woodblock was very expensive to create from scratch, information updates were usually applied as a patch to the woodblock. Hence the visual overlay and comparison of two images from the same woodblock printed at different times can reveal small changes between the two versions. Therefore, technology for keeping track of the same woodblock over time is critical in answering research questions such as which part or how often information was updated on the woodblock over time.</p>
+                <p style="text-align: left; ">Our proposed algorithm, ‘woodblock tracking’ and ‘visual collation,’ solves this problem. First, woodblock tracking compares two books to identify a pair of pages that originate in the same woodblock. Second, visual collation compares a pair of pages to highlight pixel-level differences by estimating a projective transformation matrix to overlay those images. The proposed algorithm was applied to the comprehensive analysis of the Bukan Complete Collection &lt; 
+                    <ref target="http://codh.rois.ac.jp/bukan/">http://codh.rois.ac.jp/bukan/</ref> &gt;, which contains 381 Bukan book series published for nearly 200 years in the Edo period (Kitamoto, 2018). The algorithm automatically identifies the series of images originating in the same woodblock, and we use this result for ‘differential transcription’ to realize efficient transcription over the book collection that changes seamlessly over time. 
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Algorithm</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Visual collation</head>
+                    <p style="text-align: left; ">In comparison to textual collation, visual collation has a few advantages. First, visual collation does not require costly transcription. Second, non-textual content, such as graphic elements and physical changes on the woodblock, can be considered. However, traditional visual collation requires playing a ‘spot-the-difference game’ through manual side-by-side comparison, which is time-consuming and highly unreliable. Hence we proposed a computer vision-based algorithm to automate this process (Leyh, 2020). </p>
+                    <p style="text-align: left; ">The algorithm extracts keypoints from images with descriptors associated with each keypoint. Those keypoints are then used for image comparison by computing the distance between descriptors of matched keypoints. Finally, the algorithm computes a projective transformation matrix to overlay two images based on inlier keypoints. Here the number of inlier keypoints roughly represents matching quality. Because the algorithm used is standard in computer vision, we used the off-the-shelf library OpenCV, as shown in Figure 1, by searching for the best settings from available algorithms. We also developed a web-based image comparison tool, ‘vdiff.js’ &lt; 
+                        <ref target="http://codh.rois.ac.jp/software/vdiffjs/">http://codh.rois.ac.jp/software/vdiffjs/</ref> &gt;, to interact with visual collation on a web platform. This tool allows four comparison modes: slider, emphasis, red-blue, and side-by-side, and is helpful for ‘differential reading’ to focus on information changed between two images.
+                    </p>
+                    <figure>
+                        <graphic n="1001" width="15.000111111111112cm" height="11.985175cm" url="Pictures/ea522959069f40682dc02201adf98b8a.jpeg" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left; ">Figure 1: Keypoint matching of two images. We used the AKAZE feature detector (Alicantarilla, 2011), Hamming distance as the distance metric between descriptors, and the RANSAC algorithm (Fischler, 1981) to compute a projective transformation matrix.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Woodblock tracking</head>
+                    <p style="text-align: left; ">Woodblock tracking uses the result of visual collation to identify a set of images printed by the same woodblock. We formulated this problem as connecting the path of best-matching image pairs across books. First, we search for best-matching image pairs between two books based on the number of inlier keypoints as the score of matching quality. For this purpose, we use the Gale-Shapley (GS) algorithm (Gale, 1962), which is a classic algorithm to solve a stable marriage problem in operations research, to find the best match between two books. We then extend the matching from two books to multiple books. For example, having the matching results for Book A and B, we can either extend the path to the neighboring books, such as Book C and A and Book B and D, to form a path C-A-B-D. After obtaining all the paths, we assign a unique ID for each woodblock and keep track of changes that occurred in the same woodblock.</p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results</head>
+                <p style="text-align: left; ">We applied the proposed algorithm to the Bukan Complete Collection, a dataset of 381 Bukan books released from ROIS-DS Open Data Center for Humanities (CODH), derived from digitized images from the National Institute of Japanese Literature (NIJL). Bukan is a book about the directory of families of the state king (Daimyo) and bureaucrats of the central government (Bakufu) in the Edo period. It had been a best seller book for as long as 200 years. Moreover, it had been updated and published frequently with a peak frequency of a few times in a month. We believe that those different versions of Bukan are unique historical materials to reconstruct the time-series of biographical information of the period.</p>
+                <p style="text-align: left; ">First, we selected 354 books relevant for the analysis, which amounts to 150,698 images. Second, we tried matching on 85,990,142 image pairs and selected 541,810 image pairs for visual collation. Third, we applied woodblock tracking to identify 44,842 woodblocks and found that the longest life was across 49 books. This result demonstrates that the proposed algorithm can scale to a level that manual annotation can never achieve. All results are available on the Bukan differential reading platform &lt; 
+                    <ref target="http://codh.rois.ac.jp/bukan/diff/">http://codh.rois.ac.jp/bukan/diff/</ref> &gt;, and we pick up some results from Figures 2 through 4. 
+                </p>
+                <p style="text-align: left; ">We finally used this platform for differential transcription. We focused on one Daimyo family and transcribed a few attributes of the family. Among 354 books, information about the family was found in 203 books, among which 165 books were collated by woodblock tracking, while 38 books were not collated due to different woodblock layouts. This result is beneficial for efficient time-series transcription while giving us hints about how often the woodblock was updated. </p>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="7.027333333333333cm" url="Pictures/c3a4415134abc0e4d07feed98b96dc9d.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Figure 2: The list of visual collations computed between two books. Background color from red to green, blue represents the ascending order of the score, computed from the number of inlier keypoints, while the gray color represents a page without a corresponding page.</p>
+                <figure>
+                    <graphic n="1003" width="16.002cm" height="14.493875cm" url="Pictures/0e0960bb0cc9d5e7a34a5ab414a8c366.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Figure 3: The result of the page-by-page collation visualized as the superimposition of two images using vdiff.js. The blue color shows pixels from the book on the left, while red on the right.</p>
+                <figure>
+                    <graphic n="1004" width="14.99083888888889cm" height="8.551333333333334cm" url="Pictures/f647c0290a22e0e5d78094fc9e2cc6b0.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Figure 4: The result of woodblock tracking. The vertical axis represents the book's page number starting from the top, and the horizontal axis represents the order of books by estimated publication dates. A long horizontal line indicates a woodblock that survived longer, and the red line highlights the woodblock with the longest life.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Book Barcoding</head>
+                <p style="text-align: left; ">Finally, we named the proposed algorithm ‘book barcoding,’ whose name was inspired by ‘DNA barcoding’ (Moritz, 2004). A DNA barcode is a DNA sequence that is specific to a species. When investigating the species of a particular DNA sequence, the sequence is compared with the DNA barcode library, such as BOLD (Barcode of Life Data Systems), to identify DNA sequences from unknown species. Based on a similar framework, we plan to establish a general collation platform for printed books, where keypoints specific to a book helps to identify the phylogenetic relationship of unknown books.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Acknowledgment</head>
+                <p style="text-align: left; ">The author thanks Mr. Jun Homma for his significant contribution to vdiff.js. He also thanks Prof. Kumiko Fujizane and Prof. Kazuaki Yamamoto of the National Institute of Japanese Literature for helpful comments on the research. A part of the research is based on the work of Mr. Thomas Leyh, who contributed to this project while he was an NII internship student. JSPS KAKENHI Grant Number JP19H01141 partially supports this work.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Alcantarilla, P. F., Nuevo, J., and Bartoli, A. (2011) Fast explicit diffusion for accelerated features in nonlinear scale spaces. Trans. Pattern Anal. Machine Intell, 34:7, 1281–1298.</bibl>
+                    <bibl style="text-align: left; ">Fischler, M. A., and Bolles, R. C. (1981) Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography. Commun. ACM 24:6, 381–395.</bibl>
+                    <bibl style="text-align: left; ">Gale, D. and Shapley, L. S. (1962) College Admissions and the Stability of Marriage. The American Mathematical Monthly, 69:1, 9-15.</bibl>
+                    <bibl style="text-align: left; ">Kitamoto, A., Horii, H., Horii, M., Suzuki, C., Yamamoto, K., Fujizane, K. (2018) Differential Reading by Image-based Change Detection and Prospect for Human-Machine Collaboration for Differential Transcription, Digital Humanities Conference.</bibl>
+                    <bibl style="text-align: left; ">Leyh, T., Kitamoto, A. (2020) Computer Vision-based Comparison of Woodblock-printed Books and its Application to Japanese Pre-modern Text, Bukan. Tenth Conference of Japanese Association for Digital Humanities (JADH2020), 53-59.</bibl>
+                    <bibl style="text-align: left; ">Moritz, C., Cicero, C. (2004) DNA Barcoding: Promise and Pitfalls. PLoS Biol 2:10, e354.</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

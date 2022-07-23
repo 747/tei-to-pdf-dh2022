@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Novel Semi-supervised Framework to Identify Military Documents: A Quantitative Analysis on Military Records in <hi rend="italic">Ming Shi-Lu</hi></title>
+                <author>
+                    <persName>
+                        <surname>Chen</surname>
+                        <forename>You-Jun</forename>
+                    </persName>
+                    <affiliation>Center for GIS, Research Center for Humanities and Social Sciences, Academia Sinica, Taiwan; Department of Mathematics, University of California, Los Angeles, CA, USA</affiliation>
+                    <email>youjun1109@g.ucla.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hsieh</surname>
+                        <forename>Hsin-Yi</forename>
+                    </persName>
+                    <affiliation>Center for GIS, Research Center for Humanities and Social Sciences, Academia Sinica, Taiwan; Department of Computer Science and Information Engineering, National Central University, Taiwan</affiliation>
+                    <email>hsinmosyi@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tsai</surname>
+                        <forename>Richard Tzong-Han</forename>
+                    </persName>
+                    <affiliation>Center for GIS, Research Center for Humanities and Social Sciences, Academia Sinica, Taiwan; Department of Computer Science and Information Engineering, National Central University, Taiwan</affiliation>
+                    <email>thtsai@g.ncu.edu.tw</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-08T05:06:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>document classification</term>
+                    <term>weakly-supervised</term>
+                    <term>no labeled data</term>
+                    <term>military</term>
+                    <term>Ming Dynasty</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>natural language processing</term>
+                    <term>text mining and analysis</term>
+                    <term>History</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; text-align: justify;">Faced with an extensive digitized corpus to analyze, a historian may find text analysis or concordance software such as Antconc, utilizing context-independent and word-count approach, desirable for identifying relevant sentences or documents in which words of interests located. However, a potential pitfall of such a methodology is that a particular keyword’s existence or absence does not necessarily entail discussing a subject 
+                    (Bingham, 2010), especially for those exploring specific phenomena or broad social or cultural themes.
+                </p>
+                <p style="text-align: left; text-align: justify;">This work presents a semi-supervised deep neural framework, leveraging contextualized representation learning techniques, to automatically identify military documents in Ming Shi-Lu, without previously labeled data. We aim to expedite the onerous document compilation process of relevant and consistent information about the phenomenon to be investigated. In particular, we leverage a weakly supervised classification model (WSM) built upon the study by 
+                    (Meng et al., 2020), which emulates how humans categorize documents into named categories to generate high-confidence labeled data. The quantitative results in our analysis, contributing another dimension toward studying the Ming military, lend credence to the effectiveness of our approach and shed light on the development and collapse of the Ming empire.
+                    <anchor xml:id="f97vq17wbkv1"/>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Background</head>
+                <p style="text-align: left; text-align: justify;">
+                    <hi rend="italic" xml:space="preserve">Ming Shi-Lu </hi>(
+                    <hi rend="italic">MSL</hi>), composed of 208,522 records, is an official annalistic work centering on Ming emperors compiled by the officials in the Ming Dynasty (1368 A.D. to 1644 A.D.). Preserving enormous original documents of edicts, decree, and records of political, military, socio-economic, and other major events, 
+                    <hi rend="italic">MSL</hi> plays an 
+                    <hi rend="color(202122) background(white)" xml:space="preserve">essential role in the historical reconstruction of the diverse Eastern Asian societies and polities. </hi>Our study focuses on military records in 
+                    <hi rend="italic" xml:space="preserve">MSL, </hi>aiming to unveil their underlying historical, academic, and documentary value by natural language processing techniques.
+                    <anchor xml:id="bo4i7uphlm1p"/>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Methodologies</head>
+                <p style="text-align: left; ">Even though the emergence of pre-trained language model (LM) has drastically reduced the amount of training data needed for supervised methods, experiments show that the amount of training data still has to reach 4-5% of the entire dataset (Grießhaber et al., 2020), which in our case approximates to 5,400 - 6,900 labeled documents, to yield steady and satisfying accuracy. </p>
+                <p style="text-align: left; ">The proposed framework overcomes the need for previously labeled data (Fig. 1). The included steps are: (1) select a small set of seed words describing the categories to be classified, (2) use a WSM to produce labeled data according to the selected words, (3) rearrange the resulting labeled data into a training set, and (4) use a supervised classification model (SCM) to categorize the entire dataset.</p>
+                <p style="text-align: left; ">Our WSM is based on 
+                    <hi rend="bold">LOTClass</hi> (Meng et al., 2020), which leverages the 
+                    <hi rend="bold">BERT</hi>-base-chinese language model (Devlin et al., 2019) as the general knowledge base for category name understanding and feature representation learning model for classification. The BERT-based-chinese model is also the backbone for our SCM.
+                </p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="10.840861111111112cm" url="Pictures/3031854162aa8ebdb6318e232305e682.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="bold" style="font-size:9pt" xml:space="preserve">Fig. </hi>
+                    <hi rend="bold" style="font-size:9pt">1</hi>
+                    <hi rend="bold" style="font-size:9pt" xml:space="preserve"> The generic framework in this study</hi>
+                    <hi rend="bold" style="font-family:PMingLiU;font-size:9pt">.</hi>
+                    (1) The WSM will (i) learn a set of category indicative vocabulary from user-provided seed words of each class (Table 2 and 3), (ii) find the category-indicative words (w) in the text, and train the model via cross-entropy loss with a classifier on top of each w’s contextualized embedding to predict their implied categories, (iii) generalize through a self-training mechanism, and (iv) make predictions (Table 3). (2) The process of supervised document classification includes: (i) take a set of documents from the prediction results of WSM as ground truth labels (ii) fine-tune a pre-trained LM on a classification task with the labeled data, (iii) evaluate the model, and (iv) use the trained model to predict the remaining set of the documents
+                    <anchor xml:id="ch1t1qx93zmx"/>
+                </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Dataset and definition of military documents </head>
+                    <p style="text-align: left; text-align: justify;">We define the military documents as records containing offensive or defensive operations of both combat and non-combat nature and consider only documents involving human activities in 
+                        <hi rend="italic" xml:space="preserve">MSL </hi>
+                        
+                        <hi rend="italic">(Institute of History and Philology, Academia Sinica, 1984)</hi>
+                        <hi rend="italic" xml:space="preserve">, </hi>which is in full 136,427 documents
+                        <hi rend="italic">.</hi>
+                        <anchor xml:id="ldriidv3v4n5"/>
+                        <anchor xml:id="ucsfjy7kznaw"/>
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Weakly labeled data generation</head>
+                    <p style="text-align: left; text-align: justify;">We use trivial military action words such as attack and defense as seed words for military documents. To capture non-military documents, we also select 20 different classes of seed words (Table 1). The WSM will generate a set of category indicative vocabulary (Table 2) based on the input seed words for each class and leverage the contextualized category indicative words to classify the documents (Table 3). </p>
+                    <p style="text-align: left; ">
+                        <hi rend="bold" style="font-size:9pt" xml:space="preserve">Table </hi>
+                        <hi rend="bold" style="font-size:9pt">1</hi>
+                        <hi rend="bold" style="font-size:9pt">User-provided seed words of Category Lawbreaking, Repair, and Military in our study</hi>
+                        <hi rend="bold" style="font-family:Microsoft JhengHei;font-size:9pt">.</hi>
+                        We carefully choose and expand univocal characters as seed words by inspecting the classification results of WSM
+                        <lb/>
+                        <graphic n="1002" width="15.492236111111112cm" height="4.453819444444444cm" url="Pictures/fb6550487ad2bf08060b3000e7c2575e.jpg" rend="inline"/>
+                    </p>
+                    <p style="text-align: left; ">
+                        <hi rend="bold" style="font-size:9pt" xml:space="preserve">Table </hi>
+                        <hi rend="bold" style="font-size:9pt">2</hi>
+                        <hi rend="bold" style="font-size:9pt">Category vocabulary of Category Lawbreaking, Repair, and Military in our study</hi>
+                        <lb/>
+                        <graphic n="1003" width="15.562791666666667cm" height="11.183055555555555cm" url="Pictures/0fd8d04018d3fe2da251d29902e80746.jpg" rend="inline"/>
+                    </p>
+                    <p style="text-align: left; ">
+                        <hi rend="bold" style="font-size:9pt" xml:space="preserve">Table </hi>
+                        <hi rend="bold" style="font-size:9pt">3</hi>
+                        <hi rend="bold" style="font-size:9pt">Examples of Category Lawbreaking, Repair, and Military prediction results by WSM.</hi>
+                        (1) Examples 1, 5, and 6 have no user-provided seed words or category indicative vocabulary. This implies that the model can identify a document’s category without trivial keywords, surmounting the limitation of the keyword search approach. (2) We take 4,000 documents from Category Military and 4,000 from the rest of the non-military categories for training data
+                    </p>
+                    <figure>
+                        <graphic n="1004" width="16.002cm" height="20.979694444444444cm" url="Pictures/1c7dd0cb8d461fcb3d8f64f4d078ac21.png" rend="inline"/>
+                    </figure>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>BERT-based supervised document classification </head>
+                    <p style="text-align: left; text-align: justify;">To initiate the supervised document classification task, we take 8,000 labeled documents generated by WSM. The examination result by manually examining 5% of the labeled documents shows that the WSM achieves around 87.3% accuracy. We then fine-tune the bert-base-chinese model for a binary classification task by randomly taking 80% of the labeled data for training and 20% for validation, and evaluating the model performance via precision, recall, and f1 scores (Table 4). Subsequently, we use the trained binary classifier to predict the rest of 128,427 documents.</p>
+                    <p style="text-align: left;">
+                        <hi rend="bold" style="font-size:9pt">Table 4 Precision, recall, and f1 scores of the BERT-based binary classification model</hi>
+                    </p>
+                    <figure>
+                        <graphic n="1005" width="7.713486111111111cm" height="3.1485416666666666cm" url="Pictures/b9b4ec306a3f855879289bbaa55dd417.jpg" rend="inline"/>
+                    </figure>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Result and analysis</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Comparison with the distribution of war frequency in the Ming Dynasty</head>
+                    <p style="text-align: left; text-align: justify;">
+                        <hi rend="background(white)">As</hi> armed forces are primarily intended for warfare, 
+                        <hi rend="color(202122) background(white)" xml:space="preserve">we compare </hi>the distribution of the number of military documents with the distribution of war frequency (W) 
+                        (Editorial Committee of Chinese Military History, 1985) in the Ming Dynasty (Fig. 2). 
+                        <hi rend="color(202122) background(white)" xml:space="preserve">It can be seen that, </hi>up to the official compilation of 
+                        <hi rend="italic" xml:space="preserve">MSL </hi>(1627 A.D.), the fluctuations of both trends match, evincing the robustness of our framework.
+                    </p>
+                    <figure>
+                        <graphic n="1006" width="15.961430555555555cm" height="7.979833333333334cm" url="Pictures/d74a26f83ae60dc6b0e7352bcc7f26d5.png" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left; ">
+                        <hi rend="bold" style="font-size:9pt" xml:space="preserve">Fig. </hi>
+                        <hi rend="bold" style="font-size:9pt">2</hi>
+                        <hi rend="bold" style="font-size:9pt" xml:space="preserve">Distributions of the Number of Military Documents in </hi>
+                        <hi rend="italic bold" style="font-size:9pt">Ming Shi-Lu</hi>
+                        <hi rend="bold" style="font-size:9pt" xml:space="preserve"> and Number of Wars in the Ming Dynasty</hi>
+                        <hi rend="bold" style="font-family:PMingLiU;font-size:9pt">.</hi>
+                        <anchor xml:id="h3ibtvyca255"/>
+                        <hi style="font-size:9pt" xml:space="preserve">(1) The x-axis labels show the duration of reign for each Ming Emperor. (2) The divergence of the two trends after the 1630s may be explained by two factors: (i) The official </hi>
+                        <hi rend="italic" style="font-size:9pt">MSL</hi>
+                        <hi style="font-size:9pt" xml:space="preserve"> only covers reigns from the Hongwu Emperor (1368 A.D. - 1398 A.D.) to the Tianqi Emperor (1605 A.D. - 1627 A.D.). Records of the Chongzhen Emperor (1627 A.D. - 1644A.D.), the last Ming emperor, are from </hi>
+                        <hi rend="italic" style="font-size:9pt">Chongzhen Shi-Lu</hi>
+                        <hi style="font-size:9pt" xml:space="preserve"> and </hi>
+                        <hi rend="italic" style="font-size:9pt">Chongzhen Chang-Bian</hi>
+                        <hi style="font-size:9pt" xml:space="preserve">placed in the appendix of </hi>
+                        <hi rend="italic" style="font-size:9pt">MSL</hi>
+                        , even though providing an account of the reign, yet significantly fewer in numbers than records of other reigns. (ii)The last interval of the Chinese war data (W), which we have access to, ranges from 1640 to 1649, outrunning the rule of the Ming empire
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Evaluation of military document ratio distribution in 
+                        <hi rend="italic">Ming Shi-Lu</hi>
+                    </head>
+                    <p style="text-align: left; text-align: justify;">To identify high-density periods of military documents, we convert the absolute number of military documents into ratio distribution calculated on a 5-year interval (Fig. 3).</p>
+                    <figure>
+                        <graphic n="1007" width="16.002cm" height="8.89cm" url="Pictures/cebb1149545b26cebe34e30e96b21576.jpg" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left; ">
+                        <hi rend="bold" style="font-size:9pt" xml:space="preserve">Fig. </hi>
+                        <hi rend="bold" style="font-size:9pt">3</hi>
+                        <hi rend="bold" style="font-size:9pt">Military Document Ratio Distribution in</hi>
+                        <hi rend="italic bold" style="font-size:9pt" xml:space="preserve"> Ming Shi-Lu</hi>
+                        <hi rend="bold" style="font-family:PMingLiU;font-size:9pt">.</hi>
+                        <hi style="font-size:9pt" xml:space="preserve">We marked the peaks and listed the corresponding major military events below: (A) The founding of the Ming dynasty. (B) The </hi>
+                        <ref target="https://en.wikipedia.org/wiki/Jingnan_campaign">
+                            Jignan campaign
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (1399-1402) and the Yongle Emperor’s campaigns against the Mongols (1410-1424). (C) The </hi>
+                        <ref target="https://zh.wikipedia.org/wiki/%E9%BA%93%E5%B7%9D%E4%B9%8B%E5%BD%B9">
+                            War of Lucha
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (1436-1449), </hi>
+                        <ref target="https://en.wikipedia.org/wiki/Tumu_Crisis">
+                            Tumu Crisis
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (1449), and the </hi>
+                        <ref target="https://en.wikipedia.org/wiki/Defense_of_Beijing">
+                            Defense of Jingshi
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (1449). (D) </hi>
+                        <ref target="https://en.wikipedia.org/wiki/Wokou">
+                            Wokou
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> raids and </hi>
+                        <ref target="https://en.wikipedia.org/wiki/Mongols">
+                            Mongols
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> raids. (E) The </hi>
+                        <ref target="https://en.wikipedia.org/wiki/Jiajing_wokou_raids">
+                            Jiajing wokou raids
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> and t</hi>
+                        <ref target="https://zh.wikipedia.org/wiki/%E5%BA%9A%E6%88%8C%E4%B9%8B%E5%8F%98">
+                            he War of Gengxu
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (1550). (F) The Bozhou campaign (1589-1600), the </hi>
+                        <ref target="https://en.wikipedia.org/wiki/Ordos_campaign_(1592)">
+                            Ningxia campaign
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (1592), and the </hi>
+                        <ref target="https://en.wikipedia.org/wiki/Japanese_invasions_of_Korea_(1592%E2%80%931598)">
+                            Imjin War
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (1592-1598). (G) The Battle of Sarhū and the collapse of the Ming dynasty. Fig. 2 (2) (i) can explain the anomalous decline in ratio during 1640-1644</hi>
+                    </p>
+                    <p style="text-align: left; text-align: justify;">The successive peaks (B - E) coincide with major military events of profound influence on the development of the Ming Dynasty. The Jignan campaign (B) attributed to a drastic change in the country’s military defense system. The incredible feats achieved by the Ming in the War of Luchuan (C) indirectly influenced the origin of civil officials’ exercising military power (Li, 2003). The War of Gengxu (E) occurred while Ming armies suffered repeated defeats in combating the Wokou and the Mongols raids on the Ming territory led to the abolishment of the Superintendent of the Integrated Division established for a century (Wu, 2021). </p>
+                    <p style="text-align: left; text-align: justify;">During the later reign of Wanli Emperor, the increased military expenditure and the exacerbation of the fiscal crisis resulting from the military campaigns (F) brought about the downfall of the Ming Dynasty (Zhao et al., 2016). Additionally, pleasantry uprisings instigated by severe droughts in 1627-1643 and the ensuing famine, and the southward migration of the Mongols caused by the effects of the Little Ice Age precipitated the collapse of the Ming Empire (Zheng et al., 2014; Sun and Zhang, 2018).
+                        <anchor xml:id="fn9lxoxdf0gp"/>
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left; text-align: justify;">This work introduces a semi-supervised framework identifying military documents without any labeled data, significantly reducing the manual labeling effort by domain experts. Empirical results in our analysis, aligning with the occurrence of major campaigns, demonstrate the robustness of our approach. For future work, we would like to continue exploring the potential of this framework and apply it to existing Asian corpora such as 
+                    <hi rend="italic">Veritable Records of the Joseon Dynasty</hi>, contributing to the reconstruction of diverse Asian history. Additionally, we plan to conduct an in-depth investigation on the military documents in 
+                    <hi rend="italic">MSL</hi> to substantiate perceived historical hypotheses with quantitative, temporal, or geographical evidence.
+                    <anchor xml:id="en1df5v57d91"/>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Bingham, A.</hi> (2010). ‘The Digitization of Newspaper Archives: Opportunities and Challenges for Historians’. 
+                        <hi rend="italic">Twentieth Century British History</hi>, 21(2): 225–31 doi:10.1093/tcbh/hwq007.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Devlin, J., Chang, M.-W., Lee, K</hi>. and Toutanova, K. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. 
+                        <hi rend="italic">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)</hi>. Minneapolis, Minnesota: Association for Computational Linguistics, pp. 4171–86 doi:10.18653/v1/N19-1423.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Editorial Committee of Chinese Military History </hi>(1985). Tabulation of Wars in Ancient China. 
+                        <hi rend="italic">People’s Liberation Army Press</hi>, Beijin.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Grießhaber, D., Maucher, J. and Vu, N. T</hi>. (2020). Fine-tuning BERT for Low-Resource Natural Language Understanding via Active Learning. 
+                        <hi rend="italic">Proceedings of the 28th International Conference on Computational Linguistics</hi>. Barcelona, Spain (Online): International Committee on Computational Linguistics, pp. 1158–71 doi:10.18653/v1/2020.coling-main.100.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Institute of History and Philology, Academia Sinica</hi> (1984). Scripta Sinica 
+                        <ref target="http://hanchi.ihp.sinica.edu.tw/ihp/hanji.htm">http://hanchi.ihp.sinica.edu.tw/ihp/hanji.htm</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Li, F.</hi> (2003). <hi rend="TChinese">明代文人對軍隊的統領論析</hi> [The Civil Officers’ Command of the Army in the Ming Dynasty] Master Thesis. http://cnki.sris.com.tw/kns55/brief/result.aspx?dbPrefix=CMFD.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Meng, Y., Zhang, Y., Huang, J., Xiong, C., Ji, H., Zhang, C. and Han, J.</hi> (2020). Text Classification Using Label Names Only: A Language Model Self-Training Approach. 
+                        <hi rend="italic">Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP).</hi> Online: Association for Computational Linguistics, pp. 9006–17 doi:10.18653/v1/2020.emnlp-main.724.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sun, C. and Zhang, Q.</hi> (2018). <hi rend="TChinese">氣候變遷、政府能力與王朝興衰</hi>——<hi rend="TChinese">基于中國兩千年來歷史經驗的實證研究</hi> [Climate Change, State Capacity, and the Rise and Fall of Dynasties——An Empirical Study Based on Chinese Historical Experience in the Past 2000 Years]. 
+                        <hi rend="italic">China Economic Quarterly,</hi> 18(1): 311–36.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wu, Y.</hi> (2021). <hi rend="TChinese">六師之任：明代協理京營戎政與北京防禦</hi> [Governor-General of Capital Defenses and Military Affairs of Beijing Area in Ming China]. Ph.D. thesis, National Taiwan Normal University.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Zhao, Y., Fu, W. and Hei, W.</hi> (2016). <hi rend="TChinese">試析播州之役對明朝的影響</hi> [The Influence of the Bozhou rebellion on the Ming Dynasty]. 
+                        <hi rend="italic">Wenjiao Ziliao</hi>, 19: 72–73.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Zheng, J., Xiao, L., Fang, X., Hao, Z., Ge, Q. and Li, B</hi>. (2014). How climate change impacted the collapse of the Ming dynasty. 
+                        <hi rend="italic">Climatic Change</hi>, 127(2): 169–82 doi:10.1007/s10584-014-1244-7.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

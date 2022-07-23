@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Studying Signs of Use in Medieval Manuscripts: data collection through annotations </title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Johnson</surname>
+                        <forename>David F.</forename>
+                    </persName>
+                    <affiliation>Florida State University</affiliation>
+                    <email>djohnson@fsu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Girard</surname>
+                        <forename>Paul</forename>
+                    </persName>
+                    <affiliation>OuestWare, Nantes, France</affiliation>
+                    <email>paul@ouestware.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Simard</surname>
+                        <forename>Benoît</forename>
+                    </persName>
+                    <affiliation>OuestWare, Nantes, France</affiliation>
+                    <email>benoit@ouestware.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-11T14:18:40.333066256</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Palaeography</term>
+                    <term>annotations</term>
+                    <term>IIIF</term>
+                    <term>manuscripts</term>
+                    <term>data collection</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>manuscripts description</term>
+                    <term>representation</term>
+                    <term>and analysis</term>
+                    <term>Book and print history</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Written signs of use</head>
+                <p>How do we know that a medieval manuscript has actually been read? Early medieval readers of manuscripts rarely “signed” their books or included an ex libris. The modern researcher interested in whether a given manuscript was actually read looks for explicit signs of use left behind by readers: traces of interactions with the contents of the books they were reading, more often than not pen in hand. Such traces comprise a wide range of interventions.</p>
+                <p>Despite his anonymity, perhaps the most famous reader of Old English texts is the so-called “Tremulous Hand of Worcester,” a monk of the Cathedral Priory at Worcester, who left his unmistakable mark on a significant number of Worcester manuscripts containing Old English in the first half of the thirteenth century. These manuscripts, however, were written in a form of English not readily comprehensible to him. He set out to learn to read it, and in the process left a wide range of signs of use in the books he used (some twenty manuscripts in total). The Tremulous Hand used a system of punctuation interventions in his work—distinct from the original punctuation applied by the Old English scribes who wrote the manuscripts—as a tool for construing that much older form of English (Harlow, 1959; Parkes, 1993; Johnson, 2006; Reimer, 2015; Johnson, 2021a). It was a kind of ‘interpretative pointing’, whereby he sounded out the Old English and used these punctuation interventions to work out the syntax and meaning of the text he was learning to read. Such interventions are also among the clearest indications of the parts of these texts that he was truly interested in; tracing them and subsequently mapping them out over the texts in which they appear reveals patterns of interest and is, we argue, like looking over the shoulder of the 13th-century scribe as he read these ancient books.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Annotations as a collection tool</head>
+                <p>In order to track, compile, and facilitate quantitative analysis of thousands of signs of use, we need a tool capable of capturing and indexing those written reading interventions from digital versions of the manuscripts. Annotations can be used to capture signs of use by delimiting and adding metadata to the part of the image where the sign appears. Although this may resemble the broader field of transcription, it differs as only a very small part of the text (the reading signs) are in scope; the aim is not to transcribe from pixels to text but to describe in an analytical perspective.</p>
+                <p>Such a method proposes to use annotations as a collection tool. By adding specific metadata to the annotated reading signs captured, annotating the studied manuscript creates a research dataset to be used in quantitative analysis.</p>
+                <p>The annotations are here a perfect device to bridge the close reading in context (the captured set of pixels) with the “distant reading” analysis done later on the metadata collected across the corpus of annotations (Moretti, 2013).</p>
+                <p>Existing manuscript annotation tools focus on different tasks, such as transcription and curation, or are closely linked to one corpus (Nagasaki et al., 2016; Roddis and Cogapp, 2018; Almas et al., 2018). Our ambition is to fulfil our methodological need with a generic IIIF image annotation tool dedicated to collecting data for “distant reading” analysis.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Tremulator application</head>
+                <p>All of Johnson’s work on the Tremulous Hand’s interventions published thus far were facilitated by the first iteration of the Tremulator application (named after the scribe mentioned above) (Johnson, 2019; Johnson, 2021b). Development of 
+                    <ref target="https://github.com/Tenkhenk/Tremulator-2.0/">Tremulator 2.0</ref> was made possible by a grant from Florida State University. Tremulator 2.0 has been designed to fit our research project while at the same time targeting a wider range of applications. We set out to combine existing open source technologies related to image annotations to create a generic service for data collection.
+                </p>
+                <p>We chose to use the 
+                    <ref target="https://iiif.io/">IIIF standards</ref> to facilitate accessibility to high resolution pictures and to benefit from existing collections already using this format around the world by employing an 
+                    <ref target="https://github.com/sim51/Leaflet-IIIF">extended version of the existing IIIF-leaflet plugin</ref>.
+                </p>
+                <p>For all the benefits of IIIF compatibility, it is not unusual to have to work with images procured by the research team via other means. Thus the Tremulator contains a 
+                    <ref target="https://githubhelp.com/cantaloupe-project/cantaloupe">cantaloupe server</ref> to serve local files under IIIF format. By using IIIF as the common ground for image retrieval, Tremulator’s collections can mix different points of origins being a distant IIIF server or local files.
+                </p>
+                <p>The annotation shapes creation is handled as geojson geometries. To enable complex annotation description schemas, we developed a JSON-schema creation form. This form creates annotation schemas by allowing the combining of numeric, textual and list of values fields. To allow reviewing the schemas on the go, new fields can be created at any time of data collection.</p>
+                <p>The collected data can be explored in a dedicated analysis page or exported as CSV to drive further analysis in other software.</p>
+                <p>The ability to create multiple custom data schemas for annotations, to use the IIIF format for both local or remote images and to browse annotation picture snippets are Tremulator’s key features compared to other similar tools such as Recogito
+                    <note xml:id="ftn1" place="foot" n="1"> Recogito, an initiative of Pelagios Commons, 
+                        <ptr target="http://recogito.pelagios.org/"/> (accessed 11 April 2022)
+                    </note>.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Discussion</head>
+                <p>We hope to have contributed to the broad community of image analysis with software that facilitates rich data collection on images, by targeting a more generic application than the one our research project actually needs.</p>
+                <p>So far we have focused on creating a usable web application for data collection and export. Future development will target more advanced visual analytics, such as heatmaps of image pages showing the positions of annotations.</p>
+                <p>This tool will be of particular interest to scholars working in the fields of paleography, codicology, and other aspects of manuscript studies, but it should also appeal more broadly to anyone with an interest in the digital humanities, book history, art history, semiology, archeology and architecture, and any number of other fields for which the collection and visualization of irregular data is desirable.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Figures</head>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/180731e93f5986d0e9cc6f2ca4f805f5.png"/>
+                        <head>Tremulator’s Home page showing the list of one users’ collections</head>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/61c5058be57468d5e1ecae2fffcac165.png"/>
+                        <head>Collection administration page</head>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/70292312236fd65972e70e278a4b4d68.png"/>
+                        <head>Add pictures to a collection by uploading local images, providing remote images URLs and/or importing a IIIF Manifest</head>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/b99c0c756c4e1a73a68a3e71890014c1.png"/>
+                        <head>Collection pictures gallery</head>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/c5ff8a03950590296b5c4403eeedc281.png"/>
+                        <head>Annotations’ schema edition</head>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/eaa34a34f28ad033efb2207614feda14.png"/>
+                        <head>Annotation edition</head>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/76ed90ea9c21ac83ca98c7fb4c9db3da.png"/>
+                        <head>Annotations data table withsnippets and CSV export</head>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/d7ce794f0142cff0fc0d489a0e10b070.png"/>
+                        <head>Annotations data as CSV in a spreadsheet software</head>
+                    </figure>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Almas, B., Khazraee, E., Miller, M. T. and Westgard, J.</hi> (2018). Manuscript Study in Digital Spaces: The State of the Field and New Ways Forward. 
+                        <hi rend="italic">Digital Humanities Quarterly</hi>, 
+                        <hi rend="bold">012</hi>(2).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Harlow, C. G.</hi> (1959). Punctuation in Some Manuscripts of Ælfric. 
+                        <hi rend="italic">Review of English Studies</hi>, 
+                        <hi rend="bold">10</hi>: 1–19.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Johnson, D. F.</hi> (2006). Who Read Gregory’s Dialogues in Old English? In Wilcox, J. and Magennis, H. (eds), 
+                        <hi rend="italic">The Power of Words: Anglo-Saxon Studies Presented to Donald G. Scragg on His Seventieth Birthday</hi>. Morgantown: West Virginia University Press, pp. 173–204.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Johnson, D. F.</hi> (2019). The Micro-Texts of the Tremulous Hand of Worcester: Genesis of a Vernacular liber exemplorum. In Lenker, U. and Kornexl, L. (eds), 
+                        <hi rend="italic">Anglo-Saxon Micro-Texts</hi>. Berlin, Boston: De Gruyter, pp. 225–66.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Johnson, D. F.</hi> (2021a). MS CUL Kk 3.18 and the Tremulous Hand of Worcester. In Brady, L. (ed), 
+                        <hi rend="italic">Essays on Old English Literature in Honor of J.R. Hall</hi>. MRTS, University of Arizona Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Johnson, D. F.</hi> (2021b). The Transmission and Reception of Alfredian ‘Apocrypha’. In Breay, C. and Story, J. (eds), 
+                        <hi rend="italic">Manuscripts in the Anglo-Saxon Kingdoms: Cultures and Connections.</hi> Dublin: Four Courts Press, pp. 98–107.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Moretti, F.</hi> (2013). 
+                        <hi rend="italic">Distant Reading</hi>. London: Verso.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Nagasaki, K., Tsuda, T., Muller, C. and Shimoda, M.</hi> (2016). Tagging on Buddhist Images via IIIF and TEI encoding. 
+                        <hi rend="italic">TEI Conference and Members’ Meeting</hi>. pp. 141–43.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Parkes, M. B.</hi> (1993). 
+                        <hi rend="italic">Pause and Effect: An Introduction to the History of Punctuation in the West</hi>. Berkeley: University of California Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Reimer, S.</hi> (2015). Manuscript Studies: Paleography: Punctuation 
+                        <ptr target="http://www.ualberta.ca/~sreimer/ms-course/course/punc.htm"/> (accessed 27 August 2015).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Roddis, T. and Cogapp, U.</hi> (2018). Making metadata into meaning: digital storytelling With IIIF. 
+                        <hi rend="italic">By N. Proctor &amp; R. Cherry. MW18: MW</hi>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A 3-D analytic framework of humanistic objects: data modeling paradigms, computational analysis and close reading</title>
+                <author>
+                    <persName>
+                        <surname>Maeir</surname>
+                        <forename>Noam</forename>
+                    </persName>
+                    <affiliation>Hebrew University, Israel</affiliation>
+                    <email>noam.maeir@mail.huji.ac.il</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Keydar</surname>
+                        <forename>Renana</forename>
+                    </persName>
+                    <affiliation>Hebrew University, Israel</affiliation>
+                    <email>renana.keydar@mail.huji.ac.il</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>religion; data modeling; distant reading; close reading; manuscript studies;</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>Contemporary</term>
+                    <term>data modeling</term>
+                    <term>manuscripts description</term>
+                    <term>representation</term>
+                    <term>and analysis</term>
+                    <term>Humanities computing</term>
+                    <term>Theology and religious studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>Recently, distant and close reading methods, broadly interpreted as quantitative-computational and qualitative analyses, have emerged as the primary methods of scholarship in DH (Schöch et al, 2020). Consequently, scholars have been developing various conceptual models attempting to combine the two methods in a systematic and comprehensive manner (Keydar 2019, 2020; Roe et al, 2020). In addition, aside from conceptualizing the relationship between distant and close reading, the “datafication” of humanistic data has brought scholars to emphasize the multidimensionality of their data (Windhager 2020). That is, humanistic data is not comprehensively represented via any single modeling paradigm. Therefore, researchers are calling for analytic frameworks that apply multiple modeling paradigms to the study of data. </p>
+                <p>Building on these recent developments, in this paper we present a new conceptual framework for the analysis of humanistic objects, whereby close and distant reading are applied within multiple data modeling paradigms. In other words, we suggest that the study of humanistic objects is to be conducted within 3 dimensions – representational (data modeling); computational (distant reading); qualitative (close reading).</p>
+                <p>The significance of the 3D framework, and especially the inclusion of the data modeling aspect, will be demonstrated through a case study from the field of comparative religion and the study of late antiquity. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Case study</head>
+                <p>Our case study deals with the cultural interactions between Greek and Syriac literary cultures during the first millenium CE (2
+                    <hi rend="superscript">nd</hi> – 10
+                    <hi rend="superscript">th</hi> centuries CE). Traditionally, the interaction between the two has been characterized by scholars as expressing a gradual “Hellenization” of Syriac culture, i.e., an increasing influence of Greek upon Syriac culture (e.g.: Brock 2012; 2015; Butts 2016). The recent massive digitization of manuscripts and texts offers an opportunity to re-examine the paradigm of Syriac Hellenization, within our 3D conceptual framework. 
+                </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Representational analysis</head>
+                    <p>A survey of the available corpora of Syriac literary artifacts results in the identification of two kinds of data found in online databases – texts (.txt files) and manuscript images (.jpg files) – each representing a different data modeling paradigm of Syriac literature. In other words, the results of the analysis of the representational dimension of Syriac literary culture include two data representations, or modeling paradigms, one that enables to study texts, and the other that enables to study the images of manuscripts. Therefore, our distant and close reading of Syriac-Greek interactions will be conducted within each data modeling paradigm.</p>
+                    <div type="div3" rend="DH-Heading3">
+                        <head>Literary culture as texts</head>
+                        <p>Operating within a modeling paradigm that represents Syriac literature as texts, the emerging cultural agents – those that produce Syriac literary culture – are Syriac authors, and the analysis, computational and qualitative, of authored texts is the manner by which cultural interactions are discovered. </p>
+                        <p>Consequently, in line with previous scholarship, our distant and close reading of Syriac texts resulted in the identification of a gradual process of Syriac Hellenization, as seen, for instance, in the increased appearance of Greek loanwords and adjectival forms. Nevertheless, as will be seen, shifting to the second modeling paradigm will yield different results.</p>
+                    </div>
+                    <div type="div3" rend="DH-Heading3">
+                        <head>Literary culture as manuscript images </head>
+                        <p>When Syriac literary culture is represented as manuscript images, the Syriac cultural agents that become apparent are the scribes of the manuscripts – those that produced the manuscripts in their entirety – as well as the authors of the texts that appear in them. Yet, as many of the Syriac manuscripts present compilations of many different authored texts – i.e., Multiple Text Manuscripts (Kessel 2015; Fiori 2020) – the importance of the scribe is highlighted. As such, our hybrid distant-close reading will be centered upon scribal actions (rubrications, omissions, erasures, notations, etc.).</p>
+                        <p>As opposed to the previous section’s analysis, the study of scribal actions reveals an increasing presence of scribal texts (i.e., longer titles and notes) as well as a decrease in the presentation of authored texts (i.e., shorter excerpts of longer texts). In other words, the analysis of data from a modeling paradigm that represents Syriac literature as manuscript images, resulted in the identification of an opposed cultural process to the traditional Hellenization paradigm. That is, from the perspective of this modeling paradigm, Syriac literary culture gradually distances itself from the earlier Greek forms to add distinct Syriac features – not Hellenization, but Syriacization. Accordingly, Syriac-Greek cultural interactions in late antiquity are characterized by a decrease of Greek influence upon Syriac culture.</p>
+                    </div>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p>To conclude, this paper will present a new 3D conceptual framework for the analysis of humanistic objects, that integrates multiple data modeling paradigms with a hybrid analysis of close and distant reading. The results of our case study demonstrate that a given modeling paradigm governs and confines the applications of distant (computational) and close (qualitative) readings, to a limited scope of analysis, which can be contradicted via a different modeling paradigm. Therefore, the need to include multiple modeling paradigms within the study of humanistic data appears to be crucial. Furthermore, future scholarship should theorize the relationship between the different modeling paradigms and their derived, and in our case opposing, results. </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Butts, A. M.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2016). </hi>
+                        <hi rend="italic" style="font-size:12pt">Language Change in the Wake of Empire: Syriac in its Greco-Roman Context</hi>
+                        . Indiana: Eisenbrauns.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Brock, S. P.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2012). A tentative check list of dated Syriac manuscripts up to 1300.</hi>
+                        <hi rend="italic" style="font-size:12pt">Hugoye</hi>
+                        , 15: 21-48.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Brock, S. P.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2015). Charting the Hellenization of a literary culture: the case of Syriac.</hi>
+                        <hi rend="italic" style="font-size:12pt">Intellectual History of the Islamicate World</hi>
+                        , 3: 98–124.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Fiori, E.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2020).</hi>
+                        <hi rend="italic" style="font-size:12pt" xml:space="preserve">Florilegia Syriaca. </hi>
+                        Mapping a knowledge-organizing practice in the Syriac world, Ca’ Foscari University of Venice, 30 January‒1 February 2020.
+                        <hi rend="italic" style="font-size:12pt">COMSt Bulletin</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 6(1): 93-109.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Kessel, G.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2015). Syriac monastic miscellanies.</hi>
+                        <hi rend="italic" style="font-size:12pt">COMSt,</hi>
+                        1: 411-414.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Keydar</hi>
+                        <hi rend="italic bold" style="font-size:12pt">,</hi>
+                        <hi rend="bold" style="font-size:12pt" xml:space="preserve"> R. </hi>
+                        (forthcoming). Changing the lens on survivor testimony: topic modeling the Eichmann trial
+                        <hi rend="italic" style="font-size:12pt">. Jewish Studies Quarterly</hi>
+                        .
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Keydar, R.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2020). Listening from afar: an algorithmic analysis of testimonies from the international criminal courts</hi>
+                        <hi rend="italic" style="font-size:12pt">. Illinois Journal of Law, Technology &amp; Policy,</hi>
+                         1: 55-83.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Keydar, R., Litmanovitz, Y., Hasisi, B., and Kantor, Y</hi>
+                        . (forthcoming). Modeling repressive policing: computational analysis of protocols from the Israeli state commission of inquiry into the October 2000 events. 
+                        <hi rend="italic" style="font-size:12pt">Law and Social Inquiry</hi>
+                        .
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Roe, G., Gladstone, C., and Olsen, M</hi>
+                        . (2020). Mind the gap: bridging distant and close reading across heterogeneous text collections.
+                        <hi rend="italic" style="font-size:12pt">ADHO</hi>
+                        .
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Schöch, C., Eder, M., Arias, R., Francois, P. and Primorac, A</hi>
+                        . (2020).
+                        <hi rend="italic bold" style="font-size:12pt"> </hi>
+                        Foundations of distant reading: historical roots, conceptual development and theoretical assumptions around computational approaches to literary texts.
+                        <hi rend="italic" style="font-size:12pt">ADHO</hi>
+                        .
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Wenger, M., Kalir, T., Keydar, R., Stanovsky, G.</hi>
+                         (2021). A
+                        <hi rend="italic" style="font-size:12pt">utomated extraction of sentencing decisions from court cases in the Hebrew language.</hi>
+                         
+                        <hi rend="italic" style="font-size:12pt">Proceedings of the 2021 Conference on Natural Legal Language Processing</hi>
+                         (NLLP 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-size:12pt">Windhager, F., Salisu, S. and Mayr, E</hi>
+                        . (2020). Reassembling elephants: a multi-spatiotemporal visualization method for history and humanities data.
+                        <hi rend="italic" style="font-size:12pt">ADHO</hi>
+                        .
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Improving Named-Entity Recognition on Titles of ukiyo-e prints: Towards a ‘Distant Viewing’ in Art History</title>
+                <author>
+                    <persName>
+                        <surname>Machotka</surname>
+                        <forename>Ewa</forename>
+                    </persName>
+                    <affiliation>Stockholm University, Sweden</affiliation>
+                    <email>ewa.machotka@su.se</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chatzipanagiotou</surname>
+                        <forename>Marita</forename>
+                    </persName>
+                    <affiliation>Athens University of Economics and Business, Greece. Note: All authors have contributed equally.</affiliation>
+                    <email>marita.xatzh@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pavlopoulos</surname>
+                        <forename>John</forename>
+                    </persName>
+                    <affiliation>Stockholm University, Sweden; Athens University of Economics and Business, Greece. Note: All authors have contributed equally.</affiliation>
+                    <email>ioannis@dsv.su.se</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T08:14:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>NLP</term>
+                    <term>NER</term>
+                    <term>art history</term>
+                    <term>ukiyo-e</term>
+                    <term>metadata</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>natural language processing</term>
+                    <term>Art history</term>
+                    <term>Computer science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left;">Japanese early modern woodblock prints, so-called ukiyo-e or ‘pictures of the floating world’ produced between the seventeenth and mid-nineteenth century, are one of the most widely recognizable visual images today. Among them landscape prints remain the most popular as evidenced by the iconic “The Great Wave” designed by Katsushika Hokusai (1760-1849) and its global career (Guth 2016). However, the understanding of these images is still shaped by Western modern epistemologies that may not be well fitted for the analysis of pre-modern non-Western artefacts (Machotka 2020). The dominant Western modern concept of landscape indicates that landscape images function as representations of places (Andrews 1999) even if art is never a mirror for reality. However, this may not be the case in relation to Japanese early modern prints, which are built on poetic traditions and may have other than representational functions (Chino 2003; Machotka 2012; Shirane 2013). Therefore, to understand the relationships between images and places there is a need to look at Japanese early-modern prints afresh and artificial intelligence has a potential to aid these goals. </p>
+            <p style="text-align: left;">The existing discourse on Japanese landscape prints has mainly targeted case studies e.g. selected themes or artists (Clark 2001; Forrer et al. 2011; Kobayashi 2020), the approach which does not allow broad explorations of the geographical distribution of the sites depicted within the prints, their changing frequency in relation to their production context (e.g. time, location, designer) etc. Therefore, we argue that the combination of ‘close reading’ of the artefacts through formal and contextual analysis with so-called ‘distant viewing’ or macroanalysis of visual materials (Taylor and Tilton 2019) based on the idea of ‘distant reading’ proposed by Franco Moretti (2000) for literary studies (Gold and Klein 2016) has the potential to develop a more nuanced understanding of Japanese ukiyo-e prints.</p>
+            <p style="text-align: left;">Hence, with this work we propose that distant viewing can be facilitated by Natural Language Processing technologies such as Named Entity Recognition (NER). NER can be used to extract named locations from any text, including titles and other printed inscriptions on prints. Extracted locations can then allow for a digital geospatial macroanalysis of the studied prints, which is currently impossible as the artefacts form an exceptionally large and highly divergent corpus. However, although NER has the potential to improve the study of prints, the current state of the art NER tools are not successful in the identification of artwork titles (Jain and Krestel 2019). This is mainly due to the training data scarcity. Even recent cross-domain datasets only focus on domains such as politics and natural sciences (Liu et al., 2021), leaving art history aside. This problem is especially relevant for the analysis of non-Western pre-modern artefacts such as Japanese prints as inscriptions are rendered in pre-modern scripts used before the standardization of the language in the late nineteenth and twentieth century (Frellesvig 2012). In premodern Japanese, the Sino-Japanese characters could be used alternately depending on their phonetic value and the same word could be written in different characters (Yada 2012). Another problem is the ambiguity inherent to the artwork inscriptions or the lack of data. Print inscriptions are not always standardized and metadata in different collections feature different information. These important issues challenge the proposed analysis. </p>
+            <p style="text-align: left;">Lee et al. (2018) were the first to show that transfer learning can lead to state-of-the-art results in NER for English patient note de-identification, by transferring learning from a large labeled dataset to a much smaller one. Following their work, we transferred a generic pre-trained Japanese Convolutional Neural Network NER model (Honnibal and Montani 2017) to the domain of art history, using a very limited training set of 100 labeled data. By using 100 (unseen) labeled data for evaluation, in a prior study (Chatzipanagiotou et al. 2021), we showed that transfer learning can assist NER in the Japanese language and in the field of art history, for the task of place name recognition in inscriptions of landscape prints. We registered an improvement of 28% in Precision, increasing it from 62% to 90%, and more than doubled F1, increasing it from 15% to 36%. We argue that the improved NER already allows distant viewing of the data and we show that there is room for further improvement. The access to data was facilitated by the database hosted at the Art Research Centre at Ritsumeikan University, Kyoto one of the leading Digital Humanities hubs in Japan and a collaborative partner of this project (http://www.arc.ritsumei.ac.jp/en/index.html).</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">Andrews, M.(1999). 
+                        <hi rend="italic">Landscape and Western Art</hi>. Oxford Univ. Press. 
+                    </bibl>
+                    <bibl style="text-align: left;">Chino, K.(2003). The Emergence and Development of Famous Place Painting as a Genre. Review of Japanese Culture and Society, 15.</bibl>
+                    <bibl style="text-align: left;">Clark, T..(2001) 
+                        <hi rend="italic">100 Views of Mount Fuji.</hi> Trumbull, CT.: Weatherhill. 
+                    </bibl>
+                    <bibl style="text-align: left;">Forrer, M. and Suzuki, J. and Smith, H.(2011) H
+                        <hi rend="italic">iroshige: Prints and Drawings</hi>. Munich: Prestel. 
+                    </bibl>
+                    <bibl style="text-align: left;">Frellesvig, B.(2012). 
+                        <hi rend="italic">A History of the Japanese Language</hi>. Cambridge Univerity Press. 
+                    </bibl>
+                    <bibl style="text-align: left;">Honnibal, M. and Montani, I.(2017). SpaCy 2:  Natural Language Understanding with Bloom Embeddings, Convolutional Neural Networks and Incremental Parsing. To appear.</bibl>
+                    <bibl style="text-align: left;">Gold, M., and Klein, L.(2019). 
+                        <hi rend="italic">Debates in the Digital Humanities</hi>. University of Minnesota Press.
+                    </bibl>
+                    <bibl style="text-align: left;">Guth, C.(2016). 
+                        <hi rend="italic">Hokusai's Great Wave: Biography of a Global Icon</hi>. Hawai’i University Press. 
+                    </bibl>
+                    <bibl style="text-align: left;">Jain, N. and Krestel, R.(2019). Who is mona l.? Identifying Mentions of Artworks in Historical Archives. InInternational Conference onTheory and Practice of Digital Libraries. Springer, pp.115–122.</bibl>
+                    <bibl style="text-align: left;">Kobayashi, F.(2020). 
+                        <hi rend="Japanese">文政期前後の風景画入狂歌本の出版とその改題・再印</hi>:―
+                        <hi rend="Japanese">浮世絵風景画流行の前史として</hi>―. 
+                        <hi rend="italic" style="font-family:MS Gothic"><hi rend="Japanese">浮世絵芸術</hi></hi> , 179: 5-19.
+                    </bibl>
+                    <bibl style="text-align: left;">Lee, J. and Dernoncourt, F. and Szolovits, P.(2018). Transfer Learning for Named-Entity Recognition with Neural Networks. The Eleventh International Conference on Language Resources and Evaluation (LREC 2018). pp. 4470-4473.</bibl>
+                    <bibl style="text-align: left;">Liu, Z. and Yu, T. and Wenliang D. and Ji, Z. and Cahyawijaya, S. and Madotto, A. and Fung, P.(2021). 
+                        <hi rend="italic">CrossNER: Evaluating Cross-Domain Named Entity Recognition." The Thirty-Fifth AAAI Conference on Artificial Intelligence (AAAI-21)</hi>, pp. 13452-13460.
+                    </bibl>
+                    <bibl style="text-align: left;">Machotka, E.(2020). 
+                        <hi rend="Japanese">美術史を超えて</hi>──
+                        <hi rend="Japanese">ヴァナキュラー・マッピングとしての日本近世風景版画</hi>. 
+                        <hi rend="italic" style="font-family:MS Gothic"><hi rend="Japanese">造形のポエティカ</hi></hi>
+                        <hi rend="italic">―</hi>
+                        <hi rend="italic" style="font-family:MS Gothic"><hi rend="Japanese">日本美術史を巡る新たな地平</hi></hi>, ed. Hiromi N. et al. Tokyo: Seikansha.
+                    </bibl>
+                    <bibl style="text-align: left;">Moretti, F.(2000). The Slaughterhouse of Literature. 
+                        <hi rend="italic">Modern Language Quarterly,</hi> 61:1.
+                    </bibl>
+                    <bibl style="text-align: left;">Shirane, H.(2013) 
+                        <hi rend="italic">Japan and the Culture of the four Seasons: Nature, Literature, and the Arts</hi>. Columbia University Press.
+                    </bibl>
+                    <bibl style="text-align: left;">Taylor, A. and Tilton, L.(2019). Distant Viewing: Analyzing Large Visual Corpora. 
+                        <hi rend="italic" xml:space="preserve">Digital Scholarship in the Humanities, </hi>34:1: i3–i16. 
+                    </bibl>
+                    <bibl style="text-align: left;">Yada, T.(2012). 
+                        <hi rend="Japanese">矢田勉</hi>. 
+                        <hi rend="Japanese">国語文字・表記史の研究</hi>. Tokyo: Kyūko Shoin.
+                    </bibl>
+                    <bibl style="text-align: left;">Chatzipanagiotou, M. and Machotka, E. and Pavlopoulos, J.(2021). Automated Recognition of Geographical Named Entities in Titles of Ukiyo-e prints. Digital Humanities Workshop (DHW 2021). Association for Computing Machinery, New York, USA, 70–77.</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

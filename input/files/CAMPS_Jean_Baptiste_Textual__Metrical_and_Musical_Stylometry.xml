@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Textual, Metrical and Musical Stylometry of the Trouvères Songs</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Camps</surname>
+                        <forename>Jean-Baptiste</forename>
+                    </persName>
+                    <affiliation>École nationale des chartes | Université PSL, France</affiliation>
+                    <email>jean-baptiste.camps@chartes.psl.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chaillou</surname>
+                        <forename>Christelle</forename>
+                    </persName>
+                    <affiliation>CESCM, CNRS, Poitiers, France</affiliation>
+                    <email>chaillouchristelle@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mariotti</surname>
+                        <forename>Viola</forename>
+                    </persName>
+                    <affiliation>CESCM, CNRS, Poitiers, France</affiliation>
+                    <email>viola.mariotti.maritem@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Saviotti</surname>
+                        <forename>Federico</forename>
+                    </persName>
+                    <affiliation>Università degli Studi di Pavia</affiliation>
+                    <email>federico.saviotti@unipv.it</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T13:06:27.892561077</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>stylometry</term>
+                    <term>musical stylometry</term>
+                    <term>medieval manuscripts</term>
+                    <term>old french lyrical poetry</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>attribution studies and stylometric analysis</term>
+                    <term>music and sound digitization</term>
+                    <term>encoding</term>
+                    <term>and analysis</term>
+                    <term>Musicology</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor type="bookmark-start" xml:id="id_the-lyrical-tradition-and-the-chansonnier-du-roi"/>The lyrical tradition and the 
+                    <hi rend="italic">Chansonnier du roi</hi>
+                    <ptr type="bookmark-end" target="#id_the-lyrical-tradition-and-the-chansonnier-du-roi"/>
+                </head>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/494b7aebf85cc3486ad7b2f76273e3fc.jpg"/>
+                        <head>Figure 1: BnF, fr. 844, fol. 29 (manuscrit du roi), beginning of
+                            <lb/>the section for the texts of the count of Bar.
+                        </head>
+                    </figure>
+                </p>
+                <p>In the landscape of medieval French texts’ authorship, the lyrical poetry of the 
+                    <hi rend="italic">trouveres</hi> and 
+                    <hi rend="italic">trouveresses</hi> has the aspect of an exception: contrarily to what can be observed elsewhere, anonymity is rare, and the manuscripts mostly take care to give a clear (though often conflicting between them) attribution, even up to the point of adopting a material organisation by author (fig. 1). Yet, very little is known about the attribution of the melodies that accompany many of these texts: how often are they original? Were they composed by the 
+                    <hi rend="italic">trouvere</hi> himself, or by one or several other composers? Is there even a unity behind the different melodies of the work of a given author?
+                </p>
+                <p>To answer these questions, we propose to experiment in the cross examination of the text, the metrical composition and the melodies of a corpus of lyrical texts with the methods of computational stylometry. We will focus on the 
+                    <hi rend="italic">Manuscrit du Roi</hi> (Paris, BnF fr. 844), one of the earliest (1260-1270) and richest sources for Romance lyric poetry with its 602 compositions. The literary, musical and linguistic diversity of its contents (profane songs of French trouvères and Occitan troubadours, French motets, instrumental works and Latin sacred compositions) makes it a unique case-study.
+                </p>
+                <p>The contents of this manuscript were acquired thanks to a workflow going from layout analysis, handwritten text recognition to digital editing and ultimately stylometric analysis. Text and music are encoded following the 
+                    <hi rend="italic">Guidelines</hi> of, respectively, the 
+                    <hi rend="italic">Text Encoding Initiative</hi> (TEI, 2020) and the 
+                    <hi rend="italic">Music Encoding Initiative</hi> (MEI, 2020), resulting in a textual and musical edition (See, for a detailed presentation of the ongoing editorial process, Camps 
+                    <hi rend="italic">et al.</hi>, 2021a).
+                </p>
+                <p>For the needs of the textual analysis of the text, the HTR output, after careful human correction, was then segmented into words, normalised (abbreviations expanded, allographs normalised), lemmatised and POS-tagged using deep learning methods (Table 1). Even if the scores obtained are high, cumulative errors through the different steps might remain an issue.</p>
+                <table rend="frame" xml:id="Table1">
+                    <head>Table 1: Word accuracy is indicated with respect to the in-domain test set (samples set apart from training material). Table 2: Results of the leave-one-out evaluation on the text of the songs, using character 3-grams, lemmas, part-of-speech 3-grams and lemmatised function words Table 3: Benchmark of musical features for musical stylometry Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
+                    <row role="label">
+                        <cell rend="center bold">Step</cell>
+                        <cell rend="center bold">Word acc</cell>
+                        <cell rend="center bold">Engine</cell>
+                        <cell rend="center bold">Data/Model</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">segmentation</cell>
+                        <cell rend="center">96.71</cell>
+                        <cell rend="center">Boudams (Clérice, 2020)</cell>
+                        <cell rend="center">
+                            <ref target="http://dx.doi.org/10.5281/zenodo.6500604%20">10.5281/zenodo.6500604 </ref>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell rend="center">normalisation</cell>
+                        <cell rend="center">98.01</cell>
+                        <cell rend="center">Pie (Manjavacas 
+                            <hi rend="italic">et al.</hi>, 2019)
+                        </cell>
+                        <cell rend="center">
+                            <ref target="https://dx.doi.org/10.5281/zenodo.6500649">10.5281/zenodo.6500649</ref>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell rend="center">lemmatisation</cell>
+                        <cell rend="center">97.66</cell>
+                        <cell rend="center">Pie (
+                            <hi rend="italic">ibid.</hi>)
+                        </cell>
+                        <cell rend="center">
+                            <ref target="http://dx.doi.org/10.5281/zenodo.4320487">10.5281/zenodo.4320487</ref>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell rend="center">pos-tagging</cell>
+                        <cell rend="center">97.55</cell>
+                        <cell rend="center">Pie (ibid.)</cell>
+                        <cell rend="center">
+                            <ref target="http://dx.doi.org/10.5281/zenodo.4320487">10.5281/zenodo.4320487</ref>
+                        </cell>
+                    </row>
+                </table>
+                <p>The availability of a complete transcription of both text and musical notations paves the way for the stylometric analysis of the songs of the 
+                    <hi rend="italic">trouvères</hi> and 
+                    <hi rend="italic">trouveresses</hi>, at a level impossible until now. This is a critical issue, because disputed attributions are very numerous inside the Old French Lyrical tradition (Gatti, 2019), yet it poses specific challenges, because the components are very short (often less than 50 verses), idiolect of the text appears rather homogeneous – sharing as they are on surface the same elitist cultural tradition –, while, in the meantime, the manuscript tradition creates noise (linguistic and substantial variants, even between scribes of the same manuscript). Moreover, the field of musical stylometry is still quite new, and attribution of the text and of the melody have rarely - if ever - been addressed as a whole in this tradition.
+                </p>
+                <p>By default, scholars generally postulate that the melody and the text of a song were composed by the same person. Yet the attested musical elements (for exemple : musical curbe, modality, intervals, ambitus, motives, melismas and musical form) have usually been considered as much more influenced by the tradition than the textual ones. Nonetheless, it will be worth testing the hypothesis that song attribution may be consistently built on both textual and musical elements.</p>
+                <p>Specifically, the Chansonnier du roi offers an interesting dossier, because it contains a subunit dedicated to the collected work of a single author (Thibaut de Champagne so-called 
+                    <hi rend="italic">Liederbuch</hi>). Thibaut is perhaps the most prominent of all trouvères (Barbieri, 1999), and the attribution of several songs to him is still disputed (Wallensköld, 1925; Callahan, 2010).
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor type="bookmark-start" xml:id="id_stylometric-analysis-of-the-text"/>Stylometric analysis of the text
+                    <ptr type="bookmark-end" target="#id_stylometric-analysis-of-the-text"/>
+                </head>
+                <p>In order to give new insights into these disputed attributions, we performed several stylometric analyses of the text and the music.</p>
+                <p>Stylometric analysis of the text has initially been done using features robust to noise and short text length, in particular character 3-grams (Camps 
+                    <hi rend="italic">et al.</hi>, 2021a). Both exploratory and supervised analyses, the latter using a linear SVM , were performed to shed more light on the attribution of these components. To compensate for the imbalance between the available samples for all four authors, various upsampling and downsampling strategies (alone or in combination) were experimented, and Tomek links removal (Tomek, 1976), in combination with class weights, was found to be the best performing. Evaluation was done using a leave-one-out approach, and the models reached a global accuracy of 0.79, with a F1 score of 0.93 for Thibaut and 0.76 for Gace (Table 2).
+                </p>
+                <table rend="frame" xml:id="Table2">
+                    <head> Table 2: Results of the leave-one-out evaluation on the text of the songs, using character 3-grams, lemmas, part-of-speech 3-grams and lemmatised function words Table 3: Benchmark of musical features for musical stylometry Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
+                    <row>
+                        <cell/>
+                        <cell cols="4" rend="center bold">character 3-grams</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell rend="center bold">precision</cell>
+                        <cell rend="center bold">recall</cell>
+                        <cell rend="center bold">f1</cell>
+                        <cell rend="center bold">support</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Blond</cell>
+                        <cell rend="center">0.85</cell>
+                        <cell rend="center">0.52</cell>
+                        <cell rend="center bold">0.65</cell>
+                        <cell rend="center">21</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Gace</cell>
+                        <cell rend="center">0.69</cell>
+                        <cell rend="center">0.86</cell>
+                        <cell rend="center bold">0.76</cell>
+                        <cell rend="center">43</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Gaut</cell>
+                        <cell rend="center">0.71</cell>
+                        <cell rend="center">0.60</cell>
+                        <cell rend="center">0.65</cell>
+                        <cell rend="center">20</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Thib</cell>
+                        <cell rend="center">0.93</cell>
+                        <cell rend="center">0.93</cell>
+                        <cell rend="center bold">0.93</cell>
+                        <cell rend="center">45</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">—</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell rend="center italic">accuracy</cell>
+                        <cell/>
+                        <cell/>
+                        <cell rend="center bold">0.79</cell>
+                        <cell rend="center">129</cell>
+                    </row>
+                    <row>
+                        <cell rend="center italic">macro avg</cell>
+                        <cell rend="center">0.79</cell>
+                        <cell rend="center">0.73</cell>
+                        <cell rend="center bold">0.75</cell>
+                        <cell rend="center">129</cell>
+                    </row>
+                    <row>
+                        <cell rend="center italic">weighted avg</cell>
+                        <cell rend="center">0.80</cell>
+                        <cell rend="center">0.79</cell>
+                        <cell rend="center bold">0.79</cell>
+                        <cell rend="center">129</cell>
+                    </row>
+                </table>
+                <table rend="frame" xml:id="Table3">
+                    <head> Table 2: Results of the leave-one-out evaluation on the text of the songs, using character 3-grams, lemmas, part-of-speech 3-grams and lemmatised function words Table 3: Benchmark of musical features for musical stylometry Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
+                    <row>
+                        <cell/>
+                        <cell cols="4" rend="center bold">Lemmas (all)</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell rend="center bold">precision</cell>
+                        <cell rend="center bold">recall</cell>
+                        <cell rend="center bold">f1</cell>
+                        <cell rend="center bold">support</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Blond</cell>
+                        <cell rend="center">0.77</cell>
+                        <cell rend="center">0.48</cell>
+                        <cell rend="center">0.59</cell>
+                        <cell rend="center">21</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Gace</cell>
+                        <cell rend="center">0.70</cell>
+                        <cell rend="center">0.65</cell>
+                        <cell rend="center">0.67</cell>
+                        <cell rend="center">43</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Gaut</cell>
+                        <cell rend="center">0.85</cell>
+                        <cell rend="center">0.55</cell>
+                        <cell rend="center bold">0.67</cell>
+                        <cell rend="center">20</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Thib</cell>
+                        <cell rend="center">0.65</cell>
+                        <cell rend="center">0.91</cell>
+                        <cell rend="center">0.76</cell>
+                        <cell rend="center">45</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">—</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell rend="center italic">accuracy</cell>
+                        <cell/>
+                        <cell/>
+                        <cell rend="center">0.70</cell>
+                        <cell rend="center">129</cell>
+                    </row>
+                    <row>
+                        <cell rend="center italic">macro avg</cell>
+                        <cell rend="center">0.74</cell>
+                        <cell rend="center">0.65</cell>
+                        <cell rend="center">0.67</cell>
+                        <cell rend="center">129</cell>
+                    </row>
+                    <row>
+                        <cell rend="center italic">weighted avg</cell>
+                        <cell rend="center">0.72</cell>
+                        <cell rend="center">0.70</cell>
+                        <cell rend="center">0.69</cell>
+                        <cell rend="center">129</cell>
+                    </row>
+                </table>
+                <table rend="frame" xml:id="Table4">
+                    <head> Table 2: Results of the leave-one-out evaluation on the text of the songs, using character 3-grams, lemmas, part-of-speech 3-grams and lemmatised function words Table 3: Benchmark of musical features for musical stylometry Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
+                    <row>
+                        <cell/>
+                        <cell cols="4" rend="center bold">POS 3-grams</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell rend="center bold">precision</cell>
+                        <cell rend="center bold">recall</cell>
+                        <cell rend="center bold">f1</cell>
+                        <cell rend="center bold">support</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Blond</cell>
+                        <cell rend="center">1.00</cell>
+                        <cell rend="center">0.24</cell>
+                        <cell rend="center">0.38</cell>
+                        <cell rend="center">21</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Gace</cell>
+                        <cell rend="center">0.43</cell>
+                        <cell rend="center">0.49</cell>
+                        <cell rend="center">0.46</cell>
+                        <cell rend="center">43</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Gaut</cell>
+                        <cell rend="center">0.17</cell>
+                        <cell rend="center">0.05</cell>
+                        <cell rend="center">0.08</cell>
+                        <cell rend="center">20</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Thib</cell>
+                        <cell rend="center">0.43</cell>
+                        <cell rend="center">0.67</cell>
+                        <cell rend="center">0.53</cell>
+                        <cell rend="center">45</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">—</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell rend="center italic">accuracy</cell>
+                        <cell/>
+                        <cell/>
+                        <cell rend="center">0.44</cell>
+                        <cell rend="center">129</cell>
+                    </row>
+                    <row>
+                        <cell rend="center italic">macro avg</cell>
+                        <cell rend="center">0.51</cell>
+                        <cell rend="center">0.36</cell>
+                        <cell rend="center">0.36</cell>
+                        <cell rend="center">129</cell>
+                    </row>
+                    <row>
+                        <cell rend="center italic">weighted avg</cell>
+                        <cell rend="center">0.48</cell>
+                        <cell rend="center">0.44</cell>
+                        <cell rend="center">0.41</cell>
+                        <cell rend="center">129</cell>
+                    </row>
+                </table>
+                <table rend="frame" xml:id="Table5">
+                    <head>Table 2: Results of the leave-one-out evaluation on the text of the songs, using character 3-grams, lemmas, part-of-speech 3-grams and lemmatised function words Table 3: Benchmark of musical features for musical stylometry Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
+                    <row>
+                        <cell/>
+                        <cell cols="4" rend="center bold">Lemmas (function words)</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell rend="center bold">precision</cell>
+                        <cell rend="center bold">recall</cell>
+                        <cell rend="center bold">f1</cell>
+                        <cell rend="center bold">support</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Blond</cell>
+                        <cell rend="center">0.59</cell>
+                        <cell rend="center">0.48</cell>
+                        <cell rend="center">0.53</cell>
+                        <cell rend="center">21</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Gace</cell>
+                        <cell rend="center">0.45</cell>
+                        <cell rend="center">0.40</cell>
+                        <cell rend="center">0.42</cell>
+                        <cell rend="center">43</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Gaut</cell>
+                        <cell rend="center">0.25</cell>
+                        <cell rend="center">0.30</cell>
+                        <cell rend="center">0.27</cell>
+                        <cell rend="center">20</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Thib</cell>
+                        <cell rend="center">0.62</cell>
+                        <cell rend="center">0.69</cell>
+                        <cell rend="center">0.65</cell>
+                        <cell rend="center">45</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">—</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell rend="center italic">accuracy</cell>
+                        <cell/>
+                        <cell/>
+                        <cell rend="center">0.50</cell>
+                        <cell rend="center">129</cell>
+                    </row>
+                    <row>
+                        <cell rend="center italic">macro avg</cell>
+                        <cell rend="center">0.48</cell>
+                        <cell rend="center">0.47</cell>
+                        <cell rend="center">0.47</cell>
+                        <cell rend="center">129</cell>
+                    </row>
+                    <row>
+                        <cell rend="center italic">weighted avg</cell>
+                        <cell rend="center">0.50</cell>
+                        <cell rend="center">0.50</cell>
+                        <cell rend="center">0.50</cell>
+                        <cell rend="center">129</cell>
+                    </row>
+                </table>
+                <p>Yet, the extraction of the features with the highest coefficients in the SVM models show a more contrasted result. For an author like Gace Brulé, the 3-grams seem to reveal aspects significant for our stylometric analysis and reflecting lexical and morphological preferences of the author. For instance, the high-frequency of 
+                    <hi rend="italic">apl</hi>, 
+                    <hi rend="italic">usp</hi> depends mainly of the syntagm 
+                    <hi rend="italic">a plaisir</hi> (written as one single word) and the words 
+                    <hi rend="italic">souspir</hi>/
+                    <hi rend="italic">souspirer</hi> respectively, which seem to be typical of Gace’s idiolect, whereas the low-frequency 
+                    <hi rend="italic">ete</hi> is consistent with the raffinate poet’s avoidance of the diminutive nouns and adjectives in -
+                    <hi rend="italic">ete</hi>, as marks of a popular register, and his apparent rare use of some abstract nouns like 
+                    <hi rend="italic">faussete</hi>. Yet for Thibaut’s corpus, the analysis of the most and least recurrent 3-grams seems to include features that are not of an authorial nature but reflect the particular graphemic habits of the copyist of the part of the manuscript known as Thibaut’s 
+                    <hi rend="italic">Liederbuch</hi> as opposed to the scribes at work in the rest of the manuscript: use of ‹o› instead of ‹ou› in particular in words like 
+                    <hi rend="italic">po(u)r</hi>, 
+                    <hi rend="italic">to(u)z</hi>, 
+                    <hi rend="italic">amo(u)rs</hi>, use of ‹u›, not ‹v› at the beginning of words (this last feature being even of a more graphetic nature).
+                </p>
+                <p>To bypass this inconvenient, analyses were repeated, using lemmas, part-of-speech 3-grams and lemmatised function words. Results actually were found to be less accurate (Table 2), which can either point to a less informative nature of these features (i.e., excessive suppression of information and noise generation through lemmatisation, tagging and function words selection), or to the fact that some of the performance of the 3-grams model is due to correlation between scribal practice and authorial units. If that were true, normalisations could both potentially decrease the performance of the model and increase the authorial nature of the features it uses. The relative better performance of lemmas (function and content words) in comparison to part-of-speech or function lemmas could also point towards the importance of lexical choices to discriminate between authors in the training material.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/e3f35d2181caff5998aeff98d53f8233.png"/>
+                    </figure>
+                    <figure>
+                        <graphic url="Pictures/473d97de924ec9cc332a8cb2b4430cd3.png"/>
+                    </figure>
+                </p>
+                <p>Figure 2: Features with the 10 highest positive and negative coefficients in the linear SVM models for Gace Brulé and Thibaut de Champagne; the higher the coefficient, the more the feature would contribute to a placement on one side of the separating hyperplane or the other</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor type="bookmark-start" xml:id="id_stylometric-analysis-of-the-music"/>Stylometric analysis of the music
+                    <ptr type="bookmark-end" target="#id_stylometric-analysis-of-the-music"/>
+                </head>
+                <p>Musical stylometry (especially of the 
+                    <hi rend="italic">trouvères</hi>) is a much less waymarked field. It is supposed that all composers integrate some little elements consciously or unconsciously in their compositions. A recent study observed that the troubadour Bernard de Ventadorn used in most of this songs three ascendants sounds at the beginning of verses (Chaillou-Amadieu 2016). Such methodology can be automated and show promise for the joint stylometry of text and music. In order to identify relevant features, experiments have been conducted with a variety of variables: notes, intervals, octaves n-grams, with the inclusion of syllable boundaries in the absence of noted measure, all extracted from MEI neumes notation. They were done on two different dataset: a small, controlled dataset (3x10 melodies of supposedly three authors), and an enlarged and more difficult dataset (117 melodies, with imbalanced training set of six authors).
+                </p>
+                <table rend="frame" xml:id="Table6">
+                    <head>Table 3: Benchmark of musical features for musical stylometry Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
+                    <row>
+                        <cell/>
+                        <cell cols="6" rend="center bold">Smaller set</cell>
+                    </row>
+                    <row>
+                        <cell rend="center italic">n</cell>
+                        <cell rend="center italic">1</cell>
+                        <cell rend="center italic">2</cell>
+                        <cell rend="center italic">3</cell>
+                        <cell rend="center italic">4</cell>
+                        <cell rend="center italic">5</cell>
+                        <cell rend="center italic">6</cell>
+                    </row>
+                    <row>
+                        <cell rend="center bold">notes</cell>
+                        <cell rend="center">0.67</cell>
+                        <cell rend="center bold">0.80</cell>
+                        <cell rend="center">0.73</cell>
+                        <cell rend="center">0.67</cell>
+                        <cell rend="center">0.63</cell>
+                        <cell rend="center">0.70</cell>
+                    </row>
+                    <row>
+                        <cell rend="center bold">octaves</cell>
+                        <cell rend="center">0.57</cell>
+                        <cell rend="center">0.53</cell>
+                        <cell rend="center">0.57</cell>
+                        <cell rend="center bold">0.60</cell>
+                        <cell rend="center">0.57</cell>
+                        <cell rend="center bold">0.63</cell>
+                    </row>
+                    <row>
+                        <cell rend="center bold">intervals</cell>
+                        <cell rend="center">0.77</cell>
+                        <cell rend="center bold">0.80</cell>
+                        <cell rend="center">0.73</cell>
+                        <cell rend="center">0.70</cell>
+                        <cell rend="center">0.70</cell>
+                        <cell rend="center">0.53</cell>
+                    </row>
+                </table>
+                <table rend="frame" xml:id="Table7">
+                    <head>Table 3: Benchmark of musical features for musical stylometry Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
+                    <row>
+                        <cell/>
+                        <cell cols="6" rend="center bold">Larger set</cell>
+                    </row>
+                    <row>
+                        <cell rend="center italic">n</cell>
+                        <cell rend="center italic">1</cell>
+                        <cell rend="center italic">2</cell>
+                        <cell rend="center italic">3</cell>
+                        <cell rend="center italic">4</cell>
+                        <cell rend="center italic">5</cell>
+                        <cell rend="center italic">6</cell>
+                    </row>
+                    <row>
+                        <cell rend="center bold">notes</cell>
+                        <cell rend="center">0.29</cell>
+                        <cell rend="center bold">0.38</cell>
+                        <cell rend="center bold">0.38</cell>
+                        <cell rend="center bold">0.38</cell>
+                        <cell rend="center">0.26</cell>
+                        <cell rend="center">0.26</cell>
+                    </row>
+                    <row>
+                        <cell rend="center bold">octaves</cell>
+                        <cell rend="center">0.31</cell>
+                        <cell rend="center">0.44</cell>
+                        <cell rend="center bold">0.47</cell>
+                        <cell rend="center">0.41</cell>
+                        <cell rend="center">0.38</cell>
+                        <cell rend="center bold">0.47</cell>
+                    </row>
+                    <row>
+                        <cell rend="center bold">intervals</cell>
+                        <cell rend="center">0.37</cell>
+                        <cell rend="center">0.40</cell>
+                        <cell rend="center">0.41</cell>
+                        <cell rend="center">0.43</cell>
+                        <cell rend="center bold">0.46</cell>
+                        <cell rend="center">0.40</cell>
+                    </row>
+                </table>
+                <p>Intervals or notes bigrams have proved to be the most efficient on the smaller set, while results on the larger set remain more difficult to interpret. A visualisation on the smaller set shows how these features can structure a vector space of partly authorial data clouds (fig. 
+                    <ref target="#fig:pca">4</ref>), yet a benchmark of the various types of features for supervised learning gives results whose interpretation is more elusive (Table 3), apart from the obvious impact of availability of training samples (Table 3).
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/aec5296a890e1e2b65414432a6f0b484.png"/>
+                    </figure>
+                    <figure>
+                        <graphic url="Pictures/219b182481125b8d5794f56cf72c3f86.png"/>
+                    </figure>
+                </p>
+                <p>Figure 3: First factor plane from principal component analysis of notes and intervals bigrams (smaller set)</p>
+                <table rend="frame" xml:id="Table8">
+                    <head>Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
+                    <row role="label">
+                        <cell/>
+                        <cell rend="center bold">precision</cell>
+                        <cell rend="center bold">recall</cell>
+                        <cell rend="center bold">f1</cell>
+                        <cell rend="center bold">support</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">BlonNes</cell>
+                        <cell rend="center">0.21</cell>
+                        <cell rend="center">0.19</cell>
+                        <cell rend="center">0.20</cell>
+                        <cell rend="center">16</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">GaBru</cell>
+                        <cell rend="center">0.41</cell>
+                        <cell rend="center">0.35</cell>
+                        <cell rend="center">0.38</cell>
+                        <cell rend="center">34</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">GautDarg</cell>
+                        <cell rend="center">0.29</cell>
+                        <cell rend="center">0.31</cell>
+                        <cell rend="center">0.30</cell>
+                        <cell rend="center">16</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">GuilVinier</cell>
+                        <cell rend="center">0.29</cell>
+                        <cell rend="center">0.33</cell>
+                        <cell rend="center">0.31</cell>
+                        <cell rend="center">12</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">Moniot</cell>
+                        <cell rend="center">0.50</cell>
+                        <cell rend="center">0.75</cell>
+                        <cell rend="center">0.60</cell>
+                        <cell rend="center">12</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">ThibChamp</cell>
+                        <cell rend="center">0.68</cell>
+                        <cell rend="center">0.63</cell>
+                        <cell rend="center">0.65</cell>
+                        <cell rend="center">27</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">—</cell>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell rend="center italic">accuracy</cell>
+                        <cell/>
+                        <cell/>
+                        <cell rend="center">0.43</cell>
+                        <cell rend="center">117</cell>
+                    </row>
+                    <row>
+                        <cell rend="center italic">macro avg</cell>
+                        <cell rend="center">0.40</cell>
+                        <cell rend="center">0.43</cell>
+                        <cell rend="center">0.41</cell>
+                        <cell rend="center">117</cell>
+                    </row>
+                    <row>
+                        <cell rend="center italic">weighted avg</cell>
+                        <cell rend="center">0.43</cell>
+                        <cell rend="center">0.43</cell>
+                        <cell rend="center">0.42</cell>
+                        <cell rend="center">117</cell>
+                    </row>
+                </table>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor type="bookmark-start" xml:id="id_discussion-and-further-research"/>Discussion and further research
+                    <ptr type="bookmark-end" target="#id_discussion-and-further-research"/>
+                </head>
+                <p>Initial results show good and average performance on the attribution of texts and melodies, with an interesting better performance for Thibaut and Gace, our two main target authors.</p>
+                <p>Yet, important work remains to be done, on one hand, to measure the relevancy of different features both for textual and musical stylometry, going beyond simple metrics. Indeed, our work results stress the necessity to go beyond bare metrics in the evaluation of supervised model training, to actually consider the precise features on which the model bases its attributions.</p>
+                <p>Moreover, we aim to explore features that are at the intersection of text and music, such as recurring associations between certain musical and textual features, as well as metric patterns.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Callahan, C. (2010).</hi> ‘Thibaut de Champagne and Disputed Attributions: The Case of MSS Bern, Burgerbibliothek 389 (C) and Paris, BnF fr. 1591(R)’. 
+                        <hi rend="italic">Textual Cultures</hi>, 5(1). Indiana University Press: 111–32 doi:
+                        <ref target="http://dx.doi.org/10.2979/tex.2010.5.1.111">10.2979/tex.2010.5.1.111</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Camps, J. B., Clérice, T., &amp; Pinche, A. (2021a).</hi> ‘Noisy medieval data, from digitized manuscript to stylometric analysis: Evaluating Paul Meyer’s hagiographic hypothesis’. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 36(Supplement_2), ii49-ii71.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Camps, J.-B., Chaillou, C., Mariotti, V. and Saviotti, F. (2021b)</hi>. ‘Editing and Attributing Musical Texts: the Chansonnier du Roi and the MARITEM Project’. 
+                        <hi rend="italic">EADH2021: Interdisciplinary Perspectives on Data, 2nd International Conference of the European Association for Digital Humanities, Krasnoyarsk</hi>, 2021 
+                        <ptr target="https://halshs.archives-ouvertes.fr/halshs-03260116/document"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Chaillou-Amadieu, C. (2017).</hi>
+                        <hi rend="italic">Philologie et musicologie. Les variantes musicales dans les chansons de troubadours. In Les noces de Philologie et de musicologie. Textes et musiques du Moyen Âge</hi>, ed. C. Cazaux-Kowalski and al. Paris: Classiques Garnier, 2017, p. 69-95.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Clérice, T. (2020)</hi>. ‘Evaluating Deep Learning Methods for Word Segmentation of Scripta Continua Texts in Old French and Latin’. 
+                        <hi rend="italic">Journal of Data Mining &amp; Digital Humanities</hi>, 2020.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Clérice, T., Camps, J.-B. and Pinche, A. (2019)</hi>. Deucalion, Modèle Ancien Francais (0.2.0). Zenodo doi: 
+                        <ref target="https://doi.org/10.5281/zenodo.3237455">10.5281/zenodo.3237455.</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Dees, A. (1987).</hi>
+                        <hi rend="italic">Atlas des formes linguistiques des textes littéraires de l’ancien français</hi>, Tübingen, Niemeyer.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gatti, L. (2019).</hi>
+                        <hi rend="italic">Repertorio delle attribuzioni discordanti nella lirica trovierica</hi>, Roma, Sapienza Università Editrice (Online: 
+                        <ptr target="http://www.editricesapienza.it/sites/default/files/5850_Gatti_Lirica_trovierica_interior_OA.pdf"/>).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Manjavacas, E., Kádár, Á. and Kestemont, M. (2019).</hi> ‘Improving Lemmatization of Non-Standard Languages with Joint Learning’. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies Minneapolis, p. 1493–503, doi: 
+                        <ref target="http://dx.doi.org/10.18653/v1/N19-1153">10.18653/v1/N19-1153</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Music Encoding Initiative (2020).</hi>
+                        <hi rend="italic">Guidelines</hi>. Mainz 
+                        <ptr target="https://music-encoding.org/"/> (accessed 8 January 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">TEI Consortium (2020).</hi>
+                        <hi rend="italic">TEI P5: Guidelines for Electronic Text Encoding and Interchange</hi>. 
+                        <ptr target="https://tei-c.org/Guidelines/"/> (accessed 9 May 2015).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Tomek, Ivan (1976)</hi>. ‘Two modifications of CNN’, 
+                        <hi rend="italic">IEEE Trans. Systems, Man and Cybernetics</hi>, 6:769–772.
+                    </bibl>
+                    <bibl>
+                        <hi rend="italic">Troubadour Melodies Database</hi>, 
+                        <ptr target="http://www.troubadourmelodies.org/melodies"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wallensköld, A. (1925), ed.</hi>. Thibaud IV (1201-1253 ; comte de Champagne): Les chansons de Thibaut de Champagne, roi de 
+                        <hi rend="italic">Navarre</hi>. 
+                        <ptr target="https://gallica.bnf.fr/ark:/12148/bpt6k53236"/> (accessed 8 January 2021).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

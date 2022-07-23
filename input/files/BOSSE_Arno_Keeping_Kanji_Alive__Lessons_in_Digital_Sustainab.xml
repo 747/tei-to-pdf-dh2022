@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Keeping Kanji Alive: Lessons in Digital Sustainability</title>
+                <author>
+                    <persName>
+                        <surname>Bosse</surname>
+                        <forename>Arno</forename>
+                    </persName>
+                    <affiliation>KNAW Humanities Cluster, The Netherlands</affiliation>
+                    <email>arno.bosse@di.huc.knaw.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hibino Lory</surname>
+                        <forename>Harumi</forename>
+                    </persName>
+                    <affiliation>The University of Chicago, USA</affiliation>
+                    <email>hlory@uchicago.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>best-practices</term>
+                    <term>sustainability</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>curricular and pedagogical development and analysis</term>
+                    <term>sustainable procedures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Education/ pedagogy</term>
+                    <term>Language acquisition</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Ensuring the sustainability of a digital humanities project in an appropriate and responsible manner remains a critical and vexing challenge for any project team. Part of the reason for this lies in the complex interdependence of the different issues contributing to the challenge—technical, managerial, staffing, financial, and legal—to name but some of the most recognized factors. It is understandable, then, that many practitioners perceive that despite significant progress around digital preservation (for example, on shared digitization or metadata standards) the particular differences between digital projects trying to address long-term sustainability remain far greater than the commonalities.</p>
+            <p style="text-align: left; ">Funders have recognized this problem as well and (once more, broadly generalising) are providing support to address this problem in different ways. In Europe, for example, where national and EU-wide funding agencies play a significant role, one can observe a renewed commitment to create shared resources for sustainability by investing in large scale digital infrastructures for the humanities (e.g. the EU-funded 
+                <ref target="https://www.dariah.eu/">DARIAH</ref> or 
+                <ref target="https://www.clariah.nl/">Clariah</ref> in the Netherlands). By contrast, in North-America, given its size, more emphasis has been placed in helping in particular smaller institutions to develop individual strategies for how, and how long, digital projects should be sustained (e.g. in the United-States, the NEH-funded Institute on Advanced Topics on ‘
+                <ref target="https://sites.haa.pitt.edu/sustainabilityroadmap/">Sustaining DH</ref>’ or in Canada, the SSHRC-funded ‘
+                <ref target="https://endings.uvic.ca/">Endings Project</ref>’). 
+            </p>
+            <p style="text-align: left; ">Both approaches rightly look to address the challenge of sustainability from a future facing perspective. But as a consequence, not enough attention is being paid to the potential lessons we could learn collectively from projects that have already proven themselves as successful and sustainable over an extended period of time. Today, many, if not most digital humanities projects are never conceived to be actively maintained and revised for a significant number of years beyond their initial funding period. The extent of our experience with actually ‘sustained’ DH projects with active lifespans of five, eight, ten, twelve or more years remains severely limited. Indeed, we tend to regard such projects as ‘outliers’ whose particular circumstances will likely not overlap with our own. This, in turn, curtails our ability to learn from such projects and examine to what extent their experiences can be applied elsewhere.</p>
+            <p style="text-align: left; ">In our paper, we would like to present the lessons in sustainability we have learned from continuously maintaining and adapting a digital project over the last twenty years at the University of Chicago. 
+                <hi rend="italic">Kanji alive</hi> (
+                <ref target="https://kanjialive.com/">https://kanjialive.com</ref>) is a web-application designed to help Japanese language students of all levels learn to read and write kanji. The app is widely used in Japanese language programmes throughout the world with over 70K users/year while the project’s main website, which also offers additional language resources for students such as a comprehensive listing of Japanese radicals, has over 150K visitors/year. 
+            </p>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="8.838847222222222cm" url="Pictures/a9b05fca0427e75b739c16df3622988e.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">
+                <hi rend="italic">Kanji alive</hi> is a pedagogical not a research application. However, nearly all of the technical, managerial, staffing, financial, and legal issues central to the sustainability of research driven digital humanities projects apply equally to successful pedagogical projects as well. Over the past twenty years of its existence, 
+                <hi rend="italic">Kanji alive</hi> has experienced and overcome its fair share of challenges in all of these areas. The purpose and ambition of our short paper is to review and share these lessons with the digital humanities community in the hope that other projects will be able to benefit positively from our experiences as well.
+            </p>
+        </body>
+    </text>
+</TEI>

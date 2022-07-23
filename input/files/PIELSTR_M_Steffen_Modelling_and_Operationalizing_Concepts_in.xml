@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Modelling and Operationalizing Concepts in Computational Literary Studies</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Brandes</surname>
+                        <forename>Phillip</forename>
+                    </persName>
+                    <affiliation>University of Jena, Germany</affiliation>
+                    <email>phillip.brandes@uni-jena.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dennerlein</surname>
+                        <forename>Katrin</forename>
+                    </persName>
+                    <affiliation>University of Würzburg, Germany</affiliation>
+                    <email>katrin.dennerlein@uni-wuerzburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Jacke</surname>
+                        <forename>Janina</forename>
+                    </persName>
+                    <affiliation>University of Göttingen, Germany</affiliation>
+                    <email>janina.jacke@uni-goettingen.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sophie</surname>
+                        <forename>Marshall</forename>
+                    </persName>
+                    <affiliation>University of Jena, Germany</affiliation>
+                    <email>sophie.marshall@uni-jena.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pielström</surname>
+                        <forename>Steffen</forename>
+                    </persName>
+                    <affiliation>University of Würzburg, Germany</affiliation>
+                    <email>pielstroem@biozentrum.uni-wuerzburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Felix</surname>
+                        <forename>Schneider</forename>
+                    </persName>
+                    <affiliation>University of Jena, Germany</affiliation>
+                    <email>felix.schneider@uni-jena.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T10:28:28.756641903</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Panel</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Computational Literary Studies</term>
+                    <term>Literary Studies</term>
+                    <term>Operationolization</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>18th Century</term>
+                    <term>Contemporary</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>text mining and analysis</term>
+                    <term>Computer science</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction (Steffen Pielström)</head>
+                <p>In computational literary studies (CLS), research questions about literature are approached with computational, often quantitative research methods. This approach often requires researchers to model and operationalize concepts from literary studies in a way that renders them accessible to quantitative methodology. Research in literary studies traditionally follows a qualitative paradigm. Concepts are often defined more vaguely than, for example, in the natural sciences, and often subject to continuing controversies. This practice results in a rich repertoire of terms that allows for the description of a very broad spectrum of phenomena by readers of literature. In the natural sciences on the contrary, definitions are often from the very beginning measured by their possibility to be operationalized for mathematical treatment, effectively limiting choice of concepts that can be objects of research.</p>
+                <p>As a consequence, CLS can not always easily represent the entire spectrum of concepts and research questions present in literary studies. Sometimes methodological opportunities suggest different focuses. For example, computational studies on writing style still often focus on authorship, a text attribute that can be determined for a majority of literary works without much controversy. Beyond authorship analysis, literary genre is a phenomenon often looked at, and whereas early studies tended to rely on a very simplifying, categorical concept of genre, recent works try to establish new and more convincing genre concepts from a CLS point of view (see Henny-Krahmer et al. 2018, Calvo-Tello 2020).</p>
+                <p>Another example can be found in a current project on the complexity of literary texts (Pielström et al. in preparation). Though a concept of complexity is well established in the natural sciences, it proved to be surprisingly complicated to model and operationalize literary scholar’ concepts on the complexity of a text concisely in a way fit for mathematical treatment. Even after the extreme narrowing of the project’s focus on lexical complexity, there remains a number of dimensions to the problem, and each possible operationalization is weighting these dimensions differently. Ultimately, each measuring approach can only represent one point of view on the multiple dimensions of lexical complexity and remains thereby imperfect (see also Jarvis 2013).</p>
+                <p>As these examples show, modelling concepts from literary studies for computational, quantitative methods can mean walking a thin line between precision and relevance: On one hand, concepts often can only be operationalized by reducing and simplifying them, controversial concepts can sometimes only be treated by relying on pragmatic working definitions. On the other hand, doing work on the basis of simplifying definitions can lead to results that are not considered relevant by other literary scholars any more. With this panel, we aim to invite a broader discussion on how CLS researchers can or should deal with this issue and how it potentially influences the relationship between CLS and other parts of the literary studies community. As a stimulus for this discussion, we present examples from different CLS projects and their solutions for modelling literary studies concepts.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Modelling concepts of literary science - a typology (Phillip Brandes and Sophie Marshall)</head>
+                <p>The complexity of literary texts continues to pose regular challenges to computational literary studies. An essential part of computational work with literary texts consists of modelling and operationalising phenomena of literary texts. Phenomenon is understood broadly here and includes, for example, stylistic properties of texts such as certain stylistic devices, abstract, narratological concepts such as the narrative instance or even everyday world themes that are negotiated in texts such as emotions.</p>
+                <p>With this contribution we propose a preliminary approximative typology of what can (already) be modelled and what cannot (yet). For this purpose, we make a division into, on the one hand, 1) “simple” text(phenomena) and 2) “complex” text(phenomena) and, on the other hand, a) “simple” theoretical concepts and b) “complex” theoretical concepts. This results in four categories (1a, 1b, 2a and 2b), of which only category 1a seems to be modelable without major difficulties. An example would be the stylistic device of anaphora - “Show all at least 3-word strings beginning with identical letters” is implementable with comparatively little effort.</p>
+                <p>Intuitively, one would thus say problems in modelling increase with the complexity and ambiguity of what is to be modeled. Categories 2a) and 2b) are of interest for the planned contribution. For the latter, we would need to ask to what extent we are approaching the possibility of modelling complex or ambiguous concepts.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Stylistic devices and their function for the representation of ‘Asia’ in Middle High German literature (Felix Schneider and Phillip Brandes)</head>
+                <p>As an example of category 2a) we will use the stylistic figures parallelism and chiasmus (Fauser 1994, Ostrowocz 2003). We operationalise the latter as inversions of part-of-speech tags according to an A B B' A' scheme (which includes antimetabole, an inverted repetition of lemmas, as a special case of chiasmus), the former according to the A B A' B' scheme, and detect them using a machine learning classifier pre-trained on German chiasmi (Schneider et al. 2021). The particular challenge here is to distinguish between random part-of-speech tag inversions and true stylistic devices. The metaphor serves as an example of category 2b) that is more complex (Goldmann, 2019) than chiasmi and parallelisms. Our approach, therefore, is to first model only certain types of metaphors. The results of this approach are so far preliminary and serve only as a basis for further discussion.</p>
+                <p>We finally examine the stylistic devices modelled in this way in a corpus of Middle High German texts that can only approximate the diversity of Asia in their engagement with non-European spaces (e.g., “Willehalm” by Wolfram von Eschenbach, “Herzog Ernst”, and “König Rother”; of which the thematization of Asia, especially India and parts of the Near East, has already been studied using conventional methods: Prager 2014, Schmitz 2018 and Sivri 2016). The article thus stimulates a (heuristic) typology for modelling concepts of literary studies, tests their implementation, and sheds light on the diversity of Asia from the perspective of Medieval German literature.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Modelling emotions in drama - literary studies and digital methods (Katrin Dennerlein)</head>
+                <p>In the “Emotions in Drama”-project we are investigating how the emotions of characters were expressed in 17th to early 19th century German drama. We want to answer questions like: how do subgenres differ in terms of distributions and development of expressed emotions? Can diachronic developments be modeled based on emotions? Can these methods help to identify groups of texts in unknown materials that were considered as being related by contemporaries? The basis for answering these questions is a method that identifies emotions in character speech. To establish such a method, a neural network classifier is trained to recognize emotions in annotated texts (Schmidt/Dennerlein/Wolff 2021). We selected 13 emotions particularly important for the drama of that period (Schings 1980, Meier 1993, Schulz 1988; Schonlau 2017; Dennerlein/Schmidt/Wolff 2022) and annotated them in terms of source, target and polarity (Kim/Klinger 2019). So far, we collected about 20,000 instances of emotions in 17 dramas from our study period. After using these annotations to train Gbert we are currently classifying sentences of dramatic texts which the trained model hasn’t seen before. In this step, differentiations in literary studies such as the distinction between presentation/thematisation (Schonlau 2017) and the diversification of various attribution and classification steps must still be left aside (Gius/Jacke 2017, Schonlau 2017, 34-38). As soon as it is clear with which training data and transformer models neural networks best learn to “understand” historical drama language, complex and literature-specific phenomena such as metaphors, lies, irony, pathos or comedy are to be modelled.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Modelling interpretation-dependent concepts - the example of the unreliable narrator (Janina Jacke)</head>
+                <p>From a CLS perspective, heavily formalized concepts based on descriptive text features are most attractive for computational analysis. From a literary studies perspective, however, such concepts often represent only heuristic, auxiliary constructions that assist text interpretation (see Kindt/Müller 2003). But there is a value in modelling more complex phenomena. The attempt to model complex concepts requires theoretical analysis investigating which aspects are strictly descriptive and which rely on contextual knowledge and preceding conclusions (Gius/Jacke 2017). This analysis is in itself valuable for literary studies, since it renders method and theory more transparent. In the best case, this allows for a computational treatment of the descriptive aspects. Even research on more complex topics can thereby profit from the formalist perspective of information science and use input from computational analysis without simplification.</p>
+                <p>The phenomenon of the unreliable narrator provides an excellent example, since this concept, though interpretation-dependent, does have aspects suitable for computational treatment. In the CAUTION project the concept is treated by discriminating between different subtypes (Jacke 2020). For some of these subtypes, like fact-based unreliability, language-level indicators can be identified that are, at least partially, detectable with computational methods. On this basis quantitative surveys on larger corpora are possible, and their results can be included in interpretation.</p>
+                <p>As a second step, inference engines are used to compare contrasting interpretation hypotheses for selected texts in terms of consistency, coherence and scope. Adapting computational methods thereby supports the genesis of literary theory and text research without reducing concepts to their constituent formal components.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Calvo Tello, J.</hi> (2020). What is a Genre? A Graph Unified Model of Categories, Texts, and Features. Ottawa: 
+                        <hi rend="italic">ADHO</hi> https://hcommons.org/deposits/item/hc:31713/ (accessed 12 October 2020).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Dennerlein, K, Schmidt, T. and Wolff, C. </hi>(2022): Emotionen im kulturellen Gedächtnis bewahren., in: 
+                        <hi rend="italic">Book of Abstracts, DHd2022</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fauser, M. </hi>(1994): Chiasmus, in: 
+                        <hi rend="italic">Historisches Wörterbuch der Rhetorik</hi>, Bd. 2, c. 171–173.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gius, E. and Jacke, J.</hi> (2017): The Hermeneutic Profit of Annotation. On Preventing and Fostering Disagreement in Literary Analysis. In: I
+                        <hi rend="italic">nternational Journal of Humanities and Arts Computing</hi> 11: 2, 233 –254. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Goldmann, L. </hi>(2019): 
+                        <hi rend="italic">Phänomen und Begriff der Metapher. Vorschlag zur Systematisierung der Theoriegeschichte</hi>. De Gryuter.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Haferland, H. </hi>(2019): Erzähler, Fiktion, Fokalisierung. Drei Reizthemen der Historischen Narratologie. In: 
+                        <hi rend="italic">BME</hi> 2, S. 11–147.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Henny-Krahmer, U., Betz, K., Schlör, D. </hi>
+                        <hi rend="bold">a</hi>
+                        <hi rend="bold">nd Hotho, A. </hi>(2018). Alternative Gattungstheorien. Das Prototypenmodell am Beispiel hispanoamerikanischer Romane. 
+                        <hi rend="italic">DHd2018</hi>. Universität zu Köln, March 1, 2018.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Jacke, J. </hi>(2020): 
+                        <hi rend="italic">Systematik unzuverlässigen Erzählens. Analytische Aufarbeitung und Explikation einer problematischen Kategorie</hi>. Berlin/Boston: de Gruyter.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Jarvis, S. </hi>(2013): Chapter 1. Defining and measuring lexical diversity. In S. Jarvis &amp; M. Daller (Hrsg.): 
+                        <hi rend="italic">Studies in Bilingualism</hi> 47: 13-44. John Benjamins Publishing Company. https://doi.org/10.1075/sibil.47.03ch1
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kim, E. and Klinger, R.</hi> (2019): A survey on sentiment and emotion analysis for computational literary studies., in: 
+                        <hi rend="italic">Zeitschrift für digitale Geisteswissenschaften</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kindt, </hi>
+                        <hi rend="bold">T.</hi>
+                        <hi rend="bold"> and Müller, H.-</hi>
+                        <hi rend="bold">H.</hi>
+                        <hi rend="bold"> </hi>(2003): Wieviel Interpretation enthalten Beschreibungen? Überlegungen zu einer umstrittenen Unterscheidung am Beispiel der Narratologie. In: Jannidis, F., Lauer, G., Martínez, M. and Winko, S. Eds. (2003.): 
+                        <hi rend="italic">Regeln der Bedeutung</hi>. Berlin/New York: de Gruyter, 286–304.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Meier, A.</hi> (1993). 
+                        <hi rend="italic">Dramaturgie der Bewunderung: Untersuchungen zur politisch-klassizistischen Tragödie des 18. Jahrhunderts</hi> (Vol. 23). Frankfurt am Main: Vittorio Klostermann.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Martínez, M. and Scheffel, M. </hi>(2016): 
+                        <hi rend="italic">Einführung in die Erzähltheorie</hi>, München: C.H. Beck.
+                    </bibl>
+                    <bibl>Ostrowocz, </bibl>
+                    <bibl>
+                        <hi rend="bold">Philipp</hi> (2003): Parallelismus, in: 
+                        <hi rend="italic">Historisches Wörterbuch der Rhetorik</hi>, Bd. 6, c. 546–552.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pielström, S., Hodošček, B., Calvo Tello, J., Henny-Krahmer, U., Jannidis, F., Schöch, C., Du, K., Uesaka, A. and Tabata, T.</hi> (in preparation): Measuring Lexical Diversity of Literary Texts.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Prager, D.N. (</hi>2014): 
+                        <hi rend="italic">Orienting the self. The German literary encounter with the Eastern other</hi>. Camden House.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schings, H.-</hi>
+                        <hi rend="bold">J.</hi>
+                        <hi rend="bold"> </hi>(1980). 
+                        <hi rend="italic">Der mitleidigste Mensch ist der beste Mensch: Poetik des Mitleids von Lessing bis Büchner.</hi> Edition Beck. München: Beck.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sivri, Y. </hi>(2016): 
+                        <hi rend="italic">Mitteldeutsche Orientliteratur des 12. und 13. Jahrhunderts. 'Graf Rudolf' und 'Herzog Ernst'. Ein Beitrag zu interkulturellen Auseinandersetzungen im Hochmittelalter</hi>. Peter Lang.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schleiermacher, F. D. E.</hi> (1997): Hermeneutik und Kritik mit besonderer Beziehung auf das Neue Testament, In:Frank, W. (ed.): 
+                        <hi rend="italic">Hermeneutik und Kritik</hi>. Frankfurt am Main: suhrkamp.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schmitz, F.</hi> (2018): 
+                        <hi rend="italic">Der Orient in Diskursen des Mittelalters und im "Willehalm" Wolframs von Eschenbach</hi>. Peter Lang.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schneider, F., Brandes, P., Barz, B., Denzler, J. and Marshall, S.</hi> (2021): Data-Driven Detection of General Chiasmi Using Lexical and Semantic Features. 
+                        <hi rend="italic">ACL 2021</hi>. P. 96–100.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schonlau, A. </hi>(2017). 
+                        <hi rend="italic">Emotionen im Dramentext: eine methodische Grundlegung mit exemplarischer Analyse zu Neid und Intrige 1750-1800</hi> (Vol. 25). Berlin: Walter de Gruyter GmbH &amp; Co KG.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schulz, G. M. </hi>(1988). 
+                        <hi rend="italic">Tugend, Tod und Gewalt. Das Trauerspiel der Aufklärung und die Dramaturgie des Pathetischen und des Erhabenen.</hi> Tübingen: Niemeyer.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schwarz-Friesel, M. (</hi>2007). 
+                        <hi rend="italic">Sprache und Emotion</hi>. Tübingen: Francke.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

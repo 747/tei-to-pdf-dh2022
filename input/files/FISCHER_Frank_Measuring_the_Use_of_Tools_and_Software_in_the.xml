@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Measuring the Use of Tools and Software in the Digital Humanities: A Machine-Learning Approach for Extracting Software Mentions from Scholarly Articles </title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Zarei</surname>
+                        <forename>Alireza</forename>
+                    </persName>
+                    <affiliation>GWDG</affiliation>
+                    <email>alireza.zarei@gwdg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Seung-Bin</surname>
+                        <forename>Yim</forename>
+                    </persName>
+                    <affiliation>Austrian Centre for Digital Humanities and Cultural Heritage</affiliation>
+                    <email>Seung-Bin.Yim@oeaw.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fischer</surname>
+                        <forename>Frank</forename>
+                    </persName>
+                    <affiliation>DARIAH-EU</affiliation>
+                    <email>frank.fischer@dariah.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ďurčo</surname>
+                        <forename>Matej</forename>
+                    </persName>
+                    <affiliation>Austrian Centre for Digital Humanities and Cultural Heritage</affiliation>
+                    <email>matej.durco@oeaw.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wieder</surname>
+                        <forename>Philipp</forename>
+                    </persName>
+                    <affiliation>GWDG</affiliation>
+                    <email>philipp.wieder@gwdg.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T14:38:00.234097090</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Tool Studies</term>
+                    <term>Digital Humanities</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>software development</term>
+                    <term>systems</term>
+                    <term>analysis and methods</term>
+                    <term>Computer science</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>
+                    <hi rend="color(#000000)">Tools and software are an important part of Digital Humanities (DH) practice (Dombrowski 2014, Barbot et al. 2019, Barbot et al. 2020, Fischer/Moranville 2020, Dombrowski 2021, Fischer et al. 2021, Luhmann/Burghardt 2021). Previous attempts to gain an overview of these tools were mainly based on manual aggregations, as in the case of the long-running Canadian project TAPoR.</hi>
+                    <hi rend="color(#000000)">
+                        <note xml:id="ftn1" place="foot" n="1">
+                            <ptr target="https://tapor.ca/"/>
+                        </note>
+                    </hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">Around 1,500 tools can be found there, an order of magnitude that should illustrate how difficult it is to keep everything up to date. To learn more about the actual use of tools in scientific work, especially in the Digital Humanities, we present a machine-learning approach for extracting tools and software mentioned by name in scientific publications, adding to other recent endeavours in this field (Du et al. 2020, Henny-Krahmer/Jettka 2022).</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Related Works</head>
+                <p>Different approaches have emerged over the years for named entity recognition (NER), which can be categorised broadly into two groups, rule-based and machine-learning (ML) approaches (Isozaki 2002).</p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Rule-based approach</head>
+                    <p>
+                        <hi rend="color(#000000)">One of the main methods used for extracting facts, including named entities, from texts, are Hearst patterns (Hearst 1992). Hearst patterns were revisited by the Facebook team for their Hypernymy Suite tool (Roller et al. 2008) and were still found to be superior in accurately extracting relations compared to other distributional methods. Similar efforts include GATE (Cunningham et al. 2013)</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">and other legacy solutions (Chiticariu et al. 2013).</hi>
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Machine-learning approach</head>
+                    <p>
+                        <hi rend="color(#000000)">Among the relevant methods that use ML, we looked at SoftwareKG (Schindler et al. 2020),</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">which uses DBpedia (Lehmann et al. 2015) to validate entities as software. The results, though, lack various software mentions from other sources, because of memorising the words (memorisation effect) (Arpit et al. 2017). Another example is the GROBID tool</hi>
+                        <hi rend="color(#000000)">
+                            <note xml:id="ftn2" place="foot" n="2">
+                                <ptr target="https://cloud.science-miner.com/software/"/>
+                            </note>
+                        </hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(Du et al. 2020). After applying it to selected DH publications, we found that the recall is limited and that there is some memorisation effect. Given the recent efforts in this area (see also Henny-Krahmer/Jettka 2022), we were motivated to see if we could solve these issues to get a model that is production-ready.</hi>
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Our Approach</head>
+                <p>Following the ML-based approach and considering the limitations of related work, we started to build a model that can recognise a tool based on its context (e.g. neighbourhood and grammar) and appearance (e.g. capitalised words, adjacent numbers, etc.).</p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Dataset</head>
+                    <p>For the dataset, we preprocessed a deduplicated collection of sentences from PLOS Sociology, Linguistics and abstracts from ADHO’s annual DH conferences (2015 and 2020), resulting in 1,899,652 sentences.</p>
+                    <p>
+                        <hi rend="color(#000000)">We created two versions of the dataset. The baseline dataset was created by preparing approximately 55,000 tool mentions</hi>
+                        <hi rend="color(#000000)">
+                            <note xml:id="ftn3" place="foot" n="3">
+                                <ptr target="https://gitlab.gwdg.de/sshoc/data-ingestion/-/blob/master/repositories/extraction/data/patterns/all_final.jsonl"/>
+                            </note>
+                        </hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">as patterns by processing names of tools and software coming from TAPoR and Wikidata. These patterns were fed into Prodigy,</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">which suggested 2,205 sentences containing tool names. Following the annotation guidelines,</hi>
+                        <hi rend="color(#000000)">
+                            <note xml:id="ftn4" place="foot" n="4">
+                                <ptr target="https://gitlab.gwdg.de/sshoc/data-ingestion/-/blob/master/Annotation%20Guideline%20for%20Tool%20Extraction.pdf"/>
+                            </note>
+                        </hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">1,000 of them were annotated manually using Prodigy as the baseline dataset.</hi>
+                        <hi rend="color(#000000)">
+                            <note xml:id="ftn5" place="foot" n="5">
+                                <ptr target="https://gitlab.gwdg.de/sshoc/data-ingestion/-/tree/master/repositories/extraction/annotation/result"/>
+                            </note>
+                        </hi>
+                    </p>
+                    <p>In order to avoid the memorisation of tool names in our patterns, we conducted another round of annotations using Prodigy’s manual-annotation feature with suggestions from a model. The suggestions of the baseline model were corrected using Prodigy, focusing on false-positive and false-negative suggestions, resulting in an additional 583 high quality-annotations as our second dataset as corrections.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Model training</head>
+                    <p>Four different models were trained and evaluated to find the best training strategy for the context of the task. All models were trained using compounding batch size, a drop-out rate of 0.2 and a split of the evaluation set of 0.2 over 20 iterations.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Transfer learning</head>
+                    <p>
+                        <hi rend="color(#000000)">As shown in related work (Ruder et al. 2019), we wanted to see if transfer learning would improve our results. Two models, based on the first two models, were trained with transfer learning by pre-training spaCy’s</hi>
+                        <hi rend="color(#000000)">
+                            <note xml:id="ftn6" place="foot" n="6">
+                                <ptr target="https://spacy.io/"/>, v2.3.2
+                            </note>
+                        </hi>
+                        <hi rend="color(#000000)"> en_vectors_web_lg model on our entire corpus of sentences.</hi>
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results</head>
+                <p>The performance of the three trained models is shown in Table 1.</p>
+                <p>Table 1: Results of different Tool Entity recognition models.</p>
+                <table rend="frame" xml:id="Tabelle1">
+                    <row>
+                        <cell rend="center color(#000000) bold">Model</cell>
+                        <cell rend="center color(#000000) bold">Precision</cell>
+                        <cell rend="center color(#000000) bold">Recall</cell>
+                        <cell rend="center color(#000000) bold">F-Score</cell>
+                    </row>
+                    <row>
+                        <cell rend="start color(#000000)">Baseline</cell>
+                        <cell rend="center color(#000000)">.89</cell>
+                        <cell rend="center color(#000000)">.83</cell>
+                        <cell rend="center color(#000000)">.86</cell>
+                    </row>
+                    <row>
+                        <cell rend="start color(#000000)">Baseline with corrections</cell>
+                        <cell rend="center color(#000000)">.90</cell>
+                        <cell rend="center color(#000000)">.88</cell>
+                        <cell rend="center color(#000000)">.89</cell>
+                    </row>
+                    <row>
+                        <cell rend="start color(#000000)">Baseline with Transfer Learning</cell>
+                        <cell rend="center color(#000000)">.89</cell>
+                        <cell rend="center color(#000000)">.84</cell>
+                        <cell rend="center color(#000000)">.86</cell>
+                    </row>
+                    <row>
+                        <cell rend="start color(#000000)">Baseline with corrections &amp; Transfer Learning</cell>
+                        <cell rend="center color(#000000)">.91</cell>
+                        <cell rend="center color(#000000)">.92</cell>
+                        <cell rend="center color(#000000)">.92</cell>
+                    </row>
+                </table>
+                <p>After training the corrected model, it can be seen that the model has improved significantly, especially regarding recall. This was a major criterion where many other models failed as a result of the memorisation effect (Arpit et al. 2017) of their selected tools or software. Adding newly found tools that were not present in our 55,000 tool examples and fixing the errors of our first model contributed to this result. The limitations of using a single task NLP model with a single dataset have already been studied (Ruder et al. 2019), and most recent practices consider transfer learning for their solutions. While applying transfer learning on the baseline without corrections showed no significant improvements, it significantly improved the F-score when applied together with corrections.</p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Application of the model to real data</head>
+                    <p>The trained NER model was used to extract tool names from publications already ingested in the SSHOC Marketplace (Zarei et al. 2022). 470 publications, consisting of 54,841 sentences, were fed into the model. 2,257 different potential tool names were suggested by the NER model from 5,091 sentences mentioning tools.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Evaluation of extracted tool names</head>
+                    <p>
+                        <hi rend="color(#000000)">Since the discovery of previously unseen tool names is the most interesting benefit of the NER model, the evaluation of suggested tool names is important. Suggested tool names were evaluated semi-automatically by looking them up in the Marketplace and Wikidata.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">From the 2,257 distinct tool name suggestions, 125 were available in Marketplace entries and 38 were available in Wikidata. The rest of the suggestions were evaluated manually.</hi>
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Future Work</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Exploring the use of Transformer models</head>
+                    <p>Transformer architecture based models such as BERT (Devlin et al. 2019) have given better results for many downstream tasks, including named entity recognition. It will be interesting to fit such transformer models to the task described in this paper and compare the results.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Validation of the model on real data</head>
+                    <p>In order to monitor the performance of the NER model and detect its decay, it is important to design a feasible evaluation step that includes an automatic lookup in external resources and a manual curation to trigger the retraining of the model.</p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <anchor xml:id="id_docs-internal-guid-6b9954c1-7fff-d96a-64b5-bfa71169a335"/>
+                        <hi rend="color(#000000) bold">Arpit, D., Jastrzębski, S., Ballas, N., Krueger, D., Bengio, E., Kanwal, M.S. </hi>
+                        <hi rend="color(#000000) bold">et al</hi>
+                        <hi rend="color(#000000) bold">.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2017). A Closer Look at Memorization in Deep Networks. In: Proceedings of the 34th International Conference on Machine Learning (ICML 2017), pp. 233–242.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Barbot, L., Fischer, F., Moranville, Y., Pozdniakov, I.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2019): Which DH Tools Are Actually Used in Research? In: weltliteratur.net, 6 December 2019. (URL:</hi>
+                        <ref target="https://weltliteratur.net/dh-tools-used-in-research/">
+                            <hi rend="color(#000000)"> </hi>
+                        </ref>
+                        <ptr target="https://weltliteratur.net/dh-tools-used-in-research/"/>
+                        <hi rend="color(#000000)">)</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Barbot, L., Dombrowski, Q., Fischer, F., Rockwell, G., Spiro, L.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2020): Who Needs Tool Directories? A Forum on Sustaining Discovery Portals Large and Small. In: DH2020: “carrefours/intersections”. 22–24 July 2020. Book of Abstracts. University of Ottawa.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Chiticariu, L., Li, Y., &amp; Reiss, F. R.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2013). Rule-Based Information Extraction is Dead! Long Live Rule-Based Information Extraction Systems! In: Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing, pp. 827–832.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Cunningham, H., Tablan, V., Roberts, A., Bontcheva, K.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2013). Getting More Out of Biomedical Documents with GATE’s Full Lifecycle Open Source Text Analytics. PLOS Computational Biology 9(2), </hi>
+                        <ref target="https://doi.org/10.1371/journal.pcbi.1002854">
+                            <hi rend="color(#1155cc) underline">doi:10.1371/journal.pcbi.1002854</hi>
+                        </ref>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Devlin, J., Chang, M.-W., Lee, K., Toutanova, K.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. </hi>
+                        <ref target="https://doi.org/10.48550/arXiv.1810.04805">
+                            <hi rend="color(#1155cc) underline">doi:10.48550/arXiv.1810.04805</hi>
+                        </ref>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Dombrowski, Q.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2014): What Ever Happened to Project Bamboo? In: Literary and Linguistic Computing, Vol. 29, Issue 3, September 2014, pp. 326–339,</hi>
+                        <ref target="https://doi.org/10.1093/llc/fqu026">
+                            <hi rend="color(#000000)"> </hi>
+                        </ref>
+                        <ref target="https://doi.org/10.1093/llc/fqu026">
+                            <hi rend="color(#1155cc) underline">doi:10.1093/llc/fqu026</hi>
+                        </ref>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Dombrowski, Q.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021): “The Directory Paradox.” In: Anne McGrail et al. (eds.): Debates in Digital Humanities: Institutions, Infrastructures at the Interstices. University of Minnesota Press, pp. 83–98.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Du, C., Howison, J., Lopez, P. (2020). </hi>
+                        <hi rend="color(#000000)">Softcite: Automatic Extraction of Software Mentions in Research Literature. Poster contribution. 1st SciNLP workshop at AKBC.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Fischer, F., Moranville, Y.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2020): “DH Tools Mentioned in ‘The Programming Historian’.” In: weltliteratur.net, 17 Jan 2020. (URL:</hi>
+                        <ref target="https://weltliteratur.net/dh-tools-programming-historian/">
+                            <hi rend="color(#000000)"> </hi>
+                        </ref>
+                        <ptr target="https://weltliteratur.net/dh-tools-programming-historian/"/>
+                        <hi rend="color(#000000)">)</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Fischer, F., Burghardt, M., Luhmann, J., Barbot, L., Moranville, Y., Zarei, A.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021): Die Werkbänke der Digital Humanities: Zur Rolle von Tools und Software für die Forschungsarbeit. In: vDHd2021: “Experimente”, Zenodo, </hi>
+                        <ref target="https://doi.org/10.5281/zenodo.4639228">
+                            <hi rend="color(#1155cc) underline">doi:10.5281/zenodo.4639228</hi>
+                        </ref>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Hearst, M.A.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(1992). Automatic Acquisition of Hyponyms from Large Text Corpora. In: COLING 1992 Volume 2: The 14th International Conference on Computational Linguistics.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Henny-Krahmer, U., Jettka, D.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2022). Softwarezitation als Technik der Wissenschaftskultur: Vom Umgang mit Forschungssoftware in den Digital Humanities. DHd2022: Kulturen des digitalen Gedächtnisses. 7–11 March 2022. Book of Abstracts. University of Potsdam, </hi>
+                        <ref target="https://doi.org/10.5281/zenodo.6328047">
+                            <hi rend="color(#1155cc) underline">doi:10.5281/zenodo.6328047</hi>
+                        </ref>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Isozaki, H., Kazawa, H.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2002). Efficient support vector classifiers for named entity recognition. In: Proceedings of the 19th International Conference on Computational Linguistics. Volume 1, pp. 1–7, </hi>
+                        <ref target="https://doi.org/10.3115/1072228.1072282">
+                            <hi rend="color(#1155cc) underline">doi:10.3115/1072228.1072282</hi>
+                        </ref>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Lehmann, J. et al. </hi>
+                        <hi rend="color(#000000)">(2015). DBpedia – A Large-scale, Multilingual Knowledge Base Extracted from Wikipedia. In: Semantic Web 6(2), pp. 167–195.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Luhmann, J., Burghardt, M.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021): Digital humanities – A discipline in its own right? An analysis of the role and position of digital humanities in the academic landscape. In: Journal of the Association for Information Science and Technology, pp. 1–24, </hi>
+                        <ref target="https://doi.org/10.1002/asi.24533">
+                            <hi rend="color(#1155cc) underline">doi:10.1002/asi.24533</hi>
+                        </ref>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Roller, S., Kiela, D., &amp; Nickel, M.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2018). Hearst patterns revisited: Automatic hypernym detection from large text corpora, </hi>
+                        <ref target="https://doi.org/10.48550/arXiv.1806.03191">
+                            <hi rend="color(#1155cc) underline">doi:10.48550/arXiv.1806.03191</hi>
+                        </ref>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Ruder, S., Peters, M.E., Swayamdipta, S., &amp; Wolf, T. (2019, June).</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">Transfer learning in natural language processing. In: Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Tutorials (pp. 15–18).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Schindler D., Zapilko B., Krüger F.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2020). Investigating Software Usage in the Social Sciences: A Knowledge Graph Approach. In: Harth A. et al. (eds.): The Semantic Web. ESWC 2020. Lecture Notes in Computer Science, vol 12123. Springer, Cham, </hi>
+                        <ref target="https://doi.org/10.1007/978-3-030-49461-2_16">
+                            <hi rend="color(#1155cc) underline">doi:10.1007/978-3-030-49461-2_16</hi>
+                        </ref>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Zarei, A., Seung-Bin, Y., Ďurčo, M., Illmayer, K., Barbot, L., Fischer, F., Gray, E. (2022).</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">Der SSH Open Marketplace: Kontextualisiertes Praxiswissen für die Digital Humanities. In: DHd2022: “Kulturen des digitalen Gedächtnisses”. 7–11 March 2022. Book of Abstracts. University of Potsdam, </hi>
+                        <ref target="https://doi.org/10.5281/zenodo.6327975">
+                            <hi rend="color(#1155cc) underline">doi:10.5281/zenodo.6327975</hi>
+                        </ref>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Exploring Lexical Diversities</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Blombach</surname>
+                        <forename>Andreas</forename>
+                    </persName>
+                    <affiliation>University of Erlangen-Nürnberg, Germany</affiliation>
+                    <email>andreas.blombach@fau.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Evert</surname>
+                        <forename>Stephanie</forename>
+                    </persName>
+                    <affiliation>University of Erlangen-Nürnberg, Germany</affiliation>
+                    <email>stephanie.evert@fau.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Jannidis</surname>
+                        <forename>Fotis</forename>
+                    </persName>
+                    <affiliation>University of Würzburg, Germany</affiliation>
+                    <email>fotis.jannidis@uni-wuerzburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pielström</surname>
+                        <forename>Steffen</forename>
+                    </persName>
+                    <affiliation>University of Würzburg, Germany</affiliation>
+                    <email>pielstroem@biozentrum.uni-wuerzburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Konle</surname>
+                        <forename>Leonard</forename>
+                    </persName>
+                    <affiliation>University of Würzburg, Germany</affiliation>
+                    <email>leonard.konle@uni-wuerzburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Proisl</surname>
+                        <forename>Thomas</forename>
+                    </persName>
+                    <affiliation>University of Erlangen-Nürnberg, Germany</affiliation>
+                    <email>thomas.proisl@fau.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-19T15:22:24.302776540</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>text complexity</term>
+                    <term>lexical diversity</term>
+                    <term>vocabulary richness</term>
+                    <term>natural language processing</term>
+                    <term>computational literary studies</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>natural language processing</term>
+                    <term>text mining and analysis</term>
+                    <term>Linguistics</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <anchor xml:id="id_docs-internal-guid-1e510014-7fff-82bf-179f-c9346e6aefa9"/>
+                <hi rend="color(#000000)">The validation corpora (Weiß &amp; Meurers 2018) contain German non-fiction text from the educational magazine “Geo” (</hi>
+                <ref target="http://www.geo.de/">
+                    <hi rend="color(#1155cc) underline">www.geo.de</hi>
+                </ref>
+                <hi rend="color(#000000)">), a publication conceptually comparable to the “National Geographic”, and its offshoot for children called “Geolino”. For literary texts, we compare highbrow novels</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">(161 works, approx. 17 mio. tokens) with “dime novels” (1167 works in six different genres, approx. 40 mio. tokens), both under copyright. Dime novels are a type of fiction mass-produced in long-lasting series and sold in kiosks rather than book stores.</hi>
+            </p>
+            <div type="div1">
+                <head>Aspects of complexity and measurement</head>
+                <p>Quantifying diversity is no trivial task. As Jarvis (2013b) points out, existing measures of lexical diversity often lack an underlying construct definition and intuitive concepts of diversity vary. Jarvis proposes six dimensions to properly define the construct: variability, volume (which we do not consider separately), evenness, rarity, dispersion, and disparity. Additionally, we look at innovation, surprise, and density.</p>
+                <div type="div2">
+                    <head>Variability</head>
+                    <p>The most intuitive indicator of lexical diversity is the variability of the words used in a text. The most widely known measure is the type-token ratio (TTR).</p>
+                    <p>TTR depends systematically on sample size. Among the solutions proposed for this problem, standardized TTRs (STTR) calculated from fixed-length text chunks provide a practical and intuitive solution (Fig. 1).</p>
+                    <table rend="frame" xml:id="Table1">
+                        <row>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>
+                                <p rend="justify color(#000000)">
+                                    <figure>
+                                        <graphic url="Pictures/a09166bd92d41ef059ecc6a4c7751706.png"/>
+                                    </figure>
+                                </p>
+                                <p rend="justify color(#000000)">Figure 1: STTR in GEO and GEOlino</p>
+                            </cell>
+                        </row>
+                    </table>
+                </div>
+                <div type="div2">
+                    <head>Rarity</head>
+                    <p>A text containing many rare words will generally be perceived as more difficult and more complex than a text with a higher proportion of very common words. We use a simple approach to model rarity. For each text, we compute the proportion of content words not included in the 5,000 most frequent content words from a large web corpus that covers many different registers, the DECOW16BX (Fig. 2, Schäfer and Bildhauer 2012, Schäfer 2015). </p>
+                    <table rend="frame" xml:id="Table2">
+                        <row>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>
+                                <p rend="justify color(#000000)">
+                                    <figure>
+                                        <graphic url="Pictures/b8fd11ba6bb92fcfe05d0da24dddda2c.png"/>
+                                    </figure>
+                                </p>
+                                <p rend="justify">
+                                    <hi rend="color(#000000)">Figure 2: </hi>
+                                    <hi rend="color(#000000) italic">Rarity </hi>
+                                    <hi rend="color(#000000)">in GEO and GEOlino</hi>
+                                </p>
+                            </cell>
+                        </row>
+                    </table>
+                </div>
+                <div type="div2">
+                    <head>Dispersion</head>
+                    <p>According to Jarvis (2013b), the perceived lexical diversity is higher if the occurrences of a particular type are more dispersed, whereas a more clustered pattern produces an impression of redundancy. To measure this effect, we again use a window-based approach (Fig. 3). Inside a window, we calculate a dispersion score based on the Gini coefficient (Gini 1912) for each type and use the arithmetic mean of this score over all types with a frequency greater than one as dispersion measure for the whole text (see Blombach et al. in preparation for a detailed description).</p>
+                    <table rend="frame" xml:id="Table3">
+                        <row>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>
+                                <p rend="justify color(#000000)">
+                                    <figure>
+                                        <graphic url="Pictures/9f6953e66d3ba830110b213de51b58f3.png"/>
+                                    </figure>
+                                </p>
+                                <p rend="justify color(#000000)">Figure 3: Dispersion in GEO and GEOlino</p>
+                            </cell>
+                        </row>
+                    </table>
+                </div>
+                <div type="div2">
+                    <head>Disparity</head>
+                    <p>
+                        <hi rend="color(#000000)">Lexical disparity follows the intuition that repetition also shows in the occurrence of </hi>
+                        <hi rend="color(#000000)">similar</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">words on a semantic level. To measure global disparity, a document is segmented and a vector is then generated for each segment by averaging over the vectors of the content words. The disparity of a segment is then calculated from the pairwise euclidean distance of all its segments. The document's disparity is the mean over all its segment disparities (Fig. 4).</hi>
+                    </p>
+                    <table rend="frame" xml:id="Table4">
+                        <row>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>
+                                <p rend="justify color(#000000)">
+                                    <figure>
+                                        <graphic url="Pictures/d4a7e07e910d6bbe58550c38fb895711.png"/>
+                                    </figure>
+                                </p>
+                                <p rend="justify color(#000000)">Figure 4: Disparity in GEO and GEOlino</p>
+                            </cell>
+                        </row>
+                    </table>
+                </div>
+                <div type="div2">
+                    <head>Density</head>
+                    <p>A text containing a higher proportion of content words can be considered denser and therefore more complex (Fig. 5).</p>
+                    <table rend="frame" xml:id="Table5">
+                        <row>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>
+                                <p rend="justify color(#000000)">
+                                    <figure>
+                                        <graphic url="Pictures/abe836b410db577e5d49fd27da5e46cb.png"/>
+                                    </figure>
+                                </p>
+                                <p rend="justify color(#000000)">Figure 5: Density in GEO and GEOlino</p>
+                            </cell>
+                        </row>
+                    </table>
+                </div>
+                <div type="div2">
+                    <head>Tools</head>
+                    <p>
+                        <hi rend="color(#000000)">Most of the measures suggested here (variability, rarity, dispersion, and density) are implemented in our textcomplexity toolbox</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">that contains additional complexity measures as well.</hi>
+                    </p>
+                    <p>
+                        <hi rend="color(#000000)">We have also created an interactive “</hi>
+                        <hi rend="color(#000000)">Shiny”</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">app</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">which allows users to visually explore our data, including correlations between different measures and the influence of parameters such as window size, case sensitivity and the inclusion or exclusion of punctuation.</hi>
+                    </p>
+                </div>
+            </div>
+            <div type="div1">
+                <head>Application to Literature</head>
+                <p>Fig. 6 shows the measures of lexical complexity applied to six genres of dime novels and a set of highbrow novels. Counter to our expectations, science fiction and fantasy equal or even surpass the highbrow novels in some respects (disparity, density, dispersion and rarity). We assume that we have different forms of lexical complexity at work here: In science fiction and fantasy, a noun-heavy prose is depicting new worlds with new words. In high literature on the other hand, high variability shows the influence of a stylistic ideal which aims to avoid repetition and show elegance. There might be a difference in the scope which authors control for complexity, for example variability. We found less repetition in small windows in genre texts, whereas variability in highbrow literature increases with window size. </p>
+                <p>Fig. 7 shows that genre similarities can be perceived immediately using this kind of representation. A multi-dimensional model of lexical complexity allows a clearer understanding of genre differences.</p>
+                <table rend="frame" xml:id="Table6">
+                    <row>
+                        <cell/>
+                    </row>
+                    <row>
+                        <cell>
+                            <p rend="color(#000000)">
+                                <figure>
+                                    <graphic url="Pictures/ec4098325dae2ba9b78f400a5f9385a3.png"/>
+                                </figure>
+                            </p>
+                            <p rend="color(#000000)">Figure 6: Diversity per aspect. All dimensions have been scaled to values between 0 and 1</p>
+                        </cell>
+                    </row>
+                </table>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/8f4f7e3a4b57e8fabb6795e24de47402.png"/>
+                    </figure>
+                </p>
+                <p>Figure 7.: Radarplots, highlighting the similarities between genres</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Blombach, A., Evert, S., Jannidis, F., Konle, L., Pielström, S. </hi>
+                        <hi rend="bold">and</hi>
+                        <hi rend="bold"> Proisl, T.</hi> (in preparation): Lexical Complexity in Texts. A Multidimensional Model.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Da, N. Z.</hi> (2019): The computational case against computational literary studies. In: 
+                        <hi rend="italic">Critical Inquiry</hi>, 45(3), p. 601–639.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Falk, I., Bernhard, D. </hi>
+                        <hi rend="bold">and</hi>
+                        <hi rend="bold"> Gerard. C.</hi> (2014): From Non Word to New Word: Automatically Identifying Neologisms in French Newspapers. In: 
+                        <hi rend="italic">Proceedings of LREC 2014</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gini, C. </hi>(1912): 
+                        <hi rend="italic">Variabilità e Mutuabilità. Contributo allo Studio delle Distribuzioni e delle Relazioni Statistiche</hi>. C. Cuppini, Bologna.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Jarvis, S. </hi>(2013a): Capturing the Diversity in Lexical Diversity. In: 
+                        <hi rend="italic">Language Learning</hi> 63 (1), p. 87–106.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Jarvis, S. </hi>(2013b): Defining and Measuring Lexical Diversity. In: Jarvis, Scott / Daller, Michael (Eds.): 
+                        <hi rend="italic">Vocabulary Knowledge. Human Ratings and Automated Measures</hi>. Amsterdam: John Benjamins. (= Studies in Bilingualism 47)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Klosa, A. </hi>
+                        <hi rend="bold">and</hi>
+                        <hi rend="bold"> Lungen, H. </hi>(2018): New German Words: Detection and Description. In: 
+                        <hi rend="italic">Proceedings of the XVIII EURALEX,</hi> p. 559–569. Ljubljani.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Koschorke, A. </hi>(2016): 
+                        <hi rend="italic">Komplexität und Einfachheit</hi>. p. 1–10. Stuttgart.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ney, H., Essen, U. </hi>
+                        <hi rend="bold">and </hi>
+                        <hi rend="bold">Kneser, R.</hi> (1994): On structuring probabilistic dependences in stochastic language modelling. In: 
+                        <hi rend="italic">Computer Speech &amp; Language</hi>, Volume 8, Issue 1, p. 1-38.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pielou, E.C.</hi> (1966): The measurement of diversity in different types of biological collections. In: 
+                        <hi rend="italic">Journal of theoretical biology</hi>. 13: p. 131–144. doi:10.1016/0022-5193(66)90013-0
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pielström, S., Hodošček, B., Calvo Tello, J., Henny-Krahmer, U., Jannidis, F., Schöch, C., Du, K., Uesaka, A. and Tabata, T. </hi>(in preparation): Measuring Lexical Diversity of Literary Texts.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schäfer, R.</hi> (2015): Processing and Querying Large Web Corpora with the COW14 Architecture. In: 
+                        <hi rend="italic">Proceedings of Challenges in the Management of Large Corpora</hi> (CMLC-3) (IDS publication server), p. 28–34.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schäfer, R. </hi>
+                        <hi rend="bold">and</hi>
+                        <hi rend="bold"> Bildhauer, F</hi>. (2012): Building Large Corpora from the Web Using a New Efficient Tool Chain. In: 
+                        <hi rend="italic">Proceedings of the Eighth International Conference on Language Resources and Evaluation (LREC’12)</hi>, p. 486–493.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Weiß, Z. </hi>
+                        <hi rend="bold">and</hi>
+                        <hi rend="bold"> Meurers, D. </hi>(2018): Modeling the readability of German targeting adults and children: An empirically broad analysis and its cross-corpus validation. In: 
+                        <hi rend="italic">Proceedings of the 27th International Conference on Computational Linguistics</hi>, p. 303–317, Santa Fe, New Mexico, USA.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

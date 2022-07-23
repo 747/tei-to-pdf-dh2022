@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Establishing a Code Review Community for DH</title>
+                <author>
+                    <persName>
+                        <surname>Damerow</surname>
+                        <forename>Julia</forename>
+                    </persName>
+                    <affiliation>Arizona State University</affiliation>
+                    <email>jdamerow@asu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sutton Koeser</surname>
+                        <forename>Rebecca</forename>
+                    </persName>
+                    <affiliation>Princeton University</affiliation>
+                    <email>rebecca.s.koeser@princeton.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gao</surname>
+                        <forename>Andrew</forename>
+                    </persName>
+                    <affiliation>Canyon Crest Academy</affiliation>
+                    <email>andrewgao22@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vogl</surname>
+                        <forename>Malte</forename>
+                    </persName>
+                    <affiliation>Mac Planck Institute for the History of Science</affiliation>
+                    <email>mvogl@mpiwg-berlin.mpg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Zandbank</surname>
+                        <forename>Itay</forename>
+                    </persName>
+                    <affiliation>The Research Software Company</affiliation>
+                    <email>itay@researchsoftware.co.il</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tharsen</surname>
+                        <forename>Jeffrey</forename>
+                    </persName>
+                    <affiliation>The University of Chicago</affiliation>
+                    <email>tharsen@uchicago.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Casties</surname>
+                        <forename>Robert</forename>
+                    </persName>
+                    <affiliation>Mac Planck Institute for the History of Science</affiliation>
+                    <email>casties@mpiwg-berlin.mpg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Westerling</surname>
+                        <forename>Kalle</forename>
+                    </persName>
+                    <affiliation>British Library</affiliation>
+                    <email>kalle.westerling@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Carver</surname>
+                        <forename>Jeffrey</forename>
+                    </persName>
+                    <affiliation>University of Alabama</affiliation>
+                    <email>carver@cs.ua.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-26T20:06:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Community building</term>
+                    <term>research software engineering</term>
+                    <term>software development</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>software development</term>
+                    <term>systems</term>
+                    <term>analysis and methods</term>
+                    <term>Computer science</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Many digital humanities projects require custom software development. The people doing that work, who may be researchers, professional software developers, or someone in between, write software to achieve a project’s goals. But who is testing and reviewing that software to confirm it works properly? No matter how experienced or well-trained a programmer is, there will inevitably be errors in the produced code. A rough estimate suggests that there are between 15 to 50 errors in 1000 lines of code written by professional software developers (Soergel 2015). While not all errors affect the research findings based on the code, it is possible, and there are plenty of cases where this has happened (see for example Letzner et al. 2020 or Miller 2006). Furthermore, uncaught “edge cases” could drastically affect future researchers’ results.</p>
+            <p>
+                <hi rend="italic">Code review</hi> is a widespread technique to improve software and reduce the number of flaws. In a code review, a programmer (other than the original code author(s)) reviews the source code. They ask questions and make suggestions for improving the software. In addition to identifying and eliminating errors, code review can improve overall quality by making the source code more readable and maintainable. Furthermore, code reviews can improve not just the skills of the reviewee but also those of the reviewer. If a code author and reviewer work in the same team or on the same or related projects, code reviews can also support team cohesion and facilitate information-sharing within a team.
+            </p>
+            <p>Code reviews are fairly easy to implement in teams of two or more developers, where there is a shared context, technical stack, and agreed upon conventions. However, in digital humanities projects, often there is just the one “techy” person who does all the coding with no colleague to review their code. Given the prevalence of virtual communication platforms like Slack and Github, there is no reason that code review may only happen internally at a single lab. Rather, programmers across labs/centers may review each other’s code. At the ACH 2021 conference, a group of people organized a workshop to discuss and develop ideas and strategies for a community code review process for digital humanities. The outcome of the workshop was a working group as part of the 
+                <ref target="https://dh-tech.github.io/">ADHO SIG DHTech</ref> that meets monthly with the goal of building a community of people and a community code review infrastructure. 
+            </p>
+            <p>A community code review system would provide developers writing code for digital humanities projects with a way to ensure the quality of their code. Similarly, it would give researchers or developers reusing code reviewed software some insurance that a program generates trustworthy results. It would also fill a gap in the current publishing landscape that consists of journals like the Journal of Open Source Software (https://joss.theoj.org/) that provides ways for developers to publish about the software they create. These journals typically require software to be “feature-complete” and ideally reusable. They check that certain best practices are followed (such as providing installation instructions or API documentation) but for good reason a full-fledged code review is usually not possible. Additionally, a community code review system would provide graduate students doing computational research in their dissertation but who do not have a technical reader on their committee, or researchers who begin using computational methods with a way to get feedback on their programming work. This proposal is for a virtual poster that describes the work of the working group and its goals.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Letzner, S., Güntürkün, O., and Beste, C. (2020). Retraction Notice to: How Birds Outperform Humans in Multi-Component Behavior. 
+                        <hi rend="italic">Current Biology</hi>. 
+                        <ref target="https://www.cell.com/current-biology/comments/S0960-9822(17)30960-0">
+                            <hi rend="underline color(1155CC)">https://www.cell.com/current-biology/comments/S0960-9822(17)30960-0</hi>
+                        </ref>. Accessed December 8. 2021.
+                    </bibl>
+                    <bibl>Miller, G. (2006). A Scientist’s Nightmare: Software Problem Leads to Five Retractions. 
+                        <hi rend="italic">Science</hi> 314 (5807): 1856–57.
+                    </bibl>
+                    <bibl>Soergel, D. A. W. (2015). Rampant Software Errors May Undermine Scientific Results. 
+                        <hi rend="italic">F1000Research</hi> 3 (303). 
+                        <ref target="https://doi.org/10.12688/f1000research.5930.1">https://doi.org/10.12688/f1000research.5930.1</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

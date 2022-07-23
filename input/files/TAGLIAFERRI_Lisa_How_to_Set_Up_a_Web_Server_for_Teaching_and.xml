@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How to Set Up a Web Server for Teaching and Research in the Humanities</title>
+                <author>
+                    <persName>
+                        <surname>Tagliaferri</surname>
+                        <forename>Lisa</forename>
+                    </persName>
+                    <affiliation>Rutgers University</affiliation>
+                    <email>lisa.tagliaferri@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-11T14:17:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>linux</term>
+                    <term>web server</term>
+                    <term>devops</term>
+                    <term>web development</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>public humanities collaborations and methods</term>
+                    <term>software development</term>
+                    <term>systems</term>
+                    <term>analysis and methods</term>
+                    <term>Computer science</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">This workshop will go over how to complete an initial Linux server setup for use with the web. We will go over security, firewalls, HTTPS, and high availability. Administering one’s own server rather than relying on managed web hosting empowers researchers, teachers, and students by providing them with complete control over their web assets. The resulting setup can be used for webapps, static sites like Jekyll and Hugo, or more robust sites like WordPress, Omeka, Scalar, and Drupal. These will be ready for use with domain names. In addition to providing an entry point to the web, servers can also enable teams of researchers and students to collaborate on programming projects or access shared data. </p>
+        </body>
+    </text>
+</TEI>

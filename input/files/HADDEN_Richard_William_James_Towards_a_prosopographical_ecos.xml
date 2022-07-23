@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Towards a prosopographical ecosystem: modelling, design, and implementation issues</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Hadden</surname>
+                        <forename>Richard William James</forename>
+                    </persName>
+                    <affiliation>Austrian Academy of Sciences, Austria</affiliation>
+                    <email>richard.hadden@oeaw.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schlögl</surname>
+                        <forename>Matthias</forename>
+                    </persName>
+                    <affiliation>Austrian Academy of Sciences, Austria</affiliation>
+                    <email>matthias.schloegl@oeaw.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vogeler</surname>
+                        <forename>Georg</forename>
+                    </persName>
+                    <affiliation>Austrian Academy of Sciences, Austria; University of Graz, Austria</affiliation>
+                    <email>georg.vogeler@uni-graz.ac.at</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T17:13:13.909720192</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>prosopography</term>
+                    <term>biography</term>
+                    <term>API</term>
+                    <term>LOD</term>
+                    <term>factoid</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>data publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>digital biography</term>
+                    <term>personography</term>
+                    <term>and prosopography</term>
+                    <term>History</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading">
+                <head>The International Prosopography Interchange Format </head>
+                <p>This presentation intends to describe ongoing work at the Austrian Centre for Digital Humanities and Cultural Heritage (ACDH-CH) on the International Prosopographical Interchange Format (IPIF). It presents IPIF’s design, and explores various conceptual and technical challenges arising from its implementation. </p>
+                <p>IPIF is an API definition and data model enabling the sharing and querying of prosopographical data. The original IPIF paper (Vogeler et al. 2019) recognises the power of semantic web tools (RDF, OWL, SPARQL), but also highlights their shortcomings for an interoperable format, chiefly the absence of a standard data model and the complexity of SPARQL. (See Bradley 2020.) Such difficulties circumscribe uses such as ‘light-weight’ data access and querying (as opposed to complex data processing). Accordingly, IPIF opts for a simple RESTful API. </p>
+                <p>In addition to a reference implementation, Papilotte (Vasold 2019), IPIF is intended to be implemented on top of existing projects, allowing access to data in a standardised format and providing the facilities for federated queries and as a data discovery tool. (Vogeler et al. 2019) </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>The Data Model and API </head>
+                <p>To achieve maximum interoperability, IPIF adopts a version of the ‘factoid model’ (Bradley 2005). This model separates 
+                    <hi rend="italic">statements made about a person </hi>from the abstract idea of a 
+                    <hi rend="italic">person</hi>, instead attributing statements to a researcher’s interpretation of a historical 
+                    <hi rend="italic">source </hi>(Figure 1). This enables contradictory statements, made by distinct sources, to be recorded. As Baillie (2021) argues, this is not always desirable, some historical sources being more trustworthy than others; nevertheless, it is a requirement for an open ecosystem without any single ‘guiding hand’ that contradiction be permitted. 
+                </p>
+                <p>FIGURE 1: THE IPIF DATA MODEL </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/0d13151114d7b379e26cd4ebe98ffa33.png"/>
+                    </figure>
+                </p>
+                <p>The API — described in OpenAPI — is a RESTful interface, allowing direct access to the four IPIF entity types (Factoid, Source, Person, Statement), and querying of statements through graph-like traversals (Figure 2). It returns JSON-LD for each entity, comprising content and/or metadata, and embeds references to related entities. </p>
+                <p>The choice of Statement fields represents a highly pragmatic decision. These fields, allowing a label and a URI, were chosen to match the most obvious use-cases in prosopographical data; the 
+                    <hi rend="italic">statementType </hi>field allows arbitrary extension beyond these standard statement types. 
+                </p>
+                <p>
+                    <hi rend="background-color(#ffffff) bold">FIGURE 2: API EXAMPLES </hi>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/0a6d88bd04f06ddf07876de329afc8bd.png"/>
+                    </figure>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Implementations, issues and works-in-progress </head>
+                <p>Since the original definition of the standard, IPIF endpoints have been implemented on top of several existing frameworks, including the ACDH-CH’s APIS platform (a Django- based platform for prosopographical projects) and as an eXist-DB module for serving TEI- XML personography data (typically from digital scholarly editions). IPIF client libraries for Python and JavaScript, allowing federated queries and data aggregation across several endpoints, have also been developed. Building these tools has afforded a wealth of practical experience, highlighting the strengths of the format and the difficulties involved in its implementation. This has led to several pragmatic decisions regarding the data model, API and the semantics of querying. </p>
+                <list type="unordered">
+                    <item>A 
+                        <hi rend="italic">label </hi>field was introduced for Persons, allowing use cases such as autocompletes. The theoretically correct modelling — as a ‘naming statement’ — required too many additional requests to retrieve the appropriate information. 
+                    </item>
+                    <item>Persons and Sources allow multiple URIs (interpreted as owl:sameAs). Strictly, these should be Statements (i.e. non-definitive assertion that one Person or Source is the same as another: see Zedlitz 2009); but reconciling data from multiple endpoints is considerably easier when this information is a ‘meta’ field of a Person entity.</item>
+                    <item>IPIF requires a Source for each Factoid. In many projects, data that would comprise an IPIF Statement is given with no source (e.g. name, death, profession of a person”). In this case, the source is taken to be the project itself. </item>
+                    <item>
+                        <p>TEI-XML personographies can express a factoid model by applying the @source and @resp attributes to the sub-elements of a &lt;person&gt; entry (see Schwarz 2020), </p>
+                        <p>but this is optional. Pragmatically, we suggest using the metadata of the TEI document as fallback (@source, @resp, ancestor::TEI/teiHeader/ titleStmt/editor etc.). </p>
+                    </item>
+                    <item>
+                        <p>To avoid ambiguity in combining statement filters in Person queries (does person/?place=Graz&amp;role=professor mean “a professor in Graz” or “a professor, located in Graz for any reason”?), we defined a default behaviour (both conditions apply to the 
+                            <hi rend="italic">same </hi>Statement) and an optional parameter independentStatements=true to allow ‘or’ conditions. 
+                        </p>
+                        <p>In this presentation, we will argue that such decisions are justified by the requirements of interoperability; and that our experiences in developing IPIF thus far contribute usefully to debates surrounded data interoperability in the digital humanities. </p>
+                    </item>
+                </list>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Baillie, James. “Alternative Database Structures for Prosopographical Research”. 
+                        <hi rend="italic">International Journal of Humanities and Arts Computing </hi>15, Nr. 1–2 (October 2021): 117– 32. 
+                        <hi rend="color(#0f54cc)">https://doi.org/10.3366/ijhac.2021.0265</hi>. 
+                    </bibl>
+                    <bibl>Bradley, John Douglas. “A Prosopography as Linked Open Data: Some Implications from DPRR”. 
+                        <hi rend="italic">Digital Humanities Quarterly </hi>014, Nr. 2 (29 July 2020). 
+                        <hi rend="color(#0f54cc)">http://digitalhumanities.org/ dhq/vol/14/2/000475/000475.html</hi>. 
+                    </bibl>
+                    <bibl>Brradley, John, and Harold Short. “Texts into Databases: The Evolving Field of New-Style Prosopography”. 
+                        <hi rend="italic">Literary and Linguistic Computing </hi>20, Nr. Suppl (1 January 2005): 3–24. 
+                        <hi rend="color(#0f54cc)">https://doi.org/10.1093/llc/fqi022</hi>. 
+                    </bibl>
+                    <bibl>Pasin, Michele, and John Bradley. “Factoid-Based Prosopography and Computer Ontologies: Towards an Integrated Approach”. 
+                        <hi rend="italic">Literary and Linguistic Computing </hi>30, Nr. 1 (1 April 2015): 86–97. 
+                        <hi rend="color(#0f54cc)">https://doi.org/10.1093/llc/fqt037</hi>. 
+                    </bibl>
+                    <bibl>Vogeler, Georg, Matthias Schlögl, and Gunter Vasold. “Data Exchange in Practice: Towards a Prosopographical API (Preprint)”. Paper given at BD2019 in co-location with RANLP 2019 in Varna (2019). 
+                        <hi rend="color(#0f54cc)">https://doi.org/10.17613/YW4H-5F09</hi>. 
+                    </bibl>
+                    <bibl>Schwartz, Daniel L, Nathan P Gibson, and Katayoun Torabi. “Modeling a Born-Digital Factoid Prosopography Using the TEI and Linked Data”. 
+                        <hi rend="italic">Journal of the Text Encoding Initiative</hi>, 2020, 37. 
+                    </bibl>
+                    <bibl>Vasold, Gunter: Papilotte. A flexible and extensible IPIF server. 
+                        <hi rend="color(#0f54cc)">https://github.com/ gvasold/papilotte </hi>(2019) 
+                    </bibl>
+                    <bibl>Zedlitz, Jasper. “Gedbas4all – New Data Model for Genealogy”. GenWiki, 2009. 
+                        <hi rend="color(#0f54cc)">http:// wiki-en.genealogy.net/Gedbas4all/Article </hi>= English version of Zedlitz, Jasper. „Gedbas4all – neues Datenmodell für die Genealogie“. 
+                        <hi rend="italic">Computergenealogie</hi>, Nr. 04 (2009). 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Past-at-Play Lab: Studying play in and with the past using an experimental Public Heritage and Game Analytic approach.</title>
+                <author>
+                    <persName>
+                        <surname>Mol</surname>
+                        <forename>Angus</forename>
+                    </persName>
+                    <affiliation>Leiden University Centre for the Arts in Society/Centre for Digital Humanities</affiliation>
+                    <email>a.a.a.mol@hum.leidenuniv.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Politopoulos</surname>
+                        <forename>Aris</forename>
+                    </persName>
+                    <affiliation>Faculty of Archaeology, Leiden University</affiliation>
+                    <email>a.politopoulos@arch.leidenuniv.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>de Groot</surname>
+                        <forename>Lotte</forename>
+                    </persName>
+                    <affiliation>Leiden University Centre for the Arts in Society</affiliation>
+                    <email>c.s.de.groot@hum.leidenuniv.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>de Lange</surname>
+                        <forename>Lenneke</forename>
+                    </persName>
+                    <affiliation>Leiden University Centre for the Arts in Society</affiliation>
+                    <email>l.de.lange@hum.leidenuniv.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lammes</surname>
+                        <forename>Sybille</forename>
+                    </persName>
+                    <affiliation>Leiden University Centre for the Arts in Society</affiliation>
+                    <email>s.lammes@hum.leidenuniv.nl</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-07-11T00:05:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Heritage</term>
+                    <term>Game Analytics</term>
+                    <term>Boardgames</term>
+                    <term>Surveys</term>
+                    <term>Computer Vision</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>Contemporary</term>
+                    <term>public humanities collaborations and methods</term>
+                    <term>user experience design and analysis</term>
+                    <term>Archaeology</term>
+                    <term>Games studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">In this paper we will share the design and results of the 
+                <hi rend="italic">Past-at-Play Lab</hi>, a unique public heritage project in which citizens are asked to play and reflect on ancient games to learn about play in the past. The outcomes of their controlled play sessions are recorded and analyzed using a variety of game data collection and analytical methods, including player surveys and computer vision.
+            </p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Theoretical and methodological framework</head>
+                <p style="text-align: left; ">In his seminal work 
+                    <hi rend="italic">Homo Ludens</hi>, the historian Johan Huizinga argued that “
+                    <hi rend="italic" xml:space="preserve">civilization arises and unfolds </hi>
+                    <hi rend="italic bold">in and as play</hi>” (1938, xi). This insight has informed many fields since, including most notably cultural studies of play and games and game development. 
+                    <hi rend="italic">The Past-at-Play Lab</hi> takes Huizinga’s assertion a couple of steps further in a theoretical and practical sense: if culture develops (partly) in and as play, it is important to understand how play ‘arose and unfolded’ in the past. In short, the overarching aim of this project is to understand (aspects of) the historical human experience of play in the past using a computer-aided, data-driven and controlled study in the present. 
+                </p>
+                <p style="text-align: left; ">The underlying theory behind this project is that games are, to some extent, transcendental. In other words, a game’s characteristics will heavily shape the experience of players. In itself this idea is rather conventional: that games actively shape our play experiences has become a cornerstone of game studies, and is of critical importance in modern game design (e.g. Bogost 2008; Hunicke et al. 2004). In the game industry, game user experiences are evaluated with game analytics, a set of quantitative and qualitative methodologies that includes surveys, (focus group) discussions, participant observation, and computer-assisted tracking and other logging of player activities (El-Nasr et al. 2016). Game analytics need to be operated at scale to be of value as a game design and user analytics tool: a few sessions will not yield enough data to come to actionable conclusions about, for example, whether a game is fun enough to play (and will therefore sell well).</p>
+                <p style="text-align: left; ">The 
+                    <hi rend="italic">Past-at-Play Lab</hi> extrapolates on this established theory and methodology, but brings them to a somewhat unorthodox place to ask, if experimental data is collected from a large group of people in the present playing an ancient game, are there patterns (1) in participant play experiences and (2) in their ideas about this game as played in the past and, if so, what are these patterns? 
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Experiment Setup</head>
+                <p style="text-align: left; ">To answer this question we set up a ‘public-heritage-meets-game-analytics’ experiment in which citizens were asked to play and reflect on a specific game, the Game of Twenties (also known as the ‘Royal Game of Ur’; Finkel 2007). It was chosen because it is unlikely that many modern-day players would have prior knowledge of this two-player game, which was played in Western Asia and the Eastern Mediterranean from the 3rd to the end of the 1st millennium BCE. However, we have information about it through archaeological and written sources, so, at the same time, we can cross-check present player ideas about the game. </p>
+                <p style="text-align: left; ">Experiments took the shape of play sessions in a controlled setting taking place at Leiden University and the Dutch National Museum of Antiquities (see image below). At the start, players are first explained how to play the game, yet no further information on the game is provided. After this, the experiment participants undertake a full playthrough. Data on these playthroughs is gathered in the following ways:</p>
+                <list rend="bulleted">
+                    <item>A researcher observes the game and makes notes as it happens.</item>
+                    <item>An audio recording of the game is made to record topics that were discussed as well as for a potential future study using automated emotion recognition in speech data (Gupta et al. 2020).</item>
+                    <item>A video recording is made of the game to record the state of the gameboard at all times. These board states are automatically extracted using OpenCV, a Machine Learning-based computer vision library (Culjak et al. 2012).</item>
+                    <item>After the game a survey is taken by participants directly after, asking about their experiences with the game. Furthermore, the survey asks participants about when, why, where, and by whom they think this game would have been played in the past.</item>
+                    <item>After the survey a presentation about the game and its historical context is given by the researcher, followed by a recorded discussion about this and any other topics the participants want to share concerning the game or experiment.</item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Discussion of Results and Approach</head>
+                <p style="text-align: left; ">The Past-at-Play Lab currently has collected data from nearly 200 players. The experiments are still ongoing and the analysis of the full dataset will start in early 2022. In this paper we will give a first view of the results by exploring two of the collected datasets. Firstly we will discuss player surveys, particularly delving into the robustness of its outcomes based on a key modification in this experiment: the use of two different boards to cross-check in how far the aesthetics and materiality of the board influences player ideas. Secondly we will show the results of our pilot using OpenCV for the automatic detection of boardgame states. </p>
+                <p style="text-align: left; ">These illustrate two key sides to our data-driven approach. The survey allows us to collect the subject’s experience of the game and their ideas about its past. The automated boardgame state detection is an example of an objective view of the actual dynamics of a playthrough. The latter type of experience tracking is imperative to provide empirical grounding for any conclusions that can be drawn about patterns in player experiences in the present and their ideas about this game in the past.</p>
+                <p style="text-align: left; ">As a pilot project the results of the 
+                    <hi rend="italic">The Past-at-Play Lab</hi> should be of interest to (digital) history and heritage as well as game and media scholars. Moreover, our approach leveraging computer-aided recordings and analyses in the context of a playful, public-facing project, can be emulated by DH research on other types of (interactive) user experiences and in public DH projects.
+                </p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="9.009944444444445cm" url="Pictures/56147b0813c6806aa06a3d4bf198e424.png" rend="inline"/>
+                </figure>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Bogost, I. (2008). Unit operations: An approach to videogame criticism. MIT press.</bibl>
+                    <bibl style="text-align: left; ">Culjak, I., D. Abram, T. Pribanic, H. Dzapo and M. Cifrek. (2012) "A brief introduction to OpenCV," Proceedings of the 35th International Convention MIPRO, 2012, pp. 1725-1730</bibl>
+                    <bibl style="text-align: left; ">El-Nasr, M. S., Drachen, A., &amp; Canossa, A. (2016). Game analytics (p. 1). Springer London Limited.</bibl>
+                    <bibl style="text-align: left; ">Finkel, I. L. (2007). On the rules for the Royal Game of Ur. Ancient Board Games in Perspective, 16-32. London : British Museum Press.</bibl>
+                    <bibl style="text-align: left; ">Huizinga, J. (1938). Homo Ludens: Proeve Eener Bepaling Van Het Spel-Element Der Cultuur. Amsterdam: Amsterdam University Press.</bibl>
+                    <bibl style="text-align: left; ">Hunicke, R., LeBlanc, M., &amp; Zubek, R. (2004). MDA: A formal approach to game design and game research. In Proceedings of the AAAI Workshop on Challenges in Game AI (Vol. 4, No. 1, p. 1722) </bibl>
+                    <bibl style="text-align: left; ">Gupta, V., S. Juyal, G. Pal Singh, C. Killa &amp; N.t Gupta (2020) Emotion recognition of audio/speech data using deep learning approaches, Journal of Information and Optimization Sciences, 41:6, 1309-1317, DOI: 10.1080/02522667.2020.1809089</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

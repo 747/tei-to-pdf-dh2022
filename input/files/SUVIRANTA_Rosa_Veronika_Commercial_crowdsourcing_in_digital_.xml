@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Commercial crowdsourcing in digital humanities: prospects and ethical issues</title>
+                <author>
+                    <persName>
+                        <surname>Suviranta</surname>
+                        <forename>Rosa</forename>
+                    </persName>
+                    <affiliation>University of Helsinki, Finland</affiliation>
+                    <email>rosa.suviranta@helsinki.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hiippala</surname>
+                        <forename>Tuomo</forename>
+                    </persName>
+                    <affiliation>University of Helsinki, Finland</affiliation>
+                    <email>tuomo.hiippala@helsinki.fi</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>crowdsourcing</term>
+                    <term>ethics</term>
+                    <term>multimodality</term>
+                    <term>annotation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>crowdsourcing</term>
+                    <term>Communication studies</term>
+                    <term>Computer science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>This presentation discusses key issues in using commercial crowdsourcing in digital humanities. Traditionally, digital humanities have engaged volunteers for tasks like digitising and organising information (Dunn and Hedges, 2013; Carletti et al., 2013). However, not all fields in digital humanities can benefit from volunteer-based crowdsourcing. I argue that commercial crowdsourcing is a viable alternative for fields that cannot attract volunteers, provided that crowdsourcing is used in an ethically sustainable way. To do so, I propose solutions to a range of ethical issues related to fair pay and hidden labour on commercial crowdsourcing platforms. I also discuss linguistic and epistemic asymmetries between task requesters and the global crowdsourced workers and argue for the need to develop crowdsourcing methods that balance the needs of both ethics and data quality. To this end, I draw on examples from an ongoing project that uses crowdsourcing to create multimodal corpora and show how a combination of pedagogically motivated training, paid exams and multimodal instructions can mitigate these issues. 
+                <lb/>Crowdsourcing is a participatory method in which an individual, an institution, organisation or company can request an undefined group of workers with varying knowledge and number to perform a task through an open call (Carletti et al., 2013: 1–2). Crowdsourcing can take place on commercial and non-commercial platforms, and the tasks can range from data labelling to content creation (Dunn and Hedges, 2013). How crowdsourcing is understood depends on the field of research. Computer vision, for example, uses crowdsourcing to create training data for algorithms by decomposing complex tasks into piece-meal work and distributing this effort among paid non-expert workers on online platforms (Kovashka et al., 2016). 
+                <lb/>In digital humanities, crowdsourcing is often associated with the galleries, libraries, archives and museums (GLAM) domain. In this context, crowdsourcing is a way of engaging enthusiasts with intrinsic incentives to perform tasks for free and for the 'common good' (Daugavetis, 2021). Consequently, the ethos among digital humanities is to use crowdsourcing to engage volunteers to interact, explore and contribute to the research at hand (Dunn and Hedges, 2013; Terras, 2015).
+                <lb/>However, not all fields under the umbrella of digital humanities can benefit from volunteer-based crowdsourcing. One such example is the emerging discipline of multimodality research, which studies the way human communication relies on intentional combinations of expressive resources. The discipline is currently undergoing a shift toward a more data-driven direction due to increased calls for validating theories of multimodality through empirical research (Pflaeging et al., 2021). This shift has also brought multimodality research in contact with digital humanities, especially within the paradigm of 'distant viewing' (Arnold &amp; Tilton, 2019), which applies computational methods to large-scale analysis of visual materials (Hiippala and Bateman, 2021). Together with computational methods, commercial crowdsourcing has been identified as a potential way of increasing the size of corpora studied in multimodality research (Hiippala et al., 2019).
+                <lb/>However, any use of commercial crowdsourcing must acknowledge the ethical issues and pitfalls related to crowdsourcing platforms. As a part of the novel platform economy, crowdsourcing lacks regulation which enables exploitative practices (Schmidt, 2017). Labour rights are largely absent, and the pay is usually far from a living wage, and there are no rules or stipulations for a minimum wage. Moreover, new workers often need to perform several months of non- or low-paid work in the form of qualification labour to access well-paid tasks (Kummerfeld, 2021). Qualification, or ranking, is a social reward technique to increase standing and reliability in the crowdsourcing community by completing tasks successfully (Dunn and Hedges, 2013: 152-154), which the requesters often use as a quality control tool to filter out low-performing workers (Kummerfeld, 2021: 343). Many workers also speak English – the lingua franca of crowdsourcing platforms – as a foreign language, which can lead to misunderstandings, rejected work and payment refusal.
+                <lb/>Although the platforms enable exploitative practices, requesters can influence the conditions and for crowdsourced work. Firstly, the workers must be compensated appropriately and paid at least a minimum wage. Although ethically-sustainable crowdsourcing is not cheap, it is considerably cheaper than using experts (Hiippala et al., 2021: 673). Secondly, requesters can recruit workers with fewer qualifications, while maintaining quality by combining pedagogically-motivated training, paid exams and multimodal instructions. Pedagogically-motivated training allows the workers to learn the task through trial and error. Subsequently, paid exams filter the workers to perform the actual task. Pairing the training with the paid exam for selecting the workers ensures that even if a worker fails the exam, they are compensated for their effort. Finally, multimodal instructions, which combine text and illustrations, can support workers with limited language skills.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Arnold, T. and Tilton, L.</hi> (2019). Distant viewing: analyzing large visual corpora. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 34(supplement 1): i3–i16.
+                        <lb/>
+                        <hi rend="bold">Carletti, L., Giannachi, G., Price, D., McAuley, D. and Benford, S.</hi> (2013). Digital humanities and crowdsourcing: An exploration. 
+                        <hi rend="italic">Museums and the Web</hi>. Available at: 
+                        <ref target="https://ore.exeter.ac.uk/repository/bitstream/handle/10871/17763/Digital%20Humanities%20and%20Crowdsourcing%20-%20An%20Exploration.pdf">https://ore.exeter.ac.uk/repository/bitstream/handle/10871/17763/Digital%20Humanities%20and%20Crowdsourcing%20-%20An%20Exploration.pdf</ref> (Accessed: 21.4.2022).
+                        <lb/>
+                        <hi rend="bold color(222222)">Daugavietis, J.</hi>
+                        <hi rend="color(222222)" xml:space="preserve"> (2021). Motivation to engage in crowdsourcing: Towards the synthetic psychological–sociological model. </hi>
+                        <hi rend="italic color(222222)">Digital Scholarship in the Humanities</hi>
+                        <hi rend="color(222222)">, </hi>
+                        <hi rend="italic color(222222)">36</hi>
+                        <hi rend="color(222222)">(4): 858-870.</hi>
+                        <lb/>
+                        <hi rend="bold">Dunn, S. &amp; Hedges, M</hi>. (2013). Crowd-sourcing as a component of humanities research infrastructures. 
+                        <hi rend="italic">International Journal of Humanities and Arts Com-</hi>
+                        <lb/>
+                        <hi rend="italic">puting</hi>, 7(1-2): 147–169.
+                        <lb/>
+                        <hi rend="bold">Hiippala, T., Alikhani, M., Haverinen, J., Kalliokoski, T., Logacheva, E., Orekhova, S., Tuomainen, A., Stone, M. and Bateman, J. A.</hi> (2021). AI2D-RST: A multimodal corpus of 1000 primary school science diagrams. 
+                        <hi rend="italic">Language Resources and Evaluation,</hi> 55(3): 661–688.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hiippala, T. and Bateman, J. A.</hi> (2021). Semiotically-grounded distant view of diagrams: insights from two multimodal corpora. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>. Available at: 10.1093/llc/fqab063 (Accessed: 21.4.2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kovashka, A., Russakovsky, O., Fei-Fei, L. and Grauman, K.</hi> (2016). Crowdsourcing in computer vision. 
+                        <hi rend="italic">Foundations and Trends in Computer Graphics and Vision,</hi> 10(3): 177–243.
+                        <lb/>
+                        <hi rend="bold">Kummerfeld, J. K.</hi> (2021). Quantifying and avoiding unfair qualification labour in
+                        <lb/>crowdsourcing
+                        <hi rend="italic">. In ‘Proceedings of the 59th Annual Meeting of the Association
+                            <lb/>for Computational Linguistics and the 11th International Joint Conference on
+                            <lb/>Natural Language Processing (Volume 2: Short Papers),
+                        </hi> Association for Com-
+                        <lb/>putational Linguistics, Online, pp. 343–349. Available at: 
+                        <ref target="https://aclanthology.org/2021.acl-short.44">https://aclanthology.org/2021.acl-short.44</ref>
+                        <hi rend="Hyperlink" xml:space="preserve"> </hi>(Accessed: 21.4.2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pflaeging, J., Wildfeuer, J. and Bateman, J. A. (</hi>eds.) (2021). 
+                        <hi rend="italic">Empirical Multimodality
+                            <lb/>Research: Methods, Applications, Implications
+                        </hi>. Berlin and Boston: De Gruyter.
+                        <lb/>
+                        <hi rend="bold">Schmidt, F. A.</hi> (2017). Digital labour markets in the platform economy. 
+                        <hi rend="italic">Mapping
+                            <lb/>the Political Challenges of Crowd Work and Gig Work, 7,
+                        </hi> 2016.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Terras, M.</hi> (2015). Crowdsourcing in the digital humanities. In S. Schreibman,
+                        <lb/>R. Siemens &amp; J. Unsworth. (eds), 
+                        <hi rend="italic">A New Companion to Digital Humanities</hi>.
+                        <lb/>Wiley, pp. 420–438.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

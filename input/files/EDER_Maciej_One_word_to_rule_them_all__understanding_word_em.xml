@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">One word to rule them all: understanding word embeddings for authorship attribution</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Eder</surname>
+                        <forename>Maciej</forename>
+                    </persName>
+                    <affiliation>Institute of Polish Language (Polish Academy of Sciences)</affiliation>
+                    <email>maciej.eder@ijp.pan.pl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Šeļa</surname>
+                        <forename>Artjoms</forename>
+                    </persName>
+                    <affiliation>Institute of Polish Language (Polish Academy of Sciences)</affiliation>
+                    <email>atrjoms.sela@ijp.pan.pl</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T00:29:29.794576456</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>authorship attribution</term>
+                    <term>stylometry</term>
+                    <term>word embeddings</term>
+                    <term>context-aware features</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>attribution studies and stylometric analysis</term>
+                    <term>text mining and analysis</term>
+                    <term>Linguistics</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>With an advent of deep learning in natural language processing, the ways in which a text could be represented became much more complex and much less transparent. From simple estimations of word frequency distributions, methods shifted to context-aware embeddings and neural network generalizations. These opaque representations made their way to the authorship attribution with obvious improvements across different tasks (Benzebouchi et al. 2018; Gómez-Adorno et al. 2018; Kiros et al. 2014; Posadas-Durán et al. 2017). Yet, this improvement did not bring us closer to understanding of authorial style. Rather the opposite happened, and we have obscured the reasons for feature effectiveness in attribution tasks.</p>
+                <p>In this study we want to ask how much of the contextual information matters for authorship attribution in a conservative setting (authors represented by a few large fictional texts). We propose a simple experimental setup with a basic word embedding model that represents words by their contexts (or co-occurrence with other words in immediate proximity); in such a setup, each word is represented by a vector of coordinates in a semantic space, instead of using traditional word frequencies. In order to get to a text-wide vector representation, we use several tactics, derived from sentence/paragraph embedding approach (Le &amp; Mikolov 2014) and is similar to “timestamping” tokens (Dubossarsky et al. 2019). Our approach mostly boils down to adding quasi-tokens that are tied to each specific text in the corpus: they act as sponges, soaking word occurrences from their immediate context. We use this sponges as “text embeddings” that share the same vector space with actual words from the corpus. Having control on text and context representation, we manipulate the underlying words (by randomly shuffling them or changing the principles of quasi-tokens distributions).</p>
+                <table rend="frame" xml:id="Table1">
+                    <row role="label">
+                        <cell/>
+                        <cell>D
+                            <hi rend="sub">1</hi>
+                        </cell>
+                        <cell>D
+                            <hi rend="sub">2</hi>
+                        </cell>
+                        <cell>D
+                            <hi rend="sub">3</hi>
+                        </cell>
+                        <cell>D
+                            <hi rend="sub">4</hi>
+                        </cell>
+                        <cell>D
+                            <hi rend="sub">5</hi>
+                        </cell>
+                        <cell>…</cell>
+                    </row>
+                    <row>
+                        <cell>morning</cell>
+                        <cell>0.402</cell>
+                        <cell>0.716</cell>
+                        <cell>–0.930</cell>
+                        <cell>–0.264</cell>
+                        <cell>–0.046</cell>
+                        <cell>…</cell>
+                    </row>
+                    <row>
+                        <cell>the_Barclay_1</cell>
+                        <cell>0.469</cell>
+                        <cell>0.351</cell>
+                        <cell>0.054</cell>
+                        <cell>–0.979</cell>
+                        <cell>0.171</cell>
+                        <cell>…</cell>
+                    </row>
+                    <row>
+                        <cell>table</cell>
+                        <cell>–0.810</cell>
+                        <cell>0.255</cell>
+                        <cell>–0.675</cell>
+                        <cell>0.227</cell>
+                        <cell>1.059</cell>
+                        <cell>…</cell>
+                    </row>
+                    <row>
+                        <cell>breakfast</cell>
+                        <cell>–1.010</cell>
+                        <cell>0.485</cell>
+                        <cell>-0.542</cell>
+                        <cell>0.462</cell>
+                        <cell>0.500</cell>
+                        <cell>…</cell>
+                    </row>
+                    <row>
+                        <cell>the_Bennet_2</cell>
+                        <cell>–0.072</cell>
+                        <cell>0.295</cell>
+                        <cell>-0.212</cell>
+                        <cell>–0.640</cell>
+                        <cell>1.020</cell>
+                        <cell>…</cell>
+                    </row>
+                    <row>
+                        <cell>…</cell>
+                        <cell>…</cell>
+                        <cell>…</cell>
+                        <cell>…</cell>
+                        <cell>…</cell>
+                        <cell>…</cell>
+                        <cell>…</cell>
+                    </row>
+                </table>
+                <p>What we learn, is that accurate contextual representation does not matter for attribution task: text embeddings of randomized novels work similarly to embeddings that preserve original word order and learn context-aware semantic representations. In other words, we can have accurate authorship classification even if individual word vectors and their contextual neighborhoods contain but noise. This suggests that the authorship signal continues to be largely driven by underlying document-specific distributions of word frequencies.</p>
+                <p>What we learn, is that accurate contextual representation does not matter for attribution task: text embeddings of randomized novels work similarly to embeddings that preserve original word order and learn context-aware semantic representations. In other words, we can have accurate authorship classification even if individual word vectors and their contextual neighborhoods contain but noise. This suggests that the authorship signal continues to be largely driven by underlying document-specific distributions of word frequencies.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Data and methods</head>
+                <p>We use “100 English novels” as our test corpus, which was employed in other benchmarking experiments (Rybicki &amp; Eder 2011; Eder 2013). It has 33 authors represented by 3 novels each. On the one hand, the authorship recognition is a rather trivial task in this case, since chronological distribution of authors is wide (from Bronte sisters to Virginia Woolf). On the other hand, the attribution scenario is not that trivial, since the classifier has to search through 33 candidate classes for the correct answer. Despite possible limitations of our benchmark dataset, however, we consider it to be suitable for experimental setups that do not try to “stress-test” methods or claim improvements over state-of-the-art.</p>
+                <p>Over the course of experiments we use GloVe algorithm for learning word association using matrix decomposition, without any shallow or deep neural networks. We prepare text representation within a word-based model in following ways:</p>
+                <list type="unordered">
+                    <item>MFW-sponge. Given a word 
+                        <hi rend="italic">X</hi> from the list of 200 most frequent words, we transform all 
+                        <hi rend="italic">X</hi> tokens by adding to them their corresponding text IDs. E.g.: “the_Doyle_1”. We assume that tying identity tokens to frequent words gives a natural access to wide contexts in which these function words occur.
+                    </item>
+                    <item>Dummy-sponge. Instead of learning existing tokens, we add non-existent identity tokens randomly to each text. E.g.: “Mr. DUMMY_Doyle_1 Sherlock Holmes, who DUMMY_Doyle_1 was”.</item>
+                </list>
+                <p>The frequency of dummy sponges is also determined by several approaches</p>
+                <list type="unordered">
+                    <item>Dummy-token frequency (DTF) is tied to frequency of “the” in a given text;</item>
+                    <item>DTFis taken randomly from normal distribution with 
+                        <hi rend="italic">μ</hi> equal to the mean relative frequency of the word “the” across the corpus, and 
+                        <hi rend="italic">σ</hi> equal to the standard deviation of “the”;
+                    </item>
+                    <item>DTF is constant, based on max relative frequency of “the” in the corpus;</item>
+                    <item>DTF is an arbitrary constant, larger than the most frequent word (we have picked the value of 0.08);</item>
+                    <item>DTF is inferred through a 
+                        <hi rend="italic">word-rank ~ frequency</hi> model (what would be a frequency of a word more frequent than most frequent word in a natural language?).
+                    </item>
+                </list>
+                <p>We apply this text-embedding logic to 1) original text; 2) randomly shuffled text; 3) text where all words under a certain frequency threshold were replaced. We train small-scale GloVe models for each variation in the textual setup (100 novels are the only source of learning the contexts).</p>
+                <p>For authorship attribution, we use SVM classification with linear kernel, using “identity vectors” or sponges as text representation. Each quasi-token has the same dimensionality as the original GloVe model (300 in our case). Importantly, we test one sponge at a time, using its 300 dimensions as features for SVM. We cross-validate each model randomly placing 2 novels for each author to represent test set and leaving 1 (33 novels altogether) for the training set.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results</head>
+                <p>First and foremost, the identity vector approach works at a competitive level. The inter-textual relationships could be roughly represented via UMAP (Fig. 1) that projects all text-vectors alongside with the subset of the most similar words (cosine similarity). We achieve 0.93 median accuracy, which is slightly better than the methodological baseline that uses simple MFW approach.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/ec05d02e1327a0fa9c8111dc9b4c4f45.png"/>
+                        <head>Fig. 1: UMAP projection of the sponge-vectors “the” with their 20 immediate contextual neighbors (cosine similarity, repeated neighbors were represented only once).</head>
+                    </figure>
+                </p>
+                <p>Secondly, we notice that performance is strongly related to the frequencies of quasi-tokens (Fig. 2), suggesting that the more access to parts of target text we have, the better. However, the position of the tokens themselves did not matter: best dummy-sponge performance was at the level of best MFW-sponges performance.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/c80aad387ead2b09b4a6f707e42b0bcd.png"/>
+                        <head>Fig. 2: Linear model that predicts decrease in accuracy with increase in log-frequency rank. Increase in each log-unit in quasi-token frequency rank results in ~18% accuracy drop. Points are showing original accuracy scores from cross-validation</head>
+                    </figure>
+                </p>
+                <p>Thirdly, it turned out that the position of tokens didn’t affect the classification results, and the same could be said about the original structure of the text, suggesting that the word order (and thus the context) is neglectable for attribution. If all the words across all the novels were randomly shuffled, the performance of dummy-sponges stayed at the same level. Representation of word semantics became meaningless, but the attribution task was still brute-forced by the information retained by the sponges.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/931e3cf8e5d29e2de66a4a9c0cc5b89f.png"/>
+                        <head>Fig. 3: Results for dummy-sponges in original texts (left). Results for dummy sponges that “soak context” in randomly shuffled pools of words (right).</head>
+                    </figure>
+                </p>
+                <p>Furthermore, in a scenario when only 500 most frequent words were left in the original texts, while the remaining words were replaced by flat fillers (e.g. “DUMMY DUMMY DUMMY was DUMMY in the DUMMY DUMMY”), our sponge approach was still able to produce accurate attributions (albeit worse, with median accuracy at 0.81).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Discussion</head>
+                <p>Our results show that it is possible to completely remove context-dependent semantics from texts, yet embedded text-wide vectors will still perform well for authorship attribution tasks. This strongly suggests that contextual representation in authorship attribution remains driven by the sheer frequency of the most frequent units of language, and the chance for identity tokens to be exposed to text-specific surroundings. This not only highlights that complex and simple text representations draw from the same source of word frequency distributions (cf. Dębowski 2021), but also suggests the path to formal independent modeling of style and meaning, allowing for complex style transfers and adversarial stylometry (Brennan et al. 2012), where the task is to mask the style of a writing, but preserve the message for maintaining anonymity.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Acknowledgements</head>
+                <p>This research is part of the project 2017/26/E/HS2/01019, supported by Poland’s National Science Centre.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Benzebouchi, N.E., Azizi, N., Aldwairi, M., Farah, N., 2018. Multi-classifier system for authorship verification task using word embeddings. In: 
+                        <hi rend="italic">2018 2nd International Conference on Natural Language and Speech Processing (ICNLSP)</hi>. Presented at the 2018 2nd International Conference on Natural Language and Speech Processing (ICNLSP), pp. 1–6. 
+                        <ptr target="https://doi.org/10.1109/ICNLSP.2018.8374391"/>
+                    </bibl>
+                    <bibl>Brennan, M., Afroz, S., Greenstadt, R., 2012. Adversarial Stylometry: Circumventing Authorship Recognition to Preserve Privacy and Anonymity. 
+                        <hi rend="italic">ACM Trans. Inf. Syst. Secur</hi>. 15. 
+                        <ptr target="https://doi.org/10.1145/2382448.2382450"/>
+                    </bibl>
+                    <bibl>Dębowski, Ł. 2021. A Refutation of Finite-State Language Models through Zipf’s Law for Factual Knowledge. 
+                        <hi rend="italic">Entropy</hi> 23(9): 1148. 
+                        <ptr target="https://doi.org/10.3390/e23091148"/>
+                    </bibl>
+                    <bibl>Dubossarsky, H., Hengchen, S., Tahmasebi, N., Schlechtweg, D., 2019. Time-Out: Temporal Referencing for Robust Modeling of Lexical Semantic Change, in: 
+                        <hi rend="italic">Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics</hi>. Presented at the ACL 2019, Association for Computational Linguistics, Florence, Italy, pp. 457–470. 
+                        <ptr target="https://doi.org/10.18653/v1/P19-1044"/>
+                    </bibl>
+                    <bibl>Eder, M., 2013. Does size matter? Authorship attribution, small samples, big problem. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi> 30, 167–182. 
+                        <ptr target="https://doi.org/10.1093/llc/fqt066"/>
+                    </bibl>
+                    <bibl>Gómez-Adorno, H., Posadas-Durán, J.-P., Sidorov, G., Pinto, D., 2018. Document embeddings learned on various types of n-grams for cross-topic authorship attribution. 
+                        <hi rend="italic">Computing</hi> 100, 741–756. 
+                        <ptr target="https://doi.org/10.1007/s00607-018-0587-8"/>
+                    </bibl>
+                    <bibl>Kiros, R., Zemel, R.S., Salakhutdinov, R., 2014. A Multiplicative Model for Learning Distributed Text-Based Attribute Representations, in: 
+                        <hi rend="italic">Proceedings of the 27th International Conference on Neural Information Processing Systems - Volume 2, NIPS’14</hi>. MIT Press, Cambridge, MA, USA, pp. 2348–2356.
+                    </bibl>
+                    <bibl>Rybicki, J., Eder, M., 2011. Deeper Delta across genres and languages: do we really need the most frequent words? 
+                        <hi rend="italic">Literary and Linguistic Computing</hi> 26, 315–321. 
+                        <ptr target="https://doi.org/10.1093/llc/fqr031"/>
+                    </bibl>
+                    <bibl>Le, Q., Mikolov, T., 2014. Distributed Representations of Sentences and Documents, in: 
+                        <hi rend="italic">Proceedings of the 31st International Conference on International Conference on Machine Learning - Volume 32, ICML’14</hi>. JMLR.org, p. II-1188-II–1196.
+                    </bibl>
+                    <bibl>Posadas-Durán, J.-P., Gómez-Adorno, H., Sidorov, G., Batyrshin, I., Pinto, D., Chanona-Hernández, L., 2017. Application of the distributed document representation in the authorship attribution task for small corpora. 
+                        <hi rend="italic">Soft Comput</hi> 21, 627–639. 
+                        <ptr target="https://doi.org/10.1007/s00500-016-2446-x"/>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Language Model Pre-Training for Historical English: Approaches and Evaluation</title>
+                <author>
+                    <persName>
+                        <surname>Fonteyn</surname>
+                        <forename>Lauren</forename>
+                    </persName>
+                    <affiliation>University of Leiden, Netherlands</affiliation>
+                    <email>l.fonteyn@hum.leidenuniv.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Manjavacas Arevalo</surname>
+                        <forename>Enrique</forename>
+                    </persName>
+                    <affiliation>University of Leiden, Netherlands</affiliation>
+                    <email>enrique.manjavacas@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>historical linguistics</term>
+                    <term>distributional semantics</term>
+                    <term>language model</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>natural language processing</term>
+                    <term>Linguistics</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Machine-based exploration of culturally relevant datasets (e.g. newspapers, periodicals, correspondence or annals) often involves understanding and processing historical texts. In this context, technology dealing with historical text needs to tackle a set of specific issues. First, historical corpora typically contain not only a variety of registers and genres, but also an unstable language with grammar and semantics in constant change. Secondly, the lack of orthographic standards that characterizes European languages prior to the 18th centuries implies a further aspect of variation on the linguistic form over which automated approaches need to abstract. Finally, in contrast to contemporary corpora that have been born already digitally, historical corpora must be digitized. Despite ongoing efforts to advance OCR and HTR technology, errors in the digitization pipeline constitute the last barrier.</p>
+            <p style="text-align: left; ">Current state-of-the-art approaches in Natural Language Processing (NLP) leverage the newly emerging pre-train-and-finetune paradigm, in which a large machine learning model is first trained in an unsupervised fashion on large datasets, and then fine-tuned on labelled data in order to perform a particular task of interest. This paradigm relies on variants of so-called Language Models—e.g. ELMO (Peters et al. 2018), BERT (Devlin et al. 2019) or GPT (Radford et al., 2018)—that can maximally exploit contextual cues in order to generate vectorized representations of given input tokens (e.g. words). At first sight, this paradigm may seem unrealistic for dealing with the three aspects of historical text mentioned above, since the notoriously large datasets that are needed in order to successfully pre-train such models are absent in the case of historical text. However, on-going efforts towards producing historically pre-trained Language Models (Hosseini et al. 2021), which leverage large databases of available text, have started to highlight the potential of this approach even for historical languages.</p>
+            <p style="text-align: left; ">With the goal of alleviating the data scarcity problem, previous research has leveraged contemporary Language Models (i.e. models pre-trained on contemporary data), using them as base models that are later fine-tuned on the target historical data in order to produce historically pre-trained models. While this approach may indeed help the model recognizing semantic relationships and linguistic patterns that are unchanged across time, it can also introduce an important bias in the vocabulary, which remains fixed to the vocabulary of the contemporary corpus.</p>
+            <p style="text-align: left; ">In this work, we aim to cast light onto both the merit of the pre-train-and-fine-tune paradigm for historical data, as well as the relative advantage of the different pre-training approaches (e.g. pre-training from scratch vs. adapting a pre-trained model). We focus on a large span of historical English text (date range: 1450-1950), presenting, first, the steps towards a newly pre-trained historical BERT, known as MacBERTh, which is trained on approx. 3B tokens of historical English. Secondly, we discuss a thorough evaluation, with a noted emphasis on lexical semantics, in which the capabilities of the different models for processing historical text are put to test.</p>
+            <p style="text-align: left; ">In order to do so, we elaborate a number of historically relevant benchmark tasks extracted from the Oxford English Dictionary, relying on the diachronic word sense classifications and the example quotations used for exemplifying the word senses.</p>
+            <p style="text-align: left; ">In particular, we evaluate the different approaches on tasks that require systems to incorporate a model of word senses as well as a founded understanding of sentential semantics. In total, we present results for three different tasks, including Word Sense Disambiguation (WSD) from two different angles, Text Periodization and an ad-hoc Fill-In-The-Blank task that indirectly captures aspects of Natural Language Understanding.</p>
+            <p style="text-align: left; ">Our evaluation highlights that, indeed, models originally pre-trained on contemporary English may also import too strong an inductive bias when they are later fine-tuned on historical English. In such a situation, pre-training from scratch on historical data may be a more robust strategy than adapting a pre-trained model.</p>
+            <p style="text-align: left; ">With this work, we hope to assist Digital Humanities scholars willing to fine-tune and deploy NLP models on their own historical collections, as well as researchers who may be working on developing similar models and resources for other historical (and possibly non-European) languages.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Devlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. “BERT: Pre-Training of Deep Bidirectional Transformers for Language Understanding.” In 
+                        <hi rend="italic">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)</hi>, 4171–86. Minneapolis, Minnesota: Association for Computational Linguistics. https://doi.org/10.18653/v1/N19-1423.
+                    </bibl>
+                    <bibl style="text-align: left; ">Hosseini, Kasra, Kaspar Beelen, Giovanni Colavizza, and Mariona Coll Ardanuy. 2021. “Neural Language Models for Nineteenth-Century English.” 
+                        <hi rend="italic">Journal of Open Humanities Data</hi> 7 (September): 22. https://doi.org/10.5334/johd.48.
+                    </bibl>
+                    <bibl style="text-align: left; ">Peters, Matthew, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, and Luke Zettlemoyer. 2018. “Deep Contextualized Word Representations.” In 
+                        <hi rend="italic">Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)</hi>, 2227–37. New Orleans, Louisiana: Association for Computational Linguistics. https://doi.org/10.18653/v1/N18-1202.
+                    </bibl>
+                    <bibl style="text-align: left; ">Radford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. 2018. “Improving Language Understanding by Generative Pre-Training.” 
+                        <hi rend="italic">OpenAI</hi>. https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>RDF-star-based Digital Edition of Travel Journals</title>
+                <author>
+                    <persName>
+                        <surname>Alassi</surname>
+                        <forename>Sepideh</forename>
+                    </persName>
+                    <affiliation>DHLab, University of Basel, Switzerland</affiliation>
+                    <email>sepideh.alassi@unibas.ch</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Rosenthaler</surname>
+                        <forename>Lukas</forename>
+                    </persName>
+                    <affiliation>DHLab, University of Basel, Switzerland</affiliation>
+                    <email>lukas.rosenthaler@unibas.ch</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-22T10:35:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>linked open data</term>
+                    <term>semantic web technologies</term>
+                    <term>RDF-star</term>
+                    <term>travel diary</term>
+                    <term>dig</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>Contemporary</term>
+                    <term>linked (open) data</term>
+                    <term>scholarly editing and editions development</term>
+                    <term>analysis</term>
+                    <term>and methods</term>
+                    <term>History</term>
+                    <term>Informatics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                Our project aims to develop tools and infrastructure for the creation of interactive web-based digital editions of metadata oriented-documents such as travel journals based on RDF-star and SPARQL-star.
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p>
+                        <hi style="font-size:10pt" xml:space="preserve"> https://www.ontotext.com/knowledgehub/fundamentals/what-is-rdf-star/</hi>
+                    </p>
+                </note>
+                <hi style="font-size:10pt" xml:space="preserve"> Successful digital editions have been created as RDF-based knowledge graphs enabling users to study the editions as a network of interconnected resources. Standard RDF principles are used to define ontologies for modeling metadata and textual information of these editions as RDF triples. The platforms presenting these editions use standard SPARQL for data analysis and query. Standard RDF, however, is not an optimal choice for the digital edition of metadata-oriented documents such as travel journals because most of the information in such documents is accompanied by metadata information describing it, e.g.  “person A was at location B” for a certain period of time. Creating statements about statements using standard RDF is troublesome. The very first RDF 1.0 specification uses the mechanism called reification for supporting statements about statements. Reification, however, introduces processing overhead due to the increased number of additional statements needed to identify the reference triple and appears too verbose when represented in RDF and SPARQL (Kasenchak et al. 2021). RDF-star and SPARQL-star overcome this deficit with an extension of the RDF standard and increase the efficiency of queries by reducing the query time. RDF-star allows for triples that represent metadata about another triple by directly using this other triple as its subject or object (Hartig 2017). Using RDF-star, we can easily attach metadata to the edges of the knowledge graph that represents the metadata-oriented document. Our infrastructure will provide tools based on SPARQL-star to efficiently query the data.</hi>
+            </p>
+            <p>
+                The technical basis for our project is Knora,
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p>
+                        <hi style="font-size:10pt" xml:space="preserve"> https://dsp.dasch.swiss/</hi>
+                    </p>
+                </note>
+                <hi style="font-size:10pt" xml:space="preserve"> an infrastructure for humanities data consisting of an RDF-triplestore, an OWL base ontology, and a RestFul API that allows for querying and adding to the data. For our project, this infrastructure will be further developed to support RDF-star and SPARQL-star. As a prototype document to use for developing the ontologies, tools, and the infrastructure, we have chosen Jacob Bernoulli’s travel diary. Jacob Bernoulli (1654–1705) was the first mathematician of the Bernoulli dynasty who, like many in his time, traveled in pursuit of knowledge. He kept a record of his trips in a small journal called Reisbüchlein from August 1676 until October 1683 when he permanently settled in Basel. The entries of this journal contain brief descriptions of places he visited, people he met, travel costs, and the events and phenomena he witnessed during his trips. This so far unresearched document is kept at the archive of University of Basel. Our project aims at creating an open-access RDF-star based edition of this document making every piece of information within it efficiently queryable. Jacob Bernoulli’s scientific notebook Meditationes is currently available on the BEOL</hi>
+                <note place="foot" xml:id="ftn3" n="3">
+                    <p>
+                        <hi style="font-size:10pt" xml:space="preserve"> https://beol.dasch.swiss/</hi>
+                    </p>
+                </note>
+                <hi style="font-size:10pt" xml:space="preserve"> platform as an RDF-based digital edition together with the digital edition of correspondence of members of Bernoulli dynasty and Leonhard Euler (Schweizer, Alassi 2018). The digital edition of Reisbüchlein will be integrated into this platform allowing researchers to follow Bernoulli’s line of thoughts from his travel diaries to the scientific ideas written in Meditationes at the same time and his correspondences. Based on this document, we will develop a generic RDF-star-based ontology describing textual data and metadata of travel diaries.</hi>
+            </p>
+            <p>
+                To create a normalized edition of Reisbüchlein whose text is written in old German and French, we have chosen a semi-automatic approach. There is an old unpublished typed transcription of this journal available which we employed to generate digital annotations using Transkribus.
+                <note place="foot" xml:id="ftn4" n="4">
+                    <p>
+                        <hi style="font-size:10pt" xml:space="preserve"> https://readcoop.eu/transkribus/</hi>
+                    </p>
+                </note>
+                <hi style="font-size:10pt" xml:space="preserve"> An editor is currently verifying the automatically generated annotations consulting the digitized facsimiles. At the same time, editorial commentaries regarding the structure of the text, content, and explanation of specific terms are being added to the annotations. Through Knora API, interlinked resources will be created for image regions, their annotations, and commentaries.</hi>
+            </p>
+            <p>
+                We intend to use NLP algorithms to automatically recognize and tag the named entities within the text, such as locations and persons. The tagged entities will then be verified by comparing against the glossary given in the old transcription that lists the places and people mentioned in Reisbüchlein. The algorithm will then find (by querying Wikidata) and add geo-identifiers to locations and GND numbers to persons and will create resources for locations and persons. The tagged elements within the text will be linked to the corresponding resources. This will allow queries for a text that contains a certain person and/or location.
+                <note place="foot" xml:id="ftn5" n="5">
+                    <p>
+                        <hi style="font-size:10pt" xml:space="preserve"> See the proof of concept in “open research data queriable by location” report of Swiss ORD hackathon 2021, in https://docs.google.com/document/d/1lbD6go_mSNAH3Gmj_Ao9GFnGwPFd4ZyGo1HrP_tYtBs/edit#</hi>
+                    </p>
+                </note>
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi style="font-size:10pt" xml:space="preserve">Hartig, Olaf. "RDF* and SPARQL*: An Alternative Approach to Annotate Statements in RDF”. International Semantic Web Conference 2017. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(212529) background(white)" style="font-size:10pt" xml:space="preserve">Schweizer, T. and Alassi, S. (2018) “Bernoulli-Euler Online: Development of a Platform for Early Modern Mathematical Texts as Part of a Generic Infrastructure”, in </hi>
+                        <hi rend="italic color(212529) background(white)" style="font-size:10pt">Digital Humanities Congress 2018</hi>
+                        <hi rend="color(212529) background(white)" style="font-size:10pt" xml:space="preserve">. Sheffield: Lana Pitcher and Michael Pidd. Proceedings of the Digital Humanities Congress 2018. Studies in the Digital Humanities, pp. 1–4. Available at: </hi>
+                        <ref target="https://www.dhi.ac.uk/openbook/chapter/dhc2018-schweizer">
+                            <hi rend="color(D20537) background(white)" style="font-size:10pt">https://www.dhi.ac.uk/openbook/chapter/dhc2018-schweizer</hi>
+                        </ref>
+                        <hi rend="color(212529) background(white)" style="font-size:10pt" xml:space="preserve">.  </hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:10pt" xml:space="preserve">Kasenchak, Bob, Aren Lehnert and Gene Loh, "Use Case: Ontologies and RDF-Star for Knowledge Management". </hi>
+                        <hi rend="italic" style="font-size:10pt">The Semantic Web: ESWC 2021 Satellite Events, LNCS 12739</hi>
+                        , 2021, 254–260. https://doi.org/10.1007/978-3-030-80418-3_38.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

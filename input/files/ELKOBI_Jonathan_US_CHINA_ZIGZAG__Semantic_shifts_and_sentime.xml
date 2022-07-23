@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>US-CHINA ZIGZAG: Semantic shifts and sentiment analysis of the US Congress speeches on US policy towards China and Taiwan</title>
+                <author>
+                    <persName>
+                        <surname>Elkobi</surname>
+                        <forename>Jonathan</forename>
+                    </persName>
+                    <affiliation>The Hebrew University of Jerusalem, Israel</affiliation>
+                    <email>Jonathan.Elkobi@mail.huji.ac.il</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Semantic Shifts</term>
+                    <term>Sentiment Analysis</term>
+                    <term>BERT</term>
+                    <term>China</term>
+                    <term>Taiwan</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>natural language processing</term>
+                    <term>semantic analysis</term>
+                    <term>Asian studies</term>
+                    <term>Political science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The relations between The United States, The Republic of China (ROC), and The People’s Republic of China (PRC), is a classic case of “there and back again” shifts in the international policy of the hegemon in the contemporary era. In this paper, I examine how the US addressed different Chinese entities at different times. Looking at a specially-curated corpus of U.S. congressional speeches regarding ROC and PRC and using a contextual language model, BERT (Devlin et al. 2018), to conduct sentiment analysis. And a word2vec to examine semantic shifts (
+                <hi rend="color(222222)">Hamilton et al. 2016)</hi>. I will trace the changes in US policy toward the “Two Chinas” and examine when those shifts started to happen. 
+            </p>
+            <p rend="normal_indent">
+                <hi rend="bold">Short background:</hi> After the Chinese Communist Party won the civil war, The Western world saw ROC as the rightful heir of China; thus, ROC was a member of the UN while, and PRC was left behind under the one-china policy (Spence 1990). Few decades later, PRC and the US have moved to close ties under Nixon, with Kissinger leading the path for a warm relationship between the CCP and the US leading to ROC getting ousted from its place in the UN being replaced with PRC by 1971. In 1979 the US officially switched its recognition from ROC to PRC (Westad 2012). In the 21st century, the US discourse shift back to supporting ROC, and in 2007 the congress declared they do not recognize PRC's sovereignty over Taiwan (Kan 2007). Meanwhile, PRC had been growing expeditiously its economic power, they joined the WTO in 2001, and became a main player in the world economy. This brought more fear into the US congress. Peaking when the Trump administration started the trade war with PRC and continues until this day (Kwan 2020).
+            </p>
+            <p rend="normal_indent">
+                <hi rend="bold">In my research,</hi> I will measure the semantic shifts in US discourse and the changes in sentiment analysis using a BERT model. The US relations with PRC and ROC are complicated, with double-crossing from the US side regarding the one-China policy. Thus, semantic shifts research of crucial points during the modern history of the relations can help identify the concrete shifting process from ROC to PRC and back again. The proposed research is unique due to its methodological use of combining semantic shifts with sentiment analysis to expose the trends in the discourse itself (Azarbonyad et al. 2017). By using these computational tools, we can find the meaning between the lines of the US Congress members in the crucial years that led to the shifts in the US policy regarding the one-china policy. 
+            </p>
+            <p rend="normal_indent">Data:</p>
+            <p rend="normal_indent">For this research, I will use the corpus of U.S. Congress speeches from 1949 to 2011 (Gentzkow et al. 2018).</p>
+            <p rend="normal_indent">
+                <hi rend="bold">Methodology:</hi>
+            </p>
+            <list type="ordered">
+                <item>
+                    <hi rend="underline">Semantic Shifts:</hi> I compute the word similarities through time to detect the semantic shifts and the semantic surrounding of PRC and ROC in the discourse of the US congress in those critical years, trying to point out when exactly those shifts occurred to connect them with the relevant events. Applying computational methods to measure semantic shifts affects the way scholars can interpret and validate theories about changes in the way the wind blows in every text-based discipline. Semantic shifts analysis is the state-of-the-art method for understanding the transformation of terms meaning throughout time by the word context, thus, we can follow those shifts in meaning to find how does and how the discourse has shifted regarding the terms “China”, “Taiwan” and their equivalents (Kutuzov, et al. 2018; Zhang et al. 2016).
+                </item>
+                <item>
+                    <hi rend="underline">Sentiment Analysis:</hi> A second step will measure the semantic sentiment toward these two entities over time to correlate with the shifts in the meaning of words. This is a powerful tool to assess and measure the opinions inside textual forms for comprehending the writer’s attitude towards the subject of the text (Feldman 2013). I will use aspect-based sentiment analysis on a BERT model (Xu et al. 2019) to quantify the attitude of the congress toward PRC and ROC over time, pointing to the shifts of the policy stance of the US towards those entities, using the terms terms “China”, “Taiwan” and their equivalents.
+                </item>
+            </list>
+            <p rend="normal_indent">Using those NLP tools will give us a measurable context to understand when the US discourse shifted to enable those switches in US policy. This research can lead us to comprehend deeply the US changing policies in the Pan-Chinese era about those two Chinese entities, when they started, by who, and in what magnitude. </p>
+            <p rend="normal_indent">Preliminary results based on semantic change using word2vec show shifts in the conception of the PRC in the US congress discourse. First, since 1949 until the 1959, the PRC is seen as a communist and hostile. Then it changed to a more accepting approach, followed by a change to a warmer approach of the PRC in 1971. Then a decline in friendliness after the 1989 Tiananmen events. And finally, it becomes a major economic player in the conception of the US. Meanwhile, the discourse regarding Taiwan would moves in the opposite direction, starting as an ally in the 1950, but receiving a colder shoulder after 1971, and lastly returning to be a democratic ally after Tiananmen.</p>
+            <p rend="normal_indent">Example of the top 25 nonentity terms in plot of the word2vec models for the terms ‘China’ and ‘Taiwan’ based on the Congress speeches between 2001- 2011:</p>
+            <figure>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="12.052652777777778cm" url="Pictures/661afcff561229942ea2f4d673a2e3a9.png" rend="inline"/>
+                </figure>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="12.052652777777778cm" url="Pictures/a28b125523e8963205aafca13d9e916f.png" rend="inline"/>
+                </figure>
+            </figure>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="color(222222)" style="font-size:10pt">Devlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. "Bert: Pre-training of deep bidirectional transformers for language understanding."</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">arXiv preprint arXiv:1810.04805</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="color(222222)" style="font-size:10pt">(2018).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222)" style="font-size:10pt">Hamilton, William L., Jure Leskovec, and Dan Jurafsky. "Diachronic word embeddings reveal statistical laws of semantic change." </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">arXiv preprint arXiv:1605.09096</hi>
+                        <hi rend="color(222222)" style="font-size:10pt"> (2016).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222)" style="font-size:10pt">Spence, Jonathan D.</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">The search for modern China</hi>
+                        <hi rend="color(222222)" style="font-size:10pt">. WW Norton &amp; Company, 1990.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222)" style="font-size:10pt">Westad, Odd Arne.</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">Restless empire: China and the world since 1750</hi>
+                        <hi rend="color(222222)" style="font-size:10pt">. Hachette UK, 2012.</hi>
+                    </bibl>
+                    <bibl>Kan, Shirley A. "China/Taiwan: Evolution of the" One China" Policy-Key Statements from Washington, Beijing, and Taipei." LIBRARY OF CONGRESS WASHINGTON DC CONGRESSIONAL RESEARCH SERVICE, 2007.</bibl>
+                    <bibl>
+                        <hi rend="color(222222)" style="font-size:10pt">Kwan, Chi Hung. "The China–US trade war: Deep‐rooted causes, shifting focus and uncertain prospects."</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">Asian Economic Policy Review</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="color(222222)" style="font-size:10pt">15, no. 1 (2020): 55-72.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222)" style="font-size:10pt">Azarbonyad, Hosein, Mostafa Dehghani, Kaspar Beelen, Alexandra Arkut, Maarten Marx, and Jaap Kamps. "Words are malleable: Computing semantic shifts in political and media discourse." In</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">Proceedings of the 2017 ACM on Conference on Information and Knowledge Management</hi>
+                        <hi rend="color(222222)" style="font-size:10pt">, pp. 1509-1518. 2017.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:10pt" xml:space="preserve">Gentzkow, Matthew, Jesse M. Shapiro, and Matt Taddy. Congressional Record for the 43rd-114th Congresses: Parsed Speeches and Phrase Counts. Palo Alto, CA: Stanford Libraries [distributor], 2018-01-16. </hi>
+                        <ref target="https://data.stanford.edu/congress_text">
+                            https://data.stanford.edu/congress_text
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222)" style="font-size:10pt">Kutuzov, Andrey, Lilja Øvrelid, Terrence Szymanski, and Erik Velldal. "Diachronic word embeddings and semantic shifts: a survey."</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">arXiv preprint arXiv:1806.03537</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="color(222222)" style="font-size:10pt">(2018).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222)" style="font-size:10pt">Zhang, Yating, Adam Jatowt, Sourav S. Bhowmick, and Katsumi Tanaka. "The past is not a foreign country: Detecting semantically similar terms across time."</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">IEEE Transactions on Knowledge and Data Engineering</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="color(222222)" style="font-size:10pt">28, no. 10 (2016): 2793-2807.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222)" style="font-size:10pt">Feldman, Ronen. "Techniques and applications for sentiment analysis."</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">Communications of the ACM</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="color(222222)" style="font-size:10pt">56, no. 4 (2013): 82-89.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222)" style="font-size:10pt">Xu, Hu, Bing Liu, Lei Shu, and Philip S. Yu. "BERT post-training for review reading comprehension and aspect-based sentiment analysis."</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="italic color(222222)" style="font-size:10pt">arXiv preprint arXiv:1904.02232</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="color(222222)" style="font-size:10pt"> </hi>
+                        </hi>
+                        <hi rend="color(222222)" style="font-size:10pt">(2019).</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

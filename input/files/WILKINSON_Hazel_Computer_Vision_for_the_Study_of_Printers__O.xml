@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Computer Vision for the Study of Printers' Ornaments and Illustrations in European Hand-Press Books</title>
+                <author>
+                    <persName>
+                        <surname>Bahier-Porte</surname>
+                        <forename>Christelle</forename>
+                    </persName>
+                    <affiliation>Université Jean Monnet, Saint-Etienne, France</affiliation>
+                    <email>christelle.porte@univ-st-etienne.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bergel</surname>
+                        <forename>Giles</forename>
+                    </persName>
+                    <affiliation>University of Oxford, United Kingdom</affiliation>
+                    <email>giles.bergel@eng.ox.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dutta</surname>
+                        <forename>Abhishek</forename>
+                    </persName>
+                    <affiliation>University of Oxford, United Kingdom</affiliation>
+                    <email>adutta@robots.ox.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fournel</surname>
+                        <forename>Thierry</forename>
+                    </persName>
+                    <affiliation>Université Jean Monnet, Saint-Etienne, France</affiliation>
+                    <email>fournel@univ-st-etienne.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Thomas</surname>
+                        <forename>Drew</forename>
+                    </persName>
+                    <affiliation>University of St Andrews, United Kingdom</affiliation>
+                    <email>dt30@st-andrews.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vial-Bonacci</surname>
+                        <forename>Fabienne</forename>
+                    </persName>
+                    <affiliation>Université Jean Monnet, Saint-Etienne, France</affiliation>
+                    <email>fabienne.vial@univ-st-etienne.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wilkinson</surname>
+                        <forename>Hazel</forename>
+                    </persName>
+                    <affiliation>University of Birmingham, United Kingdom; Alan Turing Institute, United Kingdom</affiliation>
+                    <email>h.j.wilkinson@bham.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Andrew</surname>
+                        <forename>Zisserman</forename>
+                    </persName>
+                    <affiliation>University of Oxford, United Kingdom</affiliation>
+                    <email>az@robots.ox.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Loïc</surname>
+                        <forename>Denis</forename>
+                    </persName>
+                    <affiliation>Université Jean Monnet, Saint-Etienne, France</affiliation>
+                    <email>loic.denis@univ-st-etienne.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Emonet</surname>
+                        <forename>Rémi</forename>
+                    </persName>
+                    <affiliation>Université Jean Monnet, Saint-Etienne, France</affiliation>
+                    <email>remi.emonet@univ-st-etienne.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Habrard</surname>
+                        <forename>Amaury</forename>
+                    </persName>
+                    <affiliation>Université Jean Monnet, Saint-Etienne, France</affiliation>
+                    <email>amaury.habrard@univ-st-etienne.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ventresque</surname>
+                        <forename>Vincent</forename>
+                    </persName>
+                    <affiliation>Université Jean Monnet, Saint-Etienne, France</affiliation>
+                    <email>vincent.ventresque@ens-lyon.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gautrais</surname>
+                        <forename>Thomas</forename>
+                    </persName>
+                    <affiliation>Université Jean Monnet, Saint-Etienne, France</affiliation>
+                    <email>thomas.gautrais@univ-st-etienne.fr</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T10:05:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Panel</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>printers' ornaments</term>
+                    <term>image recognition</term>
+                    <term>computer vision</term>
+                    <term>book illustration</term>
+                    <term>printer identification</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>bibliographic analysis</term>
+                    <term>image processing and analysis</term>
+                    <term>Book and print history</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica">Panel Abstract:</hi>
+                <hi style="font-family:Helvetica" xml:space="preserve"> Printers' ornaments are the decorative images that appear in printed books to embellish title pages, headings, chapter endings, and any otherwise blank spaces. They were common throughout the hand press period in Europe (c.1470-1830), when they were printed from designs cut into wood or metal blocks, or cast in type-metal (Wilkinson, 2019). They are closely related to woodcut chapbook illustrations, which provided contextual visual stimuli to readers, and, like ornaments, were often designed in such a way that they could be reused in different contexts. Both cuts and type ornaments are like bibliographical fingerprints: their unique features can allow us to identify the printer of a book, even if the printer did not sign their name, or used a pseudonym (Maslen, 2001; Blayney 2021). Identifying a book's printer can help us to date printed material, and better understand the workings of the book trade, and the circulation of texts and ideas. In literary studies, printers' ornaments assist in our enquiries into the original circumstances of a book's production, guiding the decisions of scholarly editors by increasing our understanding of the relationships between authors and the craftspeople who gave their texts material form. Ornaments are also of intrinsic interest as examples of graphic design.</hi>
+            </p>
+            <p>
+                Computer vision and machine learning can help us to build databases of ornaments and cuts, and to derive useful information from them. The four papers in this panel will present different problems and solutions arising from the use of visual AI to investigate ornaments and illustrations. Four projects are represented here, each of which has made some use of the open source
+                <ref target="https://www.robots.ox.ac.uk/~vgg/software/vise/">
+                    VGG Image Search Engine (VISE)
+                </ref>
+                <hi style="font-family:Helvetica" xml:space="preserve">, and a key aspect of the panel will be discussion of the strengths and limitations of VISE for different kinds of research into ornament and illustration. The papers argue that different approaches are necessary when dealing with large, catch-all databases, compared to smaller, curated datasets that concentrate on a single printer or document type, with two examples of each kind. Paying attention to recent scholarship, several of the papers advance the established potential of ornaments to solve problems of printer identification and fraud detection (May, 2019). These papers will discuss the strengths and limitations of visual AI </hi>
+                <hi rend="italic" style="font-family:Helvetica">versus</hi>
+                the human expert when it comes to making fine distinctions between images. It is possible to use data visualisation to draw wider conclusions from ornament usage about the activities and habits of printers, which could shape our understanding of the circulation of ideas in early modern Europe. Some of the papers will present arguments for the best use of the data these projects are producing, but the panel will also reflect on the inherent biases and flaws in digitization projects, which can skew our conclusions (Orr, 2021). The panel itself consists of both senior and early career researchers of different nationalities, and includes both men and women.
+            </p>
+            <p>Paper 1</p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Title: </hi>
+                <hi rend="italic" style="font-family:Helvetica">Compositor</hi>
+                , Visual AI, and Quantitative Network Analysis: Opportunities and Obstacles
+            </p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Author: </hi>
+                Hazel Wilkinson
+            </p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Affiliations: </hi>
+                Department of English, University of Birmingham, UK; Alan Turing Institute, UK.
+            </p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Abstract: </hi>
+                <ref target="https://compositor.bham.ac.uk/">
+                    <hi rend="italic" style="font-family:Helvetica">Compositor</hi>
+                </ref>
+                is a database of over 1 million printers’ ornaments and small illustrations from eighteenth-century British books, which was created from
+                <hi rend="italic" style="font-family:Helvetica" xml:space="preserve">Eighteenth-Century Collections Online </hi>
+                (
+                <hi rend="italic" style="font-family:Helvetica">ECCO</hi>
+                ). Its development was described in Briggs, Gorissen and Wilkinson, 2021. This paper describes how visual AI is being used to further develop
+                <hi rend="italic" style="font-family:Helvetica">Compositor</hi>
+                <hi style="font-family:Helvetica" xml:space="preserve">, and advances significantly on the 2021 article by investigating new directions in research with the database. </hi>
+                <hi rend="italic" style="font-family:Helvetica">Compositor</hi>
+                <hi style="font-family:Helvetica" xml:space="preserve">is regularly cited by individual scholars as having facilitated their identification of an unknown printer (e.g. Warren </hi>
+                <hi rend="italic" style="font-family:Helvetica">et al</hi>
+                ., 2021, Levy, 2021); this paper investigates the possibility of combining VISE’s visual search engine with methods from Quantitative Network Analysis (QNA) to use
+                <hi rend="italic" style="font-family:Helvetica">Compositor</hi>
+                <hi style="font-family:Helvetica" xml:space="preserve">to identify unknown printers on a massive scale (Ahnert </hi>
+                <hi rend="italic" style="font-family:Helvetica">et al.</hi>
+                , 2020). However, first certain qualitative problems with the database must be addressed. The paper builds on Gregg (2020) and Orr (2021) to identify the inherent omissions, errors, and biases that
+                <hi rend="italic" style="font-family:Helvetica">Compositor</hi>
+                has inherited from
+                <hi rend="italic" style="font-family:Helvetica">ECCO</hi>
+                and, ultimately, from the
+                <hi rend="italic" style="font-family:Helvetica">English Short Title Catalogue</hi>
+                <hi style="font-family:Helvetica" xml:space="preserve"> (</hi>
+                <hi rend="italic" style="font-family:Helvetica">ESTC</hi>
+                ), which complicate using computer vision and QNA to automatically identify printers. The paper will propose strategies for mitigating and acknowledging such gaps and biases that might enable us to unlock the enormous potential of
+                <hi rend="italic" style="font-family:Helvetica">Compositor</hi>
+                to transform the field of book history.
+            </p>
+            <p>Paper 2</p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Title: </hi>
+                Using Artificial Intelligence to Identify the Counterfeit Printers of the Protestant Reformation
+            </p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica">Author:</hi>
+                <hi style="font-family:Helvetica" xml:space="preserve"> Drew B. Thomas</hi>
+            </p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Affiliations: </hi>
+                University of St Andrews
+            </p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Abstract: </hi>
+                During the 1520s, at the height of the polemical pamphlet campaigns of the Protestant Reformation, one in four of Martin Luther’s books was a counterfeit. Printers across the Holy Roman Empire falsely stated on their title pages that their books came from Wittenberg, the home of Luther’s movement. Several of these books passed into modern institutions with their true origins still unknown (Künast, 1997, Thomas, 2021
+                ). While there are several ways to uncover the printers of counterfeits (by typeface, woodcut or watermark analysis), adopting machine learning and artificial intelligence methods has proven effective. The Ornamento project at University College Dublin is an atlas of the visual geography of the early modern book. Based on forty percent of all known European books printed in the fifteenth and sixteenth centuries (ca.184,000 items), Ornamento has created a record of six million ornamental features, including: musical notation, printers’ devices, ornate letters, fleurons, maps, portraits, and illustrations. The results of our efforts allow us to suggest places of publication and printers for a large number of anonymous and counterfeit publications in the period, and to trace how blocks from letters to illustrations have been passed from printer to printer, and in some cases from city to city, region to region. This paper argues that there are clear opportunities to offer clues to assist in unsolved bibliographical mysteries, or to uncover previously hidden networks and associations. For the counterfeit works of Luther, Ornamento allows us to uncover the printers helping spread Europe’s first mass media event.
+            </p>
+            <p>Paper 3</p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica">Title:</hi>
+                Regions of interest to investigate after learning the use of ornaments by Marc-Michel Rey
+            </p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Authors: </hi>
+                Christelle Bahier-Porte
+                <hi rend="superscript" style="font-family:Helvetica">1</hi>
+                , Thierry Fournel
+                <hi rend="superscript" style="font-family:Helvetica">2</hi>
+                , Fabienne-Vial Bonacci
+                <hi rend="superscript" style="font-family:Helvetica">1</hi>
+                , Loïc Denis
+                <hi rend="superscript" style="font-family:Helvetica">2</hi>
+                , Rémi Emonet
+                <hi rend="superscript" style="font-family:Helvetica">2</hi>
+                , Amaury Habrard
+                <hi rend="superscript" style="font-family:Helvetica">2</hi>
+                , Vincent Ventresque
+                <hi rend="superscript" style="font-family:Helvetica">1</hi>
+                , Thomas Gautrais
+                <hi rend="superscript" style="font-family:Helvetica">2</hi>
+            </p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica">Affiliations:</hi>
+                <hi rend="superscript" style="font-family:Helvetica">1</hi>
+                <hi rend="italic">IHRIM</hi>
+                <hi rend="italic" style="font-family:Helvetica">-</hi>
+                Institut d’Histoire des Représentations et des Idées dans les Modernités, UMR 5317, France
+            </p>
+            <p>
+                <hi rend="superscript" style="font-family:Helvetica">2</hi>
+                Laboratoire Hubert Curien, UMR 5516, U. Lyon - Université Jean Monnet Saint-Etienne, CNRS, Institut d’Optique Graduate School, France
+            </p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Abstract: </hi>
+                <hi style="font-family:Helvetica" xml:space="preserve">The </hi>
+                <ref target="https://ro2i.hypotheses.org/">
+                    <hi rend="italic color(0070C0)" style="font-family:Helvetica">Rey Ornament Image investigation</hi>
+                </ref>
+                <hi style="font-family:Helvetica" xml:space="preserve"> project aims to enable unsupervised novelty/anomaly localization through mapping to help human experts in the authentication of 18th century books (Corsini, 1999, Wilkinson, 2013). In this project, ornaments are not considered in the identification of printers but in the attribution to a publisher of Enlightenment philosophers named Marc-Michel Rey, at a time when publishing was subject to a censorship regime, and booksellers (such as M.-M. Rey) resorted to anonymity, the use of false addresses, and produced or fell victim to forgeries (Bahier-Porte and Vial-Bonacci, 2020). Ornaments are considered as pieces of evidence when they are single block, and as style marks when composed. Therefore, the aforementioned machine learning task is based on a limited dataset of a few hundred Rey ornaments.</hi>
+            </p>
+            <p>
+                A database was designed with the collected Rey ornaments in order to cross-reference potential anomalies with other investigable clues. By querying the database with a current ornament, similar ornaments can be extracted online using VISE (Visual Image Search Engine) (Bergel
+                <hi rend="italic" style="font-family:Helvetica">et al</hi>
+                <hi style="font-family:Helvetica" xml:space="preserve">., 2020). From that point, our paper argues that we can suggest addressing novelty localization by learning normal local image variations or how to reconstruct normal images, both from a small set of retrieved images. Different types of maps can be derived as heatmap (Li </hi>
+                <hi rend="italic" style="font-family:Helvetica">et al</hi>
+                <hi style="font-family:Helvetica" xml:space="preserve">., 2021), difference map (Baur </hi>
+                <hi rend="italic" style="font-family:Helvetica">et al.</hi>
+                , 2021) or attention map (Venkataramanan
+                <hi rend="italic" style="font-family:Helvetica">et al.</hi>
+                <hi style="font-family:Helvetica" xml:space="preserve">, 2020), enabling a more or less well-resolved visualization of novelties in the current query. Rey’s emblematic mark is analyzed to illustrate our argument. </hi>
+            </p>
+            <p>Paper 4</p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica">Title:</hi>
+                <hi style="font-family:Helvetica" xml:space="preserve"> Visual Analysis of Chapbooks Printed in Scotland</hi>
+            </p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Authors: </hi>
+                Abhishek Dutta, Giles Bergel, Andrew Zisserman
+            </p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Affiliations: </hi>
+                <hi style="font-family:Helvetica" xml:space="preserve">Department of Engineering Science, University of Oxford </hi>
+            </p>
+            <p>
+                <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Abstract: </hi>
+                <hi style="font-family:Helvetica" xml:space="preserve">Chapbooks were short and cheaply produced reading material (e.g. songs, poems, stories, games, riddles, religious writings) that were available from the end of 17th century to the late 19th century (Fox, 2013). These chapbooks were designed to appeal to a wide readership and they often contained illustrations which provided contextual visual stimuli to the readers (Ross Roy, 1974). These illustrations often appeared in the title pages (Beavan, 2019). This paper describes the visual analysis of such chapbook illustrations. We automatically extract all the illustrations contained in 3000 chapbooks printed in Scotland and create a visual search engine to visually search this collection using full or part-illustrations as search query. We also group these illustrations based on their visual content, and provide keyword-based search of metadata associated with each publication. The visual search, grouping of illustrations based on visual content, and metadata search features enable researchers to forensically analyse the chapbooks dataset and to discover unnoticed relationships between its elements. We release all annotations and software tools described in this paper to enable reproduction of the results presented and to allow extension of the methodology described to datasets of a similar nature (Dutta </hi>
+                <hi rend="italic" style="font-family:Helvetica">et al.</hi>
+                <hi style="font-family:Helvetica" xml:space="preserve">, 2021). We also show how these tools are being used for analysis of other chapbook datasets (e.g. the Spanish Chapbooks) of similar nature. </hi>
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi style="font-family:Helvetica" xml:space="preserve">Ahnert, R., Ahnert, S., Coleman, C. N., Weingart, S. B. (2020), </hi>
+                        <hi rend="italic" style="font-family:Helvetica">The Network Turn: Changing Perspectives in the Humanities</hi>
+                        . Cambridge.
+                    </bibl>
+                    <bibl>
+                        Bahier-Porte, C. and F. Vial-Bonacci (
+                        <hi rend="apple-converted-space">2020)</hi>
+                        , «Le commerce de la librairie à la lumière de la correspondance – Marc Michel Rey, Pierre rousseau, Charles Weissenbruch, F. Tilkin
+                        <hi rend="italic" style="font-family:Helvetica" xml:space="preserve"> (dir.)</hi>
+                        »
+                        <hi rend="italic" style="font-family:Helvetica">Trois siècles d’histoire du livre et de la pensée à travers le Fonds Weissenbruch</hi>
+                        <hi rend="apple-converted-space"> - </hi>
+                        <hi rend="italic">Du Journal encyclopédique aux humanités numériques, </hi>
+                        <hi rend="apple-converted-space">Bruxelles, Archives générales du Royaume, coll. 
+                            <hi rend="italic" style="font-family:Helvetica">Studia</hi>, n°166, p. 205-222.
+                        </hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-family:Helvetica" xml:space="preserve">Baur, C., Wiestler, B., Albarqouni, S., and Navab, N. (2018), «Deep autoencoding models for unsupervised anomaly segmentation in brain MR images.» In </hi>
+                        <hi rend="italic" style="font-family:Helvetica">International MICCAI Brain Lesion Workshop</hi>
+                        , pp. 161-169. Springer, Cham.
+                    </bibl>
+                    <bibl>
+                        Beavan, I. (2019), ‘Lines of defence: thoughts on Scottish chapbook title-page woodcuts and their functions’.
+                        <hi rend="italic" style="font-family:Helvetica">Publishing History</hi>
+                        <hi style="font-family:Helvetica" xml:space="preserve"> 81, pp. 41–5.</hi>
+                    </bibl>
+                    <bibl>
+                        Bergel, G., Franklin, A., Heaney, M., Arandjelovic, R., Zisserman, A. and Funke, D. (2013), «Content-based image recognition on printed broadside ballads: The Bodleian Libraries' ImageMatch Tool» Proceedings of the IFLA World Library and Information Congress.
+                    </bibl>
+                    <bibl>
+                        Corsini, S. (1999), «La preuve par les fleurons?: analyse comparée du matériel ornemental des imprimeurs suisses romands: 1775-1785» Ferney-Voltaire, Centre international d’étude du XVIII
+                        <hi rend="superscript" style="font-family:Helvetica">e</hi>
+                        <hi style="font-family:Helvetica" xml:space="preserve">siècle. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-family:Helvetica" xml:space="preserve">Blayney, P. W. M. (2021), ‘The Flowers in the Muses Garland’. </hi>
+                        <hi rend="italic" style="font-family:Helvetica">The Library</hi>
+                        <hi style="font-family:Helvetica" xml:space="preserve"> 22.3, pp. 316–43.</hi>
+                    </bibl>
+                    <bibl>
+                        Dutta, A., Arandjelović, R., Zisserman, A. (2021) ‘VGG Image Search Engine’. Retrieved 8/12/21 from
+                        <ref target="https://www.robots.ox.ac.uk/~vgg/software/vise/">
+                            https://www.robots.ox.ac.uk/~vgg/software/vise/
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        Fox, A. (2013), ‘“Little Story Books” and “Small Pamphlets” in Edinburgh, 1680– 1760: The Making of the Scottish Chapbook’,
+                        <hi rend="italic" style="font-family:Helvetica">Scottish Historical Review</hi>
+                        <hi style="font-family:Helvetica" xml:space="preserve"> 92, pp. 207–230.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-family:Helvetica" xml:space="preserve">Gregg, S. H. (2020), </hi>
+                        <hi rend="italic" style="font-family:Helvetica">Old Books and Digital Publishing: Eighteenth-Century Collections Online</hi>
+                        . Cambridge.
+                    </bibl>
+                    <bibl>Künast, H. (1997),
+                        <hi rend="italic">Getruckt zu Augsburg: Buchdruck und Buchhandel in Augsburg zwischen1468 und 1555</hi>. Niemeyer, pp. 167–168.
+                    </bibl>
+                    <bibl>
+                        Levy, D. (2021), ‘Who printed Piquet for Francis Cogan?’
+                    </bibl>
+                    <bibl>
+                        <ref target="https://edmondhoyle.blogspot.com/2021/01/who-printed-piquet-for-francis-cogan.html">
+                            https://edmondhoyle.blogspot.com/2021/01/who-printed-piquet-for-francis-cogan.html
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-family:Helvetica" xml:space="preserve">Li, C. L., Sohn, K., Yoon, J., &amp; Pfister, T. (2021), «CutPaste: Self-Supervised Learning for Anomaly Detection and Localization» In </hi>
+                        <hi rend="italic" style="font-family:Helvetica">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</hi>
+                        , pp. 9664-9674.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-family:Helvetica" xml:space="preserve">Maslen, K. I. D. (2001), </hi>
+                        <hi rend="italic" style="font-family:Helvetica">Samuel Richardson of London, Printer</hi>
+                        <hi style="font-family:Helvetica" xml:space="preserve">. University of Otago Press. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-family:Helvetica" xml:space="preserve">May, J. E. (2019), ‘False and Incomplete Imprints in Swift’s Dublin, 1710–35’, in Bischof, Juhas &amp; Real (eds), </hi>
+                        <hi rend="italic" style="font-family:Helvetica">Reading Swift: Papers from the Seventh Münster Symposium on Jonathan Swift</hi>
+                        . Brill.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-family:Helvetica" xml:space="preserve">Orr, L. (2021), ‘From Methods to Conclusions: The Limits of the Knowable in Digital Book History’. </hi>
+                        <hi rend="italic" style="font-family:Helvetica" xml:space="preserve">Eighteenth Century Studies </hi>
+                        54.4, pp. 785–801.
+                    </bibl>
+                    <bibl>
+                        Ross Roy, G. (1974), ‘Some notes on Scottish chapbooks’,
+                        <hi rend="italic" style="font-family:Helvetica">Scottish Literary Journal</hi>
+                        <hi style="font-family:Helvetica" xml:space="preserve"> 1, pp. 50–60.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-family:Helvetica" xml:space="preserve">Thomas, D. (2021), </hi>
+                        <hi rend="italic" style="font-family:Helvetica">The Industry of Evangelism: Printing for the Reformation in Martin Luther’s Wittenberg</hi>
+                        . Brill.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-family:Helvetica" xml:space="preserve">Venkataramanan, S., Peng, K. C., Singh, R. V., &amp; Mahalanobis, A. (2020), «Attention guided anomaly localization in images» In </hi>
+                        <hi rend="italic" style="font-family:Helvetica">European Conference on Computer Vision</hi>
+                        , pp. 485-503. Springer, Cham.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-family:Helvetica" xml:space="preserve">Warren, C. N., Wiscomb, A., Williams, P., Lemley, S. V., G’Sell, M. (2021), ‘Canst Thou Draw Out </hi>
+                        <hi rend="italic" style="font-family:Helvetica">Leviathan</hi>
+                        <hi style="font-family:Helvetica" xml:space="preserve">with Computational Bibliography? New Angles on Printing Thomas Hobbes’ “Ornaments” Edition’. </hi>
+                        <hi rend="italic" style="font-family:Helvetica">Eighteenth-Century Studies</hi>
+                        <hi style="font-family:Helvetica" xml:space="preserve"> 54.4, pp. 827–59.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-family:Helvetica" xml:space="preserve">Wilkinson, H. (2013), «Printers’ Flowers as Evidence in the Identification of Unknown Printers: Two Examples from 1715» </hi>
+                        <hi rend="italic" style="font-family:Helvetica">The Library</hi>
+                        , 7th ser., 14, p. 70-79.
+                    </bibl>
+                    <bibl>
+                        Wilkinson, H
+                        <hi rend="apple-converted-space"> (</hi>
+                        2019),
+                        <hi rend="apple-converted-space"> ‘</hi>
+                        <hi rend="harvard_title">Printer's Ornaments and Flowers</hi>
+                        ’, in A Smyth &amp; D Duncan (eds),
+                        <hi rend="apple-converted-space"> </hi>
+                        <hi rend="italic">Book Parts.</hi>
+                        <hi rend="apple-converted-space"> </hi>
+                        Oxford University Press.
+                    </bibl>
+                    <bibl>
+                        Wilkinson, H, Briggs, J &amp; Gorissen, D. (2021), '
+                        <hi rend="harvard_title">Computer vision and the creation of a database of printers’ ornaments</hi>
+                        ',
+                        <hi rend="apple-converted-space"> </hi>
+                        <hi rend="italic">Digital Humanities Quarterly</hi>
+                        , vol. 15, no. 1.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

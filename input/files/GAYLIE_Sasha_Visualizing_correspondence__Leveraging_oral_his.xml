@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Visualizing correspondence: Leveraging oral history tools for textual collections</title>
+                <author>
+                    <persName>
+                        <surname>Ballin</surname>
+                        <forename>Mya Xiaoli</forename>
+                    </persName>
+                    <affiliation>University of British Columbia, Canada</affiliation>
+                    <email>mxballin@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gaylie</surname>
+                        <forename>Sasha</forename>
+                    </persName>
+                    <affiliation>University of British Columbia, Canada</affiliation>
+                    <email>alexandragaylie@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-18T19:28:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Visualization</term>
+                    <term>Exhibit design</term>
+                    <term>Public history</term>
+                    <term>Public humanities</term>
+                    <term>Archives</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>Interface design</term>
+                    <term>development</term>
+                    <term>and analysis</term>
+                    <term>manuscripts description</term>
+                    <term>representation</term>
+                    <term>and analysis</term>
+                    <term>Asian studies</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Digital exhibitions offer key opportunities for curators and digital humanities scholars alike to consider how individuals interact with and ingest information and how those experiences can be augmented, improved, and assisted through the development of interactive information visualization tools. Recent scholarship such as the work of Whitelaw (2015) and Kotch (2016) has found that digitized collections benefit from the creation of ‘generous’ interfaces that offer dynamic sorting and visualization. The interactivity of such an interface represents an exciting intersection of anticipation and reflexive response to the interests and needs of researchers. This responsive, participatory aspect of digital exhibitions is something that Miller (2019) argues is becoming the heart of the very nature of research collections and how we might best envision their purpose and use.</p>
+            <p style="text-align: left; ">In this presentation, we will provide a demonstration of how we have harnessed tools designed for digital curation of objects and oral histories to create a digital exhibit that explores an archival collection of letters. We will outline what we perceive to be the benefits of using these tools for this exhibit, with particular consideration being given to discussions in the digital humanities surrounding reading interfaces and textual visualization methods used in new and innovative manners. In addition to our successes, we will also address the challenges of adapting existing technologies to meet our exhibit concept, and offer suggestions for further advancement and future applications of the concept.</p>
+            <p style="text-align: left; ">This project provides an exciting case study in the use of digital humanities technologies to produce a dynamic alternative to static transcripts that serves multiple purposes and user categories by blending textual analysis, archival research, and public exhibition. The combination of tools used for this project work to create an alternative reading environment that engages with the purposes defined and promoted in the In-Out-In metaphor for reading proposed by Raposo et al. (2021), who suggest that “[i]nterfaces should be meaningfully navigated by interactors with very different levels of knowledge of the text – from the novice to the learner to the expert – and with distinct aims in mind, including leisure reading, study and analysis, advanced research, and literary creation.” It also demonstrates how digital exhibits can straddle the line between immediate and hypermediate experiences (for further discussion, see Estill and Levy, 2016) in a way that both recreates and subverts the experience of archival research and the exploration of archival materials.</p>
+            <p style="text-align: left; ">About the exhibit: </p>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="11.625791666666666cm" url="Pictures/e527cf0fa71a28a16711fb5c482e148a.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">“I Know We’ll Meet Again” is a virtual exhibit built with CollectionBuilder—an open source tool developed by the Centre for Digital Inquiry and Learning (CDIL) at the University of Idaho—that uses a GitHub-based workflow proposed by the tool creators (Williamson et al., 2021). The exhibit was created as part of a reflective, commemorative event planned by the University of British Columbia Library for the 80th anniversary of the forced displacement of Japanese Canadians during and following the events of World War II. The exhibition features a selection of letters from displaced Japanese Canadian youth detailing their deep homesickness and sense of isolation from their friends and communities, the new living and labour conditions they had to endure, their continued sense of Canadian identity even as the government labeled them “alien,” the bright spots they were able to find in their present conditions, and their imaginations for the future.</p>
+            <p style="text-align: left; ">The exhibit offers interpretive pages that emulate traditional exhibits as well as features native to CollectionBuilder, such as the ability for users to browse objects by item or author and to explore visualizations displaying associated date or location.</p>
+            <figure>
+                <graphic n="1002" width="16.002cm" height="10.163527777777778cm" url="Pictures/e72fccf73e10efd21fb8deec76242a9f.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Alongside these avenues of exploration, the project repurposes CDIL’s Oral History (as) Data tool to create another facet of visualization: filterable subject-indexed transcripts of the letters. In addition to creating an interactive reading space, using the tool in this fashion enables the exhibit to link modern understanding and discourse surrounding the forced removal of Japanese Canadians (different from its historical treatment) to the language and experiences captured within the letters.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Estill, L. and Levy, M.</hi> (2016). Evaluating digital remediations of women’s manuscripts. Digital Studies/Le Champ Numérique, 6(6). doi:10.16995/dscn.12 (accessed 8 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Kotch, S. </hi>(2016). Many Voices, One Experiment: Building Toward Generous Interfaces for Oral History Collections with Mapping the Long Women’s Movement. In White, J. W. and Gilbert, H. (eds), Laying the Foundation: Digital Humanities in Academic Libraries. Purdue University Press, pp. 73–92.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Miller, A.</hi> (2019). Data Visualization as Participatory Research: A Model for Digital Collections to Inspire User-Driven Research. Journal of Web Librarianship, 13(9): 127–55. doi:10.1080/19322909.2019.1586617 (accessed 8 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Raposo, J., Rito Silva, A. and Portela, M.</hi> (2021). LdoD Visual - A Visual Reader for Fernando Pessoa’s Book of Disquiet: An In-Out-In Metaphor. Digital Humanities Quarterly, 15(3). http://www.digitalhumanities.org/dhq/vol/15/3/000569/000569.html (accessed 8 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Whitelaw, M.</hi> (2016). Generous Interfaces for Digital Cultural Collections. Digital Humanities Quarterly, 9(1). http://www.digitalhumanities.org/dhq/vol/9/1/000205/000205.html (accessed 8 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Williamson, E. P., Wikle, O. M., Becker, D., Seiferle-Valencia, M., Doney, J. and Martinez, J. </hi>(2021). Using static web technologies and git-based workflows to re-design and maintain a library website (quickly) with non-technical staff. College &amp; Undergraduate Libraries, 28(2): 129–47. doi:10.1080/10691316.2021.1887036 (accessed 8 December 2021).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

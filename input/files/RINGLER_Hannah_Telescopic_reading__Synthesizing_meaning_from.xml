@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Telescopic reading: Synthesizing meaning from reading at different scales</title>
+                <author>
+                    <persName>
+                        <surname>Ringler</surname>
+                        <forename>Hannah</forename>
+                    </persName>
+                    <affiliation>Carnegie Mellon University, United States of America; Illinois Institute of Technology, United States of America</affiliation>
+                    <email>hringler@andrew.cmu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Argamon</surname>
+                        <forename>Shlomo</forename>
+                    </persName>
+                    <affiliation>Illinois Institute of Technology, United States of America</affiliation>
+                    <email>argamon@iit.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T14:12:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>distant reading</term>
+                    <term>close reading</term>
+                    <term>methodology</term>
+                    <term>interpretability</term>
+                    <term>quantitative text analysis</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>19th Century</term>
+                    <term>meta-criticism (reflections on digital humanities and humanities computing)</term>
+                    <term>text mining and analysis</term>
+                    <term>Humanities computing</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Historically, computational humanities work has conceptualized a divide between close and distant reading. The humanities have a long history of close, detailed reading of individual texts. In 2000 though, Moretti formalized the concept of “distant reading,” or looking at entire swaths of cultural or historical literatures without a focus on individual texts, which has become closely linked to corpus methodologies and has proven to be a useful framework for certain types of research questions. </p>
+            <p>Often though, close and distant reading can complement each other in the same analysis to open up a broader range of questions. Reading distantly, especially with computational tools, can reveal textual patterns that assist in developing and answering certain broader social-historical questions. To use these textual patterns to understand the texts themselves more deeply, though, we must turn back to individual texts to understand what the data mean. For example, in Grant et al.’s (2021) analysis of archival documents on global policies on refugees, they explain how the right to movement was a key part of arguments about Ugandan Asian resettlement, and suggest a historian should closely read these documents for a more in-depth interpretation. In this study and others like it, word lists of frequencies are only fruitfully transformed into interpretations by returning back to reading individual texts from the corpus. </p>
+            <p>But moving between distant and close reads of a corpus is both practically and theoretically difficult. When staring at a table or plot of word frequencies, where do you begin in trying to ascertain why certain words are common (or not) in a particular corpus and what that means for the corpus as a whole? Literary and rhetorical studies would remind us that there are many possible ways to interpret texts, and a “good” one is one that can be argued for well. The interpretive processes involved are not straightforward, neutral, or objective, even in distant reading, despite the seemingly-objective feel of data in computational work. But our interpretive processes for texts are largely based around reading one text at a time. How can we do this sort of reading with multiple texts or a whole corpus? In other words, how to fruitfully interpret computational data when it requires both close and distant reading, and how do we know it is done well? Several scholars have stressed the importance of iteration as part of the answer to this process (e.g., Rockwell and Sinclair, 2016; Guldi, 2018), but the practicalities of iterating with close and distant reading are complex and not straightforwardly combined into one cohesive, productive process.</p>
+            <p>In this project, we offer a methodological framework for interpreting computational models of texts, which we call multifocal reading. We sketch this framework, and illustrate it with a case study to demonstrate how to read strategically and in a well-justified way so as to gain deeper insight into corpora. In particular, we draw on past theoretical work on this problem of interpreting computational models of texts (Piper, 2015; Rockwell and Sinclair, 2016; Ringler, 2021) and move theory into practice by proposing a methodological framework in the form of a six-step process for interpreting models of corpora toward insight into the texts themselves. The steps are as follows: </p>
+            <list rend="numbered">
+                <item>Choose a body of texts </item>
+                <item>Create a widely-focused view</item>
+                <item>Form initial explanations </item>
+                <item>Narrow focus reading</item>
+                <item>Refine and synthesize explanations </item>
+                <item>Argue for your understanding </item>
+            </list>
+            <p>We focus on the development of hypotheses from computational results and demonstrate how traditional close and distant reading must be slightly modified into what we call wide focus and narrow focus reading, illustrating how narrow focus reading of specific texts can help the analyst probe and refine those hypotheses toward understandings that open up interpretive possibilities for large corpora. In other words, we argue that a text analytic hypothesis testing method does not close off interpretive possibilities by merely attempting to prove or disprove certain textual interpretations, but rather contributes to the exploration of new and complex interpretative possibilities. </p>
+            <p>As a demonstration of our framework, we start with Underwood and Sellers’ (2016) study on literary prestige. This study found that a logistic regression model distinguished prestigious from random 19th-century poetry with some accuracy and used this to talk about the “long arc of prestige” as imagined in literary history. We begin with their logistic regression model to ask, 
+                <hi rend="bold">what do we learn about prestigious 19th-century poetry?</hi> A detailed treatment of this question was outside of the scope of the original study, but the study itself allows the question to be asked. 
+            </p>
+            <p>We use the logistic regression model, with past research on Victorian poetry, to develop initial hypotheses about prestige in poetry. We then probe these hypotheses through strategic high resolution reading, using theories of pathos and affect to guide our analysis. We consider these readings strategic in that we carefully choose sets of texts to read ranking high, medium, and low on various model features to systematically probe aspects of our hypotheses. Through this process, we find that not only is prestigious poetry more negative in tone (the result of the original study), but that prestigious poetry overall tends to focus more on creating a mood or feeling through the text, which is often dark, mysterious, and haunting. This finding expands theoretical understandings of Victorian poetry, as well as provides new insights and questions on how particular literary effects were achieved through recurring and specific linguistic forms. </p>
+            <p style="text-align: left; ">Ultimately, this project offers a new way forward in interpreting computational data in the humanities, demonstrating how we can gain defensible, robust insights into corpora of texts through strategic reading in a way that opens up (rather than closes off) interpretive insights. By theorizing these interpretive processes, we hope to move towards addressing the perpetual “so what” and “we can’t read it all” issues of distant reading; and by making these processes explicit, we hope to further clarify sometimes-opaque text analytic methods to make them more accessible to a diverse range of scholars.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Grant, P., Sebastian, R., Allassonnière-Tang, M., &amp; Cosemans, S. </hi>(2021). Topic modelling on archive documents from the 1970s: global policies on refugees. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 36(4): 886-904. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Guldi, J.</hi> (2018). Critical search: A procedure for guided reading in large-scale textual corpora. 
+                        <hi rend="italic">Journal of Cultural Analytics</hi>, 3(1).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Moretti, F. </hi>(2000). Conjectures on world literature. 
+                        <hi rend="italic">New Left Review</hi>, 1: 54-69.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Piper, A.</hi> (2015). Novel devotions: Conversional reading, computational modeling, and the modern novel. 
+                        <hi rend="italic">New Literary History</hi>, 46(1): 63-98.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ringler, H.</hi> (2021). ‘We can’t read it all’: Theorizing a hermeneutics for large-scale data in the humanities. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rockwell, G., and Sinclair, S.</hi> (2016). 
+                        <hi rend="italic">Hermeneutica: Computer-Assisted Interpretation in the Humanities.</hi> Cambridge: The MIT Press. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Underwood, T., &amp; Sellers, J.</hi> (2016). The Longue Duree of Literary Prestige. 
+                        <hi rend="italic">Modern Language Quarterly</hi>, 77(3): 321-344. 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TikTok Cover Dances as Folkloric Practice: Pose Estimation and the Study of Variation in K-Pop Choreography across Short-Form Social Media Videos</title>
+                <author>
+                    <persName>
+                        <surname>Broadwell</surname>
+                        <forename>Peter</forename>
+                    </persName>
+                    <affiliation>Stanford University, United States of America</affiliation>
+                    <email>broadwell@stanford.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tangherlini</surname>
+                        <forename>Timothy R.</forename>
+                    </persName>
+                    <affiliation>University of California, Berkeley, United States of America</affiliation>
+                    <email>tango@berkeley.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>choreography</term>
+                    <term>TikTok</term>
+                    <term>pose estimation</term>
+                    <term>digital folklore</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>social media analysis and methods</term>
+                    <term>Ethnography and folklore</term>
+                    <term>Performance Studies: Dance</term>
+                    <term>Theatre</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left;">The sharing of short-form videos on social media platforms (TikTok, Instagram and Facebook stories, YouTube Shorts), which grew rapidly in popularity as personal interactions moved online during the COVID-19 pandemic, provides a new opportunity for individual Internet users to participate in the already vibrant, global online culture surrounding the choreographic aspects of South Korean “idol” (solo or group singer-dancer) K-pop. In addition to the formal dance videos that accompany the release of most new songs and music videos, any Internet user with a smartphone now can record, edit and post their own performance of a brief portion (typically 15-60 seconds) of the song’s choreography, accompanied by a publisher-approved snippet of the music. These cover dances usually are centered upon the chorus sections of the songs, which feature the most recognizable choreography and music, and often are prompted by semi-official social media “dance challenge” campaigns. Cover dances that prove popular on a given platform may garner enormous numbers of views, shares, likes/upvotes, comments and new followers (subscribers) for their posters; such recordings also may be included in long-form “highlight reel” compilation videos, which serve as unofficial archives of these otherwise ephemeral posts.</p>
+            <p style="text-align: left;">
+                The posting, sharing, and cross-influencing of short-form social media cover dances fits the accepted definition of folklore, digital and otherwise: informal cultural expressive forms circulating over time on and across social networks. Whether the creation and sharing of these videos is motivated by a simple wish to contribute to a perceived community and tradition, or by competition, or by desire for the emotional and monetary spoils of the online attention economy (or some combination of these motivations), the folkloristic frame provides illuminating perspectives on this phenomenon. It contextualizes the short-form cover dances and the choreography in the official videos as bound together in the core dialectic of the folkloric process: the relationship between informal repetitions/renditions enacted by the individual vs. the “tradition,” here represented by the indexical demonstration video, but also—and importantly—by the growing number of other individual dancers presenting their own variants of the indexical dance. The degree and manner by which the informal cover dance versions deviate from the indexical form and from each other, such as by incorporating the personal preferences of individual participants or even significant elements of other tradition groups (e.g., other dance styles) highlights how the milieu of globalized K-pop cover dances enacts this central dynamic of the folkloric process.
+            </p>
+            <figure>
+                <graphic n="1001" width="15.004813888888888cm" height="22.50722222222222cm" url="Pictures/5689f31ff49e1594637c91b6807c7c89.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left;">
+                <hi rend="bold" style="font-size:10pt">Figure 1.</hi>
+                <hi style="font-size:10pt" xml:space="preserve"> Pose similarities of 15 short cover dances on TikTok to the original choreography (keypose heatmap on line 1) of BTS’s “Permission to Dance”</hi>
+            </p>
+            <p style="text-align: left;">Neural deep learning-based image processing models that can locate with sufficient accuracy the individual appendages of human poses enable analyses of the interrelationships of dance cover videos at a representative scale. Running such pose estimation tools on dance videos enables both “distant viewing” studies that combine observations from more videos than human observers could reasonably view and annotate, and also “close viewing” analyses that incorporate subtle details of position and motion that would be indiscernible to observers in real time.</p>
+            <p style="text-align: left;">
+                For this study, we identified a set of recent high-profile K-pop dance challenges; for each, we ran a pose estimation model optimized for single-figure videos from smartphone cameras, which can interpolate the positions of obscured appendages, on a dozen or so short-form cover dance videos from TikTok as well as on a full-length instructional video demonstrating the song’s complete choreography. The model estimates the two-dimensional coordinates of the 17 standard pose keypoints for each frame of a video, which we normalized within a unit space (L2-norm) to cancel out differences in camera distance and body size. We also augmented each pose with the positions of its 17 keypoints flipped across the horizontal axis so that dances presenting the mirror-image of the choreography—a common occurrence in dance videos—are scored as similar. The similarity between two poses was quantified as the cosine similarity of their normalized keypoint vectors.
+            </p>
+            <p style="text-align: left;">
+                Because short-form dance covers for a given song use verbatim excerpts of the music, they can be aligned accurately to the long-form dance demonstration video and to each other by sliding the audio frequency spectrum values of the shorter video across the longer and finding the alignment with the highest cross-correlation score. We then compared the dance poses of the aligned sections by calculating the cosine similarity between any two poses that occurred at the same point in the music. The resulting time series of pose similarity scores enabled us to identify the sections of the original choreography and music that were most commonly “covered” on TikTok, and to detect portions of overlapping choreography that exhibited comparatively greater or lower similarity. Constructing an average of the poses across all covers of a given section also facilitated study of how individual covers (as well as the demonstration video) compare to this emergent consensus form.
+            </p>
+            <figure>
+                <graphic n="1002" width="16.002cm" height="24.003cm" url="Pictures/e0f6d1d62815c2b27f7d13fdb7776aff.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left;">
+                <hi rend="bold" style="font-size:10pt">Figure 2.</hi>
+                <hi style="font-size:10pt" xml:space="preserve"> Plots as in Figure 1 for the dance demonstration video and 16 short cover dances from TikTok for TWICE’s “I Can’t Stop Me”</hi>
+            </p>
+            <p style="text-align: left;">
+                Our analytical results (Figures 1 and 2) revealed that most individuated deviations from the indexical and consensus choreography tended to occur at the beginnings and especially the endings of the cover dances, as well as during the most dynamic dance moves (jumping, crouching). Comparing the latter cases to the pose estimation confidence levels indicates that these are not just artifacts of the model “losing track” of keypoints during such moves, but rather, the disruptive nature of the move seems to give the dancers license to deviate from the norm. Similarly, having already established their mimetic proficiency in the earlier sections of a cover dance, performers appear to feel more freedom to introduce personalized variations in the closing portion.
+            </p>
+            <p style="text-align: left;">From the perspective of folkloristics, this work is a major contribution: we can interrogate the processes of individual creativity, group predilections, regional variations and the conservative nature of tradition all at once, thus instantiating a macroscopic potential for the study of popular, informal, yet culturally expressive dance at many scales of analysis.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Abidin, C.</hi> (2020). Mapping Internet Celebrity on TikTok: Exploring Attention Economies and Visibility Labours. 
+                        <hi rend="italic" xml:space="preserve">Cultural Science Journal </hi>12(1): 77-103.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Boffone, T.</hi> (2021). 
+                        <hi rend="italic">Renegades: Digital Dance Cultures from Dubsmash to TikTok</hi>. Oxford University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Broadwell, P. and Tangherlini, T.</hi> (2021). Comparative K-Pop Choreography Analysis through Deep-Learning Pose Estimation across a Large Video Corpus. 
+                        <hi rend="italic">Digital Humanities Quarterly</hi> 15(1). 
+                        <ref target="http://digitalhumanities.org/dhq/vol/15/1/000506/000506.html">
+                            <hi rend="color(1155CC)">http://digitalhumanities.org/dhq/vol/15/1/000506/000506.html</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Marshall, W.</hi> (2019). Social Dance in the Age of (Anti-)Social Media: Fortnite, Online Video, and the Jook at a Virtual Crossroads. 
+                        <hi rend="italic">Journal of Popular Music Studies</hi> 31(4): 3-15.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schellewald, A.</hi> (2021). Communicative Forms on TikTok: Perspectives from Digital Ethnography. 
+                        <hi rend="italic">International Journal of Communication</hi> 21. 
+                        <ref target="https://ijoc.org/index.php/ijoc/article/view/16414">
+                            <hi rend="color(1155CC)">https://ijoc.org/index.php/ijoc/article/view/16414</hi>
+                        </ref>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <lb/>
+                        <hi rend="bold" style="font-size:12pt">Zulli, D. and Zulli, D.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2020). Extending the Internet Meme: Conceptualizing Technological Mimesis and Imitation Publics on the TikTok Platform. </hi>
+                        <hi rend="italic" style="font-size:12pt">New Media and Society</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. </hi>
+                        <ref target="https://doi.org/10.1177/1461444820983603">
+                            <hi rend="color(1155CC)" style="font-size:12pt">https://doi.org/10.1177/1461444820983603</hi>
+                        </ref>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">A picture is worth a thousand words: Image analysis for the Digital Humanities</title>
+                    <title type="sub">https://tutorial.thousandwords.art</title>
+                </title>
+                <author>
+                    <persName>
+                        <surname>James</surname>
+                        <forename>Stuart</forename>
+                    </persName>
+                    <affiliation>Pattern Analysis and Computer Vision (PAVIS), Istituto Italiano di Tecnologia, Italy</affiliation>
+                    <email>stuart.james@iit.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Aubry</surname>
+                        <forename>Mathieu</forename>
+                    </persName>
+                    <affiliation>LIGM (UMR 8049), École des Ponts ParisTech, France</affiliation>
+                    <email>mathieu.aubry@enpc.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>van Noord</surname>
+                        <forename>Nanne</forename>
+                    </persName>
+                    <affiliation>Multimedia Analytics Lab (MultiX), University of Amsterdam, Netherlands</affiliation>
+                    <email>n.j.e.vannoord@uva.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Garcia</surname>
+                        <forename>Noa</forename>
+                    </persName>
+                    <affiliation>Institute for Datability Science (IDS), Osaka University, Japan</affiliation>
+                    <email>noagarcia@ids.osaka-u.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Impett</surname>
+                        <forename>Leonardo</forename>
+                    </persName>
+                    <affiliation>Cambridge Digital Humanities (CDH), University of Cambridge, UK</affiliation>
+                    <email>li222@cam.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Computer Vision</term>
+                    <term>Image Retrieval</term>
+                    <term>Image Analysis</term>
+                    <term>Cultural Studies</term>
+                    <term>Visual Humanities</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>image processing and analysis</term>
+                    <term>Computer science</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">In this tutorial, we look at Computer Vision (CV) approaches developed to investigate Digital Humanities (DH) data and, more specifically, fine-art and cultural heritage. We will explain what approaches can achieve, how to train and use with a basic understanding of python to be applied to different types of visual data. By breaking down the tutorial into five parts (one per presenter), the tutorial will provide an overview of the research within CV and its current and future application within DH. We additionally attempt to provide some reflections on the use of Asian data and the limitations or challenges. While considering the current extensive narrative within the CV research community on bias in datasets and collections.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Tutorial Content</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Part 1: Retrieval and Knowledge Graphs </head>
+                    <p style="text-align: left; ">The use of CV for distant reading in image collections are generally within the setting of retrieval — searching via an example within a collection. To do this, a computational description of the image needs to generate to be then able to compare one image to another. How such a representation is learned is important to provide a powerful retrieval system. While using pre-trained approaches such as neural networks are useful, they fail to bridge the visual difference between photo-realistic images and common art or humanities image collections. In this part, we explore how anyone can train a neural network representation that is specific to their dataset with varying degrees of supervision, and specifically exploiting supervision that can be provided through Knowledge Graphs (or Semantic Web) to enhance the differential power of the representations.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Part 2: Content-based analysis </head>
+                    <p style="text-align: left; ">Most Deep Learning image techniques rely on annotated collections. While these might be available for some well-studied types of documents, they cannot be expected for more specialized studies or sources. Instead, one would have to rely on techniques that do not require training data. This part will discuss several such techniques to establish links between artworks and historical documents, including the use of generic local features, synthetic data, self-supervised learning, and object discovery techniques. In addition, this will include examples of applications for repeated patterns discovery in artwork collections, fine artwork alignment, document images segmentation, historical watermarks recognition, scientific illustration propagation analysis, and unsupervised Optical Character Recognition. In all cases, it will be shown that standard approaches can give useful baseline results when tuned adequately, but that developing dedicated approaches that take into account the specificity of the data and the problem significantly improves the results.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Part 3: Multi-Task Learning</head>
+                    <p style="text-align: left; ">Multi-Task Learning (MTL) is an increasingly prominent paradigm in CV and in Artificial Intelligence in general. It centers around the ability to perform multiple tasks based on a single input. For instance, it is possible to predict for a single image of an artwork when it was made by who and using what materials. Jointly performing these tasks involves specific modeling choices, resulting in clear benefits (robustness, improved performance), but it also has potential downsides (negative interference, increased complexity). In this part, we show when and how we might want to apply MTL, through a number of use cases, as well as an overview of the technical underpinnings. In addition, highlight the possibilities MTL provides for interpretability by shedding light on relations between tasks.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Part 4: Automatic interpretation</head>
+                    <p style="text-align: left; ">In CV, visual arts are often studied from an aesthetics perspective, mainly by analyzing the visual appearance of an art reproduction to infer its attributes (author, year of creation, theme, etc.), its representative elements (objects, people, locations, etc.), or to transfer the style across different images. However, understanding an artistic representation involves mastering complex comprehension processes, such as identifying the socio-political context of the artwork or recognizing the artist's main influences. In this part, we will explore fine-art paintings from both a visual and a language perspective. The aim is to bridge the gap between the visual appearance of an artwork and its underlying meaning by jointly analyzing its aesthetics and semantics. We will explore multimodal techniques for interpreting artworks, and we will show how CV approaches can learn to automatically generate descriptions for fine-art paintings in natural language.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Part 5: Using Computer Vision within humanities research</head>
+                    <p style="text-align: left; ">Most models in CV research are built to solve specific problems with measurable outcomes (often tied to a set of reference datasets): pixelwise segmentation, object detection, image captioning, keypoint detection, etc. With many open-source computer vision models for each kind of task, we have a wide horizon of powerful tools at our disposal: yet most of them don’t easily fit with research questions in art history, visual culture studies, or the visual humanities more generally. </p>
+                    <p style="text-align: left; ">By dissecting a series of previous projects in this area, this part will look at how researchers have negotiated these connections, including complex and difficult questions of bias, interpretability, and the epistemology of computational results within the humanities (and especially within cultural history). We will look at several methodological modes compatible with the affordances of CV, including image replication, computational iconography, and the study of visual phenomena captured through notational systems. </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Tutorial presenters’ brief bios</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Stuart James, Istituto Italiano di Tecnologia (IIT) &amp; UCL DH</head>
+                    <p style="text-align: left; ">Researcher (Assistant Professor) in Computer Vision at the Istituto Italiano di Tecnologia (IIT). Stuart's research focus is on Visual Reasoning to understand the layout of visual content from Iconography (e.g. Sketches) to 3D Scene understanding. He is a PI on the MEMEX RIA EU H2020 project and Co-PI on the RePAIR EU FET H2020. Stuart has previously held PostDoc positions at IIT, University College London (UCL) and the University of Surrey. Also, at Surrey, Stuart was awarded his PhD in visual information retrieval using sketches. Stuart continues to hold an honorary position at UCL and UCL Digital Humanities.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Mathieu Aubry, École des Ponts ParisTech</head>
+                    <p style="text-align: left; ">Mathieu Aubry is a tenured researcher in the Imagine team of Ecole des Ponts, focussing on Computer Vision and Digital Humanities. He obtained his PhD from ENS in 2015 and his Habilitation (HDR) in 2019. He had a leading role in several digital humanity projects such as the Young Researcher EnHerit ANR project on enhancing heritage image databases. He was a keynote speaker in several venues, including most recently the ACM Multimedia 2021 workshop on Structuring and Understanding of Multimedia heritAge Contents (SUMAC). He is an associated editor for CVIU and was an area chair at numerous CV conferences.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Nanne van Noord, University of Amsterdam</head>
+                    <p style="text-align: left; ">Nanne van Noord is Assistant Professor in the Multimedia Analytics Lab of the University of Amsterdam. His research is focused on the intersection of multimedia analysis and visual culture. He did his PhD at Tilburg University on modeling the artist's style for recognition and reproduction, as part of the NWO Science4arts project Reassessing Vincent van Gogh. He previously worked in The Sensory Moving Image Archive (SEMIA) project, and coordinated the Computer Vision taskforce in the national infrastructure project CLARIAH.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Noa Garcia, Osaka University</head>
+                    <p style="text-align: left; ">Noa Garcia is an Assistant Professor at the Institute for Datability Science at Osaka University. Her research interests lay at the intersection of computer vision, natural language processing, and art. She has been involved in multiple projects related to computer vision for art, with a special focus on language description and interpretation. She moved to Japan in 2018, after completing her Ph.D. in Computer Science at Aston University, United Kingdom.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Leonardo Impett, University of Cambridge</head>
+                    <p style="text-align: left; ">Leonardo Impett is an Assistant Professor of Digital Humanities at the University of Cambridge. His main work has to do with computer vision for the "distant reading" of art history (CS applied to the humanities), and visual studies as a route to understanding computer vision (the humanities applied to CS). He was previously based at Durham University, Harvard University, the Max Planck Institute for Art History, and EPFL.</p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Schedule</head>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="9.70138888888889cm" url="Pictures/888eda173397b831951f90e26b35caaf.png" rend="inline"/>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Acknowledgement</head>
+                <p style="text-align: left; ">This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 870743</p>
+            </div>
+        </body>
+    </text>
+</TEI>

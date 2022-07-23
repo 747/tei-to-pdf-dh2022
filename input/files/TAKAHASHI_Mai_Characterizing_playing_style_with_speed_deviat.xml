@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Characterizing playing style with speed deviation</title>
+                <author>
+                    <persName>
+                        <surname>Takahashi</surname>
+                        <forename>Mai</forename>
+                    </persName>
+                    <affiliation>The University of Tokyo, Japan</affiliation>
+                    <email>klangvoll@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kobayashi</surname>
+                        <forename>Michikazu</forename>
+                    </persName>
+                    <affiliation>Kochi University of Technology, Japan</affiliation>
+                    <email>kobayashi.michikazu@kochi-tech.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ohmukai</surname>
+                        <forename>Ikki</forename>
+                    </persName>
+                    <affiliation>The University of Tokyo, Japan</affiliation>
+                    <email>i2k@l.u-tokyo.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-23T02:05:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>performance practice</term>
+                    <term>analysis of recorded music</term>
+                    <term>speed analysis</term>
+                    <term>performance style</term>
+                    <term>rhetorical performance</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>cultural analytics</term>
+                    <term>music and sound digitization</term>
+                    <term>encoding</term>
+                    <term>and analysis</term>
+                    <term>Musicology</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Introduction</p>
+            <p>Recent performance researches have utilized computer software for analyzing recordings. Cock classified them as Distant Listening and Close Listening (Cook, 2014). To validate a transition of the performance style over a long span, Distant Listening tries to visualize quantitative commonalities and differences in a large number of recordings.</p>
+            <p>Past analyses of recordings have revealed that the performance style had changed around the 1920s. To distinguish performance styles before and after 1920s, the performance style before 1920s is often called “rhetorical performance” (Cook, 2014; Philip, 2004; Watanabe, 2001). Watanabe defined “rhetorical performance” as the performance style with drastic changes of the playing speed and oscillating rhythm (Watanabe, 2001). However, there is less objective and reproducible method established for analyzing such a change of the performance style and no decisive conclusion about it. In this work, by regarding performances as data, we try to reconstruct the performance theory cultivated in the past musicology based on the formal structure of performances. To do this, we propose a new objective method based on Distant Listening and discuss a change of the performance style from 1910s to now.</p>
+            <p>Target in analysis</p>
+            <p>We here focus on keyboard works by J. S. Bach; fugue part of 
+                <hi rend="italic">Chromatic Fantasy and Fugue</hi> (BWV903), and prelude and fugue parts of 
+                <hi rend="italic">The Well-Tempered Clavier</hi>, Vol. 1, No. 1 (BWV846). We analyze 82 types of recordings from 1910s to 2010s with various formats that has been historically changed. We pick up “playing speed” as a present analysis that hardly depends on kinds of recording format and instrument, recording environments. 
+            </p>
+            <p>Methods of analysis</p>
+            <p>Most of past works have analyzed a part of the whole recording (Cook, 2014; Leech-Wilkinson, 2015; Zhou, 2019). However, excerpting a part from the whole recording can cause an arbitrary conclusion and makes quantitative comparison among different recordings quite difficult. We here propose the method for quantitative analysis.</p>
+            <p>When analyzing recordings, as well as Cook, Leech-Wilkinson, and Zhou and Fabian, we use Sonic Visualiser developed by Centre for Digital Music at Queen Mary, University of London. We first open the recorded data (wav format), then make a beat data through Sonic Visualiser. We next calculate the performing speed at each beat by obtaining the time between one beat and the next beat. We finally calculate the speed deviation as an index of global change of the performing speed. The speed deviation is defined as the variation coefficient which is the standard deviation of the speed normalized by the average, enabling quantitative comparisons among different recordings. We calculate the speed deviation for all recordings for three works, and visualize the change of performance style.</p>
+            <p>Results</p>
+            <p>Figure 1 shows speed deviations for fugue part of 
+                <hi rend="italic">Chromatic Fantasy and Fugue</hi>. Recordings denoted by blue circles have very large speed deviations and we can conclude them as ``rhetorical performance'' in nineteenth century. Recordings denoted by green circles also have large speed deviations and we define them as ``quasi-rhetorical performance''. On the contrary, recordings denoted by red colors have very small speed deviations and we define them as ``anti-rhetorical performance''.
+            </p>
+            <p>Figure 2 shows speed deviations for prelude part of 
+                <hi rend="italic">The Well-Tempered Clavier</hi>, Vol. 1, No. 1. We can see several recordings in 2000s regarded as “rhetorical performance”.
+            </p>
+            <p>Figure 3 shows speed deviations for fugue part of 
+                <hi rend="italic">The Well-Tempered Clavier</hi>, Vol. 1, No. 1.
+            </p>
+            <p>What are commonly seen in above three works are as follows. Firstly, there existed “rhetorical performance” having large speed deviations before 1920s, which is consistent with previous researches (Watanabe, 2001; Leech-Wilkinson, 2015). “Interpretive editions” published before early twenty century (Bach, 1863; Bach, 1894) also have additional descriptions by editors regarded as “rhetorical performance”. Secondly, there are many recordings with “quasi-rhetorical performance” and is no recording with “anti-rhetorical performance” from 1930 to 1950. Thirdly, on the other hand, the number of recordings with “quasi-rhetorical performance” or “anti-rhetorical performance” decreases or increases, respectively. Finally, recordings with “rhetorical performance” and “quasi-rhetorical performance” appear again in 2000s.</p>
+            <p>Conclusion</p>
+            <p>For three works analyzed in this paper, “rhetorical performance” was the main performance style before 1920s, and its vestige remained from 1930s to 1950s. From 1960s to 1990s, “rhetorical performance” declines once, and after 2000s, it has been appeared again. We can obtain this conclusion with objective and reproducible method, discussing a change of the performance style after 1930s. One of important conclusions is that characteristics of rhetorical performance with the large speed deviation has been remaining since 2000s. As a possible reason, we can assume that people have been able to share and easily get past recordings over the internet. Further researches are needed to certify this assumption for recordings not only of Bach but also other composers.</p>
+            <figure>
+                <graphic n="1001" width="15.968486111111112cm" height="8.242652777777778cm" url="Pictures/5ebe1e1ae64558f10931989480751649.png" rend="inline"/>
+                <head>Speed deviations for fugue part of 
+                    <hi rend="italic">Chromatic Fantasy and Fugue</hi>. Vertical and horizontal axes show the speed deviation and the recorded years, respectively. The number for each plot corresponds to the performer shown in Table 1. Circle, square, x, and plus symbols correspond to piano, piano-roll, cembalo, and clavichord, respectively. Horizontal solid blue and dashed blue lines show the mean value and the deviation from the mean value (standard deviation) of all speed deviations, respectively. All recordings with speed deviations large than the upper dashed blue line are denoted by blue circles. Solid green and dashed green lines show the mean value and deviation from the mean value of all speed deviations except for recordings with blue circles
+                </head>
+            </figure>
+            <figure>
+                <graphic n="1002" width="15.98788888888889cm" height="7.8845833333333335cm" url="Pictures/3b39ba84924679feec3f0aa8f9070ee1.png" rend="inline"/>
+                <head>Speed deviations for prelude part of 
+                    <hi rend="italic">The Well-Tempered Clavier</hi>, Vol. 1, No. 1
+                </head>
+            </figure>
+            <figure>
+                <graphic n="1003" width="15.968486111111112cm" height="8.242652777777778cm" url="Pictures/f5c8cf45218cfe20be14056d2377d166.png" rend="inline"/>
+                <head>Speed deviations for fugue part of 
+                    <hi rend="italic">The Well-Tempered Clavier</hi>, Vol. 1, No. 1
+                </head>
+            </figure>
+            <p>Table 1. Details of recordings used in this paper</p>
+            <figure>
+                <graphic n="1004" width="15.989652777777778cm" height="23.08577777777778cm" url="Pictures/d86ebbbe26dfe3bee61aea68ca6feda4.png" rend="inline"/>
+            </figure>
+            <p>Cook, N. (2014). Beyond the Score: Oxford University Press.</p>
+            <p>Philip, R. (2004). Performing Music in the Age of Recording: Yale University Press.</p>
+            <p>Watanabe, H. (2001). Preface to Performance History (Japanese): Shunju.</p>
+            <p>Leech-Wilkinson, D. (2015). Cortot's Berceuse. Music Analysis, 34 (3): pp. 335-363.</p>
+            <p>Zhou, D. Q. and Fabian, D. (2019). A Three-Dimensional Model for Evaluating Individual Differences in Tempo and Tempo Variation in Musical Performance: Musicae Scientiae. doi: https://doi.org/10.1177/1029864919873124.</p>
+            <p>Bach, J. S. (1863). Ausgabe Hans von Bülow. Chromatische Phantasie: Ed. Bote &amp; G. Bock.</p>
+            <p>Bach, J. S. (1894). Das wohltemperierte Klavier von Ferruccio Busoni: Breitkopf &amp; Härtel.</p>
+        </body>
+    </text>
+</TEI>

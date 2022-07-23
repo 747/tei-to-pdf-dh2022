@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Fiction, Data: Distant Reading of the Hebrew Novel</title>
+                <author>
+                    <persName>
+                        <surname>Dekel</surname>
+                        <forename>Yael</forename>
+                    </persName>
+                    <affiliation>Ben Gurion University, Israel</affiliation>
+                    <email>yaelde@bgu.ac.il</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-26T13:36:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>distant reading</term>
+                    <term>database</term>
+                    <term>computational literary studies</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>bibliographic analysis</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>Cultural studies</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                This proposed poster is dedicated to my ongoing project “
+                <hi rend="italic" style="font-family:David;font-size:12pt" xml:space="preserve">Roman Mafte’ach: </hi>
+                <hi style="font-family:David;font-size:12pt" xml:space="preserve">Distant Reading in the Hebrew Novel”, which constitutes applied research in Hebrew literature and digital humanities, ultimately aiming to create a comprehensive, up-to-date database of the Hebrew novel. My project approaches the Hebrew novel from a bird’s eye view, along the lines of the literary-historical approach advanced by Franco Moretti as “distant reading” (Moretti, 2000), balanced carefully with more traditional hermeneutic approaches, as conceptually described by Jan Christoph Meister (2014). </hi>
+            </p>
+            <p>
+                <hi style="font-family:David;font-size:12pt" xml:space="preserve">The scope of this project is as broad as the scope of the Hebrew novel, as I collect data on every novel originally published in Hebrew, venturing out beyond the canon, and attempting to cover “the great unread” (Margaret Cohen, 1999). </hi>
+                <hi rend="italic" style="font-family:David;font-size:12pt">Roman Mafte’ach</hi>
+                <hi style="font-family:David;font-size:12pt" xml:space="preserve">, therefore, extends from Avraham Mapu’s </hi>
+                <hi rend="italic" style="font-family:David;font-size:12pt">Ahavat Zion</hi>
+                <hi style="font-family:David;font-size:12pt" xml:space="preserve"> (1853) which is considered the first Hebrew novel, to the present, and includes the latest Hebrew novels published today, in Israel and elsewhere. As Marienberg-Milikowsky has pointed out, “From a purely quantitative standpoint, Hebrew (prose) literature consists of a relatively small corpus.” This offers an advantage, allowing for the back-and-forth movement between distant and close reading, between personal literary interpretation and collective, quantitative analysis (Marienberg-Milikowsky, 2019). </hi>
+            </p>
+            <p>
+                <hi style="font-family:David;font-size:12pt" xml:space="preserve">The backbone of </hi>
+                <hi rend="italic" style="font-family:David;font-size:12pt">Roman Mafte’ach</hi>
+                <hi style="font-family:David;font-size:12pt" xml:space="preserve"> is a platform for providing computer-aided analysis of the Hebrew novel, based on two complementary yet independent steps (both will be presented in the poster): </hi>
+            </p>
+            <list rend="numbered">
+                <item>
+                    An inventory of all the titles and authors of the Hebrew novel, from
+                    <hi rend="italic" style="font-family:David;font-size:12pt" xml:space="preserve">Ahavat Zion </hi>
+                    <hi style="font-family:David;font-size:12pt" xml:space="preserve">to the present day. With the support and assistance of staff from the National Library, I compiled an initial inventory of the Hebrew novel, carefully sifting through it until it now consists of roughly 8,500 titles. It is important to stress that the list includes data that does not exist elsewhere. This is because, up until my research, the Hebrew novel was not seen as a distinct category in library catalogues and databases. The importance of this list is twofold: first, the inventory itself is a source of data (mainly of bibliographical nature: titles, authors, year of publication, publishing house, number of pages). Thus, it answers several of the main questions that I posed when initiating the project – the most crucial one being: How many titles make up the sphere of the Hebrew novel? Second, the list is valuable for validating, as well as anchoring, some of the data I collect using questionnaires. </hi>
+                </item>
+                <item>
+                    <hi style="font-family:David;font-size:12pt" xml:space="preserve">Individual responses to questionnaires I deliver to different readers, both professional and non-professional. The questionnaire is designed to collect data in several main categories, using multiple-choice questions, linear scales, and a few short-answer questions which allow for more personal and interpretive responses. The categories of the questionnaire are: </hi>
+                    <hi rend="bold" style="font-family:David;font-size:12pt">Bibliography</hi>
+                    <hi style="font-family:David;font-size:12pt" xml:space="preserve"> (name of author, title, year of publication, publishing house, editor, number of pages);</hi>
+                    <hi rend="bold" style="font-family:David;font-size:12pt">Structure</hi>
+                    <hi style="font-family:David;font-size:12pt" xml:space="preserve"> (Sub-genre; graphic components; sub-structure of the novel; chapter length);</hi>
+                    <hi rend="bold" style="font-family:David;font-size:12pt">Narratological aspects</hi>
+                    <hi style="font-family:David;font-size:12pt" xml:space="preserve"> (type of narrator, key-events, pacing of narrative, types of exposition and closure); </hi>
+                    <hi rend="bold" style="font-family:David;font-size:12pt">Language</hi>
+                    <hi style="font-family:David;font-size:12pt" xml:space="preserve"> (grammatical tense, linguistic register, other languages used in the novel, inter-textuality);</hi>
+                    <hi rend="bold" style="font-family:David;font-size:12pt">Time and space</hi>
+                    <hi style="font-family:David;font-size:12pt" xml:space="preserve"> (temporal scope of the novel, main historical epoch, main space, main geographical area); </hi>
+                    <hi rend="bold" style="font-family:David;font-size:12pt">Themes</hi>
+                    <hi style="font-family:David;font-size:12pt" xml:space="preserve"> (this part includes multiple choice questions about many themes addressed by the Hebrew novel, e.g., love, family, childhood, marriage, physical illness, mental illness, crime, Judaism, Christianity, religiosity, war, sex, science and technology, climate change and more). This is a special form of distant reading that I term “public reading” (Dekel and Marienberg-Milikowsky, 2021).</hi>
+                </item>
+            </list>
+            <p>
+                Such a project – in scale, methodology and aims – has never before been carried out in the field of Modern Hebrew literature nor, to the best of my knowledge, in other similar fields or in other languages-literatures. This is a historiographical project; therefore, it builds on existing historiographies of Hebrew literature (
+                <hi rend="italic" style="font-family:David;font-size:12pt" xml:space="preserve">inter alia </hi>
+                <hi style="font-family:David;font-size:12pt" xml:space="preserve">by Shaked, Miron and Schwartz) and yet it aims to show the picture in a different way. In the poster, I will present – using graphs that include some of the respective data – the two components of the project. Moreover, I will also reflect on the complexities that such a method provokes. </hi>
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        Margaret Cohen (1999):
+                        <hi rend="italic" style="font-family:David;font-size:12pt">The Sentimental Education of the Novel</hi>
+                        , Princeton University Press.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-family:David;font-size:12pt" xml:space="preserve">Yael Dekel and Itay Marienberg-Milikowsky (2021): “From Distant to Public Reading: The (Hebrew) Novel in the Eyes of Many”, </hi>
+                        <hi rend="italic" style="font-family:David;font-size:12pt">magazén | International Journal for Digital and Public Humanities</hi>
+                        <hi style="font-family:David;font-size:12pt" xml:space="preserve">(forthcoming). </hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-family:David;font-size:12pt" xml:space="preserve">Itay Marienberg-Milikowsky (2019): “Beyond digitization? Digital humanities and the case of Hebrew literature,” </hi>
+                        <hi rend="italic" style="font-family:David;font-size:12pt">Digital Scholarship in the Humanities</hi>
+                        <hi style="font-family:David;font-size:12pt" xml:space="preserve">, Oxford Universiy Press, 2019, 908-913. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-family:David;font-size:12pt" xml:space="preserve">Jan Christoph Meister (2014): “Toward a Computational Narratology.” In: Agosti Maristella and Tomasi Francesca. </hi>
+                        <hi rend="italic" style="font-family:David;font-size:12pt">Collaborative Research Practices and Shared Infrastructures for Humanities Computing</hi>
+                        <hi style="font-family:David;font-size:12pt" xml:space="preserve">: </hi>
+                        <hi rend="italic" style="font-family:David;font-size:12pt">CLEUP</hi>
+                        <hi style="font-family:David;font-size:12pt" xml:space="preserve"> , pp. 17–36.</hi>
+                    </bibl>
+                    <bibl>
+                        Franco Moretti (2000): “Conjectures on World Literature”, New Left Review 1, 54-68.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

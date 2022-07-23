@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Integrating the Japanese Archaeological Dataset into the ARIADNEplus Data Infrastructure</title>
+                <author>
+                    <persName>
+                        <surname>Takata</surname>
+                        <forename>Yuichi</forename>
+                    </persName>
+                    <affiliation>Nara National Research Institute for Cultural Properties, Japan</affiliation>
+                    <email>takata-y23@nich.go.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Yanase</surname>
+                        <forename>Peter</forename>
+                    </persName>
+                    <affiliation>Nara National Research Institute for Cultural Properties, Japan</affiliation>
+                    <email>yanase-p7g@nich.go.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Niccolucci</surname>
+                        <forename>Franco</forename>
+                    </persName>
+                    <affiliation>PIN, Italy</affiliation>
+                    <email>franco.niccolucci@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T03:00:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>international collaboration</term>
+                    <term>archaeology</term>
+                    <term>Japan</term>
+                    <term>fieldwork reports</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>Contemporary</term>
+                    <term>information retrieval and querying algorithms and methods</term>
+                    <term>metadata standards</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Archaeology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">The Comprehensive Database of Archaeological Site Reports in Japan (SORAN) is Japan’s largest repository and aggregator of archaeological data and information. On November 25, 2021, it contained 29,861 full-text PDF copies of fieldwork reports, 112,487 pieces of bibliographical information, and 138,552 sets of detailed metadata of archaeological interventions (Comprehensive database of archaeological site reports Japan, 2015). It is an immensely popular service that in 2020 had over 13.5 million visits and 78.5 million page views. However, because the service was originally built to satisfy the domestic market, its spatial coverage is delimited by national borders and its user base by a language barrier. To overcome these hurdles, the service’s operator, the Nara National Research Institute for Cultural Properties (NABUNKEN), decided to integrate a significant part of SORAN’s data into the data infrastructure managed by the Archaeological Research Infrastructure for Archaeological Data Networking in Europe (ARIADNEplus), a project whose original goal was “to provide open access to Europe’s archaeological heritage and overcome the fragmentation of digital repositories, placed in different countries and compiled in different languages” (Niccolucci and Richards, 2019: 7).</p>
+            <p style="text-align: left; ">The most readily visible part of ARIADNEplus is the ARIADNE Portal, a website providing access to the ARIADNE Catalogue containing the aggregated metadata of the project partners. The Portal is a tool enabling both cross-border/cross-institution resource discovery and data manipulation. This, in practicality, means that after integration, SORAN’s data will be part of an extensive European dataset searchable and processable via a common user interface.</p>
+            <p style="text-align: left; ">The ARIADNE Catalogue is searchable according to the three facets of “when” (time), “where” (space), “what” (object), as well as keywords drawn from controlled vocabularies. While SORAN itself supports information retrieval in a similar manner, the way relevant information is implemented and presented is radically different from ARIADNEplus. Therefore, NABUNKEN and ARIADNEplus had to collaborate closely in a long integration process involving data cleansing, schema transforming, and concept mapping.</p>
+            <p style="text-align: left; ">Mapping SORAN’s internal data schema to ARIADNE’s ontology was a largely technical step. Although the two schemas are different in concept and file format, the mapping could be done in a few weeks. Mapping the Japanese data to the facets of “When?,” “Where?,” “What?” was more complicated. The first facet required spatial coordinates to be converted to comply with the WGS84 (World Geodetic System 1984), which a significant amount of the original data did not follow. The second facet required temporal information to be linked to definitions stored on PeriodO (a multilingual gazetteer of temporal information) (PeriodO, no date). In Japan, the exact temporal limits of historical periods are often debated and difficult to define. Thus we had to enlist an interdisciplinary team of experts to assist us with that. The final facet of objects required the most work as it involved mapping culture and discipline-bound terms to the Getty Art &amp; Architecture Thesaurus.</p>
+            <p style="text-align: left; ">An important aspect of the mapping process of these facets was that we had established several re-usable rules for transforming and mapping Japanese information into intelligible English during the process. From the very start, the mapping project intended to make both the process and choices transparent and develop methods that other institutions could re-use and adopt in similar situations.</p>
+            <p style="text-align: left; ">Collaboration with ARIADNEplus is more than just providing a dataset for an international data infrastructure: it involves a lot of discussions between the various partner institutions involved. Each member can gain new insights by learning about both international best practices and local solutions. This not only helps foster interoperability but lowers development costs as well.</p>
+            <p style="text-align: left; ">Japan is the first Asian country to integrate its data in ARIADNEplus, but hopefully not the last. Our presentation aims both to explain the possibilities presented by this international collaboration and showcase our solutions developed in the process.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Comprehensive database of archaeological site reports Japan (2015). https://sitereports.nabunken.go.jp/en/ (Accessed 25 November 2021).</bibl>
+                    <bibl style="text-align: left; ">Niccolucci, F. and Richards, J. (2019). ARIADNE and ARIADNEplus. In Niccolucci, F. and Richards, J. (eds), The ARIADNE Impact. Budapest: Archaeolingua Foundation, pp. 7-25. https://doi.org/10.5281/zenodo.3476711</bibl>
+                    <bibl style="text-align: left; ">PeriodO – Periods, Organized (no date). https://perio.do/en/ (Accessed November 25, 2021.)</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

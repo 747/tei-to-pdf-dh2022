@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sound Iconicity and Digital Humanities. A Case Study of Spanish Golden Age Theatre</title>
+                <author>
+                    <persName>
+                        <surname>Kroll</surname>
+                        <forename>Simon</forename>
+                    </persName>
+                    <affiliation>University of Vienna, Austria</affiliation>
+                    <email>simon.kroll@univie.ac.at</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T14:56:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>sound iconicity</term>
+                    <term>automatic verse analysis</term>
+                    <term>verse drama</term>
+                    <term>Spanish Golden Age theatre</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>South America</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Spanish</term>
+                    <term>15th-17th Century</term>
+                    <term>attribution studies and stylometric analysis</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>Humanities computing</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Recently, the relevance of sound for the meaning of words in a language has increasingly gotten scholarly attention. Works on sonic iconicity in different languages all over the world are gaining importance, regarding both the importance of sound in bound language (lyrics), and in daily spoken language. This research has provided serious evidence suggesting that the sound of a word already gives us information about its meaning, or at least, about the overall associations attached to it. In other words, phonemes already seem to carry semantic information (Auracher, 2020). Whereas a number of studies have investigated phonosemantics concerning single phonemes in a general sense, a noticeable research gap exists in the context of poetry or verse drama. Since it became the first modern mass culture, the early modern verse drama appears to constitute an especially crucial corpus for this field of research. </p>
+            <p>The short presentation format was chosen to present the ongoing work of my research including first hints on the use of phonosemantic relations in Spanish early modern theatre (16
+                <hi rend="superscript">th</hi> and 17
+                <hi rend="superscript">th</hi> century). As a basis for researching such relations, in a first step, we created a corpus from the existing digital text repositories, collecting over 500 plays by different playwrights such as Pedro Calderón de la Barca, Lope de Vega, Tirso de Molina, Sor Juana Inés de la Cruz, Mira de Amescua, and many others. The second step included the development of a Python script, enabling the analysis of the phonic structure of every single verse line. The program identifies the number of syllables, the rhythmical patterns, the rhymes, identifies between stressed and unstressed vowels, and creates a csv-file to collect all the created data. As a first result, a phonologic transcriptor and a syllabic analysis tool have already been published as Python libraries (see Sanz Lázaro, 
+                <hi rend="italic">fonemas</hi> and 
+                <hi rend="italic">silabeador</hi>). These scripts will be presented briefly, taking into account the existing research on automatic verse analysis in Spanish (González-Blanco, Remón, de la Rosa).
+            </p>
+            <p>In order to analyze these phonetic data on a large scale, a number of shorter Python scripts were developed. Using the libraries pandas and matplotlib, the goal of research is to answer the following questions: Do the different playwrights have preferences for different rhythmical patterns? Do these rhythmical patterns appear randomly throughout the texts? Or is it possible to establish a pattern between negative and positive emotions and the occurrence of certain rhythmical structures? To what extent are rhythmical patterns related to other phonosemantic phenomena? Is there an interrelation between rhyming structures and different rhythms or a connection between the stressed vowels and the rhythmical patterns?</p>
+            <p>As it aims to evoke very strong emotions in its spectators, the early modern theatre is often referred to as an affect machinery. This aspect of Spanish Golden Age theatre is usually reduced to visual aspects: the use of baroque theatre machinery, special effects, and the overwhelming costumes of the professional actors.</p>
+            <p>In contrast, this research shows, that an important medium to achieve this goal can be found in the sound of the verses themselves. Therefore, this presentation has a threefold aim:</p>
+            <list rend="bulleted">
+                <item>to present the new Python scripts and libraries created for the automatic verse analysis;</item>
+                <item>to discuss phonosemantic relations and the digital methods to analyze them;</item>
+                <item>to provide new insights into the importance of sound effects in the affect machinery of the early modern theatre.</item>
+            </list>
+            <p>Thus, the presentation will show important advances in the automatic analysis of metrical texts, which can easily be transferred to texts from other epochs and, with slight adaptations, also to other romance languages like Italian.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Auracher, J., Menninghaus, W. and Scharinger, M. </hi>(2020). Sound Predicts Meaning: Cross-Modal Associations Between Formant Frequency and Emotional Tone in Stanzas. 
+                        <hi rend="italic">Cognitive Science</hi>, 
+                        <hi rend="bold">44</hi>:10: e12906. 
+                        <ref target="https://doi.org/10.1111/cogs.12906">https://doi.org/10.1111/cogs.12906</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bird, S., Klein, E. and Loper, E.</hi> (2009). 
+                        <hi rend="italic">Natural Language Processing with Python</hi>. Sebastopol, CA: O’Really.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">De la Rosa, J., Pérez, Á., Hernández, L., Ros, S. and González-Blanco, E</hi>. (2020). Rantanplan, fast and accurate syllabification and scansion of spanish poetry. 
+                        <hi rend="italic">Procesamiento del Lenguaje Natural</hi>
+                        <hi rend="bold">65</hi>, 83-90.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Eder, M., Rybicki, J. and Kestemont, M. </hi>(2016). Stylometry with R: A Package for Computational Text Analysis. 
+                        <hi rend="italic">The R Journal</hi>
+                        <hi rend="bold">8,1</hi>: 107–21.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">González-Blanco, E. Pérez, Á., Ros, S</hi>. 
+                        <hi rend="italic">PoetryLab​. An Open Source Toolkit for the Analysis of Spanish Poetry Corpora.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Karsdorp, F., Kestemont, M. and Riddell, A. </hi>(2021). 
+                        <hi rend="italic">Humanities Data Analysis: Case Studies with Python</hi>. Princeton, Oxford: Princeton University Press. 
+                        <ref target="https://press.princeton.edu/books/hardcover/9780691172361/humanities-data-analysis">
+                            <hi rend="underline color(0000FF)">https://press.princeton.edu/books/hardcover/9780691172361/humanities-data-analysis</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Manning, C., Surdeanu, M., Bauer, J., Finkel, J., Bethard, S. and McClosky, D.</hi> (2014). The Stanford CoreNLP Natural Language Processing Toolkit. In 
+                        <hi rend="italic">Proceedings of 52nd Annual Meeting of the Association for Computational Linguistics: System Demonstrations</hi>, 55–60. Baltimore, Maryland: Association for Computational Linguistics. 
+                        <ref target="https://doi.org/10.3115/v1/P14-5010">https://doi.org/10.3115/v1/P14-5010</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Marco, G. De La Rosa, J., Gonzalo, J. Ros, S., González-Blanco, E</hi>. (2021). Automated Metric Analysis of Spanish Poetry: Two Complementary Approaches. 
+                        <hi rend="italic">IEEE Access</hi>
+                        <hi rend="bold">9</hi>, 51734-51746.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">McKinney, W</hi>. 
+                        <hi rend="italic">Python for Data Analysis</hi>, Sebastopol, CA: O’Really.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Plecháč, P.</hi> (2018). Versification and authorship attribution. A pilot study on Czech, German, Spanish and English poetry. 
+                        <hi rend="italic">Studia Metrica et Poetica</hi>, 
+                        <hi rend="bold">5, 2</hi>: 30-54.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Remón, GM., Gonzalo, J.</hi> (2021). Escansión automática de poesía española sin silabación. 
+                        <hi rend="italic">Procesamiento del Lenguaje Natural</hi>
+                        <hi rend="bold">66</hi>: 77-87.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sanz Lázaro, F.</hi> (2021). 
+                        <hi rend="italic">Fonemas. A Python phonologic transcription library for Spanish</hi>. Version 1.0.3. fsanzl, Okt. 2021. Software. 
+                        <hi rend="italic">GitHub</hi>, 
+                        <ref target="https://github.com/fsanzl/fonemas">https://github.com/fsanzl/fonemas</ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sanz Lázaro, F.</hi> (2021). 
+                        <hi rend="italic">Silabeador: A Python library for syllabic division and stress detection for Spanish</hi>. Version 1.0.5, fsanzl, Okt. 2021. Software. 
+                        <hi rend="italic">GitHub</hi>, 
+                        <ref target="https://github.com/fsanzl/silabeador">https://github.com/fsanzl/silabeador</ref>
+                        <hi rend="Hyperlink">.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

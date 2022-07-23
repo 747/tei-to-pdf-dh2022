@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Distant Reading of the German Coalition Deal</title>
+                <author>
+                    <persName>
+                        <surname>Zylla</surname>
+                        <forename>Michael</forename>
+                    </persName>
+                    <affiliation>University of Göttingen, Germany</affiliation>
+                    <email>michael.zylla@stud.uni-goettingen.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Haider</surname>
+                        <forename>Thomas Nikolaus</forename>
+                    </persName>
+                    <affiliation>University of Göttingen, Germany; Max Planck Institute for Empirical Aesthetics, Frankfurt</affiliation>
+                    <email>thomas.haider@uni-goettingen.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-05T14:51:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Coalition</term>
+                    <term>Party Influence</term>
+                    <term>German Election</term>
+                    <term>Relative Salience</term>
+                    <term>BERT</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>semantic analysis</term>
+                    <term>text mining and analysis</term>
+                    <term>Humanities computing</term>
+                    <term>Political science</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Motivation</head>
+                <p style="text-align: left; ">In postwar Germany, the federal government is usually formed by several political parties (Schmidt, 2007, p. 97). Over the past 16 years, these government coalitions were led by the Christian Democratic parliamentary group (CDU/CSU), most recently in cooperation with the Social Democratic Party (SPD), which, following the federal election in 2021 was unwilling to negotiate with their former partner, calling for new alliances to achieve a majority in parliament. Finally, the leaders of the Free Democratic Party (FDP), the Greens and SPD, despite mixed support from the party bases, signed a coalition agreement. Some journalists even regarded the FDP, which gained access to two key ministries, the secret winner of the negotiations (Fürstenau, 2021), also because the Greens did not see some of their desired climate change policies implemented (Lauter, 2021), </p>
+                <p style="text-align: left; ">In this research, we are interested in how the coalition agreement was assembled regarding the individual party contributions. To that end, we utilize methods from Natural Language Processing, which have seen widespread adoption in political science (Wilkerson and Casas, 2017; Merz et al., 2016; Rauh, 2015; Slapin and Proksch, 2008). Specifically, we carry out a text classification task with transformer models, based on paragraphs from the party manifestos, and use the resulting model to characterize the coalition deal.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Data</head>
+                <p style="text-align: left; ">Our data consist of the election manifestos from 2021 of the six parliamentary parties, namely Alternative for Germany (AfD), FDP, Greens (Grüne), Left (Linke), SPD, and CDU/CSU (Union), and also the final coalition deal. We converted the original PDFs to plaintext, removed the tables of contents, cleaned the texts from formatting artefacts, and segmented the documents into individual paragraphs. As seen in Table 1 and Figure 1, both document and paragraph length vary widely. The manifestos of AfD and SPD in particular are fairly short, when compared to the Greens and the Left.</p>
+                <figure>
+                    <graphic n="1001" width="8.9408cm" height="4.402666666666667cm" url="Pictures/e15fceef6ed68d119efd472aa495dd23.jpg" rend="block"/>
+                    <graphic n="1002" width="8.801805555555555cm" height="7.114622222222223cm" url="Pictures/d7d0ce1faebcc87f613b33641ee858a6.jpg" rend="block"/>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Experiments</head>
+                <p style="text-align: left; ">To investigate the composition of the coalition deal, we trained German BERT (Devlin et al., 2019) models on a text classification task with the paragraphs of the party manifestos. We test two models: (1) A classification with all six parties, and (2) a classification with the three coalition partners. We examine the difficulty to classify individual parties, how they are misclassified for each other with confusion matrices, and how confident the classifier is w.r.t. certain paragraphs with a softmax layer (e.g., a paragraph could be assigned 50% SPD, 30% Greens and 20% FDP). Finally, we apply the three-party model to the coalition deal to analyze its composition.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results</head>
+                <p style="text-align: left; text-align: justify;">We find that the six-class model has markedly more problems recognizing SPD and Union (see Table 2). Furthermore, SPD paragraphs are often misclassified as Union, while the inverse is not as frequent (see Figure 2). This might be because both are Germany’s largest catch-all-parties, with the other parties having a more distinct vocabulary. Altogether, much of the models’ confusion falls in line with overlapping political positions, e.g., paragraphs from FDP and AfD are misclassified as Union, while the Greens are never mistaken for the former two. On the other hand, Linke and AfD may be mistaken for each other
+                    <graphic n="1003" width="9.480902777777779cm" height="10.158236111111112cm" url="Pictures/409d62268584fc4d71aaa5d3d9861896.jpg" rend="block"/>
+                    <graphic n="1004" width="9.618133333333333cm" height="6.028266666666667cm" url="Pictures/c854f26e12b092c22258fa49c1afa44c.jpg" rend="block"/> due to their oppositional language. Thus, it is an open question to what extent the model makes decisions based on policy or language.
+                </p>
+                <p style="text-align: left; ">The three-class model achieves better classification results (see Table 3), which is not surprising, since the task is easier with less parties to choose from. However, SPD paragraphs are still harder to predict.</p>
+                <figure>
+                    <graphic n="1005" width="9.584266666666666cm" height="4.6058666666666666cm" url="Pictures/9be7433a31a46de4e946020e1b1da1a2.jpg" rend="block"/>
+                </figure>
+                <p style="text-align: left; ">As can be seen in the confusion matrix (Figure 3), the model can reliably distinguish FDP and Greens, but both are harder to distinguish from SPD. This, again, might be explained by the SPD’s claim to being a catch-all party. </p>
+                <figure>
+                    <graphic n="1006" width="9.876533333333333cm" height="10.830277777777777cm" url="Pictures/f49e0d26979af19f06101843273bc29d.jpg" rend="block"/>
+                </figure>
+                <p style="text-align: left; ">Lastly, we apply the three-class model to the coalition agreement. Figure 4 shows that the model attributes almost 80% of all paragraphs to the SPD. This could be interpreted such that the SPD emerged as the winner of the negotiations. However, this result also reflects the low recall of SPD (Table 3), where the model wrongly tends to classify a paragraph as SPD. Yet, close reading showed that the model’s certainty (softmax) was quite high (&gt;99%) for numerous paragraphs, even if they could sensibly be attributed to multiple parties (e.g., in the case of minimum wage and unemployment benefits). Paragraphs with a low certainty were fairly infrequent, and mostly composed of language that is not policy critical.</p>
+                <p style="text-align: left; ">Finally, keeping in mind the parties share of votes, we would have expected the Greens' proportion to be larger than that of the FDP. Instead, the latter slightly outnumbers the former. More research is needed to disseminate the roles of the smaller parties in the coalition agreement (e.g., binary classification), and also regarding an explanation of the model’s decisions.</p>
+                <figure>
+                    <graphic n="1007" width="13.716cm" height="8.974666666666666cm" url="Pictures/5fd16c612fec7f26904a20e1aacef8d0.jpg" rend="block"/>
+                </figure>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Devlin, J., Chang, M.-W., Lee, K. and Toutanova, K.</hi> (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. (Proceedings of NAACL-HLT): 4171–86.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fürstenau, M.</hi> (2021). How the smallest party in Germany’s new coalition came out on top in governing deal 
+                        <hi rend="italic">DW.COM</hi>
+                        <ref target="https://www.dw.com/en/how-the-smallest-party-in-germanys-new-coalition-came-out-on-top-in-governing-deal/a-59972370">https://www.dw.com/en/how-the-smallest-party-in-germanys-new-coalition-came-out-on-top-in-governing-deal/a-59972370</ref> (accessed 20 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Lauter, R.</hi> (2021). Ampel-Koalition: Grüne stimmen für Koalitionsvertrag mit SPD und FDP. 
+                        <hi rend="italic">Die Zeit</hi>. Hamburg, sec. Politik 
+                        <ref target="https://www.zeit.de/politik/deutschland/2021-12/gruene-stimmen-fuer-koalitionsvertrag-mit-spd-und-fdp">https://www.zeit.de/politik/deutschland/2021-12/gruene-stimmen-fuer-koalitionsvertrag-mit-spd-und-fdp</ref> (accessed 20 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Merz, N., Regel, S. and Lewandowski, J.</hi> (2016). The Manifesto Corpus: A new resource for research on political parties and quantitative text analysis. 
+                        <hi rend="italic">Research &amp; Politics</hi>, 
+                        <hi rend="bold">3</hi>(2): 205316801664334 doi:
+                        <ref target="https://doi.org/10.1177/2053168016643346">10.1177/2053168016643346</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rauh, C.</hi> (2015). Communicating supranational governance? The salience of EU affairs in the German Bundestag, 1991–2013. 
+                        <hi rend="italic">European Union Politics</hi>, 
+                        <hi rend="bold">16</hi>(1): 116–38 doi:
+                        <ref target="https://doi.org/10.1177/1465116514551806">10.1177/1465116514551806</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schmidt, M. G.</hi> (2007). 
+                        <hi rend="italic">Das politische System Deutschlands: Institutionen, Willensbildung und Politikfelder</hi>. Orig.-Ausg. (Beck’sche Reihe 1721). München: Beck.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Slapin, J. B. and Proksch, S.-O.</hi> (2008). A Scaling Model for Estimating Time-Series Party Positions from Texts. 
+                        <hi rend="italic">American Journal of Political Science</hi>, 
+                        <hi rend="bold">52</hi>(3): 705–22 doi:
+                        <ref target="https://doi.org/10.1111/j.1540-5907.2008.00338.x">https://doi.org/10.1111/j.1540-5907.2008.00338.x</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wilkerson, J. and Casas, A.</hi> (2017). Large-Scale Computerized Text Analysis in Political Science: Opportunities and Challenges. 
+                        <hi rend="italic">Annual Review of Political Science</hi>, 
+                        <hi rend="bold">20</hi>(1): 529–44 doi:
+                        <ref target="https://doi.org/10.1146/annurev-polisci-052615-025542">10.1146/annurev-polisci-052615-025542</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A unified path from data to publications: Three French infrastructures in the COMMONS project</title>
+                <author>
+                    <persName>
+                        <surname>Larrousse</surname>
+                        <forename>Nicolas</forename>
+                    </persName>
+                    <affiliation>Huma-Num, CNRS, France</affiliation>
+                    <email>nicolas.larrousse@huma-num.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pellen</surname>
+                        <forename>Marie</forename>
+                    </persName>
+                    <affiliation>OpenEdition, CNRS, France</affiliation>
+                    <email>marie.pellen@openedition.org</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Roux</surname>
+                        <forename>Dominique</forename>
+                    </persName>
+                    <affiliation>Metopes, Pôle Document Numérique, CNRS &amp; Université de Caen, France</affiliation>
+                    <email>dominique.roux@unicaen.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Baude</surname>
+                        <forename>Olivier</forename>
+                    </persName>
+                    <affiliation>Huma-Num, CNRS, France</affiliation>
+                    <email>olivier.baude@huma-num.fr</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Infrastructures</term>
+                    <term>Link Data Publication</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>digital publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>Communication studies</term>
+                    <term>Computer science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">In order to support research projects in SSH (Social Sciences and Humanities), France has developed centralized infrastructures which are listed on the French national roadmap for infrastructures: this means that they are financed over the long term.</p>
+            <p style="text-align: left; ">Three of these infrastructures are especially complementary:</p>
+            <p style="text-align: left; ">Huma-Num (See 
+                <ref target="https://www.huma-num.fr">https://www.huma-num.fr</ref> and 
+                <ref target="https://documentation.huma-num.fr/humanum-en/">https://documentation.huma-num.fr/humanum-en/</ref>) provides a set of platforms, tools and support for the processing, conservation, dissemination and long-term preservation of digital research. OpenEdition (See https://www.openedition.org) provides a set of four scholarly communication platforms and Metopes (See 
+                <ref target="https://www.metopes.fr">https://www.metopes.fr</ref>) provides a set of tools and methods, built according to single source publishing model, enabling the creation of natively structured editorialized contents.
+            </p>
+            <p style="text-align: left; ">Even though these infrastructures provide all the services required throughout the life cycle of research, their different environments are separate, making it necessary to switch from one platform to another, for instance to carry out the process of linking data and publications. </p>
+            <p style="text-align: left; ">In the context of the increasing development of Open Science policies, both at national and European levels, these three main infrastructures joined their forces to build a project to address these challenges. The main focus of the COMMONS
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> See https://www.cnrs.fr/en/node/5607</p>
+                </note> project (COnsortium of Mutualised Means for OpeN data &amp; Services for SSH) is of course to develop bridges between the three infrastructures articulated around the link between data and publications but it also covers various other related aspects.
+            </p>
+            <p style="text-align: left; ">A key step to achieve the project goals is to develop communication modules between the different platforms which represent the foundation on which the other achievements will be based. For instance, one of the most important components to build this environment is to use a common authentication system which allows users to connect to any platform with the same credentials. This requires technical adaptations but also substantial preliminary work to ensure coherence between our lists of respective users.  </p>
+            <p style="text-align: left; ">Similarly, to link data and publications, it will be necessary to establish bi-directional links between the data repository provided by Huma-Num and the scholarly communication platforms from OpenEdition associated with tools from Metopes. Interoperability modules will be developed to implement these links associated with a specific workflow aiming to maintain consistency of information between the different platforms.  For example, one of the key challenges will be to take into account the synchronization aspects when establishing the link between the data and the publication.</p>
+            <p style="text-align: left; ">But of course, it is not sufficient to implement these technical requirements. It is also necessary to accompany the various categories of users in the use of this new system. Therefore, an important part of the project is to model and implement a seamless user experience associated with extensive training sessions adapted to all the stages of the research lifecycle. </p>
+            <p style="text-align: left; ">Alongside these three major axes which structure the project, there will be a strong focus on data, particularly what are called “sensitive data” which are frequently used for research in SSH. In this case, the requirements between the need for strong security on the one hand, and the need to provide research projects with easy access to data on the other hand, are contradictory: the possibility of providing access to protected or sensitive resources is one of the important issues of the project. Finally, as connection and interoperability with other infrastructures at national and international levels is a key part of the project, APIs respecting general standards will be developed to be able to disseminate at large the information generated by the project.</p>
+            <p style="text-align: left; ">The main expected outcome, besides making the publication process more fluid for research projects, is to foster the visibility of French research. This will be achieved mainly by improving the quality of its contents by following the FAIR
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p rend="footnote text"> https://www.go-fair.org/fair-principles/</p>
+                </note> principles and the development of research project skills. Another outcome is to have available all the bricks necessary for the construction of new types of complex publications in the context of rapidly evolving new forms of scientific writings, in particular data papers or actionable papers.
+            </p>
+            <p style="text-align: left; ">This paper will develop both the technical and organizational aspects of this ambitious project, which will require highly specialized professional profiles to support both producers (researchers, engineers, editors) and users (researchers, students, companies, public authorities, media) of content, and will last 8 years for a total cost around 30 M€.  </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Colavizza G, Hrynaszkiewicz I, Staden I, Whitaker K, McGillivray B (2020) The citation advantage of linking publications to research data. PLoS ONE 15(4): e0230416. https://doi.org/10.1371/journal.pone.0230416</bibl>
+                    <bibl style="text-align: left; ">Burton, Adrian, &amp; Koers, Hylke. (2016). ICSU-WDS &amp; RDA Publishing Data Services WG Interoperability Framework Recommendations (1.0). https://doi.org/10.15497/RDA00002</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

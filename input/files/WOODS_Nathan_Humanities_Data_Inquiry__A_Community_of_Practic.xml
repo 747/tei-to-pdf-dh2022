@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Humanities Data Inquiry: A Community of Practice Exploring Data Issues in the Humanities and Heritage Research</title>
+                <author>
+                    <persName>
+                        <surname>Woods</surname>
+                        <forename>Nathan</forename>
+                    </persName>
+                    <affiliation>Humanities Innovation Lab, University of Lethbridge, Canada</affiliation>
+                    <email>nathan.woods@uleth.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bordalejo</surname>
+                        <forename>Barbara</forename>
+                    </persName>
+                    <affiliation>Humanities Innovation Lab, University of Lethbridge, Canada</affiliation>
+                    <email>barbara.bordalejo@uleth.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>O'Donnell</surname>
+                        <forename>Daniel</forename>
+                    </persName>
+                    <affiliation>Humanities Innovation Lab, University of Lethbridge, Canada</affiliation>
+                    <email>daniel.odonnell@uleth.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T02:06:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Humanities</term>
+                    <term>Data</term>
+                    <term>Infrastructure</term>
+                    <term>Community of Practice</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>ethnographic analysis</term>
+                    <term>Library &amp; information science</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>This poster presentation provides a portrait of the Humanities Data Inquiry (HDI), a new (2021) Social Sciences and Humanities Research Council (SSHRC)-funded project. The funding application for this project was entitled “Good things come in small packages: A grassroots Community of Practice for Open and FAIR humanities data practices.” HDI uses a research-informed Community of Practice (CoP) model to explore a diversity of issues involving the development, use and organization of humanities and cultural heritage (HCH) data, particularly when compared to ‘big data’ STEM and Open Science Frameworks. It outlines the basic problem associated with representational data in HCH and Open Science infrastructure frameworks and explains how HDI will address this through its CoP structure and research activities. Finally, the poster presents areas of future development and pathways for future involvement in the community of practice as well as the program’s expected outcomes.</p>
+            <p>The last decade has seen great advances in the development of infrastructure, tools, and principles for the collection, storage, discovery, and dissemination of research data (Borgman, 2015). Governments, funders, libraries and consortia, and private corporations have made large investments in what is rapidly becoming a robust Open and FAIR (Findable, Accessible, Interoperable, and Reusable) research data ecosystem. </p>
+            <p>This ecosystem, however, was built largely with the needs of "Big Data" Science, Technology, Engineering, and Mathematics (STEM) in mind. While Humanities and Cultural Heritage (HCH) researchers and projects are encouraged to engage with this evolving research data ecosystem, the fit is often poor. Where Big Data STEM typically involves large datasets produced through experiment, observation, or analysis, "Small Data" HCH research often involves deep analysis and intensive curation of relatively small data sets — perhaps particularly when it comes to datasets (and data points) focused on the representation of cultural texts and objects: i.e., editions and exhibits (Oldman, 2021; Franzini et al., 2019). </p>
+            <p>Addressing this disjunction requires community engagement and input: thoughtful and bidirectional communication amongst a diversity of practicing humanities researchers and between researchers and the organizations responsible for creating and supporting the Open and FAIR ecosystem.</p>
+            <p>The poster outlines HDI’s three main goals, designed to support this communication and community building:</p>
+            <list rend="bulleted">
+                <item>Discover: develop a forum for the development of best practice in the use of Open, FAIR, and CARE (Collective Benefit, Authority to Control, Responsibility, and Ethics)-compliant RDM practices among HCH researchers and projects;</item>
+                <item>Demonstrate: Support the adaptation of Open, FAIR, and CARE RDM principles to Small Data HCH projects through the creation of a virtual “exolab” — a collaboration among leading data-centric research projects to share research problems in order to develop common approaches and practices at the level of the investigator;</item>
+                <item>Mobilise: Promote the discovery, thoughtful adoption, and bidirectional development of Open, FAIR, and CARE RDM principles where appropriate by the broader HCH research community through peer-to-peer Workshops, Summer Schools, and training sessions.</item>
+            </list>
+            <p>While recent work has highlighted the importance of understanding scholarly information and work practices in the design of scholarly tools in the digital humanities (Antonijević and Stern-Cahoy, 2016; Lamb and Kling, 2003) in this work the goal is often framed as a question of how to include the voices of HCH researchers as user inputs, where problems are often scoped as questions of capacity and inclusion. By contrast, a unique feature of HDI is its use of ethnographic research (Borgman et al.; Koch, 2017; Ribes, 2014; Star, 1999; Wenger, 1999) and design (Poirier, 2017; Pyrko et al., 2017; Baker and Millerand, 2007; Ribes and Baker, 2007) to support community development, and enhance discovery and documentation through participatory agenda-setting activities. By bringing into conversation different sectors of the humanities and cultural heritage information ecosystems, the model will contribute to community-led design initiatives. </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Antonijević, S. and Stern-Cahoy, E.</hi> (2016). Developing Research Tools via Voices from the Field. 
+                        <hi rend="italic">DH+ LIB Special Issue</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Baker, K. S. and Millerand, F.</hi> (2007). Scientific infrastructure design: Information environments and knowledge provinces. 
+                        <hi rend="italic">Proceedings of the American Society for Information Science and Technology</hi>, vol. 44. Wiley Online Library, pp. 1–9.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Borgman, C. L.</hi> (2015). 
+                        <hi rend="italic">Big Data, Little Data, No Data: Scholarship in the Networked World</hi>. Cambridge, Massachusetts: The MIT Press 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Borgman, C. L., Wofford, M. F., Golshan, M. S., Darch, P. T. and Scroggins, M. J.</hi> Collaborative Ethnography at Scale: Reflections on 20 years of Acquiring Global Data and Making Data Global.: 63.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Franzini, G., Terras, M. and Mahony, S.</hi> (2019). Digital editions of text: surveying user requirements in the digital humanities. 
+                        <hi rend="italic">Journal on Computing and Cultural Heritage (JOCCH)</hi>, 
+                        <hi rend="bold">12</hi>(1). ACM New York, NY, USA: 1–23.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Koch, G.</hi> (2017). The ethnography of infrastructures: Digital Humanities and Cultural Anthropology. 
+                        <hi rend="italic">Cultural Heritage Infrastructures in Digital Humanities</hi>. Routledge, pp. 63–81.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Lamb, R. and Kling, R.</hi> (2003). Reconceptualizing users as social actors in information systems research. 
+                        <hi rend="italic">MIS Quarterly</hi>. JSTOR: 197–236.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Oldman, D.</hi> (2021). Digital research, the legacy of form and structure and the ResearchSpace system. 
+                        <hi rend="italic">Information and Knowledge Organisation in Digital Humanities</hi>. Routledge, pp. 131–53.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Poirier, L.</hi> (2017). Devious design: Digital infrastructure challenges for experimental ethnography. 
+                        <hi rend="italic">Design Issues</hi>, 
+                        <hi rend="bold">33</hi>(2). The MIT Press One Rogers Street, Cambridge, MA 02142-1209, USA journals-info …: 70–83.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pyrko, I., Dörfler, V. and Eden, C.</hi> (2017). Thinking together: what makes communities of practice work? 
+                        <hi rend="italic">Human Relations</hi>, 
+                        <hi rend="bold">70</hi>(4). SAGE Publications Sage UK: London, England: 389–409.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ribes, D.</hi> (2014). Ethnography of scaling, or, how to fit a national research infrastructure in the room. 
+                        <hi rend="italic">Proceedings of the 17th ACM Conference on Computer Supported Cooperative Work &amp; Social Computing</hi>. pp. 158–70.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ribes, D. and Baker, K.</hi> (2007). Modes of social science engagement in community infrastructure design. 
+                        <hi rend="italic">Communities and Technologies 2007</hi>. Springer, pp. 107–30.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Star, S. L.</hi> (1999). The Ethnography of Infrastructure. 
+                        <hi rend="italic">American Behavioral Scientist</hi>, 
+                        <hi rend="bold">43</hi>(3): 377–91 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wenger, E.</hi> (1999). 
+                        <hi rend="italic">Communities of Practice: Learning, Meaning, and Identity</hi>. Cambridge University Press.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

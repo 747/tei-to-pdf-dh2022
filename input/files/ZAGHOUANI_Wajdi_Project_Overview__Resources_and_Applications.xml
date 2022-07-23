@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Project Overview: Resources and Applications for Detecting and Classifying Polarized and Hate Speech in Arabic Social Media</title>
+                <author>
+                    <persName>
+                        <surname>Zaghouani</surname>
+                        <forename>Wajdi</forename>
+                    </persName>
+                    <affiliation>Hamad Bin Khalifa University, Qatar</affiliation>
+                    <email>wzaghouani@hbku.edu.qa</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T20:10:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Hate Speech Detection</term>
+                    <term>Social Media Analytics</term>
+                    <term>Arabic Language</term>
+                    <term>Natural Language Processing</term>
+                    <term>Polarization</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Africa</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>natural language processing</term>
+                    <term>social media analysis and methods</term>
+                    <term>Humanities computing</term>
+                    <term>Informatics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">Societies are increasingly divided and polarized. This polarization is driven by two connected issues: the lack of communication between groups, and the use of hate speech. With social media speeding up the spread of hateful ideologies, polarization and technology go hand in hand. Statistics reveal the scale of the problem; 41% of people have been the target of hate speech. As communities recede into themselves, the prospect of conflict grows. Social media is also providing new opportunities for polarization and hate speech. Shielded behind anonymity, state actors and political entities are using social media to manipulate public opinion on an industrial scale, driving polarization with disinformation and hate speech to serve often extremist agendas. Combined with bots - automated accounts - these partisan entities can achieve a negative impact in society (KS Hasan, 2013 ; Howell (2013). Social media companies have been slow to tackle the problem, for instance, Facebook redefined hate speech pages as controversial humor. While Twitter introduced a new policy stating "You may not dehumanize anyone based on membership in an identifiable group, as this speech can lead to offline harm", the business model of social media companies may also not be conducive to tackling hate speech. Indeed, hate speech pages can be popular, encouraging clicks and driving advertising revenue to web companies. This is why tackling hate speech and polarization requires multilateral efforts involving the companies themselves, academics and civil society. There have been efforts to address the problem such as the efforts done by the European Commission to tackle hate speech by signing a code of conduct with social media companies to fight hate speech. However, the problem is a global issue. Despite the widespread adoption of social media in the MENA region, most efforts in tackling hate speech also tend to focus on the developed world, with little research targeting Arabic. Some of the research targetting Hate speech in Arabic were limited to a specific categories such as hate targetting religious groups (Albadi 2018) or only covering abusive language detection as in (Mubarak 2017).</p>
+                <p style="text-align: left; ">Without adequate, contextual-based research, countries in the developing world in particular risk becoming social media blackspots - spaces where hate speech flourishes in unregulated and permissive online environments. The main aim of this project is to address this gap and pave the way for further research on Polarization and Hate Speech in Arab societies. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Methodology</head>
+                <p style="text-align: left; ">Our research will address different problems that contribute to the detection of polarization and hate speech: 1) Stance detection with respect to controversial topics (a topic generating a polarized discussion: in favor vs. against); 2) Identification of polarized communities; 3) Hate speech detection; 4) Bot versus human identification and 5) Behavioral interventions to address hate speech. These components will be considered from a holistic perspective unlike some of the existing research works, which address them as isolated problems. Our project focuses on five components: 1) Annotated Language Resources; 2) Polarized Communities Analysis; 3) Methods and Tools based on Natural Language Processing methods as in Fersini et al. (2018); 4) Behavioral interventions and experiments to address hate speech 5) Application Scenarios with the stakeholders. We will create annotated Arabic corpora from Twitter with the stance information (in favor, against or neutral) with respect to controversial topics (e.g., Qatar vs. UAE), polarized communities (e.g Liberals vs Conservatives) and the hateful usage of the language (e.g. insults, aggressive words). This will include creating an Arabic multi-dialectal lexicon of hate speech and aggressive language. The project has several application scenarios. In the context of cyber-security, government agencies could detect individuals and groups that spread hate speech and take appropriate countermeasures. Furthermore, bots spreading hate speech who increase the tension and polarization on society can be detected automatically. In a recent study by Jones (2016) and Jones (2019), 17% of a random sample of tweets in Arabic that mention Qatar were tweeted by bots in May 2017 and that increased to 29% in May 2018.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left; ">The main novelty of this proposal is in the scope, the multidisciplinary nature and the coverage of the addressed problems: we will address the main related problems to polarization as a whole, and not as isolated problems as it was done in some existing projects. Behavioral experiments and interventions will be conducted to address the issue of hate speech. We will test the state-of the-art methods of artificial intelligence to automatically approach the aforementioned problems in Arab social media. By taking into account the legal, the behavioral and the ethical dimensions of the software solutions as well as data protection considerations, we plan to create tools that will allow others to use them to detect polarization, hate speech, and bots.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Acknowledgments</head>
+                <p style="text-align: left; ">This project is funded by NPRP grant NPRP13S-0206-200281 from the Qatar National Research Fund (a member of Qatar Foundation).</p>
+                <p rend="DH-BibliographyHeading">References</p>
+                <p rend="DH-BibliographyHeading">Albadi, N., Kurdi, M., &amp; Mishra, S. (2018). Are they our brothers? analysis and detection of religious hate speech in the Arabic Twittersphere. In 2018 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM) (pp. 69-76). IEEE. https://doi.org/10.1109/ASONAM.2018.8508247</p>
+                <p rend="DH-BibliographyHeading">
+                    <hi rend="normalweight" style="font-size:11pt">Fersini, E., Rosso, P., Anzovino, M. (2018). Overview of the Task on Automatic Misogyny Identification at IberEval. In Proceedings of the Third Workshop on Evaluation of Human Language Technologies for Iberian Languages (IberEval 2018).</hi>
+                </p>
+                <p rend="DH-BibliographyHeading">
+                    <hi rend="normalweight" style="font-size:11pt">Hasan, K.S., Ng, V. (2013). Stance Classification of Ideological Debates: Data, Models, Features, and Constraints. In Proceeding of the Sixth International Joint Conference on Natural Language Processing</hi>
+                </p>
+                <p rend="DH-BibliographyHeading">Howell, Lee. (2013). Digital Wildfires in a Hyperconnected World. WEF Report 3.</p>
+                <p rend="DH-BibliographyHeading">
+                    <hi rend="normalweight" style="font-size:11pt">Jones, M. O. (2016). Automated sectarianism and pro-Saudi propaganda on Twitter. Exposing the Invisible (Tactical Technology Collective).</hi>
+                </p>
+                <p rend="DH-BibliographyHeading">
+                    <hi rend="normalweight" style="font-size:11pt">Jones, M. O. (2019). The Gulf Information War| Propaganda, Fake News, and Fake Trends: The Weaponization of Twitter Bots in the Gulf Crisis. International Journal of Communication</hi>
+                </p>
+                <p rend="DH-BibliographyHeading">Mubarak, H., Darwish, K., &amp; Magdy, W. (2017). Abusive language detection on Arabic social media. In Proceedings of the first workshop on abusive language online (pp. 52-56).</p>
+            </div>
+        </body>
+    </text>
+</TEI>

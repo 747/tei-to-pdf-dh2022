@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Linguistic Injustice in Multilingual Technologies: arTenTen and esTenTen as case studies</title>
+                <author>
+                    <persName>
+                        <surname>Bordonaba-Plou</surname>
+                        <forename>David</forename>
+                    </persName>
+                    <affiliation>Universidad de Granada, Spain; Universidad de Valparaíso, Chile</affiliation>
+                    <email>davidbordonaba@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Jreis-Navarro</surname>
+                        <forename>Laila M.</forename>
+                    </persName>
+                    <affiliation>Universidad de Zaragoza, Spain; Universidad de Granada, Spain</affiliation>
+                    <email>ljreis@unizar.es</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-14T17:30:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Applied Linguistics</term>
+                    <term>Philosophy</term>
+                    <term>DH tools</term>
+                    <term>Arabic</term>
+                    <term>Spanish</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>South America</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>natural language processing</term>
+                    <term>Philology</term>
+                    <term>Philosophy</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; text-align: justify;">Establishing English as the 
+                <hi rend="italic">lingua franca</hi> in Academia has contributed to what has become known as “linguistic injustice” (see Van Parijs, 2002; Hyland, 2016; Politzer-Ahles et al., 2016; Soler, 2020). This idea states that second-language learners are at a disadvantage when using the new language. The predominance of English and the difficulties that a poor command of the language can pose have been a relevant concern in Digital Humanities (DH) (see Mahony, 2019, p. 384; Galina, 2014, p. 314). When discussing the consequences and possible solutions to the English-speaking bias in DH, the literature focuses on the following problems: i) the lack of translations of research output (see Galina, 2013); ii) issues of connectivity, for example, the so-called “digital divide” (Galina, 2014, p. 314; Mahony, 2019, p. 385); iii) the unavailability of data sources in languages other than English to quantify DH (Galina, 2014, p. 310); iv) problems with digital standards such as Unicode and TEI (see Fiormonte, 2012, pp. 67-69; Mahony, 2019, p. 374); and v) increasing the number of sources of textual information in languages other than English (see Galina, 2014, p. 314). In this sense, multilingual DH critiques seem to be centered on the deficiencies of non-English-language resources rather than on the level of accuracy of digital analytical tools.
+            </p>
+            <p style="text-align: left; text-align: justify;">The aim of this work is twofold. Firstly, to distinguish a phenomenon that produces a new type of linguistic injustice, which we label as “the paradox of Anglocentric multilingualism.” This paradox arises when a multilingual philosophy is pursued in constructing complex systems of analysis in a digital environment (digital platforms, ontologies). However, these systems imply advantages in the study of English over other languages. The injustice derives from a poor level of precision in the output of technology when analyzing non-English languages. Secondly, we contend that multilingual DH should address the different challenges posed by this paradox. Multilingual DH needs to deal with the deficiencies of tools’ performance as well as those of language resources, because this disadvantage makes it difficult for any cross-linguistic study to provide reliable empirical data in (dis)proving linguistic intuitions.</p>
+            <p style="text-align: left; text-align: justify;">To illustrate some of the potential problems derived from the paradox, this work will detail the difficulties we have faced in a cross-linguistic study on color terms (Bordonaba-Plou and Jreis-Navarro, forthcoming), when using the Arabic corpus arTenTen (Arts et al., 2014) and the Spanish corpus esTenTen (Kilgariff and Renau, 2013) in Sketch Engine. We will study the different performances of the tool in Arabic and Spanish, compared to English, to point out the weaknesses of this tool in a multilingual arena, making it possible to improve it and enriching the critical and inclusive framework of multilingual DH. Two main issues emerged in our inquiries. Firstly, the lists of collocations provided by the Sketch Word tool are of differing types and usefulness. For example, in Spanish, the tool provides lists like those in English (enTenTen20), i.e., lists based on a functional perspective. However, in Arabic, the researcher has fewer lists available, and those only reflect grammatical categories and the collocation position (left or right). This shortcoming of the tool means it does not provide a complete perspective on the linguistic behavior of the term. Secondly, the analyses conducted by the tool show different degrees of accuracy in Part of Speech (PoS) tagging. In Spanish, the PoS tagger classifies proper nouns as modifiers and verbs. For example, it invents 
+                <hi rend="italic">paular</hi> “to paul” (from the proper name Paula),” or 
+                <hi rend="italic">rodrigar</hi> “to Rodrigo” (from the proper name Rodrigo).” In Arabic, the PoS tagger does not cover cliticization in smart search. Cliticization is the most important phenomena in Arabic morphology and a big challenge in computational analysis (Habash, 2010, pp. 47-50). For example, the tagger reads 
+                <hi rend="italic">bāhit</hi> “pale” as if the prepositional particle proclitic 
+                <hi rend="italic">b</hi>+ “with/in” were attached to the non-existent inflected base word 
+                <hi rend="italic">āhit</hi>. These inaccuracies imply that the statistical scores –MI-score (Hunston, 2002, p. 71; Baker, 2006, p. 101), t-score (Hunston, 2002, p. 73), and Log Dice (Gablasova, Brezina and McEnery, 2017, p. 164)– cannot be used with total confidence.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Arts, T., Belinkov, Y, Habash, N., Kilgarriff, A. and Suchomel, V.</hi> (2014). arTenTen: Arabic Corpus and Word Sketches. 
+                        <hi rend="italic">Journal of King Saud University - Computer and Information Sciences</hi>, 
+                        <hi rend="bold">26</hi>(4): 357-371.
+                    </bibl>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Baker P.</hi> (2006). 
+                        <hi rend="italic">Using Corpora in Discourse Analysis</hi>. Continuum.
+                    </bibl>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Bordonaba-Plou, D., and Jreis-Navarro, L. M.</hi> (forthcoming). A cross-linguistic study of color terms in Arabic and Spanish. In Bordonaba-Plou, D. (ed.), 
+                        <hi rend="italic">Experimental Philosophy of Language: Perspectives, Methods and Prospects</hi>. Springer.
+                    </bibl>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Fiormonte, D.</hi> (2012). Towards a cultural critique of the Digital Humanities. 
+                        <hi rend="italic">Historical Social Research</hi>, 
+                        <hi rend="bold">37</hi>(3): 59-76.
+                    </bibl>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Gablasova, D., Brezina, V., and McEnery, T.</hi> (2017). Collocations in corpus‐based language learning research: identifying, comparing, and interpreting the evidence. 
+                        <hi rend="italic">Language Learning</hi>, 
+                        <hi rend="bold">67</hi>(S1): 155-179.
+                    </bibl>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Galina Russell, I.</hi> (2013). Is there anybody out there? Building a global Digital Humanities community. 
+                        <hi rend="italic">Humanidades Digitales</hi>, http://humanidadesdigitales.net/blog/2013/07/19/is-there-anybody-out-there-building-a-global-digital-humanities-community/ (accessed 15 August 2021)
+                    </bibl>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Galina Russell, I.</hi> (2014). Geographical and linguistic diversity in the Digital Humanities. 
+                        <hi rend="italic">Literary and Linguistic Computing</hi>, 
+                        <hi rend="bold">29</hi>(3): 307-316.
+                    </bibl>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Habsh, N. Y.</hi> (2010). 
+                        <hi rend="italic">Introduction to Arabic Natural Language Processing</hi>. Morgan &amp; Claypool.
+                    </bibl>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Hunston, S.</hi> (2002). 
+                        <hi rend="italic">Corpora in Applied Linguistics</hi>. Cambridge University Press.
+                    </bibl>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Hyland, K.</hi> (2016). Academic publishing and the myth of linguistic injustice. 
+                        <hi rend="italic">Journal of Second Language Writing</hi>, 
+                        <hi rend="bold">31</hi>: 58-69.
+                    </bibl>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Kilgarriff, A., and Renau, I.</hi> (2013). esTenTen, a vast web corpus of Peninsular and American Spanish. 
+                        <hi rend="italic">Procedia - Social and Behavioral Sciences</hi>, 
+                        <hi rend="bold">95</hi>: 12-19.
+                    </bibl>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Mahony, S.</hi> (2018). Cultural diversity and the Digital Humanities. 
+                        <hi rend="italic">Fudan Journal of the Humanities and Social Sciences</hi>, 
+                        <hi rend="bold">11</hi>: 371-388.
+                    </bibl>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Van Parijs, P.</hi> (2002). Linguistic Justice. 
+                        <hi rend="italic">Politics, Philosophy and Economics</hi>, 
+                        <hi rend="bold">1</hi>(1): 59-74.
+                    </bibl>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Politzer-Ahles, S., Holliday, J. J., Girolamo, T., Spychalska, M. and Berkson, K. H.</hi> (2016). Is linguistic injustice a myth? A response to Hyland (2016). 
+                        <hi rend="italic">Journal of Second Language Writing</hi>, 
+                        <hi rend="bold">34</hi>: 3-8.
+                    </bibl>
+                    <bibl style="text-align: left; text-align: justify;">
+                        <hi rend="bold">Soler, J.</hi> (2020). Linguistic injustice and global English: Some notes from its role in academic publishing. 
+                        <hi rend="italic">Nordic Journal of English Studies</hi>, 
+                        <hi rend="bold">19</hi>(3): 35-46.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

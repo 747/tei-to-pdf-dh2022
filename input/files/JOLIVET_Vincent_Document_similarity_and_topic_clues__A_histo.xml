@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Document similarity and topic clues. A historiographical study case</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Jolivet</surname>
+                        <forename>Vincent</forename>
+                    </persName>
+                    <affiliation>École des chartes, France</affiliation>
+                    <email>vincent.jolivet@chartes.psl.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Torres</surname>
+                        <forename>Sergio</forename>
+                    </persName>
+                    <affiliation>École des chartes, France</affiliation>
+                    <email>sergio.torres@chartes.psl.eu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T15:41:44.125931079</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>semantic similarity</term>
+                    <term>paragraph embeddings</term>
+                    <term>vector space models</term>
+                    <term>information retrieval and ranking</term>
+                    <term>unsupervised text classification</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>semantic analysis</term>
+                    <term>History</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Our University has recently published the longform abstracts of some 3000 institutional theses defended in history since 1849. The corpus is a rich documentary resource for historiographical studies. Unfortunately, there is no standard keyword indexing to browse this large collection and provide the reader with direct access to documents on the same subject. Such a functionality needs specific methods combining keywords, persons, places and in general intergroup patterns whose identification helps determine covered topics and related abstracts across more than a century. For this purpose, the proven clustering methods based on inter-document similarity are very effective, but in practice the interpretation of the similarity scores is difficult: a score describes how similar two documents are, but does not describe why they are similar. We have therefore experimented with methods combining document similarity and keyword extraction, so as to provide the researcher, in addition to a similarity score, with lexical clues facilitating the semantic interpretation of measured similarity.</p>
+            <p>In this presentation we present a pipeline leading with the extraction and formalization of indexing information in order to activate a document-similarity research engine, the evaluation of the scores obtained, as well as the benefits for information retrieval.</p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Methods</head>
+                <p>As our corpus is quite large, we preferred unsupervised approaches over supervised. The method is based on a semantic relatedness calculation using vectors, and the pipeline is composed of three steps.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/939965e15c30bd197a0d6756feccdf4b.png"/>
+                    </figure>Figure 1: Three steps for document similarity computing
+                </p>
+                <p>1. We extract lexical and semantic features: (a) named entities (names, persons and organizations), using a French Spacy (Honnibal, M., Montani, I., 2017: 411) named entity extraction model based on CamemBert (Martin et al., 2019) language-model; and (b) keywords describing each abstract at a section level using KeyBert (Grootendorst, M., 2020), a keyword extractor based on the multilingual DistilBert (Sanh, V. et al., 2019) sentence embeddings library. To do so we apply embedding functions to our texts, mapping raw input data to low-dimensional vector representations. We then calculate the vector distance between the full-text embedding and candidate features embeddings to find the 
+                    <hi rend="italic">top-k</hi> candidates (the keywords) that are closest to the full text.
+                </p>
+                <p>2. Our abstracts are then pre-processed into three versions containing: (a) their named entities, supposing that texts with the same entities are similar at a spatial and chronological level; (b) the keywords extracted during the first step at a paragraph-level and in so doing accounting for inflection variations such as tense and or stylistic elements; and (c) the only verbal and noun keywords, which keep only the phrasal root units to avoid lexical similarities and to summarize the text to its core components. Each one of these representations are later vectorized using Doc2vec (Le, Q., Mikolov, T., 2014: 1188), which generates context-independent embeddings (i.e, it collapses different word-meanings into a single vector), and DistilBert, which leverages Bert (Devlin, J. et al., 2018) to generate context-dependent sentence-level embeddings.</p>
+                <p>3. Finally, the cosine distance is calculated between the target-text and the database texts expressed as vectors to measure the document similarity score. This is obviously useful, as the score helps to identify related abstracts. Nevertheless, the similarity score doesn't provide all the necessary clues to determine the real performance of the given ranking of documents, and therefore must be evaluated further.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Evaluation</head>
+                <p>To estimate the relevance of the keywords embeddings method we calculate the similarity scores for all the documents pairs in an all vs all scheme using this method vs the Doc2vec and the Distilbert embeddings methods applied on full texts.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/7efe2e7e71430afb5ae86b4c8ed1b90a.png"/>
+                    </figure>Figure 2: Cosine distance statistics in an all vs all (≈ 9M matrix) scheme comparing three embedding methods: our key-distilbert method using the keywords (81 words on average) vs doc2vec and distilbert using the entire document (2013 words on average). var: variance, stdev: standard deviation
+                </p>
+                <p>The statistics (median, mean, variance, standard deviation) indicate that in general the keyword approach, using 25x less amount of text, generates a similarity score very close (± 0.08 - 0.15) to the ones obtained using the full text (see Figure 2) on both methods, also proposing a time calculation 5x faster. This confirmation opens perspectives for the processing of very large corpora insofar as for close similarity scores.</p>
+                <p>Our method has another advantage, which was our initial goal: we provide for each pair of abstracts, in addition to a similarity score, a lexicon of the shared features (keywords and/or named entities) that we believe is useful for interpreting the score. For example, for two given abstracts, their high similarity score of 0.83 is enhanced by the lexicon of shared keywords "library", "manuscript", and "abbey"; these shared features seem to be clues for the semantic interpretation of the similarity. Not all cases are so obvious and the question of the relevance of these lexical clues for interpreting thematic similarities between documents is strongly raised.</p>
+                <p>Additionally, to evaluate the similarity scores as well as the relevance of the features lexicons, we submitted similar documents to experts, asking them to assess their degree of similarity and to rate the relevance of these shared lexicons to describe the link between the documents. This evaluation is ongoing.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p>Our initial objective was to obtain a reliable measure of the thematic similarity of the abstracts, by providing lexical clues useful for the semantic interpretation of the scores. We are convinced of the effectiveness of the method for the exploration of serial corpora such as cartularies or correspondences. Finally, the data produced are valuable for historiographical study, making it possible to quantify the most and least studied subjects diachronically, in particular through the analysis of the most associated keyword groupings.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Honnibal, M. </hi>
+                        <hi rend="bold">and</hi>
+                        <hi rend="bold"> Montani, I.</hi> (2017). Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing. 
+                        <ref target="https://sentometrics-research.com/publication/72/">
+                            <hi rend="italic">Unpublished software application</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Martin, L. et al.</hi> (2019). Camembert: a tasty french language model. arXiv preprint. 
+                        <ref target="https://arxiv.org/abs/1911.03894">arXiv:1911.03894</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Grootendorst, M.</hi> (2020). 
+                        <ref target="https://maartengr.github.io/KeyBERT/">keyBERT: Minimal keyword extraction with bert</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sanh, V. et al.</hi> (2019). DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter. arXiv preprint 
+                        <ref target="https://arxiv.org/abs/1910.01108">arXiv:1910.01108</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Le Quoc and Mikolov, T.</hi> (2014). Distributed representations of sentences and documents. 
+                        <hi rend="italic">International conference on machine learning</hi>. 
+                        <ref target="https://proceedings.mlr.press/v32/le14.html">PMLR, 2014. p. 1188-1196</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Devlin, J. et al.</hi> (2018). Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint 
+                        <ref target="https://arxiv.org/abs/1810.04805">arXiv:1810.04805</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

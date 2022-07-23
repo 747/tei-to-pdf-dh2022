@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Curuinsi Project: A lexical database for preserving Tikuna language</title>
+                <author>
+                    <persName>
+                        <surname>Wicht</surname>
+                        <forename>Bertil</forename>
+                    </persName>
+                    <affiliation>RHYZOM SA, Switzerland</affiliation>
+                    <email>bertil.wicht@unil.ch</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Picca</surname>
+                        <forename>Davide</forename>
+                    </persName>
+                    <affiliation>Université de Lausanne, Switzerland</affiliation>
+                    <email>davide.picca@unil.ch</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Intangible cultural heritage</term>
+                    <term>indigenous ontologies</term>
+                    <term>digital preservation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>South America</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>natural language processing</term>
+                    <term>Indigenous studies</term>
+                    <term>Linguistics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; text-align: justify;">In the field of Natural Language Processing, the concentration of technological efforts focuses on widely spoken languages. In this regard, the vast majority of spoken languages can be characterized as under-resourced languages (Thai et al., 2019).This lack of digital resources and projects is particularly challenging for indigenous languages that are facing the threat of extinction. In order to address such a compelling issue, we spent one month doing fieldwork with native speakers, thanks to which some shortcomings emerged. In particular, the lack of technological support to help the preservation of this language.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Context</head>
+                <p style="text-align: left; text-align: justify;">Tikuna is spoken by a relatively small group of people of roughly 20,000 people living in the Amazon. The language is slowly dying, replaced by Spanish. Despite the continuous efforts of linguists and anthropologists whose studies keep the language alive and the interest in maintaining it, at present there are no persistent and ongoing digital projects that disseminate and preserve this linguistic culture. </p>
+                <p style="text-align: left; text-align: justify;">Despite such an observation, this work was possible thanks to some very rare resources found on the web which are:</p>
+                <list type="ordered">
+                    <item>a word list compiled from documents translated in Tikuna (Scanell, 2007)</item>
+                    <item>a hunter-gatherer word database containing 647 entries
+                        <note place="foot" xml:id="ftn1" n="1">
+                            <p style="text-align: left; "> The Hunter – Gatherer database can be found at : https://huntergatherer.la.utexas.edu/languages/language/110</p>
+                        </note>
+                    </item>
+                    <item>a PDF bilingual dictionary in Spanish-Tikuna (Anderson and Anderson, 2017)</item>
+                </list>
+                <p style="text-align: left; text-align: justify;">Similar to our colleagues in the Kamusi project (Martin and Radtezky, 2014), creating digital resources from digitized paper documents presents methodological challenges that cannot be neglected. As in our case, the quality of digital capture is often not the best. Therefore, for this project, we focused on the best quality document, the bilingual dictionary, to create a fully digitized resource such as an interactive database. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Methodology</head>
+                <p style="text-align: left; text-align: justify;">The overall pipeline as depicted in Illustration 1 for the project consists in 4 main steps :</p>
+                <list type="ordered">
+                    <item>conversion of the PDF dictionary in an editable text format</item>
+                    <item>correction and restructuring of text</item>
+                    <item>annotation and extension of the database</item>
+                    <item>assessment and analysis of the data </item>
+                </list>
+                <figure>
+                    <graphic n="1001" width="10.830277777777777cm" height="6.067777777777778cm" url="Pictures/60ea08158b1c80070d379ab6a4baa528.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Illustration 1: The 4 sequential steps of the text processing</p>
+                <p style="text-align: left; text-align: justify;">For the conversion of the PDF file we employed the Adobe Acrobat OCR converter
+                    <note place="foot" xml:id="ftn2" n="2">
+                        <p style="text-align: left; "> The Adobe OCR can be obtained at : https://www.adobe.com/acrobat/how-to/ocr-software-convert-pdf-to-text.html</p>
+                    </note>. Due to the weak PDF structure and the complexity of the diacritics, the OCR output required substantial manual cleanup work during phase 2 to ensure automatic segmentation. The text file contained 5828 lines, each providing synsets for a Tikuna word or expression. Illustration 2 shows the way the original scanned document content was segmented in order to capture each distinct element. Examples were not captured due to limitations concerning regexes and lookarounds in this particular context with complex diacritics. Element referring to another Tikuna word were not kept, as the semantic relation between the terms were unclear. For those synsets lacking POS tags, we used the spacy tagger
+                    <note place="foot" xml:id="ftn3" n="3">
+                        <p style="text-align: left; "> spacy is freely available at : hhtps://spacy.io</p>
+                    </note> to annotate them. Instead those synsets for which the dictionary provided the POS, we just standardized the tag so that it was uniform with the tagset provided by spacy. Finally, in step 4, we ran some analysis to validate the data structure and provide insights on the overall performance of the procedure. 
+                </p>
+                <figure>
+                    <graphic n="1002" width="13.229166666666666cm" height="5.185833333333333cm" url="Pictures/3627bbea46a656a62523804c107e1ee5.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Illustration 2: Vizualisation of the text segmentation and labelling </p>
+                <p style="text-align: left; text-align: justify;">After the above mentioned segmentation process, we classified the synsets in four categories based on the number of synsets provided per Tikuna tokens and the number of POS tags per synsets as shown in Table 1.</p>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Monosemic with POS tag</cell>
+                        <cell style="text-align: left;" rend="DH-Default">4094</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Monosemic without POS tag</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1258</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Polysemic with single POS tag</cell>
+                        <cell style="text-align: left;" rend="DH-Default">544</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Polysemic with multiple POS tag</cell>
+                        <cell style="text-align: left;" rend="DH-Default">42</cell>
+                    </row>
+                </table>
+                <p style="text-align: left; ">Table 1: Overview of classified entries from the initial document</p>
+                <p style="text-align: left; text-align: justify;">Lastly, as shown in Table 2, we assessed the data loss during the process and the missing data from the database. The only missing data regards translations and encompass all entries that did not have a word for translation but rather an explanation of the word.</p>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Tikuna</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Prononciation</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Gram. Type</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Translation</cell>
+                        <cell style="text-align: left;" rend="DH-Default">26</cell>
+                    </row>
+                </table>
+                <p style="text-align: left; ">Table 2: Data quality assessment</p>
+                <p style="text-align: left; text-align: justify;">The database is freely exploitable through an interactive web application, user-friendly and ready-to-use
+                    <note place="foot" xml:id="ftn4" n="4">
+                        <p style="text-align: left; "> The application is available upon request contacting the first author</p>
+                    </note>.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left; text-align: justify;">In a future phase of the project, we intend to extend the database and not only to transcribed entries but each entry could have all oral variants incorporated, since Tikuna is a primarily oral language and therefore many words have multiple phonetic forms. Also, since the initial document was created to facilitate indigenous reading of the Bible, most of the content is geared toward this use. Therefore, the actual content of the corpus is not representative of the language or culture of the Tikuna speakers. However, some complex cultural meaning as explained by Santos (Santos, 2013) are lacking. Better integration of indigenous ontologies is needed to ensure inclusivity and representativeness. By doing so, we can build cultural data models with other ontologies that are more inclusive and representative of cultures. For this task and for the next steps of the project, collaboration with native speakers would be necessary, which we are already working for.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Martin Benjamin and Paula Radetzky</hi>.(2014). 
+                        <hi rend="italic">Multilingual Lexicography with a Focus on Less-Resourced Languages: Data Mining, Expert Input, Crowd-sourcing, and Gamification</hi>. en. In: 9th edition of the Language Resources and Evaluation Conference. 
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Anderson Doris and Lambert Anderson</hi> (dir.).(2017). 
+                        <hi rend="italic">Diccionario ticuna–castellano</hi>, Serie Lingüística Peruana. Summer Institute of Linguistics, Lima.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Abel Antonio Santos Angarita</hi>.(2013). 
+                        <hi rend="italic">Percepción tikuna de Naane y Naüne: territorio y cuerpo.</hi> Universidad Nacional de Colombia - Sede Amazonas. PhD thesis
+                        <hi rend="italic">.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Kevin Scannell</hi>.(2017). 
+                        <hi rend="italic">The Crúbadán Project: Corpus building for under-resourced languages</hi>. en. In: Cahier du Central , p. 10. 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

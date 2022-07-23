@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Modelling the relationship between morphosyntactic features and discourse relations in a multimodal corpus of primary school science diagrams</title>
+                <author>
+                    <persName>
+                        <surname>Hiippala</surname>
+                        <forename>Tuomo</forename>
+                    </persName>
+                    <affiliation>University of Helsinki, Finland</affiliation>
+                    <email>tuomo.hiippala@helsinki.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Haverinen</surname>
+                        <forename>Jonas</forename>
+                    </persName>
+                    <affiliation>University of Helsinki, Finland</affiliation>
+                    <email>jonas.haverinen@helsinki.fi</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>multimodality</term>
+                    <term>diagrams</term>
+                    <term>corpora</term>
+                    <term>discourse structure</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>mixed-media analysis</term>
+                    <term>Design studies</term>
+                    <term>Linguistics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">In 1998, Watanabe and Nagao published a pioneering article on the relationship between written language and pictorial representations in diagrams (Watanabe and Nagao 1998). By manually analysing 31 diagrams from Japanese books of flora that describe the shape, features and environment of plants, Watanabe and Nagao showed that morphosyntactic features of textual elements could be mapped to specific discourse relations that held between the text and pictorial representation of a plant. They also formulated a set of rules to support the computational processing of diagrammatic representations, which could be used to infer what kinds of relations hold between textual and pictorial elements.</p>
+            <p style="text-align: left; ">From a contemporary standpoint, the diagrams studied by Watanabe and Nagao (1998) can be approached from the perspective of multimodality theory, which studies how human communication relies on intentional combinations of multiple “modes” of expression (Bateman et al. 2017). From a multimodal perspective, individual diagrams may be treated as instances of the diagrammatic semiotic mode, which integrates natural language and diverse visual expressive resources into a common discourse organisation (Hiippala and Bateman 2021). Against this backdrop, the rules formulated by Watanabe and Nagao (1998) can be treated as descriptions of their multimodal discourse structure, which guide the viewers towards interpretations of what combinations of modes mean in their context of occurrence (Bateman 2020).</p>
+            <p style="text-align: left; ">In this contribution, we revisit the work of Watanabe and Nagao (1998) using a recently published multimodal corpus of 1000 primary school science diagrams in English. This openly-available corpus, named AI2D-RST, contains multiple layers of cross-referenced annotations for expressive resources, layout and discourse structure, which have been created by trained experts (Hiippala et al. 2021). Our aim is to establish whether a similar mapping between morphosyntactic features and discourse relations proposed by Watanabe and Nagao (1998) can be found in English-language diagrams that serve similar communicative goals, that is, depict and explain various natural phenomena. Acknowledging the multimodal nature of diagrams, we also complement the morphosyntactic features with information about diagram layout and use of lines.</p>
+            <p style="text-align: left; ">In contrast to the manual analysis in Watanabe and Nagao (1998), we adopt a corpus-driven approach to examine discourse relations between textual and pictorial elements. We extract 2580 discourse relations from the AI2D-RST corpus that hold between pictorial and textual elements, focusing on relations that name entire objects (“identification”) or describe part-whole relations (“elaboration”). We extract the following features for each pair of elements: (1) whether the textual element consists of a nominal, clause, modifier or numeral, (2) the distance between elements in the layout, (3) the angle between pictorial and textual elements, and (4) whether the elements are connected using a line.</p>
+            <p style="text-align: left; ">We use the aforementioned features to train a random forest classifier with 10 decision trees to predict whether the textual element names or describes a pictorial element. We use 10-fold cross-validation to evaluate the classifier, which achieves an average macro F1-score of 0.86 (standard deviation: 0.06). An analysis of how much each feature contributes to classification decisions reveals that apart from numerals, linguistic information is largely irrelevant. The distance between the pictorial and textual elements and whether they are connected using a line are the most important features for determining the function of a text element (see Figure below).</p>
+            <figure>
+                <graphic n="1001" width="10.7151cm" height="7.1434cm" url="Pictures/bbfb62db0e9187a8e3d4b601779783db.png" rend="inline"/>
+                <head>Figure 1: The importance of each input feature, averaged over ten decision trees. The bars show standard deviation for each feature.</head>
+            </figure>
+            <p style="text-align: left; ">Our results suggest that layout and diagrammatic elements such as arrows and lines are crucial for making inferences about the multimodal discourse structure of diagrams. Detecting textual elements and lines may thus help to unpack the structure diagrams. This has broader implications to emerging work in digital humanities, particularly within the paradigm of “distant viewing” (Arnold and Tilton 2019) and the growing interest in applying computational methods to multimodal data (Wevers and Smits 2020; Smits and Kestemont 2021). Compared to purely linguistic data, computational treatment of multimodal data in digital humanities rarely addresses fundamental questions such as how to identify basic units of analysis and the discourse relations that hold between them. Understanding the structure of multimodal discourse is a prerequisite for performing more complex analyses that are now regularly pursued using linguistic data, such as tracking semantic shifts. Achieving a similar capability for multimodal data requires a deeper understanding of discourse structures within individual modes of communication, such as the diagrammatic semiotic mode, and how individual modes are combined in multimodal artefacts.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Arnold, T. and Tilton, L.</hi> (2019). Distant viewing: analyzing large visual corpora. Digital Scholarship in the Humanities 34(Supplement 1): i3–i16.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bateman, J.A., Wildfeuer, J. and Hiippala, T.</hi> (2017). Multimodality: Foundations, Research and Analysis. De Gruyter: Berlin.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bateman, J.A.</hi> (2020). The foundational role of discourse semantics beyond language. In Zappavigna, M. &amp; Dreyfus, S. (eds) Discourses of Hope and Reconciliation. On J. R. Martin’s Contribution to Systemic Functional Linguistics. Bloomsbury: London, pp. 39–55.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hiippala, T. and Bateman, J.A.</hi> (2021). Semiotically-grounded distant viewing of diagrams: insights from two multimodal corpora. Digital Scholarship in the Humanities. DOI: 10.1093/llc/fqab063/6374705
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hiippala, T., Alikhani, M., Haverinen, J. et al.</hi> (2021) AI2D-RST: a multimodal corpus of 1000 primary school science diagrams. Language Resources &amp; Evaluation 55: 661–688.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Smits, T. and Kestemont, M.</hi> (2021). Towards multimodal computational humanities: using CLIP to analyze late-nineteenth century magic lantern slides. In Proceedings of the Computational Humanities Research Conference (CHR), pp. 149–158.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Watanabe, Y. and Nagao, M.</hi> (1998). Diagram understanding using integration of layout information and textual information. In Proceedings of the 17th International Conference on Computational Linguistics (COLING), pp. 1374–1380.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

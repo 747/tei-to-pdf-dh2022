@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Method to Automatically Georeference and Estimate the Coastline Precision of Digital Historical Maps</title>
+                <author>
+                    <persName>
+                        <surname>Pala</surname>
+                        <forename>Giovanni Maria</forename>
+                    </persName>
+                    <affiliation>University of Oxford, United Kingdom</affiliation>
+                    <email>giovanni.pala@magd.ox.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T11:38:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Cartography</term>
+                    <term>Modern History</term>
+                    <term>Navigation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>image processing and analysis</term>
+                    <term>Computer science</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Maps were a key technology in modern navigation yet, until recently, the quantitative study of historical map’s content on a large scale has been limited by constraints on access to materials and by computational limitations. Consequently, existing historical studies dealing with cartography have relied on representative examples and curated comparisons, without engaging in formal large-scale investigations (Jupp, 2017; Carlton, 2015; Petto, 2007; Akerman, 2006). The recent flourishing of new digital technologies and materials encourages different approaches (Chiang et al., 2014; Kovarsky, 2011), and has seen a flourishing of methods that explore ways of extracting maps’ textual content (see Machines Reading Maps) and achieving semantic segmentation for feature recognition (Petitpierre et al., 2022). In line with recent applications, this contribution presents a new method to register changes in historical maritime cartography by studying coastlines representation. To do so, it introduces a new automatic approach to historical maps georeferencing.</p>
+            <p style="text-align: left; ">The choice of coastlines avoids issues of tampering: contrary to land boundaries mapping, the coastline was rarely subject to politically driven alterations. It is a very different border. Precision of maps is meant here to be the closeness of the land shapes they represent to current 21
+                <hi rend="superscript">st</hi> century representations. Because the geographic coordinate system was, in its general construction, already defined by the late 17th century, it is possible to compare changes of positioning within it across time. Importantly, erosion at high scales is a assumed to be limited.
+            </p>
+            <p style="text-align: left; ">Rigorously studying the evolution of the quality of coastline mapmaking would contribute to numerous histories related to maritime trade, printing, and the knowledge economy (Kelly and Ó Gráda, 2019; Pascali, 2017; Dowey, 2017). This would also increase our understanding of political connections, especially between distant regions such as Europe and East Asia (Hostetler, 2009).</p>
+            <p style="text-align: left; ">The measurement of the evolution of coastline and landmass positioning in historical maps requires the solution of three technical problems: georeferencing, segmentation, and assessing the map’s precision.</p>
+            <p style="text-align: left; ">Georeferencing is the process of associating an object (e.g., a map scan) to a system of geographic coordinates. Currently this process is almost invariably done by hand, with the user imputing specific Ground Control Points (GCPs) on the digital image which are associated with the equivalent point of known coordinates on the globe. Existing algorithms can then, with increasing accuracy as the points increase in number, create a geo-referenced raster that is readable by a GIS software (Jenny and Hurni, 2011; Rumsey and Williams, 2002). This process can be very time consuming. The algorithm proposed here solves for the first time this issue by means of a multi-step approach. As a starting point, it uses a state-of-the-art Optical Character Recognition software (OCR) to obtain the longitude and latitude coordinates reported on the boundary of the map. The boundary region is identified with an approach similar to the one used by Ares Oliveira et al. (2018). A Convolutional Neural Network (CNN) modelled after a U-Net encoder-decoder with skip-connections, is then applied on a binary pre-processed version of the map to extract its projection grid. The extracted grid is decomposed in segments via a Probabilistic Hough Transform (Galamhos et al., 1999), and the grid’s inclination space is obtained by interpolation of the extracted segments’ inclinations. Combining the results, the GCPs are automatically placed at the intersection of the latitude-longitude lines produced from the interpolated grid values. The GCPs’ geocoordinate values are the OCR ones.</p>
+            <p style="text-align: left; ">Once the image is geo-referenced, every image pixel has a latitude-longitude coordinate assigned to it. The pixels, however, need to be categorised (for example, as “land” or “sea”). A semantic segmentation (i.e., by-pixel classification) CNN network has been trained on synthetic data and original map scans to complete the task. The resulting classified and geo-referenced image can be next used to single out the coastlines. </p>
+            <p style="text-align: left; ">The final step of this process is the measurement of the distance between the segmented map and its 21
+                <hi rend="superscript">st</hi> century equivalent. This is the measure of the maps’ precision. As a rule, this study employs a simple error rate built on spatial blocks set at some fixed arc of a degree granularity, but more advanced approaches are considered (e.g., Wasserstein or Sinkhorn distances, see: Villani, 2009; Cuturi, 2013). The error rates obtained for each map, paired with the metadata available for the cartographic objects, create a rich dataset that can be used to model and test hypotheses with other correlates, and improve our capacity to ask questions on the evolution of geographic information, precision, and accuracy.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Akerman, J. R. ed </hi>(2006). 
+                        <hi rend="italic">Cartographies of Travel and Navigation</hi>. University of Chicago Press. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Ares Oliveira, S., Seguin, B., and Kaplan, F. </hi>(2018). dhSegment: A generic deep-learning approach for document segmentation. 
+                        <hi rend="italic">Frontiers in Handwriting Recognition (ICFHR), 2018 16th International Conference on</hi>, pp. 7-12
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Carlton, G. </hi>(2015). 
+                        <hi rend="italic">Worldly Consumers: The Demand for Maps in Renaissance Italy</hi>. University of Chicago Press. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Chiang, Y., Leyk, S., and Knoblock, C. A. </hi>(2014). A survey of digital map processing techniques. 
+                        <hi rend="italic">ACM Computing Surveys (CSUR)</hi>, 47(1): 1-44.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Cuturi, M.</hi> (2013). Sinkhorn distances: Lightspeed computation of optimal transport. 
+                        <hi rend="italic">Advances in Neural Information Processing Systems</hi>, 26: 2292-2300.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Dowey, J. </hi>(2017). 
+                        <hi rend="italic">Mind over matter: access to knowledge and the British Industrial Revolution</hi>. Ph.D. Dissertation, The London School of Economics and Political Science.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Galamhos, C., Matas. J., and Kittler, J. </hi>(1999). Progressive probabilistic Hough transform for line detection. 
+                        <hi rend="italic">Proceedings: 1999 IEEE computer society conference on computer vision and pattern recognition</hi>, 1: 554-560.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Hostetler, L. </hi>(2009). Contending cartographic claims? The Qing empire in Manchu, Chinese, and European maps. In Akerman, J. R. (ed), 
+                        <hi rend="italic">The Imperial Map: Cartography and the Mastery of Empire</hi>. University of Chicago Press, pp. 93-132.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Jenny, B., and Hurni, L</hi>. (2011). Studying cartographic heritage: Analysis and visualization of geometric distortions. 
+                        <hi rend="italic">Computers and Graphics</hi>, 35(2): 402-411. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Jupp, D. L. </hi>(2017). Projection, Scale, and Accuracy in the 1721 Kangxi Maps. 
+                        <hi rend="italic">Cartographica: The International Journal for Geographic Information and Geovisualization</hi>, 52(3): 215-232.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Kelly, M. and Ó Gráda, C. </hi>(2019). Speed under sail during the early industrial revolution (c. 1750–1830). 
+                        <hi rend="italic">The Economic History Review</hi>, 72(2): 459-480.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Kovarsky, J. </hi>(2011). Searching for early maps: use of online library catalogs. 
+                        <hi rend="italic">ACMLA Bulletin</hi>, 138.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Machines Reading Maps</hi>, 
+                        <ref target="https://www.turing.ac.uk/research/research-projects/machines-reading-maps">https://www.turing.ac.uk/research/research-projects/machines-reading-maps</ref> (accessed 20 April 2022)
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Pascali, L.</hi> (2017). The wind of change: Maritime technology, trade, and economic development. 
+                        <hi rend="italic">American Economic Review</hi>, 107(9): 2821-2854.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Petitpierre, R., Kaplan, F., and di Lenardo, I. </hi>(2022). Generic semantic segmentation of historical maps. 
+                        <hi rend="italic">CEUR Workshop Proceedings</hi>, 
+                        <ref target="http://ceur-ws.org">http://ceur-ws.org</ref>, ISSN 1613-0073.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Petto, C. M. </hi>(2007). 
+                        <hi rend="italic">When France Was King of Cartography: The Patronage and Production of Maps in Early Modern France</hi>. Lexington books.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Rumsey, D., and Williams, M. </hi>(2002). 
+                        <hi rend="italic">Historical maps in GIS</hi>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Villani C. </hi>(2009). 
+                        <hi rend="italic">Optimal Transport: old and new</hi>. Berlin: Springer, pp. 93-111. 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

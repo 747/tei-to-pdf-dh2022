@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Regularization of kinship relations to enrich the family network analysis: Case study on China Biographical Database</title>
+                <author>
+                    <persName>
+                        <surname>Yuan</surname>
+                        <forename>Yiguo</forename>
+                    </persName>
+                    <affiliation>Nanjing Normal Universtiy, China, People's Republic of</affiliation>
+                    <email>lexcliff1023@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Li</surname>
+                        <forename>Bin</forename>
+                    </persName>
+                    <affiliation>Nanjing Normal Universtiy, China, People's Republic of</affiliation>
+                    <email>libin.njnu@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lu</surname>
+                        <forename>Xuehui</forename>
+                    </persName>
+                    <affiliation>Nanjing Normal Universtiy, China, People's Republic of</affiliation>
+                    <email>1164800955@qq.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Feng</surname>
+                        <forename>Minxuan</forename>
+                    </persName>
+                    <affiliation>Nanjing Normal Universtiy, China, People's Republic of</affiliation>
+                    <email>fennel_2006@163.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T06:25:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>kinship</term>
+                    <term>family network</term>
+                    <term>regularization</term>
+                    <term>network analysis</term>
+                    <term>ancient China</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>cultural analytics</term>
+                    <term>digital biography</term>
+                    <term>personography</term>
+                    <term>and prosopography</term>
+                    <term>Asian studies</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">
+                Kinship is an important issue in history studies. The kinship database is the key resource to analyze the structure and succession/evolution of families (Shang and Huang, 2018). However, the types of kinship within databases rely on the original description of kinships in the raw text. Natural languages have many kinship words to name different types of relationships. Thus, the relations extracted from raw texts cannot be directly used to definitively build family networks. As in the well-known China Biographical Database (CBDB), which contains 484,416 kinship instances, there are more than 400 types of kinship relations. In this paper, we put forward a novel method to regularize kinship relations by three basic relations: father-offspring, mother-offspring and husband-wife. All types of relations are regularized as these three basic relations to construct family networks more conveniently. Persons’ information is helpful to the regularization of kinship relations and verification of kinship instances. We retain four kinds of information for each person in CBDB: ID, name, gender and year of death.
+            </p>
+            <p style="text-align: left; ">
+                There are three steps in the regularization of kinship relations. Firstly, we extracted kinship instances via 64 kinship word types recording the three basic kinships directly and regularize them to remove the redundancy. This is because one kinship instance could come from multiple instances in CBDB. In this step, we got 121,829 basic kinship instances, including 76,597 father-offspring instances, 18,839 mother-offerspring instances and 26,393 husband-wife instances. Secondly, there are some non-basic kinship instances by which to infer new basic kinship instances which are not included in CBDB. Here we inferred 32,553 new basic kinship instances by using 6 relations: grandfather, grandmother, great-grandfather, great-grandmother, father-in-law and uncle. To be specific, the grandfather in this paper refers to the paternal grandfather unless it is clearly marked as the maternal grandfather, so does the grandmother, great grandfather and so on. Thirdly, we enriched the family networks by adding missing persons to make full use of kinship instances in CBDB, especially increase pedigree depths. We added 5,805 missing persons infer 10,337 basic kinship instances by using grandfather, great-grandfather and ancestor relations. Besides, we did detection and correction of conflicting kinship instances after each step, including instances conflicting with persons’ information and instances conflicting with other instances. Finally, we generated 178,390 basic kinship instances, while finding out 3,989 inconsistencies.
+            </p>
+            <p style="text-align: left; ">By traversing all basic kinship instances, we got family trees each of which has an ancestor as the root node and generations of persons as nodes. By the above regularization in three steps, the number of family trees grows from 29,316 to 29,423. The maximum depth of a family could reach 50 generations, and the largest family has 2,112 members. It proves the effectiveness of our work on regularizing kinship instances. </p>
+            <p style="text-align: left; ">In conclusion, regularizing relations named by various and complex kinship words in natural languages to the three basic relations is an effective method to construct and enrich family networks which could not be observed and counted directly in kinship databases like CBDB.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="heading 4">
+                        <anchor xml:id="Ref19382"/> Shang W, Huang W. (2018). Investigating the Relationships between Scholars and Politicians in Ancient China: Taking the Yuanyou Era as an Example. Journal of the Japanese Association for Digital Humanities, 3(1): 33-48.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

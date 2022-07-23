@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Gender Assignment as an Event: a contemporary approach to adequately depict historical gender categories</title>
+                <author>
+                    <persName>
+                        <surname>Andrews</surname>
+                        <forename>Tara Lee</forename>
+                    </persName>
+                    <affiliation>Institute for History, University of Vienna; Austrian Centre for Digital Humanities and Cultural Heritage, Austrian Academy of Sciences</affiliation>
+                    <email>tara.andrews@univie.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ebel</surname>
+                        <forename>Carla</forename>
+                    </persName>
+                    <affiliation>Austrian Centre for Digital Humanities and Cultural Heritage, Austrian Academy of Sciences</affiliation>
+                    <email>carla.ebel@oeaw.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Deierl</surname>
+                        <forename>Marin</forename>
+                    </persName>
+                    <affiliation>Institute for History, University of Vienna</affiliation>
+                    <email>marius.deierl@univie.ac.at</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Near East</term>
+                    <term>gender representation</term>
+                    <term>CIDOC-CRM</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>digital biography</term>
+                    <term>personography</term>
+                    <term>and prosopography</term>
+                    <term>linked (open) data</term>
+                    <term>History</term>
+                    <term>Transgender and non-binary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">When we consider the historical and contemporary reality of gender identities, we frequently find cases where gender assignments change over a person’s lifetime. According to the discourse on gender in the last 70 years (Beauvoir, 1949; Butler, 1990; Lugones, 2007) it is recognised that gender is not an innate attribute of a person, but a categorization attributed according to regional and historical circumstances, usually based on physical features. Attribution processes and the available gender vocabulary can vary over time and place, although gender categorization is usually performed in temporal proximity to a person's birth.</p>
+            <p style="text-align: left; ">The nature of this categorization, however, is not adequately represented in existing data standards. Although modeling gender is not addressed in the Cidoc CRM 7.1.1 documentation (Bekiari et al., 2021) the use of "P2 has type" and "E55 Type" is the default solution, which treats gender as an untemporalized type that is assigned to a person.
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> The CIDOC-CRM model originally included an explicit way to model gender, but the relevant definitions were removed in 2001 on the grounds that "there is nothing more important about gender than about any other properties giving rise to a set of people". See comments on the closed issue: 
+                        <ref target="https://www.cidoc-crm.org/Issue/ID-38-delete-gender">https://www.cidoc-crm.org/Issue/ID-38-delete-gender</ref> and recommendations in the SARI documentation for example: 
+                        <ref target="https://docs.swissartresearch.net/et/persons/">https://docs.swissartresearch.net/et/persons/</ref>.
+                    </p>
+                </note>  Other models for biographical data, such as schema.org
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p rend="footnote text">
+                        <ref target="https://schema.org/gender">https://schema.org/gender</ref>
+                    </p>
+                </note> and the data model of the German National Library
+                <note place="foot" xml:id="ftn3" n="3">
+                    <p rend="footnote text">
+                        <ref target="https://d-nb.info/standards/elementset/gnd#gender">https://d-nb.info/standards/elementset/gnd#gender</ref>
+                    </p>
+                </note> also treat gender as an inherent and unchanging category. Although the FOAF Vocabulary Specification claims not to (Brickley and Miller, 2000), the FOAF model does not include a general means of recording change in personal information over time. In this paper we present an approach, based on the CIDOC-CRM and its principles of event modelling, that moves beyond static gender roles to encompass assignment of gender identity as an event in people’s lives.
+                <note place="foot" xml:id="ftn4" n="4">
+                    <p rend="footnote text"> We are aware that our current model can not represent gender in all its complexicity. A notable example that captures more and other dimensions of gender is the "GenderedCHContents" ontology (Bikakis and Kyvernitou 2017).  Based on our data and RELEVENs focus on assertions, we see the model respresented in the upcoming paper as an adequate approach for our project.</p>
+                </note>
+            </p>
+            <p style="text-align: left; ">The test bed for our approach is the RELEVEN project. RELEVEN focuses on the so-called “short 11th century” in the eastern Christian world, spanning the territory from Italy and the Balkans through to Iran; the project explores the connections between people, regions and ideas across the cultures that made up the Christian world, especially in its eastern areas where the majority of people lived and in the areas of heaviest interregional interchange with the Muslim world. In this context we find three genders that played a significant role in the historical sources for this period: “eunuch”, “female” and “male”; in line with the wider scholarship on gender, it has long been acknowledged that, not only within the Byzantine world but also in the Islamic world and elsewhere in Asia, they were indeed considered a third gender (Ringrose, 2003) and they are represented as such in existing databases such as the Prosopography of the Byzantine World (Jeffreys et al., 2017). </p>
+            <p style="text-align: left; ">While the first naive approach might be to classify eunuchs as males who underwent a castration event, this would not reflect the historical situation appropriately – in the sources there are some eunuchs specified as "congenital eunuchs". While it isn't entirely clear what constituted a "congenital eunuch", the suggestion seems to be that in these cases no castration event ever occurred; whether the persons concerned were intersex or did not form gender-typical physical features by the time of puberty, it seems that they were recognised relatively early in life as belonging to the "eunuch" category rather than the "male" category. Thus, for any particular eunuch, unless it is specified when and how they came to be assigned to the eunuch state, we cannot know whether it was a "congenital" or inherent classification, or an explicit change of status that was forced with mutilation.</p>
+            <p style="text-align: left; ">Given this gap in the evidence that we have, it becomes clear that we must also treat 'female' and 'male' as gender assignments rather than sex assignments; after all, almost all of the evidence we have concerns the social roles of the people involved rather than their anatomy or genetics. While these would have aligned in the expected way in the vast majority of cases, it makes more sense to use the classification for which we actually have written evidence: namely, the social construct. From this perspective, it follows that we cannot map the eunuch category as a special case of a binary; as argued by Ringrose (2003), if we are modeling the social construct (gender) rather than the biological characteristics (sex), we must represent the three categories we encounter on an equal footing: an assignment that usually does not, but nevertheless can, change over time. </p>
+            <p style="text-align: left; ">In the RELEVEN data model, all gender assignments are treated as events, and specifically as E17 Type Assignment events in the CIDOC-CRM ontology.
+                <note place="foot" xml:id="ftn5" n="5">
+                    <p rend="footnote text"> This is an uncontroversial modeling decision, since 'P2 has type' is a shortcut of the event-based path E1 CRM Entity : P41i was classified by : E17 Type Assignment; E17 : P42 assigned to : E55 Type. See 
+                        <ref target="https://www.cidoc-crm.org/Property/P2-has-type/version-7.1.1">https://www.cidoc-crm.org/Property/P2-has-type/version-7.1.1</ref>.
+                    </p>
+                </note> The usual assumption is that, unless specified otherwise in a source, these assignments happen at birth or at the latest by the age of puberty; since the assignment is a subclass of E7 Event, the association of a date or date range to the event becomes straightforward.  The relevant classes and properties from Cidoc CRM 7.1.1. are given in OWL in Figure 1.
+            </p>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="12.481277777777779cm" url="Pictures/785e200f3a007a6a4af9add9a21cb4c5.png" rend="inline"/>
+                <head>1 An OWL representation of the relevant CIDOC-CRM classes and properties for a Gender Assignment Event</head>
+            </figure>
+            <p style="text-align: left; ">In Figure 2 is a schematic example of an assertion in our data model, claiming on the basis of the Chronicle of Michael the Syrian that the son of the last Doukas emperor, Michael VII, was castrated by the usurper Nikephoros Botaneiates during his reign. This approach to modeling, taken together with the wider context of RELEVEN’s assertion-based (rather than fact-based) data model (Baillie et al. 2021), means that we can also represent conflict or confusion in the sources about a person’s gender identity, where this conflict arises, simply by adding a competing assertion based on another source.</p>
+            <figure>
+                <graphic n="1002" width="16.002cm" height="14.215180555555555cm" url="Pictures/5eb79517ef1eb4df3cc043d577935d7a.png" rend="inline"/>
+                <head>2 Assertion that Constantine Doukas became a eunuch between 1078–81</head>
+            </figure>
+            <p style="text-align: left; ">We present our approach in the hope that it will not only be useful in the context of our own project, but that its applicability to other prosopographical data sets in historical and geographical contexts can be recognised. The Hijras of South Asia and the 
+                <hi rend="italic">burrnesha</hi> of Albania indeed often acquire their gender status via an event (a ritual or the taking of an oath), making this a very suitable model for these cases; transgender people all over the world can also easily be represented this way. The model is also relevant to post-mortem gender attributions, such as those often made in the context of archaeological excavations.
+            </p>
+            <p rend="DH-Heading2">Acknowledgments</p>
+            <p style="text-align: left; ">This work arises from a project that has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (Grant agreement No. 101002357).</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Baillie, J., Andrews, T. L., Romanov, M., Knox, D. and Vargha, M.</hi> (2021). Modelling Historical Information with Structured Assertion Records. 
+                        <hi rend="italic">Digital History Berlin</hi>. Berlin 
+                        <ref target="https://dhistory.hypotheses.org/518">https://dhistory.hypotheses.org/518</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Beauvoir, S. de</hi> (1949). 
+                        <hi rend="italic">Le deuxième sexe</hi>. Gallimard.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bekiari, C., Bruseker, G., Doerr, M., Ore, C.-E., Stead, S. and Velios, A. (eds).</hi> (2021). Definition of the CIDOC Conceptual Reference Model 
+                        <ref target="https://www.cidoc-crm.org/Version/version-7.2">https://www.cidoc-crm.org/Version/version-7.2</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Brickley, D. and Miller, L.</hi> (2000). FOAF Vocabulary Specification 
+                        <ref target="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Butler, J.</hi> (1990). 
+                        <hi rend="italic">Gender Trouble: Feminism and the Subversion of Identity</hi>. Routledge.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Jeffreys, M.</hi> (2017). 
+                        <hi rend="italic">Prosopography of the Byzantine World, 2016</hi>. King’s College London 
+                        <ref target="https://pbw2016.kdl.kcl.ac.uk/">https://pbw2016.kdl.kcl.ac.uk/</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Lugones, M.</hi> (2007). Heterosexualism and the Colonial / Modern Gender System. 
+                        <hi rend="italic">Hypatia</hi>, 
+                        <hi rend="bold">22</hi>(1). Indiana University Press: 186–209.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Ringrose, K. M.</hi> (2003). 
+                        <hi rend="italic">The Perfect Servant : Eunuchs and the Social Construction of Gender in Byzantium</hi>. (ACLS Humanities E-Book Series). Chicago: University of Chicago Press 
+                        <ref target="https://search.ebscohost.com/login.aspx?direct=true&amp;db=nlebk&amp;AN=212703&amp;site=ehost-live">https://search.ebscohost.com/login.aspx?direct=true&amp;db=nlebk&amp;AN=212703&amp;site=ehost-live</ref> (accessed 10 December 2021).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

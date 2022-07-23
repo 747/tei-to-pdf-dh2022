@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main"> Linked Open Dictionaries (2015-2022): Achievements, Experiences and Challenges with respect to LOD Technology in Linguistics and the Philologies </title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Chiarcos</surname>
+                        <forename>Christian</forename>
+                    </persName>
+                    <affiliation>Applied Computational Linguistics, Goethe Universität Frankfurt, Germany</affiliation>
+                    <email>christian.chiarcos@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ionov</surname>
+                        <forename>Maxim</forename>
+                    </persName>
+                    <affiliation>Applied Computational Linguistics, Goethe Universität Frankfurt, Germany</affiliation>
+                    <email>max.ionov@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fäth</surname>
+                        <forename>Christian</forename>
+                    </persName>
+                    <affiliation>Applied Computational Linguistics, Goethe Universität Frankfurt, Germany</affiliation>
+                    <email>faeth@em.uni-frankfurt.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T15:29:23.706260724</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>lexical resources</term>
+                    <term>linked data</term>
+                    <term>standards</term>
+                    <term>annotation</term>
+                    <term>interlinear glossed text</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>data publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>linked (open) data</term>
+                    <term>Linguistics</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The project Linked Open Dictionaries (LiODi) was funded in the eHumanities programme of the German Federal Ministry for Education and Research (BMBF, 2015-2022) and conducted in collaboration between empirical linguistics and computational linguistics at the Goethe University Frankfurt, Germany.</p>
+            <p>Our goals were two-fold. In terms of humanities, it pursued the study of language contact in the Caucasus, especially on North-Eastern Caucasian and Armenian in their contact with Kartvelian (Georgian), Iranian and Turkic (Rind-Pawlowski 2017, Chiarcos et al. 2018, Bellamy and Schreur 2021). In terms of digital methodology, the project pioneered, explored and advocated the use of RDF and Linked Data formalisms for research questions in the philologies and linguistic typology. We summarize this aspect, our achievements, experiments, and challenges encountered, and we discuss implications for the future use of Linked Data and RDF technologies in linguistics and philologies.</p>
+            <p>While Semantic Web technology has been well established in Digital Humanities prior to the project, this was largely restricted to prosopography, entity linking and object metadata; the potential of Linked Data to achieve interoperability for dictionaries and digital editions still remained underexplored. This situation changed, and to some extent, our project laid the groundwork for subsequent DH projects that adopted technologies and formalisms developed by the project. </p>
+            <p>The project initiated and contributed to community standards for various language resources:</p>
+            <list type="unordered">
+                <item>OntoLex: OntoLex-Lemon is a community standard for lexical resources. Inspired by the application of Monnet-Lemon to the conjoint development of ontologies and dictionaries (Weingart and Giovannetti 2016), LiODi engaged with the W3C Community Group Ontology-Lexica for developing novel OntoLex modules for morphology (OntoLex-Morph; Klimek et al. 2019) and corpus information (OntoLex-FrAC, Chiarcos et al. 2020b)</item>
+                <item>Ligt: We developed an RDF vocabulary for interlinear glossed text, in order to overcome technological barriers between conventionally used software used for glossing (Chiarcos et al. 2017, Ionov 2021).</item>
+                <item>CoNLL-RDF: We developed an RDF vocabulary and a converter suite for annotations as used in NLP and corpus linguistics (Chiarcos &amp; Fäth 2017).</item>
+                <item>TEI+RDFa: Following a survey of the relation of TEI and RDF (Chiarcos and Ionov 2019), we proposed RDFa for an inline XML representation. Together with the Academy of Sciences in Heidelberg, Germany, and the POSTDATA project, we provided the first implementation of TEI+RDFa for a small-scale digital edition and demonstrated its benefits for linking and querying via open web services (Tittel et al. 2018).</item>
+            </list>
+            <p>All our code and all distributable data are available over our GitHub repository (
+                <ptr target="https://github.com/acoli-repo/"/>, 
+                <ptr target="https://acoli-repo.github.io/liodi"/>). Language resources produced on this basis include the single largest collection of machine-readable open source bi-dictionaries, the ACoLi Dictionary Graph, published in accordance with Linked Data principles and using OntoLex-Lemon (Chiarcos et al. 2020a, see Fig. 1). In terms of software, notable contributions include tools for the detection of cognates and loan words and for translation inference across dictionaries (Chiarcos et al. 2020c).
+            </p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/b07b2eebc29c57403afa4f5d4584bf0e.gif"/>
+                </figure>Fig. 1. The ACoLi Dictionary graph: 3000+ bi-dictionaries (edges in the diagram) for more than 400 languages (nodes in the diagram) in machine-readable formats (OntoLex-Lemon) and published as open source, source: 
+                <ptr target="https://github.com/acoli-repo/acoli-dicts"/>. Colors indicate language families or regions.
+            </p>
+            <p>Furthermore, a main contribution of the project lay in documentation and dissemination of LOD technology in linguistics, language technology and philologies. On an international level, this includes the first text book on the topic (Cimiano et al. 2020), the organization of workshops and conferences, and four summer schools/datathons (SD-LLOD 2017, 2019, 2022; EUROLAN 2021). In particular, our datathons proved highly effective in disseminating LOD expertise into other LOD-affine projects and contributed to the conception of novel projects by third parties. This includes the use of LOD in academic publishing (Nordhoff 2020, Ligt), infrastructure projects and community portals (Page-Perron et al. 2017 for cuneiform: CoNLL-RDF; Mambrini and Passarotti 2018, Pellegrini et al. 2021 for Latin: OntoLex-Morph, CoNLL-RDF) and projects for digital edition and lexicography (Mondaca and Rau 2020: OntoLex and TEI+RDFa; Chiarcos et al., accepted: TEI+RDFa).</p>
+            <p>As for key experiences, there are three main conclusions we arrived at at the end of the project:</p>
+            <list type="unordered">
+                <item>LOD and RDF technologies are ideally suited as middle-ware for DH projects. They facilitate information integration between and linking from various resources. In particular, it is not required to abandon established workflows, but only an RDF wrapper for their components.</item>
+                <item>Existing RDF technology is sufficiently versatile to provide such an additional layer of interoperability over existing solutions and workflows with moderate effort. W3C standards and RDF serializations provide interoperability with XML (RDFa), JSON (JSON-LD), tabular formats (RDB2RDF, CoNLL-RDF), etc.</item>
+                <item>RDF technology is generic, that is, in many cases not sufficiently optimized for real-time performance. Although we provide technology running on RDF backends (e.g., CQP4RDF, Ionov et al. 2020), we see the main benefit of RDF technology at the moment in the backend and between existing tools rather than as their basis, mostly for reasons of backward-compatibility. In the end, we moved the focus of the project from providing a designated new toolbox into the development of a technology stack that allowed researchers to continue working with their existing tools, and then integrate and link the results.</item>
+            </list>
+            <p>Finally, we also conclude with a somewhat bitter note: The project produced considerable amounts of open source data, but we are now in a situation where we could not secure adequate long-term hosting. This is not so much because of the lack of hosting solutions, but that we found that none of the portals we explored would support depositing data dumps in a way that they provide resolvable URIs. So, we can (and do) make our open source RDF data available, but we cannot provide it as linked data, because academic solutions such as Zenodo and commercial providers such as GitHub do not allow to declare the data with the adequate mediatype but force data providers to resort to text/plain or application/octet-stream (Chiarcos 2021).</p>
+            <p>When trying to access and process this data, especially in federated search, tools and users may thus be confronted with their SPARQL engines producing unpredictable results, as the correct format needs to be guessed heuristically, and existing SPARQL engines differ in their behaviour. In our opinion, the lack of such hosting solutions (at least in Europe) contributes significantly to the perceived instability and unreliability of LOD-based technologies. This is, however, less a technical problem than a political or administrative one, and one we would like to discuss with the community.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Bellamy, K., and Schreur, J. W. (2019). Multiple Methods for Investigating Code-Switching in Batsbi Nominal Constructions. In 
+                        <hi rend="italic">Linguistic Forum 2019: Indigeneous Languages of Russia and Beyond</hi> (p. 20).
+                    </bibl>
+                    <bibl>Chiarcos, C., and Fäth, C. (2017). CoNLL-RDF: Linked corpora done in an NLP-friendly way. In 
+                        <hi rend="italic">International Conference on Language, Data and Knowledge </hi>(pp. 74-88). Springer, Cham.
+                    </bibl>
+                    <bibl>Chiarcos, C. and Ionov, M. (2019). Linking the TEI: Approaches, Limitations, Use Cases. In 
+                        <hi rend="italic">Digital Humanities Conference 2019 (DH2019)</hi>, Utrecht University, July.
+                    </bibl>
+                    <bibl>Chiarcos, C., Ionov, M., Rind-Pawlowski, M., Fäth, C., Schreur, J. W., and Nevskaya, I. (2017). LLODifying linguistic glosses. In 
+                        <hi rend="italic">International Conference on Language, Data and Knowledge </hi>(pp. 89-103). Springer, Cham.
+                    </bibl>
+                    <bibl>Chiarcos, C., Donandt, K., Sargsian, H., Ionov, M., and Schreur, J. W. (2018). Towards LLOD-based language contact studies. A case study in interoperability. In 
+                        <hi rend="italic">Proceedings of LREC-2018</hi>, May 2018, Miyazaki, Japan.
+                    </bibl>
+                    <bibl>Chiarcos, C., Fäth, C., and Ionov, M. (2020a). The ACoLi dictionary graph. In 
+                        <hi rend="italic">Proceedings of the 12th Language Resources and Evaluation Conference</hi> (pp. 3281-3290).
+                    </bibl>
+                    <bibl>Chiarcos, C., Ionov, M., de Does, J., Depuydt, K., Khan, F., Stolk, S., Declerck, T., and McCrae, J. P. (2020b, May). Modelling frequency and attestations for Ontolex-lemon. In 
+                        <hi rend="italic">Proceedings of the 2020 Globalex Workshop on Linked Lexicography </hi>(pp. 1-9).
+                    </bibl>
+                    <bibl>Chiarcos, C., Schenk, N., and Fäth, C. (2020c). Translation Inference by Concept Propagation. In 
+                        <hi rend="italic">Proceedings of the 2020 Globalex Workshop on Linked Lexicography </hi>(pp. 98-105).
+                    </bibl>
+                    <bibl>Chiarcos, C. (2021). Get! Mimetypes! Right!. In 
+                        <hi rend="italic">Proceedings of the </hi>
+                        <hi rend="italic">3rd Conference on Language, Data and Knowledge (LDK 2021)</hi>. Schloss Dagstuhl-Leibniz-Zentrum für Informatik.
+                    </bibl>
+                    <bibl>Chiarcos, C., Gelumbeckaite, J., Drach, M., and Ionov, M. (accepted). 
+                        <hi rend="italic">The Postil Time Machine: The Lithuanian Lutheran Postils of the 16th Century</hi>, accepted at DH2022.
+                    </bibl>
+                    <bibl>Cimiano, P., Chiarcos, C., McCrae, J. P., and Gracia, J. (2020). 
+                        <hi rend="italic">Linguistic Linked Data</hi>. Springer International Publishing.
+                    </bibl>
+                    <bibl>Ionov, M. (2021). APiCS-Ligt: Towards Semantic Enrichment of Interlinear Glossed Text. In 
+                        <hi rend="italic">P</hi>
+                        <hi rend="italic">roceedings of the </hi>
+                        <hi rend="italic">3rd Conference on Language, Data and Knowledge (LDK 2021)</hi>. Schloss Dagstuhl-Leibniz-Zentrum für Informatik.
+                    </bibl>
+                    <bibl>Ionov, M., Stein, F., Sehgal, S., &amp; Chiarcos, C. (2020). cqp4rdf: Towards a Suite for RDF-Based Corpus Linguistics. In 
+                        <hi rend="italic">Proceedings of the </hi>
+                        <hi rend="italic">European Semantic Web Conference </hi>
+                        <hi rend="italic">(ESWC-2020)</hi>. Springer, Cham.
+                    </bibl>
+                    <bibl>Klimek, B., McCrae, J. P., Bosque-Gil, J., Ionov, M., Tauber, J. K., and Chiarcos, C. (2019). Challenges for the representation of morphology in ontology lexicons. In 
+                        <hi rend="italic">Proceedings of eLex-</hi>
+                        <hi rend="italic">2019</hi>.
+                    </bibl>
+                    <bibl>Mambrini, F., and Passarotti, M. (2019). Linked Open Treebanks. Interlinking Syntactically Annotated Corpora in the LiLa Knowledge Base of Linguistic Resources for Latin. In 
+                        <hi rend="italic">Proceedings of the 18th International Workshop on Treebanks and Linguistic Theories (TLT, SyntaxFest 2019)</hi> (pp. 74-81).
+                    </bibl>
+                    <bibl>Mondaca, F., and Rau, F. (2020). Transforming the Cologne Digital Sanskrit Dictionaries into Ontolex-Lemon. In 
+                        <hi rend="italic">Proceedings of the 7th Workshop on Linked Data in Linguistics (LDL-2020)</hi> (pp. 11-14).
+                    </bibl>
+                    <bibl>Nordhoff, S. (2020). Modelling and annotating interlinear glossed text from 280 different endangered languages as Linked Data with LIGT. In 
+                        <hi rend="italic">Proceedings of the 14th Linguistic Annotation Workshop</hi> (pp. 93-104).
+                    </bibl>
+                    <bibl>Pagé-Perron, E., Sukhareva, M., Khait, I., Chiarcos, C. (2017). Machine translation and automated analysis of the Sumerian language. In 
+                        <hi rend="italic">Proceedings of the Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature</hi> (pp. 10-16).
+                    </bibl>
+                    <bibl>Pellegrini, M., Litta Modignani Picozzi, E. M. G., Passarotti, M., Mambrini, F., and Moretti, G. (2021). The Two Approaches to Word Formation in the LiLa Knowledge Base of Latin Resources. In 
+                        <hi rend="italic">Proceedings of the </hi>
+                        <hi rend="italic">Third International Workshop on Resources and Tools for Derivational Morphology </hi>(pp. 101-109). ATILF.
+                    </bibl>
+                    <bibl>Rind-Pawlowski, M. (2017). Formation and function of the imperfective stems in Khinalug. In 
+                        <hi rend="italic">Proceedings of </hi>
+                        <hi rend="italic">Historical Linguistics of the Caucasus </hi>(Paris, 12–14 April, 2017) (pp. 168-177).
+                    </bibl>
+                    <bibl>Tittel, S., Bermúdez-Sabel, H., and Chiarcos, C. (2018). Using RDFa to link text and dictionary data for Medieval French. In 
+                        <hi rend="italic">Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)</hi>, Miyazaki, Japan (pp. 7-12).
+                    </bibl>
+                    <bibl>Weingart, A., and Giovannetti, E. (2016). Extending the lemon model for a dictionary of old Occitan medico-botanical terminology. In 
+                        <hi rend="italic">Proceedings of the </hi>
+                        <hi rend="italic">European Semantic Web Conference </hi>
+                        <hi rend="italic">(ESWC-2016) </hi>(pp. 408-421). Springer, Cham.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

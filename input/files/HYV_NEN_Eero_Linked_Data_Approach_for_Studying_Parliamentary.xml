@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Linked Data Approach for Studying Parliamentary Speeches and Networks of Politicians in Finland 1907-2021</title>
+                <author>
+                    <persName>
+                        <surname>Hyvönen</surname>
+                        <forename>Eero</forename>
+                    </persName>
+                    <affiliation>Aalto University, Finland; University of Helsinki (HELDIG), Finland</affiliation>
+                    <email>eero.hyvonen@aalto.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Leskinen</surname>
+                        <forename>Petri</forename>
+                    </persName>
+                    <affiliation>Aalto University, Finland</affiliation>
+                    <email>petri.leskinen@aalto.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sinikallio</surname>
+                        <forename>Laura</forename>
+                    </persName>
+                    <affiliation>University of Helsinki (HELDIG), Finland; Aalto University, Finland</affiliation>
+                    <email>laura.sinikallio@helsinki.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Drobac</surname>
+                        <forename>Senka</forename>
+                    </persName>
+                    <affiliation>Aalto University, Finland; University of Helsinki (HELDIG), Finland</affiliation>
+                    <email>senkadrobac@aalto.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tuominen</surname>
+                        <forename>Jouni</forename>
+                    </persName>
+                    <affiliation>Aalto University, Finland; University of Helsinki (HELDIG), Finland</affiliation>
+                    <email>jouni.tuominen@helsinki.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Elo</surname>
+                        <forename>Kimmo</forename>
+                    </persName>
+                    <affiliation>University of Turku</affiliation>
+                    <email>kimmo.elo@utu.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>La Mela</surname>
+                        <forename>Matti</forename>
+                    </persName>
+                    <affiliation>University of Helsinki (HELDIG), Finland</affiliation>
+                    <email>matti.lamela@helsinki.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Koho</surname>
+                        <forename>Mikko</forename>
+                    </persName>
+                    <affiliation>Aalto University, Finland</affiliation>
+                    <email>mikko.koho@aalto.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ikkala</surname>
+                        <forename>Esko</forename>
+                    </persName>
+                    <affiliation>Aalto University, Finland</affiliation>
+                    <email>esko.ikkala@aalto.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tamper</surname>
+                        <forename>Minna</forename>
+                    </persName>
+                    <affiliation>Aalto University, Finland</affiliation>
+                    <email>minna.tamper@aalto.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Leal</surname>
+                        <forename>Rafael</forename>
+                    </persName>
+                    <affiliation>Aalto University, Finland; University of Helsinki (HELDIG), Finland</affiliation>
+                    <email>rafael.leal@aalto.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kesäniemi</surname>
+                        <forename>Joonas</forename>
+                    </persName>
+                    <affiliation>Aalto University, Finland</affiliation>
+                    <email>joonas.kesaniemi@aalto.fi</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-28T06:01:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>parliamentary studies</term>
+                    <term>portals</term>
+                    <term>linked data services</term>
+                    <term>infrastructures</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>semantic analysis</term>
+                    <term>Computer science</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="bold">Vision for a Paradigm Change</hi>
+            </p>
+            <p>This paper presents the vision of publishing and using parliamentary data on the Semantic Web for Digital Humanities (DH) research, with a focus on studying parliamentary culture, language used, and networks of politicians (Hyvönen et al., 2021, 2022). First results of the Semantic Parliament project (ParliamentSampo, 2021) are presented:</p>
+            <list type="ordered">
+                <item>Finnish parliamentary debates, totalling over 950 000 speeches and covering the whole history of the Parliament of Finland (PofF) 1907–2021, have been transformed into a 1) Speech Knowledge Graph (S-KG) and 2) into XML form using the new emerging Parla-CLARIN format (Parla-CLARIN, 2021) for international interoperability (Sinikallio et al., 2021).</item>
+                <item>A Prosopographical Knowledge Graph (P-KG) representing biographical data about the politicians during the same time span, using the event-based CIDOC CRM (CIDOC CRM, 2021) ontology, has been created and interlinked with the S-KG (Leskinen et al., 2021).</item>
+                <item>The datasets S-KG and P-KG were published as a Linked Open Data (LOD) service with a SPARQL endpoint and are used to study Finnish political culture and language, based on the speeches and networks of politicians (Hyvönen et al., 2021, 2022).</item>
+                <item>To demonstrate the usability of the new data infrastructure, a semantic portal 
+                    <hi rend="italic">ParliamentSampo – Parliament of Finland on the Semantic Web,</hi> targeted for researchers and the public is presented. The portal is based on the LOD service (3). The portal and LOD service will be opened for public use by the end of 2022.
+                </item>
+            </list>
+            <p>
+                <hi rend="bold">Related Work</hi>
+            </p>
+            <p>Parliamentary data are widely available for making political decision making transparent, and the data is used for linguistic and DH research. The paper first explains why publishing parliamentary data as LD makes sense, and discusses related projects in different countries (ParlaMint, 2021), including Canada, Italy, Latvia, Slovenia, UK, and the LinkedEP system (Van Aggelen et al., 2017) of the European Parliament. After this, the knowledge graphs (KG) of the ParliamentSampo system and their creation processes are presented and the benefits and challenges of the LOD approach are discussed, suggesting a paradigm shift in publishing and studying parliamentary data using semantic web technologies.</p>
+            <p>The Model and Implementation</p>
+            <p>Based on the Sampo-model (Hyvönen, 2021) and Sampo-UI framework (Ikkala et al., 2021), ParliamentSampo aggregates and enriches data from multiple data providers in addition to the PofF, and publishes the result in a LOD service, based on best practices of W3C (Heath &amp; Bizer, 2011), including a SPARQL endpoint and additional LOD services, such as content negotiation. In addition, the 7-star LOD model (Hyvönen et al., 2014) extending the traditional 5-star model of Tim Berners-Lee with schema documentation and data validation is used. The LOD service can be used for direct DH analyses using its APIs and for creating ready-to-use applications for research. Data and application dissemination is supported using Docker containers.</p>
+            <p>
+                <hi rend="bold">Results and Evaluation</hi>
+            </p>
+            <p>Feasibility of the ParliamentSampo approach is evaluated by showing how the SPARQL endpoint together with tools, such as YASGUI (Rietveld &amp; Hoekstra, 2017) and Google Colab with Jupyter Notebooks, can be used for novel DH analyses and visualizations on parliamentary speeches and networks of politicians. This is the first time that all speeches of the PofF since it was established in 1907 are available as uniform data for DH research. We also introduce the new semantic portal “ParliamentSampo – Parliament of Finland on the Semantic Web” implemented on top of the LOD service. It is demonstrated how the portal can be used for analyzing political language in use in different times, their semantic content, and differences between prosopographical groups, such as female and male Members of the Parliament and different political parties. For this purpose, the speech texts have been enriched semantically with Named Entity Linking using FinBERT (2021), a Finnish language model based on Google BERT, by ontology-based keyword indexing using the automatic annotation tool Annif (Suominen, 2019), and by topic detection. Furthermore, network analyses of political networks using P-KG are presented using the 
+                <ref target="https://seco.cs.aalto.fi/publications/2021/leskinen-et-al-sparql2graphserver-2021.pdf">Sparql2GraphServer</ref> tool (Leskinen et al., 2021). When using the portal, programming skills are not needed but data literacy. Finally, new possibilities and challenges of using linked data and ParliamentSampo in parliamentary studies are discussed and directions for further research are suggested.
+            </p>
+            <p>The multidisciplinary work on ParliamentSampo has involved researchers in computer science, parliamentary studies, and linguistics at the University of Helsinki (HELDIG centre), Aalto University, and University of Turku, and is funded mostly by the Academy of Finland and EU project In/Tangible European Heritage. CSC – IT Center for Science, Finland, provided computational resources.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Van Aggelen, A., Hollink, L., Kemman, M., Kleppe, M., &amp; Beunders, H. (2017). The Debates of the European Parliament as Linked Open Data. Semantic Web, 8(2), 271–281.</bibl>
+                    <bibl>Parla-CLARIN. (Nov 24, 2021). Parla-CLARIN format: 
+                        <ref target="https://clarin-eric.github.io/parla-clarin/">
+                            <hi rend="underline color(1155CC)">https://clarin-eric.github.io/parla-clarin/</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>CIDOC CRM. (Nov 24, 2021). CIDOC-CRM standard: 
+                        <ref target="https://cidoc-crm.org">
+                            <hi rend="underline color(1155CC)">https://cidoc-crm.org</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>FinBERT (Nov 24, 2021). Finnish BERT model: 
+                        <ref target="https://github.com/TurkuNLP/FinBERT">
+                            <hi rend="underline color(1155CC)">https://github.com/TurkuNLP/FinBERT</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>Heath, T., &amp; Bizer, C. (2011). Linked Data: Evolving the Web into a Global Data Space.</bibl>
+                    <bibl>Morgan &amp; Claypool, Palo Alto, California.</bibl>
+                    <bibl>Hyvönen, E., Tuominen, J., Alonen, M., &amp; Mäkelä, E. (2014). Linked Data Finland: A 7-star Model and Platform for Publishing and Re-using Linked Datasets. In V. Presutti, E. Blomqvist, R. Troncy, H. Sack, I. Papadakis, &amp; A. Tordai (Eds.), The Semantic Web: ESWC 2014 Satellite Events. ESWC 2014, pp. 226–230, Springer. 
+                        <ref target="https://link.springer.com/chapter/10.1007%2F978-3-319-11955-7_24">
+                            <hi rend="underline color(1155CC)">https://link.springer.com/chapter/10.1007%2F978-3-319-11955-7_24</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>Hyvönen, E. (2021). Digital Humanities on the Semantic Web: Sampo Model and Portal Series. Submitted. 
+                        <ref target="https://seco.cs.aalto.fi/publications/2021/hyvonen-sampo-model-2021.pdf">
+                            <hi rend="underline color(1155CC)">https://seco.cs.aalto.fi/publications/2021/hyvonen-sampo-model-2021.pdf</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>Leskinen, P., Hyvönen, E., &amp; Tuominen, J. (2021). Members of Parliament in Finland Knowledge Graph and its Linked Open Data Service. April. 
+                        <hi rend="italic">Proceedings of SEMANTiCS – In the Era of Knowledge Graphs</hi>, Amsterdam, Sept 6–9, 2021.
+                    </bibl>
+                    <bibl>
+                        <ref target="https://seco.cs.aalto.fi/publications/2021/leskinen-et-al-mps-2021.pdf">
+                            <hi rend="underline color(1155CC)">https://seco.cs.aalto.fi/publications/2021/leskinen-et-al-mps-2021.pdf</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>Hyvönen, E., Sinikallio, L:, Leskinen, P., Drobac, S., Tuominen, J., Elo, K., La Mela, M., Koho, M., Ikkala, E., Tamper, M., Leal, R. &amp; Kesäniemi, J. (2021). Semanttinen parlamentti: eduskunnan aineistojen linkitetyn avoimen datan palvelu ja sen käyttömahdollisuudet. Informaatiotutkimus, vol. 40, no. 2.</bibl>
+                    <bibl>Hyvönen, E., Sinikallio, L:, Leskinen, P., Drobac, S., Tuominen, J., Elo, K., La Mela, M., Koho, M., Ikkala, E., Tamper, M., Leal, R. &amp; Kesäniemi, J. (2022). Digital Parliamentary data in Action (DiPaDa 2022), Workshop at the 6th Digital Humanities in Nordic and Baltic Countries Conference, long paper, CEUR Workshop Proceedings, 2022. Forth-coming.
+                        <lb/>
+                        <ref target="https://seco.cs.aalto.fi/publications/2022/hyvonen-et-al-semparl-dhnb-2022.pdf">https://seco.cs.aalto.fi/publications/2022/hyvonen-et-al-semparl-dhnb-2022.pdf</ref>
+                    </bibl>
+                    <bibl>Ikkala, E., Hyvönen, E., Rantala, H., &amp; Koho, M. (2022). Sampo-UI: A Full Stack JavaScript Framework for Developing Semantic Portal User Interfaces. Semantic Web – Interoperability, Usability, Applicability, 13(1), 69–84. 
+                        <ref target="https://doi.org/10.3233/SW-210428">
+                            <hi rend="underline color(1155CC)">https://doi.org/10.3233/SW-210428</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>Leskinen, P., Hyvönen, E. &amp; Tuominen, J. 2021. 
+                        <ref target="https://seco.cs.aalto.fi/publications/2021/leskinen-et-al-sparql2graphserver-2021.pdf">Sparql2GraphServer: a Server-side Tool for Extracting Networks from Linked Data for Data Analysis</ref>. ISWC-Posters-Demos-Industry 2021 International Semantic Web Conference (ISWC) 2021: Posters, Demos, and Industry Tracks, CEUR Workshop Proceedings, Vol 2980. 
+                        <ref target="http://ceur-ws.org/Vol-2980/paper330.pdf">
+                            <hi rend="underline color(1155CC)">http://ceur-ws.org/Vol-2980/paper330.pdf</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>ParlaMint. (Nov 24, 2021). ParlaMint initiative homepage: 
+                        <ref target="https://www.clarin.eu/content/parlamint-towards-comparable-parliamentary-corpora">
+                            <hi rend="underline color(1155CC)">https://www.clarin.eu/content/parlamint-towards-comparable-parliamentary-corpora</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>Rietveld, L., &amp; Hoekstra, R. (2017). The YASGUI family of SPARQL clients. 
+                        <hi rend="italic">Semantic Web – Interoperability, Usability, Applicability, 8(3)</hi>, 373–383.
+                        <ref target="https://doi.org/10.3233/SW-150197" xml:space="preserve"> </ref>
+                        <ref target="https://doi.org/10.3233/SW-150197">
+                            <hi rend="underline color(1155CC)">https://doi.org/10.3233/SW-150197</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>Sinikallio, L., Drobac, S., Tamper, M., Leal, R., Koho, M., Tuominen, J., La Mela, M., &amp; Hyvönen, E. (2021). Plenary Debates of the Parliament of Finland as Linked Open Data and in Parla-CLARIN Markup. In: 
+                        <hi rend="italic" xml:space="preserve">3rd Conference on Language, Data and Knowledge (LDK 2021), </hi>1–17
+                        <hi rend="italic" xml:space="preserve">. OASICS, Schloss Dagstuhl, Leibniz-Zentrum fuer Informatik, </hi> Germany. 
+                        <ref target="https://drops.dagstuhl.de/opus/volltexte/2021/14544/pdf/OASIcs-LDK-2021-8.pdf">
+                            <hi rend="underline color(1155CC)">https://drops.dagstuhl.de/opus/volltexte/2021/14544/pdf/OASIcs-LDK-2021-8.pdf</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>ParliamentSampo. (Nov 24, 2021). Semantic Parliament project homepage: 
+                        <ref target="https://seco.cs.aalto.fi/projects/semparl/en/">
+                            <hi rend="underline color(1155CC)">https://seco.cs.aalto.fi/projects/semparl/en/</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>Suominen, O. (2019). Annif: DIY automated subject indexing using multiple algorithms. Liber Quarterly, July. 
+                        <ref target="https://liberquarterly.eu/article/view/10732/11612">
+                            <hi rend="underline color(1155CC)">https://liberquarterly.eu/article/view/10732/11612</hi>
+                        </ref>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Why arts and humanities publications get retracted: a topic modeling analysis of the retraction notices </title>
+                <author>
+                    <persName>
+                        <surname>Heibi</surname>
+                        <forename>Ivan</forename>
+                    </persName>
+                    <affiliation>Department of Classical Philology and Italian Studies, University of Bologna, Bologna, Italy; Digital Humanities Advanced Research Centre (/DH.arc), Department of Classical Philology and Italian Studies, University of Bologna, Bologna, Italy; Research Centre for Open Scholarly Metadata, Department of Classical Philology and Italian Studies, University of Bologna, Bologna, Italy</affiliation>
+                    <email>ivan.heibi2@unibo.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Peroni</surname>
+                        <forename>Silvio</forename>
+                    </persName>
+                    <affiliation>Department of Classical Philology and Italian Studies, University of Bologna, Bologna, Italy; Digital Humanities Advanced Research Centre (/DH.arc), Department of Classical Philology and Italian Studies, University of Bologna, Bologna, Italy; Research Centre for Open Scholarly Metadata, Department of Classical Philology and Italian Studies, University of Bologna, Bologna, Italy</affiliation>
+                    <email>silvio.peroni@unibo.it</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-15T13:48:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Retraction</term>
+                    <term>Topic Modeling</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>bibliographic analysis</term>
+                    <term>text mining and analysis</term>
+                    <term>Computer science</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor xml:id="bpksi3do29d5"/>Background
+                </head>
+                <p>The retraction of a scholarly peer-reviewed publication means that its corresponding venue (e.g., journal) has decided to withdraw it due to some irregularities/errors. A retraction could be partial or full. In case of a partial retraction, articles have flawed data or content errors in small parts, and the correction of the erroneous article portions keeps the general information and the article’s stated conclusions uncompromised. On the other hand, a full retraction is 
+                    <hi rend="italic" xml:space="preserve">“a mechanism for correcting the literature and alerting readers to articles that contain such seriously flawed or erroneous content or data that their findings and conclusions cannot be relied upon” </hi>(Barbour et al., 2009). Partial retractions are not helpful and cannot determine the status of a publication, therefore it is more reasonable to focus on definitive full retractions.
+                </p>
+                <p>Most retractions occur in STEM (Science, technology, engineering, and mathematics), while social sciences and humanities relatively account for a small portion compared to these fields (Vuong et al., 2020). Reasons for retraction are mainly classified in two categories: (a) honest error and (b) misconduct. When a retraction is raised, the venue needs to formally accompany such decision with retraction notice – a document that provides sufficient information about the reason for retraction and why the findings are considered unreliable, in addition, should explicitly mention whether this was due to misconduct or an honest error. Retraction notices should be freely available and linked to the retracted article in both the PDF and online version (Barbour et al., 2009).</p>
+                <p>Several studies worked on studying the reasons for retraction. High attention has been given to STEM and mainly to health science (Li et al., 2018). Few past studies worked on the analysis of the arts and humanities domain (a rare example is the work of Halevi (2020) and our work (Heibi &amp; Peroni, 2021).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Aim </head>
+                <p>Considering the less attention that has been given in the study of the retraction phenomenon and in particular to the reasons of retraction in the arts and humanities domain, the aim of this work is to investigate the reasons of retraction in the arts and humanities through the automatic analysis of the retraction notices and a comparison of these results with the data provided by other services which have worked on labeling such reasons. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Method</head>
+                <p>Our methodology is articulated in three main steps: </p>
+                <list type="ordered">
+                    <item>Gathering the retraction notices of all the retracted articles in arts and humanities using the Retraction Watch Database (
+                        <ref target="http://retractiondatabase.org/">
+                            <hi rend="underline color(1155CC)">http://retractiondatabase.org/</hi>
+                        </ref>) or by querying large bibliographic databases (e.g., ScienceDirect by Elsevier) searching for terms such as ‘‘RETRACTED’’ and subsequently getting the retraction notice.
+                    </item>
+                    <item>Building and running a topic modeling (TM) analysis using the Latent Dirichlet Allocation (LDA) model (Jelodar et al., 2019) giving by input a corpus containing the full text of all the retraction notices collected in step 1. This process is done using MITAO, a user-friendly interface to create a customizable visual workflow for text analysis (Ferri et al., 2020; Heibi et al., 2021).</item>
+                    <item>Analyzing the topic modeling outcomes using dynamic visualizations which help us observe and investigate the results as a function of other features and compare our findings with the data/annotations provided by Retraction Watch (Marcus &amp; Oransky, 2014), a manual-curated database collecting retractions from several domains.</item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Expected results</head>
+                <p>The study we have presented in this abstract is a work in progress analysis. The ambition is to uncover and infer new insights regarding the reasons of retraction in the arts and humanities domain which did not emerge in the past studies – e.g., the work of Halevi (2020) – or in the annotations of services such as Retraction Watch. We can hypothesis that is very plausible to find out that the outcomes of our analysis will be related to retraction reasons such as “plagiarism” and “content duplication”, which are the most recurring reasons following the annotations of Retraction Watch (also demonstrated by the work of Halevi (2020)). The fact that these reasons are the most popular ones for the humanities domain, is due to the fact that the detection of these forms of retraction are well defined and less prone to interpretation (Dhammi &amp; Ul Haq, 2016), therefore easier to establish considering the different interpretable facets of the humanities arguments. </p>
+                <p>In addition, an aspect to investigate concerns the evaluation of the reliability of a TM analysis in the classification of misconduct and honest error reasons compared to the human annotations provided by Retraction Watch. This study might also evaluate the TM technique through the consideration of other text analysis methodologies, e.g., SBERT (Reimers &amp; Gurevych, 2019).</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Barbour, V., Kleinert, S., Wager, E. and Yentis, S.</hi> (2009). 
+                        <hi rend="italic">Guidelines for Retracting Articles</hi>. Committee on Publication Ethics doi:
+                        <ref target="https://doi.org/10.24318/cope.2019.1.4">10.24318/cope.2019.1.4</ref>. 
+                        <ref target="https://publicationethics.org/node/19896">https://publicationethics.org/node/19896</ref> (accessed 13 November 2020).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Dhammi, I. and Ul Haq, R.</hi> (2016). What is plagiarism and how to avoid it?. 
+                        <hi rend="italic">Indian Journal of Orthopaedics</hi>, 
+                        <hi rend="bold">50</hi>(6): 581 doi:
+                        <ref target="https://doi.org/10.4103/0019-5413.193485">10.4103/0019-5413.193485</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ferri, P., Heibi, I., Pareschi, L. and Peroni, S.</hi> (2020). MITAO: A User Friendly and Modular Software for Topic Modelling. 
+                        <hi rend="italic">PuntOorg International Journal</hi>, 
+                        <hi rend="bold">5</hi>(2): 135–49 doi:
+                        <ref target="https://doi.org/10.19245/25.05.pij.5.2.3">10.19245/25.05.pij.5.2.3</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Halevi, G.</hi> (2020). Why Articles in Arts and Humanities Are Being Retracted?. 
+                        <hi rend="italic">Publishing Research Quarterly</hi>, 
+                        <hi rend="bold">36</hi>(1): 55–62 doi:
+                        <ref target="https://doi.org/10.1007/s12109-019-09699-9">10.1007/s12109-019-09699-9</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Heibi, I., Peroni, S., Pareschi, L. and Ferri, P.</hi> (2021). MITAO: a tool for enabling scholars in the humanities to use Topic Modeling in their studies. Text Alma Mater Studiorum - Università di Bologna doi:
+                        <ref target="https://doi.org/10.6092/UNIBO/AMSACTA/6712">10.6092/UNIBO/AMSACTA/6712</ref>. 
+                        <ref target="http://amsacta.unibo.it/6712">http://amsacta.unibo.it/6712</ref> (accessed 19 July 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Heibi, I. and Peroni, S.</hi> (2021). A quantitative and qualitative citation analysis of retracted articles in the humanities. 
+                        <hi rend="italic">ArXiv:2111.05223 [Cs]</hi>
+                        <ref target="http://arxiv.org/abs/2111.05223">http://arxiv.org/abs/2111.05223</ref> (accessed 10 November 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Jelodar, H., Wang, Y., Yuan, C., Feng, X., Jiang, X., Li, Y. and Zhao, L.</hi> (2019). Latent Dirichlet allocation (LDA) and topic modeling: models, applications, a survey. 
+                        <hi rend="italic">Multimedia Tools and Applications</hi>, 
+                        <hi rend="bold">78</hi>(11): 15169–211 doi:
+                        <ref target="https://doi.org/10.1007/s11042-018-6894-4">10.1007/s11042-018-6894-4</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Li, G., Kamel, M., Jin, Y., Xu, M., Mbuagbaw, L., Samaan, Z., Levine, M. and Thabane, L.</hi> (2018). Exploring the characteristics, global distribution and reasons for retraction of published articles involving human research participants: a literature survey. 
+                        <hi rend="italic">Journal of Multidisciplinary Healthcare</hi>, 
+                        <hi rend="bold">Volume 11</hi>: 39–47 doi:
+                        <ref target="https://doi.org/10.2147/JMDH.S151745">10.2147/JMDH.S151745</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Marcus, A. and Oransky, I.</hi> (2014). What Studies of Retractions Tell Us. 
+                        <hi rend="italic">Journal of Microbiology &amp; Biology Education</hi>, 
+                        <hi rend="bold">15</hi>(2): 151–54 doi:
+                        <ref target="https://doi.org/10.1128/jmbe.v15i2.855">10.1128/jmbe.v15i2.855</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Reimers, N. and Gurevych, I.</hi> (2019). Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. 
+                        <hi rend="italic">ArXiv:1908.10084 [Cs]</hi>
+                        <ref target="http://arxiv.org/abs/1908.10084">http://arxiv.org/abs/1908.10084</ref> (accessed 15 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Vuong, Q.-H., La, V.-P., Ho, M.-T., Vuong, T.-T. and Ho, M.-T.</hi> (2020). Characteristics of retracted articles based on retraction data from online sources through February 2019. 
+                        <hi rend="italic">Science Editing</hi>, 
+                        <hi rend="bold">7</hi>(1): 34–44 doi:
+                        <ref target="https://doi.org/10.6087/kcse.187">10.6087/kcse.187</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The model of choice.Using pure CRF- and BERT-based classifiers for gender annotation in German fantasy fiction</title>
+                <author>
+                    <persName>
+                        <surname>Schumacher</surname>
+                        <forename>Mareike Katharina</forename>
+                    </persName>
+                    <affiliation>Technical University of Darmstadt</affiliation>
+                    <email>schumacher@linglit.tu-darmstadt.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Flüh</surname>
+                        <forename>Marie</forename>
+                    </persName>
+                    <affiliation>University of Hamburg</affiliation>
+                    <email>marie.flueh@uni-hamburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lemke</surname>
+                        <forename>Marc</forename>
+                    </persName>
+                    <affiliation>University of Rostock</affiliation>
+                    <email>marc.lemke@uni-rostock.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T07:54:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Natural language processing</term>
+                    <term>Machine Learning</term>
+                    <term>German fantasy fiction</term>
+                    <term>gender classification</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>text mining and analysis</term>
+                    <term>Gender and sexuality studies</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Training a gender classifier for German literature</head>
+                <p style="text-align: left;">
+                    In several (Digital) Humanities studies, it has been shown that character analysis with a scope on gender can give interesting insides into literary history (cf. Underwood 2019: 111-142, Piper 2018: 133-138). With BookNLP (Bamann 2021) there is a well-performing tool including referential gender inference in the domain of English literary fiction (cf. Underwood 2019: 114). Here, we present a classification tool that is optimized for German fiction and which does not focus on pronouns used for fictional characters but on the ascribed gendered roles (which is referred to as gender identity by Butler 2003). As a starting point, we trained the classifier to annotate the binary (and often stereotyped) gender categories “feminine”, “masculine”, and “neutral”. It is planned to include more categories for gender roles in the future. To reach high accuracy on different literary genres it was trained in an iterative domain adaptation process, which can be roughly split up into three phases (cf. phases 1–3 in table 1). 
+                </p>
+                <figure>
+                    <graphic n="1001" width="13.231027777777777cm" height="8.043333333333333cm" url="Pictures/231de1e1d1b16b5d5f192e85dd697d11.png" rend="inline"/>
+                </figure>
+                <p style="text-align: center;">
+                    Table 1: Domain adaptation phases, datasets and performance values (set 1–3: CRF; set 4–6: gBERT)
+                </p>
+                <p style="text-align: left;">
+                    387.000 tokens, as well as an annotated list consisting of about 7.000 names taken from dramatis personae archived in the GerDraCor-repository (cf. Fischer et al. 2019), have been included in the training corpus. Training data has been manually annotated from scratch, meaning that names and gendered roles have been tagged as either feminine, masculine or neutral. Adding genre-specific training data first leads to an optimization of classification on the specific genre the training data is taken from and second to higher accuracy in the other genres (cf. fig. 1). In the end, our classifier trained with pure CRF algorithms reached 0.86 on novellas, 0.73 on novels and 0.76 on plays. On average the classifier reaches an overall F1 score of 0.78 (Schumacher 2021). The information on gendered roles mentioned in fiction can be combined with other aspects of the analysis of fictional characters such as described features (Schumacher/Flüh 2020), emotions (Schumacher/Flüh 2020, Flüh/Schumacher 2022, Flüh/Horstmann/Schumacher forthcoming) and power structures (Schumacher/Flüh forthcoming). 
+                </p>
+                <figure>
+                    <graphic n="1002" width="15.663333333333334cm" height="9.659055555555556cm" url="Pictures/d4cd042d6145d7958f08f9bc816bebb8.png" rend="inline"/>
+                </figure>
+                <p style="text-align: center;">Figure 1: Training of a generic gender classifier</p>
+                <p style="text-align: left;">To adapt recognition and classification to youth fantasy fiction, we tried the implementation of neural networks following a transfer learning approach (cf. phases 4–6 in table 1).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Creating neural net-based Gender Classifiers</head>
+                <p style="text-align: left;">
+                    <hi style="font-size:12pt" xml:space="preserve">We used the software </hi>
+                    <hi rend="italic" style="font-size:12pt" xml:space="preserve">Neiss TEI Entity Enricher (NTEE), </hi>
+                    <hi style="font-size:12pt" xml:space="preserve">an implementation of a Transfer Learning (Kamath et al., 2019) approach, to create a neural net-based classifier. Large-scale language models, which are built according to a Bidirectional Encoder Representations from Transformers (BERT) architecture (Devlin et al., 2019) can be fine-tuned using ground truth data for particular NER tasks. In this process, a CRF layer is added to the models (cf. Zöllner et al, 2021: 9–10). For our investigation, we use </hi>
+                    <hi rend="italic" style="font-size:12pt">gbert-base</hi>
+                    <hi style="font-size:12pt" xml:space="preserve"> (cf. Chan, Schweter, Möller 2021), which is pre-trained with data from the 20th and 21st centuries. </hi>
+                </p>
+                <p style="text-align: left;">Using sets 4, 5 and 6 (cf. table 1) as ground truth datasets, we compared the performances of classifiers, trained on either generic data, genre-specific data or a combined dataset. Comparing the performance values of the differently designed models shows two things: </p>
+                <list rend="numbered">
+                    <item>
+                        Using genre-specific data only for fine-tuning the pre-trained gBERT model, in this case, is more efficient than using generic data.
+                    </item>
+                    <item>
+                        Using combined data for fine-tuning the pre-trained gBERT model, in this case, works best.
+                    </item>
+                </list>
+                <p style="text-align: left;">One can also see a slight difference between the training of the pure CRF-classifier and the fine-tuning of the BERT model (cf. fig. 2). For this implementation, the combination of genre-specific and generic data clearly works best (F1-score of 0.92 tested on fantasy novels). </p>
+                <figure>
+                    <graphic n="1003" width="15.539861111111112cm" height="9.58291388888889cm" url="Pictures/eae2a84eca8a6f363629557260a84316.png" rend="inline"/>
+                </figure>
+                <p style="text-align: center;">
+                    Figure 2: Average performances of  the CRF-based and the gBERT-based classifiers
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: justify;">Beauvoir, Simone de (1992): 
+                        <hi rend="italic" xml:space="preserve">Das andere Geschlecht. </hi>Reinbek.
+                    </bibl>
+                    <bibl style="text-align: justify;">Bourdieu, Pierre (2010): 
+                        <hi rend="italic" xml:space="preserve">Die männliche Herrschaft. 1. Aufl., [Nachdr.]. </hi>Frankfurt am Main.
+                    </bibl>
+                    <bibl style="text-align: justify;">Butler, Judith (2003):
+                        <hi rend="italic" xml:space="preserve"> Das Unbehagen der Geschlechter. 1. Aufl. [Nachdr.].</hi> Frankfurt am Main.
+                    </bibl>
+                    <bibl style="text-align: justify;">Chan, Branden, Stefan Schweter, Timo Möller (2020): 
+                        <hi rend="italic" xml:space="preserve">German’s Next Language Model. </hi>
+                        <ref target="https://arxiv.org/pdf/2010.10906.pdf">
+                            <hi rend="color(1155CC)">https://arxiv.org/pdf/2010.10906.pdf</hi>
+                        </ref> [Access 8th december 2021].
+                    </bibl>
+                    <bibl>Devlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova (2019). “Bert: Pre-training of deep bidirectional transformers for language understanding.” In: 
+                        <hi rend="italic">Proceedings of the 2019 Conference of the North American Chapter of the Association for Com-putational Linguistics 1</hi>, p. 4171–4186.
+                    </bibl>
+                    <bibl>Fischer, Frank, Ingo Börner, Mathias Göbel, Angelika Hechtl, Christopher Kittel, Carsten Milling und Peer Trilcke (2019): Programmable Corpora: Introducing DraCor, an Infrastructure for the Research on European Drama. In: Digital Humanities 2019. Utrecht, Zenodo 
+                        <ref target="https://doi.org/10.5281/zenodo.4284002">
+                            <hi rend="color(1155CC)">https://doi.org/10.5281/zenodo.4284002</hi>
+                        </ref>
+                        <hi rend="color(333333)">.</hi>
+                    </bibl>
+                    <bibl>Flüh, Marie, Jan Horstmann, Mareike Schumacher (forthcoming): Distant Gender Reading</bibl>
+                    <bibl>Genderaspekte in Fantasy-Jugendromanen von 2008 bis 2020. </bibl>
+                    <bibl>
+                        <hi rend="color(333333)">Flüh, Marie, &amp; Schumacher, Mareike. (2022, March 7). Jung, wild, emotional? Rollen und Emotionen Jugendlicher in zeitgenössischer Fantasy-Literatur. DHd 2022 Kulturen des digitalen Gedächtnisses. 8. Tagung des Verbands "Digital Humanities im deutschsprachigen Raum" (DHd 2022), Potsdam. https://doi.org/10.5281/zenodo.6327983</hi>
+                    </bibl>
+                    <bibl style="text-align: justify;">Foucault, Michel, Herculine Barbin (2012):
+                        <hi rend="italic" xml:space="preserve"> Über Hermaphrodismus: Der Fall Barbin. </hi>Frankfurt am Main.
+                    </bibl>
+                    <bibl style="text-align: justify;">Kamath, Uday, John Liu, and James Whitaker (2019): 
+                        <hi rend="italic" xml:space="preserve">Deep Learning for NLP and Speech Recognition. </hi>Cham: Springer. 
+                        <ref target="https://doi.org/10.1007/978-3-030-14596-5">
+                            <hi rend="color(1155CC)">https://doi.org/10.1007/978-3-030-14596-5</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl>Manning, Christopher, Mihai Surdeanu, John Bauer, Jenny Finkel, Steven Bethard, and David McClosky (2014): „The Stanford CoreNLP Natural Language Processing Toolkit“. In: 
+                        <hi rend="italic">Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics: System Demonstrations</hi>, p. 55–60, 
+                        <ref target="http://www.aclweb.org/anthology/P/P14/P14-5010">
+                            <hi rend="color(1155CC)"> http://www.aclweb.org/anthology/P/P14/P14-5010</hi>
+                        </ref> [Access 8th december 2021].
+                    </bibl>
+                    <bibl style="text-align: justify;">Connell, Raewyn (1996): 
+                        <hi rend="italic" xml:space="preserve">Gender and power society, the person and sexual politics, Reprint Aufl. </hi>
+                        <hi rend="color(181F1D)">Cambridge</hi>.
+                    </bibl>
+                    <bibl style="text-align: justify;">Connell, Raewyn (2015): 
+                        <hi rend="italic" xml:space="preserve">Der gemachte Mann Konstruktion und Krise von Männlichkeiten. Geschlecht &amp; Gesellschaft Band 8, 4. durchgesehene und erweiterte Auflage Aufl. </hi>Wiesbaden.
+                    </bibl>
+                    <bibl style="text-align: justify;">Piper, Andrew (2018): Enumerations. Chicago: The University of Chicago Press.</bibl>
+                    <bibl>Schumacher, Mareike, Marie Flüh (2020): “Figurengender zwischen Stereotypisierung und literarischen und theoretischen Spielräumen: Genderstereotypen und -bewertungen in der Literatur des 19. Jahrhundert”. In: Christof Schöch (Hg.): 
+                        <hi rend="italic">DHd2020: Digital Humanities zwischen Modellierung und Interpretation</hi>. Konferenzabstracts. o.O. 2020, S. 162–167,
+                        <ref target="https://zenodo.org/record/3666690#.X37-FFlCTus" xml:space="preserve"> https://zenodo.org/record/3666690#.X37-FFlCTus</ref> [Access: 26. November 2021].
+                    </bibl>
+                    <bibl>Schumacher, Mareike (2021): 
+                        <hi rend="italic">StanfordNER Gender-Classifier.</hi> DOI: 10.5281/zenodo.5555952.
+                    </bibl>
+                    <bibl>Schumacher, Mareike, Marie Flüh (forthcoming): “Macht vs. Emotion. Handlungstreibende Muster in Günderrodes Dramen digital, distant und scalable gelesen”. In: Roland Borgers, Friederike Middelhoff, Martina Wernli (Ed.): Neue Romantikforschung, Stuttgart: Metzler.</bibl>
+                    <bibl>Schumacher, Mareike, Marie Flüh (2021): “Digitale diachrone Korpusanalyse am Beispiel des Projekts „m*w – Gender Stereotype in der Literatur“. In: 
+                        <hi rend="italic">Digital humanities and gender history</hi>. Jena. DOI: 
+                        <ref target="https://doi.org/10.22032/dbt.49173">
+                            <hi rend="color(1155CC)">https://doi.org/10.22032/dbt.49173</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl>Underwood, Ted (2019): Distant Horizons. Chicago: The University of Chicago Press.</bibl>
+                    <bibl>Weitin, Thomas (2016): 
+                        <hi rend="italic">Volldigitalisiertes XML-Korpus. Der Deutsche Novellenschatz. Hg. von Paul Heyse, Hermann Kurz. 24 Bde. 1871</hi>–
+                        <hi rend="italic">1876.</hi> Darmstadt/Konstanz. URL: 
+                        <ref target="https://www.deutschestextarchiv.de/novellenschatz/">
+                            <hi rend="color(1155CC)">https://www.deutschestextarchiv.de/novellenschatz/</hi>
+                        </ref> [Access: 26. November 2021].
+                    </bibl>
+                    <bibl>Zöllner, Jochen, Konrad Sperfeld, Christoph Wick, and Roger Labahn (2021): 
+                        <hi rend="italic">Optimizing small berts trained for german NER</hi>. arXiv. URL: 
+                        <ref target="https://arxiv.org/abs/2104.11559">
+                            <hi rend="color(1155CC)">https://arxiv.org/abs/2104.11559</hi>
+                        </ref> [Access: 8th December 2021].
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

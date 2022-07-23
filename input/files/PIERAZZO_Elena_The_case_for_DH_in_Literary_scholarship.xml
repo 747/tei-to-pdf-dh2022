@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The case for DH in Literary scholarship</title>
+                <author>
+                    <persName>
+                        <surname>Pierazzo</surname>
+                        <forename>Elena</forename>
+                    </persName>
+                    <affiliation>University of Tours, France</affiliation>
+                    <email>elena.pierazzo@univ-tours.fr</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>interpretation</term>
+                    <term>literarary analysis</term>
+                    <term>semantics</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>meta-criticism (reflections on digital humanities and humanities computing)</term>
+                    <term>text encoding and markup language creation</term>
+                    <term>deployment</term>
+                    <term>and analysis</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Not all Humanities have been equally touched by the digital. For textual scholarship, history and linguistics, for instance, we can have a substantial number of scholarly contributions, particularly when we include experiences embodied in projects and resources. However, comparatively speaking, digital literary criticism has had few followers. An exception are Computational Literary Studies (CLS) that apply quantitative methods to large amount of literary and bibliometric data. Linked to the methods of distant reading [Moretti, 2005], this approach enjoys great success today, while web resources like Voyant, software like Gephi, and programming environments like R, have made text mining very accessible, even for those with limited computer skills. Linked to this approach, stylometry and authorship attribution are also thriving. Particularly mediatized researches are the initiatives that led to "unmasking" the identies of Robert Galbraith, a pseudonym of J.K. Rowling, and Elena Ferrante [Joula, 2015; Tuzzi and Cortelazzo, 2018]. However, literary criticism connected to close reading seems almost absent from the DH radar. The CATMA tool, designed to define personalized tagsets for (mainly) literary analysis [Meister 2020], represents a bright exception. Meister, in fact, is one of the few scholars that has engaged with digital literary criticism and digital hermeneutics; the latter has been explored also by Van Zundert (2016) and Ramsey (2011), but from a quantitative perspective. Relatively few scholars in DH have to addressed literary criticism with qualitative approaches, which are, conversely, among the most important for non-digital literary scholars.</p>
+            <p style="text-align: left; ">The reasons for this absence are probably to be found in the controversies about the use of markup within texts that have inflamed the scholarly community since the Eighties. The act of adding explicit markers in the text has been subjected to scrutiny, as it is perceived (rightly) as a harbinger of interpretation and this fact has been (and is, to a certain extent, still) perceived as an invasion, a disfigurement of the text; Cummings (2008) gives a vivid account of the debate and reflects on how it has limited the use of TEI for literary criticism. The argument goes that once the text is marked up, it cannot be reused by others because the interpretation added by the encoder would make it unusable. According to this vision, digital texts must be made available in their most neutral and objective form, and any form of annotation, including editorial, must be avoided. Sperberg-McQueen 1991 and Cummings 2008, amongst others, have tried to address the issue, and I have argued elsewhere on the hermeneutic fallacy of the category of objectivity [Pierazzo 2015]; but these methods remain far from impacting “the Humanities at large” and in particular the literary scholars [Meister 2020]. However, in order to contextualize this debate, one should go back to when this controversy was born. The urgency of those years was to put texts online, to create literary corpora for concordances and the study of word frequencies; at the time, digital acquisition of texts, the transformation of the printed into sequences of characters to be analyzed by computers (Machine Readable Form) was mostly done by hand, with an enormous expenditure of time and energy. The emphasis was therefore on making texts available and on the need of not repeating work. Researchers did not want to work with texts full of manually added codes which then had to be removed just as manually in order to reuse the texts.</p>
+            <p style="text-align: left; ">It is worth noting, though, how this discourse hides the concept of DH as a service: the goal was thought produce resources for others to do “real” research. This argument is not only dangerous, condemning DH to a mere service, but also wrong, as text, any text, can only be the result of the dialectical compromise between the source documents that contains it and scholars that interpret it (even when they “only” transcribe it), and therefore no text can ever be considered objectively neutral [Pierazzo, 2015]. Today conditions have changed: most literary texts are digitally available in many versions, not to mention the plethora of tools and methods to “get rid of” markup, therefore the objections do not stand in the same way.</p>
+            <p style="text-align: left; ">Another obstacle for the uptake of DH in literary studies is the conviction that close reading and critical interpretation only require a reader, a text, and a (printed) essay, and therefore computers, in this context, are useful as typewriters [Kirschenbaum, 2016]. Yet, the lack of experimentation and engagement of the scholarly community in DH for literary analysis does not allow for a clear assessment of the epistemological added value of using computers for one or few texts at a time. But shouldn’t be this the moment for rethinking Digital Literary Studies? Couldn’t we at least try to use markup, ontologies and other methods to understand a text, or answer questions about interpretation?</p>
+            <p style="text-align: left; ">The paper will present some experiences at the University of Tours using TEI markup for the history of ideas, and ontologies and databases for analysis of fictional entities (people and places). We have applied these methods to works by Boccaccio, the Vite by Vasari, and to a small corpus of librettos of the 17th century. These experiments are showing promising results, not only in literary terms, but also on a largely methodological perspective, with colleagues and researchers finding themselves challenged and enticed by DH heuristics.</p>
+            <p style="text-align: left; ">Conditions are ripe for experiences and discussions in order to evaluate the impact of DH in literary studies, particularly in the light of the advancements in HTR and other types of CLS that have the potentials of bringing a large amount of unknown and understudied texts into the literary arena. This could truly change our perspectives and understandings on literature, but we need to sharpen our hermeneutical tools first.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Cummings, J.</hi>, 2008. The text encoding initiative and the study of literature. In 
+                        <hi rend="italic">A companion to digital literary studies</hi> (pp. 451-76), Blackwell.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kirschenbaum, M.G.</hi>, 2016. What is digital humanities and what’s it doing in English departments?. In 
+                        <hi rend="italic">Defining Digital Humanities</hi> (pp. 211-220). Routledge.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Juola, P.</hi>, 2015. The Rowling case: A proposed standard analytic protocol for authorship questions. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 30(1): 100-113.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Pierazzo, E.</hi>, 2015. 
+                        <hi rend="italic">Digital scholarly editing: Theories, models and methods</hi>. Routledge.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Ramsay, S.</hi>, 2011. 
+                        <hi rend="italic">Reading Machines: Toward and Algorithmic Criticism</hi>. University of Illinois Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sperberg-McQueen, C.M.</hi>, 1991. Text in the electronic age: Texual study and textual study and text encoding, with examples from medieval texts. 
+                        <hi rend="italic">Literary and Linguistic Computing</hi>, 6(1): 34-46.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Tuzzi, A. and Cortelazzo, M.A.</hi>, 2018. What is Elena Ferrante? A comparative analysis of a secretive bestselling Italian writer. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 33(3): 685-702.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Van Zundert, J.J.</hi>, 2016. Screwmeneutics and hermenumericals: the computationality of hermeneutics. 
+                        <hi rend="italic">A companion to digital humanities</hi>. (pp. 331-347) Blackwell.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

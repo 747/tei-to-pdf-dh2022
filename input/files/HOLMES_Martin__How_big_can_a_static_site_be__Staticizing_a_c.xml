@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main"> How big can a static site be? Staticizing a census database </title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Holmes</surname>
+                        <forename>Martin</forename>
+                    </persName>
+                    <affiliation>University of Victoria, Canada</affiliation>
+                    <email>mholmes@uvic.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Newton</surname>
+                        <forename>Greg</forename>
+                    </persName>
+                    <affiliation>University of Victoria, Canada</affiliation>
+                    <email>gregster@uvic.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T09:09:20.311598019</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>project resiliency</term>
+                    <term>static sites</term>
+                    <term>digital preservation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>digital publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>project design</term>
+                    <term>organization</term>
+                    <term>management</term>
+                    <term>History</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1">
+                <head>
+                    <anchor xml:id="id__pv5vauyqebji"/>Project Endings and static websites
+                </head>
+                <p>It has long been recognized that building DH web applications which do not have perpetual funding on complex computing stacks that require regular updates presents an overwhelming problem for long-term maintenance and archivability (Nowviskie and Porter 2010; Dombrowski 2019; Smithies et al. 2019). Project Endings is a collaboration between DH scholars, librarians and programmers, aiming to create tools and recommendations for building extremely low-maintenance, easily archivable, but still highly functional digital edition projects (Goddard 2018; Holmes and Takeda 2019a). Starting in 2016, the Endings team have converted a number of high-traffic, well-known digital edition projects that previously ran on XML databases and similar back-end infrastructure into entirely static websites
+                    <hi rend="sup">
+                        <note xml:id="ftn1" place="foot" n="1">See 
+                            <ptr target="https://endings.uvic.ca/projects.html"/>for the full list of staticized projects.
+                        </note>
+                    </hi> built with HTML5, CSS and client-side JavaScript (Holmes 2017; Arneil, Holmes and Newton 2019). We have also developed a set of Principles
+                    <hi rend="sup">
+                        <note xml:id="ftn2" place="foot" n="2">
+                            <ptr target="https://endings.uvic.ca/principles.html"/>.
+                        </note>
+                    </hi> to guide us in converting existing projects and creating new ones, as well as a client-side pure-JavaScript search engine, staticSearch
+                    <hi rend="sup">
+                        <note xml:id="ftn3" place="foot" n="3">
+                            <ptr target="https://github.com/projectEndings/staticSearch"/>.
+                        </note>
+                    </hi> (Holmes and Takeda 2020a, 2020b).
+                </p>
+                <p>At the outset, we assumed that only relatively small digital editions would be suitable candidates for complete staticization, and we began with sites consisting of only a few hundred pages.
+                    <hi rend="sup">
+                        <note xml:id="ftn4" place="foot" n="4">See for example 
+                            <hi rend="italic">My Norse Digital Image Repository</hi> (
+                            <ptr target="https://myndir.uvic.ca/"/>) or 
+                            <hi rend="italic">The Robert Graves Diary</hi> (
+                            <ptr target="https://graves.uvic.ca/"/>).
+                        </note>
+                    </hi> However, seeing how smoothly the process worked with smaller sites, we took on some of our larger projects, including The Map of Early Modern London (13,086 pages), The Colonial Despatches (10,826 pages), and Digital Victorian Periodical Poetry (20,685 pages). The results were very encouraging: the new sites were faster and more responsive than the old, and the staticSearch engine performed very effectively even at these scales.
+                    <hi rend="sup">
+                        <note xml:id="ftn5" place="foot" n="5">See 
+                            <ptr target="https://mapoflondon.uvic.ca/search.htm"/>; 
+                            <ptr target="https://bcgenesis.uvic.ca/search.html"/>; 
+                            <ptr target="https://dvpp.uvic.ca/search.html"/>.
+                        </note>
+                    </hi>
+                </p>
+                <p>But there must, presumably, be some practical limits on the scale of a DH project which can be effectively converted to the static model, and it would be helpful to know where those limits might be. We reviewed our own catalogue and discovered a candidate which appears to be precisely the kind of project that would be suitable for testing this: 
+                    <hi rend="italic">VIHistory</hi>.
+                </p>
+            </div>
+            <div type="div1">
+                <head>
+                    <anchor xml:id="id__kff2sgs4fgkz"/>The 
+                    <hi rend="italic">VIHistory</hi> project
+                </head>
+                <p>
+                    <hi rend="italic">VIHistory</hi> (
+                    <ptr target="https://vihistory.uvic.ca/"/>), a PostgreSQL/PHP project created about 15 years ago, presents census data from the City of Victoria and Vancouver Island, from censuses taken in 1871, 1881, 1891, 1901, and 1911, comprising nearly 150,000 individual census records, along with associated tables of occupations, familial relationships, locations, addresses, religion, languages, nationalities and other associated concepts. In terms of the number of individual HTML pages required for a static site, it is between five and ten times the size of the largest project we have previously staticized. VIHistory has undergone successive infrastructure migrations over the years, and various features have broken as a result. A looming server migration will render it non-functional, so we must take action within a short period. Furthermore, a new dataset (an addendum to the 1901 census) is now available for addition to the collection. Rather than invest more time in patching the existing site, we are instead creating a static version, with a completion deadline of April 2022.
+                </p>
+                <p>Census data brings with it a range of challenges, particularly when multiple censuses are to be presented as an integrated dataset. From one census to another, the range of data collected will vary; ward boundaries change; and descriptors such as nationality, race, occupation, familial relationships and languages mutate as social and political norms evolve.
+                    <hi rend="sup">
+                        <note xml:id="ftn6" place="foot" n="6">See, for example, Stanger-Ross 2008, which discusses the evolution of ethnicity in census data.</note>
+                    </hi> The old version of the VIHistory site addressed these issues through a set of PostgreSQL views, which merged disparate datasets into a normalized form which could be queried more easily. One of our challenges will be to accomplish this in static form.
+                </p>
+                <p>Another challenge will be to devise an appropriate granularity for the HTML pages which constitute the site. We expect to create a single HTML page for every distinct census entry, but other pages will be constructed to bring together collections of similar features (people with the same occupation, on the same street, with the same nationality, etc.) in order to provide a useful browsing approach to the data (something lacking in the existing site, which has only a search interface). The search itself will need to be carefully constructed so that all the features of the existing site search are preserved, and we expect to add more search options too.</p>
+            </div>
+            <div type="div1">
+                <head>
+                    <anchor xml:id="id__j1euv3g3eovz"/>Plan, approach, and prospects
+                </head>
+                <p>We initially considered converting all the existing census data into XML as the first phase of the project, but we have not found any XML standard suitable for this historical census data. Since we would be devising our own schema anyway, we have decided to make that schema a customization of the HTML5 standard,
+                    <hi rend="sup">
+                        <note xml:id="ftn7" place="foot" n="7">This is also the approach taken by Holmes with the project 
+                            <ref target="https://johnkeats.uvic.ca/">
+                                <hi rend="color(#1155cc) underline italic">Mapping Keats’s Progress</hi>
+                            </ref>(Holmes 2021).
+                        </note>
+                    </hi> thus merging data and presentation in a form which can be easily viewed and styled but also readily processed, since it will be XHTML5, and therefore accessible to XSLT.
+                </p>
+                <list type="unordered">
+                    <item>Each census entry page will present a standardized tabular view of the data from the census record, with explanations to clarify differences between census datasets.</item>
+                    <item>Each “page” will have a condensed single-line title capturing essential data, used for display in search results and listings pages. </item>
+                    <item>Values for datapoints such as nationality, language and so on will be constrained by the schema, and all pages will be validated during the build process. </item>
+                    <item>Detailed diagnostics (Holmes and Takeda 2019b) will expose inconsistencies and errors in the dataset.</item>
+                    <item>Metadata will be encoded in the HTML header and used to create search filters, but the text of the pages will also be indexed for a new full-text search feature (the old site search allows only metadata filters).</item>
+                </list>
+                <p>We fully expect the conversion to succeed, but we also know that we will be pushing the practical limits of this approach, and will need to devise optimizations and workarounds to make the site, and particularly the static search engine, usable. Our paper will report on this work, and present recommendations on strategies and limitations for creating static resources on this scale. </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Arneil, Stewart, Martin Holmes, and Greg Newton. 2019. “Clearing the Air for Maintenance and Repair: Strategies, Experiences, Full Disclosure; Paper Three: Ruthless Principles for Digital Longevity.” Presented at Digital Humanities 2019, Utrecht, the Netherlands. 
+                        <ptr target="https://dev.clariah.nl/files/dh2019/boa/0648.html"/>.
+                    </bibl>
+                    <bibl>Dombrowski, Quinn. 2019. “Sorry for all the Drupal: Reflections on the 3rd anniversary of ‘Drupal for Humanists.’” Quinn Dombrowski (blog), November 8, 2019.
+                        <ref target="http://www.quinndombrowski.com/?q=blog/2019/11/08/sorry-all-drupal-reflections-3rd-anniversary-drupal-humanists"> </ref>
+                        <ptr target="http://www.quinndombrowski.com/?q=blog/2019/11/08/sorry-all-drupal-reflections-3rd-anniversary-drupal-humanists"/>.
+                    </bibl>
+                    <bibl>Goddard, Lisa. 2018. “The Endings Project @ UVic: Concluding, Archiving, and Preserving Digital Projects for Long-Term Usability.” @Risk North 2: Digital Collections, Montreal, Canada. 
+                        <ptr target="https://github.com/projectEndings/Endings/blob/master/presentations/Goddard_RiskNorth_Endings_final.pptx?raw=true"/>.
+                    </bibl>
+                    <bibl>Holmes, Martin. 2017. “Selecting Technologies for Long-Term Survival.” Presented at the SHARP Conference 2017: Technologies of the Book, Victoria, BC, Canada. 
+                        <ptr target="https://github.com/projectEndings/Endings/raw/master/presentations/SHARP_2017/mdh_sharp_2017.pdf"/>.
+                    </bibl>
+                    <bibl>Holmes, Martin. 2021. “Using ODD for HTML.” 
+                        <hi rend="italic">The Journal of the Text Encoding Initiative.</hi> Text Encoding Initiative Consortium. 
+                        <ptr target="https://journals.openedition.org/jtei/3106"/>.
+                    </bibl>
+                    <bibl>Holmes, Martin and Joseph Takeda. 2019a. “The Prefabricated Website: Who needs a server anyway?” Text Encoding Initiative Conference, Graz, Austria. 
+                        <ptr target="https://zenodo.org/record/3449197"/>.
+                    </bibl>
+                    <bibl>Holmes, Martin and Joseph Takeda. 2019b. “Beyond Validation: Using Programmed Diagnostics to Learn About, Monitor, and Successfully Complete Your DH Project.” 
+                        <hi rend="italic">Digital Scholarship in the Humanities.</hi> Oxford University Press/EADH. 
+                        <ptr target="http://dx.doi.org/10.1093/llc/fqz011"/>.
+                    </bibl>
+                    <bibl>Holmes, Martin, and Joey Takeda. 2020a. “Static Search: An Archivable and Sustainable Search Engine for the Digital Humanities.” Presented at the Digital Humanities Summer Institute (DHSI) Colloquium (#VirtualDHSI). [
+                        <ptr target="https://zenodo.org/record/3883150"/>].
+                    </bibl>
+                    <bibl>Holmes, Martin, and Joey Takeda. 2020b. “Nine Projects, One Codebase: A Static Search Engine for Digital Editions.” Presented at the COLLABORATION Digital Humanities Conference, University of British Columbia / online. 
+                        <ptr target="http://dhconference.sites.olt.ubc.ca/conference-info/program/day-4/"/>.
+                    </bibl>
+                    <bibl>Nowviskie, Bethany, and Dot Porter. 2010. “
+                        <ref target="http://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-722.html">
+                            <hi rend="color(#1155cc) underline">Graceful Degradation: Results of the Survey</hi>
+                        </ref>.” Presented at Digital Humanities 2010, King’s College, London. 
+                        <ptr target="https://nowviskie.org/Graceful_Degradation.pdf"/>.
+                    </bibl>
+                    <bibl>Smithies, James, Carina Westling, Anna-Maria Sichani, Pam Mellen, and Arianna Ciula. 2019. “Managing 100 Digital Humanities Projects: Digital Scholarship &amp; Archiving in King’s Digital Lab.” 
+                        <hi rend="italic">Digital Humanities Quarterly</hi> 13, no 1 (2019). 
+                        <ptr target="http://www.digitalhumanities.org//dhq/vol/13/1/000411/000411.html"/>.
+                    </bibl>
+                    <bibl>Stanger-Ross, Jordan. 2008. “Citystats and the History of Community and Segregation in Post-WWII Urban Canada.” 
+                        <hi rend="italic">Journal of the Canadian Historical Association</hi> 19, 2 (2008), 3-22. 
+                        <ptr target="https://citystats.uvic.ca/Citystats_CHA_19.2.pdf"/>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

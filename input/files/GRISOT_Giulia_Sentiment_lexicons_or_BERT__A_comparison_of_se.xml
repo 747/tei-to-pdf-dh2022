@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sentiment lexicons or BERT? A comparison of sentiment analysis approaches and their performance.</title>
+                <author>
+                    <persName>
+                        <surname>Grisot</surname>
+                        <forename>Giulia</forename>
+                    </persName>
+                    <affiliation>Bielefeld University, Germany</affiliation>
+                    <email>giulia.grisot@uni-bielefeld.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Rebora</surname>
+                        <forename>Simone</forename>
+                    </persName>
+                    <affiliation>Bielefeld University, Germany</affiliation>
+                    <email>simone.rebora@uni-bielefeld.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Herrmann</surname>
+                        <forename>Berenike</forename>
+                    </persName>
+                    <affiliation>Bielefeld University, Germany</affiliation>
+                    <email>berenike.herrmann@uni-bielefeld.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T13:22:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>sentiment analysis</term>
+                    <term>annotations</term>
+                    <term>deep learning</term>
+                    <term>Swiss literature</term>
+                    <term>sentiment lexicons</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>Computer science</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Abstract</p>
+            <p>With the development of new powerful technologies for computational data analysis, the opportunities for – and interest in – the detection of sentiments and opinion in texts have grown considerably (Liu 2015). Because of the vast amount of material available online, these investigations have focused mostly on textual material gathered from social media, making use of traditional corpus linguistic approaches as well as deep learning tools.</p>
+            <p>Sophisticated sentiment analysis (SA) of literary texts, especially in languages other than English, is still in its infancy (Kim and Klinger 2019). This has depended partly on the limited amount of digital texts available, partly the complex structure of literary texts, and finally on methodological challenges, with skills needed that seldom form part of the training of literary scholars.</p>
+            <p>Emotions are however central to the experience of literary narrative (Oatley 2012; Hogan 2016), and recent advances in their systematic, quantitative analysis have been made within computational literary studies (Jockers 2017, Burghardt et al 2019). Yet, such investigations have mostly relied on existing lists of words associated with sentiment and emotion values, the so-called 
+                <hi rend="italic">sentiment lexicons</hi>. While these remain conventional and useful tools, they can only provide limited insights to the representation of emotions in texts.
+            </p>
+            <p>Using a lexicon-based method, we have previously investigated emotions and sentiments in relation to the representation of landscape in Swiss literature, looking in particular at the differences between the 
+                <hi rend="italic">rural</hi> and 
+                <hi rend="italic">urban</hi> spaces portrayed in a corpus of Swiss novels written in German (see Grisot, G., Herrmann, J.B. (in preparation).
+            </p>
+            <p>The present paper takes a step forward, using manual annotation and advanced machine learning methods to train a fine-tuned model to recognise 
+                <hi rend="italic">valence</hi> and 
+                <hi rend="italic">arousal</hi> on a historical corpus. Our goals are higher levels of lexical coverage and validity when compared to our prior results obtained with sentiment lexicons.
+            </p>
+            <p>We describe here the current state of our method to detect sentiment using deep learning approaches. Using a language model trained on a large corpus (3000+) of German literary texts spanning from 1800 to 1950 (Fischer and Strötgen 2017), we make use of BERT word embeddings and manually annotated sentences to recognise sentiment.</p>
+            <p>500+ sentences were taken from three Swiss-German novels - one of which children's fiction - and annotated for 
+                <hi rend="italic">valence</hi> - understood here as the degree of 'positivity' of the detected sentiment - and 
+                <hi rend="italic">arousal</hi> - its 'intensity' or 'degree of activation' - by two trained student assistants using the same instructions. Currently, intra-class correlation coefficient (ICC) between manual annotators calculated on these sentences is 0.721 for valence and 0.606 for arousal.
+            </p>
+            <p>Scores for individual texts indicated preliminary evidence of a genre effect, with higher ICCs for the children's novel (valence 0.86; arousal 0.78 for 149 sentences) as compared to the other two, more complex, realist novels (valence 0.78, 0.62 arousal for 182 sentences; 0.51 for valence, 0.41 arousal for 198 sentences).</p>
+            <p>The annotated sample was used to train a deep learning classifier, using linear regression to finetune the Literary German BERT model (
+                <ref target="https://huggingface.co/severinsimmler/literary-german-bert">https://huggingface.co/severinsimmler/literary-german-bert</ref>), which reached Pearson's r scores of 0.53 for valence and 0.63 for arousal. These scores are very promising, suggesting the possibility - provided more training data - of a full automation of the annotation task on our domain of historical literary texts.
+            </p>
+            <p>We are currently appending the annotation and at the time of the conference shall be able to update the results on a broader data base.</p>
+            <p>While potentially taking automatic SA of German literary texts to a new level, our study also allows evaluating the performance of lexicon-based in direct comparison with deep learning SA approaches, thus allowing to gauge the validity of different SA methods on a data-driven basis. This approach also raises questions concerning the effect of genre on the ease and validity of manual sentiment annotations.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Burghardt, M., Wolff, C., &amp; Schmidt, T.</hi> (2019, January 1). Toward multimodal sentiment analysis of historic plays: A case study with text and audio for Lessing’s Emilia Galotti. 4th Conference of the Association Digital Humanities in the Nordic Countries.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fischer, F., &amp; Strötgen, J.</hi> (2017). Corpus of German-Language Fiction (txt). 
+                        <ref target="https://doi.org/10.6084/m9.figshare.4524680.v1">https://doi.org/10.6084/m9.figshare.4524680.v1</ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Grisot, G. and Herrmann, B. J.</hi> (in preparation) Examining the representation of landscape and its emotional value in German-Swiss fiction around 1900
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hogan, P. C.</hi> (2016). Affect Studies. Oxford University Press. 
+                        <ref target="https://doi.org/10.1093/acrefore/9780190201098.013.105">https://doi.org/10.1093/acrefore/9780190201098.013.105</ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Jockers, M.</hi> (2017). Extracts sentiment and sentiment-derived plot arcs from text. R Package “Syuzhet.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kim, E., &amp; Klinger, R.</hi> (2019). A survey on sentiment and emotion analysis for computational literary studies. Zeitschrift Für Digitale Geisteswissenschaften. 
+                        <ref target="https://doi.org/10.17175/2019_008">https://doi.org/10.17175/2019_008</ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Liu, B.</hi> (2015). Sentiment Analysis: Mining Opinions, Sentiments, and Emotions. New York, NY: Cambridge University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Oatley, K.</hi> (2012). The Passionate Muse: Exploring Emotion in Stories. New York: Oxford University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">R Core Team.</hi> (2021). R: A language and environment for statistical computing. 
+                        <ref target="https://www.r-project.org/">https://www.r-project.org/</ref>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

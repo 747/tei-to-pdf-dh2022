@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">From Roland to Conan: First results on the corpus of French literary fictions (1050-1920)</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Langlais</surname>
+                        <forename>Pierre-Carl</forename>
+                    </persName>
+                    <affiliation>Université de Montpellier Paul-Valéry</affiliation>
+                    <email>pierrecarl.langlais@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Camps</surname>
+                        <forename>Jean-Baptiste</forename>
+                    </persName>
+                    <affiliation>École nationale des chartes | Université PSL, France</affiliation>
+                    <email>jean-baptiste.camps@chartes.psl.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Baumard</surname>
+                        <forename>Nicolas</forename>
+                    </persName>
+                    <affiliation>École normale supérieure, PSL</affiliation>
+                    <email>nbaumard@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Morin</surname>
+                        <forename>Olivier</forename>
+                    </persName>
+                    <affiliation>MPI für Menschheitsgechichte, Jena</affiliation>
+                    <email>alf.drummond@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T16:05:36.427651124</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>distant reading</term>
+                    <term>literary genre</term>
+                    <term>cultural evolution</term>
+                    <term>chivalric romance</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>cultural analytics</term>
+                    <term>text mining and analysis</term>
+                    <term>Literary studies</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor type="bookmark-start" xml:id="id_a-corpus-of-french-literary-fictions-1050-1920"/>A corpus of French literary fictions: 1050-1920
+                    <ptr type="bookmark-end" target="#id_a-corpus-of-french-literary-fictions-1050-1920"/>
+                </head>
+                <p>A decade ago, when he set out to explore the evolution of English novels in the period 1740–1850, F. Moretti had to focus on the titles as the main available data, yet noting that:</p>
+                <quote>in a few years, we will have a digital archive with the full texts of (almost) all novels ever published .</quote>
+                <p>Today, we propose to embark on a journey to model the evolution of French literary fictions, from their epic and chivalric origins up to the more modern productions of genres such as heroïc fantasy or historical novels. We offer to do that not from the titles, but by analysing a corpus, currently in construction, whose aim is to cover all French literary fiction digitized from the earliest sample of French literature to the 20th century (or more precisely, to the point were a significant share of published literature is not yet in the public domain).</p>
+                <p>This project is at the intersection of two major trends in computational literary analysis: the creation and documentation of large literary corpora and the analysis of literary genre and discourse through machine learning classification. In comparison with previous examples of French literary corpus (like 
+                    <hi rend="italic">théâtre classique</hi> ) or the French corpus of the European literary text collection , French novels make up a massive amount of texts (80,000 registered work in the French National Library before the 20th century), a large share of which is non-canonical and little documented. Text mining techniques make it possible to explore and document large digitized corpora with little editorial work. Classification is not simply used as cataloguing tool: its limitations can in fact inform in a more complex way the development of genres and the intertextual interplay between one genre and another.
+                </p>
+                <p>The French fiction corpus initially results from the collocation of three different collections:</p>
+                <list type="ordered">
+                    <item>A collection of medieval fictions and 
+                        <hi rend="italic">chansons de gestes</hi> (1050-1450) - (cf. Camps et al., 2019).
+                    </item>
+                    <item>A collection of printed fictions of Gallica from the modern period and the 19th century (Langlais, 2021b).</item>
+                    <item>A new collection comprising most of the digitized fictions from the early modern period (1450-1700).</item>
+                </list>
+                <p>The second corpus relied on one of the oldest bibliographic database: the catalog of the French National Library. The classification scheme used by the library until 1996 was developed between 1684 and 1688 by the librarian of Louis XIV, Nicolas Clément. A specific category for novels (Y2) has been existing since 1730 as a duplication of the category for poetry (Y). The novels are now classified in Y2 or Y Bis. For cultural history, the BNF catalog presents a major interest: the categories are often (nearly) contemporary of the documents they aim to classify.</p>
+                <p>This corpus was made possible thanks to the policy of open data and open content which the BNF has been engaged in for several years. While the Clément classification ceased to be used for the classification of physical collections in 1996, it has become available in 2017 for data analysis when the BNF opened a new catalog access service, the SRU
+                    <note xml:id="ftn1" place="foot" n="1">
+                        <hi rend="italic">Search/Retrieve via URL</hi>, 
+                        <ptr target="https://api.bnf.fr/fr/api-sru-catalogue-general"/>.
+                    </note>. It was originally limited to novels digitized by the French National Library with a strong focus on the 19th century.
+                </p>
+                <p>The third corpus was created specifically for the project: it aims to cover all the digitized versions of early modern novels published in France between 1473 (publication date of our earliest entry, 
+                    <hi rend="italic">Le Roman de Jason et Médée</hi>) and 1700 (our arbitrary cutoff, for now). This collection originally aimed to bridge the two previous corpora which were focused on two extreme temporal points of the history of French literature (the medieval period and the post-1800 period). It became a more ambitious experiment: a systematic harvesting of all available digitizations. The collections of digital documents already available in 
+                    <hi rend="italic">Fictions littéraires de Gallica</hi> have been significantly expanded thanks to the semi-automatical retrieval of documents digitized by Google Books and other online digital library. The creation of this composite corpus underline that digitized collections may be already more representative than expected, although nobody knew it or could measure the scale of it.
+                </p>
+                <p>Using the combined collections of several digital libraries made it possible to cover a large amount of the novels registered in the catalog of the French National Library. For the 1470-1600 period, we have retrieved 275 novels out 349, that is 78.8% of the corpus. For the 1600-1700 period, we have 724 novels out of 1058, that is 68.4% of the corpus. Representativeness ratio is not only high but consistent on the entire time period as shown in figure 
+                    <ref target="#composition">2</ref> as the size of the available digitized corpus remains proportional to the total amount of novels identified by the French National Library.
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/27cd5817c23bd18ce57d4877e31c0b0a.jpg"/>
+                    </figure>
+                </p>
+                <p>Figure 1: Composition of the corpus by decade</p>
+                <p>Such high coverage seems to alleviate most concerns related to the representativeness of digital corpora: it becomes less likely that important genres or themas are neglected. Yet the novels registered on the French National Library catalog do not encompass the total sum of literary fiction published or circulated on the period. The comparison with Google Books showed that numerous editions were not recorded by Gallica. In the context of the project, we only checked novels recorded on the catalogue, but this discrepancy shows that some published novels could definitely have been overlooked, although by definition these documents are not necessarily expected to belong to those with the largest impact, as they failed to be noticed by bibliographic records. After the 19th century, nearly all published monographs are expected to be indexed in the catalogue of the French National Library due to progress in the implementation of the policy of legal deposit (
+                    <hi rend="italic">dépôt légal</hi>, established in 1537). Yet, at this time, a large amount of literature was increasingly being published in periodicals and newspapers.
+                </p>
+                <p>In short as representativeness of existing library catalogues becomes less of a concern, digital collections are bound to raise more complex issues and address a more critical perspective on existing bibliographic resources: what is a “novel”? what is a “publication”? what about piracy edition or periodical fictions?</p>
+                <p>The creation of the third corpus also aims to benefit from unprecedented progresses in the detection of historical OCR. The OCR17+ model trained by Claire Jahan and Simon Gabay (2021) on a collection of 17th century prints already yields a usable text for most of the 16th to 18th century documents
+                    <note xml:id="ftn2" place="foot" n="2"> Jahan and Gabay (2021). This model will be applied on the entire corpus. Preliminary results on a random selection of 60 pages from the corpus show that OCR quality is already high for the 17th century (nearly 99% character accuracy). The 16th century corpus is more challenging due to specific issues with Gothic fonts and segmentation, although we intend to solve these limitations by fine tuning a model for Gothic fonts in incunabula and 16th century prints. In comparison, the mean OCR quality in the collections held by Gallica is at roughly 80% for the 16th and 17th centuries (according to available metadata) and a large part is currently unavailable for full-text search, possibly because OCR quality was too low. The project will also benefit from the development made by the ongoing Gallic(orpor)a project, that aims to provide a fully reusable pipeline for Gallica documents in French from the Middle Ages to the Revolution. By the end of this project, we plan to create a small search engines of the entire collected corpus of 15th to 17th century documents. This would be the first resource to give access to a large share of the published literature in France in the early modern period. An initial version of this search engine may be available by the time of the conference and serve as a demonstration of our methodology of systematic collection and enhancement of available digitized collections.</note>.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor type="bookmark-start" xml:id="id_modelling-literary-genre-a-back-and-forth-approach"/>Modelling literary genre: a back and forth approach
+                    <ptr type="bookmark-end" target="#id_modelling-literary-genre-a-back-and-forth-approach"/>
+                </head>
+                <p>Chivalric romance is one of oldest and most enduring genre of European literature. It finds its origin in Old French epics, known as 
+                    <hi rend="italic">chansons de geste</hi>, whose first attestations go back to the 11th century, and in the genre of 
+                    <hi rend="italic">roman</hi> that emerges in the second half of the 12the century. Continuously modified, adapted and rewritten during the Middle Ages and the Early Modern times, this repertoire of fictions provided numerous tropes and patterns that arguably live on in more modern and even contemporary literature, especially in popular literature and even fantasy novels.
+                </p>
+                <p>Preliminary exploration of our large corpus of French literary fictions suggests that the chivalric novel, rather than ceasing to exist, has been continually evolving and gradually morphed into forms close to the contemporary fantasy novels. This structural transformation has been largely overlooked as forms of chilvalric romances have largely disappeared from the high literary canon after the Renaissance and continued to evolve in the production of lesser known and more obscure authors.</p>
+                <p>Our analysis relies on a anachronistic use of classification recently pioneered in cultural analytics . Probability rates, cross-classifications of the same text and, even, classification failures are reinterpreted as a way to measure the complex evolution of literary genres.</p>
+                <p>To investigate the transformation of chivalric novels into contemporary genres like fantasy, we created two historical models of literary genres: a 21st century model and an early modern “Fresnoy” model (from a 1731 catalog). The combined use of anachronistic classification aims to locate the two parallel processes of genre survival/transformation (for chivalric romance) and genre emergence/coagulation (for fantasy).</p>
+                <p>Classification was made with SVM using an R library initially developed for the classification of newspaper genres in the 19th century, 
+                    <hi rend="italic">TidySupervise</hi> .
+                </p>
+                <p>The 21st century model is created using nine genre categories of the social cataloguing website 
+                    <hi rend="italic">Babelio</hi>
+                    <note xml:id="ftn3" place="foot" n="3">
+                        <ptr target="https://www.babelio.com/"/>.
+                    </note>. User-generated tags have recently emerged as an important source of information in computational analysis of contemporary literature and literary reception . A French counterpart to 
+                    <hi rend="italic">Goodreads</hi>, 
+                    <hi rend="italic">Babelio</hi> has a significant impact among French literary readers with nearly 1 million visits per month. In this project, we focused on a subset of generic tags that were either major acknowledged genres in contemporary literature or relevant for our ongoing projects: romance, fantasy, detective fiction, science fiction, historical novel, adventure novel, social novel, 
+                    <hi rend="italic">fantastique</hi> novel and erotica. Obviously, this is not a straightforward classification, since one novel could belong to several categories. We aimed rather to reconstruct the fuzzy space of contemporary literary genres in France with all its underlying uncertainties and overlaps.
+                </p>
+                <p>The model was trained on 4,081 segments of 1000 words extracted from 1,346 novels. We applied a random selection of three 1000 words segments by work. This selection aims to limit over-fitting and ensure that the model will be correctly trained on generic features and not on the style of specific novels. Bootstrap evaluation of the model yield a 75% accuracy, yet with significant variations among the genres (fantasy being the highest rated with science fiction and erotica).</p>
+                <p>Preliminary results from the 21st century model have revealed significant examples of “missing links” between the early modern chivalric romances and the fantasy novels (Table 1). Of special interest is 
+                    <hi rend="italic">La Mort de Roland</hi> a 1858 rewrite of the 
+                    <hi rend="italic">Chanson de Roland</hi> by Alfred Assolant that explicitly claims to be an 
+                    <hi rend="italic">epic fantasy</hi> (
+                    <hi rend="italic">Fantaisie épique</hi>).
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/24443f5c2785ff4a976fff1598d6bc72.png"/>
+                        <head>Table 1. Top 10 works classified as fantasy in the corpus of 19th century novel digitized by Gallica</head>
+                    </figure>Most of these works are poorly attested in literary history. In comparison, the results from Science-fiction yields much more expected and “canonic” works (especially from Jules Verne).
+                </p>
+                <p>The early modern model (or “Fresnoy” model) has been made possible by an exceptional historical source on literary genre classification: the second volumes of 
+                    <hi rend="italic">De l’usage des romans, où l’on fait voir leur utilité &amp; leurs différens caractères</hi> by Nicolas Lenglet du Fresnoy (first published in 1731 under the pseudonym of Gordon de Percel). It is a catalog of a large among of French, Spanish and Italian novels published since 1731 broken down by genres according to the prevalent taxonomy of the time: 
+                    <hi rend="italic">Roman de chevalerie</hi>, 
+                    <hi rend="italic">Roman d’amour</hi>, 
+                    <hi rend="italic">Roman historique</hi>, 
+                    <hi rend="italic">Roman comique</hi>, 
+                    <hi rend="italic">Roman politique</hi>, etc. Ongoing work aims to reconcile the classification of Lenglet du Fresnoy with our corpus of digitized novels. Preliminary results suggest that the generic identity in the catalogue of Fresnoy is much stronger than in the Babelio dataset, with as much as 93% accuracy on four genres (
+                    <hi rend="italic">Roman d’amour</hi>, 
+                    <hi rend="italic">Roman historique</hi>, 
+                    <hi rend="italic">Roman de chevalerie</hi> and 
+                    <hi rend="italic">Roman comique &amp; satirique</hi>) in our initial run. While this high accuracy may be caused by overfitting on a limited samples of novels, it seems also consistent with the significance of genre classification in the meta-discourse about the novel in the 18th century.
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/17b025b524f277cd0f71b446eb1fd9ad.jpg"/>
+                    </figure>
+                </p>
+                <p>Figure 2: Main words used in the four categories of the Fresnoy model</p>
+                <p>A this stage, the expansion of the corpus and the re-digitization of available documents with historical models for OCR will be crucial to move beyond an exploratory phase and design a more systematic examination of the metamorphosis of literary genre.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Camps, J.B.</hi>
+                        <hi rend="bold italic"> et al. </hi>
+                        <hi rend="bold">(2019). </hi>
+                        <hi rend="italic">Geste: un corpus de chansons de geste, 2016-... (Version 02)</hi>. Paris. URL 
+                        <ptr target="http://doi.org/10.5281/zenodo.2630574"/>. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fièvre, </hi>
+                        <hi rend="bold">P.</hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">(2007)</hi>. Théâtre classique. URL 
+                        <ptr target="http://www.theatre-classique.fr/"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Jahan, C. and Gabay, S. (2021)</hi>. 
+                        <hi rend="italic">OCR17+ - Layout analysis and text recognition for 17th c. French prints</hi>, Paris/Genève: ENS Paris/UniGE, https://github.com/e-ditiones/OCR17plus.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Langlais, </hi>
+                        <hi rend="bold">P.C.</hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">(2021)</hi>. Classified News, Redefining the history of newspaper genre with supervised models. In 
+                        <hi rend="italic">Digital Newspaper: a new Eldorado for the historians</hi>. De Gruyter.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Langlais, </hi>
+                        <hi rend="bold">P.C.</hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">(2021</hi>
+                        <hi rend="bold">b</hi>
+                        <hi rend="bold">)</hi>. 
+                        <hi rend="italic">Fictions littéraires de Gallica / Literary fictions of Gallica</hi>, URL 
+                        <ptr target="https://doi.org/10.5281/zenodo.4751204"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Moretti, </hi>
+                        <hi rend="bold">F.</hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">(2009)</hi>. Style, Inc. Reflections on Seven Thousand Titles (British Novels, 1740–1850), 
+                        <hi rend="italic">Critical Inquiry</hi>, 36(1):134–158, 2009. doi: 10.1086/606125. URL 
+                        <ptr target="http://www.jstor.org/stable/10.1086/606125"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Odebrecht, </hi>
+                        <hi rend="bold">C.</hi>
+                        <hi rend="bold">, Burnard, </hi>
+                        <hi rend="bold">L.</hi>
+                        <hi rend="bold">, and Schöch, </hi>
+                        <hi rend="bold">C.</hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">(</hi>
+                        <hi rend="bold">2021</hi>
+                        <hi rend="bold">)</hi>. European literary text collection (eltec).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Calvo Tello, </hi>
+                        <hi rend="bold">J.</hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">(2021)</hi>. 
+                        <hi rend="italic">The Novel in the Spanish Silver Age: A Digital Analysis of Genre Using Machine Learning</hi>. Bielefeld University Press. doi: 10.1515/9783839459256.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Underwood, </hi>
+                        <hi rend="bold">T.</hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">(2019)</hi>. 
+                        <hi rend="italic">Distant Horizons: Digital Evidence and Literary Change</hi>. University of Chicago Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Walsh, </hi>
+                        <hi rend="bold">M.</hi>
+                        <hi rend="bold"> and Antoniak, </hi>
+                        <hi rend="bold">M.</hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">(</hi>
+                        <hi rend="bold">2021</hi>
+                        <hi rend="bold">)</hi>. The goodreads “Classics”: A computational study of readers, amazon, and crowdsourced amateur criticism. 
+                        <hi rend="italic">Journal of Cultural Analytics</hi>, 6(2). doi: 10.22148/001c.22221.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

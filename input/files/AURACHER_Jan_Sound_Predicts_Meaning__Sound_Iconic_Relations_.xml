@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Sound Predicts Meaning: Sound Iconic Relations between Vowels’ Formants and Emotional Tone in German and Japanese</title>
+                <author>
+                    <persName>
+                        <surname>Auracher</surname>
+                        <forename>Jan</forename>
+                    </persName>
+                    <affiliation>National University of Singapore; Max-Planck-Institute for Empirical Aesthetics</affiliation>
+                    <email>auracher@nus.edu.sg</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Menninghaus</surname>
+                        <forename>Winfried</forename>
+                    </persName>
+                    <affiliation>Max-Planck-Institute for Empirical Aesthetics</affiliation>
+                    <email>w.m@ae.mpg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Scharinger</surname>
+                        <forename>Mathias</forename>
+                    </persName>
+                    <affiliation>Philipps-University Marburg</affiliation>
+                    <email>mathias.scharinger@staff.uni-marburg.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>sentiment analysis</term>
+                    <term>language universals</term>
+                    <term>sound iconicity</term>
+                    <term>phonosemantics</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>natural language processing</term>
+                    <term>text mining and analysis</term>
+                    <term>Cognitive sciences and psychology</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">In this research project, we investigate the extent to which the phonetic properties of a text tell us something about the mood expressed in that text. Empirical research on the relationships between sound and meaning in language has provided solid evidence that the articulatory and acoustic properties of phonemes are implicitly related to non-acoustic features such as size, brightness or emotional tone (Reay, 1994; Schmidtke et al., 2014; Sidhu et al., 2018). Moreover, these sound-meaning relationships appear to be broadly universal, i.e., they are found in all languages and language families.</p>
+            <p style="text-align: left; ">However, while there is a wealth of studies on phonosemantic relationships at the level of individual phonemes or words, few studies have investigated the role of sound-meaning relationships in texts (Aryani et al., 2013; Auracher et al., 2010; Fónagy, 1961; Kraxenberger &amp; Menninghaus, 2016; Whissell, 1999). The aim of this research project is to investigate whether and to what extent the relative frequency of certain phonetic features in texts predicts the emotional mood expressed in that text. That is, we hope to develop a universal (i.e., language-independent) method for automatic sentiment analysis based on the phonetic structure of texts.</p>
+            <p style="text-align: left; ">To this end, we have compiled corpora of literary texts in various languages and language families, including English, German, Spanish, Chinese, Arabic, Japanese, Thai, and other languages. For the study, these texts are phonetically transcribed (converting graphemes to phonemes) and analyzed for the relative occurrence of certain phonetic features. In experimental studies, readers will then be asked to rate the emotional tone of randomly selected texts using bipolar scales that comprise the three dimensions of evaluation, potency, and activity.</p>
+            <p style="text-align: left; ">In this paper, we present preliminary results of two experiments in which we compared sound-meaning relationships in German and Japanese poetic texts. In both experiments, we examined the relationship between the formant frequencies of vowels and the emotional tone expressed in the texts. It has been reported that formant dispersion, i.e., the relative distance between first and second formants, is implicitly associated with the notion of size, strength, or dominance (Auracher, 2017; Hoshi, 2019). Our hypothesis, therefore, was that readers would be more likely to find an expression of strength, size, and dominance in texts whose average formant dispersion is relatively low than in texts with relatively high format dispersion.</p>
+            <p style="text-align: left; ">In a first experiment, 42 native German speakers evaluated the emotional tone of 90 stanzas pseudo-randomly selected from a corpus of about 1400 German poems (8000 stanzas) written between 1720 and 1900. The stanzas were divided into three categories according to whether their average formant dispersion was relatively high, relatively low, or around the general average for all stanzas. Each participant rated 30 stanzas (ten per category) on six items comprising the three bipolar dimensions of Evaluation (pleasant-unpleasant), Potency (dominant-submissive) and Activity (active-passive) (Osgood et al., 1957). Linear-Mixed-Models (LMM) per EPA dimension were run to analyze the data, using stanza category as a fixed factor and participants as a random factor. In the second experiment, we repeated the experimental design with 147 undergraduates from Japan who rated 75 Tanka (a particular form of Japanese poetry) on six bipolar scales. The Tanka were written between 1868 and 1975. Each participant rated between 12 and 21 Tanka.</p>
+            <p style="text-align: left; ">Our results clearly point to a significant relationship between the phonetic features of the texts on the one hand and their evaluation by the readers on the other. In particular, the ratings of items related to the dimension of Dominance showed a strong and language-independent phonosemantic effect in the predicted direction. In both languages, stanzas with a relatively low formant dispersion were rated as highly significantly more 
+                <hi rend="italic">dominant</hi>, more 
+                <hi rend="italic">aggressive</hi> or more 
+                <hi rend="italic">powerful</hi> compared to stanzas with a relatively high or neutral formant dispersion. Similarly, stanzas with lower formant dispersion were rated as more 
+                <hi rend="italic">lively</hi>, 
+                <hi rend="italic">active</hi> or 
+                <hi rend="italic">aroused</hi>, suggesting that low formant dispersion is associated with Activity or Arousal. In contrast, the ratings of emotional valence (pleasant-unpleasant) expressed in the texts showed no significant relationship with formant dispersion.
+            </p>
+            <p style="text-align: left; ">In this paper, we will discuss these findings in terms of the potential of sound iconicity in written language for sentiment analysis and outline future plans for extending the research to other languages and genres. We will also present preliminary results from currently ongoing studies in which we re-analyze our data with an extended feature set. Based on these results, we will discuss the potential of using phonetic features as language-independent predictors for sentiment analysis.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Aryani, A., Conrad, M. and Jacobs, A.M. (2013). Extracting salient sublexical units from written texts: “Emophon,” a corpus-based approach to phonological iconicity. Frontiers in Psychology, 4: e654. https://doi.org/10.3389/fpsyg.2013.00654</bibl>
+                    <bibl style="text-align: left; ">Auracher, J. (2017). Sound iconicity of abstract concepts: Place of articulation is implicitly associated with abstract concepts of size and social dominance. PLoS One, 12: e0187196. https://doi.org/10.1371/journal.pone.0187196 </bibl>
+                    <bibl style="text-align: left; ">Auracher, J., Albers, S., Zhai, Y., Gareeva, G. and Stavniychuk, T. (2010). P is for happiness, N is for sadness: Universals in sound iconicity to detect emotions in poetry. Discourse Processes, 48: 1-25. https://doi.org/10.1080/01638531003674894 </bibl>
+                    <bibl style="text-align: left; ">Fónagy, I. (1961). Communication in Poetry. WORD, 17: 194-218. https://doi.org/10.1080/00437956.1961.11659754 </bibl>
+                    <bibl style="text-align: left; ">Hoshi H., Kwon, N., Akita, K. and Auracher, J. (2019). Semantic associations dominate over perceptual associations in vowel–size iconicity. i-Perception, 10: e2041669519861981. https://doi.org/10.1177%2F2041669519861981 </bibl>
+                    <bibl style="text-align: left; ">Kraxenberger, M. and Menninghaus, W. (2016). Mimological reveries? Disconfirming the hypothesis of phono-emotional iconicity in poetry. Frontiers in Psychology, 7: e1779. https://doi.org/10.3389/fpsyg.2016.01779 </bibl>
+                    <bibl style="text-align: left; ">Osgood, C. E., Suci, G. J. and Tannenbaum, P. H. (1957). The measurement of meaning. Urbana: University of Illinois Press.</bibl>
+                    <bibl style="text-align: left; ">Reay, I.E. (1994). Sound symbolism. In Asher, R. E. (ed.), Encyclopedia of language &amp; linguistics. Oxford: Pergamon Press, pp. 4064–4070. </bibl>
+                    <bibl style="text-align: left; ">Schmidtke, D.S., Conrad, M., and Jacobs, A.M. (2014). Phonological iconicity. Frontiers in Psychology, 5: e80. https://doi.org/10.3389/fpsyg.2014.00080 </bibl>
+                    <bibl style="text-align: left; ">Sidhu, D.M. and Pexman, P.M. (2018). Five mechanisms of sound symbolic association. Psychonomic Bulletin &amp; Review, 25: 1619–1643. https://doi.org/10.3758/s13423-017-1361-1 </bibl>
+                    <bibl style="text-align: left; ">Whissell, C. (1999). Phonosymbolism and the emotional nature of sounds: Evidence of the preferential use of particular phonemes in texts of differing emotional tone. Perceptual and Motor Skills, 89: 19-48. https://doi.org/10.2466%2Fpms.1999.89.1.19</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

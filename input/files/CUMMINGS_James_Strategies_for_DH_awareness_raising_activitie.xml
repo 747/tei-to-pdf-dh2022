@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Strategies for DH awareness-raising activities: the challenges of DH Awards</title>
+                <author>
+                    <persName>
+                        <surname>Cummings</surname>
+                        <forename>James</forename>
+                    </persName>
+                    <affiliation>Newcastle University, United Kingdom</affiliation>
+                    <email>james.cummings@newcastle.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Digital Humanities</term>
+                    <term>DH Awards</term>
+                    <term>multilingualism</term>
+                    <term>awards</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>digital activism and advocacy</term>
+                    <term>public humanities collaborations and methods</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Strategies for DH awareness-raising activities: the challenges of DH Awards</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Introduction</head>
+                    <p style="text-align: left; ">This long paper explores the annual Digital Humanities Awards (DH Awards), run as an openly-nominated and openly-voted DH awareness-raising activity at http://dhawards.org/. Specifically, it looks at possible solutions to criticisms and concerns by foregrounding a number of problematic aspects of DH Awards in its history and future. Although many people praise these annual awards for raising awareness of DH outside the usual disciplinary bubble, there are significant criticisms of them, including being merely a popularity contest, horribly skewed to the western and anglo aspects of DH, more likely to highlight well-funded projects, and their over-estimated importance by those outside DH in tenure and promotion reviews. </p>
+                    <p style="text-align: left; ">This paper is presented by the founder and main instigator of DH Awards and seeks to build on discussions of these issues. This presentation benefits from a privileged position of having access to all of the anonymized nomination and voting data for the entire run of DH Awards (2012 to present), as well as informal feedback which it will use in an aggregated anonymized manner. This self-reflexive paper does not seek to dismiss criticisms, but to engage with them in good faith in order to understand DH Awards’ role in the community, and how best to ameliorate any issues raised. </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Background and History</head>
+                    <p style="text-align: left; ">The underlying conception for DH Awards was born during the Roberto Busa Prize lecture ‘Living with Google: Perspectives on Humanities Computing and Digital Libraries’ by Professor Susan Hockey at the ACH/ALLC 2004 conference in Gothenburg (Hockey, 2005). Professor Hockey was an excellent and deserving choice for that prize, which recognizes “outstanding lifetime achievements in the application of information and communications technologies to humanities research.”
+                        <note place="foot" xml:id="ftn1" n="1">
+                            <p rend="footnote text" style="text-align: left;">
+                                <hi style="font-size:10pt" xml:space="preserve">See </hi>
+                                <ref target="http://adho.org/awards/roberto-busa-prize">
+                                    http://adho.org/awards/roberto-busa-prize
+                                </ref>
+                                for more information about the ADHO Roberto Busa Prize.
+                            </p>
+                        </note> However, listening to the lecture prompted naive questions about the awarding of the Roberto Busa Prize: who made the decisions, who was allowed to nominate and, crucially, who else might have been nominated? While, in reality, it is likely only a small number of candidates were considered, the lack of transparency worried me and especially not hearing about others that may have been nominated. This sparked the idea for an openly nominated and openly voted grassroots approach to some DH awards which would act as a way to showcase DH resources. My ignorance of the process at that time meant that it felt far from the more transparent and representative protocols that are documented on the ADHO website today.
+                        <note place="foot" xml:id="ftn2" n="2">
+                            <p rend="footnote text" style="text-align: left;">
+                                <hi style="font-size:10pt" xml:space="preserve">The protocols in 2004 weren’t openly or at least widely available.  At the time of writing, the protocol seems to have remained the same since 2008 and there are certainly some aspects that need updating. See </hi>
+                                <ref target="http://adho.org/administration/awards/protocol-standing-committee-awards-alliance-digital-humanities-organizations">
+                                    http://adho.org/administration/awards/protocol-standing-committee-awards-alliance-digital-humanities-organizations
+                                </ref>
+                                <hi style="font-size:10pt" xml:space="preserve"> for the protocol of the ADHO SCA. If the representatives of the committee had been approached in 2004, it is likely they would have been happy to explain the process.</hi>
+                            </p>
+                        </note> DH Awards creation was also based in discussions at the time of the economics of academic career structures and how community-based catalysts could help support this.
+                        <note place="foot" xml:id="ftn3" n="3">
+                            <p rend="footnote text" style="text-align: left;">
+                                See James F. English, The Economy of Prestige: prizes, awards, and the circulation of cultural value, (Harvard University Press: 2009) as well as many other discussions for more about the introduction of awards of various sorts as catalysts and awareness-raising into areas of cultural production. There is a strong influence on DH Awards’ creation from cognate award systems such as those in film and web-based awards.
+                            </p>
+                        </note> When this idea resurfaced in 2012, an international group was approached to act as a very light-touch nominations committee. The members of this group were specifically chosen in a laudable attempt to have a geographic and cultural spread but were also existing DH colleagues who were likely to agree to be on the committee. The creation of a website, nominations and voting forms, and the running of the nominations and voting followed swiftly without much reflection. The process evolves each year but the DH Awards follows a consistent, if haphazard, pattern each year. In autumn the committee is approached to see if they wish to continue and suggestions for modification of categories or other aspects, nominations open in December until late January, then the nominations committee checks them to see that they: 
+                    </p>
+                    <list rend="numbered">
+                        <item>Are vaguely ‘Digital Humanities’ in the loosest sense</item>
+                        <item>Had some update/change of any sort that year</item>
+                        <item>Are nominated in the right category</item>
+                        <item>Able to be reviewed by users (e.g. not behind a paywall)</item>
+                    </list>
+                    <p style="text-align: left; ">Voting is then opened for a fortnight and advertised by social media. The ballots are then deduplicated (since some people accidentally vote more than once), results are tallied and released often with aggregate statistics shortly afterwards.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Criticisms and Concerns</head>
+                    <p style="text-align: left; ">Feedback has raised various criticisms and concerns over the years. Sometimes these misunderstand the nature of the activity as awareness-raising, but others are worth exploring. The most important criticism relates to language and culture – i.e. that the majority of resources found in DH Awards are in English or created in a Western context. Although DH Awards tries to counteract this with an ever-increasing international nomination committee, this criticism is certainly accurate. Trying to combat this in 2013 it introduced a ‘Best DH contribution not in the English language’ to encourage non-English submissions, but even more complaints rightly pointed out this ghettoized contributions, so it was removed the following year. DH Awards nominations have never been specific as to geography, language, conference, organization or field of humanities, however, it proactively seeks to encourage nominations from less represented areas and languages.</p>
+                    <p>Other important issues raised include: </p>
+                    <list rend="bulleted">
+                        <item>The lack of awareness of their nature as community awards, with undue significance being ascribed to them in CVs, tenure portfolios, job applications, and funding bids, even though winning provides no financial value or prestige.</item>
+                        <item>Well-funded projects with a broad appeal are more likely to win than excellent smaller projects with a more specific remit.</item>
+                        <item>The annual nature of the awards ruling out older historic projects.</item>
+                        <item>The use of the optional demographic statistics being gathered.</item>
+                    </list>
+                    <p style="text-align: left; ">This bulk of the paper will propose possible solutions to these concerns.</p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">ADHO</hi>, ‘Protocol for the Standing Committee on Awards of the Alliance of Digital Humanities Organizations’, http://adho.org/administration/awards/protocol-standing-committee-awards-alliance-digital-humanities-organizations, Last Updated: 2008-06-24, Accessed: 2021-12-10
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">ADHO</hi>, ‘Roberto Busa Prize’, http://adho.org/awards/roberto-busa-prize, Accessed: 2021-11-10
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Cummings, J. </hi>(2021) “DH Awards Frequently Asked Questions - DH Awards 2021”, DH Awards, http://dhawards.org/dhawards2021/faqs/ Accessed: 2022-03-10
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">English, J. F. </hi>(2009) The Economy of Prestige: prizes, awards, and the circulation of cultural value, (Harvard University Press: 2009
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Hockey, S. </hi>(2005), ‘Living with Google: Perspectives on Humanities Computing and Digital Libraries: Busa Award Lecture’, June 2004, Literary and Linguistic Computing, Volume 20, Issue 1, March 2005, 7–24, https://doi.org/10.1093/llc/fqh040 Accessed: 2021-12-10
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

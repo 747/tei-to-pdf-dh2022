@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Linked Editorial Academic Framework: Creating an editorial environment for collaborative scholarship and publication</title>
+                <author>
+                    <persName>
+                        <surname>Jakacki</surname>
+                        <forename>Diane Katherine</forename>
+                    </persName>
+                    <affiliation>Bucknell University, United States of America</affiliation>
+                    <email>dkj004@bucknell.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Brown</surname>
+                        <forename>Susan</forename>
+                    </persName>
+                    <affiliation>University of Guelph, Canada</affiliation>
+                    <email>sbrown@uoguelph.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Cummings</surname>
+                        <forename>James</forename>
+                    </persName>
+                    <affiliation>Newcastle University, United Kingdom</affiliation>
+                    <email>james.cummings@newcastle.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ilovan</surname>
+                        <forename>Mihaela</forename>
+                    </persName>
+                    <affiliation>University of Alberta, Canada</affiliation>
+                    <email>ilovan@ualberta.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Black</surname>
+                        <forename>Carolyn</forename>
+                    </persName>
+                    <affiliation>Independent scholar</affiliation>
+                    <email>carolyn@carolynblack.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-10T14:55:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>critical infrastructure</term>
+                    <term>collaborative publication</term>
+                    <term>preservation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>public humanities collaborations and methods</term>
+                    <term>scholarly editing and editions development</term>
+                    <term>analysis</term>
+                    <term>and methods</term>
+                    <term>Cultural studies</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left;">This short paper introduces LEAF (the Linked Editorial Academic Framework virtual research environment), an enhanced and expanded collaborative editorial platform that supports a variety of digital scholarly projects through a pipeline of integrated tools for collaborative production and publication of scholarly and documentary collections. Funded through the Canada Foundation for Innovation and the Andrew W. Mellon Foundation, LEAF aims to address the challenges that face many who undertake and maintain large-scale collaborative DH projects now: namely, the need to ensure that these projects can remain operational and available to editors and audiences over the long-haul. It is only by sharing physical, software, and human infrastructures across institutions that this can be accomplished. In so doing we can support scalability, interoperability, and preservation while allowing for dynamic, iterative, and collaborative editing, and therefore ensure that our materials, collections, and editions will remain viable and accessible. The LEAF team aims to do this by integrating best practices for text encoding, annotation, and metadata standards. This short paper will report on the development of LEAF and the functionalities that it will provide. </p>
+            <p style="text-align: left;">The implementation, and dissemination of LEAF is built upon a collaboration to extend the Canadian Writing Research Collaboratory (CWRC) built by the Universities of Alberta and Guelph (Susan Brown) with Bucknell University (Diane Jakacki), and Newcastle University (James Cummings) as founding partners. This work enhances CWRC’s functionality through collaborative software development that will ultimately support multiple instances of the LEAF platform in Canada, the US, and the UK. At Bucknell, this work will inform the Liberal Arts Based Digital Edition Publishing Cooperative and the Bucknell Digital Press, funded by an Andrew W. Mellon Digital Publishing Cooperative Implementation grant that will support an expanding portfolio of peer-reviewed digital editions and edition clusters. </p>
+            <p style="text-align: left;">
+                <hi style="font-size:12pt" xml:space="preserve">The LEAF platform combines hardware, software, and personnel. LEAF is being built on a solid foundation in terms of its data models, core functionality, and code management, so that it is positioned for extension and long-term sustainability. The platform is based on the Islandora 8 framework, which combines Drupal 8 with a Fedora 5 repository for long-term preservation. The LEAF repository will customize and enhance Islandora to enable digital humanities workflows and publication needs. Enhancements include an innovative web-based editing tool that allows users to employ TEI XML along with Web Annotation and IIIF standards-compatible Linked Open Data annotations that enhance discoverability and interoperability. </hi>
+            </p>
+            <p style="text-align: left;">
+                The founding LEAF institutions are collaborating to upgrade the existing CWRC environment and produce a fully modular platform that will also be hosted on Bucknell’s servers, further tested at Newcastle University, and offered as containerized open-source code freely available for download and installation by other institutions. In particular, LEAF will facilitate the production and publication of dynamic digital scholarly editions and collections, offering multilingual transcription, translation, and image markup. Entirely browser-based, its functionality includes an in-browser XML markup editor, XML rendering tools, built-in text and data visualization tools including the Voyant Tools suite and its Dynamic Table of Contexts Browser. Overall the LEAF platform will provide a sophisticated interface for digital editions in which the XML markup is leveraged for navigation and active reading, and enhanced with Linked Open Data.
+            </p>
+        </body>
+    </text>
+</TEI>

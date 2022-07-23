@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Modeling the Multivalent Perspectives of US Immigrant Narrative</title>
+                <author>
+                    <persName>
+                        <surname>Rodrigues</surname>
+                        <forename>Elizabeth Sarah</forename>
+                    </persName>
+                    <affiliation>Grinnell College, United States of America</affiliation>
+                    <email>rodrigue8@grinnell.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T13:57:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>narrative</term>
+                    <term>sentiment analysis</term>
+                    <term>US literature</term>
+                    <term>autobiography</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>semantic analysis</term>
+                    <term>text mining and analysis</term>
+                    <term>Humanities computing</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">This poster details an exploratory project to model late-nineteenth and early-twentieth century US immigrant life narratives using sentiment analysis. The immigrant narrative of arrival, struggle, and achievement (of economic gain, cultural citizenship, and/or legal status) is one of the central mythologies of United States identity, and autobiographical texts are one of the central literary sources of that mythology. Literary scholars have long sought to complicate this simplistic but persistent narrative, arguing that both fictional and autobiographical immigrant narratives offer “portraits of ambivalent relationships to U.S. nationalism [that] suggest that we cannot refer to a single politics” of “celebratory, accusatory, documentarist…[or] ironized declarations of belief in the nation” but should instead attend to these texts’ “interwoven registers of seemingly inconsistent perspectives on the nation” (Miller 2014). My project seeks to develop a model for encoding and visualizing late-nineteenth and early twentieth-century US immigrant autobiographical narratives’ that recognizes and surfaces such “multivalent perspectives” (Miller) on the US nation. Put another way, developmental and linear conceptions of form in immigrant narrative would seek to map a subject’s progress from departure to arrival to citizenship; from economic precarity to productive labor to material stability; from national otherness to national identity. A multivalent conception would recognize and represent oscillating statuses—affective, material, legal, and others—throughout the narrative frame. Developing a multivalent approach to modeling immigrant narrative intersects with broader digital humanities efforts to model plot in literary texts. Sentiment analysis also offers a level of granularity that could be useful for approaching the multivalent perspectives of the immigrant narrative. Rather than defining plot through a handful of landmark events, analysis at the level of the word/sentence has the potential to capture shifting affective relationships to the idea and reality of the US nation.</p>
+            <p style="text-align: left; ">
+                <lb/>The first stage of this project will be to examine selected fully transcribed texts using Matthew Jockers’s Syuzhet, a sentiment analysis toolkit attempting to visualize plot built in R. My explorations will be guided by the validation procedures outlined by Elkins and Chun (2019) in their study a modernist novel. Models of these initial texts will be used to identify key plot points and closely examine these sections of the text for recurring terms or themes. Identification of recurring terms in pivotal affective moments will allow me to begin customizing the underlying lexicon. As Kim and Klinger (2021) note, lexicon-driven approaches to sentiment analysis have predominated literary research uses because of the high value humanistic inquiry places on transparency of algorithmic operations for the purposes of validation. Ultimately, I would hope to be able to use this custom lexicon to get beyond canonical texts and examine plots in a broader corpus of US immigrant life writing during this period. Limitations of the project include: 1) all of the texts examined will be in English (inevitably skewing the selection of texts towards authors who are writing for an English-speaking audience and perhaps more likely to self-censor or project more developmental, assimilationist narratives); 2) the corpus is for now heavily reliant on a single source, Louis Kaplan’s 
+                <hi rend="italic">Bibliography of American Autobiographies</hi>; 3) optical character recognition error rates will have to be considered for texts that do not have transcriptions, which is most of them; and 4) existing sentiment analysis lexicons may not be properly weighted to account for vocabulary most relevant to these texts. The project seeks to begin to mitigate this final limitation by beginning to develop a custom lexicon based on this exploratory work.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">Elkins, K. and Chun, J. (2019). Can Sentiment Analysis Reveal Structure in a Plotless Novel? Accessed 10 April 2022: https://arxiv.org/abs/1910.01441.</bibl>
+                    <bibl style="text-align: left;">Kim, E. and Klinger, R. (2021). A Survey on Sentiment and Emotion Analysis for</bibl>
+                    <bibl style="text-align: left;">Computational Literary Studies. Accessed 10 April 2022: https://arxiv.org/abs/1808.03137.</bibl>
+                    <bibl style="text-align: left;">Miller, J. L. (2014). The Immigrant Novel. In Wald, P. and Elliott, M.A. (eds), The Oxford History of the Novel in English. Oxford, Oxford University Press, pp. 200-217. Published online March 2015: 10.1093/acprof:osobl/9780195385342.003.0013.</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

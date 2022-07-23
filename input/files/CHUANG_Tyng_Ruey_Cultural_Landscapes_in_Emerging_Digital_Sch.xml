@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Cultural Landscapes in Emerging Digital Scholarship: The Search of Conceptual and Computational Frameworks</title>
+                <author>
+                    <persName>
+                        <surname>Streiter</surname>
+                        <forename>Oliver</forename>
+                    </persName>
+                    <affiliation>National University of Kaohsiung, Taiwan</affiliation>
+                    <email>ostreiter@nuk.edu.tw</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chuang</surname>
+                        <forename>Tyng-Ruey</forename>
+                    </persName>
+                    <affiliation>Academia Sinica, Taiwan</affiliation>
+                    <email>trc@iis.sinica.edu.tw</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Zhan</surname>
+                        <forename>Hanna Yaqing</forename>
+                    </persName>
+                    <affiliation>University of Hamburg, Germany</affiliation>
+                    <email>hanna.yaqing.zhan@uni-hamburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hara</surname>
+                        <forename>Shoichiro</forename>
+                    </persName>
+                    <affiliation>Kyoto University, Japan</affiliation>
+                    <email>shara@cseas.kyoto-u.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hung</surname>
+                        <forename>Ying-Fa</forename>
+                    </persName>
+                    <affiliation>National Chengchi University, Taiwan</affiliation>
+                    <email>yingfa.tw@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Jang</surname>
+                        <forename>Jr-Jie</forename>
+                    </persName>
+                    <affiliation>JR SHEN Digital Culture Limited Company, Taiwan</affiliation>
+                    <email>roger651017@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lee</surname>
+                        <forename>Cheng-Jen</forename>
+                    </persName>
+                    <affiliation>Academia Sinica, Taiwan</affiliation>
+                    <email>cjlee@iis.sinica.edu.tw</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mu</surname>
+                        <forename>Yu-Chia Monica</forename>
+                    </persName>
+                    <affiliation>Academia Sinica, Taiwan</affiliation>
+                    <email>monicamu@iis.sinica.edu.tw</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wang</surname>
+                        <forename>Chia-Hsun Ally</forename>
+                    </persName>
+                    <affiliation>Academia Sinica, Taiwan</affiliation>
+                    <email>allywang@iis.sinica.edu.tw</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wang</surname>
+                        <forename>Yu-Huang</forename>
+                    </persName>
+                    <affiliation>Independent Researcher, Taiwan</affiliation>
+                    <email>yuhuangwang@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-19T01:36:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Panel</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Cultural Landscape</term>
+                    <term>Religion and Folk Culture</term>
+                    <term>Japan</term>
+                    <term>Taiwan</term>
+                    <term>Collaboration</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>spatial &amp; spatio-temporal analysis</term>
+                    <term>modeling and visualization</term>
+                    <term>Geography and geo-humanities</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Panel Description</head>
+                <p style="text-align: left; ">(Oliver Streiter and Tyng-Ruey Chuang)</p>
+                <p style="text-align: left; ">We define cultural landscapes as 
+                    <hi rend="bold">landscapes created or modified by human societies, as landscapes of historical or archaeological importance, or as landscapes chosen for an economic, spiritual, sanctuary, commemorative or other cultural function</hi>. These landscapes are, due to their size, their internal and external heterogenity, and the process of continuous transformation, a research area that has been under-investigated in digital humanities.
+                </p>
+                <p style="text-align: left; ">In this panel we thus ask three fundamental questions. First, how can cultural landscapes be described, documented, analyzed, managed and preserved, either digitally, or through digital technologies in situ, cf. Chen and Feng (2020). Second, how can individual research or documentation efforts, conceptually or computationally, be connected to gain more holistic views of the landscape? Finally, how GIS-inspired horizontal layers can be vertically connected through linguistic or cultural descriptors?</p>
+                <p style="text-align: left; ">Many aspects of cultural landscapes are complex and thus difficult to capture, e.g. in GIS-like models. These are, among others, calendric, geomantic, spiritual, and commemorative meanings of landscapes. These meanings may reside in specific geographic relations, e.g. the 
+                    <hi rend="bold" xml:space="preserve">fengshui </hi>of a house, or outside the landscape, e.g. in the collective memory of a community. Where cultural practices, such as daily routines, evolve in a landscape, the calendar, the timing, and the pattern of recurrence of the practices are constitutional to practices and landscapes. Visual, olfactory, acoustic (Kopij and Pilch 2019, Manzetti 2019, Đorđević and Novković 2019), geomantic and climatic features of a landscape, in addition, require the adoption of multiple points of view for their spatial representation, e.g. wind strength as a function of time and place. A layered representation thus seems like a simplified surrogate, where e.g. a climatic function with parameters derived from multiple layers would be more adequate.
+                </p>
+                <p style="text-align: left; ">Cultural landscapes evolve in time. They can’t be frozen, archived or stored in a museum and are vulnerable to disturbance and even destruction. In addition, cultural landscapes are experienced through time by a multiple of peoples in different dimensions and different research traditions with different expertise. The repeated efforts in producing documentation and data about them can span centuries, cf. Posluschny and Beusing (2019), and thus pose a real challenge in creating unified views. After all, each linking of independently produced layers relies on subjective interpretation and should not be hard-coded in the data. </p>
+                <p style="text-align: left; ">A necessary but not sufficient condition for the success of the layered approach is thus the availability of shared indices and descriptors. But even if found and formulated, they can at best demonstrate spatial correlations, but not causal or cultural relations, which cannot be induced from correlations alone. Modular layers and their horizontal projections alone might thus produce only surface forms of holistic views. Yet, there are few alternatives in theory and practice as of now to represent deep structures and meanings. This panel thus proposes to bring forward ongoing works in documenting and researching cultural landscapes in East Asia by a diverse group of researchers, so as to present different approaches to cultural landscapes in digital scholarship.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>The Role of Cognitive Grammars in Documenting Cultural Landscapes: Linking, mapping and interpretation</head>
+                <p style="text-align: left; ">(Oliver Streiter) </p>
+                <p style="text-align: left; ">In this paper we elaborate the notion of a 
+                    <hi rend="bold">cognitive grammar of culture</hi> as a systematic collection of cultural and spatial relations. Cognitive grammars might enrich or link data layers describing cultural landscapes. A grammar rule consists of a) contextual features, b) cultural entities, c) the placement of entities in context, d) a natural language description of the rule, e) motivations for the rule and f) a significance test. 
+                </p>
+                <p style="text-align: left; ">In Fig. 1 a rule describes the orientation of walled gardens on the Penghu archipelago. This rule can link two layers: i) a geographic map and ii) a data set of gardens with their geo-references and orientations. By mapping areas according to rule adherence, a cultural grid is created that reflects specific gardening practices. </p>
+                <p style="text-align: left; ">Alternatively, if a rule, as in Fig. 2, resembles a map, one can re-project the geographic map into the schematic map of the rule to represent the landscape from a cultural perspective. Fig. 3 shows how data layers can map geo-tagged media files to rules, triggering a cultural interpretation of the represented constellation. This can be useful in multimedia applications for educational purposes. Finally, graphical representations of rule can be manipulated in psychological experiments or interviews when investigating the notions within a community. </p>
+                <p style="text-align: left; ">Cognitive grammar rules thus are a versatile representational format which through the vertical co-ocurrences of terms and indices can link various resources to analyze, interpret or visualize aspects of cultural landscapes.</p>
+                <figure>
+                    <graphic n="1001" width="15.920861111111112cm" height="7.8016805555555555cm" url="Pictures/90940ce69153e968f78889f1cd3877cb.png" rend="inline"/>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Beyond GIS: Trying to make sense of Penghu cultural landscapes</head>
+                <p style="text-align: left; ">(Hanna Yaqing Zhan) </p>
+                <p style="text-align: left; ">Cultural landscapes are shaped by the interaction of humans with nature. This paper attempts to outline the types of cultural landscapes on the Penghu archipelago and the role that time plays for their understanding. First, we define cultural landscapes. Second, we introduce and discuss the types of cultural landscapes on Penghu. These landscapes can be religious or spiritual in nature, e.g. temples, five generals (<hi rend="TChinese">五營</hi>) and Shigandang (<hi rend="TChinese">石敢當</hi>) and their controlled and protected domains, or of economic interests, such as stone weirs, intertidal zones for fishing or gardens. Then we discuss the temporal aspects that are necessary for the understanding of these landscapes in their cultural context, e.g. season, monsoon, tide. Fourth, we will tackle the question, how to enrich and link documentations of cultural landscapes with these temporal data. We propose to represent a) a linear reference timeline with historic events, b) representations of generalized cyclic events, e.g. tides, monsoon, lunar circle, c) emic cyclic representations such as temple calendars, and d) generalized human activities. Activities and events are linked to landscapes and temporal representations, while all temporal representations can be linked among each other. Data on generalized human activities and emic calendars are obtained through interviews, inscriptions and, where accessible, historical resources.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Historical Landscape In the Context of Ancient Shrines</head>
+                <p style="text-align: left; ">(Shoichiro HARA)</p>
+                <p style="text-align: left; ">Japan is an island and mountainous country, and this topography influences the landscape and even the mentality of the Japanese people. Thus landscape is one of the critical elements to understanding the culture. As an application of GIS to humanities informatics, this paper examines the landscape of sacred sites in Japan, focusing on Shikinai-sha (<hi rend="Japanese">式内社</hi>) in Nara Basin (<hi rend="Japanese">奈良盆地</hi>). Nara Basin had been the seat of ancient Japanese capitols. Shikinai-sha are Japanese deity shrines recorded on 
+                    <hi rend="italic">Engishiki</hi> (<hi rend="Japanese">延喜式</hi>). Engishiki was initially compiled from 907 to 915 to codify detailed rules for court ceremonies and protocols and is considered a precious source of historical materials. A part of Engishiki called 
+                    <hi rend="italic">Engishiki-Jimmeicho</hi> (<hi rend="Japanese">延喜式神名帳</hi>) lists Shikinai-sha as Japanese official deities in the 10th century, which means the locations of Shikinai-sha in Nara Basin indicate sacred places in ancient times (<hi rend="Japanese">式内社研究会</hi>, 1979). This paper first extracted geographical features around Shikinai-sha from maps (e.g. altitude and topography—flat area, foothill area, or mountain area—and numbers of mountain peaks, rivers, and slopes around a shrine), then converted these features into quantitative data, finally identify the spatial constituent elements that explain the location of shrines using some statistical analyses.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Digital Linkage of Local Knowledge: The Implementation of and Some Thoughts about the Taiwanese Religion and Folk Culture Platform (TRFC)</head>
+                <p style="text-align: left; ">(Ying-Fa Hung and Jr-Jie Jang)</p>
+                <p style="text-align: left; ">Taiwan is religiously one of the world’s most diverse countries. This is reflected in its large number of religious buildings, networks and landscapes, as well as a large number of local records and research publications about them. However, these records and publications are notoriously difficult to use, as it is often necessary to derive basic information from the presented data. The Platform for Taiwanese Religion and Folk Culture (TRFC, website: 
+                    <ref target="http://trfc.tw/">
+                        <hi rend="underline color(0000FF)">trfc.tw</hi>
+                    </ref>) is an attempt to alleviate the problem, collating research publications and folk records on religious sites and landscapes into digital data resources. The platform is mainly based on the Taiwanese Religious Database pioneered at the Center for GIS, Academia Sinica, Taiwan, yet gradually incorporating various religious materials, routes, landscapes from related databases with the aim to establish manually or algorithmically links between them, gradually forming a local knowledge system centred on Taiwan's religious practices. An important part of the platform maps Taiwan's folk belief sites and practices, with a focus on their dynamic ritual routes, such as pilgrimages and processions. The comparative analysis, through time and regions, of data on annually recurrent events, accumulated over many years, allows researchers to understand how religious practices evolve within a religious landscape and transform over the short or long term the cultural landscape.
+                    <lb/>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Documenting Cultural Landscapes: Tools and Issues for Collaboration Across Boundaries</head>
+                <p style="text-align: left; ">(Tyng-Ruey Chuang, Cheng-Jen Lee, Yu-Chia Monica Mu, Chia-Hsun Ally Wang, and Yu-Huang Wang)</p>
+                <p style="text-align: left; ">Cultural landscapes are formed over time and shaped by people. The terrain of landscapes can be unwinding and embedded with artifacts of various scales. Old gravesites, abandoned factories, and seashores piled with debris, simultaneously present us with the remains of former human activity and bear witness to global changes. How to effectively document them while ensuring the documentations remain accessible to diverse communities and reusable for multiple purposes, poses many challenges.</p>
+                <p style="text-align: left; ">Audiovisual and survey materials about landscapes often are coded and indexed by the time and location when they are documented. As various encodings and vocabularies are in use, reconciling documentations from multiple sources can be difficult. This problem is further compounded by the larger cultural, historical, and socioeconomic contexts inherited in the landscapes. Multiple documentations may exist yet dispersed in different collections. The annotation schemes, descriptive texts and/or semantic labels used by these collections can be heterogeneous, hence not aligned for reuse.</p>
+                <p style="text-align: left; ">We view documentation materials on cultural landscapes as research datasets about which the FAIR (Findable, Accessible, Interoperable, and Reusable) data principles apply. We propose that, with current tools and services, already landscape documentations can be made more findable, accessible and reusable, hence facilitating research collaboration. Open repositories (e.g. 
+                    <ref target="https://data.depositar.io/about">
+                        <hi rend="underline color(0000FF)">data.depositar.io</hi>
+                    </ref>), persistent identifiers and naming schemes (e.g. 
+                    <ref target="https://wikidata.org/">
+                        <hi rend="underline color(0000FF)">wikidata.org</hi>
+                    </ref>), data catalogue schema (e.g. DCAT), and common participatory practices (cf. citizen science) are all helpful to collection development, enrichment, and sharing.
+                    <lb/>
+                </p>
+                <p style="text-align: left; ">We will show case several projects in Taiwan in documenting cultural landscapes, ranging from drone imaging for changing landscapes to preserving ephemeral street arts in a civil movement, and to folk pictures and stories about the current COVID-19 landscapes.
+                    <lb/>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Chen, Yang and Feng, Han</hi> (2020). A digital information system for cultural landscapes: the case of Slender West Lake scenic area in Yangzhou, China. 
+                        <hi rend="italic">Built Heritage</hi>, vol. 4, article 3. 
+                        <ref target="https://doi.org/10.1186/s43238-020-00004-8">https://doi.org/10.1186/s43238-020-00004-8</ref>
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Đorđević, Zorana and Novković, Dragan</hi> (2019). Archaeoacoustic Research of Ljubostinja and Naupara Medieval Monastic Churches. 
+                        <hi rend="italic">Open Archaeology</hi>, vol. 5, no. 1, pp. 274-283. 
+                        <ref target="https://doi.org/10.1515/opar-2019-0018">https://doi.org/10.1515/opar-2019-0018</ref>
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kopij, Kamil and Pilch, Adam</hi> (2019). The Acoustics of Contiones, or How Many Romans Could Have Heard Speakers. 
+                        <hi rend="italic">Open Archaeology</hi>, vol. 5, no. 1, pp. 340-349. 
+                        <ref target="https://doi.org/10.1515/opar-2019-0021">https://doi.org/10.1515/opar-2019-0021</ref>
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold color(050505)">Manzetti, Maria Cristina</hi>
+                        <hi rend="color(050505)" xml:space="preserve"> (2019). The Performances at the Theatre of the Pythion in Gortyna, Crete. Virtual Acoustics Analysis as a Support for Interpretation. </hi>
+                        <hi rend="italic color(050505)">Open Archaeology</hi>
+                        <hi rend="color(050505)" xml:space="preserve">, vol. 5, no. 1, pp. 434-443. </hi>
+                        <ref target="https://doi.org/10.1515/opar-2019-0027">https://doi.org/10.1515/opar-2019-0027</ref>
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold color(050505)">Posluschny, Axel G. and Beusing, Ruth</hi>
+                        <hi rend="color(050505)" xml:space="preserve"> (2019). Space as the Stage: Understanding the Sacred Landscape Around the Early Celtic Hillfort of the Glauberg. </hi>
+                        <hi rend="italic color(050505)">Open Archaeology,</hi>
+                        <hi rend="color(050505)" xml:space="preserve"> vol. 5, no. 1, pp. 365-382. </hi>
+                        <ref target="https://doi.org/10.1515/opar-2019-0023">https://doi.org/10.1515/opar-2019-0023</ref>
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold color(050505)" style="font-family:新細明體"><hi rend="Japanese">式内社研究会</hi></hi>
+                        <hi rend="bold color(050505)">(Research Group of Shrines Listed in the Engishiki)</hi>
+                        <hi rend="color(050505)" xml:space="preserve"> (1979). </hi>
+                        <hi rend="italic color(050505)">The Report of the Shikinaisha Survey</hi>
+                        <hi rend="color(050505)">, Kogakkann University Press (Japanese).</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

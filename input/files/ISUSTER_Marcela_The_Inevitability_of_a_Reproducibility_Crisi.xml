@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Inevitability of a Reproducibility Crisis in the Digital Humanities</title>
+                <author>
+                    <persName>
+                        <surname>Isuster</surname>
+                        <forename>Marcela Y.</forename>
+                    </persName>
+                    <affiliation>McGill University</affiliation>
+                    <email>marcela.isuster@mcgill.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Rod</surname>
+                        <forename>Alisa B.</forename>
+                    </persName>
+                    <affiliation>McGill University</affiliation>
+                    <email>alisa.rod@mcgill.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-05T19:21:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>reproducibility</term>
+                    <term>replicability</term>
+                    <term>computational methods</term>
+                    <term>text mining</term>
+                    <term>copyright</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>copyright</term>
+                    <term>licensing</term>
+                    <term>and permissions standards</term>
+                    <term>systems</term>
+                    <term>and processes</term>
+                    <term>meta-criticism (reflections on digital humanities and humanities computing)</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left;">Once the purview of conventional science, sophisticated computational and algorithmic modeling methods are becoming ubiquitous approaches for digital humanists. However, unlike scientific approaches to research, digital humanities as a field lacks parallel paradigms or a research integrity framework related to reproducibility, also referred to as “replicability” in certain disciplines. Inherently, there is tension between humanistic approaches to inquiry and scientific or computational methods. However, as the methods and approaches of digital humanists increasingly mirror the methods and approaches of scientists in dealing with research data, it is becoming increasingly necessary to address the question of whether and how to apply scientific research integrity principles to digital humanities. </p>
+            <p style="text-align: left;">Peels and Bouter (2018) claim replication in the humanities is possible and desirable because research in these fields follows an epistemic process that, while discipline-specific, can be replicated.  Because the digital humanities create knowledge through the use of algorithms and digital tools, the possibility and desirability of replication is even higher. Replication can be facilitated through the sharing of data and software that underlie research projects (Sikk, 2020). Unfortunately, the activity of sharing research materials is rare among both humanists more broadly and digital humanists more specifically.  </p>
+            <p style="text-align: left;">To complicate matters, the rise in availability of third-party licensed text mining datasets from digital publishing vendors, library databases, and content providers, is enabling access to previously unavailable corpora and collections to analyze. Working with their institutional libraries, scholars may be able to access the text mining files for materials in their collections through platforms like the TDM Studio or the Gale Scholar Lab, they may purchase the files for specific publications, or in some cases they may simply request the data free of charge as part of the library’s contract with the content provider. Unfortunately, these third-party licensed datasets are often subject to stringent legal terms and conditions. The potential inability of researchers to legally share the underlying data of their publication(s) presents a challenge regarding research transparency. </p>
+            <p style="text-align: left;">Through a brief overview of institutional case studies, this short presentation will explore the developing discourse surrounding reproducibility of digital humanities research and the subsequent inevitability of a digital humanities replication crisis contextually instigated by neoliberal constraints.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi style="font-size:11pt" xml:space="preserve">Peels, R., and Bouter, L. (2018). The possibility and desirability of replication in the humanities. </hi>
+                        <hi rend="italic" style="font-size:11pt">Palgrave Communications</hi>
+                        <hi style="font-size:11pt" xml:space="preserve">, </hi>
+                        <hi rend="italic" style="font-size:11pt">4</hi>
+                        (1): 1–4.
+                        <ref target="https://doi.org/10.1057/s41599-018-0149-x">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.1057/s41599-018-0149-x</hi>
+                        </ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <lb/>Sikk, K. (2020). Towards reproducible science in the digital humanities
+                        <hi rend="italic">. Digital History &amp; Hermeneutics</hi>. Retrieved from
+                        <hi rend="italic"> </hi>
+                        <ref target="https://dhh.uni.lu/2020/05/19/towards-reproducible-science-in-the-digital-humanities-how-to-publish-your-data-and-code-alongside-your-research-with-the-help-of-zenodo/">
+                            <hi rend="color(1155CC)">https://dhh.uni.lu/2020/05/19/towards-reproducible-science-in-the-digital-humanities-how-to-publish-your-data-and-code-alongside-your-research-with-the-help-of-zenodo/</hi>
+                        </ref>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

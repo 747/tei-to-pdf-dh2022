@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Diachronic Lexicon Induction via Literary Translations</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Birkenes</surname>
+                        <forename>Magnus Breder</forename>
+                    </persName>
+                    <affiliation>National Library of Norway</affiliation>
+                    <email>magnus.birkenes@nb.no</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Johnsen</surname>
+                        <forename>Lars G.</forename>
+                    </persName>
+                    <affiliation>National Library of Norway</affiliation>
+                    <email>lars.johnsen@nb.no</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kåsen</surname>
+                        <forename>Andre</forename>
+                    </persName>
+                    <affiliation>National Library of Norway</affiliation>
+                    <email>andre.kasen@nb.no</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-06-01T13:47:45.911394117</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>alignment</term>
+                    <term>lexicon</term>
+                    <term>transformers</term>
+                    <term>language change</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>text mining and analysis</term>
+                    <term>Linguistics</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="color(#000000)">The long term goal of this work is a diachronic or historic lexicon i.e. a mapping of word forms from one time period (loosely defined) to another. A lexicon like this can open new possibilities in information retrieval in historical and cultural heritage collections as well as provide a new foundation for quantitative methods on such material. For example, a modern spelling variant can be used for search and retrieval by utilizing period specific counterparts. The other way around, a collection of words found at different time periods, can be grouped together using a modern variant.</hi>
+            </p>
+            <p>
+                <hi rend="color(#000000)">In order to induce the lexicon we make use of a pipeline based on Transformers (Vaswani et al. 2017) for bitext (i.e. corresponding text in at least two languages) mining as in Reimers &amp; Gurevych (2019) and word alignment as in Jalili Sabet et al. (2020). The primary data in this pilot study are two translations of Goethe’s </hi>
+                <hi rend="color(#000000) italic">The Sorrows of Young Werther</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">in Norwegian from 1820 and 1998, respectively, and can be found in the collection of the National Library of Norway.</hi>
+            </p>
+            <p>
+                <hi rend="color(#000000)">Just as spoken language changes over time, the written language does as well. Changes in spelling constitutes such a change, sometimes alongside semantic changes. Our main focus lies within spelling variations. Since writing is our only encounter with languages of the not so distant past, so to speak, understanding and mapping this change is important on several levels. One good source for diachronic bitext is collections of an author's complete works which often are modernized from time to time in honor of their birthday and other celebrations. However, such bitexts have often been modernized in a particular way, according to specific preconceptions or stylistics. But since variation between time periods poses serious challenges to search and retrieval in large collections, and also to quantitative analysis in general, there is a great need for linking such variation. A canonical example is if a word form or spelling variant simply changes one character, we no longer have identical forms across time as in Norwegian where the word </hi>
+                <hi rend="color(#000000) italic">woman</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">at least have had three forms (</hi>
+                <hi rend="color(#000000) italic">qvinde</hi>
+                <hi rend="color(#000000)">, </hi>
+                <hi rend="color(#000000) italic">kvinde</hi>
+                <hi rend="color(#000000)">, </hi>
+                <hi rend="color(#000000) italic">kvinne</hi>
+                <hi rend="color(#000000)">) from the early 1800s to the present.</hi>
+            </p>
+            <p>
+                <hi rend="color(#000000)">Recent developments in Transformer-based text processing have eased the need for the amount of specialized data in machine learning. Reimers &amp; Gurevych (2019) show that a multilingual model is preferable in aligning sentences rather than monolingual models. And Jalili Sabet et al. (2020) provide us with the flexibility to make use of efforts like Kummervold et al. (2021) in aligning words. With such a pipeline, inspired by Shi et al. (2021), we get the </hi>
+                <hi rend="color(#000000)">aforementioned mapping or lexicon in addition to linguistically interesting word pairs. While the resulting list of word pairs can tell us something about language change as well as language policy, it is also useful to search engines where every user will benefit from being able to access texts from earlier stages without domain knowledge or linguistic expertise. In addition to a historical lexicon, the possibility of making an automatic modernisation or paraphrasing of text, or, put differently, how to make texts more readable, is one of the desired offshoots of this pilot study.</hi>
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="color(#000000) background-color(#ffffff)">Masoud Jalili Sabet, Philipp Dufter, François Yvon, and Hinrich Schütze. 2020. SimAlign: High Quality Word Alignments Without Parallel Training Data Using Static and Contextualized Embeddings. In Findings of the Association for Computational Linguistics: EMNLP 2020, Online. Association for Computational Linguistics.</hi>
+                    </bibl>
+                    <bibl>
+                        <anchor xml:id="id_docs-internal-guid-92939fb6-7fff-9a80-1e"/>
+                        <hi rend="color(#000000)">Per E Kummervold, Javier De la Rosa, Freddy Wetjen, and Svein Arne Brygfjeld. 2021. Operationalizing a National Digital Library: The Case for a Norwegian Transformer Model. In Proceedings of the 23rd Nordic Conference on Computational Linguistics (NoDaLiDa), Reykjavik, Iceland (Online).</hi>
+                    </bibl>
+                    <bibl>
+                        <anchor xml:id="id_docs-internal-guid-0a0a31d1-7fff-c10f-51"/>
+                        <hi rend="color(#000000)">Nils Reimers and Iryna Gurevych. 2019. Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), Hong Kong, China. Association for Computational Linguistics.</hi>
+                    </bibl>
+                    <bibl>
+                        <anchor xml:id="id_docs-internal-guid-6d54d615-7fff-d43d-f1"/>
+                        <hi rend="color(#000000)">Haoyue Shi, Luke Zettlemoyer, and Sida I. Wang. 2021. Bilingual Lexicon Induction via Unsupervised Bitext Construction and Word Alignment. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), Online. Association for Computational Linguistics.</hi>
+                    </bibl>
+                    <bibl>
+                        <anchor xml:id="id_docs-internal-guid-e5c111ff-7fff-09fc-21"/>
+                        <hi rend="color(#000000)">Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In </hi>
+                        <anchor xml:id="id_docs-internal-guid-61f96612-7fff-ddec-a8"/>
+                        <hi rend="color(#000000)">31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

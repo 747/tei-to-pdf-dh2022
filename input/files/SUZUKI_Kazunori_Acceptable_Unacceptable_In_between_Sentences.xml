@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Acceptable/Unacceptable/In-between Sentences in Japanese: An Experimental Study on Long-Distance Numeral Quantifiers</title>
+                <author>
+                    <persName>
+                        <surname>Suzuki</surname>
+                        <forename>Kazunori</forename>
+                    </persName>
+                    <affiliation>Tokyo Institute of Technology</affiliation>
+                    <email>suzuki.kznr@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hirano</surname>
+                        <forename>Michiru</forename>
+                    </persName>
+                    <affiliation>Tokyo Institute of Technology</affiliation>
+                    <email>michirano10@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Yamamoto</surname>
+                        <forename>Hilofumi</forename>
+                    </persName>
+                    <affiliation>Tokyo Institute of Technology</affiliation>
+                    <email>yamamoto.h.al@m.titech.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T12:39:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>acceptability judgment</term>
+                    <term>sentence structure</term>
+                    <term>language processing</term>
+                    <term>language performance</term>
+                    <term>Japanese</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>semantic analysis</term>
+                    <term>Language acquisition</term>
+                    <term>Linguistics</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>This study empirically examines the acceptability of sentences containing long-distance numeral quantifiers in Japanese in order to investigate the boundary between language competence and language use. In Japanese language, there is a grammatical phenomenon called long-distance numeral quantifiers (or floating numeral quantifiers, Miyagawa, 1989), in which a noun and the quantifier modifying the noun are grammatically acceptable even if they are not adjacent. When a noun and the numeral quantifier that modifies the noun are adjacent, it is grammatical and acceptable, but when other elements intervene between them, the acceptability may be maintained or it may fall. In other words, in sentences containing long-distance numeral quantifiers, the acceptability of a sentence depends not only on whether the noun and the numeral quantifier modifying the noun are adjacent or not, but also on the intervening factors between the noun and the quantifier even when they are remote.</p>
+            <p>In the present study, 30 adult native speakers of Japanese were asked to judge whether sentences containing numeral quantifiers in Japanese were acceptable or not. A total of 50 stimuli presented in the form of conversational sentences were prepared, and the participants were instructed to judge whether the underlined parts (sentences containing numeral quantifiers) in the conversational sentences were natural or not from “1 (unnatural)” to “4 (natural)”, and to circle them with using a pencil. The types of the 50 sentences were: five types in which nouns and quantifiers were adjacent (15 sentences in total), five types in which nouns and quantifiers were not adjacent (25 sentences in total), and one type of distractor items (10 sentences in total). No time limit was set for the experiment, but it generally took about 20 minutes.</p>
+            <p>Prior to data analysis, test items for which “1 (unnatural)” or “2 (slightly unnatural)” were selected were replaced with “0”, and test items for which 4 (natural) or “3 (slightly natural)” were selected were replaced with “1”. Then, for all participants, the acceptance rate was produced for each type. Based on the acceptance rate for each type, we sorted the items from highest to lowest acceptance rate and created a ranking list.</p>
+            <p>
+                The results of the data analysis revealed two points: (1) when the noun and the numeral quantifier modifying the noun were adjacent, the acceptance rate was high for all sentence types as shown in theoretical linguistic studies (e.g., Miyagawa, 1989; Miyagawa and Arikawa, 2007); (2) when the noun and the numeral quantifier modifying the noun were not adjacent, there were three types of acceptance rates: high, medium, and low. Although the medium acceptance type is analyzed as unacceptable in the field of theoretical linguistics research, the results of this study indicate the existence of a gray zone in terms of actual language use that is not completely unacceptable. That is to say, although the sentence structure or the word order is equivalent, the properties of the intervening elements between the noun and the numeral quantifier that modifies the noun are shown to affect the acceptability of the sentence. In order to elucidate human language functions, it is necessary to conduct an integrated study that includes language use (i.e., language performance).
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Miyagawa, S. (1989). </hi>
+                        <hi rend="italic" style="font-size:12pt">Structure and Case Marking in Japanese (Syntax and Semantics 22)</hi>
+                        . Academic Press.
+                    </bibl>
+                    <bibl>
+                        Miyagawa, S., and Arikawa, K. (2007). Locality in syntax and floating numeral quantifiers.
+                        <hi rend="italic" style="font-size:12pt">Linguistic Inquiry</hi>
+                        , 38(4), 645–670.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="intro-002">
+
+<teiHeader>
+<fileDesc>
+<titleStmt>
+    <title type="nodisplay">Logo Page</title>
+
+</titleStmt>
+<publicationStmt>
+<authority></authority>
+    <publisher>DH2022 Local Organizing Committee</publisher>
+    <distributor>
+        <name>DH2022 Local Organizing Committee</name>
+        <address>
+            <addrLine>7-3-1</addrLine>
+            <addrLine>Hongo, Bunkyo-ku</addrLine>
+            <addrLine>Tokyo, 113-0033</addrLine>
+            <addrLine>dh2022-local{at}l.u-tokyo.ac.jp</addrLine>
+        </address>
+    </distributor>
+    <pubPlace>Tokyo, Japan</pubPlace> 
+    <address>
+        <addrLine>The University of Tokyo</addrLine>
+        <addrLine>Tokyo, 113-0033</addrLine>
+    </address>
+    <availability>
+<p></p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<p>No source: created in electronic format.</p>
+</sourceDesc>
+</fileDesc>
+
+<profileDesc>
+<textClass>
+<keywords scheme="original" n="category">
+<term>Intro</term>
+</keywords>
+<keywords scheme="original" n="subcategory">
+<term>Short Paper</term>
+</keywords>
+<keywords scheme="original" n="topic">
+<term></term>
+</keywords>
+<keywords scheme="original" n="keywords">
+<term></term>
+</keywords>
+</textClass>
+</profileDesc>
+
+<revisionDesc>
+<change>
+<date/>
+<name/>
+<desc/>
+</change>
+</revisionDesc>
+</teiHeader>
+
+    <text type="paper" n="single">
+<body>
+<div n="publisher_info">
+    <!--<figure>
+        <graphic url="logo"/>
+    </figure>-->
+    
+    <p n="intro_text">Primary Encoder: Yifan Wang<lb/>
+        Encoders and Proofreaders:<lb/>
+        &#160;&#160;&#160;&#160;&#160;Kiyonori Nagasaki<lb/>
+        &#160;&#160;&#160;&#160;&#160;Yoshihiro Sato<lb/>
+        Illustration: ...<lb/><lb/>
+        Available online at: https://dh2022.adho.org/<lb/></p>
+    <p>&#160;</p>
+    <p n="intro_text"><lb/>
+        Published by DH2022 Local Organizing Committee</p>
+        
+    
+                
+</div>
+
+</body>
+
+
+</text>
+</TEI>

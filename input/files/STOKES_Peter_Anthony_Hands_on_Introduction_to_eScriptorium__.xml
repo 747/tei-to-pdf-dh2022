@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hands-on Introduction to eScriptorium, an Open-Source Platform for HTR</title>
+                <author>
+                    <persName>
+                        <surname>Stokes</surname>
+                        <forename>Peter Anthony</forename>
+                    </persName>
+                    <affiliation>École Pratique des Hautes Études – Université PSL, France</affiliation>
+                    <email>peter.stokes@ephe.psl.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Stökl Ben Ezra</surname>
+                        <forename>Daniel</forename>
+                    </persName>
+                    <affiliation>École Pratique des Hautes Études – Université PSL, France</affiliation>
+                    <email>Daniel.Stoekl@ephe.psl.eu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T07:57:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>HTR</term>
+                    <term>OCR</term>
+                    <term>tools</term>
+                    <term>open data</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>optical character recognition and handwriting recognition</term>
+                    <term>Book and print history</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                The goal of this tutorial is to introduce participants to the principles and hands-on practice of the eScriptorium platform for the automatic and/or manual segmentation and transcription of manuscripts and printed books in a very wide range of languages, writing-systems and complex page-layouts.
+            </p>
+            <p>
+                The tutorial will begin with a very brief overview of Handwritten Text Recognition (HTR) and its potential and remaining challenges, particularly when applied to so-called “rare” or historical scripts. HTR has long been a goal – indeed dream – of many in the Digital Humanities and beyond, and this is now becoming realised and increasingly accessible. Relatively general models for automatic transcription can now often achieve character error rates (CER) of less than 1% even for manuscript material, while a CER of 10% or even 20% is sufficient for some types of analysis such as text identification or text-image alignment. Very large quantities of manuscript material are also becoming available, particularly with the increasingly widespread use of IIIF. Machine learning is also relatively accessible, including computers with GPUs that are sufficiently powerful to treat thousands or even tens of thousands of images of manuscript pages within a reasonable timeframe. This combination is enabling new possibilities that were not feasible only a few years ago. However, most of the existing systems were designed at least initially in European (primarily Anglophone) contexts, and the differences between these and other writing contexts may seem subtle but very often make software unusable in practice.
+            </p>
+            <p>
+                eScriptorium is Free Open-Source Software
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> The source code is released under an MIT licence at 
+                        <ref target="https://gitlab.com/scripta/escriptorium/">
+                            <hi rend="color(1155CC)">https://gitlab.com/scripta/escriptorium/</hi>
+                        </ref>.
+                    </p>
+                </note>
+                <hi style="font-size:11pt" xml:space="preserve"> designed to facilitate transcription of manuscripts in a wide variety of languages, scripts and complex layouts. The software began as part of the Scripta-PSL project which incorporated experts in dozens of scripts and languages, including Sumerian, Ugaritic, Syriac, Arabic, Hebrew, Classical and Pre-Imperial Chinese, Old and Medieval Japanese, Tibetan, Devanagari, Old Khmer, Pali, Tamil, and many more (see further </hi>
+                <ref target="https://scripta.psl.eu/langues/">
+                    <hi rend="color(1155CC)" style="font-size:11pt">https://scripta.psl.eu/langues/</hi>
+                </ref>
+                ). It is designed to interact with kraken, another Free Open-Source Software developed by Benjamin Kiessling (of the same institution as the eScriptorium team).
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p rend="footnote text"> The source code is released under an Apache 2.0 licence at 
+                        <ref target="http://github.com/mittagessen/kraken">
+                            <hi rend="color(1155CC)">http://github.com/mittagessen/kraken</hi>
+                        </ref>.
+                    </p>
+                </note>
+                <hi style="font-size:11pt" xml:space="preserve"> Kraken provides a flexible, modular HTR engine that can be run on its own or as the engine behind eScriptorium.</hi>
+            </p>
+            <p> </p>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="9.241013888888888cm" url="Pictures/d05da62527573fb05a90fbc943762137.jpg" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                <hi rend="italic" style="font-size:11pt">Transcription (transliteration) of Old Javanese palm-leaf books with eScriptorium (courtesy of Marine Schoettel, École Française d’Extrême-Orient)</hi>
+            </p>
+            <figure>
+                <graphic n="1002" width="16.002cm" height="9.001125cm" url="Pictures/c9c40c6681cf44dad1445b042343079f.png" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                <hi rend="italic" style="font-size:11pt">The interface showing a complex page layout: page image with lines and regions (left panel); transcription aligned to the page layout (centre panel); transcription in ‘regular’ lines (right panel).</hi>
+            </p>
+            <p>
+                Participants will be introduced to eScriptorium and kraken, focussing particularly on the key design decisions that distinguish them from other HTR systems. One is that the system should be as independent as possible of any assumptions about language or script. For instance, writing can be left-to-right, right-to-left, top-to-bottom then right to left (as in Japanese), or top to bottom then left to right (as in Mongolian). The writing can be on a baseline (as in English), from a top-line (as in Hebrew) or in a column (as in Chinese), and the lines can be oriented at any angle, including upside-down and therefore ‘reversed’ from the normal direction relative to the page image (so upside-down Arabic reads from left to right relative to the page orientation, and so on). Participants are therefore strongly encouraged to bring their own materials in different scripts and languages, and will learn the possibilities and limits of eScriptorium and kraken for these different cases.
+            </p>
+            <p>
+                After an introductory session on the principles of HTR and of eScriptorium and kraken in particular, we will go through the different stages of the workflow, always with attention to the challenges of non-European scripts. This involves first, segmentation of pages into regions and lines; second, potentially modifying the order of lines on the page if it has not been correctly identified by the system; and, third, performing the transcription. The first and third of these are currently based on machine learning (Kiessling 2020), and so they both normally involve a process of creating ground truth data for a sample of content, training a model on the basis of this data (most likely on top of an existing one already trained on similar content), then applying this model to new images. This process in turn raises methodological questions, such as which categories of region and line types to use, which standards of transcription to use, how best to share corpora for ground truth, how to manage large character sets or abbreviations, and so on. Participants will be directed to existing work and initiatives on this topic such as SegmOnto, HTR for All, and OCR-D.
+            </p>
+            <figure>
+                <graphic n="1003" width="16.002cm" height="10.449277777777779cm" url="Pictures/171322a13e9e2a456d6a71e8e572df97.png" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                <hi rend="italic" style="font-size:11pt">Uncorrected results of automatic line detection in a previously unseen scroll (writing in Chinese from top to bottom then right to left).</hi>
+            </p>
+            <figure>
+                <graphic n="1004" width="11.712222222222222cm" height="8.113888888888889cm" url="Pictures/d5c4e77d6bd63ee2a2025501b10aedf1.jpg" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                <hi rend="italic" style="font-size:11pt">Manually transcribing Chinese (top to bottom then right to left)</hi>
+            </p>
+            <figure>
+                <graphic n="1005" width="16.002cm" height="9.371541666666667cm" url="Pictures/c495a2f5259506f57b52691838359754.png" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                <hi rend="italic" style="font-size:11pt">The eScriptorium interface showing lines showing mixed Hebrew (right to left) and Chinese (top to bottom or right to left). Numbers indicate the order of reading (detected automatically but correctable manually).</hi>
+            </p>
+            <p>
+                eScriptorium and kraken are also designed to be as open as possible, including that data should be interchangeable and that users should not be locked into any one instance of the framework. Participants will therefore learn how to import and export images, page layout data and transcriptions in a variety of standard formats (plain text, ALTO, PAGE XML; import from IIIF manifests; transformation of export to TEI). We will also briefly discuss the strengths and limitations of these formats, particularly for the wide range of different scripts.
+            </p>
+            <p>
+                As well as importing and exporting data, users of eScriptorium and kraken are also able (and actively encouraged) to import and export trained models for layout analysis and transcription, including not only sharing with other users in the same instance of eScriptorium but also publishing models on external repositories. A Zenodo community has been established to help share models, and publishing to and from Zenodo is already implemented as part of kraken and will be shortly in eScriptorium. In this way, models can be reused across different instances of the software, and no user is locked into any single instance. This has clear advantages in reducing the human effort in repeating training and ground-truth generation, and also provides a small but not insignificant step towards reducing the energy and environmental impact of machine learning, in that it reduces the need to pointlessly retrain identical models with the same ground truth. This is in contrast to many other systems of machine learning, where some or all of the software may be Open Source, and where the ground truth can sometimes be exported, but the models themselves are locked into a given instance of the system and cannot be exported, and/or the software is not sufficiently open that an entirely new instance can be set up independently.
+            </p>
+            <figure>
+                <graphic n="1006" width="16.002cm" height="5.886097222222222cm" url="Pictures/b523cdb2875cc0d0f3731286b83a2237.png" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                <hi rend="italic" style="font-size:11pt">Model management in eScriptorium, including export, import, sharing and basic version control. Models shown are for manuscripts written in Hebrew</hi>
+            </p>
+            <p>
+                eScriptorium also provides a web API to allow for automated execution of project-specific processes, and so a brief introduction to this will also be provided, depending on time and the interest of participants.
+            </p>
+            <p>
+                Finally, eScriptorium and kraken are both freely available for anyone to download and install on their own servers, and a number of groups in different countries have already done so to our knowledge. In practice, eScriptorium can run even on a home computer for most tasks, but training on a large corpus requires relatively powerful computers and servers, and so the last part of the tutorial will be spent discussing practical questions about how to get an instance up and running, how to plan a future project with the software, and any other issues that come up during the session.
+            </p>
+            <p>Acknowledgements</p>
+            <p>
+                This work was supported by grants from the European Union (RESILIENCE RI and Vietnamica), Université Paris Sciences et Lettres (Scripta-PSL), the Mellon Foundation (OpenITI), the French Ministry of Higher Education and Research, the French Ministry of Culture (LectauRep) and the Domaine d'intérêt majeur STCN (ManuscriptologIA).
+            </p>
+            <p>
+                For a full list of contributors to eScriptorium, see the GitLab repository and wiki (links below).
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Chagué, A.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> [no date]. Prendre en main eScriptorium. </hi>
+                        <ref target="https://lectaurep.hypotheses.org/documentation/prendre-en-main-escriptorium">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://lectaurep.hypotheses.org/documentation/prendre-en-main-escriptorium</hi>
+                        </ref>
+                        . English version (transl. Jonathan Allen),
+                        <ref target="https://lectaurep.hypotheses.org/documentation/escriptorium-tutorial-en">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://lectaurep.hypotheses.org/documentation/escriptorium-tutorial-en</hi>
+                        </ref>
+                         
+                    </bibl>
+                    <bibl>
+                        <hi rend="italic" style="font-size:11pt">eScriptorium</hi>
+                        <hi style="font-size:11pt" xml:space="preserve">[source code]: </hi>
+                        <ref target="https://gitlab.com/scripta/escriptorium/">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://gitlab.com/scripta/escriptorium/</hi>
+                        </ref>
+                         
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Gabay</hi>
+                        <hi rend="bold color(333333)" style="font-size:11pt">, S., Camps, J.-B., Pinche, A., and Jahan C.</hi>
+                        <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve"> (2021). SegmOnto: common vocabulary and practices for analysing the layout of manuscripts (and more). </hi>
+                        <hi rend="italic color(333333)" style="font-size:11pt">16th International Conference on Document Analysis and Recognition (ICDAR 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="italic" style="font-size:11pt">HTR United</hi>
+                        <ref target="https://github.com/HTR-United">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://github.com/HTR-United</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Kiessling</hi>
+                        <hi rend="bold color(333333)" style="font-size:11pt" xml:space="preserve">, B. </hi>
+                        <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve">(2020). A Modular Region and Text Line Layout Analysis System. </hi>
+                        <hi rend="italic color(333333)" style="font-size:11pt">17th International Conference on Frontiers in Handwriting Recognition (ICFHR)</hi>
+                        <hi rend="color(333333)" style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Kiessling, B.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2022). </hi>
+                        <hi rend="italic" style="font-size:11pt">Kraken</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> [source code] </hi>
+                        <ref target="http://github.com/mittagessen/kraken">
+                            <hi rend="color(1155CC)" style="font-size:11pt">http://github.com/mittagessen/kraken</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Kiessling, B.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2022). </hi>
+                        <hi rend="italic" style="font-size:11pt">Kraken</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> [project website]. </hi>
+                        <ref target="http://kraken.re/">
+                            <hi rend="color(1155CC)" style="font-size:11pt">http://kraken.re/</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Kiessling</hi>
+                        <hi rend="bold color(333333)" style="font-size:11pt">, B., Stökl Ben Ezra, D., Miller M.</hi>
+                        <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve"> (2019)</hi>
+                        <ref target="https://arxiv.org/abs/1907.04041" xml:space="preserve"> </ref>
+                        BADAM: A Public Dataset for Baseline Detection in Arabic-script Manuscript
+                        <ref target="https://arxiv.org/abs/1907.04041">
+                            <hi rend="color(333333)" style="font-size:11pt">s</hi>
+                        </ref>
+                        <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve">, </hi>
+                        <hi rend="italic color(333333)" style="font-size:11pt">HIP@ICDAR</hi>
+                        <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve"> 2019. </hi>
+                        <ref target="https://arxiv.org/abs/1907.04041">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://arxiv.org/abs/1907.04041</hi>
+                        </ref>
+                        <hi rend="color(333333)" style="font-size:11pt"> </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Kiessling</hi>
+                        <hi rend="bold color(333333)" style="font-size:11pt">, B.; Tissot, R., Stökl Ben Ezra, D., Stokes P.</hi>
+                        <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve"> (2019) eScriptorium: An Open Source Platform for Historical Document Analysis, </hi>
+                        <hi rend="italic color(333333)" style="font-size:11pt">OST@ICDAR 2019</hi>
+                        <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve">. doi: </hi>
+                        <ref target="https://dx.doi.org/10.1109/ICDARW.2019.10032">
+                            10.1109/ICDARW.2019.10032
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Kiessling</hi>
+                        <hi rend="bold color(333333)" style="font-size:11pt">, B.</hi>
+                        <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve"> (2019) Kraken – A Universal Text Recognizer for the Humanities. </hi>
+                        <hi rend="italic color(333333)" style="font-size:11pt">Digital Humanities Book of Abstracts</hi>
+                        <hi rend="color(333333)" style="font-size:11pt">. doi:</hi>
+                        <ref target="https://doi.org/10.34894/Z9G2EX">
+                            10.34894/Z9G2EX
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="italic" style="font-size:11pt">OCR-D: DFG-Funded Initiative for Optical Character Recognition Development</hi>
+                        .
+                        <ref target="https://ocr-d.de/">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://ocr-d.de</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="italic" style="font-size:11pt">OCR/HTR Model Repository</hi>
+                        .
+                        <ref target="https://www.zenodo.org/communities/ocr_models">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://www.zenodo.org/communities/ocr_models</hi>
+                        </ref>
+                         
+                    </bibl>
+                    <bibl>
+                        <hi rend="italic" style="font-size:11pt">SegmOnto</hi>
+                        .
+                        <ref target="https://github.com/SegmOnto">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://github.com/SegmOnto</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Stokes, P.A.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2020). RESILIENCE tool: eScriptorium. </hi>
+                        <ref target="https://www.resilience-ri.eu/blog/resilience-tool-escriptorium/">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://www.resilience-ri.eu/blog/resilience-tool-escriptorium/</hi>
+                        </ref>
+                        <hi style="font-size:11pt" xml:space="preserve">. Version française : eScriptorium : un outil pour la transcription automatique des documents. </hi>
+                        <ref target="https://ephenum.hypotheses.org/1412">
+                            https://ephenum.hypotheses.org/1412
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Stokes</hi>
+                        <hi rend="bold color(333333)" style="font-size:11pt">, P., Kiessling, B., Tissot, R., Stökl Ben Ezra, D.</hi>
+                        <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve"> (2019) EScripta: A New Digital Platform for the Study of Historical Texts and Writing, </hi>
+                        <hi rend="italic color(333333)" style="font-size:11pt">Digital Humanities 2019 Book of Abstracts</hi>
+                        <hi rend="color(333333)" style="font-size:11pt">. doi:</hi>
+                        <ref target="https://doi.org/10.34894/BIXSWX">
+                            10.34894/BIXSWX
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Stokes</hi>
+                        <hi rend="bold color(333333)" style="font-size:11pt">, P.A., Kiessling, B., Stökl Ben Ezra, D., Tissot, R. and Gargem, H.</hi>
+                        <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve"> (2021). The eScriptorium VRE for Manuscript Cultures. </hi>
+                        <hi rend="italic color(333333)" style="font-size:11pt">Ancient Manuscripts and Virtual Research Environments</hi>
+                        <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve">, ed. Claire Clivaz and Garrick V. Allen. Special issue of </hi>
+                        <hi rend="italic color(333333)" style="font-size:11pt">Classics@</hi>
+                        <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve"> 18. </hi>
+                        <ref target="https://classics-at.chs.harvard.edu/the-escriptorium-vre-for-manuscript-cultures/">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://classics-at.chs.harvard.edu/the-escriptorium-vre-for-manuscript-cultures/</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        All URLs last verified 21 April 2022.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Building inclusivity into our digitization projects- a case study of digital collections in Mexico</title>
+                <author>
+                    <persName>
+                        <surname>Galina Russell</surname>
+                        <forename>Isabel</forename>
+                    </persName>
+                    <affiliation>Universidad Nacional Autónoma de México (UNAM), Mexico</affiliation>
+                    <email>igalina@unam.mx</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Priani Saisó</surname>
+                        <forename>Ernesto</forename>
+                    </persName>
+                    <affiliation>Universidad Nacional Autónoma de México (UNAM), Mexico</affiliation>
+                    <email>epriani@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-27T10:55:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digitization projects</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>digital libraries creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>digital publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>
+                    <hi style="font-size:12pt" xml:space="preserve">For several decades now there has been an emphasis on the importance of digitizing library collections, in particular bibliographic heritage materials.  Although they are considered fundamentally useful and good for society in general, digitization projects are not neutral and they create new digital paradigms of our cultural memory </hi>
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"JqZOElrq","properties":{"formattedCitation":"(Thylstrup 2018)","plainCitation":"(Thylstrup 2018)","noteIndex":0},"citationItems":[{"id":9538,"uris":["http://zotero.org/users/306226/items/CUL8AQ5J"],"uri":["http://zotero.org/users/306226/items/CUL8AQ5J"],"itemData":{"id":9538,"type":"book","abstract":"\"Today, anyone with an internet connection can access hundreds of millions of digitized cultural artifacts from the comfort of their desk. And every day cultural institutions and private bodies add thousands of new cultural works to the digital sphere. Mass digitization is forming new central nexuses of knowledge and new ways of engaging with that knowledge. What at first glance appears to be a simple act of digitization (a transformation of singular books from boundary objects to open sets of data), at closer examination reveals a complex process teeming with diverse political, legal, and cultural investments. This book argues that mass digitization has become a global cultural political project. It offers an in-depth examination of mass digitization of cultural memory in the West and beyond. It suggests a new approach to the study of digital cultural memory archives, proposing to understand mass digitization not as neutral technical processes, but rather as distinct subpolitical processes that build new kinds of archives and new ways of interacting with these archives. And it seeks to develop a critical theoretical framework for understanding the new archival apparatuses and the politics and memory dynamics they give rise to\"--","call-number":"Z701.3.D54 T49 2018","event-place":"Cambridge, MA","ISBN":"978-0-262-03901-7","number-of-pages":"200","publisher":"The MIT Press","publisher-place":"Cambridge, MA","source":"Library of Congress ISBN","title":"The politics of mass digitization","author":[{"family":"Thylstrup","given":"Nanna Bonde"}],"issued":{"date-parts":[["2018"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    (Thylstrup 2018)
+                    <hi style="font-size:12pt" xml:space="preserve">. </hi>
+                </p>
+                <p>
+                    As part of our work for Oceanic Exchanges
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p rend="footnote text"> See Oceanic Exchanges- Tracing Global Information Networks in Historical Newspaper Repositories, 1840-1914: https://oceanicexchanges.org/</p>
+                    </note>
+                    , we documented the creation of the HNDM, Mexico’s national digital newspaper library. Using document analysis and interviews, we studied the complex interplay of technical, political and administrative decisions and the effect these have had on the resulting digital collection, its scope and usefulness
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"jPdmSl1l","properties":{"formattedCitation":"(Galina Rusell y Priani Sais\\uc0\\u243{} 2021; Galina Russell et\\uc0\\u160{}al. 2020)","plainCitation":"(Galina Rusell y Priani Saisó 2021; Galina Russell et al. 2020)","noteIndex":0},"citationItems":[{"id":9543,"uris":["http://zotero.org/users/306226/items/6Y79XBCP"],"uri":["http://zotero.org/users/306226/items/6Y79XBCP"],"itemData":{"id":9543,"type":"chapter","container-title":"El estante digital","event-place":"Santiago de Querétaro","ISBN":"978-607-513-562-5","page":"125-141","publisher":"Fondo Editorial de la Universidad Autónoma de Querétaro","publisher-place":"Santiago de Querétaro","title":"Políticas de digitalización para la investigación. El caso de la HNDM y el proyecto Oceanic Exchanges","author":[{"family":"Galina Rusell","given":"Isabel"},{"family":"Priani Saisó","given":"Ernesto"}],"issued":{"date-parts":[["2021"]]}}},{"id":8773,"uris":["http://zotero.org/users/306226/items/DYCX2CRT"],"uri":["http://zotero.org/users/306226/items/DYCX2CRT"],"itemData":{"id":8773,"type":"article-journal","container-title":"Relaciones Estudios de Historia y Sociedad","issue":"163","title":"El uso de periódicos digitalizados como fuente para trabajos de investigación","volume":"43","author":[{"family":"Galina Russell","given":"Isabel"},{"family":"Martínez Domínguez","given":"Laura"},{"family":"Peña Pimentel","given":"Miriam"},{"family":"Priani Saisó","given":"Ernesto"},{"family":"Castellanos Rueda","given":"Rocío"}],"issued":{"date-parts":[["2020"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    (Galina Russell y Priani Saisó 2021; Galina Russell et al. 2020)
+                    <hi style="font-size:12pt" xml:space="preserve">. In particular, we noted that decisions regarding what should be digitized, and how it should be digitized (and then processed and presented), were not properly documented. This lack of context hampered our ability as researchers to properly interpret the results we were obtaining from text mining techniques. We found evidence that suggests that decisions regarding what was being digitized and how it would be presented were based mainly on previous decisions and were practical in nature, such as digitizing the microfilmed collection, rather than a critical inquiry of what this new digital collection would represent. </hi>
+                </p>
+                <p>
+                    <hi style="font-size:12pt" xml:space="preserve">It was this that led us to develop a new research project which seeks to critically analyze digitization projects in Mexico, as we think that many of them have not conscientiously questioned broader aspects beyond digitization, such as the origins of the collections themselves, the selection process for digitizing and how to (re)present the object digitally. In doing so, they simply transfer the existing biases and under and over representations of particular materials, to the new digital collections. Additionally, the physical artefact is simply reproduced in a digital format without providing access to the digital object as such, which in the case of textual collections, like the HNDM, would be the OCR text files. </hi>
+                </p>
+                <p>
+                    <hi style="font-size:12pt" xml:space="preserve">The aim of this project is to critically examine how digitization projects have contemplated (if at all) these issues, and to propose new angles to thinking about digitization projects that can be more inclusive in representing traditionally marginalized populations, with a vision that goes beyond just visually representing the physical artefact and includes a digital representation that can be examined and used by computational methods. </hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Initial findings</head>
+                <p>
+                    Approaching digitization projects from this perspective is relatively new, and as such, we have worked on identifying relevant studies. There has been work done using critical race theory, feminist studies and postcolonial approximations to cultural digital collections in general, but we have found less work related to libraries and in particular digitization projects. Honma
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"ITLUUacM","properties":{"formattedCitation":"(Honma 2005)","plainCitation":"(Honma 2005)","noteIndex":0},"citationItems":[{"id":9534,"uris":["http://zotero.org/users/306226/items/YJ7CXDPP"],"uri":["http://zotero.org/users/306226/items/YJ7CXDPP"],"itemData":{"id":9534,"type":"article-journal","abstract":"The issue of race has been evaded in the field of Library and Information Studies (LIS) in the United States through an unquestioned system of white normativity and liberal multicultural discourse. To counteract these paradigms, this paper draws from various scholarly writings about race and racial formation in order to center race as the primary axis of analysis in the reinterpretation of major theoretical issues in LIS. Beginning with an analysis of the historical construction of libraries as an institution complicit in the production and maintenance of white racial privilege and then turning toward present-day discourses surrounding diversity and multiculturalism, this paper discusses at length the epistemological forms of racism that exist in LIS.","container-title":"InterActions: UCLA Journal of Education and Information Studies","DOI":"10.5070/D412000540","issue":"2","language":"en","source":"escholarship.org","title":"Trippin’ Over the Color Line: The Invisibility of Race in Library and Information Studies","title-short":"Trippin’ Over the Color Line","URL":"https://escholarship.org/uc/item/4nj0w1mp","volume":"1","author":[{"family":"Honma","given":"Todd"}],"accessed":{"date-parts":[["2021",11,4]]},"issued":{"date-parts":[["2005",6,21]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    (2005)
+                    <hi style="font-size:12pt" xml:space="preserve">addresses issues related to race and LIS from a US perspective. Work has been done on post-colonial archives </hi>
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"frsGnYwR","properties":{"formattedCitation":"(Gauthereau 2018; Becerra-Liche 2017)","plainCitation":"(Gauthereau 2018; Becerra-Liche 2017)","noteIndex":0},"citationItems":[{"id":9487,"uris":["http://zotero.org/users/306226/items/X47R98UZ"],"uri":["http://zotero.org/users/306226/items/X47R98UZ"],"itemData":{"id":9487,"type":"post-weblog","abstract":"Last week (July 31, 2018), I had the honor of speaking at CLIR’s (Council on Library and Information Resources) summer seminar for new Postdoctoral Fellows. I was very excited to get the opportunit…","container-title":"Recovering the U.S. Hispanic Literary Heritage Blog","language":"en","title":"Post-Custodial Archives and Minority Collections","URL":"https://recoveryprojectappblog.wordpress.com/2018/08/07/post-custodial-archives-and-minority-collections/","author":[{"family":"Gauthereau","given":"Lorena"}],"accessed":{"date-parts":[["2021",10,12]]},"issued":{"date-parts":[["2018",8,7]]}}},{"id":9490,"uris":["http://zotero.org/users/306226/items/DU4VG63A"],"uri":["http://zotero.org/users/306226/items/DU4VG63A"],"itemData":{"id":9490,"type":"article-journal","abstract":"Various types of digital archiving initiatives are harnessing the power of technology to expand the reach of participatory archiving, develop increasi","container-title":"Educause Review","language":"en","page":"90-91","title":"Participatory and Post-Custodial Archives as Community Practice","author":[{"family":"Becerra-Liche","given":"Sofía"}],"issued":{"date-parts":[["2017"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    (Gauthereau 2018; Becerra-Liche 2017)
+                    <hi style="font-size:12pt" xml:space="preserve">, but we are particularly interested in digitization of library collections. There is also important work regarding libraries lack of neutrality </hi>
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"5hAaoAOL","properties":{"formattedCitation":"(Galv\\uc0\\u225{}n 2015; Matienzo 2015; De Jesus 2014; Beatty 2014; Bourg 2015)","plainCitation":"(Galván 2015; Matienzo 2015; De Jesus 2014; Beatty 2014; Bourg 2015)","noteIndex":0},"citationItems":[{"id":9519,"uris":["http://zotero.org/users/306226/items/EV4RSUNM"],"uri":["http://zotero.org/users/306226/items/EV4RSUNM"],"itemData":{"id":9519,"type":"article-journal","container-title":"In The Library With The Lead Pipe","language":"en-US","title":"Soliciting Performance, Hiding Bias: Whiteness and Librarianship – In the Library with the Lead Pipe","title-short":"Soliciting Performance, Hiding Bias","URL":"https://www.inthelibrarywiththeleadpipe.org/2015/soliciting-performance-hiding-bias-whiteness-and-librarianship/","author":[{"family":"Galván","given":"Angela"}],"accessed":{"date-parts":[["2021",10,25]]},"issued":{"date-parts":[["2015"]]}}},{"id":9521,"uris":["http://zotero.org/users/306226/items/6DNBMXQU"],"uri":["http://zotero.org/users/306226/items/6DNBMXQU"],"itemData":{"id":9521,"type":"paper-conference","abstract":"Mark A. Matienzo. \"To Hell With Good Intentions: Linked Data, Community, and the Power to Name.\" Keynote. Library Information Technology Association Forum, …","event":"Library Information Technology Association Forum","language":"en","source":"matienzo.org","title":"To Hell With Good Intentions: Linked Data, Community, and the Power to Name","title-short":"To Hell With Good Intentions","URL":"https://matienzo.org/2016/to-hell-with-good-intentions/","author":[{"family":"Matienzo","given":"Mark A."}],"accessed":{"date-parts":[["2021",10,25]]},"issued":{"date-parts":[["2015"]]}}},{"id":9524,"uris":["http://zotero.org/users/306226/items/7EWDY4SD"],"uri":["http://zotero.org/users/306226/items/7EWDY4SD"],"itemData":{"id":9524,"type":"post-weblog","language":"en-US","title":"Locating the Library in Institutional Oppression – In the Library with the Lead Pipe","URL":"https://www.inthelibrarywiththeleadpipe.org/2014/locating-the-library-in-institutional-oppression/","author":[{"family":"De Jesus","given":"Nina"}],"accessed":{"date-parts":[["2021",10,28]]},"issued":{"date-parts":[["2014"]]}}},{"id":9526,"uris":["http://zotero.org/users/306226/items/F8DDBCLP"],"uri":["http://zotero.org/users/306226/items/F8DDBCLP"],"itemData":{"id":9526,"type":"post-weblog","language":"en-US","title":"Locating Information Literacy within Institutional Oppression – In the Library with the Lead Pipe","URL":"https://www.inthelibrarywiththeleadpipe.org/2014/locating-information-literacy-within-institutional-oppression/","author":[{"family":"Beatty","given":"Joshua"}],"accessed":{"date-parts":[["2021",10,28]]},"issued":{"date-parts":[["2014"]]}}},{"id":9528,"uris":["http://zotero.org/users/306226/items/RGSGD4MN"],"uri":["http://zotero.org/users/306226/items/RGSGD4MN"],"itemData":{"id":9528,"type":"post-weblog","abstract":"Below is the text from the OLITA Spotlight talk I gave at the OLA Super Conference (#olasc15). ~~~~~~~~~~~~~ I want to acknowledge from the outset that this talk has been heavily influenced by a nu…","container-title":"Feral Librarian","language":"en","title":"Never neutral: Libraries, technology, and inclusion","title-short":"Never neutral","URL":"https://chrisbourg.wordpress.com/2015/01/28/never-neutral-libraries-technology-and-inclusion/","author":[{"family":"Bourg","given":"Chris"}],"accessed":{"date-parts":[["2021",10,28]]},"issued":{"date-parts":[["2015",1,29]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    (Galván 2015; Matienzo 2015; De Jesus 2014; Beatty 2014; Bourg 2015)
+                    <hi style="font-size:12pt" xml:space="preserve">. This work is relevant for our analysis but it is based in a different national context from ours in Mexico. </hi>
+                </p>
+                <p>
+                    <hi style="font-size:12pt" xml:space="preserve">Latin America has a strong background in fields such as anthropology, sociology and political science, that examine the inequalities and exclusion which result from colonialism and post-colonialism, in particular related to the indigenous populations. Feminist studies have also addressed this in relation to the patriarchal system, gender violence and discrimination. In relation to LIS there is some work, in particular related to Open Access movement </hi>
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"aDbSbAYi","properties":{"formattedCitation":"(Alperin, Fischman, y Marin 2015)","plainCitation":"(Alperin, Fischman, y Marin 2015)","noteIndex":0},"citationItems":[{"id":9544,"uris":["http://zotero.org/users/306226/items/VV9ATY8U"],"uri":["http://zotero.org/users/306226/items/VV9ATY8U"],"itemData":{"id":9544,"type":"book","call-number":"PN4930 .H43 2015","edition":"Primera edición en español","event-place":"Brazil","ISBN":"978-987-722-067-4","number-of-pages":"122","publisher":"FLACSO Brasil","publisher-place":"Brazil","source":"Library of Congress ISBN","title":"Hecho en Latinoamérica: acceso abierto, revistas académicas e innovaciones regionales","title-short":"Hecho en Latinoamérica","editor":[{"family":"Alperin","given":"Juan Pablo"},{"family":"Fischman","given":"Gustavo"},{"family":"Marin","given":"Anabel"}],"issued":{"date-parts":[["2015"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    (Alperin, Fischman, y Marin 2015)
+                    <hi style="font-size:12pt" xml:space="preserve"> and work related to information and indigenous populations in Mexico </hi>
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"0YfNdU0A","properties":{"formattedCitation":"(Ram\\uc0\\u237{}rez Vel\\uc0\\u225{}zquez y Figueroa Alc\\uc0\\u225{}ntara 2021)","plainCitation":"(Ramírez Velázquez y Figueroa Alcántara 2021)","noteIndex":0},"citationItems":[{"id":9548,"uris":["http://zotero.org/users/306226/items/KYWP6WA2"],"uri":["http://zotero.org/users/306226/items/KYWP6WA2"],"itemData":{"id":9548,"type":"book","collection-title":"eSchola","event-place":"Ciudad de México","ISBN":"978-607-30-3556-9","number-of-pages":"338","publisher":"FFyL, UNAM","publisher-place":"Ciudad de México","title":"La importancia de la información en las culturas originarias","URL":"http://ru.atheneadigital.filos.unam.mx/jspui/bitstream/FFYL_UNAM/4615/1/La%20importancia%20de%20la%20informacio%CC%81n%20en%20las%20culturas%20originarias%20-%20EIPE.pdf","editor":[{"family":"Ramírez Velázquez","given":"César Augusto"},{"family":"Figueroa Alcántara","given":"Hugo Alberto"}],"issued":{"date-parts":[["2021"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    (Ramírez Velázquez y Figueroa Alcántara 2021)
+                    <hi style="font-size:12pt" xml:space="preserve"> so far we have not identified work regarding digitization and libraries within this framework.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Future steps</head>
+                <p>This research project is currently in development. So far, we have established that there is indeed little work in this area, and we are proposing a particular framework from which to approach the next part of our work. We are now working on compiling a list of digitization projects in Mexico that have worked with cultural heritage textual materials. From here we shall select four case studies for in-depth work related to how the digitizing project was undertaken. We are also planning a workshop to receive further input from practitioners regarding these issues. Our final aim is to contribute towards creating more inclusive digitization projects. </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Alperin, Juan Pablo, Gustavo Fischman, y Anabel Marin, eds. (2015). </hi>
+                        <hi rend="italic" style="font-size:12pt">Hecho en Latinoamérica: acceso abierto, revistas académicas e innovaciones regionales</hi>
+                        . Primera edición en español. Brazil: FLACSO Brasil.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        Beatty, Joshua. (2014). Locating Information Literacy within Institutional Oppression – In the Library with the Lead Pipe. https://www.inthelibrarywiththeleadpipe.org/2014/locating-information-literacy-within-institutional-oppression/.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        Becerra-Liche, Sofía. (2017) Participatory and Post-Custodial Archives as Community Practice,
+                        <hi rend="italic" style="font-size:12pt">Educause Review</hi>
+                        , 90-91.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Bourg, Chris. (2015). Never Neutral: Libraries, Technology, and Inclusion. </hi>
+                        <hi rend="italic" style="font-size:12pt">Feral Librarian</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (blog). https://chrisbourg.wordpress.com/2015/01/28/never-neutral-libraries-technology-and-inclusion/.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        De Jesus, Nina. (2014). Locating the Library in Institutional Oppression – In the Library with the Lead Pipe. https://www.inthelibrarywiththeleadpipe.org/2014/locating-the-library-in-institutional-oppression/.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Galina Russell, Isabel, y Ernesto Priani Saisó. (2021). Políticas de digitalización para la investigación. El caso de la HNDM y el proyecto Oceanic Exchanges, in </hi>
+                        <hi rend="italic" style="font-size:12pt">El estante digital</hi>
+                        , 125-41. Santiago de Querétaro: Fondo Editorial de la Universidad Autónoma de Querétaro.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Galina Russell, Isabel, Laura Martínez Domínguez, Miriam Peña Pimentel, Ernesto Priani Saisó, y Rocío Castellanos Rueda. (2020). El uso de periódicos digitalizados como fuente para trabajos de investigación. </hi>
+                        <hi rend="italic" style="font-size:12pt">Relaciones Estudios de Historia y Sociedad</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 43 (163).</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Galván, Angela. (2015). Soliciting Performance, Hiding Bias: Whiteness and Librarianship – In the Library with the Lead Pipe, </hi>
+                        <hi rend="italic" style="font-size:12pt">In The Library With The Lead Pipe</hi>
+                        . https://www.inthelibrarywiththeleadpipe.org/2015/soliciting-performance-hiding-bias-whiteness-and-librarianship/.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Gauthereau, Lorena. (2018). Post-Custodial Archives and Minority Collections. </hi>
+                        <hi rend="italic" style="font-size:12pt">Recovering the U.S. Hispanic Literary Heritage Blog</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (blog). 7 de agosto de 2018. https://recoveryprojectappblog.wordpress.com/2018/08/07/post-custodial-archives-and-minority-collections/.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Honma, Todd. 2005. Trippin’ Over the Color Line: The Invisibility of Race in Library and Information Studies. </hi>
+                        <hi rend="italic" style="font-size:12pt">InterActions: UCLA Journal of Education and Information Studies</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 1 (2). https://doi.org/10.5070/D412000540.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        Matienzo, Mark A. 2015. To Hell With Good Intentions: Linked Data, Community, and the Power to Name. Available at https://matienzo.org/2016/to-hell-with-good-intentions/.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        Ramírez Velázquez, César Augusto, y Hugo Alberto Figueroa Alcántara, eds. (2021).
+                        <hi rend="italic" style="font-size:12pt">La importancia de la información en las culturas originarias</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. eSchola. Ciudad de México: FFyL, UNAM. </hi>
+                    </bibl>
+                    <bibl style="text-align: left;">http://ru.atheneadigital.filos.unam.mx/jspui/bitstream/FFYL_UNAM/4615/1/La%20importancia%20de%20la%20informacio%CC%81n%20en%20las%20culturas%20originarias%20-%20EIPE.pdf.</bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Thylstrup, Nanna Bonde. (2018). </hi>
+                        <hi rend="italic" style="font-size:12pt">The politics of mass digitization</hi>
+                        . Cambridge, MA: The MIT Press.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

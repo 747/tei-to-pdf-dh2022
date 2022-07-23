@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Geographic analysis of published guidebooks and personal diaries on the diversity of city image in the Edo period</title>
+                <author>
+                    <persName>
+                        <surname>SUZUKI</surname>
+                        <forename>Chikahiko</forename>
+                    </persName>
+                    <affiliation>ROIS-DS Center for Open Data in the Humanities, Japan; National Institute of Informatics, Japan</affiliation>
+                    <email>ch_suzuki@nii.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>KITAMOTO</surname>
+                        <forename>Asanobu</forename>
+                    </persName>
+                    <affiliation>ROIS-DS Center for Open Data in the Humanities, Japan; National Institute of Informatics, Japan</affiliation>
+                    <email>kitamoto@nii.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T05:24:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Geographic information</term>
+                    <term>City image</term>
+                    <term>Data portal</term>
+                    <term>Tourism</term>
+                    <term>Japan</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>data publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>Book and print history</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Introduction</p>
+            <p style="text-align: left; ">In Japan, guidebooks became popular during the Edo period (17th to 19th century). The contents of the guidebooks were cited in various genres, such as literature, leading to the spread of a general 
+                <hi rend="italic">Edo</hi> (<hi rend="Japanese">江戸</hi> present-day Tokyo) city image [1]. Even today, the public perception of Edo is based on these images. Many travel diaries written in the Edo period are preserved today, shedding light on personal activities in Edo city. Akio Suzuki enriched the image of Edo by comparing the general image in the guidebooks with the descriptions in some travel diaries [2]. An even broader image of Edo can be reproduced by quantitatively expanding Suzuki’s method. Such an expanded method would be comparable to tourist information from today’s online reviews.
+            </p>
+            <p style="text-align: left; ">For the aforementioned purpose, apart from increasing the amount of information from publications that form the basis of the city image, we organized and considered various individual activities written in diaries as historical activity records. We integrated the findings of the previous studies that compared some of these recorded activities. Therefore, we proposed a method for structuring the description of the diaries and guidebooks using identifiers. These identifiers helped connect place names that appeared in documents with modern-day geographic information. </p>
+            <p style="text-align: left; ">Materials and Tools</p>
+            <p style="text-align: left; ">As a record of individuals that corresponds to “online reviews,” we selected the diary of three people with different attributes who visited the city of Edo during end of the Edo period [3]: 
+                <hi rend="italic">Hachiro Kiyokawa</hi> (<hi rend="Japanese">清河八郎</hi>), a 
+                <hi rend="italic">bushi</hi> (<hi rend="Japanese">武士</hi>, literally warrior or 
+                <hi rend="italic">samurai</hi>); 
+                <hi rend="italic">Senkou-In</hi> (<hi rend="Japanese">泉光院</hi>), a priest of 
+                <hi rend="italic">Shugen-do</hi> (<hi rend="Japanese">修験道</hi>); and Heinrich Schliemann, a German archaeologist who visited Edo after the shogunate opened the country. First, we extracted the date (original Japanese calendar notation), converted Christian era data using HuTime [4], place names, and actions from the diaries of these three people. Second, we linked GeoLOD [5] identifiers to the extracted place names. For the comparison with the extracted description, we used a database of illustrations of guidebooks in the Edo period [6].
+            </p>
+            <p style="text-align: left; ">GeoLOD is a web service for the registration, management, display, and sharing of geographic information by assigning identifiers (GeoLOD ID) to place names. With GeoLOD, we linked place names appearing in multiple sources with their GeoLOD ID’s latitude and longitude. GeoLOD enables the integration of not only the place names but also various information contained in the original material into the “geospace”, or information space based on geographic information. We then analyze this information on the geospace.</p>
+            <p style="text-align: left; ">Results and Discussion</p>
+            <p style="text-align: left; ">Figure 1 visualizes the activities of 
+                <hi rend="italic">Hachiro Kiyokawa</hi> in Edo, achieved by linking geographic information with his narrated activities [7]. Furthermore, GeoLOD allowed us to not only link activities and geographic information but also to integrate and compare diary descriptions and information in publications.
+            </p>
+            <p style="text-align: left; ">
+                <graphic n="1001" width="15.000111111111112cm" height="11.114263888888889cm" url="Pictures/478e02757397973d54f09a6e186c7dd6.png" rend="inline"/>
+            </p>
+            <p style="text-align: left; ">Fig.1 Linking 
+                <hi rend="italic">Hachiro Kiyokawa</hi>’s movement with a modern-day map
+            </p>
+            <p style="text-align: left; ">By comparing descriptions, we found that all three people with different attributes visited the most famous places of the time, such as 
+                <hi rend="italic">Atagoyama</hi> (<hi rend="Japanese">愛宕山</hi>) and 
+                <hi rend="italic" xml:space="preserve">Sensoji </hi>Temple (<hi rend="Japanese">浅草寺</hi>). Furthermore, by linking materials using GeoLOD, we could compare the diary descriptions with the illustrations of famous places in guidebooks. Thus, we could clarify the difference between the situation of the famous places that each traveler paid attention to and the general image depicted in the publication. We noted various situations in Edo by finding the differences between the basic stereotyped images and individual observations (Fig. 2). Furthermore, by using identifiers, we could easily add and compare information.
+            </p>
+            <figure>
+                <figure>
+                    <graphic n="1002" width="14.975416666666666cm" height="3.981977777777778cm" url="Pictures/624bac7b15ef98ab6b958ed1b9e413a3.png" rend="inline"/>
+                </figure>
+                <figure>
+                    <graphic n="1003" width="10.027708333333333cm" height="7.831666666666667cm" url="Pictures/b373afe405726a20d9b90e40b0607890.jpeg" rend="inline"/>
+                </figure>
+            </figure>
+            <p style="text-align: left; ">Fig. 2 Schliemann’s description of 
+                <hi rend="italic" xml:space="preserve">Sensoji </hi>Temple in an original French version (above) and the illustration of a Japanese guidebook of the same period (bottom). The products of the stalls are described in detail, reinforcing the general image. Meanwhile, no description is given of the large lantern that represents 
+                <hi rend="italic">Sensoji</hi> Temple.
+            </p>
+            <p style="text-align: left; ">By developing connections with geographic information, we could collect data on the movements and behaviors of people described in historical materials as historical activity records. Future work may link various data extracted from historical materials, such as historical activity records, with spatiotemporal information.</p>
+            <p style="text-align: left; ">We further utilized GeoLOD to publish “edomi” [8] by linking the databases with geographic information. “edomi” is a data portal site that offers a panoramic view of the city of Edo and various information on the Edo period. Users can search and utilize historical information across categories based on the current perspective (Fig. 3). By linking the movement of the three people with edomi, we plan, in a future work, to not only present geographic information but also clarify the relation between tourists and famous places in Edo.</p>
+            <figure>
+                <graphic n="1004" width="15.000111111111112cm" height="8.013347222222222cm" url="Pictures/1cc8e5ad49ca46e638baaaecb006c9cc.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Fig. 3 Category list of content available on edomi: travel, shopping, map, gourmet, politics, economy, disaster, and learning (Japanese only as of November 2021)</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Ichiko, N. and Suzuki, K. (2009). Edo-Meisho-Zue wo Yomutameni, 
+                        <hi rend="italic">Shintei Edo-Meisho-Zue Bekkan 2</hi>, Chikuma Shobou (in Japanese)
+                    </bibl>
+                    <bibl>Suzuki, A. (2001). 
+                        <hi rend="italic">Edo no Meisho to Toshibunka,</hi> Yoshikawakoubunkan (in Japanese)
+                    </bibl>
+                    <bibl>Kiyokawa, H. (1993). 
+                        <hi rend="italic">Sai-Yu-Sou</hi>, Iwanami Shoten (in Japanese). Ishikawa, E. (1994). 
+                        <hi rend="italic">Senko-In Edo Tabi Nikki</hi>, Kodansha (in Japanese). Schliemann, H. (1867). 
+                        <hi rend="italic">La Chine et le Japon au temps present</hi>, Libr.Centrale
+                    </bibl>
+                    <bibl>HuTime. 
+                        <ref target="http://www.hutime.org/">http://www.hutime.org/</ref>
+                    </bibl>
+                    <bibl>GeoLOD. 
+                        <ref target="https://geolod.ex.nii.ac.jp/">https://geolod.ex.nii.ac.jp/</ref>
+                    </bibl>
+                    <bibl>Suzuki, C. and Kitamoto, A. (2020). Creating Structured and Reusable Data for Tourism and Commerce Images of Edo: Using IIIF Curation Platform to Extract Information from Historical Materials, 
+                        <hi rend="italic">Digital Humanities 2020</hi> (in Japanese)
+                    </bibl>
+                    <bibl>Kitamoto, A., Suzuki, C., Terao, S., Horii, M. and Horii, H. (2020). Construction of Edo Big Data Based on Structuring and Integrating Historical Placenames on Spatial Historical Sources, 
+                        <hi rend="italic">Jimmoncon2020</hi>, pp. 171-178
+                    </bibl>
+                    <bibl>edomi. 
+                        <ref target="http://codh.rois.ac.jp/edomi/">http://codh.rois.ac.jp/edomi/</ref>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

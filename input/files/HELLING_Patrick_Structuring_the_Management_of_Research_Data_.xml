@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Structuring the Management of Research Data - Reflections on Requirements and Service Concepts in Research Data Management in the Humanities</title>
+                <author>
+                    <persName>
+                        <surname>Helling</surname>
+                        <forename>Patrick</forename>
+                    </persName>
+                    <affiliation>Data Center for the Humanities (DCH), University of Cologne, Germany</affiliation>
+                    <email>patrick.helling@uni-koeln.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-14T12:41:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Research Data Management</term>
+                    <term>Research Data</term>
+                    <term>RDM</term>
+                    <term>Workflows</term>
+                    <term>Qualitative Analysis</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>project design</term>
+                    <term>organization</term>
+                    <term>management</term>
+                    <term>sustainable procedures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction and Background</head>
+                <p style="text-align: left; ">Research data is a key element of ongoing scientific progress (Bryant et al. 2017). Making research data findable, accessible, interoperable, and reusable in the sense of the FAIR Principles (Wilkinson et al. 2016) is a substantial aspect of good research practice (DFG 2019). Fulfilling this goal is a central task for both researchers and research data management (RDM) competence centers.</p>
+                <p style="text-align: left; ">For defining service structures of these RDM competence centers, different guidelines and information bases are used (cf. HRK 2014 and 2015; Akers and Doty 2013; Mathiak et al. 2019; Vock 2019).
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p style="text-align: left; "> see for example: Listing of surveys on Research Data Management, Online: 
+                            <ref target="https://www.forschungsdaten.org/index.php/Umfragen_zum_Umgang_mit_Forschungsdaten_an_wissenschaftlichen_Institutionen">
+                                <hi rend="underline color(103CC0)">https://www.forschungsdaten.org/index.php/Umfragen_zum_Umgang_mit_Forschungsdaten_an_wissenschaftlichen_Institutionen</hi>
+                            </ref> (last request: 15th of November 2021).
+                        </p>
+                    </note> In addition, formal models have been developed to describe RDM service structures (cf. Rans and Whyte 2017; Hiemenz and Kuberek 2019; Quin et al. 2017; Lemaire et al. 2020; Herterich et al. 2019).
+                </p>
+                <p style="text-align: left; ">Most of these guidelines, models and information are based on either top-down recommendations, quantitative surveys which are highly fault-prone or description models that focus on the perspective of service points and infrastructures.</p>
+                <p style="text-align: left; ">However, RDM should be steered by the daily necessities of the researchers (e.g., table 1). A formal model that describes the structures, processes, and conditions at the core of RDM practice from both the perspectives of the researcher and the data manager does not seem to exist yet. Nonetheless, our knowledge of RDM needs to be structured to guarantee the quality of research. </p>
+                <p style="text-align: left; ">In this paper, I will present a new approach to the definition of RDM requirements of researchers and service workflows within the Humanities by qualitatively analyzing RDM counseling protocols. These protocols were produced during RDM consultation sessions with researchers by an RDM competence center in Germany for documentation reasons.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Identification and analysis of RDM-requirements and workflows</head>
+                <p style="text-align: left; ">90 semi-structured and anonymized RDM counseling protocols were used for my study. With a qualitative analysis and an inductive definition of categories (Mayring 2015), I identified 48 categories of RDM requirements (see Table 1). The RDM counseling protocols were clustered according to these categories. </p>
+                <p style="text-align: left; ">Table 1: Total number of identified RDM requirements. </p>
+                <figure>
+                    <graphic n="1001" width="15.926152777777778cm" height="11.181291666666667cm" url="Pictures/748e045f4265c17e4765e56ef447ba8b.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Four main goals were pursued in the study of these clusters:</p>
+                <list type="ordered">
+                    <item>Identification and formalization of relevant information describing the categories.</item>
+                    <item>Development of formal description models of the requirements.</item>
+                    <item>Identification and formalization of documented workflows.</item>
+                    <item>Mapping of the workflows to define comprehensive recommendations.</item>
+                </list>
+                <p style="text-align: left; ">Two RDM requirements will serve as examples to illustrate my work.</p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Requirement category “Proposal support”</head>
+                    <p style="text-align: left; ">In 27 documented counselling sessions researchers asked for support while writing a project proposal. This category was differentiated into two sub-requirements: (a) review of a chapter on RDM in a proposal (“Review section of text”) and (b) writing of a chapter on RDM for a proposal (“Write section of text”) by the center. </p>
+                    <p style="text-align: left; ">In the first case many different RDM aspects played a role in the reviewing process (see Figure 1), while in the second case fewer aspects were discussed during the consultation (see Figure 2). This might be due to the fact that writing a section of text on RDM by a competence center is a more targeted and structured process, while sections of text written by researchers not expert in RDM may be more uncertain and fault prone.</p>
+                    <figure>
+                        <graphic n="1002" width="15.926152777777778cm" height="4.653138888888889cm" url="Pictures/7163a6f137cbb01af8c606f95d670027.png" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left; ">Figure 1: Topics and aspects while reviewing a section of text.</p>
+                    <figure>
+                        <graphic n="1003" width="15.926152777777778cm" height="2.859263888888889cm" url="Pictures/363d0cbc36e7e7a96769c65ace7a0ba9.png" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left; ">Figure 2: Topics and aspects while writing a section of text.</p>
+                    <p style="text-align: left; ">Nevertheless, in both cases the archiving of data was a main RDM aspect (see Figures 3 and 4).</p>
+                    <figure>
+                        <graphic n="1004" width="15.92cm" height="8.255cm" url="Pictures/f6814e93e97acf8e6d207673eb1c5ad6.png" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left; ">Figure 3: Frequencies of topics and aspects while reviewing a section of text. </p>
+                    <figure>
+                        <graphic n="1005" width="15.92cm" height="8.325555555555555cm" url="Pictures/0d1b86c5f90fae6b7271cc6f8c7d7226.png" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left; ">Figure 4: Frequencies of topics and aspects while writing a section of text. </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Prototypical RDM counselling workflow - “Proposal support”</head>
+                    <p style="text-align: left; ">Also, in the case of the cluster “Proposal support” I differentiated between prototypical workflows for the sub-requirements “Review section of text” and “Write section of text” (Figures 5 and 6). </p>
+                    <figure>
+                        <graphic n="1006" width="15.926152777777778cm" height="6.228291666666666cm" url="Pictures/2a2bd4778a76f1088491f70fbbeb304a.png" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left; ">Figure 5: Prototypical workflow “Review section of text”.</p>
+                    <figure>
+                        <graphic n="1007" width="15.926152777777778cm" height="6.081888888888889cm" url="Pictures/4691a2c20f888d53b07a3d108fd24212.png" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left; ">Figure 6: Prototypical workflow “Write section of text”.</p>
+                    <p style="text-align: left; ">For the review of a section of text, the competence center corrects and annotates the text sent by the researcher. In the case of the sub-requirement “Write section of text”, the researcher shares relevant parts of the proposal to allow the members of the center to draft a section of text. Clearly, the information on the project is immediately deleted after the conclusion of the workflow for data protection reasons. The workflows usually present more complexities, as I will show in my presentation.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Requirement category “Archiving”</head>
+                    <p style="text-align: left; ">In the 25 cases belonging to the requirement of archiving research data, various information could be identified both describing the RDM requirement and influencing how it should be dealt with (see Figure 7). </p>
+                    <figure>
+                        <graphic n="1008" width="15.926152777777778cm" height="7.711722222222222cm" url="Pictures/7a7dc51c30f548fbfe604a501955d111.png" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left; ">Figure 7: Topics and aspects while supporting an archiving process.</p>
+                    <p style="text-align: left; ">Besides concrete information on the objects to be archived, the identification of conditions for the archiving process by the researchers revealed to be key in the process of archiving, showing RDM awareness among the researchers.</p>
+                    <p style="text-align: left; ">In addition, various types of recommendations by the RDM competence center as well as concrete tasks for both the center and the researchers could be identified.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Prototypical RDM counselling workflow - “Archiving”</head>
+                    <p style="text-align: left; ">To support the researchers in the archiving process, the RDM competence center generally looks for a suitable repository to store the research data (see Figure 8). If there is no fitting domain- or data specific repository the center seeks a more generic solution.</p>
+                    <figure>
+                        <graphic n="1009" width="15.926152777777778cm" height="4.09575cm" url="Pictures/db63dea037e4c1faadf8b6cd5681d4b4.png" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left; ">Figure 8: Prototypical workflow “Archiving”.</p>
+                    <p style="text-align: left; ">If there is a suitable solution at the center, conditions for archiving are communicated to the researchers, who prepare their research data and submit it to the center for archiving. If an external solution is recommended, the RDM competence center transmits the necessary information to the researchers, who get in touch with the external repository, prepare and submit the data (or proceed with self-archiving).</p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left; ">With the described approach, one gets closer to a description of the RDM requirement landscape based on the daily needs of researchers. The analysis allows for qualitative and quantitative descriptions of RDM requirements based on real counseling sessions. It gives a better understanding of the nature of specific RDM requirements, their conditions and influencing factors. Workflows to deal with specific RDM requirements are modeled prototypically RDM competence centers. Specific competences can be identified and integrated accordingly. </p>
+                <p style="text-align: left; ">In my talk, I will present the descriptions of RDM requirements and corresponding workflows comprehensively. Specifically, I will show dependencies and mappings between different conditions and information within the RDM requirement clusters to concretely describe the RDM landscape. Finally, I will focus on the mapping between the RDM requirement models and their prototypical workflows. </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Akers, K. G., and Doty, J.</hi> (2013). Disciplinary differences in faculty research data management practices and perspectives. 
+                        <hi rend="italic">The International Journal of Digital Curation</hi>, Volume 8, Issue 2. DOI: 
+                        <ref target="https://doi.org/10.2218/ijdc.v8i2.263">
+                            <hi rend="underline color(1155CC)">10.2218/ijdc.v8i2.263</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bryant, R., Lavoie, B., and Malpas, C.</hi> (2017). A Tour of the Research Data Management (RDM) Service Space. The Realities of Research Data Management, Part 1. 2017. Dublin, Ohio: OCLC Research. DOI: 
+                        <ref target="HYPERLINK">
+                            <hi rend="underline color(1155CC)">10.25333/C3PG8J</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">DFG, Deutsche Forschungsgemeinschaft</hi> (2019). Guidelines for Safeguarding Good Research Practice. Code of Conduct. DOI: 
+                        <ref target="https://doi.org/10.5281/zenodo.3923601">
+                            <hi rend="underline color(1155CC)">10.5281/zenodo.3923601</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Herterich, P., Davidson, J., Whyte, A., Molloy, L., Matthews, B., and Kayumbi Kabeya, G.</hi> (2019). D6.1 Overview of needs for competence centres. 
+                        <hi rend="italic">FAIRsFAIR</hi>, 2019. DOI: 
+                        <ref target="https://doi.org/10.5281/zenodo.3549790">
+                            <hi rend="underline color(0000FF)">10.5281/zenodo.3549790</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hiemenz, B., and Kuberek, M.</hi> (2019). Strategischer Leitfaden zur Etablierung einer institutionellen Forschungsdaten-Policy. DOI: 
+                        <ref target="http://dx.doi.org/10.14279/depositonce-8412">
+                            <hi rend="underline color(1155CC)">10.14279/depositonce-8412</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">HRK, Hochschulrektorenkonferenz</hi> (2015). Empfehlung der 19. Mitgliederversammlung der HRK am 10. November 2015 in Kiel. Wie Hochschulleitungen die Entwicklung des Forschungsdatenmanagements steuern können. Orientierungspfade, Handlungsoptionen, Szenarien. Online: 
+                        <ref target="https://www.hrk.de/uploads/tx_szconvention/Empfehlung_Forschungsdatenmanagement__final_Stand_11.11.2015.pdf">
+                            <hi rend="underline color(1155CC)">https://www.hrk.de/uploads/tx_szconvention/Empfehlung_&#8203;Forschungsdatenmanagement__&#8203;final_&#8203;Stand_&#8203;11.11.2015.pdf</hi>
+                        </ref> [last request 15th of November 2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">HRK, Hochschulrektorenkonferenz</hi> (2016). Empfehlung der 16. Mitgliederversammlung der HRK am 13. Mai 2014 in Frankfurt am Main. Management von Forschungsdaten - eine zentrale strategische Herausforderung für Hochschulleitungen. Online: 
+                        <ref target="https://www.hrk.de/uploads/tx_szconvention/HRK_Empfehlung_Forschungsdaten_13052014_01.pdf">
+                            <hi rend="underline color(1155CC)">https://www.hrk.de/uploads/tx_szconvention/HRK_Empfehlung_Forschungsdaten_13052014_01.pdf</hi>
+                        </ref> [last request 15th of November 2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Lemaire, M., Gerhards, L., Kellendonk, S., Blask, K. and Förster, A. </hi>(2020). Das DIAMANT-Modell 2.0. Modellierung des FDM-Referenzprozesses und Empfehlungen für die Implementierung einer institutionellen FDM-Servicelandschaft (eSciences Working Papers, 05). Trier. DOI: 
+                        <ref target="https://doi.org/10.25353/ubtr-xxxx-f5d2-fffb">
+                            <hi rend="underline color(1155CC)">10.25353/ubtr-xxxx-f5d2-fffb</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Mayring, P.</hi> (2015). Qualitative Inhaltsanalyse, Grundlagen und Techniken. 12. Auflage, Weinheim und Basel: Beltz Verlag.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Mathiak, B., Metzmacher, K., Helling, P. and Blumtritt, J. </hi>(2019). The Role Of Data Archives In The Humanities At The University Of Cologne. 
+                        <hi rend="italic">DH 2019 Conference</hi>, 8-12 July 2019, Utrecht University. DOI: 
+                        <ref target="https://doi.org/10.34894/geqeko">10.34894/geqeko</ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Qin, J., Crowston, K. and Kirkland, A.</hi> (2017). Pursuing Best Performance in Research Data Management by Using the Capability Maturity Model and Rubrics. 
+                        <hi rend="italic">Journal of eScience Librarianship;6(2): e1113</hi>. DOI: 
+                        <ref target="https://doi.org/10.7191/jeslib.2017.1113">
+                            <hi rend="underline color(1155CC)">10.7191/jeslib.2017.1113</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rans, J. and Whyte, A.</hi> (2017). Using RISE, the Research Infrastructure Self-Evaluation Framework, v.1.1. Edinburgh: Digital Curation Centre. Online: 
+                        <ref target="http://www.dcc.ac.uk/resources/how-guides">
+                            <hi rend="underline color(1155CC)">www.dcc.ac.uk/resources/how-guides</hi>
+                        </ref> [last request 17th of November 2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Vock, R. with the participation of Gerlach, R., Hesse, B., Colomb, J., Steiner, P., Schröter, A., Hiltscher, A., Prinz, T. and König-Ries, B.</hi> (2019). Evaluation der FDM-Beratung 2019 – Evaluation des Beratungsangebots der Kontaktstelle Forschungsdatenmanagement (KS FDM) an der Friedrich-Schiller-Universität Jena. 
+                        <hi rend="italic">Bericht 4.3. eeFDM-Projekt (BMBF)</hi>, Jena. Online: 
+                        <ref target="https://www.db-thueringen.de/receive/dbt_mods_00040382">https://www.db-thueringen.de/receive/dbt_mods_00040382</ref> [last request 15th of November 2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.-W., Bonino da Silva Santos, L., Bourne, P. E., Bouwman, J., Brookes, A. J., Clark, T., Crosas, M., Dillo, I., Dumon, O.,  Edmunds, S., Evelo, C. T., Finkers, R., Gonzalez-Beltran, A., Gray, A. J. G., Groth, P., Goble, C., Grethe, J. S., Heringa, J., ’t Hoen, P. A. C., Hooft, R., Kuhn, T., Kok, R., Kok, J., Lusher, S. J., Martone, M. E., Mons, A., Packer, A. L.,  Persson, B., Rocca-Serra, P., Roos, M., van Schaik, R., Sansone, S.-A.,  Schultes, E., Sengstag, T., Slater, T., Strawn, G., Swertz, M. A., Thompson, M., van der Lei, J., van Mulligen, E., Velterop, J., Waagmeester, A., Wittenburg, P., Wolstencroft, K., Zhao, J. and Mons, B. </hi>(2016). The FAIR Guiding Principles for scientific data management and stewardship. In: 
+                        <hi rend="italic">Scientific Data 3</hi>, Article number: 160018. DOI:
+                        <ref target="https://doi.org/10.1038/sdata.2016.18" xml:space="preserve"> </ref>
+                        <ref target="https://doi.org/10.1038/sdata.2016.18">
+                            <hi rend="underline color(1155CC)">10.1038/sdata.2016.18</hi>
+                        </ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

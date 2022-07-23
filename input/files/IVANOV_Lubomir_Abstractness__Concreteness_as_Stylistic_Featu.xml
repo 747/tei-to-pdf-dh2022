@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Abstractness/ Concreteness as Stylistic Features for Authorship Attribution</title>
+                <author>
+                    <persName>
+                        <surname>Ivanov</surname>
+                        <forename>Lubomir</forename>
+                    </persName>
+                    <affiliation>Iona College, United States of America</affiliation>
+                    <email>livanov@iona.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-22T00:42:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Abstractness</term>
+                    <term>concreteness</term>
+                    <term>authorship attribution</term>
+                    <term>machine learning</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>attribution studies and stylometric analysis</term>
+                    <term>Computer science</term>
+                    <term>Linguistics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">We present early results from a broad project investigating the usefulness of abstractness/concreteness as stylistic features for authorship attribution. The concreteness of a word/phrase refers to our sensory ability to perceive or experience the object/phenomenon described by that word/phrase. Abstractness is the opposite of concreteness. Abstractness and concreteness have been studied from a philosophical, psychological, neuro-physiological, linguistic, and literary perspectives. A significant amount of work has been performed on the computational aspects of concreteness/abstractness recognition and classification, including metaphor-, hyperbole- and idiom detection, rating, and processing (Spreen and Schulz, 1966; Paivio et al, 1968; Coltheart, 1981, Birke and Sarkar, 2006 &amp; 2007; Li and Sporleder, 2009; Sporleder and Li, 2009; Turney et al, 2011; Kwong, 2011, Assaf et al, 2013; Neuman et al, 2013; Shutova et al, 2013; Brysbaert et al, 2014; Tsvetkov et al., 2014; Klebanov et al, 2015; Rei et al, 2017; Wu et al, 2018, Gao et al, 2018; Reif et al, 2019
+                    <hi rend="color(212529)">).</hi> There have been attempts to quantify the notions of concreteness and abstractness (Spreen and Schulz, 1966; Paivio et al, 1968, Brysbaert et al, 2014
+                    <hi rend="color(00007F)">). In (</hi>Brysbaert et al, 2014), a collection of 37058 words and 2896 two-word phrases was rated for concreteness by 4000 evaluators (approximately 25 evaluators per word). The rating uses a 5-point scale, where lower values indicate abstractness and higher values - concreteness. For each word/phrase, the mean rating and the standard deviation (i.e. evaluator agreement) were recorded. The Brysbaert dictionary has become a standard in many studies and has been used to train machine learning models to automatically rate word/phrase abstractness (Köper and Schulte Im Walde, 2016, Maudslay et al, 2020).
+                </p>
+                <p style="text-align: left; ">We are interested in the usefulness of abstractness/concreteness as stylistic features for authorship attribution. We present a new attribution methodology based on the Brysbaert dictionary. We employed the methodology to perform attribution experiments using the Reuters-RCV1 dataset (Lewis et all, 2014, NIST). The results show promise and warrant further studies.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Attribution Methodology </head>
+                <p style="text-align: left; ">Our strategy is to distribute the words (and word-pairs) from each document into categories based on the part of speech (PoS) roles of the words and the agreement of the evaluators as to the word’s abstractness. PoS information is important because words carry different levels of abstractness based on the context. For example, “toy” is concrete as a noun (mean 4.93, standard deviation 0.38 in the Brysbaert dictionary) but less concrete as a verb (mean 2.3, standard deviation 1.17). Similarly, “chestnut”, as a noun, is very concrete, but as a color adjective – quite abstract. We use the following PoS categories: jj, jjr, jjs, nn, nnp, nns, rb, rbr, rbs, vb, vbd, vbg, vbn, vbp, vbz. These are based on the standard Penn Treebank tags (Santorini, 1990, Penn Treebank Tags). We also have a category “wp” for word pairs. </p>
+                <p style="text-align: left; ">The standard deviation (SD) of the evaluators’ ratings in the Brysbaert dictionary is another indicator of abstractness. A scan through the dictionary reveals that SD is smaller for nouns (average 1.10), larger for adjectives (average 1.218), and even larger for verbs (average 1.253). In general, SD is larger for abstract words. We define four SD classes: “very narrow” (SD&lt;0.5), “narrow” (0.5≤SD&lt;1.0), “wide” (1.0≤SD&lt;1.5) and “very wide” (SD≥1.5). </p>
+                <p style="text-align: left; ">Finally, we combine the PoS and SD classes above to obtain 64 abstractness classes (e.g. “jj_narrow”, “vb_wide”, etc.). Our algorithm constructs a 64-dimensional vector for each text in the corpus by mapping each word in the text to one of the 64 classes above and averaging the mean abstractness ratings of all words mapped to the same category. We exclude the most (universally) common 25 nouns, 50 verbs and their tenses, 50 adjectives, and 35 adverbs to avoid skewing the results by frequently used words. The generated vectors are stored as WEKA (Hall et al, 2009) files and used for training WEKA classifiers.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Experiments and Results</head>
+                <p style="text-align: left; ">Our experiments were based on randomly selected 20-, 15-, and 10-author subsets of the Reuters-RCV1 corpus. We PoS-tagged all words in each text in the corpus using the Stanford PoS tagger. Next, we generated an abstractness vector for each file and trained three WEKA classifiers - a support vector machine with sequential minimal optimization (SMO), a multilayer perceptron (MP), and a random forest classifier (RF). We used leave-one-out cross-validation. Table 1 shows the averages of the results from all three classifiers for abstractness as well as for a set of traditional stylistic features.</p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="6.3129583333333334cm" url="Pictures/68881cc1ceb98cbd9cfa54ecbd4ec4d5.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">While not the top performing stylistic feature, abstractness outperforms most standard features including function words. The confusion matrix in Table 2 – typical across all abstractness experiments - demonstrates that precision, recall, and F-measure are high for most authors. Some authors exhibit particularly high precision and recall (e.g. Lydia Zajc: 0.936/0.880, Fumiko Fujisaki: 0.800/0.960, etc.). This indicates that some authors use abstraction/concreteness in unique ways, but more work is needed to determine the patterns of abstractness that set these authors apart.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion and Future Work </head>
+                <p style="text-align: left; ">We presented an authorship attribution methodology based on the use of abstractness/concreteness ratings. The early results show promise but further research is needed: </p>
+                <list type="unordered">
+                    <item>Perform further experiments with different datasets: We have several datasets available – a Victorian authors dataset, a poetry dataset based on Project Guttenberg, an 18
+                        <hi rend="superscript">th</hi> century American/British documents dataset, and a 19
+                        <hi rend="superscript">th</hi> century American literary dataset.
+                    </item>
+                    <item>Explore automatic methods for rating abstractness/concreteness.</item>
+                    <item>Investigate the issue of abstractness/concreteness complementarity and its impact on authorship attribution. </item>
+                    <item>Consider the abstractness of longer multiword phrases in authorship attribution. </item>
+                    <item>Explore the use of metaphors in attribution.</item>
+                    <item>Study abstractness patterns in literary works and their impact on the attribution accuracy.</item>
+                </list>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Assaf D., Neuman Y., Cohen Y., Argamon S., Howard N., Last M., Frieder O., Koppel M. </hi>(2013). Why “dark thoughts” aren’t really dark: A novel algorithm for metaphor identification. In 
+                        <hi rend="italic">Computational Intelligence, Cognitive Algorithms, Mind, and Brain (CCMB), 2013 IEEE Symposium on</hi>, pages 60–65. IEEE 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Brysbaert, M., Warriner, A.B., &amp; Kuperman, V.</hi> (2014).
+                        <hi rend="apple-converted-space"> </hi>Concreteness ratings for 40 thousand generally known English word lemmas.
+                        <hi rend="apple-converted-space"> </hi>
+                        <hi rend="italic">Behavior Research Methods</hi>, 46, 904-911.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Birke J., Sarkar A.</hi> (2006). A Clustering Approach for the Nearly Unsupervised Recognition of Nonliteral Language. In 
+                        <hi rend="italic">Proceedings of the 11th Conference of the European Chapter of the ACL</hi>, pages 329–336, Trento, Italy. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Birke J., Sarkar A. </hi>(2007). Active Learning for the Identification of Nonliteral Language. In 
+                        <hi rend="italic">Proceedings of the Workshop on Computational Approaches to Figurative Language</hi>, pages 21–28, Rochester, NY. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Coltheart, M.</hi> (1981). The MRC psycholinguistic database. 
+                        <hi rend="italic">The Quarterly Journal of Experimental Psychology,</hi> 33, 497-505. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Gao G., Choi E., Choi Y., Zettlemoyer L. </hi>(2018). Neural metaphor detection in context. In 
+                        <hi rend="italic">Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing</hi>, pages 607–613, Brussels, Belgium. Association for Computational Linguistics. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Hall M., Frank E., Holmes G., Pfahringer B., Reutemann P., Witten I., </hi>(2009). 
+                        <hi rend="italic">The WEKA Data Mining Software: An Update; SIGKDD Explorations</hi>, Volume 11, Issue 1
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Klebanov B., Leong C., Flor M. </hi>(2015). Supervised word-level metaphor detection: Experiments with concreteness and reweighting of examples. In 
+                        <hi rend="italic">Proceedings of the Third Workshop on Metaphor in NLP</hi>, pages 11–20, Denver, CO. ACL. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Köper, M &amp; Schulte Im Walde, S. </hi>(2016). Automatically Generated Affective Norms of Abstractness, Arousal, Imageability and Valence for 350 000 German Lemmas. 
+                        <hi rend="italic">LREC’16</hi>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kwong O.Y.</hi> (2011), Measuring Concept Concreteness from the Lexicographic Perspective, 
+                        <hi rend="italic" xml:space="preserve">25th Pacific Asia Conference on Language, Information and Computation, pages 60–69 </hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Lewis, D. D.; Yang, Y.; Rose, T.; and Li, F.</hi> (2004). RCV1: A New Benchmark Collection for Text Categorization Research. 
+                        <hi rend="italic">Journal of Machine Learning Research</hi>, 5:361-397
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Maudslay R.,</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="bold"> </hi>
+                        </hi>
+                        <hi rend="bold">Pimentel T.,</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="bold"> </hi>
+                        </hi>
+                        <hi rend="bold">Cotterell R.,</hi>
+                        <hi rend="apple-converted-space">
+                            <hi rend="bold"> </hi>
+                        </hi>
+                        <hi rend="bold">Teufel S.</hi> (2020). Metaphor Detection using Context and Concreteness, 
+                        <hi rend="italic">Proceedings of the Second Workshop on Figurative Language Processing</hi>, pages 221—226.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Neuman Y., Assaf D, Cohen Y., Last M., Argamon S., Howard N., Frieder O.</hi> (2013). Metaphor identification in large texts corpora. 
+                        <hi rend="italic">PloS One</hi>, 8(4):e62343. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">NIST</hi>: 
+                        <ref target="https://trec.nist.gov/data/reuters/reuters.html">https://trec.nist.gov/data/reuters/reuters.html</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Paivio, A., Yuille. J., Madigan, S.</hi> (1968). Concreteness, imagery, and meaningfulness values for 925 nouns. 
+                        <hi rend="italic">Journal of experimental psychology</hi>, 76(1p2):1 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Penn Treebank Tags</hi>: 
+                        <ref target="https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html">https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rei M., Bulat L., Kiela D., Shutova E.</hi> (2017). Grasping the finer point: A supervised similarity network for metaphor detection. 
+                        <hi rend="italic">Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing</hi>, pages 1537–1546.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Santorini B.</hi> (1990) "Part-of-Speech Tagging Guidelines for the Penn Treebank Project (3rd Revision)"
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Shutova E., Teufel S., Korhonen A.</hi> (2013). Statistical Metaphor Processing. 
+                        <hi rend="italic">Computational Linguistics</hi>, 39(2):301–353. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Sporleder C., Li L. </hi>(2009). Unsupervised Recognition of Literal and Non-Literal Use of Idiomatic Expressions. In 
+                        <hi rend="italic">Proceedings of the 12th Conference of the European Chapter of the ACL</hi>, pages 754–762, Athens, Greece. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Spreen O., Schulz. R.,</hi> (1966). Parameters of abstraction, meaningfulness, and pronunciability for 329 nouns. 
+                        <hi rend="italic">Journal of Verbal Learning and Verbal Behavior</hi>, 5(5):459–468.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Tsvetkov Y., Boytsov L., Gershman A., Nyberg E., Dyer C.</hi> (2014). Metaphor Detection with Cross-Lingual Model Transfer. In 
+                        <hi rend="italic">Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics</hi>, pages 248–258. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Tsvetkov Y., Mukomel E., Gershman A.</hi> (2013). Cross-lingual metaphor detection using common semantic features. In 
+                        <hi rend="italic">Proceedings of the First Workshop on Metaphor in NLP</hi>, pages 45– 51, Atlanta, Georgia. ACL. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Turney P., Neuman Y., Assaf D., Cohen Y.</hi> (2011). Literal and Metaphorical Sense Identification through Concrete and Abstract Context. In 
+                        <hi rend="italic">Proceedings of the Conference on Empirical Methods in Natural Language Processing</hi>, pages 680–690, Edinburgh, UK. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Wu C., Wu F., Chen Y., Wu S., Yuan Z., Huang Y.</hi> (2018). Neural metaphor detecting with CNN-LSTM model. In 
+                        <hi rend="italic">Proceedings of the Workshop on Figurative Language Processing</hi>, pages 110–114, New Orleans, Louisiana. ACL. 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

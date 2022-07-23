@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Fifty Shades of Twilight: Computationally Comparing Collocations in Twilight and 50 Shades of Grey</title>
+                <author>
+                    <persName>
+                        <surname>Bordalejo</surname>
+                        <forename>Barbara</forename>
+                    </persName>
+                    <affiliation>University of Lethbridge</affiliation>
+                    <email>Barbara.bordalejo@uleth.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Van Zundert</surname>
+                        <forename>Joris J.</forename>
+                    </persName>
+                    <affiliation>Huygens Institute for the History of the Netherlands – Royal Netherlands Academy of Arts and Sciences</affiliation>
+                    <email>joris.van.zundert@huygens.knaw.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Neugarten</surname>
+                        <forename>Julia</forename>
+                    </persName>
+                    <affiliation>Huygens Institute for the History of the Netherlands – Royal Netherlands Academy of Arts and Sciences</affiliation>
+                    <email>julia.neugarten@huygens.knaw.nl</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T10:24:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>fanfiction</term>
+                    <term>narrative transformation</term>
+                    <term>collocation analysis</term>
+                    <term>computational hermeneutics</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>attribution studies and stylometric analysis</term>
+                    <term>text mining and analysis</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>We present the results of measuring collocation similarity between 
+                <hi rend="italic" xml:space="preserve">Twilight </hi>(Meyer 2005) and 
+                <hi rend="italic" xml:space="preserve">50 Shades of Grey </hi>(James 2011)
+                <hi rend="italic" xml:space="preserve">. 50 Shades </hi>began as 
+                <hi rend="italic">Twilight-</hi>fanfiction (Brennan and Large 2014). We use these texts for a case study analyzing the transformative effects of fanfiction on the narratives that fans call “canon”. Tosenberger (2014:17) asserts that “fanfiction is given life by what other spaces don’t allow, it […] fills those spaces with stories for which the canon has neither room nor desire.” Fanfiction is a narrative space to explore non-normative topics and perspectives.. 
+                <hi rend="italic" xml:space="preserve">Twilight </hi>narrates the romance of a teenage girl and her vampire boyfriend. 
+                <hi rend="italic" xml:space="preserve">50 Shades </hi>amplifies the mostly unconsummated sexual tension in 
+                <hi rend="italic">Twilight</hi> and eliminates the novel’s supernatural elements. In 
+                <hi rend="italic" xml:space="preserve">50 Shades, </hi>the male protagonist is dangerous not because he is a vampire, but because of his S/M inclinations. Our challenge is to model and quantify these transformations computationally. 
+            </p>
+            <p>Paris (2016) classifies 
+                <hi rend="italic">50 Shades</hi> as “mommy porn” while 
+                <hi rend="italic">Twilight</hi> has been called “abstinence porn” (Seifert 2005). In its vocabulary and collocations, 
+                <hi rend="italic" xml:space="preserve">Twilight </hi>seems like a non-explicit model for 
+                <hi rend="italic">50 Shades</hi>. To test this, we make an educated guess by initially selecting four terms: “soft”, “hard”, “gaze”, and “stare”. We hypothesize that words collocating with “soft” and “hard” differ between texts: in 
+                <hi rend="italic" xml:space="preserve">Twilight, </hi>Edward’s skin is hard, while in 
+                <hi rend="italic" xml:space="preserve">50 Shades </hi>Christian’s penis is hard. Additionally, subjects and objects of stares and gazes differ between texts, with looks conveying love or longing in 
+                <hi rend="italic">Twilight</hi> while conveying sexual desire in
+                <hi rend="italic" xml:space="preserve"> 50 Shades</hi>. For each appearance of these terms we compute the pointwise mutual information (PMI) for collocated words in a 9-token context. PMI expresses the probability of a collocation occurring given the occurrence of the individual words (Bouma 2009:3). Window size was based on mean sentence length. A baseline for comparison was computed from the same measure for the YA-novels 
+                <hi rend="italic">Eleanor &amp; Park</hi> (Rowell 2012), 
+                <hi rend="italic">The Fault in Our Stars</hi> (Green 2012), and 
+                <hi rend="italic">Shiver</hi> (Stiefvater 2009). We used Linguistic Inquiry &amp; Word Count (Pennebaker et al. 2015) to calculate the percentage of words related to a specific domain as defined by LIWC’s dictionaries within the PMI-results. We then compared the percentage of words associated with the selected terms between the books and compared the LIWC-results for the PMI-data to the LIWC-results for the books as a whole.
+            </p>
+            <p>Analyzing tokens identified by PMI as significantly collocated with the target words, more words from the LIWC-category “perception” occur around the term “hard” in 
+                <hi rend="italic">50 Shades</hi> than in 
+                <hi rend="italic" xml:space="preserve">Twilight </hi>(9% vs. 7%). 
+                <hi rend="italic" xml:space="preserve">Twilight </hi>shows more perceptions-terms around “soft” (12% vs. 15%). Thus, perceptions are more frequently described as “hard” in 
+                <hi rend="italic" xml:space="preserve">50 Shades </hi>and more frequently as “soft” in 
+                <hi rend="italic" xml:space="preserve">Twilight. </hi>In 
+                <hi rend="italic" xml:space="preserve">Twilight </hi>more verbs occurred around “soft” (20%) than in 
+                <hi rend="italic" xml:space="preserve">50 Shades, </hi>where 13% of significantly collocated tokens for “soft” were verbs. This suggests that more “soft” actions are taken in 
+                <hi rend="italic" xml:space="preserve">Twilight </hi>than in 
+                <hi rend="italic" xml:space="preserve">50 Shades, </hi>which would fit our hypothesis. In 
+                <hi rend="italic" xml:space="preserve">50 Shades, </hi>the word “stare” more frequently occurred near words relating to biological features or processes (9%) than in 
+                <hi rend="italic" xml:space="preserve">Twilight </hi>(3%). Similarly, “gaze” occurred around words relating to biological processes in 
+                <hi rend="italic" xml:space="preserve">50 Shades </hi>(7%
+                <hi rend="italic" xml:space="preserve">) </hi>and only 5% in 
+                <hi rend="italic">Twilight.</hi> It thus appears that biological processes and parts of the body are often looking and being looked at in both texts, but more frequently in 
+                <hi rend="italic">50 Shades.</hi>
+            </p>
+            <p>Our analysis confirms that 
+                <hi rend="italic" xml:space="preserve">Twilight </hi>is non-explicit: it scores 0,01% in LIWC’s sexuality- and swearing-categories. In LIWC-categories relating to the social and to perception, the texts’ score similarly. Our results seem to confirm the hypothesis that 
+                <hi rend="italic" xml:space="preserve">Twilight </hi>can be regarded as the non-explicit counterpart to 
+                <hi rend="italic" xml:space="preserve">50 Shades. </hi>As a next step, we intend to examine the difference in gender-related words in the texts: 4% of words for 
+                <hi rend="italic" xml:space="preserve">Twilight </hi>and 5% for 
+                <hi rend="italic">50 Shades</hi> were male-related, with only 1% female-related words in both
+                <hi rend="italic">.</hi> Intuitively this makes sense as both are first-person narratives by female narrators focused on their male love interests
+                <hi rend="italic" xml:space="preserve">. </hi>However, male-related words were less frequent in the PMI-results for the selected terms than in the texts as a whole. 
+            </p>
+            <p>Combining PMI and LIWC-results, we developed a method to compare collocations of specific words between texts. This method is a step towards digital hermeneutics, the possibility of “interpreting with digital machines” (Romele, Severo, and Furia 2020:73). During our presentation, we will present more detailed results, baseline comparisons, and will consider possibilities to improve their evaluation and discuss possible next steps such as analysis of word embeddings.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Bouma, G.</hi> (2009). Normalized (Pointwise) Mutual Information in Collocation Extraction. 
+                        <hi rend="italic">Von Der Form Zur Bedeutung: Texte Automatisch Verarbeiten / From Form to Meaning: Processing Texts Automatically: Proceedings of the Biennial GSCL Conference 2009</hi>. Tübingen: Gunter Narr Verlag, pp. 31–39.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Brennan, J. and Large, D.</hi> (2014). ‘Let’s get a bit of context’: ‘Fifty shades’ and the phenomenon of ‘pulling to publish’ in ‘twilight’ fan fiction. 
+                        <hi rend="italic">Media International Australia, Incorporating Culture &amp; Policy</hi>(152). Media International Australia, Incorporating Culture &amp; Policy: 27–39 doi:
+                        <ref target="https://doi.org/10.3316/informit.567849615699510">10.3316/informit.567849615699510</ref>. 
+                        <ref target="https://search.informit.org/doi/10.3316/informit.567849615699510">https://search.informit.org/doi/10.3316/informit.567849615699510</ref> (accessed 9 December 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Green, J.</hi> (2012). 
+                        <hi rend="italic">The Fault in Our Stars</hi>. 1st ed. New York: Durron Books.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">James, E. L.</hi> (2011). 
+                        <hi rend="italic">Fifty Shades of Grey</hi>. 1st ed. Waxahachie: The Writer’s Coffee Shop.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Meyer, S.</hi> (2005). 
+                        <hi rend="italic">Twilight</hi>. London: Atom, Little, Brown Book group.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Paris, L.</hi> (2016). Fifty Shades of Fandom: The Intergenerational Permeability of Twilight Fan Culture. 
+                        <hi rend="italic">Feminist Media Studies</hi>, 
+                        <hi rend="bold">16</hi>(4): 678–92 doi:
+                        <ref target="https://doi.org/10.1080/14680777.2016.1193297">10.1080/14680777.2016.1193297</ref>. 
+                        <ref target="http://www.tandfonline.com/loi/rfms20">http://www.tandfonline.com/loi/rfms20</ref> (accessed 9 December 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pennebaker, J. W., Boyd, R. L., Jordan, K. and Blackburn, K.</hi> (2015). The development and psychometric properties of LIWC2015 University of Texas at Austin 
+                        <ref target="https://repositories.lib.utexas.edu/bitstream/handle/2152/31333/LIWC2015_LanguageManual.pdf">https://repositories.lib.utexas.edu/bitstream/handle/2152/31333/LIWC2015_LanguageManual.pdf</ref> (accessed 9 December 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Romele, A., Severo, M. and Furia, P.</hi> (2020). Digital hermeneutics: from interpreting with machines to interpretational machines. 
+                        <hi rend="italic">AI &amp; SOCIETY</hi>, 
+                        <hi rend="bold">35</hi>(1): 73–86 doi:
+                        <ref target="https://doi.org/10.1007/s00146-018-0856-2">10.1007/s00146-018-0856-2</ref>. 
+                        <ref target="https://doi.org/10.1007/s00146-018-0856-2">https://doi.org/10.1007/s00146-018-0856-2</ref> (accessed 9 December 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rowell, R.</hi> (2012). 
+                        <hi rend="italic">Eleanor &amp; Park</hi>. London: Orion Books.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Seifert, C.</hi> (2008). Bite Me! (Or Don’t): ‘Twilight’ Has Created a New YA Genre: Abstinence Porn. 
+                        <hi rend="italic">Bitch Media</hi>
+                        <ref target="https://www.bitchmedia.org/article/bite-me-or-dont">https://www.bitchmedia.org/article/bite-me-or-dont</ref> (accessed 9 December 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stiefvater, M.</hi> (2009). 
+                        <hi rend="italic">Shiver</hi>. New York: Scholastic Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Tosenberger, C.</hi> (2014). Mature Poets Steal: Children’s Literature and the Unpublishability of Fanfiction. 
+                        <hi rend="italic">Children’s Literature Association Quarterly</hi>, 
+                        <hi rend="bold">39</hi>(1): 4–27 doi:
+                        <ref target="https://doi.org/10.1353/chq.2014.0010">10.1353/chq.2014.0010</ref>. 
+                        <ref target="https://muse.jhu.edu/article/538976">https://muse.jhu.edu/article/538976</ref> (accessed 9 December 2021).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

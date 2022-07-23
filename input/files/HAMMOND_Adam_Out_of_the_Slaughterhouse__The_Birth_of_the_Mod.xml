@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Out of the Slaughterhouse: The Birth of the Modern Detective Story Corpus</title>
+                <author>
+                    <persName>
+                        <surname>Hammond</surname>
+                        <forename>Adam</forename>
+                    </persName>
+                    <affiliation>University of Toronto, Canada</affiliation>
+                    <email>adam.hammond@utoronto.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Stern</surname>
+                        <forename>Simon</forename>
+                    </persName>
+                    <affiliation>University of Toronto, Canada</affiliation>
+                    <email>simon.stern@utoronto.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>detective fiction</term>
+                    <term>holmes</term>
+                    <term>moretti</term>
+                    <term>clues</term>
+                    <term>evidence</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>digital publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Law and legal studies</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; "> </p>
+                <p style="text-align: left; ">We introduce the Birth of the Modern Detective Story (BMDS) Corpus, a new dataset for exploring the evolution of detective fiction during a crucial period of its development. It currently comprises 380 detective stories published between 1890 and 1920, provided in full text with relevant metadata and richly annotated for 61 categories related to the types of crimes, clues, and evidence represented. The project explores in more systematic fashion some of the work begun in Franco Moretti’s “The Slaughterhouse of Literature” (2000). All data is freely accessible and open-access. We explain our motivations for developing the dataset, describe the dataset, explain our theoretical discoveries, and lay out some research trajectories.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Motivations</head>
+                <p style="text-align: left; "> </p>
+                <p style="text-align: left; ">Moretti’s “Slaughterhouse of Literature” asks a fascinating question: Why did the Sherlock Holmes stories “survive” when so many contemporaneous “competitors” were forgotten? It comes to an interesting conclusion: that their success 
+                    <hi rend="italic" xml:space="preserve">cannot </hi>be explained by their use of what Moretti calls “decodable” clues — which, he finds, are neither exclusive to the Holmes stories nor consistently employed in them.
+                </p>
+                <p style="text-align: left; ">However promising, Moretti’s approach is hampered by theoretical and methodological limitations as well as by its limited and opaque corpus. His categories of clues — necessary, visible, decodable — are poorly defined. The corpus of texts he investigates is small, inaccessible, and not described in detail. He performs two experiments: the first on a set of “about twenty” stories he calls “very narrow” and “haphazard” in selection; the second on 108 detective stories published in 
+                    <hi rend="italic" xml:space="preserve">The Strand </hi>in the 1890s, the titles of which are not provided. Given its opaque corpus and imprecise terms, it is impossible to verify the article’s claims. 
+                </p>
+                <p style="text-align: left; "> </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Description of the BMDS Corpus</head>
+                <p style="text-align: left; "> </p>
+                <p style="text-align: left; ">The BMDS corpus offers several methodological advances over “Slaughterhouse,” and makes available all texts and annotations available. Whereas Moretti focuses haphazardly on the 1890s, we look at the years 1890–1920, during which the genre’s conventions are agreed to have consolidated (Humphreys 2017). We aim to include 
+                    <hi rend="italic">all</hi> detective stories published in English during this period. At present, we have 380 stories. We began with those available for free in accessible data formats (now complete), moved next to those that can be purchased (underway), and will then ingest those that must be scanned and OCR’ed.
+                </p>
+                <p style="text-align: left; ">The BMDS Corpus is being assembled as follows. Starting in May 2021, we employed eleven separate student annotators. Working in pairs, students read a story and fill out a form asking them 61 questions, with terms set out in the Annotation Guidelines (Hammond et al. 2021). These include questions about the number, gender, and role of the story’s detectives, assistants, victims, and culprits; the types and motivations of crimes investigated in the story; the types of clues and evidence present in the story; whether the crime is solved; and how subjectively satisfying the story is. This data is recorded in tabular form. The Corpus also includes Dublin Core metadata for all stories (380) and authors (20) in the corpus. Further, it includes every story in plain text form.</p>
+                <figure>
+                    <graphic n="1001" width="13.612252777777778cm" height="7.968111111111111cm" url="Pictures/a9ee4be73ae922b8b7ce29912580a308.png" rend="inline"/>
+                    <head>Screen shot from tabular data recorded for individual stories.</head>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Theoretical Contributions </head>
+                <p style="text-align: left; "> </p>
+                <p style="text-align: left; ">The BMDS Corpus makes several important theoretical advances over “Slaughterhouse”; most notably, it provides several new categories of clues, and it introduces the distinction between the “investigation” and “reveal” phases of detective stories. </p>
+                <p style="text-align: left; ">            Our Guidelines clearly distinguish between four types of clue: evoked, illegible, legible, and usable. For instance, a legible clue is defined as one that is “presented in sufficient detail to appear to the reader as a clue” whereas a usable clue is “a legible clue that leads an alert reader in the direction of the correct solution to the crime” (this distinction is not present is Moretti). </p>
+                <p style="text-align: left; ">Our understanding of clues depends not merely on whether clues are 
+                    <hi rend="italic" xml:space="preserve">present </hi>but how they are 
+                    <hi rend="italic" xml:space="preserve">used </hi>in the story’s plot. We divide detective fiction plots into two parts: the “investigation phase,” during which the crime is actively investigated; and the “reveal phase,” during which the detective presents their solution. Our clue categories depend on how particular clues 
+                    <hi rend="italic">appear to the reader</hi> in each of these two phases; for example, we distinguish between a clue that is “legible but not usable” (one whose legibility does not point an alert reader in the direction of the correct solution) versus one that is “usable in real time” (one that does). (See Figs 2 and 3).
+                </p>
+                <figure>
+                    <graphic n="1002" width="9.319294444444445cm" height="5.740925cm" url="Pictures/03ccaf25626b45053262e390a1f89599.png" rend="inline"/>
+                    <head>Screen shot from the input form annotators use to enter findings. This is one of 61 questions, which asks the annotator to input the types of clues employed in the given story.</head>
+                </figure>
+                <figure>
+                    <graphic n="1003" width="9.01608888888889cm" height="8.478591666666667cm" url="Pictures/841c85eb523b788383e3362f9a3b192e.png" rend="inline"/>
+                    <head>Screen shot from Annotation Guidelines corresponding to the choice in Fig. 2.</head>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Research Applications</head>
+                <p style="text-align: left; ">Our fuller specification of the types and functions of clues makes it possible to refine and revise Moretti’s claims about the counterintuitive result he discerned, concerning the haphazard and inconsistent use of “decodable” clues. Changes over time that reflect our distinction between “legible” and “usable” clues suggest that mystery writers 
+                    <hi rend="italic">did</hi> in fact come to rely more heavily on clues during this period — but not necessarily clues planted for readers to use. Detectives were increasingly required to solve crimes by reasoning on the basis of trace evidence, and this pattern shows a marked change during the period surveyed here. 
+                </p>
+                <p style="text-align: left; ">Another possible application involves the gender dynamics that animate these stories. Although both authors and detectives were usually male, a considerable number of women wrote in this genre, sometimes with female detectives. Exploring the gender of the authors, detectives, victims, suspects, and culprits may allow for insights into styles of detection, types of clues, varying emphasis on different types of crimes, and the like.</p>
+                <p style="text-align: left; ">The “investigation” / “reveal” distinction may facilitate various kinds of discoveries relating to some of the issues above and other discoveries involving the stories’ structure and effects. Does the ratio of the investigation phase to the reveal phase vary with types of clues, or types of crimes? Over time, do we see that ratio stabilize, as writers come to perceive preferences among readers? Does the language of the reveal phase exhibit distinctive features that appear to enhance reader satisfaction? </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hammond, A., Stern, S., Colclough, Z., Côté, C., Maharaj, A., Maleshev, M, Michielin, J., Oh, S., Kim, S., Selvaraj, M., Wen, W.</hi> (2021). BMDS Annotation Guidelines. 
+                        <ref target="https://tinyurl.com/bmdsguidelines">https://tinyurl.com/bmdsguidelines</ref> (accessed April 28, 2020).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Humphreys, A.</hi> (2017). British Detective Fiction in the 19th and Early 20th Centuries. 
+                        <hi rend="italic">Oxford Research Encyclopedia: Literature</hi>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Moretti, F.</hi> (2000). The Slaughterhouse of Literature. 
+                        <hi rend="italic">Modern Literature Quarterly</hi> 61(1), pp. 207–227. 2000.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

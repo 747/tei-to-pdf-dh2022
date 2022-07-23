@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Extracting and providing online access to annotated and semantically enriched historical data.The AGODA project</title>
+                <author>
+                    <persName>
+                        <surname>Puren</surname>
+                        <forename>Marie Anna</forename>
+                    </persName>
+                    <affiliation>Epitech, MNSHS, France; Centre Jean-Mabillon, Ecole nationale des chartes, France</affiliation>
+                    <email>marie.puren@epitech.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vernus</surname>
+                        <forename>Pierre</forename>
+                    </persName>
+                    <affiliation>LARHRA, France; Université Lyon 2, France</affiliation>
+                    <email>pierre.vernus@msh-lse.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pellet</surname>
+                        <forename>Aurélien</forename>
+                    </persName>
+                    <affiliation>Epitech, MNSHS, France</affiliation>
+                    <email>aurelien.pellet@epitech.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bourgeois</surname>
+                        <forename>Nicolas</forename>
+                    </persName>
+                    <affiliation>Epitech, MNSHS, France</affiliation>
+                    <email>nicolas.bourgeois@epitech.eu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Digital History</term>
+                    <term>Parlementiary Debates</term>
+                    <term>TEI</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>data publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>natural language processing</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The AGODA project
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text">
+                        <ref target="https://github.com/mpuren/agoda">https://github.com/mpuren/agoda</ref>
+                    </p>
+                </note> (Puren and Vernus, 2021) is one of five pilot projects supported by the DataLab of the Bibliothèque nationale de France. It aims to create an online platform facilitating the exploration and use of the parliamentary debates of the Chamber of Deputies published in the 
+                <hi rend="italic">Journal officiel</hi> from 1881 to 1940. In the framework of the DataLab, we are working on a test sub-corpus, namely the parliamentary cycle from 1889 to 1893, to test our hypotheses on a smaller dataset.
+            </p>
+            <p>Over the past sixty years, a great deal of work has been done on parliamentary debates (Chester and Bowring, 1962; Franklin and Norton, 1993). It is indeed a valuable source for historians (Marnot, 2000; Ouellet and Roussel-Beaulieu, 2003; Ihalainen, 2016; Lemercier, 2021), political scientists (Van Dijk, 2010), sociologists (Cheng, 2015) or linguists (de Galembert et al., 2013; Hirst et al., 2014; Rheault et al., 2016). Access to digitised and ocerised debates thus seems to have a positive effect on the number of historical works using these documents (Mela et al., 2022). The same effect can be observed for other disciplines using contemporary debates (Fišer et al., 2018; Fišer et al., 2020). AGODA is thus part of a wider movement to facilitate the use and analysis of parliamentary data, following the example of ParlaClarin (Fišer and Lenardič, 2018) and ParlaMint (Erjavec et al., 2022a; Erjavec et al., 2022b), which propose to produce comparable and multilingual Parliamentary Proceedings Corpora according to the XML-TEI standard. Naomi Truan has also produced a corpus of parliamentary debates encoded in XML-TEI (Truan, 2016; Truan and Romary, 2021). The production of this type of resource facilitates the publication of works exploiting this data to better understand French political discourse (Diwersy et al., 2018; Blaette et al., 2020; Diwersy and Luxardo, 2020).</p>
+            <p>Between 1881 and 1899, 2596 issues of the 
+                <hi rend="italic">Journal Officiel</hi> were published (50791 JPG images). The debates are also in TXT format but put online without extensive post-correction: the quality of the OCR is not sufficient to provide a satisfactory online browsing experience, and it could have a negative impact on the analyses performed on these texts (van Strien, 2020). Therefore, we chose to ocerise the text, to obtain a better-quality result. We use the PERO OCR (Kodym and Hradiš, 2021; Kohút and Hradiš, 2021; Kišš et al., 2021) based solution developed by the SODUCO project
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p rend="footnote text">
+                        <ref target="https://soduco.github.io/">https://soduco.github.io/</ref>
+                    </p>
+                </note>. This tool, still in private alpha version, has been used to prepare the data in (Abadie et al., 2022) that will be accessible via Zenodo.
+            </p>
+            <p>Ocerised texts are obtained in JSON format; we are developing Python scripts to convert this output into an XML file corresponding to the chosen TEI model. This model is formalised with an adapted XML schema, created using an ODD (Rahtz and Burnard, 2013). We chose to use the ODD created by ParlaClarin (Erjavec and Pančur, 2021) which can be easily adapted to annotate historical parliamentary debates. In the case of France, the rules for transcribing debates were set in the 19th century; thus, the recordings of today's debates are very similar to those produced during the Third Republic. The TEI-encoded corpus will be stored in an eXist-db database, and it will be visualised using the TEI Publisher application, which can transform the source data into HTML web pages. The parliamentary debates will thus be made available to online users as a digital edition and integrated into an application context.</p>
+            <p>We will also present the first analyses we have carried out on this corpus with "bag-of-words" techniques - these being not too sensitive to the quality of the OCR. We first used topic modelling, an unsupervised learning method that allows us to discover the latent semantic structures of a corpus of texts, without using semantic and lexical resources (Blei et al., 2003). This method is well suited to study parliamentary debates (Bourgeois et al., 2022).</p>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="10.759722222222223cm" url="Pictures/47c5da5ce3f9377487ba1a7b2c6dc146.png" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">Distribution of four different topics over time</p>
+            <p>Alternatively, we can use word embeddings to reduce the dimension of the original space from several tens of thousands of forms to a hundred axes, and then apply classical data science tools such as clustering or correlation analysis on the reduced space (Mikolov et al., 2013). Word embedding has thus shown its interest in the study of parliamentary debates (Rheault and Cochrane, 2020). We used a continuous bag-of-words model for dimension reduction and an unsupervised classification algorithm - in this case DBSCAN - to group words into clusters.</p>
+            <figure>
+                <graphic n="1002" width="16.002cm" height="10.759722222222223cm" url="Pictures/47c5da5ce3f9377487ba1a7b2c6dc146.png" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">t-SNE projection of the centroïds of the clusters</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Abadie, N., Carlinet, E., Chazalon, J., Dumenieu, B.</hi> (2022). A Benchmark of Named Entity Recognition Approaches in Historical Documents. Application to 19th Century French Directories. DAS 2022 15th IAPR International Workshop on Document Analysis Systems. La Rochelle, France. May 22-25, 2022.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Blaette, A., Gehlhar, S. and Leonhardt, C.</hi> (2020). The Europeanization of Parliamentary Debates on Migration in Austria, France, Germany, and the Netherlands. Proceedings of the Second ParlaCLARIN Workshop. Marseille, France: European Language Resources Association, pp. 66–74 
+                        <ref target="https://aclanthology.org/2020.parlaclarin-1.12">https://aclanthology.org/2020.parlaclarin-1.12</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Blei, D. M., Ng, A. Y. and Jordan, M. I.</hi> (2003). Latent dirichlet allocation. The Journal of Machine Learning Research, 3: 993–1022.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Cheng, J. E.</hi> (2015). Islamophobia, Muslimophobia or racism? Parliamentary discourses on Islam and Muslims in debates on the minaret ban in Switzerland. Discourse &amp; Society, 
+                        <hi rend="bold">26</hi>(5). SAGE Publications.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Chester, D. N. and Bowring, N.</hi> (1962). Questions in Parliament. Oxford: Clarendon Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Diwersy, S., Frontini, F. and Luxardo, G.</hi> (2018). The Parliamentary Debates as a Resource for the Textometric Study of the French Political Discourse. Proceedings of the ParlaCLARIN@LREC2018 Workshop. Miyazaki, Japan 
+                        <ref target="https://hal.archives-ouvertes.fr/hal-01832649">https://hal.archives-ouvertes.fr/hal-01832649</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Diwersy, S. and Luxardo, G.</hi> (2020). Querying a large annotated corpus of parliamentary debates. LREC, ParlaCLARIN Workshop. (Proceedings of the Second ParlaCLARIN Workshop). Marseille, France 
+                        <ref target="https://hal.archives-ouvertes.fr/hal-03317717">https://hal.archives-ouvertes.fr/hal-03317717</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Erjavec, T. and Pančur A.</hi> (2021) Parla-CLARIN: A TEI Schema for Corpora of Parliamentary Proceedings 
+                        <ref target="https://clarin-eric.github.io/parla-clarin/">https://clarin-eric.github.io/parla-clarin/</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Erjavec, T., Pančur A. and Kopp M.</hi> (2022a). ParlaMint: Comparable Parliamentary Corpora. GLSL CLARIN ERIC 
+                        <ref target="https://github.com/clarin-eric/ParlaMint">https://github.com/clarin-eric/ParlaMint</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Erjavec, T., Ogrodniczuk, M., Osenova, P., Ljubešić, N., Simov, K., Pančur, A., Rudolf, M., et al.</hi> (2022b). The ParlaMint corpora of parliamentary proceedings. Language Resources and Evaluation doi:10.1007/s10579-021-09574-0. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fišer, D., Eskevich, M. and Jong, F. de (eds).</hi> (2018). Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018). Paris: European Language Resources Association (ELRA).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fišer, D., Eskevich, M. and Jong, F. de (eds).</hi> (2020). Proceedings of the Second ParlaCLARIN Workshop. Marseille: European Language Resources Association (ELRA).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fišer, D. and Lenardič, J.</hi> (2018). CLARIN resources for parliamentary discourse research. Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018). European Language Resources Association (ELRA), pp. 2–7.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Galembert, C. de, Rozenberg, O., Vigour, C. (eds)</hi> (2013). Faire parler le parlement: méthodes et enjeux de l’analyse des débats parlementaires pour les sciences sociales. Paris: LGDL-Lextenso.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hirst, G., Feng, V., Cochrane, C. and Naderi, N.</hi> (2014). Argumentation, Ideology, and Issue Framing in Parliamentary Discourse. In Cabrio E, Villata S. and Wyner A. S. (eds), Proceedings of the Workshop on Frontiers and Connections between Argumentation Theory and Natural Language Processing, Forlì-Cesena, Italy, July 21-25, 2014, CEUR-WS.org, 
+                        <ref target="http://ceur-ws.org/Vol-1341/paper6.pdf">http://ceur-ws.org/Vol-1341/paper6.pdf</ref> (accessed 26 April 2022). 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ihalainen, P., Ilie, C. and Palonen, K.</hi> (2018). Parliament and Parliamentarism: A Comparative History of a European Concept, New York, Oxford: Berghahn.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ilie, C.</hi> (2010). European Parliaments under Scrutiny: Discourse Strategies and Interaction Practices. Amsterdam; Philadelphia: John Benjamins.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kišš, M., Beneš, K. and Hradiš, M.</hi> (2021). AT-ST: Self-training Adaptation Strategy for OCR in Domains with Limited Transcriptions. In Lladós, J., Lopresti, D., Uchida, S. (eds) Document Analysis and Recognition – ICDAR 2021. ICDAR 2021. Lecture Notes in Computer Science, vol 12824. Cham: Springer, 
+                        <ref target="https://doi.org/10.1007/978-3-030-86337-1_31">https://doi.org/10.1007/978-3-030-86337-1_31</ref> (accessed 26 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kodym, O. and Hradiš, M.</hi> (2021). Page Layout Analysis System for Unconstrained Historic Documents. Document Analysis and Recognition – ICDAR 2021: 16th International Conference, Lausanne, Switzerland, September 5–10, 2021, Proceedings, Part II. Berlin, Heidelberg: Springer-Verlag, pp. 492–506.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kohút, J. and Hradiš, M.</hi> (2021). TS-Net: OCR Trained to Switch Between Text Transcription Styles. In Lladós, J., Lopresti, D., Uchida, S. (eds) Document Analysis and Recognition – ICDAR 2021. ICDAR 2021. Lecture Notes in Computer Science, vol 12824. Cham: Springer, 
+                        <ref target="https://doi.org/10.1007/978-3-030-86337-1_32">https://doi.org/10.1007/978-3-030-86337-1_32</ref> (accessed 26 April 2022). 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">La Mela, M., Norén, F., and Hyvönen, E.</hi> (2022). Digital parliamentary data in action (DiPaDA 2022), workshop co-located with the 6th Digital Humanities in the Nordic and Baltic countries conference (DHNB 2022), 
+                        <ref target="https://dhnb.eu/conferences/dhnb2022/workshops/dipada/">https://dhnb.eu/conferences/dhnb2022/workshops/dipada/</ref> (accessed 26 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Lemercier, C.</hi> (2021). Un catholique libéral dans le débat parlementaire sur le travail des enfants dans l’industrie (1840). Parlement[s], Revue d’histoire politique, 
+                        <hi rend="bold">33</hi>(1): 195–206.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Marnot, B.</hi> (2000). Les ingénieurs au Parlement sous la IIIe République. Paris: CNRS Editions.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mikolov, T., Chen, K., Corrado, G. and Dean, J.</hi> (2013). Efficient Estimation of Word Representations in Vector Space. ArXiv:1301.3781 [Cs] 
+                        <ref target="http://arxiv.org/abs/1301.3781">http://arxiv.org/abs/1301.3781</ref> (accessed 26 April 2022). 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ouellet, J. and Roussel-Beaulieu, F.</hi> (2003). Les débats parlementaires au service de l’histoire politique. Bulletin d’histoire politique, 
+                        <hi rend="bold">11</hi>(3). Bulletin d’histoire politique: 23–40 doi:10.7202/1060736ar.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Puren, M. and Vernus, P.</hi> (2021). AGODA : Analyse sémantique et Graphes relationnels pour l’Ouverture et l’étude des Débats à l’Assemblée nationale. Inauguration Du BnF DataLab. Paris, France 
+                        <ref target="https://hal.archives-ouvertes.fr/hal-03382765">https://hal.archives-ouvertes.fr/hal-03382765</ref> (accessed 26 April 2022). 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rahtz, S. and Burnard, L.</hi> (2013). Reviewing the TEI ODD system. Proceedings of the 2013 ACM Symposium on Document Engineering. (DocEng ’13). New York, NY, USA: Association for Computing Machinery, pp. 193–96.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rheault, L., Beelen, K., Cochrane, C. and Hirst, G</hi>. (2016). Measuring Emotion in Parliamentary Debates with Automated Textual Analysis. PLOS ONE, 
+                        <hi rend="bold">11</hi>(12). Public Library of Science: e0168843 doi:10.1371/journal.pone.0168843.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rheault, L. and Cochrane, C.</hi> (2020). Word Embeddings for the Analysis of Ideological Placement in Parliamentary Corpora. Political Analysis, 
+                        <hi rend="bold">28</hi>(1). Cambridge University Press: 112–33 doi:10.1017/pan.2019.26.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Strien, D. A. van, Beelen, K., Ardanuy, M. C., Hosseini, K., McGillivray, B. and Colavizza, G. </hi>(2020). Assessing the Impact of OCR Quality on Downstream NLP Tasks. ICAART doi:10.5220/0009169004840496.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Study of parliament group (GB), F., Mark N. and Norton, P.</hi> (1993). Parliamentary Questions. Oxford: Clarendon Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Truan, N.</hi> (2019). Débats parlementaires sur l'Europe à l'Assemblée nationale (2002-2012) [Corpus]. ORTOLANG (Open Resources and TOols for LANGuage) - www.ortolang.fr, v1.1, 
+                        <ref target="https://hdl.handle.net/11403/fr-parl/v1.1">https://hdl.handle.net/11403/fr-parl/v1.1</ref> (accessed 21 April 2022c).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Truan, N. and Romary, L.</hi> (2021). Building, Encoding, and Annotating a Corpus of Parliamentary Debates in XML-TEI: A Cross-Linguistic Account. Journal of the Text Encoding Initiative 
+                        <ref target="https://halshs.archives-ouvertes.fr/halshs-03097333">https://halshs.archives-ouvertes.fr/halshs-03097333</ref> (accessed 21 April 2022).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

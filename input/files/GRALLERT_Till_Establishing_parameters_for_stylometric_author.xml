@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Establishing parameters for stylometric authorship attribution of 19th-century Arabic books and periodicals</title>
+                <author>
+                    <persName>
+                        <surname>Romanov</surname>
+                        <forename>Maxim</forename>
+                    </persName>
+                    <affiliation>Universität Hamburg, Germany</affiliation>
+                    <email>maxim.romanov@uni-hamburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Grallert</surname>
+                        <forename>Till</forename>
+                    </persName>
+                    <affiliation>Humboldt-Universität zu Berlin, Germany</affiliation>
+                    <email>t.grallert@fu-berlin.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-27T10:36:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Arabic language</term>
+                    <term>Periodical Studies</term>
+                    <term>Stylometric authorship attribution</term>
+                    <term>19th century</term>
+                    <term>methodology</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Africa</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>attribution studies and stylometric analysis</term>
+                    <term>Asian studies</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">The vast majority of articles in Arabic periodicals from the late Ottoman Eastern Mediterranean (c.1850–1918) carried no explicit authorship information (Grallert 2021, Khayat 2019). Yet, the question of authorship has not received much attention in existing scholarship and is strikingly absent from Ayalon (1995), the standard work in the field. The common implicit hypothesis considers editors-cum-owners listed in mastheads and imprints as the sole authors of all the anonymous texts. This results in the conflation of periodicals with the intellectual output of a single person. Such a synonymous use of, for example, “Muḥammad Kurd ʿAlī” (1876–1953) and the monthly “
+                <hi rend="italic">al-Muqtabas</hi>” (published in Cairo and Damascus, 1906–1918) can be observed across the board (e.g. Seikaly 1981, Ezzerelli 2017). However, the hypothesis a) remains empirically untested, b) negates the known realities of periodical production and individual biographies, and c) ignores specific contexts of individual periodicals.
+            </p>
+            <p style="text-align: left; ">Computational stylistics or stylometry is a well-established approach in linguistics and literary studies for authorship attribution and genre detection for major languages of the Global North and has been successfully applied in English and German periodical studies (Benatti and King 2017; Kestemont, Martens, and Ries 2019). “Style”, in this context, refers to patterns in the distribution of most frequent linguistic features (most commonly, token or character n-grams). This pattern can be captured statistically and then used to identify authorship of specific texts with high accuracy. This identification works through clustering texts by their similarity according to a variety of distance measures (for example, delta, cosine, euclidean, manhattan, etc.; see, Burrows 2002; Eder 2015; Koppel, Schler, and Argamon 2009). The precision of the approach tends to improve with the length of analyzed samples and Eder (2015) recommends at least 5,000 tokens as a safe threshold for meaningful attribution of prose in English, German, Hungarian, and Polish.</p>
+            <p style="text-align: left; ">Arabic is a prime example for severely under-resourced languages and scripts of the Global South in the digital realm. Infrastructures of methods, tools, and funding often treat Arabic as an afterthought. Consequently, the rich textual heritage of Arabic-speaking and Islamicate societies is largely absent from debates in Digital Humanities (Miller, Savant, and Romanov 2018). Yet, it is one of the major languages of human cultural production. Arabic script is the second most common after the Latin alphabet and is used for 14 modern languages. Among them, Arabic is the fifth most common language globally with more than 420 million speakers in 26 countries.</p>
+            <p style="text-align: left; ">Our paper presents the first systematic test of stylometry as implemented in the “stylo” package for R (Eder, Rybicki, and Kestemont 2016) for the analysis of Arabic texts from the long nineteenth century. Extensive parameter testing aimed at empirically identifying optimal sets of parameters for reliable stylometric authorship attribution of Arabic texts. Romanov designed and implemented exhaustive tests of all possible combinations of key parameters on a control corpus of 300 books from 28 authors from the 19th–early 20th centuries (Romanov 2021). For example, MFF: 100-500 in increments of 100; types of MFF: both tokens and characters; lengths of MFF: from 1grams to 4grams in increments of 1; culling unique features: from 0 to 50% in increments of 10; all 14 distance measures available in “stylo”; lengths of samples: from 100 to 12,000 tokens in increments of 100.</p>
+            <figure>
+                <graphic n="1001" width="15.919097222222222cm" height="7.738180555555555cm" url="Pictures/922e3a60cc0a13a2f0ef5b16690869bf.png" rend="block"/>
+            </figure>
+            <p style="text-align: left; ">We only used consecutive slices in this experiment, since one of the main questions was “what would be the shortest text for which we may still expect reliable results?” The overall design of the test was simple: a new temporary corpus was automatically generated for each combination of parameters where each text was represented by two slices of set length (i.e. we used 600 slices for each test); then we checked how well we could match together slices from the same books and slices by the same authors using Ward’s clustering (`ward.D2` in `hclust`). The results were then graphed to allow for a visual exploration of how the precision of matching changes as we gradually increase slices. The graph above shows the best results, which have been achieved with 100-500 
+                <hi rend="italic">single tokens</hi> as MFF, no culling, and Eder’s Simple Delta as the distance measure. In a nutshell, with these parameters, we can expect almost 100% matching with 200-500 MFF and with slices as small as 2,500 tokens. All other combinations of parameters yielded noticeably worse results, which we will discuss in the presentation.
+            </p>
+            <p style="text-align: left; ">Grallert then tested the reliability of these parameters against a corpus of six periodicals from Baghdad, Beirut, Cairo, and Damascus with some 6 million tokens (Grallert 2020). This corpus differs from the original test corpus in two important ways: First, periodicals represent composites of large numbers of texts of varying length, genre, and authorship. Second, the vast majority of texts carries no explicit or unambiguous authorship information. Yet, the parameters established by Romanov performed equally well for this corpus. Due to the relatively low minimal sample length of 2,500–3,000 tokens, stylometry allows us to double the number of attributed articles in our corpus and to test the bulk of unattributed text against potential contributors and editors. Our results show that the reality of periodical production was more complex than the above-mentioned hypothesis. While Kāẓim al-Dujaylī can be confirmed as one of the editors of 
+                <hi rend="italic">Lughat al-ʿArab</hi> (Baghdad, 1911–14), we can clearly reject the idea of Muḥammad Kurd ʿAlī as the sole editor-cum-author of anonymous texts in 
+                <hi rend="italic">al-Muqtabas</hi>. We also identify distinct shifts in auctorial voices within periodicals that correspond, for instance, to extended absences of editors from the place of publication. Finally, we show reliable stylistic signals beyond authorship, such as translators and editors, that shed light on the process of periodical production.
+            </p>
+            <p style="text-align: left; ">In conclusion, our work shows that stylometry can be reliably applied to Arabic texts for the early decades of Arabic print and periodical production and we provide empirically tested and well-documented baseline parameters for similar applications. Future work will have to show to which extent parameters need to be adjusted for earlier periods.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Ayalon, A.</hi> (1995). 
+                        <hi rend="italic">The Press in the Arab Middle East: A History</hi>. New York: Oxford University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Benatti, F. and King, D.</hi> (2017). Hidden Authors and Reading Machines: Investigating 19th-century authorship with 21st-century technologies. University of Victoria, Canada 
+                        <ref target="http://www.sharpweb.org/conferences/2017/">http://www.sharpweb.org/conferences/2017/</ref> (accessed 7 December 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Burrows, J.</hi> (2002). ‘Delta’: a Measure of Stylistic Difference and a Guide to Likely Authorship. 
+                        <hi rend="italic">Literary and Linguistic Computing</hi>, 
+                        <hi rend="bold">17</hi>(3). Oxford University Press: 267–87 doi:
+                        <ref target="https://doi.org/10/cm2hbk">10/cm2hbk</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Eder, M.</hi> (2015). Does size matter? Authorship attribution, small samples, big problem. 
+                        <hi rend="italic">Literary and Linguistic Computing</hi>, 
+                        <hi rend="bold">30</hi>(2). Pedagogical University of Kraków, Poland and Polish Academy of Sciences, Institute of Polish Language, Kraków, Poland Oxford University Press: 167–82 doi:
+                        <ref target="https://doi.org/10/ggvhx4">10/ggvhx4</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Eder, M., Rybicki, J. and Kestemont, M.</hi> (2016). Stylometry with R: A Package for Computational Text Analysis. 
+                        <hi rend="italic">The R Journal</hi>, 
+                        <hi rend="bold">8</hi>(1): 107–21 doi:
+                        <ref target="https://doi.org/10/gghvwd">10/gghvwd</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ezzerelli, K.</hi> (2017). The publicist and his newspaper in Syria in the era of the Young Turk Revolution, between reformist commitment and political pressures: Muhammad Kurd Ali and al-Muqtabas (1908-17). In Gorman, A. and Monciaud, D. (eds), 
+                        <hi rend="italic">The Press in the Middle East and North Africa, 1850-1950: Politics, Social History and Culture</hi>. Edinburgh: Edinburgh University Press, pp. 176–206.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Grallert, T.</hi> (2020). Open Arabic Periodical Editions: A framework for bootstrapped digital scholarly editions outside the global north 
+                        <ref target="https://openarabicpe.github.io/">https://openarabicpe.github.io/</ref> (accessed 7 October 2020).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Grallert, T.</hi> (2021). Catch Me If You Can! Approaching the Arabic Press of the Late Ottoman Eastern Mediterranean through Digital History. (Ed.) Lässig, S. 
+                        <hi rend="italic">Geschichte Und Gesellschaft</hi>, 
+                        <hi rend="bold">47</hi>(1): 58–89 doi:
+                        <ref target="https://doi.org/10/gkhrjr">10/gkhrjr</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kestemont, M., Martens, G. and Ries, T.</hi> (2019). A Computational Approach to Authorship Verification of Johann Wolfgang Goethe’s Contributions to the Frankfurter gelehrte Anzeigen (1772–73). 
+                        <hi rend="italic">Journal of European Periodical Studies</hi>, 
+                        <hi rend="bold">4</hi>(1): 115–43 doi:
+                        <ref target="https://doi.org/10/gnq527">10/gnq527</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Khayat, N.</hi> (2019). What’s in a name? Perceptions of authorship and copyright during the Arabic nahda. 
+                        <hi rend="italic">Nineteenth-Century Contexts</hi>, 
+                        <hi rend="bold">41</hi>(4). Department of Islamic and Middle Eastern Studies, Hebrew University of Jerusalem Routledge: 423–40 doi:
+                        <ref target="https://doi.org/10/gg5zdh">10/gg5zdh</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Koppel, M., Schler, J. and Argamon, S.</hi> (2009). Computational methods in authorship attribution. 
+                        <hi rend="italic">Journal of the American Society for Information Science and Technology</hi>, 
+                        <hi rend="bold">60</hi>(1): 9–26 doi:
+                        <ref target="https://doi.org/10/bnxj7s">10/bnxj7s</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Miller, M. T., Romanov, M. G. and Savant, S. B.</hi> (2018). Digitizing the Textual Heritage of the Premodern Islamicate World: Principles and Plans. 
+                        <hi rend="italic">International Journal of Middle East Studies</hi>, 
+                        <hi rend="bold">50</hi>(1): 103–09 doi:
+                        <ref target="https://doi.org/10/gg865d">10/gg865d</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Romanov, M.</hi> (2021). A Corpus of Arabic Literature (19-20th centuries) for Stylometric Tests Zenodo doi:
+                        <ref target="https://doi.org/10.5281/zenodo.5772261">10.5281/zenodo.5772261</ref>. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Seikaly, S.</hi> (1981). Damascene Intellectual Life in the Opening Years of the 20th Century: Muhammad Kurd ʿAli and Al-Muqtabas. In Buheiry, M. R. (ed), 
+                        <hi rend="italic">Intellectual Life In The Arab East, 1890-1939</hi>. Beirut: American University of Beirut, pp. 125–53.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

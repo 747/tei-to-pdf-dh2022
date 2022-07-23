@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Using Automated Textual Analysis to Study Concepts of Identity and Difference in First-Person Narrative</title>
+                <author>
+                    <persName>
+                        <surname>Wang</surname>
+                        <forename>Yadi</forename>
+                    </persName>
+                    <affiliation>University of Washington</affiliation>
+                    <email>yadiw@uw.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Cole</surname>
+                        <forename>Camille Lyans</forename>
+                    </persName>
+                    <affiliation>University of Cambridge</affiliation>
+                    <email>camillecole@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fields</surname>
+                        <forename>Sam E.</forename>
+                    </persName>
+                    <affiliation>University of Washington</affiliation>
+                    <email>fields8@uw.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Saelid</surname>
+                        <forename>Daniel P.</forename>
+                    </persName>
+                    <affiliation>University of Washington</affiliation>
+                    <email>saeliddp@uw.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chen</surname>
+                        <forename>Annie T.</forename>
+                    </persName>
+                    <affiliation>University of Washington</affiliation>
+                    <email>atchen@uw.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>text mining and analysis</term>
+                    <term>sentiment analysis</term>
+                    <term>data visualization</term>
+                    <term>comparative analysis</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>natural language processing</term>
+                    <term>text mining and analysis</term>
+                    <term>Asian studies</term>
+                    <term>Sociology</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Distant reading involves the use of computational methods to visualize and study text. Distant reading methods have been used with a variety of source texts and genres, including novels, biographies, tales, and news collections (Jänicke et al., 2015) to explore a range of research questions. However, researchers have also raised concerns about distant reading methods oversimplifying complexity (Ascari, 2014) and advocated for approaches combining close and distant reading to allow broader and more comprehensive analysis (Ascari, 2014; Drouin, 2014).</p>
+            <p>In this poster, we explore the affordances and pitfalls of one such distant reading method, word co-occurrence analysis, for the exploration of identity and difference in first-person writing, using two source texts which both appear in the format of a diary and yet are fundamentally different – the diary novel and the historical diary.</p>
+            <p>On the one hand, we consider Yone Noguchi’s 
+                <hi rend="italic">The American Diary of a Japanese Girl</hi>, the fictional diary of a Japanese immigrant in the early twentieth-century United States. As the young heroine, Morning Glory, enjoys her transcontinental adventure by interacting with people with different gender, racial and ethnic roles, we are drawn into her playful exploration of these concepts and her own identity. 
+            </p>
+            <p>On the other hand, we study the historical diary of Joseph Mathia Svoboda, a purser on a British steamship in nineteenth century Iraq. While a large portion of Joseph Svoboda’s diary accounts for his daily routine as a pursuer, due to the multiculturalism of the region, he too is embedded in a context in which people of different backgrounds interact, and his writing in turn affords us a view of perceptions of gender, race, and ethnicity, both his own and others.</p>
+            <p>Therefore, even though one is fictional and the other is historical, both diaries are rich in depictions of social interactions in the context of everyday life, from the perspective of a person/character who intermixes multiple languages in everyday writing. While the two works differ in terms of the author/character’s identity and positionality within the society being described (immigrant vs local), both allow us to observe perceptions of identity and difference.</p>
+            <p>In this poster, we propose to employ automated textual analysis and visualization methods to facilitate exploration of concepts of identity and difference within these two texts. In particular, we plan to render visualizations of common word co-occurrences that relate to gender and race/ethnicity in each of the two works, and reflect on the utility of this method given the language/genre of each text. Can word co-occurrence analysis be used as a distant reading technique to help us examine representations of gender, race/ethnicity in literary and historical works, to provide new insights on social and cultural contexts in which they were written, and if so, how?</p>
+            <p>Because of the differences in genre between the two texts, the poster does not compare them directly. Rather, it reads them in parallel to understand what kind of insight word co-occurrence analysis can offer into concepts of identity and difference in first-person narratives. In addition, we reflect on the benefits and shortfalls of text analysis and visualization methods in addressing these questions (Chen and Cole, 2021).</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:12pt">Ascari, M.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2014). The Dangers of Distant Reading: Reassessing Moretti’s Approach to Literary Genres. </hi>
+                        <hi rend="italic" style="font-size:12pt">Genre</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, </hi>
+                        <hi rend="bold" style="font-size:12pt">47</hi>
+                        (1): 1–19 doi:10.1215/00166928-2392348.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:12pt">Chen, A. T. and Cole, C. L.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2021). Reflexivity in Issues of Scale and Representation in a Digital Humanities Project. </hi>
+                        <hi rend="italic" style="font-size:12pt">ArXiv:2109.14184 [Cs]</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> http://arxiv.org/abs/2109.14184 (accessed 9 December 2021).</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:12pt">Drouin, J.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2014). Close- and Distant-Reading Modernism: Network Analysis, Text Mining, and Teaching the Little Review. </hi>
+                        <hi rend="italic" style="font-size:12pt">The Journal of Modern Periodical Studies</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, </hi>
+                        <hi rend="bold" style="font-size:12pt">5</hi>
+                        (1). Penn State University Press: 110–35 doi:10.5325/jmodeperistud.5.1.0110.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:12pt">Jänicke, S., Franzini, G., Cheema, M. F. and Scheuermann, G.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2015). On Close and Distant Reading in Digital Humanities: A Survey and Future Challenges. The Eurographics Association, p. 21 doi:10.2312/eurovisstar.20151113.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

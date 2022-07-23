@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>On Epistemic Comparability and Challenges on Data Reuse:The Experience of READ-IT</title>
+                <author>
+                    <persName>
+                        <surname>Antonini</surname>
+                        <forename>Alessio</forename>
+                    </persName>
+                    <affiliation>The Open University, United Kingdom</affiliation>
+                    <email>alessio.antonini@open.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>reading research</term>
+                    <term>reading experience</term>
+                    <term>epistemology</term>
+                    <term>data reuse</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>data modeling</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>Book and print history</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">The EU JPI Reading Europe Advanced-Data Investigation Tools (READ-IT) project (
+                <ref target="https://readit-project.eu">https://readit-project.eu</ref>) proposed a novel approach to a pan-European research agenda on reading based on shared tools and data interoperability "by design" (Our-Vial &amp; Antonini, 2021). These tools were developed in parallel with and support a wide diverse range of case studies (Vignale et al, 2019). The toolkit includes a) the Reading Experience Ontology (REO) (Vignale et al, 2020; Antonini et al, 2021), b) the text-annotation tool (
+                <ref target="https://read-it.hum.uu.nl">https://read-it.hum.uu.nl</ref>) and c) the platform for managing reading testimonies (
+                <ref target="https://read-it.in-two.com">https://read-it.in-two.com</ref>). However, while reflecting on using the data at scale, a gap in the models emerged concerning the epistemology of sources, i.e. the conditions about testimonies of reading were generated. This contribution reports on this gap, its implications for future visions for research interoperability and our approach to address it.
+            </p>
+            <p style="text-align: left; ">The focus of READ-IT on data interoperability led to good results toward a shared definition of the phenomena and response to reading. However, the information needed to interpret testimonies extends beyond readers and reading, e.g., to the situation that led to the generation of the testimony, the socio-economical context, and the temporal distance between reading and the testimony. The result is an epistemological barrier to data reuse, comparability, and integration of experiential studies. The following two real examples expose the hidden implications of building new reading case studies on existing data from, e.g., linked open data service. </p>
+            <p style="text-align: left; ">
+                <hi rend="bold">Case 1 - Exploration and reuse.</hi> The discovery and available data on reading could exploit either provenance or metadata or, more specifically, aspects of the reading experience. For instance, PoKUS (
+                <ref target="https://pokus.ffzg.unizg.hr/en/">https://pokus.ffzg.unizg.hr/en/</ref>) – a study on reading in Croatia – aims to reuse READ-IT data about reading memories (REO concept of “Memory” specialisation of “State of Mind” [5]). The collected memory annotations [7] include evidence from WWI diaries, readers of Russian periodicals, Soviet Czech school diaries, social media, interviews, or online reading groups. While discussing with researchers about their specific case studies, it was clear that, e.g., social pressure and censorship on Czech students limited the insight that could be extracted by their carefully crafted school diaries or soldier diaries written as part of a veteran support programme, reporting reading years after they occurred.
+            </p>
+            <p style="text-align: left; ">
+                <hi rend="bold">Case 2 – Heterogeneous comparative studies.</hi> Having a shared definition of reading enables comparative studies among heterogeneous sources. For instance, an ongoing comparative study on popular reading brings together a) long, matured reviews of books from online reading groups, with b) short impulsive comments on webcomics "issues". The design of heterogeneous comparative studies also requires careful considerations (Benatti et al, 2021) about, e.g., the practices of the audiences, maturity of the experience or type of information provided, connected by the form of prompting.   
+            </p>
+            <p style="text-align: left; ">To summarise, data interoperability is a precondition, but it is not sufficient: a common language of the phenomenon does not exhaust the information needed for interpretation. Specifically, in the vision of step further toward research interoperability - as the synergy between studies in terms of agenda and findings contributing to the knowledge of a common phenomenon – a computer-readable epistemology of research case studies should be included as a part of their output. </p>
+            <p style="text-align: left; ">In both cases, the data do not reflect these considerations, emerged only by talking directly with the involved researchers. To address this issue, we designed two un-planned ontologies: Experience &amp; Observation (E&amp;O) (
+                <ref target="https://github.com/modellingDH/odp_experience">https://github.com/modellingDH/odp_experience</ref>) and Profiles, Groups &amp; Communities (PGC) (
+                <ref target="https://github.com/modellingDH/profile-group-community-odp">https://github.com/modellingDH/profile-group-community-odp</ref>). 
+            </p>
+            <p style="text-align: left; ">E&amp;O is currently in the READ-IT contribution platform. The first application of E&amp;O is to document the different modalities we use in crowdsourcing of experience of reading, e.g. through postcards, webforms and chatbot conversations (
+                <ref target="https://readit-project.eu/contact/contribute-to-read-it/">https://readit-project.eu/contact/contribute-to-read-it/</ref>). Secondly, E&amp;O describes the relations between activities and prompting of reading experiences, typical of the different sources (e.g., topics of the questions asked, time from reading). This use of E&amp;O helped identify nine recurring patterns exposing new, unexpected similarities and differences between case studies that can be evaluated through objective metrics (Antonini et al, under review). 
+            </p>
+            <p style="text-align: left; ">PGC complements the characterisation of readers introduced by REO, with the difference between reader and status of the reader at the time of reading, by introducing the missing social dimension. Specifically, PGC addresses the specific reader profiles in terms of, e.g., linguistic competencies or core values, their belonging to social bodies (religious groups, political parties) or community of practice (as reading groups or professions such as editors or scholars).</p>
+            <p style="text-align: left; ">This contribution addresses the epistemic gap in how data about experiential research, which is a barrier in moving beyond data interoperability toward a conceptual integration between different research case studies. This gap is addressed by introducing two models used to explicit essential information about research case studies and sources to complement and give context to research data. Both gap and solution are discussed based on actual case studies on reading.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold color(0E101A)">Our-Vial, B. and Antonini, A.</hi>
+                        <hi rend="color(0E101A)" xml:space="preserve"> (2021) Reconnecting with the Evolving Journey of Reading. Cultural Practice, Re-Connect, 2021, Last access September 2021 https://www.culturalpractice.org/article/reconnecting-with-the-evolving-journey-of-reading.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(0E101A)">Vignale, F., Benatti, F. and Antonini, A.</hi>
+                        <hi rend="color(0E101A)" xml:space="preserve"> (2019). Reading in Europe - Challenge and Case Studies of READ-IT Project. In: Digital Humanities Conference 2019, 9-12 Jul 2019, Utrecht, Netherland.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(0E101A)">Vignale, F., Antonini, A. and Gravier, G.</hi>
+                        <hi rend="color(0E101A)" xml:space="preserve"> (2020). The Reading Experience Ontology (REO): Reusing and Extending CIDOC CRM. In proceedings of DH2020. 2020, Ottawa, Ca.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(0E101A)">Antonini, A., Suárez-Figueroa, M. C., Adamou, A., Benatti, F., Vignale, F., Gravier, G. and Lupi, L.</hi>
+                        <hi rend="color(0E101A)" xml:space="preserve"> (2021). Understanding the phenomenology of reading through modelling. Semantic Web, 12(2), 191-217. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(0E101A)" xml:space="preserve">Benatti,F., Norrick-Rühl, C. and Antonini, A. </hi>
+                        <hi rend="color(0E101A)">(2021) Reading Popular Culture Offline and Online: Outlining a Comparative Study of Reading Experiences Between Webcomics and Twenty-First Century Book Club Choices. EADH2021, September 2021.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(0E101A)">Antonini, A., Adamou, A., Suárez-Figueroa, M. C. and Benatti, F.</hi>
+                        <hi rend="color(0E101A)" xml:space="preserve"> (under review) Experiential Observations: an Ontology Pattern-based Study on Capturing the Potential Content within Evidences of Experiences. Special issue on Cultural Heritage 2021, Semantic Web – Interoperability, Usability, Applicability an IOS Press Journal (under review), URL: </hi>
+                        <ref target="http://semantic-web-journal.net/content/experiential-observations-ontology-pattern-based-study-capturing-potential-content-within">
+                            <hi rend="color(4A6EE0)">http://semantic-web-journal.net/content/experiential-observations-ontology-pattern-based-study-capturing-potential-content-within</hi>
+                        </ref>
+                        <hi rend="color(0E101A)">.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Named Entity Disambiguation for the Qing Shilu without Manually Labeled Data</title>
+                <author>
+                    <persName>
+                        <surname>Chao</surname>
+                        <forename>Jo-Yu</forename>
+                    </persName>
+                    <affiliation>Department of Computer Science and Information Engineering, National Central University, Taiwan</affiliation>
+                    <email>v17291729@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Huang</surname>
+                        <forename>Shi-Yun</forename>
+                    </persName>
+                    <affiliation>Center for GIS, Research Center for Humanities and Social Sciences, Academia Sinica, Taiwan</affiliation>
+                    <email>as0210097@gate.sinica.edu.tw</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hsieh</surname>
+                        <forename>Hsin-Yi</forename>
+                    </persName>
+                    <affiliation>Department of Computer Science and Information Engineering, National Central University, Taiwan</affiliation>
+                    <email>hsinmosyi@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tsai</surname>
+                        <forename>Richard Tzong-Han</forename>
+                    </persName>
+                    <affiliation>Center for GIS, Research Center for Humanities and Social Sciences, Academia Sinica, Taiwan ; Department of Computer Science and Information Engineering, National Central University, Taiwan</affiliation>
+                    <email>thtsai@csie.ncu.edu.tw</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T17:29:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Named Entity Disambiguation</term>
+                    <term>Named Entity Linking</term>
+                    <term>BERT</term>
+                    <term>Automatic Data Labeling</term>
+                    <term>Qing Shilu</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>natural language processing</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; text-align: justify;">
+                    <hi rend="color(0E101A)" xml:space="preserve">The study of historical figures is of great significance in the field of history. To investigate historical figures with digital humanity methods, the first step is to identify the names of people in texts. Not only is the person's name recognized from the text, but the person's name has to be linked to a knowledge base for reference. This is because the same person's name may refer to different people or other entities. This task is called named entity disambiguation (NED). The problem of historical figures with the same name is particularly serious when studying Manchu and Mongolian historical figures in the Qing Dynasty. A typical example is that the main persons (Cherin-Dorji, Yung-Te, Siang-Lin and Gui-Xiang) involved in the disaster report of the Kharkha Four Leagues </hi>
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"BH0DbSs3","properties":{"formattedCitation":"(Ting-ting, 2016)","plainCitation":"(Ting-ting, 2016)","noteIndex":0},"citationItems":[{"id":26,"uris":["http://zotero.org/users/local/vcLMdXJg/items/A86FUUQV"],"itemData":{"id":26,"type":"article-journal","container-title":"Studies of Chinese Frontier Ethnic Groups","title":"清季蒙古親王車林多爾濟史事鉤沉—以喀爾喀四盟報災案為中心[History of Mongolian Prince Cherin-Dorji in the Qing Dynasty-A Disaster Report by the Four Leagues of Khalkha]","author":[{"family":"Ting-ting","given":"L"}],"issued":{"date-parts":[["2016"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    <hi rend="color(0E101A)">(Ting-ting, 2016)</hi>
+                    <hi rend="color(0E101A)">have the same name as other historical figures. Fig. 1 shows that there are 10 Siang-Lins in the Ming-Qing Archives Name Authority Database (MQANAD).</hi>
+                </p>
+                <figure>
+                    <graphic n="1001" width="15.926152777777778cm" height="14.931319444444444cm" url="Pictures/8794ed1c8183da0b0d8d1c88de0191c7.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="bold" style="font-size:9pt">Fig. 1</hi>
+                    <hi style="font-size:9pt" xml:space="preserve"> There are ten people named Siang-Lin in the MQANAD database. Siang-Lin in this text refers to this historical figure with ID 0079695</hi>
+                </p>
+                <p style="text-align: left; text-align: justify;">
+                    <hi rend="color(0E101A)" xml:space="preserve">Therefore, we select </hi>
+                    <hi rend="italic color(0E101A)">Qing Shi-Lu</hi>
+                    <hi rend="color(0E101A)">(</hi>
+                    <hi rend="italic color(0E101A)">QSL</hi>
+                    <hi rend="color(0E101A)">)</hi>
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"032wbTG3","properties":{"formattedCitation":"(\\uc0\\u8220{}Scripta Sinica database,\\uc0\\u8221{} 1933)","plainCitation":"(“Scripta Sinica database,” 1933)","noteIndex":0},"citationItems":[{"id":44,"uris":["http://zotero.org/users/local/vcLMdXJg/items/E9PMREL8"],"itemData":{"id":44,"type":"webpage","title":"Scripta Sinica database","URL":"http://hanchi.ihp.sinica.edu.tw/ihp/hanji.htm","issued":{"date-parts":[["1933"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    <hi rend="color(0E101A)" xml:space="preserve"> and MQANAD</hi>
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"SZrJxFq2","properties":{"formattedCitation":"(Liu, 2015)","plainCitation":"(Liu, 2015)","noteIndex":0},"citationItems":[{"id":27,"uris":["http://zotero.org/users/local/vcLMdXJg/items/L7KP7YGF"],"itemData":{"id":27,"type":"webpage","genre":"China Biographical Database Project (CBDB)","title":"Ming-Qing Archives Name Authority Database","author":[{"family":"Liu","given":"Cheng-yun"}],"issued":{"date-parts":[["2015"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    <hi rend="color(0E101A)">(Liu, 2015)</hi>
+                    <hi rend="color(0E101A)" xml:space="preserve"> as the target text and the reference knowledge base for developing our NED system, respectively. </hi>
+                    <hi rend="italic color(0E101A)">QSL</hi>
+                    <hi rend="color(0E101A)" xml:space="preserve"> is the imperial annals of the Qing emperors, with a total of about 58 million characters, written in classical Chinese.</hi>
+                </p>
+                <p style="text-align: left; text-align: justify;">
+                    <hi rend="color(0E101A)" xml:space="preserve">In </hi>
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"EUnvMHhH","properties":{"formattedCitation":"(Tsai et al., 2020)","plainCitation":"(Tsai et al., 2020)","noteIndex":0},"citationItems":[{"id":16,"uris":["http://zotero.org/users/local/vcLMdXJg/items/QEX3UL4P"],"itemData":{"id":16,"type":"paper-conference","event":"ADHO 2020 - Ottawa","language":"en","source":"dh-abstracts.library.cmu.edu","title":"Automatic Labeled Data Generation for Person Named Entity Disambiguation on the Ming Shilu","author":[{"family":"Tsai","given":"Richard Tzong-Han"},{"family":"Wu","given":"Cheng-Han"},{"family":"Pai","given":"Pi-Ling"},{"family":"Fan","given":"I.-Chun"}],"accessed":{"date-parts":[["2022",4,18]]},"issued":{"date-parts":[["2020"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    <hi rend="color(0E101A)">(Tsai et al., 2020)</hi>
+                    <hi rend="color(0E101A)" xml:space="preserve">, several procedures were proposed to automatically generate labeled data from </hi>
+                    <hi rend="italic color(0E101A)">Ming Shi-Lu</hi>
+                    <hi rend="color(0E101A)" xml:space="preserve"> (</hi>
+                    <hi rend="italic color(0E101A)">MSL</hi>
+                    <hi rend="color(0E101A)" xml:space="preserve">) for training a NED model. In this work, we improve </hi>
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"W6Bsdiap","properties":{"formattedCitation":"(Tsai et al., 2020)","plainCitation":"(Tsai et al., 2020)","noteIndex":0},"citationItems":[{"id":16,"uris":["http://zotero.org/users/local/vcLMdXJg/items/QEX3UL4P"],"itemData":{"id":16,"type":"paper-conference","event":"ADHO 2020 - Ottawa","language":"en","source":"dh-abstracts.library.cmu.edu","title":"Automatic Labeled Data Generation for Person Named Entity Disambiguation on the Ming Shilu","author":[{"family":"Tsai","given":"Richard Tzong-Han"},{"family":"Wu","given":"Cheng-Han"},{"family":"Pai","given":"Pi-Ling"},{"family":"Fan","given":"I.-Chun"}],"accessed":{"date-parts":[["2022",4,18]]},"issued":{"date-parts":[["2020"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    <hi rend="color(0E101A)">(Tsai et al., 2020)</hi>
+                    <hi rend="color(0E101A)" xml:space="preserve"> in two folds. </hi>First, we propose a new way of expressing person names in both texts and profiles. Second, we modify the original procedures to improve the quality of the generated labeling data.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Method</head>
+                <p style="text-align: left; text-align: justify;">As mentioned earlier, an NED 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"9QJ8Oo2i","properties":{"formattedCitation":"(Cheng et al., 2019)","plainCitation":"(Cheng et al., 2019)","noteIndex":0},"citationItems":[{"id":24,"uris":["http://zotero.org/users/local/vcLMdXJg/items/86N6QKDF"],"itemData":{"id":24,"type":"article-journal","abstract":"Traditional entity linking tasks are primarily for long texts, which have full context information that can assist in the recognition and disambiguation of entities. In contrast, Chinese short text entity linking brings a great challenge due to serious colloquialism and insuﬃcient contexts. The whole process of entity linking consists of two subtasks: entity recognition and entity disambiguation. For the entity recognition subtask, we use description text information in a knowledge base to enhance the performance of entity recognition, and propose the BERTEntityNameEmbedding (BERT-ENE) model. Speciﬁcally, the vector embedding of a entity is ﬁrst obtained by mining the description text of the entity in a knowledge base. Then, candidate entities in the short text are obtained by name dictionary matching technique. Finally, the results are ﬁltered by the BERT-ENE model to fulﬁl the task of entity recognition. In addition, we further propose a combination of the BERT-ENE model and the BERT-CRF model, which signiﬁcantly improves the recognition eﬀect compared with traditional methods. For the entity disambiguation subtask, we regard it as a binary classiﬁcaiton problem. Candidate entities are predicted by a BERT-based binary classiﬁcation model, and then predicted probabilities are sorted. The entity with highest probability is selected as the correct entity. Based on the proposed method in this paper, we achieved the ﬁrst place in the CCKS2019 entity linking task for Chinese short text.","language":"en","page":"12","source":"Zotero","title":"Entity Linking for Chinese Short Texts Based on BERT and Entity Name Embeddings","author":[{"family":"Cheng","given":"Jingwei"},{"family":"Pan","given":"Chunguang"},{"family":"Dang","given":"Jinming"},{"family":"Yang","given":"Zhi"},{"family":"Guo","given":"Xuyang"},{"family":"Zhang","given":"Fu"}],"issued":{"date-parts":[["2019"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    <hi rend="color(0E101A)">(Cheng et al., 2019</hi>
+                    <hi rend="color(0E101A)" style="font-family:Microsoft JhengHei">;</hi>
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"qQF4TKrn","properties":{"formattedCitation":"(Huang et al., 2015)","plainCitation":"(Huang et al., 2015)","noteIndex":0},"citationItems":[{"id":18,"uris":["http://zotero.org/users/local/vcLMdXJg/items/FKB2FUJ2"],"itemData":{"id":18,"type":"article-journal","abstract":"Entity Disambiguation aims to link mentions of ambiguous entities to a knowledge base (e.g., Wikipedia). Modeling topical coherence is crucial for this task based on the assumption that information from the same semantic context tends to belong to the same topic. This paper presents a novel deep semantic relatedness model (DSRM) based on deep neural networks (DNN) and semantic knowledge graphs (KGs) to measure entity semantic relatedness for topical coherence modeling. The DSRM is directly trained on large-scale KGs and it maps heterogeneous types of knowledge of an entity from KGs to numerical feature vectors in a latent space such that the distance between two semantically-related entities is minimized. Compared with the state-of-the-art relatedness approach proposed by (Milne and Witten, 2008a), the DSRM obtains 19.4% and 24.5% reductions in entity disambiguation errors on two publicly available datasets respectively.","container-title":"arXiv:1504.07678 [cs]","note":"arXiv: 1504.07678","source":"arXiv.org","title":"Leveraging Deep Neural Networks and Knowledge Graphs for Entity Disambiguation","author":[{"family":"Huang","given":"Hongzhao"},{"family":"Heck","given":"Larry"},{"family":"Ji","given":"Heng"}],"accessed":{"date-parts":[["2022",4,18]]},"issued":{"date-parts":[["2015"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    <hi rend="color(0E101A)">Huang et al., 2015)</hi> model can link each mention to the correct profile in the reference knowledge base. 
+                    <hi rend="color(1E1E1E)">An official’s profile is shown in</hi> Table 1, 
+                    <hi rend="color(1E1E1E)" xml:space="preserve">we can see that it contains the official’s attributes such as name, birth/death year, biography, resume, relatives, etc. The resume field is composed of all titles the official had held. We search </hi>
+                    <hi rend="italic color(1E1E1E)">QSL</hi>
+                    <hi rend="color(1E1E1E)" xml:space="preserve"> for all mentions of these officials’ names. These mentions with the paragraphs containing them are used as our dataset. </hi>Table 2 shows an example instance of the search results.
+                </p>
+                <figure>
+                    <graphic n="1002" width="15.926152777777778cm" height="13.774208333333334cm" url="Pictures/938dfc79f674589dadabf2872b146005.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="bold color(1E1E1E)" style="font-size:9pt">Table 1</hi>
+                    <hi rend="color(1E1E1E)" style="font-size:9pt" xml:space="preserve"> An official </hi>
+                    Wang An-Kuo’s
+                    <hi rend="color(1E1E1E)" style="font-size:9pt" xml:space="preserve"> profile</hi>
+                </p>
+                <figure>
+                    <graphic n="1003" width="15.926152777777778cm" height="8.516055555555555cm" url="Pictures/065e6ba15b75cf13e488482c36bce3a6.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; text-align: justify;">
+                    <hi rend="bold" style="font-size:9pt">Table 2</hi>
+                    <hi style="font-size:9pt" xml:space="preserve"> An example instance</hi>
+                </p>
+                <p style="text-align: left; text-align: justify;">We formulate this NED task as a text classification problem. Given an instance whose name field is m and a profile whose name field is also m, classify them as positive (matched) or negative (not matched). Matched means the person mentioned in the instance’s paragraph field is just the official in the profile.</p>
+                <p style="text-align: left; text-align: justify;">
+                    <hi rend="color(1E1E1E)">T</hi>sai et al. was the first work to propose the procedures that compare instances and profiles to automatically generate labeled data to train the model 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"DSwYGvDO","properties":{"formattedCitation":"(Tsai et al., 2020)","plainCitation":"(Tsai et al., 2020)","noteIndex":0},"citationItems":[{"id":16,"uris":["http://zotero.org/users/local/vcLMdXJg/items/QEX3UL4P"],"itemData":{"id":16,"type":"paper-conference","event":"ADHO 2020 - Ottawa","language":"en","source":"dh-abstracts.library.cmu.edu","title":"Automatic Labeled Data Generation for Person Named Entity Disambiguation on the Ming Shilu","author":[{"family":"Tsai","given":"Richard Tzong-Han"},{"family":"Wu","given":"Cheng-Han"},{"family":"Pai","given":"Pi-Ling"},{"family":"Fan","given":"I.-Chun"}],"accessed":{"date-parts":[["2022",4,18]]},"issued":{"date-parts":[["2020"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Tsai et al., 2020). In this work, we use all the procedures in 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"uGYTOUAD","properties":{"formattedCitation":"(Tsai et al., 2020)","plainCitation":"(Tsai et al., 2020)","noteIndex":0},"citationItems":[{"id":16,"uris":["http://zotero.org/users/local/vcLMdXJg/items/QEX3UL4P"],"itemData":{"id":16,"type":"paper-conference","event":"ADHO 2020 - Ottawa","language":"en","source":"dh-abstracts.library.cmu.edu","title":"Automatic Labeled Data Generation for Person Named Entity Disambiguation on the Ming Shilu","author":[{"family":"Tsai","given":"Richard Tzong-Han"},{"family":"Wu","given":"Cheng-Han"},{"family":"Pai","given":"Pi-Ling"},{"family":"Fan","given":"I.-Chun"}],"accessed":{"date-parts":[["2022",4,18]]},"issued":{"date-parts":[["2020"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Tsai et al., 2020). These procedures based on the rules help us identify part of the data pairs. Then we deal with those data pairs that cannot be identified by the rules by using BERT as a binary classifier. With training data acquired from previous procedures, we make the classifier learn the relationships between instances and profiles and identify them through the context besides using rule-based procedures. In addition, we also propose methods to improve the quality of the labeled data, as described in the following paragraphs.
+                </p>
+                <p style="text-align: left; text-align: justify;">First, we replace the officials’ names mentioned in personal profiles and instances with the symbol [unused_token], as shown in Fig. 2. This allows our model to focus on more information from the context and can be more robust to various person names.</p>
+                <figure>
+                    <graphic n="1004" width="15.998472222222222cm" height="3.922888888888889cm" url="Pictures/c44a382bff65f6cdf64eb7901b0c4a5f.jpeg" rend="inline"/>
+                </figure>
+                <p style="text-align: left; text-align: justify;">
+                    <hi rend="bold" style="font-size:9pt">Fig. 2</hi>
+                    <hi style="font-size:9pt" xml:space="preserve"> Cherin-Dorji, the official’s name mentioned in personal profiles and instances, is replaced with the symbol [unused_token] </hi>
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"MxoXLWPV","properties":{"formattedCitation":"(Hucker, 2008)","plainCitation":"(Hucker, 2008)","noteIndex":0},"citationItems":[{"id":34,"uris":["http://zotero.org/users/local/vcLMdXJg/items/GZTCGD5E"],"itemData":{"id":34,"type":"book","abstract":"《中国古代官名辞典》横跨从周代到晚清的历史时期,不仅关注名词本身的翻译,更把职官本身的功能,历史变迁及其在更广大的组织系统中所居的位置纳入视野,使本书不仅是一部编排得体、方便适用的工具书,更是凝聚着一位杰出历史学家学术心血的研究著作。","language":"en","note":"Google-Books-ID: tjRbPwAACAAJ","publisher":"Peking University Press","source":"Google Books","title":"A Dictionary of Official Titles in Imperial China","author":[{"family":"Hucker","given":"Charles O."}],"issued":{"date-parts":[["2008"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    <hi style="font-size:9pt" xml:space="preserve">(Hucker, 2008, </hi>
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"LByWIpCN","properties":{"formattedCitation":"(Zhang et al., 2017)","plainCitation":"(Zhang et al., 2017)","noteIndex":0},"citationItems":[{"id":29,"uris":["http://zotero.org/users/local/vcLMdXJg/items/BR9SK2MT"],"itemData":{"id":29,"type":"article-journal","abstract":"This bilingual dictionary is developed through a crowd-translation project that was funded by CEAL-Mellon. This is the first edition. The project team would encourage scholars to use it and to send us revision suggestions, if any. We will update the dictionary based upon your suggestions. Note that this version comes with a navigation menu. However, to be able to see and use the menu, one has to download the PDF file and open it up in Adobe.","language":"en","source":"escholarship.org","title":"明代職官中英辭典 Chinese-English Dictionary of Ming Government Official Titles","author":[{"family":"Zhang","given":"Ying"},{"family":"Xue","given":"Susan"},{"family":"Xue","given":"Zhaohui"},{"family":"Ni","given":"Li"}],"accessed":{"date-parts":[["2022",4,18]]},"issued":{"date-parts":[["2017"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                    Zhang et al., 2017)
+                </p>
+                <p style="text-align: left; text-align: justify;">Second, we have found many examples in the text where a person’s name is the same as a location name. For example, Guilin (<hi rend="Chinese">桂林</hi>) can be the name of a city or a minister’s name. Therefore, we use a self-developed NER 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"j2Ua2QWQ","properties":{"formattedCitation":"(Lin et al., 2020)","plainCitation":"(Lin et al., 2020)","noteIndex":0},"citationItems":[{"id":36,"uris":["http://zotero.org/users/local/vcLMdXJg/items/UYFFN2GN"],"itemData":{"id":36,"type":"article-journal","abstract":"Training neural models for named entity recognition (NER) in a new domain often requires additional human annotations (e.g., tens of thousands of labeled instances) that are usually expensive and time-consuming to collect. Thus, a crucial research question is how to obtain supervision in a cost-effective way. In this paper, we introduce \"entity triggers,\" an effective proxy of human explanations for facilitating label-efficient learning of NER models. An entity trigger is defined as a group of words in a sentence that helps to explain why humans would recognize an entity in the sentence. We crowd-sourced 14k entity triggers for two well-studied NER datasets. Our proposed model, Trigger Matching Network, jointly learns trigger representations and soft matching module with self-attention such that can generalize to unseen sentences easily for tagging. Our framework is significantly more cost-effective than the traditional neural NER frameworks. Experiments show that using only 20% of the trigger-annotated sentences results in a comparable performance as using 70% of conventional annotated sentences.","container-title":"arXiv:2004.07493 [cs]","note":"arXiv: 2004.07493","source":"arXiv.org","title":"TriggerNER: Learning with Entity Triggers as Explanations for Named Entity Recognition","title-short":"TriggerNER","author":[{"family":"Lin","given":"Bill Yuchen"},{"family":"Lee","given":"Dong-Ho"},{"family":"Shen","given":"Ming"},{"family":"Moreno","given":"Ryan"},{"family":"Huang","given":"Xiao"},{"family":"Shiralkar","given":"Prashant"},{"family":"Ren","given":"Xiang"}],"issued":{"date-parts":[["2020"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Lin et al., 2020) system to process the texts. We use Flair as the NER model for this paper, the training data is from 
+                    <hi rend="italic">MSL</hi> and the test data is 
+                    <hi rend="italic">QSL</hi>'s 50 manually annotated data with F1 score 0.81. We revise 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"C2ZWEvLU","properties":{"formattedCitation":"(Tsai et al., 2020)","plainCitation":"(Tsai et al., 2020)","noteIndex":0},"citationItems":[{"id":16,"uris":["http://zotero.org/users/local/vcLMdXJg/items/QEX3UL4P"],"itemData":{"id":16,"type":"paper-conference","event":"ADHO 2020 - Ottawa","language":"en","source":"dh-abstracts.library.cmu.edu","title":"Automatic Labeled Data Generation for Person Named Entity Disambiguation on the Ming Shilu","author":[{"family":"Tsai","given":"Richard Tzong-Han"},{"family":"Wu","given":"Cheng-Han"},{"family":"Pai","given":"Pi-Ling"},{"family":"Fan","given":"I.-Chun"}],"accessed":{"date-parts":[["2022",4,18]]},"issued":{"date-parts":[["2020"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Tsai et al., 2020)’s method to correct an instance from positive to negative, an example is shown in Fig. 3.
+                </p>
+                <figure>
+                    <graphic n="1005" width="15.926152777777778cm" height="4.295069444444445cm" url="Pictures/4b25b5d0946f78fd29353d3fb4072d11.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="bold" style="font-size:9pt">Fig. 3</hi>
+                    <hi style="font-size:9pt" xml:space="preserve"> Guilin (<hi rend="Chinese">桂林</hi>) is considered a location name by our NER system, therefore, it is generated as a negative instance</hi>
+                </p>
+                <p style="text-align: left; text-align: justify;">Lastly, since the text processed by 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"KBhBNj29","properties":{"formattedCitation":"(Tsai et al., 2020)","plainCitation":"(Tsai et al., 2020)","noteIndex":0},"citationItems":[{"id":16,"uris":["http://zotero.org/users/local/vcLMdXJg/items/QEX3UL4P"],"itemData":{"id":16,"type":"paper-conference","event":"ADHO 2020 - Ottawa","language":"en","source":"dh-abstracts.library.cmu.edu","title":"Automatic Labeled Data Generation for Person Named Entity Disambiguation on the Ming Shilu","author":[{"family":"Tsai","given":"Richard Tzong-Han"},{"family":"Wu","given":"Cheng-Han"},{"family":"Pai","given":"Pi-Ling"},{"family":"Fan","given":"I.-Chun"}],"accessed":{"date-parts":[["2022",4,18]]},"issued":{"date-parts":[["2020"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Tsai et al., 2020) is the Ming Dynasty, the text processed by this study is the Qing Dynasty, and the contents of 
+                    <hi rend="italic">MSL</hi> and 
+                    <hi rend="italic">QSL</hi> are slightly different, we only retain the first condition of Procedure 1.
+                </p>
+                <figure>
+                    <graphic n="1006" width="15.926152777777778cm" height="4.2350972222222225cm" url="Pictures/6999be5411db5aaff8370db23dc8e9c1.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="bold" style="font-size:9pt">Fig</hi>
+                    <hi rend="bold" style="font-family:PMingLiU;font-size:9pt">.</hi>
+                    <hi rend="bold" style="font-size:9pt" xml:space="preserve"> 4</hi>
+                    <hi style="font-size:9pt" xml:space="preserve"> Procedure one is modified for writing-style difference between </hi>
+                    <hi rend="italic" style="font-size:9pt">MSL</hi>
+                    <hi style="font-size:9pt" xml:space="preserve"> and </hi>
+                    <hi rend="italic" style="font-size:9pt">QSL</hi>
+                </p>
+                <figure>
+                    <graphic n="1007" width="11.651747222222221cm" height="9.972833333333334cm" url="Pictures/9b6daea9aa78803a87c4b609140b9839.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="bold" style="font-size:9pt">Fig. 5</hi>
+                    <hi style="font-size:9pt" xml:space="preserve"> Our BERT-based NED model</hi>
+                </p>
+                <p style="text-align: left; text-align: justify;">After automatically labeling the training data, we use BERT 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"ILJbdfaA","properties":{"formattedCitation":"(Vaswani et al., 2017)","plainCitation":"(Vaswani et al., 2017)","noteIndex":0},"citationItems":[{"id":40,"uris":["http://zotero.org/users/local/vcLMdXJg/items/ZV56T3AL"],"itemData":{"id":40,"type":"article-journal","abstract":"The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.","container-title":"arXiv:1706.03762 [cs]","note":"arXiv: 1706.03762","source":"arXiv.org","title":"Attention Is All You Need","author":[{"family":"Vaswani","given":"Ashish"},{"family":"Shazeer","given":"Noam"},{"family":"Parmar","given":"Niki"},{"family":"Uszkoreit","given":"Jakob"},{"family":"Jones","given":"Llion"},{"family":"Gomez","given":"Aidan N."},{"family":"Kaiser","given":"Lukasz"},{"family":"Polosukhin","given":"Illia"}],"issued":{"date-parts":[["2017"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Vaswani et al., 2017, 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"eCZBmrxl","properties":{"formattedCitation":"(Devlin et al., 2019)","plainCitation":"(Devlin et al., 2019)","noteIndex":0},"citationItems":[{"id":5,"uris":["http://zotero.org/users/local/vcLMdXJg/items/EPWG4B42"],"itemData":{"id":5,"type":"article-journal","abstract":"We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).","container-title":"arXiv:1810.04805 [cs]","source":"arXiv.org","title":"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding","title-short":"BERT","author":[{"family":"Devlin","given":"Jacob"},{"family":"Chang","given":"Ming-Wei"},{"family":"Lee","given":"Kenton"},{"family":"Toutanova","given":"Kristina"}],"issued":{"date-parts":[["2019",5,24]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>Devlin et al., 2019), the state-of-the-art natural language understanding model, to perform text classification. We use the model pre-trained on the Chinese Wikipedia. As shown in Fig. 5, for each pair of profile and instance, we concatenate the cls symbol, the profile, the sep symbol, the instance as the input. The BERT model will output all label probabilities at the output position corresponding to the cls symbol.
+                </p>
+                <p style="text-align: left; text-align: justify;">We use the manually labeled data set of 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"AQvffaZK","properties":{"formattedCitation":"(Tsai et al., 2020)","plainCitation":"(Tsai et al., 2020)","noteIndex":0},"citationItems":[{"id":16,"uris":["http://zotero.org/users/local/vcLMdXJg/items/QEX3UL4P"],"itemData":{"id":16,"type":"paper-conference","event":"ADHO 2020 - Ottawa","language":"en","source":"dh-abstracts.library.cmu.edu","title":"Automatic Labeled Data Generation for Person Named Entity Disambiguation on the Ming Shilu","author":[{"family":"Tsai","given":"Richard Tzong-Han"},{"family":"Wu","given":"Cheng-Han"},{"family":"Pai","given":"Pi-Ling"},{"family":"Fan","given":"I.-Chun"}],"accessed":{"date-parts":[["2022",4,18]]},"issued":{"date-parts":[["2020"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Tsai et al., 2020) for performance evaluation. The results show that our NED model achieves an accuracy of 90%, which is 16% higher than the model proposed in 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"AQ6c54WJ","properties":{"formattedCitation":"(Tsai et al., 2020)","plainCitation":"(Tsai et al., 2020)","noteIndex":0},"citationItems":[{"id":16,"uris":["http://zotero.org/users/local/vcLMdXJg/items/QEX3UL4P"],"itemData":{"id":16,"type":"paper-conference","event":"ADHO 2020 - Ottawa","language":"en","source":"dh-abstracts.library.cmu.edu","title":"Automatic Labeled Data Generation for Person Named Entity Disambiguation on the Ming Shilu","author":[{"family":"Tsai","given":"Richard Tzong-Han"},{"family":"Wu","given":"Cheng-Han"},{"family":"Pai","given":"Pi-Ling"},{"family":"Fan","given":"I.-Chun"}],"accessed":{"date-parts":[["2022",4,18]]},"issued":{"date-parts":[["2020"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Tsai et al., 2020).
+                </p>
+                <p style="text-align: left; text-align: justify;">Finally, we conduct an ablation study. If we remove NER, performance will drop by 3%. If we do not do unused token replacement, performance will drop by 13%. If we do neither, the performance drops by 16%.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left; text-align: justify;">We have refined the approach of automatically generating labeled data for training an NED model. To be more specific, we employ our own NER system to eliminate the location names incorrectly labeled as positive instances and use the unused token symbol to enhance the robustness of our model. Results show that our refinement can improve the performance by 16% and our NED model 
+                    <hi rend="color(1E1E1E)">will help us investigate historical figures in the Qing dynasty.</hi>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Cheng, J. et al. </hi>(2019). Entity Linking for Chinese Short Texts Based on BERT and Entity Name Embeddings. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Devlin, J. et al. </hi>(2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv:1810.04805 [cs]. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hucker, C.O.</hi> (2008) A Dictionary of Official Titles in Imperial China. Peking University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Huang, H., Heck, L. and Ji, H. </hi>(2015). Leveraging Deep Neural Networks and Knowledge Graphs for Entity Disambiguation’. arXiv:1504.07678 [cs].
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Institute of History and Philology, Academia Sinica </hi>(1984) Scripta Sinica. http://hanchi.ihp.sinica.edu.tw/ihp/hanji.htm. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Liu, C. </hi>(2015) Ming-Qing Archives Name Authority Database.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Ting-ting, L. </hi>(2016). <hi rend="Chinese">清季蒙古親王車林多爾濟史事鉤沉</hi>—<hi rend="Chinese">以喀爾喀四盟報災案為中心</hi>[History of Mongolian Prince Cherin-Dorji in the Qing Dynasty-A Disaster Report by the Four Leagues of Khalkha]. Studies of Chinese Frontier Ethnic Groups.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Tsai, R.T.-H. et al. </hi>(2020). Automatic Labeled Data Generation for Person Named Entity Disambiguation on the Ming Shilu. DH.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Vaswani, A. et al. </hi>(2017). Attention Is All You Need. arXiv:1706.03762 [cs].
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Lin, B.Y. et al. </hi>(2020). TriggerNER: Learning with Entity Triggers as Explanations for Named Entity Recognition. arXiv:2004.07493 [cs]. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Zhang, Y. et al. </hi>(2017). <hi rend="Chinese">明代職官中英辭典</hi> Chinese-English Dictionary of Ming Government Official Titles.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

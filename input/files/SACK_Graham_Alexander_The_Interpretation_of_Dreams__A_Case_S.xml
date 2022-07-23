@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Interpretation of Dreams: A Case Study in Virtual Reality Filmmaking and the Remediation of Psychoanalytic Theory</title>
+                <author>
+                    <persName>
+                        <surname>Sack</surname>
+                        <forename>Graham Alexander</forename>
+                    </persName>
+                    <affiliation>Washington University in St. Louis, Interdisciplinary Project in the Humanities; Johns Hopkins University, Immersive Storytelling &amp; Emerging Technologies, Film &amp; Media MA Program</affiliation>
+                    <email>graham.sack@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-03T14:02:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Virtual Reality</term>
+                    <term>Remediation</term>
+                    <term>Adaptation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>digital art production and analysis</term>
+                    <term>virtual and augmented reality creation</term>
+                    <term>systems</term>
+                    <term>and analysis</term>
+                    <term>Film and cinema arts studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: justify;">This presentation will demo and discuss the production of 
+                <hi rend="italic" xml:space="preserve">The Interpretation of Dreams, </hi>a four-part virtual reality episodic series that immerses users in visually rich and psychologically complex dreamscapes adapted from Freud’s original psychoanalytical case studies, including “The Ratman,” “Anna O.,” “Dora,” and “Irma’s Injection.” The series, released in 2018 during Tribeca Film Festival’s Immersive program and subsequently screened at Vancouver International Film Festival and VR Para Llevar, was supported and distributed by Samsung through an experimental grant-making program entitled “VR Pilot Season,” the goal of which was to incubate and test the viability of complex, multi-episode, serialized narrative in virtual reality. 
+            </p>
+            <p style="text-align: justify;">The narrative language of two-dimensional cinema co-evolved with the psychoanalytic language of dreams and the unconscious beginning in the early 20th century. Federico Fellini famously called film “a dream we dream with our eyes open,” while filmmakers from Méliés to Tarkovsky to Lynch to Nolan have utilized cinema to directly represent dream-states. Dreams inform both the form of these films—their so-called “oneiric” quality, evoking a free-floating, disembodied experience, like drifting through a 
+                dream—and their content, which explicitly depicts dreamscapes and the structure of the unconscious. 
+            </p>
+            <p style="text-align: justify;">In many ways, virtual reality as a medium is better adapted to the representation of dream-states and the unconscious than traditional two-dimensional cinema. Most of us do not dream within a frame, after all—we dream immersively. Virtual reality provides a vast new vocabulary for the exploration and visualization of the unconscious, from the construction of surreal landscapes; to the distortion of time, space, perception, and physical law; to user interaction with objects that reveal layers of hidden meaning. Moreover, the language of virtual reality storytelling is still in its infancy, much the way two-dimensional cinema was in the early 20th century. This project therefore began with the question: “Can the psychoanalytic language of dreams provide guidance and inspiration to immersive filmmakers today, as it did for their predecessors a century ago?” </p>
+            <p style="text-align: justify;">With this motivating question in mind, the project took as its subject matter the West’s most canonized source—Sigmund Freud’s 
+                <hi rend="italic" xml:space="preserve">The Interpretation of Dreams </hi>(1900) and the case studies he composed over the successive decade applying his theory. Each episode reimagines one case study as a visually rich, psychologically complex, and emotionally haunting immersive dreamscape. 
+            </p>
+            <p style="text-align: justify;">
+                <hi rend="underline">Episode 1, “The Ratman”:</hi> A polite but troubled law student arrives at Freud’s office complaining of the first recorded symptoms of obsessive-compulsive disorder. As Freud places the patient under hypnosis, the viewer enters a Kafka-esque dreamscape centered around his phobias and sense of criminality. 
+            </p>
+            <figure>
+                <graphic n="1001" width="12.676480555555555cm" height="8.450986111111112cm" url="Pictures/8b9831de0372a9e8714b0f0ada440db2.jpg" rend="inline"/>
+            </figure>
+            <p style="text-align: justify;">
+                <hi rend="underline">Episode 2, “Anna O.”:</hi> The first patient in history to undergo psychoanalysis. Freud described Anna as “the actual founder of the psychoanalytic approach.” A 21-year-old paralytic with a rich imagination, Anna expressed her inner world through poetic but melancholy fairy tales inspired by Hans Christian Anderson. 
+            </p>
+            <figure>
+                <graphic n="1002" width="12.793486111111111cm" height="8.79475cm" url="Pictures/6517d0f69d442e41e75208c9d5fe4d5b.jpeg" rend="block"/>
+            </figure>
+            <p style="text-align: justify;">
+                <hi rend="underline">Episode 3, “Dora”:</hi> Freud’s most famous patient, “Dora” was the first test case for the theory of dream interpretation. Arriving at Freud’s office suffering from aphonia (the inability to speak), Dora’s dreams centered around recurring images of fire, the incineration of her childhood home, and the sinister arrival of “Herr and Frau K.”
+            </p>
+            <figure>
+                <graphic n="1003" width="13.710708333333333cm" height="8.466666666666667cm" url="Pictures/7e06b6efa00ba057cc636cba60296f41.png" rend="block"/>
+            </figure>
+            <p style="text-align: justify;">
+                <hi rend="underline">Episode 4 , “Irma’s Injection”:</hi> In this case, Freud turned his interpretative method back on himself, dissecting the symbolic structure of his own dreams. This episode depicts Freud’s own unconscious fears and his lurking sense that the psychoanalytic enterprise may be built on misguided assumptions about the relationship between mind and body.
+            </p>
+            <figure>
+                <graphic n="1004" width="14.11111111111111cm" height="8.869219444444445cm" url="Pictures/82e02c672c5b5937c7251a43066a8fa6.png" rend="inline"/>
+            </figure>
+            <p style="text-align: justify;">Each episode was deeply grounded in the source material, but took creative license to render the case in a visually immersive form. One of the central challenges of remediating the psychoanalytic materials arose from the fact that Freud’s talking method relied on verbal expression and linguistic association. Virtual reality, even more than traditional cinema, is, however, a visual and sensory medium. It was therefore necessary to find ways to represent the symbolic structure of the cases through visual effects, raising both practical and theoretical questions regarding adaptation, digital remediation, and the narratology of immersive experiences.</p>
+            <p style="text-align: justify;">The four episodes can be accessed at the following links and either viewed in equirectangular format or side-loaded into a compatible virtual reality headset:</p>
+            <p style="text-align: justify;">
+                <ref target="https://www.dropbox.com/s/7catl5l4lx8snrx/dreams_ep1_ratman_mod_fix_mux_360.mp4?dl=0">
+                    <hi rend="Hyperlink.0">https://www.dropbox.com/s/7catl5l4lx8snrx/dreams_ep1_ratman_mod_fix_mux_360.mp4?dl=0</hi>
+                </ref>
+            </p>
+            <p style="text-align: justify;">
+                <ref target="https://www.dropbox.com/s/9hgsq7rvxdm4x4h/dreams_ep2_anna_mux_360.mp4?dl=0">
+                    <hi rend="Hyperlink.0">https://www.dropbox.com/s/9hgsq7rvxdm4x4h/dreams_ep2_anna_mux_360.mp4?dl=0</hi>
+                </ref>
+            </p>
+            <p style="text-align: justify;">
+                <ref target="https://www.dropbox.com/s/irteseie52edlqk/dreams_ep3_dora_mux_360.mp4?dl=0">
+                    <hi rend="Hyperlink.0">https://www.dropbox.com/s/irteseie52edlqk/dreams_ep3_dora_mux_360.mp4?dl=0</hi>
+                </ref>
+            </p>
+            <p style="text-align: justify;">
+                <ref target="https://www.dropbox.com/s/f6it65asf5k9syr/dreams_ep4_the_doctor_mux_360.mp4?dl=0">
+                    <hi rend="Hyperlink.0">https://www.dropbox.com/s/f6it65asf5k9syr/dreams_ep4_the_doctor_mux_360.mp4?dl=0</hi>
+                </ref>
+            </p>
+        </body>
+    </text>
+</TEI>

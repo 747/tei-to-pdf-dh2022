@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>After deplatforming: digital methods for documenting Twitter and YouTube moderation</title>
+                <author>
+                    <persName>
+                        <surname>de Keulenaar</surname>
+                        <forename>Emillie Victoria</forename>
+                    </persName>
+                    <affiliation>University of Groningen, OILab</affiliation>
+                    <email>e.v.de.keulenaar@rug.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kisjes</surname>
+                        <forename>Ivan</forename>
+                    </persName>
+                    <affiliation>University of Amsterdam</affiliation>
+                    <email>i.kisjes@uva.nl</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-19T11:40:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>deplatforming</term>
+                    <term>content moderation archival</term>
+                    <term>web history</term>
+                    <term>digital methods</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>digital archiving</term>
+                    <term>information retrieval and querying algorithms and methods</term>
+                    <term>Media studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve">Following myriad controversies, including harassment campaigns and dissemination of conspiratorial narratives </hi>
+                <ref target="https://www.zotero.org/google-docs/?xE3GnU">
+                    (Bounegru
+                </ref>
+                <ref target="https://www.zotero.org/google-docs/?xE3GnU">
+                    <hi rend="italic" style="font-family:Source Serif Pro">et al.</hi>
+                </ref>
+                <ref target="https://www.zotero.org/google-docs/?xE3GnU">
+                    , 2018; Jeong, 2019)
+                </ref>
+                , genocides
+                <ref target="https://www.zotero.org/google-docs/?eWMDkn">
+                    (Mozur, 2018)
+                </ref>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve"> and political extremism</hi>
+                <ref target="https://www.zotero.org/google-docs/?qEjaV6">
+                    (Ganesh and Bright, 2020)
+                </ref>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve">, social media platforms and cloud hosts have deployed additional measures to moderate user-generated contents. YouTube, Facebook and Twitter, in particular, have further developed content moderation techniques that prevent the circulation of “problematic information” </hi>
+                <ref target="https://www.zotero.org/google-docs/?4V3IkL">
+                    (Jack, 2017)
+                </ref>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve"> via deletion or “deplatforming” </hi>
+                <ref target="https://www.zotero.org/google-docs/?VEwUaP">
+                    (Rogers, 2020)
+                </ref>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve">, automatically flagging content as “misleading” </hi>
+                <ref target="https://www.zotero.org/google-docs/?572vXS">
+                    (Gorwa, Binns and Katzenbach, 2020)
+                </ref>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve">, and demoting or “shadow-banning” </hi>
+                <ref target="https://www.zotero.org/google-docs/?KAhGDp">
+                    (Myers West, 2018)
+                </ref>
+                user posts across search and recommendation results
+                <ref target="https://www.zotero.org/google-docs/?MZK7gz">
+                    (Goldman, 2019)
+                </ref>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve">. To date, millions of content associated with hate speech, COVID-19 conspiracy theories and incitement to violence have been wiped out from Twitter </hi>
+                <ref target="https://www.zotero.org/google-docs/?YLAZbD">
+                    (Al Jazeera, 2021)
+                </ref>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve">, YouTube </hi>
+                <ref target="https://www.zotero.org/google-docs/?L58Fsd">
+                    (Keulenaar, Burton and Kisjes, 2021)
+                </ref>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve">, Instagram </hi>
+                <ref target="https://www.zotero.org/google-docs/?p3zlX7">
+                    (Francis, 2021)
+                </ref>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve">, and Facebook </hi>
+                <ref target="https://www.zotero.org/google-docs/?8cu6oQ">
+                    (Lerman, 2020)
+                </ref>
+                .
+            </p>
+            <p>
+                Though it is essential for regulating any kind of public sphere, the imperative to delete and otherwise obfuscate problematic content has brought new challenges to new media and digital humanities scholars in at least three ways. Most directly, it renders problematic content unarchivable by default, making almost impossible the study of already precariously archived Web and social media data
+                <ref target="https://www.zotero.org/google-docs/?oQ617B">
+                    (Brügger and Schroeder, 2017)
+                </ref>
+                . Second, moderated platforms provide little information on how they practice moderation. This prevents public efforts from scrutinizing the normative framework platforms adopt to determine what can and cannot be said. In turn, the obfuscation of moderated content and moderation practices further hampers studies on speech moderation and norms as a key historical and societal practices to any modern-day society. Speech norms join a long history of legal, social and political measures to prevent the normalization of problematic histories, and have been implemented in the form of laws, social conventions and civil right campaigns in a range of media types.
+            </p>
+            <p>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve">Thus far, scholars have relied on a handful of improvised methods for studying moderation and moderated contents. With the exception of Twitter’s Enterprise API </hi>
+                <ref target="https://www.zotero.org/google-docs/?5iu7Ol">
+                    (Twitter, 2021)
+                </ref>
+                , platforms rarely outsource information about what specific contents they have moderated and why. While most studies in platform governance focus on written documentation and leaked documents from ex-platform employees
+                <ref target="https://www.zotero.org/google-docs/?c3vgLO">
+                    (Wall Street Journal, 2021)
+                </ref>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve">, digital methods research tends to rely on information provided by Application Program Interfaces (APIs). These researcher practices have yet to be systematically combined, and are still prey to changing APIs </hi>
+                <ref target="https://www.zotero.org/google-docs/?S4IRb7">
+                    (Perriam, Birkbak and Freeman, 2020)
+                </ref>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve"> and reprisals for illegal scraping of information that is otherwise not publicly provided</hi>
+                <ref target="https://www.zotero.org/google-docs/?6DoUO4">
+                    (Bond, 2021)
+                </ref>
+                .
+            </p>
+            <p>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve">On this matter, this paper discusses a new “digital forensics”: a set of methods one can use to reconstruct platform and user traces. In other words, it proposes methods to reconstruct the scene after or on which platform or user data has disappeared in the context of one specific platform effect: content moderation. Drawing from two case studies on Twitter and YouTube’s moderation of COVID-19 misinformation between January and April of 2020 </hi>
+                <ref target="https://www.zotero.org/google-docs/?66Qynd">
+                    (de Keulenaar
+                </ref>
+                <ref target="https://www.zotero.org/google-docs/?66Qynd">
+                    <hi rend="italic" style="font-family:Source Serif Pro">et al.</hi>
+                </ref>
+                <ref target="https://www.zotero.org/google-docs/?66Qynd">
+                    , Forthcoming)
+                </ref>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve">, and hate speech on YouTube between 2007 and 2018 </hi>
+                <ref target="https://www.zotero.org/google-docs/?4xb43V">
+                    (de Keulenaar
+                </ref>
+                <ref target="https://www.zotero.org/google-docs/?4xb43V">
+                    <hi rend="italic" style="font-family:Source Serif Pro">et al.</hi>
+                </ref>
+                <ref target="https://www.zotero.org/google-docs/?4xb43V">
+                    , 2021)
+                </ref>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve">, it proposes a web historiography (Brügger, 2013) of content moderation policies and techniques with a combination of HTML scraping, retrieval of moderation metadata via APIs, and detection of content availability through dynamic archival of moderated contents. </hi>
+            </p>
+            <p>
+                <hi style="font-family:Source Serif Pro" xml:space="preserve">It describes the potentials and shortcomings of four methods: </hi>
+            </p>
+            <list rend="numbered">
+                <item>
+                    <hi rend="bold" style="font-family:Source Serif Pro">A contextualization of content moderation practices</hi>
+                    . Using the Wayback Machine to trace changes in content moderation policies, this method consists in systematically annotating changes to (a) how the platform decides what is and is not problematic; and (b) observing and documenting the techniques the platform uses to moderate contents respectively.
+                </item>
+                <item>
+                    <hi rend="bold" style="font-family:Source Serif Pro">Dynamic archiving of content susceptible to being moderated</hi>
+                    <hi style="font-family:Source Serif Pro" xml:space="preserve">. This consists in first developing a taxonomy of problematic speech based on what platform content moderation policies consider to be problematic, such as hate speech (examples being speech that targets gender, racial and other identities), misinformation (such as information that contradicts COVID medical authorities) and “borderline content” (information likely to infringe upon policies in the future, usually described as conspiratorial or fringe discourses). This allows us to design queries that reflect problematic speech, which we use to collect corresponding tweets, videos and comments daily, as well as its corresponding metadata and platform effects (search and recommendation rankings, etc.). </hi>
+                </item>
+                <item>
+                    <hi rend="bold" style="font-family:Source Serif Pro">Reverse-engineering content moderation practices</hi>
+                    <hi style="font-family:Source Serif Pro" xml:space="preserve">. Using Twitter Academic and YouTube’s standard APIs to reverse-engineer moderation practices, collecting metadata for: (1) the availability of problematic contents per day; (2) by-products of algorithmic moderation, such as their ranking in search and recommendation results over time, and flags and prompts we scrape using Selenium; and (3) user engagement in moderated contents. </hi>
+                </item>
+                <item>
+                    <hi rend="bold" style="font-family:Source Serif Pro">Tracing the effects of the disappearance of moderated data</hi>
+                    <hi style="font-family:Source Serif Pro" xml:space="preserve"> in one platform by looking at its migration in other platforms. This implies looking at how users react to the practice of moderation (for example, what they say about “cancelling”, “deplatforming”, “deleting”, “shadowbanning” and other forms of platform interventions), as well as how they curtail these sanctions by access sanctioned content in alternative or “alt-tech” platforms like Telegram, Bitchute and Parler.</hi>
+                </item>
+            </list>
+            <p>
+                Though imperfect, we aim to demonstrate how this ensemble of methods allows one to contextualize moderation practices, such as deplatforming, algorithmic demotion and flagging, within content moderation policies around hate speech and misinformation. We argue that they allow researchers to surface volatile content moderation practices, as well as map the larger effects of deplatforming across the Web in the fragmentation of users’ information diets across a fringe-to-mainstream social media ecology. Most importantly, we propose this method as a way to systematically document online speech moderation practices and contribute to a history of speech norms across political contexts and media types.
+            </p>
+        </body>
+    </text>
+</TEI>

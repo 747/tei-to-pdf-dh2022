@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Topic Modeling the Nineteenth-Century Poetry Canon</title>
+                    <title type="sub">English Poetry Reprinted in Anthologies</title>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Houston</surname>
+                        <forename>Natalie</forename>
+                    </persName>
+                    <affiliation>University of Massachusetts Lowell, United States of America</affiliation>
+                    <email>Natalie_Houston@uml.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T14:17:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>poetry</term>
+                    <term>topic modeling</term>
+                    <term>canon</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>semantic analysis</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The contents of poetry anthologies offer scholars a valuable resource for analyzing changes to the literary canon over time. No matter their size, poetry anthologies are necessarily selective, reprinting texts according to the editor’s aesthetic, educational, or political decisions. Anthologies designed for use as textbooks describe and define the field of literary study by providing a representation of a time period or literary movement within their pages. Within the academic context, these choices can have a far-reaching impact, as Wendell Harris suggests: “what is easily available in print tends to be what is being taught and written about” (Harris, 1991: 114). Anthologies also offer us a view into changing literary tastes and values: the poems by William Wordsworth (or any other poet) selected by anthology editors in the 1880s are very different from those selected by editors in the 1980s. As John Guillory suggests, “Canonicity is not a property of the work itself but of its transmission, its relation to other works in a collocation of works.” (Guillory, 1993: 55) Poems accrue status and cultural value through being reprinted in anthologies, where they are placed in relation to other poems. This paper applies topic modeling and network analysis to a corpus of nineteenth-century British poems reprinted in British and American anthologies from 1880-2010 to understand the impact of those relationships. </p>
+            <p>Previous work used network analysis to examine the relationships among poets, poems, and anthologies in a corpus of 30 anthologies of nineteenth-century poetry published between 1880-2010 (Houston, 2017). A bimodal affiliate network of anthologies and poems reveals the relationships among anthologies that printed the same poems. A co-printing network (based on bibliographic co-citation analysis) consists of nodes representing each poem, with edges drawn between poems printed within the same anthology. Modularity analysis of this network reveals clusters of poems that are frequently printed together. </p>
+            <p>In this paper, I apply Latent Dirichlet Allocation (LDA) topic modeling (Blei et al) to the poems in the corpus and then examine the distribution of topics within the poem-anthology network and the co-printing network. LDA is a generative statistical model which assumes documents consist of “topics” made up of co-occurring words, and that these topics are present to varying proportions within the documents in the corpus. LDA has been shown to be an effective method for information retrieval and document classification tasks and has been applied to distant reading projects in the digital humanities on diverse materials ranging from novels to newspapers to scholarly articles (Buurma, 2015; Block, 2006; Goldstone and Underwood, 2012). Although the compressed semantic representation of an LDA topic can be seen as limiting the figurative complexity of poetic language (Rhody, 2012), the method has been shown to be effective for exploring and classifying short poetic texts (Navarro-Columbo, 2018; Plecháč and Haider, 2020; Šeļa et al, 2020). </p>
+            <p>Following Šeļa et al, I use an LDA topic model of the entire corpus as a representation of its semantic “topic space,” an “abstracted representation of poetic language” (Šeļa et al, 2020: 15). Each poem can then be labeled by its highest-ranking topic (by proportion within the document). Encoding this semantic information as node features within the poem-anthology network reveals how the selections within particular anthologies emphasize or minimize particular themes. Within the co-printing network, this semantic information reveals how strongly thematic connections relate to the structural relationships of the poems’ publication format. Combining the semantic insights offered by LDA topic modeling with the structural insights offered by network analysis offers new approaches to understanding the impact of influential anthologies (and their editors) in shaping subsequent generations’ understanding of nineteenth-century British poetry. </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" style="font-size:13pt" xml:space="preserve">Blei, D et al. </hi>
+                        <hi style="font-size:13pt" xml:space="preserve">(2003). Latent Dirichlet Allocation. </hi>
+                        <hi rend="italic" style="font-size:13pt">Journal of Machine Learning Research</hi>
+                        <hi style="font-size:13pt" xml:space="preserve"> 3: 993–1022.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:13pt">Block, S.</hi>
+                        <hi style="font-size:13pt" xml:space="preserve"> (2006). Doing More with Digitization. </hi>
+                        <hi rend="italic" style="font-size:13pt" xml:space="preserve">Common-place </hi>
+                        6(2). http://commonplace.online/article/doing-more-with-digitization/.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:13pt">Buurma, R.</hi>
+                        <hi style="font-size:13pt" xml:space="preserve"> (2015). The fictionality of topic modeling: Machine reading Anthony Trollope's Barsetshire series. </hi>
+                        <hi rend="italic" style="font-size:13pt">Big Data &amp; Society</hi>
+                        <hi style="font-size:13pt" xml:space="preserve"> 2(2): 1-6.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:13pt">Goldstone, A. and Underwood, T.</hi>
+                        <hi style="font-size:13pt" xml:space="preserve"> (2012). What Can Topic Models of PMLA Teach Us About the History of Literary Scholarship? </hi>
+                        <hi rend="italic" style="font-size:13pt">Journal of Digital Humanities</hi>
+                        <hi style="font-size:13pt" xml:space="preserve"> 2(1). http://journalofdigitalhumanities.org/2-1/. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:13pt" xml:space="preserve">Guillory, J. </hi>
+                        <hi style="font-size:13pt" xml:space="preserve">(1993). </hi>
+                        <hi rend="italic" style="font-size:13pt" xml:space="preserve">Cultural Capital: The Problem of Literary Canon Formation. </hi>
+                        <hi style="font-size:13pt" xml:space="preserve">Chicago and London: The University of Chicago Press. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:13pt">Harris, W.</hi>
+                        <hi style="font-size:13pt" xml:space="preserve"> (1991). Canonicity. </hi>
+                        <hi rend="italic" style="font-size:13pt" xml:space="preserve">PMLA </hi>
+                        106: 110-21.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:13pt" xml:space="preserve">Houston, N.M. </hi>
+                        <hi style="font-size:13pt" xml:space="preserve">(2017). Measuring Canonicity: a Network Analysis Approach to Poetry Anthologies. </hi>
+                        <hi rend="italic" style="font-size:13pt">Digital Humanities 2017</hi>
+                        . https://dh2017.adho.org/abstracts/479/479.pdf.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:13pt">Navarro-Colorado, B.</hi>
+                        <hi style="font-size:13pt" xml:space="preserve"> (2018). On Poetic Topic Modeling: Extracting Themes and Motifs From a Corpus of Spanish Poetry. </hi>
+                        <hi rend="italic" style="font-size:13pt">Frontiers in Digital Humanities</hi>
+                        <hi style="font-size:13pt" xml:space="preserve"> 5(15). doi: 10.3389/fdigh.2018.00015.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:13pt">Plecháč, P. and Haider, T.</hi>
+                        <hi style="font-size:13pt" xml:space="preserve"> (2020). Mapping Topic Evolution Across Poetic Traditions. </hi>
+                        <hi rend="italic" style="font-size:13pt">Digital Humanities 2020</hi>
+                        <hi style="font-size:13pt" xml:space="preserve">. https://dh2020.adho.org/wp-content/uploads/2020/07/600_&#8203;Mapping&#8203;Topic&#8203;Evolution&#8203;Across&#8203;Poetic&#8203;Traditions.html. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:13pt">Rhody, L.</hi>
+                        <hi style="font-size:13pt" xml:space="preserve"> (2012). Topic Modeling and Figurative Language. </hi>
+                        <hi rend="italic" style="font-size:13pt">Journal of Digital Humanities</hi>
+                        <hi style="font-size:13pt" xml:space="preserve"> 2(1). http://journalofdigitalhumanities.org/2-1/. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:13pt">Šeļa, A. et al.</hi>
+                        <hi style="font-size:13pt" xml:space="preserve"> (2020). Weak Genres: Modeling Association Between Poetic Meter and Meaning in Russian Poetry. </hi>
+                        <hi rend="italic" style="font-size:13pt">CHR 2020: Workshop on Computational Humanities Research</hi>
+                        . http://ceur-ws.org/Vol-2723/long35.pdf.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

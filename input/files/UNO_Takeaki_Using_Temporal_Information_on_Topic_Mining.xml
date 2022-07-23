@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Using Temporal Information on Topic Mining</title>
+                <author>
+                    <persName>
+                        <surname>Uno</surname>
+                        <forename>Takeaki</forename>
+                    </persName>
+                    <affiliation>National Institute of Informatics, Japan</affiliation>
+                    <email>uno@nii.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kobayashi</surname>
+                        <forename>Ryota</forename>
+                    </persName>
+                    <affiliation>The University of Tokyo, Japan</affiliation>
+                    <email>r-koba@edu.k.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Takedomi</surname>
+                        <forename>Yuka</forename>
+                    </persName>
+                    <affiliation>National Institute of Informatics, Japan</affiliation>
+                    <email>yuka_takedomi@nii.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hashimoto</surname>
+                        <forename>Takako</forename>
+                    </persName>
+                    <affiliation>Chiba University of Commerce</affiliation>
+                    <email>takako@cuc.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Clustering</term>
+                    <term>Algorithm</term>
+                    <term>Data Mining</term>
+                    <term>Topic</term>
+                    <term>Data Analysis</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>social media analysis and methods</term>
+                    <term>text mining and analysis</term>
+                    <term>Informatics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>Analyzing social media data (e.g., Twitter and Reddit) is essential to characterize social and political problems and understand them. Practically it is impossible to read all the social media posts and digest them manually. Thus, we have to extract underlying topics from the text automatically. </p>
+                <p>
+                    <hi style="font-family:Constantia" xml:space="preserve">Clustering is a suitable tool for extracting topics from social media data. However, it is still challenging to discover interpretable topics from a corpus of noisy and short texts, including social media posts. A limitation of the existing clustering methods, such as topic models (e.g., LDA [1]), is that they extract topics based on only word information (e.g., word frequency in the post). It is a notable feature that the social media data is the streaming data, i.e., the data consists of the text and the timestamp (the posted times). In contrast, it is not apparent how to utilize temporal information to find interpretable topics. For instance, we may be able to classify the tweets based on only the timestamps. However, this method would not find interpretable topics because many users post various topics of tweets simultaneously. Here we propose a clustering algorithm that utilizes the word and temporal information of the posts.  </hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <hi rend="bold" style="font-size:14pt">Proposed Clustering Algorithm</hi>
+                </head>
+                <p>We propose a two-stage clustering algorithm that discovers course-grained topics by leveraging textual and temporal information [2]. Suppose that a huge volume of Twitter data, with text bodies (tweets) and timestamps (posted times), is available for us. </p>
+                <p>
+                    In the first stage, we extract fine-grained topics (micro-clusters) by clustering the word co-occurrence graph of the tweets. We used the Data Polishing algorithm [3,4] to obtain the micro-clusters, that is, the tweets sharing a fine-grained topic. Data polishing algorithm was modified to incorporate the bias of the tweet data due to many retweets. Data polishing algorithm was modified to incorporate the bias of the tweet data due to many retweets. This modification improved the computational efficiency of the algorithm significantly. The temporal pattern of a micro-cluster is obtained by calculating the posting frequency of all the tweets in a micro-cluster. In the second stage, we discover the coarse-grained topics (e.g., a reaction to breaking news) by clustering the time series of the micro-clusters. We used K-Spectral Centroid (K-SC) clustering [5] to obtain the cluster of micro-clusters sharing a similar temporal pattern. K-SC algorithm is an extension of K-means, which improves the robustness to scaling and shifting. If the fine-grained topics originate from an item of news, we can expect their temporal pattern should be similar. This is the motivation for focusing on the temporal pattern to find course-grained topics.
+                </p>
+                <p>
+                    First, the proposed algorithm was applied to large-scale Twitter data related to the "COVID-19 vaccine" [1]. We discover three types of coarse-grained topics from the Twitter data (26 million tweets): A. Reaction to the news (8 topics), B. Reaction to the tweets (2 topics), and C. Others (2 topics). While topics A and B exhibit a clear peak in their temporal pattern, topic C does not exhibit peaks: it shows a persistent activity. This topic comprises rumors, fake news, alerts for fake news, jokes, tips, etc., which are continuously posted on Twitter. Notably, the data polishing method can extract even such a less popular topic.
+                </p>
+                <p style="text-align: left; ">Next, we evaluate the computational efficacy of the proposed algorithm; we ask how fast the algorithm process the data? We compare the proposed algorithm with five existing algorithms for finding topics from tweets: LDA [1], K-means, MeanShift, Agglomerative clustering, and Data Polishing [3, 4]. We found that the proposed algorithm is much faster than the existing methods. For instance, the proposed algorithm is more than 300 times faster than LDA with a data set of 100,000 tweets.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        Blei, D. M. (2012), Probabilistic topic models. Communications of the ACM, 55:77–84
+                    </bibl>
+                    <bibl>
+                        Hashimoto, T., et al. (2021), Two-stage Clustering Method for Discovering People's Perceptions: A Case Study of the COVID-19 Vaccine from Twitter, IEEE BigData 2021.
+                    </bibl>
+                    <bibl>
+                        Hashimoto, T., et al. (2021), Analyzing Temporal Patterns of Topic Diversity using Graph Clustering, The Journal of Supercomputing, 77:4375-4388
+                    </bibl>
+                    <bibl>
+                        Uno, T., et al. (2017), Micro-clustering by Data Polishing. IEEE BigData 2017, 1012-1018
+                    </bibl>
+                    <bibl>
+                        Yang, J. and Leskovec, J. (2011), Patterns of temporal variation in online media. In Proceedings of the fourth ACM international conference on Web Search and Data Mining, pages 177–186
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

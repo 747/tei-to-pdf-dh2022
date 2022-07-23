@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Visualization of annotation system of the Theravada Buddhist literature</title>
+                <author>
+                    <persName>
+                        <surname>Aono</surname>
+                        <forename>Michihihiko</forename>
+                    </persName>
+                    <affiliation>International Institute for DigitalHumanities, Japan</affiliation>
+                    <email>aonomichihiko@hotmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-31T05:13:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Theravada</term>
+                    <term>TEI</term>
+                    <term>Buddhism</term>
+                    <term>tipitaka</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>5th-14th Century</term>
+                    <term>text encoding and markup language creation</term>
+                    <term>deployment</term>
+                    <term>and analysis</term>
+                    <term>Philology</term>
+                    <term>South Asian studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">The Theravada Buddhist texts consists of a huge number of scriptures and commentaries. The main parts of them are handed down in one of the Middle Indo-Aryan languages called Pali or Magadhi. So far, they have occupied the most important position in the study of Buddhist literature, since they can be read more strictly than Chinese translations, Sanskrit manuscripts and so on.</p>
+            <p style="text-align: left; ">Around the turn of the millennium, the Vipassana Research Institute (India), the Dhammakaya Foundation (Thailand) and Mahidol University (Thailand) released a voluminous amount of the digitized texts of the Theravada Buddhist texts written in Pali language. Now that it is possible to read them on personal computers and perform full-text search, most of Buddhologists use the digitized texts for their research instead of printed books and concordances.</p>
+            <p style="text-align: left; ">However, I wonder if this can be called “digital shift”. We are only reading the digital texts on personal computers, without digitalizing our research at all. Our research method is still the same as before. In order to renew our philological study of the Theravada Buddhist texts and to achieve the digital shift in the true sense, I feel certain that it is essential to structuralize the digital texts. This is the reason why I started to mark up the structure of the scriptures and their commentaries in accordance with Text Encoding Initiative P5 Guideline.</p>
+            <p style="text-align: left; ">In this poster presentation, I will point out some problems which I encountered when trying to apply the Text Encoding Initiative P5 Guideline to the complicated structure of the annotation system of the Theravada Buddhist texts. To give an example concisely here, &lt;gloss&gt; may not be available to structuralize the annotation system. This is because the commentaries of the Theravada Buddhist texts sometimes cite sentences from other sources or include popular verses. In these cases, it is necessary to use &lt;quote&gt; indicating a quotation and &lt;l&gt; and &lt;lg&gt; indicating a verse and a group of verses. However, &lt;gloss&gt; cannot include &lt;quote&gt;, &lt;l&gt; and &lt;lg&gt; according to the Text Encoding Initiative P5 Guideline. In the first place, “gloss” (Gk. Glossa, Lat. Glossa) is a simple note or comment added to a piece of writing to explain a difficult word or phrase in the line spacing and margins, based on the definition of 
+                <hi rend="italic">A Dictionary of the English Bible and Its Origins</hi>. While “Gloss” is dependent on the main text, the commentaries of the Theravada Buddhist texts are independent of the main texts, i.e. the scriptures. In order to overcome these difficulties and structuralize the annotation system accurately, I decided to adopt &lt;note&gt; with @type as an alternative to &lt;gloss&gt;. As in the above example, I will show the other difficulties of encoding and how to solve them in accordance with Text Encoding Initiative P5 Guideline in this presentation.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Gilmore, Alec. (2000). 
+                        <hi rend="italic">A Dictionary of the English Bible and Its Origins</hi>. Sheffield: Sheffield Academic Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">TEI Consortium. (2021). TEI P5: Guidelines for Electronic Text Encoding and Interchange 4.3.0, https://tei-c.org/release/doc/tei-p5-doc/en/Guidelines.pdf (accessed 31 March 2022).</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

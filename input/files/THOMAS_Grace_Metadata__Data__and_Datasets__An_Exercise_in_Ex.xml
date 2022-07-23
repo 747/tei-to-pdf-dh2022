@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Metadata, Data, and Datasets: An Exercise in Excising the Web Archive for Public Consumption</title>
+                <author>
+                    <persName>
+                        <surname>Thomas</surname>
+                        <forename>Grace</forename>
+                    </persName>
+                    <affiliation>Library of Congress, United States of America</affiliation>
+                    <email>grth@loc.gov</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dooley</surname>
+                        <forename>Chase</forename>
+                    </persName>
+                    <affiliation>Library of Congress, United States of America</affiliation>
+                    <email>cdool@loc.gov</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-15T15:30:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>web archives</term>
+                    <term>datasets</term>
+                    <term>EMR</term>
+                    <term>big data</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>information retrieval and querying algorithms and methods</term>
+                    <term>Computer science</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Innovation is sparked in the absence of access to a service or resource. Or, in the case of libraries, merely access itself. As a core value of librarianship, access stands paramount to the mission of libraries and, therefore, so does the necessity to innovate in the face of a gap in access. The Web Archiving Team at the Library of Congress found ourselves facing such a gap when we stood on the edge of our digital cliff and peered out over it and into the three Petabytes (PB) of web archives swimming in our lake of data. In this talk we introduce the ways in which we bridged that gap by publicly providing basic but rich technical metadata about web resources in the form of crawl indexes (CDX’s). First, we will briefly describe the methodology behind the Library’s harvesting practices and the difficulties they have made in presenting data in bulk to researchers. Then, we will touch on the technical aspects: our approach, research, tools used, and results. Finally, we will discuss the impact this work has on the digital humanities community, and invite researchers to experiment for themselves.</p>
+            <p>The Library of Congress web archives are organized among 80 thematic and event-based collections, and contain websites representing a broad range of subjects, languages, file formats, and topic areas, with a mix of crawling and access permissions based on the country of publication and type of website. Areas such as: government; non-profit and for profit organizations; journalism and news; and creative sites are collected from the United States and throughout the world. Active Library subject specialists maintain and continually refine collections such as the Indian Political and Social Issues Web Archive collection which has been collecting content in English, Hindi, Urdu, Marathi, and Bengali for two years, and the United States Elections Web Archive collection, which has been collecting campaign material in English and Spanish during every national election season since 2000.</p>
+            <p>Although the archive’s contents are nominated, cataloged, and made available on loc.gov according to the event and thematic collections, the harvesting takes a different form. Crawls are performed weekly, monthly, and quarterly, and each crawl acts as a bucket for any seeds in the collections set to crawl at that particular frequency. Harvesting in this ‚bucket-style‘ allows the Web Archiving Team to streamline many aspects of crawling over 14,000 seeds (or ‚websites‘) at any given time and allows harvesting to reflect the specific website’s frequency of change.</p>
+            <p>This also means that the container files (Web ARChive or ‚WARC‘ files) holding the harvested web objects were collected ‚bucket-style‘ and may contain objects from 100 different websites, representing 20 different collections with varying access permissions in a single container file. Hence the issue with providing bulk data to researchers. Even after the Web Archiving Team received access to cloud services in 2018, and could experiment with access at scale, WARCs still could not be presented to researchers as-received because of the mixed permissions. We looked to existing tools and organizations for inspiration to find a path that would work for us. We ultimately adapted work from Common Crawl’s public Github repository (
+                <ref target="https://github.com/commoncrawl/cc-pyspark">
+                    <hi rend="underline color(1155CC)">https://github.com/commoncrawl/cc-pyspark</hi>
+                </ref>, 
+                <ref target="https://github.com/commoncrawl/cc-mrjob">
+                    <hi rend="underline color(1155CC)">https://github.com/commoncrawl/cc-mrjob</hi>
+                </ref>). We also took cues from Archives Unleashed (Ruest et al., 2021) and ArchiveSpark (Holzmann et al., 2016) by utilizing EMR (Elastic Map Reduce) and Spark to process the CDX’s.
+            </p>
+            <p>The high-level process is very simple: transform the CDX’s into a format that is better suited for EMR and data processing, then query to reduce down to the desired output. The idea is modeled after Common Crawl’s approach in which they transform their CDX’s into Parquet format for enhanced compression and easier consummation into DataFrame objects that are part and parcel of Spark and other such Big Data processes. </p>
+            <p style="text-align: left; ">The ability to cleanly excise a part of the archive represented by its metadata is a huge step forward in providing bulk access to the archive. After making the first datasets publicly available (
+                <ref target="https://labs.loc.gov/work/experiments/webarchive-datasets/">
+                    <hi rend="underline color(1155CC)">https://labs.loc.gov/work/experiments/webarchive-datasets/</hi>
+                </ref>) we have seen use by students, information professionals, and researchers. Researchers use the metadata to load specific archive captures from the Library’s Wayback Machine instance, and ‚rehydrate‘ the text by scraping the archived captures to create a text-based dataset of their own. While this method requires some technical skill and processing power, we see countless opportunities to create web archive-based datasets for any discipline, given the Library’s broad collecting range, and look forward to fielding researcher requests.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Holzmann, H., Goel, V., Anand, A.</hi> (2016). ArchiveSpark: Efficient Web Archive Access, Extraction and Derivation. 
+                        <hi rend="italic">JCDL ‘16: Proceedings of the 16th ACM/IEEE-CS on Joint Conference on Digital Libraries</hi>. Newark, NJ, pp. 83-92. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ruest, N., Fritz, S., Deschamps, R. et al.</hi> (2021). From archive to analysis: accessing web archives at scale through a cloud-based interface. 
+                        <hi rend="italic">International Journal of Digital Humanities</hi>, 2: 5-24.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

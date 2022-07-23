@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Do we have to limit our research question by the tool to be used? The iLCM as an example of freely extensible research software for text-based research tasks in the humanities</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Niekler</surname>
+                        <forename>Andreas</forename>
+                    </persName>
+                    <affiliation>Leipzig University, Germany</affiliation>
+                    <email>aniekler@informatik.uni-leipzig.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kahmann</surname>
+                        <forename>Christian</forename>
+                    </persName>
+                    <affiliation>Leipzig University, Germany</affiliation>
+                    <email>kahmann@informatik.uni-leipzig.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T09:55:24.865000000</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Tool</term>
+                    <term>Text Mining</term>
+                    <term>NLP</term>
+                    <term>Research Software</term>
+                    <term>Text</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>text mining and analysis</term>
+                    <term>Computer science</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The barriers to our creativity are often the tools we have at our fingertips. This is particularly visible in text-oriented research tasks in the humanities, where a wide range of libraries and stand-alone software are available. The constraints of each tool and the researcher's skills in using the tools both shape and co-construct the research process. In our view, such influence should be minimized in the research process. The interactive Leipzig Corpus Miner (iLCM) [https://ilcm.informatik.uni-leipzig.de/] (Niekler et. al., 2018) represents a ready-to-use and GUI-supported software solution for the use of text mining in the humanities, cultural studies, and social sciences. The software is completely based on R [https://www.r-project.org/] and RShiny [https://shiny.rstudio.com/]. In parallel to the iLCM interface, an RStudio server [https://www.rstudio.com/] instance is provided as an IDE that ensures access to the available data and results. Among other things, the tool offers the pre-processing of multilingual documents, the retrieval and management of document collections, the deduplication of content, the analysis of word frequency, the analysis of word co-occurrence, time series analysis, topic models, the automatic coding and annotation of categories, supervised text classification (e.g. sentiment analysis) and more. In our poster, we demonstrate that its built-in ability to produce custom scripts, export results and script-based adaptations of the available analyses circumvents some restrictions of other tools used in humanities research. </p>
+            <p>For researchers using text-oriented analysis methodologies, implementing their own analysis programs is often not a viable option. While more and more researchers in the humanities, cultural studies, and social sciences are acquiring programming skills, developing complex research software remains a complicated process that typically requires trained software developers. Instead, applied research relies on existing research software. There are many single, specific (i.e. for one purpose) ready-to-use tools, e.g. for topic modeling [e.g. https://dariah-de.github.io/TopicsExplorer/], concordance tools [e.g. https://voyant-tools.org/] or word scaling [e.g. http://www.wordfish.org]. This restricts researchers to narrow study designs that stay within the confines of the specific software which leads to a significant reduction in the method portfolio of a research project. If scholars want to map more complex (NLP) workflows it gets more difficult, because researchers often have to use full-blown frameworks or APIs [https://www.nltk.org/, https://spacy.io/, https://stanfordnlp.github.io/CoreNLP/, https://opennlp.apache.org/, https://quanteda.io/] which is a deterrent for many humanists. Digital humanities tools must therefore not only implement general best practices from the field of usability, but also need to address the special characteristics of users in the humanities (Burghardt and Wolff, 2014). There are isolated approaches of integrating the whole NLP-pipeline [https://weblicht.sfs.uni-tuebingen.de/, https://hudesktop.hucompute.org/, https://textgrid.de/]. Nevertheless, the limitations are that you can recombine the provided processes in the tools but not fundamentally extend them.</p>
+            <p>We exemplify the benefits that result from the extensibility of the iLCM as follows:</p>
+            <p>
+                <hi rend="bold">Adaptability: </hi>Predefined analysis functions often require research-specific adaptations, both in preprocessing and in the analysis of text data. In the iLCM, a high degree of adaptability is provided by the ability to extensively parameterize each analysis step. Since internally each analysis method is implemented as a script written in the R programming language, it is possible to adapt the predefined methods directly. The edited processes can be reintegrated into the tool and are also available to the users of the graphical interface. In this way, iLCM can also be used to distribute tasks in interdisciplinary teams. A developer for the R components can adapt analyses for the humanities researchers and they use the processes via an easily accessible graphical interface.
+            </p>
+            <p>
+                <hi rend="bold">Extensibility: </hi>If a needed function or method is not available in the iLCM, it should be possible to add these functions. In iLCM, new scripts can be created within the iLCM script editor to add new analysis functions or replace existing ones. Furthermore, it is possible to implement additional analyses based on intermediate results in an associated RStudio IDE.
+            </p>
+            <p>
+                <hi rend="bold">Data export: </hi>If it is not possible or desired to fully implement a research design within the framework provided by the iLCM, it may still be possible to represent at least partial-processes using the tool. The result of these can then be exported and used in other software environments.
+            </p>
+            <p>With the iLCM we reflect the requirements of humanists for interactive, visual interfaces and standard tools. In response to frequently necessary adjustments in the creative processing of research tasks, we have also implemented the requirements of agile development in research processes. (Heyer, Kahmann and Kantner, 2019). With this Feature we contribute to the fact that the tool used does not limit the researchers and that the openest possible processing of text-oriented research tasks is possible.</p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/59c42f9e6357db64c7bbfd9d2278e844.png"/>
+                </figure>
+            </p>
+            <p>Figure 1: The view shows the interface of the iLCM in which an editing interface for the scripts has been integrated. The example of a co-occurrence analysis shows that the underlying standard process, which can also be used via the graphical user interface, is customizable. The edited process can then be integrated again with a custom process name and is also usable for all users of the graphical interface.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Burghardt, Manuel, &amp; Wolff, Christian.</hi> (2014). Humanist-Computer Interaction: Herausforderungen für die Digital Humanities aus Perspektive der Medieninformatik. Universität Regensburg. 
+                        <ref target="https://doi.org/10.5283/EPUB.35716">doi: 10.5283/EPUB.35716</ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Heyer, G., Kahmann, C. and Kantner, C.</hi> (2019) ‘Generic tools and individual research needs in the Digital Humanities - Can agile development help?’,
+                        <hi rend="italic">INFORMATIK 2019: 50 Jahre Gesellschaft für Informatik - Informatik für Gesellschaft (Workshop-Beiträge)</hi>. Gesellschaft für Informatik e.V., pp. 175–180. doi: 10.18420/inf2019_ws19.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Niekler, A., Bleier, A., Kahmann, C., Posch, L., Wiedemann, G., Erdogan, K., Heyer, G., &amp; Strohmaier, M.</hi> (2018). ILCM – A Virtual Research Infrastructure for Large-Scale Qualitative Data. 
+                        <hi rend="italic">Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018).</hi> European Language Resources Association (ELRA).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

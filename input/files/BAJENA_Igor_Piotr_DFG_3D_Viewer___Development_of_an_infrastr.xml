@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>DFG-3D-Viewer – Development of an infrastructure for digital 3D reconstructions</title>
+                <author>
+                    <persName>
+                        <surname>Bajena</surname>
+                        <forename>Igor Piotr</forename>
+                    </persName>
+                    <affiliation>Hochschule Mainz – University of Applied Sciences, Germany; University of Bologna, Italy</affiliation>
+                    <email>igorpiotr.bajena@unibo.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dworak</surname>
+                        <forename>Daniel</forename>
+                    </persName>
+                    <affiliation>Hochschule Mainz – University of Applied Sciences, Germany</affiliation>
+                    <email>daniel.dworak@hs-mainz.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kuroczyński</surname>
+                        <forename>Piotr</forename>
+                    </persName>
+                    <affiliation>Hochschule Mainz – University of Applied Sciences, Germany</affiliation>
+                    <email>piotr.kuroczynski@hs-mainz.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Smolarski</surname>
+                        <forename>René</forename>
+                    </persName>
+                    <affiliation>Friedrich-Schiller-Universität Jena, Germany</affiliation>
+                    <email>rene.smolarski@uni-jena.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Münster</surname>
+                        <forename>Sander</forename>
+                    </persName>
+                    <affiliation>Friedrich-Schiller-Universität Jena, Germany</affiliation>
+                    <email>sander.muenster@uni-jena.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Archaeology</term>
+                    <term>Art and Architecture history</term>
+                    <term>Digital 3D reconstruction</term>
+                    <term>Documentation</term>
+                    <term>Data Model</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>metadata standards</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Archaeology</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>An important element in digital reconstructions, in the fields of archeology, art and architecture history, is the subsequent visualization of the result (Messemer, 2016). The standardization of the documentation and publication is seen as the most important priority across the board (Cieslik, 2020). Widely established web-based 3D viewers such as Sketchfab (
+                    <ref target="https://sketchfab.com/">https://sketchfab.com/</ref>) belong to a commercial offer, while viewers prepared by scientific institutions like Kompakkt (
+                    <ref target="https://kompakkt.de/home">https://kompakkt.de/home</ref>
+                    <hi rend="underline color(0563C1)">)</hi> or by other research projects like patrimonium.net (Dworak, Kuorczyński, 2016) have not provided approved and applied standards for the documentation and publication of 3D models. Questions about legal security, verified long-term availability of data, or scientific traceability in the light of the Semantic Web are recognised but still to be solved (Kuroczyński, 2017).
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Project assumptions</head>
+                <p>Against this background, the project “DFG 3D-Viewer - Infrastructure for digital 3D reconstructions” was launched, which the goal is to provide an offer of permanent infrastructure for decentralized web-based display of models in the DFG 3D-Viewer and in suitable Virtual Research Environments (VRE), accompanied by low threshold interface usage (
+                    <ref target="http://dfg-viewer.de/en/dfg-3d-viewer">http://dfg-viewer.de/en/dfg-3d-viewer</ref>
+                    <hi rend="Hyperlink" xml:space="preserve">). </hi>The work presented here concerns the results of the first phase of the project including the definition of documentation standards for web-based 3D publication of the digital reconstruction models and the development of the web-based 3D-viewer for digital datasets as a minimal-effort plugin. Proposed solution considers a generic approach with adaptability and reusability (Münster, 2019), respects FAIR principles (
+                    <ref target="https://www.go-fair.org/fair-principles/">https://www.go-fair.org/fair-principles/</ref>) and follows existing DFG (German Research Foundation) standards (
+                    <ref target="https://www.dfg.de/en/research_funding/principles_dfg_funding/">https://www.dfg.de/en/research_funding/principles_dfg_funding/</ref>).
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Minimal documentation standard</head>
+                <p>Analysis of documented metadata of the chosen commercial and institutional 3D repositories formed the basis for the definition of a scheme for documentation. The developed data set was discussed among the community in the form of a survey, which significantly advanced the work towards establishing a standard. It also allowed to emerge documentation-related functionalities of the viewer, such as automatic rendering of the preview images or the displaying the information about model geometry (3D metadata) in the viewer window. The documentation scheme was implemented in a new prototypical 3D repository created in WissKI-based VRE [15], which has already been successfully used in several projects of digital reconstructions at the University of Applied Sciences Mainz [5, 13]. The data model in the repository uses the CIDOC Conceptual Reference Model [8] as an ontology. The fundamental research on data modelling was carried out along the community in order to concerns about different combinations of classes and properties to describe the same aspects of documentation.</p>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: left;">
+                            <figure>
+                                <graphic n="1001" width="15.578666666666667cm" height="14.499166666666667cm" url="Pictures/bbce4e4878f90176ee0d4b8b29de8151.jpeg" rend="inline"/>
+                            </figure>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;">Fig.1 The comparison of metadata sets in chosen institutional and commercial 3D web-based repositories (©2021, AI MAINZ).</cell>
+                    </row>
+                </table>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Framework architecture of the 3D Viewer</head>
+                <p>Comparing present 3D viewer solutions, it was decided to take the following properties into account: support for 2D &amp; 3D objects, variety of source formats, support for complex objects, modern technology based, suitable for hand-modeled and laser-scanned objects, 3D world operations, level of detail (LoD) as models representations, compression of 3D objects, 3D metadata, utilities/tools, documentation.</p>
+                <p>It appears that only a few 3D viewers fulfill more than half of the requirements. In fact, some of the analyzed applications support 2D/3D objects and a variety of formats, but some are still missing (PLY, XYZ, DAE) (Champion, Rahaman, 2020). These technologies are optimized for hand-modeled objects, while others only for laser-scanned ones. Three of them allow 3D world operations and support 3D metadata, nevertheless none of them supports 3D compression.</p>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: left;">
+                            <figure>
+                                <graphic n="1002" width="15.536333333333333cm" height="8.487833333333333cm" url="Pictures/b0be88dad23201e16a47cb7873819cf4.png" rend="inline"/>
+                            </figure>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;">Fig.2 Comparison of functionalities of the most competitive 3D viewers on the market (©2021, AI MAINZ).</cell>
+                    </row>
+                </table>
+                <p>The architecture of the DFG 3D-Viewer is developed considering existing web-based 3D viewers (Champion, Rahaman, 2020; Fernie at al., 2020). Conducted research compares existing infrastructures and viewers, as well as the concept of a modular architecture for the DFG 3D-Viewer. It concludes that the framework for the scientific 3D infrastructure (considering documentation and publication) should be cross-browser, platform independent and based on modern, promising and long-term supported technology. The viewer should allow viewing of 3D models with textures, stored in the most common formats used nowadays , i.e. OBJ, DAE, FBX, JSON (Cieslik, 2020). It should be also capable of loading 2D images (JPG, PNG, TIFF) (Cieslik, 2020), 3D metadata and provide 3D world operations on models (Fernie at al., 2020). Solution should be integrable out of the box, open source and client-only in order to distribute workload away from the server and minimize the requirements for repository providers to support the DFG 3D-Viewer.</p>
+                <p>The developed framework is based on the existing 3D library - three.js. Implementation was prepared in modern and interchangeable programming languages and technologies as JavaScript, PHP or Python. Architecture is optimized to be technology-independent and can be easily exchanged for any other client-side viewer. The solution is suitable for complex, hand-modeled, laser-scanned objects and 3D metadata as well. The viewer is extended to meet the requirements of the specialist community, including the possibility of displaying highly complex geometries and multiple data formats (inter alia IFC and FBX) (Fernie at al., 2020). Moreover, uploading 3D data triggers automatic unattended compression, based on Draco algorithm, and encoding into the glTF format which is optimized for web-based visualization.</p>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: left;">
+                            <figure>
+                                <graphic n="1003" width="15.726833333333333cm" height="14.499166666666667cm" url="Pictures/3bb7b3c0d28c30b6a9af9227966ddee8.jpeg" rend="inline"/>
+                            </figure>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;">Fig.3 Mockup of prototypical 3D repository with implemented DFG 3D-Viewer (©2021, AI MAINZ).</cell>
+                    </row>
+                </table>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Further research</head>
+                <p>The next stage of the project is the implementation of the developed modular DFG 3D-Viewer in various academic institutions' repositories, which will be realized in the next two years. The final solution will be available as minimal-effort plugin (set of scripts) for any environment that supports JavaScript, PHP and Python. The datasets from decentralised library repositories will be indexed and displayed in centralized browser web service. As a result, users are provided with a uniform interface for viewing digitised media. The project serves also for further fundamental research conducted by two PhDs in work in the topic of the scientific validation of published 3D reconstruction data and also visualization of the uncertainty on the published 3D models. </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="List Paragraph">
+                        <hi rend="bold" style="font-size:9pt">Champion, E. and Rahaman, H.</hi>
+                        <hi style="font-size:9pt" xml:space="preserve"> (2020). Survey of 3D digital heritage repositories and platforms, </hi>
+                        <hi rend="italic" style="font-size:9pt">Virtual Archaeology Review,</hi>
+                        <hi rend="bold" style="font-size:9pt">11(23)</hi>
+                        :1.
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <ref target="https://www.cidoc-crm.org/">
+                            https://www.cidoc-crm.org/
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (accessed 09 December 2021)</hi>
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <hi rend="bold" style="font-size:9pt">Cieslik, E.</hi>
+                        <hi style="font-size:9pt" xml:space="preserve">(2020). </hi>
+                        <hi rend="italic" style="font-size:9pt">3D Digitization in Cultural Heritage Institutions Guidebook</hi>
+                        . Baltimore: Dr. Samuel D. Harris National Museum of Dentistry.
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <ref target="https://www.dfg.de/en/research_funding/principles_dfg_funding/">
+                            https://www.dfg.de/en/research_funding/principles_dfg_funding/
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (accessed 11 April 2022)</hi>
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <ref target="http://dfg-viewer.de/en/">
+                            http://dfg-viewer.de/en/
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (accessed 10 December 2021)</hi>
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <hi rend="bold" style="font-size:9pt">Dworak, D., Kuroczyński, P</hi>
+                        . (2016) Virtual Reconstruction 3.0 – New Approach of Web-based Visualisation and Documentation of Lost Cultural Heritage.
+                        <hi rend="italic" style="font-size:9pt">Proceedings of 6th International Conference EuroMed</hi>
+                        , Cyprus: Springer International Publishing LNCS Series, pp. 292 – 306.
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <ref target="https://www.go-fair.org/fair-principles/">
+                            https://www.go-fair.org/fair-principles/
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (accessed 10 December .2021)</hi>
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <hi rend="bold" style="font-size:9pt">Fernie, K. et al.</hi>
+                        <hi style="font-size:9pt" xml:space="preserve"> (2020).</hi>
+                        <hi rend="italic" style="font-size:9pt">3D content in Europeana task force</hi>
+                        , Hague: Europeana Network Association.
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <ref target="https://kompakkt.de/home">
+                            https://kompakkt.de/home
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (accessed on 10 December 2021).</hi>
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <hi rend="bold" style="font-size:9pt">Kuroczyński, P.</hi>
+                        <hi style="font-size:9pt" xml:space="preserve">(2017). Virtual Research Environment for Digital 3D Reconstructions: Standards, Thresholds and Prospects. In: Frischer, B., Guidi, G., Börner, W., (Hg.) </hi>
+                        <hi rend="italic" style="font-size:9pt">Cultural Heritage and New Technologies 2016 Proceedings</hi>
+                        <hi style="font-size:9pt" xml:space="preserve">, </hi>
+                        <hi rend="italic" style="font-size:9pt">Studies in Digital Heritage,</hi>
+                        <hi style="font-size:9pt" xml:space="preserve"> Open Access Journal, Vol. 1, No. 2, pp. 456 – 476.</hi>
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <hi rend="bold" style="font-size:9pt">Kuroczyński, P., Bajena, I., Große, P., Jara, K., Wnęk K.</hi>
+                        <hi style="font-size:9pt" xml:space="preserve">(2022) Digital Reconstruction of the New Synagogue in Breslau: New Approaches to Object-Oriented Research. In Niebling, F., Münster, S. (eds.),  </hi>
+                        <hi rend="italic" style="font-size:9pt">Proceedings of the Conference on Research and Education in Urban History in the Age of Digital Libraries &amp; Digital Encounters with Cultural Heritage</hi>
+                        , Springer, January 2022.
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <hi rend="bold" style="font-size:9pt">Messemer, H.</hi>
+                        (2016) The Beginnings of Digital Visualisation of Historical Architecture in the Academic Field. In: Hoppe, S. and Breitling, S. (eds.),  V
+                        <hi rend="italic" style="font-size:9pt">irtual Palaces, Part II. Lost Palaces and their Afterlife. Virtual Reconstruction between Science and Media</hi>
+                        , München: PALATIUM, pp. 21-54.
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <hi rend="bold" style="font-size:9pt">Münster, S.</hi>
+                        <hi style="font-size:9pt" xml:space="preserve"> (2019) Digital Cultural Heritage as Scholarly Field – Topics, Researchers and Perspectives from a bibliometric point of view In: </hi>
+                        <hi rend="italic" style="font-size:9pt">Journal of Computing and Cultural Heritage</hi>
+                        <hi rend="bold" style="font-size:9pt">12(3)</hi>
+                        : 22-49.
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <ref target="https://www.new-synagogue-breslau-3d.hs-mainz.de">
+                            https://www.new-synagogue-breslau-3d.hs-mainz.de
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (accessed on 08 December 2021)</hi>
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <hi rend="underline color(0563C1)" style="font-size:9pt">https://www.patrimonium.net</hi>
+                        <hi style="font-size:9pt" xml:space="preserve"> (accessed on 10 December 2021)</hi>
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <ref target="https://sketchfab.com/">
+                            https://sketchfab.com/
+                        </ref>
+                        (accessed on 19 April 2022)
+                    </bibl>
+                    <bibl rend="List Paragraph">
+                        <ref target="http://wiss-ki.eu/">
+                            http://wiss-ki.eu/
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (accessed on 09 December 2021)</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

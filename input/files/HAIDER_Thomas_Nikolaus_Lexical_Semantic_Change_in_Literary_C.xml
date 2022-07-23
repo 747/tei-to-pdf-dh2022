@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Lexical Semantic Change in Literary Criticism</title>
+                <author>
+                    <persName>
+                        <surname>Haider</surname>
+                        <forename>Thomas Nikolaus</forename>
+                    </persName>
+                    <affiliation>University of Göttingen, Germany; Max Planck Institute for Empirical Aesthetics, Frankfurt</affiliation>
+                    <email>thomas.haider@uni-goettingen.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gittel</surname>
+                        <forename>Benjamin</forename>
+                    </persName>
+                    <affiliation>Max Planck Institute for Empirical Aesthetics, Frankfurt</affiliation>
+                    <email>benjamin.gittel@uni-goettingen.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-05T14:32:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Lexical Semantic Change</term>
+                    <term>Literary Criticism</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>cultural analytics</term>
+                    <term>semantic analysis</term>
+                    <term>Humanities computing</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Motivation </head>
+                <p style="text-align: left; ">Approaches to the study of reading literature are increasingly attracting attention in the Digital Humanities (Lavin, 2020; Mavrody et al. 2021; Pianzola et al., 2020; Rebora et al., 2021). However, the historical change of literary practices has rarely been investigated on a quantitative basis, although social practices, and thus also literary practices, produce certain regularities of behavior, making them ideal for empirical study (Tuomela, 2002). Since the rules of literary practices are closely connected to literary concepts, we consider studying semantic change of concepts as a promising route to shed light on the change of literary practices over a long period of time. </p>
+                <p style="text-align: left; ">In our contribution we investigate how the meaning of central concepts of literary criticism changed over the course of the long 19th century in the discourse of literary critics. Such concepts include ”author”, “character” (ger. Figur/Charakter), “literature”, “narrator” (Erzähler), “plot” (Fabel), “poetry” (Dichtung) or “story” (Geschichte). The central idea is that the semantic change of these concepts reflects fundamental change in literary practices, i.e., the practices of dealing with literary texts. The change in meaning of literary concepts particularly concerns (a) the reception of fictional texts and the so-called “fictive stance” (Lamarque and Olsen, 1994), (b) the categorization and interpretation of literary texts (Gittel, 2021), and (c) their evaluation (Friend, 2020).</p>
+                <p style="text-align: left; ">Identifying a text as ”work of literature” or as ”poetry”, for example, evokes certain expectations and textual approaches on the part of literary critics, which are historically variable and in turn are reflected in changing word meanings (Rosenberg, 2017). Our working hypothesis is that by looking at longer periods of time, clusters of such word meanings are identifiable, which can then be interpreted qualitatively in terms of literary criticism’s history (Anz and Baasner, 2004; Habib, 2013; Hohendahl, 1985; Magerski, 2013) and further explored through quantitative analysis. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Approach </head>
+                <p style="text-align: left; ">We employ methods from Natural Language Processing, specifically Lexical Semantic Change, to approach the diachronic change in meaning of literary concepts in an empirical manner. Our computational methodology is based on the task of diachronic word sense disambiguation and semantic change more generally (Schlechtweg et al., 2018; Schlechtweg et al., 2019; Schlechtweg et al., 2020; Rother et al., 2020), encompassing both manual annotation and unsupervised methods from Distributional Semantics. We focus on diachronic contextualized embeddings (e.g., via BERT, see Laicher et al. (2021)), which we adapt to the historical literary domain. </p>
+                <p style="text-align: left; ">As a basis for our analysis we collected a corpus of professional literary reviews from the popular German periodical “Die Grenzboten”, which covers the years 1840–1921, a central period for the emergence of modern literary practices. In this corpus (30k texts), we manually annotated texts on whether they are reviews or not and implemented a heuristic to identify recurring journal sections which contain reviews, to build a high performing automatic classifier that identifies this type of text, which is crucial for a study of literary critics’ practices. Furthermore, we acquire a second corpus of literary reviews that spans a wider time span (1750-1880), provided by the Austrian National Library. </p>
+                <p style="text-align: left; ">Our analysis will focus on the change in meaning of the literary terms mentioned in the beginning. First of all, with a change point analysis, we aim to find changes in the similarity of concepts to themselves and each other over time, i.e., at which point a word becomes dissimilar to itself, or through which semantic fields selected concepts moved (Hamilton et al., 2016). Second, we aim to identify clusters of word meanings to disambiguate specific word senses and how the composition of clusters changed over time, i.e., whether certain senses emerge or vanish over time. To evaluate our (clustering) models, we carry out two main strategies, which are also suggested in the literature (Wevers and Koolen, 2020): (a) hypothesis testing, and (b) cluster coherence. </p>
+                <p style="text-align: left; ">Regarding (a), we manually annotate categorical word senses (in context) for concepts like ”Erzähler”, for which we already know that it changed from meaning predominantly ”author” to ”fictive narrator”. Regarding (b), we manually annotate via pairwise judgements, such that annotators are asked whether two instances of the same token in different contexts carry a similar or dissimilar meaning (whether they belong to the same cluster or not), and more generally, how similar two instances are on a continuous scale.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Thomas Anz and Rainer Baasner (ed.)</hi>. 2004. Literaturkritik: Geschichte, Theorie, Praxis. München. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Stacie Friend. 2020.</hi> Categories of Literature. The Journal of Aesthetics and Art Criticism, 78(1):70–74. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Benjamin Gittel.</hi> 2021. Fiktion und Genre: Theorie und Geschichte referenzialisierender Lektürepraktiken 1870– 1910. Berlin, Boston. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">M. A. R. Habib (ed.).</hi> 2013. The Cambridge History of Literary Criticism, vol. 6 (The Nineteenth Century, c. 1830–1914). Cambridge. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">William L Hamilton, Jure Leskovec, and Dan Jurafsky.</hi> 2016. Diachronic Word Embeddings Reveal Sstatistical Laws of Semantic Change. arXiv preprint arXiv:1605.09096. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Peter U. Hohendahl (ed.).</hi> 1985. Geschichte der deutschen Literaturkritik (1730-1980). Stuttgart. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Severin Laicher, Sinan Kurtyigit, Dominik Schlechtweg, Jonas Kuhn, and Sabine Schulte im Walde.</hi> 2021. Explaining and Improving BERT Performance on Lexical Semantic Change Detection. In Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Student Research Workshop, 192–202, Online, April. Association for Computational Linguistics. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Peter Lamarque and Stein Haugom Olsen.</hi> 1994. Truth, Fiction, and Literature: A Philosophical Perspective. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Christine Magerski.</hi> 2013. Die Konstituierung des literarischen Feldes in Deutschland nach 1871: Berliner Moderne, Literaturkritik und die Anfänge der Literatursoziologie. Tübingen. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Matthew J. Lavin.</hi> 2020. Gender Dynamics and Critical Reception: A Study of Early 20th-Century Book Reviews from the New York Times. Journal of Cultural Analytics, 5(1). 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Nika Mavrody, Laura B. McGrath, Nichole Nomura, and Alexander Sherman</hi>. 2021. Voice. Journal of Cultural Analytics 6 (2).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Federico Pianzola, Simone Rebora, and Gerhard Lauer.</hi> 2020. Wattpad as a Resource for Literary Studies. Quantitative and Qualitative Examples of the Importance of Digital Social Reading and Readers’ Comments in the Margins. PloS one, 15(1): 1–46. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Simone Rebora, Peter Boot, Federico Pianzola, Brigitte Gasser, J Berenike Herrmann, Maria Kraxenberger, Moniek M Kuijpers, Gerhard Lauer, Piroska Lendvai, Thomas C Messerli, and Pasqualina Sorrentino.</hi> 2021. Digital humanities and Digital Social Reading. Digital Scholarship in the Humanities, 36 (Supplement 2): 230–250. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rainer Rosenberg.</hi> 2017. Literarisch / Literatur. In Karlheinz Barck, Martin Fontius, Dieter Schlenstedt, Burkhart Steinwachs, and Friedrich Wolfzettel (eds.): Ästhetische Grundbegriffe, Vol. 3, 665–693. Stuttgart and Weimar. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">David Rother, Thomas Haider, and Steffen Eger.</hi> 2020. CMCE at SemEval-2020 Task 1: Clustering on Manifolds of Contextualized Embeddings to Detect Historical Meaning Shifts. In Proceedings of the Fourteenth Workshop on Semantic Evaluation, 187–193. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Dominik Schlechtweg, Sabine Schulte im Walde, and Stefanie Eckmann.</hi> 2018. Diachronic Usage Relatedness (DURel): A Framework for the Annotation of Lexical Semantic Change. In Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 2 (Short Papers), 169–174, New Orleans, Louisiana, June. Association for Computational Linguistics. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Dominik Schlechtweg, Anna Hätty, Marco Del Tredici, and Sabine Schulte im Walde.</hi> 2019. A wind of change: Detecting and Evaluating Lexical Semantic Change Across Times and Domains. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, 732–746, Florence, Italy, July. Association for Computational Linguistics. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Dominik Schlechtweg, Barbara McGillivray, Simon Hengchen, Haim Dubossarsky, and Nina Tahmasebi.</hi> 2020. SemEval-2020 task 1: Unsupervised Lexical Semantic Change Detection. In Proceedings of the Fourteenth Workshop on Semantic Evaluation, 1–23, Barcelona (online), December. International Committee for Computational Linguistics. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Raimo Tuomela.</hi> 2002. The Philosophy of Social Practices: A Collective Acceptance View. Cambridge. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Melvin Wevers and Marijn Koolen.</hi> 2020. Digital Begriffsgeschichte: Tracing Semantic Change Using Word Embeddings. Historical Methods: A Journal of Quantitative and Interdisciplinary History, 53(4): 226–243. 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

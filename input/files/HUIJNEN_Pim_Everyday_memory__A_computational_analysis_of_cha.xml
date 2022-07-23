@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Everyday memory: A computational analysis of changing relation between past and present in Dutch newspapers in the twentieth Century</title>
+                <author>
+                    <persName>
+                        <surname>Huijnen</surname>
+                        <forename>Pim</forename>
+                    </persName>
+                    <affiliation>Utrecht University, Netherlands, The</affiliation>
+                    <email>p.huijnen@uu.nl</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Memory</term>
+                    <term>Time</term>
+                    <term>Newspapers</term>
+                    <term>Text Mining</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>cultural analytics</term>
+                    <term>text mining and analysis</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Historians have since long stressed the political and cultural functions of memory and heritage for societies. The more born-digital data have a past of their own, the more memory has also become a topic of interest for data scientists (Au Yeung and Jatowt 2011, Keegan and Brubaker 2015, Graus et.al. 2018, West and Leskovec 2021). Stringently connected to memory but much less studied in data science is our experience of time (Jatowt et.al. 2015 and Van Eijnatten and Huijnen 2021 being notable exceptions). The influential theory of François Hartog, for example, explains the memory boom from the establishment of a ‘time regime of the present’ at the end of the 1980s (Hartog 2015). Aleida Assmann goes against Hartog’s subsequent assertion that an increasingly shorter present is all we are left with (Assmann 2020, 139). Instead, she puts forward her notion of cultural memory to replace ideas of temporal ruptures with a model that ‘emphasizes the ineluctable entanglement of [past, present and future]’ (Assmann 2020, 195-6). </p>
+            <p style="text-align: left; ">Departing from this theory, this study proposes a computational approach to study the relation between the present and the past in twentieth century newspapers by analysing trends in phrases of the format ‘n years ago’. Obviously, there is a plethora of ways in language can evoke the past. However, there are two arguments that justify singling out ‘n years ago’. First, ‘n years ago’ is, as an expression, ubiquitous and syntactically stable in Dutch newspaper language throughout the studied period of the twentieth century. Second, unlike explicit references to years, events or persons in the past, ‘n years ago’ intricately ties the past to the present. The phrase presents the past—and keeps it present—
+                <hi rend="italic">as something useful for the present</hi>. This notion of ‘useful past’ or ‘present past’ (Paul 2015, 25-27) forms part of Assmann’s critique of Hartog’s theory of temporal orders. 
+            </p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Questions and method</head>
+                <p style="text-align: left; ">The questions that are at the center of this study are how trends in references to present pasts relate to named philosophies of time experience, but also which past remains present and how these trends change over time. It takes newspapers as data, because of the vital role they as the ‘first rough draft of history’ have played in memory culture throughout the twentieth century. This study is based on the digitized versions of the most important nation-wide and regional newspapers the Dutch National Library holds and has made available.
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p style="text-align: left; ">
+                            <ref target="http://www.delpher.nl/kranten">
+                                www.delpher.nl/kranten
+                            </ref>
+                            <hi style="font-size:10pt" xml:space="preserve">. </hi>
+                        </p>
+                    </note> The preliminary results presented here are based on the example of the national newspaper Telegraaf (1893-1989) of 10,000 documents (articles and advertisements) per year.
+                    <note place="foot" xml:id="ftn2" n="2">
+                        <p style="text-align: left; ">
+                            For the final paper, these titles will be complemented with other available newspaper titles with similar century-spanning scopes. Subsequently, all results will be aggregated to come to an encompassing picture of the present past in Dutch newspapers by means of references to ‘n years ago’. The Telegraaf was chosen as an example here, because it shows trends that are paradigmatic for most other newspapers.
+                        </p>
+                    </note> These documents have been rid of duplicates and cleaned with the help of Python’s NLTK package.
+                    <note place="foot" xml:id="ftn3" n="3">
+                        <p style="text-align: left; ">
+                            <ref target="https://github.com/PimHuijnen/looking_back_newspapers">
+                                https://github.com/PimHuijnen/looking_back_newspapers
+                            </ref>
+                            . Cleaning in this script is mostly restricted to the removal of punctuation and caps. Stop words are not removed to guarantee that the Dutch word for the English indefinite article ‘a’ (‘een’), which is part of any standard stop word list, remains part of the data. Similarly, the removal of numbers is no part of preprocessing to allow for phrases like ’10 years ago’(even though Dutch linguistic convention formally does not allow for numbers in running text).
+                        </p>
+                    </note>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Analysis and results</head>
+                <p style="text-align: left; ">The analysis is done with Python scripts in Jupyter Notebooks and consists of three subsequent steps: </p>
+                <p style="text-align: left; ">The first step is the extraction of a list of the most common trigrams ending with ‘year(s) ago’
+                    <note place="foot" xml:id="ftn4" n="4">
+                        <p style="text-align: left; ">
+                            <hi style="font-size:10pt" xml:space="preserve"> The Dutch equivalent of ‘year(s) ago’ is for both one and more years written in the singular form ‘jaar geleden’.</hi>
+                        </p>
+                    </note> from the cleaned and sampled dataset. This list is sorted by decade and by frequency to get an idea of the years that newspapers most often use in the phrase ‘n years ago’ throughout the twentieth century. This indicates that single digit years (one – nine) make up the most common phrases of ‘n years ago’, along with decades (ten, twenty, etc.) and one hundred.
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="italic" style="font-size:10pt">Table 1: Most common trigrams ending in ‘year(s) ago’ with their English translation from a sample of 10,000 documents from the national newspaper De Telegraaf per decade per million trigrams, 1890-1980.</hi>
+                </p>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Trigram</cell>
+                        <cell style="text-align: left;" rend="DH-Default">English translation</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1890</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1900</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1910</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1920</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1930</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1940</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1950</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1960</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1970</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1980</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            Een jaar geleden
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">One year ago</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,95</cell>
+                        <cell style="text-align: left;" rend="DH-Default">4,02</cell>
+                        <cell style="text-align: left;" rend="DH-Default">4,62</cell>
+                        <cell style="text-align: left;" rend="DH-Default">8,81</cell>
+                        <cell style="text-align: left;" rend="DH-Default">21,77</cell>
+                        <cell style="text-align: left;" rend="DH-Default">13,23</cell>
+                        <cell style="text-align: left;" rend="DH-Default">16,06</cell>
+                        <cell style="text-align: left;" rend="DH-Default">19,51</cell>
+                        <cell style="text-align: left;" rend="DH-Default">17,90</cell>
+                        <cell style="text-align: left;" rend="DH-Default">16,16</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            Twee jaar geleden
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">Two years ago</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,70</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,10</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,70</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3,18</cell>
+                        <cell style="text-align: left;" rend="DH-Default">7,51</cell>
+                        <cell style="text-align: left;" rend="DH-Default">5,60</cell>
+                        <cell style="text-align: left;" rend="DH-Default">12,67</cell>
+                        <cell style="text-align: left;" rend="DH-Default">22,43</cell>
+                        <cell style="text-align: left;" rend="DH-Default">27,79</cell>
+                        <cell style="text-align: left;" rend="DH-Default">31,44</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            Twintig jaar geleden
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">Twenty years ago</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,27</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,50</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,59</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,34</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3,28</cell>
+                        <cell style="text-align: left;" rend="DH-Default">4,24</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3,39</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3,34</cell>
+                        <cell style="text-align: left;" rend="DH-Default">4,07</cell>
+                        <cell style="text-align: left;" rend="DH-Default">6,08</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            Paar jaar geleden
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">Few years ago</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,10</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,26</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,06</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,50</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,53</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3,39</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,74</cell>
+                        <cell style="text-align: left;" rend="DH-Default">7,05</cell>
+                        <cell style="text-align: left;" rend="DH-Default">9,22</cell>
+                        <cell style="text-align: left;" rend="DH-Default">10,01</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            Vier jaar geleden
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">Four years ago</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,76</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,17</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,53</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,20</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,48</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,36</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3,39</cell>
+                        <cell style="text-align: left;" rend="DH-Default">7,37</cell>
+                        <cell style="text-align: left;" rend="DH-Default">10,85</cell>
+                        <cell style="text-align: left;" rend="DH-Default">11,99</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            Drie jaar geleden
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">Three years ago</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,68</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,26</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,06</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,86</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3,54</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,88</cell>
+                        <cell style="text-align: left;" rend="DH-Default">6,22</cell>
+                        <cell style="text-align: left;" rend="DH-Default">11,08</cell>
+                        <cell style="text-align: left;" rend="DH-Default">14,50</cell>
+                        <cell style="text-align: left;" rend="DH-Default">14,75</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            Dertig jaar geleden
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">Thirty years ago</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,59</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,42</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,26</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,72</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,86</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,71</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,42</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,92</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,89</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3,09</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            Tien jaar geleden
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">Ten years ago</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,51</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,01</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,79</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,80</cell>
+                        <cell style="text-align: left;" rend="DH-Default">4,16</cell>
+                        <cell style="text-align: left;" rend="DH-Default">4,24</cell>
+                        <cell style="text-align: left;" rend="DH-Default">5,25</cell>
+                        <cell style="text-align: left;" rend="DH-Default">9,54</cell>
+                        <cell style="text-align: left;" rend="DH-Default">12,39</cell>
+                        <cell style="text-align: left;" rend="DH-Default">15,42</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            Honderd jaar geleden
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">One hundred years ago</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,42</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,50</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,73</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,14</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,08</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,54</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,86</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,86</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,02</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,98</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            Acht jaar geleden
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">
+                            Eight years ago
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,42</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,25</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,20</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,60</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,91</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0,85</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,05</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,97</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3,20</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3,59</cell>
+                    </row>
+                </table>
+                <p style="text-align: left; ">In a second step, the most common references of ‘n years ago’ are plotted, relative to one another, over time. Figures 1-3 show the trajectories of all single years together (figure 1), of all decades from ten to one hundred (figure 2) and of the single years one, ten, one hundred and two hundred (figure 3). These figures show that Dutch newspapers started to look back in time by the use of the phrase ‘n years ago’ since the 1930s. Once they did, the use of some variations of this phrase strongly gained traction, particularly in reference to the near past (one to ten years ago). </p>
+                <p style="text-align: left; ">The final step of the analysis is to look at the actual years that the phrase ‘n years ago’ referred to throughout the twentieth century. Do newspapers tend to look back at specific years, as in the end of the Second World War being ‘five years ago’ in 1950? Or are ‘notable’ years submerged in what is here called ‘everyday memory culture’? The latter seems to be the case if these years are calculated for ‘n years ago’, where n stands for the years from one to twenty and decades from twenty to two hundred. Figure 5 shows that ‘n years ago’ tends to evoke the recent past itself above any particular year. No single year really stands out.
+                    <note place="foot" xml:id="ftn5" n="5">
+                        <p rend="footnote text"> Given the nature of this method, the decline in the frequency of years after 1975 that Figure 5 shows is as necessary as it is meaningless. There is, after all, increasingly less data (that ends in 1989) on which these numbers can be based. </p>
+                    </note>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left; ">In the light of Hartog’s theory of an all-encompassing present, one would have expected a steady decrease of references to the past and the future. This study shows the opposite and substantiates Assmann’s contention that interest for the past returns, particularly in the second half of the twentieth century, in the form of memory culture. With the growing popularity of the studied phrase, Dutch newspapers became mediators of a form of memory culture than can be seen as ‘latent’ or ‘everyday’ in that it emphasizes recurring events rather than returning to a specific thing in the past. This is, particularly, true for the phrases ‘two years ago’ and ‘four years ago’ (Figure 4), the spikes in the diagrams of which indicate references to important sport (Olympics, European and World Championship soccer) and political events (national parliamentary elections).</p>
+                <p style="text-align: left; ">The use of the phrase ‘n years ago’ is by no means the only, nor the most important manifestation of memory culture. This limits the explanatory power of this study. In contrast with official and cultivated forms of memory culture, however, it does shed light on the latent, almost oblique, everyday invocation of the past that forms just as much part of that culture.</p>
+                <p style="text-align: left; ">
+                    <hi rend="italic" style="font-size:10pt" xml:space="preserve">Figure 1: Frequency over time of ‘n years ago’, where n stands for one to ten, per million words in a sample of 10,000 documents per year of the national newspaper </hi>
+                    De Telegraaf
+                    <hi rend="italic" style="font-size:10pt">, 1893-1989. For similar diagrams (figures 1-4) for other newspapers, see: https://github.com/PimHuijnen/looking_back_newspapers/tree/main/Data.</hi>
+                </p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="10.668cm" url="Pictures/eaf204fb81e915b310257effe2586912.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="italic" style="font-size:10pt" xml:space="preserve">Figure 2: Frequency over time of ‘n years ago’, where n stands for decades from ten to one hundred, per million words in a sample of 10,000 documents per year of the national newspaper </hi>
+                    De Telegraaf
+                    <hi rend="italic" style="font-size:10pt">, 1893-1989.</hi>
+                </p>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="10.668cm" url="Pictures/93ee9a8fb8797bc28dc8571c2ddd5578.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="italic" style="font-size:10pt" xml:space="preserve">Figure 3: Frequency over time of ‘n years ago’, where n stands for one, ten, one hundred and two hundred, per million words in a sample of 10,000 documents per year of the national newspaper </hi>
+                    De Telegraaf
+                    <hi rend="italic" style="font-size:10pt">, 1893-1989.</hi>
+                </p>
+                <figure>
+                    <graphic n="1003" width="16.002cm" height="10.668cm" url="Pictures/1afe63690720d69de7c7200153283a75.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="italic" style="font-size:10pt" xml:space="preserve">Figure 4: Frequency over time of ‘four years ago’ per million words in a sample of 10,000 documents per year of the national newspaper </hi>
+                    De Telegraaf
+                    <hi rend="italic" style="font-size:10pt">, 1893-1989.</hi>
+                </p>
+                <figure>
+                    <graphic n="1004" width="16.002cm" height="10.668cm" url="Pictures/4f02ccdd9b8814188633c82db6643ee2.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="italic" style="font-size:10pt" xml:space="preserve">Figure 5: Frequency over time of dates (in years) that are referred to via the phrase ‘n years ago’, where n stands for years from one to twenty and decades from twenty to two hundred, per million words in a sample of 10,000 documents per year of the national newspaper </hi>
+                    De Telegraaf
+                    <hi rend="italic" style="font-size:10pt">, 1893-1989.</hi>
+                </p>
+                <figure>
+                    <graphic n="1005" width="12.601222222222223cm" height="25.200680555555557cm" url="Pictures/77af8cf0e722e1b0f579b8ee1a833960.png" rend="inline"/>
+                </figure>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Assmann, Aleida</hi> (2020). 
+                        <hi rend="italic" xml:space="preserve">Is Time out of Joint? On the Rise and Fall of the Modern Time Regime. </hi>Ithaca: Cornell University Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Au Yeung, Ching-man and Jatowt, Adam</hi> (2011). 
+                        <hi rend="italic">Studying how the Past is Remembered: Towards Computational History through Lare Scale Text Mining</hi>. 
+                        <hi rend="italic">Proceedings of the 20</hi>
+                        <hi rend="italic superscript">th</hi>
+                        <hi rend="italic" xml:space="preserve"> ACM International Conference on Information and Knowledge Management</hi>, 1231-1240. DOI: 
+                        <ref target="https://doi.org/10.1145/2063576.2063755">https://doi.org/10.1145/2063576.2063755</ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Eijnatten, Joris van and Pim Huijnen</hi> (2021). Something Happened to the Future: Reconstructing Temporalities in Dutch Parliamentary Debate, 1814-2018. 
+                        <hi rend="italic">Contributions to the History of Concepts</hi>, 16: 52-82. DOI: 
+                        <ref target="https://doi.org/10.3167/choc.2021.160204">https://doi.org/10.3167/choc.2021.160204</ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Graus, David, Daan Odijk and Maarten de Rijke</hi> (2018). The Birth of Collective Memories: Analyzing Emerging Entities in Text Streams. 
+                        <hi rend="italic">Journal of the Association for Information Science and Technology</hi>, 69: 773-786. DOI: 
+                        <ref target="http://dx.doi.org/10.1002/asi.24004">http://dx.doi.org/10.1002/asi.24004</ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hartog, François</hi> (2015). 
+                        <hi rend="italic">Regimes of Historicity: Presentism and Experiences of Time.</hi> New York: Columbia University Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Jatowt, Adam et.al.</hi> (2015). Mapping Temporal Horizons: Analysis of Collective Future and Past related Attention in Twitter. 
+                        <hi rend="italic">WW ’15: Proceedings of the 24</hi>
+                        <hi rend="italic superscript">th</hi>
+                        <hi rend="italic" xml:space="preserve"> International Conference on World Wide Web</hi>, 484-494. DOI: 
+                        <ref target="http://dx.doi.org/10.1145/2736277.2741632">http://dx.doi.org/10.1145/2736277.2741632</ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Keegan, Brian C. and Jed R. Brubaker</hi> (2015). ”Is” to “Was”: Coordination and Commemoration in Posthumous Activity on Wikipedia Biographies. 
+                        <hi rend="italic">Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work &amp; Social Computing,</hi> 533-546. DOI: 
+                        <ref target="https://doi.org/10.1145/2675133.2675238">https://doi.org/10.1145/2675133.2675238</ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Paul, Herman</hi> (2015). 
+                        <hi rend="italic" xml:space="preserve">Key Issues in Historical Theory. </hi>New York and London: Routledge.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">West, Robert, Jure Leskovec and Christopher Potts</hi> (2021). Postmortem Memory of Public Figures in News and Social Media. 
+                        <hi rend="italic">Proceedings of the National Academy of Science</hi> 118. DOI: 
+                        <ref target="https://doi.org/10.1073/pnas.2106152118">https://doi.org/10.1073/pnas.2106152118</ref>. 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

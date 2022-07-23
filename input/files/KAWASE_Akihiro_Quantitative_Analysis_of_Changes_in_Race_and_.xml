@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Quantitative Analysis of Changes in Race and Role of Characters in Hollywood Movies over Time</title>
+                <author>
+                    <persName>
+                        <surname>Kawase</surname>
+                        <forename>Akihiro</forename>
+                    </persName>
+                    <affiliation>Doshisha University, Japan</affiliation>
+                    <email>kawase@dh.doshisha.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Isogai</surname>
+                        <forename>Kana</forename>
+                    </persName>
+                    <affiliation>Doshisha University, Japan</affiliation>
+                    <email>isogai.kana@dh.doshisha.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>race</term>
+                    <term>stereotypes</term>
+                    <term>network centrality</term>
+                    <term>films</term>
+                    <term>dialogues</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>text mining and analysis</term>
+                    <term>Cultural studies</term>
+                    <term>Film and cinema arts studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>Movies are a medium that influences viewers’ beliefs and values. Behm-Morawitz and Mastro (2008) demonstrated that the image of "mean girls" in many movies created a negative stereotype of female friendships. In addition, males who watched more movies targeting teenagers, tended to display more negative attitudes toward female friendships. It has been confirmed that cinematographic works and visual media have both positive and negative influences on viewers' stereotypes. Smith et al. (2016) reported various statistics on gender and race/ethnicity percentages for 30,835 people. These people were involved in the production of the annual top-100 films released between 2007 and 2014 (excluding 2011). They reported that only 17 of the top-100 films in 2014 had non-White actors in lead roles. For all 700 films, non-Caucasian actors rarely played stereotypical roles, and there was no change over time.</p>
+                <p>In a recent study, Besana et al. (2019) analyzed the role and representation of Asian characters in films produced after 1993. They found that Asian characters tend to appear in action/comedy films, and the percentage of Asian characters playing the main roles has suddenly increased since 2016. Ramakrishna et al. (2017) conducted a social network analysis by tabulating the number of contacts between characters from 945 film scripts. Calculating the degree centrality and betweenness centrality of the network for each race, they found that the median betweenness centrality for White characters was significantly higher than that for other races whereas that of Native Americans was significantly lower than those for White, African, and Mixed-race characters. Kagan et al. (2020) collected the subtitles of the most popular feature films on the Internet Movie Database (IMDb) and conducted a social network analysis of the characters, as by Ramakrishna et al. (2017). The PageRank of each character was calculated and compared based on the gender and genre of the characters; there is a higher tendency for male characters to play leading roles in films than female characters, and the number of films in which female characters play leading roles is increasing.</p>
+                <p>Most of the studies on racial stereotypes and gender bias in the film industry are comparative analyses based on simple statistics of actors in the film industry or are conducted with advanced analytical methods using a small amount of data. In recent years, however, methods for comparative analysis using the social network analysis of numerous film works have been developed, and we now have an environment suitable for the comprehensive analysis of changes in racial representation in the film industry and to elaborate on the trends. Therefore, this study aims to clarify the changes in the roles of characters in the film works from a quantitative perspective by targeting film works that influence viewers’ stereotypes, especially Hollywood films that have a global market.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Overview of analysis methods</head>
+                <p>To clarify the changes in roles of the characters in the film works, the following steps were taken to conduct the analysis:</p>
+                <list type="ordered">
+                    <item>We selected the top 100 films that received the highest ratings for each of the 21 genres of feature films listed on the IMDb. As some films were ranked in multiple genres, 1,217 films were used for the final analysis. We also collected the subtitle data for each film from OpenSubtitle.</item>
+                    <item>Based on the studies of Kagan et al. (2020), we created a database of the names of characters, gender, and race of 1,217 movies. Thereafter, the names of characters appearing in the subtitle data and time of speech of the dialogues were extracted.</item>
+                    <item>In the subtitles of a particular movie, if any character mentioned another character or if another character appeared within 60 seconds of the playback time of a character's dialogue, it was judged that there was contact between the characters, and the co-occurrence relations of those characters were extracted.</item>
+                    <item>We constructed a co-occurrence network of characters from the co-occurrence relations for each movie and calculated the centrality values of each character.</item>
+                    <item>We aggregated the values of each centrality by race and compared the changes in the distribution of each centrality over time. Furthermore, the Kruskal-Wallis test and Dunn's test were used to examine whether there was a difference in the median of centrality among the different year groups.</item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results and Discussion</head>
+                <p>Owing to the limited number of words, we focus on the results of changes in degree centrality and betweenness centrality over time. Degree centrality is a simple aggregation of co-occurrence relations. It is an indicator of the frequency of contact between characters in a movie. Betweenness centrality is an index that quantifies the role of relay points in measuring the shortest distance between nodes (in this case, the characters) for each node. It is an indicator of the character who plays an intermediary function in film work. Figure 1 is an excerpt of a boxplot comparing the values of racial betweenness centrality for different years. The dots in the figure correspond to the centrality values of each actor or character.</p>
+                <p>Accordingly, we were able to extract the following trends as findings beyond those reported in previous studies:</p>
+                <list type="unordered">
+                    <item>From the change in degree centrality, the number of simple contacts between characters was stable and high for White characters throughout the entire period, followed by African and Mixed characters since the 1970s. However, the centrality of other races has increased significantly since the 1980s, and the number of East Asian characters has been increasing since the late 1990s.</item>
+                    <item>The changes in the betweenness centrality showed that the racial group that played a mediating role was assigned to races other than African in the 1980s. In recent years, East Asians are more likely to appear in films as characters who play a mediating role than Africans.</item>
+                </list>
+                <figure>
+                    <graphic n="1001" width="14.946922222222222cm" height="11.217411111111112cm" url="Pictures/d0f0c5efebce754e03c605ed7a330c65.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; text-align: center;">Figure 1: Distribution of betweenness centrality values of characters by race at 5-year intervals</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Behm-Morawitz, E., and Mastro, D. E.</hi> (2008). Mean girls? The influence of gender portrayals in teen movies on emerging adults’ gender-based attitudes and beliefs, 
+                        <hi rend="italic">Journalism and Mass Communication Quarterly</hi>, 85: 131-146.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Smith, S. L., Choueiti, M., Pieper, K., Gillig, T., Lee, C., and Deluca, D.</hi> (2016). Inequality in 700 Popular Films: Examining Portrayals of Gender, Race, and LGBT Status from 2007 to 2014, 
+                        <hi rend="italic">Institute for Diversity and Empowerment at Annenderg</hi>, 1-22.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Besana, T., Katsiaficas, D., and Loyd, A. B.</hi> (2019). Asian American media representation: A film analysis and implications for identity development, 
+                        <hi rend="italic">Research in Human Development</hi>, 16: 201-225.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ramakrishna, A., Martinez, V. R., Malandrakis, N., Singla, K., and Narayanan, S.</hi> (2017). Linguistic analysis of differences in portrayal of movie characters, 
+                        <hi rend="italic">Proceeding of the 55th Annual Meeting of the Association for Computational Linguistics</hi>, 1669-1678.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kagan, D., Chesney, T., and Fire, M.</hi> (2020). Using data science to understand the film industry’s gender gap, 
+                        <hi rend="italic">Palgrave Communications</hi>, 6(92): 1-16.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

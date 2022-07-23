@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Perspectives on the Future of Digital Editions &amp; Publishing</title>
+                <author>
+                    <persName>
+                        <surname>O’Sullivan</surname>
+                        <forename>James</forename>
+                    </persName>
+                    <affiliation>University College Cork</affiliation>
+                    <email>james.osullivan@ucc.ie</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pidd</surname>
+                        <forename>Michael</forename>
+                    </persName>
+                    <affiliation>Digital Humanities Institute (DHI), University of Sheffield</affiliation>
+                    <email>m.pidd@sheffield.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Murphy</surname>
+                        <forename>Órla</forename>
+                    </persName>
+                    <affiliation>University College Cork</affiliation>
+                    <email>o.murphy@ucc.ie</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wessels</surname>
+                        <forename>Bridgette</forename>
+                    </persName>
+                    <affiliation>University of Glasgow</affiliation>
+                    <email>bridgette.wessels@glasgow.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-04T16:31:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Digital Editions</term>
+                    <term>Digital Scholarly Editing</term>
+                    <term>Digital Publishing</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>digital publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>scholarly editing and editions development</term>
+                    <term>analysis</term>
+                    <term>and methods</term>
+                    <term>Book and print history</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">The digital scholarly edition remains central to the intellectual practices of the arts and humanities, and yet, the fundamentals of their form and structure remain unchanged by the affordances of computers. The edition is often the version of the primary source that is most immediate, accessible, and informative to scholars and students alike, and so it is vital that we invest in further enhancing that dialogue and enable researchers to establish the methods and principles for developing the scholarly digital editions of the future. </p>
+            <p style="text-align: left; ">
+                <hi rend="italic">C21 Editions</hi>
+                <hi rend="superscript">[1]</hi> is a three-year international collaboration jointly funded by the Arts &amp; Humanities Research Council (AH/W001489/1) and Irish Research Council (IRC/W001489/1). The aim of the project is to investigate and advance the practices of digital scholarly editing and publishing by researching and prototyping data standards that accommodate born-digital content such as social media, while also further integrating the “curatorial” and “statistical” aspects of DH
+                <hi rend="superscript">[2]</hi> by examining how computer-assisted analytical methods can be embedded into edition making and publishing.
+            </p>
+            <p style="text-align: left; ">The first phase of 
+                <hi rend="italic">C21 Editions</hi> project engaged in semi-structured interviews with an extensive group of 50 experts and stakeholders from a range of relevant disciplines, including digital scholarly editing, digital publishing, archiving and preservation, interface design, and creative practice. This paper present the results of a thematic analysis of those interviews, providing a comprehensive overview of how many of the field’s most prominent theorists and practitioners view the present state of digital scholarly editing and publishing, and how the technical systems and models which facilitate the making of digital editions and public resources might and should develop into the future. These findings will further serve as a vital compendium and roadmap for the future of digital scholarly editing, comprising perspectives by those positioned to realise any such future.
+            </p>
+            <p style="text-align: left; ">Overall, 
+                <hi rend="italic">C21 Editions</hi> is intended to operate as a response to Joris van Zundert, who calls on theorists and practitioners to “intensify the methodological discourse” necessary to “implement a form of hypertext that truly represents textual fluidity and text relations in a scholarly viable and computational tractable manner” (2016, 106). “Without that dialogue,” he warns, “we relegate the raison d’être for the digital scholarly edition to that of a mere medium shift, we limit its expressiveness to that of print text, and we fail to explore the computational potential for digital text representation, analysis and interaction.” This dialogue has begun in earnest (Driscoll and Pierazzo 2016; Boot et al. 2017), but a previous survey on the expectations and use of digital editions found that user needs are seldom satisfied by such resources (Franzini, Terras, and Mahony 2019). Initial findings from the extensive qualitative data being analysed as part of 
+                <hi rend="italic">C21 Editions</hi> suggests that this dissatisfaction persists, and despite the considerable amount of effort going into the development of digital editions,
+                <hi rend="superscript">[3]</hi> there remains a disconnect between digital cultural resources and the needs for their users. The findings of this thematic analysis builds on existing research through providing extensive insight into how it is that those tools and methods that dominate digital scholarly editing and publishing have not advanced considerably since van Zundert’s statements in 2016.
+            </p>
+            <p style="text-align: left; ">Through the many expert perspectives that 
+                <hi rend="italic">C21 Editions</hi> has gathered and analysed, this paper shows how key stakeholders believe digital editing and publishing have advanced pre-digital practices, where the digital has failed to realise its potential, and how we might envision future conditions.
+            </p>
+            <p style="text-align: left; ">
+                <hi rend="superscript">[1]</hi> See c21editions.org.
+            </p>
+            <p style="text-align: left; ">
+                <hi rend="superscript">[2]</hi> See Bode (2019).
+            </p>
+            <p style="text-align: left; ">
+                <hi rend="superscript">[3]</hi> As evidenced by “A Catalogue of Digital Editions” (Franzini, Terras, and Mahony 2016) or dig-ed-cat.acdh.oeaw.ac.at/.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Bode, K.</hi> (2019). Computational Literary Studies: Participant Forum Responses, Day 2, 
+                        <hi rend="italic">In the Moment</hi> https://critinq.wordpress.com/2019/04/02/computational-literary-studies-participant-forum-responses-day-2-3/ (accessed 27 July 2020).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Boot, P., Cappellotto, A., Dillen, W., Fischer, F., Kelly, A., Mertgens, A., Sichani, A.-M., Spadini, E. and Hulle, D. van (eds).</hi> (2017). 
+                        <hi rend="italic">Advances in Digital Scholarly Editing</hi>. Sidestone Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Driscoll, M. J. and Pierazzo, E. (eds).</hi> (2016). 
+                        <hi rend="italic">Digital Scholarly Editing: Theories and Practices</hi>. Open Book Publishers, doi:10.11647/OBP.0095. https://www.openbookpublishers.com/product/483 (accessed 8 December 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Franzini, G., Terras, M. and Mahony, S.</hi> (2016). A Catalogue of Digital Editions. In Driscoll, M. J. and Pierazzo, E. (eds), 
+                        <hi rend="italic" xml:space="preserve">Theories and Practices: Digital Scholarly Editing. </hi>Cambridge: Open Book Publishers, pp. 161–82.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Franzini, G., Terras, M. and Mahony, S.</hi> (2019). Digital Editions of Text: Surveying User Requirements in the Digital Humanities. 
+                        <hi rend="italic">Journal on Computing and Cultural Heritage</hi>, 12(1): 1:1-1:23, doi:10.1145/3230671.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">van Zundert, J.</hi> (2016). Barely Beyond the Book?. In Driscoll, M. J. and Pierazzo, E. (eds), 
+                        <hi rend="italic">Theories and Practices: Digital Scholarly Editing</hi>. Cambridge: Open Book Publishers, pp. 83–106.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Panel Title: The (Im)Possibilities of Multilingual DH in Theory and Practice: Translation, Metadata, Pedagogy</title>
+                <author>
+                    <persName>
+                        <surname>Raynor</surname>
+                        <forename>Cecily</forename>
+                    </persName>
+                    <affiliation>McGill University</affiliation>
+                    <email>cecily.raynor@mcgill.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ponce de la Vega</surname>
+                        <forename>Lidia</forename>
+                    </persName>
+                    <affiliation>McGill University</affiliation>
+                    <email>lidia.poncedelavega@mail.mcgill.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Guénette</surname>
+                        <forename>Marie-France</forename>
+                    </persName>
+                    <affiliation>Université Laval</affiliation>
+                    <email>marie-france.guenette@lli.ulaval.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kim</surname>
+                        <forename>Eric</forename>
+                    </persName>
+                    <affiliation>Stanford University</affiliation>
+                    <email>kimer@stanford.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Brata Roy</surname>
+                        <forename>Samya</forename>
+                    </persName>
+                    <affiliation>IIT Jodhpur</affiliation>
+                    <email>samyabrataroy@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dombrowski</surname>
+                        <forename>Quinn</forename>
+                    </persName>
+                    <affiliation>Stanford University</affiliation>
+                    <email>qad@stanford.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-07-04T13:54:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Panel</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>multilingual dh; translation studies; metadata; pedagogy; archives</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>metadata standards</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Cultural studies</term>
+                    <term>Translation studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">The Digital Humanities offer immense possibilities for interdisciplinarity, cross-cultural, and epistemic knowledge exchange. Nevertheless, the DH continue to privilege centralized Anglophone practices and epistemologies that hinder access and contributions from marginalized communities and researchers across the globe. This panel challenges such privileges by engaging varied issues around the (im)possibilities of multilingual DH practices. The presentations in this panel contrast the multilingual aspirations of DH with the Anglophone and Anglocentric realities of DH practices regarding access, audience distributions, curation, metadata practices, pedagogical approaches, and epistemic production. Drawing upon myriad disciplinary homes, presenters in this panel engage with topics of translation, particularly translation difficulties and so-called untranslatables (Apter, 2014). For example, one panelist examines challenges in new media studies for translating contemporary DH lexica, while another maps untranslatables through computational exploration. How can languages other than English be implemented in DH? What are the barriers to entry for those engaging with non-Anglophone community translation practices? How can this linguistic negotiation be undertaken? What is gained and lost in the translation of core DH concepts? Furthermore, this panel scrutinizes the implementation gap between English and non-English DH in settings related to pedagogy and archival and metadata practices, focusing on and emphasizing the consequences of Anglocentric approaches and the advantages of multilingual DH in providing equitable access to diverse audiences, students, researchers, and linguistic communities. What does it mean to be global? How open and accessible is open access? Who can and cannot be a digital humanist when we favour English at training sites and elsewhere? How can DH transcend Anglocentrism? How can we implement multilingual DH in pedagogy and archival practices? In a range of explorations, this panel probes the possibilities and obstacles faced by multilingualism vis-à-vis English as lingua franca. In doing so, presenters in this panel engage with questions of inclusivity through a critical approach to various facets of multilingual DH.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Multilingual bio-diversity and the decolonization of the 
+                    <hi rend="italic">Biodiversity Heritage Library</hi>: The case of Latin America
+                </head>
+                <p>Author: Lidia Ponce de la Vega, McGill University </p>
+                <p>
+                    <hi style="font-size:10pt" xml:space="preserve">The </hi>
+                    <hi rend="italic" style="font-size:10pt" xml:space="preserve">Biodiversity Heritage Library </hi>
+                    (BHL) is an online repository for global biodiversity-related literature that advocates for multilingualism but operates within (digital) Anglocentrism. With over 80% of its collection in English, the BHL promotes this language as the lingua franca of the Internet and of biodiversity-related knowledge production, positing the Global North as the epistemic center of such production and perpetuating colonial dynamics that hinder bio-diverse epistemologies from the Global South.
+                </p>
+                <p>
+                    This presentation constitutes a reflection around best decolonial practices for online libraries and archives affiliated to the Global North but that incorporate epistemologies pertaining to the Global South. By focusing on the collections of the BHL and the case of Latin America (and Mexico, specifically), this paper discusses the role of language representation and inclusion in the decolonization of biodiversity-related knowledge production. In so doing, it explores the importance of multilingualism for the BHL in terms of access, audience distribution, curation, and epistemic production (Chan). Additionally, this presentation considers the case of BHL México, a partnership between the BHL and Mexico’s Comisión Nacional para el Conocimiento y Uso de la Biodiversidad, to showcase the possibilities and limitations for the decolonization of bio-diverse online collections vis-á-vis Latin American audiences and human and nonhuman subjects–that is, our relationships with and within biodiversity. This presentation thus argues for a non-Anglocentric, non-Global-North-centric, and sympoietic (Haraway) approach to archival practices—anchored in non-hegemonic multilingualism—that aims for the diversification of bio-diverse narratives, breaks with the colonial roots of (digital) archives (Risam), and promotes a cycle of bio-diverse knowledge production in and from the Global South.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>The Function of Translation in DH: Reflections from a Bangla Translator</head>
+                <p>
+                    <hi rend="bold" style="font-size:10pt">Author: Samya Brata Roy</hi>
+                </p>
+                <p>
+                    <hi style="font-size:10pt" xml:space="preserve">While engaging with the act of social media translation in DH, I found myself asking, who am I translating for? And what is the purpose of this act? Ideally, translation or an attempt at multilingualism is meant to increase reach beyond the hegemonic claws of English. But, when it comes to expressing the key terms anchored in English terminology, there often is no suitable alternative in “minor” languages, or at least, recognizable terms for non-specialist readers. Official terminologies can be valid in the literal sense, but in practical terms they can confuse readers even further. This is why using English words offers an easy way out. However, that means harking back to the dominant language. The question that comes here is: Why and how should we translate DH, a field which exists in the disciplinary intersections? Is it counterproductive to attempt a purist translation or should one use both languages wherever necessary, a decision that presupposes an understanding of English? Sharing my experience as a Bangla Twitter translator for DHSI 21, I will raise these issues to start a conversation regarding the tussle between access (provided by a multilingual approach) and convenience (using English terminology to avoid confusion). I will build on Ortega’s (2014) reflections on translating at the DH2014 conference, and Renée Desjardins’ (2017) monograph on </hi>
+                    <hi rend="italic" style="font-size:10pt">Translation and Social Media</hi>
+                    <hi style="font-size:10pt" xml:space="preserve"> to ground my own ethnographic case study of social media translation. The insights drawn from my personal experience will contribute to shedding light on DH translation with regards to the positionality of the translator, in particular within minority language settings </hi>
+                    <hi rend="italic" style="font-size:10pt">.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <hi rend="italic">Pogrom</hi>: Translational and Translocational Journey of a Slavic Word through Mass Media
+                </head>
+                <p>Author: Eric Kim, Stanford University </p>
+                <p>
+                    <hi style="font-size:10pt" xml:space="preserve">As Steven Zipperstein explains in the first chapter to his monograph on the Kishinev pogrom, the word </hi>
+                    <hi rend="italic" style="font-size:10pt">pogrom</hi>
+                    <hi style="font-size:10pt" xml:space="preserve"> first enters English-language mass media during the early 20</hi>
+                    <hi rend="superscript" style="font-size:6pt">th</hi>
+                    <hi style="font-size:10pt" xml:space="preserve"> century, often accompanied by an explanatory note or offset with italics to indicate the foreignness of the term. With the growing migration of Jews beginning in the 1880s, the word eventually developed a currency and began to signify antisemitic violence on its own (Zipperstein). However, </hi>
+                    <hi rend="italic" style="font-size:10pt">pogrom</hi>
+                    <hi style="font-size:10pt" xml:space="preserve"> in the Russian context has never conveyed this specific meaning, but rather, it has referred, and continues to refer, to any instance of government-organized mass violence against groups determined along class, social, or other boundaries (Ushakov). In order to specify the Jewish victims of the riot, Russian newspapers necessarily attached the adjective Jewish, </hi>
+                    <hi rend="italic" style="font-size:10pt">evreiskii</hi>
+                    <hi style="font-size:10pt" xml:space="preserve">, to the word </hi>
+                    <hi rend="italic" style="font-size:10pt">pogrom</hi>
+                    .
+                </p>
+                <p>
+                    <hi style="font-size:10pt" xml:space="preserve">By comparing the distributions and appearances of </hi>
+                    <hi rend="italic" style="font-size:10pt">pogrom</hi>
+                    <hi style="font-size:10pt" xml:space="preserve"> in variously languaged print media, I hope to explore the different perceptions of the word and the differing instantiations of antisemitic violence across national borders. Included in this analysis will be other terms synonymous with </hi>
+                    <hi rend="italic" style="font-size:10pt">pogrom</hi>
+                    <hi style="font-size:10pt" xml:space="preserve"> to signify antisemitic catastrophe, such as </hi>
+                    <hi rend="italic" style="font-size:10pt">besporiadok</hi>
+                    <hi style="font-size:10pt" xml:space="preserve"> in Russian or </hi>
+                    <hi rend="italic" style="font-size:10pt">riot</hi>
+                    <hi style="font-size:10pt" xml:space="preserve"> in English, and use of images to depict these traumatic events, while the initial corpora of interest are </hi>
+                    <hi rend="italic" style="font-size:10pt">Ogonek</hi>
+                    <hi style="font-size:10pt" xml:space="preserve"> and </hi>
+                    <hi rend="italic" style="font-size:10pt">Life</hi>
+                    . Between the distinct uses and frequencies of the term in these two periodicals, I aim to find patterns in subject formation, both of the self and the other, through levied accusations, and also glaring unacknowledgments, of antisemitism.
+                </p>
+                <p> </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Strategies for Multilingual DH Pedagogy</head>
+                <p>Author: Quinn Dombrowski, Stanford University  </p>
+                <p>
+                    <hi style="font-size:10pt" xml:space="preserve">The DH 2019 pre-conference workshop on pedagogy highlighted efforts across the globe to put digital tools and methods into the hands of students. While “international” pedagogical spaces (such as summer or winter workshops, or open-access course materials) still most commonly treat English as the default language of instruction and most likely object of study, efforts to cultivate learning communities centered on materials in other language have recently expanded, including </hi>
+                    <hi rend="italic" style="font-size:10pt">Digital Humanities for Japanese Culture</hi>
+                    <hi style="font-size:10pt" xml:space="preserve"> at DHSI in 2019 (Kiyonori Nagasaki et al.), </hi>
+                    <hi rend="italic" style="font-size:10pt">East Asian Studies and Digital Humanities</hi>
+                    <hi style="font-size:10pt" xml:space="preserve"> at DReAM Lab in 2021 and 2022 (Paula R. Curtis and Paul Vierthaler), and Slavic DH workshops at the Herder Institute in Marburg, Germany and Princeton University in 2018 and 2019 (Natasha Ermolaev et al.) These linguistically-focused pedagogical encounters are invaluable for both skill development and community-building, but they are limited in each: far more students are exposed to DH through general-purpose “intro to DH” courses that do not center language-specific issues. As a result, students with research materials in English (or the dominant language of the course) leave with practical skills, while students working with other languages face an implementation gap when they try to apply what they’ve learned. This talk will draw on experiences teaching a deliberately multilingual DH course and participating in language-centric workshops, in order to propose actionable strategies for making DH survey courses better support the kinds of multilingual work described in the other talks on this panel.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Multilingual DH as a Political, Cultural and Ideological Statement on Accessibility</head>
+                <p>Authors: Marie-France Guénette, Université Laval; Cecily Raynor, McGill University </p>
+                <p>
+                    <hi style="font-size:10pt" xml:space="preserve">What is it about English that continuously reaffirms its position as a </hi>
+                    <hi rend="italic" style="font-size:10pt">lingua franca</hi>
+                    , even in interdisciplinary and emerging fields like Digital Humanities? What can, on the surface, seem like a brilliant strategy for shared knowledge on a global scale actually camouflages the imposition of an intellectual blockade. In this presentation we point to strategies that could universally level the playing field for DH scholars through open access publications, quality translations, multilingual knowledge dissemination and exposure to datasets that lie outside of English. In order to illuminate these strategies in practical ways, we will provide case studies from non-English language contexts to show how we can collectively work towards greater language inclusion and exposure in the field, an undertaking that we argue has broader consequences for social justice. 
+                </p>
+                <p>
+                    <hi style="font-size:10pt" xml:space="preserve">Indeed, in her work on the imperialist origins of English as a </hi>
+                    <hi rend="italic" style="font-size:10pt">lingua franca</hi>
+                    <hi style="font-size:10pt" xml:space="preserve">, Denise Rhéaume astutely remarked that “the current usefulness of English stems from the economic, political and cultural power of, first, the British Empire, and more lately the American Empire” (2015: 151). This implies that by doing DH in English, we are (perhaps unknowingly) asserting a renewed form of scholarly imperialism that privileges Anglophone territories and long-standing, oppressive historical relationships. Breaking the cycle of Anglophone dominance means challenging the field of DH to embrace multilingualism, but, as Rhéaume argues in her piece on language politics, “obstacles to multilingualism [...] have more to do with entrenched privilege or the profit imperative than concern for the ideal conditions for democratic debate” (2015: 155). What if we, as a community of scholars, decide to change things? As we explore in this talk, challenging the </hi>
+                    <hi rend="italic" style="font-size:10pt">lingua franca</hi>
+                    <hi style="font-size:10pt" xml:space="preserve"> is a fair strategy to resist the economic, political and cultural heritage which impedes academia from moving forward in equitable ways. Scholarly just futures are possible, especially in DH, if we work to increase accessibility and promote multilingualism.</hi>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:10pt">Cassin, Barbara</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. </hi>
+                        <hi rend="italic" style="font-size:10pt">Dictionary of Untranslatables: A Philosophical Lexicon</hi>
+                        . Princeton, N.J: Princeton University Press, 2014.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Chan, Leslie</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. ‘Situating Openness: Whose Open Science?’ </hi>
+                        <hi rend="italic" style="font-size:10pt">Contextualizing Openness. Situating Open Science</hi>
+                        , edited by Leslie Chan, University of Ottawa Press, 2019, pp. 5–22.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Desjardins, Renée</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. </hi>
+                        <hi rend="italic" style="font-size:10pt">Translation and Social Media</hi>
+                        . London: Palgrave Pivot, 2017.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Haraway, Donna J</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. </hi>
+                        <hi rend="italic" style="font-size:10pt">Staying with the Trouble: Making Kin in the Chthulucene</hi>
+                        . Duke University Press, 2016.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Ortega, Élika</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">, 2014. Whispering/Translating during DH2014: Five Things We Learned. [Blog] </hi>
+                        <hi rend="italic" style="font-size:10pt">Élika Ortega</hi>
+                        , Available at: &lt;https://elikaortega.net/blog/2014/dhwhisperer/&gt; [Accessed 8 December 2021]
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Risam, Roopika</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. ‘Colonial Violence and the Postcolonial Digital Archive’. </hi>
+                        <hi rend="italic" style="font-size:10pt">New Digital Worlds: Postcolonial Digital Humanities in Theory, Praxis, and Pedagogy.</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">, Northwestern University Press, 2018, pp. 47–64, </hi>
+                        <ref target="https://muse.jhu.edu/book/62714">
+                            https://muse.jhu.edu/book/62714
+                        </ref>
+                        .
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Ushakov, Dmitrii</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. </hi>
+                        <hi rend="italic" style="font-size:10pt">Tolkovyi slovar’ russkogo iazyka</hi>
+                        , tom III. Moscow: Sovetskaia entsiklopediia, 1935
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Zipperstein, Steven</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. </hi>
+                        <hi rend="italic" style="font-size:10pt">Pogrom: Kishinev and the Tilt of History</hi>
+                        . New York: W. W. Norton &amp; Company, 2018
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Venuti, Lawrence</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. </hi>
+                        <hi rend="italic" style="font-size:10pt">The Translation Studies Reader</hi>
+                        . United Kingdom, Taylor &amp; Francis, 2000.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

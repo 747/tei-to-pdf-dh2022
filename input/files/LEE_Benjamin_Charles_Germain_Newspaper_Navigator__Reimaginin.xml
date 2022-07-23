@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Newspaper Navigator: Reimagining Digitized Newspapers with Machine Learning</title>
+                <author>
+                    <persName>
+                        <surname>Lee</surname>
+                        <forename>Benjamin Charles Germain</forename>
+                    </persName>
+                    <affiliation>University of Washington, United States of America</affiliation>
+                    <email>bcgl@cs.washington.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-08T02:06:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Newspaper Navigator</term>
+                    <term>Library of Congress</term>
+                    <term>newspapers</term>
+                    <term>machine learning</term>
+                    <term>artificial intelligence</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>public humanities collaborations and methods</term>
+                    <term>Computer science</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The millions of digitized historic newspaper pages within 
+                <ref target="https://chroniclingamerica.loc.gov/">
+                    <hi rend="italic">Chronicling America</hi>
+                </ref>
+                <hi rend="color(333333)">,</hi> a joint initiative between the Library of Congress and the National Endowment for the Humanities, represent an incredibly rich resource. Historians, journalists, genealogists, students, and members of the public explore the collection regularly via keyword search. But how do we navigate the abundant visual content in 
+                <hi rend="italic">Chronicling America</hi>? This question is motivated by the fact that visual culture within newspapers has proven to be a capacious source for humanists. Within periodicals studies, scholars have utilized the visual content in newspapers to investigate topics as far ranging as the evolution of comedic sensibilities within comic strips to hidden editorial practices embedded within newspaper layout (Cole, 2020; Barnhurst and Nerone, 2002).
+                <hi rend="superscript" style="font-size:7pt">,</hi> This collective body of work is bolstered by new methodologies being employed within the digital humanities to extract and analyze visual content in historic newspapers (Piper, Wellmon, and Cheriet, 2020; Fyfe and Ge, 2018; Wevers and Smits, 2020).
+                <hi rend="superscript" style="font-size:7pt">,,</hi> In this talk, I will present my project, 
+                <hi rend="italic">Newspaper Navigator</hi>, created in collaboration with 
+                <ref target="https://labs.loc.gov/">LC Labs</ref>
+                <hi rend="color(333333)">,</hi> the 
+                <ref target="https://www.loc.gov/ndnp/">National Digital Newspaper Program</ref>, and IT Design &amp; Development at the Library of Congress, as well as Professor 
+                <ref target="https://www.cs.washington.edu/people/faculty/weld">Daniel Weld</ref> at the University of Washington. In particular, I will discuss four distinct phases of 
+                <hi rend="italic">Newspaper Navigator</hi> to extract and analyze the visual content within 
+                <hi rend="italic" xml:space="preserve">Chronicling America </hi>and beyond.
+            </p>
+            <p>First, I will describe extracting visual content, including photographs, illustrations, comics, editorial cartoons, maps, headlines, and advertisements, from 16.3 million pages in 
+                <hi rend="italic">Chronicling America</hi>, resulting in the 
+                <ref target="https://news-navigator.labs.loc.gov/">
+                    <hi rend="italic">Newspaper Navigato</hi>r dataset
+                </ref>. To accomplish this, I finetuned an object detection model of thousands of bounding box annotations of visual content from the 
+                <hi rend="italic" xml:space="preserve">Beyond Words </hi>crowdsourcing initiative launched by LC Labs in 2017. I then made a full pass over 100TB of image and XML data in order to construct the dataset. The Library of Congress and I released the resulting 
+                <hi rend="italic">Newspaper Navigator</hi> dataset to the American public in May, 2020, as the largest dataset of its kind ever produced. In pursuit of the Library’s mission of improving access, we placed the dataset and all code into the public domain for unrestricted re-use. We published a 
+                <ref target="https://dl.acm.org/doi/10.1145/3340531.3412767">paper</ref> describing the dataset and its construction at the 2020 ACM Conference on Information Knowledge &amp; Management (Lee et al., 2020). 
+            </p>
+            <p>Second, I will discuss the 
+                <hi rend="italic">Newspaper Navigator</hi> public 
+                <ref target="https://news-navigator.labs.loc.gov/search">search application</ref> for 1.5 million photos from the dataset. While caption-based keyword search for images provides much utility, the approach also has fundamental limitations: for example, how do historians search for photographs with distinct visual motifs? This question is particularly relevant for cultural heritage collections, where OCR transcriptions are inevitably imperfect, further restricting the efficacy of keyword search. In the second phase of 
+                <hi rend="italic">Newspaper Navigator</hi>, I created and deployed the search application for 1.5 million photographs in the dataset based on the real needs that historians and other users had articulated to us surrounding these limitations. In addition to providing keyword search functionality, the search application enables users to iteratively train machine learning algorithms in order to retrieve visually similar photos according to topics or concepts of interest, such as baseball players. From an exploratory search perspective, I call this search functionality 
+                <hi rend="italic">open faceted search</hi> because it empowers users to create their own facets dynamically, facilitated by interactive machine learning algorithms that can train and predict over all 1.5 million photos in under a second. Unlike standard faceted search, open faceted search provides a path forward even when metadata is impoverished, making it extensible to a wide range of digitized collections. I first presented open faceted search in a 
+                <ref target="https://drive.google.com/file/d/1fqtPXNNWTC4scrKSCEtYCOyLTQlAUE7r/view?usp=sharing">demo</ref> at the 2020 ACM Symposium on User Interface and Software Technology (Lee and Weld, 2020).
+            </p>
+            <p>Third, I will discuss the 
+                <hi rend="italic">Newspaper Navigator</hi>
+                <ref target="http://www.digitalhumanities.org/dhq/vol/15/4/000578/000578.html">data archaeology</ref>, which I wrote to examine the ways in which a 
+                <hi rend="italic">Chronicling America</hi> newspaper page is altered and decontextualized during its journey from a physical artifact to a series of probabilistic photographs in 
+                <hi rend="italic">Newspaper Navigator</hi>. First released with the 
+                <hi rend="italic">Newspaper Navigator</hi> search application in order to provide scholars and the general public alike with a resource surrounding the ethical considerations and implications of this project, the data archaeology has appeared in revised form as an article in 
+                <hi rend="italic">Digital Humanities Quarterly</hi> (Lee, 2021). In this data archaeology, I studied the digitization journeys of four different pages in Black newspapers in 
+                <hi rend="italic" xml:space="preserve">Chronicling America </hi>that reproduce the same photograph of W.E.B. Du Bois. In tracing the pages’ journeys, I unpacked how each step, from microfilming to OCR to image embeddings, propagates bias, marginalization, and erasure via the machine learning algorithms employed.
+            </p>
+            <p>I will conclude by discussing 
+                <hi rend="italic">Newspaper Navigator</hi> research collaborations with scholars and educators across universities and cultural heritage institutions. With Devin Naar, I conducted the first study of the Ladino press at a macroscopic scale. Ladino, also known as Judeo-Spanish, is the language of the Sephardic Jewish people, and the Ladino press represents an invaluable source for studying Sephardic Jewish experiences across the world. In this collaboration, I have utilized 
+                <hi rend="italic" xml:space="preserve">Newspaper Navigator </hi>to excavate the visual content from over 15,000 pages of Ladino newspapers. Many Ladino texts are not even keyword searchable due to the widespread failure of OCR engines to properly transcribe the language. My excavation of the visual content offers the first path forward to studying Ladino newspapers at scale and thus serves as a corrective to this algorithmic marginalization. My analysis of thousands of extracted photographs and advertisements reveals new contours to Sephardic Jewish experiences in modernity: in addition to uncovering photographs of individuals and communities, I have also identified an abundance of advertisements offering remedies for anxieties, whether medical, financial, or class-based. My findings are detailed in my chapter in 
+                <hi rend="italic">Jewish Studies in the Digital Age</hi>, currently in press with De Gruyter Press for publication in 2022 (Lee, 2022). 
+            </p>
+            <p>Moreover, in an ongoing collaboration with periodicals scholars Jim Casey, Sarah Salter, and Joshua Ortiz Baco, I am studying the evolution of visual layouts of newspaper titles, with a particular focus on ethnic presses and how they served as vehicles for protest and community. Using the 
+                <hi rend="italic">Newspaper Navigator</hi> dataset, it is possible to directly quantify the similarity of layouts across millions of newspaper pages, enabling us not only to trace the technological developments of printing presses but also to uncover the hidden editorial practices embedded within layouts themselves. For example, we have identified clusters of newspaper titles with similar visual layouts, such as networks of African-American titles that feature illustrations and photographs of members of their communities in portrait poses in the center of their front pages. The editors’ choice of a shared visual grammar speaks to the ways in which visual culture and layout featured prominently into editorial practices. We presented our 
+                <ref target="https://arxiv.org/abs/2109.01732">first paper</ref> detailing this collaboration at the 
+                <hi rend="italic">Computational Humanities Research</hi> 2021 conference (Lee et al., 2021). Lastly, I have collaborated with professors of education Ilene Berson and Michael Berson to investigate uses of 
+                <hi rend="italic">Newspaper Navigator</hi> in the classroom, as detailed in our 
+                <ref target="https://www.socialstudies.org/social-education/85/2/machine-learning-and-social-studies">article</ref> in 
+                <hi rend="italic">Social Education</hi> (Lee, Berson, and Berson, 2021).
+            </p>
+            <p>I will conclude my talk by reflecting on possibilities for research at the intersection of machine learning, the digital humanities, and libraries.</p>
+            <p style="text-align: left;">
+                <hi rend="italic bold" style="font-size:12pt" xml:space="preserve">Newspaper Navigator </hi>
+                <hi rend="bold" style="font-size:12pt">Resources:</hi>
+            </p>
+            <list type="unordered">
+                <item>
+                    <hi rend="italic" style="font-size:12pt">Newspaper Navigator</hi>
+                    <hi style="font-size:12pt" xml:space="preserve"> dataset:</hi>
+                    <ref target="https://news-navigator.labs.loc.gov/">
+                        <hi rend="underline color(0000FF)" style="font-size:12pt">https://news-navigator.labs.loc.gov/</hi>
+                    </ref>
+                </item>
+                <item>
+                    <hi rend="italic" style="font-size:12pt">Newspaper Navigator</hi>
+                    <hi style="font-size:12pt" xml:space="preserve"> search application: </hi>
+                    <ref target="https://news-navigator.labs.loc.gov/search">
+                        <hi rend="underline color(0000FF)" style="font-size:12pt">https://news-navigator.labs.loc.gov/search</hi>
+                    </ref>
+                </item>
+                <item>
+                    <hi rend="italic" style="font-size:12pt">Newspaper Navigator</hi>
+                    <hi style="font-size:12pt" xml:space="preserve"> data archaeology: </hi>
+                    <ref target="https://hcommons.org/deposits/item/hc:32415/">
+                        <hi rend="underline color(0000FF)" style="font-size:12pt">https://hcommons.org/deposits/item/hc:32415</hi>
+                    </ref>
+                </item>
+                <item>
+                    <hi rend="italic" style="font-size:12pt">Newspaper Navigator</hi>
+                    <hi style="font-size:12pt" xml:space="preserve"> project description &amp; other links: </hi>
+                    <ref target="https://bcglee.github.io/newspaper-navigator.html">
+                        <hi rend="underline color(0000FF)" style="font-size:12pt">https://bcglee.github.io/newspaper-navigator.html</hi>
+                    </ref>
+                </item>
+            </list>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Barnhurst, K. G. and Nerone, J.</hi> (2002). 
+                        <hi rend="italic">The Form of News: A History</hi>. Guilford Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Cole, J. L. </hi>(2020). How the Other Half Laughs: The Comic Sensibility in American Culture, 1895-1920. University Press of Mississippi.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Fyfe, P. and Ge, Q.</hi> (2018). Image Analytics and the Nineteenth-Century Illustrated Newspaper. 
+                        <hi rend="italic">Journal of Cultural Analytics</hi>, 
+                        <hi rend="bold">3</hi>(1). DOI:
+                        <ref target="https://doi.org/10.22148/16.026">10.22148/16.026</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Lee, B. C. G.</hi> (2021). Compounded Mediation: A Data Archaeology of the Newspaper Navigator Dataset. 
+                        <hi rend="italic">Digital Humanities Quarterly</hi>, 
+                        <hi rend="bold">15</hi>(4). DOI: 
+                        <ref target="http://www.digitalhumanities.org/dhq/vol/15/4/000578/000578.html">http://www.digitalhumanities.org/dhq/vol/15/4/000578/000578.html</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Lee, B. C. G.</hi> (2022). The Digital Humanities and the Ladino Press: Using Machine Learning to Extract and Analyze Visual Content in Historic Ladino Newspapers. 
+                        <hi rend="italic">Jewish Studies in the Digital Age</hi>. De Gruyter Press.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Lee, B. C. G., Baco, J. O., Salter, S. H. and Casey, J.</hi> (2021). Navigating the Mise-en-Page: Interpretive Machine Learning Approaches to the Visual Layouts of Multi-Ethnic Periodicals. 
+                        <hi rend="italic">Computational Humanities Research Conference</hi> 2021. DOI:
+                        <ref target="http://arxiv.org/abs/2109.01732">http://arxiv.org/abs/2109.01732</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" xml:space="preserve">Lee, B. C. G., Berson, I. R. and Berson, M. J. </hi>(2021). Machine Learning and the Social Studies. 
+                        <hi rend="italic">Social Education</hi>, 
+                        <hi rend="bold">85</hi>(2). pp. 88-92. DOI: 
+                        <ref target="https://www.socialstudies.org/social-education/85/2/machine-learning-and-social-studies">https://www.socialstudies.org/social-education/85/2/machine-learning-and-social-studies</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Lee, B. C. G., Mears, J., Jakeway, E., Ferriter, M., Adams, C., Yarasavage, N., Thomas, D., Zwaard, K. and Weld, D. S.</hi> (2020). The Newspaper Navigator Dataset: Extracting Headlines and Visual Content from 16 Million Historic Newspaper Pages in Chronicling America. 
+                        <hi rend="italic">Proceedings of the 29th ACM International Conference on Information &amp; Knowledge Management</hi>. (CIKM ’20). New York, NY, USA: Association for Computing Machinery, pp. 3055–62. DOI:
+                        <ref target="https://doi.org/10.1145/3340531.3412767">10.1145/3340531.3412767</ref>. 
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Lee, B. C. G. and Weld, D. S.</hi> (2020). Newspaper Navigator: Open Faceted Search for 1.5 Million Images. 
+                        <hi rend="italic">Adjunct Publication of the 33rd Annual ACM Symposium on User Interface Software and Technology</hi>. (UIST ’20 Adjunct). New York, NY, USA: Association for Computing Machinery, pp. 120–22 DOI:
+                        <ref target="https://doi.org/10.1145/3379350.3416143">10.1145/3379350.3416143</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Piper, A., Wellmon, C. and Cheriet, M.</hi> (2020). The Page Image: Towards a Visual History of Digital Documents. 
+                        <hi rend="italic">Book History</hi>, 
+                        <hi rend="bold">23</hi>(1). Johns Hopkins University Press: 365–97. DOI:
+                        <ref target="https://doi.org/10.1353/bh.2020.0010">10.1353/bh.2020.0010</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Wevers, M. and Smits, T.</hi> (2020). The Visual Digital Turn: Using Neural Networks to Study Historical Images. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 
+                        <hi rend="bold">35</hi>(1): 194–207 DOI:
+                        <ref target="https://doi.org/10.1093/llc/fqy085">10.1093/llc/fqy085</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

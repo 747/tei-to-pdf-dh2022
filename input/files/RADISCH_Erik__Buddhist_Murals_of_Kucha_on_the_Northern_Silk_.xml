@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> Buddhist Murals of Kucha on the Northern Silk Road. An Approach to Semi Automated Annotation </title>
+                <author>
+                    <persName>
+                        <surname>Radisch</surname>
+                        <forename>Erik</forename>
+                    </persName>
+                    <affiliation>Saxon Academy of Sciences and Humanities in Leipzig, Germany</affiliation>
+                    <email>radisch@saw-leipzig.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T15:15:25.653602168</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>half automated annotation</term>
+                    <term>computer vision</term>
+                    <term>neural networks</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>image processing and analysis</term>
+                    <term>Art history</term>
+                    <term>Asian studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The Buddhist cave complexes in the region of Kucha, located on the northern Silk Road (in the Xinjiang Uyghur Autonomous Region, People’s Republic of China) house impressive wall paintings dating approximately from the 5th to 10th centuries. The first evidence of a past Buddhist culture was discovered at the beginning of the 20th century, after which several countries sent expeditions to the area to investigate the religion that had once been dominant in the region. It was a sensation when various Buddhist cave complexes were discovered, the largest of which included as many as 400 caves. At that time, the first photographs of the actual state of the caves were taken and pieces of the paintings were extracted from the caves and transferred to the respective national museums. Sales and losses due to war led to the fact that nowadays fragments of the murals are spread all over the world, making it very difficult to assign it to the individual caves of origin (Further information: Yaldiz 1987; Popova 2008; Dreyer 2015).</p>
+            <p>The project presented here has taken on the task of documenting and describing the murals in situ and the individual pieces available worldwide and, with the aid of historical photographs, of virtually reinserting them into their original context.
+                <note xml:id="ftn1" place="foot" n="1">
+                    <ref target="https://kucha.saw-leipzig.de/">https://kucha.saw-leipzig.de</ref>; https://www.saw-leipzig.de/de/projekte/wissenschaftliche-bearbeitung-der-buddhistischen-hoehlenmalereien-in-der-kucha-region-der-noerdlichen-seidenstrasse/introduction/kucha-murals
+                </note>
+            </p>
+            <p>The project makes use of modern possibilities of the Digital Humanities in that not only an extensive textual description of individual scenes is carried out, but also the pictorial contents of the repetitive representations are recorded and enriched with digital methods. For this purpose,the digital image annotation tool Annotorious
+                <note xml:id="ftn2" place="foot" n="2">
+                    <ptr target="https://recogito.github.io/annotorious/"/> The Project has its own series «Leipzig Kucha Studies». The fist Book is: Konczak-Nagel/Zin 2020
+                </note> is used to directly annotate the content with a taxonomy comprising about 1,000 entries.
+            </p>
+            <p>While annotating objects in the image makes it possible to ensure scientific traceability of identified objects, it is also a very extensive and time-consuming task. Many objects have to be annotated repeatedly because they appear in many images in different contexts. Also, there are sometimes several images of an object from different perspectives available or there are images from the time of the expeditions where detached parts can still be seen in their original context. So there is the necessity to annotate sometimes very similar or same objects several times. However, transferring annotations is difficult. Even if photographs of the same objects are available, different viewpoints and different lenses may cause the photographs to be distorted. It is hardly possible to perform this task automatically using conventional computer vision methods.</p>
+            <p>For this reason, the project is currently attempting to train region based convolutional neural networks (RCNNs)
+                <note xml:id="ftn3" place="foot" n="3">The project uses for this purpose detectron2 
+                    <ptr target="https://github.com/facebookresearch/detectron2"/>
+                </note> using the annotations already made, in order to be able to perform at least parts of the annotation semi-automatically in the future.
+            </p>
+            <p>So far, RCNNs have been used in the Digital Humanities mainly to identify, locate and order objects in images (see for example: Howanitz et al. 2019; Arnold/Tilton 2019; Duhaime 2019; Helm et al. 2021). Their use for semi-automated annotation has not been implemented, at least to the author of this poster proposal. It may also be a risky endeavour, since the edges of such detected regions often fray and not the whole object is detected. However, it may be worth a try, if only to test the limits of the application of such systems in the Digital Humanities.</p>
+            <p>The conditions in this project are very good. Nearly 8,000 polygons already exist, which have been used in a total of nearly 10,000 annotations (a polygon can be linked to several elements of the taxonomy). Some objects have been annotated over 500 times. However, there are also some problems to be considered. For example, there are two fundamentally different types of imagery. On the one hand there are photographs (historical and modern) and on the other hand there are drawings of some paintings. Since these categories of images are very different, they were also separated for the training. It can be assumed that the recognition on photographs should be clearly more difficult, since here often paintings are in very bad condition and are to be identified only with difficulty even by an experienced eye.</p>
+            <p>A first attempt has been encouraging, because not only some objects were found but for example some of the nimbi around the head were drawn very well. (See figure 1) The poster will present the results (failure or success) of the experiments that will be performed in the next months. It should invite to inform about the project, to share experiences about the use and training of neural networks and to encourage their use.</p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/5dcd68c7d4dbcc896a80277d37b07901.png"/>
+                    <head>Example photograph for automated annotation. First number: taxonomy-key, second number: confidence. By far not all possible annotations were detected Nimbi where detected good, rhombi need still further improvement.</head>
+                </figure>
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Arnold, </hi>
+                        <hi rend="bold">T. </hi>
+                        <hi rend="bold">and</hi>
+                        <hi rend="bold"> </hi>
+                        <hi rend="bold">Tilton, </hi>
+                        <hi rend="bold">L</hi>
+                        <hi rend="bold">. </hi>(2019). Distant viewing: analyzing large visual corpora, Digital Scholarship in the Humanities 36(1), DOI: 
+                        <ref target="http://dx.doi.org/10.1093/digitalsh/fqz013">10.1093/digitalsh/fqz013</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Dreyer, C.</hi> (2015). 
+                        <hi rend="italic">Abenteuer Seidenstraße: Die Berliner Turfan-Expeditionen 1902–1914</hi>. Leipzig: Seemann.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Duhaime, D. </hi>(2019). PixPlot. 
+                        <ptr target="https://github.com/YaleDHLab/pix-plot"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Helm, </hi>
+                        <hi rend="bold">W., </hi>
+                        <hi rend="bold">Schmideler, S., </hi>
+                        <hi rend="bold">I</hi>
+                        <hi rend="bold">m, C., Mandl, T., Kollmann, </hi>
+                        <hi rend="bold">S. and </hi>
+                        <hi rend="bold">Müller, </hi>
+                        <hi rend="bold">L.</hi>
+                        <hi rend="bold"> </hi>(2021). Wie sich die Bilder ähneln. Vom Zufallsfund zur systematischen Forschung im Bereich der automatisierten Bildähnlichkeitssuche. In: Burghardt, M., Dieckmann, L., Steyer, T., Trilcke, P., Walkowski, N.-O., Weis, J. and Wuttke, U. (2021). Fabrikation von Erkenntnis: Experimente in den Digital Humanities. DOI: 10.26298/melusina.8f8w-y749-wsdb.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Howanitz, </hi>
+                        <hi rend="bold">G., </hi>
+                        <hi rend="bold">Bermeitinger, B., Radisch, E., Gassner, S., Rehbein, M. </hi>
+                        <hi rend="bold">and</hi>
+                        <hi rend="bold"> Handschuh, S. </hi>(2019, July 11). Deep Watching - Towards New Methods of Analyzing Visual Media in Cultural Studies. Digital Humanities 2019 (DH2019), Utrecht, Netherlands. https://dev.clariah.nl/files/dh2019/boa/0335.html.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Konczak-Nagel, I. </hi>
+                        <hi rend="bold">a</hi>
+                        <hi rend="bold">nd </hi>
+                        <hi rend="bold">Zin, M. </hi>(2020). Essays and Studies in the Art of Kucha (Leipzig Kucha Studies 1). New Delhi: Dev Publishers.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Popova, I. F. </hi>(ed.) (2008), 
+                        <hi rend="italic">Russian Expeditions to Central Asia at the Turn of the 20th Century: Collected Articles</hi>. St Petersburg: Slavia Publishers.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wu, Y., Kirillov, </hi>
+                        <hi rend="bold">A., </hi>
+                        <hi rend="bold">Massa, F., </hi>
+                        <hi rend="bold">Lo, </hi>
+                        <hi rend="bold">W. and </hi>
+                        <hi rend="bold">Girshick, R. </hi>(2019). Detectron2, 
+                        <ptr target="https://github.com/facebookresearch/detectron2"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Yaldiz, </hi>
+                        <hi rend="bold">M.</hi> (1987). 
+                        <hi rend="italic">Archäologie und Kunstgeschichte Chinesisch-Zentralasiens (Xinjiang)</hi>. Leiden: Brill, Handbuch der Orientalistik, Abteilung 7, Kunst und Archäologie, Band 3, Innerasien.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

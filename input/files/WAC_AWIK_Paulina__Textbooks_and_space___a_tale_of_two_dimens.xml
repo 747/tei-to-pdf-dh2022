@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> Textbooks and space – a tale of two dimensions. A GIS analysis of cultural content of language textbooks. </title>
+                <author>
+                    <persName>
+                        <surname>Wacławik</surname>
+                        <forename>Paulina</forename>
+                    </persName>
+                    <affiliation>University of Warsaw, Poland</affiliation>
+                    <email>paulina.h.waclawik@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-13T13:29:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>deep mapping</term>
+                    <term>GIS</term>
+                    <term>ELF</term>
+                    <term>EFL</term>
+                    <term>textbook evaluation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>spatial &amp; spatio-temporal analysis</term>
+                    <term>modeling and visualization</term>
+                    <term>Cultural studies</term>
+                    <term>Geography and geo-humanities</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <anchor xml:id="Hlk103346098"/>
+                Culture has been variously conceptualised by the researchers be it as an onion (Hofstede
+                <hi rend="italic" style="font-size:12pt" xml:space="preserve"> et al.</hi>
+                , 2010), an iceberg (Hall, Edward, T., 1976), a (Moran, Patrick, R., 2006), a set of binary categories (Hofstede, 2001), or a spectrum of language and culture (Risager, 2007). Thus, to study its foundations, we need to address values, and to do so, we have to resort to investigating cultural artefacts. One particularly telling example of an artifact of culture are language textbooks (Gray, 2010; Gray, 2000)
+            </p>
+            <p>
+                In my study, I adjust the method of textbook analysis proposed by, e.g., Karen Risager (2018) and Michael Hollenback’s adaptation of Byram’s Model of Intercultural Citizenship (MICC) (Hollenback; Hollenback, 2016; Byram, 1997) to the language of spatial analysis in Geographic Information Systems, GIS in short. As a case study, I use academic English textbook _ The World We Live In (2013) published for Japanese students in Japan by Japanese publishing house (reflecting the idea of taking into account the three parties involved in the creation of the textbooks: authors, teachers, and students). The textbooks are investigated from the perspective of space (understood as the space of the textbooks, which is the arrangement of the content on the pages of the book) and space depicted in the books (i.e., geographical space). The two levels of space will translate to two levels of analysis: the construction of the book in terms of e.g., its themes, types of tasks, and cognitive difficulty;
+            </p>
+            <p>the role of words with spatial reference (e.gl, placenames, landmarks, people)</p>
+            <p>
+                which will finally be combined and cross referenced, though heeding the differences in the types of the data acquired (c.f. similar approach to double levels of analysis of textual data in the project on mapping place names in historical court books by Polish Academy of Science https://atlasfontium.pl/?page_id=2303).
+            </p>
+            <p>
+                First, the books were scanned and entered into the GIS system. Then, the information in them was coded and marked using GIS, where it is stored in dedicated files, here: hapefiles (mostly polygon and point ones). The layers with shapefiles cover particular content type, for example:
+            </p>
+            <list rend="bulleted">
+                <item>
+                    placenames, including names of the countries, regions, cities (coded according to GeoNames ontology (
+                    <ref target="http://www.geonames.org">
+                        www.geonames.org
+                    </ref>
+                    <hi style="font-size:12pt" xml:space="preserve">), as well as words with other spatial reference, like landmarks or established products; </hi>
+                </item>
+                <item>thematic analysis of the units or sections of the textbooks (according to Common European Framework of Reference (Council of Europe, Language Policy Unit));</item>
+                <item>national and transnational institutions; </item>
+                <item>
+                    cognitive level of tasks (Bloom’s (Anderson and Krathwohl, 2001) revised taxonomy);
+                </item>
+                <item>or language used to describe culture (by Patrick Moran (2006)).</item>
+            </list>
+            <p>Finally, the collected data are subject to spatial analysis using such tools as spatial join, kriging, buffers and distance analysis to investigate, spatial relationships of particular types of content of the textbooks. </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">The elaborated approach allows to pose new questions and collapse previously separate, often incomparable, discourses into one analysis, as proposed in </hi>
+                <hi rend="italic" style="font-size:12pt">Representations of the World in Language Textbooks: Languages for Intercultural Communication and Education (Risager, 2018)</hi>
+                Mapping the content of the textbooks both onto each other and looking for the correlation between the linguistic component and geographical space presented in the books allows to offer a new voice in the discussion on the place of culture in language teaching, often labelled as opposition between English as a Foreign Language and English as a Lingua Franca (EFL/ELF).
+            </p>
+            <p>
+                We also sought an answer to the question on the impact of Globalization on English teaching by searching for the cultures of interest (understood as places mentioned in the textbooks) and assumed target culture(s) (the English-speaking countries) along with the context they appear in. It is operationalized as: mentions of places and cognitive levels, types of tasks and language used to describe them.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="Citavi Bibliography Heading">
+                        <?biblio ADDIN CitaviBibliography?>References
+                    </bibl>
+                    <bibl rend="Citavi Bibliography Entry">
+                        <anchor xml:id="CTVL0017c05deb0a5e149918697cfbbaed67b47"/>
+                        <hi rend="bold">Anderson, L. W. and Krathwohl, D. R.</hi> (2001). A taxonomy for learning, teaching, and assessing. A revision of Bloom's taxonomy of educational objectives. New York: Longman.
+                    </bibl>
+                    <bibl rend="Citavi Bibliography Entry">
+                        <anchor xml:id="CTVL00137f304e9754440b2a1a6a1746869845c"/>
+                        <hi rend="bold">Block, D., Gray, J. and Holborow, M.</hi> (2012). Neoliberalism and applied linguistics. London: Routledge.
+                    </bibl>
+                    <bibl rend="Citavi Bibliography Entry">
+                        <anchor xml:id="CTVL0013e2d047cda2c482b9a06275346bba9ce"/>
+                        <hi rend="bold">Byram, M.</hi> (1997). Teaching and Assesing Itercultural Communicative Competence. Clevedon: Multilingual Matters.
+                    </bibl>
+                    <bibl rend="Citavi Bibliography Entry">
+                        <anchor xml:id="CTVL001b28c130e6e68441e9af19d6502c3b107"/>
+                        <hi rend="bold">Gray, J.</hi> (2000). The ELT coursebook as cultural artefact: how teachers cenesor and adapt. ELT Journal. 54(3): 274–283.
+                    </bibl>
+                    <bibl rend="Citavi Bibliography Entry">
+                        <anchor xml:id="CTVL0017dd5174d9fd44b0bb3ffdc677b2d7c1a"/>
+                        <hi rend="bold">Gray, J.</hi> (2010). The Construction of English. Culture, Consumerism and Promotion in the ELT Global Coursebook. Houndsmills Basingstoke Hampshire, New York NY: Palgrave Macmillan.
+                    </bibl>
+                    <bibl rend="Citavi Bibliography Entry">
+                        <anchor xml:id="CTVL0012aa99c1521b2491591c2c96a33e0e19b"/>
+                        <hi rend="bold">Hall, Edward, T.</hi> (1976). Beyond Culture. Anchor Books.
+                    </bibl>
+                    <bibl rend="Citavi Bibliography Entry">
+                        <anchor xml:id="CTVL001c6f29f791e494190822186a6f7fc04ba"/>
+                        <hi rend="bold">Hofstede, G.</hi> (2001). Culture’s consequences_ comparing values, behaviors, institutions, and organizations across nations. Sage.
+                    </bibl>
+                    <bibl rend="Citavi Bibliography Entry">
+                        <anchor xml:id="CTVL001c8ee05aa48cf4e0196b3179ae619b19e"/>
+                        <hi rend="bold">Hofstede, G., Hofstede, G. J. and Minkov, M.</hi> (2010). Cultures and organizations. Software of the mind : intercultural cooperation and its importance for survival. New York: McGraw-Hill.
+                    </bibl>
+                    <bibl rend="Citavi Bibliography Entry">
+                        <anchor xml:id="CTVL001bddea2f6210645759cecb2cb87093ae3"/>
+                        <hi rend="bold">Hollenback, D. M. (ed.)</hi>. Incorporating Intercultural Communication into EFL Education in Japan Utilizing Task-Based Learning Course Design.
+                    </bibl>
+                    <bibl rend="Citavi Bibliography Entry">
+                        <anchor xml:id="CTVL001577ecdd26b9c4787931bc26af669d286"/>
+                        <hi rend="bold">Hollenback, D. M.</hi> A Critical Look at Culture in EFL Textbooks in Japan, Transformation in language development, Nagoya, Japan, 2016.
+                    </bibl>
+                    <bibl rend="Citavi Bibliography Entry">
+                        <anchor xml:id="CTVL0010ff47ea6230341918662fd5568573e60"/>
+                        <hi rend="bold">Ogasawara, S., Hiroe, A. and Cutrone, P.</hi> (2013). The World We Live In. Tokyo: EINOUSHA.
+                    </bibl>
+                    <bibl rend="Citavi Bibliography Entry">
+                        <anchor xml:id="CTVL0019b1cf683d7c6489c91aa97b109809f18"/>
+                        <hi rend="bold">Risager, K.</hi> (2007). Language and culture pedagogy. From a national to a transnational paradigm. Clevedon, Buffalo: Multilingual Matters.
+                    </bibl>
+                    <bibl rend="Citavi Bibliography Entry">
+                        <anchor xml:id="CTVL00196a13d235c8b4b0cb644bdba8f86f178"/>
+                        <hi rend="bold">Risager, K.</hi> (2018). Representations of the World in Language Textbooks. Languages for Intercultural Communication and Education). Bristol UK: Multilingual Matters.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

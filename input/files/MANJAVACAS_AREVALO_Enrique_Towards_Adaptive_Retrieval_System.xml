@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Towards Adaptive Retrieval Systems for Intertextuality Research: a case study on Biblical Intertextuality</title>
+                <author>
+                    <persName>
+                        <surname>Manjavacas Arevalo</surname>
+                        <forename>Enrique</forename>
+                    </persName>
+                    <affiliation>University of Leiden, Netherlands</affiliation>
+                    <email>enrique.manjavacas@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>intertextuality</term>
+                    <term>text reuse</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>5th-14th Century</term>
+                    <term>digital libraries creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>information retrieval and querying algorithms and methods</term>
+                    <term>Humanities computing</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">In cultural studies, intertextual theory is concerned with the links that literary texts establish with each other through different types of referencing. Through the recognition and interpretation of these links, new readings and perspectives on literary works open up, but the process of manually identifying the underlying intertextual networks in a sufficiently exhaustive manner is an arduous and laborious process in which literary scholars are left to their own erudition. Increasingly, computational methods are applied in this domain with the goal of automating the retrieval of intertexts, which range from more or less exact quotations, to subtler allusions or paraphrases.</p>
+            <p style="text-align: left; ">For a given research project, the choice about the retrieval algorithm is typically done on the basis of the type and style of intertext that are expected. For example, detecting near-verbatim textual borrowings spanning long sequences across 19th century newspapers (D. A. Smith, Cordell, and Dillon 2013; D. A. Smith et al. 2014) is best served with a text alignment algorithm (e.g. the Smith-Waterman algorithm for local alignment: T. F. Smith and Waterman 1981). In contrast, when tackling non-literal intertextuality (e.g. literary allusions), lexical semantics needs to be taken into account by using lexical databases like WordNet (Fellbaum 2012) or deploying distributional semantic models in order to capture different types of semantic relatedness like synonymy or antonymy in an unsupervised manner (Bamman and Crane 2008; Manjavacas, Long, and Kestemont 2019; Moritz et al. 2016).</p>
+            <p style="text-align: left; ">However, in a common research scenario, characterized by the task of extracting intertextual connection from a given target collection to a second collection serving as the source, it is not always clear what type and style of intertextuality may be found, and, even if it were, common retrieval algorithms include a variety of parameters that have to be tweaked manually in order to achieve good retrieval performance (Büchler et al. 2014). For these reasons, a long term desideratum for computational research in intertextuality is to develop general methods that can adapt to the style of intertextuality present in the given textual collections (Manjavacas Arévalo 2021)
+                <hi rend="bold" xml:space="preserve">. </hi>Currently, the main hurdle to develop this type of approaches is the lack of benchmark datasets and, ultimately, the inherent difficulty to produce them (Manjavacas Arevalo, Mellerin, and Kestemont 2021).
+            </p>
+            <p style="text-align: left; ">In the present work, we approach the topic of automatically adapting text reuse algorithms to the target corpus from a different angle. We focus on the Smith-Waterman algorithm for local text alignment, introducing an extension module that exploits target corpus information in order to boost the retrieval performance. The Smith-Waterman algorithm computes an alignment score for two given input texts that corresponds to the optimum sequence alignment. This optimum alignment score depends on the relative importance that is given to the match, mismatch and gap operations with which the alignment is computed. These relative importances are free parameters that ultimately control the type of intertext that is matched (e.g. a lower gap penalty would license long textual borrowings even if other text has been intercalated in between).</p>
+            <p style="text-align: left; ">In this work, we focus on the match score. This score is added to the output alignment score for every word in the target sequence that matches a word in the source sequence (e.g. words that share the same underlying lemma). While traditional implementations of alignment algorithms for intertextuality treat this score in a monolithic way, keeping it constant regardless of the particular words that are being matched, we suspect that generating word-specific match scores can be a powerful yet uncomplicated approach in order to adapt the retrieval algorithm to the particular type of intertext present in a given collection. For example, if an author is more likely to place an intertextual connection when discussing a particular topic, matches on words related to that topic could be boosted. Moreover, such topic-related trends could be estimated from corpora annotated with intertextuality.</p>
+            <p style="text-align: left; ">In our contribution, we focus on frequency-based trends and test an approach that aims at boosting matches on words that carry more information. Following the same intuition that underlies the common frequency-based weighted scheme for document representation known as Tf-IDF, we generate word-specific match scores on the basis of how specific the words are for the underlying collections. While being adaptive to the underlying corpus, this approach doesn’t require pre-existing annotations regarding intertextuality and still shows significant retrieval gains.</p>
+            <p style="text-align: left; ">We benchmark the proposed extension against the standard Smith-Waterman algorithm, as well as against two representative algorithms belonging to the Vector Space Model family. Moreover, in contrast to common practice in computational intertextuality, we put the proposed extension to test across a variety of benchmark datasets as well as three different languages (Latin, Ancient Greek and Early Modern English). The experiments show that the proposed scoring system based on word frequencies and frequency ranks outperforms the alternative approaches in almost all benchmark datasets, while only adding two extra tunable hyper-parameters to the Smith-Waterman algorithm.</p>
+            <p style="text-align: left; ">In this talk, we would like to present the approach and the evaluation in detail, as well as showcase in what particular ways the proposed method boosts retrieval performance by means of an exhaustive error analysis. By making the code and datasets available, we look forward to helping other researchers in the field with the automatic retrieval of intertext as well as with the systematic evaluation of future retrieval approaches.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Bamman, David, and Gregory Crane. 2008. “The Logic and Discovery of Textual Allusion.” In 
+                        <hi rend="italic">Proceedings of the Second Workshop on Language Technology for Cultural Heritage Data</hi>. http://www.perseus.tufts.edu/{~}ababeu/latech2008.pdf.
+                    </bibl>
+                    <bibl style="text-align: left; ">Büchler, Marco, Philip R. Burns, Martin Müller, Emily Franzini, and Greta Franzini. 2014. “Towards a Historical Text Re-Use Detection.” In 
+                        <hi rend="italic">Text {Mining}</hi>, 221–38. Springer. https://doi.org/10.1007/978-3-319-12655-5_11.
+                    </bibl>
+                    <bibl style="text-align: left; ">Fellbaum, Christiane. 2012. “WordNet.” In 
+                        <hi rend="italic">The Encyclopedia of Applied Linguistics</hi>. Hoboken, NJ, USA: John Wiley &amp; Sons, Inc. https://doi.org/10.1002/9781405198431.wbeal1285.
+                    </bibl>
+                    <bibl style="text-align: left; ">Manjavacas Arévalo, Enrique. 2021. 
+                        <hi rend="italic">Computational Approaches to Intertextuality. from Retrieval Engines to Statistical Analysis : Thesis.</hi> Proefschriften UA-LW : Letterkunde: 2021: 2. https://doc.anet.be/docman/docman.phtml?file=.irua.6b6d46.178931.pdf.
+                    </bibl>
+                    <bibl style="text-align: left; ">Manjavacas Arevalo, Enrique, Laurence Mellerin, and Mike Kestemont. 2021. “Quantifying Contextual Aspects of Inter-Annotator Agreement in Intertextuality Research.” In 
+                        <hi rend="italic">Proceedings of the 5th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature</hi>, 31–42. Punta Cana, Dominican Republic (online): Association for Computational Linguistics. https://aclanthology.org/2021.latechclfl-1.4.
+                    </bibl>
+                    <bibl style="text-align: left; ">Manjavacas, Enrique, Brian Long, and Mike Kestemont. 2019. “On the Feasibility of Automated Detection of Allusive Text Reuse.” In 
+                        <hi rend="italic">Proceedings of the 3rd Joint {SIGHUM} Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature</hi>, 104–14. Minneapolis, USA: Association for Computational Linguistics. https://www.aclweb.org/anthology/W19-2514.
+                    </bibl>
+                    <bibl style="text-align: left; ">Moritz, Maria, Andreas Wiederhold, Barbara Pavlek, Yuri Bizzoni, and Marco Büchler. 2016. “Non-Literal Text Reuse in Historical Texts: An Approach to Identify Reuse Transformations and Its Application to Bible Reuse.” In 
+                        <hi rend="italic">Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing</hi>, 1849–59. Stroudsburg, PA, USA: Association for Computational Linguistics. https://doi.org/10.18653/v1/D16-1190.
+                    </bibl>
+                    <bibl style="text-align: left; ">Smith, David A., Ryan Cordel, Elizabeth Maddock Dillon, Nick Stramp, and John Wilkerson. 2014. “Detecting and Modeling Local Text Reuse.” In 
+                        <hi rend="italic">Proceedings of the ACM/IEEE Joint Conference on Digital Libraries</hi>, 183–92. https://doi.org/10.1109/JCDL.2014.6970166.
+                    </bibl>
+                    <bibl style="text-align: left; ">Smith, David A., Ryan Cordell, and Elizabeth Maddock Dillon. 2013. “Infectious Texts: Modeling Text Reuse in Nineteenth-Century Newspapers.” In 
+                        <hi rend="italic">2013 IEEE International Conference on Big Data</hi>, 86–94. IEEE. https://doi.org/10.1109/BigData.2013.6691675.
+                    </bibl>
+                    <bibl style="text-align: left; ">Smith, T.F., and M.S. Waterman. 1981. “Identification of Common Molecular Subsequences.” 
+                        <hi rend="italic">Journal of Molecular Biology</hi> 147 (1): 195–97. https://doi.org/10.1016/0022-2836(81)90087-5.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

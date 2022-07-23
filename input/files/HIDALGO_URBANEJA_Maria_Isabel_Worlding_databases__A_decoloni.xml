@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Worlding databases: A decolonising approach to the structuring and representation of data about global arts </title>
+                <author>
+                    <persName>
+                        <surname>Hidalgo Urbaneja</surname>
+                        <forename>Maribel</forename>
+                    </persName>
+                    <affiliation>University of the Arts London, United Kingdom</affiliation>
+                    <email>m.hidalgourbaneja@arts.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Velios</surname>
+                        <forename>Athanasios</forename>
+                    </persName>
+                    <affiliation>University of the Arts London, United Kingdom</affiliation>
+                    <email>a.velios@arts.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Goodwin</surname>
+                        <forename>Paul</forename>
+                    </persName>
+                    <affiliation>University of the Arts London, United Kingdom</affiliation>
+                    <email>paul.goodwin@arts.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Databases</term>
+                    <term>data ontologies</term>
+                    <term>decolonial</term>
+                    <term>museum studies</term>
+                    <term>digital art history</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>metadata standards</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Art history</term>
+                    <term>Galleries and museum studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="italic">Worlding Public Cultures: The Arts and Social Innovation</hi> is an international multi-partner project that proposes 
+                <hi rend="italic" xml:space="preserve">worlding </hi>(Heidegger, 2002 [1950]; Spivak, 1985; Hunt, 2014; Cheah, 2016) as an activating concept and analytical tool. The concept goes beyond current top-down models of “inclusion,” “diversity” and other representations of the “global”. 
+                <hi rend="italic">Worlding</hi> grounds the global within local worlds and allows entangled histories to emerge, opening pathways to decolonise “universal” Western narratives and epistemologies. Practices that generate new forms of knowledge in the digital sphere or challenge existing ones are seen as a 
+                <hi rend="italic">worlding</hi> exercise by decolonial digital humanities (Risam, 2018).
+            </p>
+            <p>One of the main outputs of the 
+                <hi rend="italic" xml:space="preserve">Worlding Public Cultures </hi>project is a dedicated website, 
+                <ref target="https://www.worldingcultures.org/,">
+                    https://www.worldingcultures.org/,
+                </ref> that will constitute a hub for exchange of information about decolonising activities led by museums, universities, and other cultural and activist organisations. A key element on that website is the publicly accessible database that will share a structured set of curated data about how “global” narratives are being told and shared by exhibitions, academic courses, public events, and activist initiatives around the world. The database can be queried by place, time span, actors, and topics. A team of researchers from different backgrounds based in multiple geographical locations (London, UK; Amsterdam, Netherlands; Heidelberg, Germany; Montreal and Ottawa, Canada) collects data about localised events and activities. The database will provide museum professionals, scholars, teachers and students, and cultural activists with information that can help them when planning and organising activities or projects about global arts and culture.
+            </p>
+            <p>Gathering and curating data about the “global” increases the visibility of non-canonical and non-western arts and cultures but 
+                <hi rend="italic">worlding</hi> requires an effort that goes beyond representation. Developing a database in the context of the Worlding Public Cultures project implies the use of 
+                <hi rend="italic">worlding</hi> as a concept and tool to rethink and critique the epistemological foundations of databases, ontologies, and structured vocabularies. The database structure is mapped on the CIDOC Conceptual Reference Model and database entries often include terminology from structured vocabularies and authority files such as the Getty Vocabularies and the Virtual International Authority File (VIAF). The adoption of well-established and “universally” recognised ontologies and vocabularies is considered good practice for data integration and exchange, yet, it reinforces existing power dynamics and knowledge biases. Moreover, the collected data that will populate the database has been modelled on existing standards and canons.
+            </p>
+            <p>This paper will shed light on the research questions that guide the ongoing process of developing the Worlding Public Cultures database and collection of the data that will populate it. Key areas of discussion encompass: the theoretical interrogation of the strategies, and actions frameworks that have given shape to databases, ontologies, and structured vocabularies; the engagement with professional communities responsible for the formulation of the data ontology used in the project; the ethical and critical aspects taken into consideration when reproducing data collected from multiple sources; and the design of a graphical interface within typical web applications that exposes the cultural and epistemological biases implicit in the CIDOC CRM, Getty Vocabularies, and VIAF to users that interact with the database.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Bruseker, G. and Guillem A.</hi> (2018). Decolonialism and Formal Ontology: Self-critical Conceptual Modelling Practice. 
+                        <hi rend="italic">DH2018 Conference Proceedings</hi>. 
+                        <ref target="https://dh2018.adho.org/decolonialism-and-formal-ontology-self-critical-conceptual-modelling-practice/">
+                            https://dh2018.adho.org/decolonialism-and-formal-ontology-self-critical-conceptual-modelling-practice/
+                        </ref> (accessed 20 April 2022)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Duarte, M. E. and Belarde-Lewis, M.</hi> (2015). Imagining: Creating Spaces for Indigenous Ontologies, 
+                        <hi rend="italic">Cataloging &amp; Classification Quarterly</hi>, 53(5–6), pp. 677–702. doi: 10.1080/01639374.2015.1018396.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Heidegger, M.</hi> (2002). The Origin of the Work of Art. In 
+                        <hi rend="italic">Martin Heidegger: Off the Beaten Track,</hi> edited and translated by J. Young and K. Haynes, 1–56. Cambridge: Cambridge UP. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hunt, S.</hi> (2014). Ontologies of Indigeneity: The Politics of Embodying a Concept. 
+                        <hi rend="italic" xml:space="preserve">Cultural Geographies, </hi>21(1): 27–32. DOI: 10.1177/1474474013500226.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(1C1D1E)">Krmpotich, C. and Somerville, A.</hi>
+                        <hi rend="color(1C1D1E)" xml:space="preserve"> (2016). Affective Presence: The Metonymical Catalogue. </hi>
+                        <hi rend="italic color(1C1D1E)">Mus Anthropol</hi>
+                        <hi rend="color(1C1D1E)" xml:space="preserve">, 39: 178-191. </hi>
+                        <ref target="https://doi.org/10.1111/muan.12123">
+                            https://doi.org/10.1111/muan.12123
+                        </ref>
+                        <hi rend="Hyperlink" xml:space="preserve"> </hi>(accessed 20 April 2022)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Risam, R.</hi> (2019). New digital worlds: Postcolonial digital humanities in theory, praxis, and pedagogy. Evanston, Illinois: Northwestern University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Shep, S., Frean, M, Owen, R., Pope, R. Reihana, P., Chan, V.</hi> (2020). Indigenous frameworks for data-intensive humanities: recalibrating the past through knowledge engineering and generative modelling. 
+                        <ref target="https://hal.inria.fr/hal-02461884v2">
+                            https://hal.inria.fr/hal-02461884v2
+                        </ref> (accessed 20 April 2022)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Spivak, G. C.</hi> (1985). Three Women's Texts and a Critique of Imperialism. Critical Inquiry 12(1) "Race," Writing, and Difference (Autumn): 243–261.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Srinivasan, R.</hi> (2013). ‘Re-thinking the cultural codes of new media: The question concerning ontology’, 
+                        <hi rend="italic">New Media &amp; Society</hi>, 15(2), pp. 203–223. doi: 10.1177/1461444812450686.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Turner, H.</hi> (2020). 
+                        <hi rend="italic">Cataloguing Culture. Legacies of Colonialism in Museum Documentation</hi>. UBC Press. 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

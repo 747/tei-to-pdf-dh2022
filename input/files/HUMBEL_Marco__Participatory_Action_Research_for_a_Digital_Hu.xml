@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> Participatory Action Research for a Digital Humanities research project: Investigating Open GLAM in the context of Social Movement Archives</title>
+                <author>
+                    <persName>
+                        <surname>Humbel</surname>
+                        <forename>Marco</forename>
+                    </persName>
+                    <affiliation>UCL Department of Information Studies, United Kingdom</affiliation>
+                    <email>marco.humbel.17@ucl.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-19T13:46:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Community Archives</term>
+                    <term>Qualitative Research Methods</term>
+                    <term>Digitization</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>project design</term>
+                    <term>organization</term>
+                    <term>management</term>
+                    <term>public humanities collaborations and methods</term>
+                    <term>Galleries and museum studies</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Brief abstract</head>
+                <p style="text-align: left; ">This paper responses to the question: How can the methodology of Participatory Action Research (PAR) be used to investigate Open Access to digital collections in the context of the Marx Memorial Library London (MML)?</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Motivation</head>
+                <p style="text-align: left; ">PAR is an established methodology in library-, archive-, and information studies for collaborating with practitioners, and members of the public in a research project (Pickard, 2013: 157–66). The potential of knowledge co-production through participatory frameworks receives also increasingly attention where DH research questions are investigated by means of qualitative data (Ortolja-Baird and Nyhan, 2021: 17–18). While PAR has been used for Digital Humanities (DH) projects (Pringle, 2020: 10–11; Ruge et al., 2016: 4–5), the methodology is however not present in recent DH method books (Levenberg et al., 2018; Schuster and Dunn, 2020). Through a case study of applying PAR in a PhD project, and a reflection on the research process with reference to the literature, this paper offers an introduction to the methodology and a set of transferable lessons-learned that could devise future PAR DH projects.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Research context</head>
+                <p style="text-align: left; ">Open Access to digitized collections, also known as Open GLAM (Galleries, Libraries, Archives, and Museums), “[…] refers to a policy or practice that allows reuse and redistribution of materials for any purpose, including commercial” (Wallace, 2020a). However, a lack of resources and expertise hamper especially smaller institutions to digitize and to release collections as Open Access (Wallace, 2020b: 2–3). This project has used PAR to investigate Open GLAM in the context of archives with few resources, but which understand archiving as a form of activism to collect the histories of those who are marginalized in the historical canon: Social Movement Archives (Flinn, 2011; Hoyer and Almeida, 2021). The archive I have collaborated with is the MML, where I have volunteered from 2018 to 2021.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Applying PAR</head>
+                <p style="text-align: left; ">PAR involves the stages of: identifying a desired change, planning an action, taking action, and evaluating on the action’s outcomes. Based on the evaluation and reflection on the action, a new action may be enacted, which gives PAR a cyclical nature (Kemmis and McTaggart, 2005: 563).</p>
+                <p style="text-align: left; ">I have identified PAR as an appropriate methodology because it allowed me to:</p>
+                <list type="unordered">
+                    <item>Reflect on my own position within the MML.</item>
+                    <item>Evaluate the changes made for enhancing access to the MML’s digital collection.</item>
+                    <item>Deduce from the experience of a practical project new theoretical knowledge about Open GLAM in Social Movement Archives.</item>
+                    <item>Share with the MML control over the research process.</item>
+                </list>
+                <p style="text-align: left; ">In October 2018, at the beginning of my PhD, I approached the MML whether they would be interested in a research collaboration that would co-investigate means of providing online access to the MML’s collections. In the diagnosing phase I made myself familiar with the organizational culture, identified key players, and most importantly established trust. The diagnosing phase concluded with a focus group discussion about the MML’s digitization objectives. We found consensus that it was the MML’s priority to contribute with its digitized poster collection to the Social History Portal (SHP); a Europeana aggregator portal. In the planning stage I prepared the data for the upload and designed a series of 6 evaluative online workshops for MML team members. The objectives of the workshops were that the participants:</p>
+                <list type="unordered">
+                    <item>Reflect on the implications when collections are made available online through the SHP or Europeana.</item>
+                    <item>Develop criteria why to make certain collections available online (or why not) and set priorities.</item>
+                    <item>Learn about heritage copyright and its impact on the MML’s digitization projects</item>
+                    <item>Understand how the SHP and Europeana are connected and their licensing conditions.</item>
+                </list>
+                <p style="text-align: left; ">The action was completed with the successful poster upload to the SHP, and the workshops were conducted from September to October 2020.
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p style="text-align: left; ">
+                            I would like to thank everyone from the MML who participated in my research, as well as the MML’s archivist and library manager Meirian Jump and my supervisors Professor Julianne Nyhan, Dr Antonis Bikakis and Dr Andrew Flinn for supporting me throughout the research process. The poster upload would not have been possible without Dr Donald Weber and the SHP team. Special thanks also to LaToyah Gill (Untamed Artists) and Matthew Lambert (British Library) for their guest workshop talks on copyright. Thank you to the anonymous reviewers of this conference paper for their feedback. This research was funded by a PhD studentship of the University College London.
+                        </p>
+                    </note>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Contribution: Accounting on the limitations of the participatory approach and lessons-learned</head>
+                <p style="text-align: left; ">Within heritage studies and DH, ‘participation’ has generally a positive connotation. However, the term’s exact meaning remains often unclear (Flinn and Sexton, 2018: 626; Kidd, 2018: 201). Because the extend of participation is also not narrowly defined within the PAR methodology, it is necessary to assess critically what form of participation the research involved (Townsend, 2013: 101–03). </p>
+                <p style="text-align: left; ">The participatory mode that took place in this project can be described as ‘cooperative’, where “local people work together with outsiders to determine priorities, responsibility remains with outsiders for directing the process” (Cornwall, 1996: 96). In this paper I am going to reflect on the factors that have shaped the mode of participation in this research. Specifically, I will address the following challenges and limitations, and how these could be mitigated in future DH projects:</p>
+                <list type="unordered">
+                    <item>The possible mismatch between an academic research interest and the immediate priorities of a partner organization.</item>
+                    <item>The challenge to keep-up momentum and participants engaged due to academic administrative procedures.</item>
+                    <item>Unforeseeable circumstances, like the COVID-19 pandemic.</item>
+                    <item>The limitations of a three-year funded project for prolonged engagement and establishing mutual beneficial relationships (Herr and Anderson, 2015: 48–49; 150–57).</item>
+                </list>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Cornwall, A.</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (1996). Towards participatory practice: participatory rural appraisal (PRA) and the participatory process. In Koning, K. de and Martin, M. (eds), </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">Participatory Research in Health: Issues and Experiences</hi>
+                        . London: Zed Books ; NPPHCN, pp. 94–107.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Flinn, A.</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2011). Archival Activism: Independent and Community-led Archives, Radical Public History and the Heritage Professions. </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">InterActions: UCLA Journal of Education and Information Studies</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve">, </hi>
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">7</hi>
+                        (2) https://escholarship.org/uc/item/9pt2490x (accessed 16 April 2021).
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Flinn, A. and Sexton, A.</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2018). Research on community heritage. </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">A Museum Studies Approach to Heritage</hi>
+                        . 1st ed. Abingdon, Oxon ; New York, NY : Routledge, 2018. | Series: Leicester readers in museum studies: Routledge, pp. 625–39 doi:10.4324/9781315668505. https://www.taylorfrancis.com/books/9781315668505 (accessed 5 November 2021).
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Herr, K. and Anderson, G. L.</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2015). </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">The Action Research Dissertation: A Guide for Students and Faculty</hi>
+                        . 2nd edition. Thousand Oaks: SAGE.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Hoyer, J. and Almeida, N.</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2021). </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">The Social Movement Archive</hi>
+                        . Sacramento, CA: Litwin Books.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Kemmis, S. and McTaggart, R.</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2005). Participatory Action Research: Communicative Action and the Public Sphere. </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">The SAGE Handbook of Qualitative Research</hi>
+                        . 3rd edition. Thousand Oaks: SAGE, pp. 559–603.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Kidd, J.</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2018). Public Heritage and the Promise of the Digital. In Labrador, A. M. and Silberman, N. A. (eds), </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">The Oxford Handbook of Public Heritage Theory and Practice</hi>
+                        . New York: Oxford University Press, pp. 198–208 doi:10.1093/oxfordhb/9780190676315.013.9.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Levenberg, L., Neilson, T. and Rheams, D. (eds).</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2018). </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">Research Methods for the Digital Humanities</hi>
+                        . New York, NY: Springer Berlin Heidelberg.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Ortolja-Baird, A. and Nyhan, J.</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2021). Encoding the haunting of an object catalogue: on the potential of digital technologies to perpetuate or subvert the silence and bias of the early-modern archive. </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">Digital Scholarship in the Humanities</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> doi:10.1093/llc/fqab065.</hi>
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Pickard, A. J.</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2013). </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">Research Methods in Information</hi>
+                        . 2nd edition. London: Facet.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Pringle, E.</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2020). </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">Provisional Semantics: Addressing the Challenges of Representing Multiple Perspectives within an Evolving Digitised National Collection</hi>
+                        . (Interim Report Foundation Projects Towards A National Collection) https://www.nationalcollection.org.uk/sites/default/files/2021-01/Provisional%20Semantics.pdf (accessed 11 October 2021).
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Ruge, C., Wright, S. and Evans, J.</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2016). Digital Dilemmas: a participatory investigation into developing a digital strategy for a community archive. Melbourne http://www.vala.org.au/vala2016-proceedings/vala2016-session-13-ruge (accessed 28 November 2021).</hi>
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Schuster, K. and Dunn, S. E. (eds).</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2020). </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">Routledge International Handbook of Research Methods in Digital Humanities</hi>
+                        . (Routledge International Handbooks). London New York: Routledge, Taylor &amp; Francis Group.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Townsend, A.</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2013). </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">Action Research: The Challenges of Understanding and Researching Practice</hi>
+                        . Maidenhead, Berkshire; New York: Open University Press.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Wallace, A.</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2020a). Words Mean Things (A Glossary). </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">Open GLAM</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> doi:10.21428/74d826b1.51566976. https://openglam.pubpub.org/pub/the-glossary (accessed 27 October 2021).</hi>
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Liberation Serif;font-size:12pt">Wallace, A.</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> (2020b). Introduction. </hi>
+                        <hi rend="italic" style="font-family:Liberation Serif;font-size:12pt">Critical Open GLAM: Towards [Appropriate] Open Access for Cultural Heritage</hi>
+                        <hi style="font-family:Liberation Serif;font-size:12pt" xml:space="preserve"> doi:10.21428/74d826b1.be9df175. https://openglam.pubpub.org/pub/introduction-to-critical-open-glam (accessed 29 October 2020).</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

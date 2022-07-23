@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Digital Humanities in the Wild: Bringing Humanistic Pedagogy to Open Source</title>
+                <author>
+                    <persName>
+                        <surname>Tagliaferri</surname>
+                        <forename>Lisa</forename>
+                    </persName>
+                    <affiliation>Rutgers University</affiliation>
+                    <email>lisa.tagliaferri@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-11T14:27:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>computer science</term>
+                    <term>digital pedagogy</term>
+                    <term>open source</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>crowdsourcing</term>
+                    <term>public humanities collaborations and methods</term>
+                    <term>Computer science</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">What do the digital humanities look like outside of the library and the classroom? This paper presents a possible site of digital humanities pedagogy within the realm of open source. </p>
+            <p style="text-align: left; ">In 2021, myself and a team built out and began to populate 
+                <ref target="https://learn.sourcegraph.com/">Sourcegraph Learn</ref> (
+                <ref target="https://github.com/sourcegraph/learn">https://github.com/sourcegraph/learn</ref>), an open source and open access web project that provides educational resources for software developers. A project with only a few contributors on a singular team is not necessarily in the spirit of open source, so during the month of October the team worked with the momentum of Hacktoberfest, the yearly celebration of open source, to invite and encourage more contributors to become involved in our project. We created a Hacktoberfest-specific readme.md file with instructions, added relevant tags, and created issues specific to programming languages and error messages. 
+            </p>
+            <p style="text-align: left; ">Software developers were invited to contribute troubleshooting guides to the project. These guides would go into depth regarding common error messages that programmers encounter. For example, titles of these technical tutorials included “How to troubleshoot Java ArrayIndexOutOfBoundsException,” or “How to troubleshoot Python AttributeError.” Each tutorial included the full text of the error message, a way to replicate the error message, and two or three ways that a developer could recover from the error message. The troubleshooting guides are all available under the “troubleshooting” tag of the Sourcegraph Learn site (
+                <ref target="https://learn.sourcegraph.com/tags/troubleshooting">https://learn.sourcegraph.com/tags/troubleshooting</ref>). 
+            </p>
+            <p style="text-align: left; ">Altogether, over 40 Git issues were created soliciting contributions, nearly 40 pull requests were opened by prospective contributors, and over 30 high-quality pull requests were merged from contributors across 5 continents. These community-based efforts represent a global, distributed outcome of employing pedagogical techniques such as student-centered learning through encouraging practitioners to share what they have learned with others. </p>
+            <p style="text-align: left; ">This paper will present the approach to documentation, templatizing Git issues, and collaborative code reviews in order to demonstrate how others may be able to set up open-source humanities computing projects to encourage public contributors. In particular, I will draw from the body of work related to crowdsourcing in relation to museums and archives, including Mia Ridge’s edited collection 
+                <hi rend="italic">Crowdsourcing our Cultural Heritage</hi> (2014), Melissa Terras’s “Crowdsourcing in the Digital Humanities” (2015), and the Getty Museum’s and Folger Library’s respective Zooniverse projects to encourage crowdsourcing. Additionally, this paper will explore how engaging in this space may benefit both open source and the humanities. 
+            </p>
+            <p style="text-align: left; ">Following the presentation, the author would be interested in hearing from other researchers who may have accepted open-source contributors, and how others may have scaled their approach to digital pedagogy through open source. </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Deines, N. (2018). “Six Lessons Learned from Our First Crowdsourcing Project in the Digital Humanities.” 
+                        <hi rend="italic">Getty Iris Blog</hi>, 
+                        <ref target="https://blogs.getty.edu/iris/six-lessons-learned-from-our-first-crowdsourcing-project-in-the-digital-humanities/">https://blogs.getty.edu/iris/six-lessons-learned-from-our-first-crowdsourcing-project-in-the-digital-humanities/</ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">Folger Library. 
+                        <hi rend="italic">Shakespeare’s World</hi>. 
+                        <ref target="https://www.zooniverse.org/projects/zooniverse/shakespeares-world">https://www.zooniverse.org/projects/zooniverse/shakespeares-world</ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">Ridge, M. (2014). 
+                        <hi rend="italic">Crowdsourcing Our Cultural Heritage</hi>. Ashgate.
+                    </bibl>
+                    <bibl style="text-align: left; ">Terras, M. (2016). “Crowdsourcing in the Digital Humanities.” 
+                        <hi rend="italic">A New Companion to Digital Humanities</hi>, edited by Schreibman, Siemens, Unsworth, Wiley-Blackwell, pp. 420-439.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">The many faces of theory in DH: Toward a dictionary of theoreticians mentioned in DH</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Gutiérrez de la Torre</surname>
+                        <forename>Silvia E.</forename>
+                    </persName>
+                    <affiliation>Computational Humanities Group, Leipzig University</affiliation>
+                    <email>silviaegt@uni-leipzig.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Burghardt</surname>
+                        <forename>Manuel</forename>
+                    </persName>
+                    <affiliation>Computational Humanities Group, Leipzig University</affiliation>
+                    <email>burghardt@informatik.uni-leipzig.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Niekler</surname>
+                        <forename>Andreas</forename>
+                    </persName>
+                    <affiliation>Computational Humanities Group, Leipzig University</affiliation>
+                    <email>aniekler@informatik.uni-leipzig.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kleymann</surname>
+                        <forename>Rabea</forename>
+                    </persName>
+                    <affiliation>Leibniz-Zentrum für Literatur- und Kulturforschung Berlin</affiliation>
+                    <email>kleymann@zfl-berlin.org</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T13:56:02.795423206</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>theory</term>
+                    <term>digital humanities</term>
+                    <term>text mining</term>
+                    <term>linked data</term>
+                    <term>wikipedia</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>information retrieval and querying algorithms and methods</term>
+                    <term>meta-criticism (reflections on digital humanities and humanities computing)</term>
+                    <term>History of science</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading">
+                <head>
+                    <anchor xml:id="id_docs-internal-guid-a08b57eb-7fff-bd1a-f5e2-44236a305737"/>Introduction
+                </head>
+                <p>
+                    <hi rend="color(#000000)">Theory in the Digital Humanities (DH) has been the subject of much debate. While the narrative of an “end of theory” (Anderson, 2008) is still being used, new discourses have found their way into DH scholarship. On the one hand, we observe a </hi>
+                    <hi rend="color(#000000) italic">laboratory turn </hi>
+                    <hi rend="color(#000000)">in DH that focuses on theory in practice (see Saklofske, 2016; Pawlicka-Deger, 2020). On the other hand, theoretical endeavors are regarded as much needed forms of criticism (see Alvarado, 2019; Drucker, 2021). Despite the relevance of these strands, a systematic investigation has yet to be conducted. In our paper, we want to add to these ongoing debates by laying the foundation for further empirical approaches</hi>
+                    <hi rend="sup color(#000000)">1</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">that investigate the occurrences of </hi>
+                    <hi rend="color(#000000) italic">theory</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">references in scholarly written communication, i.e. DH journals, abstracts, and even forums such as the </hi>
+                    <hi rend="color(#000000) italic">Humanist</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">discussion group</hi>
+                    <hi rend="sup color(#000000)">2</hi>
+                    <hi rend="color(#000000)">. To provide an example study, we examined a corpus of 3,737 articles from three well-known DH journals: “Computers and the Humanities (CHum)”, “Literary and Linguistic Computing/Digital scholarship in the Humanities (LLC)”, “Digital Humanities Quarterly (DHQ)”. Two of these “foundational journals” (Sula &amp; Hill, 2019) have a </hi>
+                    <hi rend="color(#000000)">fairly long history: CHum was established in 1966, and LLC in 1986; while the third, DHQ, is one of the largest journals aimed specifically at DH research and has been used before as the basis of “digital humanities” research (see Gao et al., 2018; Luhmann &amp; Burghardt, 2021). However, we are well aware that using the English buzzword “digital humanities” implies a self-fulfilled prophecy of anglocentric bias, since it leaves out the history of parallel DH histories in other languages and geographies (Gutiérrez De la Torre, 2020). In sum, our corpus covers a time span from 1966-2020 and has a total size of approx. 19 million tokens.</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">A keyword lookup shows that 1,268 articles (33.9 %) contain an instance of the search strings: </hi>
+                    <hi rend="color(#000000) italic">theory</hi>
+                    <hi rend="color(#000000)">/</hi>
+                    <hi rend="color(#000000) italic">theories</hi>
+                    <hi rend="color(#000000)">. To expand the semantic field of these strings, we have built a set of dictionaries with semantically related words (see Heuser &amp; Le-Khac, 2012). In this article, we present work in progress for the creation of a dictionary of theoreticians that are mentioned in DH, which we consider an important prerequisite for any empirical study of the function and development of theory in DH.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Building a corpus of theoreticians mentioned in DH papers</head>
+                <p>
+                    <hi rend="color(#000000)">As part of an ongoing publication (Kleymann et al., under review) on a corpus-based study of “theorytellings” in DH, we handcrafted a dictionary for the sub-field of literary theory which we based on three widely-used introductory works on the topic (Selden et al., 2006; Rivkin &amp; Ryan, 2007; Castle, 2008). The dictionary is available via GitHub</hi>
+                    <hi rend="sup color(#000000)">3</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">and covers 13 theoretical frameworks and typical representatives of both authors and related theory strands. A look-up of all these items in the corpus of DH journals yields 1,507 occurrences in 793 out of 3,737 articles. Following these promising results, our next step was to enhance the dictionary in a systematic way.</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Many of the literary theory frameworks from our handcrafted dictionary can also be found in the form of categories on Wikipedia. Categories are collections of </hi>
+                    <hi rend="color(#000000)">pages to a larger theme, for instance “hermeneutics”</hi>
+                    <hi rend="sup color(#000000)">4</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">or “new criticism”</hi>
+                    <hi rend="sup color(#000000)">5</hi>
+                    <hi rend="color(#000000)">. They contain pages with related concepts and also persons that are commonly associated with the topic. Our assumption is that theories tend to be presented by quoting their representative authors, thus we were particularly interested in retrieving persons inside each category. Creating a dictionary of persons also has the advantage that we can further enhance it with additional information from Wikidata (name, country, occupation, gender, etc.).</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">First, we generated a list of theory “seeds” from our corpus which were identified by simple heuristics such as “theor* of _” (e.g. theory of information) , “noun + theory” (e.g. systems theory) “adjective + theory” (e.g. economic theory). Using these heuristics, we were able to collect a total of 3,323 theory strings from our corpus.</hi>
+                    <hi rend="sup color(#000000)">6</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">These strings were used to query Wikipedia categories via the MediaWiki API</hi>
+                    <hi rend="sup color(#000000)">7</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">which looks for the given string both in the title as well as in the description snippets of all categories</hi>
+                    <hi rend="sup color(#000000)">8</hi>
+                    <hi rend="color(#000000)">: 1,529 different query strings were matched against 1,266 different categories, however since many strings matched to more than one category the API returned a total of 9,772 categories.</hi>
+                    <hi rend="sup color(#000000)">9</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">To reduce the fuzziness induced by the category snippets matches, we calculated the Jaccard distance and only kept category names that had a distance score lesser than 0.6</hi>
+                    <hi rend="color(#000000)">.</hi>
+                    <hi rend="sup color(#000000)">10</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">This left us with 2,411 person entries</hi>
+                    <hi rend="sup color(#000000)">11</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">and 92 categories, most of which look promising in terms of matching actual theory-frameworks (i.e. actor-network theory, chaos theory, critical theory, deconstruction, film theory, etc.). In order to check how many of the newly added theory-related persons actually appear in our corpus, we did a lookup of all the names. In order to compensate for the ambiguity of some last names (e.g. </hi>
+                    <hi rend="color(#000000) italic">Field</hi>
+                    <hi rend="color(#000000)">) we searched only upper-case instances.</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">We were able to find 217 persons (11.6% of the retrieved dictionary) cited with their full names in our corpus</hi>
+                    <hi rend="sup color(#000000)">12 </hi>
+                    <hi rend="color(#000000)">(see </hi>
+                    <hi rend="color(#000000)">Table</hi>
+                    <hi rend="color(#000000)"> 1). Moreover, via the Wikidata reconciliation we know 187 of them are male (86.5%), 28 female (12.9%) and one, non-binary, providing extended possibilities for diversity studies (see González et al., 2021)</hi>
+                </p>
+                <table rend="frame" xml:id="Table1">
+                    <row>
+                        <cell rend="center">position</cell>
+                        <cell rend="center">keyword</cell>
+                        <cell rend="center">tf</cell>
+                        <cell rend="center">df</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">1</cell>
+                        <cell rend="center">Lev Manovich</cell>
+                        <cell rend="center">34</cell>
+                        <cell rend="center">30</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">2</cell>
+                        <cell rend="center">Christopher Marlowe</cell>
+                        <cell rend="center">44</cell>
+                        <cell rend="center">25</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">3</cell>
+                        <cell rend="center">Jay David Bolter</cell>
+                        <cell rend="center">30</cell>
+                        <cell rend="center">24</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">4</cell>
+                        <cell rend="center">Marshall McLuhan</cell>
+                        <cell rend="center">32</cell>
+                        <cell rend="center">24</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">5</cell>
+                        <cell rend="center">Allen Forte</cell>
+                        <cell rend="center">29</cell>
+                        <cell rend="center">23</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">6</cell>
+                        <cell rend="center">Seneca</cell>
+                        <cell rend="center">43</cell>
+                        <cell rend="center">22</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">7</cell>
+                        <cell rend="center">Michael Joyce</cell>
+                        <cell rend="center">40</cell>
+                        <cell rend="center">20</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">8</cell>
+                        <cell rend="center">Michel Foucault</cell>
+                        <cell rend="center">22</cell>
+                        <cell rend="center">20</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">9</cell>
+                        <cell rend="center">Ezra Pound</cell>
+                        <cell rend="center">27</cell>
+                        <cell rend="center">19</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">10</cell>
+                        <cell rend="center">George Landow</cell>
+                        <cell rend="center">28</cell>
+                        <cell rend="center">19</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">11</cell>
+                        <cell rend="center">Bruno Latour</cell>
+                        <cell rend="center">21</cell>
+                        <cell rend="center">17</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">12</cell>
+                        <cell rend="center">Francis Bacon</cell>
+                        <cell rend="center">41</cell>
+                        <cell rend="center">15</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">13</cell>
+                        <cell rend="center">Walter Benjamin</cell>
+                        <cell rend="center">18</cell>
+                        <cell rend="center">15</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">14</cell>
+                        <cell rend="center">Alan Turing</cell>
+                        <cell rend="center">17</cell>
+                        <cell rend="center">14</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">15</cell>
+                        <cell rend="center">Jacques Derrida</cell>
+                        <cell rend="center">17</cell>
+                        <cell rend="center">14</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">16</cell>
+                        <cell rend="center">Noam Chomsky</cell>
+                        <cell rend="center">15</cell>
+                        <cell rend="center">14</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">17</cell>
+                        <cell rend="center">Roman Jakobson</cell>
+                        <cell rend="center">15</cell>
+                        <cell rend="center">14</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">18</cell>
+                        <cell rend="center">Boethius</cell>
+                        <cell rend="center">27</cell>
+                        <cell rend="center">12</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">19</cell>
+                        <cell rend="center">Northrop Frye</cell>
+                        <cell rend="center">13</cell>
+                        <cell rend="center">12</cell>
+                    </row>
+                    <row>
+                        <cell rend="center">20</cell>
+                        <cell rend="center">Terry Winograd</cell>
+                        <cell rend="center">13</cell>
+                        <cell rend="center">12</cell>
+                    </row>
+                </table>
+                <p>
+                    <hi rend="color(#000000) bold">Table 1</hi>
+                    <hi rend="color(#000000)">: Term and document frequency of the 20 most frequent persons with a full name match in our corpus.</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">By looking to every possible n-gram representation of the reference name (i.e. “Schulz von Thun”, “von Thun”, “Thun”) we got 1,216 matches that correspond to 53.5 % of humans in the dictionary.</hi>
+                    <hi rend="sup color(#000000)">13 </hi>
+                    <hi rend="color(#000000)">However, many of the frequent last names here are highly ambiguous, either because they can be confused with common first names (Thomas, James, Paul, etc.) or because they are widely used last names (Smith, Brown, West, etc.). To make use of these last name matches, we aim to adopt an advanced disambiguation approach that is based on word embeddings (Müller, 2017) in follow-up studies.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Conclusions</head>
+                <p>This first experiment for creating theory-related dictionaries by using seed terms from a corpus of three DH journals and looking them up via the MediaWiki API delivered very promising results. Not only were we able to gather a vast number of person names that are somehow related to theory-frameworks, but we were also able to show that these person names in turn can also be found in the actual DH articles. Two main limitations must be taken into account: 1) our “seed” terms are limited by literality (“theory of” statements) and do not encompass all possible theories. 2) API results depend on the robustness of Wikipedia categories and Wikidata information. So for instance, if a female Latin American theorist was not listed within a Wikipedia category, her name will not be retrieved. Conversely, if a theorist has not been labeled as “human” in Wikidata -i.e. if the property “instance of” (P31) is not filled with the entity “human” (Q5)- this theorist will not be retrieved.</p>
+                <p>Thus, we will have to come up with some routines of manually cleaning these automatically generated dictionaries. Therefore, we would be happy to get the chance to discuss our approach with the DH community as part of DH 2022 before we dive deeper into follow-up studies. In sum, we would like to share our method and reflect together on expanding this research to other DH communities of practices across other languages and geographies.</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Notes</head>
+                <p>
+                    <hi rend="color(#000000)">1. </hi>
+                    <hi rend="color(#000000)">Alex H. Poole (2017) observes that DH tends to discuss their identity – which we believe also includes their relation to theory – on a mostly anecdotal basis. Poole suggests that “the field would benefit from exploring itself more empirically” (p. 107). One can find an antecedent of an empirical approach in Mark Hall’s DHd 2019 contribution “DH is the Study of dead Dudes”, in which persons mentioned in DHd conferences (2016, 2017, and 2018) were manually identified from the abstracts, according to the following criteria: names are only counted if their work is the primary subject of investigation (#1), if they are presented as an exemplary example of a topic (#2) or as a sample of a dataset (#3). Our article can be seen as being complementary to Hall’s work since one limitation was precisely to exclude names that are part of the methodological approach (Hall, 2019).</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">2. Humanist mailing list: </hi>
+                    <ptr target="https://dhhumanist.org/"/>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">3. Literary theory dictionary: </hi>
+                    <ptr target="https://github.com/theory-in-dh/conceptual_forays/blob/main/data/theory_dictionary.md"/>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">4. Hermeneutics: </hi>
+                    <ptr target="https://en.wikipedia.org/wiki/Category:Hermeneutics"/>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">5. New Criticism: </hi>
+                    <ptr target="https://en.wikipedia.org/wiki/Category:New_Criticism"/>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">6. </hi>
+                    <hi rend="color(#000000)">F</hi>
+                    <hi rend="color(#000000)">or a list of all queries see:</hi>
+                </p>
+                <p>
+                    <ptr target="https://github.com/theory-in-dh/conceptual_forays/blob/main/data/1_theoriesof_complete.csv"/>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">7. Mediawiki API: </hi>
+                    <ptr target="https://www.mediawiki.org/wiki/API:Main_page"/>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">8. For an example of the results for the query “theory of language” see: </hi>
+                    <ptr target="https://en.wikipedia.org/w/api.php?action=query&amp;list=search&amp;srnamespace=14&amp;srsearch=theory%20of%20language"/>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">9. </hi>
+                    <hi rend="color(#000000)">See the complete database here</hi>
+                    <hi rend="color(#000000)">:</hi>
+                </p>
+                <p>
+                    <ptr target="https://github.com/theory-in-dh/conceptual_forays/blob/main/data/2_wikipediacategoriesfromquery.csv"/>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">10.</hi>
+                    <hi rend="color(#000000)">The filtered database can be found here:</hi>
+                </p>
+                <p>
+                    <ptr target="https://github.com/theory-in-dh/conceptual_forays/blob/main/data/3_wikicategories_distances_filtered.csv"/>
+                </p>
+                <p>11. A complete list of the persons with additional metadata such as gender, country, etc. is available on GitHub:</p>
+                <p>
+                    <ptr target="https://github.com/theory-in-dh/conceptual_forays/blob/main/data/4_theorystrings_humans_extended_withcategories.csv"/>
+                </p>
+                <p>12. For the full list of person names see:</p>
+                <p>
+                    <ptr target="https://github.com/theory-in-dh/conceptual_forays/blob/main/data/reference.theorists.full.csv"/>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">13.</hi>
+                    <hi rend="color(#000000)">For a full list of all person last names see:</hi>
+                </p>
+                <p>
+                    <ptr target="https://github.com/theory-in-dh/conceptual_forays/blob/main/data/reference.theorists.partial.csv"/>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <anchor xml:id="id_docs-internal-guid-1210d37b-7fff-adb0-6dd0-cec32d2be16d"/>
+                        <hi rend="color(#000000) bold">Alvarado, R. C. </hi>
+                        <hi rend="color(#000000)">(2019). “Digital Humanities and the Great Project: Why We Should Operationalize Everything and Study Those Who Are Doing so Now.” In </hi>
+                        <hi rend="color(#000000) italic">Debates in the Digital Humanities </hi>
+                        <hi rend="color(#000000)">2019. Edited by Matthew K. Gold and Lauren F. Klein 5. Minneapolis: University of Minnesota Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Anderson, C.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2008). “The End of Theory: The Data Deluge Makes the Scientific Method Obsolete.” </hi>
+                        <hi rend="color(#000000) italic">Wired</hi>
+                        <hi rend="color(#000000)">, 2008. </hi>
+                        <ptr target="https://www.wired.com/2008/06/pb-theory/"/>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(accessed 27 February 2009).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Castle, G. </hi>
+                        <hi rend="color(#000000)">(2008). </hi>
+                        <hi rend="color(#000000) italic">The Blackwell Guide to Literary Theory</hi>
+                        <hi rend="color(#000000)">. Blackwell guides to literature. Malden, Mass.: Blackwell.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Drucker, J. (2012).</hi>
+                        <hi rend="color(#000000)"> “</hi>
+                        <hi rend="color(#000000)">Humanistic Theory and Digital Scholarship.” In </hi>
+                        <hi rend="color(#000000) italic">Debates in the Digital Humanities</hi>
+                        <hi rend="color(#000000)">. Edited by Matthew K. Gold. Minneapolis, MN: University of Minnesota Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Gao, J., Nyhan, J., Duke-Williams, O., &amp; Mahony, S.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2018). Visualising the digital humanities community: A comparison study between citation network and social network. </hi>
+                        <hi rend="color(#000000) italic">Digital Humanities 2018: Puentes-Bridges</hi>
+                        <hi rend="color(#000000)">. DH2018, Mexico City.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">González, J. E., Jacobson, E., García, L. G., &amp; Kujman, L. B.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021). Measuring Canonicity: Graduate Reading Lists in Departments of Hispanic Studies. Journal of Cultural Analytics, 1(2).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Gutiérrez De la Torre, S. E.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2020). Bibliotecas y Humanidades Digitales en América Latina. </hi>
+                        <hi rend="color(#000000) italic">Revista de Humanidades Digitales</hi>
+                        <hi rend="color(#000000)">, </hi>
+                        <hi rend="color(#000000) italic">5</hi>
+                        <hi rend="color(#000000)">, pp. 113–131. </hi>
+                        <ptr target="https://doi.org/10.5944/rhd.vol.5.2020.27826"/>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(accessed 10 March 2022).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Hall, M. M.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2019). DH is the study of dead Dudes. In: Digital Humanities: multimedial &amp; multimodal Konferenzabstracts (Sahle, Patrick ed.), Trier, Germany, pp. 111–113.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Heuser, R. &amp; Le-Khac, L.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2012). “A Quantitative Literary History of 2,958 Nineteenth-Century British Novels: The Semantic Cohort Method.” Stanford Literary Lab Pamphlets (4).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Kleymann, R., Niekler, A. &amp; Burghardt, M.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(currently under review). “Conceptual Forays: A Corpus-based Study of ‘Theorytellings’ in Digital Humanities Journals.” In </hi>
+                        <hi rend="color(#000000) italic">Theorytellings: Epistemic Narratives in the Digital Humanities</hi>
+                        <hi rend="color(#000000)">. Special Issue of Cultural Analytics. Edited by Manuel Burghardt, Jonathan D. Geiger, Rabea Kleymann, Mareike Schumacher.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Luhmann, J. &amp; Burghardt, M. </hi>
+                        <hi rend="color(#000000)">(2021). “Digital Humanities – A Discipline in its Own Right? An Analysis of the Role and Position of DH in the Academic Landscape.” In </hi>
+                        <hi rend="color(#000000) italic">Journal of the Association for Information Science and Technology</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(JASIST), Special issue on Digital Humanities. </hi>
+                        <ptr target="https://asistdl.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/asi.24533"/>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(accessed 12 April 2022).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Müller, M. C. </hi>
+                        <hi rend="color(#000000)">(2017). Semantic author name disambiguation with word embeddings. In International conference on theory and practice of digital libraries. Springer, Cham, pp. 300-311.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Pawlicka-Deger, U.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2020). “The Laboratory Turn: Exploring Discourses, Landscapes, and Models of Humanities Labs.” </hi>
+                        <hi rend="color(#000000) italic">Digital Humanities Quarterly</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">14, no. 3. </hi>
+                        <ptr target="http://www.digitalhumanities.org/dhq/vol/14/3/000466/000466.html"/>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(accessed 10 March 2022).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Poole, A. H.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2017). The conceptual ecology of digital humanities. In </hi>
+                        <hi rend="color(#000000) italic">Journal of Documentation</hi>
+                        <hi rend="color(#000000)">, 73, 91–122. https://doi.org/10.1108/ JD-05-2016-0065 (accessed 10 March 2022).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Rivkin, J. &amp; Ryan M.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(eds.) (2007). </hi>
+                        <hi rend="color(#000000) italic">Literary Theory: An Anthology</hi>
+                        <hi rend="color(#000000)">. 2. ed. Malden, Mass: Blackwell Publ.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Saklofske, J.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2016). “Digital Theoria, Poiesis, and Praxis: Activating Humanities Research and Communication Through Open Social Scholarship Platform Design.” S</hi>
+                        <hi rend="color(#000000) italic">cholarly and Research Communication</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">7, no. 2, 1–16. DOI:</hi>
+                        <ref target="http://dx.doi.org/10.22230/src.2016v7n2/3a252">1</ref>
+                        <hi rend="color(#000000)">0.22230/src.2016v7n2/3a252</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Selden, R., Widdowson, P. &amp; Brooker, P.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2006). </hi>
+                        <hi rend="color(#000000) italic">A Reader’s Guide to Contemporary Literary Theory</hi>
+                        <hi rend="color(#000000)">. 5. ed., Harlow, England: Pearson Longman.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

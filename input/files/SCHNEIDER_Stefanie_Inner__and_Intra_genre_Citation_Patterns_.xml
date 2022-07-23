@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Inner- and Intra-genre Citation Patterns in Film</title>
+                <author>
+                    <persName>
+                        <surname>Schneider</surname>
+                        <forename>Stefanie</forename>
+                    </persName>
+                    <affiliation>Ludwig Maximilian University of Munich, Germany</affiliation>
+                    <email>stefanie.schneider@itg.uni-muenchen.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-15T17:36:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Film Genre Theory</term>
+                    <term>Network Evolution</term>
+                    <term>Network Topology</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>Film and cinema arts studies</term>
+                    <term>Statistics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">“[A]ny text is the absorption and transformation of another” (Kristeva, 1986) and thus part of a dynamically evolving network of influences. This also applies to film. However, quantitative efforts dissected influence phenomena in film so far only at the individual level (Sreenivasan, 2013; Wasserman et al., 2014; Bioglio and Pensa, 2018). To instead assess inner- and intra-genre citation patterns and thereby challenge hitherto valid genre attributions, we propose the exploitation of three group-dependent network. To this end, genres are considered as fluid, perpetually rearranging concepts (Bordwell, 1989). We leverage user-contributed data from the Internet Movie Database (IMDb).
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text">
+                        <ref target="https://www.imdb.com/">https://www.imdb.com/</ref>, accessed 16 March 2022.
+                    </p>
+                </note> Four types of citations serve as proxies for influence: “edits,” “features,” “references,” and “spoofs”; whereby influence may be an expression of common narratives, settings, or techniques (Lakoff, 1987).
+            </p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Methods</head>
+                <p style="text-align: left; ">We regard film citation networks as directed acyclic graphs 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">G</mi>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">=</mo>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">(</mo>
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">V</mi>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">,</mo>
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">E</mi>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">)</mo>
+                        </mml:math>
+                    </formula> consisting of a set of 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">|</mo>
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">V</mi>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">|</mo>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">=</mo>
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">N</mi>
+                        </mml:math>
+                    </formula> films and 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">|</mo>
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">E</mi>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">|</mo>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">=</mo>
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">M</mi>
+                        </mml:math>
+                    </formula> citations. The directionality of 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">G</mi>
+                        </mml:math>
+                    </formula> depends on the order of time: a film 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">x</mi>
+                        </mml:math>
+                    </formula> can only cite another film 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">y</mi>
+                        </mml:math>
+                    </formula> if 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">y</mi>
+                        </mml:math>
+                    </formula> was sufficiently distributed before 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">x</mi>
+                        </mml:math>
+                    </formula>. For reasons of simplicity, we assume that 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">G</mi>
+                        </mml:math>
+                    </formula> is observed at discrete and equidistant time points 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">t</mi>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">=</mo>
+                            <mn xmlns="http://www.w3.org/1998/Math/MathML">1</mn>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">,</mo>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">…</mo>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">,</mo>
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">T</mi>
+                        </mml:math>
+                    </formula> only, so that 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <msup xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mrow>
+                                    <mi>G</mi>
+                                </mrow>
+                                <mrow>
+                                    <mo>(</mo>
+                                    <mi>t</mi>
+                                    <mo>)</mo>
+                                </mrow>
+                            </msup>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">=</mo>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">(</mo>
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">V</mi>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">,</mo>
+                            <msup xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mrow>
+                                    <mi>E</mi>
+                                </mrow>
+                                <mrow>
+                                    <mfenced separators="|">
+                                        <mrow>
+                                            <mi>t</mi>
+                                        </mrow>
+                                    </mfenced>
+                                </mrow>
+                            </msup>
+                            <mo xmlns="http://www.w3.org/1998/Math/MathML">)</mo>
+                        </mml:math>
+                    </formula> indicates the state of 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">G</mi>
+                        </mml:math>
+                    </formula> at time point 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">t</mi>
+                        </mml:math>
+                    </formula>. Each state reflects the citations available up until 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">t</mi>
+                        </mml:math>
+                    </formula> for films that were produced before 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">t</mi>
+                        </mml:math>
+                    </formula>. Over the past decades, numerous metrics have been proposed to determine the influence of such multi-actor collectives in social networks (Silva et al., 2014; Rad and Benyoucef, 2011). We hereinafter focus on three metrics that are interpretable and adaptable, even to humanities-related contexts not directly concerned with citation structures.
+                </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Group In-degree and Group Out-degree Centrality</head>
+                    <p style="text-align: left; ">Films are generally considered influential if they are cited by other media; the higher the number of citations received, the greater their perceived importance (Garfield, 1955). In network theory, this is known as 
+                        <hi rend="italic">in-degree centrality</hi>. Due to the simplicity of the metric, it is easily extendable to support the analysis of group-dependent citation patterns. As derived from Everett and Borgatti (1999), the 
+                        <hi rend="italic">group in-degree centrality</hi> of films associated with genre 
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">h</mi>
+                            </mml:math>
+                        </formula> can be expressed as the ratio of incoming citations at 
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">t</mi>
+                            </mml:math>
+                        </formula> from films of other genres, i.e.,
+                    </p>
+                    <figure>
+                        <graphic n="1001" width="16.002cm" height="2.3706666666666667cm" url="Pictures/c72b166eeba242b6612fac787cbe0a12.png" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left; ">Accordingly, the 
+                        <hi rend="italic">group out-degree centrality</hi>
+                    </p>
+                    <figure>
+                        <graphic n="1002" width="15.998472222222222cm" height="2.3495cm" url="Pictures/a2c953286239bd37715a929a2d2e9f6d.png" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left; ">denotes the ratio of outgoing citations at 
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">t</mi>
+                            </mml:math>
+                        </formula> to films of genres other than 
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">h</mi>
+                            </mml:math>
+                        </formula>. Both help to quantify the external and internal willingness of films to establish connections outside their genre, thereby enabling us to trace the genre’s historical “evolution” through genre mixing and hybridization.
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Group Triangle Participation Ratio</head>
+                    <p style="text-align: left; ">Genres are constructed by a syntax of recurring elements that develop with time (Altman, 1984). The more limited their syntax, the more likely it is that groups with self-referential structures emerge, composed of intra-genre citation triads. We conclude that a film 
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">u</mi>
+                            </mml:math>
+                        </formula> in such groups not only cites films 
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">v</mi>
+                            </mml:math>
+                        </formula> and 
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">w</mi>
+                            </mml:math>
+                        </formula>, but 
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">v</mi>
+                            </mml:math>
+                        </formula> also cites 
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">w</mi>
+                            </mml:math>
+                        </formula>. The 
+                        <hi rend="italic">group triangle participation ratio</hi>
+                    </p>
+                    <figure>
+                        <graphic n="1003" width="15.980833333333333cm" height="2.328333333333333cm" url="Pictures/b142e343dcc1d5e8d1a5c9aa80f198a9.png" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left; ">thus is the ratio of citation triads at 
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">t</mi>
+                            </mml:math>
+                        </formula> of films associated with genre 
+                        <formula>
+                            <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                                <mi xmlns="http://www.w3.org/1998/Math/MathML">h</mi>
+                            </mml:math>
+                        </formula> (cf. Yang and Leskovec, 2012).
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Data</head>
+                <p style="text-align: left; ">To assess genre citation patterns, we retrieve 40,621 feature-length films from the IMDb with a run time of more than 39 minutes that were produced before 2020 and are assigned to at least one of 22 genres. Like Bioglio and Pensa (2018), we observe a high number of films labeled as “drama” or “comedy,” with this categorization supported by other labels in 77.938 % and 75.656 % of cases, respectively (Fig. 1A). The IMDb defines eight types of citations that can be entered by users in the “connections” section of the website. We confine ourselves to presumably intentional allusions: of the 126,343 citations, references account for 67.778 % and features for 23.071 %, while spoofs and edits occur much less frequently, at 6.599 % and 2.552 %, respectively. Due to the American-centric bias of the IMDb (Wasserman et al., 2014; Bioglio and Pensa, 2018), we concentrate on films from Europe and North America; English-language films dominate our corpus with 70.978 %. Given that English films are seen more frequently worldwide than non-English ones, the fraction of both incoming and outgoing citations is also disproportionate, possibly underestimating the effect of non-English films and genre influences, like the Italian 
+                    <hi rend="italic">giallo</hi>.
+                </p>
+                <figure>
+                    <graphic n="1004" width="15.980833333333333cm" height="6.752166666666667cm" url="Pictures/289f5759fdc8ffa07d668168906b1fe7.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Fig. 1: (A) Number of films by genre, subdivided by total number of genres stored for films of that genre. (B) Group-dependent metrics over time: 
+                    <hi rend="italic">group in-degree centrality</hi> (blue), 
+                    <hi rend="italic">out-degree centrality</hi> (orange), and 
+                    <hi rend="italic">triangle participation ratio</hi> (green); with Monte Carlo generated standard deviation bands in lighter colors.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results</head>
+                <p style="text-align: left; ">In-degree and out-degree approximately follow power-law distributions, indicating that although most films are cited only few times, a highly influential minority is referenced by dozens (Wasserman et al., 2015; Bioglio and Pensa, 2018). Films that have decisively contributed to the formation or shift of genre identities are particularly important, as they are widely cited not only within but outside their genre (Tab. I).</p>
+                <p style="text-align: left; ">We determine aforeintroduced metrics for each genre 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">h</mi>
+                        </mml:math>
+                    </formula> at time point 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">t</mi>
+                        </mml:math>
+                    </formula>. To assess distribution uncertainties, a Monte Carlo simulation with 400 iterations is conducted. At each iteration, genres are randomly redistributed from the underlying empirical frequency distribution. The genre distribution over time remains fixed while the genre distribution at 
+                    <formula>
+                        <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML">
+                            <mi xmlns="http://www.w3.org/1998/Math/MathML">t</mi>
+                        </mml:math>
+                    </formula> changes, allowing us to evaluate the approximately true impact of genre-communities. Genres that are predominantly characterized by formulaic narratives or stereotypical figures exhibit large discrepancies between simulated and observed values. For instance, the 
+                    <hi rend="italic">group triangle participation ratio</hi> of sci-fi and horror films nearly doubles between 1970 and 2000 with negligible mean simulated ratios (Fig. 1B). This effect is due to few significant genre films that have disrupted conventionalized schemes, triggering new recycling patterns. Standardization through intra-genre repetition seems to be virtually integral to the horror film, e.g., as the lower-than-expected 
+                    <hi rend="italic">group in-degree</hi> and 
+                    <hi rend="italic">out-degree centrality</hi> confirm. Three citation phases can be verified: gothic horror (
+                    <hi rend="italic">Frankenstein</hi>, 1931), superseded by psychological and occult topoi (
+                    <hi rend="italic">Rosemary’s Baby</hi>, 1968) that are increasingly accompanied by slasher films (
+                    <hi rend="italic">The Texas Chain Saw Massacre</hi>, 1974).
+                </p>
+                <figure>
+                    <graphic n="1005" width="15.998472222222222cm" height="13.098638888888889cm" url="Pictures/335c7a0ffa9f06408f0162849e33f4d3.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Tab. 1: Films by in-degree, with ratio of intra-genre citations in percent.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Altman, R. (1984). A Semantic/Syntactic Approach to Film Genre. 
+                        <hi rend="italic">Cinema Journal</hi>, 23.3: 6–18.
+                    </bibl>
+                    <bibl style="text-align: left; ">Bioglio, L. and Pensa, R.G. (2018). Identification of Key Films and Personalities in the History of Cinema from a Western Perspective. 
+                        <hi rend="italic">Applied Network Science</hi>, 3.
+                    </bibl>
+                    <bibl style="text-align: left; ">Bordwell, D. (1989). 
+                        <hi rend="italic">Making Meaning. Inference and Rhetoric in the Interpretation of Cinema</hi>. Cambridge: Harvard University Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">Everett, M.G. and Borgatti, S.P. (1999). The Centrality of Groups and Classes. 
+                        <hi rend="italic">Journal of Mathematical Sociology</hi>, 23.3: 181–201.
+                    </bibl>
+                    <bibl style="text-align: left; ">Garfield, E. (1995). Citation Indexes for Science. A New Dimension in Documentation Through Association of Ideas. 
+                        <hi rend="italic">Science</hi>, 122.3159: 108–11.
+                    </bibl>
+                    <bibl style="text-align: left; ">Kristeva, J. (1986). 
+                        <hi rend="italic">Word, Dialogue and Novel</hi>. In Moi, T. (ed), The Kristeva Reader. New York: Columbia University Press, pp. 34–61.
+                    </bibl>
+                    <bibl style="text-align: left; ">Lakoff, G. (1987). 
+                        <hi rend="italic">Women, Fire, and Dangerous Things. What Categories Reveal About the Mind</hi>. Chicago: University of Chicago Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">Afrasiabi Rad, A. and Benyoucef, M. (2011). Towards Detecting Influential Users in Social Networks. 
+                        <hi rend="italic">International Conference on E-Technologies</hi>, pp. 227–40.
+                    </bibl>
+                    <bibl style="text-align: left; ">Silva, J.S., de Castro Stoppe, N., Torres, T.T., Ottoboni, L.M.M. and Saraiva, A.M. (2014). Social Network Analysis Metrics and Their Application in Microbiological Network Studies. 
+                        <hi rend="italic">Complex Networks V</hi>, pp. 251–60.
+                    </bibl>
+                    <bibl style="text-align: left; ">Sreenivasan, S. (2013). Quantitative Analysis of the Evolution of Novelty in Cinema Through Crowdsourced Keywords. 
+                        <hi rend="italic">Scientific Reports</hi>, 3.
+                    </bibl>
+                    <bibl style="text-align: left; ">Wasserman, M., Mukherjee, S., Scott, K., Zeng, X.H.T., Radicchi, F. and Amaral, L.A.N. (2014). Correlations Between User Voting Data, Budget, and Box Office for Films in the Internet Movie Database. 
+                        <hi rend="italic">Journal of the Association for Information Science and Technology</hi>, 66.4: 858–68.
+                    </bibl>
+                    <bibl style="text-align: left; ">Wasserman, M., Zeng, X.H.T. and Amaral, L.A.N. (2015). Cross-Evaluation of Metrics to Estimate the Significance of Creative Works. 
+                        <hi rend="italic">PNAS</hi>, 112.5: 1281–86.
+                    </bibl>
+                    <bibl style="text-align: left; ">Yang, J. and Leskovec, J. (2012). Defining and Evaluating Network Communities Based on Ground-Truth. 
+                        <hi rend="italic">Proceedings of the IEEE International Conference on Data Mining</hi>, pp. 745–54.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

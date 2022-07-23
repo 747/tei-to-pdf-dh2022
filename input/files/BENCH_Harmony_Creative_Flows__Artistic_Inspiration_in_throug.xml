@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Creative Flows: Artistic Inspiration in/through/with Katherine Dunham’s Transnational Circulation</title>
+                <author>
+                    <persName>
+                        <surname>Bench</surname>
+                        <forename>Harmony</forename>
+                    </persName>
+                    <affiliation>The Ohio State University</affiliation>
+                    <email>bench.9@osu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Elswit</surname>
+                        <forename>Kate</forename>
+                    </persName>
+                    <affiliation>Royal Central School of Speech and Drama, University of London</affiliation>
+                    <email>Kate.Elswit@cssd.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Jimenez-Mavillard</surname>
+                        <forename>Antonio</forename>
+                    </persName>
+                    <affiliation>Royal Central School of Speech and Drama, University of London</affiliation>
+                    <email>Antonio.Jimenez-Mavillard@cssd.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Uzor</surname>
+                        <forename>Tia-Monique</forename>
+                    </persName>
+                    <affiliation>Royal Central School of Speech and Drama, University of London</affiliation>
+                    <email>tia-monique.uzor@cssd.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T20:27:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>transnationalism</term>
+                    <term>circulation</term>
+                    <term>dance</term>
+                    <term>diaspora</term>
+                    <term>Katherine Dunham</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>cultural analytics</term>
+                    <term>spatial &amp; spatio-temporal analysis</term>
+                    <term>modeling and visualization</term>
+                    <term>History</term>
+                    <term>Performance Studies: Dance</term>
+                    <term>Theatre</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>This poster comes from the AHRC-funded project 
+                <hi rend="italic">Dunham’s Data: Katherine Dunham and Digital Methods for Dance Historical Inquiry</hi>. The overarching project explores 
+                <hi rend="color(010101)" xml:space="preserve">the kinds of questions and problems that make the analysis and visualization of data meaningful for dance history, through the case study of </hi>20th century African American choreographer Katherine Dunham, who toured the globe extensively, picking up performers and gathering culturally specific movement for her repertory as she went (Bench and Elswit 2020; Bench and Elswit 2022). Drawing on data-informed research in theatre history (Varela 2021; Miller 2016) and feminist and anti-racist approaches to data (D’Ignazio and Klein 2020; Johnson 2018), our manually-curated core project datasets represent Dunham’s everyday itinerary of over 5000 days spent between 1947-1960 on every continent but Antarctica, the almost 200 dancers, drummers, and singers who travelled with her, and the almost 200 interconnected elements of repertory that they performed. These are currently being expanded to 1938-63, covering the majority of Dunham’s stage career, and all of her domestic and international touring.
+            </p>
+            <p>Reflecting the 2022 conference theme “Responding to Asian Diversity,” we will present digital visualizations based on data collected regarding the time Dunham spent touring in the Asia-Pacific region from 1956-1958, in particular highlighting research findings related to: 1) the sites of performances and other travel to 21 cities across Australia, New Zealand, Philippines, Singapore, Malaya, Hong Kong, Korea, and Japan, 2) the performers who toured with her and those who joined her company en route (including two Australians, a New Zealander, and eight Filipinos), and 3) the existing repertory they brought with them to perform in these locations, as well as new repertory inspired by their time in the region.</p>
+            <p>The company’s international touring brought them into contact with a broad range of rhythms, gestures, and referents, which then circulated onward as Dunham toured. During this period, the company began to perform a number based on the Maori haka, which was later combined with Baby San and Planting Rice, pieces that referenced travels to Japan, Korea, and the Philippines, to form Eastern Suite. We employ 
+                <hi rend="color(010101)" xml:space="preserve">spatial, network, and computational analyses as they are used in performing arts research (Bollen and Holledge 2011; Balme 2019) to better understand how Dunham’s choreography materializes the influence of the many geographic places that infused her diasporic imagination, and trace the flows of performers working together over time and space as a dynamic collective, and how their embodied knowledge supports the creation and transmission of Dunham’s repertory. The analyses and visualizations displayed on this poster use a combination of Python/Pandas, Matplotlib, Seaborn, Gephi, Leaflet, and NetworkX. Based on Dunham’s program notes for her choreography, </hi>we geolocated every repertory work (accurate to the degree Dunham described) and assigned the map a 2D color palette in such a way that repertory associated with locations of inspiration near each other will have similar colors, which we use to represent these both on the map and off as a stacked bar chart by year.  We then seek to understand the multi-directional force of inspiration by connecting timelines of Dunham’s places visited and of repertory inspired by place as a bipartite graph. This is further complicated by joining three datasets to examine the correlations of Dunham’s travel itinerary by means of a temporal punch card, the trajectories of each company member through the company, and the passports they each carried. Together, these 
+                <hi rend="color(010101)">analyses make traceable potential ripples of Dunham’s influence in the many locations the company visited, including Dunham’s long term impact in the Australian entertainment landscape (Bollen 2020), and the ways in which her presence is narrated in the development of Japanese Butoh (Michio 2019).</hi>
+            </p>
+            <p>
+                <hi rend="color(010101)" xml:space="preserve">Because scholars generally consider Dunham’s artistic and political project to be one of </hi>tracing resonances and retentions of Africanist elements in diasporic 
+                <hi rend="color(010101)" xml:space="preserve">movement </hi>practices
+                <hi rend="color(010101)" xml:space="preserve"> throughout the Caribbean and Americas (Clark 1994; Manning 2004; Das 2017), they have not fully accounted for Asia as a site of inspiration for her choreographic work, and how her influence may have extended throughout the area as performers joined and left the company while touring, as well as the impact of her depiction of African-diasporic practices on local audiences. This poster connects with current scholarship on the African diaspora beyond the Black Atlantic (Gilroy 1993) toward various Black internationalisms that “have never been contained within the holy trinity of Europe, Africa, and the Americas” (Patterson and Kelley 2000, 32) and offers an opportunity to illuminate Dunham as part of transnational creative flows between the Asia-Pacific region and the Afro-Caribbean and Americas.</hi>
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Balme, C.</hi> (2019). The Globalization of Theatre 1870–1930: The Theatrical Networks of Maurice E. Bandmann
+                        <hi rend="italic">.</hi> Cambridge: Cambridge University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bench, H. and Elswit, K.</hi> (2020). Katherine Dunham’s Global Method and the Embodied Politics of Dance’s Everyday, Theatre Survey, 61(3): 305-30.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bench, H. and Elswit, K.</hi> (2022). Visceral Data for Dance Histories: Katherine Dunham’s People, Places, and Pieces, TDR, 66(1): 39-62.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bollen, J.</hi> (2020). Touring Variety in the Asia Pacific Region, 1946–1975
+                        <hi rend="italic" xml:space="preserve">. </hi>London: Palgrave.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bollen, J. and Holledge, J.</hi> (2011). Hidden Dramas: Cartographic Revelations in the World of Theatre Studies, The Cartographic Journal, 48(4): 226-36.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Caplan, D. </hi>(2016). Reassessing Obscurity: The Case for Big Data in Theatre History. Theatre Journal, 68 (4): 555-573.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(010101)">Clark, V.</hi>
+                        <hi rend="color(010101)" xml:space="preserve"> (1994). Performing the Memory of Difference in Afro-Caribbean Dance: Katherine Dunham’s Choreography, 1938-87. In Fabre, G and O’Meally, R. G. (eds), History and Memory in African-American Culture. New York: Oxford University Press. 188-204.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(010101)">Das, J. D.</hi>
+                        <hi rend="color(010101)" xml:space="preserve"> (2017). Katherine Dunham: Dance and the African Diaspora. New York: Oxford University Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(010101)">D’Ignazio, C. and Klein, L. F.</hi>
+                        <hi rend="color(010101)" xml:space="preserve"> (2020). Data Feminism. Cambridge, MA: The MIT Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(010101)">Johnson, J. M.</hi>
+                        <hi rend="color(010101)" xml:space="preserve"> (2018). Markup Bodies: Black [Life] Studies and Slavery [Death] Studies at the Digital Crossroads, Social Text, 36(4):57–79. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(010101)">Gilroy, P.</hi>
+                        <hi rend="color(010101)" xml:space="preserve"> (1993). The Black Atlantic: Modernity and Double Consciousness. Cambridge, MA: Harvard University Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(010101)" xml:space="preserve">Manning, S. </hi>
+                        <hi rend="color(010101)">(2004). Modern Dance, Negro Dance: Race in Motion. Minneapolis: University of Minnesota Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(010101)">Michio, A.</hi>
+                        <hi rend="color(010101)" xml:space="preserve"> (2019). From Vodou to Butoh: Hijikata Tatsumi, Katherine Dunham, and the Trans-Pacific Remaking of Blackness. In Baird, B. and Candelario, R. (eds), The Routledge Companion to Butoh Performance. New York: Routledge.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(010101)">Patterson, T. R. and Kelley, R. D. G.</hi>
+                        <hi rend="color(010101)" xml:space="preserve"> (2000). Unfinished Migrations: Reflections on the African Diaspora and the Making of the Modern World, African Studies Review, 43(1): 11-4.</hi>
+                    </bibl>
+                    <bibl>
+                        <lb/>
+                        <hi rend="bold color(010101)">Varela, M. E.</hi>
+                        <hi rend="color(010101)" xml:space="preserve"> (2021). Theater as Data: Computational Journeys into Theater Research. Ann Arbor: University of Michigan Press.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

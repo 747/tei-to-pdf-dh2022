@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="intro-001">
+
+<teiHeader>
+<fileDesc>
+<titleStmt>
+    <title type="nodisplay">Title Page</title>
+
+</titleStmt>
+<publicationStmt>
+<authority></authority>
+<publisher>DH2022 Local Organizing Committee</publisher>
+<distributor>
+    <name>DH2022 Local Organizing Committee</name>
+<address>
+<addrLine>7-3-1</addrLine>
+<addrLine>Hongo, Bunkyo-ku</addrLine>
+<addrLine>Tokyo, 113-0033</addrLine>
+<addrLine>dh2022-local{at}l.u-tokyo.ac.jp</addrLine>
+</address>
+</distributor>
+<pubPlace>Tokyo, Japan</pubPlace> 
+<address>
+<addrLine>The University of Tokyo</addrLine>
+<addrLine>Tokyo, 113-0033</addrLine>
+</address>
+<availability>
+<p></p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<p>No source: created in electronic format.</p>
+</sourceDesc>
+</fileDesc>
+
+<profileDesc>
+<textClass>
+<keywords scheme="original" n="category">
+<term>Intro</term>
+</keywords>
+<keywords scheme="original" n="subcategory">
+<term></term>
+</keywords>
+<keywords scheme="original" n="topic">
+<term></term>
+</keywords>
+<keywords scheme="original" n="keywords">
+<term></term>
+</keywords>
+</textClass>
+</profileDesc>
+
+<revisionDesc>
+<change>
+<date/>
+<name/>
+<desc/>
+</change>
+</revisionDesc>
+</teiHeader>
+
+<text type="intro" n="single">
+<body>
+<div>
+    
+    <p n="intro_text_center">
+        
+        Australasian Association for Digital Humanities (aaDH)<lb/>
+        Association for Computers and the Humanities (ACH)<lb/>
+        Canadian Society for Digital Humanities / Société canadienne des humanités numériques (CSDH/SCHN)<lb/>
+        centerNet<lb/>
+        Digital Humanities Association of Southern Africa (DHASA)<lb/>
+        Digital Humanities im deutschsprachigen Raum (DHd)<lb/>
+        European Association for Digital Humanities (EADH)<lb/>
+        Humanistica, L'association francophone des humanités numériques/digitales (Humanistica)<lb/>
+        Japanese Association for Digital Humanities (JADH)<lb/>
+        Red de Humanidades Digitales (RedHD)<lb/>
+        Taiwanese Association for Digital Humanities (TADH)<lb/>
+    </p>
+</div>
+    <div>
+
+        <head n="intro_head_large_center">Digital Humanities 2022</head>
+        <head n="intro_head_medium_italic_center">Conference Abstracts</head>
+        <head n="intro_head_medium_center">The University of Tokyo, Japan</head>
+        <head n="intro_head_medium_center">25-29 July 2022</head>
+    
+
+    </div>
+
+</body>
+
+
+</text>
+</TEI>
+

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>How to Critically Utilise Wikidata – A Systematic Review of Wikidata in DH Projects</title>
+                <author>
+                    <persName>
+                        <surname>Zhao</surname>
+                        <forename>Fudie</forename>
+                    </persName>
+                    <affiliation>University of Oxford, United Kingdom</affiliation>
+                    <email>fudie.zhao@sant.ox.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-19T19:07:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>wikidata</term>
+                    <term>digital humanities</term>
+                    <term>knowledge base</term>
+                    <term>linked open data</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>data publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>linked (open) data</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Initiated in 2013, Wikidata is a free and open knowledge base that acts as central storage for the structured data of its Wikimedia sister projects. It has been adopted and systematically reviewed in Information Science/Computer Science (Mora-Cantallops et al., 2019) and the library domain (Tharani, 2021). Projects in the DH domain have also been embracing Wikidata in their data-related activities. For example, since 2016, 43 presentations at DH conferences held by ADHO have mentioned Wikidata in their abstracts, as shown in 
+                <hi rend="bold">Fig.1</hi>.
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> Data about the ADHO annual conferences is collected from 
+                        <hi rend="italic" xml:space="preserve">the Index of Digital Humanities Conferences </hi>site which aggregates and presents conference metadata: 
+                    </p>
+                    <p rend="footnote text">
+                        <ref target="https://dh-abstracts.library.cmu.edu/conferences">https://dh-abstracts.library.cmu.edu/conferences</ref>
+                    </p>
+                </note> However, except Stacey’s paper about Wikidata’s use in GLAMs and DH (Stacey, 2017), there still lacks a systematic review regarding Wikidata’s status quo, potential, and challenges in the field.
+            </p>
+            <p>Fig.1: Wikidata-related presentations at ADHO annual conferences</p>
+            <figure>
+                <graphic n="1001" width="9.017cm" height="5.706069444444444cm" url="Pictures/3a4ce2af292169c5ecdaa49d15449384.png" rend="inline"/>
+            </figure>
+            <p>This short paper intends to fill this research gap by proposing four research questions: </p>
+            <p>Q1: How is Wikidata described in the current DH literature?</p>
+            <p>Q2: To what end is Wikidata being experimented within the DH domain?</p>
+            <p>Q3: What are the potentials of embracing Wikidata in data-related activities in DH projects?</p>
+            <p>Q4: What are the challenges and possible solutions associated with Wikidata in DH projects?</p>
+            <p>To answer the questions, a systematic literature review of DH projects that adopted Wikidata has been conducted based on the guidelines for Systematic Review proposed by Kitchenham (2004). Book of Abstracts from ADHO annual conferences, a compiled list of DH journals, and five online academic research databases (ACM Digital Library, Springer Link, and Web of Science, Science Direct) were searched and screened, guided by pre-determined search strategies and inclusion &amp; exclusion criteria. 
+                <hi rend="bold">196</hi> papers/presentations were identified in the sources, and after the screening, 
+                <hi rend="bold">58</hi> were selected based on criteria (English only, no duplicates, only application studies, Wikidata implemented) for further analysis in 
+                <hi rend="bold">Table 1</hi>. 
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p rend="footnote text"> Until December 31, 2021.</p>
+                </note>
+            </p>
+            <p>Table 1: Total number of articles and presentations identified from each source</p>
+            <figure>
+                <graphic n="1002" width="13.546666666666667cm" height="3.5630555555555556cm" url="Pictures/4f5987de191629b3e6d68c1eb1832520.png" rend="inline"/>
+            </figure>
+            <p>This paper finds that:</p>
+            <p>The descriptions of Wikidata in the current DH literature fall into three categories: a 
+                <hi rend="bold" xml:space="preserve">technology stack </hi>to access Linked Data, a 
+                <hi rend="bold">platform</hi> for crowdsourcing, collaboration, dissemination, and linking datasets on the Semantic Web, and a 
+                <hi rend="bold" xml:space="preserve">content provider </hi>of open, free, generic, editable, heterogeneous, linked data, as shown in 
+                <hi rend="bold">Fig.2</hi>: 
+            </p>
+            <p>
+                <hi rend="bold">Fig. 2: Wikidata Components</hi>
+            </p>
+            <figure>
+                <graphic n="1003" width="13.546666666666667cm" height="6.5969444444444445cm" url="Pictures/91a3aa835d15cfea7d82a492f8731e7c.png" rend="inline"/>
+            </figure>
+            <p>Wikidata has been included in data-related tasks such as annotation and enrichment, metadata curation, named entity recognition and disambiguation, knowledge representation and ontological engineering, data sourcing, aggregation of datasets, and the pursuit of open citation data and pedagogical practices (miscellaneous) as shown in 
+                <hi rend="bold">Table 2</hi>.
+            </p>
+            <p>Table 2: Wikidata application areas in the reviewed items</p>
+            <figure>
+                <graphic n="1004" width="12.363061111111112cm" height="5.773083333333333cm" url="Pictures/ccb6d359d86a24f13508bc3904d17e6a.png" rend="inline"/>
+            </figure>
+            <p>Projects in the DH domain can use Wikidata for data consumption and publication: </p>
+            <p>1) Data consumption – Wikidata is a data source for enrichment. </p>
+            <p>2) Data publication and exchange – Wikidata is an access point to disseminate data to the broader landscape of the Web for public engagement; a platform for crowdsourcing and collaborative production of linked data; a linked data approach towards the integration of data within a specific domain.</p>
+            <p>The use of Wikidata is accompanied by doubt about its data quality. Cook (Cook, 2017, 122) points out that Wikidata’s data is too generic and short of quality for DH scholars who tend to work in a specific area, while Wikimedians pay less attention to research-oriented DH projects and focus more on projects which gather data and edit pages. The DH community can learn from the technical community regarding the factors that influence its data quality, and possible solutions. Factors specified in the research include: user types and their editing activities, the effectiveness of systems and tools to facilitate detection and improvement of data quality, and the relevance and authoritativeness of its external references and sources. The solutions proposed by the technical community encompass 1) a better understanding of users and the editorial process via research, and 2) the development of systems, measures, and tools concerning the evaluation and improvement of different dimensions of data quality. The technical side, however, has its limitation. As pointed out by the IS systematic review (Mora-Cantallops et al., 2019, 262), such applications are mostly limited to Wikidata itself and are yet to be linked to disciplines outside information systems. The contribution of this paper is to address three factors and relevant solutions in the specific context of DH projects: the relevance and authoritativeness of other available domain sources, domain communities and their activities, and workflow designs that balance the automated and manual work by utilising the technical and labour resources of a project’s own and those offered by Wikidata.</p>
+            <p>This paper intends to invite discussion from participants at DH2022 about Wikidata’s possible use in the DH context and the challenges it may face. </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Cook, S.</hi> (2017). The uses of Wikidata for galleries, libraries, archives and museums and its place in the digital humanities. 
+                        <hi rend="italic">Comma</hi>, 
+                        <hi rend="bold">2017</hi>(2):117-124. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kitchenham, B.</hi> (2004). Procedures for performing systematic reviews. 
+                        <hi rend="italic">Keele, UK, Keele University</hi>, 
+                        <hi rend="bold">33</hi>(2004), 1-26.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mora-Cantallops, M., Sánchez-Alonso, S. and García-Barriocanal, E.</hi> (2019). A systematic literature review on Wikidata. 
+                        <hi rend="italic">Data Technologies and Applications</hi>, 
+                        <hi rend="bold">53</hi>(3): 250–68.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Tharani, K.</hi> (2021). Much more than a mere technology: A systematic review of Wikidata in libraries. 
+                        <hi rend="italic">The Journal of Academic Librarianship</hi>, 
+                        <hi rend="bold">47</hi>(2). 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

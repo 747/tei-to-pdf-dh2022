@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Dynamics of Culture: Tracing Discourse using Computational Methods</title>
+                <author>
+                    <persName>
+                        <surname>Quinn</surname>
+                        <forename>William Reed</forename>
+                    </persName>
+                    <affiliation>Northeastern University, United States of America</affiliation>
+                    <email>quinn.wi@northeastern.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Messina</surname>
+                        <forename>Cara Marta</forename>
+                    </persName>
+                    <affiliation>Jacksonville State University, United States of America</affiliation>
+                    <email>cmessina@jsu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Connell</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <affiliation>Northeastern University, United States of America</affiliation>
+                    <email>sa.connell@northeastern.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Blankenship</surname>
+                        <forename>Avery</forename>
+                    </persName>
+                    <affiliation>Northeastern University, United States of America</affiliation>
+                    <email>blankenship.a@northeastern.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Panel</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>cultural analytics</term>
+                    <term>word embedding</term>
+                    <term>network analysis</term>
+                    <term>TEI</term>
+                    <term>data modeling</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>cultural analytics</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>Cultural studies</term>
+                    <term>Feminist studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Panel Overview</p>
+            <p>The promise of computational methods is to add new specificity to cultural phenomena. Machine learning, network analysis, and a variety of other approaches bring previously obscured details to light, allowing us to better understand the deep structures that shape literary production, reception, and community. The papers of this panel build off current scholarship to explore the diverse dynamics of culture: circulation, dialectics, intertextuality, and uptake.</p>
+            <p>In “Taste in Circulation: Locating Recipes in Nineteenth-Century Newspapers,” Avery Blankenship shares her most recent work identifying recipe reprinting in nineteenth-century newspapers using reprinting data developed by the Viral Texts project as well as a corpus of nineteenth-century recipes pulled from printed book recipe books. Using Doc2Vec and topic tagging, Blankenship demonstrates the multiple ways in which nineteenth-century newspaper contributors use the recipe form—for culinary purposes and otherwise.</p>
+            <p>In “‘Like a Starry Network’: Intertextuality in Early Women’s Writing,” Sarah Connell shares the outcomes of a recent Women Writers Project effort to link the textual references within the Women Writers Online collection to a bibliography that currently contains more than 3,500 texts. Using drama as a case study, Connell illustrates some insights into early women's engagements with literature culture that can be revealed by the WWP’s new encoding.</p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">In “Excluding Crossovers: Loving Blackness in Black Panther Fandom,” Cara Marta Messina traces representations of race, sexuality, and gender in </hi>
+                <hi rend="italic" style="font-size:12pt">Black Panther</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> fanfiction both including and excluding crossovers using word embedding models and network analysis. Fans who write </hi>
+                <hi rend="italic" style="font-size:12pt">Black Panther</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> fanfiction excluding Marvel crossovers focus more on loving blackness and critiquing colonialism in a predominantly white-centered Marvel canon.</hi>
+            </p>
+            <p>
+                “Language as Act; Language as History” (William Reed Quinn) uses the syntactic parsing of keywords, their distances within word embeddings, and network analysis to examine the mobility of language within serialized print culture. This hybrid methodology builds off previous scholarship to better understand the semantic evolution of keywords over time by mapping them into vector space and then ascertaining their relationship to other texts with the same keyword.
+            </p>
+            <p> Although each paper examines a different corpus, they are brought together by their shared and complementary focus on the circuits and threads that compose historical and contemporary print culture.</p>
+            <p>Contribution 1: “Taste in Circulation: Locating Recipes in Nineteenth-Century Newspapers” by Avery Blankenship</p>
+            <p>Much like today, nineteenth-century recipes tended to circulate across print media—appearing in formal books, newspapers, pamphlets and more. While the study of recipes has been well established in scholarship, many of these studies focus on formal, printed cookbooks rather than recipes that circulated in more ephemeral print publications despite their ubiquity in the nineteenth-century (see, for example, Bower 1997, Theophano 2016, Elias 2017, and Walden 2018). Particularly due to the way nineteenth-century newspapers often only roughly delineate articles, automating the detection of recipes can pose complex challenges. </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">Using the newspaper corpus developed by the </hi>
+                <ref target="http://viraltexts.org">
+                    <hi rend="underline color(1155CC)" style="font-size:12pt">Viral Texts</hi>
+                </ref>
+                <hi style="font-size:12pt" xml:space="preserve"> project which addresses the practice of reprinting in the nineteenth-century press broadly (Smith et al. 2015), this paper uses a combination of topic tagging and Doc2Vec in order to automate the detection of recipes in nineteenth-century newspapers. Beginning with a corpus of tagged recipes, the corpus was added to a set of</hi>
+                <ref target="https://github.com/ViralTexts/viral-texts-classification/tree/master/hand-tagged">
+                    <hi rend="underline color(1155CC)" style="font-size:12pt" xml:space="preserve"> newspaper articles</hi>
+                </ref>
+                <hi style="font-size:12pt" xml:space="preserve"> which have been hand tagged according to their genres by the </hi>
+                <hi rend="italic" style="font-size:12pt">Viral Texts</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> team. With this training set, a Doc2Vec model was trained and used to rank unseen articles along these genres according to their similarity. Recipes identified with high similarity scores were then added to the training set so that the model could be retrained. </hi>
+            </p>
+            <p>The many edge cases where a text is similar in form to a recipe but is not necessarily culinary reveals the complexities of this genre and its proliferation in nineteenth-century newspapers, as well as how genres “make legible the significance of particular forms” (King 2021). The goal of this preliminary analysis is to propose a more expansive definition of “recipe” to include what could be considered “recipe-adjacent” texts. These recipe-adjacent texts reveal the usefulness of “recipe” as a genre for conveying jokes, advice, agricultural information, and even storytelling. This paper will demonstrate case studies of various recipe-adjacent texts, the ways in which the model classifies them, as well as how this classification might help illuminate the complexities of this genre. </p>
+            <p>Contribution 2: “‘Like a Starry Network’: Intertextuality in Early Women’s Writing” by Sarah Connell</p>
+            <p>In 2016, the Women Writers Project began adding bibliographic information for the thousands of textual references in the Women Writers Online collection of early women’s writing. The “Intertextual Networks” project now includes markup linking all of the quotations, named titles, and citations in WWO to a bibliography of more than 3,500 texts. The project also includes expanded markup for more nuanced forms of intertextuality, such as parody, remix, and paraphrase.</p>
+            <p>
+                 The goal of this initiative is to enable research into the multivalent ways that women engaged with literate culture during the watershed period covered by WWO in which women’s participation in the authorship and consumption of texts expanded dramatically (see Brayman Hackel and Kelly). We also seek to explore and theorize the representation of intertextuality through text encoding. This paper will share some initial research made possible with the 12,000 quotations, 5,900 titles, and 5,000 biblical citations in WWO, focusing on drama as a case study. The densely informational encoding for drama makes it possible to explore a range of questions. For example: do female-coded characters reference women writers more often than male characters? (they do); what genres of texts are included in dramatic speeches or stage directions? (poetry predominates, but classical texts and other dramas are well represented); and, what kinds of intertextual gestures appear in drama? (quotations are more than twice as common as named titles; biblical citations are almost nonexistent). This paper will conclude with an invitation for further exploration and some thoughts on the research that might be pursued with this data, aiming to serve as a launching point for further work on the rich domain of early women’s intertextuality.
+            </p>
+            <p>
+                <hi rend="bold" style="font-size:12pt">Contribution 3: “Excluding Crossovers: Loving Blackness in the Black Panther Fandom” by Cara Marta Messina</hi>
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">On </hi>
+                <hi rend="italic" style="font-size:12pt" xml:space="preserve">Archive of Our Own </hi>
+                <hi style="font-size:12pt" xml:space="preserve">(AO3), one of the most popular websites for fans to publish their fanfiction, there are 427,391 works written in the Marvel Cinematic Universe; 95,457 works for </hi>
+                <hi rend="italic" style="font-size:12pt">Captain America</hi>
+                <hi style="font-size:12pt" xml:space="preserve">; 48,793 works for </hi>
+                <hi rend="italic" style="font-size:12pt">Iron Man</hi>
+                <hi style="font-size:12pt" xml:space="preserve">; and only 4,338 for </hi>
+                <hi rend="italic" style="font-size:12pt">Black Panther</hi>
+                <hi style="font-size:12pt" xml:space="preserve">. In total, </hi>
+                <hi rend="italic" style="font-size:12pt">Black Panther</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> as a fandom tag only appears in 1.03% of the Marvel Cinematic Universe (MCU) fandoms. In one of the largest fandoms on AO3  — the MCU — Black characters and stories are still overlooked. Fanfiction and AO3 often perpetuate anti-blackness in which characters are ignored, how characters are written, and which (relation-)ships are heralded. Fan studies scholars and authors have both been critiquing this pattern as well as analyzing predominantly Black fandoms to better understand how Black fan creators simultaneously critique and love mainstream texts that often do not love them back (Florini, 2019; Messina, 2021; Stitch, 2021; Thomas, 2019a; Thomas, 2019b; Wanzo, 2015).</hi>
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">Messina collected the 4,338 </hi>
+                <hi rend="italic" style="font-size:12pt">Black Panther</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> fanfictions published on AO3 and split the corpus into two: </hi>
+                <hi rend="italic" style="font-size:12pt">Black Panther</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> fanfics that included crossovers, meaning that they may appear with other MCU fandom tags and beyond, and </hi>
+                <hi rend="italic" style="font-size:12pt">Black Panther</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> fanfics that excluded crossovers, meaning the fanfictions were written only about </hi>
+                <hi rend="italic" style="font-size:12pt">Black Panther</hi>
+                <hi style="font-size:12pt" xml:space="preserve">. On the crossover corpus, Messina counts how often </hi>
+                <hi rend="italic" style="font-size:12pt">Black Panther</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> character names appear in fanfiction, showing T’Challa and the characters in </hi>
+                <hi rend="italic" style="font-size:12pt">Black Panther</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> are rarely central to the plot lines when both </hi>
+                <hi rend="italic" style="font-size:12pt">Black Panther</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> and other MCU fandom tags appear. In the corpus excluding crossovers, word embedding models reveal how fans have deeper understandings of representations of Black sexualities and genders across the Black diaspora as well as how fans critique colonialism and white supremacy. Using word embedding models with words around gender, sexuality, and bodies, Messina examines the relationship between gender, sexuality, and race in ships like T’Challa/Killmonger and characters like Captain Okoye. The corpus excluding crossover demonstrates how fans carve out communities that resist white supremacy and, as bell hooks (1992) advocates for, love blackness.</hi>
+            </p>
+            <p>
+                <hi rend="bold" style="font-size:12pt">Contribution 4: “Language as Act; Language as History” by William Reed Quinn</hi>
+            </p>
+            <p>Literary theory has long held that concepts, like gender, are constructed through language and discourse. Moments of cultural divergence, then, should also be evident in language. While cultural analytics has provided many insights about cultural transitions, often across genres and generations, there remains more work to do in clarifying the details of these shifts at a finer grain.</p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">Quinn examines divergence and semantic mobility using examples from a series of radical feminist magazines from the Modernist Journals Project. Through her editorial hand, Dora Marsden sought to change connotations around gender that went beyond the Suffragist movement. Marsden and the other editors sought to expand “feminism’s scope” beyond “the vote” and to consider “gender relations, sexual life, and more broadly, women’s physical, spiritual, and intellectual experience of modernity” (McMahon and Green). Marsden and the other contributors were provocateurs with a specific goal: to construct new identity categories and revise old ones. </hi>
+            </p>
+            <p>To illustrate the editors’ and contributors’ attempts to reconstruct gender through discourse, Quinn finds gendered keywords (i.e., “woman,” “man,” “freewoman,” “spinster,” etc.) and inputs them with their syntactic dependencies as word embeddings. The resulting vectors and their cosine similarities can then be measured within a network to illustrate the connotative changes of key concepts over time. This experimental method moves text analysis beyond the level of document and genre in order to explore the possibilities and limits of tracking discursive evolution with computational methods.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Bower, Anne. </hi>
+                        <hi rend="italic" style="font-size:12pt">Recipes for Reading: Community Cookbooks, Stories, Histories</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. Univ of </hi>
+                    </bibl>
+                    <bibl>Massachusetts Press, 1997.</bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Brayman Hackel, Heidi and Catherine E. Kelly. “Introduction.” </hi>
+                        <hi rend="italic" style="font-size:12pt" xml:space="preserve">Reading Women: Literacy, </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="italic" style="font-size:12pt">Authorship, and Culture in the Atlantic World, 1500-1800</hi>
+                        . Ed. Heidi Brayman Hackel and Catherine E. Kelly. Philadelphia: University of Pennsylvania Press, 2008. 1–10.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Carter, Sarah. </hi>
+                        <hi rend="italic" style="font-size:12pt">Early Modern Intertextuality.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> Cham, Switzerland: Springer, 2021.</hi>
+                    </bibl>
+                    <bibl>Duhaime, Douglas. “Textual Reuse in the Eighteenth Century: Mining Eliza Haywood’s</bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Quotations.” </hi>
+                        <hi rend="italic" style="font-size:12pt">Digital Humanities Quarterly</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. 10.1. 2016. </hi>
+                        <ref target="http://www.digitalhumanities.org/dhq/vol/10/1/000229/000229.html">
+                            <hi rend="underline color(1155CC)" style="font-size:12pt">http://www.digitalhumanities.org/dhq/vol/10/1/000229/000229.html</hi>
+                        </ref>
+                        .
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Elias, Megan J. </hi>
+                        <hi rend="italic" style="font-size:12pt">Food on the Page: Cookbooks and American Culture</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. University of </hi>
+                    </bibl>
+                    <bibl>Pennsylvania Press, 2017.</bibl>
+                    <bibl>Florini, S. (2019). Enclaving and cultural resonance in Black “Game of Thrones” fandom. </bibl>
+                    <bibl>
+                        <hi rend="italic" style="font-size:12pt">Transformative Works and Cultures, 29</hi>
+                        .
+                    </bibl>
+                    <bibl>Green, Barbara, “The New Woman’s Appetite for ‘Riotous Living’: Rebecca West, Modernist </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Feminism, and the Everyday,” </hi>
+                        <hi rend="italic" style="font-size:12pt">Women’s Experience of Modernity: 1875–1945</hi>
+                        , ed. Ann Ardis and Leslie W. Lewis, Chicago: University of Chicago Press, 1985.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">hooks, bell. (1992). </hi>
+                        <hi rend="italic" style="font-size:12pt">Black looks: Race and representation</hi>
+                        . Routledge.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">King, Rachael Scarborough. “The Scale of Genre.” </hi>
+                        <hi rend="italic" style="font-size:12pt">New Literary History</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, vol. 52, no. 2, 2021, </hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">pp. 261–84. </hi>
+                        <hi rend="italic" style="font-size:12pt">Project MUSE</hi>
+                        ,
+                        <ref target="https://doi.org/10.1353/nlh.2021.0012" xml:space="preserve"> </ref>
+                        <ref target="https://doi.org/10.1353/nlh.2021.0012">
+                            <hi rend="underline color(1155CC)" style="font-size:12pt">https://doi.org/10.1353/nlh.2021.0012</hi>
+                        </ref>
+                        .
+                    </bibl>
+                    <bibl>McMahon, Shannon, “Freespinsters and Bondspinsters: Negotiating Identity Categories in the </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Freewoman,” </hi>
+                        <hi rend="italic" style="font-size:12pt">The Journal of Modern Periodical Studies</hi>
+                        , 2015, Vol. 6, No. 1, 2015, pp. 60–79.
+                    </bibl>
+                    <bibl>Messina, C. M. (2021). The critical fan toolkit: Fanfiction genres, pedagogies, and ideologies </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">[Doctoral Dissertation, Northeastern University]. Retrieved December 9, 2021 from </hi>
+                        <ref target="http://criticalfantoolkit.org">
+                            <hi rend="underline color(1155CC)" style="font-size:12pt">http://criticalfantoolkit.org</hi>
+                        </ref>
+                        <hi style="font-size:12pt" xml:space="preserve">. </hi>
+                    </bibl>
+                    <bibl>Porter, Dahlia. “From Nosegay to Specimen Cabinet: Charlotte Smith and The Labour of</bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Collecting.” </hi>
+                        <hi rend="italic" style="font-size:12pt">Charlotte Smith in British Romanticism</hi>
+                        . Ed. Jacqueline Labbe. London: Routledge, 2015.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Thematic issue: “Digital Methods for Intertextuality Studies. </hi>
+                        <hi rend="italic" style="font-size:12pt">It – Information Technology</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. Ed. </hi>
+                    </bibl>
+                    <bibl>Paul Molitor, Jörg Ritter, Stefan Conrad. 62.2. 2019.</bibl>
+                    <bibl>https://www.degruyter.com/document/doi/10.1515/itit-2020-0006/html</bibl>
+                    <bibl>Smith, David A., et al. “Computational Methods for Uncovering Reprinted Texts in Antebellum </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Newspapers.” </hi>
+                        <hi rend="italic" style="font-size:12pt">American Literary History</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, vol. 27, no. 3, Sept. 2015, pp. E1–15. </hi>
+                        <hi rend="italic" style="font-size:12pt">Silverchair</hi>
+                        ,
+                        <ref target="https://doi.org/10.1093/alh/ajv029" xml:space="preserve"> </ref>
+                        <ref target="https://doi.org/10.1093/alh/ajv029">
+                            <hi rend="underline color(1155CC)" style="font-size:12pt">https://doi.org/10.1093/alh/ajv029</hi>
+                        </ref>
+                        .
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Stitch. (2021 January 28). Who actually gets to “escape” in fandom?. </hi>
+                        <hi rend="italic" style="font-size:12pt">Teen Vogue</hi>
+                        . Retrieved
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">December 9, 2021, from </hi>
+                        <ref target="https://www.teenvogue.com/story/who-actually-gets-to-escape-into-fandom-column-fan-service">
+                            <hi rend="underline color(1155CC)" style="font-size:12pt">https://www.teenvogue.com/story/who-actually-gets-to-escape-into-fandom-column-fan-service</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Theophano, Janet. </hi>
+                        <hi rend="italic" style="font-size:12pt">Eat My Words: Reading Women’s Lives Through the Cookbooks They Wrote</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. </hi>
+                    </bibl>
+                    <bibl>St. Martin’s Publishing Group, 2016.</bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Thomas, E. E. (2019a). </hi>
+                        <hi rend="italic" style="font-size:12pt" xml:space="preserve">The dark fantastic: Race and the imagination from Harry Potter to the </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="italic" style="font-size:12pt">hunger games</hi>
+                        . New York University Press.
+                    </bibl>
+                    <bibl>Thomas, E. E. (2019b, May 17). Missandei, Too, Deserves Her Song – A Dark Fantastic Lament </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">[Academic blog]. The Dark Fantastic. Retrieved December 10, 2021 fro </hi>
+                        <ref target="http://thedarkfantastic.blogspot.com/2019/05/missandei-too-deserves-her-song-dark.html">
+                            <hi rend="underline color(1155CC)" style="font-size:12pt">http://thedarkfantastic.blogspot.com/2019/05/missandei-too-deserves-her-song-dark.html</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Walden, Sarah W. </hi>
+                        <hi rend="italic" style="font-size:12pt" xml:space="preserve">Tasteful Domesticity: Women’s Rhetoric and the American Cookbook, </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="italic" style="font-size:12pt">1790-1940</hi>
+                        . University of Pittsburgh Press, 2018.
+                    </bibl>
+                    <bibl>Wanzo, R. (2015). African American acafandom and other strangers: New genealogies of fan </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">studies. </hi>
+                        <hi rend="italic" style="font-size:12pt">Transformative Works and Cultures, 20</hi>
+                        .
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

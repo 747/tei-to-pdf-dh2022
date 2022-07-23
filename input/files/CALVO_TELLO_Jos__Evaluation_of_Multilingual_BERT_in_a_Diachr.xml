@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Evaluation of Multilingual BERT in a Diachronic, Multilingual, and Multi-Genre Corpus of Bibles</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Calvo Tello</surname>
+                        <forename>José</forename>
+                    </persName>
+                    <affiliation>Göttingen State and University Library</affiliation>
+                    <email>calvotello@sub.uni-goettingen.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>de la Rosa</surname>
+                        <forename>Javier</forename>
+                    </persName>
+                    <affiliation>The National Library of Norway</affiliation>
+                    <email>versae@nb.no</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T09:55:24.865000000</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>BERT</term>
+                    <term>transformers</term>
+                    <term>Bible</term>
+                    <term>multilingual</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>natural language processing</term>
+                    <term>Humanities computing</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor xml:id="id_docs-internal-guid-efb9964a-7fff-627f-8c05-61bc6506f171"/>BERT and its Application to Digital Humanities
+                </head>
+                <p>Transformers (GPT, BERT) have become a central piece in NLP (Vaswani et al., 2017; Alammar, 2018; Tunstall et al., preprint). These language models bring new possibilities for pre-training algorithms with no labelled data, which can then be fine-tuned to new tasks (transfer learning) with fewer labels (few-shot learning). Their linguistic prowess has spurred discussions about their limitations, biases and societal and environmental impact (Bender et al., 2021; Carlini et al., 2021; Underwood, 2021).</p>
+                <p>
+                    <hi rend="color(#000000)">These algorithms have also sparked the interest of the DH community. Specifically, BERT models (Devlin et al., 2019)</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">have been explored mainly for the study of English (Han and Eisenstein, 2019; Sims et al., 2019; Fonteyn, 2020; Underwood, 2021)</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">and German literature (Jannidis and Konle, 2020; Pagel et al., 2021; Ehrmanntraut et al., 2021), or in multilingual settings</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">(de la Rosa, et al., 2021).</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">However, its applicability to other Humanities domains remains questionable. Because of the vast amounts of data required for pre-training, these models are usually fed with contemporary text types (web, journalistic, or administrative documents) from resource-rich modern languages. In contrast, the Humanities deal with diverse and heterogeneous datasets, non-standard orthography, historical genres, multilingual datasets, and often from low-resource languages. To assess the performance of multilingual models in this context, we analyze the abilities of a multilingual BERT model (mBERT) pre-trained on Wikipedia for 102 languages (Devlin, 2018)</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">on a multi-genre, diachronic Bible dataset.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Corpus of Bible Translations</head>
+                <p>
+                    <hi rend="color(#000000)">Building multilingual corpora usually involves collecting texts produced originally in each analyzed language and period (Odebrecht et al., 2019; Novakova and Siepmann, 2020; Burnard et al., 2021). However, cultural and historical differences hinder the comparability of the results (Schöch et al., preprint). To circumvent this limitation while accounting for low-resource languages, we choose a corpus of translations of Bibles. Bibles as research objects have a long tradition in Corpus Linguistics and Digital Humanities (Radday, 1973; Neumann, </hi>
+                    <hi rend="color(#000000)">1990; Holmes, 1991; Resnik et al., 1999; Christodouloupoulos and Steedman, 2015; Walczak, 2015; Lee and Yeung, 2016; Calvo Tello, 2020).</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">The corpus comes from Zefania-XML-bible</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">and Bible Gateway.</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">It contains 221 translations (11,455 books, e.g. Genesis and Psalms) in 54 languages from all continents, including historical ones such as Latin, Gothic and Syriac, and artificial languages (e.g., Esperanto).</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">Figures 1a-b show the number of translations per language and the historical distribution for languages with translations before 1900.</hi>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/a3b1ffa78162b86e058498eb2c64755b.png"/>
+                    </figure>
+                    <figure>
+                        <graphic url="Pictures/f093df2c8bebd78e3dba0509700c8ee1.png"/>
+                    </figure>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Methods</head>
+                <p>For the analysis, we apply five metrics on two fronts:</p>
+                <list type="ordered">
+                    <item>Tokenization: 
+                        <anchor xml:id="id_docs-internal-guid-c5063f3d-7fff-6578-6ab4-071bfdfb78ed"/>We apply the default mBERT tokenizer and a simple typographic tokenizer to the Bible dataset. The tokens identified by the mBERT tokenizer can be characters, sub-word units (part-tokens), or whole-word units resembling typographic tokens. For languages using white-space delimited writing systems, the higher the number of whole-word units, the easier to interpret for humans, as the resulting tokenized text resembles quite closely the original one. To formalize this notion, we calculate the ratio of mBERT part-tokens by typographic-tokens (Figure 2). We also count the number of unknown tokens, i.e. tokens that are not part of the tokenizer vocabulary and cannot be split into its constituents. Low scores in these metrics represent better results.
+                    </item>
+                    <item>
+                        <hi rend="color(#000000)">Classification tasks</hi>
+                        <hi rend="color(#000000)">: </hi>
+                        <anchor xml:id="id_docs-internal-guid-315a86dc-7fff-931d-249d-40ad7bec6f63"/>
+                        <hi rend="color(#000000)">We apply classification to three annotated categories for each book: genre (e.g., historical, law, letter, </hi>
+                        <ref target="https://www.zotero.org/google-docs/?aLK3GE">Zimmermann, 2010)</ref>
+                        <hi rend="color(#000000)">, historical group (e.g., Gospel, Pentateuch), and Testament (Old and New). We create balanced datasets and guarantee each language has at least the same number of Bibles per category. We then split in a training (80%), validation (10%), and test set (10%) and build models for each language as well as combined ones for each century (except for translations pre-1500). We assess the performance of each model using the F1-macro metric (the higher, the better).</hi>
+                    </item>
+                </list>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/b1ddde8a8b0c7561c27e6ee333b030c7.png"/>
+                    </figure>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Hypothesis Testing</head>
+                <p>We use the five tokenization and classification metrics to test several hypotheses on the capabilities of mBERT. First, we hypothesize that languages in the mBERT pre-train dataset should obtain better results in the five metrics. Thus, we expect languages in the pre-train dataset to obtain low values in the tokenization metrics, and high F1 classification scores. To test this hypothesis, we group Bibles by whether their languages were part of the pre-training of mBERT and run Welch’s t-tests on the tokenization (Figures 3a-b) and classification (Figures 3c-e) metrics. This hypothesis is supported by three of the five criteria: the number of unknown-tokens (Figure 3a) and the classification results on genre and Testament (Figure 3c and 3e).</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/657af171ca29125dacbdb7785c09d1a7.png"/>
+                    </figure>
+                </p>
+                <p>Second, we hypothesize that the Wikipedia sizes correlate with the metrics. While this is rejected for tokenization (Figures 4a-b), the classification results show statistical moderate correlations (Figures 4c-e). Despite having smaller or no Wikipedia, some languages obtain good overall results, such as Haitian, Jamaican, Gothic or Esperanto.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/62dbc070f7e9d2f2ea6f9b1b95b3bd05.png"/>
+                    </figure>Consequently, in our third hypothesis, we expect texts in Romance and Germanic languages to score better than the rest of the languages. Figure 5 shows the classification results.
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/51fb2139032d1e62a44221aaab122588.png"/>
+                    </figure>When compared in binary groups, Romance and Germanic languages do obtain better results than the rest for the five metrics (Figures 6a-e). 
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/433176f26c9dd513f2592b041a051d02.png"/>
+                    </figure>Fourth, based on Muller et al.(2021), we hypothesize that translations using Latin script will score better than translations in other scripts. Figure 7 shows the number of unknown-tokens, notably high for Coptic and Syriac scripts.
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/849683cb9873c8e427271731fca4a81f.png"/>
+                    </figure>When compared in binary groups, the five criteria support this hypothesis (Figures 8a-e). This might explain the good overall results for some low-resource languages with small or no Wikipedia, but written in Latin script.
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/df4b92c9f925ce1fb44197402f2c9160.png"/>
+                    </figure>
+                    <hi rend="color(#000000)">Fifth, we expect better results for contemporary translations (20th and 21st century), as that constitutes both the core of the pre-training and Bibles datasets. We obtained the year of publication for 68% of the corpus. Figure 9 shows a positive trend over time, reaching stability after the 18th century.</hi>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/dff8354dc6afdf3d92d2aa1838649faa.png"/>
+                    </figure>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">However, when compared in binary groups (20th-21st vs. rest), this is only supported by the unknown-tokens metric (Figures 10a).</hi>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/169d1047498313cdd3de01045a4461af.png"/>
+                    </figure>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusions</head>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-6bfb4347-7fff-4c06-ffa4-efa2d646bdbd"/>
+                    <hi rend="color(#000000)">Our evaluation effectively exhibits biases in favor of some high-resource families of languages (Germanic, Romance), although other languages (Haitian, Jamaican, Esperanto) perform reasonably well. At the historical level, the scores are high and stable not only for the 20th and 21st century as hypothesized, but since the 18th century, probably due to a more consistent spelling since then. However, the strongest bias is not towards language or period, but toward (Latin) script. Therefore, transliteration into Latin script and modernization could be mandatory steps for </hi>
+                    <hi rend="color(#000000)">many </hi>
+                    <hi rend="color(#000000)">DH corpora interested in using mBERT. The </hi>
+                    <hi rend="color(#000000)">DH </hi>
+                    <hi rend="color(#000000)">community needs to discuss </hi>
+                    <hi rend="color(#000000)">in which cases </hi>
+                    <hi rend="color(#000000)">modernization and transliteration</hi>
+                    <hi rend="color(#000000)"> are acceptable and </hi>
+                    <hi rend="color(#000000)">in</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">which </hi>
+                    <anchor xml:id="id_docs-internal-guid-8d964f39-7fff-9c92-fc4d-d0726dd7a817"/>
+                    <hi rend="color(#000000)">ways these limitations could be effectively mitigated.</hi>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <anchor xml:id="id_docs-internal-guid-67b93fdf-7fff-7a5b-5b5d-c0583a193ca4"/>
+                        <hi rend="color(#000000) bold">Alammar, J.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2018). The Illustrated BERT, ELMo, and co. (How NLP Cracked Transfer Learning) </hi>
+                        <hi rend="color(#000000) italic">Visualizing Machine Learning One Concept at a Time </hi>
+                        <hi rend="color(#000000)">http://jalammar.github.io/illustrated-bert/ (accessed 7 November 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Bender, E. M., Gebru, T., McMillan-Major, A. and Mitchell, M.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021). On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? <hi rend="math_alt_font">🦜</hi>. </hi>
+                        <hi rend="color(#000000) italic">Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency</hi>
+                        <hi rend="color(#000000)">. Virtual Event Canada: ACM, pp. 610–23 doi:10.1145/3442188.3445922. https://dl.acm.org/doi/10.1145/3442188.3445922 (accessed 3 November 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Burnard, L., Schöch, C. and Odebrecht, C.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021). In search of comity: TEI for distant reading. </hi>
+                        <hi rend="color(#000000) italic">Journal of the Text Encoding Initiative</hi>
+                        <hi rend="color(#000000)">(Issue 14). Text Encoding Initiative Consortium doi:10.4000/jtei.3500. https://journals.openedition.org/jtei/3500 (accessed 10 September 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Calvo Tello, J.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2020). What is a Genre? A Graph Unified Model of Categories, Texts, and Features. Ottawa: ADHO https://hcommons.org/deposits/item/hc:31713/ (accessed 12 October 2020).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Carlini, N., Tramer, F., Wallace, E., Jagielski, M., Herbert-Voss, A., Lee, K., Roberts, A., et al.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021). Extracting Training Data from Large Language Models. </hi>
+                        <hi rend="color(#000000) italic">ArXiv:2012.07805 [Cs] </hi>
+                        <hi rend="color(#000000)">http://arxiv.org/abs/2012.07805 (accessed 7 November 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Christodouloupoulos, C. and Steedman, M.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2015). A massively parallel corpus: the Bible in 100 languages. </hi>
+                        <hi rend="color(#000000) italic">Language Resources and Evaluation</hi>
+                        <hi rend="color(#000000)">, </hi>
+                        <hi rend="color(#000000) bold">49</hi>
+                        <hi rend="color(#000000)">(2): 375–95 doi:10.1007/s10579-014-9287-y.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Devlin, J.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2018). </hi>
+                        <hi rend="color(#000000) italic">Multilingual BERT Docummentation</hi>
+                        <hi rend="color(#000000)">. https://github.com/google-research/bert/blob/a9ba4b8d7704c1ae18d1b28c56c0430d41407eb1/multilingual.md.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Devlin, J., Chang, M.-W., Lee, K. and Toutanova, K.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. </hi>
+                        <hi rend="color(#000000) italic">ArXiv:1810.04805 [Cs] </hi>
+                        <hi rend="color(#000000)">http://arxiv.org/abs/1810.04805 (accessed 22 October 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Ehrmanntraut, A., Hagen, T., Konle, L. and Jannidis, F.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021). Type- and Token-based Word Embeddings in the Digital Humanities. http://ceur-ws.org/Vol-2989/long_paper35.pdf (accessed 12 October 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Fonteyn, L.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2020). What about Grammar? Using BERT Embeddings to Explore Functional-Semantic Shifts of Semi-Lexical and Grammatical Constructions. https://2021.computational-humanities-research.org/cfp/ (accessed 12 October 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Han, X. and Eisenstein, J.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2019). Unsupervised Domain Adaptation of Contextualized Embeddings for Sequence Labeling. </hi>
+                        <hi rend="color(#000000) italic">Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)</hi>. Hong Kong, China: Association for Computational Linguistics, pp. 4238–48 doi:10.18653/v1/D19-1433. https://aclanthology.org/D19-1433 (accessed 7 November 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Holmes, D. I.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(1991). Vocabulary Richness and the Prophetic Voice. </hi>
+                        <hi rend="color(#000000) italic">Literary and Linguistic Computing</hi>
+                        <hi rend="color(#000000)">, </hi>
+                        <hi rend="color(#000000) bold">6</hi>
+                        <hi rend="color(#000000)">(4): 259–68 doi:10.1093/llc/6.4.259.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Jannidis, F. and Konle, L.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2020). Domain and Task Adaptive Pretraining for Language Models. https://dh-abstracts.library.cmu.edu/works/10214 (accessed 12 October 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Lee, J. and Yeung, C. Y.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2016). An Annotated Corpus of Direct Speech. </hi>
+                        <hi rend="color(#000000) italic">Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC 2016)</hi>
+                        <hi rend="color(#000000)">. European Language Resources Association (ELRA), pp. 1059–63 http://www.lrec-conf.org/proceedings/lrec2016/pdf/1061_Paper.pdf (accessed 20 April 2019).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Muller, B., Anastasopoulos, A., Sagot, B. and Seddah, D.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021). When Being Unseen from mBERT is just the Beginning: Handling New Languages With Multilingual Language Models. </hi>
+                        <hi rend="color(#000000) italic">Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</hi>
+                        <hi rend="color(#000000)">. Online: Association for Computational Linguistics, pp. 448–62 doi:10.18653/v1/2021.naacl-main.38. https://aclanthology.org/2021.naacl-main.38 (accessed 8 November 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Neumann, K. J.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(1990). </hi>
+                        <hi rend="color(#000000) italic">The Authenticity of the Pauline Epistles in the Light of Stylostatistical Analysis</hi>
+                        <hi rend="color(#000000)">. (Society of Biblical Literature Dissertation Series 120). Atlanta, GA: Scholars Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Novakova, I. and Siepmann, D.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2020). </hi>
+                        <hi rend="color(#000000) italic">Phraseology and Style in Subgenres of the Novel: A Synthesis of Corpus and Literary Perspectives</hi>
+                        <hi rend="color(#000000)">. Cham, Switzerland: Palgrave Macmillan.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Odebrecht, C., Burnard, L., Colorado, B. N. and Schöch, C.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2019). European Literary Text Collection (ELTeC): Release with 10 collections of at least 50 novels. Zenodo doi:10.5281/ZENODO.4274954. https://zenodo.org/record/4274954 (accessed 17 February 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Pagel, J., Sihag, N. and Reiter, N.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021). Predicting Structural Elements in German Drama. http://ceur-ws.org/Vol-2989/long_paper35.pdf (accessed 12 October 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Radday, Y. T.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(1973). </hi>
+                        <hi rend="color(#000000) italic">The Unity of Isaiah in the Light of Statistical Linguistics</hi>
+                        <hi rend="color(#000000)">. (Collection Massorah. Série 2, Etudes Quantitives et Automatisées 1). Hildesheim: Gerstenberg.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Resnik, P., Olsen, M. B. and Diab, M.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(1999). The Bible as a Parallel Corpus: Annotating the ‘Book of 2000 Tongues’. </hi>
+                        <hi rend="color(#000000) italic">Computers and the Humanities</hi>
+                        <hi rend="color(#000000)">, </hi>
+                        <hi rend="color(#000000) bold">33</hi>
+                        <hi rend="color(#000000)">(1): 129–53 doi:10.1023/A:1001798929185.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">de la Rosa, J., Pérez, Á., Sisto, M. de, Hernández, L., Díaz, A., Ros, S. and González-Blanco, E.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021). Transformers analyzing poetry: multilingual metrical pattern prediction with transfomer-based language models. </hi>
+                        <hi rend="color(#000000) italic">Neural Computing and Applications</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">doi:10.1007/s00521-021-06692-2. https://doi.org/10.1007/s00521-021-06692-2 (accessed 22 November 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Schöch, C., Erjavec, T., Patras, R. and Santos, D.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(preprint). Creating the European Literary Text Collection (ELTeC): Challenges and Perspectives. </hi>
+                        <hi rend="color(#000000) italic">Modern Languages Open</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">doi:10.5281/zenodo.4742420. https://zenodo.org/record/4742420 (accessed 10 September 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Sims, M., Park, J. H. and Bamman, D.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2019). Literary Event Detection. </hi>
+                        <hi rend="color(#000000) italic">Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics</hi>
+                        <hi rend="color(#000000)">. Florence, Italy: Association </hi>
+                        <hi rend="color(#000000)">for Computational Linguistics, pp. 3623–34 doi:10.18653/v1/P19-1353. https://aclanthology.org/P19-1353 (accessed 7 November 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Tunstall, L., Werra, L. von and Wolf, T.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(preprint). </hi>
+                        <hi rend="color(#000000) italic">Natural Language Processing with Transformers: Building Language Applications with Hugging Face.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">Sebastopol: O’Reilly Media.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Underwood, T.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021). Mapping the Latent Spaces of Culture </hi>
+                        <hi rend="color(#000000) italic">Using Large Digital Libraries to Advance Literary History</hi>
+                        <hi rend="color(#000000)">. Humanities Commons https://tedunderwood.com/2021/10/21/latent-spaces-of-culture/ (accessed 3 November 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L. and Polosukhin, I.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2017). Attention Is All You Need. </hi>
+                        <hi rend="color(#000000) italic">ArXiv:1706.03762 [Cs] </hi>
+                        <hi rend="color(#000000)">http://arxiv.org/abs/1706.03762 (accessed 8 November 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Walczak, B.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2015). Role of the Bible in the development of languages and linguistics. An outline of the issue. </hi>
+                        <hi rend="color(#000000) italic">Forum Lingwistyczne</hi>
+                        <hi rend="color(#000000)">(2). Wydawnictwo Uniwersytetu Śląskiego / University of Silesia Press https://www.journals.us.edu.pl/index.php/FL/article/view/6066 (accessed 15 November 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Zimmermann, R.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2010). Theologische Gattungsforschung. In Zymner, R. (ed), </hi>
+                        <hi rend="color(#000000) italic">Handbuch Gattungstheorie</hi>
+                        <hi rend="color(#000000)">. Stuttgart: Verlag J.B. Metzler, pp. 302–05.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

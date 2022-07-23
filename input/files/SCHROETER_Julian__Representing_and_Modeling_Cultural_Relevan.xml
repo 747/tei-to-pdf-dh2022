@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main"> Representing and Modeling Cultural Relevance in Corpora for Historical Analysis </title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Schroeter</surname>
+                        <forename>Julian</forename>
+                    </persName>
+                    <affiliation>University of Wuerzburg, Germany</affiliation>
+                    <email>julian.schroeter@uni-wuerzburg.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-15T09:58:07.128495794</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>corpus</term>
+                    <term>prestige</term>
+                    <term>cultural relevance</term>
+                    <term>metadata</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>German</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>data modeling</term>
+                    <term>Cultural studies</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="color(#0e101a)">Working with large corpora is one of the strengths of computational literary studies </hi>
+                <hi rend="color(#0e101a)">(CLS)</hi>
+                <hi rend="color(#0e101a)">. Collecting metadata is the essential step for interpreting analytical results. So far, large corpora focus on non-historical metadata such as gender or general genres (Piper 2018, Jockers 2013). Historical metadata, if any, are collected as epoch or periods of publication, and with a growing interest also in the historicity of genres (cf. Underwood 2019, Schröter 2019). In </hi>
+                <hi rend="color(#0e101a)">CLS</hi>
+                <hi rend="color(#0e101a)">, there is, however, a growing interest in more specific socio-historical changes. Pursuing this interest necessitates collecting contextual metadata (cf. Riddell/Bassett 2020). One of the most important dimensions of a social history of literature is that of cultural relevance. So far, corpora tend to have several methodological weaknesses: Firstly, as most studies do not pay attention to the aspect of relevance, most corpora give all texts the same weight. In studies that have an interest in prestige, it is common practice to model these categories in a non-historical fashion (Algee-Hewitt/McGurl 2015) or from the perspective of present readers (Koolen et al. 2020). Secondly, most corpora have a bias towards highly canonical texts because canonical texts are already digitized whereas the ›big unread‹ awaits to be exploited. To investigate the historical change of cultural relevance, both weaknesses have to be overcome.</hi>
+            </p>
+            <p>The central assumption behind the poster that shall be presented is that the forms of cultural relevance are much more diverse and that significant new historical insights can be gained by representing this diversity depending on specific research interests. Hence, the poster will have three areas that correspond to methodological steps, respectively:</p>
+            <list type="ordered">
+                <item>It shows in a spreadsheet the current state of research.</item>
+                <item>It discusses the advantages and shortcomings of possible models of prestige based on visualizations starting from a specific interest in the dependency between media formats and genre semantics.</item>
+                <item>Using different forms of visualization, the poster demonstrates the impact of cultural relevance beyond prestige based on a genuine new corpus.</item>
+            </list>
+            <p>As this corpus includes more than 700 mostly forgotten novellas that were relevant in their contemporary contexts with a wide variety of historical metadata, it overcomes both weaknesses mentioned above.
+                <note xml:id="ftn0" place="foot" n="1"> The corpus is described and can be explored in 
+                    <ptr target="https://github.com/julianschroeter/19CproseCorpus"/>. 
+                </note>
+            </p>
+            <p>On the first issue (I), two aspects can be distinguished, the epistemic aspect of criteria for detecting prestige and different concepts of prestige. Table 1 outlines both aspects as two dimensions and provides a new view on prestige. On the poster, this table will be extended to the whole field of relevant research.</p>
+            <table rend="frame" xml:id="Table1">
+                <row>
+                    <cell rend="bold">concept of relevance</cell>
+                    <cell rend="bold">epistemic dimension</cell>
+                    <cell rend="bold">form</cell>
+                    <cell rend="bold">source</cell>
+                </row>
+                <row>
+                    <cell>›success‹ or ›popularity‹</cell>
+                    <cell>sales</cell>
+                    <cell>binary: Bestseller/no bestseller</cell>
+                    <cell>Algee-Hewitt/McGurl (2015)</cell>
+                </row>
+                <row>
+                    <cell>›literary esteem‹</cell>
+                    <cell>established lists of canonical works (»found lists«)</cell>
+                    <cell>binary: in/not in corpus</cell>
+                    <cell>Algee-Hewitt/McGurl (2015)</cell>
+                </row>
+                <row>
+                    <cell>›elitist prestige‹</cell>
+                    <cell>being reviewed at least once</cell>
+                    <cell>binary</cell>
+                    <cell>Underwood/Sellars (2016)</cell>
+                </row>
+                <row>
+                    <cell>›elitist prestige‹</cell>
+                    <cell>interviewing experts (»made lists«)</cell>
+                    <cell>ranked positions</cell>
+                    <cell>Algee-Hewitt et al. (2015)</cell>
+                </row>
+                <row>
+                    <cell>Literary canon</cell>
+                    <cell>Expert decision</cell>
+                    <cell>ordinal scale of canon status: low, medium, high</cell>
+                    <cell>ELTeC-Korpus
+                        <note xml:id="ftn1" place="foot" n="2">Cf. the cost-action project, URL: 
+                            <ref target="https://www.distant-reading.net/">https://www.distant-reading.net/</ref>(accessed December 8, 2022).
+                        </note>
+                    </cell>
+                </row>
+            </table>
+            <p>Table 1: Conceptual and epistemic dimensions of modeling prestige</p>
+            <p>On the second issue (II), models for representing prestige are presented based on two conceptual dimensions: On the first dimension of context-sensitivity, there are two types of models: The context-insensitive model directly links a specific aspect of prestige to each literary work. The context-sensitive type of model, in contrast, links a specific aspect of prestige relative to a historical situation where the respective aspect of prestige was assigned to the work. The latter model carries the advantage that it facilitates investigating the assignment of prestige as a contingent social practice rather than interpreting prestige as eternal literary value.</p>
+            <p>The second dimension is that of a diversity of prestige. Three options are relevant: It is common practice to use only one concept and one epistemic aspect from table 1 as the ›best‹ proxy to cultural relevance. Another practice would be that of merging different epistemic dimensions into one encompassing idea of relevance. This strategy has the advantage that it takes into account different dimensions and provides only one resulting ratio that can be used in downstream tasks as one singular feature. Several shortcomings have to be considered, such as the issue of scaling different epistemic aspects. Finally, there is an option of modeling a multi-dimensional space of relevance that preserves all different aspects.</p>
+            <p>On the third issue (III), the historical situation becomes more complex by the fact that historical relevance is not only a matter of prestige but also a matter of circulation. Three more dimensions have to be taken into account:</p>
+            <list type="ordered">
+                <item>The degree of circulation in public libraries and reader circles.</item>
+                <item>The degree of supra-regional circulation</item>
+                <item>The average circulation volume of media types.</item>
+            </list>
+            <p>The poster will visualize the available data for the three types of circulation and dominance. Figure 1 provides a visualization of average circulation volume.</p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/2afb22932a2d225edfece91262e13d2e.png"/>
+                    <head>Figure 1: Circulation volumes for different media</head>
+                </figure>
+            </p>
+            <p>The poster is intended to encourage scholars who are interested in historical insights into literary cultures to discuss the ›next generation‹ of context-sensitive metadata acquisition and representation. Based on a specific historiographical interest in the dependency between media and genre, it aims to provide data-driven ground and methodological reasoning for discussing different options of generating context-sensitive corpora and to provide an argument for the desirability of such corpora in literary studies.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Algee-Hewitt, M. </hi>
+                        <hi rend="bold">and </hi>
+                        <hi rend="bold">McGurl, </hi>
+                        <hi rend="bold">M.</hi> (2015). Between Canon and Corpus: Six Perspectives on 20th Century Novels, Literary Lab. litlab.stanford.edu/LiteraryLabPamphlet8.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Jockers, </hi>
+                        <hi rend="bold">M.</hi>
+                        <hi rend="bold"> L.</hi> (2013). Macroanalysis: Digital Methods and Literary History. Urbana: University of Illinois Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Koolen, C., van Dalen-Oskam, </hi>
+                        <hi rend="bold">K., </hi>
+                        <hi rend="bold">van Cranenburgh, </hi>
+                        <hi rend="bold">A., and </hi>
+                        <hi rend="bold">Nagelhout, </hi>
+                        <hi rend="bold">E.</hi> (2020). Literary quality in the eye of the Dutch reader: The National Reader Survey, Poetics 79: 1–13.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Piper, Andrew</hi> (2018). Enumerations. Data and Literary Study. Chicago ; London: The University of Chicago Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Riddell, A. </hi>
+                        <hi rend="bold">and</hi>
+                        <hi rend="bold"> Troy, J. B.</hi> (2020) The Class of 1838: A Social History of the First Victorian Novelists, Mémoires du livre / Studies in Book Culture 11,2: 1–37.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schröter, J.</hi> (2019). Gattungsgeschichte und ihr Gattungsbegriff am Beispiel der Novellen«, Journal of Literary Theory 13,2: 227–57.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Underwood, T. </hi>(2019). Distant horizons. Chicago, London: The University of Chicago Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Underwood, T. </hi>
+                        <hi rend="bold">and </hi>
+                        <hi rend="bold">Sellars </hi>
+                        <hi rend="bold">J.</hi> (2016). The Longue Durée of Literary Prestige, Modern Language Quarterly 77,3: 321–44.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

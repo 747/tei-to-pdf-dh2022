@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Interactive Visualization of Indigenous Territory: Mapping of the Attikamegues in Historical Maps</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Herold</surname>
+                        <forename>Nastasia</forename>
+                    </persName>
+                    <affiliation>Leipzig University, Germany</affiliation>
+                    <email>nastasia.herold@uni-leipzig.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Blicher Christensen</surname>
+                        <forename>Mathilde</forename>
+                    </persName>
+                    <affiliation>University of Southern Denmark, Denmark</affiliation>
+                    <email>blicher1997@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Jänicke</surname>
+                        <forename>Stefan</forename>
+                    </persName>
+                    <affiliation>University of Southern Denmark, Denmark</affiliation>
+                    <email>stjaenicke@imada.sdu.dk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T13:06:26.833124235</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Atikamekw</term>
+                    <term>historical maps</term>
+                    <term>Canada</term>
+                    <term>visualization</term>
+                    <term>Indigenous</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>ethnographic analysis</term>
+                    <term>spatial &amp; spatio-temporal analysis</term>
+                    <term>modeling and visualization</term>
+                    <term>Indigenous studies</term>
+                    <term>Geography and geo-humanities</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <anchor xml:id="id_docs-internal-guid-b15cea0e-7fff-c524-817d-e602602d6acf"/>
+                <hi rend="color(#000000)">The ancestral territory of the Indigenous nation of the Atikamekw is based in the current Canada. The nation claims its ancestral rights on the territory, but has been thwarted over the time by some historians doubting the Atikamekw being the descendants of the Attikamegues who were mentioned in historical reports of the first missionaries in New France (Dawson, 2003; Ratelle, 1987). The reason for the doubt is an ethnonymical change (ethnonym = name of a people) around the year 1700 - from “Attikamegues” to “Têtes-de-Boule”. The so-called Têtes-de-Boule indicate their presence on the territory for milleniums, which is why they rechanged their official name to Attikamegues, now in their own orthography “Atikamekw” </hi>
+                <hi rend="color(#000000)">(</hi>
+                <ptr target="http://www.manawan.org/accueil/"/>
+                <hi rend="color(#000000)">)</hi>
+                <hi rend="color(#000000)">.</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">Some historians, above all Dawson, however, try to prove that the change around 1700 was not just an ethnonymical one, but an ethnical one, and that the Têtes-de-Boule are not the descendants of but a different people from the Attikamegues.</hi>
+            </p>
+            <p>The humanist Nastasia Herold is currently writing her dissertation about the Atikamekw history. She involves the Atikamekw perspective in the scientific discussion and in addition to this, she includes data from the Eurocentric perspective that has not been considered yet. One of the Eurocentric data are English and French historical maps from much later than 1700 (until 1824 according to 
+                <anchor xml:id="id_docs-internal-guid-22887b81-7fff-2a4b-f444-3b1ba2787f61"/>Hudson’s Bay Company Archives, G.3/135) that mention a people called Attikamegues. This contradicts the hypothesis that the Attikamegues disappeared around 1700 and that a new people moved to their territory, the Têtes-de-Boule. These maps also illustrate that historical reports from missionaries cannot be used as the single source for a discussion on the history of an Indigenous nation.
+            </p>
+            <p>Nevertheless, the mere existence of these maps does not prove the continuing existence of the Attikamegues/Atikamekw Nation. The newer maps could be copies of older maps, and/or the sources for the newer maps could be old reports from before 1700. In order to examine this consideration, metadata needs to be collected and compared, and the very different orthographies for “Attikamegues” should be checked against orthographies in reports in order to find the potential source of the maps.</p>
+            <p>
+                <anchor xml:id="id_docs-internal-guid-beca9e48-7fff-0ee4-1d9d-3447776953d9"/>We developed a Web-based framework to support investigating the above described research interest with visual interfaces. In order to do so, the following tasks are supported:
+            </p>
+            <list type="unordered">
+                <item>
+                    <hi rend="bold">Collecting historical maps:</hi> The framework allows for uploading historical map images and entering descriptive metadata about a map like publication year, publisher, etc. This information is necessary for all frontend components of the tool.
+                </item>
+                <item>
+                    <hi rend="bold">Annotating a contemporary map:</hi> When uploading a historical map, the humanities scholar has to annotate a contemporary map with the approximate location of the ethnonym on the historical map. The assignment of a location to a map is a human decision, and domain knowledge as well as a comparison of the historical and contemporary topologies of the maps are essential. Related map annotation projects are maphub (
+                    <ptr target="https://maphub.github.io/"/>) and Map Warper (
+                    <ptr target="https://mapwarper.net/"/>).
+                </item>
+                <item>
+                    <hi rend="bold">Geospatial-temporal analysis:</hi> The core element of the frontend are two linked views (see Figure 1): (1) a timeline displaying the distribution of when historical maps have been published, and (2) a map that illustrates a contemporary approximation of the historical Atikamekw territory. The ethnonyms are visualized in both views to support generating hypotheses regarding space, resembling a tag map (Reckziegel et al., 2018), and time. When hovering a dot in one view, the other view is automatically navigated to the particular time period or geographical area. Clicking a dot shows all information on the chosen historical map.
+                </item>
+            </list>
+            <p>
+                <hi rend="bold">Task-based filtering:</hi> The visual frontend is embedded in a faceted browser that allows for filtering particular sets of historical maps, for example by publication year to discover trends or by ethnonym type(s) for analyzing geospatial distributions.
+            </p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/ad24c082761dd955c3ebe1c181848a37.png"/>
+                    <head>Linked timeline and map to support explorative analysis of Atikamekw territory</head>
+                </figure>
+            </p>
+            <p>The publication date in the timeline, the localization of the people corresponding to the historical map in the interactive map, and the original ethnonym both in timeline and interactive map give the researcher a better understanding of the relationship of these data, what makes it easier to evaluate if the historical map is a copy of an older map or not. The resulting hypothesis of copy “yes / no” can be saved in the metadata, and thereupon be filtered. The visualized result gives an overview of all maps that are potentially first editions. This is just one example besides many other hypotheses that can be developed using the interactive visualization.</p>
+            <p>
+                <hi rend="color(#000000)">The project was a perfect Digital Humanities collaboration: the research question, data collection, and desires of visualization and interactive tools were provided by a humanist, the design and implementation by computer scientists. The collaboration’s development was discussed and progressed in weekly video conferences to make sure that the tools were helpful and useful for the humanist researcher. Furthermore, the project was designed in a way that even after the collaboration, maps and metadata can be added and modified by the humanist researcher. The project is published at a website </hi>
+                <hi rend="color(#000000)">(</hi>
+                <ptr target="https://atikamekwstudies.org/historical-maps-live-tool/"/>
+                <hi rend="color(#000000)">)</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">for the benefit of Atikamekw community members and of researchers. The audience can even contribute by sending relevant historical maps to Herold that have not been included yet. This possibility of ongoing work and collaboration is an example of sustainable research in the Digital Humanities.</hi>
+            </p>
+            <p>The “Atikamekw Historical Maps” project can be applied to other minorities all over the world. Cartographers of the last centuries were ordered to design maps of Asian regions for example. Very often, the localization of the peoples on the Asian islands and mainland was included in the maps for reasons of trade, politics, or military. Indigenous peoples in the Asian regions can adopt the Digital Humanities project described here for their needs in order to prove their continuous existence in a specific area.</p>
+            <p>The presentation is aimed at humanists, computer scientists, community members, and anyone else with an interest in collaborative DH research projects, mapping, visualization, and sustainable research in minority studies.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Dawson, N.-M.</hi>
+                        <hi rend="color(#000000)"> (2003). </hi>
+                        <hi rend="color(#000000) italic">Des Attikamègues aux Têtes-de-Boule.</hi>
+                        <hi rend="color(#000000)"> Mutation ethnique dans le Haut Mauricien soule régime français. Sillery: Septention.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Jänicke, S.</hi> (2016). 
+                        <hi rend="italic">Valuable research for visualization and digital humanities: A balancing act.</hi> Workshop on Visualization for the Digital Humanities, IEEE VIS.
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Ratelle, M.</hi>
+                        <hi rend="color(#000000)"> (1987). </hi>
+                        <hi rend="color(#000000) italic">Contexte historique de la localisation des Attikameks et des Montagnais de 1760 à nos jours.</hi>
+                        <hi rend="color(#000000)"> Québec: Gouvernement du Québec.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Reckziegel, M., Cheema, M. F., Scheuermann, G. </hi>
+                        <hi rend="bold">and</hi>
+                        <hi rend="bold"> Jänicke, S.</hi> (2018). 
+                        <hi rend="italic">Predominance tag maps.</hi> IEEE transactions on visualization and computer graphics, 24(6), 1893-1904.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

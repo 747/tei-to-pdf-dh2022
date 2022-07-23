@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Modelling Gender Diversity – Research Data Representation Beyond the Binary</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Illmer</surname>
+                        <forename>Viktor J.</forename>
+                    </persName>
+                    <affiliation>Freie Universität Berlin, Germany</affiliation>
+                    <email>v.illmer@fu-berlin.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Poggel</surname>
+                        <forename>Lisa</forename>
+                    </persName>
+                    <affiliation>Freie Universität Berlin, Germany</affiliation>
+                    <email>l.poggel@fu-berlin.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Diehr</surname>
+                        <forename>Franziska</forename>
+                    </persName>
+                    <affiliation>Freie Universität Berlin, Germany</affiliation>
+                    <email>diehrf@rki.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Drury</surname>
+                        <forename>Lindsey</forename>
+                    </persName>
+                    <affiliation>Freie Universität Berlin, Germany</affiliation>
+                    <email>l.drury@fu-berlin.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-11T15:22:09.001753566</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Critical Modelling</term>
+                    <term>Gender</term>
+                    <term>Standards</term>
+                    <term>Data Representation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>19th Century</term>
+                    <term>Contemporary</term>
+                    <term>data modeling</term>
+                    <term>metadata standards</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Gender and sexuality studies</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-64e52c94-7fff-798b-ffe8-964428c0d14b"/>How may we model gender to account for its diversity while remaining simple enough to implement and query?
+                </p>
+                <p>We address why gender diversity needs to be represented in databases, especially when confronted with historical sources. Analysing examples of gender modelling in established metadata schemata and descriptive data models, we propose a model that strikes a balance between an atomic and flexible ontology that returns valid results even for naïve data queries. We introduce the use of 
+                    <hi rend="bold">gender qualifiers</hi>, which allow nuanced statements on how the gender information was formulated. Use of the proposed modelling strategies are demonstrated following the Wikibase data model.
+                    <note xml:id="ftn1" place="foot" n="1">Funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany’s Excellence Strategy in the context of the Cluster of Excellence Temporal Communities: Doing Literature in a Global Perspective – EXC 2020 – Project ID 390608380.</note>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>
+                    <anchor xml:id="id_docs-internal-guid-12b6f523-7fff-cb0d-5869-80a1e963632d"/>Archiving the colonial concept of the gender binary
+                </head>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-9f6973a4-7fff-43e3-d433-cf684fcd2524"/>Historical research shows the gender binary to be a modern and colonial organising principle. Scholars have traced transgender identities throughout European history (Betancourt, 2020; Feinberg, 1996; Mauriello, 2019; Moyer, 2015) and examined how colonialism has affected Indigenous gender systems. Various communities in North America, Asia and Africa did not adhere to a gender binary before the imposition of colonial knowledge regimes (Amadiume, 2015; Hinchy, 2020; Neil &amp; Garcia, 2009). Many Indigenous societies accepted genders beyond male 
+                    <anchor xml:id="id_docs-internal-guid-c5d7f0f5-7fff-6865-2ee4-209c46f33a2c"/>and female (Cleves, 2014; Herdt, 1994; Mirandé, 2016; Roscoe, 1998; Slater &amp; Yarbrough, 2011). Archives carry the imprint of colonial and heteronormative gender regimes (Arondekar, 2009; Ćosić et al., 2014). A critical modelling practice should therefore reflect the constructed nature of gender in the archival record and its limited temporal and geographical scope (see also Flanders &amp; Jannidis, 2015, pp. 14–15). 
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Status quo: Representation of gender in established standards</head>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-bdb920ce-7fff-a66a-fd32-5b55da9e981a"/>Established metadata schemes do not adequately model the diversity of gender. Most standards use binary models, which only allow for the expressions 
+                    <hi rend="bold">male</hi> and 
+                    <hi rend="bold">female</hi>. The German National Library’s Integrated Authority File, for example, includes the concepts 
+                    <hi rend="bold">male</hi>, 
+                    <hi rend="bold">female</hi> and 
+                    <hi rend="bold">not known</hi> (Deutsche Nationalbibliothek, 2019a, 2019b). In this way, it is similar to the system standardised by ISO 5218 (International Organization for Standardization, 2004). This vocabulary is inadequate even assuming it only catalogues purported biological sex, which are more diverse than this, e. g. intersexuality. Moreover, post-structural feminists argue that a distinction between sex and gender cannot be maintained (Butler, 2006).
+                </p>
+                <p>Some binary models include an 
+                    <hi rend="bold">‘other’</hi> category, such as the specification for vCard (Perreault, 2011). TEI guidelines include vCard and ISO 5218 vocabularies as examples to use for values of the element &lt;sex&gt; (Text Encoding Initiative Consortium, 2021). However, being identified with a category of 
+                    <hi rend="bold">other</hi> can be a stigmatising experience as well as one of othering (Kronk et al., 2021; Puckett et al., 2020). Othering also occurs in Wikidata’s model, where a cis person’s gender is recorded as 
+                    <hi rend="bold">female</hi>, while a trans person’s gender is 
+                    <hi rend="bold">transgender female</hi>, thus drawing a distinction in gender between cis and trans individuals.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor xml:id="id_docs-internal-guid-0af029b3-7fff-4c4b-db4c-ad53858ea054"/>Introducing gender qualifiers
+                </head>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-744737c7-7fff-aae7-233e-3e42554b39f5"/>By distinguishing gender (with expressions such as 
+                    <hi rend="bold">female</hi>, 
+                    <hi rend="bold">male</hi>, 
+                    <hi rend="bold">non-binary</hi>, and more) from 
+                    <hi rend="bold">gender modality</hi>, a concept proposed by Ashley (pre-published) as an umbrella term that includes but is not limited to transgender and cisgender modalities, we make it possible for more precise information on a person’s gender. Nonetheless, we avoid using the term gender 
+                    <hi rend="bold">identity</hi>, because historical sources seldom include gender self-identification, but instead are based on presumed or ascribed gender. In order to create a reliable data basis, we believe it indispensable to make explicit how the gender-specific information was formulated. We therefore propose extending gender information with qualifying statements. The terminology assembled in the GSSO ontology (Kronk &amp; Dexheimer, 2020), which includes 
+                    <hi rend="bold">assumed</hi>,
+                    <note xml:id="ftn2" place="foot" n="2">assumed gender: ‘The assumption of a person’s gender based on any predefined characteristics and biases.’</note>
+                    <hi rend="bold">experienced</hi>
+                    <note xml:id="ftn3" place="foot" n="3">experienced gender: ‘The gender with which a person identifies.’</note> (we propose using the term 
+                    <hi rend="bold">self-identified</hi> instead), 
+                    <hi rend="bold">lived</hi>,
+                    <note xml:id="ftn4" place="foot" n="4">lived gender: ‘The gender in which an individual lives their everyday life. This is usually a combination of performance of expected gender roles and gender expression, and may not represent a person’s actual gender.’</note> and 
+                    <hi rend="bold">recorded</hi>
+                    <note xml:id="ftn5" place="foot" n="5">recorded gender: ‘Gender as recorded by any of various institutions, organisations, writings, etc.’</note> gender, appears especially suitable to this task. However, while the GSSO lists non-Western genders such as hijra, muxe and X-gender as ‘culturally specific’ non-binary gender identities (Kronk &amp; Dexheimer, 2020), we propose to instead place all gender instances on one level, countering the Eurocentrism in subsuming all genders under the concepts of non-binary and transgender (Kravitz, 2021).
+                </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Examples</head>
+                    <p>
+                        <anchor xml:id="id_docs-internal-guid-19a9984f-7fff-3b46-9285-a83f4e967d69"/>The qualifier value 
+                        <hi rend="bold">self-identified gender</hi> should only be used if there is evidence of the gender identity given by the respective persons themselves. This is more often the case with contemporary, non-historical individuals (Figure 1). But historical exceptions exist: 18th-century preacher Public Universal Friend (Figure 2), for instance, who publicly identified as being reborn genderless and requested to be referred to without pronouns from 1776 on (Moyer, 2015, pp. 12–13).
+                    </p>
+                    <p>Where there is no personal record available, the 
+                        <hi rend="bold">self-identified gender</hi> cannot be determined. Diné weaver and healer Hastiin Tł’a (1867–1937), for instance, was a nádleehi, a Diné Two-Spirit, or third-gendered person. According to Naruszewicz (2016, pp. 2–3), weaving and the ceremonial duties of healers were gendered activities within the Diné tribe, and only nádleehi were allowed to follow both. The fact that Tł’a was both suggests that Tł’a’s gender can be assumed as nádleehi (Figure 3). We suggest using 
+                        <hi rend="bold">assumed gender</hi> as a qualifier in this case and whenever there are only weak indicators (e.g. gendered pronouns, titles, occupations) available. This might also be the case when we are confronted with gender information derived from authority files, because there are no indicators available on how the information was determined in the first place.
+                    </p>
+                    <p>Sometimes a gender may be recorded, but the reliability of the record is questionable or sources are contradictory. Throughout his life, 19th-century politician Murray Hall (Figure 4), presented male and registered a male name upon migrating to the US. When he died, his body was examined and his gender was posthumously legally determined to be female (Nelson, 2014, pp. 137–145). National media ridiculed him as a ‘passing woman,’ a term that carried an accusation of deception and trickery. In a case like this, we suggest users of the model settle on an approach that allows marking some statements as preferred over others. In the Wikibase context, so-called ranks may be used to emphasise or de-emphasise statements of the same property: The statement of recorded gender being female should be assigned a rank of 
+                        <hi rend="bold">deprecated</hi> to highlight that 
+                        <hi rend="bold">lived gender</hi> and 
+                        <hi rend="bold">self-recorded gender</hi> are more credible sources than the official record. Colonial records should be treated in the same fashion, especially when dealing with terms employed by colonial administrations, missionaries or ethnographers. Records from Christian missionaries, for instance, do not ascribe Tł’a a nádleehi gender but rather that of ‘berdache,’ a derogatory colonial term (Naruszewicz, 2016, p. 12; Figure 3).
+                        <figure>
+                            <graphic url="Pictures/363d31c23fa1e6b35643f3b40760b32f.png"/>
+                            <head>Modelling examples for Laxmi Narayan Tripathi and Yuu Watase. Controversial hijra rights activist Tripathi has identified as transgender as well as hijra, which she has described as a kind of transgender identity. Due to its flexibility, our model allows entering both hijra and transgender as her gender modality. Manga artist Watase self-identifies being X-gender, but there is no information available on their gender modality.</head>
+                        </figure>
+                    </p>
+                    <p>
+                        <figure>
+                            <graphic url="Pictures/f3a4372eeda055a59a4fe9320b32bca3.png"/>
+                            <head>Modelling example for Public Universal Friend. Before the announcement, the Friend’s gender was recorded as female. However, the example is somehow exceptional: The Friend’s announcement is not retroactive in scope (i. e. the Friend has not always identified as genderless), but is valid from 1776 onward. The flexibility of the model allows us to add date qualifiers to the statement and thereby accurately record this special case.</head>
+                        </figure>
+                    </p>
+                    <p>
+                        <figure>
+                            <graphic url="Pictures/1fedcaba71568efffd45c6503c950192.png"/>
+                            <head>Modelling example for Hastiin Tł’a. A qualifier specifies nádleehi as assumed gender and berdache as recorded gender. A Wikibase rank is used to mark the inaccurate and offensive nature of the colonial term. Whether it is appropriate to enter the term at all is subject to discussion. With no information on how Tł’a self-identified, it is impossible to determine gender modality.</head>
+                        </figure>
+                    </p>
+                    <p>
+                        <figure>
+                            <graphic url="Pictures/89cdd0e4d7d95159f4110c5cbc673e2f.png"/>
+                            <head>Modelling example for Murray Hall. Our entry for Murray Hall identifies both female and male as values of gender. A qualifier specifies female to be a recorded gender, taking into account the fact that Hall was recorded as female upon death. The male value carries two gender qualifier values: lived and self-identified gender. This gives credit to the fact that census and naturalisation records contain information provided by Hall in person. Given the hostile ridicule that his dead body was subjected to, it is impossible to determine whether Hall was, in fact, trans, leaving gender modality undefined.</head>
+                        </figure>
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>
+                        <anchor xml:id="id_docs-internal-guid-8449c738-7fff-6428-009a-113d4bd76990"/>Querying
+                    </head>
+                    <p>
+                        <anchor xml:id="id_docs-internal-guid-e2dee691-7fff-e03f-fa16-9f4c2d4a7c30"/>One advantage of this approach is that a SPARQL query for persons and the value of their 
+                        <hi rend="bold">gender</hi> property returns valid and readable results. Using Wikibase, ranks may be applied to indicate the reliability of statements.
+                        <note xml:id="ftn6" place="foot" n="6">Although we chose Wikibase as a suitable environment for this task, we wish to highlight that our approach may also be adapted to other systems.</note> For instance, statements based on self-identification should be designated as preferred compared to statements that are based on records or assumptions. Queries would then, by default, only return the highest-ranked statements. Those wishing to go further in their analysis may explicitly query the gender qualifiers attached to a statement and receive the full range of nuances that the model is able to represent (Table 1).
+                    </p>
+                    <table rend="frame" xml:id="Table2">
+                        <row>
+                            <cell rend="center">Figure</cell>
+                            <cell>Item</cell>
+                            <cell>Gender</cell>
+                            <cell>Gender qualifier</cell>
+                            <cell>Rank</cell>
+                            <cell>Gender modality</cell>
+                        </row>
+                        <row>
+                            <cell rend="center">1</cell>
+                            <cell>Laxmi Narayan Tripathi</cell>
+                            <cell>hijra</cell>
+                            <cell>self-identified gender</cell>
+                            <cell>normal</cell>
+                            <cell>transgender</cell>
+                        </row>
+                        <row>
+                            <cell rend="center">1</cell>
+                            <cell>Yuu Watase</cell>
+                            <cell>X-gender</cell>
+                            <cell>self-identified gender</cell>
+                            <cell>normal</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell rend="center">2</cell>
+                            <cell>Public Universal Friend</cell>
+                            <cell>agender</cell>
+                            <cell>self-identified gender</cell>
+                            <cell>normal</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell rend="center">2</cell>
+                            <cell>Public Universal Friend</cell>
+                            <cell>female</cell>
+                            <cell>recorded gender</cell>
+                            <cell>normal</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell rend="center">3</cell>
+                            <cell>Hastiin Tł'a</cell>
+                            <cell>nádleehi</cell>
+                            <cell>assumed gender</cell>
+                            <cell>normal</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell rend="center">3</cell>
+                            <cell>Hastiin Tł'a</cell>
+                            <cell>berdache</cell>
+                            <cell>recorded gender</cell>
+                            <cell>deprecated</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell rend="center">4</cell>
+                            <cell>Murray Hall</cell>
+                            <cell>male</cell>
+                            <cell>lived gender</cell>
+                            <cell>normal</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell rend="center">4</cell>
+                            <cell>Murray Hall</cell>
+                            <cell>male</cell>
+                            <cell>self-identified gender</cell>
+                            <cell>normal</cell>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell rend="center">4</cell>
+                            <cell>Murray Hall</cell>
+                            <cell>female</cell>
+                            <cell>recorded gender</cell>
+                            <cell>deprecated</cell>
+                            <cell/>
+                        </row>
+                    </table>
+                    <p>Table 1. SPARQL query results for all examples made thus far, including all gender statements and qualifiers. Sorted by order of appearance. Note the inclusion of deprecated gender statements, which would be withheld automatically when only querying for the gender property.</p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Closing remarks and prospects</head>
+                <p>
+                    <anchor xml:id="id_docs-internal-guid-7cf23fab-7fff-04d7-c8e2-891f9c6e3bac"/>In order to represent gender in the context of formalised data environments, we propose a modelling strategy that allows one to make explicit how the gender information was formulated in the first place. This enables researchers to make more informed choices. We hope that by distinguishing between different qualities of gendered information, our model can challenge essentialised notions and make cultural, geographical and temporal positions on gender explicit. It can thereby function as a tool that sparks discussion, uncertainty and scholarly self-reflection.
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Amadiume, I.</hi> (2015). 
+                        <hi rend="italic">Male Daughters, Female Husbands: Gender and Sex in an African Society</hi>. 2nd ed. (Critique Influence Change). London: Zed Books.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Arondekar, A.</hi> (2009). 
+                        <hi rend="italic">For the Record: On Sexuality and the Colonial Archive in India</hi>. (Next Wave: New Directions in Women’s Studies). Durham: Duke University Press, doi:
+                        <ref target="https://doi.org/10.1515/9780822391029">10.1515/9780822391029</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ashley, F.</hi> ‘Trans’ is my gender modality: A modest terminological proposal. In Erickson-Schroth, L. (ed), 
+                        <hi rend="italic">Trans Bodies, Trans Selves</hi>. 2nd ed. Oxford University Press. [Preprint]. 
+                        <ptr target="https://www.florenceashley.com/uploads/1/2/4/4/124439164/florence_ashley_trans_is_my_gender_modality.pdf"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Betancourt, R.</hi> (2020). 
+                        <hi rend="italic">Byzantine Intersectionality: Sexuality, Gender, and Race in the Middle Ages</hi>. Princeton, NJ: Princeton University Press, doi:
+                        <ref target="https://doi.org/10.1515/9780691210889">10.1515/9780691210889</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Butler, J.</hi> (2006). 
+                        <hi rend="italic">Gender Trouble: Feminism and the Subversion of Identity</hi>. (Routledge Classics). New York: Routledge.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Cleves, R. H.</hi> (2014). Beyond the binaries in early America: Special issue introduction. 
+                        <hi rend="italic">Early American Studies</hi>, 
+                        <hi rend="bold">12</hi>(3). University of Pennsylvania Press: 459–68.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ćosić, M., Dollinger, J., Isop, U. and Leibetseder, D.</hi> (2014). Gegenkulturelle Archive jenseits von Familie und Geschlecht. In Guggenheimer, J., Isop, U., Leibetseder, D. and Mertlitsch, K. (eds), 
+                        <hi rend="italic">»When we were gender...« – Geschlechter erinnern und vergessen</hi>, vol. 5. Bielefeld: transcript Verlag, pp. 245–72 doi:
+                        <ref target="https://doi.org/10.1515/transcript.9783839423974.245">10.1515/transcript.9783839423974.245</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Deutsche Nationalbibliothek</hi> (2019a). GND Gender 
+                        <ptr target="https://d-nb.info/standards/vocab/gnd/gender_20191015"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Deutsche Nationalbibliothek</hi> (2019b). GND Ontology 
+                        <ptr target="https://d-nb.info/standards/elementset/gnd_20191015"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Feinberg, L.</hi> (1996). 
+                        <hi rend="italic">Transgender Warriors: Making History from Joan of Arc to RuPaul</hi>. Boston, MA: Beacon Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Flanders, J. and Jannidis, F.</hi> (2015). Knowledge organization and data modeling in the humanities. 
+                        <ptr target="https://nbn-resolving.org/urn:nbn:de:bvb:20-opus-111270"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Herdt, G. H. (ed).</hi> (1994). 
+                        <hi rend="italic">Third Sex, Third Gender: Beyond Sexual Dimorphism in Culture and History</hi>. New York: Zone Books.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hinchy, J.</hi> (2020). 
+                        <hi rend="italic">Governing Gender and Sexuality in Colonial India: The Hijra, c. 1850–1900</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">International Organization for Standardization</hi> (2004). 
+                        <hi rend="italic">ISO/IEC 5218:2004</hi>. 
+                        <ptr target="https://www.iso.org/standard/36266.html"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kravitz, M.</hi> (2021). Are pre-colonial genders inherently ‘nonbinary’ or ‘transgender’? 
+                        <hi rend="italic">An Injustice!</hi>
+                        <ptr target="https://aninjusticemag.com/are-pre-colonial-genders-inherently-nonbinary-or-transgender-9667459e7574"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kronk, C. A. and Dexheimer, J. W.</hi> (2020). Development of the Gender, Sex, and Sexual Orientation ontology: Evaluation and workflow. 
+                        <hi rend="italic">Journal of the American Medical Informatics Association</hi>, 
+                        <hi rend="bold">27</hi>(7): 1110–15 doi:
+                        <ref target="https://doi.org/10.1093/jamia/ocaa061">10.1093/jamia/ocaa061</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kronk, C. A., Everhart, A. R., Ashley, F., Thompson, H. M., Schall, T. E., Goetz, T. G., Hiatt, L., et al.</hi> (2021). Transgender data collection in the electronic health record: Current concepts and issues. 
+                        <hi rend="italic">Journal of the American Medical Informatics Association</hi> doi:
+                        <ref target="https://doi.org/10.1093/jamia/ocab136">10.1093/jamia/ocab136</ref>. 
+                        <ptr target="https://academic.oup.com/jamia/advance-article/doi/10.1093/jamia/ocab136/6364772"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mauriello, M.</hi> (2019). Corpi dissonanti: note su gender variance e sessualità. Il caso dei femminielli napoletani. 
+                        <hi rend="italic">Archivio antropologico mediterraneo</hi>. Dipartimento Culture e Società - Università di Palermo doi:
+                        <ref target="https://doi.org/10.4000/aam.706">10.4000/aam.706</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mirandé, A.</hi> (2016). Hombres mujeres: An indigenous third gender. 
+                        <hi rend="italic">Men and Masculinities</hi>, 
+                        <hi rend="bold">19</hi>(4). Los Angeles, CA: SAGE Publications: 384–409 doi:
+                        <ref target="https://doi.org/10.1177/1097184X15602746">10.1177/1097184X15602746</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Moyer, P. B.</hi> (2015). 
+                        <hi rend="italic">The Public Universal Friend: Jemima Wilkinson and Religious Enthusiasm in Revolutionary America</hi>. Ithaca, N.Y: Cornell University Press, doi:
+                        <ref target="https://doi.org/10.7591/9781501701450">10.7591/9781501701450</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Naruszewicz, C. J.</hi> (2016). Beyond binary: Navajo alternative genders throughout history. 
+                        <ptr target="https://hdl.handle.net/11244/325130"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Neil, C. and Garcia, J.</hi> (2009). 
+                        <hi rend="italic">Philippine Gay Culture: Binabae to Bakla, Silahis to MSM</hi>. Hong Kong: Hong Kong University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Nelson, L.</hi> (2014). Reanimating archiving/archival corporealities: Deploying ‘big ears’ in de rigueur mortis intervention. 
+                        <hi rend="italic">QED: A Journal in GLBTQ Worldmaking</hi>, 
+                        <hi rend="bold">1</hi>(2). Michigan State University Press: 132–59 doi:
+                        <ref target="https://doi.org/10.14321/qed.1.2.0132">10.14321/qed.1.2.0132</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Perreault, S.</hi> (2011). 
+                        <hi rend="italic">VCard Format Specification</hi>. (Request for Comments). RFC Editor doi:
+                        <ref target="https://doi.org/10.17487/RFC6350">10.17487/RFC6350</ref>. 
+                        <ptr target="https://rfc-editor.org/rfc/rfc6350.html"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Puckett, J. A., Brown, N. C., Dunn, T., Mustanski, B. and Newcomb, M. E.</hi> (2020). Perspectives from transgender and gender diverse people on how to ask about gender. 
+                        <hi rend="italic">LGBT Health</hi>, 
+                        <hi rend="bold">7</hi>(6): 305–11 doi:
+                        <ref target="https://doi.org/10.1089/lgbt.2019.0295">10.1089/lgbt.2019.0295</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Roscoe, W.</hi> (1998). 
+                        <hi rend="italic">Changing Ones: Third and Fourth Genders in Native North America</hi>. 1. ed. New York: StMartin’s Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Scroll.in</hi> (2016). Why I chose to become a hijra: Laxmi in her own words Text 
+                        <hi rend="italic">Scroll.In</hi>
+                        <ptr target="http://scroll.in/article/814182/why-i-chose-to-become-a-hijra-laxmi-in-her-own-words"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Slater, S. and Yarbrough, F. A. (eds).</hi> (2011). 
+                        <hi rend="italic">Gender and Sexuality in Indigenous North America, 1400–1850</hi>. Columbia, S.C: University of South Carolina Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Text Encoding Initiative Consortium</hi> (2021). TEI element &lt;sex&gt; 
+                        <hi rend="italic">P5: Guidelines for Electronic Text Encoding and Interchange</hi>
+                        <ptr target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-sex.html"/>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Describing Handwriting in Context</title>
+                <author>
+                    <persName>
+                        <surname>Stokes</surname>
+                        <forename>Peter Anthony</forename>
+                    </persName>
+                    <affiliation>École Pratique des Hautes Études – Université PSL, France</affiliation>
+                    <email>peter.stokes@ephe.psl.eu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T07:03:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>palaeography</term>
+                    <term>modelling</term>
+                    <term>manuscripts</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>data modeling</term>
+                    <term>manuscripts description</term>
+                    <term>representation</term>
+                    <term>and analysis</term>
+                    <term>Book and print history</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>A number of papers have been given at the ADHO conferences and elsewhere regarding the modelling of writing, one of which is the Archetype model for palaeographical analysis (Diehr et al., 2018; Stokes, 2012; Stokes, 2018). As well as its implementation in the Archetype framework, this model has also been aligned to the CIDOC-CRM and CRMtex extension and then implemented in OWL (based on the Erlangen version 7.1.1), an extract of which is shown below. Although useful, this model (and indeed most others) treat the signs in written communication as distinct entities: they address the selection of a particular sign amongst a set of possible options, but they pay little or no explicit attention to the relationships between signs in a given piece of writing. In Structuralist terms, they focus primarily or exclusively on the paradigmatic aspect, but do not address the syntagmatic relations. This paper will therefore discuss some use cases and possible responses.</p>
+            <figure>
+                <graphic n="1001" width="15.991416666666666cm" height="7.378347222222223cm" url="Pictures/67e9a9341ab9619a7295b928d2dded8c.png" rend="inline"/>
+                <head>Extract of the Archetype model of handwriting aligned to CIDOC-CRM and CRMtex (Stokes, 2021; Stokes, forthcoming).</head>
+            </figure>
+            <p>For Archetype, the system is designed primarily for palaeographical analysis such as the distribution of allographs by a given scribe (Brookes et al., 2015), but the choice of allographs is largely or even entirely determined by context such as the position in a word or the formality of the script (Morison, 1972), and the way in which a letter is written will often be influenced by that which immediately precedes or follows it, so an effective model should take this into account.
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> For the use of ‘allograph’, ‘idiograph’ and ‘graph’ in this discussion, see Stokes (2012) drawing on Davis (2007).</p>
+                </note>
+            </p>
+            <p>Another important use-case is meaning and disambiguation. As Robinson has pointed out (2009: 42–43), most examples of 
+                <hi rend="bold">i</hi> in medieval manuscripts do not comprise ‘a line with a dot over it’, but we recognise it anyway; however, this recognition depends in part on the linguistic context, and because we compare it with other nearby signs and adjust our expectations accordingly. This ambiguity is relatively common in practice, particularly in multigraphic contexts (for examples and discussion see e.g. Coueignoux, 1983: 61; Bugarski, 1993; Pierazzo, 2015; Stokes, 2018) and again suggests the need to model syntagmatic relationships. 
+            </p>
+            <figure>
+                <graphic n="1002" width="7.337777777777778cm" height="2.046111111111111cm" url="Pictures/e696e70abe1584b18e1ffd043e28b5d2.jpg" rend="inline"/>
+                <head>Ambiguity in script: the word reads 'indecatur', but the 
+                    <hi rend="bold">a</hi> is indistinguishable from two 
+                    <hi rend="bold">c</hi>s (Pierazzo, 2015: 87). St Gallen Stiftsbibliothek MS 189, p. 76 (detail).
+                </head>
+            </figure>
+            <p>A third and very large case the function of signs. As Klinkenberg and Polis (2019: 68 ff.) and others have discussed, graphemic function is often relational, whether paradigmatic or syntagmatic. One example of a syntagmatic relational function is found in alphabetic systems, where letters often influence or determine the phonetic value of others. In English, for example, the pronunciation of the &lt;a&gt; in 
+                <hi rend="italic">hate</hi> is partly determined by the following &lt;e&gt; (contrast 
+                <hi rend="italic">hat</hi>). In some cases such as French, letters indicate the grammatical accord or function of words even when they are not pronounced (Klinkenberg and Polis, 2019: 85): contrast 
+                <hi rend="italic">il mange</hi> and 
+                <hi rend="italic">ils mangent</hi>. Punctuation and features such as underlining or italic also function syntagmatically, modifying the sense and/or pronunciation of that which follows and/or precedes them. Similarly, Anis (1983: 33–34) proposed graphematic supra-segmentals to describe elements in print such as italics when they are graphematically distinctive (contrast ‘dating 
+                <hi rend="italic">Beowulf</hi>’ with ‘dating Beowulf’). Determinants in writing-systems such as Egyptian hieroglyphics and Sumerian cuneiform also operate at this level, since the sign is usually at the start or end of a word but establishes the reading for that word, in terms of meaning and also often in sound. Finally, in some systems such as Japanese 
+                <hi rend="italic">kanji</hi>, the pronunciation and meaning of a sign can change dramatically depending on its context.
+            </p>
+            <figure>
+                <graphic n="1003" width="4.686480555555556cm" height="3.4663305555555555cm" url="Pictures/01c4e090a1b1be70e67e577368beaaad.jpg" rend="inline"/>
+                <head>Figure 3: Determinatives in Egyptian hieroglyphics (Klinkenberg, 2005: 178). The two words have the same pronunciation, but different determinatives (‘human’ and ‘enemy’).</head>
+            </figure>
+            <p>Finally, the cases so far all assume linear or ‘chronosyntactic’ writing, but one also finds ‘toposyntactic’ cases where meaning is determined in part by the spatial relationship between signs (Klinkenberg, 1996; Klinkenberg, 2005: esp. 190-95). This is particularly the case in Egyptian hieroglyphs (Polis, 2018) but can be found even in alphabetic scripts, tables being an obvious example (see Pierazzo and Stokes, 2011, for some others).</p>
+            <p>The question, then, is how to model these relationships. The most obvious is through graph or network models, where relationships can be explicitly recorded. For Archetype, this would comprise different types of relationships between instances of arch:Ontograph (essentially generalised graphemes: see Stokes, 2021). For instance an arch:Ontograph 
+                <hi rend="italic" xml:space="preserve">modifies phonology of </hi>other arch:Ontographs; a determinant arch:Ontograph 
+                <hi rend="italic">modifies signification of</hi> the other arch:Ontographs in the same word; and so on. The example of “dating 
+                <hi rend="italic">Beowulf</hi>” is less clear, and here Anis’ concept of the suprasegmental grapheme (or arch:Ontograph) seems necessary; an arch:Suprasegmental_Ontograph then groups instances of arch:Ontographs and is itself associated with a given function or other indicator. A similar approach can be used to indicate other factors, such as the language of a text or even the script (or formality of) where that is relevant. However, this raises difficulties over the distinction between the graph, the allograph, and the grapheme. CRMtex is clear that the style of script (TX10 Style) is associated with a physical instance of writing (TX7 Written Segment: Murano et al., 2020: 20–22), and this seems correct insofar as graphemes are by definition independent of details such as style. However, CRMtex does not consider allographs or idiographs, and style (and other suprasegmental markers) are at least partly also associated with these. This then suggests several types of suprasegmental, each of which specifies syntagmatic relationships between letters but at different levels of ‘letter’: denotative for the grapheme, connotative for the allograph and graph, topological for the graph, and so on (see also Monella, 2020a; Monella, 2020b for denotation and connontation in this context).
+            </p>
+            <p>The conceptual model proposed here is undoubtedly complex and probably too unwieldy for most practical purposes. It is also far from complete and has its own limitations. However, it is offered as a step towards a common conceptual model for handwriting that would allow for the mapping of different projects and datasets, and, perhaps more importantly, could provide a framework for analysis and comparison of different scripts in different alphabets and writing systems. In addition, such modelling has already proven important in the refining and increasing precision in the fraught subject of palaeographical terminology and descriptions (Stokes, 2015). To paraphrase Donald Knuth (1982: 5), the process of trying to produce as complete a conceptual model as possible is surely instructive to all concerned.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Anis, J.</hi> (1983). Pour une graphématique autonome. 
+                        <hi rend="italic">Langue française</hi>, 
+                        <hi rend="bold">59</hi>(1): 31–44 doi:10.3406/lfr.1983.5164.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Brookes, S., Stokes, P. A., Watson, M. and Matos, D. M. D.</hi> (2015). The DigiPal Project for European Scripts and Decorations. In Conti, A., Da Rold, O. and Shaw, P. A. (eds), 
+                        <hi rend="italic">Writing Europe 500–1450: Texts and Contexts</hi>. Woodbridge: D. S. Brewer, pp. 25–58 
+                        <ref target="http://www.jstor.org/stable/10.7722/j.ctt17mvjbg.9">www.jstor.org/stable/10.7722/j.ctt17mvjbg.9</ref> (accessed 22 October 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bugarski, R.</hi> (1993). Graphic relativity and linguistic constructs. In Scholes, R. J. (ed), 
+                        <hi rend="italic">Literacy and Language Analysis</hi>. London: Routledge, pp. 5–18.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Coueignoux, P.</hi> (1983). Approche structurelle de la lettre. 
+                        <hi rend="italic">Langue française</hi>, 
+                        <hi rend="bold">59</hi>(1): 45–67 doi:
+                        <ref target="http://dx.doi.org/10.3406/lfr.1983.5165">10.3406/lfr.1983.5165</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Davis, T.</hi> (2007). The Practice of Handwriting Identification. 
+                        <hi rend="italic">The Library: The Transactions of the Bibliographical Society</hi>, 
+                        <hi rend="bold">8</hi>(3): 251–76.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Diehr, F., Gronemeyer, S., Prager, C., Wagner, E., Diederichs, K., Grube, N. and Brodhun, M.</hi> (2018). Organising the Unknown: A Concept for the Sign Classification of not yet (Fully) Deciphered Writing Systems Exemplified by a Digital Sign Catalogue for Maya Hieroglyphs. 
+                        <hi rend="italic">Digital Humanities 2018 Book of Abstracts</hi>. Mexico City: Red de Humanidades Digitales A. C. 
+                        <ref target="https://dh2018.adho.org/en/organising-the-unknown-a-concept-for-the-sign-classification-of-not-yet-fully-deciphered-writing-systems-exemplified-by-a-digital-sign-catalogue-for-maya-hieroglyphs/">https://dh2018.adho.org/en/organising-the-unknown-a-concept-for-the-sign-classification-of-not-yet-fully-deciphered-writing-systems-exemplified-by-a-digital-sign-catalogue-for-maya-hieroglyphs/</ref> (accessed 6 December 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Klinkenberg, J.-M.</hi> (1996). 
+                        <hi rend="italic">Précis de Sémiotique Générale</hi>. De Boeck Université.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Klinkenberg, J.-M.</hi> (2005). Vers une typologie générale des fonctions de l’écriture. De la linéarité à la spatialité. 
+                        <hi rend="italic">Bulletin de La Classe Des Lettres</hi>, 
+                        <hi rend="bold">1–6</hi>: 157–96.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Klinkenberg, J.-M. and Polis, S.</hi> (2019). Les fonctions de l’écriture : un modèle général Liège 
+                        <ref target="https://orbi.uliege.be/handle/2268/241566">https://orbi.uliege.be/handle/2268/241566</ref> (accessed 27 November 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Knuth, D. E.</hi> (1982). The Concept of a Meta-Font. 
+                        <hi rend="italic">Visible Language</hi>, 
+                        <hi rend="bold">16</hi>(1): 3–27.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Monella, P.</hi> (2020a). An Ontology for Digital Graphematics and Philology Wuppertal 
+                        <ref target="http://www1.unipa.it/paolo.monella/wuppertal2020/">http://www1.unipa.it/paolo.monella/wuppertal2020/</ref> (accessed 2 October 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Monella, P.</hi> (2020b). Un’ontologia della grafematica per la filologia digitale Siena 
+                        <ref target="http://www1.unipa.it/paolo.monella/siena2020/">http://www1.unipa.it/paolo.monella/siena2020/</ref> (accessed 2 October 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Morison, S.</hi> (1972). 
+                        <hi rend="italic">Politics and Script: Aspects of Authority and Freedom in the Development of Graeco-Latin Script from the Sixth Century B.C. to the Twentieth Century</hi>. (Edited and Completed by N. Barker, The Lyell Lectures, 1957). Oxford: Clarendon Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Murano, F., Felicetti, A. and Doerr, M.</hi> (2020). 
+                        <hi rend="italic">Definition of the CRMtex: An Extension of CIDOC CRM to Model Ancient Textual Entities</hi>. Version 1.0. ICOM-CIDOC 
+                        <ref target="http://www.cidoc-crm.org/crmtex/sites/default/files/CRMtex_v1.0_March_2020.pdf">http://www.cidoc-crm.org/crmtex/sites/default/files/CRMtex_v1.0_March_2020.pdf</ref> (accessed 18 September 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pierazzo, E.</hi> (2015). 
+                        <hi rend="italic">Digital Scholarly Editing: Theories, Models and Methods</hi>. Farnham, Surrey, UK ; Burlington, VT: Ashgate.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pierazzo, E. and Stokes, P. A.</hi> (2011). Putting the Text back into Context: A Codicological Approach to Manuscript Transcription. In Fischer, F., Fritze, C. and Vogeler, G. (eds), 
+                        <hi rend="italic">Kodikologie und Paläographie im digitalen Zeitalter 2 - Codicology and Palaeography in the Digital Age 2</hi>, vol. 3. Norderstedt: Books on Demand (BoD), pp. 397–429.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Polis, S.</hi> (2018). The Functions and Toposyntax of Ancient Egyptian Hieroglyphs: Exploring the Iconicity and Spatiality of Pictorial Graphemes. 
+                        <hi rend="italic">Signata</hi>(9): 291–363. doi:
+                        <ref target="http://dx.doi.org/10.4000/signata.1920">10.4000/signata.1920</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Robinson, P. M. W.</hi> (2009). What Text Really is Not, and Why Editors have to Learn to Swim. 
+                        <hi rend="italic">Literary and Linguistic Computing</hi>, 
+                        <hi rend="bold">24</hi>(1): 41–52 doi:
+                        <ref target="http://dx.doi.org/10.1093/llc/fqn030">10.1093/llc/fqn030</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stokes, P. A.</hi> (2012). Modelling Medieval Handwriting: A New Approach to Digital Palaeography. In Meister, J. C., Schönert, K., Lomsché, B., Schernus, W., Schüch, L. and Stegkemper, M. (eds), 
+                        <hi rend="italic">DH2012 Book of Abstracts</hi>. Hamburg: Hamburg University Press, pp. 382–85.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stokes, P. A.</hi> (2015). Digital approaches to paleography and book history: some challenges, present and future. 
+                        <hi rend="italic">Frontiers in Digital Humanities</hi>, 
+                        <hi rend="bold">2</hi>(5). doi:
+                        <ref target="http://dx.doi.org/10.3389/fdigh.2015.00005">10.3389/fdigh.2015.00005</ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stokes, P. A.</hi> (2018). Modelling Multigraphism: The Digital Representation of Multiple Scripts and Alphabets. In Palau, J. G. and Russell, I. G. (eds), 
+                        <hi rend="italic">Digital Humanities 2018 Book of Abstracts</hi>. Mexico City: Red de Humanidades Digitales A. C., pp. 292–96.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stokes, P. A.</hi> (2021). 
+                        <hi rend="italic">The Archetype Ontology</hi>. doi:
+                        <ref target="http://dx.doi.org/10.5281/zenodo.5771601">10.5281/zenodo.5771601</ref>. 
+                        <ref target="https://github.com/pastokes/archetype-ontology">https://github.com/pastokes/archetype-ontology</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stokes, P. A.</hi> (forthcoming). Aligning Archetype: Towards a Formal Model for a Transversal Palaeography. 
+                        <hi rend="italic">COMSt Bulletin</hi>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

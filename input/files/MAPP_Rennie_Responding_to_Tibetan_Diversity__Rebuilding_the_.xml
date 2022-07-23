@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Responding to Tibetan Diversity: Rebuilding the Mandala Scholarly Content Management System </title>
+                <author>
+                    <persName>
+                        <surname>Mapp</surname>
+                        <forename>Rennie</forename>
+                    </persName>
+                    <affiliation>U of Virginia, United States of America</affiliation>
+                    <email>mapp@virginia.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Shinozaki</surname>
+                        <forename>Yuji</forename>
+                    </persName>
+                    <affiliation>U of Virginia, United States of America</affiliation>
+                    <email>ys2n@virginia.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gunn</surname>
+                        <forename>Stan</forename>
+                    </persName>
+                    <affiliation>U of Virginia, United States of America</affiliation>
+                    <email>stg2s@virginia.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-26T21:07:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Tibet</term>
+                    <term>Linked Data</term>
+                    <term>ontology</term>
+                    <term>collection</term>
+                    <term>cultural heritage</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>data modeling</term>
+                    <term>linked (open) data</term>
+                    <term>Ethnography and folklore</term>
+                    <term>Theology and religious studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="bold">Introduction:</hi> Mandala is a longstanding Digital Humanities project at the University of Virginia that contains significant Tibetan-Himalayan cultural heritage materials, as well as custom software tools and an ontology framework. As of 2021, a UVA Library development team is undertaking the restructuring and updating of the Mandala ontology framework, focusing on bringing Mandala’s original metadata schema into alignment with other open-access schemata for cultural heritage materials through the adoption of linked data and the creation of an ontology-builder user interface (UI). Our team’s poster presents a roadmap of the ontology redevelopment process, identifies particular challenges associated with the current “Mandala Knowledge Maps” ontology and the Tibetan-Himalayan materials it describes, and offers an overview of the planned UI, which we hope to make generally useful for digital cultural heritage research.
+            </p>
+            <p>
+                <hi rend="bold">Background:</hi> Mandala is one of the world’s richest and most diverse digital collections of Tibetan and Himalayan culture, with resources for the general public, literary scholars, anthropologists, archeologists, and other researchers and educators. Over the last three decades, under the leadership of Professor David Germano, Mandala has been documenting this culture with textual editions, translations, dictionaries, and encyclopedias, as well as audio-video recordings of oral traditions, music, histories, philosophies, environmental knowledge, and more. Mandala also stores many thousands of photographic images of cultural activities, architecture, art, and the physical environment, and ontologies of various cultural subjects, as well as extensive data on geographical features. Mandala’s descriptive ontology, called “Knowledge Maps” (or Mandala KMaps), was first developed in the early 2000s. Professor Germano and his colleague in the Tibet Center, Andres Montano, developed ontologies to describe geographic locations over time, topic maps (subjects), and Tibetan terms. This sophisticated and rich ad hoc ontology has been developed over decades. However,  the current architecture does not employ open standards, and thus remains somewhat limited in its openness and reusability.
+            </p>
+            <p>
+                <hi rend="bold">Project Goals:</hi> Mandala’s cultural heritage assets and the framework that supports them are now sponsored by the University of Virginia Library’s Information Technology Department, which is undertaking to ensure that these digital assets are preserved in a sustainable way. The Mandala 2.0 team is developing a readily accessible and reproducible descriptive framework so that these valuable resources are available more broadly, using standardized technologies: under consideration are RDF, Wikidata and Linked Open Data more generally. The team also plans to create a user interface to enable researchers new to ontology-building to create and manage new metadata schemata describing their research in the humanities and humanistic social sciences. The Mandala 2.0 Project is managed by Rennie Mapp, with Yuji Shinozaki as Technical Director and Stan Gunn as Executive Director of UVA Library IT. 
+            </p>
+            <p>
+                <hi rend="bold">Poster Contents:</hi> The poster will include a structural diagram of the current Mandala technology stack; a diagram of the proposed structure for Mandala 2.0; examples of the current KMaps ontology structures; a table of standard, open technology frameworks for ontology building under consideration, along with advantages and disadvantages for each; a timeline for development; and short narratives to describe the project’s past and proposed future. 
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Cimiano, Philipp, et al. (2020). 
+                        <hi rend="italic">Linguistic Linked Data Representation, Generation and Applications</hi>. Springer International Publishing.
+                    </bibl>
+                    <bibl>Cobb, Joan (2015). “The Journey to Linked Open Data: The Getty Vocabularies.” Journal of Library Metadata, vol. 15, no. 3/4, July 2015, pp. 142–156. EBSCOhost, doi:10.1080/19386389.2015.1103081.</bibl>
+                    <bibl>Chanhom, Weeraphan, and Chutiporn Anutariya (2019). “TOMS: A Linked Open Data System for Collaboration and Distribution of Cultural Heritage Artifact Collections of National Museums in Thailand.” 
+                        <hi rend="italic">New Generation Computing</hi>, vol. 37, no. 4, Dec. 2019, pp. 479–498. EBSCOhost, doi:10.1007/s00354-019-00063-1.
+                    </bibl>
+                    <bibl>Nurmikko-Fuller, Terhi (2018). “Publishing Sumerian Literature on the Semantic Web.” 
+                        <hi rend="italic">CyberResearch on the Ancient Near East and Neighboring Regions: Case Studies on Archaeological Data, Objects, Texts, and Digital Archiving</hi>, edited by Vanessa Bigot Juloux et al., Brill, 2018, pp. 336–64, 
+                        <ref target="http://www.jstor.org/stable/10.1163/j.ctv4v349g.20">
+                            <hi rend="underline color(1155CC)">http://www.jstor.org/stable/10.1163/j.ctv4v349g.20</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl>Robledano-Arillo, Jesús, et al (2020). “Application of Linked Open Data to the Coding and Dissemination of Spanish Civil War Photographic Archives.” 
+                        <hi rend="italic">Journal of Documentation</hi>, vol. 76, no. 1, Jan. 2020, pp. 67–95. EBSCOhost, doi:10.1108/JD-06-2019-0112.
+                    </bibl>
+                    <bibl>Wikisource contributors (2019). "ARL White Paper on Wikidata Opportunities and Recommendations." Wikisource . Wikisource , 15 May. 2019. Web. 7 Dec. 2021.</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Measuring Keyness</title>
+                <author>
+                    <persName>
+                        <surname>Evert</surname>
+                        <forename>Stephanie</forename>
+                    </persName>
+                    <affiliation>FAU Erlangen-Nürnberg, Germany</affiliation>
+                    <email>stephanie.evert@fau.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-18T13:51:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>keyness</term>
+                    <term>corpus linguistics</term>
+                    <term>methodology</term>
+                    <term>statistics</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>concordancing and indexing</term>
+                    <term>text mining and analysis</term>
+                    <term>Linguistics</term>
+                    <term>Statistics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Keywords in corpus linguistics and DH</head>
+                <p style="text-align: left; ">In corpus linguistics, the notion of 
+                    <hi rend="bold">keywords</hi> refers to words (and sometimes also multiword units, semantic categories or lexico-grammatical constructions) that “occur with unusual frequency in a given text” (Scott, 1997: 236) or a text collection, i.e. a corpus. Keywords are deemed to represent the characteristic vocabulary of the target text or corpus and thus have many applications in corpus linguistics, digital humanities and computational social science. They can capture the aboutness of a text (Scott, 1997), the terminology of a text genre or technical domain (Paquot and Bestgen, 2009), important aspects of literary style (Culpeper, 2009), linguistic and cultural differences (Oakes and Farrow, 2006), etc.; they give insight into historical perspectives (Fidler and Cvrček, 2015) and provide a basis for measuring the similarity of text collections (Rayson and Garside, 2000). Keywords are also an important starting point for corpus-based discourse analysis (Baker, 2006), where manually formed clusters of keywords represent central topics, actors, metaphors, and framings (e.g. McEnery et al., 2015). Since this process is guided from the outset by human understanding, it provides a more interpretable alternative to topic models in hermeneutic text analysis.
+                </p>
+                <p style="text-align: left; ">Keywords are usually operationalised in terms of a statistical frequency comparison between the 
+                    <hi rend="bold">target corpus</hi> and a 
+                    <hi rend="bold">reference corpus</hi>. Different research questions can be addressed depending on the particular constellation of target 
+                    <hi rend="italic">T</hi> and reference 
+                    <hi rend="italic">R</hi>, e.g. (i) 
+                    <hi rend="italic">T</hi> = a single text vs. 
+                    <hi rend="italic">R</hi> = a text collection (
+                    <hi rend="math">➞</hi> aboutness), (ii) 
+                    <hi rend="italic">T</hi> and 
+                    <hi rend="italic">R</hi> = collections of articles on the same topic in left-leaning and right-leaning newspapers (
+                    <hi rend="math">➞</hi> contrastive framings), or (iii) 
+                    <hi rend="italic">T</hi> = texts from a given domain or genre vs. 
+                    <hi rend="italic">R</hi> = a large general-language reference corpus (
+                    <hi rend="math">➞</hi> terminology).
+                </p>
+                <p style="text-align: left; ">Although keyword analysis is a well-established approach and has been implemented in many standard corpus-linguistic software tools such as WordSmith
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p rend="footnote text">
+                            <ref target="https://www.lexically.net/wordsmith/">https://www.lexically.net/wordsmith/</ref>
+                        </p>
+                    </note>, AntConc
+                    <note place="foot" xml:id="ftn2" n="2">
+                        <p rend="footnote text">
+                            <ref target="https://www.laurenceanthony.net/software/antconc/">https://www.laurenceanthony.net/software/antconc/</ref>
+                        </p>
+                    </note>, SketchEngine
+                    <note place="foot" xml:id="ftn3" n="3">
+                        <p rend="footnote text">
+                            <ref target="https://www.sketchengine.eu/">https://www.sketchengine.eu/</ref>
+                        </p>
+                    </note>, and CQPweb (Hardie, 2012), it is still unclear what the “right” way of measuring keyness is (see overview in Hardie, 2014). In this paper, I propose (i) a mathematically well-founded 
+                    <hi rend="bold">best-practice technique</hi> and (ii) introduce a 
+                    <hi rend="bold">visual approach</hi> for exploring the empirical properties of different keyness measures.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Keyness measures</head>
+                <p style="text-align: left; ">Keyword analysis is operationalised as a comparison of relative frequencies: For each 
+                    <hi rend="bold">candidate</hi> word, its frequency 
+                    <hi rend="italic">f</hi>
+                    <hi rend="subscript">1</hi> in a target corpus 
+                    <hi rend="italic">T</hi> of 
+                    <hi rend="italic">n</hi>
+                    <hi rend="subscript">1</hi> tokens is compared to its frequency 
+                    <hi rend="italic">f</hi>
+                    <hi rend="subscript">2</hi> in a reference corpus 
+                    <hi rend="italic">R</hi> of 
+                    <hi rend="italic">n</hi>
+                    <hi rend="subscript">2</hi> tokens. The candidate set of 
+                    <hi rend="italic">m</hi> items typically includes words that only occur in the target corpus (
+                    <hi rend="italic">f</hi>
+                    <hi rend="subscript">2</hi> = 0).
+                </p>
+                <p style="text-align: left; ">A candidate is considered a (“positive”) keyword if its relative frequency 
+                    <hi rend="italic">p</hi>
+                    <hi rend="subscript">1</hi> = 
+                    <hi rend="italic">f</hi>
+                    <hi rend="subscript">1</hi> / 
+                    <hi rend="italic">n</hi>
+                    <hi rend="subscript">1</hi> in 
+                    <hi rend="italic">T</hi> is substantially higher than its relative frequency 
+                    <hi rend="italic">p</hi>
+                    <hi rend="subscript">2</hi> = 
+                    <hi rend="italic">f</hi>
+                    <hi rend="subscript">2</hi> / 
+                    <hi rend="italic">n</hi>
+                    <hi rend="subscript">2</hi> in 
+                    <hi rend="italic">R</hi>. A large number of 
+                    <hi rend="bold">keyness measures</hi> have been proposed to quantify the comparison and thus provide a basis for a ranking of the candidates and/or cut-off thresholds. Three main groups of measures can be distinguished:
+                </p>
+                <list type="ordered">
+                    <item>Measures based on 
+                        <hi rend="bold">hypothesis tests</hi> put the focus on establishing a statistically significant difference between 
+                        <hi rend="italic">p</hi>
+                        <hi rend="subscript">1</hi> and 
+                        <hi rend="italic">p</hi>
+                        <hi rend="subscript">2</hi>. The most widely-used measures are chi-squared 
+                        <hi rend="italic">X</hi>
+                        <hi rend="superscript">2</hi> and log-likelihood 
+                        <hi rend="italic">G</hi>
+                        <hi rend="superscript">2</hi> (Dunning, 1993). These measures are biased towards high-frequency keywords, often including function words and other non-specific words.
+                    </item>
+                    <item>
+                        <hi rend="bold">Effect size</hi> measures instead focus on how many times more frequent a candidate is in 
+                        <hi rend="italic">T</hi> than in 
+                        <hi rend="italic">R</hi>. The most intuitive measure is relative risk 
+                        <hi rend="italic">r</hi> = 
+                        <hi rend="italic">p</hi>
+                        <hi rend="subscript">1</hi> / 
+                        <hi rend="italic">p</hi>
+                        <hi rend="subscript">2</hi>, also known as LogRatio = log
+                        <hi rend="subscript">2</hi>
+                        <hi rend="italic">r</hi> (Hardie, 2014). Some other effect-size measures are equivalent (%DIFF, Gabrielatos and Marchi, 2012) or closely related (odds ratio, Pojanapunya and Watson Todd, 2018) to LogRatio. These measures are biased towards very low-frequency keywords and are often combined with an additional significance filter (typically based on 
+                        <hi rend="italic">G</hi>
+                        <hi rend="superscript">2</hi>).
+                    </item>
+                    <item>Various 
+                        <hi rend="bold">heuristic</hi> measures lack any statistical foundation. They are often particularly easy to compute such as SketchEngine's SimpleMaths (Kilgarriff, 2009), which also offers a user parameter to adjust its bias towards high-frequency or low-frequency keywords.
+                    </item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Mathematical discussion and visualisation</head>
+                <p style="text-align: left; ">Hypothesis-test measures are subject to the criticism raised more generally against p-value testing in corpus linguistics and other fields (e.g. Gries, 2005). In particular, they are biased towards high-frequency keywords irrespective of effect size, selecting candidates that are not very salient for the target corpus. When they are applied more reasonably as a significance filter, the problem of multiple testing is often ignored: a single analysis may carry out frequency comparisons for hundreds of thousands of candidates, resulting in large numbers of false positives at customary significance levels such as 
+                    <hi rend="italic">p</hi> &lt; .001 (Gries, 2005; Hardie, 2014).
+                </p>
+                <p style="text-align: left; ">By contrast, effect-size measures such as LogRatio are biased towards low-frequency keywords because they completely ignore the statistical significance of the observed difference in relative frequency. Moreover, many of these measures are undefined for 
+                    <hi rend="italic">f</hi>
+                    <hi rend="subscript">2</hi> = 0 and need special heuristics for this case; e.g. Hardie (2014) simply substitutes 
+                    <hi rend="italic">f</hi>
+                    <hi rend="subscript">2</hi> = 0.5 without mathematical justification.
+                </p>
+                <p style="text-align: left; ">Traditionally, keyness measures are computed from cumulative token frequency counts for 
+                    <hi rend="italic">T</hi> and 
+                    <hi rend="italic">R</hi>. However, two recent studies have independently concluded that keywords based on document counts are more robust (Evert et al., 2018; Egbert and Biber, 2019).
+                </p>
+                <p style="text-align: left; ">Keyness measures can also be understood from a more intuitive angle by visualising them as 
+                    <hi rend="bold">topographic maps</hi>, which show the scores assigned to all possible combinations of frequencies 
+                    <hi rend="italic">f</hi>
+                    <hi rend="subscript">1</hi> in 
+                    <hi rend="italic">T</hi> and 
+                    <hi rend="italic">f</hi>
+                    <hi rend="subscript">2</hi> in 
+                    <hi rend="italic">R</hi> on a logarithmic scale (similar to the visualisation of collocations in Evert, 2004: sec. 3.3). The examples in Fig. 1 reveal the respective frequency biases of 
+                    <hi rend="italic">G</hi>
+                    <hi rend="superscript">2</hi> and LogRatio – which is hardly mitigated by an additional significance filter – in the top row (dark red colours indicate frequency profiles of highly-ranked keywords).
+                </p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="10.668cm" url="Pictures/f605b43aa7485fefbeb72b0015794b5b.png" rend="inline"/>
+                    <head>Visualisation of keyness measures as topographic maps for 
+                        <hi rend="italic">n</hi>
+                        <hi rend="subscript">1</hi> = 
+                        <hi rend="italic">n</hi>
+                        <hi rend="subscript">2</hi> = 100 M words. The bottom right panel highlights problems of an earlier version of LRC currently used by CQPweb.
+                    </head>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Best-practice recommendation</head>
+                <p style="text-align: left; ">Conservative estimates based on statistical confidence intervals combine the advantages of hypothesis tests and effect-size measures into a single score. I therefore propose 
+                    <hi rend="bold">LRC</hi>, a conservative estimate of LogRatio, as a best-practice keyness measure. LRC uses an exact conditional Poisson test (Fay, 2010: 55) to obtain reliable confidence intervals corrected for multiple testing. The full procedure for computing LRC scores is as follows:
+                </p>
+                <list type="ordered">
+                    <item>Collect the frequency data 
+                        <hi rend="italic">f</hi>
+                        <hi rend="subscript">1</hi>, 
+                        <hi rend="italic">f</hi>
+                        <hi rend="subscript">2</hi> for each candidate and the sample sizes 
+                        <hi rend="italic">n</hi>
+                        <hi rend="subscript">1</hi>, 
+                        <hi rend="italic">n</hi>
+                        <hi rend="subscript">2</hi> of 
+                        <hi rend="italic">T</hi> and 
+                        <hi rend="italic">R</hi>. Wherever suitable, document frequencies should be preferred.
+                    </item>
+                    <item>Compute a two-sided Pearson-Clopper binomial confidence interval [π
+                        <hi rend="subscript">–</hi>, π
+                        <hi rend="subscript">+</hi>] for 
+                        <hi rend="italic">f</hi>
+                        <hi rend="subscript">1</hi> successes out of 
+                        <hi rend="italic">f</hi>
+                        <hi rend="subscript">1</hi> + 
+                        <hi rend="italic">f</hi>
+                        <hi rend="subscript">2</hi> trials, with Bonferroni-adjusted significance level α = 0.05 / 
+                        <hi rend="italic">m</hi>.
+                    </item>
+                    <item>Convert the binomial proportions to [LRC
+                        <hi rend="subscript">–</hi>, LRC
+                        <hi rend="subscript">+</hi>] = [log
+                        <hi rend="subscript">2</hi> (
+                        <hi rend="italic">n</hi>
+                        <hi rend="subscript">2</hi> π
+                        <hi rend="subscript">–</hi> / 
+                        <hi rend="italic">n</hi>
+                        <hi rend="subscript">1</hi> (1 – π
+                        <hi rend="subscript">–</hi>)), log
+                        <hi rend="subscript">2</hi> (
+                        <hi rend="italic">n</hi>
+                        <hi rend="subscript">2</hi> π
+                        <hi rend="subscript">+</hi> / 
+                        <hi rend="italic">n</hi>
+                        <hi rend="subscript">1</hi> (1 – π
+                        <hi rend="subscript">+</hi>))].
+                    </item>
+                    <item>If the test is not significant (LRC
+                        <hi rend="subscript">–</hi> ≤ 0 ≤ LRC
+                        <hi rend="subscript">+</hi>), set LRC = 0. Otherwise, set LRC = LRC
+                        <hi rend="subscript">–</hi> if 
+                        <hi rend="italic">p</hi>
+                        <hi rend="subscript">1</hi> &gt; 
+                        <hi rend="italic">p</hi>
+                        <hi rend="subscript">2</hi> and LRC = LRC
+                        <hi rend="subscript">+</hi> if 
+                        <hi rend="italic">p</hi>
+                        <hi rend="subscript">1</hi> &lt; 
+                        <hi rend="italic">p</hi>
+                        <hi rend="subscript">2</hi>.
+                    </item>
+                </list>
+                <p style="text-align: left; ">LRC has several 
+                    <hi rend="bold">advantages</hi> over other keyness measures: (i) it balances out the high-frequency bias of hypothesis tests and the low-frequency bias of effect-size measures (cf. right panel of Fig. 2); (ii) unlike heuristics such as SimpleMaths it does this in a mathematically well-justified way; (iii) it can be applied to candidates with 
+                    <hi rend="italic">f</hi>
+                    <hi rend="subscript">2</hi> = 0 without special precautions; (iv) it detects both positive (
+                    <hi rend="italic">p</hi>
+                    <hi rend="subscript">1</hi> &gt; 
+                    <hi rend="italic">p</hi>
+                    <hi rend="subscript">2</hi>) and negative (
+                    <hi rend="italic">p</hi>
+                    <hi rend="subscript">1</hi> &lt; 
+                    <hi rend="italic">p</hi>
+                    <hi rend="subscript">2</hi>) keywords; (v) it includes a reliable significance filter (LRC = 0) and does not require arbitrary frequency thresholds; (vi) robust and efficient implementations of the underlying binomial confidence intervals are available in standard statistical software packages, so very large candidate sets can easily be processed. The left panel of Fig. 2 shows that LRC overlaps well with established keyness measures, again indicating that it provides an excellent compromise.
+                </p>
+                <p style="text-align: left; ">A reference implementation of LRC is available at 
+                    <ref target="https://osf.io/cy6mw/">https://osf.io/cy6mw/</ref> together with a more detailed analysis. It is also included in version 0.6 of the 
+                    <hi rend="italic">corpora</hi> package for R.
+                    <note place="foot" xml:id="ftn4" n="4">
+                        <p rend="footnote text">
+                            <ref target="https://cran.r-project.org/web/packages/corpora/">https://cran.r-project.org/web/packages/corpora/</ref>
+                        </p>
+                    </note>
+                </p>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="8.001cm" url="Pictures/f735777cff8b6b183ddcb5222a5d460f.png" rend="inline"/>
+                    <head>Quantitative analysis of top-250 keyword lists for the data of Evert et al. (2018): overlap between four measures (left panel) and frequency distribution in the target corpus (right panel).</head>
+                </figure>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Baker, P.</hi> (2006). 
+                        <hi rend="italic">Using Corpora in Discourse Analysis</hi>. London: Continuum Books.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Culpeper, J.</hi> (2009). Keyness: Words, parts-of-speech and semantic categories in the character-talk of Shakespeare’s Romeo and Juliet. 
+                        <hi rend="italic">International Journal of Corpus Linguistics</hi>, 
+                        <hi rend="bold">14</hi>(1): 29–59.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Dunning, T. E.</hi> (1993). Accurate methods for the statistics of surprise and coincidence. 
+                        <hi rend="italic">Computational Linguistics</hi>, 
+                        <hi rend="bold">19</hi>(1): 61–74.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Egbert, J. and Biber, D.</hi> (2019). Incorporating text dispersion into keyword analyses. 
+                        <hi rend="italic">Corpora</hi>, 
+                        <hi rend="bold">14</hi>(1): 77–104.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Evert, S.</hi> (2004). 
+                        <hi rend="italic">The statistics of word cooccurrences: Word pairs and collocations</hi>. Dissertation, Institut für maschinelle Sprachverarbeitung, University of Stuttgart, doi:
+                        <ref target="10.18419/opus-2556">10.18419/opus-2556</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Evert, S., Dykes, N. and Peters, J.</hi> (2018). A quantitative evaluation of keyword measures for corpus-based discourse analysis. Presentation at the Corpora &amp; Discourse International Conference (CAD 2018), Lancaster, UK, 
+                        <ref target="https://www.stephanie-evert.de/PUB/EvertEtc2018_CAD_slides.pdf">https://www.stephanie-evert.de/PUB/EvertEtc2018_CAD_slides.pdf</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Fay, M. P.</hi> (2010). Two-sided exact tests and matching confidence intervals for discrete data. 
+                        <hi rend="italic">The R Journal</hi>, 
+                        <hi rend="bold">2</hi>(1): 53–58.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Fidler, M. and Cvrček, V.</hi> (2015). A data-driven analysis of reader viewpoints: Reconstructing the historical reader using keyword analysis. 
+                        <hi rend="italic">Journal of Slavic Linguistics</hi>, 
+                        <hi rend="bold">23</hi>(3): 197–239.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Gabrielatos, C. and Marchi, A.</hi> (2012). Keyness: Appropriate metrics and practical issues Presentation at the Corpora and Discourse Studies Conference (CADS 2012), Bologna, Italy, 
+                        <ref target="https://www.researchgate.net/publication/261708842_Keyness_Appropriate_metrics_and_practical_issues">https://www.researchgate.net/publication/261708842_&#8203;Keyness_&#8203;Appropriate_&#8203;metrics_&#8203;and_&#8203;practical_&#8203;issues</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Gries, S. Th.</hi> (2005). Null-hypothesis significance testing of word frequencies: A follow-up on Kilgarriff. 
+                        <hi rend="italic">Corpus Linguistics and Linguistic Theory</hi>, 
+                        <hi rend="bold">1</hi>(2): 277–94.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hardie, A.</hi> (2012). CQPweb – combining power, flexibility and usability in a corpus analysis tool. 
+                        <hi rend="italic">International Journal of Corpus Linguistics</hi>, 
+                        <hi rend="bold">17</hi>(3): 380–409.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hardie, A.</hi> (2014). A single statistical technique for keywords, lockwords, and collocations.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kilgarriff, A.</hi> (2009). Simple maths for keywords. 
+                        <hi rend="italic">Proceedings of the Corpus Linguistics 2009 Conference</hi>. Liverpool, UK, 
+                        <ref target="http://ucrel.lancs.ac.uk/publications/CL2009/">http://ucrel.lancs.ac.uk/publications/CL2009/</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">McEnery, T., McGlashan, M. and Love, R.</hi> (2015). Press and social media reaction to ideologically inspired murder: The case of Lee Rigby. 
+                        <hi rend="italic">Discourse and Communication</hi>, 
+                        <hi rend="bold">9</hi>(2): 1–23, doi:
+                        <ref target="https://doi.org/10.1177/1750481314568545">10.1177/1750481314568545</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Oakes, M. P. and Farrow, M.</hi> (2006). Use of the chi-squared test to examine vocabulary differences in English language corpora representing seven different countries. 
+                        <hi rend="italic">Literary and Linguistic Computing</hi>, 
+                        <hi rend="bold">22</hi>(1): 85–99, doi:
+                        <ref target="https://doi.org/10.1093/llc/fql044">10.1093/llc/fql044</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Paquot, M. and Bestgen, Y.</hi> (2009). Distinctive words in academic writing: A comparison of three statistical tests for keyword extraction. In Jucker, A., Schreier, D. and Hundt, M. (eds), 
+                        <hi rend="italic">Corpora: Pragmatics and Discourse. Papers from the 29th International Conference on English Language Research on Computerized Corpora</hi>. Amsterdam: Rodopi, pp. 247–69, doi:
+                        <ref target="https://doi.org/10.1163/9789042029101_014">10.1163/9789042029101_014</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Pojanapunya, P. and Watson Todd, R.</hi> (2018). Log-likelihood and odds ratio: Keyness statistics for different purposes of keyword analysis. 
+                        <hi rend="italic">Corpus Linguistics and Linguistic Theory</hi>, 
+                        <hi rend="bold">14</hi>(1): 133–67.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rayson, P. and Garside, R.</hi> (2000). Comparing corpora using frequency profiling. 
+                        <hi rend="italic">Proceedings of the ACL Workshop on Comparing Corpora</hi>. Hong Kong, pp. 1–6.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Scott, M.</hi> (1997). PC analysis of key words – and key key words. 
+                        <hi rend="italic">System</hi>, 
+                        <hi rend="bold">25</hi>(2): 233–45.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

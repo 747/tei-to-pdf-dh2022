@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Introduction to DraCor – Programmable Corpora for Digital Drama Analysis</title>
+                <author>
+                    <persName>
+                        <surname>Boerner</surname>
+                        <forename>Ingo</forename>
+                    </persName>
+                    <affiliation>University of Potsdam, Germany</affiliation>
+                    <email>ingo.boerner@uni-potsdam.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fischer</surname>
+                        <forename>Frank</forename>
+                    </persName>
+                    <affiliation>Freie Universität Berlin, Germany</affiliation>
+                    <email>fr.fischer@fu-berlin.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Milling</surname>
+                        <forename>Carsten</forename>
+                    </persName>
+                    <affiliation>University of Potsdam, Germany</affiliation>
+                    <email>cmil@hashtable.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Trilcke</surname>
+                        <forename>Peer</forename>
+                    </persName>
+                    <affiliation>University of Potsdam, Germany</affiliation>
+                    <email>trilcke@uni-potsdam.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sluyter-Gäthje</surname>
+                        <forename>Henny</forename>
+                    </persName>
+                    <affiliation>University of Potsdam, Germany</affiliation>
+                    <email>sluytergaeth@uni-potsdam.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T12:59:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Computational Literary Studies</term>
+                    <term>drama</term>
+                    <term>API</term>
+                    <term>Linked Open Data</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>sustainable procedures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Aim of the workshop</head>
+                <p>In the half-day workshop, DraCor (https://dracor.org), an open platform for researching plays in different languages, will be introduced using practical examples from digital drama analysis. At the center of DraCor are so-called 'Programmable Corpora'. By this we mean infrastructurally research-oriented, open, extensible, Linked-Open-Data-friendly full-text corpora, which should make it possible to address diverse research questions from the field of digital literary studies in a low-threshold way using corpora in a data-based, traceable, and reproducible way (Fischer et al. 2019).</p>
+                <p>The workshop aims at people who</p>
+                <p>- work or would like to work with literary texts and in particular with dramas and would like to create their own corpora for this purpose or reuse already existing corpora;</p>
+                <p>- want to learn methods of digital drama analysis (network analysis, stylometry) or want to try them out on the basis of the Programmable Corpora approach;</p>
+                <p>- are interested in the possibilities of researching literary texts using Linked Open Data (LOD).</p>
+                <p>There will be a presentation of the concept of 'Programmable Corpora' as well as a demonstration of the exemplary implementation in the DraCor platform including a presentation of all components. Hands-on tutorials will give participants a practical introduction to creating and curating their own drama corpora for analysis with DraCor. Another part introduces the use of the DraCor API as well as the Python library PyDraCor by means of practical examples on the methods stylometry and network analysis. The Application Programming Interface (API) allows customized direct access to specific parts of the corpora. The possibilities for cross-corpus queries and inclusion of information from the Linked Open Data cloud using SPARQL will also be explored.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>The Concept of Programmable Corpora</head>
+                <p>The core of DraCor consists of corpora of dramas in eleven languages (German, Russian, French, English, Italian, Swedish, Spanish, Ancient Greek, Alsatian, Latin, Bashkir and Tatar) as well as two additional author corpora (Shakespeare, Calderón), to which the platform offers a variety of possible research accesses: The dramas are encoded as XML files according to the TEI guidelines and are freely available under an open license via GitHub at https://github.com/dracor-org. They can be loaded from there, transformed or enriched by oneself if necessary, and reused for further research with any tools. </p>
+                <p>In addition to this "classical" modus operandi of corpus-based research, however, DraCor as an open digital ecosystem offers further interfaces and connected tools (network visualizations, Shiny App, Easy Linavis). Fundamental to this is the DraCor REST API (https://dracor.org/doc/api), which provides functions for retrieving data in different formats (TEI, JSON, plaintext, RDF, GEXF, GraphML) as well as some built-in analysis functionalities (e.g. on network metrics). The API can be used to retrieve not only structural and metadata, but also the full texts without further markup, so that methods such as stylometric analysis or topic modeling can be applied without any further intermediate step to remove markup. The DraCor API is documented in the OpenAPI standard and can be used in an interactive documentation implemented using Swagger UI (https://dracor.org/documentation/api) directly from the web browser. </p>
+                <p>API libraries are available for the Python (PyDraCor: https://github.com/dracor-org/pydracor) and R (rdracor: https://github.com/dracor-org/rdracor) programming languages, which allow the API functionalities to be integrated quickly and adapted to the respective programming language. For complex queries, a SPARQL endpoint (https://dracor.org/sparql) is available on the platform. This allows both cross-corpus and combined queries (federated queries), in which DraCor can be queried simultaneously with other resources available as LOD, such as Wikidata.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Digital Drama Analysis with DraCor</head>
+                <p>Corpus-based analyses of drama, usually using quantitative methods, have emerged as a distinct subfield of Computational Literary Studies (CLS) in recent years (cf. Willand et al. 2017; Reiter 2021). In this context, the provision of jointly curated and open resources such as DraCor has proven productive also for related disciplines such as computational linguistics (cf. for example Pagel, Reiter 2020).</p>
+                <p>Methods operating at the word level have focused, for example, on authorship attribution (Schöch 2014) or genre classification with topic modeling (Schöch 2017). Currently, promising reconceptualizations of stylometric measures such as the measure Zeta are being developed and applied (Schöch 2018). Furthermore, on the basis of structurally annotated corpora, targeted analyses of, for example of stage directions can be performed, operating with POS information or semantic fields (Trilcke et al. 2020). </p>
+                <p>In the field of structural analysis, drama corpora were studied early on using network analytic approaches, beginning with the work of Stiller, Nettle, Dunbar (2003) and continuing, for example, with Moretti (2011). Typological work on, for example, the concept of Small Worlds (Trilcke et al. 2016) stands here alongside approaches to the quantitative classification of figure types (Fischer et al. 2018). </p>
+                <p>Although semantic technologies are now an integral part of the spectrum of methods in the digital humanities, they have rarely been applied in corpus-based CLS (on prose, for example, Frank and Ivanovic 2018; Dittrich 2017). However, the collection of metadata as Linked Data and the connection to external reference resources, especially Wikidata, allow for far-reaching query possibilities and can be profitably used for the analysis of literary corpora. For example, the DraCor corpus data does not contain detailed information on authors and performance locations. However, since the unique Wikidata identifiers are stored for the individual pieces, this information can be retrieved via federated queries in SPARQL and displayed in various visualization forms, such as a map.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Learning objectives and timeline of the workshop</head>
+                <p>In the first part of the workshop the concept of 'Programmable Corpora' will be introduced and discussed. Afterwards, the platform DraCor and its components will be introduced, with short practical phases during which the participants can directly try out the presented components and tools. In particular, the different possibilities for the reference and analysis of corpus data will be tested. One focus will be on the use of the API. The API functionalities will be explained with the help of interactive documentation and can be tested extensively by the participants. This will be followed by a short overview of corpus creation and the specifics of TEI encoding as used in DraCor.</p>
+                <p>The second part of the workshop will consist of work phases in which three topics can be explored in more depth:</p>
+                <p>(1) corpus creation and curation with DraCor: Participants will delve into TEI coding of dramas through hands-on exercises and learn how to set up a local instance of the platform using Docker, customize it if necessary, and populate it with their own corpora.</p>
+                <p>(2) Drama analysis with DraCor API and Python: Using Jupyter notebooks with extensively documented Python code, participants will be introduced to methods of digital drama analysis using the DraCor API. The notebooks should also enable participants who have no previous experience in programming with Python to follow the individual analysis steps and to adapt them themselves in the sense of a literate programming approach. The notebooks implement concrete research questions on drama analysis, for example on the literary-historical development of network-analytical measures or on the quantitative dominance of characters.</p>
+                <p>(3) Drama Analysis with Linked Data: The focus will be on practical analyses made possible from connecting DraCor to the Linked Open Data Cloud. The workshop will provide a brief crash course in the SPARQL query language, followed by joint queries of DraCor and Wikidata and visualization of the results.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Organizational matters</head>
+                <p>Number of possible participants: 25</p>
+                <p>The Workshop will be held via Zoom. Software to be installed on local machines (Oxygen XML editor, Docker, ...) will be announced in advance. Materials will be made available on GitHub; Jupyter notebooks will be posted at (https://github.com/dracor-org/dracor-notebooks).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Contributors / Contact details</head>
+                <p>Ingo Börner (ingo.boerner@uni-potsdam.de) works as a research assistant in the project "CLSInfra" at the University of Potsdam on the further development of DraCor. His work focuses on data modeling and Linked Open Data.</p>
+                <p>Frank Fischer (fr.fischer@fu-berlin.de) is Professor at the Freie Universität Berlin. His involvement with digital drama analysis goes back to the Digital Literary Network Analysis DLINA project (https://dlina.github.io), from which DraCor emerged.</p>
+                <p>Peer Trilcke (trilcke@uni-potsdam.de) is Professor of modern German literature at the University of Potsdam. His work focuses on the research-based development of infrastructures for literary corpora and the quantitative analysis of literary texts.</p>
+                <p>Carsten Milling (cmil@hashtable.de) is a web developer and is responsible for the development of the DraCor platform in the project "CLSInfra" at the University of Potsdam. </p>
+                <p>Henny Sluyter-Gäthje (sluytergaeth@uni-potsdam.de) is a research assistant at the Chair of 19th Century German Literature at the University of Potsdam. She holds a Master of Science in Cognitive Systems with a focus on computational linguistics and works on algorithmic processing of literary texts.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Funding</head>
+                <p>DraCor is currently being further developed within the EU Horizon 2020 funded project "CLSInfra" (grant number: 101004984, https://cordis.europa.eu/project/id/101004984).</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Dittrich, Andreas</hi> (2017): "Intra-Connecting an Exemplary Literary Corpus with Semantic Web Technologies for Exploratory Literary Studies" in: Bański, Piotr et al. (Hg.): 
+                        <hi rend="italic">Proceedings of the Workshop on Challenges in the Management of Large Corpora and Big Data and Natural Language Processing (CMLC-5+BigNLP)</hi> 2017. Mannheim: Institut für Deutsche Sprache. https://nbn-resolving.org/urn:nbn:de:bsz:mh39-62441.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fischer, Frank / Trilcke, Peer / Kittel, Christopher / Milling, Carsten / Skorinkin, Daniil</hi> (2018): "To catch a protagonist: Quantitative dominance relations in german-language drama (1730–1930)" in: 
+                        <hi rend="italic">Digital Humanities 2018. Conference Abstracts.</hi> Mexico City: El Colegio de México / Universidad Nacional Autónoma de México / Red de Humanidades Digitales 193–201. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fischer, Frank / Börner, Ingo / Göbel, Mathias / Hechtl, Angelika / Kittel, Christopher / Milling, Carsten / Trilcke, Peer</hi> (2019): "Programmable Corpora: Die digitale Literaturwissenschaft zwischen Forschung und Infrastruktur am Beispiel von DraCor " in: 
+                        <hi rend="italic">DHd2019: »Digital Humanities: multimedial &amp; multimodal«. Book of Abstracts.</hi> Mainz/Frankfurt a. M.: Johannes Gutenberg Universität Mainz / Goethe Universität Frankfurt, 194–197.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Frank, Andrew / Ivanovic, Christine</hi> (2018): "Building Literary Corpora for Computational Literary Analysis – A Prototype to Bridge the Gap between CL and DH" in: Calzolari, Nicoletta et al. (Hg.): 
+                        <hi rend="italic">Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)</hi>. Miyazaki, Japan: European Language Resources Association.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Moretti, Franco</hi> (2011): "Network Theory, Plot Analysis " in: 
+                        <hi rend="italic">Stanford Literary Lab Pamphlets</hi> 2. http://litlab.stanford.edu/LiteraryLabPamphlet2.pdf [letzter Zugriff 13.7.2021].
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pagel, Janis / Reiter, Nils</hi> (2020): "GerDraCor-Coref: A Coreference Corpus for Dramatic Texts in German" in: 
+                        <hi rend="italic">Proceedings of the Language Resources and Evaluation Conference (LREC)</hi>. Marseille 55-64 http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.7.pdf [Letzter Zugriff: 15.7.2021].
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Reiter, Nils</hi> (2021): "Möglichkeiten Quantitativer Dramenanalyse" in: 
+                        <hi rend="italic">Comparatio. Zeitschrift für Vergleichende Literaturwissenschaft</hi> 12(2): 39–52.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schöch, Christof</hi> (2017): "Topic Modeling Genre: An Exploration of French Classical and Enlightenment Drama" in: 
+                        <hi rend="italic">Digital Humanities Quarterly</hi> 11, Nr. 2 http://www.digitalhumanities.org/dhq/vol/11/2/000291/000291.html [Letzter Zugriff: 15.7.2021].
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schöch, Christof</hi> (2018): "Zeta für die kontrastive Analyse literarischer Texte. Theorie, Implementierung, Fallstudie" in: Bernhart, Toni et al. (Hg): 
+                        <hi rend="italic">Quantitative Ansätze in den Literatur- und Geisteswissenschaften. Systematische und historische Perspektiven</hi>. Berlin: de Gruyter 77–94 doi:10.1515/9783110523300-004.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schöch, Christof</hi> (2014): "Corneille, Molière et les autres. Stilometrische Analysen zu Autorschaft und Gattungszugehörigkeit im französischen Theater der Klassik" in: Schneider, Lars / Schöch, Christof (Hg.): 
+                        <hi rend="italic">Literaturwissenschaft im digitalen Medienwandel. Beihefte zu Phin</hi> 7 http://web.fu-berlin.de/phin/beiheft7/b7t08.pdf [Letzter Zugriff: 15.07.2021].
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stiller, James / Nettle, Daniel / Dunbar, Robin I. M</hi>. (2003): "The Small World of Shakespeare's Plays" in: 
+                        <hi rend="italic">Human Nature</hi> 14: 397–408.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Trilcke, Peer / Fischer, Frank / Göbel, Mathias / Kampkaspar, Dario / Kittel, Christopher</hi> (2016): "Theatre Plays as ›Small Worlds‹? Network Data on the History and Typology of German Drama, 1730-1930" in: 
+                        <hi rend="italic">Digital Humanities 2016. Conference Abstracts.</hi> Jagiellonian University &amp; Pedagogical University, Kraków 385-387 https://dh2016.adho.org/abstracts/static/dh2016_abstracts.pdf [Letzter Zugriff: 15.07.2021].
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Trilcke, Peer / Kittel, Christopher / Reiter, Nils / Maximova, Daria / Fischer, Frank</hi> (2020): "Opening the Stage. A Quantitative Look at Stage Directions in German Drama" in: 
+                        <hi rend="italic">Digital Humanities 2020. Conference Abstracts</hi>. Ottawa: University of Ottawa https://dh2020.adho.org/wp-content/uploads/2020/07/337_Opening&#8203;the&#8203;Stage&#8203;A&#8203;Quantitative&#8203;Look&#8203;at&#8203;Stage&#8203;Directions&#8203;in&#8203;German&#8203;Drama&#8203;.html [Letzter Zugriff: 15.07.2021].
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Willand, Marcus / Trilcke, Peer / Schöch, Christof / Rißler-Pipka, Nanette / Reiter, Nils / Fischer, Frank</hi> (2017): "Aktuelle Herausforderungen der Digitalen Dramenanalyse" in: 
+                        <hi rend="italic">DHd 2017. Digitale Nachhaltigkeit. Konferenzabstracts</hi>. Bern: Universität Bern 175–180 doi:10.5281/zenodo.3684825.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

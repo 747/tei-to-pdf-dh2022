@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>DHTech - An ADHO Special Interest Group</title>
+                <author>
+                    <persName>
+                        <surname>Damerow</surname>
+                        <forename>Julia</forename>
+                    </persName>
+                    <affiliation>Arizona State University</affiliation>
+                    <email>jdamerow@asu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vogl</surname>
+                        <forename>Malte</forename>
+                    </persName>
+                    <affiliation>Max Planck Institute for the History of Science</affiliation>
+                    <email>mvogl@mpiwg-berlin.mpg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Casties</surname>
+                        <forename>Robert</forename>
+                    </persName>
+                    <affiliation>Max Planck Institute for the History of Science</affiliation>
+                    <email>casties@mpiwg-berlin.mpg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gao</surname>
+                        <forename>Andrew</forename>
+                    </persName>
+                    <affiliation>Canyon Crest Academy</affiliation>
+                    <email>andrewgao22@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sutton Koeser</surname>
+                        <forename>Rebecca</forename>
+                    </persName>
+                    <affiliation>Princeton University</affiliation>
+                    <email>rkoeser@princeton.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tharsen</surname>
+                        <forename>Jeffrey</forename>
+                    </persName>
+                    <affiliation>The University of Chicago</affiliation>
+                    <email>tharsen@uchicago.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Zandbank</surname>
+                        <forename>Itay</forename>
+                    </persName>
+                    <affiliation>The Research Software Company</affiliation>
+                    <email>itay@researchsoftware.co.il</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-26T19:37:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Community building</term>
+                    <term>research software engineering</term>
+                    <term>software development</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>software development</term>
+                    <term>systems</term>
+                    <term>analysis and methods</term>
+                    <term>Computer science</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>In 2017, a group of software developers, scholars with programming expertise, and project managers got together at a workshop at the DH 2017 conference in Montreal. The topic of the workshop was the development of an infrastructure for collaboration and cooperation in regard to tool development. It resulted in the establishment of DHTech (https://dh-tech.github.io/), a community for people doing technical work in DH to exchange knowledge, share expertise, and foster collaboration among Digital Humanities software projects.</p>
+            <p>Fast forward four years, in early 2021, DHTech became an ADHO Special Interest Group (SIG). DHTech has a steering committee currently consisting of seven people that organizes activities related to DHTech. It also has working groups that give members of the community the opportunity to collaborate on specific topics of interest. Furthermore, DHTech organizes virtual meetups and workshops to discuss technical and other topics the members of DHTech are interested in. </p>
+            <p>We are proposing a virtual poster at DH2022 that introduces DHTech to the wider DH community. Currently, DHTech has around
+                <hi rend="bold" xml:space="preserve"> 140 members</hi> and is growing slowly but consistently. We strongly believe that joining the DHTech community is beneficial for anyone doing technical work in the Digital Humanities as it offers a way for exchanging ideas and knowledge, getting support, and connecting with like-minded colleagues. In the Digital Humanities, where there is often just one person in a lab, department, or project responsible for the technical part of a project, a community like DHTech can be highly valuable by providing a sounding board and offering input and ideas. DHTech community members are eager to support each other.
+            </p>
+            <p>In the last four years, DHTech has, among other things, successfully accomplished the following tasks:</p>
+            <list rend="bulleted">
+                <item>Held several virtual workshops and meet-ups discussing not just technical topics but also issues like onboarding of new DH developers or building local DH communities (recordings can be found 
+                    <ref target="https://dh-tech.github.io/workshops/">here</ref>).
+                </item>
+                <item>Maintained a website with 
+                    <ref target="https://dh-tech.github.io/">blogs and news entries</ref> as well as a Slack workspace that allows its members to share experiences, accomplishments, and events, and to connect with each other.
+                </item>
+                <item>Conducted a survey regarding technical skills and demographics of people doing technical work in DH. The results of the survey can be found 
+                    <ref target="https://dh-tech.github.io/survey-results-2020">here</ref>.
+                </item>
+                <item>Established an active working group that aims to ensure code quality of DH projects by developing a peer code review system.</item>
+                <item>Organized several workshops at conferences to discuss topics of interest. For example, one resulted in a white paper to clarify the role of DH developers in humanities research, which can be found on the 
+                    <ref target="https://dh-tech.github.io/dhrse-whitepaper">DHTech website</ref>. Another workshop on code reviews resulted in the above-mentioned working group.
+                </item>
+            </list>
+            <p>Future plans for DHTech include a second working group that will focus on a technical mentorship program for DH developers, yearly steering committee elections to ensure long-term sustainability of the community, and the establishment of a peer code review infrastructure. We hope that a virtual poster at DH2022 will help to grow the DHTech community even further and to increase the diversity of its members.</p>
+        </body>
+    </text>
+</TEI>

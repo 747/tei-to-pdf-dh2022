@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Callimachus: A tool for the study of the formal contents of ancient Greek papyri</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Riaño Rufilanchas</surname>
+                        <forename>Daniel</forename>
+                    </persName>
+                    <affiliation>CSIC, Spain</affiliation>
+                    <email>danielrianno@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-13T15:53:50.010178395</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>papyrology Ancient Greek</term>
+                    <term>databases</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Africa</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>5th-14th Century</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>manuscripts description</term>
+                    <term>representation</term>
+                    <term>and analysis</term>
+                    <term>Linguistics</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head/>
+                <p>1. Greek Papyri</p>
+                <p>The Ancient Greek civilization used numerous materials as support for their texts. Of these, the best preserved are epigraphic texts and the papyri. We can estimate the number of extant papyri to be well over 200,000, of which only a part have been published. They are either literary texts, subliterary texts (private letters, magical texts, etc.) or documentary texts, both public and private (contracts, legal texts, etc.).</p>
+                <p>Papyri, as we have them now, are very often fragmentary texts, usually poorly preserved. They have transmitted to our days words and expressions that we did not know from literature, and often must be interpreted within a context that can only be conjectured.</p>
+                <p>Naturally, the chronological extent of the documents testifies to numerous changes in writing practices, and, even more importantly, reflects numerous social changes that took place in the area during these more than a thousand years.</p>
+                <p>2. Digitization of Greek papyri</p>
+                <p>A considerable part of all the papyri that have already been scholarly edited have been digitized thanks to several projects, many of them gathered under the aegis of Papyri.info, using as encoding scheme EpiDoc, a subset of the TEI standard adapted to the edition of ancient texts.</p>
+                <p>Texts in this repository do not identify words separately (other than putting spaces among them), nor do they distinguish normally between words and word fragments, or words and numerals, nor do they lemmatize words.</p>
+                <p>There are currently more than 81,000 digitized papyri in the Papy.info repository. The site's software allows basic queries within the text of the papyri (without lemmatization) and the metadata that have been incorporated from the Heidelberger Gesamtverzeichnis der Griechischen Papyrusurkunden Ägyptens (HGV) project.</p>
+                <p>3. Callimachus</p>
+                <p>Callimachus (https://glg.csic.es/Callimachus/) is a new project currently in development at Spain’s CCHS-CSIC, that aims to make available to all users the metadata incorporated in the digital edition of the papyri from Papyri.info, as well as the result of some calculations and estimations about the formal content of the papyri based on such metadata and the data itself. Callimachus processes all digitized papyri and presents the following information using 55 categories.</p>
+                <p> 1. All values and attributes meaningful for the study of Greek papyri contained in the XML markup.</p>
+                <p> 2. It puts this information in relation to the data that about each papyrus has been collected by the HGV.</p>
+                <p> 3. Identifies words and separates them from fragments and numerals.</p>
+                <p> 4. Performs a series of calculations on the textual content of the papyrus, such as the number of words, letters per line, editorial corrections, scribal hands, etc.</p>
+                <p>4. The 
+                    <hi rend="italic">Callimachus number</hi>
+                </p>
+                <p>The Callimachus number is a decimal number between zero and one that objectively indicates the state of preservation and readability of a document. A Callimachus number 0 indicates no preservation of the contents and 1 indicates that the entire contents of the papyrus have been preserved and are visible without problems. The Callimachus number is based on an algorithm that can be used to determine the state of preservation of any ancient document.</p>
+                <p>To calculate the Callimachus number we use the XML values and parameters of the document that indicate whether the text has been restored, whether it is fully or partially legible, etc. and perform some kind of calculations to estimate the percentage of missing text. All these calculations result in a matrix that assigns each letter (present or estimated according to the editors' judgment about the extent of the gaps) a value from 0 to 1 according to the criteria in the following table. The sum of all values is divided by the number of letters to obtain the Callimachus number:</p>
+                <p>5. Some applications of Callimachus</p>
+                <p>Callimachus can be used in papyrology research as well as in linguistics-related projects. One can use Callimachus to search papyri containing any specific feature, or a combination of features. For example, you can search for papyri containing any specific trait, or combination of traits. The use of Callimachus in combination with Polyphemus will allow to combine lexical information with all the data types of Callimachus.</p>
+            </div>
+        </body>
+    </text>
+</TEI>

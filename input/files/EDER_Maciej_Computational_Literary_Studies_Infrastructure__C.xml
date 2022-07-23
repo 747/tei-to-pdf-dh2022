@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Computational Literary Studies Infrastructure (CLS INFRA): a project to connect people, data, tools, and methods</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Birkholz</surname>
+                        <forename>Julie</forename>
+                    </persName>
+                    <affiliation>Universiteit Gent</affiliation>
+                    <email>julie.birkholz@ugent.be</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Börner</surname>
+                        <forename>Ingo</forename>
+                    </persName>
+                    <affiliation>Universität Potsdam</affiliation>
+                    <email>ingoboerner86@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chambers</surname>
+                        <forename>Sally</forename>
+                    </persName>
+                    <affiliation>Universiteit Gent</affiliation>
+                    <email>sally.chambers@ugent.be</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Charvat</surname>
+                        <forename>Vera</forename>
+                    </persName>
+                    <affiliation>Österreichische Akademie der Wissenschaften</affiliation>
+                    <email>veramaria.charvat@oeaw.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Cinková</surname>
+                        <forename>Silvie</forename>
+                    </persName>
+                    <affiliation>Charles University, Prague</affiliation>
+                    <email>cinkova@ufal.mff.cuni.cz</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dejaeghere</surname>
+                        <forename>Tess</forename>
+                    </persName>
+                    <affiliation>Universiteit Gent</affiliation>
+                    <email>tess.dejaeghere@ugent.be</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dudar</surname>
+                        <forename>Julia</forename>
+                    </persName>
+                    <affiliation>Universität Trier</affiliation>
+                    <email>dudar@uni-trier.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ďurčo</surname>
+                        <forename>Matej</forename>
+                    </persName>
+                    <affiliation>Österreichische Akademie der Wissenschaften</affiliation>
+                    <email>matej.durco@oeaw.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Eder</surname>
+                        <forename>Maciej</forename>
+                    </persName>
+                    <affiliation>Institute of Polish Language (Polish Academy of Sciences)</affiliation>
+                    <email>maciej.eder@ijp.pan.pl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Edmond</surname>
+                        <forename>Jennifer</forename>
+                    </persName>
+                    <affiliation>DARIAH-EU</affiliation>
+                    <email>jennifer.edmond@dariah.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fileva</surname>
+                        <forename>Evgeniia</forename>
+                    </persName>
+                    <affiliation>Universität Trier</affiliation>
+                    <email>fileva@uni-trier.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fischer</surname>
+                        <forename>Frank</forename>
+                    </persName>
+                    <affiliation>Universität Potsdam</affiliation>
+                    <email>frank.fischer@dariah.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Heiden</surname>
+                        <forename>Serge</forename>
+                    </persName>
+                    <affiliation>Ecole Normale Supérieure, Lyon</affiliation>
+                    <email>slh@ens-lyon.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Křen</surname>
+                        <forename>Michal</forename>
+                    </persName>
+                    <affiliation>Charles University, Prague</affiliation>
+                    <email>michal.kren@ff.cuni.cz</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kunda</surname>
+                        <forename>Bartłomiej</forename>
+                    </persName>
+                    <affiliation>Institute of Polish Language (Polish Academy of Sciences)</affiliation>
+                    <email>bartlomiej.kunda@ijp.pan.pl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mrugalski</surname>
+                        <forename>Michał</forename>
+                    </persName>
+                    <affiliation>Humboldt-Universität zu Berlin</affiliation>
+                    <email>michal.mrugalski@hu-berlin.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Murphy</surname>
+                        <forename>Ciara</forename>
+                    </persName>
+                    <affiliation>National University of Ireland, Galway</affiliation>
+                    <email>ciara.murphy@nuigalway.ie</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Odebrecht</surname>
+                        <forename>Carolin</forename>
+                    </persName>
+                    <affiliation>Humboldt-Universität zu Berlin</affiliation>
+                    <email>carolin.odebrecht@hu-berlin.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Raciti</surname>
+                        <forename>Marco</forename>
+                    </persName>
+                    <affiliation>DARIAH-EU</affiliation>
+                    <email>marco.raciti@dariah.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ros</surname>
+                        <forename>Salvador</forename>
+                    </persName>
+                    <affiliation>UNED, Madrid</affiliation>
+                    <email>sros@scc.uned.es</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schöch</surname>
+                        <forename>Christof</forename>
+                    </persName>
+                    <affiliation>Universität Trier</affiliation>
+                    <email>schoech@uni-trier.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Šeļa</surname>
+                        <forename>Artjoms</forename>
+                    </persName>
+                    <affiliation>Institute of Polish Language (Polish Academy of Sciences)</affiliation>
+                    <email>atrjoms.sela@ijp.pan.pl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tasovac</surname>
+                        <forename>Toma</forename>
+                    </persName>
+                    <affiliation>Belgrade Center for Digital Humanities</affiliation>
+                    <email>ttasovac@humanistika.org</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tonra</surname>
+                        <forename>Justin</forename>
+                    </persName>
+                    <affiliation>National University of Ireland, Galway</affiliation>
+                    <email>justin.tonra@nuigalway.ie</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tóth-Czifra</surname>
+                        <forename>Erzsébet</forename>
+                    </persName>
+                    <affiliation>DARIAH-EU</affiliation>
+                    <email>erzsebet.toth-czifra@dariah.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Trilcke</surname>
+                        <forename>Peer</forename>
+                    </persName>
+                    <affiliation>Universität Potsdam</affiliation>
+                    <email>trilcke@uni-potsdam.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>van Dalen-Oskam</surname>
+                        <forename>Karina</forename>
+                    </persName>
+                    <affiliation>Huygens Institute</affiliation>
+                    <email>karina.van.dalen@huygens.knaw.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>van Rossum</surname>
+                        <forename>Lisanne</forename>
+                    </persName>
+                    <affiliation>Huygens Institute</affiliation>
+                    <email>lisanne.van.rossum@huygens.knaw.nl</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T21:49:00.692223790</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>computational literary studies</term>
+                    <term>research infrastructure</term>
+                    <term>resources</term>
+                    <term>data preservations</term>
+                    <term>text analysis</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>cultural analytics</term>
+                    <term>sustainable procedures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Linguistics</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor xml:id="id_docs-internal-guid-2da8fdd2-7fff-d058-43a9-50f346c737ec"/>Abstract
+                </head>
+                <p>The aim of this poster is to provide an overview of the principal objectives of the CLS INFRA project, its aims and structure as well as ways to get in touch.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>Just as much as the exact sciences, research in the social sciences and the humanities relies on research infrastructures: no research could be conducted without academic libraries, cultural heritage institutions, and academic and mass-market publishers. The digital turn, however, not only reshaped the theoretical and methodological frameworks in several disciplines, but it also redefined the notion of research infrastructures (see e.g. Borgman 2010, Moulin et al. 2011, Kitchin 2021). Nowadays, at least in Digital Humanities, it is hard to conduct any cutting-edge research without access to the relevant digital resources, tools to analyze them, networks of collaborating teams and individuals, and efficient communication channels to disseminate the results. In particular, this applies to computational literary studies (CLS).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>An Infrastructure for CLS</head>
+                <p>With respect to the field of computational literary studies more specifically, the digital age offers challenges and opportunities for completing research on Europe’s multilingual and interconnected literary heritage. At present, the landscape of literary data is diverse and fragmented. Even though many resources are currently available in digital libraries, archives, repositories, websites or catalogues, a lack of standardisation hinders how they are constructed, accessed and the extent to which they are reusable (Ciotti 2014). The Computational Literary Studies Infrastructure (CLS INFRA) project aims to federate these resources, with the tools needed to interrogate them, and with a widened base of users, in the spirit of the FAIR and CARE principles (Wilkinson et al. 2016, Carroll 2020). The resulting improvements will benefit researchers by bridging gaps between greater- and lesser-resourced communities in computational literary studies and beyond, ultimately offering opportunities to create new research and insight into our shared and varied European cultural heritage. CLS INFRA’s efforts are central to catering to these urgent infrastructural needs of a growing user community.
+                    <note xml:id="ftn1" place="foot" n="1">
+                        <anchor xml:id="id_docs-internal-guid-a868c722-7fff-8e8c-d1ab-ed1a37e7280e"/>Project website: 
+                        <ref target="https://www.clsinfra.io/">https://www.clsinfra.io</ref>.
+                    </note>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Rather than building entirely new resources for literary studies, the project is strongly committed to exploiting and connecting the already-existing efforts and initiatives, in order to acknowledge and utilize the immense human labour that has already been undertaken. Therefore, the project builds on recently-compiled high-quality literary corpora, such as DraCor and ELTeC (Fischer et al. 2019, Burnard et al. 2021, Schöch et al. to appear), integrates existing tools for text analysis, e.g. TXM, stylo, multilingual NLP pipelines (Heiden 2010, Eder et al. 2016), and takes advantage of deep integration with two other infrastructural projects, namely the CLARIN and DARIAH ERICs.</hi>
+                    <hi rend="color(#000000)">
+                        <note xml:id="ftn2" place="foot" n="2">
+                            <anchor xml:id="id_docs-internal-guid-094daf87-7fff-d388-a040-a068905b185b"/>See 
+                            <ref target="https://www.dariah.eu/">https://www.dariah.eu</ref> and 
+                            <ref target="https://www.clarin.eu/">https://www.clarin.eu</ref>.
+                        </note>
+                    </hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">Consequently, the project aims at building a coherent ecosystem to foster the technical and intellectual findability and accessibility of relevant data. The ecosystem consists of (1) resources, i.e. text collections for drama, poetry and prose in several languages, (2) tools, (3) methodological and theoretical considerations, (4) a network of CLS scholars based at different European institutions, (5) a system of short-term research stays for both early career researchers and seasoned scholars, (6) a repository for training materials, as well as (7) an efficient dissemination strategy. The structure of the project with its work packages closely follows the above components of the infrastructure.</hi>
+                </p>
+                <p>The project is delivered by a geographically balanced, complementary transnational consortium of key local and national infrastructure providers, covering the full range of the project’s defined areas for integration and innovation and aligned so as to create a common infrastructural approach for computational literary studies. In particular the deep integration of both the CLARIN and DARIAH ERICs ensure the project’s long term stability and sustainability.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p>The key aim of our poster is to provide a wide range of stakeholders – researchers, librarians, infrastructure providers – with an understanding of our project and with contact points for specific issues as to motivate them to get involved.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Acknowledgements</head>
+                <p>This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 101004984.</p>
+                <p>
+                    <hi rend="color(#000000)">Beyond the authors of this poster proposal, we would like to acknowledge the role of the work package leads: Maciej Eder (coordinator), Justin Tonra, Christof Schöch, Karina van Dalen-Oskam, Carolin Odebrecht, Matej Ďurčo, Peer Trilcke, Frank Fischer, Julie M. </hi>
+                    <hi rend="color(#000000)">Birkholz, Marco Raciti. Find out more about the team here: </hi>
+                    <ptr target="https://clsinfra.io/about/ourresearchers/"/>
+                    <hi rend="color(#000000)">. </hi>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <anchor xml:id="id_docs-internal-guid-d4f02cdc-7fff-f6d6-cfa9-952de30727eb"/>
+                        <hi rend="bold">Borgman, Christine</hi>. 2010. 
+                        <hi rend="italic">Scholarship in the Digital Age: Information, Infrastructure, and the Internet</hi>. Cambridge, Mass. &amp; London: MIT Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Burnard, Lou, Christof Schöch, and Carolin Odebrecht</hi>
+                        <hi rend="color(#000000)">. 2021. In search of comity: TEI for distant reading. </hi>
+                        <hi rend="color(#000000) italic">Journal of the Text Encoding Initiative</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">14. </hi>
+                        <ptr target="https://doi.org/10.4000/jtei.3500"/>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Ciotti, Fabio</hi>
+                        <hi rend="color(#000000)">.</hi>
+                        <hi rend="color(#000000)"> 2014. Digital literary and cultural studies: the state of the art and perspectives. </hi>
+                        <hi rend="color(#000000) italic">Between</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">4/8, 1-17. </hi>
+                        <ptr target="https://doi.org/10.13125/2039-6597/1392"/>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Eder, </hi>
+                        <hi rend="color(#000000) bold">Maciej</hi>
+                        <hi rend="color(#000000) bold">, Rybicki, </hi>
+                        <hi rend="color(#000000) bold">Jan</hi>
+                        <hi rend="color(#000000) bold"> and Kestemont, M</hi>
+                        <hi rend="color(#000000) bold">ike</hi>
+                        <hi rend="color(#000000)">.</hi>
+                        <hi rend="color(#000000) bold"> </hi>
+                        <hi rend="color(#000000)">2016. Stylometry with R: a package for computational text analysis. </hi>
+                        <hi rend="color(#000000) italic">R Journal</hi>
+                        <hi rend="color(#000000)">, 8(1): 107-21.</hi>
+                        <ref target="https://journal.r-project.org/archive/2016/RJ-2016-007/index.html">
+                            <hi rend="color(#000000)"> </hi>
+                        </ref>
+                        <ptr target="https://journal.r-project.org/archive/2016/RJ-2016-007/index.html"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Fischer, Frank, Ingo Börner, Matthias Göbel, Andrea Hechtl, Christopher Kittel, P. Miling, and Peer Trilcke</hi>
+                        <hi rend="color(#000000)">. 2019. ‪Programmable Corpora: Introducing DraCor, an Infrastructure for the Research on European Drama‬. In </hi>
+                        <hi rend="color(#000000) italic">Book of Abstracts of the Digital Humanities Conference 2019</hi>
+                        <hi rend="color(#000000)">. Utrecht: ADHO.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Heiden, Serge</hi>
+                        <hi rend="color(#000000)">. 2010. The TXM Platform: Building Open-Source Textual Analysis Software Compatible with the TEI Encoding Scheme. In </hi>
+                        <hi rend="color(#000000) italic">24th Pacific Asia Conference on Language, Information and Computation</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(pp. 10 p.). Sendai, </hi>
+                        <hi rend="color(#000000)">Japan.</hi>
+                        <hi rend="color(#000000)"> Retrieved from </hi>
+                        <ptr target="http://halshs.archives-ouvertes.fr/docs/00/54/97/64/PDF/paclic24_sheiden.pdf"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Kitchin, Rob</hi>
+                        <hi rend="color(#000000)">. 2021. </hi>
+                        <hi rend="color(#000000) italic">The data revolution: big data, open data, data infrastructures and their consequences</hi>
+                        <hi rend="color(#000000)">. 2nd edition. Thousand Oaks: Sage Publications Ltd.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Moulin, Claudine, Arianna Ciula, and Julianne Nyhan</hi>
+                        <hi rend="color(#000000)">. 2011. </hi>
+                        <hi rend="color(#000000) italic">Research Infrastructures in the Digital Humanities</hi>
+                        <hi rend="color(#000000)">. Science Policy Briefing 42. Strasbourg: European Science Foundation.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Schöch, Christof, Tomaz Erjavec, Roxana Patras, and Diana Santos</hi>
+                        <hi rend="color(#000000)"> (to appear). Creating the European Literary Text Collection (ELTeC): Challenges and Perspectives. </hi>
+                        <hi rend="color(#000000) italic">Modern Languages Open</hi>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg</hi>
+                        <hi rend="color(#000000)">. 2016. The FAIR Guiding Principles for Scientific Data Management and Stewardship. </hi>
+                        <hi rend="color(#000000) italic">Scientific Data</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">3(1). </hi>
+                        <ptr target="https://doi.org/10.1038/sdata.2016.18"/>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

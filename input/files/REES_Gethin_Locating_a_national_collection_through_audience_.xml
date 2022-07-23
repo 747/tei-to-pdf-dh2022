@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Locating a national collection through audience research</title>
+                <author>
+                    <persName>
+                        <surname>Rees</surname>
+                        <forename>Gethin</forename>
+                    </persName>
+                    <affiliation>British Library, United Kingdom</affiliation>
+                    <email>dr.gethin.rees@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-07-01T13:55:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Cultural Heritage</term>
+                    <term>Geography</term>
+                    <term>GIS</term>
+                    <term>Audience Research</term>
+                    <term>User-centred Design</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>public humanities collaborations and methods</term>
+                    <term>spatial &amp; spatio-temporal analysis</term>
+                    <term>modeling and visualization</term>
+                    <term>Cultural studies</term>
+                    <term>Geography and geo-humanities</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Additional authors: Alex Hunt, National Trust; Valeria Vitale, Alan Turing institute; John Horgan, STRAT7 ResearchBods; Peter Strachan, STRAT7 ResearchBods.</p>
+            <p>This presentation explores the role of geography in public engagement with digital cultural heritage collections. It draws on audience research that examined public values and motivations alongside the use of location-based interfaces such as web maps. The research, conducted as part of the Locating a National Collection project (LaNC), is part of the Towards a National Collection programme and funded by the UK’s Arts and Humanities Research Council. The 
+                <ref target="https://www.nationalcollection.org.uk/about">programme</ref> aims to ‘break down the barriers that exist between the UK’s outstanding cultural heritage collections, with the aim of opening them up to new research opportunities and encouraging the public to explore them in new ways.’
+            </p>
+            <p>Digital cultural heritage records are connected with geographical locations in diverse ways. Heritage sites are managed for the purposes of tourism, education and preservation by historic environment institutions (e.g. LaNC partners Historic England or Historic Environment Scotland). The objects, documents, and other records that constitute the collections of galleries, libraries, archives and museums (GLAMs) (e.g. LaNC partner British Library) are connected to the locations where they were made and used or those they depict and describe. Historic environment organisations use institutional systems such as Geographical Information Systems (GIS) that are based on coordinate data. Locations do not play this structuring role in the institutional systems of GLAMs where historical toponyms predominate. Digital humanities research has examined the implications of toponyms for visualisation (Gregory and Hardie, 2011). Our project seeks to derive value for a range of audiences by building bridges between GLAMs and Historic Environment collections using location.</p>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <hi rend="normalweight">Audience research method</hi>
+                </head>
+                <p>LaNC has used an innovative audience research methodology to understand how geography can help the public to engage with cultural heritage. Audience research was led by Alex Hunt at the National Trust working with Research Bods, a market research company and project researcher Valeria Vitale. The research examined three areas:</p>
+                <p>- Attitudes and behaviour around cultural heritage</p>
+                <p>- Values and their relations to place and geography</p>
+                <p>- Use of digital technologies in cultural heritage and beyond</p>
+                <p>It divided into two interlinked phases: a web survey followed by focus group interviews, both based on representative samples of UK public. This presentation focuses on the latter. After opening discussions, focus groups explored how location-based technologies might present heritage on the web drawing on simple ‘powerpoint-slide’ sketches of future interfaces, known as pretotypes (Savoia, 2011).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Visitplus</head>
+                <p>The first pretotype, ‘VisitPlus’, presented an interactive web map designed to enhance heritage visits. The pretotype offered the example of Lindisfarne (castle managed by National Trust and priory managed by English Heritage). The user can access related resources including visitor information alongside GLAM objects including Lindisfarne Gospels served in iiif by the British Library, paintings and 3D models from British Museum. Underlying VisitPlus is a gazetteer of heritage visitor locations numbering in the low thousands and typically defined as nationally or internationally significant (Timothy, 2014). Each location acts as a nexus, an entry point to access many collection items. The pretotype was designed to probe audience attitudes to aligning GLAM records with visitor sites. For example, are Lindisfarne visitors interested in viewing the gospels when they return? Focus-group participants perceived strong benefits in using VisitPlus and valued access to diverse and high quality resources in a single location. Although many saw potential uses to enhance understanding before and after visits others were confused about whether the intended use was exclusively on-site. Differences in historical veracity between linked resources and guidebooks were especially concerning for participants with a high interest in heritage. The ‘VisitPlus’ branding was somewhat problematic: the name implied a particular usage obscuring broader uses and value.</p>
+                <figure>
+                    <graphic n="1001" width="12.74703888888889cm" height="9.560277777777777cm" url="Pictures/7563f9d8ed01bbfc32fcf3425d4ab6d4.jpg" rend="inline"/>
+                </figure>
+                <p>
+                    Thanks to Valeria Vitale for image.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <hi rend="normalweight">Heritage for all</hi>
+                </head>
+                <p>The ‘Heritage for All’ pretotype allowed users to explore the collections of GLAMs and historic environment organisations connected to the ‘place where they live now’. Addresses or coordinates referenced tens of thousands of precise locations like buildings or parks. Links to institutional web pages were accessed by clicking on locations. An example web map showed a London borough populated with text previews of content such as findspots of ancient coins, extant and disappeared historical buildings and literary references from famous novels, each with their own location. Much of this heritage has been typically defined as locally significant (Goodchild and Hill, 2008; Timothy, 2014, 34). Participants saw value in connections between varied collections such as literary references alongside the physical locations to which they refer. The visualisation of precise locations within a model akin to GIS connected cultural heritage to the extant physical environment, inspiring and informing in-person visits. For some, the diversity was confusing, with interactivity, curated themes or narratives favoured. Participants cited repeated usage as a limitation: why return after exploring the place where they live now and other familiar places? Yet the overriding response was that users found diverse collections connected to familiar locations hugely compelling. The passionate feedback ‘Heritage for All’ evoked was influenced by renewed interest in local exploration resulting from travel restrictions due to the Covid-19 pandemic.</p>
+                <figure>
+                    <graphic n="1002" width="12.796469444444444cm" height="8.801805555555555cm" url="Pictures/62974fa504bf49661be4a01ef5ec55fc.jpg" rend="inline"/>
+                </figure>
+                <p>
+                    Thanks to Valeria Vitale for image.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p>Heritage significance has been understood at varied geographical scales such as the supra-national (e.g. UNESCO), national and sub-national, the latter encompassing regional or local scales (Ashworth and Larkham, 2013). Our audience research has shown that collections traditionally defined as locally significant often hold the most meaning for the public. Geography and community are intimately connected. Although outlining pathways to community impacts such as social cohesion is beyond the scope here, understanding how the public engage with geographical information is a critical step in this endeavour. A user-centred approach to web-map design that draws on digital-humanities visualisation research can help users to discover parts of collections that are significant to them (Roth, 2019). LaNC will go on to build a web map interface that tests these pretotype ideas seeking to understand how cultural heritage defined as locally significant might cohere as a national collection, as our relationships with geography are redefined in a post-covid world.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Ashworth, G, and Larkham, P. (2013). 
+                        <hi rend="italic">Building A New Heritage (RLE Tourism)</hi>. London: Routledge.
+                    </bibl>
+                    <bibl>Gregory, I.N., and Hardie, A. (2011). Visual GISting: Bringing Together Corpus Linguistics and Geographical Information Systems. 
+                        <hi rend="italic">Literary and Linguistic Computing,</hi> 26 (3): 297–314. 
+                        <ref target="https://doi.org/10.1093/llc/fqr022">https://doi.org/10.1093/llc/fqr022</ref>
+                    </bibl>
+                    <bibl>Goodchild, M. F., and Hill, L. L. (2008). Introduction to Digital Gazetteer Research. 
+                        <hi rend="italic">International Journal of Geographical Information Science</hi>, 22 (10): 1039–44. 
+                        <ref target="https://doi.org/10.1080/13658810701850497">https://doi.org/10.1080/13658810701850497</ref>
+                    </bibl>
+                    <bibl>Roth, R. (2019). How Do User-Centered Design Studies Contribute to Cartography? 
+                        <hi rend="italic">GEOGRAFIE,</hi> 124 (2): 133–61.
+                        <hi rend="Hyperlink" xml:space="preserve"> </hi>
+                        <ref target="https://doi.org/10.37040/geografie2019124020133">https://doi.org/10.37040/geografie2019124020133</ref>
+                    </bibl>
+                    <bibl>Savoia, A. (2011). Pretotype It. 
+                        <ref target="https://drive.google.com/file/d/0B0QztbuDlKs_NzBjYWNiOGQtNmQyNi00OWE2LWI2YzktN2Y3YTEzM2VjYTNj/view?resourcekey=0-zeFx0Fesf3X3pRjYzIS1ZA%20">https://drive.google.com/file/d/0B0Q&#8203;ztbu&#8203;DlKs_&#8203;NzBj&#8203;YWNi&#8203;OGQt&#8203;NmQy&#8203;Ni00&#8203;OWE2&#8203;LWI2&#8203;Yzkt&#8203;N2Y3&#8203;YTEz&#8203;M2Vj&#8203;YTNj/view?resourcekey=0-ze&#8203;Fx0F&#8203;esf3&#8203;X3pR&#8203;jYzI&#8203;S1ZA</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl>Timothy, D. J. (2014). Contemporary Cultural Heritage and Tourism: Development Issues and Emerging Trends. 
+                        <hi rend="italic">Public Archaeology,</hi> 13 (1–3): 30–47. 
+                        <ref target="https://doi.org/10.1179/1465518714Z.00000000052">https://doi.org/10.1179/1465518714Z.00000000052</ref>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

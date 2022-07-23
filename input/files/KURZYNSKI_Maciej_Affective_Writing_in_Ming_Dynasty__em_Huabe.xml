@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Affective Writing in Ming Dynasty <hi rend="italic">Huaben</hi> Stories — A Topic Modeling Study</title>
+                <author>
+                    <persName>
+                        <surname>Wang</surname>
+                        <forename>Yiwen</forename>
+                    </persName>
+                    <affiliation>Zhejiang University, People's Republic of China</affiliation>
+                    <email>11804048@zju.edu.cn</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kurzynski</surname>
+                        <forename>Maciej</forename>
+                    </persName>
+                    <affiliation>Stanford University, United States of America</affiliation>
+                    <email>makurz@stanford.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T05:32:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>topic modelling</term>
+                    <term>Ming dynasty</term>
+                    <term>huaben</term>
+                    <term>cult of qing</term>
+                    <term>sexuality</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>cultural analytics</term>
+                    <term>text mining and analysis</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Topic modeling is a text mining technique used to discover latent semantic dimensions in a corpus of texts. In our paper, we employ the LDA topic modeling algorithm to gain new insights into the language of 
+                <hi rend="italic">huaben</hi> narratives (short- or medium-length stories or novellas in vernacular language) written in early modern China during the Ming and Qing Dynasties. Our corpus consists of 633 stories assembled from multiple digital databases according to Ouyang Daifa's <hi rend="Chinese">欧阳代发</hi>research on 
+                <hi rend="italic">huaben</hi> literature. Our quantitative analysis discovers a number of computational topics related to the discourse of 
+                <hi rend="italic">qing</hi> (<hi rend="Chinese">情</hi>, often translated into English as “Feeling,” “sentiment,” or “sensibility”). We combine topic modeling (distant reading) with close reading in order to trace the evolution of narrative patterns and examine the usage of vocabulary during the so-called “cult of 
+                <hi rend="italic">qing</hi>” in the late Ming Dynasty. We show how the discourse of 
+                <hi rend="italic">qing</hi> became increasingly specialized and sophisticated, and how this transformation mirrored the evolution of sensibilities of both authors and readers of the 
+                <hi rend="italic">huaben</hi> stories. Specifically, we explore the ways in which writers combined the themes of love, erotic desire, and marriage in their works. The vocabulary of (poetic) love was used to "set the tone" through opening poems, to structure the story’s plot via extra-diegetic transitions, but above all to foreground the sentimental aspect of the narrative. The erotic vocabulary, on the other hand, which developed as a vernacular counterpart to the more abstract poetic discourse, was frequently employed to describe bodily experiences but also the "negative" or “evil” characters. The marriage vocabulary, finally, was largely unrelated to the poetic discourse. We argue that the presence or absence of erotic vocabulary served as an implicit moral judgement passed on literary characters by the narrators. Furthermore, our project shows the ways in which computational criticism can enrich traditional literary scholarship and draw our attention to the very materiality of texts and the words that constitute it.
+            </p>
+        </body>
+    </text>
+</TEI>

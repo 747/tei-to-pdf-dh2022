@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Reading <hi rend="italic">The Unknown</hi> with a Network Mapping Device: Graph Data Visualization for Hyperfiction Works </title>
+                <author>
+                    <persName>
+                        <surname>Viehhauser</surname>
+                        <forename>Gabriel</forename>
+                    </persName>
+                    <affiliation>University of Stuttgart</affiliation>
+                    <email>viehhauser@ilw.uni-stuttgart.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schlesinger</surname>
+                        <forename>Claus-Michael</forename>
+                    </persName>
+                    <affiliation>University of Stuttgart</affiliation>
+                    <email>claus-michael.schlesinger@ilw.uni-stuttgart.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hein</surname>
+                        <forename>Pascal</forename>
+                    </persName>
+                    <affiliation>University of Stuttgart</affiliation>
+                    <email>pascal.hein@ilw.uni-stuttgart.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Blessing</surname>
+                        <forename>Andre</forename>
+                    </persName>
+                    <affiliation>University of Stuttgart</affiliation>
+                    <email>andre.blessing@ims.uni-stuttgart.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ulrich</surname>
+                        <forename>Mona</forename>
+                    </persName>
+                    <affiliation>Deutsches Literaturarchiv Marbach</affiliation>
+                    <email>Mona.Ulrich@dla-marbach.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-26T22:55:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Hyperfiction</term>
+                    <term>Network Analysis</term>
+                    <term>Link Extraction</term>
+                    <term>Hypertext</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>electronic literature production and analysis</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Because of their hypertextual structure, the use of topological metaphors for the analysis of hyperfiction works appears to be obvious: Reading hyperfiction seems like walking through a maze (Schmundt, 1994). However, discussion about mapping a structure that is otherwise perceived in a processual manner, namely by (non-)linear reading, has been abundant (Ciccoricco, 2004).</p>
+            <p>For our approach to 
+                <hi rend="italic">The Unknown</hi>, a hyperfiction novel by William Gillespie, Frank Marquardt, Scott Rettberg and Dirk Stratton (Gillespie et al:, 1998-2002), we use computational methods to extract network data from the site to visualize its hypertext structure. As web pages tend to change over time, our software Warc2graph focuses on WARC files, which are a standardized format for web archiving (IIPC, n.d.), containing data pertaining to the complete communication between a client and the server. Given a WARC file, Warc2graph extracts references from the archived object, encompassing any HTML tag that contains reference information, such as hyperlinks in an &lt;a&gt; tag, embedded media, automatic forwarding defined in a &lt;meta&gt; tag etc. We use three different methods for reference extraction: a) evaluate the WARC header, b) parse the HTML workload, c) parse the Document Object Tree of the workload utilizing Selenium, a software controlled browser engine (see Ulrich et al., 2021, for a detailed description of the methodology applied by Warc2graph).
+            </p>
+            <p>The extracted reference information can be understood as the graph structure of an archived web object. We visualize this structure as a network showing each resource as a node and the references between resources as edges. Graph data analytics provide different measures that can be used to gain insights into the object’s structure, e.g. in order to describe the functional role of certain nodes in the network. The network thus provides a structural overview of the hypertext work, which opens up new possibilities for reading hyperfiction, which, by the nature of its medium often defies the rules of linearity: Besides the sequential connection of network nodes, the graph data analysis e.g. reveals possible end points of the story line(s), which can be manifold in hypertext. It is also possible to detect central passages that can be crucial for the decisions the reader has to make, as she finds her own way through the text, since it is likely that these passages are represented by nodes that show characteristic patterns.</p>
+            <figure>
+                <graphic n="1001" width="10.662708333333333cm" height="10.662708333333333cm" url="Pictures/570da5ff38777c668df0e5ba4bd195af.png" rend="inline"/>
+            </figure>
+            <p>Figure 1: Internal reference structure of 
+                <hi rend="italic">The Unknown,</hi> node size pertaining to degree
+            </p>
+            <p>Figure 1 shows such a network of 
+                <hi rend="italic">The Unknown</hi>.
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> We provide the extracted network data together with a copy of the Warc2graph software package via Zenodo, DOI: 10.5281/zenodo.5773099</p>
+                </note> The nodes are sized according to their degree, revealing pages that appear of central importance for the site as well as clusters of interlinked documents. The network thus establishes a spatial text-view, which seems particularly apt for 
+                <hi rend="italic">The Unknown</hi>, a text that very explicitly emphasizes its status as a non-linear hypertext (Rettberg, 2019: 80-83). By sketching out the fictional narrative of a book tour of the authors through the US the novel itself becomes a road trip through the unknown territory of hypertext, an “encyclopedic novel in a network environment” that evokes “worlds that never quite attain or even aspire to a coherent ‘entirety’” (Ciccoricco, 2007: 129). Whereas these ‘worlds’ can be related to the clusters of the network, the graph metrics also seem to be instructive for the characterization of single nodes: E.g., one of the nodes with the highest degree refers to the page ‘default.html’, which contains an ironic metafictional discussion on the unsuitability of the concept of a home page for hypertext literature, which, strictly speaking, as a single starting point contradicts the principle of nonlinearity. Revealingly, the node of default.html has 129 outgoing edges, which reflects the fact that the page is ironically interspersed with links that in fact could make the site apt to serve as an explanatory starting page for the novel. However, the authors have deliberately undermined this function by ‘hiding’ the page in the jumble of HTML-documents, since only five ingoing links refer to the node.  
+            </p>
+            <p>The analysis also reveals that an approximation of textual structures with Warc2graph has to reflect technical constraints that could affect its results: In 
+                <hi rend="italic">The Unknown</hi>, the main navigation was copied into each of the over 700 HTML-documents, automatically providing the navigation elements with a network degree of 759 and clustering these nodes in our graph. Another cluster with highly interlinked elements consists of 123 HTML-pages with watercolor drawings by Katie Gilligan, which accompany the text as sort of a diary. All pages are interlinked by a calendar on each page, leading to a similar degree for each document. Thus, technical features like site navigation could reveal structural similarities of nodes, but also have to be taken into account as potential biases for further interpretation. 
+            </p>
+            <p>If reading a hypertext is like walking through a maze, the graph might be near to a map of the maze. However, in order to construct a network, numerous parameters need to be set, which implies decisions that are not independent from reading and interpreting the text. Thus, rather than provide a definite map of the maze, our networks add additional views on structural qualities of The Unknown.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="color(2E3436)" xml:space="preserve">Ciccoricco, D. (2004). Network Vistas: Folding the Cognitive Map. </hi>
+                        <hi rend="italic color(2E3436)">Image &amp; Narrative,</hi>
+                        <hi rend="color(2E3436)" xml:space="preserve"> 8. </hi>
+                        <hi rend="underline color(1B6ACB)">http://www.imageandnarrative.be/inarchive/issue08/daveciccoricco.htm#013</hi>
+                        <hi rend="color(2E3436)" xml:space="preserve"> (accessed April 27, 2022).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(2E3436)">Ciccoricco, D. (2008). Reading Network Fiction. Tuscaloosa: Univ. of Alabama Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(2E3436)" xml:space="preserve">Gillespie, W., </hi>Marquardt, F., 
+                        <hi rend="color(2E3436)" xml:space="preserve">Rettberg, S. and Stratton, D. (1998). </hi>
+                        <hi rend="italic color(2E3436)">The Unknown</hi>
+                        <hi rend="color(2E3436)" xml:space="preserve">. </hi>
+                        <hi rend="underline color(1B6ACB)">https://unknownhypertext.com/</hi>
+                        <hi rend="color(2E3436)" xml:space="preserve"> (accessed April 27, 2022).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(2E3436)" xml:space="preserve">IIPC. n.d. The WARC Format. </hi>
+                        <hi rend="underline color(1B6ACB)">https://iipc.github.io/warc-specifications/specifications/warc-format/warc-1.1/</hi>
+                        <hi rend="color(2E3436)">(accessed April 27, 2022).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(2E3436)">Rettberg, S. (2019). Electronic Literature. Cambridge, UK ; Medford, MA: polity.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(2E3436)" xml:space="preserve">Schmundt, H. (1994). Autor Ex Machina: Electronic Hyperfictions: Utopian Poststructuralism and the Romanticism of the Computer Age. </hi>
+                        <hi rend="italic color(2E3436)">AAA: Arbeiten Aus Anglistik Und Amerikanistik</hi>
+                        <hi rend="color(2E3436)" xml:space="preserve"> 19 (2): 223–46. </hi>
+                        <hi rend="underline color(1B6ACB)">http://www.jstor.org/stable/43023678</hi>
+                        <hi rend="color(2E3436)" xml:space="preserve"> (accessed April 27, 2022).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(2E3436)" xml:space="preserve">Ulrich, M., Schlesinger, C.-M., Blessing, A., and Hein, P. (2021). Networks of Net Literature - Modelling, Extracting and Visualizing Link-Based Networks in the DLA Corpus of Net Literature. </hi>
+                        <hi rend="underline color(1B6ACB)">https://elmcip.net/node/16380</hi>
+                         
+                        <hi rend="color(2E3436)">(accessed April 27, 2022).</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

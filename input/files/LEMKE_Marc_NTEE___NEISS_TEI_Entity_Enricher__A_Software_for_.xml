@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">NTEE – NEISS TEI Entity Enricher. A Software for enriching TEI-Files with Entities.</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Lemke</surname>
+                        <forename>Marc</forename>
+                    </persName>
+                    <affiliation>University of Rostock, Germany</affiliation>
+                    <email>marc.lemke@uni-rostock.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sperfeld</surname>
+                        <forename>Konrad</forename>
+                    </persName>
+                    <affiliation>University of Rostock, Germany</affiliation>
+                    <email>konrad.sperfeld@uni-rostock.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Zöllner</surname>
+                        <forename>Jochen</forename>
+                    </persName>
+                    <affiliation>University of Rostock, Germany</affiliation>
+                    <email>jochen.zoellner@uni-rostock.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Labahn</surname>
+                        <forename>Roger</forename>
+                    </persName>
+                    <affiliation>University of Rostock, Germany</affiliation>
+                    <email>roger.labahn@uni-rostock.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T09:55:24.865000000</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Python</term>
+                    <term>Annotation</term>
+                    <term>TEI</term>
+                    <term>Transfer Learning</term>
+                    <term>BERT</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>natural language processing</term>
+                    <term>Computer science</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>Digital Scholarly Editions in the Humanities are the result of critical editing processes, in which analog documents are transcribed into a digital form, mostly with the help of markup languages. An essential step of these processes is the recognition and markup of entities such as people, places and organizations in the digital texts. The software 
+                    <hi rend="italic">NEISS TEI Entity Enricher</hi> (NTEE) assists this step in two ways: It provides the possibility to train custom entity taggers based on state-of-the-art neural networks and it supports manual identification of the recognized entities. The input and output format is TEI-XML (TEI Consortium, 2021).
+                </p>
+                <p>NTEE is an open source software. The program and its documentation are available at:</p>
+                <p>
+                    <ptr target="https://github.com/NEISSproject/tei_entity_enricher/"/>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Description of functionality</head>
+                <p>The core feature of the software is the fine-tuning of pre-trained neural language models for an edition-specific entity recognition task. The resulting entity tagger can then be used to mark up entities in one or more TEI files. In total, the NTEE workflow includes five subtasks: configuration, groundtruth building, training, prediction and postprocessing. They all take place in a single user interface.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/73691deb6116956c69ee9e2d31e3c879.png"/>
+                        <head>A training data overview in the Groundtruth Builder screen</head>
+                    </figure>As a prerequisite for training, a groundtruth must be created in the 
+                    <hi rend="italic">Groundtruth Builder</hi> (see Fig. 1), i.e. a set of already annotated data that can be used to train an entity tagger. For this purpose, TEI files are applied as input data. Also, three configurations need to be done: The 
+                    <hi rend="italic">Entity Definition</hi> is simply a TEI-independent list of those entity classes to be tagged later. A 
+                    <hi rend="italic">TEI Read Entity Mapping</hi> (see Fig. 2) then defines which XML elements (including attribute values) correspond to these entities in the input TEI files. Finally, the 
+                    <hi rend="italic">TEI Reader Config</hi> can be used to exclude the content of certain XML elements from processing, as a restriction on the basic behavior of NTEE to process the complete content of the ‘tei:text’ element mandatory in the TEI standard.
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/b04baaa8f52068038c6f4aac3cd76120.png"/>
+                        <head>Example of mapping XML elements to entities for the purpose of groundtruth building</head>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/dab55040a5f60fe768f7cc276a07784a.png"/>
+                        <head>Configurations for training an entity tagger</head>
+                    </figure>With a given groundtruth it is possible to start the training process in the 
+                    <hi rend="italic">NER Trainer</hi> screen (see Fig. 3) by selecting the groundtruth and a pre-trained language model. Different models (English, French, German, Spanish, Multilingual) published on the 
+                    <hi rend="italic">Hugging Face</hi> hub (Wolf et al., 2020) can be selected in NTEE out of the box. After training, the resulting entity tagger is ready to be applied to multiple TEI files for entity prediction. Finally, a manual assessment of the prediction results and the identification of the entities may be carried out in the 
+                    <hi rend="italic">Postprocessing</hi> screen (see Fig. 4 and 5).
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/df887f7659587aff09b763649ca2d85a.png"/>
+                        <head>Display and edit recognized entities in the Postprocessing screen</head>
+                    </figure>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Named Entity Recognition (NER)</head>
+                <p>The neural networks used in NTEE are based on so-called 
+                    <hi rend="italic">Bidirectional Encoder Representations from Transformers</hi> (BERTs) (Devlin et al., 2019). This is currently one of the most widespread network architecture used to train language models that solve tasks like NER in the field of Natural Language Processing. Classically, a BERT is first pre-trained with large amounts of unlabeled text to obtain a robust language model and then fine-tuned to a downstream task like NER. In our paper (Zöllner et al., 2021), we have extensively investigated various pre-training and fine-tuning techniques to train such a BERT model as optimally as possible for entity enrichment in Digital Scholarly Editions. In NTEE, we have taken care to ensure that the provided models are usable even with limited computational resources.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Named Entity Linking (NEL)</head>
+                <p>The procedure of identifying recognized entities is called 
+                    <hi rend="italic">Named Entity Linking</hi> due to the fact that it is done by providing a Uniform Resource Identifier (URI). For this, NTEE supports the users by delivering identification suggestions based on the entity element string using queries to a local Entity Library or the Wikidata Knowledge Graph (Bayer, 2013).
+                </p>
+                <p>The latter delivers an ontology with which it is possible to accelerate the identification process: By using Semantic Web technology the set of potential candidates is narrowed.</p>
+                <p>The former is a JSON file, in which entities can be saved locally. On the one hand, this also accelerates the identification process due to the omission of a web query to the Wikidata Knowledge Graph in these cases. On the other hand, this enables the user to apply edition-specific knowledge in the NEL process such as unusual nicknames of persons or entities at all that are not stored in the Wikidata database.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/912af645ce8ce82aa3598ef1f8ed951c.png"/>
+                        <head>Identity suggestions for an entity in the Postprocessing screen</head>
+                    </figure>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Acknowledgments</head>
+                <p>This work was funded by the European Social Fund (ESF) and the Ministry of Education, Science, and Culture of Mecklenburg-Western Pomerania (Germany) within the project NEISS (Neural Extraction of Information, Structure, and Symmetry in Images) under grant no ESF/14-BM-A55-0006/19.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Bayer, T.</hi> (2013). The Wikidata revolution is here: enabling structured data on Wikipedia https://diff.wikimedia.org/2013/04/25/the-wikidata-revolution/.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Devlin, J., Chang, M.-W., Lee, K. and Toutanova, K.</hi> (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. 
+                        <hi rend="italic">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)</hi>. Minneapolis, Minnesota: Association for Computational Linguistics, pp. 4171–86 doi:10.18653/v1/N19-1423. https://aclanthology.org/N19-1423.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">TEI Consortium</hi> (2021). TEI P5: Guidelines for Electronic Text Encoding and Interchange https://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wolf, T., Debut, L., Sanh, V., Chaumond, J., Delangue, C., Moi, A., Cistac, P., et al.</hi> (2020). HuggingFace’s Transformers: State-of-the-art Natural Language Processing. 
+                        <hi rend="italic">Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations</hi>. pp. 38–45.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Zöllner, J., Sperfeld, K., Wick, C. and Labahn, R.</hi> (2021). Optimizing Small BERTs Trained for German NER. 
+                        <hi rend="italic">Information</hi>, 
+                        <hi rend="bold">12</hi>(11) doi:10.3390/info12110443. https://www.mdpi.com/2078-2489/12/11/443.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

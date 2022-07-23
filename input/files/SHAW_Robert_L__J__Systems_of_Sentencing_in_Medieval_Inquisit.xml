@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Systems of Sentencing in Medieval Inquisitorial Records: semantic text modelling as a platform for computational analysis</title>
+                <author>
+                    <persName>
+                        <surname>Shaw</surname>
+                        <forename>Robert L. J.</forename>
+                    </persName>
+                    <affiliation>Centre for the Digital Resarch of Religion, Masaryk University, Czech Republic</affiliation>
+                    <email>robert.shaw@mail.muni.cz</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T12:15:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>medieval heresy and inquisition</term>
+                    <term>penance</term>
+                    <term>semantic text modelling; Qualitative Comparative Analysis (QCA)</term>
+                    <term>multiple linear regression</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>data modeling</term>
+                    <term>text encoding and markup language creation</term>
+                    <term>deployment</term>
+                    <term>and analysis</term>
+                    <term>History</term>
+                    <term>Theology and religious studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Outline</head>
+                <p style="text-align: left; ">This paper shows how the digital capture of texts and quantitative methods can be used to elaborate the weighting of factors that influenced medieval inquisitors in their punishment of religious dissidents. It is a topic which lacks definition in existing research: the extent to which inquisitorial sentencing “systems” existed has escaped qualitative historical approaches. To overcome this, we captured the entirety of a medieval register of inquisition sentences – that of Peter Seila’s inquisition in Quercy, Languedoc, 1241–2 – as a series of semantically-rich data statements via a semantic text modelling process developed within the Dissident Networks Project (DISSINET, 
+                    <ref target="https://dissinet.cz">https://dissinet.cz</ref>). From these statements, we then created analytical data projections in order to study the impact of both criminal actions and social connectivity on the penances meted out by Peter through Qualitative Comparative Analysis (QCA) and multiple regression modelling. Overall, our research demonstrates an approach with broader applicability in the digital humanities: one that seeks not only to make texts digitally accessible in the form of richly structured data but also to render every element of both their content and context available to computational study.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Background</head>
+                <p style="text-align: left; ">In recent decades, there has been significant interest in the way that medieval church authorities in the Latin West approached religious dissidence, above all the way that its representatives construed or even “constructed” heresy (e.g. Moore, 2012; Pegg, 2001). Nevertheless, in-depth modern analyses of the legal processes and sentences that inquisitors – who, from the thirteenth century, took on a key role in prosecuting heresy – employed against dissidents and how these related to the perceived religious and social challenge remain rarer (Given, 1997 and Roach, 2001 remain relatively isolated examples in the context of Languedoc). Crucially the factors that influenced the weight of the punishments the inquisitors handed out have received little systematic attention.</p>
+                <p style="text-align: left; ">Without understanding these, our knowledge of inquisitorial priorities remains strikingly incomplete. It can be assumed that inquisitors aimed, at least in part, to punish in accordance with the details of the heretical activity that they recorded. But the exact correlations often remain unclear even at the level of a single inquisitor. For instance, were crimes of different types weighted differently? What effect did repetition of crimes have? Inquisitors also captured significant information about the social interactions and relationships of the accused, raising the question of how much they were influenced by these contacts in sentencing. For instance, were dissidents punished differently for knowing famous heretics, or committing certain actions in concert with other suspects? Did kinship ties to other condemned individuals predict graver sentences?</p>
+                <p style="text-align: left; ">This lack of clarity and definition on these matters results from the methodological and practical research difficulties such questions pose to historians. To answer them, it is necessary both to render sources as structured data in a manner that sufficiently respects the complexity of the cases, and to apply analytical techniques capable of making sense of that same complexity. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Data and Methods</head>
+                <p style="text-align: left; ">As a case study, we analysed the register of crimes and sentences drawn up by the Dominican inquisitor Peter Seila in the Quercy region of Languedoc in 1241–2 (Duvernoy, 2001). It is one of the very first extant inquisition registers, recording the sentences of more than 600 supposed religious dissidents accused of involvement in the Cathar and/or Waldensian heresies.</p>
+                <p style="text-align: left; ">Our data collection from this source was founded on semantic text modelling, a methodology that the DISSINET project has designed for transforming complex textual sources into structured data (Zbíral et al., 2021). Rather than simply isolating features deemed significant for a specific research question, this method seeks to capture almost every detail of textual sources, including their discursive features as well as all evidence of their conditions of production. Each sentence or clause is manually transformed into a “statement” structured as a semantic quadruple (subject, verb, and two object positions). These statements relate “entities” such as Persons, Groups, Concepts, Objects, Locations, Events, and Values (see fig. 1) via an Action. The structured representation of Peter’s register in over 10,000 statements (capturing every clause of the source) allowed for a closer feel – both qualitatively, through the process of coding, and quantitatively, through exploratory data analysis – of significant textual patterns before further specifying our analyses.</p>
+                <figure>
+                    <graphic n="1001" width="15.978447222222222cm" height="7.662333333333334cm" url="Pictures/6bd401b49a506b411dc705d54ff6e8ef.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">With the source digitized in this form, it became possible to transform the data in ways pertinent to different quantitative methods (without any further data entry) in order to study the impact on sentencing of both criminal actions and social connections. By categorizing entities connected to the sentenced individuals within the statements, we created various tables concerning the penances received by these people, their crimes, and the types of people they interacted with and/or were related to by kinship. Using crisp-set Qualitative Comparative Analysis (csQCA) – a technique that uses Boolean minimization to identify sets of conditions that best align with outcomes (Ragin, 2014) – we looked at how the presence and absence of crime types (e.g. resource exchange, ritual, belief, etc.) and the overall sect alignments of the sentenced (i.e. did they interact more with Cathar or Waldensian ministers?) correlate with the essential punishment types (e.g. pilgrimages, crusade service, etc.). To encompass better the repetition of crimes, a broader range of social connectivity conditions, and the complexity of sentencing outcomes, we built a robust multiple linear regression model (Perktold, 2014), using a “Combined Penance Index” (founded on distance of pilgrimages / duration of other sanctions) as the dependent variable. Through this, we sought to understand 1) the linear dependence between the proportions of criminal acts of different types and punishment and 2) the positive influence of the social context of crimes on sentencing (i.e. a “guilt by association” hypothesis).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Findings</head>
+                <p style="text-align: left; ">The combined results show that Peter Seila was relatively systematic throughout the trials in his weighting of the different types of crimes and interactions with dissident ministers when sentencing: for instance, ritual crimes and Cathar interactions appear particularly associated with severe outcomes. We found no evidence, however, that Peter was influenced by accomplicity or kinship among the sentenced followers. More broadly, our research demonstrates how a text captured in digital form via a semantic text modelling process can be quantitatively analysed through multiple approaches, and with a precision concerning content and context that will satisfy researchers from a qualitative background.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Duvernoy, J</hi>. (2001). 
+                        <hi rend="italic">L'inquisition en Quercy: le registre des pénitences de Pierre Cellan, 1241–1242</hi>. Castelnaud la Chapelle: L’Hydre Éditions.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Given, J. B</hi>. (1997). 
+                        <hi rend="italic">Inquisition and Medieval Society: Power, Discipline, and Resistance</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="italic">in Languedoc</hi>. Ithaca &amp; London: Cornell University Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Moore, R. I.</hi> (2012). 
+                        <hi rend="italic">The War on Heresy</hi>. Cambridge, MA: The Belknap Press of Harvard
+                    </bibl>
+                    <bibl style="text-align: left; ">University Press.</bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Pegg, M. G.</hi> (2001). 
+                        <hi rend="italic">The Corruption of Angels: The Great Inquisition of 1245-1246</hi>. Princeton: Princeton University Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Perktold, J</hi>. (2014). REF/ENH RLM and robust scale for almost perfect prediction. 
+                        <hi rend="italic">Statsmodels Github</hi>. 
+                        <ref target="https://github.com/statsmodels/statsmodels/pull/1341">https://github.com/statsmodels/statsmodels/pull/1341</ref>(last modified 2 April 2021; accessed 2 October 2021)
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Ragin, C. C. </hi>(2014). 
+                        <hi rend="italic">The comparative method: moving beyond qualitative and quantitative strategies</hi>. 2nd ed. Los Angeles: University of California Press. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Roach, A. P.</hi> (2001). Penance and the making of the inquisition in Languedoc. 
+                        <hi rend="italic">Journal of Ecclesiastical History,</hi>
+                        <hi rend="bold">52</hi>: 409–433.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Zbíral, D., Shaw, R. L. J., Hampejs, T., and Mertel. A.</hi> (2021). Model the source first! Towards source modelling and source criticism 2.0. 
+                        <hi rend="italic">Zenodo</hi>, 
+                        <ref target="https://doi.org/10.5281/zenodo.5218926">https://doi.org/10.5281/zenodo.5218926</ref> (accessed 21 April 2022)
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

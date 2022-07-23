@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>What can stylometry and LIWC infer from Octavia E. Butler's use of 6+ letter words?</title>
+                <author>
+                    <persName>
+                        <surname>Essam</surname>
+                        <forename>Bacem</forename>
+                    </persName>
+                    <affiliation>Peerwith, Netherlands, The</affiliation>
+                    <email>literaryartrans@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T08:25:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Dyslexia</term>
+                    <term>phonotactic probability</term>
+                    <term>stylometry</term>
+                    <term>morphosyntax</term>
+                    <term>disability</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>rhetorical analysis</term>
+                    <term>semantic analysis</term>
+                    <term>Humanities computing</term>
+                    <term>Linguistics</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; text-align: justify;">The left temporal and temporo-parietal structures govern the memorization of words of the mental lexicon, while left frontal structures control the processing of the mental grammar and the computation of standard morphological forms (Ullman et al., 2005). This study compiles a corpus of Butler’s twelve novel to be categorized morphologically and cognitively using Linguistic Inquiry Word Count (LIWC) program; phonetically using phonotactic probability; and R package for clustering phonemes, morphemes and lexemes. The phonotactic probability of all words was measured using KU’s phonotactic probability calculator (Vitevitch, &amp; Luce, 2004). Corpus tools were used to generate 5-word-window concordance for all sentences containing a 6+ letter word. The literary section of Brown corpus that includes fiction written by non-dyslexic writers was used as a reference corpus. Brown corpus is freely searchable through Sketch Engine and is accessible for downloading. We also compiled another contemporary reference for contemporary non-dyslexic American writers as a second reference corpus. De Luca et al. (2008) suggested that word length selectively influenced word recognition in impaired versus skilled readers, regardless of the moderating action of sublexical, lexical, and semantic factors. In this study, the linguistic analysis of the concorded lines retrieved from Butler’s novels, aims to test whether Butler’s reading deficits affected her selection of lengthy words. The categorization of 6-letter and 9+letter words demonstrated that most lengthy words were either nominalized or jargon terms. The use of lengthy verbs was, however, inconspicuous. The phonotactic probability of the most frequently used words was complex in nouns and modifiers but not in verbs. The study suggests that Butler’s choice of lengthy words is a coping mechanism she used to regulate her image as a dyslexic writer. Although De Luca et al. (2008) conducted a reading-task study, the reading and comprehension are neuro-linguistically dependent on the morphological complexity of the written text. Crisp et al (2011) concluded that the severely impaired phonology and the representation of semantic-phonological impairment demonstrate that semantic representations are central to reading in the face of phonological impairment. Implications inferred from this experiment are ushered towards effective computation of word imageability, frequency of use, selection of word senses, word familiarity, word length, semantic diversity and phonological neighborhood density.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Crisp, J., Howard, D., &amp; Lambon Ralph, M. A.</hi> (2011). More evidence for a continuum between phonological and deep dyslexia: Novel data from three measures of direct orthography-to-phonology translation. Aphasiology, 25(5), 615-641.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">De Luca, M., Barca, L., Burani, C., &amp; Zoccolotti, P</hi>. (2008). The effect of word length and other sublexical, lexical, and semantic variables on developmental reading deficits. Cognitive and Behavioral Neurology, 21(4), 227-235. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Ullman, M. T., Pancheva, R., Love, T., Yee, E., Swinney, D., &amp; Hickok, G</hi>. (2005). Neural correlates of lexicon and grammar: Evidence from the production, reading, and judgment of inflection in aphasia. Brain and Language, 93(2), 185-238.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Vitevitch, M.S. &amp; Luce, P.A</hi>. (2004) A web-based interface to calculate phonotactic probability for words and nonwords in English. Behavior Research Methods, Instruments, and Computers, 36, 481-487.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><hi rend="italic">Contabilizar el comercio imperial</hi>: Analysis of early double-entry accounting books using the TEI/DEPCHA</title>
+                <author>
+                    <persName>
+                        <surname>Kokaze</surname>
+                        <forename>Naoki</forename>
+                    </persName>
+                    <affiliation>Chiba University, Japan</affiliation>
+                    <email>xiao3feng10324@yahoo.co.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fushimi</surname>
+                        <forename>Takeshi</forename>
+                    </persName>
+                    <affiliation>Keio University, Japan</affiliation>
+                    <email>taquito@keio.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nakamura</surname>
+                        <forename>Yusuke</forename>
+                    </persName>
+                    <affiliation>The University of Tokyo, Japan</affiliation>
+                    <email>y-nkmr@l.u-tokyo.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T02:20:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Text encoding</term>
+                    <term>History of Accounting</term>
+                    <term>Economic history of early modern Europe</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>text encoding and markup language creation</term>
+                    <term>deployment</term>
+                    <term>and analysis</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction: The Purpose of Research</head>
+                <p style="text-align: left; ">We have been analyzing accounting books in order to understand the economic history of the early Spanish empire. This presentation focuses on the double-entry accounting books of the Salamanca company in Burgos, a city in northern Spain, in the mid-sixteenth century. This paper reports our materials, analytical framework, progress, and prospect. In this research, data mining from the accounting book, structured with the Text Encoding Initiative /DEPCHA, has enabled historical insights into the unique terminology of accounting, the balance of payments, and the tendency of abbreviation.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Materials</head>
+                <p style="text-align: left; ">Our materials are found among the accounting books in the Archive of Burgos Provincial Congress (Table 1). We picked out as an example a pair of accounting books based on the double-entry method (classified as CM32 and CM108). In this method, two types of books are required. One is the journal (diario in Spanish), in which all transactions are recorded chronologically. The other is the ledger (libro mayor), where each transaction in the journal must be transcribed twice, one on the left page as a debit transaction, and the other as a credit on the right (cf. Figure 1). This double transcription, a quintessential characteristic of the method, must be encoded with TEI. </p>
+                <p style="text-align: left; ">Each transcription in the ledger has at least two sections: the detail of the transaction on the left; the value of the transaction on the right. On average, the left section contains information such as the name of the debtor, date and place of transaction, merchandise and its price and quantity, names of other parties involved, terms of the transaction, and page number of the corresponding transcription. As of March 2022, we have marked up 12 folios of the ledger, which contains 197 entries.</p>
+                <p style="text-align: left; ">Table 1: List of Accounting Books kept in ADPB</p>
+                <p style="text-align: left; ">Figure 1: Credit and debit entries in the ledger</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Analytical Framework</head>
+                <p style="text-align: left; ">For the markup of accounting records, XBRL might be a possible candidate framework (Anderson et al. 2016). However, this modern framework seems to be not suitable enough to capture all the elements of the historical records, not present in the contemporary ones. Instead, we have chosen DEPCHA, an extended TEI schema. DEPCHA has developed a domain ontology, based on the concept of ‘Transactiongraphy’ (Tomasek and Bauman, 2013), for extracting machine-readable data in RDF format from transactional information in accounting records in the TEI or CSV format. A member of the DEPCHA, states that their future challenge is to normalize the vocabulary of words such as "currency" and "item" in accounting records that emerge from various case studies and to build an interoperable data model for open data (Pollin, 2019), but at present, there are not so many case studies. Furthermore, concrete examples of double-entry books, which are considered as the basis of accounting practice in the modern world, have not sufficiently been marked up using the DEPCHA scheme. Our research will contribute to filling this gap and giving practical feedback to DEPCHA. We also think that more normalized TEI/DEPCHA can make the analysis of historical financial data more efficient, when the scale of data becomes bigger.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Progress and prospect</head>
+                <p style="text-align: left; ">Let us explain our markup policy. As mentioned earlier in the materials section, the correspondence between transactions is displayed across each of the left and right pages, so the facing page needs to be structured as a coherent space when marking up. (cf. Markup 1). While following DEPCHA's recommended policy of using &lt;table&gt; tags to structure the transaction information in a tabular form, we ensure that the @ana attribute value is entered in a human-readable form—though it is not completely machine-processable at the moment—, so that the correspondence between the left and right pages is clearly indicated. In addition, the reference relationships between the diary and ledger are also structured (cf. Markup 1).</p>
+                <p style="text-align: left; ">Markup 1: Tagging an Entry in the Ledger</p>
+                <p style="text-align: left; ">We will demonstrate our achievements using the above-mentioned mark-up files to conduct analyses, as follows: (1) identification of abbreviated person names, (2) accounting terms and abbreviations, and (3) checking the balance of payments; all of them is available to browse at our page .</p>
+                <p style="text-align: left; ">We prospect to mark up more accounting books kept in the same archive, and launch trend and network analyses using metadata, e.g. time, name of person/company, place, commodity, and price. And we will also investigate more proper way of displaying our analysis. We would like to share our framework with the researchers pursuing similar themes to improve the analytical frameworks and tools for the study of economic history.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Anderson, C., Eide, O., Orlowska, A., Pindl, K., Tomasek, K. and Vogeler, G.</hi> (2016). Modeling semantically Enhanced Digital Edition of Accounts (MEDEA) for Discovery and Comparison on the Semantic Web. Humanities Commons. 
+                        <ref target="https://hcommons.org/deposits/item/hc:24347/">https://hcommons.org/deposits/item/hc:24347/</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">GAMS</hi> (2017). DEPCHA - Digital Edition Publishing Cooperative for Historical Accounts 
+                        <hi rend="italic">DEPCHA - Digital Edition Publishing Cooperative for Historical Accounts</hi>
+                        <ref target="http://gams.uni-graz.at/archive/objects/context:depcha/methods/sdef:Context/get?mode=howto">http://gams.uni-graz.at/archive/objects/context:depcha/methods/sdef:Context/get?mode=howto</ref> (accessed 1 June 2019).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Pollin, C.</hi> (2019). Digital Edition Publishing Cooperative for Historical Accounts and the Bookkeeping Ontology. 
+                        <hi rend="italic">Proceedings of the Doctoral Symposium on Research on Online Databases in History</hi>, 
+                        <ref target="http://ceur-ws.org/Vol-2532/paper1.pdf">http://ceur-ws.org/Vol-2532/paper1.pdf</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Tomasek, K. and Bauman, S.</hi> (2013). Encoding Financial Records for Historical Research. 
+                        <hi rend="italic">Journal of the Text Encoding Initiative</hi> (Issue 6), 
+                        <ref target="http://journals.openedition.org/jtei/895">http://journals.openedition.org/jtei/895</ref> (accessed 21 April 2022).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

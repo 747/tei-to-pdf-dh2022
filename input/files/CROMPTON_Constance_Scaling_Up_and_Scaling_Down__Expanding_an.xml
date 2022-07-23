@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Scaling Up and Scaling Down: Expanding and Contracting in the Move to Linked Data</title>
+                <author>
+                    <persName>
+                        <surname>Crompton</surname>
+                        <forename>Constance</forename>
+                    </persName>
+                    <affiliation>University of Ottawa, Canada</affiliation>
+                    <email>constance.crompton@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schwartz</surname>
+                        <forename>Michelle</forename>
+                    </persName>
+                    <affiliation>X University (formerly Ryerson University), Canada</affiliation>
+                    <email>michelle.schwartz@ryerson.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dangoisse</surname>
+                        <forename>Pascale</forename>
+                    </persName>
+                    <affiliation>University of Ottawa, Canada</affiliation>
+                    <email>pdang034@uottawa.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lipski</surname>
+                        <forename>Candice</forename>
+                    </persName>
+                    <affiliation>University of Ottawa, Canada</affiliation>
+                    <email>candicelipski@outlook.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Queer History</term>
+                    <term>Linked Data</term>
+                    <term>TEI</term>
+                    <term>Graph Databases</term>
+                    <term>Archives</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>linked (open) data</term>
+                    <term>project design</term>
+                    <term>organization</term>
+                    <term>management</term>
+                    <term>Gender and sexuality studies</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                Our project, Lesbian and Gay Liberation in Canada (LGLC, lglc.ca), has reached an exciting new phase: after creating 34,000 digital records documenting gay liberation in Canada from 1964 to 1981, we are expanding the project, both technologically and in scope. While popular histories of gay liberation in Canada tend to focus on the activism of gay, white, urban, anglophone men, the analysis of the data from the first six years of the LGLC project has shown that gay liberation in Canada was not solely driven by this demographic. This next phase of the LGLC project, started in 2020, combines archival research and linked data creation to represent the diversity and span of gay liberation organizing, intersectional personhood, and activist knowledge exchange, with a particular focus on women’s and francophone activism (Crenshaw; Sheffeild; Gevisser; Bilge). The end date of the original project chronology, 1981, marks the start of the AIDS crisis, a milestone in Canadian gay men’s organizing. This end date centres men’s experience and did not, as our critics have pointed out, help the project meet its goals of documenting patterns in women’s activism. We have expanded the project’s end date to 1985 to capture significant organizing, and resulting social and legal change, by lesbian mothers and trans women.
+            </p>
+            <p>This expansion of the project coincides with a new phase of our digital scholarship: the conversion of its content, drawn from archival sources, to linked data. While the project uses a graph data model akin to RDF, the strictures of existing ontologies create a flattening effect, as they do on most data derived from archives. Moreover, while archival research may reveal how people understood their historical situation and the identities available to or forged by them, the archival record is not neutral (Roberto; Drabinski). In our conversion to linked data we take our cue from Klein and D’Ignazio’s call to preserve diverse (i.e. messy) data as a way to push back against statistical analysis’ eugenicist roots, roots that have historically shaped cultural attitudes towards queer and other marginalised people (Klein and D’Ignazio; Brown; Maxwell; Tanguay). In this short paper we will share the results of our experiments in modeling our person data in CIDOC-CRM, chosen for maximum interoperability, and in a combination of Schema.org and the CWRC ontology, to most closely match our original data structure. </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        Bilge, Sirma. “Théorisations féministes de l’intersectionnalité.”
+                        <hi rend="italic" style="font-size:12pt" xml:space="preserve"> Diogène</hi>
+                        , vol. 225, no. 1, Presses Universitaires de France, 2009, pp. 70–88.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Brown, Susan. “Categorically Provisional.” </hi>
+                        <hi rend="italic" style="font-size:12pt">PMLA</hi>
+                        , vol. 135, no. 1, Modern Language Association, 2020, pp. 165–74. doi:10.1632/pmla.2020.135.1.165.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Crenshaw, Kimberle. “Demarginalizing the Intersection of Race and Sex: A Black Feminist Critique of Antidiscrimination Doctrine, Feminist Theory and Antiracist Politics.” </hi>
+                        <hi rend="italic" style="font-size:12pt">University of Chicago Legal Forum</hi>
+                        , vol. 1989, 1989, pp. 139–68.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">D’Ignazio, Catherine, and Lauren F. Klein. </hi>
+                        <hi rend="italic" style="font-size:12pt">Data Feminism</hi>
+                        . MIT P, 2020.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Drabinski, Emily. “Queering the Catalog: Queer Theory and the Politics of Correction.” </hi>
+                        <hi rend="italic" style="font-size:12pt">The Library Quarterly: Information, Community, Policy</hi>
+                        , vol. 83, no. 2, 2013, pp. 94–111. doi:10.1086/669547.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Gevisser, Mark. </hi>
+                        <hi rend="italic" style="font-size:12pt">The Pink Line: Journeys Across the World’s Queer Frontiers</hi>
+                        . Farrar, Straus and Giroux, 2020.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Maxwell, John. “Text Processing Techniques and Traditions (or: Why the History of Computing Matters to DH).” </hi>
+                        <hi rend="italic" style="font-size:12pt">Doing More Digital Humanities: Open Approaches to Creation, Growth, and Development</hi>
+                        , edited by Constance Crompton, Raymond Siemens, and Richard Lane., Routledge, 2019.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Roberto, K. R. </hi>
+                        <hi rend="italic" style="font-size:12pt">Radical Cataloging: Essays at the Front</hi>
+                        . McFarland, 2008.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Sheffield, Rebecka T. “More than Acid-Free Folders: Extending the Concept of Preservation to Include the Stewardship of Unexplored Histories.” </hi>
+                        <hi rend="italic" style="font-size:12pt">Library Trends</hi>
+                        , vol. 64, no. 3, Johns Hopkins UP, 2016, pp. 572–84. doi:10.1353/lib.2016.0001.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Tanguay, Christian. “Les archives LGBTI: le droit à un lieu pour sa culture.” </hi>
+                        <hi rend="italic" style="font-size:12pt">Les cahiers de la LCD</hi>
+                        , vol.1, no. HS1, 2018, pp. 145–54.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Ware, Syrus Marcus. </hi>
+                        <hi rend="italic" style="font-size:12pt">“No One Like Me Seemed to Have Ever Existed”: A Trans of Colour Critique of Trans Scholarship and Policy Development in Post-Secondary Schools</hi>
+                        . University of Toronto, 2011.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

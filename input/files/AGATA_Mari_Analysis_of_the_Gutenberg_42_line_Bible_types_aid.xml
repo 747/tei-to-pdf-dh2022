@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Analysis of the Gutenberg 42-line Bible types aided by type-image recognition</title>
+                <author>
+                    <persName>
+                        <surname>Agata</surname>
+                        <forename>Mari</forename>
+                    </persName>
+                    <affiliation>Keio University, Japan</affiliation>
+                    <email>agatamari@keio.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Agata</surname>
+                        <forename>Teru</forename>
+                    </persName>
+                    <affiliation>Asia University, Japan</affiliation>
+                    <email>agata@asia-u.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T02:19:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>The Gutenberg Bible</term>
+                    <term>OCR</term>
+                    <term>image recognition</term>
+                    <term>printing history</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>image processing and analysis</term>
+                    <term>optical character recognition and handwriting recognition</term>
+                    <term>Book and print history</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <list rend="bulleted">
+                <item>Background and purpose</item>
+            </list>
+            <p>While the traditional view of the type casting method used at the earliest stage of European printing asserts that identically shaped types were produced by metal punch, matrix, and hand mould, this has been under renewed debated over the past two decades. Reported in 2000, Paul Needham and Blaise Agüera y Arcas’s clustering analysis of images of the lowercase “i” of the Donatus Kalender type (DK type), that is, Johann Gutenberg’s first type, discovered hundreds of clusters of “i,” leading to the conclusion that “[e]ither many matrices were used in parallel, or equivalently, the matrix was temporary and needed to be re-formed between castings, – or both” (
+                <hi rend="fontstyle01">Agüera y Arcas, 2003</hi>). Despite the considerable attention their research attracted, there have been relatively a few substantial follow-up studies. One of them is a clustering analysis of small samples – ten “i”s and 21 “a”s on a single page of the Gutenberg 42-line Bible (the B42) printed around 1455–, which corresponds to the conclusion of the DK type analysis (Alabert and Rangel, 2011
+                <hi rend="fontstyle01">)</hi>.
+            </p>
+            <p> The authors have tried to contribute to this argument by analyzing the B42 types. The typeface is Gothic Textura and very similar to the DK type, but smaller in size. Nearly 300 types have been identified by earlier scholars, due to many variations of each letter. This paper is an interim report of the ongoing type analyses of the B42.</p>
+            <list rend="bulleted">
+                <item>Method</item>
+            </list>
+            <p>The digital images of the Keio University Library copy of the B42 (vol. 1 only) were used for analyses. Type-image recognition reinforced by machine learning was executed with an open-source OCR engine, Tessaract-OCR, followed by manual corrections. Each piece of type-image data had information about X and Y coordinates, pixel width and height, and transcribed character. Type-image recognition have been completed, 43 pages of which containing around 110,500 letters have been manually corrected and used for analyses.</p>
+            <p> The first analysis is to calculate the vertical distance between a suspension stroke to show suspension of nasal “n,” “m,” and other letters and companion letter. The authors previously made a statistical analysis of a single letter “ū” that appeared on selected 42-line pages. The results showed that the variation was too wide for letters cast from a single matrix, thereby suggesting that they were made from multiple matrices (Agata and Agata, 2021). Several other types that appeared on 42-line pages as well as on 40-line pages, each with a suspension stroke, are newly analyzed. The 40-line pages had been printed at the very earliest stage of the print run, before the lines per page were increased to 42, thus enabling a chronological analysis.</p>
+            <p>The second method is to analyze the horizontal position of suspension strokes in relation to a companion letter. The widths of suspension strokes and companion letters, and the distance of their horizontal centers are calculated based on the brightness of the pixels.</p>
+            <p>The method of identifying inverted letters is also explored. The letters “n” and “u” are printed upside down in some places, thus an inverted “n” looks like “u”, and 
+                <hi rend="italic">vice versa</hi>. The similarity of “u”s are measured by contour extraction, then the resultant similarity matrix is used for clustering analysis.
+            </p>
+            <list rend="bulleted">
+                <item>Results</item>
+            </list>
+            <p> The results of vertical distance analysis show that the distribution of the distance between a suspension stroke and companion letter of the types used in 40-line pages is limited to a narrower range than that of 42-line pages. This may suggest that matrices were added during the print run.</p>
+            <p>The horizontal position analyses indicates that the scatter diagram shows no correlation between the relative position of strokes and companion letters and that the strokes and letters are more likely to have been punched separately rather than together with whole-letter punches.</p>
+            <p>The clustering analysis of “u”s shows the potential usefulness of the method together with several challenges.</p>
+            <p>It should be noted that a relatively small number of types have been analyzed, but the analyses so far are promising. The present methods are not limited to the analysis of the B42, but are applicable to any early printed books. A culmination of examples will contribute to further discussions on type casting methods in European printing.</p>
+            <list rend="bulleted">
+                <item>
+                    <anchor xml:id="Hlk101472571"/>Acknowledgements
+                </item>
+            </list>
+            <p>The B42 images taken by the HUMI Project were provided for research and reproduced by courtesy of the Keio University Library. This study was supported by JSPS KAKENHI Grant Number 18H03496.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Agata, M. Agata, T.</hi> (2021). Statistical analysis of the Gutenberg 42-line Bible types: special focus on letters with a suspension stroke. 
+                        <hi rend="italic">The Papers of the Bibliographical Society of America</hi>, 115 (2): 167-83, 
+                        <ref target="https://doi.org/10.1086/713981">
+                            <hi rend="color(337AB7)">10.1086/713981</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Agüera y Arcas, B.</hi> (2003). Temporary matrices and elemental punches in Gutenberg’s DK type. In Jensen, K. (ed), 
+                        <hi rend="italic">Incunabula and Their Readers: Printing, Selling and Using Books in the Fifteenth Century</hi>. London: British Library, pp. 1–12.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Alabert, A. and Rangel, L. M. (2011). </hi>Classifying the Typefaces of the Gutenberg 42-line Bible. International Journal on Document Analysis and Recognition, 14: 303–17, 
+                        <ref target="https://doi.org/10.1007/s10032-010-0140-6">10.1007/s10032-010-0140-6</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

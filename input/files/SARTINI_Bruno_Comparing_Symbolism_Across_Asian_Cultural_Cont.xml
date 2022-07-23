@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Comparing Symbolism Across Asian Cultural Contexts Using Graph Similarity Measures</title>
+                <author>
+                    <persName>
+                        <surname>Sartini</surname>
+                        <forename>Bruno</forename>
+                    </persName>
+                    <affiliation>University of Bologna, Italy</affiliation>
+                    <email>bruno.sartini3@unibo.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vogelmann</surname>
+                        <forename>Valentin</forename>
+                    </persName>
+                    <affiliation>KNAW Humanities Cluster Amsterdam, The Netherlands</affiliation>
+                    <email>valentin.vogelmann@dh.huc.knaw.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>van Erp</surname>
+                        <forename>Marieke</forename>
+                    </persName>
+                    <affiliation>KNAW Humanities Cluster Amsterdam, The Netherlands</affiliation>
+                    <email>marieke.van.erp@dh.huc.knaw.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gangemi</surname>
+                        <forename>Aldo</forename>
+                    </persName>
+                    <affiliation>University of Bologna, Italy</affiliation>
+                    <email>aldo.gangemi@unibo.it</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-05T13:48:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Culture Similarity</term>
+                    <term>Symbolism</term>
+                    <term>Linked open Data</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>cultural analytics</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>Computer science</term>
+                    <term>Cultural studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>Symbols are an essential part of cultures as means to express ideas, values, traditions and as instantiations of belief systems (Kroeber and Kluckhohn, 1952; Brislin, 1976). Unsurprisingly, thus, symbols form the basis of a variety of comparative cultural studies such as evoked concepts in jewellery and ornaments (Zavvāri* and Chitsāziyān, 2021), rituals, mottos, and icons (Manners, 2011), symbolism of trees, dragons, and tree of life (Rival, 2020; Yuan and Sun, 2021; Reno, 1977).</p>
+                <p>Guided by Martinho (2018), who argues for a shift in cultural studies towards quantitative approaches, and Zepetnek (1999), who adapted comparative literature methodology to identify parallels between cultures, we propose a computational approach that uses symbols for quantified comparative cultural analyses. Leveraging information contained in HyperReal (Sartini et al., 2021), a novel database of symbolism, we define two quantitative measurements of cultural similarity which we apply to its data.</p>
+                <p>Focussing on a set of cultural contexts from the continent of Asia, and using the defined similarity measures, we address two research questions:</p>
+                <list type="ordered">
+                    <item>Does symbolism provide a useful basis for quantitative cultural comparisons? That is, to what extent does it reproduce expected similarities, and does it have the potential to highlight new, unexpected connections?</item>
+                    <item>Do cultures tend to be more similar in terms of their symbols or in terms of the symbolic meanings that their symbols refer to?</item>
+                </list>
+                <p>For RQ1, we analyse the values of our similarity measures and the clusters of cultures they induce. Additionally, we contrast the similarities of Asian cultural contexts among themselves with two European cultural contexts: Christian and Greco-Roman.</p>
+                <p>For RQ2, we analyse how similarity values change when applied to either only symbols or only symbolic meanings, as they exist independently in HyperReal.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Linking symbols</head>
+                <p>Symbolic knowledge has previously been modelled in a semantic web context by (Sartini and Gangemi, 2021) and (Sartini et al., 2021) resulting in the creation of HyperReal, a multi-cultural knowledge graph containing more than 40,000 symbolic meaning relationships (simulations), following the Simulation Ontology schema
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p rend="footnote text"> https://w3id.org/simulation/docs</p>
+                    </note>. In this ontology, symbols (simulacra) are linked to their symbolic meanings (reality counterpart) through an n-ary relationship class Simulation. Simulations are also linked to one or more cultural contexts. Figure 1 shows the example of a mirror (simulacrum), that, in the Japanese context, symbolises the sun (reality counterpart) using HyperReal’s structure.
+                </p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="5.180541666666667cm" url="Pictures/3b919f88b9223f826a1653e0cd29d27a.png" rend="inline"/>
+                    <head>Mirror-sun simulation example</head>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Data selection and extraction</head>
+                <p>From HyperReal, we selected the 15 unambiguously Asian contexts with the highest number of simulations: Ainu, Buddhist, Cambodian, Chinese, Hindu, Indic, Jain, Japanese, Kalmyk, Mongolian, Philippine, Taoist, Tibetan, Vietnamese, Zoroastrian. This set comprises various types of cultural contexts, such as nationalistic (Chinese) or religious-philosophical (Buddhist), and includes intricate relationships (e.g., Chinese and Taoist). Anticipating that these aspects would emerge from our quantitative analyses themselves, we treat all contexts as equivalent and perform direct comparisons. After the selection, we extracted the subgraphs containing the simulations associated with each context along with the labels for their simulacra and reality counterparts.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Measuring similarity</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Semantic approach</head>
+                    <p>Being embodied by linguistic expression allows us to measure symbols' and their symbolic meanings’ semantic similarity, for which we use the spaCy
+                        <note place="foot" xml:id="ftn2" n="2">
+                            <p rend="footnote text"> https://spacy.io/</p>
+                        </note> and Wiki2Vec (Yamada et al., 2020) Python implementations.
+                        <note place="foot" xml:id="ftn3" n="3">
+                            <p rend="footnote text"> We measure cosine similarities between vectors of symbols and symbolic meanings generated using the mentioned models.</p>
+                        </note> We then use the Jaccard similarity metric (Jaccard, 1901) to aggregate sets of semantic similarities for a given pair of cultures. Additionally, we apply weighting according to 
+                        <hi rend="bold">symbolic impact</hi> and 
+                        <hi rend="bold">symbolic referencing</hi>, where we define 
+                        <hi rend="bold">symbolic impact</hi> as the number of symbolic meanings associated with a symbol in a specific context and 
+                        <hi rend="bold">symbolic referencing</hi> as the number of times a symbolic meaning is denoted by a symbol in a specific context.
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Structural approach</head>
+                    <p>We use graph edit distance (Hagberg et al., 2008) to compute the structural similarity
+                        <note place="foot" xml:id="ftn4" n="4">
+                            <p rend="footnote text"> Similarity = 1-graph edit distance</p>
+                        </note> of the extracted cultural contexts’ subgraphs. This measurement provides an interface into the similarities of how cultures structurally organise symbols, agnostic of the semantics of symbols, and is thus complementary to the semantic approach.
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results</head>
+                <p>As displayed by Figure 2, our measurements lead to an intricate overall picture of cultural similarities. Whereas, for instance, a larger culture like Buddhist is similar to Chinese, Hindu, Japanese and Taoist; smaller ones like Ainu or Kalmyk are distant, especially semantically, from most other cultures. </p>
+                <p>Semantic similarity generally seems to be the more conservative, and therefore more often intuitively correct, although counterexamples exist: Jain and Indic, two relatively close cultural contexts, are structurally similar but not semantically so. This underlines the complementary nature of both measurements and is mirrored by the clusters induced from the similarity matrices (Figure 3).</p>
+                <p>Here, too, groupings of cultures are mostly according to intuition although it is clear that quantitative measures require being supplemented with other sources of information. Then again, as exemplified by the Greco-Roman and Christian cultures, which distinguish themselves from these Asian cultural contexts, connections emerge that are worth further investigation.</p>
+                <figure>
+                    <graphic n="1002" width="16.001625cm" height="8.313208333333334cm" url="Pictures/47f67db9ac22c030dc474c4d2a349d57.PNG" rend="inline"/>
+                    <head>Heatmap of the semantic (left) and structural (right) semantic matrices</head>
+                </figure>
+                <figure>
+                    <graphic n="1003" width="16.002cm" height="8.037366666666667cm" url="Pictures/be27b079eae372e2d6130a892a1fa0d6.PNG" rend="inline"/>
+                    <head>Hierarchical clustering induced by semantic (left) and structural (right) similarity matrices. Colours indicate clusters</head>
+                </figure>
+                <p>Regarding RQ2, the investigated cultures, on average, have slightly higher similarities in terms of their symbols than their symbolic meanings. Additionally, Figure 4 shows that some cultures tend to be moderately more similar according to one of the two measurements, such as the Chinese-Jain or the Zoroastrian-Ainu pairs. Thus, cultures seem to not be more similar in terms of either symbols or symbolic meanings, but these have complementary effects to explaining cultural similarity.</p>
+                <figure>
+                    <graphic n="1004" width="16.002cm" height="8.189055555555555cm" url="Pictures/4444f40e871e68b4e0164bfc7b7fd636.PNG" rend="inline"/>
+                    <head>Similarity matrix given by the semantics of symbols themselves (left) and symbols‘ meanings (right)</head>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusions</head>
+                <p>With this work, we initiate quantitative methods for investigations into the similarities of cultures based on symbolism. We provide evidence for their usefulness as a complement to established comparative cultural studies and predict that situating our findings within this field will facilitate new discussions. To this end, future work should also apply the methodology proposed here to larger global sets of cultures to put the similarities within the set of Asian cultures considered here into perspective.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Brislin, R. W.</hi> (1976). Comparative research methodology: Cross-cultural studies. 
+                        <hi rend="italic">International Journal of Psychology</hi>, 
+                        <hi rend="bold">11</hi>(3): 215–29 doi:10.1080/00207597608247359.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Hagberg, A., Swart, P. and Chult, D.</hi> (2008). Exploring Network Structure, Dynamics, and Function Using NetworkX.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Jaccard, P.</hi> (1901). Etude de la distribution florale dans une portion des Alpes et du Jura. 
+                        <hi rend="italic">Bulletin de La Societe Vaudoise Des Sciences Naturelles</hi>, 
+                        <hi rend="bold">37</hi>: 547–79 doi:10.5169/seals-266450.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Kroeber, A. L. and Kluckhohn, C.</hi> (1952). Culture: a critical review of concepts and definitions. 
+                        <hi rend="italic">Papers. Peabody Museum of Archaeology &amp; Ethnology, Harvard University</hi>, 
+                        <hi rend="bold">47</hi>(1): viii, 223–viii, 223.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Manners, I.</hi> (2011). Symbolism in European integration. 
+                        <hi rend="italic">Comparative European Politics</hi>, 
+                        <hi rend="bold">9</hi>(3): 243–68 doi:10.1057/cep.2010.11.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Martinho, T. D.</hi> (2018). Researching Culture through Big Data: Computational Engineering and the Human and Social Sciences. 
+                        <hi rend="italic">Social Sciences</hi>, 
+                        <hi rend="bold">7</hi>(12). Multidisciplinary Digital Publishing Institute: 264 doi:10.3390/socsci7120264.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Reno, S. J.</hi> (1977). Religious Symbolism: A Plea for a Comparative Approach. 
+                        <hi rend="italic">Folklore</hi>, 
+                        <hi rend="bold">88</hi>(1). [Folklore Enterprises, Ltd., Taylor &amp; Francis, Ltd.]: 76–85.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Rival, L. (ed).</hi> (2020). 
+                        <hi rend="italic">The Social Life of Trees: Anthropological Perspectives on Tree Symbolism</hi>. London: Routledge doi:10.4324/9781003136040.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Sartini, B., van Erp, M. and Gangemi, A.</hi> (2021). Marriage is a Peach and a Chalice: Modelling Cultural Symbolism on the Semantic Web. 
+                        <hi rend="italic">Proceedings of the 11th on Knowledge Capture Conference</hi>. (K-CAP ’21). New York, NY, USA: Association for Computing Machinery, pp. 201–08 doi:10.1145/3460210.3493552. https://doi.org/10.1145/3460210.3493552 (accessed 9 December 2021).
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Sartini, B. and Gangemi, A.</hi> (2021). Towards the unchaining of symbolism from knowledge graphs: how symbolic relationships can link cultures. 
+                        <hi rend="italic">Book of Extended Abstracts of the 10th National AIUCD Conference.</hi> Pisa, pp. 576–80.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Yamada, I., Asai, A., Sakuma, J., Shindo, H., Takeda, H., Takefuji, Y. and Matsumoto, Y.</hi> (2020). Wikipedia2Vec: An Efficient Toolkit for Learning and Visualizing the Embeddings of Words and Entities from Wikipedia. 
+                        <hi rend="italic">ArXiv:1812.06280 [Cs]</hi> http://arxiv.org/abs/1812.06280 (accessed 11 December 2021).
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Yuan, L. and Sun, Y.</hi> (2021). A Comparative Study Between Chinese and Western Dragon Culture in Cross-Cultural Communication. Atlantis Press, pp. 74–77 doi:10.2991/assehr.k.210121.015. https://www.atlantis-press.com/proceedings/sschd-20/125951577 (accessed 24 November 2021).
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Zavvāri*, M. and Chitsāziyān, A.</hi> (2021). A Comparative Study on the Symbolism in Turkmen and Baluch Ornaments in Iran. 
+                        <hi rend="italic">Journal of Iranian Handicrafts</hi>, 
+                        <hi rend="bold">3</hi>(2). دانشگاه کاشان: 121–30.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Zepetnek, S. T. D.</hi> (1999). From Comparative Literature Today toward Comparative Cultural Studies. doi:10.7771/1481-4374.1041.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

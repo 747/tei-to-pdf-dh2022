@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Digital Resource Aggregation: Giving New Life to Multi-source Cultural Data</title>
+                <author>
+                    <persName>
+                        <surname>Liu</surname>
+                        <forename>Rui</forename>
+                    </persName>
+                    <affiliation>The University of Melbourne, Australia</affiliation>
+                    <email>ruiliu2@student.unimelb.edu.au</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>McKay</surname>
+                        <forename>Dana</forename>
+                    </persName>
+                    <affiliation>Royal Melbourne Institute of Technology, Australia</affiliation>
+                    <email>dana.mckay@rmit.edu.au</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Buchanan</surname>
+                        <forename>George</forename>
+                    </persName>
+                    <affiliation>The University of Melbourne, Australia</affiliation>
+                    <email>george.buchanan@unimelb.edu.au</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-25T12:45:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital resource aggregation</term>
+                    <term>multi-source cultural data</term>
+                    <term>linked data</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>linked (open) data</term>
+                    <term>meta-criticism (reflections on digital humanities and humanities computing)</term>
+                    <term>Humanities computing</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Digital humanities have traditionally been concerned with utilizing digital technologies in processing cultural resources such as text, images, and specialist data (e.g. geographic information) 
+                <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Tiepmar</Author><Year>2018</Year><RecNum>169</RecNum><DisplayText>(Tiepmar, 2018)</DisplayText><record><rec-number>169</rec-number><foreign-keys><key app="EN" db-id="p5tvswswy2s5ahedx0mv5xwq5r00e29x0xd0" timestamp="1635954843">169</key></foreign-keys><ref-type name="Journal Article">17</ref-type><contributors><authors><author>Jochen Tiepmar</author></authors></contributors><titles><title>Big Data and Digital Humanities</title><secondary-title>Archives of Data Science, Series A</secondary-title></titles><periodical><full-title>Archives of Data Science, Series A</full-title></periodical><volume>5</volume><number>1</number><dates><year>2018</year></dates><urls><related-urls><url>https://dx.doi.org/10.5445/ksp/1000087327</url></related-urls><pdf-urls><url>file:///Users/liurui/Downloads/10.5445_ksp_1000087327.pdf</url></pdf-urls></urls><electronic-resource-num>10.5445/ksp/1000087327</electronic-resource-num></record></Cite></EndNote>?>(Tiepmar, 2018). In practice, many digital humanities projects aggregate cultural data from multiple sources. There are two types of aggregation, where the first one collects data from original (unpublished) datasets to form a new digital humanities collection, while the second integrates parts from existing collections by sharing data or forming a new system from them 
+                <?biblio ADDIN EN.CITE?>
+                <?biblio ADDIN EN.CITE.DATA?>(Siqueira and Martins, 2021, Freire et al., 2018). This research explores both forms of digital resource aggregation in digital humanities and illustrates how aggregation breathes new life into multisource cultural data. Taking the perspective of the construction of digital humanities collections, our case studies discuss different stakeholders’ views of digital resource aggregation and their work practices. The following three research questions will be addressed in this paper:
+            </p>
+            <list rend="numbered">
+                <item>What are the digital resource aggregation approaches of digital humanities collections?</item>
+                <item>What are the problems encountered when aggregating digital resources?</item>
+                <item>What are the key lessons learned when attempting digital resource aggregation?</item>
+            </list>
+            <p style="text-align: left; ">Our research applies semi-structured individual interviews to understand the practical experience of digital humanities projects that brought content together from multiple existing collections. The data were collected from September to November 2021. We recruited two pilot study and nineteen main-study participants. All participants are digital humanities scholars active in major research centres and conferences with digital humanities projects. During interviews, we asked participants about their background, the details about their data aggregation project, their role in the project, the aggregation method they used, aggregation problems, their advice and perspective of multisource cultural data aggregation through digital humanities collections. Each interview took approximately 60 minutes and all interviews were recorded and transcribed. We coded our data based on the three research questions (shown above) using NVivo. Eleven main participants have direct experience of data aggregation. Followed by that, we formed these experiences into case studies of individual projects.</p>
+            <p style="text-align: left; ">Our paper focuses on the eleven cases of integrating multisource cultural data. Each case study considers a single project’s aims, team, construction steps, digital resource aggregation approaches, and any suggestions from interviewees for how to overcome challenges. The aggregation datasets in these eleven case studies include medieval manuscripts and illuminated manuscripts, religious and political documents, digital archival resources for medieval to modern history, biography of historical people, places information, archaeological data sets, music data sets and annotation works. Our participants included two developers, one Ph.D. candidate with good programming skills, one librarian who acquires programming by self-learning, one student research assistant, and six project managers with socio-technical background.</p>
+            <p style="text-align: left; ">These eleven cases represent a wide variety of different approaches. Some use more than one: five cases use Linked Data to integrate multisource data, three of them use the International Image Interoperability Framework (
+                <anchor xml:id="OLE_LINK3"/>
+                <anchor xml:id="OLE_LINK4"/>IIIF) to integrate images, two use a CMS system to manage data, one uses a SQL database to aggregate different data, one uses an API to link different digital humanities collections, one uses XML to do digital resource aggregation and one makes metadata protocols to do aggregation.
+            </p>
+            <p style="text-align: left; ">The results of our case-studies reveal different digital resource aggregation challenges and solutions within digital humanities, and suggest there may be untapped possibilities for aggregation in digital humanities research. Key problems in digital resource aggregation can be categorized into four aspects, namely data problems, system problems, institution problems and skillset problems.</p>
+            <p style="text-align: left; ">The data problems are related in (1) some unstructured data, such as ambiguous metadata schemata and uncertain standards, lack of digital readiness, and issues of different data formats; (2) integrating data with the same type but that have different data levels of detail, e.g.time, and (3) original data sets that cannot be shown in the aggregator website would make aggregation of digital humanities collections harder. For system problems,the aggregation of different data sets would be influenced by system updates, software changes, systems interaction issues and visualization problems. For institution problems, funding and licensing are important. For skillset problems, the distribution of skills among digital humanities researchers and technical threshold of aggregation technology raises the required time and labor for higher aggregation performance.</p>
+            <p style="text-align: left; ">The digital humanists we interviewed provided us valuable advice when attempting to achieve digital resource aggregation, such as unifying metadata standards, improving data sharing policy and data explanation, encouraging collaboration from community and administrators, and enhancing digital humanities research infrastructure and project sustainability.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">FREIRE, N., MEIJERS, E., VOORBURG, R. &amp; ISAAC, A. 2018. Aggregation of cultural heritage datasets through the Web of Data. 
+                        <hi rend="italic">Procedia Computer Science,</hi> 137
+                        <hi rend="bold">,</hi> 120-126.
+                    </bibl>
+                    <bibl style="text-align: left; ">SIQUEIRA, J. &amp; MARTINS, D. L. 2021. Workflow models for aggregating cultural heritage data on the web: A systematic literature review. 
+                        <hi rend="italic">Journal of the Association for Information Science and Technology</hi>.
+                    </bibl>
+                    <bibl style="text-align: left; ">TIEPMAR, J. 2018. Big Data and Digital Humanities. 
+                        <hi rend="italic">Archives of Data Science, Series A,</hi> 5.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

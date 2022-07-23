@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Uncovering the Black Fantastic: Piloting Text Similarity Methods for Finding “Lost” Genre Fiction in HathiTrust (Poster)</title>
+                <author>
+                    <persName>
+                        <surname>Parulian</surname>
+                        <forename>Nikolaus Nova</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, iSchool, University of Illinois, Champaign, IL USA</affiliation>
+                    <email>nnp2@illinois.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dubnicek</surname>
+                        <forename>Ryan</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, iSchool, University of Illinois, Champaign, IL USA</affiliation>
+                    <email>rdubnic2@illinois.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Layne-Worthey</surname>
+                        <forename>Glen</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, iSchool, University of Illinois, Champaign, IL USA</affiliation>
+                    <email>gworthey@illinois.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Williams</surname>
+                        <forename>Seretha</forename>
+                    </persName>
+                    <affiliation>English and World Languages, Augusta University, Augusta, GA USA</affiliation>
+                    <email>seretha.williams@augusta.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>West-White</surname>
+                        <forename>Clarissa</forename>
+                    </persName>
+                    <affiliation>Carl S. Swisher Memorial Library, Bethune-Cookman University, Daytona Beach, FL USA</affiliation>
+                    <email>whitec@cookman.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Magni</surname>
+                        <forename>Isabella</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, Luddy School of Informatics, Computing, and Engineering, Indiana University, Bloomington, IN USA</affiliation>
+                    <email>isamagni@indiana.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Downie</surname>
+                        <forename>J. Stephen</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, iSchool, University of Illinois, Champaign, IL USA</affiliation>
+                    <email>jdownie@illinois.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-06-02T13:12:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Black Fantastic</term>
+                    <term>HathiTrust</term>
+                    <term>LDA</term>
+                    <term>SGD</term>
+                    <term>literary genre</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>text mining and analysis</term>
+                    <term>African and African American Studies</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Background</head>
+                <p style="text-align: left; ">Within the tradition of speculative fiction, many sub-genres of literature engage with world-building and speculation about the future of humanity, civilization, and our institutions. While the term “Afrofuturism” is commonly used to describe the ways in which artists and creators of the African Diaspora engage with the intersections of race and technology in their works, the less contested term "Black Fantastic" more accurately reflects transcultural iterations of world-building (Iton, 2008). While there is an active scholarly community studying the Black Fantastic (Third Stone, 2021), the use of computational methods in this study is inhibited by a lack of digital collections of Black Fantastic literature. Though the rise of digital libraries has led to new studies and insights into forms and histories of literary genres (Schöch, 2017; Underwood, 2016; Gittel, 2021; Wilkens, 2016), before genre-specific texts can be studied algorithmically, they must first be identified amidst the massive holdings of digital libraries, such as those of the HathiTrust. This project outlines efforts to use text similarity methods to uncover Black Fantastic texts that may be hidden thanks to incomplete metadata or to cataloging practices not conducive to fine-grained genre identification.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Methods &amp; Analysis</head>
+                <p style="text-align: left; ">Catalog searches in the HathiTrust Digital Library (HTDL) of previously-identified Black Fantastic titles revealed a preliminary list of 13 unique titles. Because metadata records for these volumes do not include “black fantastic” or “afrofuturism,” common library catalog tools would not uncover these known items nor other potential Black Fantastic works. This challenge presented an opportunity to deploy technical methods, specifically text-similarity clustering, to reveal volumes of interest potentially hidden within the HTDL. We started by collecting samples of Black-authored fiction and manually labeling those identified as belonging to the Black Fantastic genre, then analyzed the lexical features that best distinguish these from both general fiction and Black-authored non-Fantastic fiction.</p>
+                <p style="text-align: left; ">We randomly sampled 100 volumes each of Black-authored and general fiction, then used HTRC Extracted Features data to aggregate word usage in each volume. Our first attempt at distinguishing Black Fantastic texts necessarily relied on a very limited, 13-volume sample set. We aggregated frequently-used words most closely associated with each genre and generated a Latent Dirichlet Allocation (LDA) topic model (Blei, et al., 2003; Rehurek and Sojka, 2011) to illustrate the different sets of characteristic words for each sub-genre. Figure 1 shows these words for each text class.</p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="7.9674861111111115cm" url="Pictures/1bfa16802d9d2b232a63e4224bf6eb75.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; text-align: center;">(a) General fiction (b) Black-authored fiction</p>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="8.016875cm" url="Pictures/cc70e95163589212334d9a65e768c91e.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; text-align: center;">(c) Black Fantastic fiction</p>
+                <p style="text-align: left; ">Figure 1. Topic model representation of distinctive words in each sub-genre of the sample. We categorized each genre with a 4-topic model. Words that most distinguish topics from the general fiction category include “duke”, “car”, “dollars”, “president”, and others, whereas topics from Black-authored fiction rely most on words such as “preacher”, “church”, religious”, “worship”, “encampments”. Moreover, with the addition of words distinct to Black-authored fiction, the Black Fantastic topical signal relies more on words such as “politer”, “bodkin”, “sundered”, “libels”, “amble”, “oracular”, etc.</p>
+                <p style="text-align: left; ">Next, we use distinct word sets to develop a classification model for the three sub-genres. We experimented with a hierarchical classification system, first attempting to distinguish Black-authored from general fiction, and then to identify the Black Fantastic sub-genre from among all Black-authored fiction. We used the Stochastic Gradient Descent (SGD) algorithm (Bottou, 2012; Pedregosa, et al., 2011) for our classification models based on Term Frequency-Inverse Document Frequency (TF-IDF) features. Figure 2 shows the confusion matrix for each classification of the test set. As we can see, the classification of Black-authored fiction works well, with 90% accuracy on average, but the Black Fantastic classification is less effective, with 67% accuracy and 75% recall. This further implies that our choice of distinctive tokens as a feature to differentiate fictional sub-genres indeed works, but to a lesser degree for detection of the Black Fantastic as a genre. These errors might result from our limited Black Fantastic training set. Beginning with more Black Fantastic texts, and identifying their most distinctive words, might improve the classification model.</p>
+                <figure>
+                    <graphic n="1003" width="17.114175cm" height="5.816027777777777cm" url="Pictures/27051f5a7fd7d4a9eda0c1d251523baa.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Figure 2. Confusion matrices for a hierarchical classification model. The left-hand matrix represents classification into two collections: general and Black-authored fiction; and the right-hand represents the classification of the Black-authored set into Black Fantastic and general Black-authored works.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Future Work</head>
+                <p style="text-align: left; ">Our next phase will rely on an enriched Black Fantastic dataset in order to improve our classification accuracy. We will also experiment with different features, such as full text (rather than our bag-of-words approach). In spite of limited results for our ultimate goal of discovering new Black Fantastic texts, our success with this model for distinguishing related categories gives reason for optimism given more robust data.</p>
+                <p style="text-align: left; ">Note: This submission is a companion piece to another one focused on the pedagogical aspects of the “Black Fantastic” project.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="DH-Biblio_author">Blei, D. M., Ng, A. Y. and Jordan, M. I.</hi> (2003). Latent dirichlet allocation. The Journal of Machine Learning Research, 3(null): 993–1022.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="DH-Biblio_author">Bottou, L.</hi> (2012). Stochastic Gradient Descent Tricks. In Montavon, G., Orr, G. B. and Müller, K.-R. (eds), Neural Networks: Tricks of the Trade: Second Edition. (Lecture Notes in Computer Science). Berlin, Heidelberg: Springer, pp. 421–36 doi:
+                        <ref target="https://doi.org/10.1007/978-3-642-35289-8_25">10.1007/978-3-642-35289-8_25</ref>. 
+                        <ref target="https://doi.org/10.1007/978-3-642-35289-8_25">https://doi.org/10.1007/978-3-642-35289-8_25</ref> (accessed 1 June 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="DH-Biblio_author">Gittel, B.</hi> (2021). An Institutional Perspective on Genres: Generic Subtitles in German Literature from 1500-2020. Journal of Cultural Analytics, 6(1). Department of Languages, Literatures, and Cultures: 22086 doi:
+                        <ref target="https://doi.org/10.22148/001c.22086">10.22148/001c.22086</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="DH-Biblio_author">Iton, R.</hi> (2008). In Search of the Black Fantastic: Politics and Popular Culture in the Post-Civil Rights Era. (Transgressing Boundaries: Studies in Black Politics and Black Communities). New York: Oxford University Press doi:
+                        <ref target="https://doi.org/10.1093/acprof:oso/9780195178463.001.0001">10.1093/acprof:oso/9780195178463.001.0001</ref>. 
+                        <ref target="https://oxford.universitypressscholarship.com/10.1093/acprof:oso/9780195178463.001.0001/acprof-9780195178463">https://oxford.universitypressscholarship.com/10.1093/acprof:oso/9780195178463.001.0001/acprof-9780195178463</ref> (accessed 1 June 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="DH-Biblio_author">Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., et al.</hi> (2011). Scikit-learn: Machine Learning in Python. The Journal of Machine Learning Research, 12(null): 2825–30.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="DH-Biblio_author">Rehurek, R., and Sojka, P.</hi> (2011) "Gensim–python framework for vector space modelling." NLP Centre, Faculty of Informatics, Masaryk University, Brno, Czech Republic 3, no. 2.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="DH-Biblio_author">Schöch, C.</hi> (2017). Topic Modeling Genre: An Exploration of French Classical and Enlightenment Drama. Digital Humanities Quarterly, 011(2).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="DH-Biblio_author">Underwood, T.</hi> (2016). Genre Theory and Historicism. Journal of Cultural Analytics, 2(2). Department of Languages, Literatures, and Cultures: 11063 doi:
+                        <ref target="https://doi.org/10.22148/16.008">10.22148/16.008</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="DH-Biblio_author">Wilkens, M.</hi> (2016). Genre, Computation, and the Varieties of Twentieth-Century U.S. Fiction. Journal of Cultural Analytics, 2(2). Department of Languages, Literatures, and Cultures: 11065 doi:
+                        <ref target="https://doi.org/10.22148/16.009">10.22148/16.009</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="DH-Biblio_author">About This Journal</hi> | Third Stone | Rochester Institute of Technology 
+                        <ref target="https://scholarworks.rit.edu/thirdstone/about.html">https://scholarwor
+                            <anchor xml:id="Hlt105049255"/>ks.rit.edu/thirdstone/about.html
+                        </ref> (accessed 10 December 2021).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

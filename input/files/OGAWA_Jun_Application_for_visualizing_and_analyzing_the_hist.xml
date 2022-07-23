@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Application for visualizing and analyzing the historical network with context-centric model</title>
+                <author>
+                    <persName>
+                        <surname>Ogawa</surname>
+                        <forename>Jun</forename>
+                    </persName>
+                    <affiliation>University of Tokyo, Japan</affiliation>
+                    <email>htjk6513khbk@yahoo.co.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nakamura</surname>
+                        <forename>Satoru</forename>
+                    </persName>
+                    <affiliation>University of Tokyo, Japan</affiliation>
+                    <email>nakamura@hi.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nagasaki</surname>
+                        <forename>Kiyonori</forename>
+                    </persName>
+                    <affiliation>International Institute for Digital Humanities</affiliation>
+                    <email>nagasaki@dhii.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ohmukai</surname>
+                        <forename>Ikki</forename>
+                    </persName>
+                    <affiliation>University of Tokyo, Japan</affiliation>
+                    <email>i2k@l.u-tokyo.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>linked (open) data</term>
+                    <term>digital history</term>
+                    <term>ontology</term>
+                    <term>context-centric model</term>
+                    <term>user interface</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>Interface design</term>
+                    <term>development</term>
+                    <term>and analysis</term>
+                    <term>linked (open) data</term>
+                    <term>History</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>We develop the application useful for visualizing and analyzing the historical RDF data constructed on the context-centric data model, which, by introducing the new concept of 
+                    <hi rend="italic">PersonInContext</hi> (Ogawa et al., 2020), makes it possible to represent historical actors not as a unique entity, but as a collection of contextual entities.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Data Model</head>
+                <p>The basic concept is that the persons (or any other historical actors like places or organizations) should not be thought of as a single entity, being identical all the time, but as "a collection of contextual entities (Akoka et al., 2021)". Thus, we characterize our model as context-centric. </p>
+                <p>To bring this basic concept into practical use, we proposed 
+                    <hi rend="italic">PersonInContext</hi> as a new class in our ontology representing the person in a specific context. This specific context would not be defined by date information, which is not always given by historical sources, but as an interval of two historical events (Ide &amp; Woolner, 2007). For example, in Caesar's 
+                    <hi rend="italic">De Bello Gallico</hi>, we cannot know when exactly Caesar arrived at Gaul and then defeated the Helvetians in 58 B.C.E. Still, since the former preceded the latter, we can describe Caesar in a context: from his arrival in Gaul until the defeat of Helvetians. 
+                </p>
+                <p>The advantage of this model is that it would enable us to describe historical events or relationships in a different way from previous models, such as Bio CRM (Tuominen et al., 2018) or Factoid model (Pasin &amp; Bradley, 2013), providing that a person participating in an event is first connected to an instance of 
+                    <hi rend="italic">PersonInContext</hi>, which represents the temporal context not necessarily limited to a single event. 
+                </p>
+                <figure>
+                    <graphic n="1001" width="11.911541666666666cm" height="5.374569444444444cm" url="Pictures/bd6cadeabed673bf9dc8204c21cf1f1b.png" rend="inline"/>
+                </figure>
+                <p style="text-align: center;">Fig.1. Overview of our model (right)</p>
+                <p>In our model, each actor is no longer directly connected to a non-contextual entity (green square), but to a contextual one (red square). We are now able to ask a question as follows: in the context where Person_Y has a relationship with Person_X, what other relationships does Person_Y have? </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Application</head>
+                <p>Based on this model, we converted the first volume of Caesar's 
+                    <hi rend="italic">De Bello Gallico</hi> to RDF data and developed an application for visualization and analysis (Data available at: 
+                    <ref target="https://junjun7613.github.io/RomanFactoid_v2/data.ttl">
+                        <hi rend="underline color(0000EE)">https://junjun7613.github.io/RomanFactoid_v2/data.ttl</hi>
+                    </ref>). The figure below shows Caesar's ego-centric network in three different contexts. The blue node located in the center of the rightmost network is a 
+                    <hi rend="italic">PersonInContext</hi> entity representing Caesar from his arrival in the territory of Segusiavi until the end of the war against Helvetians. 
+                </p>
+                <figure>
+                    <graphic n="1002" width="15.000111111111112cm" height="8.41198611111111cm" url="Pictures/7d0b02adeb836f430de555d4c837c18f.png" rend="inline"/>
+                </figure>
+                <p style="text-align: center;">Fig. 2. Caesar's network in different contexts</p>
+                <p>All the persons appearing in this network have their own contexts, even if this network itself represents the relationships Caesar has in one specific context. For example, if you click one blue circle node representing Dumnorix, the new window as follows pops up. </p>
+                <figure>
+                    <graphic n="1003" width="9.689041666666666cm" height="6.115402777777778cm" url="Pictures/41ff26d97316212828c15dfe7a29088b.png" rend="inline"/>
+                </figure>
+                <p style="text-align: center;">Fig. 3. Context information of Dumnorix</p>
+                <p>Two options shown are made of 
+                    <hi rend="italic">PersonInContext</hi> entities representing Dumnorix (although these messages are now described in the data itself as character strings, it is also possible to be generated automatically). This shows that, though Caesar has several contacts with Dumnorix in his one coherent context, in terms of Dumnorix's context, he is not always the same, but is in two different contexts. Then, choosing the second option, we will move to the other network centered by Dumnorix in a certain context. 
+                </p>
+                <figure>
+                    <graphic n="1004" width="15.000111111111112cm" height="5.064125cm" url="Pictures/b64c0446a0567f6c0ff77952808c4687.png" rend="inline"/>
+                </figure>
+                <p style="text-align: center;">Fig. 4. Dumnorix's network in a context</p>
+                <p>Considering this network and the previous one together, we can see the fact that, at the time Caesar had some contacts with Dumnorix during the war against Helvetians, Dumnorix had relationships with the multitude and Diviciacus in his own context. Contextual entities for Dumnorix by the way can be more than two as the definition of contexts may differ depending on the historical interpretations. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p>The application enables to visualize and analyze the change of relationships based not on the date information, which has already been applied in previous network analysis methods (Bissières, 2021), but on the contexts of historical actors mentioned in sources. Since the connectivity among historical actors is generally not clear-cut with precise dates but is highly dependent on the successive and sometimes overlapping contexts, it is necessary to deal with such contextual information in an effective way. </p>
+                <p>In this perspective, our context-centric model must introduce a useful way of representing historical information. </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Akoka, J. et al. (2021). Conceptual Modeling of Prosopographic Databases Integrating Quality Dimensions. 
+                        <hi rend="italic">Journal of Data Mining &amp; Digital Humanities</hi>. pp. 1-14. 
+                    </bibl>
+                    <bibl>Bissières, L. (2021). "Taking Time Seriously": An Empirical Approach to an American Merchant Network at the End of the 18th Century. Abstract for HNR+ResHist Conference 2021, June-July 2021. </bibl>
+                    <bibl>Ide, N. and Woolner, D. (2007). Historical Ontologies. In Ahmad, Khurshid et al. (eds.), 
+                        <hi rend="italic">Words and Intelligence II: Essays in Honor of Yorick Wilks</hi>. Dordrecht. pp. 137-152. 
+                    </bibl>
+                    <bibl>Ogawa, J. et al. (2020). Creating a New Semantic Model for Ancient Greco-Roman Prosopography: Toward a Contextual &amp; Historical Description of the Prosopographical Data. Abstracts for DH2020, Ottawa, July 2020. </bibl>
+                    <bibl>Pasin, M. and Bradley, J. (2013). Factoid-based Prosopography and Computer Ontologies: towards an integrated approach. Literary and Linguistic Computing. Oxford: Oxford University Press. </bibl>
+                    <bibl>Tuominen, J. et al. (2018). Bio CRM: A Data Model for Representing Biographical Data for Prosopographical Research. 
+                        <hi rend="italic">Proceedings of the Second Conference on Biographical Data in a Digital World 2017</hi>. pp. 59-66. 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

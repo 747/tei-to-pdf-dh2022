@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Navigating and Processing Data from the TEI with XSLT</title>
+                <author>
+                    <persName>
+                        <surname>Beshero-Bondar</surname>
+                        <forename>Elisa Eileen</forename>
+                    </persName>
+                    <affiliation>Penn State Erie, The Behrend College, United States of America</affiliation>
+                    <email>eeb4@psu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Scholger</surname>
+                        <forename>Martina</forename>
+                    </persName>
+                    <affiliation>Centre for Information Modelling - Austrian Centre for Digital Humanities, University of Graz, Austria</affiliation>
+                    <email>martina.scholger@uni-graz.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nagasaki</surname>
+                        <forename>Kiyonori</forename>
+                    </persName>
+                    <affiliation>International Institute for Digital Humanities, Japan</affiliation>
+                    <email>nagasaki@dhii.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-29T05:09:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>XML</term>
+                    <term>TEI</term>
+                    <term>XSLT</term>
+                    <term>XPath</term>
+                    <term>data visualization</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>data modeling</term>
+                    <term>text encoding and markup language creation</term>
+                    <term>deployment</term>
+                    <term>and analysis</term>
+                    <term>Humanities computing</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Knowing how to navigate and explore data in your encoding can be an important way to learn how to work with TEI and XML generally. This workshop is designed for people who have some experience with markup languages and seek to learn more about how to work with digital scholarly editions as a basis for analysis and research. We seek to raise awareness of the long-term sustainability of XML and TEI and the tool stack designed to process it. A little working knowledge of the query language XPath and the transformation language XSLT can help reduce reliance on software, packages, and plugins that may become obsolete without warning. Further, XSLT's functional programming can serve as a way of articulating research questions around a document data model expressed in XML. </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">The emphasis of our workshop is “pull-processing”, that is, extracting data and metadata from markup documents for analysis rather than providing the reading view of a digital scholarly edition. Markup in documents supplies structures and contexts that are particularly useful for processing data beyond what we can do with so-called “plain text”. Our workshop will teach the pull-processing of data from XML/TEI with simple, reusable XSLT templates to represent in TSV/CSV and HTML tables/charts. </hi>
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve"> We will begin by sharing and reviewing together several markup-based projects that visualize data, and we will first study the encoding of these projects. Featured encoding will include projects developed by the workshop instructors and their students, drawn from student projects in the Newtfire organization (</hi>
+                <ref target="https://newtfire.org">
+                    <hi rend="underline color(1155CC)" style="font-size:12pt">https://newtfire.org</hi>
+                </ref>
+                <hi style="font-size:12pt" xml:space="preserve">) </hi>
+                <ref target="http://gams.uni-graz.at/archive/objects/context:corema/methods/sdef:Context/get?mode=visualisations">
+                    <hi style="font-size:12pt" xml:space="preserve">, </hi>
+                </ref>
+                <hi style="font-size:12pt" xml:space="preserve">from the </hi>
+                <ref target="https://github.com/TEI-EAJ/">
+                    <hi rend="underline color(1155CC)" style="font-size:12pt">East Asian/Japanese SIG</hi>
+                </ref>
+                <hi style="font-size:12pt" xml:space="preserve"> of the TEI consortium (</hi>
+                <ref target="https://github.com/TEI-EAJ/">
+                    <hi rend="underline color(1155CC)" style="font-size:12pt">https://github.com/TEI-EAJ/</hi>
+                </ref>
+                <hi style="font-size:12pt" xml:space="preserve">)  and the </hi>
+                <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT/index_en.html">
+                    <hi rend="underline color(1155CC)" style="font-size:12pt">SAT Daizokyo Database project</hi>
+                </ref>
+                <hi style="font-size:12pt" xml:space="preserve"> (</hi>
+                <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT/index_en.html">
+                    <hi rend="underline color(1155CC)" style="font-size:12pt">https://21dzk.l.u-tokyo.ac.jp/SAT/index_en.html</hi>
+                </ref>
+                ), and projects in the GAMS (
+                <ref target="https://gams.uni-graz.at">
+                    <hi rend="underline color(1155CC)" style="font-size:12pt">https://gams.uni-graz.at)</hi>
+                </ref>
+                <hi style="font-size:12pt" xml:space="preserve">  repository. A sampling of project markup will provide a basis for us to review XML elements and attributes and give participants an opportunity to refresh their understanding of the XML tree structure. </hi>
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">A particularly interesting challenge of our workshop is to share XML documents written in multiple languages. We will also work with source documents composed in languages unfamiliar to the European and North American members of the instructional team, with guidance from our Japanese colleague in order to show that the code we write is transferable to multiple projects across language and cultural borders. Workshop instructors will collaborate on preparing source materials to establish an international foundation for this workshop. This will help us to explore how XSLT works in an international communication and processing context, as long as we are clear on what we wish to process and the significance of the data. </hi>
+            </p>
+            <p>We will demonstrate some basic navigation and calculation functions with XPath, before proceeding to show how XPath is applied in XSLT templates to address specific nodes that hold data of interest for visualization in statistical processing programs and simple online tools, where the structure of the output data is transferable to many different online calculation programs and amenable to statistical processing. During the workshop we will produce some structured documents: HTML lists and tables as well as plain text tabulated data (CSV or TSV files). The XSLT that we supply and that we write together in the workshop will be carefully documented with an interest to assist participants with revising and adapting the code to their own projects. We also hope to process some participant-supplied XML before, during, and after the workshop. </p>
+            <p>
+                In a half-day workshop we cannot teach everything that XPath and XSLT can do. However, we can share some commonly used methods to do pull processing (XPath axes, especially descendant::), simple arithmetic (count(), sum(), avg(), multiplication and division operators), output into TSV (CSV) text formats for processing. Making an HTML list and table would be desirable. If we have time, we will model simple transformations of calculated data from XML to SVG to draw a bar or line graph.
+            </p>
+            <p rend="DH-Heading2">Outline</p>
+            <list rend="bulleted">
+                <item>Review and refresh understanding of XML tree structures, working with XML and TEI projects in multiple languages that explore and analyze data pulled from structured documents.</item>
+                <item>Orientation to XPath, working with source documents provided by the instructors.</item>
+                <item>Teach basic XSLT to produce simple outputs that curate data and show how these can be used in simple charts and graphs.</item>
+            </list>
+            <p rend="DH-Heading2">Participation and requirements</p>
+            <p>If you wonder or worry about how to process or share data from your markup, this is a good workshop for you! Familiarity with the TEI in an introductory context is desirable, but participants may also be relatively new to markup technologies. No programming experience is necessary, but some experience with markup is useful. We will provide some introduction to TEI (why TEI is useful for projects that care about data) but we will not have time to do a full introduction of the TEI in the interest of emphasizing simple data processing with existing data. People may find themselves gaining a fresh perspective on the TEI on the basis of what they learn in this workshop.</p>
+            <p>Our past experience as instructors has shown us that to guarantee a high-quality experience, the instructor team must take great care to monitor and assist our participants. To ensure the instructor team can provide assistance and work with everyone, this workshop is limited to a number of 25 participants. There is no additional charge beyond conference expenses for workshop participants. Instructors will be in contact with participants well in advance of the workshop to provide software installation instructions and helpful resources before we meet, and we will provide means to remain in contact to assist participants after the workshop ends. </p>
+            <p rend="DH-Heading2">Workshop instructors </p>
+            <p>Elisa Beshero-Bondar, PhD</p>
+            <p>
+                <hi rend="italic background(white)">Program Chair of Digital Media, Arts, and Technology | Professor of Digital Humanities | Director of the Digital Humanities Lab at Penn State Erie, The Behrend College</hi>
+            </p>
+            <p>An active member of the 
+                <ref target="http://www.tei-c.org/index.xml">
+                    <hi rend="underline color(0066CC)">Text Encoding Initiative (TEI)</hi>
+                </ref>, Dr. Beshero-Bondar has been serving since 2016 on the 
+                <ref target="http://www.tei-c.org/Activities/Council/">
+                    <hi rend="underline color(0066CC)">TEI Technical Council</hi>
+                </ref>, an eleven-member international committee that supervises amendments to the TEI Guidelines. She has been teaching since the 1990s, and began teaching markup languages and XML stack processing almost as soon as she began learning them in the 2010s. Before moving to direct the 
+                <ref target="https://digit-psb.github.io/DIGIT/">
+                    <hi rend="underline color(1155CC)">DIGIT program</hi>
+                </ref> at Penn State Erie, she was Director of Pitt-Greensburg's 
+                <ref target="http://www.greensburg.pitt.edu/digital-humanities/center-digital-text">
+                    <hi rend="underline color(0066CC)">Center for the Digital Text</hi>
+                </ref>. Her research often involves working with archival letters and manuscripts, and has led her to study what early 19th-century poets and dramatists understood about human physiology and electricity, cultural first contact on Pacific islands, and the mutiny on the HMS Bounty. She is the architect of the 
+                <ref target="http://digitalmitford.org/">
+                    <hi rend="underline color(0066CC)">Digital Mitford Project</hi>
+                </ref> and other digital research projects involving TEI XML to build editions and prepare structured analyses of variants and collocations in texts. Find her on GitHub at 
+                <ref target="https://github.com/ebeshero">
+                    <hi rend="underline color(1155CC)">https://github.com/ebeshero</hi>
+                </ref> and her projects on the site named for her pet firebelly newt at 
+                <ref target="https://newtfire.org">
+                    <hi rend="underline color(1155CC)">https://newtfire.org</hi>
+                </ref>.
+            </p>
+            <p>Dr. Martina Scholger</p>
+            <p>Centre for Information Modelling - Austrian Centre for Digital Humanities, University of Graz</p>
+            <p>Martina Scholger has a PhD in Digital Humanities and holds a Senior Scientist position at the Centre for Information Modelling – Austrian Centre for Digital Humanities at the University of Graz. Her main research field is digital scholarly editing, the application of digital methods and semantic technologies to humanities’ source material, and text mining. In addition to teaching data modelling, text encoding and X-technologies, her work at the centre involves the conceptual design, development and implementation of numerous cooperation projects in the field of digital humanities (see http://gams.uni-graz.at). She has been an elected member of the TEI Technical Council since 2016, where she is currently its chair, and a member of the Institute for Documentology and Scholarly Editing since 2014. She has been teaching at a number of Summer Schools and workshops in the context of digital scholarly editing, e.g. at the Digital Humanities at Oxford Summer School and Schools organised by the Institute for Documentology and Scholarly Editing (IDE).</p>
+            <p style="text-align: left;">
+                <hi rend="background(white)">Kiyonori Nagasaki, Ph.D.</hi>
+                <lb/>
+                <hi rend="italic background(white)" xml:space="preserve">Senior Fellow at the International Institute for Digital Humanities in Tokyo. </hi>
+                <hi rend="background(white)">
+                    <lb/>His main research interest is in the development of digital frameworks for collaboration in Buddhist studies. He is also engaging in investigation into the significance of digital methodology in Humanities and in promotion of DH activities in Japan. He has been participating in a number of Digital Humanities projects conducted at several institutions in Japan and abroad such as the University of Tokyo, Kyoto University, Osaka University, the National Diet Library, the National Museum of Ethnology, the National Institute of Japanese Language and Linguistics, the University of Tsukuba and the University of Hamburg. His activities also include postgraduate education in DH at the University of Tokyo as well as administrative tasks at several scholarly societies including Japanese Association for Digital Humanities, and the Japanese Association of Indian and Buddhist Studies. 
+                </hi>
+            </p>
+        </body>
+    </text>
+</TEI>

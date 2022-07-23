@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Event annotation for literary corpora analysis</title>
+                <author>
+                    <persName>
+                        <surname>Grunspan</surname>
+                        <forename>Claude</forename>
+                    </persName>
+                    <affiliation>Lattice (ENS-PSL &amp; CNRS &amp; Université Sorbonne nouvelle)</affiliation>
+                    <email>claude.grunspan@sorbonne-nouvelle.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mélanie</surname>
+                        <forename>Frédérique</forename>
+                    </persName>
+                    <affiliation>Lattice (ENS-PSL &amp; CNRS &amp; Université Sorbonne nouvelle)</affiliation>
+                    <email>frederique.melanie@ens.psl.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Barré</surname>
+                        <forename>Jean</forename>
+                    </persName>
+                    <affiliation>Lattice (ENS-PSL &amp; CNRS &amp; Université Sorbonne nouvelle)</affiliation>
+                    <email>jean.barre@chartes.psl.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chardon</surname>
+                        <forename>Laurette</forename>
+                    </persName>
+                    <affiliation>Crisco (Université de Caen)</affiliation>
+                    <email>Laurette.chardon@unicaen.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Galleron</surname>
+                        <forename>Ioana</forename>
+                    </persName>
+                    <affiliation>Lattice (ENS-PSL &amp; CNRS &amp; Université Sorbonne nouvelle)</affiliation>
+                    <email>ioana.galleron@sorbonne-nouvelle.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Naguib</surname>
+                        <forename>Marco</forename>
+                    </persName>
+                    <affiliation>Lattice (ENS-PSL &amp; CNRS &amp; Université Sorbonne nouvelle)</affiliation>
+                    <email>marco.naguib@hotmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Plancq</surname>
+                        <forename>Clément</forename>
+                    </persName>
+                    <affiliation>MSH Val de Loire (Université de Tours)</affiliation>
+                    <email>clement.plancq@univ-tours.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Seminck</surname>
+                        <forename>Olga</forename>
+                    </persName>
+                    <affiliation>Lattice (ENS-PSL &amp; CNRS &amp; Université Sorbonne nouvelle)</affiliation>
+                    <email>olga.seminck@cri-paris.org</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Poibeau</surname>
+                        <forename>Thierry</forename>
+                    </persName>
+                    <affiliation>Lattice (ENS-PSL &amp; CNRS &amp; Université Sorbonne nouvelle)</affiliation>
+                    <email>thierry.poibeau@ens.fr</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T11:43:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Event detection</term>
+                    <term>corpus annotation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>text encoding and markup language creation</term>
+                    <term>deployment</term>
+                    <term>and analysis</term>
+                    <term>Computer science</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Studying large corpora in the literature domain, especially novels, mean that new tools are needed in order to address narratological questions at scale. A large body of research has specific developed techniques for the task, giving birth to the field known as distant reading (as opposed to close reading, by a human being), (Moretti, 2013). In this paper, we present a series of tools providing the basis for the large-scale and comprehensive annotation of French novels through the adaptation of the BookNLP project (Bamman et al. 2014) to French. We present the different kinds of annotation provided and then address specific issues concerning the annotation of events (Vauth 
+                <hi rend="italic">et al.</hi>, 2021). 
+            </p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Event annotation within the BookNLP project</head>
+                <p style="text-align: left; ">The BookNLP framework (Bamman et al. 2014) is one of these software ensembles integrating various modules (entity recognition
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p style="text-align: left; "> Person names, location names, etc. </p>
+                    </note>, coreference
+                    <note place="foot" xml:id="ftn2" n="2">
+                        <p style="text-align: left;"> A coreference occurs when 
+                            <hi rend="color(202122)" style="font-size:10.5pt" xml:space="preserve">two or more expressions refer to the same person or thing, like in </hi>
+                            <hi rend="italic bold color(202122)" style="font-size:10.5pt">Joe Biden</hi>
+                            <hi rend="italic bold subscript color(202122)" style="font-size:10.5pt">i</hi>
+                            <hi rend="italic color(202122)" style="font-size:10.5pt" xml:space="preserve"> said… </hi>
+                            <hi rend="italic bold color(202122)" style="font-size:10.5pt">He</hi>
+                            <hi rend="italic bold subscript color(202122)" style="font-size:10.5pt">i</hi>
+                            <hi rend="italic color(202122)" style="font-size:10.5pt" xml:space="preserve"> was… </hi>
+                            <hi rend="italic bold color(202122)" style="font-size:10.5pt">The president</hi>
+                            <hi rend="italic bold subscript color(202122)" style="font-size:10.5pt">i</hi>
+                            <hi rend="italic color(202122)" style="font-size:10.5pt" xml:space="preserve"> appeared to be</hi>
+                            <hi rend="color(202122)" style="font-size:10.5pt">…</hi>
+                        </p>
+                    </note>, event and quotation analysis
+                    <note place="foot" xml:id="ftn3" n="3">
+                        <p rend="footnote text"> Roughly, who (the source) said what (the quotation). </p>
+                    </note>) that can be applied to large collections of text. The initial BookNLP contained tools for English only, and a new project is now extending the range of languages covered. We are on our side developing the same kind of modules for French. 
+                </p>
+                <p style="text-align: left; ">Natural language processing is now almost exclusively based on machine learning techniques, which means most of the effort required to develop this kind of tools lies in text annotation. For French, we have annotated 20 extracts of French novels from the 19
+                    <hi rend="superscript">th</hi> and 20
+                    <hi rend="superscript">th</hi> century. We build on the Democrat project
+                    <note place="foot" xml:id="ftn4" n="4">
+                        <p style="text-align: left; "> https://www.ortolang.fr/market/corpora/democrat/3</p>
+                    </note>, whose aim was to annotate a large corpus of French texts (from different historical periods and different genres) with coreference information. We selected the texts corresponding to our criteria (copyright free texts from novels from the 19 and early 20
+                    <hi rend="superscript">th</hi> century), hence our 20 extracts (for a total of 184.000 words). 
+                </p>
+                <p style="text-align: left; ">The task first consisted in annotating entities following the BookNLP guidelines and mapping the initial Democrat coreference annotations to BookNLP. We then focused on event annotation, as this is one of the key features for distinguishing between author styles, but also for identifying specific episodes in a story, such as the fortune changes of the main characters, or the climax of a story arc. </p>
+                <p style="text-align: left; ">However, we discovered that annotating events is slightly more difficult than annotating entities. In BookNLP (Sims et al., 2019, Bamman et al., 2019 and 2020), the definition of the notion of event is as follows: “The event layer identifies events with asserted realis (depicted as actually taking place, with specific participants at a specific time) – as opposed to events with other epistemic modalities (hypotheticals, future events, extradiegetic summaries by the narrator)”. The definition entails that verbs with a negation or with a modal are not annotated, for example, and only conjugated form of the verbs are annotated. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>The necessity to integrate modals and negation in the annotation scheme</head>
+                <p style="text-align: left; ">We chose to annotate all kinds of events, without the initial limitations imposed in BookNLP. The first example presents three sentences with approximately the same meaning. If we leave apart the conjugated verb in the main clause, all the sentences include another clause, with a conjugated verb in the first sentence (1a), with an infinitive in the second (1b), and with a participle in the third one (1c). </p>
+                <quote>1a. Après qu’il a mangé, il s’en est allé. </quote>
+                <quote>1b. Après avoir mangé, il s’en est allé. </quote>
+                <quote>1c. Ayant mangé, il s’en est allé. </quote>
+                <quote>1d. 
+                    <hi rend="italic" xml:space="preserve">After he had eaten, he left. </hi>
+                </quote>
+                <p style="text-align: left; ">1a – 1c have roughly the same meaning and should thus be annotated with two events, independently of the form of the verb in the subordinate clause. </p>
+                <p style="text-align: left; ">Negation is more complex, as 
+                    <hi rend="italic">generally</hi> a negation means that no event has occurred. But this is not always the case and examples like 2a can be found:
+                </p>
+                <quote>2a. Il ne put retenir ses larmes. </quote>
+                <quote>2b
+                    <hi rend="italic">. He could not hold back his tears.</hi>
+                </quote>
+                <p style="text-align: left; ">which roughly means that the character cried. In an example like this one, there is definitely an action so in our opinion it should be annotated as such. Here our choices differ slightly from the ones in the original BookNLP project. </p>
+                <p style="text-align: left; ">All annotations were carried out after multiple rounds of discussions and the creation of a set of annotation guidelines heavily dependent on the initial BookNLP annotation scheme for events (but including the differences highlighted in this section). The total dataset comprises 14,305 events among 184,000 tokens in the 20 books in our corpus.</p>
+                <p style="text-align: left; ">The annotated corpus as well as our guidelines are freely available on GitHub. A collection of computer programs makes it possible to go from our annotation to something close to the original BookNLP scheme by excluding from the corpus examples with a negation or a modal. The next steps will consist in evaluating the robustness of the developed solution and its ability to provide useful information for actual literary studies. </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bamman D., Underwood T. and Smith N.</hi> (2014). A Bayesian Mixed Effects Model of Literary Character, 
+                        <hi rend="italic">Proceedings of the conference of the Association for Computational Linguistics</hi> (ACL), Baltimore, USA, June 2014.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bamman D., Popat S. and Shen S.</hi> (2019). An Annotated Dataset of Literary Entities. 
+                        <hi rend="italic">Proceedings of the conference of the North American Association for Computational Linguistics</hi> (NAACL), Minneapolis, USA, June 2019.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bamman D., Lewke O. and Mansoor A.</hi> (2020). An Annotated Dataset of Coreference in English Literature. 
+                        <hi rend="italic">Proceedings of the Language and Resource Evaluation Conference</hi> (LREC), Marseille, France, May 2020.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Landragin F.</hi> (2021), Le corpus DEMOCRAT et son exploitation. 
+                        <hi rend="italic">Langages</hi> nº 224 (4/2021), pp. 11-24,
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Moretti F.</hi> (2013), 
+                        <hi rend="italic">Distant Reading</hi>, Verso Books, London. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Sims M., Park J.H. and Bamman D. </hi>(2019). Literary Event Detection. Proceedings of the Conference of the Association for Computational Linguistics. Florence, Italy, July 2019. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Vauth M., Hatzel H.O., Gius E. and Biemann C.</hi> (2021). Automated Event Annotation in Literary Texts. CHR 2021: Computational Humanities Research Conference, Amsterdam, The Netherlands, November 2021.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

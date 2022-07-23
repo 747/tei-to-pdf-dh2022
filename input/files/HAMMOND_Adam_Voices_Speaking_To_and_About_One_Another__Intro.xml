@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Voices Speaking To and About One Another: Introducing the Project Dialogism Novel Corpus</title>
+                <author>
+                    <persName>
+                        <surname>Hammond</surname>
+                        <forename>Adam</forename>
+                    </persName>
+                    <affiliation>University of Toronto, Canada</affiliation>
+                    <email>adam.hammond@utoronto.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vishnubhotla</surname>
+                        <forename>Krishnapriya</forename>
+                    </persName>
+                    <affiliation>University of Toronto, Canada</affiliation>
+                    <email>vkpriya@cs.toronto.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mohammad</surname>
+                        <forename>Saif M.</forename>
+                    </persName>
+                    <affiliation>National Research Council Canada, Ottawa, ON, Canada</affiliation>
+                    <email>saif.mohammad@nrc-cnrc.gc.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hirst</surname>
+                        <forename>Graeme</forename>
+                    </persName>
+                    <affiliation>University of Toronto, Canada</affiliation>
+                    <email>gh@cs.toronto.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>quote attribution</term>
+                    <term>corpus</term>
+                    <term>novel</term>
+                    <term>sentiment analysis</term>
+                    <term>emotion dynamics</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>natural language processing</term>
+                    <term>Computer science</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction </head>
+                <p style="text-align: left; ">We introduce a new dataset for the computational analysis of novels: the Project Dialogism Novel Corpus (PDNC). The PDNC currently consists of 22 novels in which all quotations are identified and annotated for speaker, addressee(s), and characters mentioned. PDNC is by an order of magnitude the largest corpus of its kind. Each novel is annotated manually by a pair of annotators using customized software we developed. In addition to releasing the dataset itself alongside this paper, we are also releasing the custom annotation software we developed (including the source code) along with our annotation guidelines. In the discussion section, we present two applications of the PDNC from our own research: quote attribution and emotion dynamics. We argue that the PDNC will promote a more nuanced and accurate view of novelistic discourse; whereas much research currently envisions the novel as expressing the voice of the 
+                    <hi rend="italic">author</hi>, the PDNC presents novels as a polyphonic fabric of 
+                    <hi rend="italic" xml:space="preserve">characters’ </hi>voices.
+                </p>
+                <p style="text-align: left; "> </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Overview of the Project Dialogism Novel Corpus</head>
+                <p style="text-align: left; ">The PDNC currently consists of 22 novels (see Table 1). In selecting novels, our aim has been to annotate texts in a variety of genres (literary fiction, children’s literature, detective fiction, and science fiction are represented); from the LitBank (REF #1) and QuoteLi (REF #15) corpora, to facilitate comparison and validation; of broad interest to a variety of scholars while still relevant to our group’s interest in stylistic diversity and dialogism. Further, we have chosen to annotate multiple novels by Jane Austen, in order to facilitate comparative analysis of a single author’s oeuvre (Austen was chosen because she is included in all existing corpora). </p>
+                <p style="text-align: left; "> The annotation workflow proceeds as follows. First, the novel is pre-processed in GutenTag (Brooke et al. 2015); from this, a provisional character list is built and likely quotations are identified. Next, the novel is manually annotated in our customized software (see Figure 1). This is done separately by two annotators. Working from our guidelines (Hammond et al. 2021), annotators select each quotation, then identify the speaker, addressee, and anyone mentioned in the quotation (whether by name or pronoun). Annotators also identify the referring expression for each quotation, as well as the quotation type: explicit (quotations in which the referring expressions give the character’s name; for example, “said Emma”), pronominal (pronoun given; “she said”), or implicit (no referring expression). Once both annotators have completed their work, their annotations are compared for any discrepancies. The annotators then meet to resolve any disagreements, in what we call a “consensus exercise.” Once comparison shows no disagreement between annotations, the novel is considered annotated.</p>
+                <p style="text-align: left; ">  The PDNC is by an order of magnitude the largest corpus of its kind (see Table 2). The largest previous corpus of novels annotated in this manner is the QuoteLi corpus, which contains only three novels (
+                    <hi rend="italic" xml:space="preserve">Pride and Prejudice </hi>and 
+                    <hi rend="italic">Emma</hi>, both in PDNC; and Chekhov’s 
+                    <hi rend="italic">The Steppe</hi>, not in PDNC). The LitBank corpus includes annotations for 100 novels, but only for a very small fraction of each is annotated (on average, only 2,000 words). The Columbia Quoted Speech Attribution Corpus consists of six texts, two of which are compilations of short stories, but they are only partly annotated for quote attribution.
+                </p>
+                <figure>
+                    <graphic n="1001" width="16.51cm" height="13.155083333333334cm" url="Pictures/0f052b2c2b815d1307b767f893086f59.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="italic bold">Table 1.</hi>
+                    <hi rend="italic" xml:space="preserve"> PDNC: Tokens, quotations, speakers, total # of addressees recorded, total # of mentions</hi> 
+                </p>
+                <figure>
+                    <graphic n="1002" width="15.158861111111111cm" height="7.701138888888889cm" url="Pictures/1e00a7f855cb2d08fcba044fce104e46.png" rend="inline"/>
+                    <head>Screen shot from our custom annotation software.</head>
+                </figure>
+                <figure>
+                    <graphic n="1003" width="16.525875cm" height="4.005791666666667cm" url="Pictures/9d6bc40b9f707960c75fceb638518a82.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="italic bold">Table 2.</hi>
+                    <hi rend="italic" xml:space="preserve"> Comparison of PDNC with previous quotation attribution corpora</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Research Applications</head>
+                <p style="text-align: left; ">The research applications of the PDNC are multiple, extending well beyond the boundaries of our own research interests. Yet our own research serves to demonstrate some of its possible uses.</p>
+                <p style="text-align: left; ">We began developing the PDNC primarily to test our quote attribution system (Hammond et al. 2020). The corpus has proven essential to this work, allowing us to compare our systems against state-of-the-art systems like QuoteLi and the BERT-based system in the latest release of BookNLP (see Table 3).</p>
+                <figure>
+                    <graphic n="1004" width="15.483416666666667cm" height="12.407194444444444cm" url="Pictures/711166c97c16160c2121a81596e06f7a.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="italic bold">Table 3.</hi>
+                    <hi rend="italic" xml:space="preserve"> A comparison of performance of our latest quote attribution system vs. QuoteLi vs. BookNLP. Numbers reported are accuracy scores; best scores are bolded.</hi>
+                </p>
+                <p style="text-align: left; "> Perhaps the largest aim of PDNC is to reorient computational work away from conceiving novels as undifferentiated lumps of text attributed solely to their authors — but rather as complex fabrics of differentiated voices speaking to and about one another, mediated by a narrator. In the paper introducing the tool GutenTag (Hammond and Brooke 2017), one of our authors used a rudimentary version of PDNC to rebut Matthew Jockers’s (2013) claim that female novelists generally write about stereotypically feminine themes. By looking at character voices 
+                    <hi rend="italic" xml:space="preserve">within </hi>novels, however, rather than attributing all the novel’s text to its author, we demonstrated that it was female 
+                    <hi rend="italic" xml:space="preserve">characters </hi>who discussed these themes — and that Jockers’s results were a secondary consequence of the fact that female authors tended to include far more female characters in their works. By allowing researchers to look 
+                    <hi rend="italic" xml:space="preserve">within </hi>novels and analyze novels through the voices that make them up, PDNC will shift research away from mistaken assumptions and conclusions like Jockers’s.
+                </p>
+                <p style="text-align: left; ">  Our work on “emotion dynamics” — the study of change in emotional states over time — presents another example of new research enabled by the PDNC. Sentiment analysis is among the richest and most vital areas of computational literary research today. Yet major work seeking to plot novels’ sentiment trajectories remains limited by the necessity of assuming a single source for all words: the author (Elsner 2012, Mohammad 2011, Jockers 2014, Reagan 2016). In a pioneering essay on “emotion dynamics” in films, Hipson and Mohammad (2021) show the benefits of considering 
+                    <hi rend="italic" xml:space="preserve">individual characters’ </hi>emotional trajectories. This approach enables researchers to determine each character’s “home base” (typical emotional range) as well as their emotional variability and the speed at which they regulate variations. We are currently working to apply this approach to the novels in PDNC (Figures 2–4 show the emotional trajectory of Jake Barnes in Ernest Hemingway’s 
+                    <hi rend="italic">The Sun Also Rises</hi>, revealing that this reputedly taciturn character in fact experiences one of the most extreme emotional troughs (in terms of valence) of any character in PDNC). We are using this approach to test whether characters’ emotion dynamics track with familiar literary-critical categories such as flat vs. round characters (Forster 1927). We are also investigating the extent to which emotional trajectories are gendered, and whether male or female authors are more likely to create characters that diverge from gender norms.
+                </p>
+                <figure>
+                    <graphic n="1005" width="16.002cm" height="4.419355555555556cm" url="Pictures/3aa7a14e61386eda8040e55d35f7556e.png" rend="inline"/>
+                    <head>Emotion dynamics trajectory, valence only, for characters in Ernest Hemingway’s The Sun Also Rises. Jake Barnes’s emotional trajectory is highlighted; the trough three-quarters of the way through the novel (~76%-87%) occurs during and after his fight with Robert Cohn at the Fiesta.</head>
+                </figure>
+                <figure>
+                    <graphic n="1006" width="16.002cm" height="4.339002777777778cm" url="Pictures/8a01ee818775bc33378ca0521bf5f930.png" rend="inline"/>
+                    <head>Emotion dynamics, valence only, for all characters in PDNC. Jakes Barnes’s trajectory (highlighted) is extreme in the context of the characters in our corpus.</head>
+                </figure>
+                <figure>
+                    <graphic n="1007" width="16.002cm" height="5.539152777777778cm" url="Pictures/b5dc93e0ca975c3df1a2271ec83b76e2.png" rend="inline"/>
+                    <head>Emotion words (with frequency count) used by Jake Barnes during trough (76%-87% portion of novel)</head>
+                </figure>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bamman, D., Popat, S., and Shen, S.</hi> (2019). An annotated dataset of literary entities. 
+                        <hi rend="italic">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)</hi>, pp. 2138-2144. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Brooke, J., Hammond, A., and Hirst, G.</hi> (2015). GutenTag: an NLP-driven tool for digital humanities research in the Project Gutenberg corpus. 
+                        <hi rend="italic">Proceedings of the Fourth Workshop on Computational Linguistics for Literature</hi>, pp. 42-47.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Elsner, M.</hi> (2012). Character-based kernels for novelistic plot structure. 
+                        <hi rend="italic">Proceedings of the 13th Conference of the European Chapter of the Association for Computational Linguistics</hi>, pp. 634-644. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Elson, D. K. and McKeown, K. R.</hi> (2010). Automatic attribution of quoted speech in literary narrative. 
+                        <hi rend="italic">Twenty-Fourth AAAI Conference on Artificial Intelligence</hi>. 2010.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Forster, E. M.</hi> (1927). 
+                        <hi rend="italic">Aspects of the Novel.</hi> New York: Harcourt, Brace, and Company.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hammond, A. and Brooke, J.</hi> (2017). GutenTag: A User-Friendly, Open-Access, Open-Source System for Reproducible Large-Scale Computational Literary Analysis. 
+                        <hi rend="italic">Proceedings of the Digital Humanities 2017 Conference</hi>, pp. 246–249.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hammond, A., Vishnubhotla, K., and Hirst, G.</hi> (2020). The Words Themselves: A Content-Based Approach to Quote Attribution. 
+                        <hi rend="italic">Proceedings of the Digital Humanities 2020 Conference.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hammond, A., Vishnubhotla, K., Duarte, L., Oh, S., Pajovic, J., and Siegal, B.</hi> (2022). Annotation Guidelines for the Project Dialogism Novel Corpus. 
+                        <ref target="https://tinyurl.com/quoteattribution">https://tinyurl.com/quoteattribution</ref> (accessed April 28, 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Mohammad, S.</hi> (2018). Obtaining reliable human ratings of valence, arousal, and dominance for 20,000 English words. 
+                        <hi rend="italic">Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</hi>, pp. 174-184. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Brooke, J, and Hirst, G.</hi> (2013). A multi-dimensional Bayesian approach to lexical style. 
+                        <hi rend="italic">Proceedings of the 2013 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</hi>, pp. 673-679. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">He, H., Barbosa, S., and Kondrak, G.</hi> (2013). Identification of speakers in novels. 
+                        <hi rend="italic">Proceedings of the 51st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)</hi>, pp. 1312-1320. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hipson, W.E., and Mohammad, S. E.</hi> (2021). Emotion dynamics in movie dialogues. 
+                        <hi rend="italic">PloS one</hi> vol. 16(9).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Jockers, M.</hi> (2013). 
+                        <hi rend="italic" xml:space="preserve">Macroanalysis: Digital Methods and Literary History </hi>(University of Illinois Press). 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Jockers, M.</hi> (2014). “A novel method for detecting plot.” http://www.matthewjockers.net/2014/06/05/a-novel-method-for-detecting-plot/ (accessed April 28, 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Mohammad, S.</hi> (2011). From Once Upon a Time to Happily Ever After: Tracking Emotions in Novels and Fairy Tales. 
+                        <hi rend="italic" xml:space="preserve">Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities </hi>(LaTeCH). 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Muzny, F., Fang, M., Chang, A., and Jurafsky, D.</hi> (2017). "A two-stage sieve approach for quote attribution. 
+                        <hi rend="italic">Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 1, Long Papers</hi>, pp. 460-470.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Reagan, A. J., Mitchell, L., Kiley, D., Danforth, C. M., and Sheridan Dodds, P.</hi> (2016). The emotional arcs of stories are dominated by six basic shapes. 
+                        <hi rend="italic" xml:space="preserve">EPJ Data Science </hi>5(31), pp. 1–12.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

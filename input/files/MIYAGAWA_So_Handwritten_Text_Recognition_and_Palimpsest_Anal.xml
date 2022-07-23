@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Handwritten Text Recognition and Palimpsest Analysis for Medieval Greek Manuscripts</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Okada</surname>
+                        <forename>Takashi</forename>
+                    </persName>
+                    <affiliation>Toppan Inc.</affiliation>
+                    <email>takashi_3.okada@toppan.co.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Miyagawa</surname>
+                        <forename>So</forename>
+                    </persName>
+                    <affiliation>Kyoto University</affiliation>
+                    <email>miyagawa.so.36u@kyoto-u.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kawazu</surname>
+                        <forename>Kosei</forename>
+                    </persName>
+                    <affiliation>Toppan Inc.</affiliation>
+                    <email>kosei.kawazu@toppan.co.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ishii</surname>
+                        <forename>Tatsuya</forename>
+                    </persName>
+                    <affiliation>Toppan Inc.</affiliation>
+                    <email>tatsuya.ishii@toppan.co.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Oka</surname>
+                        <forename>Toshio</forename>
+                    </persName>
+                    <affiliation>Toppan Inc.</affiliation>
+                    <email>toshio.oka@toppan.co.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fujimaki</surname>
+                        <forename>Satoshi</forename>
+                    </persName>
+                    <affiliation>Toppan Inc.</affiliation>
+                    <email>satoshi.fujimaki@toppan.co.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Osawa</surname>
+                        <forename>Tomejiro</forename>
+                    </persName>
+                    <affiliation>Toppan Inc.</affiliation>
+                    <email>tomejiro.osawa@toppan.co.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Shiki</surname>
+                        <forename>Yoko</forename>
+                    </persName>
+                    <affiliation>Printing Museum, Tokyo</affiliation>
+                    <email>yoko.shiki@printing-museum.org</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Maehara</surname>
+                        <forename>Noriko</forename>
+                    </persName>
+                    <affiliation>Printing Museum, Tokyo</affiliation>
+                    <email>maehara@printing-museum.org</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ishibashi</surname>
+                        <forename>Keiichi</forename>
+                    </persName>
+                    <affiliation>Printing Museum, Tokyo</affiliation>
+                    <email>keiichi.ishibashi@printing-museum.org</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sunada</surname>
+                        <forename>Kyosuke</forename>
+                    </persName>
+                    <affiliation>University of Tokyo</affiliation>
+                    <email>ks.tkb3594@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nakanishi</surname>
+                        <forename>Yasuhito</forename>
+                    </persName>
+                    <affiliation>Printing Museum, Tokyo</affiliation>
+                    <email>nakanishi@printing-museum.org</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T09:55:24.865000000</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Medieval Greek Manuscript</term>
+                    <term>Handwritten Text Recognition</term>
+                    <term>Optical Character Recognition</term>
+                    <term>Plimpsest</term>
+                    <term>Ligature</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Africa</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>manuscripts description</term>
+                    <term>representation</term>
+                    <term>and analysis</term>
+                    <term>optical character recognition and handwriting recognition</term>
+                    <term>History</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading">
+                <head>Medieval Greek Manuscript Digital Database with High-Resolution Images</head>
+                <p>Medieval Greek manuscripts were written during the Byzantine Empire in the Middle Ages. Among various Greek writing styles, medieval Greek manuscripts are known to be difficult to read due to the frequent and diverse use of ligatures and various diacritics. The Biblioteca Apostolica Vaticana (BAV) preserves many medieval Greek manuscripts that have yet to be transcribed.</p>
+                <p>Since its establishment in 2000, the Printing Museum in Tokyo (PMT) has collaborated closely with the BAV. The Cicero Project, a joint research project that commenced in 2005 and will end in 2021, aims to create an open digital database of hundreds of the BAV’s medieval Greek manuscripts with high-resolution images of each folio, including palimpsests. After the project’s launch, Toppan Inc., PMT’s parent company, developed scanners and analysis systems.</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Palimpsest Analysis</head>
+                <p>The scanner team studied page acquisition, data storage methods, and alternative methods to digitize the target pages. Then, following the decoding team’s research policy, each designated palimpsest was digitized. The palimpsest analysis software superimposed the white light image and the ultraviolet image of the palimpsest digitized by the scanner. The visible text was subsequently extracted, making it easier to decipher. </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/9af7971e871d9112a27a24888840a36c.jpg"/>
+                        <head>Result of the palimpsest analysis in the Cicero Project (Vat.Gr.1837)</head>
+                    </figure>
+                </p>
+                <p>As a result of the palimpsest analysis, a fragment of a work by 10th century Byzantine historian Leo the Deacon was found in the palimpsest manuscript Vat.Gr.1307 in the BAV collection. The fragment contained a description of Byzantine history and the origin of the Slavic peoples, which has significant differences with another already known manuscript of the same work (Janz, 2006).</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Handwritten Text Recognition</head>
+                <p>It is physically impossible for the small number of researchers at the BAV to decipher approximately 30,000 images of Greek manuscripts that have been digitized. Therefore, in 2017, the new project succeeding the Cicero Project started developing a new deep-learning HTR (handwritten text recognition) system based on the 
+                    <hi rend="italic">Fumi no Ha</hi> OCR technology (Toppan Inc, 2021), originally developed for recognizing handwritten cursive early modern Japanese texts. 
+                    <hi rend="italic">Fumi no Ha</hi> includes our cursive script data set, AI cursive script recognition program, and the viewer that Toppan Printing Co., Ltd., currently known as Toppan Inc., already developed commercially. This system offers the following advantages:
+                </p>
+                <list type="unordered">
+                    <item>Unlike existing line-based HTR using CRNN (Shi et al., 2015; e.g., bidirectional LSTM), 
+                        <hi rend="italic">Fumi no Ha </hi>enables the identification of character coordinates for each character. As such, even when there are difficult-to-read characters, it is possible to reprint each character while referring to the image;
+                    </item>
+                    <item>Recognition results can be generated together with confidence information. Users can discard characters with low confidence levels and perform more accurate single-character recognition for them instead;</item>
+                    <item>Toppan Inc.’s web-browser-based image viewing software makes it easy to compare the original manuscript and the transcription. No special application is required for browsing; and</item>
+                    <item>The HTML format output can be displayed anywhere as long as a web browser is available. There is no requirement for dedicated systems or maintenance costs.</item>
+                </list>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/225ad43cfa451b68b36ed0813460b7cf.png"/>
+                        <head>Training data in HTR for Medieval Greek manuscripts</head>
+                    </figure>
+                </p>
+                <p>Training data were prepared by character on images of handwritten manuscripts provided by the BAV (Figure 2). In this phase, two experts on medieval Greek philology directed the training data: So Miyagawa and Kyosuke Sunada. Miyagawa’s experience of training Coptic OCR (Miyagawa et al., 2019) contributed to this training phase.</p>
+                <p>
+                    <hi rend="italic">Fumi no Ha</hi> uses the hybrid system of character-based and line-based recognition systems. This hybrid system enables the recognition of highly complicated character layouts found in Japanese cursive manuscripts by employing the character-based system. At the same time, by using the line-based strategy, it ensures ease in the preparation of ground truth data. Medieval Greek manuscripts have various ligatures and an eccentric layout of letters. For this kind of complex character layout, the hybrid system is more appropriate than only line-based systems, such as Transkribus (Kahle et al., 2017) and OCR4all (Reul et al., 2019). 
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Conclusions</head>
+                <p>By taking full advantage of this set of the manuscript scanning, palimpsest analysis, and HTR programs, it is possible to build a useful database for the scholarly community, which provides high-resolution images and texts of medieval Greek handwritten manuscripts.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Janz, T.</hi> (2006). 
+                        <hi rend="italic">Un nouveau témoin fragmentaire de Léon le Diacre le Vat</hi>. Sofia: Centre Dujčev.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kahle, P., Colutto, S., Hackl, G., and Mühlberger, G. </hi>(2017). Transkribus: A Service Platform for Transcription, Recognition and Retrieval of Historical Documents. 
+                        <hi rend="italic">Proc. 14th IAPR International Conference on Document Analysis and Recognition</hi>, pp. 19–24. DOI: 10.1109/ICDAR.2017.307.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Reul, C., Christ, D., Hartelt, A., Balbach, N., Wehner, M., Springmann, U., Wick, C., Grundig, C., Büttner, A., and Puppe, F.</hi> (2019). OCR4all: An Open-Source Tool Providing a (Semi-)Automatic OCR Workflow for Historical Printings. 
+                        <hi rend="italic">Applied Sciences</hi>
+                        <hi rend="bold">9</hi>(22). DOI: 10.3390/app9224853.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Shi, B., Bai, X., and Yao, C.</hi> (2015). An End-to-End Trainable Neural Network for Image-Based Sequence Recognition and Its Application to Scene Text Recognition. 
+                        <hi rend="italic">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</hi>. DOI: 10.1109/TPAMI.2016.264637.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Miyagawa, S., Bulert, B., Büchler, M., and Behlmer, H. </hi>(2019). Optical Character Recognition of Typeset Coptic Text with Neural Networks. 
+                        <hi rend="italic">Digital Scholarship in the Humanities, </hi>
+                        <hi rend="bold">34</hi>(Suppl. 1): i135–i141. DOI: 10.1093/llc/fqz023.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Toppan Inc.</hi> (2021). Fumi no Ha. https://www.toppan.co.jp/biz/fuminoha/ (accessed 21 April 2022).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

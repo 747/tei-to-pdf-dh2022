@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>HTR2CritEd: A Semi-Automatic Pipeline to Produce a Critical Digital Edition of Literary Texts with Multiple Witnesses out of Text Created through Handwritten Text Recognition</title>
+                <author>
+                    <persName>
+                        <surname>Stoekl Ben Ezra</surname>
+                        <forename>Daniel</forename>
+                    </persName>
+                    <affiliation>EPHE, PSL, France; AOrOc UMR 8546</affiliation>
+                    <email>daniel.stoekl@ephe.psl.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lapin</surname>
+                        <forename>Hayim</forename>
+                    </persName>
+                    <affiliation>University of Maryland, College Park, MD, USA</affiliation>
+                    <email>hlapin@umd.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Brown-DeVost</surname>
+                        <forename>Bronson</forename>
+                    </persName>
+                    <affiliation>EPHE, PSL, France; AOrOc UMR 8546; University of Goettingen, Germany</affiliation>
+                    <email>bronsonbdevost@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Jablonski</surname>
+                        <forename>Pawel</forename>
+                    </persName>
+                    <affiliation>EPHE, PSL, France; AOrOc UMR 8546</affiliation>
+                    <email>pawel.jablonski@etu.ephe.psl.eu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T08:41:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>critical digital edition</term>
+                    <term>manuscripts</term>
+                    <term>HTR</term>
+                    <term>NLP</term>
+                    <term>Hebrew</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>digital libraries creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>scholarly editing and editions development</term>
+                    <term>analysis</term>
+                    <term>and methods</term>
+                    <term>Humanities computing</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Database structures and export formats of Handwritten Text Recognition tools (e.g. Transkribus, Tesseract, eScriptorium) are usually based on a document layout hierarchy with regions/zones and lines. Interlinear or marginal additions to the main text are in separate zones and lines (Page XML, Alto XML) (Kahle et al. 2017, Stokes et al. 2021).</p>
+            <p>While this is less problematic for documentary texts (Chagué et al. 2021), it poses a problem for those working on critical editions of literary texts with multiple textual witnesses because any such edition presupposes a running text hierarchy (books, chapters, verses), where the interlinear and marginal additions need to be inserted at the right spots. This is a precondition to using text-alignment tools such as CollatEx (Dekkers et al. 2011).</p>
+            <p>We present a pipeline that permits to overcome this problem for Medieval Hebrew manuscripts in a semi-automatized fashion beginning with the discovery of insertion marks in the HTR process and leading to a critical edition in TEI: </p>
+            <list rend="numbered">
+                <item>We include a series of different insertion marks in the recognition training data for the HTR. Different insertion marks distinguish between interlinear and marginal additions (Stökl Ben Ezra et al. 2021). </item>
+                <item>Optimal matches of insertion marks with a) interlinear lines and b) marginal additions are calculated with the “Hungarian Algorithm” (Kuhn 1955). The results can be visualized via eScriptorium’s API for image annotation (see fig. 1).</item>
+                <item>A. If there is already an e-text of a printed edition with an accepted text hierarchy, we use the Dicta synopsis-algorithm via an API (Brill et al. 2020) or alternatively a combination of global and local alignments of the Smith-Waterman (1981) and Needleman Wunsch (1970) algorithms to align the main text of the HTRed manuscript with the standard edition to calculate the places for the textual hierarchy markers. This needs to be manually verified subsequentially, especially if some of the markers for the text hierarchy should be in the interlinear or marginal additions.
+                    <lb/>B. If there is no printed edition, the text hierarchy markers need to be inserted manually. This is usually necessary only for one manuscript (if there is a manuscript that represents the complete text).
+                </item>
+                <item>Based on the combination of 2 and 3, the first manuscript transcription in the HTR tool can now be converted from document hierarchy to text hierarchy TEI. If there was no printed edition (3B), the text hierarchy markers of this manuscript can be used in step 3A to automatically insert them. </item>
+                <item>The resulting data is submitted via json to an optimized Needleman-Wunsch algorithm, Collatex or another alignment tool (Brill et al. 2020) to automatically produce an alignment between the different witnesses. For error correction, Microsoft Excel can be used or the tool in step 7. </item>
+                <item>Text comparison in the alignment can serve to resolve most of the abbreviations.</item>
+                <item>The final result is fed into TEI-Publisher (Turska and Meier 2021). We hope to be able to integrate a tabular tool that allows to manually but ergonomically correct any misalignments of the automatic alignment process to produce the critical edition: 
+                    <ref target="https://editions.erabbinica.org/">https://editions.erabbinica.org/</ref>
+                </item>
+                <item>The TEI-Publisher publication includes accessibility via DTS (Distributed Text Service).</item>
+            </list>
+            <p style="text-align: left;">Fig. 1: eScriptorium with 3 panels turned on: On the left, the image annotation panel with the triangles representing the links between marginal (blue) or interlinear (red) insertion spots and the first and last word of the insertion, the segmentation panel. In the center, the image annotation panel with the main text and the marginal and interlinear text lines. On the right, the manually corrected automatic transcription.</p>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="9.001125cm" url="Pictures/9df966d83123c990dafdab87b641f41e.png" rend="inline"/>
+            </figure>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Almas, B., Clérice, T., Cayless, H., Jolivet, V., Liuzzo, P., Romanello, M., Robie, J., and Scott, I.</hi> (2021). Distributed Text Services (DTS): a Community-built API to Publish and Consume Text Collections as Linked Data (
+                        <ref target="https://hal.archives-ouvertes.fr/hal-03183886">https://hal.archives-ouvertes.fr/hal-03183886</ref>) 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Brill, O., Koppel, M., and Shmidman, A.</hi> (2020). FAST: Fast and Accurate Synoptic Texts. 
+                        <hi rend="italic">Digital Scholarship Humanities</hi> 35(2): 254-264.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Chagué, A. and Scheithauer, H.</hi>
+                        <hi rend="HTML_Code"> (2021). page2tei - LECTAUREP [Computer software]</hi>: 
+                        <ref target="https://github.com/lectaurep/page2tei">https://github.com/lectaurep/page2tei</ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Dekker, R. H. and Middell, G.</hi> (2011). Computer-Supported Collation with CollateX: Managing Textual Variance in an Environment with Varying Requirements. 
+                        <hi rend="italic">Supporting Digital Humanities</hi> University of Copenhagen, Denmark. 17-18 November 2011.
+                    </bibl>
+                    <bibl>
+                        <hi rend="HTML_Cite">
+                            <hi rend="bold" xml:space="preserve">Kahle, P., Colutto, S., Hackl, G., </hi>
+                            <hi rend="bold" xml:space="preserve">and </hi>
+                        </hi>
+                        <hi rend="this-person">
+                            <hi rend="bold">Mühlberger</hi>
+                        </hi>
+                        <hi rend="HTML_Cite">
+                            <hi rend="bold">,</hi>
+                            <hi rend="bold" xml:space="preserve"> G.</hi> (2017). 
+                        </hi>
+                        <hi rend="Titre1">Transkribus - A Service Platform for Transcription, Recognition and Retrieval of Historical Documents,”</hi>
+                        <hi rend="HTML_Cite" xml:space="preserve"> OST@ICDAR 2017: 19-24</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="reference-text">
+                            <hi rend="bold">Kuhn, H.</hi> (1955). "The Hungarian Method for the assignment problem," 
+                            <hi rend="italic">Naval Research Logistics Quarterly</hi>, 2: 83–97. 
+                        </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="HTML_Cite">
+                            <hi rend="bold" xml:space="preserve">Needleman, </hi>
+                            <hi rend="bold" xml:space="preserve">S. and </hi>
+                            <hi rend="bold">Wunsch, C.</hi> (1970). "A general method applicable to the search for similarities in the amino acid sequence of two proteins," Journal of Molecular Biology 48 (3): 443–53.
+                        </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="HTML_Cite">
+                            <hi rend="bold">Smith, T</hi>
+                            <hi rend="bold">. and</hi>
+                            <hi rend="bold" xml:space="preserve"> Waterman, M.</hi> (1981). "Identification of Common Molecular Subsequences." Journal of Molecular Biology 147 (1): 195–197.
+                        </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stokes, P., Stökl Ben Ezra, D., Kiessling, B., Tissot, R. and Gargem, E.</hi> (2021). “
+                        <ref target="https://classics-at.chs.harvard.edu/classics18-stokes-kiessling-stokl-ben-ezra-tissot-gargem/">The eScriptorium VRE for Manuscript Cultures</ref>” in Claire 
+                        <hi rend="markgeiryylgw">Clivaz</hi> and Garrick V. Allen (eds), 
+                        <hi rend="italic">Ancient Manuscripts and Virtual Research Environments</hi>, special issue, 
+                        <hi rend="italic">Classics@</hi> 18 n.p. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stökl Ben Ezra, D., Brown-DeVost, B., and Jablonski, P.</hi> (2021). “Exploiting Insertion Symbols for Marginal Additions in the Recognition Process to Establish Reading Order” 
+                        <hi rend="italic">IWCP@ICDAR</hi> 2021.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Turska, M., Meier, W.</hi> (2021). 
+                        <hi rend="italic">TEI Publisher</hi>
+                        <ref target="http://teipublisher.com">http://teipublisher.com</ref>. (version 7, 2021)
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

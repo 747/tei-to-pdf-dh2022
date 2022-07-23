@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Detecting Latent Textual Bias with Topic Modeling and Sentiment Analysis</title>
+                <author>
+                    <persName>
+                        <surname>Sanders</surname>
+                        <forename>Ashley</forename>
+                    </persName>
+                    <affiliation>UCLA, United States of America</affiliation>
+                    <email>asandersgarcia@ucla.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-30T02:13:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>bias detection</term>
+                    <term>topic modeling</term>
+                    <term>sentiment analysis</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Africa</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>natural language processing</term>
+                    <term>text mining and analysis</term>
+                    <term>Cultural studies</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Bias detection is an emerging area of research for digital humanists, computational linguists, and information studies scholars, alike, who point to biases inherent in our algorithms, software, tools, and platforms, but we are only just beginning to examine how computational methods could be used to interrogate our primary textual sources 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"Vj2SctZ0","properties":{"formattedCitation":"(Noble, 2018; Al-Sarraj and Lubbad, 2018; Chen et al., 2020)","plainCitation":"(Noble, 2018; Al-Sarraj and Lubbad, 2018; Chen et al., 2020)","noteIndex":0},"citationItems":[{"id":4550,"uris":["http://zotero.org/users/227324/items/Y2DL9XJK"],"itemData":{"id":4550,"type":"book","event-place":"New York","ISBN":"978-1-4798-3724-3","language":"English","note":"section: xv, 229 pages : illustrations ; 23 cm","number-of-pages":"xv, 229","publisher":"New York University Press","publisher-place":"New York","source":"WorldCat Discovery Service","title":"Algorithms of Oppression: How Search Engines Reinforce Racism","title-short":"Algorithms of Oppression","author":[{"family":"Noble","given":"Safiya Umoja"}],"accessed":{"date-parts":[["2021",5,19]]},"issued":{"date-parts":[["2018"]]}}},{"id":4494,"uris":["http://zotero.org/users/227324/items/ISFK4VNP"],"itemData":{"id":4494,"type":"paper-conference","abstract":"The online mass media plays a critical role in influencing the public opinion about controversial political events. Bias in press reports and articles to some ideological or political sides is common and opposites the neutrality nature of press and media. Bias can take different aspects and ways. One of the main aspects of press bias is using mislead terms and vocabularies. In summer 2014, Western media, news and press agencies covered Israeli war on Gaza. In general, Palestinian people complain that there is a notable bias in western media with the Israeli story and opinion and vice versa. In this research paper we report a text mining experimental study, that's have conducted on western media analysis to identify patterns in the press orientation and further in the media bias towards side to another. We have followed the text mining techniques and machine learning in an effort to detect the bias in news agencies. We have crawled news articles form seven major outlets in the western media. Then we have made preprocessing to convert them into useful structured form, building sentiment classifiers that be able to predict articles bias. In addition, we have compared three of supervised machine learning algorithms used in sentiment classification associated with different number of grams, where we have found that SVM with bio-gram gave the better outperformed outputs, with performance metrics are 91.76% accuracy, 88.33% recall and f- measure 91.46%.","container-title":"2018 International Conference on Promising Electronic Technologies (ICPET)","DOI":"10.1109/ICPET.2018.00024","event":"2018 International Conference on Promising Electronic Technologies (ICPET)","page":"98-103","source":"IEEE Xplore","title":"Bias Detection of Palestinian/Israeli Conflict in Western Media: A Sentiment Analysis Experimental Study","title-short":"Bias Detection of Palestinian/Israeli Conflict in Western Media","author":[{"family":"Al-Sarraj","given":"Wael F."},{"family":"Lubbad","given":"Heba M."}],"issued":{"date-parts":[["2018",10]]}}},{"id":4470,"uris":["http://zotero.org/users/227324/items/FZFPS9SR"],"itemData":{"id":4470,"type":"article-journal","abstract":"Media plays an important role in shaping public opinion. Biased media can influence people in undesirable directions and hence should be unmasked as such. We observe that featurebased and neural text classification approaches which rely only on the distribution of low-level lexical information fail to detect media bias. This weakness becomes most noticeable for articles on new events, where words appear in new contexts and hence their \"bias predictiveness\" is unclear. In this paper, we therefore study how second-order information about biased statements in an article helps to improve detection effectiveness. In particular, we utilize the probability distributions of the frequency, positions, and sequential order of lexical and informational sentence-level bias in a Gaussian Mixture Model. On an existing media bias dataset, we find that the frequency and positions of biased statements strongly impact article-level bias, whereas their exact sequential order is secondary. Using a standard model for sentence-level bias detection, we provide empirical evidence that article-level bias detectors that use second-order information clearly outperform those without.","container-title":"arXiv:2010.10649 [cs]","note":"arXiv: 2010.10649","source":"arXiv.org","title":"Detecting Media Bias in News Articles using Gaussian Bias Distributions","URL":"http://arxiv.org/abs/2010.10649","author":[{"family":"Chen","given":"Wei-Fan"},{"family":"Al-Khatib","given":"Khalid"},{"family":"Stein","given":"Benno"},{"family":"Wachsmuth","given":"Henning"}],"accessed":{"date-parts":[["2021",5,12]]},"issued":{"date-parts":[["2020",10,20]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Noble, 2018; Al-Sarraj and Lubbad, 2018; Chen et al., 2020). This project seeks to develop a method for bias detection that can be used at the outset of a study with little initial knowledge of the corpus, requires little pre-processing and is both beginner-friendly and language-agnostic. Word2Vec and similarity measures allow us to compare a test corpus against a comparison corpus of biased or neutral terms. This works especially well with contemporary texts, such as online news articles in English, but it becomes an increasingly difficult task with historical or non-English language sources to find appropriate comparative corpora 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"I6s4sENs","properties":{"formattedCitation":"(Patankar and Bose, 2017)","plainCitation":"(Patankar and Bose, 2017)","noteIndex":0},"citationItems":[{"id":4497,"uris":["http://zotero.org/users/227324/items/96NGHHYP"],"itemData":{"id":4497,"type":"paper-conference","abstract":"Given the ongoing controversy over biased news, it would be useful to have a system that can detect the extent of bias in online news articles and indicate it to the user in real time. Here we measure bias in a given sentence or article as the word vector similarity with a corpus of biased words. We compute the word vector similarity of each of the sentences with the words taken from a Wikipedia Neutral Point of View (NPOV) corpus, measured using the word2vec tool, where our model is trained using Wikipedia articles. We then compute the bias score, which indicates how much that article uses biased words. This is implemented as a web browser extension, which queries an online server running our bias detection algorithm. Finally, we validate the accuracy of our bias detection by comparing bias rankings of a variety of articles from various sources. We get lower bias scores for Wikipedia articles than for news articles, which is lower than that for opinion articles.","container-title":"2017 16th IEEE International Conference on Machine Learning and Applications (ICMLA)","DOI":"10.1109/ICMLA.2017.00-62","event":"2017 16th IEEE International Conference on Machine Learning and Applications (ICMLA)","page":"785-788","source":"IEEE Xplore","title":"Bias Discovery in News Articles Using Word Vectors","author":[{"family":"Patankar","given":"Anish Anil"},{"family":"Bose","given":"Joy"}],"issued":{"date-parts":[["2017",12]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Patankar and Bose, 2017). Building classifiers to identify bias with feature extraction, support vector machine learning algorithms, decision trees, and naïve Bayes approaches work well but require a deep understanding of the corpus and are not accessible to those who are new to computation.
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"xjcGKJmT","properties":{"formattedCitation":"(Al-Sarraj and Lubbad, 2018; Leavy, 2019; Manzini et al., 2019)","plainCitation":"(Al-Sarraj and Lubbad, 2018; Leavy, 2019; Manzini et al., 2019)","noteIndex":0},"citationItems":[{"id":4494,"uris":["http://zotero.org/users/227324/items/ISFK4VNP"],"itemData":{"id":4494,"type":"paper-conference","abstract":"The online mass media plays a critical role in influencing the public opinion about controversial political events. Bias in press reports and articles to some ideological or political sides is common and opposites the neutrality nature of press and media. Bias can take different aspects and ways. One of the main aspects of press bias is using mislead terms and vocabularies. In summer 2014, Western media, news and press agencies covered Israeli war on Gaza. In general, Palestinian people complain that there is a notable bias in western media with the Israeli story and opinion and vice versa. In this research paper we report a text mining experimental study, that's have conducted on western media analysis to identify patterns in the press orientation and further in the media bias towards side to another. We have followed the text mining techniques and machine learning in an effort to detect the bias in news agencies. We have crawled news articles form seven major outlets in the western media. Then we have made preprocessing to convert them into useful structured form, building sentiment classifiers that be able to predict articles bias. In addition, we have compared three of supervised machine learning algorithms used in sentiment classification associated with different number of grams, where we have found that SVM with bio-gram gave the better outperformed outputs, with performance metrics are 91.76% accuracy, 88.33% recall and f- measure 91.46%.","container-title":"2018 International Conference on Promising Electronic Technologies (ICPET)","DOI":"10.1109/ICPET.2018.00024","event":"2018 International Conference on Promising Electronic Technologies (ICPET)","page":"98-103","source":"IEEE Xplore","title":"Bias Detection of Palestinian/Israeli Conflict in Western Media: A Sentiment Analysis Experimental Study","title-short":"Bias Detection of Palestinian/Israeli Conflict in Western Media","author":[{"family":"Al-Sarraj","given":"Wael F."},{"family":"Lubbad","given":"Heba M."}],"issued":{"date-parts":[["2018",10]]}}},{"id":3557,"uris":["http://zotero.org/users/227324/items/UEIH6I5H"],"itemData":{"id":3557,"type":"article-journal","container-title":"Digital Scholarship in the Humanities","DOI":"10.1093/llc/fqy005","ISSN":"2055-7671, 2055-768X","issue":"1","language":"en","page":"48-63","source":"DOI.org (Crossref)","title":"Uncovering gender bias in newspaper coverage of Irish politicians using machine learning","volume":"34","author":[{"family":"Leavy","given":"Susan"}],"issued":{"date-parts":[["2019",4,1]]}}},{"id":4529,"uris":["http://zotero.org/users/227324/items/55KLCB7U"],"itemData":{"id":4529,"type":"article-journal","abstract":"Online texts—across genres, registers, domains, and styles—are riddled with human stereotypes, expressed in overt or subtle ways. Word embeddings, trained on these texts, perpetuate and amplify these stereotypes, and propagate biases to machine learning models that use word embeddings as features. In this work, we propose a method to debias word embeddings in multiclass settings such as race and religion, extending the work of (Bolukbasi et al., 2016) from the binary setting, such as binary gender. Next, we propose a novel methodology for the evaluation of multiclass debiasing. We demonstrate that our multiclass debiasing is robust and maintains the efﬁcacy in standard NLP tasks.","container-title":"arXiv:1904.04047 [cs, stat]","language":"en","note":"arXiv: 1904.04047","source":"arXiv.org","title":"Black is to Criminal as Caucasian is to Police: Detecting and Removing Multiclass Bias in Word Embeddings","title-short":"Black is to Criminal as Caucasian is to Police","URL":"http://arxiv.org/abs/1904.04047","author":[{"family":"Manzini","given":"Thomas"},{"family":"Lim","given":"Yao Chong"},{"family":"Tsvetkov","given":"Yulia"},{"family":"Black","given":"Alan W."}],"accessed":{"date-parts":[["2021",5,12]]},"issued":{"date-parts":[["2019",7,1]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Al-Sarraj and Lubbad, 2018; Leavy, 2019; Manzini et al., 2019) Therefore, with the aforementioned aims in mind, I chose to use the latent Dirichlet allocation (LDA) algorithm for topic modeling to study a set of three chronicles covering the 300 years of Ottoman Algerian history, written in French by two nineteenth-century French scholars and one twentieth-century Algerian scholar (Vayssettes, 1867; Mercier, 1903; Gaïd, 1978).
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> For more details on the authors, see the introductory chapter and/or the README on my GitHub repository for this project, available at 
+                        <ref target="https://github.com/AshleySanders/OttomanAlgeria/">
+                            https://github.com/AshleySanders/OttomanAlgeria/
+                        </ref>. It should also be noted that I have not included the one additional Algerian chronicle of these governors, written in Arabic, because the LDA algorithm separates topics by language first and then by significant collocations, which would not help me identify common themes that cut across three centuries, individual biographies, and sources/authors. For those interested in topic modeling a collection of Arabic documents, see Richard Nielsen’s introduction using R: 
+                        <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"AVHQx7Pu","properties":{"formattedCitation":"Richard Nielsen, \\uc0\\u8220{}Quantitative Text Analysis in Arabic,\\uc0\\u8221{} {\\i{}Http://Www.Mit.Edu/~rnielsen/ArabicTextWorkshop.ZipSlides:Http://Www.Mit.Edu/~rnielsen/Arabic_text_slides.Pdfhttp://Www.Mit.Edu/~rnielsen/> \\uc0\\u8220{}Helpful Stuff\\uc0\\u8221{} (at the Bottom)} (Workshop, Cairo University, April 4, 2019), http://www.mit.edu/~rnielsen/arabic_text_slides.pdf.","plainCitation":"Richard Nielsen, “Quantitative Text Analysis in Arabic,” Http://Www.Mit.Edu/~rnielsen/ArabicTextWorkshop.ZipSlides:Http://Www.Mit.Edu/~rnielsen/Arabic_text_slides.Pdfhttp://Www.Mit.Edu/~rnielsen/> “Helpful Stuff” (at the Bottom) (Workshop, Cairo University, April 4, 2019), http://www.mit.edu/~rnielsen/arabic_text_slides.pdf.","dontUpdate":true,"noteIndex":2},"citationItems":[{"id":4560,"uris":["http://zotero.org/users/227324/items/LDDHLFE9"],"itemData":{"id":4560,"type":"speech","event-place":"Cairo University","genre":"Workshop","language":"en","publisher-place":"Cairo University","title":"Quantitative Text Analysis in Arabic","URL":"http://www.mit.edu/~rnielsen/arabic_text_slides.pdf","author":[{"family":"Nielsen","given":"Richard"}],"accessed":{"date-parts":[["2021",5,19]]},"issued":{"date-parts":[["2019",4,4]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>Richard Nielsen, “Quantitative Text Analysis in Arabic,” (Workshop, Cairo University, April 4, 2019), accessed May 6, 2021, http://www.mit.edu/~rnielsen/arabic_text_slides.pdf.
+                    </p>
+                </note>
+            </p>
+            <p>At just 138 documents and approximately 183,000 words, the corpus is much smaller than one normally uses for topic modeling, but its manageable size made it a promising test case for this approach. The scalar feature of the LDA algorithm was particularly interesting to examine, as the topics of each larger, more detailed model neatly nested under the model with the next most topics, creating a hierarchy.
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p rend="footnote text">
+                        <hi rend="color(222222)">The resulting nested or hierarchical model visualizes major and minor themes in the authors’ perceptions and presentations of Ottoman gubernatorial histories. Jo Guldi and Benjamin Williams applied a similar approach to British Parliamentary discourse to reveal previously invisible connections between speeches and political tactics, but, as this chapter shows, the method is also useful for text summarization and bias detection.</hi>
+                        <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"yKbNSSop","properties":{"formattedCitation":"(Guldi and Williams, 2018)","plainCitation":"(Guldi and Williams, 2018)","noteIndex":3},"citationItems":[{"id":4302,"uris":["http://zotero.org/users/227324/items/8D4TUA75"],"itemData":{"id":4302,"type":"article-journal","abstract":"Scholars need tools that will allow them to generalize about the fit of themes, events, and rhetorical styles represented in a body of texts. In this article, we introduce the concept of “nested topics,” an approach to topic modeling large-scale textual corpora that highlights implicit ontologies and relationships within the texts themselves. This tool exploits the fact that topic modeling can be used to generalize about topics on an aggregate level as well as a fine-grained level, an approach that has the consequences of revealing overarching themes that appear across all texts as well as more idosyncratic events and rehtorical styles that adhere to only a few documents. The tool’s effectiveness is tested by modeling discussions of property in British parliamentary debates in the nineteenth century. Nested topics help the authors to locate the rhetorical styles engaged in by Irish parliamentarians as they defended tenant rights in the 1880s.","container-title":"Current Research in Digital History","DOI":"https://doi.org/10.31835/crdh.2018.01","ISSN":"2637-5923","journalAbbreviation":"CRDH","language":"en","source":"crdh.rrchnm.org","title":"Synthesis and Large-Scale Textual Corpora: A Nested Topic Model of Britain’s Debates over Landed Property in the Nineteenth Century","title-short":"Synthesis and Large-Scale Textual Corpora","URL":"https://crdh.rrchnm.org/essays/v01-01-synthesis-and-large-scale-textual-corpora/","volume":"1","author":[{"family":"Guldi","given":"Jo"},{"family":"Williams","given":"Benjamin"}],"accessed":{"date-parts":[["2021",1,11]]},"issued":{"date-parts":[["2018"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Guldi and Williams, 2018) 
+                    </p>
+                </note> Nesting models of 4-, 7-, 11-, and 20-topics provided a detailed summary of the corpus, with the 4-topic model serving as a general overview, and the 20-topic model offering a glimpse into the richness of the region’s history with topics related to some of the dominant themes of the corpus, such as “governance and succession,” but also much more granular themes, including “illness, death, burial, and remembrance,” and the “roles of women.” Pairing topic models at different scales (4-, 7-, 11-, and 20-topics) with sentiment analysis of the topic models at 11- and 20-topics, as well as targeted close reading, guided by topics of interest and using the concordance method to identify passages with key terms of interest uncovered the stories of lesser known actors, including women, Jews, Spaniards, and the councilmen of provincial governors, as well as biases inherent in the writing of their histories 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"NpXji3ov","properties":{"formattedCitation":"(Ghasiya and Okamura, 2021)","plainCitation":"(Ghasiya and Okamura, 2021)","noteIndex":0},"citationItems":[{"id":4945,"uris":["http://zotero.org/users/227324/items/9W4FM4TS"],"itemData":{"id":4945,"type":"article-journal","abstract":"For Japan—a country that has always been described with virtually no major natural resources such as oil, gas, and coal—the Middle Eastern region has a special place in its economic and foreign policy. In 2017, 39% of Japan’s energy came from oil, and 87% of Japan’s imported oil came from the Middle East, predominantly Saudi Arabia and the UAE. The above facts are enough to discern the critical significance of the Middle Eastern region for Japan. For Japan to have an unhindered supply of oil and other natural resources, it is pertinent that this region remains peaceful. In this scenario, the Middle East-related articles in Japan’s newspapers can help understand Japan’s perspective towards the Middle East. This paper would first apply the topic modelling approach non-negative matrix factorization (NMF) on Middle East-related articles from three newspapers of Japan. After discovering crucial topics, we would utilize traditional supervised machine learning algorithms to determine the overall and topic-specific sentiments from the collected headlines. Our topic modelling results discovered that the Japanese media widely reported issues like Islamic State, the refugee crisis, the Syrian civil war, Qasem Soleimani killing, and Iran nuclear deal. Further, the news related to Saudi Arabia, Syria, and Trump garnered high negative sentiment.","container-title":"Digital Scholarship in the Humanities","DOI":"10.1093/llc/fqab019","ISSN":"2055-7671","issue":"fqab019","journalAbbreviation":"Digital Scholarship in the Humanities","source":"Silverchair","title":"Understanding the Middle East through the eyes of Japan’s Newspapers: A topic modelling and sentiment analysis approach","title-short":"Understanding the Middle East through the eyes of Japan’s Newspapers","URL":"https://doi.org/10.1093/llc/fqab019","author":[{"family":"Ghasiya","given":"Piyush"},{"family":"Okamura","given":"Koji"}],"accessed":{"date-parts":[["2021",6,19]]},"issued":{"date-parts":[["2021",3,13]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Ghasiya and Okamura, 2021). 
+            </p>
+            <p>The anti-Arab and/or anti-Turkish sentiments one might expect to observe were absent, but a latent anti-Semitic sentiment appeared in the more granular topic models that, despite my careful reading of the texts, had escaped my notice. The resulting model aids the scholar in weaving the disparate threads of these individuals’ lives into the tapestry of the region’s history, and the method may well be applied to other corpora, topics, languages, and time periods to reveal hidden biases, especially in larger collections of documents that would be impossible for a single scholar to read. I am currently testing this bias detection method with additional corpora and this presentation will briefly report the results of these trials along with the original study.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Garamond;font-size:12pt">Al-Sarraj, W. F. and Lubbad, H. M.</hi>
+                        <hi style="font-family:Garamond;font-size:12pt" xml:space="preserve"> (2018). Bias Detection of Palestinian/Israeli Conflict in Western Media: A Sentiment Analysis Experimental Study. </hi>
+                        <hi rend="italic" style="font-family:Garamond;font-size:12pt">2018 International Conference on Promising Electronic Technologies (ICPET)</hi>
+                        . pp. 98–103 doi:10.1109/ICPET.2018.00024.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Garamond;font-size:12pt">Chen, W.-F., Al-Khatib, K., Stein, B. and Wachsmuth, H.</hi>
+                        <hi style="font-family:Garamond;font-size:12pt" xml:space="preserve"> (2020). Detecting Media Bias in News Articles using Gaussian Bias Distributions. </hi>
+                        <hi rend="italic" style="font-family:Garamond;font-size:12pt">ArXiv:2010.10649 [Cs]</hi>
+                        <hi style="font-family:Garamond;font-size:12pt" xml:space="preserve"> http://arxiv.org/abs/2010.10649 (accessed 12 May 2021).</hi>
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Garamond;font-size:12pt">Ghasiya, P. and Okamura, K.</hi>
+                        <hi style="font-family:Garamond;font-size:12pt" xml:space="preserve"> (2021). Understanding the Middle East through the eyes of Japan’s Newspapers: A topic modelling and sentiment analysis approach. </hi>
+                        <hi rend="italic" style="font-family:Garamond;font-size:12pt">Digital Scholarship in the Humanities</hi>
+                        (fqab019) doi:10.1093/llc/fqab019. https://doi.org/10.1093/llc/fqab019 (accessed 19 June 2021).
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Garamond;font-size:12pt">Guldi, J. and Williams, B.</hi>
+                        <hi style="font-family:Garamond;font-size:12pt" xml:space="preserve"> (2018). Synthesis and Large-Scale Textual Corpora: A Nested Topic Model of Britain’s Debates over Landed Property in the Nineteenth Century. </hi>
+                        <hi rend="italic" style="font-family:Garamond;font-size:12pt">Current Research in Digital History</hi>
+                        <hi style="font-family:Garamond;font-size:12pt" xml:space="preserve">, </hi>
+                        <hi rend="bold" style="font-family:Garamond;font-size:12pt">1</hi>
+                        doi:https://doi.org/10.31835/crdh.2018.01. https://crdh.rrchnm.org/essays/v01-01-synthesis-and-large-scale-textual-corpora/ (accessed 11 January 2021).
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Garamond;font-size:12pt">Leavy, S.</hi>
+                        <hi style="font-family:Garamond;font-size:12pt" xml:space="preserve"> (2019). Uncovering gender bias in newspaper coverage of Irish politicians using machine learning. </hi>
+                        <hi rend="italic" style="font-family:Garamond;font-size:12pt">Digital Scholarship in the Humanities</hi>
+                        <hi style="font-family:Garamond;font-size:12pt" xml:space="preserve">, </hi>
+                        <hi rend="bold" style="font-family:Garamond;font-size:12pt">34</hi>
+                        (1): 48–63 doi:10.1093/llc/fqy005.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Garamond;font-size:12pt">Manzini, T., Lim, Y. C., Tsvetkov, Y. and Black, A. W.</hi>
+                        <hi style="font-family:Garamond;font-size:12pt" xml:space="preserve"> (2019). Black is to Criminal as Caucasian is to Police: Detecting and Removing Multiclass Bias in Word Embeddings. </hi>
+                        <hi rend="italic" style="font-family:Garamond;font-size:12pt">ArXiv:1904.04047 [Cs, Stat]</hi>
+                        <hi style="font-family:Garamond;font-size:12pt" xml:space="preserve"> http://arxiv.org/abs/1904.04047 (accessed 12 May 2021).</hi>
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Garamond;font-size:12pt">Nielsen, R.</hi>
+                        <hi style="font-family:Garamond;font-size:12pt" xml:space="preserve"> (2019). Quantitative Text Analysis in Arabic Workshop Cairo University http://www.mit.edu/~rnielsen/arabic_text_slides.pdf (accessed 19 May 2021).</hi>
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold" style="font-family:Garamond;font-size:12pt">Noble, S. U.</hi>
+                        <hi style="font-family:Garamond;font-size:12pt" xml:space="preserve"> (2018). </hi>
+                        <hi rend="italic" style="font-family:Garamond;font-size:12pt">Algorithms of Oppression: How Search Engines Reinforce Racism</hi>
+                        . New York: New York University Press (accessed 19 May 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Garamond;font-size:12pt">Patankar, A. A. and Bose, J.</hi>
+                        <hi style="font-family:Garamond;font-size:12pt" xml:space="preserve"> (2017). Bias Discovery in News Articles Using Word Vectors. </hi>
+                        <hi rend="italic" style="font-family:Garamond;font-size:12pt">2017 16th IEEE International Conference on Machine Learning and Applications (ICMLA)</hi>
+                        . pp. 785–88 doi:10.1109/ICMLA.2017.00-62.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

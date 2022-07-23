@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Victorian400: Colorizing Victorian Illustrations</title>
+                <author>
+                    <persName>
+                        <surname>Kim</surname>
+                        <forename>Hoyeol</forename>
+                    </persName>
+                    <affiliation>Texas A&amp;M University, United States of America</affiliation>
+                    <email>elibooklover@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-14T03:14:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Victorian400</term>
+                    <term>colorization</term>
+                    <term>Victorian illustration</term>
+                    <term>pix2pix</term>
+                    <term>Charles Dickens</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>digital art production and analysis</term>
+                    <term>Computer science</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>I introduce the Victorian400 dataset for colorizing black and white nineteenth century illustrations using deep learning. While there has been progress in colorizing photos and videos based on Conditional Generative Adversarial Networks (cGANs, there have not been attempts to colorize illustrations from the nineteenth century using deep learning. In addition, datasets with nineteenth-century illustrations have not been provided for deep learning colorization. Therefore, I decided to create the Victorain400 dataset, which is a collection of colorful illustrations painted with nineteenth-century palettes. The Victorian400 dataset provides an opportunity for those studying deep learning to run code easily without high performance devices. I have created, curated and publicly shared the Victorian400 dataset for the deep learning colorization of illustrations from the Victorian era.</p>
+            <p>I examine the process of creating and curating the Victorian400 dataset and demonstrate the validity of the Victorian400 dataset by looking into the results of the test set with the trained Victorian400 set. I tested the Victorian400 dataset with the pix2pix model introduced by Isola et al., which performs automatic graphic operations on photographs based on cGANs by learning from datasets. It was built based on the GAN model which was introduced by Goodfellow et al. The GAN model has the generator and the discriminator learn and compete with each other for the generation of the best outputs. Similarly, the generator and the discriminator in cGANs can be used to predict colors for input images through the usage of encoders and decoders. The pix2pix model uses U-Net, a convolutional network for image segmentation with skip connections, to make it possible to get both local and contextual information quickly. After showing the test results with the test set from the Victorian400 dataset, I colorize black-and-white illustrations from Charles Dickens’s Bleak House (serialized 1852–1853) for which the plates were created by Hablot Knight Browne (Phiz). Through the experiments, I reveal that the illustrations created with the dark plate technique are compatible with deep learning colorization due to the distinct contrast between darkness and highlights. I discuss the limits of colorizing black-and-white illustrations with the Victorian400 dataset, such as the lack of colors in backgrounds and the possible distortion of original illustrations. Ultimately, I claim that colorized illustrations provide imagination and enjoyment to modern readers when reading fiction.</p>
+            <p>The Victorian400 dataset was created for data scientists and digital humanists who create, train and test colorization deep learning models. The Victorian400 dataset will not only save a tremendous amount of time for digital humanists who experiment with Victorian illustrations, but will also contribute to the development of deep learning-based research in the digital humanities. As a digital humanist, I believe that we should create, curate, and share humanities datasets for deep learning like the Victorian400 dataset, as well as perform exploratory data analysis, since humanities datasets created by digital humanists are credible enough to be deployed for deep learning.</p>
+        </body>
+    </text>
+</TEI>

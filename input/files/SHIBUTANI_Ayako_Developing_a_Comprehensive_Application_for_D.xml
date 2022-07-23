@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Developing a Comprehensive Application for Digital Transformation of Historical Materials</title>
+                <author>
+                    <persName>
+                        <surname>Shibutani</surname>
+                        <forename>Ayako</forename>
+                    </persName>
+                    <affiliation>Historiographical Institute, the University of Tokyo, Japan</affiliation>
+                    <email>ashibutani@hi.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nakamura</surname>
+                        <forename>Satoru</forename>
+                    </persName>
+                    <affiliation>Historiographical Institute, the University of Tokyo, Japan</affiliation>
+                    <email>nakamura@hi.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Yamada</surname>
+                        <forename>Taizo</forename>
+                    </persName>
+                    <affiliation>Historiographical Institute, the University of Tokyo, Japan</affiliation>
+                    <email>t_yamada@hi.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Yanbe</surname>
+                        <forename>Koki</forename>
+                    </persName>
+                    <affiliation>Historiographical Institute, the University of Tokyo, Japan</affiliation>
+                    <email>yanbe@hi.u-tokyo.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>classification and annotation for image data (caid)</term>
+                    <term>data management</term>
+                    <term>historical materials</term>
+                    <term>image data</term>
+                    <term>open science</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>Contemporary</term>
+                    <term>data</term>
+                    <term>object</term>
+                    <term>and artefact preservation</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>Asian studies</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Scientific studies of historical materials have developed over the last decade using sophisticated analytical approaches (Shibutani, 2022). In particular, USB digital cameras for microscopy and megapixel camera lenses have been upgraded, and researchers can easily obtain distortion-free and high-definition images (Shibutani &amp; Goto, 2020). Most scientific data, including microscopic images, are now available in the digital format. However, preliminary analysis data cannot be shared for comparison processes because these analyses are conducted by ‘specialised’ researchers (Shibutani, 2020; Shibutani et al., 2021). Image data are usually rich data files because they present various parameters in a multidimensional space and are acquired using complex microscopy instruments. The real benefit of the easy sharing and reuse of digital data is that they aid data provenance and reproducibility of results. International standardisation of observational data modelling approaches is needed. With more openly accessible resource data, researchers can enhance and accelerate scientific advances in history. This study aims to develop the use of open science in history using an image data management tool. This aim is accomplished through the following three objectives: 1) conduct data provenance and lineage in history; 2) assess the impact of this new application in the science of historical materials; and 3) formulate recommendations to researchers on the appropriate strategy to promote reproducibility.</p>
+            <p style="text-align: left; ">Within the analyst community, the image data management process is challenging, time-consuming, and difficult to scale. Researchers and analysts are seeking ways to manage image data effortlessly, quickly, and in higher quality. Our tool, ‘classification and annotation for image data’ (caid), is a new comprehensive application for image data management. Its main function is to manage research data provenance and lineage of multi-layered information of historical materials (Figure 1). The users of caid can preserve any resource data and update content easily. The application can be operated both online and offline.</p>
+            <figure>
+                <graphic n="1001" width="15.429022222222223cm" height="8.782569444444444cm" url="Pictures/60490a19cc37024bf037239d53637839.jpg" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Figure 1. Main window of caid</p>
+            <figure>
+                <graphic n="1002" width="15.22818611111111cm" height="9.191969444444444cm" url="Pictures/c1912ad0101267df00b8dc2c78fcf554.jpg" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Figure 2. Image data list and annotation and node windows of caid</p>
+            <p style="text-align: left; ">Another function caid provides is fast and easy image annotation (Figure 2). Images require multiple labels for specifying contextual similarities during image retrieval. The caid provides an easy and comfortable method to label and edit metadata. Users can, thus, easily describe their notes during and after each survey. The labelling data will be connected to our institution’s image digitalisation management system, which follows the Reference Model for an Open Archival Information System (OAIS). In addition, all input forms can be customised via content configuration and load specifications. Full descriptions of the surveyed materials can be added or replaced by the user during metadata collection. The temporal usability of our tool in a real survey shows the relevance of such technology in the field.</p>
+            <p style="text-align: left; ">In scientific analyses, reproducibility, comparison, and sometimes integration of results are required. All the metadata in the caid can be saved and reloaded by the user for reuse and adaptation. This functionality allows the current survey data to easily compare with analytical results of/from other historical materials. The addition of different interpretations and annotations by different users to the same image data leads to conflicts, but their comparison on the caid refers to appropriate datasets. This comparison environment can support the study of the science of historical materials. Our presentation focuses on some cases showcasing the analytical ability of this application.</p>
+            <p style="text-align: left; ">The caid seeks to improve research process by linking it to information infrastructure. It can solve the technological and sociological challenges that have limited open access to resource data worldwide. The explosion of artificial intelligence technology has made breakthroughs in image processing of scientific analyses (e.g. Haenlein &amp; Kaplan, 2019; Savadjiev, et al., 2018). We will examine the applications of this system in the future. In doing so, our application can accelerate the digital transformation (DX) of historical materials.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Haenlein, M. and Kaplan, A.</hi> (2019). A brief history of artificial intelligence: On the past, present, and future of artificial intelligence. 
+                        <hi rend="italic">California Management Review</hi>, 61 (4): 5-14.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Shibutani, A.</hi> (2020). Integrated studies of historical resources using archaeological and botanical methods: Perspectives of establishing “International Study of Historical Paper Materials”. 
+                        <hi rend="italic">Cultura Antiqua</hi>, 72 (10): 82-89. (in Japanese)
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Shibutani, A.</hi> (2022). Scientific study advancements: Analysing Japanese historical materials using archaeobotany and digital humanities. 
+                        <hi rend="italic">Academia Letters, Article 4628</hi>. https://doi.org/10.20935/al4628
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Shibutani, A. and Goto, M.</hi> (2020). How Do Research Data Develop? International Standardisation of Scientific Data in Historical Studies. 
+                        <hi rend="italic">Digital Humanities 2020: Conference Abstracts</hi>. Online, July 2020.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Shibutani, A., Nomura T., Takashima, A., Masashi A., Yamada, T.</hi> (2021). Component Analysis of Historical Paper Materials at the Matsunoo Taisha Shrine Using Archaeological and Botanical Methodologies. 
+                        <hi rend="italic">Tokyo Daigaku Shiryo Hensan-jo Kenkyu Kiyo</hi>, 31: 59-74. (in Japanese)
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

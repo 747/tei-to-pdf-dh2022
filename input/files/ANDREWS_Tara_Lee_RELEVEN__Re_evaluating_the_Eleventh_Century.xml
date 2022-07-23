@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>RELEVEN: Re-evaluating the Eleventh Century through Linked Events and Entities </title>
+                <author>
+                    <persName>
+                        <surname>Andrews</surname>
+                        <forename>Tara Lee</forename>
+                    </persName>
+                    <affiliation>Institute for History, University of Vienna, Austria; Austrian Centre for Digital Humanities and Cultural Heritage, Austrian Academy of Sciences</affiliation>
+                    <email>tara.andrews@univie.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ebel</surname>
+                        <forename>Carla</forename>
+                    </persName>
+                    <affiliation>Austrian Centre for Digital Humanities and Cultural Heritage, Austrian Academy of Sciences</affiliation>
+                    <email>carla.ebel@oeaw.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Richards</surname>
+                        <forename>Nina</forename>
+                    </persName>
+                    <affiliation>Austrian Centre for Digital Humanities and Cultural Heritage, Austrian Academy of Sciences</affiliation>
+                    <email>nina.brundke@oeaw.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Prajda</surname>
+                        <forename>Katalin</forename>
+                    </persName>
+                    <affiliation>Institute for History, University of Vienna, Austria</affiliation>
+                    <email>katalin.prajda@univie.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Rózsa</surname>
+                        <forename>Márton</forename>
+                    </persName>
+                    <affiliation>Institute for History, University of Vienna, Austria</affiliation>
+                    <email>marton.rozsa@univie.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Anđelović</surname>
+                        <forename>Aleksandar</forename>
+                    </persName>
+                    <affiliation>Institute for History, University of Vienna, Austria</affiliation>
+                    <email>aleksandar.andjelovic@univie.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Read</surname>
+                        <forename>Lewis</forename>
+                    </persName>
+                    <affiliation>Institute for History, University of Vienna, Austria</affiliation>
+                    <email>lewis.read@univie.ac.at</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>medieval Near East</term>
+                    <term>linked open assertions</term>
+                    <term>historical data modeling</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>data modeling</term>
+                    <term>linked (open) data</term>
+                    <term>History</term>
+                    <term>Central/Eastern European Studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>This poster presents the work of RELEVEN, an ERC-funded project running at the University of Vienna from 2021–2026. The aim of RELEVEN is to cast a clearer light on the events of the "short eleventh century" (c. 1030–1095) and specifically to employ digital means of historical information modelling to seek a more coherent and connected picture of this period, to match the coherent and increasingly connected Christian world that Shepard (2017) and Frankopan (2013), among others, have argued for. We seek to understand how the different people in this world conceived of it in terms of the space they inhabited, the people around them, and the written artefacts, pointing in many cases to the intellectual ideas that circulated around it. The importance of such a connected approach is clear in light of recent trends toward thinking in terms of a Global Middle Ages (cf. Holmes and Standen 2018). The key to achieving our aim is to find a way to link and connect large amounts of disparate sorts of data. We aim to find a model for expressing data about the eleventh century that allows us to incorporate and model different, and even conflicting, perspectives about what the data tell us.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Methodology</head>
+                <p>If digital data is to be useful for historians, it must be directly linkable not only to provenance in the sense of primary source material, but primarily to the authority of the scholar who is interpreting the primary source(s) to make the claim. This principle is implemented in our STAR (Structured Assertion Record) data model, which for historical information about people and places is based on existing standards such as CIDOC-CRM (Bekiari et al. 2021) and the Linked Places specification (Grossner 2016; 2022), used together with the ‘Proxy’ concept of the OAI-ORE data model (Lagoze et al. 2008) when we need to instantiate multiple competing versions of events. Both existing and new historical data is represented as sets of assertions along these lines, often sourced but always linked to an authority; this allows data to be manipulated according to source and authority, and also allows assertions themselves to be linked depending on whether they corroborate, depend on, or conflict with each other. Movements of people and objects can be mapped according to different reconstructions; the interchange of ideas between people and groups can be drawn, or re-drawn, in competing schematics according to the ideas of different scholars. The novel aspect of this methodology is that it takes to its logical conclusion something that historians all readily acknowledge and that is especially apparent for pre-modern history: that there are very few, if any, simple and undisputed facts. </p>
+                <p> </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Trans-regional approach</head>
+                <p>Our approach is tested by taking a broad trans-regional approach to the history of the late 11th century (c. 1030–1095), centred broadly in the eastern half of Christendom; our project focuses in particular on Byzantium and the Caucasus, on buffer zones between West and East such as Istria and the newly-established Kingdom of Hungary, and on the process of Christianisation in central and northern Europe. The looming weight of the First Crusade at the century's end means that while certain regional or proto-national narratives—particularly for western Europe—are well-developed, they tend to obscure the larger trans-regional trends of communication and contact, particularly in eastern Christendom.</p>
+                <p>By drawing upon the depth of scholarship and the plethora of digital resources that have emerged for this period in sub-disciplines such as prosopography, textual scholarship, corpus-based research, and archaeology, and by framing this scholarship in terms of assertions whose authority is traceable, we aim in this project to look at the history not just from "the eastern perspective", but from several perspectives at once.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Acknowledgments</head>
+                <p>The project described here has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (Grant agreement No. 101002357).</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Bekiari, C., Bruseker, G., Doerr, M., Ore, C.-E., Stead, S. and Velios, A. (eds).</hi> (2021). Definition of the CIDOC Conceptual Reference Model 
+                        <ref target="https://www.cidoc-crm.org/Version/version-7.2">https://www.cidoc-crm.org/Version/version-7.2</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Frankopan, P.</hi> (2013). 
+                        <hi rend="italic">The First Crusade: The Call from the East</hi>. Random House.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Grossner, K.</hi> (2016). Linking Linked Places 
+                        <hi rend="italic">Kgeographer</hi>
+                        <ref target="http://kgeographer.org/linking-linked-places/">http://kgeographer.org/linking-linked-places/</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Grossner, K.</hi> (2022). 
+                        <hi rend="italic">LinkedPasts/Linked-Places-Format</hi>. Linked Pasts 
+                        <ref target="https://github.com/LinkedPasts/linked-places-format">https://github.com/LinkedPasts/linked-places-format</ref> (accessed 6 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Holmes, C. and Standen, N.</hi> (2018). Introduction: Towards a Global Middle Ages. 
+                        <hi rend="italic">Past &amp; Present</hi>, 
+                        <hi rend="bold">238</hi>(suppl_13): 1–44 doi:
+                        <ref target="https://doi.org/10.1093/pastj/gty030">10.1093/pastj/gty030</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Lagoze, C., Van de Sompel, H., Johnston, P., Nelson, M., Sanderson, R. and Warner, S. (eds).</hi> (2008). ORE Specification - Abstract Data Model 
+                        <ref target="https://www.openarchives.org/ore/1.0/datamodel">https://www.openarchives.org/ore/1.0/datamodel</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Shepard, J.</hi> (2017). Storm clouds and a thunderclap: East-west tensions towards the mid-eleventh century. In Whittow, M. and Lauxtermann, M. D. (eds), 
+                        <hi rend="italic">Byzantium in the Eleventh Century: Being in Between</hi>. Abingdon: Routledge, pp. 127–53.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

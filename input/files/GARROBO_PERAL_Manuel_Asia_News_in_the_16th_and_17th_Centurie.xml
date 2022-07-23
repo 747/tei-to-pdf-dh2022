@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Asia News in the 16th and 17th Centuries: Catalogue and Digital Library</title>
+                <author>
+                    <persName>
+                        <surname>Rojo-Mejuto</surname>
+                        <forename>Natalia</forename>
+                    </persName>
+                    <affiliation>Universidade da Coruña, Spain</affiliation>
+                    <email>natalia.rojo@udc.es</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Garrobo-Peral</surname>
+                        <forename>Manuel</forename>
+                    </persName>
+                    <affiliation>Università degli studi di Verona, Italy; Universidade da Coruña, Spain</affiliation>
+                    <email>manuel.garrobo@udc.es</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T20:35:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>pre-periodical press</term>
+                    <term>news pamphlets</term>
+                    <term>catalogue and digital library</term>
+                    <term>Early Modern</term>
+                    <term>Asia</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>digital libraries creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>Asian studies</term>
+                    <term>Book and print history</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="10.00125cm" url="Pictures/0cc0aaa19100fc041f3a626b22e44f10.jpg" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">The aim of this presentation is to show the improvements in cataloguing and editing Asia news published during the sixteenth and seventeenth centuries within the framework of the digital project CBDRS, Catálogo y Biblioteca Digital de Relaciones de Sucesos (
+                <ref target="http://www.bidiso.es/CBDRS">https://www.bidiso.es/CBDRS</ref>). This project, part of BIDISO (Biblioteca Digital Siglo de Oro) and active since 1996, offers open access to Early Modern literature, in particular, pre-periodical press, printed works known as 
+                <hi rend="italic">avvisi</hi>, 
+                <hi rend="italic">nuova</hi> or 
+                <hi rend="italic">relazioni</hi> (Italy), 
+                <hi rend="italic">Zeitung</hi> (Germany), 
+                <hi rend="italic">tijding</hi> (Low Countries), 
+                <hi rend="italic">advis</hi> (France), 
+                <hi rend="italic">relación de sucesos</hi> (Spain), 
+                <hi rend="italic">news</hi> (England), or 
+                <hi rend="italic">nova</hi> (Portugal) (cf. Arblaster et al., 2016).
+            </p>
+            <p style="text-align: left; ">Keeping in mind both pan-European communication during the Early Modern period and pan-Asian diversity, this presentation focuses on the news related to Japan, China, India, Korea, Taiwan, Vietnam, and Cambodia, among other regions. The diffusion of Asian news sheets, especially during the seventeenth century is attested in their several editions and reprints across Europe. Rapidly translated from one language to another, these documents are a valuable source to know the deep dimensions of cultural exchange throughout Asia and Europe (Rojo-Mejuto, 2021a, 2021b).</p>
+            <p style="text-align: left; ">For that reason, since 2020, the localization of news pamphlets on Asia has grown exponentially in the CBDRS project. At present, there are more than 200 editions, mainly related to Kirishitan presence in Japan, with one or more surviving copies catalogued and localized in libraries and other centers across the world (Rojo-Mejuto, 2019). CBDRS provides bibliographical and typo-bibliographical descriptions of the works, library’s signatures, classification by main genre (political and religious events, ceremonies and festivities, travels, and extraordinary events), a filter for languages (Spanish, Portuguese, Italian, Latin, French, German), georeferentiation of the places mentioned in the texts, as well as descriptions of the illustrations included.</p>
+            <p style="text-align: left; ">The relational database is in continuous process of technologies and models adaptations to expand and to improve the data as well as the digital objects. It is possible to refine the search by the name and variants of the persons involved in the creation of the pamphlets (authors, translators, editors, printers) and to manage the uncertainty of the date of the event and of edition with the attributes "estimated" and "deduced" (Pena-Sueiro and Saavedra-Places, 2019). Likewise, searching by place of edition or location of event allows to find editions in the map (
+                <ref target="https://www.bidiso.es/CBDRS/lugares">https://www.bidiso.es/CBDRS/lugares</ref>).
+            </p>
+            <figure>
+                <graphic n="1002" width="16.002cm" height="9.994194444444444cm" url="Pictures/d6459999f5a6fe51edbdd76d16ef478c.jpg" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">We will improve exponentially our possibilities of analysis, manipulation, and reception with the implementation of XML-TEI editions, especially because this standard offers us two main advantages (Fernández-Travieso and Garrobo-Peral, 2021):</p>
+            <p style="text-align: left; ">A) Registration of all the characteristics of the news that we want to label in order to make compatible our main goals with the awareness that its use is not linked to a specific digital setting that may provoke loss of information.</p>
+            <p style="text-align: left; ">B) Manageability when feeding the preservation of our work, the migration or reuse of our data and the inter-operability with other projects, thus treating XML-TEI as an input-output format.</p>
+            <p style="text-align: left; ">In sum, the presentation addresses one of the main problems of working on sixteenth and seventeenth news of Asia, solving the dispersion of surviving copies in libraries, and providing access in one site to all these primary sources. Besides bibliographic matters, the work emphasizes the vitality of news networks between Asia and Europe, as well as other important press locations, such as Manila or Mexico.</p>
+            <p style="text-align: left; ">CBDRS, as other projects on early modern news (cf. Folch, 2006; Euronews Project), hopes to continue facilitating an easy and fruitful access to the knowledge treasured in these texts to scholars and society. Thus, another objective of this presentation is to showcase the possibilities of the Digital Humanities project CBDRS as a starting point for research works on Anthropology, Culture, History, Linguistics, and Press, besides the social interest of knowing the birth of journalism, that is, the birth of a way of shaping information, thinking, and international communication.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliografía</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Arblaster, P. et al.</hi> (2016). The lexicons of Early Modern News. In Raymond, J. and Moxham, N. (eds.), 
+                        <hi rend="italic">News Networks in Early Modern Europe</hi>. Leiden/Boston: Brill, pp. 64-101. 
+                        <ref target="https://doi.org/10.1163/9789004277199%22%20%5Ct%20%22_blank">https://doi.org/10.1163/9789004277199</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">EURONEWS Project.</hi> https://www.euronewsproject.org/.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Fernández-Travieso, C. and Garrobo-Peral, M.</hi> (2021). Creación de un corpus digital de textos de relaciones de sucesos: un modelado de datos XML-TEI para acoger diferentes tipos de edición. In Bazzaco, S. (coord.), Congreso Internacional Humanidades Digitales y Estudios Literarios Hispánicos, Verona 22-23 June. Università degli Studi di Verona.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Folch, D.</hi> (2006). La China en España. Elaboración de un corpus digitalizado de documentos españoles sobre China de 1555 a 1900. 
+                        <ref target="https://www.upf.edu/asia/projectes/che/principal.htm%22%20%5Ct%20%22_blank">https://www.upf.edu/asia/projectes/che/principal.htm</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Pena-Sueiro, N. and Saavedra-Places, Á.</hi> (2019). Obsolescencia y resilencia en Humanidades digitales. El caso de la Biblioteca Digital de Relaciones de Sucesos. 
+                        <hi rend="italic">Artnodes</hi>, 23: 79-88. http://dx.doi.org/10.7238/a.v0i23.3243.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rojo-Mejuto, N.</hi> (2019). Las relaciones de sucesos españolas sobre Japón en los siglos XVI y XVII. In Torres, L., Tropé, H. and Espejo-Surós, J. (coords.), IX Coloquio de la Sociedad Internacional para el Estudio de las Relaciones de Sucesos (SIERS). Rennes 19-21 September. Université Rennes 2.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rojo-Mejuto, N.</hi> (2021a). Japón escondido: cosas muy notables en las cartas de las Indias. In Andrés-Renales, G. and Peñasco-González, S. (eds.), 
+                        <hi rend="italic">Buenas noticias: relaciones de sucesos en los siglos XVI-XVIII</hi>. Pesaro: Metauro, pp. 49-64.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rojo-Mejuto, N.</hi> (2021b). La literatura informativa sobre Japón en 1621. In Borrego, M. (coord.), Seminario Internacional El mundo en 1621: avisos, relaciones de sucesos y conexiones culturales. Besançon 16-17 September 2021. Université de Franche-Compté.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

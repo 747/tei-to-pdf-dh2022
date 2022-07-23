@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Expert in the Loop: Developing a Provenance Linked Open Data Management Platform</title>
+                <author>
+                    <persName>
+                        <surname>Mariani</surname>
+                        <forename>Fabio</forename>
+                    </persName>
+                    <affiliation>Leuphana University Lüneburg, Germany</affiliation>
+                    <email>fabio.mariani@leuphana.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-19T07:43:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Art Provenance</term>
+                    <term>Data Management Platform</term>
+                    <term>Linked Open Data</term>
+                    <term>Natural Language Processing</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>linked (open) data</term>
+                    <term>software development</term>
+                    <term>systems</term>
+                    <term>analysis and methods</term>
+                    <term>Art history</term>
+                    <term>Galleries and museum studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="color(0E101A)">Provenance, as used by museums and other stakeholders in the art and cultural heritage sector, refers to the history of an artifact's ownership from its creation to its current location. Currently, provenance is stored and shared as a text listing each ownership in chronological order, including the dates of ownership, the owners' names, the method of transfer, and the place where the objects were stored (</hi>International Foundation for Art Research, 2022)
+                <hi rend="color(0E101A)">. Institutions' curators compile provenance texts following a critical analysis of historical sources, such as letters, catalogs, and inventories. Studying the ownership history of artifacts is fundamental to establishing their value and authenticity, to their attribution, and, not least, to the return of stolen objects. In addition, the information contained in these texts makes provenance particularly interesting for historical analyses of collecting, such as the study of market geography, owners' tastes, and economic and social networks. Provenance studies - the emerging discipline addressing the varied practices of provenance - operates at the intersection between digital methods and art history. Indeed, this interdisciplinary approach is effective in three areas: quantitative analysis through big data, network analysis, and spatial analysis (Jaskot, 2020).</hi>
+            </p>
+            <p>
+                <hi rend="color(0E101A)">First, however, extracting and structuring data from provenance texts is necessary to apply digital methods in provenance studies. In compliance with FAIR and Open Data principles, a Linked Open Data (LOD) publication of provenance data is highly recommended (Rother et al., forthcoming). In addition, a LOD approach allows linking provenance data between institutions, optimizing their resources, and other repositories, such as the Getty Vocabularies and the Getty Provenance Index, an index of archival inventories, sales catalogs, and dealer stock books (Davis, 2019).</hi>
+            </p>
+            <p>
+                <hi rend="color(0E101A)">Since provenance information is usually recorded in free text fields in museum collection management systems, the team of the Art Tracks project, associated with the Carnegie Museum of Art, published a software to structure provenance from scratch and generate LOD, the Elysa Tool (Newbury, 2017). Building on this state of the art project, the Provenance Lab at Leuphana University Lüneburg is developing an online data management platform. The platform aims to make the creation of provenance LOD more accessible to art historians. They can use it to generate provenance LOD either from scratch or from existing provenance texts by performing a human-in-the-loop workflow that combines artificial intelligence with the experience of the domain expert. On the one hand, it is possible to automatically extract knowledge from provenance texts through Natural Language Processing techniques. On the other hand, the intervention of domain experts is required both for data enrichment and for critical curation of the knowledge extracted by the machine within an intellectual process, defined as data literacy, in which art historians are called to participate (Klinke, 2020). This process enhances the quality of the generated data and provides feedback for machine learning. The output data's semantic structure is based on the Linked Art Data Model, an application profile of CIDOC CRM developed by the Linked Art community.</hi>
+            </p>
+            <p>
+                <hi rend="color(0E101A)" xml:space="preserve">The platform front end consists of an interface where the domain expert can display, enrich, and edit the automatically extracted data and link entities to external resources suggested automatically by the machine through SPARQL queries. Each art historian's intervention is recorded to preserve the domain expert's authority, generating the data provenance of the provenance, or "The provenance of provenances," as theorized by Christian Huemer (Huemer, 2020). In addition, the platform ensures that domain experts can enrich the data at a statement level, adding references and qualifiers to handle vague, incomplete, subjective, and uncertain information (VISU data, from Latin </hi>
+                <hi rend="italic color(0E101A)">de visu</hi>
+                <hi rend="color(0E101A)">, "with your own eyes"). Preserving the value of VISU data is fundamental for the integrity of historical information, avoiding reductionist and objectivist bias (ter Braake et al., 2016).</hi>
+            </p>
+            <p>Although the data management platform is currently under development, testing it has already been possible. In particular, the platform proved to be a valuable pedagogical tool during an interdisciplinary course in digital art provenance held at Leuphana University Lüneburg. Through the online interface, it is possible to actively engage students in facing the challenges arising during the digitization of historical information without requiring prior digital skills. </p>
+            <p>
+                <hi rend="color(0E101A)">In presenting the data management platform, particular emphasis will be placed on the human-in-the-loop approach as a strategy to integrate the domain expert's skills within a semi-automated process. Indeed, this integration becomes a point of intersection and dialogue between Art History and Digital Humanities.</hi>
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Braake, S. ter, Fokkens, A., Ockeloen, N. and Son, C. van</hi> (2016). Digital History: Towards New Methodologies. In Bozic, B., Mendel-Gleason, G., Debruyne, C. and O’Sullivan, D. (eds), 
+                        <hi rend="italic">Computational History and Data-Driven Humanities</hi>, vol. 482. (IFIP Advances in Information and Communication Technology). Cham: Springer International Publishing, pp. 23–32 doi:
+                        <ref target="https://doi.org/10.1007/978-3-319-46224-0_3">
+                            <hi rend="underline color(0000FF)">10.1007/978-3-319-46224-0_3</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Davis, K.</hi> (2019). Old metadata in a new world: Standardizing the Getty Provenance Index for linked data. 
+                        <hi rend="italic">Art Libraries Journal</hi>, 
+                        <hi rend="bold">44</hi>(4): 162–66 doi:
+                        <ref target="https://doi.org/10.1017/alj.2019.24">
+                            <hi rend="underline color(0000FF)">10.1017/alj.2019.24</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Huemer, C.</hi> (2020). The Provenance of Provenances. In Milosch, J. and Pearce, N. (eds), 
+                        <hi rend="italic">Collecting and Provenance: A Multidisciplinary Approach</hi>. Lanham: Rowman &amp; Littlefield Publishers, pp. 2–15.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">International Foundation for Art Research</hi> (2022). Provenance Guide 
+                        <ref target="https://www.ifar.org/Provenance_Guide.pdf">https://www.ifar.org/Provenance_Guide.pdf</ref> (accessed 18 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Jaskot, P. B.</hi> (2020). Digital Methods and the Historiography of Art. In Brown, K. (ed), 
+                        <hi rend="italic">The Routledge Companion to Digital Humanities and Art History</hi>. New York: Routledge, Taylor &amp; Francis Group, pp. 9–17.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Klinke, H.</hi> (2020). The Digital Transformation of Art History. In Brown, K. (ed), 
+                        <hi rend="italic">The Routledge Companion to Digital Humanities and Art History</hi>. (Routledge Art History and Visual Studies Companions). London: Routledge, pp. 32–42.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Newbury, D.</hi> (2017). Art Tracks: using Linked Open Data for object provenance in museums. 
+                        <hi rend="italic">MW17: Museums and the Web 2017</hi>
+                        <ref target="https://mw17.mwconf.org/paper/art-tracks-using-linked-open-data-for-object-provenance-in-museums/">https://mw17.mwconf.org/paper/art-tracks-using-linked-open-data-for-object-provenance-in-museums/</ref> (accessed 18 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rother, L., Koss, M. and Mariani, F.</hi> (forthcoming). Taking Care of History: Toward a Politics of Provenance Linked Open Data in Museums. 
+                        <hi rend="italic">Art Institute Review</hi> (2).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

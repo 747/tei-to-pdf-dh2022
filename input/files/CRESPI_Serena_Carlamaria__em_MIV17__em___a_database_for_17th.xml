@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><hi rend="italic">MIV17</hi>: a database for 17th-century manuscript culture</title>
+                <author>
+                    <persName>
+                        <surname>Crespi</surname>
+                        <forename>Serena Carlamaria</forename>
+                    </persName>
+                    <affiliation/>
+                    <email>serenacarlamaria.crespi@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-07-01T15:35:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>XVII century – manuscript – Florence – quantitative codicology – dinstant reading – databases</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>manuscripts description</term>
+                    <term>representation</term>
+                    <term>and analysis</term>
+                    <term>Literary studies</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Our knowledge of 17th century Italian manuscript culture is very limited, given the complexity of the surviving documents, with most textbooks and contributions ending their investigation towards the end of the 16th century. However, thanks to the employment of digital tools it is now possible to reconstruct the history of culture and manuscript circulation of this century. </p>
+            <p>This proposal aims at showing the current progress of my doctoral research, based on the reconstruction of the seventeenth century Florentine manuscript culture. During my research I have collected and implemented 4.814 bibliographic records of Italian manuscripts that are preserved in the most important Florentine libraries (BNCF, Laurenziana, Riccardiana, Moreniana and Marucelliana). These data, of both a codicological and textual nature, have been used for statistical and quantitative analysis with the aim of reconstructing the Florentine manuscript culture of the 17th century, thanks to the new methods of distant reading. </p>
+            <p style="text-align: left;">The project started by cataloguing more than four thousand 17th century manuscripts that were kept in several libraries in Florence [fig. 1]. </p>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="9.182805555555555cm" url="Pictures/aa220a0941f8fc427e64f65ccd7c753e.png" rend="inline"/>
+            </figure>
+            <p>Fig. 1 A sample of the manuscript corpus in each library</p>
+            <p>Following the idea that “a large number of manuscripts cannot be studied in the same way as a single one” (
+                <hi rend="underline color(800080)">Derolez</hi>, 2006), the initial corpus of manuscripts was parceled out into an Excel set of records and then was transformed into a database (the so-called 
+                <hi rend="italic">MIV17</hi>), using the XML-TEI schema. The choice of using the XML-TEI standard was made to simplify the future sharing of data with other similar digital projects and archives, such as MOL (
+                <hi rend="italic">Manus OnLine)</hi>, while ensuring the durability of the data. The TEI model for MS Description was then modified and the dataset was implemented using the EAC-CFP standard to create and connect Authority and Corporate Bodies files, containing any information about manuscript responsibility and Florentines cultural environment. 
+            </p>
+            <p>This large corpus of bibliographic and codicological information was used as the starting environment for statistical and quantitative analysis. By exploring the possibilities given by the distant reading methods it was possible to match and picture the recurrence of common characteristics, like the relation between the support dimension and the literary genres, the typologies of texts subjected to the handwritten circulation, the mix between printed and handwritten parts in the same 
+                <hi rend="italic">codex</hi>, the presence of dedications and their relation with the format or the type of book. 
+            </p>
+            <p>On the other hand, a more socio-cultural focused approach led me to define two possibilities of circulation: the so-called horizontal one (for copies and transmissions between academics, literary congregations, acquaintances), and the vertical one, which intends the manuscript as an object of luxury, collection or a gift. </p>
+            <figure>
+                <graphic n="1002" width="15.832666666666666cm" height="10.3505cm" url="Pictures/bcd82c021ff6deded7fe0b4a5190f17b.png" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                Fig. 2 Range of manuscript (blue) and print (grey) circulation
+            </p>
+            <p>These preliminary studies have also led to highlight certain points of interest, such as the methods of handwritten transmission in a specific cultural environment, like Literary Academies, or the existence of social networks of readers, and they were useful to underline few aspects of the complex relation between the printed book and the manuscripts [see fig. 2]. </p>
+            <p>Although these studies are still in the experimental phase, sharing the collected data can bring new information and stimulate new approaches to the study of the manuscript culture in the 17th-century Italy. Divulgation is, in fact, another central point of this project; an open access interface will be published to give researchers the possibility to use the collected data, combining targeted searches and statistical matches, following the idea of micro and macro analysis. </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Burlinson, Christopher, «Manuscript and Print, 1500-1700», Oxford Handbooks, Online (2016): DOI:10.1093/oxfordhb/9780199935338.013.86. </bibl>
+                    <bibl>Derolez, Albert, «The Codicology of Italian Renaissance Manuscripts: Twenty Years After». pp. 233-240, Manuscripta 50.2 (2006). </bibl>
+                    <bibl>Jocker, Matthew, L. «Macroanalysis: Digital Methods &amp; Leteraty History». University of Illinois Press, (2013). </bibl>
+                    <bibl>McKitterick, David. «The invention of Rare Books: Private Interest and Public Memory, 1600-1840». Cambridge University Press (2020). </bibl>
+                    <bibl>McKitterick, David. «Print, Manuscript and the search of order, 1430-1830». Cambridge University Press (2006). </bibl>
+                    <bibl>Moretti, Franco. «Distant reading». Verso books (2013). </bibl>
+                    <bibl>Richardson, Brian, «Manuscript Culture in Renaissance Italy» Cambridge University Press, (2009). </bibl>
+                    <bibl>Stephan, Jänicke, Greta, Franzini, Muhammad Faisal, Cheema e Gerik Scheuermann «On Close and Distant Reading in Digital Humanities: A Survey and Future Challenges». Eurographics Conference on Visualization (EuroVis) (2015), R. Borgo, F. Ganovelli, and I. Viola (Editors) (2001): 
+                        <hi rend="underline">https:/</hi>
+                        <hi rend="underline color(0000FF)">/www.informatik.uni</hi>
+                        <hi rend="underline">-</hi>leipzig.de/~stjaenicke/Survey.pdf 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

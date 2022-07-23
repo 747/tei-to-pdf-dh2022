@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html [
+<!ENTITY nbsp "&#160;">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"  xml:id="intro-003">
+
+<teiHeader>
+<fileDesc>
+<titleStmt>
+    <title type="nodisplay">Description Page</title>
+
+</titleStmt>
+<publicationStmt>
+<authority></authority>
+    <publisher>DH2022 Local Organizing Committee</publisher>
+    <distributor>
+        <name>DH2022 Local Organizing Committee</name>
+        <address>
+            <addrLine>7-3-1</addrLine>
+            <addrLine>Hongo, Bunkyo-ku</addrLine>
+            <addrLine>Tokyo, 113-0033</addrLine>
+            <addrLine>dh2022-local{at}l.u-tokyo.ac.jp</addrLine>
+        </address>
+    </distributor>
+    <pubPlace>Tokyo, Japan</pubPlace> 
+    <address>
+        <addrLine>The University of Tokyo</addrLine>
+        <addrLine>Tokyo, 113-0033</addrLine>
+    </address>
+    <availability>
+<p></p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<p>No source: created in electronic format.</p>
+</sourceDesc>
+</fileDesc>
+
+<profileDesc>
+<textClass>
+<keywords scheme="original" n="category">
+<term>Intro</term>
+</keywords>
+<keywords scheme="original" n="subcategory">
+<term>Short Paper</term>
+</keywords>
+<keywords scheme="original" n="topic">
+<term></term>
+</keywords>
+<keywords scheme="original" n="keywords">
+<term></term>
+</keywords>
+</textClass>
+</profileDesc>
+
+<revisionDesc>
+<change>
+<date/>
+<name/>
+<desc/>
+</change>
+</revisionDesc>
+</teiHeader>
+
+    <text type="paper" n="single">
+<body>
+<div>
+    <p n="intro_text_center">
+        DIGITAL HUMANITIES 2022<lb/>
+        RESPONDING TO ASIAN DIVERSITY<lb/><lb/>
+        &nbsp;<lb/>
+        25-29 July 2022, Toshi Center Hotel, Tokyo, Japan and Fully Online (Zoom)<lb/>
+        &nbsp;<lb/>
+        &nbsp;<lb/>
+        </p>
+    </div><div>
+    <p n="intro_text_center">
+        
+        The international DH conference has played an eminent role not only in providing a forum for the presentation of completed research results, but also in creating a forum for the exchange of knowledge and research collaboration in the nascent stage of research, and it was therefore judged to be as desirable as possible to hold the meeting face-to-face, even if it involves some difficulties.&nbsp;<lb/>&nbsp;<lb/>
+        </p><p n="intro_text_center">
+        However, due to the continuous emergence of new variants, COVID-19 shows no signs of ending, and countries around the world are faced with intermittent and severe restrictions in various aspects, including medical care, education, research, and freedom of travel and movement. In the midst of this fluid situation, it is impossible to choose the hybrid meeting as it was envisioned.
+        &nbsp;<lb/>&nbsp;<lb/></p><p n="intro_text_center">
+        In light of this situation, the LOs decided to change the DH2022 to be held entirely online, giving priority to providing equal and safe opportunities for all those who wish to participate. By providing a safe, respectful, and principled environment online for participants from around the world, regardless of the differences in their circumstances, we hope to contribute to the realization of ADHO's principles.
+        &nbsp;<lb/>&nbsp;<lb/></p><p n="intro_text_center">  
+        The details of the online meeting plan will be expanded from the online meeting portion of the current plan to the full plan. We will do our best to accommodate ADHO members from all over the world in the program and other aspects of the conference. </p>   
+    
+
+</div>
+
+</body>
+
+
+</text>
+</TEI>
+

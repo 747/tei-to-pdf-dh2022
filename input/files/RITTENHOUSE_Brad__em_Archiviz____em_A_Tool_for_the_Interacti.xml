@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title><hi rend="italic">Archiviz: </hi>A Tool for the Interactive, Visual Exploration of Digital Archives</title>
+                <author>
+                    <persName>
+                        <surname>Rittenhouse</surname>
+                        <forename>Brad</forename>
+                    </persName>
+                    <affiliation>Georgia Institute of Technology, United States of America</affiliation>
+                    <email>bcrittenhouse@gatech.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Michney</surname>
+                        <forename>Todd</forename>
+                    </persName>
+                    <affiliation>Georgia Institute of Technology, United States of America</affiliation>
+                    <email>todd.michney@hsoc.gatech.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Acosta</surname>
+                        <forename>Ines</forename>
+                    </persName>
+                    <affiliation>Georgia Institute of Technology, United States of America</affiliation>
+                    <email>iacosta6@gatech.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-19T18:41:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital archives</term>
+                    <term>digital tools</term>
+                    <term>NER</term>
+                    <term>NLP</term>
+                    <term>knowledge graphing</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>digital archiving</term>
+                    <term>Interface design</term>
+                    <term>development</term>
+                    <term>and analysis</term>
+                    <term>Design studies</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                In traditional, paper-based archives, finding aids afford basic means for discovery, but tend to return results shaped by researchers’ preexisting knowledge and queries. With the digitization of archives, new analysis and visualization methods allow researchers to textually map large corpora and not only pinpoint specific materials, but also open new ways of navigation.
+                <note place="end" xml:id="end1" n="1">
+                    <p rend="endnote text">
+                        ENDNOTES
+                    </p>
+                    <p>
+                        <hi style="font-size:12pt" xml:space="preserve"> See Graham, S., Milligan, I., and Weingart, S. (2015), </hi>
+                        <hi rend="italic" style="font-size:12pt">Exploring Big Historical Data: The Historian's Macroscope</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, Imperial College Press, London; Morrissey, R. (2015), “Archives of connection: ‘Whole network’ analysis and social history,” </hi>
+                        <hi rend="italic" style="font-size:12pt">Historical Methods</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, vol. 48, no. 2, pp. 67–79; Duff, W., and Haskell, J. (2015), “New uses for old records: A rhizomatic approach to archival access,” </hi>
+                        <hi rend="italic" style="font-size:12pt">American Archivist</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, vol. 78, no. 1, pp. 38-58; Putnam, L. (2016), “The transnational and the text-searchable: Digitized sources and the shadows they cast,” </hi>
+                        <hi rend="italic" style="font-size:12pt">American Historical Review</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, vol. 121, no. 2, pp. 377–402; Edelstein, D., Findlen, P., Ceserani, G., Winterer, C., and Coleman, N. (2017), “Historical research in a digital age: Reflections from the Mapping the Republic of Letters project,” </hi>
+                        <hi rend="italic" style="font-size:12pt">American Historical Review</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, vol. 122, no. 2, pp. 400–424; and Hoekstra, R. and Koolen, M. (2018), “Data scopes for digital history research,” </hi>
+                        <hi rend="italic" style="font-size:12pt">Historical Methods: A Journal of Quantitative and Interdisciplinary History</hi>
+                        , vol. 52, no. 2, pp. 79–94.
+                    </p>
+                </note>
+                However, effective use of computational tools including natural language processing (NLP), named entity recognition (NER), and knowledge graphing often requires considerable technical sophistication, forming an access barrier for many researchers.
+                <note place="end" xml:id="end2" n="2">
+                    <p>
+                        <hi style="font-size:12pt" xml:space="preserve"> Piotrowski, M. (2012), </hi>
+                        <hi rend="italic" style="font-size:12pt">Natural Language Processing for Historical Texts</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, Synthesis Lectures on Human Language Technologies, vol. 17, Morgan &amp; Claypool Publishers, San Rafael; Marrero, M., Urbano, J., Sánchez-Cuadrado, S., Morato, J., and Gómez-Berbís, J.M. (2013), “Named Entity Recognition: fallacies, challenges and opportunities,” </hi>
+                        <hi rend="italic" style="font-size:12pt">Computer Standards and Interfaces</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, vol. 35, no. 5, pp. 482–489; Shahin, S. (2016), “When scale meets depth: Integrating Natural Language Processing and textual analysis for studying digital corpora,” </hi>
+                        <hi rend="italic" style="font-size:12pt">Communication Methods and Measures</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, vol. 10, no. 1, pp. 28–50; Srinivasa-Desikan, B. (2018), </hi>
+                        <hi rend="italic" style="font-size:12pt">Natural Language Processing and Computational Linguistics: A Practical Guide to Text Analysis with Python, Gensim, spaCy, and Keras</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, Packt Publishing, Birmingham and Mumbai; Ehrmann, M., Romanello, M., Flückiger, A. and Clematide, S. (2020), “Named Entity Recognition and linking on historical newspapers,” in Arampatzis, A. et al. (eds.), </hi>
+                        <hi rend="italic" style="font-size:12pt">Experimental IR Meets Multilinguality, Multimodality, and Interaction</hi>
+                        , Springer International, Cham, pp. 288–310.
+                    </p>
+                </note>
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">To help bridge this technical gap, we have been developing a toolset, currently funded by an NEH-ODH Digital Humanities Advancement Grant, that integrates large-scale text processing and data visualization capabilities into the open-source </hi>
+                <ref target="https://omeka.org/">
+                    <hi rend="color(4F81BD)" style="font-size:12pt">Omeka</hi>
+                </ref>
+                <hi rend="endnote_reference">
+                    <note place="end" xml:id="end3" n="3">
+                        <p rend="endnote text">
+                            We developed
+                            <hi rend="italic" style="font-size:12pt">Archiviz</hi>
+                            for the Omeka Classic version; technical and user support for our plugin will be available in February 2023 in the
+                            <ref target="https://omeka.org/classic/plugins/">
+                                Omeka plugin library
+                            </ref>
+                            . Additional availability is planned through github and a Docker container for ease of use.
+                        </p>
+                    </note>
+                </hi>
+                content management platform. With the tool, users can upload batches of documents, perform NER on them, and manipulate an interactive graph that displays extracted entities (people, places, organizations, etc.) from the collection and how they interconnect in its component documents. The toolset’s components
+                <hi rend="endnote_reference">
+                    <note place="end" xml:id="end4" n="4">
+                        <p rend="endnote text">
+                            The primary tools and plug-ins used to construct Archiviz include Harvard’s
+                            <ref target="https://omeka.org/classic/plugins/Elasticsearch/">
+                                Elasticsearch
+                            </ref>
+                            <hi style="font-size:12pt" xml:space="preserve">Omeka plugin for enhanced search capabilities, Google </hi>
+                            <ref target="https://github.com/tesseract-ocr/tesseract">
+                                Tesseract
+                            </ref>
+                            <hi style="font-size:12pt" xml:space="preserve">for OCR, </hi>
+                            <ref target="https://spacy.io/">
+                                spaCy
+                            </ref>
+                            ’s NLP functionality, particularly its NER functionality, with current development focusing on the integration of the Science Museum Group’s
+                            <ref target="https://github.com/TheScienceMuseum/heritage-connector/">
+                                Heritage Connector
+                            </ref>
+                            for better entity identification, linking, and disambiguation. The graphing of this information is primarily performed with the force-directed graphing of
+                            <ref target="https://d3js.org/">
+                                d3.js
+                            </ref>
+                            .
+                        </p>
+                    </note>
+                </hi>
+                were all specifically developed for (and tested by) non-technical researchers and community advocates, with all computational work taking place in a simple graphical user interface.
+            </p>
+            <p>
+                Our 
+                <hi rend="italic" style="font-size:12pt">Archiviz</hi>
+                toolset produces social network-style visualizations that connect results on the basis of the important people, places, organizations, and other entities mentioned. By applying NER to a collection, users can see the full breadth of their research subject at a glance, and explore connections they may not have known exist.
+                <hi rend="endnote_reference">
+                    <note place="end" xml:id="end5" n="5">
+                        <p rend="endnote text">
+                            For a similar application, see Tumbe, C. (2019), "Corpus linguistics, newspaper archives and historical research methods," 
+                            <hi rend="italic" style="font-size:12pt">Journal of Management History</hi>
+                            , vol. 25, no. 4, pp. 533–549.
+                        </p>
+                    </note>
+                </hi>
+                What our implementation offers that is new, is the efficient display of interrelationships between large numbers of nodes (named entities) combined with the possibility of rapid navigation to search results (documents). In addition, the interface moves beyond traditional query-based archival searching, “flattening” out a collection to show results beyond a researcher’s interests or knowledge.
+            </p>
+            <figure>
+                <graphic n="1001" width="15.91333888888889cm" height="8.228180555555555cm" url="Pictures/216d68a4a3e47da171317413488654ff.png" rend="inline"/>
+            </figure>
+            <p>
+                We are continuing to refine
+                <hi rend="italic" style="font-size:12pt">Archiviz</hi>
+                 in ways intended to be intuitive, usable, and readily adoptable by users from a variety of different backgrounds. A primary design goal of the project has been to make it accessible not just to relatively tech-savvy academics, but more importantly, communities beyond the academy. It is our hope that the tool may particularly benefit disadvantaged communities—which in the United States have often faced pressure from gentrification and urban redevelopment, with consequent coercive displacement from historical neighborhoods. Residents in such areas often lack the infrastructure to collect, preserve, and interpret local history. As such, we have partnered with various community groups and activists throughout the process to ensure that the tool can be useful to them. Most ambitiously, in 2019 we hosted a “Community Researcher Workshop” for Atlanta-based librarians, archivists, community organizers, nonprofit staffers, and students to explore the
+                <ref target="https://ivanallen.iac.gatech.edu/mayoral-records/visual/elasticsearch">
+                    <hi rend="color(4F81BD)" style="font-size:12pt">Mayor Ivan Allen Digital Archive</hi>
+                </ref>
+                that has served as our first test corpus, using a prototype of our toolset.
+                <hi rend="endnote_reference">
+                    <note place="end" xml:id="end6" n="6">
+                        <p>
+                            <hi style="font-size:12pt" xml:space="preserve"> On the issues here, see Flinn, A., Stevens, M., and Shepherd, E. (2009), “Whose memories, whose archives? Independent community archives, autonomy and the mainstream,” </hi>
+                            <hi rend="italic" style="font-size:12pt">Archival Science</hi>
+                            , vol. 9, no. 71, pp. 71–86.
+                        </p>
+                    </note>
+                </hi>
+            </p>
+            <p>
+                User testing of the interface during this workshop produced very positive feedback, with participants calling the platform “incredibly useful,” with the “potential to break down traditional barriers of why people are hesitant to use archives.” A GLAM (Gallery, Library, Archive, Museum) researcher noted that it “is something almost any archive or library could utilize to their advantage,” while a community advocate stated that she “wanted the information for myself, but also…to share with my fellow residents.” With an additional two years of grant-funded development since this workshop, we are excited to share our work with the DH community. While we have integrated much of the feedback from the workshop, future plans include capabilities to process a wider spectrum of digital, textualized media—documents, video and audio converted to text, and even images identified and categorized with computer vision making our tool relevant for a more diverse array of communities and collections.
+                <hi rend="endnote_reference">
+                    <note place="end" xml:id="end7" n="7">
+                        <p rend="endnote text">
+                            <hi style="font-size:12pt" xml:space="preserve">Wiriyathammabhum, P., Summers-Stay, D., Fermüller, C., and Aloimonos, Y. (2017), “Computer vision and Natural Language Processing: Recent approaches in multimedia and robotics,” </hi>
+                            <hi rend="italic" style="font-size:12pt">ACM Computing Surveys</hi>
+                            , vol. 49, no. 4, pp. 1–44.
+                        </p>
+                    </note>
+                </hi>
+            </p>
+        </body>
+        <back>
+            <!-- <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve"> See Graham, S., Milligan, I., and Weingart, S. (2015), </hi>
+                        <hi rend="italic" style="font-size:12pt">Exploring Big Historical Data: The Historian's Macroscope</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, Imperial College Press, London; Morrissey, R. (2015), “Archives of connection: ‘Whole network’ analysis and social history,” </hi>
+                        <hi rend="italic" style="font-size:12pt">Historical Methods</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, vol. 48, no. 2, pp. 67–79; Duff, W., and Haskell, J. (2015), “New uses for old records: A rhizomatic approach to archival access,” </hi>
+                        <hi rend="italic" style="font-size:12pt">American Archivist</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, vol. 78, no. 1, pp. 38-58; Putnam, L. (2016), “The transnational and the text-searchable: Digitized sources and the shadows they cast,” </hi>
+                        <hi rend="italic" style="font-size:12pt">American Historical Review</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, vol. 121, no. 2, pp. 377–402; Edelstein, D., Findlen, P., Ceserani, G., Winterer, C., and Coleman, N. (2017), “Historical research in a digital age: Reflections from the Mapping the Republic of Letters project,” </hi>
+                        <hi rend="italic" style="font-size:12pt">American Historical Review</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, vol. 122, no. 2, pp. 400–424; and Hoekstra, R. and Koolen, M. (2018), “Data scopes for digital history research,” </hi>
+                        <hi rend="italic" style="font-size:12pt">Historical Methods: A Journal of Quantitative and Interdisciplinary History</hi>
+                        , vol. 52, no. 2, pp. 79–94.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve"> Piotrowski, M. (2012), </hi>
+                        <hi rend="italic" style="font-size:12pt">Natural Language Processing for Historical Texts</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, Synthesis Lectures on Human Language Technologies, vol. 17, Morgan &amp; Claypool Publishers, San Rafael; Marrero, M., Urbano, J., Sánchez-Cuadrado, S., Morato, J., and Gómez-Berbís, J.M. (2013), “Named Entity Recognition: fallacies, challenges and opportunities,” </hi>
+                        <hi rend="italic" style="font-size:12pt">Computer Standards and Interfaces</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, vol. 35, no. 5, pp. 482–489; Shahin, S. (2016), “When scale meets depth: Integrating Natural Language Processing and textual analysis for studying digital corpora,” </hi>
+                        <hi rend="italic" style="font-size:12pt">Communication Methods and Measures</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, vol. 10, no. 1, pp. 28–50; Srinivasa-Desikan, B. (2018), </hi>
+                        <hi rend="italic" style="font-size:12pt">Natural Language Processing and Computational Linguistics: A Practical Guide to Text Analysis with Python, Gensim, spaCy, and Keras</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, Packt Publishing, Birmingham and Mumbai; Ehrmann, M., Romanello, M., Flückiger, A. and Clematide, S. (2020), “Named Entity Recognition and linking on historical newspapers,” in Arampatzis, A. et al. (eds.), </hi>
+                        <hi rend="italic" style="font-size:12pt">Experimental IR Meets Multilinguality, Multimodality, and Interaction</hi>
+                        , Springer International, Cham, pp. 288–310.
+                    </bibl>
+                    <bibl rend="endnote text">
+                        We developed
+                        <hi rend="italic" style="font-size:12pt">Archiviz</hi>
+                        for the Omeka Classic version; technical and user support for our plugin will be available in February 2023 in the
+                        <ref target="https://omeka.org/classic/plugins/">
+                            Omeka plugin library
+                        </ref>
+                        . Additional availability is planned through github and a Docker container for ease of use.
+                    </bibl>
+                    <bibl rend="endnote text">
+                        The primary tools and plug-ins used to construct Archiviz include Harvard’s
+                        <ref target="https://omeka.org/classic/plugins/Elasticsearch/">
+                            Elasticsearch
+                        </ref>
+                        <hi style="font-size:12pt" xml:space="preserve">Omeka plugin for enhanced search capabilities, Google </hi>
+                        <ref target="https://github.com/tesseract-ocr/tesseract">
+                            Tesseract
+                        </ref>
+                        <hi style="font-size:12pt" xml:space="preserve">for OCR, </hi>
+                        <ref target="https://spacy.io/">
+                            spaCy
+                        </ref>
+                        ’s NLP functionality, particularly its NER functionality, with current development focusing on the integration of the Science Museum Group’s
+                        <ref target="https://github.com/TheScienceMuseum/heritage-connector/">
+                            Heritage Connector
+                        </ref>
+                        for better entity identification, linking, and disambiguation. The graphing of this information is primarily performed with the force-directed graphing of
+                        <ref target="https://d3js.org/">
+                            d3.js
+                        </ref>
+                        .
+                    </bibl>
+                    <bibl rend="endnote text">
+                        For a similar application, see Tumbe, C. (2019), "Corpus linguistics, newspaper archives and historical research methods," 
+                        <hi rend="italic" style="font-size:12pt">Journal of Management History</hi>
+                        , vol. 25, no. 4, pp. 533–549.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve"> On the issues here, see Flinn, A., Stevens, M., and Shepherd, E. (2009), “Whose memories, whose archives? Independent community archives, autonomy and the mainstream,” </hi>
+                        <hi rend="italic" style="font-size:12pt">Archival Science</hi>
+                        , vol. 9, no. 71, pp. 71–86.
+                    </bibl>
+                    <bibl rend="endnote text">
+                        <hi style="font-size:12pt" xml:space="preserve">Wiriyathammabhum, P., Summers-Stay, D., Fermüller, C., and Aloimonos, Y. (2017), “Computer vision and Natural Language Processing: Recent approaches in multimedia and robotics,” </hi>
+                        <hi rend="italic" style="font-size:12pt">ACM Computing Surveys</hi>
+                        , vol. 49, no. 4, pp. 1–44.
+                    </bibl>
+                </listBibl>
+            </div> -->
+        </back>
+    </text>
+</TEI>

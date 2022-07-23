@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Data and Algorithms in Critical Aging Studies</title>
+                <author>
+                    <persName>
+                        <surname>Karadkar</surname>
+                        <forename>Unmil</forename>
+                    </persName>
+                    <affiliation>University of Graz, Austria; University of Texas at Austin, USA</affiliation>
+                    <email>unmil@karadkar.me</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kriebernegg</surname>
+                        <forename>Ulla</forename>
+                    </persName>
+                    <affiliation>University of Graz, Austria</affiliation>
+                    <email>ulla.kriebernegg@uni-graz.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sawchuk</surname>
+                        <forename>Kim</forename>
+                    </persName>
+                    <affiliation>University of Graz, Austria</affiliation>
+                    <email>kim.sawchuk@concordia.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Taipale</surname>
+                        <forename>Sakari</forename>
+                    </persName>
+                    <affiliation>Concordia University, Canada</affiliation>
+                    <email>sakari.taipale@jyu.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ivan</surname>
+                        <forename>Loredana</forename>
+                    </persName>
+                    <affiliation>National University of Political Studies and Public Administration (SNSPA), Bucharest, Romania</affiliation>
+                    <email>loredana.ivan@comunicare.ro</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T10:47:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Critical aging studies</term>
+                    <term>data ageism</term>
+                    <term>intersectional scholarship</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>digital ecologies and digital communities creation management and analysis</term>
+                    <term>ethnographic analysis</term>
+                    <term>Communication studies</term>
+                    <term>Sociology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction </head>
+                <p style="text-align: left; ">This workshop will invite participation from scholars who are studying the interplay between aging and digital technologies. Ever-increasing data collection through mobile services, online communications, embedded and worn sensors, social media platforms, and digitization is affecting several aspects of our lives, including aging. The data generated is algorithmically processed by corporate, governmental, individual, and non-governmental actors to shape the experiences, services, and opportunities available to an increasingly aging population. Recognizing that neither data nor algorithms are neutral, their detrimental effects on disadvantaged demographics have been widely studied in humanistic contexts, most famously in “Algorithms of Oppression” (Noble, 2018), which articulates the racial biases in google’s search algorithms. </p>
+                <p style="text-align: left; ">Organized by leading scholars from aging studies (Katz, 2014), communication studies, information sciences, and social sciences, we will engage scholars who use humanistic approaches to research the impact of data and algorithms on the aging population. The significance of aging as an issue is recognized by the World Health Organization, which has formed a global collaboration around this issue titled “the UN Decade of Healthy Aging” (World Health Organization, 2021). </p>
+                <p style="text-align: left; ">A non-exhaustive list of topics of interest includes: </p>
+                <list rend="bulleted">
+                    <item>impact of digitization, data, and algorithms on the processes and practices of aging </item>
+                    <item>aging, statistics, and public policies </item>
+                    <item>data ageism - ethics, harms, and justice </item>
+                    <item>policies and infrastructure for responsible international and interdisciplinary data sharing </item>
+                    <item>new methods in interdisciplinary, intersectional scholarship </item>
+                    <item>representations of ageing and data in literature and media </item>
+                    <item>humanistic studies of datafication of aging </item>
+                    <item>agency and autonomy in sensor-enhanced ageing </item>
+                    <item>digital technology practices, impositions, and appropriation </item>
+                    <item>community-driven data </item>
+                    <item>development of datasets to document the changing reality of aging adults </item>
+                    <item>innovative qualitative, quantitative, and ethnographic approaches to critique data </item>
+                    <item>theorization of datafication through the lens of aging </item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Workshop organizers </head>
+                <p style="text-align: left; ">This workshop is proposed by the PI and some co-applicants of Aging in Data, a Canadian SSHRC funded (number: 895-2021-1020) partnership project consisting of 19 partner organizations and 34 co-applicants and collaborators from 10 countries in Europe, North America, and Australia (Concordia press release, 2021). </p>
+                <p style="text-align: left; ">
+                    <hi rend="bold">Unmil P. Karadkar</hi> (unmil.karadkar@uni-graz.at) works as a Scientist in the Center for Interdisciplinary Research on Aging &amp; Care (CIRAC) at the University of Graz, Austria. He situates his work at the intersection of aging studies and research data management, sharing, and reuse. His research contributes to areas such as the design of digital collection interfaces and digital humanities. Unmil also holds a research appointment at the University of Texas at Austin, USA. His research has been funded by the National Science Foundation, Texas General Land Office, USAA, and Andrew W. Mellon Foundation. 
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="bold">Ulla Kriebernegg</hi> (ulla.kriebernegg) directs the Center for Interdisciplinary Research on Aging and Care (CIRAC) and is Associate Professor of American Studies at the University of Graz, Austria. Her research focuses on North American literary and cultural studies, Aging and Care Studies, and Medical Humanities. Her latest book, Putting Age in its Place (forthcoming) deals with the spatiality of care in cultural representations of care homes. Ulla is chair of the Age and Care Research Group Graz and deputy chair of the European Network of Aging Studies (ENAS). She co-edits the Aging Studies book series (Transcript), is Associate Editor of The Gerontologist and member of the GSA’s Humanities, Arts, &amp; Cultural Gerontology Panel. She directs the Graz part of SSHRC's "Aging in Data" project. 
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="bold">Kim Sawchuk</hi> (kim.sawchuk@concordia.ca) is a Professor in the Department of Communication Studies, holds the Concordia University Research Chair in Mobile Media Studies, and is the Associate Dean of Research and Graduate Studies for the Faculty of Arts and Science at Concordia University, Montreal, Canada. Her research at the intersection between aging and communication technologies challenges lingering ageist assumptions within media studies, where old age and new media are often positioned as incommensurable topics. Kim is a co-founder of the Critical Disability Studies Working Group and has led Ageing, Communication, Technologies (http://www.actproject.ca), a Canadian SSHRC-funded interdisciplinary, international, multi-methodological project that investigates the transformation of experiences ageing with the proliferation of new forms of mediated communications. She is also the PI of the SSHRC-funded Aging in Data partnership project (2021-2028). 
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="bold">Sakari Taipale</hi> (sakari.taipale@jyu.fi) is Associate Professor of Social and Public Policy at the Department of Social Sciences and Philosophy, University of Jyväskylä, Finland, and a part-time Senior Research Associate at the Faculty of Social Science, University of Ljubljana, Slovenia. In Jyväskylä, he leads the ‘New Technologies, Ageing and Care’ research group of the Centre of Excellence in Research on Ageing and Care (CoE AgeCare). Dr Taipale has participated in many European research networks and he has made research and teaching visits to universities in countries such as Italy, Lithuania, Slovenia and Spain. 
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="bold">Loredana Ivan</hi> (loredana.ivan@comunicare.ro) is associate professor PhD, at the National University of Political Studies and Public Administration (SNSPA), Bucharest, Romania. She studies technology-mediated interpersonal communication, combining sociological and social psychological approaches. With a background in Sociology, she holds a PhD from the University of Bucharest. She has been Marie Curie Scholar at the University of Groningen, Interuniversity Center for Methodology (ICS), in The Netherlands and visiting researcher at Humboldt University, Berlin, Department of Social and Organizational Psychology. She is also a co-founder of the Research Group in Social Psychology at the Society of Romanian Sociologists (SSR) and the current chair of the European Network on Ageing Studies (ENAS) 
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Diversity and Inclusion </head>
+                <p style="text-align: left; ">The organizers come from Europe and North America, are gender-balanced as well as diverse in academic disciplines and career stages. We will strive to achieve similar balance in our presenter pool to the extent possible. </p>
+                <p style="text-align: left; ">Similar to Europe and North America, digital technology is affecting the experience of aging in countries such as Japan, China, India, and South Korea. We seek to engage the Asian Aging Studies scholarly community in aligning with the theme of the conference as well as to broaden our professional network. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Target audience and expected number of participants </head>
+                <p style="text-align: left; ">This is our first workshop on this topic and we are unsure what the interest will be. In this light, we have tried to make the topic as broad as possible, while retaining the focus on our core interests. Given the increase in issues related to socio-humanistic studies of aging and the increasing focus on critical studies of computing and data, we anticipate receiving 10 to 20 submissions and accepting 8 to 10 for presentation at the workshop. We are unable to gauge the level of interest in the DH community in attending the workshop without presenting. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Technical requirements - Projection, Internet access </head>
+                <p style="text-align: left; ">The workshop will not require special technical support. A projector for presentations and an internet connection for participants to showcase web-based materials as well as for remote participation will suffice. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Length and format - Half day </head>
+                <p style="text-align: left; ">This time frame will allow for adequate exploration for a newly forming community. We are open to conducting a full-day workshop if the reviewers believe that there will be a larger interest than we anticipate. </p>
+                <p style="text-align: left; ">The workshop will be held in a seminar style, with a keynote, followed by short and long presentations. Individuals may participate in the workshop without presenting. In order to facilitate community-building, the organizers will include an open discussion time or breakout sessions depending upon the audience size and time limitations. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Budget - None </head>
+                <p style="text-align: left; ">The workshop will have no budgetary requirements. All participants will pay for their attendance. The workshop will not require supplies or other resources that will result in costs. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Covid19 accommodations </head>
+                <p style="text-align: left; ">While we encourage in-person participation, we recognize that regional Covid19 travel or health conditions may make it difficult for presenters to attend in person. Presenters may present in person or remotely. We will accommodate last minute changes. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Code of conduct</head>
+                <p style="text-align: left; ">In order to ensure a safe, respectful, and collegial environment at the workshop, the organizers will adopt the ADHO DH conference code of conduct, available at: </p>
+                <p style="text-align: left; ">https://adho.org/administration/conference-coordinating-program-committee/adho-co nference-code-conduct. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Solicitation of proposals </head>
+                <p style="text-align: left; ">We will invite proposals for long (up to 750-1,000 words, 20 min) and short (up to 300 words, 10 min) presentations. Long presentations will report on mature work in the area or stake out a position in an area while short presentations will present early results or nascent work. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Program Committee</head>
+                <p style="text-align: left; ">Submissions will be vetted by a small program committee, which currently consists of the organizers. If necessary, we may include other colleagues to review proposals. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Calls for Proposals</head>
+                <p style="text-align: left; ">We will advertise the workshop CfP through various DH as well as Aging Studies networks (NANAS - North American Network in Aging Studies, ENAS - European Network in Aging Studies, Socio-GeronTechnology Network). We are not aware of similar aging networks in the Asia-Pacific and welcome pointers from the DH2022 program committee. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Timeline</head>
+                <p style="text-align: left; ">February 16: Announcement and release of CfP </p>
+                <p style="text-align: left; ">May 15: Long and short presentation proposals due </p>
+                <p style="text-align: left; ">May 25: Proposal decision notification </p>
+                <p style="text-align: left; ">July 25: Workshop at DH 2022</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Noble, S.</hi> (2018). 
+                        <hi rend="italic">Algorithms of Oppression: How Search Engines Reinforce Racism.</hi> New York University Press, 256pp. ISBN13: 978-1-4798-4994-9 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Katz, S.</hi> (2014). What is Age Studies? In 
+                        <hi rend="italic">Age Culture Humanities 1(1)</hi> pp. 17-23. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">World Health Organization</hi> (2021). 
+                        <hi rend="italic">The UN Decade of Healthy Aging</hi>. https://www.who.int/initiatives/decade-of-healthy-ageing (accessed 30th Nov. 2021). 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Concordia Center for Research on Aging, press release</hi> (2021). 2 Concordians are awarded nearly $5m for social sciences and humanities research. https://www.concordia.ca/news/stories/2021/07/07/2-concordians-are-awarded-nearly-5m-for -social-sciences-and-humanities-ressearch.html?c=/research/aging (accessed 30th Nov. 2021).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

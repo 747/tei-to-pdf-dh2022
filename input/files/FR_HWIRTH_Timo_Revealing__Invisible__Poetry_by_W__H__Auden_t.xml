@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Revealing ‘Invisible’ Poetry by W. H. Auden through Computer Vision</title>
+                    <title type="sub">Using Photometric Stereo to Visualize Indented Impressions in the Poet’s Austrian Correspondence and Literary Papers</title>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Brenner</surname>
+                        <forename>Simon</forename>
+                    </persName>
+                    <affiliation>Computer Vision Lab, TU Wien, Austria</affiliation>
+                    <email>sbrenner@cvl.tuwien.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Frühwirth</surname>
+                        <forename>Timo</forename>
+                    </persName>
+                    <affiliation>Austrian Centre for Digital Humanities and Cultural Heritage, Austrian Academy of Sciences, Austria</affiliation>
+                    <email>timo.fruehwirth@oeaw.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mayer</surname>
+                        <forename>Sandra</forename>
+                    </persName>
+                    <affiliation>Austrian Centre for Digital Humanities and Cultural Heritage, Austrian Academy of Sciences, Austria</affiliation>
+                    <email>sandra.mayer@oeaw.ac.at</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Computer Vision</term>
+                    <term>Digital Edition</term>
+                    <term>Literature</term>
+                    <term>Photometric Stereo</term>
+                    <term>W. H. Auden</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>digitization (2D &amp; 3D)</term>
+                    <term>manuscripts description</term>
+                    <term>representation</term>
+                    <term>and analysis</term>
+                    <term>Computer science</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>W. H. Auden (1907-1973) counts among the most influential writers in the English language in the twentieth century. From 1958, the English-born poet divided his time between the United States and Austria: for up to six months of each year, he lived and worked in the Lower Austrian village of Kirchstetten. It is there that, in the period from 1958 to 1973, Auden wrote most of his poetry (Mendelson, 2017: 746, 773; Quinn, 2013: 56; Quinn, 2015: 243). However, while the poet’s English and American periods have been extensively researched, W. H. Auden’s life and work in Austria are still under-investigated and have attracted scholarly attention only since the 2000s (see, especially, Mendelson, 2005, dedicated to the “European Auden”). It is in the context of an emerging field of Austrian Auden studies (see, especially, Denzer and Seidl, 2014; Neundlinger, 2018) that the Auden Musulin Papers project at the Austrian Centre for Digital Humanities and Cultural Heritage (ACDH-CH), of the Austrian Academy of Sciences, is situated. The project makes available, through an open-access digital scholarly edition, the letters and literary papers sent by the poet to Welsh-Austrian writer Stella Musulin (1915-1996). These privately owned, and previously inaccessible, documents cast a fresh light on one of Auden’s most prolific creative periods.</p>
+            <p>Some of the documents contain indented impressions of lines of poetry, indicating that Auden reused sheets of paper originally placed underneath those on which he typed his poems. Standard image digitization technologies employed in digital editing, optimized for creating representations of 2D surfaces, cannot capture these three-dimensional impressions. Therefore, the Auden Musulin Papers project takes advantage of computer-vision technologies used in cultural-heritage research of 3D objects. In the context of this project, the Computer Vision Lab (CVL) of TU Wien [Vienna University of Technology] has produced high-resolution photometric-stereo reconstructions of the pages containing typewriter impressions. Photometric stereo (PS) is a computer-vision method that enables the reconstruction of 3D surfaces from a set of images taken under a constant camera view and varying lighting directions. In comparison to other 3D acquisition methods (such as structured light, photogrammetry, or time-of-flight), PS has been demonstrated to be especially efficient for the acquisition of small local surface details (Herbort and Wöhler, 2011; Jackson et al., 2007; McGunnigle and Chantler, 2003; Thumfart et al., 2013). The pages containing the typewriter indentations were imaged with a prototypical PS acquisition system, carrying 54 individually controllable LEDs and an achromatic medium-format camera, originally developed for capturing surface details in medieval parchment manuscripts. The source images acquired of the pages in question have a spatial resolution of 405px/cm (or 1030 dpi), and already in an unprocessed state allow for an improved reading of the indented text. On the basis of surface models generated from those source images, false-color visualizations have been created that clearly distinguish the indented text from other structures in the paper, such as from the texture of the paper itself and overlapping typewriter texts that do contain print ink and leave even more pronounced indentations in the paper. (See 
+                <ref target="https://doi.org/10.5281/zenodo.6458064">https://doi.org/10.5281/zenodo.6458064</ref> for comparing results of standard digital photography, grazing-light source photography, and PS-based false-color visualization.)
+            </p>
+            <p>The development of such visualizations was completed in early 2022. First tentative results indicate that computer vision affords a unique glimpse into the poet’s workshop in Kirchstetten. On the one hand, the 3D reconstructions provide specific evidence of the material writing practices employed by W. H. Auden in the study of his Austrian house. On the other hand, the visualizations of the PS data contribute to our understanding of Auden’s poetic practices of composition and revision. Thus, the spatiotemporal relationship between the indented writing, containing an unpublished version of Auden’s poem “Epistle to a Godson,” and the handwritten message addressed to Stella Musulin (dated 10 June 1969) over-writing it, provides fresh insights both into the development of the poem and the poet’s practices of poetic work.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Denzer, R. and Seidl, M.</hi> (eds) (2014). 
+                        <hi rend="italic">Silence Turned into Objects: W. H. Auden in Kirchstetten</hi>. St. Pölten: Literaturedition Niederösterreich.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Herbort, S. and Wöhler, C.</hi> (2011). An Introduction to Image-Based 3D Surface Reconstructions and a Survey of Photometric Stereo Methods. 
+                        <hi rend="italic">3D Research</hi>, 2(3): 1-17.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Jackson, M., Yang, D. and Parkin, R.</hi> (2007). Analysis of Wood Surface Waviness with a Two-Image Photometric Stereo Method. 
+                        <hi rend="italic">Proceedings of the Institution of Mechanical Engineers, Part I: Journal of Systems and Control Engineering</hi>, 221(8): 1091-99.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">McGunnigle, G. and Chantler, M.</hi> (2003). Resolving Handwriting from Background Printing Using Photometric Stereo. 
+                        <hi rend="italic">Pattern Recognition</hi>, 36(8): 1869-79. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mendelson, E.</hi> (2005). The European Auden. In Smith, S. (ed), 
+                        <hi rend="italic">The Cambridge Companion to W. H. Auden</hi>. Cambridge: Cambridge University Press, pp. 55-67.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mendelson, E.</hi> (2017). 
+                        <hi rend="italic">Early Auden, Later Auden: A Critical Biography</hi>. Princeton: Princeton University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Neundlinger, H.</hi> (ed) (2018). 
+                        <hi rend="italic">Thanksgiving für ein Habitat: W. H. Auden in Kirchstetten</hi>. St. Pölten: Literaturedition Niederösterreich.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Quinn, J.</hi> (2013). At Home in Italy and Austria, 1948-1973. In Sharpe, T. (ed), 
+                        <hi rend="italic">W. H. Auden in Context</hi>. Cambridge: Cambridge University Press, pp. 56-66.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Quinn, J.</hi> (2015). Auden’s Cold War Fame. In Costello, B. and Galvin, R. (eds), 
+                        <hi rend="italic">Auden at Work</hi>. Basingstoke: Palgrave Macmillan, pp. 231-49.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Thumfart, S., Palfinger, W., Stöger, M. and Eitzinger, C.</hi> (2013). Accurate Fibre Orientation Measurement for Carbon Fibre Surfaces. In Wilson, R., Hancock, E., Bors, A. and Smith, W. (eds), 
+                        <hi rend="italic">Computer Analysis of Images and Patterns: Proceedings of the 15th International Conference on Computer Analysis of Images and Patterns, CAIP 2013</hi>. Springer, pp. 75-82.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

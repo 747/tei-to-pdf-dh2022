@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Optical Character Recognition for Complex Scripts: A Case-study in Cuneiform</title>
+                <author>
+                    <persName>
+                        <surname>Gordin</surname>
+                        <forename>Shai</forename>
+                    </persName>
+                    <affiliation>Ariel University, Israel</affiliation>
+                    <email>shaigo@ariel.ac.il</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Romach</surname>
+                        <forename>Avital</forename>
+                    </persName>
+                    <affiliation>Tel Aviv University, Israel</affiliation>
+                    <email>avitalromach@tauex.tau.ac.il</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T14:30:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>optical character recognition</term>
+                    <term>human-in-the-loop</term>
+                    <term>machine learning</term>
+                    <term>cuneiform</term>
+                    <term>low-resource languages</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>optical character recognition and handwriting recognition</term>
+                    <term>Archaeology</term>
+                    <term>Computer science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Cuneiform is one of the earliest writing systems in the world, usually written by pressing a stylus on moist clay tablets, creating a three-dimensional script. It is a logo-syllabic script, like Chinese or Japanese writing systems (Veldhuis, 2012; Kwan, 2014; Francis, 2020). There are close to a thousand cuneiform signs, not all of which were used simultaneously–usually about 200-300 signs were used at once. Additionally, the forms of these signs changed drastically during the 3,000 years in which this writing system was in use. Cuneiform tablets are available for OCR in three main formats: (a) 3D or 2D+ models, the most accurate representation, but these are still relatively rare and expensive to produce; (b) 2D images of cuneiform objects, which are fast growing in quality and ubiquity; and (c) hand-copies, 2D drawings made by scholars of the inscribed signs. These are still commonly used in the field, and are the majority of available representations of cuneiform writing. Furthermore, cuneiform writing and all the languages using it, are low-resource languages, which raises difficulties when implementing some computational methods (Hedderich et al., 2021). Although the number of digital texts is steadily growing in recent years, the gap is still substantial, and significant efforts are needed for digitization.</p>
+            <p style="text-align: left; ">The best results for character recognition of cuneiform signs or strokes thus far have been achieved from 3D models (Mara et al., 2010; Fisseler et al., 2013; Fisseler et al., 2014; Rothacker et al., 2015). Work on hand-copies, or 2D projections of 3D models which look like hand-copies, are also showing promising results (Mara and Krömker, 2013; Bogacz et al., 2015a; Bogacz et al., 2015b; Bogacz et al., 2016; Massa et al., 2016; Bogacz and Mara, 2018; Yamauchi et al., 2018), as well as some work on 2D images (Rusakov et al., 2019; Rusakov et al., 2020; Dencker et al., 2020; see also Bogacz and Mara, forthcoming). These results, nevertheless, are limited in scope because of lack of tagged data, lack of 3D models, or, most often, a lack of an accessible way for cuneiform specialists to use the models developed.</p>
+            <p style="text-align: left; ">With this gap in mind between the specialists and the code, the set of CuRe tools (Cuneiform Recognition) of the 
+                <ref target="https://digitalpasts.github.io/docs/BEn.html">Babylonian Engine</ref> project was created as an online interactive platform for scholars.
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> Funded by the Ministry of Science &amp; Technology, Israel, Grant 3-16464.</p>
+                </note> The idea was that already in the design and initial training of machine learning (ML) models, humans, particularly experts, should take an active part. The ML models are envisioned as “co-workers” which provide likely suggestions to the user, aiding the process of cuneiform scholarly edition publication, and improving as the user corrects them. This way, it is not only the ML models that benefit from the corrections and tagged data created by experts, but also the experts can enjoy a designated work environment for any type of cuneiform text, and download the results of their work–already advancing cuneiform scholarship.
+            </p>
+            <p style="text-align: left; ">Our main tool is CuReI: Cuneiform Recognition for Images (see 
+                <ref target="https://ben-digpasts.com/demo">demo</ref>, the full platform will be available in the near future). This tool takes images of hand-copies as input, either uploaded by the user or one of the images in the CuReI dataset of copyright-free hand-copies of Neo- and Late Babylonian documents. Hand-copies were chosen for initial training because they are more ubiquitous than 2D images or 3D models, and many hand-copies are still missing full publication of their textual editions. The signs are segmented using a Faster R-CNN ResNet 50 model (
+                <ref target="https://github.com/facebookresearch/detectron2">detectron2</ref>), and then given suggestions for their value with ResNet-18 (Figure 1). The two stages of the model are also split for the user. First, the user corrects the segmentation, and then they are given the suggested readings. The models currently perform with ca. 92% accuracy for sign detection, checked against a validated test set, and we are constantly enlarging the dataset and retraining the model.
+            </p>
+            <p style="text-align: left; ">We are in the process of developing another stage in this tool: stroke recognition from 2D images. Identifying the strokes–the constituent parts which make up a cuneiform sign–is drastically simpler than identifying the whole (similar to text recognition for Japanese in Liang et al., 2015). While the signs changed drastically in the 3,000 years in which cuneiform was in use, the strokes and writing technique remained similar. Furthermore, since there are only three main stroke types (horizontal, vertical, and oblique), it is much quicker to obtain a large corpus of examples of each, as compared to collecting enough samples for every sign and its variant forms. There have been no previous attempts of identifying strokes from 2D images. After identification using Faster R-CNN ResNet 50, vector images are created with schematic representations of the strokes, which are quite like hand-copies (Figure 2).</p>
+            <p style="text-align: left; ">The final goal is for the user to create a digital text using OCR in three stages: receiving and correcting (a) stroke identification, (b) segmentation, and (c) the identification of the sign values. This process creates additional validated training data for all our models, constantly improving them, while avoiding multiplying the error rates in the final result–the digitized text. Since the models are already approximately 80%-90% accurate (and rising), the amount of corrections is not too cumbersome, and it is already able to save a significant amount of time that experts usually spend on deciphering cuneiform texts.</p>
+            <p style="text-align: left; ">To conclude, designing ML models as part of a human-in-the-loop pipeline application has the following benefits: (a) people are incentivized to create the data needed for training; (b) breaking down the “reading” process of the OCR, allows for less mistakes in the final digitized text; (c) the ML models are used from their inception in a real-world scenario, providing real-world value to the research community. Furthermore, we believe the CuRe tool-set can also be a valuable learning environment for cuneiform students or any interested laypeople. The advantage for cuneiform studies is thus twofold: growing a database of available digital editions for research, and creating a learning environment which can help disseminate knowledge on some of the oldest civilizations in human history. The digital editions created will be downloadable in the standard formats of the field (ATF, TEI/XML, and JSON). We believe that this work pipeline–breaking down the OCR process and developing human-in-the-loop ML models–is an effective way for solving OCR for additional low-resource and complex writing systems (compare Hashimoto et al., 2018 on Japanese), or for that matter, NLP applications for diverse low-resource languages (Wang et al., 2021).</p>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="11.05076388888889cm" url="Pictures/762aa6a2a346238fa6547497ee2acfd3.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Figure 1: A screenshot of the CuReI-tool from the Babylonian Engine website, currently in deployment, see 
+                <ref target="https://ben-digpasts.com/demo">demo</ref>
+            </p>
+            <figure>
+                <graphic n="1002" width="14.97583888888889cm" height="10.065491666666667cm" url="Pictures/a42d49036c18b719ab6a62fd61d6cec6.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Figure 2: A section of cuneiform writing with ground truth and identified labels for horizontal strokes (top), and a vectorized representation of the strokes (bottom). The grayscale on the strokes signifies the certainty level of the model (tablet image: 
+                <ref target="https://collections.peabody.yale.edu/search/Record/YPM-BC-016773">YPM BC 16773</ref> © Yale Babylonian Collection, courtesy of Klaus Wagensonner)
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bogacz, B., Gertz, M. and Mara, H.</hi> (2015a). Character Retrieval of Vectorized Cuneiform Script. In 13th International Conference on Document Analysis and Recognition (ICDAR 2015). Piscataway, NJ: IEEE Computer Society, pp. 326–30. 10.1109/ICDAR.2015.7333777.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bogacz, B., Gertz, M. and Mara, H.</hi> (2015b). Cuneiform Character Similarity Using Graph Representations. In Wohlhart, P. and Lepetit, V. (eds), 20th Computer Vision Winter Workshop. Graz: Verlag Der Technischen Universität Graz, pp. 105–12.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bogacz, B., Howe, N. and Mara, H.</hi> (2016). Segmentation Free Spotting of Cuneiform Using Part Structured Models. In 15th International Conference on Frontiers in Handwriting Recognition (ICFHR 2016). Piscataway, NJ: IEEE Computer Society, pp. 301–6. 10.1109/ICFHR.2016.0064.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bogacz, B. and Mara, H.</hi> (2018). Feature Descriptors for Spotting 3D Characters on Triangular Meshes. In 16th International Conference on Frontiers in Handwriting Recognition (ICFHR 2018). Piscataway, NJ: IEEE Computer Society, pp. 363–8.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bogacz, B. and Mara, H.</hi> (forthcoming). Digital Assyriology - Advances in Visual Cuneiform Analysis. Journal on Computing and Cultural Heritage.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Dencker, T. et al.</hi> (2020). Deep Learning of Cuneiform Sign Detection with Weak Supervision Using Transliteration Alignment. PLOS ONE, 15(12), p. e0243039. 10.1371/journal.pone.0243039.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Fisseler, D. et al.</hi> (2013). Towards an Interactive and Automated Script Feature Analysis of 3D Scanned Cuneiform Tablets. In Scientific Computing and Cultural Heritage 2013. http://www.cuneiform.de/fileadmin/user_upload/documents/scch2013_fisseler.pdf.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Fisseler, D. et al.</hi> (2014). Extending Philological Research with Methods of 3D Computer Graphics Applied to Analysis of Cultural Heritage. In Klein, R. and Santos, P. (eds), Eurographics Workshop on Graphics and Cultural Heritage (GCH 2014). Goslar: The Eurographics Association, pp. 165–72. 10.2312/gch.20141314.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Francis, N.</hi> (2020). New Research on the Adoption and Transformation of Chinese Writing. Chinese Language and Discourse, 11(1), pp. 134–45. 10.1075/cld.19007.fra.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hashimoto, Y. et al.</hi> (2018). Minna de Honkoku: Learning-Driven Crowdsourced Transcription of Pre-Modern Japanese Earthquake Records. In ADHO / EHD 2018 - Mexico City.https://dh-abstracts.library.cmu.edu/works/6312 (accessed 9 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hedderich, M. A. et al.</hi> (2021). A Survey on Recent Approaches for Natural Language Processing in Low-Resource Scenarios. In Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. NAACL-HLT 2021. Online: Association for Computational Linguistics, pp. 2545–68. 10.18653/v1/2021.naacl-main.201.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kwan, T.-W.</hi> (2014). Phenomenological Interpretation of the “Six Ways” of Chinese Script Formation. In Gordin, Sh. (ed.), Visualizing Knowledge and Creating Meaning in Ancient Writing Systems. Berliner Beitrage zum Vorderen Orient. Gladbeck: PeWe-Verlag, pp. 157–202.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Liang, J. et al.</hi> (2015). Character-Position-Free On-Line Handwritten Japanese Text Recognition. In 2015 3rd IAPR Asian Conference on Pattern Recognition (ACPR). Kuala Lumpur, Malaysia: IEEE, pp. 231–5. 10.1109/ACPR.2015.7486500.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Mara, H. et al.</hi> (2010). GigaMesh and Gilgamesh – 3D Multiscale Integral Invariant Cuneiform Character Extraction. In Artusi, A. et al. (eds), The 11th International Symposium on Virtual Reality, Archaeology and Cultural Heritage. VAST: International Symposium on Virtual Reality, Archaeology and Intelligent Cultural Heritage. The Eurographics Association. 10.2312/VAST/VAST10/131-138.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Mara, H. and Krömker, S.</hi> (2013). Vectorization of 3D-Characters by Integral Invariant Filtering of High-Resolution Triangular Meshes. In Proceedings of the International Conference on Document Analysis and Recognition (ICDAR 2013). Piscataway, NJ: IEEE Computer Society, pp. 62–6. 10.1109/ICDAR.2013.21.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Massa, J. et al.</hi> (2016). Cuneiform Detection in Vectorized Raster Images. In Čehovin, L. Mandeljc, R. and Štruc, V. (eds), 21st Computer Vision Winter Workshop. Ljubljana: Slovenian Pattern Recognition Society.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rothacker, L. et al.</hi> (2015). Retrieving Cuneiform Structures in a Segmentation-Free Word Spotting Framework. In Proceedings of the 3rd International Workshop on Historical Document Imaging and Processing (HIP 2015). New York, NY: Association for Computing Machinery, pp. 129–36. 10.1145/2809544.2809562.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rusakov, E. et al.</hi> (2019). Generating Cuneiform Signs with Cycle-Consistent Adversarial Networks. In Proceedings of the 5th International Workshop on Historical Document Imaging and Processing. HIP ’19. New York, NY, USA: Association for Computing Machinery, pp. 19–24. 10.1145/3352631.3352632.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rusakov, E. et al.</hi> (2020). Towards Query-by-Expression Retrieval of Cuneiform Signs. In 2020 17th International Conference on Frontiers in Handwriting Recognition (ICFHR). pp. 43–8. 10.1109/ICFHR2020.2020.00019.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Veldhuis, N.</hi> (2012). Cuneiform: Changes and Developments. In Houston, S.D. (ed.), The Shape of Script: How and Why Writing Systems Change. Santa Fe, N.M.: SAR Press, pp. 3–23.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Wang, Z. J. et al.</hi> (2021). Putting Humans in the Natural Language Processing Loop: A Survey. In Blodgett, S.L. et al. (eds), Proceedings of the First Workshop on Bridging Human–Computer Interaction and Natural Language Processing. Online: Association for Computational Linguistics, pp. 47–52.https://www.aclweb.org/anthology/2021.hcinlp-1.8.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Yamauchi, K., Yamamoto, H. and Mori, W.</hi> (2018). Building A Handwritten Cuneiform Character Imageset. In Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018). Miyazaki, Japan: European Language Resources Association (ELRA), pp. 719–22. https://aclanthology.org/L18-1115.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Revitalizing a South Asian language with Unicode: The case of Sunuwar in Nepal </title>
+                <author>
+                    <persName>
+                        <surname>Anderson</surname>
+                        <forename>Deborah {Debbie}</forename>
+                    </persName>
+                    <affiliation>UC Berkeley, United States of America</affiliation>
+                    <email>dwanders@sonic.net</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sunuwar</surname>
+                        <forename>Dev Kumar</forename>
+                    </persName>
+                    <affiliation>Indigenous Media Foundation, Nepal</affiliation>
+                    <email>devkumarmail@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-07T16:43:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Unicode</term>
+                    <term>revitalization</term>
+                    <term>Sunuwar</term>
+                    <term>character encoding</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>digital access</term>
+                    <term>privacy</term>
+                    <term>and ethics analysis</term>
+                    <term>text encoding and markup language creation</term>
+                    <term>deployment</term>
+                    <term>and analysis</term>
+                    <term>Indigenous studies</term>
+                    <term>South Asian studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Background</p>
+            <p>The Sunuwar, or Koĩts‐Lo, language is spoken by 37,900 users (2011 census) (Eberhard et al., 2021) in Nepal, and is also spoken in Sikkim, India. The Sunuwar language is classified by the EGIDS scale as a “threatened” language, indicating the language is losing speakers (SIL International, n.d.). </p>
+            <p>This poster describes ongoing work to revitalize the Sunuwar language, using Unicode, as a possible model for other indigenous languages. It will include examples of the script, with sound bites of the language and discuss the steps in getting a script into Unicode. </p>
+            <p>Although Sunuwar is primarily oral language, a script called “kõits brese” was devised for the language in the 1940s. This script was promoted in the 1960s and 1970s (Sunuwar, 2021), but these efforts were hindered by Nepal’s one language policy: 
+                <hi rend="italic">ek bhasha, ek bhesh, ek dharma, ek desh</hi> (“one language, one way of dress, one religion, one nation”). This “one language” policy implied the use of the Devanagari script, which is used to write the official Nepali language. The policy lasted until 1990 (Weinberg, 2013). 
+            </p>
+            <p>In the 2000s, the Government of Nepal developed various plans that promoted mother tongue multilingual education. Currently, 24 school curriculums in different languages have been created, but the medium for these materials for different languages ‐‐ including Sunuwar ‐‐ is in the Devanagari script (Sunuwar, 2021). This situation is due in part to the history of language policies in Nepal, which did not encourage use of scripts other than Devanagari. Another key factor is that Sunuwar, as well as several other scripts of smaller language communities in Nepal, are not in the Unicode Standard, which means creating and exchanging text in the script electronically is very difficult. </p>
+            <p style="text-align: left;">Digitization Process and Unicode
+                <lb/>The Sunuwar Welfare Society, which was established in 1988, has long envisioned having the language move from an oral language to one whose written version can be sent and received on various digital platforms. Digitization will help to preserve the language and its script and strengthening the distinct Sunuwar identity.
+            </p>
+            <p>In 2020, the Translation Commons project, a partner with UNESCO’s International Year of Indigenous Languages and International Decade of Indigenous Languages, selected Sunuwar as a pilot project to demonstrate the scalability of encoding scripts for indigenous languages and has facilitated the Sunuwar encoding project. </p>
+            <p>A key first step towards digitization was to get the script into the Unicode Standard. Fortunately, a Unicode proposal had earlier been written in 2011 by Anshuman Pandey (Pandey, 2011). The proposal was reviewed in 2020 by a core team of linguists, educators, activists, journalists, and language practitioners who are members of the Sunuwar Welfare Society (Sunuwar, 2021). Regular meetings took place between Dev Kumar Sunuwar (Indigenous Media Foundation), Anshuman Pandey and Deborah Anderson (Script Encoding Initiative), Craig Cornelius (Google), and Jeannette Stewart (Translation Commons) which ironed out questions for the Unicode proposal, a font, and keyboard. At the January 2022 UTC meeting the proposal was approved for inclusion in a future version of the Unicode Standard. </p>
+            <p>Challenges 
+                <lb/>To be approved for inclusion in Unicode, evidence showing usage of the script is needed. 
+            </p>
+            <p>Being primarily an oral language used widely in the home, Sunuwar does not have an extensive written tradition nor has it been widely used in Nepal. However, in Sikkim, India, the Sunuwar language (called “Mukhia”) was officially recognized in in 1996, and the Sikkim government published schoolbooks, newspapers and other materials in the script (Sunuwar, 2021). The evidence from Sikkim is useful for demonstrating usage, but evidence from Nepal would be needed to confirm consistent usage across Nepal and India. </p>
+            <p>Recent promising signs of Sunuwar script usage include:</p>
+            <list type="unordered">
+                <item>Creation of a keyboard and PUA‐based font, which can be used to develop more written materials.</item>
+                <item>Appearance in 2021 of a monthly magazine 
+                    <hi rend="italic">Hamso</hi> in Sunuwar and Devanagari scripts (in the Sunuwar language) (Sunuwar, 2022).
+                </item>
+                <item>Creation of YouTube instructional videos and in‐person classes on the script, and an alphabet book.</item>
+            </list>
+            <p>Future
+                <lb/>This project could serve as a model for other communities in Nepal (and beyond) that can learn from the Sunuwar experience on how to get a script into Unicode and revitalization efforts, including any difficulties encountered. More generally, what can be learned from the Sunuwars’ experience of transitioning from an oral culture to a written one that might be applicable to other communities? How can other primarily oral communities build up their written culture, and thus have their script be eligible for inclusion in the Unicode Standard?
+            </p>
+            <p>The result of the work to get the script into Unicode and widely adopted is yet to be seen. The predominance of Nepali in Nepal and English for business and international communication has tended to overshadow lesser‐used languages. For example, today, English is used as medium of instruction in some private schools in Nepal and may be adopted into public schools as well (Phyakm, 2021). </p>
+            <p>Funding
+                <lb/>This work was supported by National Endowment for the Humanities [grant PR-268710-20].
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Eberhard, David M., Gary F. Simons and Charles D. Fennig (eds.).</hi> (2021). 
+                        <hi rend="italic">Ethnologue: Languages of the World</hi>. Twenty‐fourth edition. Dallas, Texas: SIL International, online edition.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pandey, Anshuman</hi>. (2011). “Proposal to Encode the Jenticha Script.” https://www.unicode.org/L2/L2011/11218‐n4028‐jenticha.pdf (accessed 6 April 2022). (Note: The proposal used the script name “Jenticha,” but this has subsequently been changed to “Sunuwar.”)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Phyak, Phrem.</hi> (2021). Language education policy in Nepal and the denial of the right to speak in Indigenous Languages. 
+                        <hi rend="italic">Melbourne Asia Review</hi>, Edition 7, 2021. 
+                        <ref target="https://melbourneasiareview.edu.au/language-education-policy-in-nepal-and-the-denial-of-the-right-to-speak-in-indigenous-languages/">https://melbourneasiareview.edu.au/language-education-policy-in-nepal-and-the-denial-of-the-right-to-speak-in-indigenous-languages/</ref> (accessed 6 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">SIL International</hi> (no date). 
+                        <hi rend="italic">Language Status</hi>. 
+                        <ref target="https://www.ethnologue.com/about/language-status">https://www.ethnologue.com/about/language-status</ref> (accessed 6 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sunuwar, Dev Kumar.</hi> (2021). “Digitizing the script of Koits Sunuwar Indigenous Peoples.” 
+                        <ref target="https://www.devkumarsunuwar.com.np/digitizing‐the‐script‐of‐koits‐sunuwar‐indigenous‐peoples">https://www.devkumarsunuwar.com.np/digitizing‐the‐script‐of‐koits‐sunuwar‐indigenous‐peoples</ref> (accessed 6 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sunuwar, Dev Kumar.</hi> (2022). 
+                        <hi rend="italic">Hamso</hi> magazine. 
+                        <ref target="https://www.devkumarsunuwar.com.np/hamso-magazine">https://www.devkumarsunuwar.com.np/hamso-magazine</ref> (accessed 6 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Weinberg, Miranda. </hi>(2013). “Revisiting History in Language Policy: The Case of Medium of Instruction in Nepal.” 
+                        <hi rend="italic">Working Papers in Educational Linguistics</hi> 28 (1): 61-80. 
+                        <ref target="https://repository.upenn.edu/wpel/vol28/iss1/6">https://repository.upenn.edu/wpel/vol28/iss1/6</ref> (accessed 6 April 2022).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

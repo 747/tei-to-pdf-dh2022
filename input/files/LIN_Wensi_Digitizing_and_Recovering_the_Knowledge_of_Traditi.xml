@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Digitizing and Recovering the Knowledge of Traditional Chinese Colour of the Nanjing Brocade</title>
+                <author>
+                    <persName>
+                        <surname>Lin</surname>
+                        <forename>Wensi</forename>
+                    </persName>
+                    <affiliation>Shanghai Museum, China</affiliation>
+                    <email>vencylin@qq.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chen</surname>
+                        <forename>Jing</forename>
+                    </persName>
+                    <affiliation>Nanjing University, China</affiliation>
+                    <email>cjchen@nju.edu.cn</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Zhang</surname>
+                        <forename>Mengyue</forename>
+                    </persName>
+                    <affiliation>Nanjing Boao Culture Technology Company Limited, China</affiliation>
+                    <email>zhangmengyue_boao@qq.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wang</surname>
+                        <forename>Jisheng</forename>
+                    </persName>
+                    <affiliation>The Institute of Archaeology, Chinese Academy of Social Sciences, China</affiliation>
+                    <email>513923540@qq.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Li</surname>
+                        <forename>Mengqi</forename>
+                    </persName>
+                    <affiliation>Shanghai Traditionow Culture Development Corporation Limited, China</affiliation>
+                    <email>manchi.li@traditionow.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Chinese colour</term>
+                    <term>textile colour</term>
+                    <term>text mining</term>
+                    <term>natural dyes</term>
+                    <term>perceptual evaluation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>data</term>
+                    <term>object</term>
+                    <term>and artefact preservation</term>
+                    <term>text mining and analysis</term>
+                    <term>Archaeology</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The Chinese handicraft, Nanjing Brocade, is a traditional luxury silk served for royal and noble family during the 13th to the 20th century. It was weaved from polychrome yarns and represented the topmost craftsmanship of natural dyeing and weaving in China (Huang et al., 2003). The ancients created hundreds of colours by over-dyeing, and used numerous terms to describe the varied colours, reflecting their perception and congnition towards colours. However, colour knowledge of Nanjing Brocade has not been systematically and precisely documented. Colour cognition or dyeing technique was mainly kept as tacit experience knowledge and passed on from master to apprentice privately. Hence, Chinese colour knowledge has been forgotten slowly. And with the ancient fabrics irreversibly fading, it’s difficult to tell what colours they once were, and how to reoccur them. Nowadays, there are projects trying to recover the ancient textiles colour, but most of the time remained in traditional way of literature interpretation and experience induction (Kim, 2006; Liu, et al., 2020). A comprehensive study using digital methodology on Nanjing Brocade colour is in lack. We can learn from researchers in other fields, such as Li (2019) who explored the colour of ancient Chinese buildings basing on the analyses of literature, cultural relics, and techniques, with the experiments of pigments remaking.</p>
+            <p>This research introduces a comprehensive research on the colour knowledge of Nanjing Brocade that leverages information from literature, artifacts, and expert experience. Based on the digital methodology of text mining, dyeing experiment, and perceptual evaluation, the research explores a way of knowledge production that produces systematic, accurate, and standard scientific knowledge. The research results demonstrate the colour range of Nanjing brocade from both conceptual and visual perspectives. The main process is shown in Fig. 1.</p>
+            <figure>
+                <graphic n="1001" width="18.00754166666667cm" height="3.869972222222222cm" url="Pictures/6dece0bf4e16a68076097d3359cac726.png" rend="inline"/>
+            </figure>
+            <p>Fig. 1: The knowledge production process of Nanjing brocade colour</p>
+            <p>Firstly, in order to solve the problem that traditional literature knowledge is scattered, we created a database for the relevant literature and collected information of colour terms through text mining (Tan, 1999). MARKUS, a text analysis and reading platform, was used to label the colour terms of Nanjing brocade and other entities such as its pattern, date and wearer’s identity. Then, with the help of a text database built on DocuSky collaboration platform, a list of colour terms were generated. Further statistics and analyses focused on the frequency and categories of colour terms, revealing the conceptual colour range of Nanjing brocade. We found 73 different colour terms in the entire corpus, occurring nearly 1000 times in total. Red and cyan are the dominant hues of Nanjing brocade, and the most commonly used colours were 
+                <hi rend="italic">dahong</hi> (scarlet), 
+                <hi rend="italic">minghuang</hi> (bright yellow), 
+                <hi rend="italic">chenxiang</hi> (agilawood brown), 
+                <hi rend="italic">shiqing</hi> (mineral blue), and so on (Fig. 2). The correlations between colour and hierarchy, gender, pattern, etc. were also explored through co-occurrence analysis. For example, the colour diversity of men’s clothing of Nanjing brocade was much lower than that of women’s clothing.
+            </p>
+            <figure>
+                <graphic n="1002" width="17.982847222222222cm" height="6.764513888888889cm" url="Pictures/5791613af6d8d4a518b96d7a822fad74.png" rend="inline"/>
+            </figure>
+            <p>Fig. 2: The distribution of Nanjing brocade colour terms: (a) Word cloud by the frequency of individual terms. (b) Hue categories proportion of all colour terms. (Colours in the chart are just indicative.)</p>
+            <p>Secondly, experiments were carried out in order to solve the problem of blurriness of dyeing knowledge. High performance liquid chromatography (HPLC) were used to detect the natural dyes in textile fragments (Pauk et al., 2014), basing on the chromatogram comparison between textile fragments and reference dyed samples (Fig. 3). Then, dyeing experiments were designed according to the information obtained from text mining, HPLC and the experience of professional dyers. Two experts participated in and conducted more than 35 experiments with 21 natural dyes. Although dealing with ancient techniques, the whole dyeing process followed the requirements of scientific experimentation. The weather, environment, materials, tools, procedures and results of the dyeing process were recorded in detail, as well as measurement data of time, amount, temperature, pH, and other dyeing conditions. Pictures and videos were also captured by digital cameras throughout the experiments. The experiment produced 434 dyed samples, all of which were measured the CIELCh value by a spectrophotometer, and each samples were drawn in the LCh colour space (Fig. 4). Comparing our natural dyeing results to synthetic dyeing swatches used nowadays, it’s clear that the colour saturation of traditional Nanjing brocade should be much lower than today’s products. </p>
+            <figure>
+                <graphic n="1003" width="17.390180555555556cm" height="9.622013888888889cm" url="Pictures/53bff67f6dd1bafb671dcf44d845b0f4.png" rend="inline"/>
+            </figure>
+            <p>Fig. 3: The HPLC chromatogram comparison of a yellow relic sample (red line) with reference sample dyed with pagoda bud (green line).</p>
+            <figure>
+                <graphic n="1004" width="18.34973611111111cm" height="4.885972222222223cm" url="Pictures/58a3a7bcd87a569caf96e3098c9f74b7.png" rend="inline"/>
+            </figure>
+            <p>Fig. 4: (a) The CIELCh colour space of natural dyed samples. (b) The CIELCh colour space of the Nanjing Brocade Silk Colour Swatches made with synthetic dyes.</p>
+            <p>Thirdly, the evaluation of colour perception by experts were conducted to change the subjective and blurry perception into quantitative data. Experts were asked to point out the ideal colour of each colour term in the LCh colour space. Although their perception differs a little, we could calculate the average LCh value of each colour and select a closest dyed sample. </p>
+            <p>With all the data and samples obtained, a colour specification of Nanjing brocade will be published, consisting of colour terms, colour samples (physical or digital), dyeing information and LCh values (Fig. 5). It will provide specific guidance for the heritage conservation and handicraft production of Nanjing brocade, with colour identification and communication being faster and more accurate. Besides, it is a dynamic, inclusive colour specification that will expand and update as research progresses. The methodology presented in this work, along with our literature database and natural dyes database, also provides a reference for other researchers of textile colour.</p>
+            <figure>
+                <graphic n="1005" width="13.881805555555555cm" height="11.359444444444444cm" url="Pictures/33924f5a23a80b5ccfa1dca0e1518c00.png" rend="inline"/>
+            </figure>
+            <p>Fig. 5: The specification of 10 typical colours of Nanjing brocade: (a) With natural dyeing silk samples. (b) With digital samples.</p>
+            <p>
+                <hi rend="bold">DocuSky Collaboration Platform.</hi> http://docusky.org.tw.
+            </p>
+            <p>
+                <hi rend="bold">Huang, N., Wang, B., and Z. Xiao.</hi> (2003). 
+                <hi rend="italic">Nanjing Brocade of China</hi>. Nanjing: Nanjing Press.
+            </p>
+            <p>
+                <hi rend="bold">Kim, S. H</hi>. (2006). 
+                <hi rend="italic">The classical colors of China.</hi> Yunnan, China: Yunnan People’s Publishing House.
+            </p>
+            <p>
+                <hi rend="bold">Li, L.</hi> (2019). New attempt on the construction of Chinese traditional colour system: Quantitative analysis and colour range exploration based on literature, relics and techniques. 
+                <hi rend="italic">The 2019 Annual Conference Proceedings on Chinese Traditional Colours.</hi> Beijing, China: Culture and Art Publishing House.
+            </p>
+            <p>
+                <hi rend="bold">Liu, J., Wang, Y., et al.</hi> (2020). 
+                <hi rend="italic">The Qianlong palette: The research on dyes in the 17th–19th century textiles and reconstitution of the Qing dynasty colors.</hi> Zhejiang, China: Zhejiang University Press.
+            </p>
+            <p>
+                <hi rend="bold">MARKUS.</hi> Text Analysis and Reading Platform. https://dh.chinese-empires.eu/beta/.
+            </p>
+            <p>
+                <hi rend="bold">Pauk, V., Barták, P., and Lemr, K.</hi> (2014). Characterization of natural organic colourants in historical and art objects by high-performance liquid chromatography. 
+                <hi rend="italic">Journal of Separation Science,</hi>
+                <hi rend="bold">37</hi>(23): 3393-3410.
+            </p>
+            <p>
+                <hi rend="bold">Tan, A. H.</hi> (1999). Text mining: The state of the art and the challenges. 
+                <hi rend="italic">Proceedings of the pakdd 1999 workshop on knowledge discovery from advanced databases</hi>. Vol. 8, pp. 65-70. 
+            </p>
+        </body>
+    </text>
+</TEI>

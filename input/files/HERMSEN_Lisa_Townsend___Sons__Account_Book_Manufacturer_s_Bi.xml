@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Townsend &amp; Sons, Account Book Manufacturer’s Bisuness Guide and Works Manual: 19th Century Primary Manuscript Source and TEI Encoding</title>
+                <author>
+                    <persName>
+                        <surname>Hermsen</surname>
+                        <forename>Lisa</forename>
+                    </persName>
+                    <affiliation>Rochester Institute of Technology</affiliation>
+                    <email>lismariehermsen@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Walker</surname>
+                        <forename>Rebekah</forename>
+                    </persName>
+                    <affiliation>Rochester Institute of Technology</affiliation>
+                    <email>rgwtwc@rit.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T15:25:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>TEI</term>
+                    <term>Digital Edition</term>
+                    <term>Bookbinding</term>
+                    <term>Common-Place</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>19th Century</term>
+                    <term>manuscripts description</term>
+                    <term>representation</term>
+                    <term>and analysis</term>
+                    <term>Book and print history</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="color(222222)" style="font-size:11pt" xml:space="preserve">The session will describe the application of TEI guidelines to encode an idiosyncratic primary source manuscript–a volume from the collection of The William Townsend &amp; Sons, Printers,  Stationers, and Account Book Manufacturers, Sheffield UK (1830-1910). </hi>
+                <hi style="font-size:11pt" xml:space="preserve">Volume 3, “Business Guide and Works Manual,” is a remarkable manuscript both for book history and cultural observations about unionization, gender roles, and credit/debit accounting. The extraordinary complexity of the manuscript’s structure requires that it be marked up to render a readable document. </hi>
+                <hi rend="color(222222)" style="font-size:11pt">This project is using Text Encoding Initiative (TEI) Guidelines to create a digital edition, illuminating such key topics as the Townsend firm’s social networks, information on the men, women and apprentices who worked for the firm between 1830 and 1910, and the web of economic partners with whom the firm did business. The digital edition will be accompanied by documentation of editorial decisions about encoding that will serve as a potential model for other digitized volumes in the Townsend collection, as well as other complex primary sources.</hi>
+            </p>
+            <p>
+                <hi rend="color(222222)" style="font-size:11pt">Volume 3 is the most rewarding volume, given its record of day-to-day activity in a stationery binding firm. Stationery binding is a type of underappreciated and lesser known book trade (Pickwoad, 2009). While the history of bookbinding most often refers to externally decorated bindings, stationery binding “satisfies” the inner workings of the useful book (Monk, 1912). William Townsend manufactured account books deliberately for double entry accounting. The account book itself, scholars note, changed practices from single entry to double entry accounting, a critical part of an emerging capitalist economy. Scholars agree that debit/credit bookkeeping coincided with the rise of factory industries, wage labor, and capital investment (Edwards, 1989) and that accounting in the nineteenth century was at least coincidently connected to the growth of modern capitalism (Geeson-White, 2012). </hi>
+            </p>
+            <p>The Townsend manuscript is extraordinarily complex. It contains no obvious textual demarcations, no reliable pagination or progressive date notations. The manuscript may be considered a nineteenth-century common-place book, without the logical indices of the long tradition (Havens 2001). This index is alphabetical but subject headings are hardly informative, with entries like “thoughts and ideas” and “jottings.” It is filled with notes tucked into margins and ephemera inserted in seemingly random places. There are marginal references to God, William Shakespeare, and Charles Dickens, as well as allusions to little- or unknown authors. Volume 3 contains hundreds of addresses for individual people and proprietor-named businesses. There are specific instructions for book binding, including lists of required materials and a recipe for glue. The manuscript is messy and the markup up requires flexible language, careful interpretation, and customized editing. </p>
+            <p>
+                <hi rend="color(222222)" style="font-size:11pt">The Townsend volume records the cost of doing business, and so also belongs to a genre of documents—Historical Financial Records. It provides an opportunity to examine the relationship between financial artifacts and the worlds in which they were produced and embedded (Tomasek and Bauman, 2014). However, the financial accounts in this collection are recorded in ambiguous tabular form with in-text page references to nearly indecipherable price keys. For example, Townsend provides a “key” to determine the size of an account book. The formula is figured using imperial standards for the size of a sheet of paper (i.e. Foolscap) and quarto or octavo folds of the sheet and the number of sheets. This formula, along with the type of ruling and binding, provides the necessary numbers for the arithmetic that will determine the price of an account book.</hi>
+            </p>
+            <p>
+                <hi rend="color(222222)" style="font-size:11pt">We have encoded over 100 pages of this 400-page manuscript. The encoding has had to be innovative in the use of divisions and abstract blocks. The many tables have been difficult to represent, but the encoding reveals some logic. We have started to encode for labor in hours and wages, and in a process that allows for comparisons throughout the manuscript. We are identifying materials, with and without measurable units, and developing an adequate encoding practice. We will want to capture the methods of binding, if possible. We have yet to decipher the “keys” for calculating sizes and prices of paper, or even to understand the numbers on the page. The paper will draw upon work already underway to develop a robust markup for numbers and measurements (Kokaze, et al., 2020). </hi>
+            </p>
+            <p>
+                <hi style="font-size:11pt" xml:space="preserve">We are using several TEI projects as models for the Digital Townsend. Our introduction to TEI came through the </hi>
+                <ref target="https://www.wwp.northeastern.edu/">
+                    <hi rend="color(1155CC)" style="font-size:11pt">Women Writers Project</hi>
+                </ref>
+                <hi style="font-size:11pt" xml:space="preserve">, which continues to frame our understanding of the way TEI guidelines can be used to markup complex and multi-layered documents. </hi>
+                <ref target="https://www.wwp.northeastern.edu/research/projects/manuscripts/emerson/">
+                    <hi rend="color(1155CC)" style="font-size:11pt">The Almanacks of Mary Moody Emerson</hi>
+                </ref>
+                <hi style="font-size:11pt" xml:space="preserve"> offers insight on producing digital editions of unconventional (and long) volumes. Additional models, including the Folger Library’s </hi>
+                <ref target="https://emmo.folger.edu/">
+                    <hi rend="color(1155CC)" style="font-size:11pt">Early Modern Manuscripts Online</hi>
+                </ref>
+                <hi style="font-size:11pt" xml:space="preserve">, </hi>
+                <ref target="https://civilwargovernors.org/">
+                    <hi rend="color(1155CC)" style="font-size:11pt">The Civil War Governors of Kentucky</hi>
+                </ref>
+                <hi style="font-size:11pt" xml:space="preserve"> project, </hi>
+                <ref target="https://washingtonpapers.org/editions/financial-papers-project/">
+                    <hi rend="color(1155CC)" style="font-size:11pt">George Washington’s Financial Papers</hi>
+                </ref>
+                <hi style="font-size:11pt" xml:space="preserve"> project. The research and experimentation in the </hi>
+                <ref target="https://gams.uni-graz.at/context:srbas">
+                    <hi rend="color(1155CC)" style="font-size:11pt">Accounts of the City of Basel</hi>
+                </ref>
+                <hi style="font-size:11pt" xml:space="preserve"> is a model to consider the financial records in our volume and to determine whether the TEI guidelines are sufficient to meaningfully encode accounting practices, and the structuring of income and expenditure. </hi>
+            </p>
+            <p>
+                <hi rend="color(222222)" style="font-size:11pt" xml:space="preserve">The Townsend collection was acquired by the Cary Graphic Arts Collection at the Rochester Institute of Technology as a part of The Bernard C. Middleton Collection of Books on the History and Practice of Bookbinding, one of the world’s most comprehensive collections on the subject, including both historical and contemporary materials from (including but not limited to) England, France, India, Japan, Portugal, Sudan, and Turkey. All volumes are digitized and publicly available through </hi>
+                RIT Libraries' Digital Collections.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold color(222222)" style="font-size:11pt">Edwards, J.R.</hi>
+                        <hi rend="color(222222)" style="font-size:11pt" xml:space="preserve"> (1989). A History of Financial Accounting. United Kingdom: Routledge University Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(222222)" style="font-size:11pt">Geeson-White, J.</hi>
+                        <hi rend="color(222222)" style="font-size:11pt" xml:space="preserve"> (2012). Double Entry: How the Merchants of Venice Created Modern Finance. </hi>
+                        <hi rend="color(0F1111)" style="font-size:11pt">W. W. Norton &amp; Company</hi>
+                        .
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(222222)" style="font-size:11pt">Havens, E</hi>
+                        <hi rend="color(222222)" style="font-size:11pt">. (2001). Commonplace Books: A History of Manuscripts and Printed Books from</hi>
+                    </bibl>
+                    <bibl>Antiquity to the Twentieth Century. New Haven: Yale University.</bibl>
+                    <bibl>
+                        <hi rend="bold color(222222)" style="font-size:11pt">Kokaze, N. et al</hi>
+                        <hi rend="color(222222)" style="font-size:11pt" xml:space="preserve">. (2020). Toward a Model for Marking up Non-SI Units and Measurements. Journal of Text Encoding Initiatives. </hi>
+                        <ref target="https://doi.org/10.4000/jtei.1996">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.4000/jtei.1996</hi>
+                        </ref>
+                        <hi rend="color(222222)" style="font-size:11pt" xml:space="preserve"> (accessed 15 April 2022). </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(222222)" style="font-size:11pt">Monk, L. J.</hi>
+                        <hi rend="color(222222)" style="font-size:11pt" xml:space="preserve"> (1912). A Text Book of Stationery Binding. Raithby, Lawrence, and Co.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(222222)" style="font-size:11pt">Pickwoad, N</hi>
+                        <hi rend="color(222222)" style="font-size:11pt">. (2009). In Suarez, M. S. and Turner, M. L. (eds), The Cambridge History of the Book in Britain. United Kingdom: Cambridge University Press. pp. 268-290. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(222222)" style="font-size:11pt">Tomasek, K. and Bauman, S.</hi>
+                        <hi rend="color(222222)" style="font-size:11pt" xml:space="preserve"> (2014). Encoding Financial Records. </hi>
+                        <ref target="http://journalofdigitalhumanities.org/author/ktomasek/">
+                            <hi rend="color(1155CC)" style="font-size:11pt">http://journalofdigitalhumanities.org/author/ktomasek/</hi>
+                        </ref>
+                        <hi rend="color(222222)" style="font-size:11pt" xml:space="preserve"> (accessed 15 April 2022).</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

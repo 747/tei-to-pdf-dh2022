@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Close Reading: An Interactive Educational System for Learning How to Read Poetry</title>
+                <author>
+                    <persName>
+                        <surname>Risha</surname>
+                        <forename>Zak</forename>
+                    </persName>
+                    <affiliation>School of Computing and Information, University of Pittsburgh</affiliation>
+                    <email>zak.risha@pitt.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ma</surname>
+                        <forename>Rongqian</forename>
+                    </persName>
+                    <affiliation>School of Computing and Information, University of Pittsburgh</affiliation>
+                    <email>rom77@pitt.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-19T19:43:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>close reading</term>
+                    <term>education technology</term>
+                    <term>interface design</term>
+                    <term>poetry pedagogy</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>Interface design</term>
+                    <term>development</term>
+                    <term>and analysis</term>
+                    <term>software development</term>
+                    <term>systems</term>
+                    <term>analysis and methods</term>
+                    <term>Education/ pedagogy</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">While educational technology research has evolved substantially in the past few decades, there’s evidence that more attention and research has focused on STEM subject areas rather than the humanities (Roll and Wylie, 2016). Additionally, many novel technologies developed by digital humanists have prioritized augmenting research instead of teaching and pedagogy (Fletcher, 2019). Our work seeks to specifically focus on novel educational technology in the humanities by introducing 
+                    <hi rend="italic">Close Reading</hi>, a web application for teaching users how to read English poetry. Reading poetry involves additional processes such as identifying and interpreting figurative language and paying close attention to the syntax, sequence of ideas, as well as the structure of the text. 
+                    <hi rend="italic">Close Reading</hi> uses a series of interactive pedagogical strategies to cultivate such reading practices in novice readers. Our presentation describes the system interface, activities, and strategies in detail as well as shares current progress and future work for evaluating and piloting the software.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Literature review</head>
+                <p style="text-align: left; ">Scholars have previously developed related platforms for poetry aimed to augment research and teaching. The 
+                    <hi rend="italic">Chinese Text Project</hi> (Sturgeon, 2021) is a dynamic digital library of pre-modern Chinese writing, such as poetry, that builds on the design of crowdsourced collaboration platforms like Wikipedia by adding additional integration with text mining tools to augment research. Using a more interactive approach to engage users, 
+                    <hi rend="italic">Jiuge</hi> (Zhipeng et al., 2019) facilitates human machine collaborative generation of Chinese classical poetry that can provide scaffolding to aid beginners in understanding the process of creating poetry. Other systems have more explicitly emphasized the teaching capabilities for poetry, such as 
+                    <hi rend="italic">For Better for Verse</hi> (Tucker, 2011) which is a learning system that uses interactive techniques to teach meter (the rhythmic structure of a poem) of English Victorian poems. Likewise, Chen &amp; Lin (2016) designed an educational game for Chinese language poetry education that attempted to provide additional context to poems by simulating aspects of the poets' lives.
+                </p>
+                <p style="text-align: left; ">In contrast, our system focuses on teaching close reading, a method that emerged from the movement of New Criticism during the 20th century and promotes close and detailed examination of literary texts. It is also a popular pedagogical technique to teach subjects in English literature, and more specifically, poetry (Brooks, 1947; Macey, 2000). Technologies related to the close reading of poetry have sought to support and augment the process for users. 
+                    <hi rend="italic">Poemage</hi> (McCurdy et al., 2016) is a visualization tool that allows users to interactively explore the sonic topology of a poem. 
+                    <hi rend="italic">Metatation</hi> (Mehta et al., 2017) is a system that augments critic’s annotations as they close read by automatically providing additional information by searching external resources. Our approach focuses more on teaching close reading rather than augmenting it.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>System summary</head>
+                <figure>
+                    <graphic n="1001" width="14.785075cm" height="8.419277777777777cm" url="Pictures/952c3cf0edaebd60ea9ed8baaeb30817.png" rend="inline"/>
+                    <head>An example of the Close Reading system interface</head>
+                </figure>
+                <p style="text-align: left; ">The 
+                    <hi rend="italic">Close Reading</hi> system consists of an interactive interface (Figure 1) where learners advance through four to five activities (Figure 2) relating to a specific poem. These activities are progressive, building on one another in complexity and difficulty.
+                </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Pedagogical activities</head>
+                    <list rend="bulleted">
+                        <item>
+                            <hi rend="bold">Blocking:</hi> Learners use an interface to block a poem without stanzas into meaningful sections, helping them chunk the text, make note of changes, and summarize the more literal aspects of the poem.
+                        </item>
+                        <item>
+                            <hi rend="bold" xml:space="preserve">Think Aloud: </hi>This activity uses interactive animations to share a mental model of an expert reading and interpreting a poem.
+                        </item>
+                        <item>
+                            <hi rend="bold">Pressure Points:</hi> This activity targets specific parts of the poem relating to the problem/s of the poem, asking the user to respond to a related prompt.
+                        </item>
+                        <item>
+                            <hi rend="bold">Reflection:</hi> Users are asked to apply aspects of the poem to life experiences, reflecting on how the themes and issues of the poem might apply to their own life.
+                        </item>
+                    </list>
+                    <figure>
+                        <graphic n="1002" width="15.592777777777778cm" height="6.35cm" url="Pictures/24105f90c9c77765a58dda79157c591b.png" rend="inline"/>
+                        <head>The four activities of 
+                            <hi rend="italic">Close Reading</hi>: blocking (top left), think aloud (top right), pressure point (bottom left), and reflection (bottom right).
+                        </head>
+                    </figure>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Current progress and future work</head>
+                <p style="text-align: left; ">After a prototype was built, we introduced the system to 20 students enrolled in an undergraduate reading poetry course at a university in the Northeastern United States. Our goals were to evaluate these interactive activities and overall usability of the platform. Our preliminary results helped illustrate how the platform could potentially increase students’ ability and confidence in interpreting poetry. We report on impressions from students and the challenges of evaluating 
+                    <hi rend="italic">Close Reading</hi>’s effectiveness. In the future, we plan to continue refining our evaluation and design methods to better understand how technologies can support the teaching of close reading. While a pedagogically focused project, we believe valuable data will be generated from future user studies and system use for further research in this area.
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Brooks, C.</hi> (1947). 
+                        <hi rend="italic">The Well Wrought Urn: Studies in the Structure of Poetry</hi>. Reynal &amp; Hitchcock.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Chen, H. R. and Lin, Y. S.</hi> (2016). An Examination of Digital Game-Based Situated Learning Applied to Chinese Language Poetry Education. 
+                        <hi rend="italic">Technology, Pedagogy and Education</hi>, 25(2): 171–86.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fletcher, C.</hi> (2019). Educational Technology and the Humanities: A History of Control. In Gold, M.K. and Klein, L.F. (eds), 
+                        <hi rend="italic">Debates in the Digital Humanities 2019</hi>. University of Minnesota Press, pp. 369–81.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Macey, D.</hi> (2000). 
+                        <hi rend="italic">The Penguin Dictionary of Critical Theory</hi>. Penguin London.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">McCurdy, N., Lein, J., Coles, K. and Meyer, M.</hi> (2016). Poemage: Visualizing the Sonic Topology of a Poem. 
+                        <hi rend="italic">IEEE Transactions on Visualization and Computer Graphics</hi>, 
+                        <hi rend="bold">22</hi>(1): 439–48.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Mehta, H., Bradley, A., Hancock, M. and Collins, C. </hi>(2017). Metatation: Annotation as Implicit Interaction to Bridge Close and Distant Reading. 
+                        <hi rend="italic">ACM Transactions on Computer-Human Interaction</hi>, 24(5): 35:1-35:41.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Roll, I. and Wylie, R.</hi> (2016). Evolution and Revolution in Artificial Intelligence in Education. 
+                        <hi rend="italic">International Journal of Artificial Intelligence in Education</hi>, 26(2): 582–99.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sturgeon, D.</hi> (2021). Chinese Text Project: A Dynamic Digital Library of Premodern Chinese. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 36(Supplement_1): i101–12.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Tucker, H. F.</hi> (2011). Poetic Data and the News from Poems: A For Better for Verse Memoir. 
+                        <hi rend="italic">Victorian Poetry</hi>, 49(2): 267–81.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Zhipeng, G., Yi, X., Sun, M., Li, W., Yang, C., Liang, J., Chen, H., Zhang, Y. and Li, R. </hi>(2019). Jiuge: A Human-Machine Collaborative Chinese Classical Poetry Generation System. In 
+                        <hi rend="italic">Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics: System Demonstrations</hi>. Florence, Italy: Association for Computational Linguistics, pp. 25–30.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

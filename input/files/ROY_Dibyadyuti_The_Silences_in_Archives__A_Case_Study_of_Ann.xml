@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Silences in Archives: A Case Study of Annual Reports from Archives at the National Centre for Biological Sciences, India</title>
+                <author>
+                    <persName>
+                        <surname>Roy</surname>
+                        <forename>Dibyadyuti</forename>
+                    </persName>
+                    <affiliation>Indian Institute of Technology (IIT) Jodhpur, India</affiliation>
+                    <email>dibyadyutir@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Taparia</surname>
+                        <forename>Kanishtha</forename>
+                    </persName>
+                    <affiliation>Indian Institute of Technology (IIT) Jodhpur, India</affiliation>
+                    <email>taparia.1@iitj.ac.in</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Srinivasan</surname>
+                        <forename>Venkat</forename>
+                    </persName>
+                    <affiliation>Archive at the National Centre for Biological Sciences (NCBS)</affiliation>
+                    <email>venkats@ncbs.res.in</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T14:42:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital archives; NCBS; history of science; gender; India</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>digital archiving</term>
+                    <term>rhetorical analysis</term>
+                    <term>Feminist studies</term>
+                    <term>History of science</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Contemporary Digital Humanities Scholarship has placed considerable emphasis on the power of archives that has its etymological root in the Greek word "Arkhe"—simultaneously connoting commencement and commandment—as not only sites of preservation but also as opportune sites of exclusion. Institutional archives in particular, through their exclusion of certain records and narratives, create epistemic gaps that enable dominant narratives while concurrently silencing minority voices, events, and subjectivities. In particular for scientific and research institutions, institutional archives and repositories provide crucial evidence of the challenges overcome in the pursuit of scientific knowledge as well as the subtle social changes precipitated by the growth of science and technology in local contexts. Contextually in India, colonial legacies combined with the vagaries of postcolonial statecraft ensure that many of the leading scientific and research institutes in India do not have any institutional archives. A notable outlier is the Archives at The National Center for Biological Sciences (NCBS), which is a collecting archive chronicling the growth of the NCBS along with being a site to document the history of contemporary biology in India. The NCBS was established in 1992 and is a part of the Tata Institute of Fundamental Research, Mumbai (TIFR) which is a National Centre of the Government of India, under the umbrella of the Department of Atomic Energy.</p>
+            <p style="text-align: left; ">While considerable importance is given in archival and DH scholarship to first person accounts of scientists and similar dominant stakeholders, there is hardly any scholarship that looks at the annual reports of scientific institutions as knowledge systems that generate new questions or inaugurate new models of inquiry. Further existing scholarship has drawn attention toward the underrepresentation of female scientists in archival spaces: but have rarely parsed how institutionalized gender biases mediate such silences. In addressing these lacunae, this project will narrate the results, complications and future directions of an exploratory study which analyses the digitized annual reports for a period of 25 years (1992-2017) from the Archives of the National Center for Biological Sciences (NCBS).</p>
+            <p style="text-align: left; ">There is sparse research that evaluates the socio-cultural undertones of an organization evidenced through its annual reports (Jagolinzer, 2021). Although the key purpose of annual reports is to provide public-domain disclosure of the operations and financial activities of the organization over the year, they are also opportune sites to understand institutional biases and silences. In focusing on the annual reports of NCBS over a 25-year period this project draws attention to this underappreciated genre that is often described as the most common medium for communicating strategies and plans, past performance, and future expectations of an organization (Srinivasan and Marques, 2017). In particular for research institutions, annual reports not only provide periodic research updates but also documents the subterranean and hegemonic policies, framing research frameworks and decisions. The analytical lens employed in this study employs the intersecting domains of Digital Humanities, Gender Studies, and STS (Science and Technology Studies). We employ CTDA (Critical Techno-cultural discourse analysis) as the guiding methodology to identify and recover the gendered institutional silences, biases, and underappreciated female subjectivities which often remain elided within normative research on and about scientific institutions. The CTDA triad of 
+                <hi rend="italic">technology</hi>, 
+                <hi rend="italic">technology in practice</hi>, and 
+                <hi rend="italic">socio-cultural beliefs</hi> is operationalized with digital archives, the act of archiving and hegemonic masculinity representing the three facets respectively. With the use of this methodology attention is drawn towards the ways women scientists are perceived in institutional archival spaces.
+            </p>
+            <p style="text-align: left; ">By articulating significance and interpretation of archives in digital spaces, we examine the discourse of gender representation in digitally archived objects such as these annual reports. Further, to qualitatively assess the issue of women’s representation in science, we operationalize techno-feminism (combining STS and Feminism) asserting that the technological advancements and social circumstances are not mutually exclusive. With an emphasis to understand gendered institutional silences, we also supplement our analysis with interviews of women scientists from NCBS. Our intervention combines a longitudinal computational analysis of digitized annual reports from the NCBS archive over a 25-year period with qualitative interviews to exemplify the potential of Critical Digital Humanities: to not only shed new light on the gendered and unexplored facets of scientific research in Global South spaces but also develop unique methodological approaches for insightful methods of knowledge creation in DH.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl> </bibl>
+                    <bibl>
+                        <hi rend="color(222222)" style="font-size:12pt"> Brock, A. (2016). Critical technocultural discourse analysis: </hi>
+                        <hi rend="italic color(222222)" style="font-size:12pt">Sage Publication</hi>
+                        <hi rend="color(222222)" style="font-size:12pt">, </hi>
+                        <hi rend="italic color(222222)" style="font-size:12pt">20</hi>
+                        <hi rend="color(222222)" style="font-size:12pt">(3), 1012–1030.</hi>
+                    </bibl>
+                    <bibl>Jagolinzer, A. (2021). Annual reports should inform society – not only those with a financial interest.</bibl>
+                    <bibl>
+                        <hi rend="color(222222)" style="font-size:12pt">Jasanoff, S. (2004). The Idiom of Co-Production. In </hi>
+                        <hi rend="italic color(222222)" style="font-size:12pt">States of Knowledge: The Co-Production of Science and Social Order </hi>
+                        <hi rend="color(222222)" style="font-size:12pt">(pp. 1–12). Taylor &amp; Francis.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Srinivasan, P., &amp; Marques, A. (2017). </hi>
+                        <hi rend="italic" style="font-size:12pt">Narrative analysis of annual reports: A study of communication efficiency</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (No. 486).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222)" style="font-size:12pt">Wajcman, J. (2010). Feminist theories of technology. </hi>
+                        <hi rend="italic color(222222)" style="font-size:12pt">Cambridge Journal of Economics</hi>
+                        <hi rend="color(222222)" style="font-size:12pt">, </hi>
+                        <hi rend="italic color(222222)" style="font-size:12pt">34</hi>
+                        <hi rend="color(222222)" style="font-size:12pt">(1), 143–152. </hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

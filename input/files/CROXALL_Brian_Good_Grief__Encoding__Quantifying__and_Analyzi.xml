@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Good Grief! Encoding, Quantifying, and Analyzing <hi rend="italic">Peanuts</hi> in the Classroom </title>
+                <author>
+                    <persName>
+                        <surname>Croxall</surname>
+                        <forename>Brian</forename>
+                    </persName>
+                    <affiliation>Brigham Young University, United States of America</affiliation>
+                    <email>brian.croxall@byu.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-27T23:36:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>comics</term>
+                    <term>pedagogy</term>
+                    <term>encoding</term>
+                    <term>text analysis</term>
+                    <term>network analysis</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>text encoding and markup language creation</term>
+                    <term>deployment</term>
+                    <term>and analysis</term>
+                    <term>text mining and analysis</term>
+                    <term>Education/ pedagogy</term>
+                    <term>Media studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">At first, the 
+                <hi rend="italic">Peanuts</hi> comic of 23 January 1952 seems easy to understand. Charlie Brown and Schroeder, two of Charles M. Schulz’s most familiar characters, talk about the music the latter is playing. Upon looking closer, the visual representation is far more complex than what is expected: Schulz reproduces the opening stanzas of Beethoven’s “Grosse Sonate für das Hammerklavier” (Piano Sonata No.29, Op.106); Schroeder, responding to Charlie Brown’s question about the piece, replies in German; and his speech is rendered in 
+                <hi rend="italic">Fraktur</hi>; Charlie Brown’s response is a single typographic character; and Schulz signs his name in the final panel in 
+                <hi rend="italic">Fraktur</hi>. 
+            </p>
+            <p style="text-align: left; ">How do you train students to see the complications in this strip? One solution would be to have them read Scott McCloud’s accessible classic 
+                <hi rend="italic">Understanding Comics</hi>, Hilary Chute’s more recent 
+                <hi rend="italic">Why Comics?</hi>, or the audacious 
+                <hi rend="italic">How to Read</hi> Nancy by Paul Karasik and Mark Newgarden. But another solution would be to have them read the comics very closely through the act of encoding them and to then quantify their findings. In this presentation, I will discuss recent courses I have taught that have taken a digital humanities approach to Schulz’s corpus. 
+            </p>
+            <p style="text-align: left; ">
+                <hi rend="italic">Peanuts</hi> first appeared in October 1950. As a “space-saving strip,” which meant editors could arrange its panels in different ways on the comics page, Schulz’s strip may have appeared destined to be quickly forgotten (Schulz, “An Interview” 316). Instead, he continued drawing strip after strip for the next 50 years. When the final Peanuts strip was published on 13 February 2000 (the morning after Schulz had passed away), he had singlehandedly drawn, inked, and lettered 17,897 strips, resulting in what Robert Thompson called the “longest story ever told by one human being” (qtd. in Boxer). 
+                <hi rend="italic">Peanuts</hi> influenced not only other comics but culture as a whole, with Charlie Brown, Snoopy, and the others being some of the most recognizable characters on earth. Compared to the strips that preceded Schulz’s, such as 
+                <hi rend="italic">The Yellow Kid</hi> (1895-1898), 
+                <hi rend="italic">Krazy Kat</hi> (1913-1944), and 
+                <hi rend="italic">Pogo</hi> (1948-1975), or those that followed it, including 
+                <hi rend="italic">The Far Side</hi> (1979-1995) and 
+                <hi rend="italic">Calvin and Hobbes</hi> (1985-1995), Schulz’s style of both illustration and humor was minimal. But as the preceding paragraph suggests, simplicity does not preclude complexity.
+            </p>
+            <p style="text-align: left; ">For the last two years, I have taught a semester-long “Research in Digital Humanities” course that focuses on Schulz’s work. While we closely read more than four years worth of strips, we extend our understanding of Schulz’s work through the application of different digital humanities methods. First, we have collectively begun a digital edition of 
+                <hi rend="italic">Peanuts</hi>, encoding strips according to both TEI and the Comic Book Markup Language (CBML; see Walsh). Encoding strips allows us to precisely record features of strips, including setting, weather, activities the characters are engaged in, and whether the strips are tied to a particular holiday (see Croxall et al, 
+                <hi rend="italic">Peanuts Taxonomy</hi>). We tag characters who are named in the strip as well as place names, and record speech, sounds, types of speech bubbles, and diegetic text that appears in the strip. Throughout this process, the choices of what we encode are collectively determined by the class (see Croxall et al, 
+                <hi rend="italic">Peanuts Encoding Editorial Decisions</hi>). We discuss the encoding regularly in class sessions, as precision requires us to look carefully at both the comic and the TEI and CBML guidelines. 
+            </p>
+            <p style="text-align: left; ">While we slowly build this digital edition, we also use a data set of transcriptions (similar to 
+                <hi rend="italic">alt-text</hi>) harvested from the 
+                <hi rend="italic">GoComics</hi> website that gives us the ability to search across all 50 years of the comics’ history. With these two different data sets—one small and precise, the other broad and varied—we then engage in distant reading approaches. The first year of the class was dedicated to determining character co-occurrence within the strips and analyzing the networks among Schulz’s characters (see Fig. 1). The second year found us using stylometry to determine whether the different characters had distinct speaking patterns. In the upcoming semester (Winter 2022), we will consider the bounds of season for both weather and sports. 
+            </p>
+            <p style="text-align: left; ">In this presentation, I will discuss both our methods of encoding and the results of our quantifications. While drawing on the work of others who have examined comics in the terms of digital humanities (see Whitson and Salter; Dunst et al.), I extend the conversation for the first time into the convergence of comics, DH, and pedagogy.</p>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="9.189861111111112cm" url="Pictures/3bdd9d4922f7d91417dcfa5ae23c4d72.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Fig. 1, Network Analysis of In-strip Character Co-Occurrence</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Boxer, S. (2000). Charles M. Schulz, ‘Peanuts’ Creator, Dies at 77. 
+                        <hi rend="italic">New York Times</hi>. 14 February 2000, https://www.nytimes.com/2000/02/14/arts/charles-m-schulz-peanuts-creator-dies-at-77.html?pagewanted=all&amp;src=pm (accessed 27 April 2022). 
+                    </bibl>
+                    <bibl style="text-align: left; ">Chute, H. (2017). 
+                        <hi rend="italic">Why Comics? From Underground to Everywhere</hi>. New York: Harper.
+                    </bibl>
+                    <bibl style="text-align: left; ">Croxall, B. et al. (2020-2022). 
+                        <hi rend="italic">Peanuts Encoding Editorial Decisions</hi>. Google Docs, https://docs.google.com/document/d/1-4u0SHY5PW16sfcEqL8mOYl-x2JB0piXowOOpLYGn7I/edit?usp=sharing (accessed 27 April 2022). 
+                    </bibl>
+                    <bibl style="text-align: left; ">Croxall, B. et al. (2020-2022). 
+                        <hi rend="italic">Peanuts Taxonomy</hi>. GitHub, https://github.com/briancroxall/peanuts-taxonomy (accessed 27 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">Dunst, A. et al. (2018). 
+                        <hi rend="italic">Empirical Comics Research: Digital, Multimodal, and Cognitive Methods</hi>. New York: Routledge. 
+                    </bibl>
+                    <bibl style="text-align: left; ">Karasik, P. and Newgarden, M. (2017). 
+                        <hi rend="italic">How to Read</hi> Nancy
+                        <hi rend="italic">: The Elements of Comics in Three Easy Panels</hi>. Seattle: Fantagraphic Books. 
+                    </bibl>
+                    <bibl style="text-align: left; ">McCloud, S. (1993) 
+                        <hi rend="italic">Understanding Comics: The Invisible Art</hi>. New York: William Morrow. 
+                    </bibl>
+                    <bibl style="text-align: left; ">Schulz, C. (2004). “An Interview with Charles M. Schulz.” 
+                        <hi rend="italic">The Complete Peanuts: 1950-1952</hi>. Seattle: Fantagraphic Books, pp. 304-337.
+                    </bibl>
+                    <bibl style="text-align: left; ">Schulz, C. (2014-2016). 
+                        <hi rend="italic">The Complete Peanuts</hi>. 25 vols. Seattle: Fantagraphic Books.
+                    </bibl>
+                    <bibl style="text-align: left; ">Schulz, C. 23 January 1952. 
+                        <hi rend="italic">GoComics</hi>, https://www.gocomics.com/peanuts/1952/01/23 (accessed 27 April 2022). 
+                    </bibl>
+                    <bibl style="text-align: left; ">Walsh, J. A. (2012). “Comic Book Markup Language: An Introduction and Rationale.” 
+                        <hi rend="italic">Digital Humanities Quarterly</hi> 6.1, http://www.digitalhumanities.org/dhq/vol/6/1/000117/000117.html (accessed 27 April 2022). 
+                    </bibl>
+                    <bibl style="text-align: left; ">Whitson, R. T. and Salter, A. (2015). “Introduction: Comics and the Digital Humanities.” 
+                        <hi rend="italic">Digital Humanities Quarterly</hi> 9.4, http://digitalhumanities.org/dhq/vol/9/4/000210/000210.html (accessed 27 April 2022).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

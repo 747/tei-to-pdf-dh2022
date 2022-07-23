@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Data Diffraction: A Counternarrative to Integration in Digital Humanities Research</title>
+                <author>
+                    <persName>
+                        <surname>Kleymann</surname>
+                        <forename>Rabea</forename>
+                    </persName>
+                    <affiliation>Leibniz-Zentrum für Literatur- und Kulturforschung, Germany</affiliation>
+                    <email>kleymann@zfl-berlin.org</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T15:11:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Mixed Methods</term>
+                    <term>New Materialism</term>
+                    <term>Manufacture of Knowledge</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>German</term>
+                    <term>Contemporary</term>
+                    <term>meta-criticism (reflections on digital humanities and humanities computing)</term>
+                    <term>History of science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Mixed methods are firmly established in digital humanities (DH) scholarship. While this approach is understood as a research design adopted from social sciences, mixed methods seem to be an umbrella term for defining DH’s methodological framework in general (Sá Pereira 2019; Herrmann 2017). The use of computational procedures in DH is often regarded as a combination of quantitative and qualitative methods. Further conceptual pairs, for example 
+                <hi rend="italic" xml:space="preserve">close </hi>and 
+                <hi rend="italic">distant reading</hi>, go hand in hand with this. However, mixed methods research rests on two premises (Uprichard and Dawney 2019, 20).
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> This paper connects directly to Uprichard &amp; Dawney’s research approach, which already addresses the problem of integration as well as data diffraction in mixed-methods approaches in the social sciences.</p>
+                </note> First, the research design indicates that the complexity of an epistemic object is addressed by the plurality of methods used (Fieldling 2012, 127). Second, research data obtained by mixed methods can be integrated. In other words, results of different methodological settings can be put into a coherent narrative. So far integration within mixed methods research is often discussed in a realm of technical challenges concerning data settings, standards and ontologies. Although data integration addresses epistemological and social issues of conformity and interoperability of research data for a global DH community. 
+            </p>
+            <p>In this short presentation, I argue that integration provides one device to explore questions of difference and diversification within DH scholarship. Therefore, I investigate promises, constraints and pitfalls of the “integration”-narrative, which seems to be deeply enfolded in mixed methods research. The focus of attention will be on compatibilities as well as forms of inferences, which gain relevance manufacturing of knowledge within mixed methods research (Knorr Cetina 1981; Kuhn 1994). In order to tackle these questions, I discuss “data diffraction” (Uprichard and Dawney 2019, 26) – a counternarrative presented by Uprichard and Dawney – as one complementary aim for dealing with different data settings resulting from mixed methods research. What new perspectives open up if we speak of data diffraction instead of data integration? </p>
+            <p>The term 
+                <hi rend="italic">diffraction</hi>, which was originally introduced by Donna Haraway and Karen Barad for epistemological endeavors, initially describes optical interference patterns that arise when two waves are superimposed (Haraway 1992, 300; Barad 2007, 91). Contrary to an holistic idea of integrating parts under a whole, diffraction is about the productive maintenance of differences. Exploring the narrative of data diffraction, this short presentation brings into sharper relief latent integration mechanisms on the one hand, and explore possible alternatives on the other (Drucker 2021, 2; Liu 2020, 130). Beyond or complementary to integration, how could methods or data relate to each other? What if, we explicitly describe diffractions, that is incommensurabilities and dissonances, of methods and data? What would this mean for international collaboration? 
+            </p>
+            <p>Two examples are shortly discussed in this presentation. The first example brings into focus data integration in the context of mixed methods through ontologies as formal models. Ontologies enable to store and query mixed research data. Therefore, ontologies promise a semantic interoperability that allows different data sets to be integrated with each other (Pidd and Rogers, 2018). But how are different data settings handled? What possibilities do OWL and RDF schemas offer to describe leftovers and surplus of research data? In this context, I speculate about possibilities for data diffraction. One scenario here is ontology hijacking (Eide and Smith-Ore 2019, 188). </p>
+            <p>The second example dwells on existing mixed methods approaches from the literary studies, digital stylometry in particular. “DH style studies may be a natural environment for the mixed-methods-paradigm”, as Herrmann has phrased it (Herrmann 2017). In digital stylometry, for instance, authorship attribution with Burrows’ Delta algorithm, agglomerative cluster analysis as well as principal component analysis are widely used (Karsdorp et al. 2021, 248f.). Using the literary category of style, I examine how integration and diffraction might differently enact and constitute style as an object of inquiry within mixed methods research. In doing so, I engage a critical reading of two python scripts from digital stylometry studies. Where does data integration or diffraction actually take place in concrete terms?</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Barad, K.</hi> (2007). 
+                        <hi rend="italic">Meeting the Universe Halfway: Quantum Physics and the Entanglement of Matter and Meaning</hi>. Durham: Duke Univ. Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Drucker, J.</hi> (2021). Viewpoint: Hetero-ontologies and taxonomies in the wild. 
+                        <hi rend="italic">Art Libraries Journal</hi> 46 (2), 36–39. 
+                        <ref target="https://doi.org/10.1017/alj.2021.2">https://doi.org/10.1017/alj.2021.2</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Eide, Ø. and Smith-Ore, C.E.</hi> (2019). Ontologies and data modeling. In Flanders, J. and Jannidis, F. (eds), 
+                        <hi rend="italic">The shape of data in the digital humanities. Modeling texts and text-based resources</hi>. London/New York, Routledge, pp.178–196.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fielding, N. G.</hi> (2012). Triangulation and Mixed Methods Designs. 
+                        <hi rend="italic">Journal of mixed methods research</hi> 6 (2): 124–136. 
+                        <ref target="https://doi.org/10.1177/1558689812437101">https://doi.org/10.1177/1558689812437101</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Haraway, D.</hi> (1992). The Promises of Monsters: A Regenerative Politics for Inappriopriate/d Others. In Grossberg, L., Nelson, C. and Treichler, P. A. (eds), 
+                        <hi rend="italic">Cultural Studies</hi>. New York, NY, London: Routledge, pp. 295–337.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Herrmann, B. </hi>(2017). In a Test Bed with Kafka. Introducing a Mixed-Method Approach to Digital Stylistics. 
+                        <hi rend="italic">Digital Humanities Quarterly</hi> 11, (4). 
+                        <ref target="http://www.digitalhumanities.org/dhq/vol/11/4/000341/000341.html">http://www.digitalhumanities.org/dhq/vol/11/4/000341/000341.html</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Karsdorp, F., Kestemont, M. and Ridell, A. </hi>(2021). 
+                        <hi rend="italic">Humanities Data Analysis: Case Studies with Python</hi>. Princeton: Princeton University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Knorr Cetina, K. </hi>(1981). 
+                        <hi rend="italic">The Manufacture of Knowledge: An Essay on the Constructivist and Contextual Nature of Science</hi>. 1. Edition. Oxford: Pergamon Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Kuhn, T. </hi>(1994). 
+                        <hi rend="italic">The Structure of Scientific Revolutions</hi>. Chicago: Chicago Univ. Press, 1994.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Liu, A. </hi>(2020). Toward a Diversity Stack: Digital Humanities and Diversity as Technical Problem. 
+                        <hi rend="italic">PMLA</hi> 135, (1): 130–51. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pidd, M. and Rogers, K.</hi> (2018). Why Use an Ontology? Mixed Methods Produce Mixed Data. October 18, 2018, 
+                        <hi rend="Hyperlink">https://talkinghumanities.blogs.sas.ac.uk/2018/10/18/why-use-an-ontology-mixed-methods-produce-mixed-data/</hi> (accessed 20 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sá Pereira, M. P.</hi> (2019). Mixed Methodological Digital Humanities. In Gold, M. K. and Klein, L. F. (eds), Debates in the Digital Humanities 2019. 5. Minneapolis: University of Minnesota Press, 2019. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Uprichard, E. and Dawney, L.</hi> (2019). Data Diffraction: Challenging Data Integration in Mixed Methods Research. Journal of mixed methods research 13, (1): 19–32. 
+                        <hi rend="Hyperlink">https://doi.org/10.1177/1558689816674650</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main"> CanAICompose? A web-based tool for deep music generation </title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Schlör</surname>
+                        <forename>Daniel</forename>
+                    </persName>
+                    <affiliation>University of Wuerzburg</affiliation>
+                    <email>schloer@informatik.uni-wuerzburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hotho</surname>
+                        <forename>Andreas</forename>
+                    </persName>
+                    <affiliation>University of Wuerzburg</affiliation>
+                    <email>hotho@informatik.uni-wuerzburg.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T19:32:21.546493785</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>deep generated music</term>
+                    <term>tool</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>digital art production and analysis</term>
+                    <term>music and sound digitization</term>
+                    <term>encoding</term>
+                    <term>and analysis</term>
+                    <term>Computer science</term>
+                    <term>Musicology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>When it comes to creating new music, the composer as creative and well educated human being is undoubtedly the best source of interesting, well sounding and touching music, as perceiving sounds as music is very natural and subjective for humans. Consequently the definition and judgment of the aforementioned attributes is typically subjective and thus hard to formalize as required to formulate the question in a Digital Humanities driven approach. Nevertheless have people encountered the art of composing music from an algorithmic view very early as for example musical dice games which were invented by Mozart and contemporaries, which combines previously composed phrases to random patterns (Ruttkay 1997) and rules for example for harmonizing chorales in the style of J.S. Bach have been formalized (Ebcioğlu 1990). From a more general perspective however, the formalization of rules or knowledge is a difficult and tedious task and resulting compositions are limited by the knowledge or rules and surprising or genre breaking compositions are not to be expected (Papadopoulos &amp; Wiggins 1999). Besides several other approaches to algorithmic composition, the family of Artificial Neural Networks (NN) have been well studied (Ji et al. 2020) and with the availability of high performance computing hardware, larger model architectures such as Transformers, which have shown for text-generation tasks near-human performance (Radford et al. 2020) and learn from examples, have been recently introduced to generate polyphonic music (Huang et al. 2018, Wu &amp; Yang 2020).</p>
+                <p>These models are computationally complex and have tight hardware requirements, which hinder potential applications as supporting composition tool as well as playful interaction to explorethe cognitive creative process of composition (Gardner 1982) and the limitations of AI in this context.</p>
+                <p>We therefore introduce a web based tool available at 
+                    <ptr target="https://go.uniwue.de/canaicompose"/>, to make complex transformer based models more accessible to the general public by providing a simple web-interface to query the models. With the opportunity to rate individual pieces, we include a feedback mechanism to collect large-scale annotations and metadata, which we want to use to evaluate, which characteristics potentially pleasing synthetically generated music share and refine our models according to these characteristics.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Corpus</head>
+                <p>We restricted our corpus to piano pieces by classical composers which are included in the large collection of MIDI files curated by kunstderfuge.com and the maestro data set (Hawthorne et al. 2019).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Approach</head>
+                <p>Our NN model uses the Transformer architecture (Vaswani et al., 2017) including relative positional self attention as proposed by (Shaw et al. 2018) which has proven to yield promising results for polyphonic music generation with long-term structure (Huang et al. 2018). The MIDI files are encoded with note-on, note-off, time-shift and velocity events following (Oore et al. 2020).</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/87f5995278840136e74ed80425ce9bf8.png"/>
+                    </figure> Figure 1: Screenshot of our CanAICompose tool
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>The Tool</head>
+                <p>Our tool is divided in two parts, a back-end serving the machine learning models and a front-end serving a web-interface (see Figure 1) to interact with the NN models. The back-end currently allows the querying of two different models, one model trained on compositions of all composers and one model which was additionally fine-tuned on compositions by Mozart, to allow an evaluation, to which extend a well performing model can be constrained to generating music similar to a certain style which for example a composer using this tool might aspire.</p>
+                <p>The back-end has the functionality to generate a new piece from scratch or to be primed by a user-predefined snippet, which the model is meant to continue and can be queried by API commands to be adaptable for a seamless integration in sheet music notation or composition tools. </p>
+                <p>The front-end was built upon the 
+                    <ref target="https://streamlit.io/">streamlit.io</ref> library for easy integration of NN models in a web-interface and was constructed with the general public as user in mind exploring the possibilities of NN generated music and rating the pieces subjectively. It therefore refrains from displaying symbolic notation such as sheet music but allows to play, rate and download the generated material. The code for this project is available 
+                    <ref target="https://go.uniwue.de/canaicompose-code">here</ref>.
+                </p>
+                <p>As consequent work, we want to fine-tune different NN models on various epochs of classical music and incorporate a classification model to predict the most promising model for a given preconditioning snippet. Based on the subjective ratings collected with this web-app, we want to incorporate a filtering algorithm to evaluate rejected or preferred music which allows musicologists to analyze the quality of deep generated music with respect to musical factors such as tension (Lerdahl, 1996), or melodic complexity (Narmour, 1992).</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Bharucha, J. J., and Todd, P. M.</hi> (1989). Modeling the perception of tonal structure withneural nets. 
+                        <hi rend="italic">Computer Music Journal</hi>, 13.4: 44-53.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ebcioğlu, K. </hi>(1990). An expert system for harmonizing chorales in the style of JS Bach. 
+                        <hi rend="italic">The Journal of Logic Programming</hi>, 8.1-2: 145-185.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gardner, </hi>
+                        <hi rend="bold">H.</hi>
+                        <hi rend="bold"> </hi>(1982). Art, Mind, and Brain: A Cognitive Approach to Creativity. 
+                        <hi rend="italic">Perseus Books Group</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hawthorne, C. , Stasyuk, A., Roberts, A. et al.</hi> (2019). Enabling Factorized Piano Music Modeling and Generation with the MAESTRO Dataset. In I
+                        <hi rend="italic">nternational Conference on Learning Representations</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Huang, C. A. et al. (2018).</hi> Music transformer.
+                        <hi rend="italic">arXiv preprint arXiv:1809.04281.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ji, S., Luo J., and Yang, X.</hi> (2020). A Comprehensive Survey on Deep Music Generation: Multi-level Representations, Algorithms, Evaluations, and Future Directions. 
+                        <hi rend="italic">arXiv preprint arXiv:2011.06801.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Lerdahl, F. </hi>(1996). Calculating tonal tension. Music Perception, 13.3: 319-363. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Narmour, E. </hi>(1992). The analysis and cognition of melodic complexity: The implication-realization model. 
+                        <hi rend="italic">University of Chicago Press</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Oore, S., Simon, I., Dieleman, S. et al. </hi>(2020). This time with feeling: learning expressive musical performance.
+                        <hi rend="italic">Neural Comput &amp; Applic</hi>, 32, 955–967
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Papadopoulos, G., and Wiggins, G.</hi> (1999) AI methods for algorithmic composition: A survey, a critical view and future prospects. 
+                        <hi rend="italic">AISB symposium on musical creativity,</hi> Vol. 124.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Radford, A. et al. </hi>(2019). Language models are unsupervised multitask learners. 
+                        <hi rend="italic">OpenAI blog,</hi> 1.8: 9.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ruttkay, Z. </hi>(1997). Composing Mozart variations with dice. 
+                        <hi rend="italic">Teaching Statistics, </hi>19.1: 18-19.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Shaw, P., Uszkoreit, J., and Vaswani, A.</hi> (2018). Self-attention with relative position representations. In 
+                        <hi rend="italic">Proceedings of the Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</hi>, volume 2
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wu, S., and Yang Y. </hi>(2020). The jazz transformer on the front line: Exploring the shortcomings of ai-composed music through quantitative measures. 
+                        <hi rend="italic">arXiv preprint arXiv:2008.01307.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

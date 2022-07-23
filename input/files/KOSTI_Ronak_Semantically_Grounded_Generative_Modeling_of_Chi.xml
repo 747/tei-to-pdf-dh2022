@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Semantically-Grounded Generative Modeling of Chinese Landscapes</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Kulyabin</surname>
+                        <forename>Mikhail</forename>
+                    </persName>
+                    <affiliation>Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU), Germany</affiliation>
+                    <email>mikhail.kulyabin@fau.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kosti</surname>
+                        <forename>Ronak</forename>
+                    </persName>
+                    <affiliation>Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU), Germany</affiliation>
+                    <email>ronak.kosti@fau.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bell</surname>
+                        <forename>Peter</forename>
+                    </persName>
+                    <affiliation>Philipps-Universität Marburg, Germany</affiliation>
+                    <email>peter.bell@uni-marburg.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-30T23:58:54.000063649</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Chinese Landscapes</term>
+                    <term>Generative Adversarial Networks</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>digital art production and analysis</term>
+                    <term>Asian studies</term>
+                    <term>Computer science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="bold">Motivation</hi> – Chinese landscape paintings have unique and different visual features and stylistic characteristics as compared to the western counterpart. At the thematic level, they depict the local traditions, culture, artistic movement and the geographic variety offered by the Asian subcontinent. And at the image level, the paintings depict low texture variations due to the particular handling of the brush-stroke, color, tone and the artistic genre. These landscapes, therefore, provide valuable insights into the structural and stylistic aspects of the paintings. The state of the art methods in image analysis enables finding semantic correlations for analysis across huge image collections, and also often constitute iconographical analysis. For example, the digitization of Dunhuang grottoes (a world heritage site) has led to immense knowledge creation in terms of iconographical art-historical understanding of Panofsky (Wang et al., 2018) for the categorical and semantic treatment of the objects present in the grottoes, as well as in the computational community for discovering the ruined parts of the murals via automatic restoration techniques. We aim to investigate the semantic aspect of the Chinese landscape paintings computationally using conditional control of the image generation.
+            </p>
+            <p>Learning basic structure of the painting and the use of artistic style helps in getting conditional control over the generation of similar looking paintings. This allows us to get a closer reading of the formation process behind those landscapes. Generative adversarial networks (GAN) (Gatys et al., 2016) are a type of deep neural networks - when given a collection of images, they are able to learn the styles from them and are able to generate images with similar styles. For example, a GAN trained on a set of paintings with Impressionism style, will be able to generate images with the same style. </p>
+            <p>
+                <hi rend="bold">Related Work</hi> – Generative modeling has thus been applied to various artworks for a variety of tasks like artwork synthesis, image editing, style transfer (Gatys et al., 2016), and image-to-image translation. Previous work on generating landscapes mainly focused on image-to-image translation, going from sketches to landscape generation. These techniques use input conditions like ink wash tone, brush strokes or a sketch as conditional input for artwork generation. However, these popular neural style transfer methods do not work well with Chinese artworks since there are marked differences in the depiction of textures, abstraction, structure and style of the paintings. Another way of controlling the generative aspect is to use input semantic maps (Liu et al., 2019) which accentuate different foreground and background objects as conditional inputs. 
+            </p>
+            <p>
+                <hi rend="bold">Research Gap</hi> – The main problem with the above methods is that the generative networks are often caught in degenerate solutions which makes the networks generate images with limited variety. Although training with image-to-image translation networks uses the image itself or its sketch as a conditional input in order to capture more diverse aspects of the paintings, the generated images often render finer details of various foreground objects unclear. When only sketches are used, the GANs are not able to capture the color-texture distribution of the generated objects. They tend to mix or use colors that are not consistent with the true colors. Semantic maps of each input image can help to bring color-consistency in image generation and also provide control to generating specific objects or regions of interest in the final image. However, these semantic maps are difficult to obtain since they require manual annotation. 
+            </p>
+            <p>
+                <hi rend="bold">Proposed Approach</hi> – In our work, we demonstrate generative modeling of Chinese landscapes using sketches as well as semantic segmentation maps of the corresponding input paintings. Specifically, we propose a novel way of generating semantic segmentation maps without requiring any kind of manual annotations. The sketches and segmentation maps of the paintings are not easily available, therefore obtaining a good quality segmentation map is a big challenge. Our approach is divided into three stages:
+            </p>
+            <p>In the first stage, we generate sketches of Chinese landscape paintings using an edge detector called HED. This edge detector is chosen since it generates high-level shapes of the image structures while also retaining low-level details. Next, we use watershed for image segmentation to generate weak segmentations. The algorithm does not work equally well for all images due to the variety of abstractions in shapes and styles in the landscape images.</p>
+            <p>In the second stage, we refine the weak segmentations by first color-coding them. The color-codes are chosen based on the average color of the corresponding overlapping region with the input landscape image. These maps are subdued in their color tones, so we color equalize to increase their contrast. Then, these maps are taken together with the corresponding sketches to train a U-Net (similar to the generator of Pix2Pix GAN) for multi-task optimization. The landscape paintings are used as inputs and the segmentation maps along with the sketches are the outputs, while optimization conditions are constrained to only sketches. Optimizing for sketches helps to improve the quality of segmentation maps based on the structure of the sketches. Subsequently the network is able to generate better segmentation with color-consistency.</p>
+            <p>In the third and final stage, we use the Pix2Pix GAN to generate similar samples of Chinese landscape paintings from input sketches and segmentation maps. A previous work (Xue et al., 2021) explores a similar method, but uses only sketches. We use high-quality segmentation maps in addition for better foreground region generation. The training time is huge and depends mainly on the dataset size and the input image size. Higher input image size normally tends to increase the quality of the finer objects, but also takes longer training times. </p>
+            <p>
+                <hi rend="bold">Significance of Our Approach</hi> - We show how to generate better quality semantic segmentation maps using a HED detector, watershed algorithm and an additional training stage with U-Net to refine the weak segmentations generated by the watershed algorithm. In all of these steps, there is no requirement of additional high-quality manual labels. Therefore, our approach can be applied to any new set of images for generating better segmentation maps.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Gatys, L. A., Ecker, A. S. and Bethge, M.</hi> (2016). Image Style Transfer Using Convolutional Neural Networks. 
+                        <hi rend="italic">2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</hi>. Las Vegas, NV, USA: IEEE, pp. 2414–23 doi:
+                        <ref target="https://doi.org/10.1109/CVPR.2016.265">10.1109/CVPR.2016.265</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Liu, X., Yin, G., Shao, J. and Wang, X.</hi> (2019). Learning to predict layout-to-image conditional convolutions for semantic image synthesis. 
+                        <hi rend="italic">Advances in Neural Information Processing Systems</hi>, 
+                        <hi rend="italic">32</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wang, X., Song, N., Zhang, L. and Jiang, Y.</hi> (2018). Understanding subjects contained in Dunhuang mural images for deep semantic annotation. 
+                        <hi rend="italic">Journal of Documentation</hi>, 
+                        <hi rend="bold">74</hi>(2): 333–53 doi:
+                        <ref target="https://doi.org/10.1108/JD-03-2017-0033">10.1108/JD-03-2017-0033</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Xue, A.</hi> (2021). End-to-End Chinese Landscape Painting Creation Using Generative Adversarial Networks. 
+                        <hi rend="italic">2021 IEEE Winter Conference on Applications of Computer Vision (WACV)</hi>. Waikoloa, HI, USA: IEEE, pp. 3862–70 doi:
+                        <ref target="https://doi.org/10.1109/WACV48630.2021.00391">10.1109/WACV48630.2021.00391</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

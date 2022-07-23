@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> An experiment in agent-based probabilistic city population reconstruction</title>
+                <author>
+                    <persName>
+                        <surname>Kisjes</surname>
+                        <forename>Ivan</forename>
+                    </persName>
+                    <affiliation>University of Amsterdam, Netherlands, The</affiliation>
+                    <email>i.kisjes@uva.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>van Wissen</surname>
+                        <forename>Leon</forename>
+                    </persName>
+                    <affiliation>University of Amsterdam, Netherlands, The</affiliation>
+                    <email>l.vanwissen@uva.nl</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>agent-based modeling</term>
+                    <term>demographics</term>
+                    <term>population reconstruction</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>18th Century</term>
+                    <term>digital biography</term>
+                    <term>personography</term>
+                    <term>and prosopography</term>
+                    <term>software development</term>
+                    <term>systems</term>
+                    <term>analysis and methods</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p rend="LO-normal">
+                <hi rend="bold">Toni, Tine, Stumpf, Michael P.H.</hi> (2010): 
+                <hi rend="italic">Simulation-based model selection for dynamical systems in systems and population biology.</hi> Bioinformatics, Volume 26, Issue 1, 1 January 2010, Pages 104–110, https://doi.org/10.1093/bioinformatics/btp619
+            </p>
+        </body>
+    </text>
+</TEI>

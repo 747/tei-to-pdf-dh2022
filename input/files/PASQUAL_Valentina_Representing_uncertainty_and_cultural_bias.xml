@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Representing uncertainty and cultural bias with Semantic Web technologies</title>
+                <author>
+                    <persName>
+                        <surname>Baroncini</surname>
+                        <forename>Sofia</forename>
+                    </persName>
+                    <affiliation>Digital Humanities Advanced Research Centre, University of Bologna</affiliation>
+                    <email>sofia.baroncini4@unibo.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Daquino</surname>
+                        <forename>Marilena</forename>
+                    </persName>
+                    <affiliation>Digital Humanities Advanced Research Centre, University of Bologna</affiliation>
+                    <email>marilena.daquino2@unibo.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pasqual</surname>
+                        <forename>Valentina</forename>
+                    </persName>
+                    <affiliation>Digital Humanities Advanced Research Centre, University of Bologna</affiliation>
+                    <email>valentina.pasqual2@unibo.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tomasi</surname>
+                        <forename>Francesca</forename>
+                    </persName>
+                    <affiliation>Digital Humanities Advanced Research Centre, University of Bologna</affiliation>
+                    <email>francesca.tomasi@unibo.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vitali</surname>
+                        <forename>Fabio</forename>
+                    </persName>
+                    <affiliation>Digital Humanities Advanced Research Centre, University of Bologna</affiliation>
+                    <email>fabio.vitali@unibo.it</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-13T12:21:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>uncertainty</term>
+                    <term>semantic web</term>
+                    <term>rdf</term>
+                    <term>conjectures</term>
+                    <term>humanistic discourse</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>linked (open) data</term>
+                    <term>systems and information architecture and usability</term>
+                    <term>Art history</term>
+                    <term>Computer science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Disagreements on scholarly topics are often the result of different levels of expertise, cultural-dependent viewpoints and methodologies (Eco, 1976; Ginzburg, 1978), as well as geographical and temporal constraints, due e.g. to scholars’ provenance or temporal changes in interpreting reality. For example, classifying modern Chinese calligraphy (CMC) artworks is challenging (Iezzi, 2015). For instance, the series of paintings “Da wo miao mo” (1994-) by Zhang Dawo (<hi rend="Chinese">张大我</hi>)
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> See Zhang Dawo 
+                        <hi rend="Chinese">张大我</hi>, The star of the city, a rock and roll singer, 2011, ink on paper 
+                        <ref target="https://www.researchgate.net/profile/AdrianaIezzi/publication/283087106/figure/fig25/AS:668707621720069@1536443729391/ZHANG-Dawo-The-Star-of-the-City-a-Rock-and-Roll-Singer-2011-ink-on-paper-162-cm-x.ppm">https://www.researchgate.net/profile/AdrianaIezzi/publication/283087106/figure/fig25/AS:668707621720069@1536443729391/ZHANG-Dawo-The-Star-of-the-City-a-Rock-and-Roll-Singer-2011-ink-on-paper-162-cm-x.ppm</ref>
+                    </p>
+                </note> (Iezzi, 2014) has been categorised by Gordon Barrass as “oriental abstract expressionism”. Wang Nanming categorised it as “abstract expressionism of calligraphic characteristics'', stressing on its calligraphic component - cfr. also (Iezzi, 2013-4; Xia Kejun, 2015). Despite not being alternative statements, these reflect differences rooted in scholars’ backgrounds - and the scholars’ identity is recognized as an important element to understand classifications of CMC (Iezzi, 2015).
+            </p>
+            <p style="text-align: left; ">Back in 1939, Erwin Panofsky argued that background and experience of the observer can affect even rather simple tasks such as the identification of objects and events represented in the painting (Panofsky, 1939). Panofsky mentions the baby depicted in van der Weyden’s Three Magi
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p rend="footnote text"> See 
+                        <ref target="https://www.wga.hu/art/w/weyden/rogier/07bladel/3bladel.jpg">https://www.wga.hu/art/w/weyden/rogier/07bladel/3bladel.jpg</ref>
+                    </p>
+                </note>, who is modernly understood as fluctuating, since he presents attributes traditionally assigned to apparitions (such as being in perspective and in mid-air with no support). Instead, miniatures with Byzantine influences, such as the “Gospels of Otto III”
+                <note place="foot" xml:id="ftn3" n="3">
+                    <p rend="footnote text"> See 
+                        <ref target="https://www.digitale-sammlungen.de/en/view/bsb00096593?page=66">https://www.digitale-sammlungen.de/en/view/bsb00096593?page=66</ref>
+                    </p>
+                </note> present an irreal empty space around the city of Nain, which does not imply the use of perspective nor that the city is fluctuating - being only an abstraction for decorative purposes. Nowadays, Semantic Web technologies are widely used to formally represent interpretative complexities. However, it has been argued that ontologies carry cultural biases at the schema level (Janowicz, 2018), and hardly integrate different viewpoints in the ontological representation of reality. Thesauri like ICONCLASS (Couprie, 1978), or reference models like CIDOC-CRM (Doerr et al., 2007) do not allow to assign cultural constraints to concepts like the usage of perspective (Baroncini et al., 2021).
+            </p>
+            <p style="text-align: left; ">Moreover, the semantics associated with RDF and related representation strategies (e.g. n-ary relations, reifications, named graphs (Noy and Rector, 2006; Carroll et al., 2005)) is ambiguous. Statements with different degrees of certainty (whether these are undisputed, currently disputed or settled) are equally represented as assertions, despite their truth value with respect to the dataset is varying (Barabucci et al., 2021). Therefore, when describing the interpretations of Dawo’s work as being either connected with “expressionism” or “calligraphy” we are actually asserting both statements without being able to characterize their truth value. Even when specifying provenance and attributions, statements potentially biased by scholar’s background (e.g.: 
+                {:Da-wo-miao-mo :style :abstract-expressionism-calligraphic} and 
+                {:Da-wo-miao-mo :style :oriental-abstract-expressionism} ) are both asserted and coexist at the same time in the same knowledge space.
+            </p>
+            <p style="text-align: left; ">The unclear semantics associated with graph data has some impractical drawbacks. First, a reasoner may interpret competing statements as either being the same or concurring: human intervention would be needed to disambiguate statements as alternative and culturally-dependent interpretations that can only be accepted within a given context. A machine-understandable strategy is needed to express without asserting statements whose truth value depends on the context.</p>
+            <p style="text-align: left; ">Second, ontologies are needed to annotate uncertainty and truth of statements. Since ontologies are representative of specific cultures, people with diverse backgrounds would struggle to reuse the same terminology, therefore abstaining from expressing diverging information (reticence) or flattening, reducing or coercing their interpretations in a way that conforms to the semantics of the given ontology. Moreover, several models to represent provenance, uncertainty, and truth exist (a recent survey is Sikos and Philp, 2020), making the extraction of information on contexts and uncertainty cumbersome and time-consuming. An ontology-independent solution to represent uncertainty is needed to prevent information loss and to simplify retrieval of data and context information.</p>
+            <p style="text-align: left; ">While several ontology-independent solutions have been proposed, their efficacy in representing the truth value of statements is limited and unsatisfactory (Barabucci et al., 2021). For instance, named graphs (Carroll et al., 2005) have been widely used to separate assertions from provenance. However, there is no consensus on their semantics, and there are up to eight different model-theoretic semantics to choose from with extremely different takes on the assertiveness of their content (Arndt and Van Woensel, 2019).</p>
+            <p style="text-align: left; ">In this work, we compare several strategies to represent uncertainty in the Semantic Web. We highlight limits of unclear semantics and demonstrate that common situations in humanistic discourse cannot be unambiguously represented by them. Then we propose an approach to express conjectural statements without asserting them. Conjectures are an extension to RDF 1.1 that by design represents named graphs whose truth value is unknown, regardless of which of the eight semantics for named graphs is chosen (Rolfini, 2021). Through conjectures it is possible to faithfully represent hypotheses, competing or contradictory claims, points of view we agree or disagree with, and even absurdities (Barabucci et al., 2021). </p>
+            <p style="text-align: left; ">For example, statements on Dawo’s series would be represented as follows (in Trig syntax):</p>
+            <figure>
+                <graphic n="1001" width="16.506611111111113cm" height="4.0569444444444445cm" url="Pictures/e05da7d1c8f94f9801d00e5fb24df517.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Listing 1. Conjectures in Trig syntax</p>
+            <p style="text-align: left; ">In the example, the addition of the prefix 
+                CONJECTURE to the graph definition allows one to express the statement without asserting it. When querying for meanings associated with Ce (in SPARQL, 
+                SELECT * WHERE { :Da-wo-miao-mo :style ?style }), results would include an empty set of assertions. Instead, when asking for uncertain meanings (in SPARQL, 
+                SELECT * WHERE {CONJECTURE ?c {:Da-wo-miao-mo :style ?style}}) the query would return the two conjectures. Data consumers would therefore understand that no final decision has been taken on the topic, and data can be deemed unbiased. Notice that, in the conjecture-based query, no explicit reference to ontology terms was made when looking for uncertain statements, since this approach is completely ontology-independent. We conclude stressing the importance, when expressing and querying culturally-biased data, to be able to represent not just provenance information on competing claims, but also their independent and possibly incompatible existence, and the need for an ontology-independent way to express their truth values, as made possible through conjectures.
+            </p>
+            <p style="text-align: left; ">Future developments include the application of Conjectures over a large knowledge base with the aim of testing the model feasibility on a large scale. At the moment, an online converter from Conjectures to plain RDF is available
+                <note place="foot" xml:id="ftn4" n="4">
+                    <p rend="footnote text"> See 
+                        <ref target="http://conjectures.altervista.org/convert.html">http://conjectures.altervista.org/convert.html</ref>
+                    </p>
+                </note>.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Arndt, D. and Van Woensel, W.</hi> (2019). Towards supporting multiple semantics of named graphs using N3 rules. 
+                        <hi rend="italic">13th RuleML+RR 2019 Doctoral Consortium and Rule Challenge, Proceedings</hi>, vol. 2438. CEUR 
+                        <ref target="http://hdl.handle.net/1854/LU-8632551">http://hdl.handle.net/1854/LU-8632551</ref>.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Barabucci, G., Tomasi, F. and Vitali, F.</hi> (2021). Supporting Complexity and Conjectures in Cultural Heritage Descriptions. 
+                        <hi rend="italic">104-115</hi>
+                        <ref target="https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2736994">https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2736994</ref>.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Baroncini, S., Daquino, M. and Tomasi, F.</hi> (2021). Modelling Art Interpretation and Meaning. A Data Model for Describing Iconology and Iconography. 
+                        <hi rend="italic">ArXiv:2106.12967 [Cs]</hi>
+                        <ref target="http://arxiv.org/abs/2106.12967">http://arxiv.org/abs/2106.12967</ref>.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Carroll, J. J., Bizer, C., Hayes, P. and Stickler, P.</hi> (2005). Named graphs, provenance and trust. 
+                        <hi rend="italic">Proceedings of the 14th International Conference on World Wide Web</hi>. (WWW ’05). New York, NY, USA: Association for Computing Machinery, pp. 613–22 doi:
+                        <ref target="https://doi.org/10.1145/1060745.1060835">10.1145/1060745.1060835</ref>. 
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Couprie, L. D.</hi> (1978). Iconclass, a device for the iconographical analysis of art objects. 
+                        <hi rend="italic">Museum International</hi>, 
+                        <hi rend="bold">30</hi>(3–4). Routledge: 194–98 doi:
+                        <ref target="https://doi.org/10.1111/j.1468-0033.1978.tb02136.x">10.1111/j.1468-0033.1978.tb02136.x</ref>.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Doerr, M., Ore, C.-E. and Stead, S.</hi> (2007). The CIDOC conceptual reference model: a new standard for knowledge sharing. 
+                        <hi rend="italic">Tutorials, Posters, Panels and Industrial Contributions at the 26th International Conference on Conceptual Modeling-Volume 83</hi>. pp. 51–56.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Eco, U.</hi> (1976). 
+                        <hi rend="italic">Opera Aperta</hi>. Bompiani Milano.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Ginzburg, C.</hi> (1978). Spie, Radici di un paradigma scientifico. 
+                        <hi rend="italic">Rivista Di Storia Contemporanea</hi>, 
+                        <hi rend="bold">7</hi>(1). Loescher Editore.: 1.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Iezzi, A.</hi> (2014). LA ‘MODERNITÀ’ DELLA CALLIGRAFIA. Metamorfosi e influenza della calligrafia cinese all’interno del panorama artistico contemporaneo. Sapienza Università di Roma PhD dissertation 
+                        <ref target="https://opac.bncf.firenze.sbn.it/bncf-prod/resource?uri=TD17046444&amp;v=l&amp;dcnr=6">https://opac.bncf.firenze.sbn.it/bncf-prod/resource?uri=TD17046444&amp;v=l&amp;dcnr=6</ref>.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Iezzi, A.</hi> (2015). What is ‘Chinese Modern Calligraphy’? An Exploration of the Critical Debate on Modern Calligraphy in Contemporary China. 
+                        <hi rend="italic">Journal of Literature and Art Studies</hi>, 
+                        <hi rend="bold">5</hi>(3): 206–16 doi:
+                        <ref target="https://doi.org/10.17265/2159-5836/2015.03.007">10.17265/2159-5836/2015.03.007</ref>.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Janowicz, K., Yan, B., Regalia, B., Zhu, R. and Mai, G.</hi> (2018). Debiasing Knowledge Graphs: Why Female Presidents are not like Female Popes. 
+                        <hi rend="italic">International Semantic Web Conference (P&amp;D/Industry/BlueSky)</hi>.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Noy, N., Rector, A., Hayes, P. and Welty, C.</hi> (2006). Defining n-ary relations on the semantic web. 
+                        <hi rend="italic">W3C Working Group Note</hi>, 
+                        <hi rend="bold">12</hi>(4). World Wide Web Consortium Cambridge, MA, USA.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Panofsky, E.</hi> (1939). 
+                        <hi rend="italic">Studies in Iconography</hi>. New York: Oxford University Press.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Rolfini, A.</hi> (2021). Semantics of Conjectures. 
+                        <hi rend="italic">ArXiv Preprint ArXiv:2110.08920</hi> doi:
+                        <ref target="https://doi.org/10.48550/ARXIV.2110.08920">10.48550/ARXIV.2110.08920</ref>. 
+                        <ref target="https://arxiv.org/abs/2110.08920">https://arxiv.org/abs/2110.08920</ref>.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Sikos, L. F. and Philp, D.</hi> (2020). Provenance-Aware Knowledge Representation: A Survey of Data Models and Contextualized Knowledge Graphs. 
+                        <hi rend="italic">Data Science and Engineering</hi>, 
+                        <hi rend="bold">5</hi>(3): 293–316 doi:
+                        <ref target="https://doi.org/10.1007/s41019-020-00118-0">10.1007/s41019-020-00118-0</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

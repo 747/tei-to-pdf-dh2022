@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Developing the Japanese Visual Media Graph: An Open Knowledge Graph for Researchers Working on Japanese Anime, Manga and Otaku Culture</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Roth</surname>
+                        <forename>Martin</forename>
+                    </persName>
+                    <affiliation>Stuttgart Media University; Ritsumeikan University</affiliation>
+                    <email>rothm@hdm-stuttgart.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pfeffer</surname>
+                        <forename>Magnus</forename>
+                    </persName>
+                    <affiliation>Stuttgart Media University</affiliation>
+                    <email>pfeffer@hdm-stuttgart.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kacsuk</surname>
+                        <forename>Zoltan</forename>
+                    </persName>
+                    <affiliation>Stuttgart Media University</affiliation>
+                    <email>kacsuk@hdm-stuttgart.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T16:57:25.138857969</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Knowledge graph</term>
+                    <term>Linked open data</term>
+                    <term>Metadata analytics</term>
+                    <term>Japanese Visual Media</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>linked (open) data</term>
+                    <term>Library &amp; information science</term>
+                    <term>Media studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Metadata analytics is a relatively new approach among the many data-driven methodologies engaged with the analysis of culture (e.g. Manovich, 2020; Michel et al., 2011; Moretti, 2013; Rogers, 2013). Using descriptive metadata for research, however, has a well-established tradition in the field of bibliometrics and in particular scientometrics. One of the reasons for the maturity of those fields of research is the long-standing availability of the data itself.</p>
+            <p>The Japanese Visual Media Graph (JVMG) project, following in the footsteps of the Databased Infrastructure for Global Games Culture Research (diggr) project, is premised on the idea that there exist rich resources on various cultural subfields compiled by online fan or enthusiast communities. By working with these communities towards integrating these descriptive metadata resources into a single knowledge graph for a specific domain – in this case Japanese visual media such as anime, manga, video games and so on – the project aims to open up new avenues of quantitative analysis for researchers in the field, and at the same time provide a template for building similar resources in other areas of inquiry. Although the creation of open knowledge graphs in the digital humanities and the cultural heritage field specifically is becoming increasingly common (see for example Bikakis et al., 2021; Haslhofer et al., 2018), working with data compiled by online fan or enthusiast communities opens up a rich range of new possibilities for research.</p>
+            <p>The project, which is funded by the German Research Foundation’s (Deutsche Forschungsgemeinschaft, DFG) e-Research Technologies program, will be reaching the end of its first project phase in 2022. After three years of work we present the most important aspects of both the knowledge graph that was created (available at https://mediagraph.link/) and the development process that made it possible.</p>
+            <p>First, we discuss our data sources, the dimensions of the JVMG knowledge graph, and its coverage. We also present our approach to and results of measuring data quality within the project with an emphasis on the accuracy and completeness of the data. This question is especially important in order to, on the one hand, validate the feasibility of using community compiled data for research; and on the other hand, to be able to provide a clear picture for researchers regarding what to expect in relation to the capabilities and limits of the data.</p>
+            <p>Second, we explain the most important steps and challenges of the data integration process. Working with heterogeneous data sources and ontologies was made possible by transforming all tabular data sources into an RDF linked data format. Matching the data points between the various ingested data sources was one of the significant technical challenges that the project had to resolve. Thus, our experiences with data matching and how much of it was actually automatable is also discussed. All software tools developed for the data ingestion, processing and matching are made openly available online.</p>
+            <p>Third, the legal harmonization of the JVMG data, which surprised us with its complexity, is another important aspect of the knowledge graph development that we explain in more detail. Licensing and legal concerns are often an afterthought even in scientific projects. In our case, however, since we are working with heterogeneous data sources and an array of corresponding different licensing practices, the question of how to go about harmonizing the licenses of the various data sources became a central problem. This issue had to be solved for us to be able to open up the knowledge graph to researchers around the globe. Our solution, which we introduce along with the challenges that it had to overcome, involved settling on the Creative Commons BY-NC-SA (attribution, non-commercial, share-alike) 4.0 license as the smallest common denominator and requesting individual license agreements from communities whose licenses were not compatible with it.</p>
+            <p>Fourth, one of the most important ideas underlying our development process was that it had to be directed by the actual needs of researchers working in the field. In order to implement a development process that could receive regular feedback from the domain experts working with the data we adopted and further refined the Tiny Use Case (TUC) methodology introduced by the diggr project (Freybe et al., 2019). This approach builds on ideas from agile software development practices. Each TUC is a small research project that can be tackled within a three to four months long period. Not only do the TUCs serve as examples for what type of research questions can be pursued with the help of the JVMG knowledge graph, but they also provide valuable lessons in relation to potential problems in data quality, generate new feature requests for the graph frontend – developed based on the Pubby project –, and help identify further types of data that the domain experts would like to be able to work with in the knowledge graph. Last, but not least, each TUC is an opportunity for the team members working on the IT and library and information science side of the project and the humanities and social science researchers to learn from each other and develop a common language and understanding for setting goals and discussing problems. We provide an overview of the TUCs that were conducted in the project and highlight the way they shaped the development of the graph frontend and the knowledge graph itself.</p>
+            <p>Our hope is that the JVMG project can not only showcase the power of integrated research resources created from data sources compiled by online fan and enthusiast communities, but also provide an array of potential templates (from data integration, legal harmonization and development workflow solutions) for building similar knowledge graphs in other domains of interest.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Bikakis, A., Hyvönen, E., Jean, S., Markhoff, B. and Mosca, A.</hi> (eds) (2021). Special Issue on Semantic Web for Cultural Heritage. 
+                        <hi rend="italic">Semantic Web</hi>, 12(2).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Freybe, K., Rämisch, F. and Hoffmann, T.</hi> (2019). With Small Steps to the Big Picture: A Method and Tool Negotiation Workflow. In Krauwer, S. and Fišer, D. (eds), 
+                        <hi rend="italic">Proceedings of the Twin Talks Workshop at DHN 2019</hi> (CEUR Vol-2365). Aachen: CEUR-WS.org, pp. 13-24.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Haslhofer, B., Isaac, A. and Simon, R.</hi> (2018). Knowledge Graphs in the Libraries and Digital Humanities Domain. In Sakr, S. and Zomaya, A. (eds), 
+                        <hi rend="italic">Encyclopedia of Big Data Technologies</hi>. Cham: Springer, pp. 1-8. doi: 10.1007/978-3-319-63962-8_291-1.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Manovich, L.</hi> (2020). 
+                        <hi rend="italic">Cultural analytics</hi>. Cambridge, MA: MIT Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Michel, J. B., Shen, Y. K., Aiden, A. P., Veres, A., Gray, M. K., The Google Books Team, Pickett, J. P., Hoiberg, D., Clancy, D., Norvig, P., Orwant, J., Pinker, S., Nowak, M. A. and Aiden, E. L.</hi> (2011). Quantitative analysis of culture using millions of digitized books. 
+                        <hi rend="italic">Science</hi>, 331(6014): 176-182.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Moretti, F.</hi> (2013). 
+                        <hi rend="italic">Distant reading</hi>. London: Verso.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rogers, R.</hi> (2013). 
+                        <hi rend="italic">Digital methods</hi>. Cambridge, MA: MIT press.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Considerations for the TEI encoding of Sino-Japanese glossed materials</title>
+                <author>
+                    <persName>
+                        <surname>Okada</surname>
+                        <forename>Kazuhiro</forename>
+                    </persName>
+                    <affiliation>Hokkai-Gakuen University, Japan</affiliation>
+                    <email>k-okada@hgu.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T07:56:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Classical Chinese text</term>
+                    <term>Japanese philology</term>
+                    <term>TEI</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>text encoding and markup language creation</term>
+                    <term>deployment</term>
+                    <term>and analysis</term>
+                    <term>Asian studies</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">This presentation addresses considerations for TEI-based encoding of Classical Chinese texts that are glossed in Japanese from the 9th to 12th centuries (
+                <hi rend="italic">kunten</hi> materials; called Sino-Japanese glossed materials here). This tradition extends to nowadays, and some modern Japanese glosses have been digitally encoded (See SAT Daizōkyō Text Database Committee, 2020, for a limited encoding). Taking examples from a well-studied 9th-century glossed text, this presentation identifies barriers to encoding using an established coding framework, the Text Encoding Initiative (TEI), and discusses possible solutions. Despite their importance to Japanese philology, these materials have recently not received due attention. Identifying difficulties in encoding and establishing an encoding model for these unfamiliar materials will remove an important barrier to further study.
+            </p>
+            <p style="text-align: left; ">These materials were produced by the process of vernacular reading. Beginning in the 8th century, a body of Classical Chinese texts was read in the Japanese language. The challenges of reading these Classical Chinese texts in Japanese lie in the typological differences between the source and target languages, which glosses seek to resolve. One is a difference in the basic word order; while Classical Chinese is a subject–verb–object (SVO) language, Japanese is an SOV language. Another is in morphology, as Japanese expresses syntactic relations with case particles and other periphrases, but Chinese largely depends on word order.</p>
+            <p style="text-align: left; ">Japanese glosses are devices to record such vernacular readings on the surface of the original texts. Whereas phonogram is one of the major devices in glossing, in order not to scatter the text surface, schemata of marks borrowed from Chinese and Korean practices ("poyin" and tone glosses) were also employed. As each Chinese character generally represents a single word in the Chinese language, glosses are added to each character. The schemata set out rules for reading marks in a particular position over the surface of a character. However, the order for reading the marks is never given, even though as many as five marks may be added. Moreover, even successfully deciphering the glosses does not always produce a complete sentence, and codebreakers are forced to fill the gap. It should also be mentioned that a single manuscript may record several reading attempts that span centuries.</p>
+            <p style="text-align: left; ">When encoding the glosses, it is imperative to group and relate every gloss for the same character to the others, as each gloss constitutes an intended reading. The current TEI framework offers encoding methods for most cases but has some problems due to this requirement. Samples of TEI encoding will be shown to demonstrate effectiveness of the encoding models, taking example from a 9th-century glossed text, known as the Saidaiji scroll of the 
+                <hi rend="italic">Suvarṇa-prabhāsa sutra</hi> (or 
+                <hi rend="italic">Sutra of the golden light</hi>), which is copied in 762 and glossed in the year around 830 (in white pigment) as well as the year 1097 (in vermilion).
+            </p>
+            <p style="text-align: left; ">The most problematic case is the treatment of marks. Currently, TEI does not have an element for marks representing a text rather than a textual signal (&lt;metamark&gt;). In an earlier study of the encoding of glossed materials in a specially crafted XML schema (Takada, 2010), a decoded reading of the mark was encoded. This is a possible solution because interpreting the position of a mark is to interpret what the mark represents. However, it is desirable to introduce a dedicated element for marks that the encoder wishes to leave uninterpreted, whether through customization or the expansion of the TEI framework itself. Another attempt is Yanagihara et al. (2022), where the 830 glosses of the scroll in question is decoded and encoded, with the intention of incorporating it into a diachronic corpus of the Japanese language. This nature let them encode this material as if it were written in Japanese: i.e., reordering the original text into the Japanese word order. Too, there should also be a way to preserve the original context.</p>
+            <p style="text-align: left; ">As discussed earlier, preserving the original glosses means encoding the contested texts. We discuss the possible encoding methods, such as 1) &lt;metamark&gt;, 2) expanding abbreviation, and 3) gaiji modules. Other incompatibilities between the TEI framework and the needs of encoding glossed materials are also discussed.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">SAT Daizōkyō Text Database Committee.</hi> (2020). Shoomangyoo gisho. https://21dzk.l.u-tokyo.ac.jp/SAT/sat_tei.html (accessed 21 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Takada, T.</hi> (2010). Description for constructing the transcribed text of glossed material using XML. 
+                        <hi rend="italic">IPSJ SIG Technical Report,</hi> 
+                        <hi rend="bold">2010-CH-85</hi>(5): 1–8.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Yanagihara, E., Kondo, A., Takada, T. and Tsukimoto, M.</hi> (2022). Kunten shiryoo kundoku bun koopasu sakusei no igi, shuhoo, soshite kadai. Tsuuji koopasu shinpojyuumu 2022, Tachikawa: NINJAL, March 2022.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

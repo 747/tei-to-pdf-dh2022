@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Quantifying the remake: A Statistical Approach to Hollywood Remake Metadata</title>
+                <author>
+                    <persName>
+                        <surname>Stelmach</surname>
+                        <forename>Milosz</forename>
+                    </persName>
+                    <affiliation>Jagiellonian University, Poland</affiliation>
+                    <email>milosz.stelmach@uj.edu.pl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Holobut</surname>
+                        <forename>Agata</forename>
+                    </persName>
+                    <affiliation>Jagiellonian University, Poland</affiliation>
+                    <email>agata.holobut@uj.edu.pl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Rybicki</surname>
+                        <forename>Jan</forename>
+                    </persName>
+                    <affiliation>Jagiellonian University, Poland</affiliation>
+                    <email>jan.rybicki@uj.edu.pl</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>remake</term>
+                    <term>metadata analysis</term>
+                    <term>Hollywood film</term>
+                    <term>recycling culture</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>Cultural studies</term>
+                    <term>Film and cinema arts studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                American film remakes have enjoyed growing academic attention over the last fifty years. Together with prequels, sequels, reboots and spin-offs they have been often viewed as exponents of contemporary recycling culture, symptomatic of Hollywood’s recent creative exhaustion and commercial risk aversion. In our research, we adopt a diachronic quantitative perspective to analyse and interpret the available metadata extracted from the International Movie Database (IMDb), reconstructing the history of Hollywood remaking practices between the years 1915 and 2020 in terms of the annual number of films based on pre-existent screen productions, their percentage relative to the total number of productions per year, remake recency and percentage of remakes with titles recognizably linked to the original over the years, commercial success of Hollywood remakes and the cross-cultural and generic transformations that these productions undergo. We also compare and contrast our findings with those obtained by Henderson (2014) in his analysis of film sequels.
+            </p>
+            <p>
+                We conducted this research of Hollywood remakes with a clear aim at verifying some intuitions derived from qualitative research against hard data. We find that popular convictions concerning the remarkable derivativity of contemporary American cinema are not supported by the data and are overshadowed by the remaking practices pervasiveness in so-called classical Hollywood studio era of 1930s to 1950s. This well-spread misconception may stem, as we argue, from availability bias (accessibility of statistics concerning recent productions and relative neglect of historical data) and systemic differences in the function and prestige ascribed to feature film remakes by classical and New Hollywood filmmakers.
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">As Forrest and Koos observed, “Haranguing Hollywood along purely ideological lines of industrial commercial imperialism only serves to hide the pervasiveness of remaking as a general cinematic practice […]. Without the benefits of the larger picture, this view can be nothing but limited and therefore distorting” (2002: 28). By employing methods characteristic of the rapidly developing field of digital humanities, which allow for a broad historical frame of reference, non-textual, data-based distant reading (cf. Moretti 2007), and basic statistical analysis, we hope to do just that: paint a larger picture advocated by Forrest and Koos and thus shed new light on familiar facts, implicit assumptions and frequently overlooked phenomena. We also aim to demonstrate the usefulness of quantitative methods in the study of film – a rather small but promising area of research (cf. e.g. Salt 2009; 2016; Bateman </hi>
+                <hi rend="italic" style="font-size:12pt" xml:space="preserve">et al </hi>
+                <hi style="font-size:12pt" xml:space="preserve">2011; Cutting </hi>
+                <hi rend="italic" style="font-size:12pt">et al</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> 2016; Heftberger 2018; Hołobut, Rybicki 2020; Tinits, Sobchuk 2020).</hi>
+            </p>
+            <p>
+                Further down the line lies an even more general field of cultural recycling of content, of which cinema is only a small part. This includes such phenomena as subsequent editions and translations of books, multiple stage adaptations of a given play, covers and remasters of musical pieces, updates, reissues and continuations of successful video games, etc. This broad frame of reference, wide and inclusive in its scope as well as attuned to particular media specificity, would be necessary to fully acknowledge the pervasiveness and complexity of the culture in which we live. Turning towards the data and empirical research can bring us a step closer to that goal.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Bohnenkamp, B.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (</hi>
+                        <hi rend="italic" style="font-size:12pt">et al</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">), (2015), ‘When does it make sense to do it again? An empirical investigation of contingency factors of movie remakes’, </hi>
+                        <hi rend="italic" style="font-size:12pt">Journal of Cultural Economics</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 39, pp. 15-41. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Cuelenaere, E.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2020), ‘Towards an integrative methodological approach of film remake studies’, </hi>
+                        <hi rend="italic" style="font-size:12pt" xml:space="preserve">Adaptation </hi>
+                        13: 2, pp. 210-223.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Forrest, J</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. and </hi>
+                        <hi rend="bold" style="font-size:12pt">Koos, L</hi>
+                        .
+                        <hi rend="bold" style="font-size:12pt">R.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (eds) (2002), </hi>
+                        <hi rend="italic" style="font-size:12pt">Dead Ringers: The Remake in Theory and Practice</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">, Albany: State University of New York. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Henderson, S.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2014), </hi>
+                        <hi rend="italic" style="font-size:12pt">The Hollywood Sequel: History &amp; Form, 1911-2010</hi>
+                        , London: British Film Institute.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Salt, B.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2016), ‘The exact remake: a statistical style analysis of six Hollywood films’, </hi>
+                        <hi rend="italic" style="font-size:12pt" xml:space="preserve">New Review of Film and Television Studies </hi>
+                        14: 4, pp.1-20.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Verevis, C.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2006), </hi>
+                        <hi rend="italic" style="font-size:12pt">Film Remakes</hi>
+                        , Edinburgh: Edinburgh University Press.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

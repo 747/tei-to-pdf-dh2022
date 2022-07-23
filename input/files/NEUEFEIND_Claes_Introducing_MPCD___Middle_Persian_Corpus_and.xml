@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Introducing MPCD – Middle Persian Corpus and Dictionary</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Neuefeind</surname>
+                        <forename>Claes</forename>
+                    </persName>
+                    <affiliation>University of Cologne, Germany</affiliation>
+                    <email>c.neuefeind@uni-koeln.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mondaca</surname>
+                        <forename>Francisco</forename>
+                    </persName>
+                    <affiliation>University of Cologne, Germany</affiliation>
+                    <email>f.mondaca@uni-koeln.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Eide</surname>
+                        <forename>Øyvind</forename>
+                    </persName>
+                    <affiliation>University of Cologne, Germany</affiliation>
+                    <email>oeide@uni-koeln.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Colditz</surname>
+                        <forename>Iris</forename>
+                    </persName>
+                    <affiliation>Ruhr-University Bochum, Germany</affiliation>
+                    <email>iris.colditz@rub.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Jügel</surname>
+                        <forename>Thomas</forename>
+                    </persName>
+                    <affiliation>Ruhr-University Bochum, Germany</affiliation>
+                    <email>thomas.juegel@rub.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Rezania</surname>
+                        <forename>Kianoosh</forename>
+                    </persName>
+                    <affiliation>Ruhr-University Bochum, Germany</affiliation>
+                    <email>kianoosh.rezania@rub.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Cantera</surname>
+                        <forename>Alberto</forename>
+                    </persName>
+                    <affiliation>Free University Berlin, Germany</affiliation>
+                    <email>Alberto.Cantera@fu-berlin.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Emanuel</surname>
+                        <forename>Chagai</forename>
+                    </persName>
+                    <affiliation>Hebrew University Jerusalem, Israel</affiliation>
+                    <email>chagai17@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T15:20:10</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Middle-Persian</term>
+                    <term>Pahlavi Script</term>
+                    <term>Transcription</term>
+                    <term>Digital Linguistics</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>data modeling</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>Linguistics</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading">
+                <head>Introduction</head>
+                <p>The project "Zoroastrian Middle Persian – Digital Corpus and Dictionary (MPCD)"
+                    <hi rend="sup">
+                        <note xml:id="ftn1" place="foot" n="1">
+                            <ptr target="https://mpcorpus.org/"/>
+                        </note>
+                    </hi> aims at creating a comprehensive, open-access corpus of Zoroastrian Middle Persian texts in Pahlavi script, accompanied by a digital Middle Persian-English dictionary based on this corpus. Started in mid 2021, MPCD is funded by the DFG as a long-term project
+                    <hi rend="sup">
+                        <note xml:id="ftn2" place="foot" n="2">
+                            <ptr target="https://gepris.dfg.de/gepris/projekt/452473565?language=en"/>
+                        </note>
+                    </hi>, with a duration of nine years in total. The cooperative project is being carried out at the universities of Bochum, Berlin, Jerusalem and Cologne. 
+                </p>
+                <p>While the partners in Bochum, Berlin and Jerusalemfocus on the philological aspects of the project, the Cologne Center for eHumanities (CCeH) is responsible for the technical implementation of a collaborative working environment, which at the same time serves as user interface for research and analysis of the processed resources. Of key importance to both the philological work and the technical design of the application is a common data model, which thus will be addressed in this poster.</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Scope of the project</head>
+                <p>Middle Persian was the official language and lingua franca of the Sasanian Empire (3rd-7th century) and was of high cultural and supra-religious importance. From late antiquity to the early Islamic period it connected the different areas of the Iranian East and West in both linguistic and cultural terms. However, the extensive corpus of Middle Persian texts has only been partially indexed to date and there is no comprehensive lexicographical resource covering the full variety of its vocabulary.</p>
+                <p>The aim of the MPCD project is to fill this gap by creating a corpus of all Zoroastrian Middle Persian texts in Pahlavi script (about 54 texts, approx. 687,000 words). This corpus will be made accessible in transliteration and transcription (cf. Rezania 2020) as well as in manuscript photographs of the 15 oldest codices, some of which can be obtained from Alberto Cantera's CAB project
+                    <hi rend="sup">
+                        <note xml:id="ftn3" place="foot" n="3">
+                            <ptr target="https://www.geschkult.fu-berlin.de/en/e/iranistik/forschung/CAB/index.html"/>
+                        </note>
+                    </hi> (Corpus Avesticum Berolinense). This comprehensive digital corpus will subsequently be used as a basis for the creation of a digital Middle Persian-English dictionary, expected to comprise approx. 7,000 lemmata.
+                </p>
+                <p>With its close interlocking of text and dictionary, the project complements existing text collections on Middle Persian such as TITUS (Thesaurus of Indo-European Text and Language Materials)
+                    <note xml:id="ftn0" place="foot" n="4">
+                        <ptr target="https://titus.uni-frankfurt.de/"/>
+                    </note> and extends existing concise dictionaries such as MacKenzie (1971) or Nyberg (1964/1974). The project is conceived as a basis for identifying internal and external factors in the complex fabric of the texts of Zoroastrian Middle Persian literature, and for providing an adequate means for a differentiated analysis of cultural, religious and social history.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Modeling MPCD</head>
+                <p>The digital corpus and dictionary represent two closely interlocked analytical tools with different emphases – text structure and semantics – that are also closely intertwined in the work process. This has to be taken into account by the internal data model, which at the same time determines the corpus structure and the collaborative working environment. </p>
+                <p>At the current stage of the project we focus on the corpus model. The corpus consists of texts (element &lt;corpusText&gt; in figure 1), with each text holding basic metadata and a number of sentences. The metadata comprises basic information like sigle, title, creation date, source, the responsible editor and his/her collaborators, while each &lt;sentence&gt;-element contains the full sentence, one or more translations, an (optional) comment and finally one or more tokens.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/27f5ae40a076ddafcbb9c14b980a64f0.png"/>
+                        <head>Excerpt of the corpus model reflecting a single text (element &lt;corpusText&gt;).</head>
+                    </figure>
+                </p>
+                <p>Each token (element &lt;tok&gt; in figure 2) holds information on the token language, a transcription and a transliteration, its lemma, (optional) information on the text structure to mark the beginning of a new section, folio etc (element &lt;newPart&gt;). Besides that, the token model includes both morphosyntactic annotations and lexicographic information, where the latter will prospectively serve as a direct link to the corpus-based dictionary (see element &lt;dictRef&gt; in &lt;tokenSemantics&gt;).</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/38c6ae087dde6b9367f71638dae06fae.png"/>
+                        <head>Excerpt of the corpus model reflecting a single token (element &lt;tok&gt;).</head>
+                    </figure>
+                </p>
+                <p>The morphosyntactic annotations will largely follow the 
+                    <hi rend="italic">Universal Dependencies</hi>
+                    <hi rend="sup italic">
+                        <note xml:id="ftn4" place="foot" n="5">
+                            <ptr target="https://universaldependencies.org/"/>
+                        </note>
+                    </hi> standard, which is adapted for the MPCD project by determining the subset of tags necessary for the annotation of Middle Persian and by adding Pahlavi-specific tags. These fine-grained linguistic annotations on token-level will allow for differentiated searches according to linguistic parameters that will be implemented on the basis of elasticsearch; search and CRUD operations will be available via a GraphQL-API (cf. Mondaca et al. 2019a and 2019b). 
+                </p>
+                <p>With its focus on the data model, the poster will provide a compact overview of the MPCD project, reflecting the corpus structure, the transcription process and the philological decisions as well as the implications for the technical design of the working environment to be established.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">MacKenzie, D. N. </hi>(1971): A Concise Pahlavi Dictionary. London/New York/Toronto.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mondaca, F., Rau, F., Neuefeind, C., Kiss, B., Kölligan, D., Reinöhl, U., Sahle, P.</hi> (2019a): 
+                        <hi rend="italic">C-SALT APIs - Connecting and Exposing Heterogeneous Language Resources.</hi> In: Book of Abstracts of the Digital Humanities Conference 2019 (DH2019) 09.07-12.07.2019. Utrecht, Netherlands.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mondaca, F., Schildkamp, P., Rau, F.</hi> (2019b): 
+                        <hi rend="italic">Introducing Kosh, a Framework for Creating and Maintaining APIs for Lexical Data.</hi> In: Electronic Lexicography in the 21st Century. Proceedings of the eLex 2019 Conference, Sintra, Portugal. Brno: Lexical Computing CZ, s.r.o., pp. 907–921.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Nyberg, H.S. </hi>(1964): 
+                        <hi rend="italic">A Manual of Pahlavi. Part I: Texts, Alphabets, Index, Paradigms, Notes and an Introduction.</hi> Wiesbaden.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Nyberg, H.S. </hi>(1974): 
+                        <hi rend="italic">A Manual of Pahlavi. Part II: Ideograms, Glossary, Abbreviations, Index, Grammatical Survey, Corrigenda to Part I.</hi> Wiesbaden.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rezania, K. </hi>(2020): 
+                        <hi rend="italic">A Suggestion for the Transliteration of Middle Persian Texts in Zoroastrian Middle Persian: Digital Corpus and Dictionary (MPCD): A Three Layered Transliteration System.</hi> Estudios Iranios y Turanios 4: pp. 153–73.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

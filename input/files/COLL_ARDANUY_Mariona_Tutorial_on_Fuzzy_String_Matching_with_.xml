@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Tutorial on Fuzzy String Matching with DeezyMatch</title>
+                <author>
+                    <persName>
+                        <surname>Coll Ardanuy</surname>
+                        <forename>Mariona</forename>
+                    </persName>
+                    <affiliation>The Alan Turing Institute, United Kingdom</affiliation>
+                    <email>mcollardanuy@turing.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hosseini</surname>
+                        <forename>Kasra</forename>
+                    </persName>
+                    <affiliation>The Alan Turing Institute, United Kingdom</affiliation>
+                    <email>khosseini@turing.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nanni</surname>
+                        <forename>Federico</forename>
+                    </persName>
+                    <affiliation>The Alan Turing Institute, United Kingdom</affiliation>
+                    <email>fnanni@turing.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vitale</surname>
+                        <forename>Valeria</forename>
+                    </persName>
+                    <affiliation>The Alan Turing Institute, United Kingdom</affiliation>
+                    <email>vvitale@turing.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-09T08:06:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>fuzzy string matching</term>
+                    <term>entity linking</term>
+                    <term>toponym resolution</term>
+                    <term>candidate selection</term>
+                    <term>linked data</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>information retrieval and querying algorithms and methods</term>
+                    <term>linked (open) data</term>
+                    <term>Geography and geo-humanities</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">Fuzzy string matching is a common challenge of linking data in many digital humanities projects, which often deal with noisy, historical, or non-standard text (Olieman et al., 2017). Named entities (in particular place names) are often present under a variety of forms, which can range from regional spelling differences to cross-linguistic or diachronic variation, sometimes due to a change in the political and cultural context, to lack of standardization, or to a process of linguistic standardization. In working with digitized materials, an additional, artificial layer of variation can occur, introduced by optical character recognition errors (Butler et al., 2017; Coll Ardanuy and Sporleder, 2017; De Wilde and Hengchen, 2017; van Strien et al., 2020).</p>
+                <p style="text-align: left; ">Several studies have warned of the importance of fuzzy string matching for entity linking, especially in noisy and non-standard text (Coll Ardanuy et al., 2020; De Wilde and Hengchen, 2017; Hachey et al., 2013). However, to date, most entity linking systems rely on either exact or partially overlapping string matching. This is due to the high computation time required by most fuzzy string matching approaches, such as Levenshtein distance (Santos et al., 2018a). In this tutorial, we will introduce DeezyMatch (Hosseini et al., 2020), an open-source, user-friendly Python library for fuzzy string matching and candidate ranking for entity linking that has been developed in the Living with Machines project (https://livingwithmachines.ac.uk/). DeezyMatch builds and expands on Santos et al. (2018b), an approach to fuzzy string matching that uses a deep learning architecture to classify pairs of toponyms as either potentially referring to the same entity or not. DeezyMatch is a tool that integrates recent deep learning advances, and has been specifically designed to be flexible, user-friendly, and fast, and therefore ready to be used in real entity linking scenarios.</p>
+                <p style="text-align: left; ">In this tutorial, we will show how DeezyMatch can be used to mitigate the problem of name variation in noisy, historical, or non-standard data. We will show how to create string pair datasets that can be used to train and test a DeezyMatch model, and how DeezyMatch models can be used to retrieve candidate entities from a gazetteer or knowledge base. By way of motivation, we will provide and discuss some real digital humanities examples which require fuzzy string matching and will show how DeezyMatch can be used to tackle them. During our tutorial, we will focus on the following case studies:</p>
+                <list rend="bulleted">
+                    <item>
+                        <hi rend="bold">Case study 1:</hi> We will show how a DeezyMatch model can be created from token-level alignments of OCRed text and their manual corrections. We will use the aligned tokens generated in van Strien et al. (2020) using a corpus of OCRed newspaper texts (from the National Library of Australia Trove digitized newspaper collection) that are aligned with human corrections performed by volunteers (Evershed and Fitch, 2014). We will show how to train a DeezyMatch model that learns OCR transformations from newspaper data and will show how it can be used to find a match for a given OCRed query from a pool of potential candidates from a specific knowledge base.
+                    </item>
+                    <item>
+                        <hi rend="bold">Case study 2:</hi> We will show how to create DeezyMatch models that are trained on name variations of places, which will enable us to find the best entry in a gazetteer, for a given query. As an example, we will show how these models can be used to consolidate data about names of heritage locations in Arabic speaking countries, like in the Heritage Gazetteer of Libya (https://slsgazetteer.org/). Currently, the high level of spelling variation in Arabic placenames (across time and transcriptions) makes it difficult to consolidate data that lies in different archives and collections, which at the moment rely on perfect string matching to find connections. We will show how DeezyMatch can be used to more easily associate a heritage location to a number of variant names, thus improving accuracy of data and metadata, and facilitating alignment with other knowledge bases such as Wikidata or Geonames.
+                    </item>
+                </list>
+                <p style="text-align: left; ">This is a hands-on tutorial: participants will be shown how to train a DeezyMatch model and use it for candidate ranking. We will allocate time at the end for discussion, including how to adapt DeezyMatch to different digital humanities projects in different languages and time periods.</p>
+                <p style="text-align: left; ">We will build on the experience gained on providing two different tutorials on DeezyMatch in the past:</p>
+                <list rend="bulleted">
+                    <item>December 2020: "Linking and Enriching GeoData through Test and Play: a tutorial on DeezyMatch", as part of the 
+                        <hi rend="italic">LinkedPasts conference</hi> (Mariona Coll Ardanuy, Kasra Hosseini, Katherine McDonough, and Federico Nanni), followed by a round table. It was held virtually, and there were around 40 participants. Link to the tutorial: 
+                        <ref target="https://github.com/LinkedPasts/LaNC-workshop/tree/main/deezymatch">https://github.com/LinkedPasts/LaNC-workshop/tree/main/deezymatch</ref>
+                    </item>
+                    <item>July 2021: "Best practices in collaborative coding and on using GitFlow for data science research", as part of the 
+                        <hi rend="italic">Digital Humanities &amp; Research Software Engineering virtual summer school</hi>, hosted by the Alan Turing Institute. It was held virtually, and there were 25 participants. The focus wat not so much on fuzzy string matching but on collaborative coding. Link to the tutorial: 
+                        <ref target="https://github.com/alan-turing-institute/DH-RSE-Summer-School/tree/main/Day%201/gitflow">https://github.com/alan-turing-institute/DH-RSE-Summer-School/tree/main/Day%201/gitflow</ref>
+                    </item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Outline</head>
+                <p style="text-align: left; ">This is a half-day tutorial which will cover the following core content:</p>
+                <list rend="bulleted">
+                    <item>
+                        <hi rend="bold">Part 1: Introduction to DeezyMatch and motivation</hi> [60 min]
+                        <list rend="bulleted">
+                            <item>[10 min] Introduction to fuzzy string matching and entity linking</item>
+                            <item>[30 min] Description of case studies and data obtaining and preparation</item>
+                            <item>[20 min] Overview of DeezyMatch</item>
+                        </list>
+                    </item>
+                    <item>
+                        <hi rend="bold">Part 2: Interactive hands-on session</hi> [1h20 min]
+                        <list rend="bulleted">
+                            <item>[10 min] Demo 1: candidate ranking using a pre-trained model</item>
+                            <item>[20 min] Hands-on exercise</item>
+                            <item>[10 min] Touch base</item>
+                            <item>[10 min] Demo 2 and hands-on session: DeezyMatch training and candidate ranking</item>
+                            <item>[20 min] Hands-on exercise</item>
+                            <item>[10 min] Touch base</item>
+                        </list>
+                    </item>
+                    <item>
+                        <hi rend="bold" xml:space="preserve">Part 3: Discussion and feedback </hi>[40 min]
+                        <list rend="bulleted">
+                            <item>[20 min] How to adapt DeezyMatch for your project</item>
+                            <item>[20 min] Questions</item>
+                        </list>
+                    </item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Instructors</head>
+                <list rend="bulleted">
+                    <item>
+                        <hi rend="bold">Mariona Coll Ardanuy:</hi> Mariona is a computational linguist at the Alan Turing Institute in the Living with Machines project. Her research interests lay in the intersection between the humanities and language technology.
+                    </item>
+                    <item>
+                        <hi rend="bold">Kasra Hosseini:</hi> Kasra is a Research Data Scientist at The Alan Turing Institute. He is interested in (artificially) intelligent systems, machine learning, and data analysis and visualisation.
+                    </item>
+                    <item>
+                        <hi rend="bold">Federico Nanni:</hi> Federico is a Research Data Scientist at The Alan Turing Institute. He is a historian by training and works exploring the intersections between digital humanities, computational social science, and natural language processing.
+                    </item>
+                    <item>
+                        <hi rend="bold">Valeria Vitale:</hi> Valeria Vitale is a researcher in the field of digital cultural heritage. She works at the Alan Turing Institute as Research Associate on the Machines Reading Maps project.
+                    </item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Target audience</head>
+                <p style="text-align: left; ">Based on past experience, we believe the number of participants should be 20 at most. Participants should have some experience in programming in Python and running scripts, and ideally be interested in entity linking or fuzzy string matching.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Funding statement</head>
+                <p style="text-align: left; ">This work was supported by Living with Machines (AHRC grant AH/S01179X/1) and The Alan Turing Institute (EPSRC grant EP/N510129/1). The Living with Machines project, funded by the UK Research and Innovation (UKRI) Strategic Priority Fund, is a multidisciplinary collaboration delivered by the Arts and Humanities Research Council (AHRC), with the Alan Turing Institute, the British Library and the Universities of Cambridge, East Anglia, Exeter, and Queen Mary University of London.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Butler, J. O., Donaldson, C. E., Taylor, J. E., and Gregory, I. N. </hi>(2017). Alts, Abbreviations, and AKAs: historical onomastic variation and automated named entity recognition. 
+                        <hi rend="italic">Journal of Map &amp; Geography Libraries</hi>, 
+                        <hi rend="italic">13</hi>(1), 58-81.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Coll Ardanuy, M., Hosseini, K., McDonough, K., Krause, A., van Strien, D., and Nanni, F.</hi> (2020). A deep learning approach to geographical candidate selection through toponym matching. In 
+                        <hi rend="italic">Proceedings of the 28th International Conference on Advances in Geographic Information Systems</hi> (pp. 385-388).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Coll Ardanuy, M., and Sporleder, C.</hi> (2017). Toponym disambiguation in historical documents using semantic and geographic features. In 
+                        <hi rend="italic">Proceedings of the 2nd International Conference on Digital Access to Textual Cultural Heritage</hi> (pp. 175-180).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">De Wilde, M., and Hengchen, S.</hi> (2017). Semantic enrichment of a multilingual archive with linked open data. 
+                        <hi rend="italic">Digital Humanities Quarterly</hi>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Evershed, J., &amp; Fitch, K.</hi> (2014). Correcting noisy OCR: Context beats confusion. In 
+                        <hi rend="italic">Proceedings of the First International Conference on Digital Access to Textual Cultural Heritage</hi> (pp. 45-51).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hachey, B., Radford, W., Nothman, J., Honnibal, M., &amp; Curran, J. R.</hi> (2013). Evaluating entity linking with Wikipedia. 
+                        <hi rend="italic">Artificial intelligence</hi>, 
+                        <hi rend="italic">194</hi>, 130-150.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hosseini, K., Nanni, F., and Coll Ardanuy, M.</hi> (2020). DeezyMatch: A flexible deep learning approach to fuzzy string matching. In 
+                        <hi rend="italic">Proceedings of the 2020 conference on empirical methods in natural language processing: System demonstrations</hi> (pp. 62-69).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Olieman, A., Beelen, K., van Lange, M., Kamps, J., and Marx, M.</hi> (2017). Good applications for crummy entity linkers? the case of corpus selection in digital humanities. In 
+                        <hi rend="italic">Proceedings of the 13th International Conference on Semantic Systems</hi> (pp. 81-88).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Santos, R., Murrieta-Flores, P., and Martins, B. </hi>(2018). Learning to combine multiple string similarity metrics for effective toponym matching. 
+                        <hi rend="italic">International journal of digital earth</hi>, 
+                        <hi rend="italic">11</hi>(9), 913-938.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Santos, R., Murrieta-Flores, P., Calado, P., and Martins, B.</hi> (2018). Toponym matching through deep neural networks. 
+                        <hi rend="italic">International Journal of Geographical Information Science</hi>, 
+                        <hi rend="italic">32</hi>(2), 324-348.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Van Strien, D., Beelen, K., Ardanuy, M. C., Hosseini, K., McGillivray, B., and Colavizza, G.</hi> (2020). Assessing the impact of OCR quality on downstream NLP tasks. 
+                        <hi rend="italic">Special Session on Artificial Intelligence and Digital Heritage: Challenges and Opportunities</hi>, in
+                        <hi rend="italic" xml:space="preserve"> Proceedings of the 12th International Conference on Agents and Artificial Intelligence</hi> (pp. 484-496)
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

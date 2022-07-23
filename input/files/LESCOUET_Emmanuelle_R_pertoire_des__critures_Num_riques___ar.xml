@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Répertoire des Écritures Numériques : archiving and qualifying electronic literature</title>
+                <author>
+                    <persName>
+                        <surname>Lescouet</surname>
+                        <forename>Emmanuelle</forename>
+                    </persName>
+                    <affiliation>Université de Montréal, Canada</affiliation>
+                    <email>emmanuelle.lescouet@umontreal.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vitali-Rosati</surname>
+                        <forename>Marcello</forename>
+                    </persName>
+                    <affiliation>Université de Montréal, Canada</affiliation>
+                    <email>marcello.vitali.rosati@umontreal.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>electronic literature</term>
+                    <term>archiving</term>
+                    <term>thesaurus</term>
+                    <term>digital humanities</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>concordancing and indexing</term>
+                    <term>electronic literature production and analysis</term>
+                    <term>Games studies</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The
+                <hi rend="apple-converted-space"> </hi>
+                <hi rend="italic">Répertoire des Écritures Numériques</hi>
+                <hi rend="apple-converted-space"> </hi>is a platform created in 2015 by the Canada Research Chair in Digital Textualities, under the direction of Marcello Vitali-Rosati, and which later joined the inter-university partnership Littérature Québécoise Mobile. It has undergone many redesigns and transformations, moving from the Repertoire of Digital Writers (Vitali-Rosati, 2017), focused on figures of auctoriality, to become the Répertoire it is today, interested in the real and fluid practices of literature. This project is now lead by Emmanuelle Lescouet.
+            </p>
+            <p>This transition has become necessary with the increase of literary artworks on various media and platforms, including game consoles and smartphones, connected watches or immersive worlds (Ryan, 2015). The place of the author is fading away to make room for fluid collectives, entities and representations of the auctorial and editorial function. The literary tradition leads us to multiple art forms, inscribed into different supports of reading. This actually brings us to consider new receptions and actual interaction with the text.</p>
+            <p>The importance of the inscription in the traditions and digital cultures of the different communities, so much related to the supports of reading. We have to emphasize the production and the concrete means of the existence of the artworks to identify possible receptions.</p>
+            <p>The trend towards intermediality, through the approach of videogame narratives (Aarseth, 1999; Hayles, 2007; Gervais and Archibald, 2006), network theories and practices (Manovich 2001), leads us to build a highly heterogeneous corpus place (Emerit, 2016). The selection of artworks raises questions, such as which ones could enter the ‘digital literature’? What are we to do with hybrid propositions? We are compulse to think literature in its inscription and its interactions with other close artforms such as video games or interactive movies. The approach here is not to legitimize artworks that exist by themselves outside the hands of academia, but to allow the documentation of a practice.</p>
+            <p>Historical studies on digital literary corpora, based in part on hypertext and arborescent organizations, call for being surpassed in an attempt to approach a contemporary theory of digital reading.</p>
+            <p>As digital literary works adapt to different media and techniques in perpetual and fast evolution, there is a research challenge to document these works, before their disappearance or their shift in practices. To capture them, or at least to gather enough information on them and the practices that accompany them to be able to draw up statistical studies and analyses of reading and its contemporary forms.</p>
+            <p>To this end, the
+                <hi rend="apple-converted-space"> </hi>
+                <hi rend="italic">Répertoire</hi>
+                <hi rend="apple-converted-space"> </hi>aims to document and catalog the emerging forms of digital literature, which leads the team to question the possible evolutions of artforms and so of categorizations and denominations to best qualify them. The establishment of characteristic fields, describing the concrete and formal perceptions of the work, is necessary for a documentation of this corpus. This documentation is then enriched through a literary approach, calling upon the narrative form as well as the discursive genre, the themes or the organization of the text.
+            </p>
+            <p>The
+                <hi rend="apple-converted-space"> </hi>
+                <hi rend="italic">Répertoire</hi>
+                <hi rend="apple-converted-space"> </hi>refers to a double approach: in one hand it analyses the technology, in the other it focuses on the reader body’s implications by the reading moves set up. All this is happening thanks to Omeka S, combined with a thesaurus via OpenTheso. The link between the two enrich the database and its implementation in the records allows a more precise description, validated by the community. The construction of a collaborative and peer-reviewed ontology within academia provides stability and a shared definition of concepts. Establishing common names for emerging literary forms allows us to document them and their evolution to be identified.
+            </p>
+            <p>Understanding how these artworks are constructed – what kind of software or content management systems are used – makes it possible to identify the technological constraints with which they are created; their possible reading hardwares as well as the community history of the studied practices. When linked to the medium, the technology leads us to consider the possible interactions with the artwork: from naming and combining gesture taxonomies to the physical interface between the reader and the artwork (Galloway, 2011; Garmon 2018; Souchier et al. 2019).</p>
+            <p>The implication of the body and its semantic construction materialize this incarnation and project the reader in a particular reception: if the artwork is composed by already acquired gestures, well-known interfaces, or foreign environment, the immediacy of the experience will place the reader in a different immmersive state. The digital environment, as well as our hyperconnected daily practices, allows us to understand the place of the literary artworks in the daily life of each one.</p>
+            <p>This poster will present a visual representation of the collected data. Through this cartography we will explain the necessity of the various categories and their inter-action into the reception and the formal offered experiment.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Aarseth, E. (1997) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Cybertext: Perspectives on Ergodic Literature</hi>
+                        . Baltimore: Johns Hopkins University Press.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Bouchardon, S. (2009) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Littérature numérique : le récit interactif</hi>
+                        . Paris: Hermès Science.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Bouchardon, S. (2012) ‘Du récit hypertextuel au récit interactif’, </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Revue de la BNF</hi>
+                        , (42), pp. 13–20.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Emerit, L. (2016) ‘La notion de lieu de corpus : un nouvel outil pour l’étude des terrains numériques en linguistique’, </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Corela</hi>
+                        , 14(1). doi:https://doi.org/10.4000/corela.4594.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Galloway, A.R. (2012) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">The interface effect</hi>
+                        . Cambridge, UK ; Malden, MA: Polity.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Garmon, I. (2020) ‘Le corps à l’épreuve des applications : des « petits gestes » éprouvants ?’, </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Les Chantiers de la Création</hi>
+                        , La mise à l’épreuve du corps(12). doi:https://doi.org/10.4000/lcc.3102.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Gervais, B. and Archibald, S. (2006) ‘Le récit en jeu : narrativité et interactivité’, </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Protée</hi>
+                        , 34(2–3), pp. 27–29.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Hayles, K.N. (2007) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Electronic literature: what is it?</hi>
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve"> Available at: https://eliterature.org/pad/elp.html (Accessed: 2 April 2019).</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Manovich, L. (2001) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">The language of new media</hi>
+                        . Cambridge, Mass.: MIT Press (Leonardo).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Ryan, M.-L. (2015) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Narrative as Virtual Reality 2</hi>
+                        . Baltimore: Johns Hopkins UP.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Souchier, E., Candel, É. and Gomez-Mejia, G. (2019) ‘Regards sur le numérique’, in </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Le numérique comme écriture</hi>
+                        . Paris: Armand Colin (Théories et méthodes d’analyse), pp. 21–191.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Vitali-Rosati, M. (2018) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">La littérature numérique francophone : enjeux théoriques et pratiques pour l’identification d’un corpus</hi>
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">, </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Culture numérique. Pour une philosophie du numérique</hi>
+                        . Available at: http://blog.sens-public.org/marcellovitalirosati/la-litterature-numerique-francophone-enjeux-theoriques-et-pratiques-pour-lidentification-dun-corpus/ (Accessed: 22 November 2021).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

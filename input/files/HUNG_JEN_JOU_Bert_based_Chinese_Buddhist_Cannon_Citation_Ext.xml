@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bert-based Chinese Buddhist Cannon Citation Extraction Model Utilizing Prior Defined Regex Pattern and Data Augmentation</title>
+                <author>
+                    <persName>
+                        <surname>HUNG</surname>
+                        <forename>JEN JOU</forename>
+                    </persName>
+                    <affiliation>Dharma Drum Institute of Liberal Arts, Taiwan</affiliation>
+                    <email>jenjou.hung@dila.edu.tw</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wang</surname>
+                        <forename>Yu-Chun</forename>
+                    </persName>
+                    <affiliation>Dharma Drum Institute of Liberal Arts, Taiwan</affiliation>
+                    <email>ycwang@dila.edu.tw</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T02:54:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Buddhsim</term>
+                    <term>Chinese Buddhist Canon</term>
+                    <term>Citation Extraction</term>
+                    <term>Deep Learning</term>
+                    <term>Text Data Augmentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>natural language processing</term>
+                    <term>Asian studies</term>
+                    <term>Theology and religious studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">After Buddhism was introduced to China around the first century, monks and scholars interested in Buddhism began translating Buddhist scriptures. This translation activity produced an enormous number of Chinese Buddhist texts that were later compiled into the Chinese Buddhist Tripitaka. In recent decades, several Institutes have engaged in the Tripitaka digitization work. One of the significant achievements is made by CBETA Chinese Electronic Tripitaka Collection. It contains not only the electronic full text of the Tripitaka but also many related texts that are often needed for Buddhist studies. Because the Tripitaka has been properly preserved and well digitized, it has become the primary research material for studying Chinese Buddhism, and most Buddhist research papers quoted a lot of Tripitaka materials. From these citations, we can understand the relationship between the research papers and the Tripitaka texts. Furthermore, if we summarize and analyze the citation information, we may be able to understand the preference of Buddhist studies in citing Buddhist texts, which is very helpful for identifying the targets and trends of Buddhist studies. </p>
+            <p style="text-align: left; ">The major difficulty encountered when extracting citations in the paper is the inconsistency and lacking of standard citation styles. Although most of the Tripitaka citations included almost the same information, the citation styles could be very different. For example: in the citation "T07, no. 220, p. 1068, c12", T07 represents the 7th volume of the Taisho Tripitaka, p. 1068 means page 1068, c12 denotes line 12 of column c, and the content at this location belongs to the text No. 220, the "Mahā-prajñāpāramitā Sūtra." In another example: the citation "T.1969, 47:170a21" means the citation is from the 21st line in column A on page 170 in volume 47 of Taisho Tripitaka. It can be seen that the information expressed by the two citations is similar, but the formats are quite different. The situation becomes even more complicated when we consider the citation with Chinese characters.</p>
+            <p style="text-align: left; ">Our study has written a program using regex match to detect the citation strings and extract the reference location information. The performance of the detection program is quite good. So far, we have processed 3 Chinese Buddhist journals with 677 papers, and 21,029 valid Tripitaka citations have been extracted. The overall accuracy rate reaches 90.63%, and the recall rate is 94.68%. However, since we cannot obtain all possible reference formats initially, we can only design the corresponding regex patterns according to the reference instance encountered during the processing. This problem has led to a rapid increase in the number of regex patterns in our detection program. We already have created more than 70 patterns, and citations in tricky style still happen frequently. That drives us to seek a better strategy than endlessly adding regex patterns to our program.</p>
+            <p style="text-align: left; ">The rapid development of modern artificial intelligence technology has brought us new ways to solve this problem. We plan to use the Joint Model based on Bidirectional Encoder Representations from Transformers (BERT) to establish the extraction Model of this research. Each sentence in the paper text will be used as the input of the BERT model, and an extra CLS token will be inserted at the front end of each sentence. Each token in the sentence will undergo multi-layer Transformers to generate the corresponding output vector. The output vector of CLS is connected to a fully connected binary neural network classifier for determining whether the sentence contains Tripitaka citation. The output of each subsequent token is also connected to a multi-class classifier to perform sequence labeling to determine which slot the token belongs to.</p>
+            <p style="text-align: left; ">The deep learning models usually have a vast amount of parameters to be trained. If the amount of training data is insufficient, over-fitting problems may occur. Now, we only have the 677 marked full-text from Buddhist research papers to be used for training, but it seems insufficient in number. Therefore, we plan to use Text Data Augmentation to expand the training data set. Data Augmentation refers to adding noise to the training data to simulate more data to train the AI model. Such a technique is commonly used in training AI models for image recognition. However, in AI tasks based on text data, it is usually difficult to generate artificial training data because the rationality of the text content needs to be considered. However, we can overcome this problem by using more than 70 regex patterns to generate valid training data in our detection program. By combining the BERT mode and Text Data Augmentation technique, we expect to construct an effective Tripitaka citation detection and extraction mechanism.</p>
+        </body>
+    </text>
+</TEI>

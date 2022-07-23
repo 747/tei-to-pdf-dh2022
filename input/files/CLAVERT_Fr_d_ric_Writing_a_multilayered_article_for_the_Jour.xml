@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Writing a multilayered article for the Journal of Digital History</title>
+                <author>
+                    <persName>
+                        <surname>Clavert</surname>
+                        <forename>Frédéric</forename>
+                    </persName>
+                    <affiliation>Université of Luxembourg, Luxembourg</affiliation>
+                    <email>frederic.clavert@uni.lu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Elisar</surname>
+                        <forename>Ori</forename>
+                    </persName>
+                    <affiliation>Université of Luxembourg, Luxembourg</affiliation>
+                    <email>ori.elisar@uni.lu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pfeiffer</surname>
+                        <forename>Mirjam</forename>
+                    </persName>
+                    <affiliation>Université of Luxembourg, Luxembourg</affiliation>
+                    <email>mirjam.pfeiffer@uni.lu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Guerard</surname>
+                        <forename>Elisabeth</forename>
+                    </persName>
+                    <affiliation>Université of Luxembourg, Luxembourg</affiliation>
+                    <email>elisabeth.guerard@uni.lu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital edition</term>
+                    <term>open access</term>
+                    <term>open data</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>data publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>digital publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Overview of the tutorial</head>
+                <p style="text-align: left; ">The first issue of the 
+                    <hi rend="italic">Journal of Digital History</hi> (JDH) went out in October 2021. A joint-venture with De Gruyter Publishingq group, the JDH is open access (no fees for authors) and encourages open data. Its distinctiveness is that it implements the concept of multilayered articles, that is based on a long-lasting history of thinking on the future of academic writings 
+                    <ref target="https://www.zotero.org/google-docs/?nQWB8x">(Darnton)</ref>. This implementation is based on a specifically designed infrastructure based on open source software, with Jupyter notebooks at its heart. JDH’s articles are composed of three layers: a narrative layer (the presentation of the results of a research), an hermeneutics layer (exposing methodologies, uses of digital tools, and code), and a data layer (the dataset itself).
+                </p>
+                <p style="text-align: left; ">The tutorial will last 4 hours and will be divided into two parts. The first part (Two hours, including a break) will show the attendees how to set up their writing environment (
+                    <ref target="https://journalofdigitalhistory.org/en/guidelines">
+                        <hi rend="color(1155CC)">https://journalofdigitalhistory.org/en/guidelines</hi>
+                    </ref>). This includes: installing jupyter notebooks and several extensions (nbextensions, cite2c), linking their writing environment to their Zotero account, setting up a github repository (optional, but strongly recommended).
+                </p>
+                <p style="text-align: left; ">After the familiarization with the environment, the second part will focus on how to write an article and preview it on the JDH front-end  (
+                    <ref target="https://journalofdigitalhistory.org/en/notebook-viewer-form">
+                        <hi rend="color(1155CC)">https://journalofdigitalhistory.org/en/notebook-viewer-form</hi>
+                    </ref> - for this interface, using a github repo is mandatory).
+                </p>
+                <p style="text-align: left; ">For both parts, it is mandatory that attendees come with their own computer with administrator’s rights. It is strongly recommended that they have their own data and have a draft article (whatever the journal they intend to publish in) using this dataset in view.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Learning outcomes</head>
+                <list rend="bulleted">
+                    <item>understanding the concept of multilayered article,</item>
+                    <item>setting up a writing environment that allows interaction with a dataset through code,</item>
+                    <item>testing their article in the JDH viewer.</item>
+                </list>
+                <p style="text-align: left; ">Beyond the use of the Journal of Digital History, we aim at showing concretely an alternative way to publish in the digital era, a topic that is fully belonging to Digital Humanities 
+                    <ref target="https://www.zotero.org/google-docs/?gfqIZA">(Fitzpatrick; Vitali-Rosati et Sinatra)</ref>.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Timeline</head>
+                <p style="text-align: left; ">Introduction (5 minutes)</p>
+                <p style="text-align: left; ">The Journal of Digital History and the concept of multilayered article (10 minutes)</p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>First part</head>
+                    <p style="text-align: left; ">Setting up a writing environment (1) (40 minutes)</p>
+                    <list rend="bulleted">
+                        <item>installation of jupyter notebooks / lab</item>
+                        <item>installation of nbextensions / cite2c</item>
+                    </list>
+                    <p style="text-align: left; ">break (10 minutes)</p>
+                    <p style="text-align: left; ">Setting up your writing environment (2) (50 minutes)</p>
+                    <list rend="bulleted">
+                        <item>linking your jupyter installation to Zotero through cite2c</item>
+                        <item>using GitHub (optional)</item>
+                    </list>
+                    <p style="text-align: left; ">Overview of the main functionalities of notebooks</p>
+                    <p style="text-align: left; ">break (10 minutes)</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Second part</head>
+                    <p style="text-align: left; ">Presenting the guidelines of the JDH (including the specific JDH tagging system, 20 minutes)</p>
+                    <p style="text-align: left; ">Presenting the Jupyter Notebook JDH template (10 minutes)</p>
+                    <p style="text-align: left; ">Creating and syncing your repo on GitHub (10 minutes)</p>
+                    <p style="text-align: left; ">Preparing your bibliography on Zotero (10 minutes)</p>
+                    <p style="text-align: left; ">break (10 minutes)</p>
+                    <p style="text-align: left; ">Writing session (45 minutes)</p>
+                    <list rend="bulleted">
+                        <item>Including article preview on the JDH.</item>
+                    </list>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Wrap up (15 minutes)</head>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Workshop instructors and leaders</head>
+                <p style="text-align: left; ">
+                    <hi rend="italic">Frédéric Clavert</hi> is assistant professor in contemporary history and managing editor of the Journal of Digital History. His research are recently focusing on collective memory and social media, as well as on the changing relationships between historians and their primary sources in the digital era.
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="italic">Elisabeth Guérard</hi> is working on the JDH project as an application developer.
+                </p>
+                <p style="text-align: left; ">
+                    <hi rend="italic">Mirjam Pfeiffer</hi> is a User Experience and User Interaction Designer, working full time on the Journal of Digital History.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Target audience</head>
+                <p style="text-align: left; ">We target researchers, mostly but not exclusively historians, who have an experience in writing code to exploit their data but have not yet found a satisfactory way to expose their methods, tools, code and data.</p>
+                <p style="text-align: left; ">We expect a number of participants around 10 on site. In November 2021, we held a workshop at the French conference DHNord in Lille that aroused some interest, with a smaller audience than the DH conferences’. Aside from that workshop, we also organised several workshops online (Nebraska Lincoln, University of Sussex). Evaluating how many people will attend online is more difficult.</p>
+                <p style="text-align: left; ">The JDH’s team hopes that this tutorial will give them the occasion to meet and deepen their links to the Asian DH community.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Darnton, R. (1999). “The New Age of the Book”. 
+                        <hi rend="italic">New York Times</hi>.
+                    </bibl>
+                    <bibl style="text-align: left; ">Fitzpatrick, K. (2011). Planned Obsolescence: Publishing, Technology, and the Future of the Academy. New York: New York University Press.</bibl>
+                    <bibl style="text-align: left; ">Vitali-Rosati, M. and Sinatra, M. eds. 
+                        <hi rend="italic">Pratiques de l’édition numérique</hi>, Montréal: Presses de l’Université de Montréal, 2014.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

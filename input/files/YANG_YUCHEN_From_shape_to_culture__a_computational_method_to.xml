@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>From shape to culture: a computational method to extract and study the shape of vases</title>
+                <author>
+                    <persName>
+                        <surname>Yang</surname>
+                        <forename>Yuchen</forename>
+                    </persName>
+                    <affiliation>Swiss Federal Institute of Technology Lausanne, Switzerland</affiliation>
+                    <email>yuchen.yang@epfl.ch</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Han</surname>
+                        <forename>Zhitong</forename>
+                    </persName>
+                    <affiliation>Sichuan University, People's Repubulic of China</affiliation>
+                    <email>zhitonghan7@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Shape analysis</term>
+                    <term>Chinese porcelain</term>
+                    <term>Image processing</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>image processing and analysis</term>
+                    <term>Art history</term>
+                    <term>Asian studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>In recent years, the idea that cultural change can be described as a process comparable to organic evolution has become increasingly popular 
+                    <hi rend="color(666666)">(Mesoudi, 2001)</hi>. Like organic diversity, cultural diversity results from a modification-with-descent process, and some methods used to study organic diversity can be used to explore the culture. For example, the genealogical relationships among cultural artefacts (languages, folk tales, Iranian rugs) can be reconstructed using phylogenetic methods (Tehrani and Collard, 2009; Tehrani et al., 2010) and to study the evolution and ecology of cultures.  
+                </p>
+                <p>Shape, among other quantitative features, has shown great potential for such studies. Multiple works use shape to study cultural grammar and cultural diversity (
+                    <hi rend="color(222222)" style="font-size:10pt">Liu and Ren, 2021</hi>; 
+                    <hi rend="color(222222)" style="font-size:10pt">Di Angelo et al., 2018</hi>). However, these attempts either are qualitative or focus on potteries in the ancient Greek time and fail to capture the pan-Asian porcelain, which is arguably the most important artefacts that connect Asian countries and the rest of the world.
+                </p>
+                <p>This study proposed 1) a quantitative method to study how MeiPing
+                    <hi rend="italic" xml:space="preserve"> (a typical Chinese </hi>porcelain type
+                    <hi rend="italic">)</hi> has evolved in design through shape. The null hypothesis is that the more balanced shape of MeiPing would have been adopted more often in the course of cultural evolution; accordingly, the alternative hypothesis is that MeiPing would have become less balanced, turned into a delicate ornament rather than a practical vessel. 2) a workflow to automatically extract contours to bridge the gap between methods and data for such studies in the future.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Methods</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Shape analysis</head>
+                    <p>Since we are trying to capture the essence of MeiPing contour, but not the exact contour - that might be weird and complex due to the decorations on the vase - we performed manual landmarking on a total of 230 MeiPing to obtain their contours. Superimposition and normalization are performed using the momocs 1.3.0 (Bon
+                        <hi rend="color(202122)">homme et al, 2014) in R.</hi>
+                    </p>
+                    <figure>
+                        <graphic n="1001" width="11.870972222222223cm" height="0.6490305555555556cm" url="Pictures/ff6047b564a39ef98906b43b1eb16fcb.jpg" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left;">Formula 1. Balance coefficient definition</p>
+                    <p style="text-align: left;">
+                        <hi rend="color(202122)" xml:space="preserve">To understand how practical a vase is, we introduced two indicators. The first is </hi>the shape-dependent Balance coefficient (BC) 
+                        <hi rend="italic">using Formula 1</hi>. Each parameter used for the calculation is defined and described in Fig. 1. The second is Degree of symmetry (DC), calculated using momocs.
+                    </p>
+                    <figure>
+                        <graphic n="1002" width="14.851944444444445cm" height="21.331666666666667cm" url="Pictures/43491397cdae4452d6887410655b1dbe.jpg" rend="inline"/>
+                    </figure>
+                    <p>Figure 1. Parameters definition and explanation for Balance coefficient</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Contour extraction</head>
+                    <p style="text-align: left;">The traditional way of extracting contours is based on binarised images, which works fine for clean and consistent inputs. In reality, artefacts images are from multiple sources, and their standards and conditions vary. The constantly changing background, contrast, and brightness make the task difficult and require constant changes to the parameters for binarisation to work(Fig. 2). </p>
+                    <figure>
+                        <graphic n="1003" width="15.698483333333334cm" height="16.421805555555554cm" url="Pictures/c1e0429277f80fb38a6f3ee334c15836.jpg" rend="inline"/>
+                    </figure>
+                    <p>Figure 2. (a) a good image for binarisation extraction, (b) a contour in green extracted in OpenCV, (c) a bad image for binarisation extraction, (d) a failed contour in green extracted in OpenCV </p>
+                    <p style="text-align: left;">There is a rising attempt to use learning models for image segmentation that can detect and segment the objects of interest in given images. The perk of this is that it does not restrict image conditions, the segmentation can be done in much looser terms compared to binarisation. However, the go-to model Mask-RCNN (
+                        <hi rend="color(222222)" style="font-size:10pt">He et al., 2017</hi>) is very good at getting a rough contour but not with precision. 
+                    </p>
+                    <p style="text-align: left;">In this research, we integrate Pointrend (
+                        <hi rend="color(222222)" style="font-size:10pt">Kirillov et al., 2020</hi>), an improved model that treats segmentation as a rendering task for more precise contours, and compare it with the popular Mask-RCNN. The comparison is conducted using the strict metric Average Precision at IoU = 0.75 (AP75) in COCO detection evaluation.
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Data</head>
+                    <p style="text-align: left;">We have collected 230 images of MeiPing from museum digital archives to imitate real-life situations - lack consistent sources and standards, and the quality varies. To perform the quantitative analysis and validate the automated contour extraction workflow, all images are manually annotated. A synthetic dataset of 1000 vases was created for the finetuning of the machine learning model.</p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Shape analysis results on Meiping</head>
+                    <p style="text-align: left;">The results of linear regressions of both parameters, BC and DC, with the production year have a P-value &lt; 0.001. We can then conclude that MeiPing becomes more balance and symmetrical over time (Fig. 3), therefore the null hypothesis was accepted – – the shape of MeiPing evolves to become more and more practical.</p>
+                    <figure>
+                        <graphic n="1004" width="16.002cm" height="9.186333333333334cm" url="Pictures/a95268d143d52a0213032a325f5501bb.jpg" rend="inline"/>
+                    </figure>
+                    <p style="text-align: left;">Figure 3. (a) results of linear regression between manufacturing date and BC, (b) results of linear regression between manufacturing date and DC</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Contour extraction</head>
+                    <figure>
+                        <graphic n="1005" width="16.002cm" height="8.934097222222222cm" url="Pictures/65d0905aebb9f28c134e47e7b8518c57.jpg" rend="inline"/>
+                    </figure>
+                    <p>Figure 4. (a) contour inferred by Pointrend, (b) contour inferred by Mask-RCNN</p>
+                    <p style="text-align: left;">1000 synthetic images of vases against backgrounds were used to fine-tune the Mask-RCNN and Pointrend model. The inferences and evaluation were run on all manually annotated images
+                        <hi style="font-family:SimSun" xml:space="preserve">. </hi>The Mask-RCNN achieved an AP75 of 91.10, while the Pointrend achieved an AP75 of 99.2. The differences in the AP75 value indicated the Pointrend model is better at getting the detailed mask of the object in question, hence can retrieve better contours. In future examinations of the result by eye, the Pointrend model predicted the mask area more tightly wrapping the vase, while the contour predicted by Mask-RCNN is less so (Fig. 4). Fig. 5 shows that the machine learning extracted contour reached comparable conclusions compared to the ones using manually annotated data
+                        .
+                    </p>
+                    <figure>
+                        <graphic n="1006" width="16.002cm" height="8.179152777777778cm" url="Pictures/82a6bce9f1e4fddb98a207a78915b981.jpg" rend="inline"/>
+                    </figure>
+                    <p>Figure 5. comparison of results of manually annotated shape data and machine extracted contours, (a)linear regression between manufacturing date and BC, (b) linear regression between manufacturing date and DC</p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left;">This study proposed a practical and viable quantitative method to study the functional change of vases through shape, as well as a verified workflow to automatically extract contours out of images of vases regardless of image conditions to facilitate future studies on vase shapes. The result, combined with proper metadata, allows researchers to validate existing or create new theories of cultural evolution.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Mesoudi, A. (2021). Cultural evolution. In Cultural Evolution. University of Chicago Press.</bibl>
+                    <bibl style="text-align: left; ">Tehrani, J. J., &amp; Collard, M. (2009). On the relationship between interindividual cultural transmission and population-level cultural diversity: a case study of weaving in Iranian tribal populations. Evolution and Human Behavior, 30(4), 286-300.</bibl>
+                    <bibl style="text-align: left; ">Tehrani, J. J., Collard, M., &amp; Shennan, S. J. (2010). The cophylogeny of populations and cultures: reconstructing the evolution of Iranian tribal craft traditions using trees and jungles. Philosophical Transactions of the Royal Society B: Biological Sciences, 365(1559), 3865-3874.</bibl>
+                    <bibl style="text-align: left; ">Liu, F., &amp; Ren, Y. (2021). Study on Shape Design of Shouzhou Kiln Porcelain Based on Shape Grammar and Genetic Constraints. Journal of Landscape Research, 13(4), 111-117.</bibl>
+                    <bibl style="text-align: left; ">Di Angelo, L., Di Stefano, P., &amp; Pane, C. (2018). An automatic method for pottery fragments analysis. Measurement, 128, 138-148.</bibl>
+                    <bibl style="text-align: left; ">Bonhomme, V. et al. (2014). “Momocs: Outline Analysis Using R”. In: Journal of Statistical Software 56.13, pp. 1–24.</bibl>
+                    <bibl style="text-align: left; ">He, K., Gkioxari, G., Dollár, P., &amp; Girshick, R. (2017). Mask r-cnn. In Proceedings of the IEEE international conference on computer vision (pp. 2961-2969).</bibl>
+                    <bibl style="text-align: left; ">Kirillov, A., Wu, Y., He, K., &amp; Girshick, R. (2020). Pointrend: Image segmentation as rendering. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition (pp. 9799-9808).</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

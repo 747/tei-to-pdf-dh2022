@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Poetry as Error. A ‘Tool Misuse’ Experiment on the Processing of German Language Poetry</title>
+                <author>
+                    <persName>
+                        <surname>Sluyter-Gäthje</surname>
+                        <forename>Henny</forename>
+                    </persName>
+                    <affiliation>University of Potsdam, Germany</affiliation>
+                    <email>sluytergaeth@uni-potsdam.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Trilcke</surname>
+                        <forename>Peer</forename>
+                    </persName>
+                    <affiliation>University of Potsdam, Germany</affiliation>
+                    <email>trilcke@uni-potsdam.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Poetry</term>
+                    <term>NLP</term>
+                    <term>Error</term>
+                    <term>Literaricity</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>natural language processing</term>
+                    <term>text mining and analysis</term>
+                    <term>Linguistics</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">
+                <hi rend="bold">1. Research question</hi>
+            </p>
+            <p style="text-align: left; ">In Computational Literary Studies texts are typically pre-processed with Natural Language Processing (NLP) tools. However, due to historical and/or aesthetic characteristics, literary texts sometimes deviate notably from the data the tools are trained on. Due to this difference in domain, the performance of the tools drops (Scheible et al., 2011; Rayson et al., 2007; Herrmann, 2018; Bamman, 2020). Instead of considering this to be a problem, the ‘erroneousness’ of the tools could provide a computational understanding of the ‘deviance of literary texts’; produced errors might reveal something about the characteristics of literature.</p>
+            <p style="text-align: left; ">In the following, we report on a 
+                <hi rend="italic">Tool Misuse</hi> experiment on German lyric poetry – a genre that is usually associated with a high degree of deviance (Müller-Zettelmann, 2000: 100; Zymner, 2019: 29–30) – in which we develop a pipeline that provokes tokenization, lemmatization and POS tagging 'errors' of NLP tools and typologises these 'errors' in a rule-based way. 
+            </p>
+            <p style="text-align: left; ">2. Operationalization</p>
+            <figure>
+                <graphic n="1001" width="15.920861111111112cm" height="8.528402777777778cm" url="Pictures/a2db260a3aba82fe4a88712f797527c3.png" rend="inline"/>
+                <head>Pipeline for error typing of the corpora.</head>
+            </figure>
+            <p style="text-align: left; ">Since gold standard annotations are not available for our scenario, we base our evaluation on the assumption that correctly produced lemmas can be found in dictionaries of German language. Based on the 
+                <ref target="https://textgridrep.org/">TextGridRepository</ref>, we build a canon-based corpus of 'prototypical' German-language poetry comprising 5,144 poems. For comparison, we use a prose corpus of 100 German-language novels from the 19th century, compiled from the TextGridRepository and 
+                <ref target="https://www.projekt-gutenberg.org/">Project Gutenberg</ref>. As dictionaries we use ‘GermaNet‘ (Hamp &amp; Feldweg, 1997; Henrich &amp; Hinrichs, 2010) and the ‘Digitales Wörterbuch der deutschen Sprache‘ (Klein &amp; Geyken, 2010). To ensure that the resulting errors are not tagger specific, we use several NLP tools for tokenization, lemmatization and POS tagging of the corpora (fig. 01) and consider all content word types as potential errors that are lemmatized by at least two tools and for which none of the produced lemmas are found in the dictionaries (fig. 02, column "pFail").
+            </p>
+            <p style="text-align: left; ">Our 'error pipeline' prefers recall over precision, thus it produces only circumstantial evidence of potential errors. A larger number of false positives is to be expected, because we process out-of-vocabulary words of the dictionaries.</p>
+            <figure>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Poetry</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Poetry</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Prose</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Prose</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">all</cell>
+                        <cell style="text-align: left;" rend="DH-Default">pFail</cell>
+                        <cell style="text-align: left;" rend="DH-Default">All</cell>
+                        <cell style="text-align: left;" rend="DH-Default">pFail</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Types</cell>
+                        <cell style="text-align: left;" rend="DH-Default">70,422</cell>
+                        <cell style="text-align: left;" rend="DH-Default">24,244</cell>
+                        <cell style="text-align: left;" rend="DH-Default">263,042</cell>
+                        <cell style="text-align: left;" rend="DH-Default">115,785</cell>
+                    </row>
+                </table>
+                <head>Number of word types (NOUN, VERB, ADJECTIVE) for the entire corpus ("all") and for the sets with potential errors ("pFail").</head>
+            </figure>
+            <p style="text-align: left; ">
+                <hi rend="bold">3. Analysis</hi>
+            </p>
+            <p style="text-align: left; ">Based on manual inspections of the pFail set, we postulate 13 error types described in figure 03. For each type we formulate a rule
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> For the rules see: 
+                        <ref target="https://gitup.uni-potsdam.de/sluytergaeth/poetry_as_error">https://gitup.uni-potsdam.de/sluytergaeth/poetry_as_error</ref>
+                    </p>
+                </note> which is then applied to the pFail set following the order of the error types listed below. Multiple typings are not possible.
+            </p>
+            <figure>
+                <graphic n="1002" width="16.002cm" height="16.69873611111111cm" url="Pictures/0960c097bf9db429b9efb0b418c600c6.png" rend="inline"/>
+                <head>Description of error types.</head>
+            </figure>
+            <p style="text-align: left; ">4. Results</p>
+            <figure>
+                <graphic n="1003" width="12.272141666666666cm" height="12.483169444444444cm" url="Pictures/f3d5d7e4292c1cc925909a7a425d92ac.png" rend="inline"/>
+                <head>Relative frequency for the types of potential errors for the two pFail sets.</head>
+            </figure>
+            <p style="text-align: left; ">53.33 % of the word types in the pFail set for poetry and 59.88 % of the word types in the pFail set for prose are identified. PUNC and SHORT are predominantly sub-word level characters, mostly noise which appears to a comparable extent in poetry and prose. ORTH_SZ reflects the effect of Historical Orthography which a normalisation step could remedy.</p>
+            <p style="text-align: left; ">The ten remaining types can be combined into three groups:</p>
+            <list type="unordered">
+                <item>COMP_DASH, COMP, PART_ ADJECTIVE, PREFIXED gather 
+                    <hi rend="italic">Creative Lexis</hi>, i.e. word formation mechanisms (composition, derivation); these are often out-of-vocabulary words and therefore pipeline errors, not tool errors. In poetry, 45.25 % of the "pFail" set can be assigned to this group, in prose 57.09 %. 
+                </item>
+                <item>As expected, the pipeline produces a higher error rate for poetry (0.62 %) than for prose (0.02 %) for ORTH_UPPER, which identifies a characteristic of 
+                    <hi rend="italic">Lyric Typography</hi> (capitalizing first letters in lines). 
+                </item>
+                <item>The error rate of 
+                    <hi rend="italic">Prosodic Deformation</hi> consisting of ELISION_APO, ELISION_SIMPLE, ELISION_END, EPITHESIS and CONTRACT is also higher for poetry than for prose (6.62 % compared to 1.93 %). We assume that the deformations are due to the addition or deletion of vowels for metric reasons.
+                </item>
+            </list>
+            <p style="text-align: left; ">5. Outlook</p>
+            <p style="text-align: left; ">Our pipeline identifies 
+                <hi rend="italic">Prosodic Deformation</hi>, 
+                <hi rend="italic">Lyric Typography</hi> and 
+                <hi rend="italic">Creative Lexis</hi> as typical sources of error when processing poetry with NLP tools. However, our pipeline needs to be optimized: too many potential errors are, as in the case of 
+                <hi rend="italic">Creative Lexis</hi>, in fact not tool errors but pipeline errors. Additionally, our rule-based typology is only able to describe 53.33 % of the pFail set. This reveals two areas for follow-up research: the pipeline could be improved on to decrease the number of pipeline errors and the rule-based typologisation procedure could be optimized against our baseline.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bamman, D.</hi> (2020). LitBank: Born-Literary Natural Language Processing. [Preprint]. https://people.ischool.berkeley.edu/~dbamman/pubs/pdf/Bamman_DH_Debates_CompHum.pdf [Last accessed November 16, 2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Braam, H.</hi> (2019). 
+                        <hi rend="italic">Die berühmtesten deutschen Gedichte. Auf der Grundlage von 300 Gedichtsammlungen</hi>. Stuttgart: 2. Aufl., Kröner.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hamp, B. and Feldweg, H.</hi> (1997). GermaNet - a Lexical-Semantic Net for German. In 
+                        <hi rend="italic">Proceedings of the ACL workshop Automatic Information Extraction and Building of Lexical Semantic Resources for NLP Applications</hi>. Madrid, Spain, pp. 9–15. https://aclanthology.org/W97-0802.pdf [Last accessed November 16, 2021]. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Henrich, V. and Hinrichs, E.</hi> (2010). GernEdiT - The GermaNet Editing Tool. In 
+                        <hi rend="italic">Proceedings of the Seventh Conference on International Language Resources and Evaluation (LREC 2010)</hi>, Valletta, Malta, pp. 2228-35. http://www.lrec-conf.org/proceedings/lrec2010/pdf/264_Paper.pdf [Last accessed November 16, 2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Herrmann, J. B</hi>. (2018). Praktische Tagger-Kritik. Zur Evaluation des PoS-Tagging des Deutschen Textarchivs. In 
+                        <hi rend="italic" xml:space="preserve">DHd2018: Kritik der digitalen Vernunft. Book of Abstracts. </hi>Cologne, Germany, pp. 287-90. https://zenodo.org/record/3684897#.YO_x1W5CTOQ [Last accessed November 16, 2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Honnibal, M. et al.</hi> (2020). spaCy: Industrial-strength Natural Language Processing in Python. Zenodo. https://doi.org/10.5281/zenodo.1212303 [Last accessed November 16, 2021]. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Klein, W. and Geyken, A.</hi> (2010). Das ‘Digitale Wörterbuch der Deutschen Sprache DWDS’, in: Lexicographica 26: 79–96.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Müller-Zettelmann, E.</hi> (2000). 
+                        <hi rend="italic">Lyrik und Metalyrik. Theorie einer Gattung und ihrer Selbstbespiegelung anhand von Beispielen aus der englisch- und deutschsprachigen Dichtkunst</hi>. Heidelberg, Germany, Winter.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Qi, P. et al.</hi> (2018). Universal dependency parsing from scratch, in: 
+                        <hi rend="italic">Proceedings of the CoNLL 2018 Shared Task: Multilingual Parsing from Raw Text to Universal Dependencies</hi>, Brussels, Belgium, pp. 160-70.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rayson, P. et al.</hi> (2007). Tagging the bard: Evaluating the accuracy of a modern POS tagger on Early Modern English corpora. In 
+                        <hi rend="italic">Proceedings of Corpus Linguistics (CL2007)</hi>. https://eprints.lancs.ac.uk/id/eprint/13011/1/192_Paper.pdf [Last accessed November 16, 2021]. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Schmid, H.</hi> (1994). Probabilistic part-of speech Tagging using decision trees. In 
+                        <hi rend="italic">Proceedings of International Conference on New Methods in Language Processing</hi>, Manchester, UK, pp. 154-62.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Schmid, H.</hi> (1995). Improvements in Part-of-Speech Tagging with an Application to German. In 
+                        <hi rend="italic">Proceedings of the ACL SIGDAT-Workshop</hi>, Dublin, Ireland, 13-25. https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/tree-tagger2.pdf [Last accessed November 16, 2021]. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Schmid, H</hi>. (2019). Deep learning-based morphological taggers and lemmatizers for annotating historical texts. 
+                        <hi rend="italic">In Proceedings of the 3rd international conference on digital access to textual cultural heritage</hi>, Brussels, Belgium, 133-37.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Scheible, S. et al.</hi> (2011). A gold standard corpus of Early Modern German. In: 
+                        <hi rend="italic">Proceedings of the 5th Linguistic Annotation Workshop</hi>, pp. 124–28. https://dl.acm.org/doi/abs/10.5555/2018966.2018981 [Last accessed November 16, 2021]. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Zymner, R.</hi> (2019). Begriffe der Lyrikologie. In: Hildebrandt, Claudia et al. (eds.) Lyrisches Ich, Textsubjekt, Sprecher? (= Grundfragen der Lyrikologie, Bd. 1). Berlin, Germany: De Gruyter 25–50.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

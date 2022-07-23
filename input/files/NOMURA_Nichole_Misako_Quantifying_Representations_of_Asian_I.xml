@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Quantifying Representations of Asian Identity in 21st-century Anglophone Fiction for Young Readers</title>
+                <author>
+                    <persName>
+                        <surname>Nomura</surname>
+                        <forename>Nichole Misako</forename>
+                    </persName>
+                    <affiliation>Stanford University</affiliation>
+                    <email>nnomura@stanford.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dombrowski</surname>
+                        <forename>Quinn</forename>
+                    </persName>
+                    <affiliation>Stanford University</affiliation>
+                    <email>qad@stanford.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-19T20:31:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>YA Literature</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>text mining and analysis</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left;">Since 2019’s “Own Voices” campaign, publishers of youth literature in the United States have been actively seeking out authors who embody "diversity" along the axes of race, ethnicity, and sexual orientation, and who write characters that reflect some of those experiences. While there has been some backlash to the tendency to reduce complex, and sometimes private, author identities to a set of public marketing labels, new fiction released for middle-school and YA readers in 2021 is rhetorically positioned against an implicit monolith of straight, white, socioeconomically comfortable narratives thought to dominate youth literature throughout the 90s and 2000s.</p>
+            <p style="text-align: left;">This short paper uses a sample from the Young Readers Database of Literature (YRDL) to examine the portrayal of Asian diversity in American middle-school and YA novels written in English between 2000 and 2020. This new corpus contains over 22,000 Anglophone fiction novels for young readers published in the 20th and 21st century. This is substantially more comprehensive than the corpora underpinning earlier computational work on Anglophone YA (e.g. 200 works make up the YA corpus referenced in Piper 2018) and opens up new possibilities for quantitative research on young readers’ fiction that reaches beyond award-winners and immediately-recognizable titles. For this study, we sampled 250 texts from each year of the 20-year period, for a total of 5,000.</p>
+            <p style="text-align: left;">In this study, we track the frequency of both proper nouns and adjectives referring to Asia and individual Asian countries (e.g. “Japan” and “Japanese”). We also take a particularly close look at the compound adjective [X]-American, a common means of marking an "otherness" from the implied white, Western European default that does not rise to the level of "foreignness." We seek to quantify and map explicit mentions of national identity and nations to help sustain and continue the ongoing conversation about who is represented, how, in literature for young readers.</p>
+            <p style="text-align: left;">We find that approximately 60% of the books in this sample include at least one Asian country name or adjective. In the majority of books, there are a small number of passing references; the median number of references is 4. Places and adjectives followed the same trends; Chinese, Indian, Russian, and Japanese were most common; “Asian” was used more frequently than the remaining 34 adjectives. Comparing adjective use over the 20-year time period, the only adjective that showed a significant pattern of change was “Korean,” which has increased between the mid-2010s and 2020, corresponding to the broader rise in the popularity of Korean culture worldwide.</p>
+            <p style="text-align: left;">Given the high frequency of references to “Chinese” and “Indian,” two of the most common origins for Asian-Americans, we explored the correspondence between demographic representation and references in these texts. We had particularly noteworthy findings for “Japanese,” which occurred with 2.7x the frequency of what we would predict based on the number of people who identify as Japanese-American. “Vietnamese” and “Filipino” were dramatically underrepresented, at 16% and 2% of the predicted value based on demographics.</p>
+            <p style="text-align: left;">Using spaCy NLP dependency parsing, we examined the nouns that the adjectives were modifying in these texts. The most common noun was “food,” which half the time was modified by “Chinese,” but a wide variety of adjectives appeared in this culinary context, including Thai, Korean, Asian, Cambodian, Egyptian, Turkish, and Malaysian. “Restaurant,” the fourth most-common noun, showed similar trends. “Asian” usually modified generic words for people (e.g. girl, man, boy, guy). Some groups of nouns appeared predominantly or exclusively with a small number of adjectives: military nouns like “soldiers” and “army” were primarily associated with “Japanese,” “Russian,” and “Israeli.” “Government” was most often modified by “Chinese” and “Russian.” A few adjectives had unique groups of associated nouns: for “Egyptian,” most of the references are historical and specific: god, hieroglyphics, mummy, exhibit, tomb. “Armenian” was most often connected to “war” and “genocide.”</p>
+            <p style="text-align: left;">Parsing and counting these references allows us to begin to construct a connotative and denotative map of explicit Asian identity in Anglophone literature for young readers. Useful as numbers, these references also lay the groundwork for future qualitative analysis and quantitative clustering, as we seek to identify texts that respond to or challenge existing discourse conventions.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Piper, Andrew.</hi> (2018). 
+                        <hi rend="italic" xml:space="preserve">Enumerations. </hi>Chicago: University of Chicago Press.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Distance Reading Mary McCleod Bethune and the Black Fantastic</title>
+                <author>
+                    <persName>
+                        <surname>Williams</surname>
+                        <forename>Seretha D.</forename>
+                    </persName>
+                    <affiliation>Augusta University, United States of America</affiliation>
+                    <email>seretha.williams@augusta.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>West-White</surname>
+                        <forename>Clarissa</forename>
+                    </persName>
+                    <affiliation>Bethune-Cookman University, United States of America</affiliation>
+                    <email>whitec@cookman.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kizer</surname>
+                        <forename>Ianna</forename>
+                    </persName>
+                    <affiliation>Bethune-Cookman University, United States of America</affiliation>
+                    <email>whitec@cookman.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dickey</surname>
+                        <forename>Tierany</forename>
+                    </persName>
+                    <affiliation>Bethune-Cookman University, United States of America</affiliation>
+                    <email>whitec@cookman.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Albury</surname>
+                        <forename>Lauren</forename>
+                    </persName>
+                    <affiliation>Bethune-Cookman University, United States of America</affiliation>
+                    <email>whitec@cookman.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-31T15:19:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Black Fantastic</term>
+                    <term>digital collections</term>
+                    <term>Mary McCleod-Bethune</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>data modeling</term>
+                    <term>digital libraries creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>African and African American Studies</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Our digital humanities research project, “The Black Fantastic: Curated Vocabularies, Artifact Analysis, and Identification,” proposes to locate uncategorized texts that share characteristics of known Black Fantastic texts and to build a workset, or a curated collection of digital volumes, that can serve as data used to understand the Black Fantastic as a genre or subgenre of literature. This research is supported by an award from the 
+                <hi rend="italic" xml:space="preserve">Scholar-Curated Worksets for Analysis, Reuse &amp; Dissemination </hi>(SCWAReD) project and through the technical support of the Research Center of HathiTrust Digital Library. We use Richard Iton’s term “Black Fantastic” to refer to the varied iterations of speculative inquiry and creative expression produced by Black people in the United States and the African Diaspora. The term “Afrofuturism,” coined by Mark Dery, is contested in some scholarly and creative communities; thus, our use of “Black Fantastic” in our research acknowledges those debates and centers inclusive language.
+            </p>
+            <p>While the project primarily focuses on our work using analytics and rooting out texts in the HathiTrust Digital Library, this poster focuses on a secondary research question and the challenges of incorporating undergraduate students into digital humanities research projects. Dr. West-White worked with students at Bethune-Cookman University, a historically black university, to digitize texts from the Mary McCleod Bethune collection in the Carl S. Swisher Library. Bethune, a visionary leader of education and civil rights, is frequently associated with W.E.B. DuBois, who in addition to his leadership as a sociologist, activist, and editor of Crisis, was a speculative fiction writer. His fiction, especially the story “The Comet” is generally recognized as an exemplar of early Black Fantastic writing. Our secondary research question, then, considers whether other early twentieth century social and political luminaries of the Black community were thinking and writing about race in ways that can be described as speculative or fantastic. By digitizing the correspondence, essays, and speeches of Mary McCleod Bethune, Dr.</p>
+            <p>West-White and her student assistants have attempted to identify textual evidence to</p>
+            <p>support the claim that Mary McCleod Bethune, like DuBois, was concerned with world building and imagining future spaces of actualized Black liberation. Bethune, the founder of Bethune-Cookman University, spoke and wrote extensively about the future of Black people. In a 1926 speech at the convention of the National Association of Colored Women, Bethune told the audience, “I shall not review history because you are familiar with all that relates to our past and present in America. The present will be emphasized as a foundation of future prophecy” (Bethune 158). Bethune’s use of the phrase “future prophecy” here is the type of Black Fantastic diction this project seeks to uncover.</p>
+            <p>Using Brett Hirsch’s 
+                <hi rend="italic">Digital Humanities Pedagogy: Practices, Principles and Politics</hi> and other scholarly books on the subject of pedagogy and DH, the faculty researchers developed a plan for including undergraduate researchers. The students hired for this project did not have digital humanities experience, so the faculty researchers trained students to digitize texts, clean up the corpuses, ensure the OCR worked and the text was searchable, conduct keyword searches, and notate patterns and characteristics that may indicate an instance of Black Fantastic concepts or ways of saying.
+            </p>
+            <p>Additionally, students were asked to use GIS to map sites where collections of Mary McCleod Bethune writings are held outside of Bethune-Cookman University. Most of this work has been conducted virtually because students were not on campus due to the Covid-19 pandemic.</p>
+            <p>Digitization of selected materials in the Mary McCleod Bethune collection at</p>
+            <p>Bethune-Cookman University is complete. Our support partners at the Research Center of HathiTrust Digital Library are working with us to run 
+                <hi rend="color(202024)">TF-IDF on the materials from the Bethune-Cookman collection and the digital volumes contained in the HathiTrust collection. We will use keyword extraction to determine word frequency across the Bethune corpus, and we will analyze the keywords to determine whether words we associate with the verve of the Black Fantastic appear in the Bethune corpus.</hi>
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        Bethune, M.M. (2001).
+                        <hi rend="italic" style="font-size:12pt">Mary McLeod Bethune: Building a Better World: Essays and Selected Documents</hi>
+                        . Bloomington: Indiana University Press.
+                    </bibl>
+                    <bibl>Dery, M. (1993). Black to the Future: Interviews with Samuel R. Delany, Greg Tate, and Tricia Rose. 
+                        <hi rend="italic">South Atlantic Quarterly</hi>, 92.4: 735–778.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:12pt" xml:space="preserve">Hirsch, B.D. (2012). </hi>
+                        <hi rend="italic" style="font-size:12pt">Digital Humanities Pedagogy: Practices, Principles and Politics</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. Cambridge: Open Book Publishers, </hi>
+                        <ref target="http://books.openedition.org/obp/1605">
+                            <hi rend="underline color(1154CC)">http://books.openedition.org/obp/1605</hi>
+                        </ref> (accessed 11 December 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(3C4042)" style="font-size:12pt">Iton, R. (2008).</hi>
+                        <hi rend="italic color(3C4042)" style="font-size:12pt">In Search of the Black Fantastic</hi>
+                        <hi rend="color(3C4042)" style="font-size:12pt">:</hi>
+                        <hi rend="italic color(3C4042)" style="font-size:12pt" xml:space="preserve">Politics and Popular Culture in the Post-Civil Rights Era. </hi>
+                        <hi rend="color(3C4042)" style="font-size:12pt">Oxford: Oxford University Press.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

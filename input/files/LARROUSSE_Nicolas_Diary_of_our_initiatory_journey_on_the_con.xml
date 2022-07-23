@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Diary of our initiatory journey on the continent of data citation in SSH</title>
+                <author>
+                    <persName>
+                        <surname>Larrousse</surname>
+                        <forename>Nicolas</forename>
+                    </persName>
+                    <affiliation>Huma-Num, CNRS, France</affiliation>
+                    <email>nicolas.larrousse@huma-num.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gray</surname>
+                        <forename>Edward</forename>
+                    </persName>
+                    <affiliation>Huma-Num, CNRS, France</affiliation>
+                    <email>edward.gray@dariah.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Concordia</surname>
+                        <forename>Cesare</forename>
+                    </persName>
+                    <affiliation>ISTI, CNR, Italy</affiliation>
+                    <email>cesare.concordia@isti.cnr.it</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Data citation</term>
+                    <term>Actionnability</term>
+                    <term>Recommendations</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>data publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>Communication studies</term>
+                    <term>Computer science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Diary of our initiatory journey on the continent of data citation in SSH</p>
+            <p style="text-align: left; ">The metaphor of a travel journal of an expedition seemed appropriate to us to present this work carried out during the SSHOC
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> https://sshopencloud.eu/</p>
+                </note> project.
+            </p>
+            <p style="text-align: left; ">
+                <hi rend="italic bold" xml:space="preserve">The first part was to study this terra incognita </hi>by making an inventory of citation practices
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p rend="footnote text">
+                        https://doi.org/10.5281/zenodo.3595965
+                    </p>
+                </note>. To summarize, we discovered that in the SSH research communities we investigated, practices were seldom standardized and were very diverse, generally producing citations that could not be processed by machines: in other words they were not “actionable”.
+            </p>
+            <p style="text-align: left; ">
+                <hi rend="italic bold">This led us to develop a sort of guide necessary to journey through this new, uncharted territory</hi> in the form of a set of recommendations
+                <note place="foot" xml:id="ftn3" n="3">
+                    <p rend="footnote text">
+                        https://doi.org/10.5281/zenodo.5361717
+                    </p>
+                </note> to build citations in SSH. So as not to reinvent the wheel, we based these recommendations on existing principles created by Force11
+                <note place="foot" xml:id="ftn4" n="4">
+                    <p rend="footnote text">
+                        https://doi.org/10.25490/a97f-egyk
+                    </p>
+                </note> by adapting them to the specific characteristics of the SSH data. These recommendations were validated by a committee of experts from different backgrounds and structures (RDA participants, CODATA director, OpenAire Engineers etc.) during a round table
+                <note place="foot" xml:id="ftn5" n="5">
+                    <p rend="footnote text">
+                        https://www.sshopencloud.eu/news/roundtable-experts-data-citation
+                    </p>
+                </note> and in a parallel review process. 
+            </p>
+            <p style="text-align: left; ">
+                <hi rend="italic bold" xml:space="preserve">Then we decided to analyze the resources available in this new territory, </hi>that is, the repositories that are so crucial to be able to cite data. We carried out an analysis of 85 repositories against 7 quality criteria to address the “challenges” described in the recommendations mentioned above:
+            </p>
+            <list rend="bulleted">
+                <item>
+                    <hi rend="bold">PID</hi> from “Unique Identification &amp; Persistence” 
+                </item>
+                <item>
+                    <hi rend="bold">Landing page</hi> from “Access” 
+                </item>
+                <item>
+                    <hi rend="bold">Structured metadata</hi> from “Importance &amp; Credit and Attribution”
+                </item>
+                <item>
+                    <hi rend="bold">Cite as</hi> from “Evidence, Specificity &amp; Verifiability” 
+                </item>
+                <item>
+                    <hi rend="bold">Versioning</hi> from “Specificity and Verifiability”
+                </item>
+                <item>
+                    <hi rend="bold" xml:space="preserve">Standardized vocabularies </hi>from “Interoperability and Flexibility”
+                </item>
+                <item>
+                    <hi rend="bold">Links to publications</hi> from “Importance”
+                </item>
+            </list>
+            <p style="text-align: left; ">The results of this survey
+                <note place="foot" xml:id="ftn6" n="6">
+                    <p rend="footnote text"> https://doi.org/10.5281/zenodo.5603306</p>
+                </note> are encouraging - even if there is room for improvement, particularly in the use of Persistent Identifiers. Importantly, the presence of a landing page in almost all cases allowed us to build up a test sample made up of a very diverse dataset from those repositories for which we want to build standardized and actionable citations. 
+            </p>
+            <p style="text-align: left; ">
+                <hi rend="italic bold" xml:space="preserve">In parallel we developed a tool in order to “harvest” the resources found in this new land so as to better understand them and also be able to explain them to others. </hi>We developed a prototype composed of three components: 
+            </p>
+            <list rend="bulleted">
+                <item>a harvester which grabs information about a dataset and normalizes it based on the work done by SCHOLIX
+                    <note place="foot" xml:id="ftn7" n="7">
+                        <p rend="footnote text"> http://www.scholix.org/</p>
+                    </note>
+                </item>
+                <item>an API to disseminate the metadata of the citation thereby making it actionable </item>
+                <item>a citation viewer for human purposes</item>
+            </list>
+            <p style="text-align: left; ">For the first iteration to populate this prototype, we used the dataset collected during our survey of repositories and we are going to gradually add more datasets from various sources.    </p>
+            <p style="text-align: left; ">This prototype is primarily designed to implement what we called “actionability” to a citation and provide a ready-to-use citation in various citation formats. Starting from the PID of a dataset, the prototype attempts to aggregate metadata from different sources: the repository of the dataset, the PID Registration Agency and a number of Knowledge Graphs. For instance, while metadata associated with a DOI (Digital Object Identifier) are limited and those provided by a handle are even more scarce, it is possible to get more information from a landing page and thus enrich the citation. </p>
+            <p style="text-align: left; ">We also used another indirect approach to gather additional information by using a registry of repositories (RE3Data
+                <note place="foot" xml:id="ftn8" n="8">
+                    <p rend="footnote text"> https://www.re3data.org/</p>
+                </note>) which provides, among other things, information on the available APIs available for a specific repository.   
+            </p>
+            <p style="text-align: left; ">Thus, the prototype can give a unified view of information about datasets coming from different sources. For researchers, it thus avoids cumbersome work on how to cite a dataset or get information about its provenance. In return, it makes a researcher aware of the importance of properly documenting a dataset and depositing it in a “good” repository. 
+                <lb/>The code of the prototype is available on the GitLab instance maintained by ISTI-CNR. 
+            </p>
+            <p style="text-align: left; ">This paper will present in greater detail what we learned at 
+                <hi rend="bold">each step of this expedition</hi> and how a research project can take advantage of a good citation system to enhance the visibility of the output. We will also introduce the potential uses based on the information provided by the prototype such as the possibility of associating a specific tool to process data or the use of this information as a base to build data papers. 
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Blaney, Jonathan. (2012). 'The Problem of Citation in the Digital Humanities'. In: Clare Mills, Michael Pidd and Esther Ward. 
+                        <hi rend="italic">Proceedings of the Digital Humanities Congress 2012</hi>. Studies in the Digital Humanities. Sheffield: The Digital Humanities Institute, 2014. Available online at: 
+                        <ref target="https://www.dhi.ac.uk/openbook/chapter/dhc2012-blaney">https://www.dhi.ac.uk/openbook/chapter/dhc2012-blaney</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">Rauber, Andreas, Asmi, Ari, van Uytvanck, Dieter, &amp; Proell, Stefan. (2015). Data Citation of Evolving Data: Recommendations of the Working Group on Data Citation (WGDC). 
+                        <ref target="https://doi.org/10.15497/RDA00016">https://doi.org/10.15497/RDA00016</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">Task Group on Data Citation Standards and Practices, C.-I. (2013). Out of Cite, Out of Mind: The Current State of Practice, Policy, and Technology for the Citation of Data. 
+                        <hi rend="italic">Data Science Journal</hi>, 12, pp.CIDCR1–CIDCR7. DOI: 
+                        <ref target="http://doi.org/10.2481/dsj.OSOM13-043">http://doi.org/10.2481/dsj.OSOM13-043</ref>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

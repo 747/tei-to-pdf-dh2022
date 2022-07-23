@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Quantitative understanding of the evolution of Seo Jeong-Ju's poetic world: Keywords, topics, and sentiments.</title>
+                <author>
+                    <persName>
+                        <surname>Wang</surname>
+                        <forename>Sungpil</forename>
+                    </persName>
+                    <affiliation>KAIST, Korea, Republic of (South Korea)</affiliation>
+                    <email>wangsp0317@kaist.ac.kr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Park</surname>
+                        <forename>Juyong</forename>
+                    </persName>
+                    <affiliation>KAIST, Korea, Republic of (South Korea)</affiliation>
+                    <email>juyongp@kaist.ac.kr</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Digital literature</term>
+                    <term>Digital korean literature</term>
+                    <term>Digital poet discussion</term>
+                    <term>Seo Jeong-Ju</term>
+                    <term>Korean literature</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>text mining and analysis</term>
+                    <term>Computer science</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left;">
+                <hi style="font-size:12pt" xml:space="preserve">In this paper we provide a quantitative, computational analysis of the evolution of the poems of Seo Jeong-Ju (1915–2000), Korea’s eminent 20th-century. The publications of his books of poems are traditionally understood to have marked the evolution of his poetry, which we explore in this work using modern data-processing techniques for capturing his changing compositional styles. The corpus consists of 98290 words extracted from a total of 950 poems that naturally vary in length. The number of words in a poem ranges from 9 to 699 with average and standard deviation 109.2 ± 94.2. </hi>
+            </p>
+            <p style="text-align: left;">
+                We start by computing the changes in the frequency of vocabulary used. We focus particularly on the words related to colour and the names of Korea’s historical kingdoms conjectured as forming the identity of Seo’s poetry in past qualitative studies. We count the frequencies of twelve colours and eight historical Kingdoms and see how they change over time that point to the trends in Seo’s compositional style. (1) Colour: There are six colors with the highest dominance, all of which belong to the Oche(<hi rend="Korean">五彩</hi>) of the East. The dominance of blue and green in &lt;The essence of Silla&gt; (Seo, 1961) has a high point, and the dominance of red in &lt;Jilmajae myth&gt; (Seo, 1975) has a low point. Over time, Seo Jeong-Ju's poetic world bleaches and the influence of black and white increases. (2) Kingdom: Throughout the entire period, he mainly uses words related to Silla and Joseon. In the early days, his attention is focused on Silla, and Joseon's dominance increases from &lt;The essence of Silla&gt; (Seo, 1961) to &lt;Jilmajae myth&gt; (Seo, 1975). The results of the analysis of the keywords express support or add comments to the results of qualitative studies dealing with Colour and Kingdom.
+            </p>
+            <p style="text-align: left;">
+                <hi style="font-size:12pt" xml:space="preserve">We also analyse Seo Jeong-Ju’s poetry using the tools of computational linguistics, namely Topic Modeling and Sentiment Analysis. Topic Modeling refers to a set of methods (including Structural Topic Modeling (Margaret et al., 2019) we use here) that discover groups of important words appearing frequently together in a text and allow us to identify its topic. We use diagnostic values to determine the number of topics as eight and extract each topic in the form of a noun list.  Each topic is independent of each other, and the nouns that make up them belong mainly to the broad classification of family, country, women, and nature. In addition, STM provides whether the subjects are strengthened or weakened as a function of time. Through this, we seize that the four topics are strengthened and the other four topics are weakened, especially The third of the eight extracted themes appeared in &lt;The essence of Silla&gt; (Seo, 1961) and continued to be strengthened, and eventually became the most important theme in the literary world of Seo Jeong-Ju. Furthermore, We cross-reference the topics with other poets’ and critics’ writings from the era to understand what influenced the topics. Our findings support qualitative research results (Jeong, 2005; Nam, 2011; Yun, 2013) on the timing of the emergence of "Silla spirit", a core subject matter of Seo Jeong-Ju, and the persistence of this topic. </hi>
+            </p>
+            <p style="text-align: left;">
+                <hi style="font-size:12pt" xml:space="preserve">Sentiment Analysis refers to determining the positivity or negativity of the sentiment of a given text. It is well accepted that an artist’s mental state and their creations are intimately related (Terry, 2008); the emotional air of a work is naturally aroused by the artist’s creative choices, intentional or unintentional, reflecting their thoughts or feeling of the moment. The evolution in the sentiment of poems, therefore, could also indicate a meaningful characteristic of the works. In order to comprehend the changes in emotions that make up the poetic world of Seo Jeong-Ju, We search for emotional words in each collection of poems and calculate the emotional score of each collection of poems using the </hi>
+                <hi rend="italic" style="font-size:12pt">KNU Korean emotional dictionary</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> (Park et al., 2018) that illustrates multiple polarities (-2, -1, 0, +1, +2) as lexicon. We discover that since &lt;Jilmajae myth&gt; (Seo, 1975), the sentiment of his literary creation has been overturned from negativity to positivity. These findings support specific qualitative research results (An, 2011; Heo, 2009) that post - &lt;Jilmajae myth&gt; (Seo, 1975) consist of small allegories or stories affirming the subject consciousness of previous poems, and that these small adaptations contain feelings of resignation and compliance.</hi>
+            </p>
+            <p style="text-align: left;">
+                Due to their mostly qualitative nature, existing individual classical studies on Seo Jeong-Ju have focusing on only a partial, limited set of materials and periods. Our work showcases the ability of modern computational tools to take advantage of the increasing availability of large-scale digitized data to verify the findings from traditional studies, and propose novel and interesting questions.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-size:12pt">An, H.-S.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2011), ‘The study of the latest poetry of jung joo soe’.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:12pt">Heo, Y.-H.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2009), ‘A study of seo cheong-ju’s poetry - on focus to latest period’. </hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-size:12pt">Jeong, H.-G.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2005), ‘The imagination and ideology of seo jeong-ju’s latter poems’, Journal of academic conferences of International Association of Language Literature 2005(2), 126–131.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-size:12pt">Nam, K.-H. (2011),</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> ‘Reviewing seo jeongju’s poetics of shilla-spirit (its ethical consciousness and political unconsciousness)’, Korean Culture 54.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-size:12pt" xml:space="preserve">Park, S.-M., Na, C.-W., Choi, M.-S., Lee, D.-H. and On, B.-W. (2018), </hi>
+                        ‘Knu korean sentiment lexicon: Bi-lstm-based method for building a korean sentiment lexicon’, Journal of Intelligence and Information Systems 24(4), 219–240.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-size:12pt">Roberts, M. E., Stewart, B. M. and Tingley, D. (2019),</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> ‘Stm: An r package for structural topic models’, Journal of Statistical Software 91, 1–40. </hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-size:12pt">Rustin, T. A.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2008), ‘Using artwork to understand the experience of mental illness: Mainstream artists and outsider artists’, GMS Psycho-Social Medicine 5.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-size:12pt" xml:space="preserve">Seo, J.-J. (1961), </hi>
+                        <hi rend="italic" style="font-size:12pt">The essence of Silla,</hi>
+                        Jeongeumsa.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-size:12pt" xml:space="preserve">Seo, J.-J. (1975), </hi>
+                        <hi rend="italic" style="font-size:12pt">Jilmajae myth</hi>
+                        , Iljisa.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:12pt" xml:space="preserve">Yun, J.-W. (2013), </hi>
+                        ‘The aesthetics of action in jilmajaeshinhwa’, Journal of Dong-ak Language and Literature 61, 367–396.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

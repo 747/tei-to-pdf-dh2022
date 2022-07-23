@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Visualizing Rare Books: A Report on Manicule</title>
+                <author>
+                    <persName>
+                        <surname>Trettien</surname>
+                        <forename>Whitney</forename>
+                    </persName>
+                    <affiliation>Price Lab for Digital Humanities</affiliation>
+                    <email>trettien@english.upenn.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-10T21:04:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>book history</term>
+                    <term>digital editing</term>
+                    <term>material text studies</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>bibliographic analysis</term>
+                    <term>scholarly editing and editions development</term>
+                    <term>analysis</term>
+                    <term>and methods</term>
+                    <term>Book and print history</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>This short paper reports on Manicule, a web-based application for building digital tours of unique books. The application also includes a means of visualizing the structure of a codex, using the VisColl standard developed at the Schoenberg Institute for Manuscript Studies and implemented in, most recently, the BiblioPhilly database. </p>
+            <p>Since the New Bibliography of the first half of the twentieth century, bibliographic methods have been tethered to the needs of editing – namely, to identify from amongst a work’s many reproductions the kernel of a single, reproducible edition. Of course, many textual theories have challenged the notion that any work can be reproduced as a single entity, to the extent that all texts are now seen as plural, polyphonic, variant, or marked by 
+                <hi rend="italic">mouvance</hi> (Bornstein et al., 1993; Deegan et al., 2009; Egan, 2010; Pierazzo, 2015). This shift in thinking is reflected in the development of digital editing tools like Edition Visualization Technology, which allows editors to layer the digital text with annotations and cross-references, the Variorum Viewer of Frankenstein, or even the collation features of Mirador. Yet the idea that the goal of editing is to produce some form of text for reading and critical study remains baked into even the most variant-sensitive digital tools. 
+            </p>
+            <p>Meanwhile, book history – a more sociological offshoot of bibliography that has been growing steadily since the 1980s – has, contrary to bibliography and textual studies, begun to focus more on copy-specific work. For instance, book historians today increasingly pursue case studies of individual, idiosyncratic, and heavily “used books,” to borrow Bill Sherman’s term (Sherman, 2009). The scholarly telos of such work is very different from that in textual studies: whereas the latter tends to examine unique books only for what they might tell us about a literary work and its contemporaneous reception, the former imagines what such books can teach us about the long history of collecting and conservation (an interest that book history shares with digital humanities). </p>
+            <p>As a result of this split in focus, the digital editing tools devised under the regime of New Bibliography are not well suited for book historians working digitally with used books. For instance, a book historian does not often want to work with a text; thus TEI and TEI-based publishing technologies are useless to her. Rather, she is more likely to be interested in the text’s material instantiation: how a codex has been formed and reformed over time as it passes through many different hands and institutions. Manicule is devised to meet these emerging needs in digital book history. Built by Liza Daly and Whitney Trettien, it is a standalone React/Redux application for presenting unique printed books and manuscripts in digital facsimile. It allows editors to: </p>
+            <list rend="bulleted">
+                <item>build guided tours through a book’s distinguishing features, </item>
+                <item>annotate the edges of interesting pages with extra information, </item>
+                <item>categorize and color-code each page in the facsimile, giving a birds-eye view of a book’s main elements, </item>
+                <item>and visualize the book’s structure. </item>
+            </list>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="8.905875cm" url="Pictures/86838dede1c84774331b2457bea4ee24.jpeg" rend="inline"/>
+            </figure>
+            <figure>
+                <graphic n="1002" width="16.002cm" height="10.297583333333334cm" url="Pictures/2d084fc4fd3e0b5b7c1ca5e7b0923f07.jpeg" rend="inline"/>
+            </figure>
+            <p>Right now, the application is focused on visualizing and comparing Western codices. As part of our short paper, we hope to solicit feedback from ACH’s international membership on how to build out functionality to fit other book forms, like tekayami, often folded like an accordion, or Arabic and other manuscript traditions that read from right to left. If we think about the work of books as assembling, as gathering together information into new constellations and configurations – whether made up of stitched paper quires or bundles of digital text and metadata – then we should have to-hand bibliographic tools that help see how they do this work. Manicule is a step toward building that toolkit. </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Bornstein, G. et al., eds. (1993). 
+                        <hi rend="italic">Palimpsest: Editorial Theory in the Humanities.</hi> Ann Arbor: University of Michigan Press, 1993.
+                    </bibl>
+                    <bibl>Deegan, M. et al., eds. (2009). 
+                        <hi rend="italic">Text Editing, Print and the Digital World.</hi> Burlington: Ashgate, 2009.
+                    </bibl>
+                    <bibl>Egan, G. ed. (2010). 
+                        <hi rend="italic">Electronic Publishing: Politics and Pragmatics.</hi> Tempe: ACMRS, 2010.
+                    </bibl>
+                    <bibl>Pierazzo, E. (2015
+                        <hi rend="italic">). Digital Scholarly Editing: Theories, Models and Methods</hi>. Burlington: Ashgate, 2015.
+                    </bibl>
+                    <bibl>Sherman, W. (2008). 
+                        <hi rend="italic">Used Books: Marking Readers in Renaissance England.</hi> Philadelphia: University of Pennsylvania Press, 2008.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

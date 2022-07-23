@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Multilinguals Write Back: Modeling Language, Politics and Identity in Philippine Social Media</title>
+                <author>
+                    <persName>
+                        <surname>Cruz</surname>
+                        <forename>Frances Antoinette</forename>
+                    </persName>
+                    <affiliation>University of Antwerp/University of the Philippines Diliman</affiliation>
+                    <email>Frances.Cruz@uantwerpen.be</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kestemont</surname>
+                        <forename>Mike</forename>
+                    </persName>
+                    <affiliation>University of Antwerp</affiliation>
+                    <email>mike.kestemont@uantwerpen.be</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-07T20:40:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>social media</term>
+                    <term>Philippines</term>
+                    <term>multilingualism</term>
+                    <term>media</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>social media analysis and methods</term>
+                    <term>Asian studies</term>
+                    <term>Linguistics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p rend="DH-Heading1">Research problem statement</p>
+            <p>This paper documents the intersections of language and the public sphere through a cross-sectional model of comments on public Facebook (FB) pages of selected newspapers from 2015-2019. The analysis examines language use in discussions of current events, differences between national and regional newspapers, and social media insights into the conduct of public discourse. A common observation in the Philippines is, while English is used for official documents, tertiary education, and national broadsheets, oral discussions tend to involve Filipino or regional languages (Gonzalez, 1998). Class and political differences are also heavily associated with language use and media preferences (Kusaka 2017). Social media, with its informal written language, yet socially and politically relevant content, may thus offer insights into contemporary language use and public engagement with media.</p>
+            <p rend="DH-Heading1">Methodology</p>
+            <p>Comments on public FB pages of selected national and regional newspapers (
+                <hi rend="italic">Manila Bulletin</hi>, 
+                <hi rend="italic">Manila Times</hi>, 
+                <hi rend="italic">Philippine Daily Inquirer</hi>, 
+                <hi rend="italic">Philippine Star</hi>, 
+                <hi rend="italic">Cebu Daily News</hi>, 
+                <hi rend="italic">Mindanews</hi>, 
+                <hi rend="italic">Mindanao Times</hi>, 
+                <hi rend="italic">Sun Star Cebu</hi>, 
+                <hi rend="italic">Sun Star Davao</hi>, and 
+                <hi rend="italic">The Freeman</hi>) were captured through 
+                <hi rend="italic">Facepager</hi> (Jünger &amp; Keyling 2019). The corpus is taken from a separate project on Muslim identities in the Philippines and consists of data from selected months in 2015, 2017, and 2019.
+            </p>
+            <p>While language identification is a common task in natural language processing, most of the available software casts this as a multi-class classification task, where only a single language can be assigned to a textual document. In the present case, involving code-switching as a signature feature, multiple languages can be simultaneously present in a document, thus turning this task effectively into a multilabel classification problem. We finetuned a bespoke multilabel classifier on top of a pretrained BERT (Devlin et al., 2019) feature extractor (the ‘bert-base-multilingual-uncased’ model). We only considered messages where the target language(s) could be identified and divided these into a train, validation and test set of 10,000 social media messages (containing 7,304, and 2 x 913 instances respectively). We manually annotated for the presence/absence of Tagalog/Filipino, Cebuano, and English respectively. We compared the performance of this SOTA approach to a simpler baseline, consisting of a conventional multitarget classifier in the form of a random forest (RF) (Pedregosa et al., 2011) of 16,156 manually annotated entries (with a train, validation and test set of 12,998 entries, and 2 x 2,294 instances), trained on top of a TF-IDF representation of a vocabulary character n-grams (for 2 ≤ n ≤ 6) (see details Table 2 below). Finally, we applied the BERT language detector (with the weights that optimized the validation performance) to the unseen data.</p>
+            <figure>
+                <graphic n="1001" width="16.51cm" height="12.767027777777777cm" url="Pictures/a78132cd8e7aedacc7882e711a4a99a2.jpg" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                <hi rend="italic">Table 1</hi> – Number of entries per language in Test, Train and Validation Sets
+            </p>
+            <figure>
+                <graphic n="1002" width="16.51cm" height="6.058958333333333cm" url="Pictures/d4f50e63a4596d8df7d73984fb711076.jpg" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                <hi rend="italic" xml:space="preserve">Table 2 </hi>– Test Accuracies
+            </p>
+            <p rend="DH-Heading1">Findings</p>
+            <p>Both classifiers were able to demonstrate similar general trends: Tagalog/Filipino entries were the most common overall (Figures 1 and 2). Regionally, more diverse language use is noticeable. Cebuano comments were prominent in at least two Cebu-based newspapers, while the Mindanao Times and Sun Star Davao featured Tagalog/Filipino as the most-used language, followed by English and Cebuano (Figures 3 and 4), suggesting the usage of Tagalog/Filipino even where Visayan languages are prominent. Despite the presence of monolingual English-language newspapers, the fact that current events are 
+                <hi rend="bold">written about</hi> and responded to by a multilingual Philippine public sphere is often obscured. Social media thus offers opportunities not only for re-thinking monolingual norms in media, but may also act as a forum for revitalizing written forms of regional languages, while acting as a potent corpus and resource for codeswitching and informal written language for automatic language identifiers. 
+            </p>
+            <figure>
+                <graphic n="1003" width="16.002cm" height="10.16cm" url="Pictures/2cdae206e88ba36526f21f63f66ed5b2.jpg" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">Fig. 1 – Language Use (BERT)</p>
+            <figure>
+                <graphic n="1004" width="16.002cm" height="9.958916666666667cm" url="Pictures/388e0103a0f2124ffa217b7df18d7abe.jpg" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">Fig. 2 – Language Use (RF)</p>
+            <figure>
+                <graphic n="1005" width="16.51cm" height="7.796388888888889cm" url="Pictures/79a7b5790618d78eef70d453f8a45b22.jpg" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">Fig. 3 – Languages per Newspaper (BERT)</p>
+            <figure>
+                <graphic n="1006" width="16.51cm" height="7.549444444444444cm" url="Pictures/e1a12a1c363b4b20a5323f8e72d50c48.jpg" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">Fig. 4 – Languages per Newspaper (RF)</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Devlin, J., Chang, M.-W., Lee, K. and Toutanova, K.</hi> (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. 
+                        <hi rend="italic">Proceedings of NAACL-HLT</hi>, Minneapolis, MN, June 2019, pp. 4171–4186.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gonzalez, A.</hi> (1998). The Language Planning Situation in the Philippines. 
+                        <hi rend="italic">Journal of Multilingual and Multicultural Development</hi>, 
+                        <hi rend="italic bold">19</hi>(5 &amp; 6): 487–525.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Jünger, J. and Keyling, T.</hi> (2019). 
+                        <hi rend="italic">Facepager: An application for automated data retrieval on the web</hi>.
+                        <ref target="https://github.com/strohne/Facepager/" xml:space="preserve"> </ref>
+                        <ref target="https://github.com/strohne/Facepager/">
+                            <hi rend="underline color(1155CC)">https://github.com/strohne/Facepager/</hi>
+                        </ref> (accessed April 7 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kusaka, W.</hi> (2017). 
+                        <hi rend="italic">Moral Politics in the Philippines</hi>. Singapore/Japan: NUS Press &amp; Kyoto University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Bertrand, T., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., David Cournapeau, Brucher, M., Perro, M., and Duchesnay, E.</hi> (2011). Scikit-learn: Machine Learning in Python. 
+                        <hi rend="italic">Journal of Machine Learning Research</hi>, 
+                        <hi rend="bold">12</hi>: 2825–2830.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

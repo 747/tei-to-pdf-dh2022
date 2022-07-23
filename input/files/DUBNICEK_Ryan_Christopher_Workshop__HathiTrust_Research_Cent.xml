@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Workshop: HathiTrust Research Center’s Extracted Features 2.0 Dataset </title>
+                <author>
+                    <persName>
+                        <surname>Dubnicek</surname>
+                        <forename>Ryan</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, iSchool, University of Illinois, Champaign, IL USA</affiliation>
+                    <email>rdubnic2@illinois.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Christie</surname>
+                        <forename>Jennifer</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, Pervasive Technology Institute / Luddy School of Informatics, Computing, and Engineering, Indiana University, Bloomington, IN USA</affiliation>
+                    <email>jechri@iu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kudeki</surname>
+                        <forename>Deren</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, iSchool, University of Illinois, Champaign, IL USA</affiliation>
+                    <email>dkudeki@illinois.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Layne-Worthey</surname>
+                        <forename>Glen</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, iSchool, University of Illinois, Champaign, IL USA</affiliation>
+                    <email>gworthey@illinois.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Walsh</surname>
+                        <forename>John A.</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, Pervasive Technology Institute / Luddy School of Informatics, Computing, and Engineering, Indiana University, Bloomington, IN USA</affiliation>
+                    <email>jawalsh@indiana.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Downie</surname>
+                        <forename>J. Stephen</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, iSchool, University of Illinois, Champaign, IL USA</affiliation>
+                    <email>jdownie@illinois.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital libraries</term>
+                    <term>text and data mining</term>
+                    <term>HathiTrust</term>
+                    <term>HTRC Extracted Features Dataset</term>
+                    <term>collections as data</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>linked (open) data</term>
+                    <term>text mining and analysis</term>
+                    <term>Cultural studies</term>
+                    <term>Linguistics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Abstract</head>
+                <p style="text-align: left; ">This workshop will introduce participants to the HathiTrust Research Center’s Extracted Features Dataset, and demo new data fields and functionality introduced in the latest version, 2.0. Generated from the over 17 million volumes (over 60% still in copyright) in the HathiTrust Digital Library, the EF 2.0 Dataset supports text and data mining in this corpus while still being distributed as open, restriction-free data. This tutorial will introduce the EF 2.0 Dataset, the key concepts behind its creation, and hands-on research use cases for the Dataset using IPython notebooks. </p>
+                <p style="text-align: left; ">Index Terms—digital libraries, text and data mining, HathiTrust, HTRC Extracted Features Dataset, collections as data </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">Digital libraries are in a state of flux: as institutional collections have grown, their purposes have been transformed from “preservation and access” into “big data” repositories. “The Santa Barbara Statement on Collections as Data” identifies foundational principles for this new focus of digital libraries, encouraging library providers and researchers to view these vast digital collections as sources of data for computational research (Santa Barbara Statement on Collections as Data, 2019). This approach opens new possibilities of inquiry and discovery, but also carries with it the weight of copyright limitations and implications; questions of bias, completeness and representation in data; and additional requirements for new skills, sophisticated infrastructures, and increased funding from stakeholders at all levels.</p>
+                <p style="text-align: left; ">Having foreseen some of these issues, the HathiTrust Research Center (HTRC) developed an approach to “non-consumptive research,” a framework that supports computational research of digital items in the HathiTrust Digital Library (HTDL) while complying with copyright limitations on data access. Similarly, through its Extracted Features (EF) Dataset, HTRC supports an approach to computational research that seeks to minimize skill and infrastructure requirements while also aligning with the broader considerations mentioned above. First released in 2015 with version 0.2, the EF Dataset blends MARC-derived, volume-level metadata with computationally generated, page-level metadata and data (Capitanu et al., 2015). The EF Dataset is open (available under a Creative Commons Attribution 4.0 International License), and includes data for each volume in the HathiTrust Digital Library (HTDL) in a bag-of-words format, supporting a multitude of computational use cases.</p>
+                <p style="text-align: left; ">This workshop will focus on introducing the context and application of the EF Dataset version 2.0, for the first time published in a linked-data-compliant format that includes new and updated data fields, a revised structure, and meaningful uniform resource identifiers (URIs) (Jett, et al., 2020). Attendees will learn about the data from which the EF Dataset is generated, the motivation for the dataset’s creation, its structure and format, and its potential applications and limitations. Additionally, workshop attendees will work hands-on programmatically with EF 2.0 data using IPython notebooks, and will use the HTRC FeatureReader Python library, developed specifically to facilitate use of the EF Dataset (Organisciak and Capitanu, 2016).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Workshop Description</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Overview </head>
+                    <p style="text-align: left; ">Section In this three-hour workshop, attendees will first be introduced to HathiTrust, the data of the HathiTrust Digital Library, and the HathiTrust Research Center, followed by context and motivation of the Extracted Features Dataset, the specifics features (or “fields”) included in the dataset, its format, and a discussion of its potential uses and limitations. Finally, attendees will have a chance to work directly with Python code to analyze HTRC EF data and to use the HTRC FeatureReader Python library. Hands-on work will also present new linked data fields and their potential application for research with the EF Dataset. A more detailed breakdown of the workshops modules follows:</p>
+                    <p>Section 1: Intro to HathiTrust Digital Library and HTRC</p>
+                    <list rend="bulleted">
+                        <item>What is HathiTrust?</item>
+                        <item>What is/isn’t the HathiTrust Digital Library?</item>
+                        <item>What is the HathiTrust Research Center?</item>
+                    </list>
+                    <p>Section 2: Context and motivation for the HTRC EF Dataset</p>
+                    <list rend="bulleted">
+                        <item>Non-consumptive research</item>
+                        <item>What is in the data?</item>
+                        <item>Data models and analysis techniques</item>
+                    </list>
+                    <p>Section 3: Ethical considerations of text datasets</p>
+                    <list rend="bulleted">
+                        <item>Bias in libraries, datasets, data, and algorithms</item>
+                    </list>
+                    <p>Section 4: Getting and Exploring EF data</p>
+                    <list rend="bulleted">
+                        <item>Hands on with EF data, Python notebooks and the HTRC FeatureReader library</item>
+                    </list>
+                    <p style="text-align: left; ">The workshop will be a mix of presentation, discussion, and hands-on activity, with an emphasis on open discussion. Our discussion on the ethics of dataset construction, big data and algorithmic analysis will highlight work from Katherine Bode (2020), Catherine D’Ignazio and Lauren Klein (2020), Mimi Ọnuọha (2021) and Roopika Risam (2019).</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Audience </head>
+                    <p style="text-align: left; ">The workshop is open to all, and is targeted at digital library and digital humanities scholars of all levels, library and information professionals, and anyone interested in computational research using HathiTrust Digital Library data. Attendees will develop an understanding of HathiTrust Digital Library, the HathiTrust Research Center’s services, tools and platforms, selected ethical issues associated with digital libraries, dataset and data analysis, and the Extracted Features model, its suitability for various text and data mining applications, and hands-on familiarity with using the dataset for exploratory data analysis. The workshop can accommodate 10 - 40 attendees.</p>
+                    <p style="text-align: left; ">This workshop builds on years of HTRC workshops ranging from general introductions to text and data mining to more advanced work with HTRC’s tools, services, and data. This workshop will provide an in-depth focus on the Extracted Features Dataset version 2.0, demo new ways for exploring and using the dataset and also engage with the ethics of datasets, data and algorithms.</p>
+                    <p style="text-align: left; ">The general objectives of this workshop are to introduce the HathiTrust context, motivation for, and development and release of the Extracted Features Dataset, and to familiarize participants with the data format, its potential applications, and the latest additions in the 2.0 version. Topics of instruction and potential discussion will include:</p>
+                    <p style="text-align: left; ">• How does the Extracted Features Dataset help make the HTDL more accessible for text and data mining?</p>
+                    <p style="text-align: left; ">• What is the EF Dataset model and the structure of its files?</p>
+                    <p style="text-align: left; ">• What research use cases or exploratory data analysis can be supported using HTRC EF data, especially using the new features of the 2.0 dataset”? </p>
+                    <p style="text-align: left; ">• What tools are available for working with EF data, and hands-on experience using them in Python notebooks? </p>
+                    <p style="text-align: left; ">Our goal is for attendees to leave this workshop with a general understanding of the utility of derived datasets and to be comfortable beginning exploratory data analysis using the EF Dataset. </p>
+                    <p style="text-align: left; ">In addition to more HTRC-centric learning objectives, hands-on activities will have added bonuses of an introduction to common cultural analytics tasks in Python, and the associated software libraries used for such tasks, including Pandas, NLTK and Gensim.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Instructor Biographical Information </head>
+                    <p style="text-align: left; ">Ryan Dubnicek is a Digital Humanities Specialist with HTRC, where he works on external and internal research support and outreach and education. He has a Master of Science in Library and Information Science from the University of Illinois at Urbana-Champaign. </p>
+                    <p style="text-align: left; ">Jennifer Christie is an Associate UX Specialist at the HathiTrust Research Center. She is interested in user-centered interaction design and front-end web development. Her research is grounded in qualitative and quantitative assessments of HTRC’s user base, as well as assisting with outreach and education efforts to engage with HTRC’s growing user community.</p>
+                    <p style="text-align: left; ">The remaining listed authors have contributed to the development of this curriculum and its associated instructional materials and concepts, but will not be part of the instructional team.</p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Acknowledgements</head>
+                <p style="text-align: left; ">The curriculum presented in this workshop was developed with support from HathiTrust, University of Illinois, Indiana University, and the Institute of Museum and Library Services, award number RE-00-15-0112-15. Additionally, former Associate Director of Outreach and Education with HTRC, Eleanor Koehl, contributed heavily to the development and design of the teaching materials and activities.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Bode, K. (2020). Why You Can’t Model Away Bias. Modern Language Quarterly, 81(1): 95–124 doi:
+                        <ref target="https://doi.org/10.1215/00267929-7933102">10.1215/00267929-7933102</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">D’Ignazio, C. and Klein, L. (2020). ‘What Gets Counted Counts’. Data Feminism 
+                        <ref target="https://data-feminism.mitpress.mit.edu/pub/h1w0nbqp/release/3">https://data-feminism.mitpress.mit.edu/pub/h1w0nbqp/release/3</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">Jett, J., Capitanu, B., Kudeki, D., Cole, T., Hu, Y., Organisciak, P., Underwood, T., Dickson Koehl, E., Dubnicek, R. and Downie, J. S. (2020). The HathiTrust Research Center Extracted Features Dataset (2.0) HathiTrust Research Center doi:
+                        <ref target="https://doi.org/10.13012/R2TE-C227">10.13012/R2TE-C227</ref>. 
+                        <ref target="https://wiki.htrc.illinois.edu/pages/viewpage.action?pageId=79069329">https://wiki.htrc.illinois.edu/pages/viewpage.action?pageId=79069329</ref> (accessed 2 June 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">Organisciak, P. and Capitanu, B. (2016). Text Mining in Python through the HTRC Feature Reader. Programming Historian 
+                        <ref target="https://programminghistorian.org/en/lessons/text-mining-with-extracted-features">https://programminghistorian.org/en/lessons/text-mining-with-extracted-features</ref> (accessed 2 June 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">Risam, R. (2019). The Stakes of Postcolonial Digital Humanities. New Digital Worlds. (Postcolonial Digital Humanities in Theory, Praxis, and Pedagogy). Northwestern University Press, pp. 23–46 doi:
+                        <ref target="https://doi.org/10.2307/j.ctv7tq4hg.5">10.2307/j.ctv7tq4hg.5</ref>. 
+                        <ref target="http://www.jstor.org/stable/j.ctv7tq4hg.5">http://www.jstor.org/stable/j.ctv7tq4hg.5</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">Partners Always Already Computational - Collections as Data 
+                        <ref target="https://collectionsasdata.github.io/partners/">https://collectionsasdata.github.io/partners/</ref> (accessed 30 November 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">The Library of Missing Datasets — MIMI ONUOHA MIMI  ONUOHA 
+                        <ref target="https://mimionuoha.com/the-library-of-missing-datasets">https://mimionuoha.com/the-library-of-missing-datasets</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">The Santa Barbara Statement on Collections as Data Always Already Computational - Collections as Data 
+                        <ref target="https://collectionsasdata.github.io/statement/">https://collectionsasdata.github.io/statement/</ref> (accessed 30 November 2021).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

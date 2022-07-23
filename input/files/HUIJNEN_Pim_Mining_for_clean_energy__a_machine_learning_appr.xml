@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mining for clean energy: a machine learning approach to historicized sentiment mining of fossil fuel discourse in the Netherlands</title>
+                <author>
+                    <persName>
+                        <surname>Huijnen</surname>
+                        <forename>Pim</forename>
+                    </persName>
+                    <affiliation>Utrecht University, Netherlands, The</affiliation>
+                    <email>p.huijnen@uu.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Plets</surname>
+                        <forename>Gertjan</forename>
+                    </persName>
+                    <affiliation>Utrecht University, Netherlands, The</affiliation>
+                    <email>g.f.j.plets@uu.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Verheul</surname>
+                        <forename>Jaap</forename>
+                    </persName>
+                    <affiliation>Utrecht University, Netherlands, The</affiliation>
+                    <email>j.verheul@uu.nl</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-04T14:22:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>sentiment mining</term>
+                    <term>machine learning</term>
+                    <term>fossil fuel</term>
+                    <term>clean energy</term>
+                    <term>newspapers</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>text mining and analysis</term>
+                    <term>History</term>
+                    <term>Environmental</term>
+                    <term>ocean</term>
+                    <term>and waterway studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Global sustainability is one of the most urgent issues of today. Although the climate crisis has been on and off the Dutch political agenda for at least fifty years, a longer-term historical perspective on the crisis plays a minor role in present-day discussions. Nevertheless, such a perspective can give us important insights into the forces at play in the complex environmental, social, and cultural issues that are at stake when it comes to sustainability. We cannot explain how and why public sentiments have changed over the last decades without mapping where they are rooted in and how they have evolved over time. We aim to investigate this for the Dutch case by tracing shifting sentiments towards fossil fuels in the postwar newspaper discourse. Interesting, for example, is that natural gas was framed as a sustainable, environment-friendly alternative for coal and petrol when it was introduced in the 1960s, while it presently carries the same deprecative label of 'fossil fuel' as the others. We have built a sentiment mining pipeline to be able to better understand semantic and emotional shifts like these.</p>
+            <p style="text-align: left; ">Mass digitization has made a long-term historical semantic perspective on public meaning, emotions, and sentiments, as this project envisions, both innovative and feasible. The training of dedicated models based on the vectorization of language, at the same time, has enabled studying semantics on an entirely different scale than manually possible. The state-of-the-art in language models are transformer models, which, unlike previous vectorization techniques like word embeddings, consider the context in which words are used thanks to the introduction of “self-attention” layers. Therefore, they result in a more precise modeling of features of language than previous models, as Google’s BERT has demonstrated (Devlin et.al. 2019). </p>
+            <p style="text-align: left; ">This project deals with the analysis of sentiment within newspaper articles from 1960 to 1995 contained in the massive digitized newspaper archive of The National Library of the Netherlands (KB)
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p style="text-align: left; ">
+                        https://www.kb.nl.
+                    </p>
+                </note>. By creating multiple fine-tuned BERT models, adapted to topics and decades, this project has produced models that run historically dynamic sentiment analyses that are context-specific and easily repeatable on different topics. The output of the models creates a sentiment variable which is topic- and context-specific. 
+            </p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Preprocessing and selection</head>
+                <p style="text-align: left; ">The original OCR newspaper texts received from KB have been reformatted and divided by decade. Only texts labeled as articles (not advertisements) category were considered, which resulted in a final pre-training dataset of 43.4GB of uncompressed text. On this dataset, we have used a labeling and predicting pipeline to extract documents on fossil fuels, and a second to predict sentiments.</p>
+                <p style="text-align: left; ">Before labeling, the data was first cleaned and tokenized. We used the SentencePiece (Kudo and Richardson, 2018) library to create a tokenizer file. Then we followed the lead of the Swedish (Malmsten et al., 2020), Finnish (Virtanen et al., 2019) and German (Branden et al., 2019) BERT project to select dictionary size and the configuration of the BERT model. Labeling the sentiment of articles is a complex task, as an article is composed of many sentences that might have contrasting sentiment when taken individually and/or out-of-context. The data was, further, decomposed in its main paragraphs as divided by KB’s OCR to predict topicality and sentiment on a more fine-grained level.
+                    <note place="foot" xml:id="ftn2" n="2">
+                        <p style="text-align: left; ">
+                            We split paragraphs longer than 400 words and discarded very short (one-sentence) paragraphs. All preprocessing and modeling scripts are available on https://github.com/UtrechtUniversity/hist-aware.
+                        </p>
+                    </note> Labeling for topicality was done per type of fossil fuel (coal, natural gas, petrol) and per decade by two labelers (which the project team evaluated), resulting in a final dataset of 1.5GB and 568,160 paragraphs of text with a 0.95 confidence score (see table 1). This data was used as input for the later models.
+                </p>
+                <p>Table 1: Dataset after prediction of topicality: newspaper articles on goal, natural gas, petrol for the 1960s-1990s.</p>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: center;" rend="DH-Default">Decade</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Type of fossil fuel</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Size (MB)</cell>
+                        <cell style="text-align: left;" rend="DH-Default">No. paragraphs</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">1960s</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Coal</cell>
+                        <cell style="text-align: left;" rend="DH-Default">27</cell>
+                        <cell style="text-align: left;" rend="DH-Default">4,626</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Natural Gas</cell>
+                        <cell style="text-align: left;" rend="DH-Default">102</cell>
+                        <cell style="text-align: left;" rend="DH-Default">40,816</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Petrol</cell>
+                        <cell style="text-align: left;" rend="DH-Default">172</cell>
+                        <cell style="text-align: left;" rend="DH-Default">57,196</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Total</cell>
+                        <cell style="text-align: left;" rend="DH-Default">301</cell>
+                        <cell style="text-align: left;" rend="DH-Default">102,638</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">1970s</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Coal</cell>
+                        <cell style="text-align: left;" rend="DH-Default">15</cell>
+                        <cell style="text-align: left;" rend="DH-Default">5,388</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Natural Gas</cell>
+                        <cell style="text-align: left;" rend="DH-Default">114</cell>
+                        <cell style="text-align: left;" rend="DH-Default">51,678</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Petrol</cell>
+                        <cell style="text-align: left;" rend="DH-Default">245</cell>
+                        <cell style="text-align: left;" rend="DH-Default">96,189</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Total</cell>
+                        <cell style="text-align: left;" rend="DH-Default">374</cell>
+                        <cell style="text-align: left;" rend="DH-Default">153,255</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">1980s</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Coal</cell>
+                        <cell style="text-align: left;" rend="DH-Default">79</cell>
+                        <cell style="text-align: left;" rend="DH-Default">29,289</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Natural Gas</cell>
+                        <cell style="text-align: left;" rend="DH-Default">389</cell>
+                        <cell style="text-align: left;" rend="DH-Default">174,378</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Petrol</cell>
+                        <cell style="text-align: left;" rend="DH-Default">7</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,474</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Total</cell>
+                        <cell style="text-align: left;" rend="DH-Default">475</cell>
+                        <cell style="text-align: left;" rend="DH-Default">205,141</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">1990s</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Coal</cell>
+                        <cell style="text-align: left;" rend="DH-Default">11</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,259</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Natural Gas</cell>
+                        <cell style="text-align: left;" rend="DH-Default">61</cell>
+                        <cell style="text-align: left;" rend="DH-Default">16,127</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Petrol</cell>
+                        <cell style="text-align: left;" rend="DH-Default">384</cell>
+                        <cell style="text-align: left;" rend="DH-Default">88,740</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Total</cell>
+                        <cell style="text-align: left;" rend="DH-Default">456</cell>
+                        <cell style="text-align: left;" rend="DH-Default">107,126</cell>
+                    </row>
+                </table>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Sentiment Labeling and fine-tuning</head>
+                <p style="text-align: left; ">We selected two labelers to label the sentiment on each paragraph. This was done to improve the generalizability of the models and to avoid that the models would learn the subjective interpretation of one labeler on the articles’ sentiments. The labelers used a range of three classes: -1 (negative), 0 (neutral), and +1 (positive). After labeling, we calculated the interrater reliability score using Cohen’s Kappa score (Cohen, 1960) as a measure of the agreement among raters with the objective to compute the extent to which the data collected in the study are correct representations of the variables measured. The computed scores highlight a low agreement on 1960s and 1970s (average 0.22 and 0.24); a higher agreement on 1980s (0.36) and the highest agreement on 1990s (0.58). We weighted the labelers’ judgements of the same paragraphs in the following way: if they disagreed between 0 and -1/+1, we used the more ‘extreme’ label; paragraphs with opposite labels were discarded altogether.</p>
+                <p style="text-align: left; ">Instead of the pre-training we opted to fine-tune BERT models, using an already pre-trained BERT model. The model selected to be fine-tuned with the sentiment labels and texts classified by our labelers was BERTje (de Vries et al., 2019). The fine-tuned BERT models take the labels for each type of fossil fuel (natural gas, coal, petroleum) within one decade (1960s – 1990s) to predict sentiment scores for the entire datasets.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results</head>
+                <p style="text-align: left; ">Based on the predictions, we have been able to visualize average sentiments (-1 to +1) per year for the entire newspaper discourse on the three types of fossil fuel between 1960 and 1995 (Figure 1). Most striking is the fact coal rather that natural gas is regarded more positively after the 1973 oil crisis (although the Dutch government had in 1965 already decided to stop all coal production by 1975). These trends will form the basis for an in-depth analysis in our final paper of the fossil fuel discourse in the Netherlands that will be based on significant changes in notable words (tf-idf) over time and between the three types of energy. We will, particularly, focus on shifts in discourses related to nuclear energy and renewable energy. Idf scores indicate that the former becomes increasingly noticeable in articles on natural gas throughout the decades, while the notion of ‘clean’ (‘schone’) becomes less prominent (Figure 2).</p>
+                <p>Figure 1: Average sentiment score of articles on coal, natural gas, and petrol in Dutch newspapers between negative (-1) and positive (+1) per year, 1960-1995 </p>
+                <figure>
+                    <graphic n="1001" width="16.93686111111111cm" height="9.032875cm" url="Pictures/09244f5297ac124d51f57d5c592d1082.png" rend="inline"/>
+                </figure>
+                <p>Figure 2: Idf scores (per decade) for ‘nuclear energy’ (‘atoomenergie’) and ‘clean’ (‘schone’) in documents on natural gas, 1960s-1990s.</p>
+                <figure>
+                    <figure>
+                        <graphic n="1002" width="10.814538888888888cm" height="7.209691666666667cm" url="Pictures/d9c3108aaf9e81a4603252e63a50cb86.png" rend="inline"/>
+                    </figure>
+                    <figure>
+                        <anchor xml:id="jtrkko5plqfw"/>
+                        <graphic n="1003" width="10.902463888888889cm" height="7.268308333333334cm" url="Pictures/257784ecea131eb25c1c7b4edf74700e.png" rend="inline"/>
+                    </figure>
+                </figure>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Branden C. et al.</hi> (2019). German’s Next Language Model. 
+                        <hi rend="italic">arXiv preprint arXiv:2010.10906.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(222222) background(white)">Cohen, J.</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve"> (1960). A coefficient of agreement for nominal scales. </hi>
+                        <hi rend="italic color(222222) background(white)">Educational and psychological measurement</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">, </hi>
+                        <hi rend="italic color(222222) background(white)">20</hi>
+                        <hi rend="color(222222) background(white)">(1), 37-46.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(222222) background(white)">Delobelle, P., Winters, T., &amp; Berendt, B.</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve"> (2020). Robbert: a dutch roberta-based language model. </hi>
+                        <hi rend="italic color(222222) background(white)">arXiv preprint arXiv:2001.06286</hi>
+                        <hi rend="color(222222) background(white)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(222222) background(white)">De Vries, W., van Cranenburgh, A., Bisazza, A., Caselli, T., van Noord, G., &amp; Nissim, M.</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve"> (2019). Bertje: A dutch bert model. </hi>
+                        <hi rend="italic color(222222) background(white)">arXiv preprint arXiv:1912.09582</hi>
+                        <hi rend="color(222222) background(white)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kudo T. and Richardson J.</hi> (2018). SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing. 
+                        <hi rend="italic">arXiv preprint arXiv:1808.06226</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Malmsten M. et al.</hi> (2020). Playing with Words at the National Library of Sweden – Making a Swedish BERT. 
+                        <hi rend="italic">arXiv preprint arXiv:2007.01658.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Virtanen A. et al.</hi> (2019). Multilingual is not enough: BERT for Finnish. 
+                        <hi rend="italic">arXiv preprint arXiv:1912.07076.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

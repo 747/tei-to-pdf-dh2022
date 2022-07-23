@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Take a sip of TEI and relax: a proposition for an end-to-end workflow to enrich and publish data created with automatic text recognition</title>
+                <author>
+                    <persName>
+                        <surname>Chagué</surname>
+                        <forename>Alix</forename>
+                    </persName>
+                    <affiliation>Inria, France; Université de Montréal, Canada</affiliation>
+                    <email>alix.chague@inria.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Scheithauer</surname>
+                        <forename>Hugo</forename>
+                    </persName>
+                    <affiliation>Inria, France</affiliation>
+                    <email>hugo.scheithauer@inria.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Terriel</surname>
+                        <forename>Lucas</forename>
+                    </persName>
+                    <affiliation>Inria, France</affiliation>
+                    <email>lucas.terriel@inria.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chiffoleau</surname>
+                        <forename>Floriane</forename>
+                    </persName>
+                    <affiliation>Inria, France</affiliation>
+                    <email>floriane.chiffoleau@inria.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tadjo Takianpi</surname>
+                        <forename>Yves</forename>
+                    </persName>
+                    <affiliation>Inria, France</affiliation>
+                    <email>yves.tadjo-takianpi@inria.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Romary</surname>
+                        <forename>Laurent</forename>
+                    </persName>
+                    <affiliation>Inria, France</affiliation>
+                    <email>laurent.romary@inria.fr</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-19T15:00:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>automatic text recognition</term>
+                    <term>natural language processing</term>
+                    <term>TEI</term>
+                    <term>open science</term>
+                    <term>reproducible methodology</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>data publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>text encoding and markup language creation</term>
+                    <term>deployment</term>
+                    <term>and analysis</term>
+                    <term>Computer science</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Over the last decades, several breakthroughs have made the dream to automatically transcribe thousands of handwritten documents a reality (Causer et al., 2018; Sánchez et al., 2017; Seaward, 2017; Yin et al., 2013). For example, software like 
+                <hi rend="italic">Transkribus</hi> (Kahle et al., 2017) and 
+                <hi rend="italic">eScriptorium</hi> (Stokes et al., 2021) provide non-specialist users with simple environments to conduct transcription campaigns relying on efficient HTR
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p>
+                        <hi style="font-size:10pt" xml:space="preserve"> HTR stands for Handwritten Text Recognition.</hi>
+                    </p>
+                </note> engines. While transposing scriptures from a piece of paper onto a text editor used to require effort and concentration, it is now possible to imagine simply pressing a button and letting your computer work while you start preparing your next cup of tea. A few minutes later, your drink is ready, and so is the transcription of the two thousand pages you needed. As automatic transcription software is about to produce huge volumes of data (Clanuwat et al., 2019; Camps, 2021. See also the Vietnamica project
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p>
+                        <hi style="font-size:10pt" xml:space="preserve">Vietnamica is a research project undertaken jointly by the École Pratique des Hautes Études, the Institute of Hán-Nôm Studies, the Social Sciences Academy of Viêt Nam and the National University of Viêt Nam (Faculty of Humanities and Social Sciences). See </hi>
+                        <ref target="https://vietnamica.online/">
+                            <hi rend="underline color(1155CC)" style="font-size:10pt">https://vietnamica.online/</hi>
+                        </ref>
+                    </p>
+                </note>.), it seems crucial to think about how we can interact with the resulting files with maximum efficiency.
+            </p>
+            <p>In response to previous similar initiatives (Carius, 2020), we would like to present an end-to-end workflow revolving around the use of various automatic techniques to go from a set of digital images to the actual publication of a text edition. Such techniques include, on top of HTR, information extraction tools
+                <note place="foot" xml:id="ftn3" n="3">
+                    <p>
+                        <hi style="font-size:10pt" xml:space="preserve"> Rosa Stern defined information extraction as a task consisting of extracting and structuring, in semantic classes, the specific information elements contained in non-structured data for automatic processing, such as coreference resolution, relationship extraction, and named entity recognition (Stern, 2013, p. 59).</hi>
+                    </p>
+                </note> and an open source and ready-to-use environment for publication. Moreover, we aim to make this framework as simple and generic as possible: it is independent from the transcription engine, and potentially compatible with any language, writing system, and any type of document (Balogh and Griffiths, 2020. See also the TEI Special Interest Group for East Asian/Japanese
+                <note place="foot" xml:id="ftn4" n="4">
+                    <p>
+                        <hi style="font-size:10pt" xml:space="preserve"> See </hi>
+                        <ref target="https://tei-c.org/Activities/SIG/EastAsian/">
+                            <hi rend="underline color(1155CC)" style="font-size:10pt">https://tei-c.org/Activities/SIG/EastAsian/</hi>
+                        </ref>
+                        <hi style="font-size:10pt" xml:space="preserve"> and </hi>
+                        <ref target="https://wiki.tei-c.org/index.php/SIG:East_Asian">
+                            <hi rend="underline color(1155CC)" style="font-size:10pt">https://wiki.tei-c.org/index.php/SIG:East_Asian</hi>
+                        </ref>
+                    </p>
+                </note>).
+            </p>
+            <p>Several key principles ensure the coherence of the workflow: transparency and availability of the data at each step and the use of a fully standardized format like TEI XML as the cornerstone to store all the available information. Other XML standards like ALTO
+                <note place="foot" xml:id="ftn5" n="5">
+                    <p>
+                        <hi style="font-size:10pt" xml:space="preserve"> See the Analyzed Layout and Text Object (ALTO) 4.2 schema specifications at </hi>
+                        <ref target="https://www.loc.gov/standards/alto/news.html#4-2-released">
+                            <hi rend="underline color(1155CC)" style="font-size:10pt">https://www.loc.gov/standards/alto/news.html#4-2-released</hi>
+                        </ref>
+                    </p>
+                </note> or PAGE (Pletschacher &amp; Antonacopoulos, 2010) are commonly used by transcription software to export the output, but we advocate for a change of paradigm in order to give more importance to TEI earlier in the workflow (Scheithauer et al., 2020). The TEI guidelines define a set of elements to document this type of data, namely “sourceDoc” and its children
+                <note place="foot" xml:id="ftn6" n="6">
+                    <p>
+                        <hi style="font-size:10pt" xml:space="preserve"> See </hi>
+                        <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDoc.html">
+                            <hi rend="underline color(1155CC)" style="font-size:10pt">https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-sourceDoc.html</hi>
+                        </ref>
+                    </p>
+                </note>. Leveraging TEI from the start is essential to connect the metadata of the images
+                <note place="foot" xml:id="ftn7" n="7">
+                    <p>
+                        Including when the images are distributed within the IIIF framework .
+                    </p>
+                </note> and documents, the text and layout information generated during the transcription, and any further editorial layer added to the raw transcription.
+            </p>
+            <table rend="rules">
+                <row>
+                    <cell style="text-align: center;">
+                        <figure>
+                            <anchor xml:id="w9p4ioeaonwg"/>
+                            <graphic n="1001" width="8.466683333333334cm" height="6.773347222222222cm" url="Pictures/ab528cf602216654bc3102ca32fc9f32.png" rend="inline"/>
+                        </figure>
+                    </cell>
+                </row>
+                <row>
+                    <cell style="text-align: left;">
+                        <hi rend="bold">Fig. 1: TEI as a threefold structure.</hi>
+                    </cell>
+                </row>
+            </table>
+            <p>We imagine a configuration capable of processing a large family of TEI customizations as long as the file follows a structure (Fig. 1) in which:</p>
+            <list type="unordered">
+                <item>“teiHeader” stores the metadata,</item>
+                <item>“sourceDoc” the raw transcription, and</item>
+                <item>“body” the interpreted logical structure along with the editorial layers
+                    <note place="foot" xml:id="ftn8" n="8">
+                        <p>
+                            <hi style="font-size:10pt" xml:space="preserve"> Logical structure reconstruction can be performed semi-automatically (see the pipeline built for the LECTAUREP project called “LEPIDEMO”, </hi>
+                            <ref target="https://github.com/lectaurep/lepidemo">
+                                <hi rend="underline color(1155CC)" style="font-size:10pt">https://github.com/lectaurep/lepidemo</hi>
+                            </ref>
+                            ), or automatically with tools such as GROBID (
+                            <ref target="https://github.com/kermitt2/grobid">
+                                <hi rend="underline color(1155CC)" style="font-size:10pt">https://github.com/kermitt2/grobid</hi>
+                            </ref>
+                            ).
+                        </p>
+                    </note>.
+                </item>
+            </list>
+            <p>We thus aggregate two phases in the digitization lifecycle which are often disconnected.</p>
+            <p>Editorial operations can include preprocessing tasks such as post-HTR corrections (spell-checking) and text normalization, as well as information extraction (text mining). When the volume of data increases, extracting and linking named entities with indexes quickly risks becoming a laborious task. Instead, natural language processing tools can automate the process (Ehrmann et al., 2020; Frontini et al., 2015) all the while relying on the analysis of the sentences and words within their context. We developed 
+                <hi rend="italic">Semantic@</hi>, a proof of concept utilizing deep learning models, to extract named entities which are then cycled back into the TEI tree (Fig. 2). The extraction of named entities (i.e. names of people, places, or dates, etc.) is a crucial step before disambiguation which further permits to build links with open general or domain-specific knowledge bases. These steps allow for later explorations of the text with data mining technologies.
+            </p>
+            <table rend="rules">
+                <row>
+                    <cell style="text-align: center;">
+                        <figure>
+                            <anchor xml:id="vw6wiftzr5mh"/>
+                            <graphic n="1002" width="8.466683333333334cm" height="6.773347222222222cm" url="Pictures/ab528cf602216654bc3102ca32fc9f32.png" rend="inline"/>
+                        </figure>
+                    </cell>
+                </row>
+                <row>
+                    <cell style="text-align: left;">
+                        <hi rend="bold">Fig. 2: Virtuous circle for the enriched TEI document.</hi>
+                    </cell>
+                </row>
+            </table>
+            <p>Once all the layers of an edition are connected into the same TEI file, edited documents can be posted online with softwares like 
+                <hi rend="italic">TEI Publisher</hi> (Turska et al., 2016; Chiffoleau et al., 2021). It provides a fully customizable environment where templates generate “views” based on the content of the XML files. With the aforementioned TEI structure, we propose an edition template containing:
+            </p>
+            <list type="ordered">
+                <item>a flat representation of the transcription,</item>
+                <item>an imitative representation of the transcription based on SVG
+                    <note place="foot" xml:id="ftn9" n="9">
+                        <p>
+                            <hi style="font-size:10pt" xml:space="preserve"> An XML-based markup language, see the Scalable Vector Graphics (SVG) 2 recommandations at</hi>
+                            <ref target="https://www.w3.org/TR/SVG2/" xml:space="preserve"> </ref>
+                            <ref target="https://www.w3.org/TR/SVG2/">
+                                <hi rend="underline color(1155CC)" style="font-size:10pt">https://www.w3.org/TR/SVG2/</hi>
+                            </ref>
+                            <hi style="font-size:10pt" xml:space="preserve"> ; we wish to point at the fact that working with SVG when displaying transcriptions allows us to deal with different writing systems and languages.</hi>
+                        </p>
+                    </note> integrating the layout of the pages,
+                </item>
+                <item>a diplomatic edition of the source document, based on the content of the body element, and</item>
+                <item>a facsimile, using the IIIF protocol (Fig. 3).</item>
+            </list>
+            <table rend="rules">
+                <row>
+                    <cell style="text-align: left;">
+                        <figure>
+                            <anchor xml:id="u2c6jdtzl3ua"/>
+                            <graphic n="1003" width="15.573375cm" height="6.166555555555555cm" url="Pictures/98520059aeabe3a55ab1b763764bb94f.png" rend="inline"/>
+                        </figure>
+                    </cell>
+                </row>
+                <row>
+                    <cell style="text-align: left;">
+                        <hi rend="bold">Fig. 3: A mock-up showing the four different views potentially available in an application like TEI-Publisher.</hi>
+                    </cell>
+                </row>
+            </table>
+            <p>We would like to take the opportunity of presenting a short paper during the DH2022 international conference to subject our framework (Fig. 4) -and its robustness to different writing systems- to the scrutiny of the DH community. In particular, we believe that our proposition addresses challenges raised by Open Science, primarily the necessity to gain better control over every step within complex pipelines that involve various tools, thus facilitating reproducibility. A paradigm revolving around a pivotal element, like a TEI file grouping the different results, frees us from the constraint of a linear progression by maintaining multiple entry points in the workflow.</p>
+            <table rend="rules">
+                <row>
+                    <cell style="text-align: center;">
+                        <figure>
+                            <anchor xml:id="ujktn2vz6rmo"/>
+                            <graphic n="1004" width="8.466683333333334cm" height="5.926677777777778cm" url="Pictures/0f92db4d335c32d62aad91c344402bb2.png" rend="inline"/>
+                        </figure>
+                    </cell>
+                </row>
+                <row>
+                    <cell style="text-align: left;">
+                        <hi rend="bold">Fig. 4: Simplifying the workflow by using TEI from the beginning.</hi>
+                    </cell>
+                </row>
+            </table>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Balogh, D. and Griffiths, A.</hi> (2020). DHARMA Encoding Guide for Diplomatic Editions EFEO ; Humboldt-Universität (Berlin) ; CEAIS - Centre d’Études de l’Inde et de l’Asie du Sud report 
+                        <ref target="https://halshs.archives-ouvertes.fr/halshs-02888186">https://halshs.archives-ouvertes.fr/halshs-02888186</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Camps, J.-B.</hi> (2021). Gallic(orpor)a: Extraction, annotation et diffusion de l’information textuelle et visuelle en diachronie longue Paper presented at the Inauguration du BnF DataLab, Paris 
+                        <ref target="https://www.academia.edu/58990010/Gallic_orpor_a_Extraction_annotation_et_diffusion_de_l_information_textuelle_et_visuelle_en_diachronie_longue">https://www.academia.edu/58990010/Gallic_orpor_a_Extraction_annotation_et_diffusion_de_l_information_textuelle_et_visuelle_en_diachronie_longue</ref> (accessed 9 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Carius, J.-C.</hi> (2020). Plateforme d’éditions enrichies à l’INHA : Premier point d’étape d’un projet en cours d’élaboration Billet 
+                        <hi rend="italic">Numérique et recherche en histoire de l’art</hi>
+                        <ref target="https://numrha.hypotheses.org/1107">https://numrha.hypotheses.org/1107</ref> (accessed 8 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Causer, T., Grint, K., Sichani, A.-M. and Terras, M.</hi> (2018). ‘Making such bargain’’: Transcribe Bentham and the quality and cost-effectiveness of crowdsourced transcription. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi> doi:
+                        <ref target="https://doi.org/10.1093/llc/fqx064">10.1093/llc/fqx064</ref>. 
+                        <ref target="https://academic.oup.com/dsh/advance-article/doi/10.1093/llc/fqx064/4810663">https://academic.oup.com/dsh/advance-article/doi/10.1093/llc/fqx064/4810663</ref> (accessed 11 June 2018).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Chagué, A. and Scheithauer, H.</hi> (2021). 
+                        <hi rend="italic">LEPIDEMO, a Pipeline Demonstrator for LECTAUREP to Go from EScriptorium to TEI-Publisher</hi>. Jupyter Notebook doi:
+                        <ref target="https://doi.org/10.5072/zenodo.977657">10.5072/zenodo.977657</ref>. 
+                        <ref target="https://github.com/lectaurep/lepidemo">https://github.com/lectaurep/lepidemo</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Chiffoleau, F., Baillot, A. and Ovide, M.</hi> (2021). A TEI-based publication pipeline for historical egodocuments -the DAHN project. 
+                        <hi rend="italic">Next Gen TEI, 2021 - TEI Conference and Members’ Meeting</hi>. Virtual, United States 
+                        <ref target="https://hal.archives-ouvertes.fr/hal-03451421">https://hal.archives-ouvertes.fr/hal-03451421</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Clanuwat, T., Lamb, A. and Kitamoto, A.</hi> (2019). KuroNet: Pre-Modern Japanese Kuzushiji Character Recognition with Deep Learning. 
+                        <hi rend="italic">ArXiv:1910.09433 [Cs]</hi>
+                        <ref target="http://arxiv.org/abs/1910.09433">http://arxiv.org/abs/1910.09433</ref> (accessed 8 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">e-editiones</hi> (2021). 
+                        <hi rend="italic">Eeditiones/Tei-Publisher-App</hi>. XQuery e-editiones.org 
+                        <ref target="https://github.com/eeditiones/tei-publisher-app">https://github.com/eeditiones/tei-publisher-app</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Ehrmann, M., Romanello, M., Flückiger, A. and Clematide, S.</hi> (2020). Extended Overview of CLEF HIPE 2020: Named Entity Processing on Historical Newspapers. 
+                        <hi rend="italic">CLEF 2020 Working Notes. Conference and Labs of the Evaluation Forum</hi>. [online event]: Zenodo doi:
+                        <ref target="https://doi.org/10.5281/ZENODO.4117566">10.5281/ZENODO.4117566</ref>. 
+                        <ref target="https://zenodo.org/record/4117566">https://zenodo.org/record/4117566</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Frontini, F., Brando, C. and Ganascia, J.-G.</hi> (2015). Semantic Web Based Named Entity Linking for Digital Humanities and Heritage Texts. In Zucker, A., Draelants, I., Zucker, C. F. and Monnin, A. (eds), 
+                        <hi rend="italic">First International Workshop Semantic Web for Scientific Heritage at the 12th ESWC 2015 Conference</hi>. Portorož, Slovenia: Arnaud Zucker and Isabelle Draelants and Catherine Faron Zucker and Alexandre Monnin 
+                        <ref target="https://hal.archives-ouvertes.fr/hal-01203358">https://hal.archives-ouvertes.fr/hal-01203358</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Kahle, P., Colutto, S., Hackl, G. and Mühlberger, G.</hi> (2017). Transkribus - A Service Platform for Transcription, Recognition and Retrieval of Historical Documents. 
+                        <hi rend="italic">14th IAPR International Conference on Document Analysis and Recognition (ICDAR)</hi>, vol. 04. pp. 19–24 doi:
+                        <ref target="https://doi.org/10.1109/ICDAR.2017.307">10.1109/ICDAR.2017.307</ref>.
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Kiessling, B.</hi> (2021). 
+                        <hi rend="italic">Mittagessen/Kraken</hi>. Python 
+                        <ref target="https://github.com/mittagessen/kraken">https://github.com/mittagessen/kraken</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Lopez, P.</hi> (2008). 
+                        <hi rend="italic">GROBID</hi>. Java 
+                        <ref target="https://github.com/kermitt2/grobid">https://github.com/kermitt2/grobid</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Pletschacher, S. and Antonacopoulos, A.</hi> (2010). The PAGE (Page Analysis and Ground-truth Elements) format framework. pp. 257–60 doi:
+                        <ref target="https://doi.org/10.1109/ICPR.2010.72">10.1109/ICPR.2010.72</ref>.
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Sánchez, J. A., Romero, V., Toselli, A. H., Villegas, M. and Vidal, E.</hi> (2017). ICDAR2017 Competition on Handwritten Text Recognition on the READ Dataset. IEEE Computer Society, pp. 1383–88 doi:
+                        <ref target="https://doi.org/10.1109/ICDAR.2017.226">10.1109/ICDAR.2017.226</ref>. 
+                        <ref target="https://www.computer.org/csdl/proceedings-article/icdar/2017/3586b383/12OmNy4IEXJ">https://www.computer.org/csdl/proceedings-article/icdar/2017/3586b383/12OmNy4IEXJ</ref> (accessed 9 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Scheithauer, H., Chagué, A., Gabay, S., Romary, L., Janes, J. and Jahan, C.</hi> (2021). From page to content – which TEI representation for HTR output?. 
+                        <hi rend="italic">Next Gen TEI, 2021 - TEI Conference and Members’ Meeting</hi>. Weaton (virtual), United States 
+                        <ref target="https://hal.archives-ouvertes.fr/hal-03380807">https://hal.archives-ouvertes.fr/hal-03380807</ref> (accessed 7 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Seaward, L.</hi> (2017). Project Update – teaching a computer to READ Bentham 
+                        <hi rend="italic">UCL Transcribe Bentham</hi>
+                        <ref target="http://blogs.ucl.ac.uk/transcribe-bentham/2017/06/09/project-update-teaching-a-computer-to-read-bentham/">http://blogs.ucl.ac.uk/transcribe-bentham/2017/06/09/project-update-teaching-a-computer-to-read-bentham/</ref> (accessed 4 June 2018).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Stern, R.</hi> (2013). Identification automatique d’entités pour l’enrichissement de contenus textuels Université Paris-Diderot - Paris VII phdthesis 
+                        <ref target="https://tel.archives-ouvertes.fr/tel-00939420">https://tel.archives-ouvertes.fr/tel-00939420</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Stokes, P. A., Kiessling, B., Ezra, D. S. B., Tissot, R. and Gargem, E. H.</hi> (2021a). The eScriptorium VRE for Manuscript Cultures. 
+                        <hi rend="italic">Classics@ Journal</hi>. [online] 
+                        <ref target="https://classics-at.chs.harvard.edu/classics18-stokes-kiessling-stokl-ben-ezra-tissot-gargem/">https://classics-at.chs.harvard.edu/classics18-stokes-kiessling-stokl-ben-ezra-tissot-gargem/</ref> (accessed 30 November 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Stokes, P. A., Kiessling, B., Ezra, D. S. B., Tissot, R. and Gargem, E. H.</hi> (2021b). The eScriptorium VRE for Manuscript Cultures. 
+                        <hi rend="italic">Classics@ Journal</hi>. [online] 
+                        <ref target="https://classics-at.chs.harvard.edu/classics18-stokes-kiessling-stokl-ben-ezra-tissot-gargem/">https://classics-at.chs.harvard.edu/classics18-stokes-kiessling-stokl-ben-ezra-tissot-gargem/</ref> (accessed 30 November 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Terriel, L.</hi> (2021). 
+                        <hi rend="italic">Semantic@</hi>. Python 
+                        <ref target="https://github.com/Lucaterre/semanticat">https://github.com/Lucaterre/semanticat</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Tissot, R.</hi> (2021). 
+                        <hi rend="italic">Scripta/EScriptorium</hi>. Python 
+                        <ref target="https://gitlab.com/scripta/escriptorium/-/tree/v0.10.2a">https://gitlab.com/scripta/escriptorium/-/tree/v0.10.2a</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Turska, M., Cummings, J. and Rahtz, S.</hi> (2016). Challenging the Myth of Presentation in Digital Editions. 
+                        <hi rend="italic">Journal of the Text Encoding Initiative</hi>(Issue 9). Text Encoding Initiative Consortium doi:
+                        <ref target="https://doi.org/10.4000/jtei.1453">10.4000/jtei.1453</ref>. 
+                        <ref target="https://journals.openedition.org/jtei/1453">https://journals.openedition.org/jtei/1453</ref> (accessed 10 December 2021).
+                    </bibl>
+                    <bibl rend="Standard" style="text-align: justify; ">
+                        <hi rend="bold">Yin, F., Wang, Q.-F., Zhang, X.-Y. and Liu, C.-L.</hi> (2013). ICDAR 2013 Chinese Handwriting Recognition Competition. IEEE Computer Society, pp. 1464–70 doi:
+                        <ref target="https://doi.org/10.1109/ICDAR.2013.218">10.1109/ICDAR.2013.218</ref>. 
+                        <ref target="https://www.computer.org/csdl/proceedings-article/icdar/2013/06628856/12OmNxEBzcq">https://www.computer.org/csdl/proceedings-article/icdar/2013/06628856/12OmNxEBzcq</ref> (accessed 9 December 2021).
+                    </bibl>
+                    <bibl>
+                        <ref target="https://gitlab.com/scripta/escriptorium/-/tree/v0.10.2a">
+                            <hi rend="underline color(1155CC)">https://gitlab.com/scripta/escriptorium/-/tree/v0.10.2a</hi>
+                        </ref>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

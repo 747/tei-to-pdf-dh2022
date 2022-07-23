@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Toward an Affordances Approach to Literacy in the Digital Humanities</title>
+                <author>
+                    <persName>
+                        <surname>Kulkarni</surname>
+                        <forename>Kavita</forename>
+                    </persName>
+                    <affiliation>Princeton University, United States of America</affiliation>
+                    <email>kavitak@princeton.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-13T18:29:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>affordances</term>
+                    <term>humanities computing</term>
+                    <term>DH pedagogy</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>curricular and pedagogical development and analysis</term>
+                    <term>Education/ pedagogy</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: center;">Toward an Affordances Approach to Literacy in the Digital Humanities</p>
+            <p>
+                <lb/>This paper reflects on the author’s experience designing and teaching 
+                <hi rend="italic">Humanistic Approaches to Media and Data</hi>, an inaugural digital-humanities course included in the STEM course offerings in the Freshman Scholars Institute at Princeton University in the summer of 2021. The course was designed to teach critical media and data literacy through a hybrid structure of reading seminar/programming laboratory. This paper makes a case for an “affordances” approach to literacy-oriented pedagogy in the digital humanities, arguing that the ability to “read”—by “working through”—the affordances of DH tools and techniques marks a logical move in the progression within the critical literacy paradigm from textual literacy to media literacy to data literacy.
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text">This paper draws from the work of James J. Gibson—long utilized in cognitive psychology, design studies, and human-computer interaction—for its definition of affordance, which for the purposes of this abstract will be abridged to “a value-rich ecological object.”</p>
+                </note> This paper focuses in particular on the progression from media literacy to data literacy. 
+            </p>
+            <p>The paper starts with the premise that practices of meaning-making are both the object of study and mode of knowledge production in the humanities, and that these practices have become increasingly complex over time by way of technological advancements in communication media. Likewise, the contours of literacy and of pedagogy centered on literacy have shifted with regard to their focus and objective. The flourishing of “media literacy” pedagogy in the 1990s, for example, offered an addendum to traditional notions and pedagogies of literacy that focused on the reading and writing of language. Media literacy added to these skills the understanding of how media systems operate for the purpose of safeguarding against mass media manipulation and producing discerning news consumers. This approach gained heightened relevance in the United States during and after the 2016 presidential election, when “fake news” became a popular framework for addressing the phenomenon of misinformation being circulated in the public sphere. In a report published by Data &amp; Society in 2018, the authors note that in this new era of intensified misinformation, “[m]edia literacy has become a center of gravity for countering ‘fake news,’ and a diverse array of stakeholders—from educators to legislators, philanthropists to technologists—have pushed significant resources toward media literacy programs” (Bulger and Davison, 2018). Incidentally, a blog post published a month later by Data &amp; Society’s very own danah boyd warned, “[i]f we’re not careful, ‘media literacy’ and ‘critical thinking’ will simply be deployed as an assertion of authority over epistemology” (boyd, 2018). In other words, “when youth are encouraged to be critical of the news media, they come away thinking that the media is lying” (boyd, 2018).</p>
+            <p>To offer a way around this standoff in media literacy discourse regarding what it means to teach critical thinking in the age of “fake news,” and to steer the conversation toward a consideration of what critical literacy looks like in the age of ubiquitous data and computation, this paper proposes an “affordances” approach to literacy, building on existing literature in DH pedagogy that argues for programming/making/building as a form of learning. In particular, this “affordances” approach to literacy is premised on three beliefs: 1) It is valuable for students to start with their own research questions and explore how DH can or cannot assist them in exploring these questions, instead of starting with DH tools or datasets for which they would have to find an application; 2) It is important to make room for failure, as it is a prerequisite to students understanding technological design as a matter of affordances and limitations; and 3) To ensure that literacy is in fact “critical,” it is important to draw connections between affordances and social or political values, emphasizing how design in media and computational technologies is not only a matter of function, but also principles like accessibility, privacy, and collectivism.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" style="font-size:9pt">boyd, d.</hi>
+                        <hi style="font-size:9pt" xml:space="preserve"> (2018). You think you want media literacy… do you? </hi>
+                        <hi rend="italic" style="font-size:9pt">Data &amp; Society: Points</hi>
+                        <hi style="font-size:9pt" xml:space="preserve">, </hi>
+                        <ref target="https://points.datasociety.net/you-think-you-want-media-literacy-do-you-7cad6af18ec2">
+                            https://points.datasociety.net/you-think-you-want-media-literacy-do-you-7cad6af18ec2
+                        </ref>
+                        <hi style="font-size:9pt" xml:space="preserve"> (accessed 11 December 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:9pt">Bulger, M. and Davison, P.</hi>
+                        <hi style="font-size:9pt" xml:space="preserve"> (2018). The promises, challenges, and futures of media literacy. </hi>
+                        <hi rend="italic" style="font-size:9pt">Journal of Media Literacy Education</hi>
+                        <hi style="font-size:9pt" xml:space="preserve">, </hi>
+                        <hi rend="bold" style="font-size:9pt">10</hi>
+                        (1): 1–21.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:9pt">Gibson, J.</hi>
+                        <hi style="font-size:9pt" xml:space="preserve"> (1979). </hi>
+                        <hi rend="italic" style="font-size:9pt">The Ecological Approach to Visual Perception</hi>
+                        . Boston: Houghton, Mifflin and Company.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

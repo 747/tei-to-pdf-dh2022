@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">States of the text: fixation, legitimation and multimodal publication</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Fauchié</surname>
+                        <forename>Antoine</forename>
+                    </persName>
+                    <affiliation>Chaire de recherche du Canada en écritures numériques, Canada</affiliation>
+                    <email>antoine.fauchie@umontreal.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T16:26:08.788277461</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital publishing</term>
+                    <term>single source publishing</term>
+                    <term>edition</term>
+                    <term>multimodal publication</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>scholarly editing and editions development</term>
+                    <term>analysis</term>
+                    <term>and methods</term>
+                    <term>software development</term>
+                    <term>systems</term>
+                    <term>analysis and methods</term>
+                    <term>Literary studies</term>
+                    <term>Media studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Publications (books, articles, etc.) are artifacts that carry texts, and their production requires complex editing processes, calling upon different types of skills and tools. Since the beginnings of computing and following a long technical evolution, digital technology has introduced mechanisms that modify both the editorial work and the workings necessary for the production of different forms and formats (Mourat, 2020). These technological 
+                <hi rend="italic">innovations</hi>, which are numerous and sometimes reproduce pre-digital gestures identically (Ludovico and Cramer, 2012), are created and adopted in different stages or phases (Epron and Vitali-Rosati, 2018): theoretical principles are conceptualized, imagined and then implemented in prototypes, and finally industrialized for restricted or broad uses.
+            </p>
+            <p>We are interested here in two technical principles derived from digital publishing technologies (Blanc and Haute, 2018), namely multimodal publishing and single source publishing. On the one hand, it is about being able to generate several different formats within the same editorial project — such as a printed book on paper, a digital book in EPUB format and an XML file —, rearranging the contents according to the form of the artifact, whether in terms of structure or graphic rendering (Haute, 2019). On the other hand, it is a question of producing these versions with a single source, limiting the usually repeated interventions on several source files, and making the editorial follow-up more fluid (Hyde, 2021). These two principles — both theoretical, implemented and proven — aim to simplify work on a text in the context of an editing process: to facilitate multiple interventions by the different people who act on a text, and thus to allow interventions at different levels and moments in the text production chain. These 
+                <hi rend="italic">states</hi> of the text, whether reading, correcting, rereading, formatting, structuring, composing, transforming, publishing, can thus be considered and composed in various ways, without the risk of losing information or creating unnecessary conflicts between the participants.
+            </p>
+            <p>If technological evolutions allow us to imagine new ways of working in publishing, what about their real implementation? The principles mentioned are implemented through methods, software or computer programs, often put forward to the detriment of questioning the organizations of humans who use these technologies (Gelgon, 2018). Can the legitimization of content (Vitali-Rosati, 2012) be integrated into a 
+                <hi rend="italic">single source publishing</hi> chain? If multiple people can be involved in an editorial project simultaneously, text legitimation poses a significant challenge. At what point is a text fixed? If the contents can be modified at any time, and even technically after publication, the fixation of the text is questioned, as well as its citability (the text is moving) and its durability (several versions and states of the text coexist without systematic archiving). Finally, if the technical processes are numerous to realize this type of publication chain (Maxwell, 2019), perhaps they are not all desirable. We need to take a critical look at technical feasibility. Isn’t a multimodal publishing chain based on a single source a utopia in the publishing ecosystem?
+            </p>
+            <p>Our presentation focuses on the states of the text in relation to human organizations and technical solutions. We wish to analyze the mechanisms of fixation, legitimization and publication in the perspective of editing a text in several versions from a single source. Through several examples of publication chains, we will question the technical solutions at work, and we will draw up a panorama of the theoretical questions that are part of the digital humanities approach.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Blanc, J. and Haute, L.</hi> (2018). Technologies de l’édition numérique. 
+                        <hi rend="italic">Sciences Du Design</hi>, 
+                        <hi rend="bold">8</hi>(2): 11–17 
+                        <ptr target="https://www.cairn.info/revue-sciences-du-design-2018-2-page-11.htm"/> (accessed 23 March 2019).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Epron, B. and Vitali-Rosati, M.</hi> (2018). 
+                        <hi rend="italic">L’édition à L’ère Numérique</hi>. (Repères). Paris, France: La Découverte 
+                        <ptr target="https://www.cairn.info/l-edition-a-l-ere-numerique--9782707199355.htm"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gelgon, A.</hi> (2018). Un dialogue à réaliser : Design et technique. In,
+                        <hi rend="italic">.Txt 3</hi>. Paris, France: Éditions B42, p. 158.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Haute, L.</hi> (2019). Livres mécaniques et chimères numériques. 
+                        <hi rend="italic">Back Office</hi>(3) 
+                        <ptr target="http://www.revue-backoffice.com/numeros/03-ecrire-lecran/06_haute"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hyde, A.</hi> (2021). Single Source Publishing 
+                        <hi rend="italic">Coko</hi>
+                        <ptr target="https://coko.foundation/single-source-publishing/"/> (accessed 17 November 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ludovico, A. and Cramer, F.</hi> (2012). 
+                        <hi rend="italic">Post-Digital Print: The Mutation of Publishing Since 1894</hi>. Eindhoven, Pays-Bas: Onomatopee.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Maxwell, J. W.</hi> (2019). 
+                        <hi rend="italic">Mind the Gap: A Landscape Analysis of Open Source Publishing Tools and Platforms</hi>. Cambridge, Massachusetts, États-Unis d’Amérique: The MIT Press 
+                        <ptr target="https://mindthegap.pubpub.org/"/> (accessed 30 December 2019).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mourat, R. de</hi> (2020). Le vacillement des formats. Matérialité, écriture et enquête : Le design des publications en Sciences Humaines et Sociales Université Rennes 2 Thèse 
+                        <ptr target="http://www.these.robindemourat.com/"/> (accessed 22 October 2020).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Vitali-Rosati, M.</hi> (2012). Auteur ou acteur du web ? 
+                        <hi rend="italic">Implications Philosophiques</hi>
+                        <ptr target="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/12980"/>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

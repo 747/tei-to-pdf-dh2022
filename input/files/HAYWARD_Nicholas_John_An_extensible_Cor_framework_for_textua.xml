@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">An extensible Cor framework for textual publication and structure.</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Hayward</surname>
+                        <forename>Nicholas John</forename>
+                    </persName>
+                    <affiliation>Loyola University Chicago, United States of America</affiliation>
+                    <email>nhayward@luc.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T09:55:24.86</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>textual</term>
+                    <term>framework</term>
+                    <term>publication</term>
+                    <term>systems</term>
+                    <term>project</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>data publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>digital publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Computer science</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <anchor xml:id="id_docs-internal-guid-39c22b42-7fff-d140-797d-62b79855714c"/>
+                <hi rend="color(#000000)">An extensible </hi>
+                <hi rend="color(#000000) italic">Cor</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">framework provides a structure and core for the development, analysis, and textual publication of polyglot research and projects. Originally developed as the underlying structure of the Woolf Online (Caughie et al., 2013)</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">project’s </hi>
+                <hi rend="color(#000000) italic">Mojulem</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">framework, it has continued to evolve to support multiple project instances</hi>
+                <hi rend="color(#000000)">
+                    <note xml:id="ftn0" place="foot" n="1">
+                        <p>
+                            <anchor xml:id="id_docs-internal-guid-314198b7-7fff-2484-48f0-6b8ed4a8dc03"/>
+                            <hi rend="color(#000000)">Current projects include Malory Project (www.maloryproject.com), Modernist Magazines (www.modernistmagazines.com), and Woolf Online (www.woolfonline.com).</hi>
+                        </p>
+                    </note>
+                </hi>
+                <hi rend="color(#000000)">, each internally cross-referenced and networked to enable data and software analysis.</hi>
+            </p>
+            <p>
+                <hi rend="color(#000000)">As a publication tool, the </hi>
+                <hi rend="color(#000000) italic">Cor</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">framework builds on the concept of ‘knowledge sites’, suggested by Peter Shillingsburg (Shillingsburg, 2006), supplementing a core publication framework with modules such as OCR, editors, image viewers, data analysis, and software metrics.</hi>
+            </p>
+            <p>
+                <hi rend="color(#000000) italic">Mojulem</hi>
+                <hi rend="color(#000000)">, for example, initially required four underlying core structures, which included </hi>
+                <hi rend="color(#000000) italic">CorCode</hi>
+                <hi rend="color(#000000)">, </hi>
+                <hi rend="color(#000000) italic">CorForm</hi>
+                <hi rend="color(#000000)">, </hi>
+                <hi rend="color(#000000) italic">CorPix</hi>
+                <hi rend="color(#000000)">, and </hi>
+                <hi rend="color(#000000) italic">CorTex.</hi>
+                <hi rend="color(#000000)"> </hi>
+            </p>
+            <p>
+                <lb/>
+                <hi rend="color(#000000)">This development has continued with the Verne Digital Corpus (Hayward, 2017)</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">and the NSF funded Metrics Dashboard</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">project (Shilpika et al., 2015) to include the addition of </hi>
+                <hi rend="color(#000000) italic">CorAssess</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">and associated software metrics to the underlying </hi>
+                <hi rend="color(#000000) italic">Cor</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">framework.</hi>
+            </p>
+            <div type="div1" rend="DH-Heading">
+                <head>
+                    <anchor xml:id="id_docs-internal-guid-13fc20ad-7fff-07db-ef16-69e10793f400"/>CorTex
+                </head>
+                <p>
+                    <hi rend="color(#000000)">The core structure of this framework is a </hi>
+                    <hi rend="color(#000000) italic">CorTex</hi>
+                    <hi rend="color(#000000)">, a stable resource containing merged or compacted plain text transcriptions of a work’s variant expressions. It stores all information about text and variations, ready to be extracted for display of variation amongst versions; it is not necessary to recompute them. </hi>
+                    <hi rend="color(#000000) italic">CorTex</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">is the entity all standoff properties (markup, annotations, links...) points, providing system stability, each version’s text, and variations from other texts. Stability and endurance of </hi>
+                    <hi rend="color(#000000) italic">CorTex</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">is protected by multiplying duplicate </hi>
+                    <hi rend="color(#000000)">copies locked with a digital signature, which verifies for each user that a </hi>
+                    <hi rend="color(#000000) italic">CorTex</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">copy is viable. Analysis of </hi>
+                    <hi rend="color(#000000) italic">CorTex </hi>
+                    <hi rend="color(#000000)">variable forms provides statistical feedback to guide production of a conflated text, for example with the English language translations of a given author’s edition. Whilst these statistical results are no guarantee of an ultimately correct translation, in the example of multiple language editions, they do offer a conflated text with the highest viable agreement amongst collated texts. Textual disagreements are currently resolved by assigning probability values, a higher value defining a greater probability of accuracy and agreement amongst the collated texts. Probability results provide an initial filter of problematic passages in each translation to conflate a text with the highest probability of agreement amongst the translations per edition. </hi>
+                </p>
+                <p>These results can then be provided for further research and assessment, and act as a suitable starting guide for further analysis of the conflated text and, where applicable, translation.</p>
+                <p>The CorTex provides an abstracted core for text management, processing, and modularised structure within a variety of aggregated projects. </p>
+                <p>An initial structure for a project framework, for example, may be considered as follows,</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/3a7d85aaafe1f3779d6c76287f905111.png"/>
+                    </figure>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">Such pathways correspond to common data patterns defined and observed for frameworks based upon a general </hi>
+                    <hi rend="color(#000000) italic">CorTex</hi>
+                    <hi rend="color(#000000)">. For example, we may clearly identify and define a separation of concerns for a user’s request for data, perhaps a chosen page for the current selected edition, from the act of reading the text, formatting it for rendering to the user, and the final act of publication. Each internal pipeline has a clear focus of purpose, thereby removing tightly coupled components, and enabling secure use of the underlying textual data.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Text Engine</head>
+                <p>
+                    <hi rend="color(#000000)">The abstracted </hi>
+                    <hi rend="color(#000000) italic">text engine</hi>
+                    <hi rend="color(#000000)">, for example, provides a kernel for supporting I/O (input/output) requests, secure access to write to datastore persistency, whilst enabling subsequent publication of queried or cached sync data. </hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">The </hi>
+                    <hi rend="color(#000000) italic">text engine</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">supports plain text by default, abstracting support for multiple variant formats using parsers for text I/O. Such parsers may be integrated at a higher level in a chosen pipeline, thereby simplifying the process role of the </hi>
+                    <hi rend="color(#000000) italic">text engine</hi>
+                    <hi rend="color(#000000)">. All revisions to texts may be signed as updates by the text engine, enabling editorial actions to be easily recorded in a time-series, sequential manner. The </hi>
+                    <hi rend="color(#000000) italic">text engine</hi>
+                    <hi rend="color(#000000)">, therefore, creates a clear separation of concerns for textual markup styles, version history, authorial record, and associated metadata. Textual records maintain clear integrity from draft to proofs to publication, including separate options to redraft or revise a given data record, ensuring integrity for both the original draft and proofs copy of the textual data.</hi>
+                </p>
+                <p>
+                    <hi rend="color(#000000)">A notable benefit of this approach, in addition to clear data integrity and modularity of design, is the option to define an API (application programming interface) for each constituent component, from the </hi>
+                    <hi rend="color(#000000) italic">text engine</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">to the </hi>
+                    <hi rend="color(#000000) italic">text reader</hi>
+                    <hi rend="color(#000000)">. This abstraction of structure and design enables variant client options as well, from dynamic implementations of client rendered content to static, single query text publication. Publication channels are incorporated to enable a variety of secure queries from the </hi>
+                    <hi rend="color(#000000) italic">client</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">to the </hi>
+                    <hi rend="color(#000000) italic">text engine</hi>
+                    <hi rend="color(#000000)">. </hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Summary</head>
+                <p>
+                    <hi rend="color(#000000)">This paper will introduce the structure and development of the underlying </hi>
+                    <hi rend="color(#000000) italic">Cor</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">framework with specific focus on a </hi>
+                    <hi rend="color(#000000) italic">CorTex</hi>
+                    <hi rend="color(#000000)">, its development, and associated </hi>
+                    <hi rend="color(#000000) italic">text engine</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">use within a publication framework.</hi>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <anchor xml:id="id_docs-internal-guid-d11e2c4c-7fff-1a34-eeb4-a26128a1ed36"/>Caughie, Pamela L., Hayward, Nicholas J., Hussey, Mark., Shillingsburg, Peter L., and Thiruvathukal, George. K., eds. (2013). 
+                        <hi rend="italic">Woolf Online</hi>. Web. http://www.woolfonline.com.
+                    </bibl>
+                    <bibl>Goodman, N. (1976). 
+                        <hi rend="italic">Languages of Art</hi>. Hackett Publishing.
+                    </bibl>
+                    <bibl>Hayward, Nicholas. J. (2017). 
+                        <hi rend="italic">A Cor infrastructure for textual analysis - From Woolf to Verne</hi>. DH2017 Conference, McGill University and Université de Montréal, Montreal, Canada
+                    </bibl>
+                    <bibl>Shillingsburg, P. L. (2006). 
+                        <hi rend="italic">From Gutenberg to Google: Electronic Representations of Literary Texts</hi>. Cambridge University Press.
+                    </bibl>
+                    <bibl>Shilpika; Thiruvathukal, George K.; Aguiar, Saulo; Läufer, Konstantin; and Hayward, Nicholas J. (2015). 
+                        <hi rend="italic">Software Metrics and Dashboard</hi>, https://ecommons.luc.edu/cs_facpubs/87/
+                    </bibl>
+                    <bibl>Thiruvathukal, George K., Hayward, Nicholas. J., Laüfer, Konstantin., and Shilpika. (2018). 
+                        <hi rend="italic">Metrics Dashboard: A Hosted Platform for Software Quality Metrics</hi>, arXiv:1804.02053 [cs.SE].
+                    </bibl>
+                    <bibl>Thiruvathukal, George K., Hayward, Nicholas. J., Laüfer, Konstantin. Shilpika, and Aguiar, Saulo. (2015). 
+                        <hi rend="italic">Towards Sustainable Digital Humanities Software</hi>, Chicago Colloquium on Digital Humanities and Computer Science.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

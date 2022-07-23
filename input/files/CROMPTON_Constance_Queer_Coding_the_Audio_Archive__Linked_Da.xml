@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Queer Coding the Audio Archive: Linked Data and the Lesbian Organization of Toronto (LOOT) Oral History Tapes</title>
+                <author>
+                    <persName>
+                        <surname>Tayler</surname>
+                        <forename>Felicity</forename>
+                    </persName>
+                    <affiliation>University of Ottawa, Canada</affiliation>
+                    <email>felcity.tayler@uottawa.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Crompton</surname>
+                        <forename>Constance</forename>
+                    </persName>
+                    <affiliation>University of Ottawa, Canada</affiliation>
+                    <email>constance.crompton@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Lesbian Activism</term>
+                    <term>Audio Preservation</term>
+                    <term>Linked Data</term>
+                    <term>Data Ethics</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>data</term>
+                    <term>object</term>
+                    <term>and artefact preservation</term>
+                    <term>mixed-media analysis</term>
+                    <term>Feminist studies</term>
+                    <term>Gender and sexuality studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                History meets material meets digital: the digital and analogue materialities of oral history interviews from the archival Fonds of the Lesbian Organization of Toronto (LOOT), prompt us to think through the ethics of representation in digital imaginaries. Our short paper on Humanities-centred linked data and study of literary audio in Canada offers a case study of digitization and metadata description as a contribution to the larger SSHRC-funded Spoken Web partnership, a partnership dedicated to the study of Canadian literary audio archives. The LOOT audio offers significant challenges for digitization, analogue and digital preservation, archival metadata description and ethical linked data creation. As Becki Ross has observed in
+                <hi rend="italic" style="font-size:10pt" xml:space="preserve"> The House That Jill Built: A Lesbian Nation in Formation,</hi>
+                <hi style="font-size:10pt" xml:space="preserve"> this oral history audio reflects a particular political context and community milieu in Toronto, Canada’s largest city. We hypothosize that when linked to the Spoken Web corpus of literary audio data, it will make visible hidden elements of poetic community: lesbian identity, women’s labour, feminist media, leftist political organizing, queer social spaces, and the print and audio cultures of racialized women. </hi>
+            </p>
+            <p>Our approach treats the semantic web and its code as a representative medium, and reflects on power of CIDOC-CRM, Schema.org, and BIBFRAME to represent this nuance. This awareness of code as language with representational power is key when listening for queer coding in the digitized audio archive, and the tensions between making sure that gay lived experience is represented on the semantic web on the one hand, and the representational limitations of the ontologies that underpin the semantic web one the other (Hedley and Janzen Kooistra). </p>
+            <p>We align our linked data work with a feminist practice of collection, curation, and visualization of data as a counter-discourse to the networks of communicative capitalism (Dean). Even amongst critiques of co-optation, intersectional feminisms are “central to the identity and the methodologies of the digital humanities as a field” (Losh and Wernimont, xi). Catherine D’Ignazio and Lauren Klein propose “feminist data visualization” as an active practice to make explicit the ways in which data collection and display contributes to the marginalization of voices, economic or social positions; generates emotional bonds through qualitative arguments; or conceals underlying power dynamics that mark the provenance of data sets – and yet, that visualization is dependant on the representational power of ontologies we choose to to structure the data. We also look to the work of Safiya Umoja Noble, Ruha Benjamin, and Jennifer Wemigwans to ask: can these semantic linked networks be perceived as hopeful social movements, or do they perpetuate data discrimination through computational algorithms of oppression? Does our metadata reproduce the social inequities embodied in these oral history interviews? Is listening with care to oral histories a way to move slower and get closer to respectful engagement with the humans behind the data? And how are the absences, what you cannot see, just as important as what is made visible by linking up this data across archival collections?</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="color(3A3A3A) background(white)" style="font-size:10pt" xml:space="preserve">Benjamin, Ruha. </hi>
+                        <hi rend="italic color(3A3A3A) background(white)" style="font-size:10pt">Race after Technology : Abolitionist Tools for the New Jim Code</hi>
+                        <hi rend="color(3A3A3A) background(white)" style="font-size:10pt">. POLITY PRESS, 2019.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(3A3A3A) background(white)" style="font-size:10pt" xml:space="preserve">Dean, Jodi. </hi>
+                        <hi rend="italic color(3A3A3A) background(white)" style="font-size:10pt">Democracy and Other Neoliberal Fantasies Communicative Capitalism and Left Politics.</hi>
+                        <hi rend="color(3A3A3A) background(white)" style="font-size:10pt" xml:space="preserve"> Duke University Press, 2009.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(3A3A3A) background(white)" style="font-size:10pt" xml:space="preserve">Hedley, Alison, and Lorraine Janzen Kooistra. “Prototyping Personography for The Yellow Nineties Online.” </hi>
+                        <hi rend="italic color(3A3A3A) background(white)" style="font-size:10pt">Bodies of Information: Intersectional Feminism and the Digital Humanities</hi>
+                        <hi rend="color(3A3A3A) background(white)" style="font-size:10pt">, edited by Elizabeth Losh and Jacqueline Wernimont, University of Minnesota Press, 2019, pp. 157–72.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(3A3A3A) background(white)" style="font-size:10pt" xml:space="preserve">Losh, Elizabeth, and Jacqueline Wernimont, </hi>
+                        <hi rend="italic color(3A3A3A) background(white)" style="font-size:10pt">Bodies of Information: Intersectional Feminism and the Digital Humanities</hi>
+                        <hi rend="color(3A3A3A) background(white)" style="font-size:10pt">. University of Minnesota Press, 2019</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(3A3A3A) background(white)" style="font-size:10pt" xml:space="preserve">Noble, Safiya Umoja. </hi>
+                        <hi rend="italic color(3A3A3A) background(white)" style="font-size:10pt">Algorithms of Oppression : How Search Engines Reinforce Racism</hi>
+                        <hi rend="color(3A3A3A) background(white)" style="font-size:10pt">. New York University Press, 2018.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(3A3A3A) background(white)" style="font-size:10pt" xml:space="preserve">Ross, Becki L. </hi>
+                        <hi rend="italic color(3A3A3A) background(white)" style="font-size:10pt">The House That Jill Built : a Lesbian Nation in Formation</hi>
+                        <hi rend="color(3A3A3A) background(white)" style="font-size:10pt">. University of Toronto Press, 1995.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(3A3A3A) background(white)" style="font-size:10pt" xml:space="preserve">Wemigwans, Jennifer. </hi>
+                        <hi rend="italic color(3A3A3A) background(white)" style="font-size:10pt">A Digital Bundle: Protecting and Promoting Indigenous Knowledge Online</hi>
+                        <hi rend="color(3A3A3A) background(white)" style="font-size:10pt">. University of Regina Press, 2018.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

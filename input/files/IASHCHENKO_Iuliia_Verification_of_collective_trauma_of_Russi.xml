@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Verification of collective trauma of Russian Germans through methodological synthesis based on Digital Humanities approaches</title>
+                <author>
+                    <persName>
+                        <surname>Iashchenko</surname>
+                        <forename>Iuliia</forename>
+                    </persName>
+                    <affiliation>La Sapienza University of Rome, Italy</affiliation>
+                    <email>iuliia.iashchenko@uniroma1.it</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T14:39:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Memory Studies</term>
+                    <term>Totalitarianism</term>
+                    <term>Soviet History</term>
+                    <term>Digital Humanities</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>History</term>
+                    <term>Central/Eastern European Studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Memory studies are a promising research field today since on the one hand evidence is supplemented by memories and generational memory that make history more inclusive and comprehensive (Hirsch, 1993), and on the other hand, individual text analysis tools open new horizons for reaching information from oral sources so that it would be possible to reach the main goal of using Digital Humanities approaches, to absorb more information from any sources (Burdick, 2012). Since modern historical studies focus on sources of various origins (analog, digital), using digital humanities methods for analysis seems to be in good demand.</p>
+            <p style="text-align: left; ">The paper presents the accomplishment of the practical stage of a Ph.D. thesis in Soviet History that includes using tools of computer linguistic and statistics in the analysis of collective memory. Practically, this project addresses the problems of studying the history of totalitarianism in the USSR in the context of collective memory and working with oral sources. The main trends are focused on examining ethnic minorities' experiences and the reasons for silencing the past through the lens of historiographical analysis, shedding light on the serious fragmentation of historiography about the USSR concerning ethnic cleansing, due to the reasons for the classification of archives and ideological evaluations (Chang, 2019). Basically, the research focuses on the collective memory of Russian Germans of the deportations of 1941, the repressions of the 1930s, and life in concentration camps in the 1940s and 1950s.</p>
+            <p style="text-align: left; ">Predominantly, the Digital Humanities approaches in this study are used to address two main objectives:</p>
+            <p style="text-align: left; ">1. to analyse the structure and content of the memorial narrative;</p>
+            <p style="text-align: left; ">2. verification of collective trauma in intergenerational dynamics.</p>
+            <p style="text-align: left; ">This paper aims to make wider the discussion of using digital tools and descriptive statistics in historical sources and shows the unpredictable possibility of implementation of the methods in applied historical studies such as Memory Studies. Although the practical side of the contribution is to represent a methodological synthesis for verification of collective trauma through emotional analysis and network analysis of interviews.</p>
+            <p style="text-align: left; ">Talking about the used evidence, it is important to underline that the main historical sources are interviews with victims of ethnic cleansing in the USSR. Currently, the study uses more than 200 interviews taken during field research in Russia in 2018-2020 and obtained from the archive of the Memorial organization archives (historical research non-government organization, banned in Russia Federation according to federal law number 481 of 30 December 2020 on Foreign Agents, which restricts the freedoms of academics and human rights defenders.).</p>
+            <p style="text-align: left; ">There is a lot of discussion around collective trauma about how to assess its presence, transformation or absence. The emotional analysis approach to interviews will actually allow us to trace the dynamics of the respondent's emotional involvement, but network analysis, by contrast, allows us to trace the dynamics of the narrative and assess which themes become a priority for each generation and which themes remain relevant through all generations.</p>
+            <p style="text-align: left; ">During the implementation of the project, a comprehensive interview analysis technology was developed that is relevant to the purpose and main objectives of the study. To answer the question about the possibility of transmission of collective trauma in the third and fourth generation, it was necessary to verify the interviews in terms of the respondents' expressions of emotion and to identify key themes through word form frequency analysis. As a result, by matching emotional outbursts with key themes, it is possible to compare the level of engagement across generations. This technique is much in demand in the field of memory research, as it is necessary to work with verbal sources that need comparisons and verification.</p>
+            <div type="div1" rend="DH-Heading1">
+                <head>The technology includes three main steps.</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Step one</head>
+                    <p style="text-align: left; ">Creating an archaeographic description of the audio recording, including information such as the date the file was created, recording equipment, audio format, file storage location, etc. A transcribed copy of the interview and an archaeographic description of the file are also created. To organize the case, a database was created by MySQL, which simplifies not only data storage but also their import.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Step Two</head>
+                    <p style="text-align: left; ">Then the audio file is analyzed by the Praat software. Work with the audio file continues only within the framework of emotional analysis, that is, a timbre analysis of the respondent’s voice is carried out and the result of the analysis is visualized (Goriss, 2020). This stage is carried out under the established methodology of criminal forensics.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Step Three</head>
+                    <p style="text-align: left; ">With a transcribed copy of the interview, comprehensive text analysis is performed using the MAXQDA-12 software, including frequency text analysis, concordance analysis, and semantic text analysis. The final stage of the interview analysis is the use of network text analysis to identify key semantic objects of narration in interview groups of victims and next generations (by Gephi 9.02). The strength of communication was determined by the frequency of respondents A and B (victim and representative of the next generation, respectively) mentioning a particular topic included in the thesaurus based on the results of content analysis and expert evaluation. Discourse analysis is used as well (Leontovich; 2011).</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Current results</head>
+                    <p style="text-align: left; ">The results of this analysis were striking. Firstly, the results helped to identify the main themes that relevance remains high in the narrative of each generation (victims of repression, their children, their grandchildren). Secondly, the most relevant thematic blocks were identified as well: these are problems of starvation, problems of mortality, and problems of transportation. Thirdly, there is a trend of increasing criticism of the Stalinist regime with each new generation; while the victims cry more often during interviews, and still cannot cope with their trauma, their grandchildren often emphasise that their relatives and they were not rehabilitated, since even they had to be born and raised in remote parts of Russia. This is a consequence of deportation that even the grandchildren of victims of Stalinist repression have been affected by it. The substantial conclusion, according to the completed analysis, is that collective trauma in the Russian Germans community is shared by different generations and has been transferred through oral stories from elder family members. And the more emotionally a particular generation reacts to key plots of the narrative the more the generation is involved in the experience and the more share the collective trauma.</p>
+                    <p style="text-align: left; ">Results of the project show that the main theme of the victims of repression is hunger (~ 90%), their children are accusing the regime of a crime (~70%), and as for the grandchildren, it is a question of evaluating the actions of the regime as a whole (Iashchenko, 2020).</p>
+                    <p style="text-align: left; ">Since the analysis results approve that Russian Germans share collective trauma through four generations, and their community is not represented in public space, the narrative, at the first time, sheds light on the memory of the victims of communism in the camps. Content analysis and Network analysis showcase that the narrative includes a traumatic segment in every generation that mentions the same topics. And no matter where in the world the interview was conducted (Russia, EU, North America, South America), the same narrative of repression and the arrangement of accents in similar places can be traced.</p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="DH-Quotation" style="text-align: justify;">
+                        <hi rend="bold">Burdick, P., Lunenfeld, P., Burdick, A., Drucker, J., Presner, T., Schnapp, J.</hi> (2012) Digital_Humanities. Cambridge, Mass.: MIT Press.
+                    </bibl>
+                    <bibl rend="DH-Quotation" style="text-align: justify;">
+                        <hi rend="bold">Chang, J.K.</hi> (2019) Ethnic Cleansing and Revisionist Russian and Soviet History. Academic Questions, 32(2), pp. 263–270.
+                    </bibl>
+                    <bibl rend="DH-Quotation" style="text-align: justify;">
+                        <hi rend="bold">Gorris, C., Ricci Maccarini, A., Vanoni, F., Poggioli, M., Vaschetto, R., Garzaro, M., Aluffi Valletti, P.</hi> (2020). Acoustic Analysis of Normal Voice Patterns in Italian Adults by Using Praat, Journal of Voice, Volume 34, Issue 6, pp. 961.e9-961.e18.
+                    </bibl>
+                    <bibl rend="DH-Quotation" style="text-align: justify;">
+                        <hi rend="bold">Hirsch, M.</hi> (1993) "Family Pictures: Maus, Mourning, and Post-Memory," Discourse: Journal for Theoretical Studies in Media and Culture: Vol. 15: Iss. 2, Article 1. Available at: https://digitalcommons.wayne.edu/discourse/vol15/iss2/1.
+                    </bibl>
+                    <bibl rend="DH-Quotation" style="text-align: justify;">
+                        <hi rend="bold">Iashchenko, I.</hi> (2019). Remember How: The Place of Visualization in Preserving the Memory of Repressions of the USSR Against the Volga Germans// Digital Humanities Conference-2019 (9 -12 July 2019, Utrecht)/ Utrecht University Press, 2019. 
+                    </bibl>
+                    <bibl rend="DH-Quotation" style="text-align: justify;">
+                        <hi rend="bold">Leontovich, O.</hi> (2011). Methods of communicative research// Леонтович О.А. Методы коммуникативных исследований. М., 2011.
+                    </bibl>
+                    <bibl rend="DH-Quotation" style="text-align: justify;">
+                        <hi rend="bold">Iashchenko, I.</hi> (2020). Evidence and Memory. Memories about the repressions of the 1940s against the Volga Germans on the materials of the Perm Region (Master’s thesis). Perm State University, Perm, 2020.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

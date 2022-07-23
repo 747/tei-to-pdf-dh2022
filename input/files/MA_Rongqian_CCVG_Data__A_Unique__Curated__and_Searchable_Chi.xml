@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>CCVG Data: A Unique, Curated, and Searchable Chinese Village Dataset for Chinese Study Scholars</title>
+                <author>
+                    <persName>
+                        <surname>He</surname>
+                        <forename>Daqing</forename>
+                    </persName>
+                    <affiliation>University of Pittsburgh, United States of America</affiliation>
+                    <email>dah44@pitt.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ma</surname>
+                        <forename>Rongqian</forename>
+                    </persName>
+                    <affiliation>University of Pittsburgh, United States of America</affiliation>
+                    <email>rom77@pitt.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Zheng</surname>
+                        <forename>Ruoyun</forename>
+                    </persName>
+                    <affiliation>University of Pittsburgh, United States of America</affiliation>
+                    <email>ruz38@pitt.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Zhang</surname>
+                        <forename>Haihui</forename>
+                    </persName>
+                    <affiliation>University of Pittsburgh, United States of America</affiliation>
+                    <email>haihuiz@pitt.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-18T20:15:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Contemporary Chinese Village Gazetteer Data</term>
+                    <term>interface design</term>
+                    <term>database</term>
+                    <term>digital research infrastructure</term>
+                    <term>Chinese studies</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>Interface design</term>
+                    <term>development</term>
+                    <term>and analysis</term>
+                    <term>History</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Chinese local gazetteers are unique primary resources with a long history in China. According to Endymion Wilkinson, “[Gazetteers] form one of the most important sources for the study of Chinese history in the past one thousand years” (2000, p. 154). During the past 30 years, North American-centered Chinese research has developed rapidly. Scholars recognize that there is still a need for more ways to pursue systematic research, thus requiring more reliable information sources. Although some data on Chinese rural areas are available, they are scattered across different resources at varying levels of accessibility. </p>
+            <p>The Contemporary Chinese Village Gazetteer Data Project (CCVG Data) is a project initiated and conducted by the East Asian Library (EAL) of the University of Pittsburgh Library System (ULS). CCVG Data, the first of its kind in the world, is designed to establish a dataset of significant humanities and social science value based on the East Asian Library’s extensive collection of village gazetteers. Village gazetteers report quantitative and qualitative data for China’s most basic administrative unit, covering a series of topics such as local history, genealogy, economics, education, politics and management, public health, etc. Data at this level of detail can only be found in village gazetteers. In 2018, CCVG Data was awarded a one-year, $35,100 Pitt Seed Project grant supported by the University of Pittsburgh’s Office of the Chancellor. In August 2019, CCVG Data project completed its first stage as a pilot project and made the first 500 villages’ data public for teaching and research of Chinese studies. By the end of September 2021, about 1,500 villages’ data have been extracted, entered, and opened to the public. To enhance the accessibility of data as well as to improve user experience, in January 2020, the CCVG team initiated a collaborative project with the School of Computing and Information at the University of Pittsburgh. Two important tasks are under way to increase online accessibility to CCVG data: First, storing the extracted village gazetteer data into a database, and second, providing powerful search interfaces for scholars.</p>
+            <p>In the presentation, we will briefly introduce the background and rationales of CCVG Data project, such as its data extraction, quality control, and data dictionary, and then we will focus on our ongoing efforts to design and construct the database and search interface. Currently, CCVG data is stored in a MySQL database, where 38 tables were identified for storing the data related to the villages’ 12 thematic topics such as gazetteer information, village basis, natural environment, natural disaster, ethnic groups, economy, and education. Two online search interfaces are provided to CCVG data: single village search for basic search and multiple village search for advanced search. The single village search enables scholars to access and download information related to one village on all 12 topics. The multiple village search provides advanced search capabilities, where several villages can be selected with filters on province, city, and county. The 12 topics are presented as a tree structure for the scholars to browse and select, which forms more filters to specify the relevant CCVG data. Scholars can make single-year selections or year range inputs to impose further filters. The resulting data is downloadable for the scholars. Our initial assessments on the search interfaces indicated their usefulness to the scholars.</p>
+            <p>The CCVG Data project has received much attention from scholars and researchers in a variety of disciplines. Inquiries on using CCVG Data have been received from many disciplines of humanities and social studies such as religion, education, economic, family planning and public health, local management, etc. Following the overview of the CCVG Data interface and its usage among scholars, in this presentation, we will also discuss the value of CCVG Data project and the collaboration model which has contributed to the progress of the project.</p>
+            <p>From books to a dataset, CCVG Data is an experimental project with significant value to the humanities and social sciences. It supports Chinese studies in fields such as politics, economics, sociology, environmental science, history, and public health, and proves to be a meaningful exploration in Digital Humanities (DH). More specifically, with the rapid development of East Asian DH, the CCVG Data project marks a milestone in this emerging field from multiple perspectives (Vierthaler, 2020). On the one hand, CCVG Data project demonstrates libraries’ leadership roles in DH work and represents a deeper, more well-rounded collaboration model between librarians, humanities scholars, social scientists, and computer scientists. The collaboration covers various aspects and nearly every step of the DH work, such as data collection and processing, database and platform design, user research, and programming and development of digital tools. As collaboration becomes a well-recognized topic that matters significantly for the success of DH research, the CCVG Data project suggests diverse roles that information professionals can serve in DH scholarship (Poremski, 2017; Richardson &amp; Eichmann-Kalwara, 2017; Risam et al., 2017). On the other hand, CCVG Data project contributes to DH scholarship with infrastructural innovation. Unlike the extensive bibliographic databases, tools, and textual corpora available for East Asian studies, the CCVG Data project focuses on numeric datasets and leverages computational methods (e.g., searchable interface, visual analytic tools) to facilitate users’ and researchers’ interaction with the data.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>CCVG Data website: 
+                        <hi rend="color(0462C1)">www.chinesevillagedata.library.pitt.edu</hi>
+                    </bibl>
+                    <bibl>Poremski, M. D. (2017). Evaluating the landscape of digital humanities librarianship. College &amp; Undergraduate Libraries, 24(2–4), 140–154. 
+                        <ref target="https://doi.org/10.1080/10691316.2017.1325721">https://doi.org/10.1080/10691316.2017.1325721</ref>
+                    </bibl>
+                    <bibl>Richardson, H. A. H., &amp; Eichmann-Kalwara, N. (2017). Process and collaboration: Assessing digital humanities work through an embedded lens. College &amp; Undergraduate Libraries, 24(2–4), 595–615. 
+                        <ref target="https://doi.org/10.1080/10691316.2017.1336145">https://doi.org/10.1080/10691316.2017.1336145</ref>
+                    </bibl>
+                    <bibl>Risam, R., Snow, J., &amp; Edwards, S. (2017). Building an ethical digital humanities community: Librarian, faculty, and student collaboration. College &amp; Undergraduate Libraries, 24(2–4), 337–349. 
+                        <ref target="https://doi.org/10.1080/10691316.2017.1337530">https://doi.org/10.1080/10691316.2017.1337530</ref>
+                    </bibl>
+                    <bibl>Vierthaler, P. (2020). Digital humanities and East Asian studies in 2020. History Compass, 18(11), e12628.Wilkinson, E. P. (2000). Chinese History: A Manual, Revised and Enlarged. Cambridge, Mass: Harvard University Asia Center for the Harvard-Yenching Institute.</bibl>
+                    <bibl>Wilkinson, E. P. (2000). Chinese History: A Manual, Revised and Enlarged. Cambridge, Mass: Harvard University Asia Center for the Harvard-Yenching Institute. </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Unicode Input Support Tool for Searching Chinese Characters by Components and Stroke Number</title>
+                <author>
+                    <persName>
+                        <surname>Liu</surname>
+                        <forename>Guanwei</forename>
+                    </persName>
+                    <affiliation>University of Tokyo, Japan</affiliation>
+                    <email>k-ryu@hi.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nakamura</surname>
+                        <forename>Satoru</forename>
+                    </persName>
+                    <affiliation>University of Tokyo, Japan</affiliation>
+                    <email>nakamura@hi.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Yamada</surname>
+                        <forename>Taizo</forename>
+                    </persName>
+                    <affiliation>University of Tokyo, Japan</affiliation>
+                    <email>t_yamada@hi.u-tokyo.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>IDS</term>
+                    <term>Hanzi</term>
+                    <term>Kanji</term>
+                    <term>CHISE</term>
+                    <term>GlyphWiki</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>text encoding and markup language creation</term>
+                    <term>deployment</term>
+                    <term>and analysis</term>
+                    <term>Asian studies</term>
+                    <term>Book and print history</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">In recent years, given that the Unicode Standard has been updated, the number of Chinese character (Hanzi/Kanji) codes available for text databases of historical documents written in Chinese and Japanese has increased significantly. With the addition of the CJK Unified Ideographs Extension G in 2020, the current Unicode Standard now contains a total of more than 93,000 Chinese characters (Lunde, 2021). To maximize reproduction of the content in historical documents, it is desirable to use Chinese characters that can be displayed in a form that is as close to the original glyphs as possible.</p>
+            <p style="text-align: left; ">TEI-encoded
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> https://tei-c.org/</p>
+                </note> text databases are also becoming increasingly common. However, there are still few examples of the use of these extended Chinese characters in publicly available text databases. Possible causes are the difficulty of checking whether a character can be represented in Unicode and determining how to input those newly included characters in Unicode without input method support.
+            </p>
+            <p style="text-align: left; ">The most common computer-based Chinese character input method entails reading the character. If the reading is inconclusive or if the character has not yet been incorporated into an input method, Ideographic Description Sequence (IDS) can be used to search for the input (The Unicode Consortium, 2021).</p>
+            <p style="text-align: left; ">IDS describes Chinese characters according to their mechanism and components. For example, <hi rend="Chinese">紅</hi>(red) can be described as 
+                <hi rend="Chinese">⿰糸工</hi> (Figure 1). Tools such as CHISE
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p rend="footnote text"> https://www.chise.org/</p>
+                </note> (Morioka, 2008) and GlyphWiki
+                <note place="foot" xml:id="ftn3" n="3">
+                    <p rend="footnote text"> https://www.glyphwiki.org/</p>
+                </note> (<hi rend="Japanese">上地</hi>, 2018) are useful to search for Chinese characters (in Japanese), but no existing tools specialize in inputting Chinese characters and allow TEI-encoded output data in a format suitable for reprinting. Regarding actual reprinting, there are three issues that need to be addressed.
+            </p>
+            <list type="ordered">
+                <item>Searching: Transcribing old documents is complex on a computer. Moreover, it is difficult to input components as search keywords (e.g., <hi rend="Chinese">氵</hi>or <hi rend="Chinese">𦍌</hi>).</item>
+                <item>Display: Results display depends on the font installed on the device; characters that are not part of the font will be displayed in Tofu. Without a suitably designed results page, it is difficult to select and copy Chinese characters for input.</item>
+                <item>Application: Searching should be fast and accurate. Given that it is necessary to search for all Chinese characters in Unicode, deal those data may takes a lot of time before the results are displayed.</item>
+            </list>
+            <figure>
+                <graphic n="1001" width="10.519097222222221cm" height="8.941cm" url="Pictures/994f59543956b5019b008fd4ed3d1a6b.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; text-align: center;">Figure 1: a sample of IDS</p>
+            <p style="text-align: left; ">To solve the above issues, we have developed a tool for searching and inputting Chinese characters that cannot be input via ordinary input methods using Chinese character components and stroke numbers. The tool has the following features, and the corresponding issue is given in parentheses:</p>
+            <list type="ordered">
+                <item>With data on characters’ components from CHISE. IDS
+                    <note place="foot" xml:id="ftn4" n="4">
+                        <p rend="footnote text"> https://gitlab.chise.org/CHISE/ids</p>
+                    </note>, can search up to 93,000 characters based on the newest Unicode Standard. [Searching]
+                </item>
+                <item>Filter results by the number of strokes remaining. The data stroke number is from Unihan
+                    <note place="foot" xml:id="ftn5" n="5">
+                        <p rend="footnote text"> https://www.unicode.org/Public/UCD/latest/ucd/Unihan.zip</p>
+                    </note>. [Searching]
+                </item>
+                <item>Decomposition of Chinese characters to input complex parts. [Searching]</item>
+                <item>Search results are displayed as SVG or PNG images from GlyphWiki to avoid displaying in Tofu.</item>
+                <item>Copy the target character to the clipboard with one click. [Display]</item>
+                <item>The user does not need to have fonts to cover all the Chinese characters in Unicode because the results display as SVG glyphs from GlyphWiki. [Display]</item>
+                <item>Data are cached in the memory to avoid communication latency with a server. [Application]</item>
+                <item>Output in multiple formats (encoded character, Unicode scala, XML block). XML block is customizable with template (Figure 3). [Application]</item>
+            </list>
+            <p style="text-align: left; ">The tool uses IDS data from CHISE and glyph images from GlyphWiki. Compared to both, users can search and input Chinese characters more efficiently by filtering according to the number of strokes remaining (Figure 2). Furthermore, it is easy to select and copy the result in one click, offering a fast response. It is also possible to copy the Chinese characters you want to input as a block of TEI-encoded XML to create a text database. This saves database creators’ time. Here is an example (Figure 4).</p>
+            <figure>
+                <graphic n="1002" width="15.472669444444444cm" height="9.298608333333334cm" url="Pictures/223dcc49daa01ec20d51b47c8e9f6644.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; text-align: center;">Figure 2: interface of the tool</p>
+            <figure>
+                <graphic n="1003" width="11.04916388888889cm" height="10.171425cm" url="Pictures/4a67ae43e63622e20a65cf8ba16de830.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; text-align: center;">Figure 3: customizable XML block template</p>
+            <figure>
+                <graphic n="1004" width="9.784522222222222cm" height="3.0132777777777777cm" url="Pictures/5486061cc1a84394c0a591acb0f9b81a.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; text-align: center;">Figure 4: TEI-encoded sample</p>
+            <p style="text-align: left; ">This tool has been applied to the creation of TEI-encoded text databases at the Historiographical Institute, University of Tokyo
+                <note place="foot" xml:id="ftn6" n="6">
+                    <p rend="footnote text"> https://www.hi.u-tokyo.ac.jp/en/</p>
+                </note>. Details will be presented in the poster.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Lunde, J. H. J. C. K. </hi>(2021). 
+                        <hi rend="italic">Unicode® Standard Annex #38 UNICODE HAN DATABASE (UNIHAN)</hi>
+                        <ref target="https://www.unicode.org/reports/tr38/#BlockListing">https://www.unicode.org/reports/tr38/#BlockListing</ref>, (accessed 20 November 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Morioka, T. </hi>(2008). 
+                        <hi rend="italic">CHISE: Character Processing Based on Character Ontology</hi>. In Tokunaga, T. and Ortega, A. (eds), Large-Scale Knowledge Resources. Construction and Application. Berlin, Heidelberg: Springer Berlin Heidelberg, pp. 148–62 https://doi.org/10.1007/978-3-540-78159-2_14.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">The Unicode Consortium</hi> (2021). 
+                        <hi rend="italic">The Unicode® Standard Version 14.0</hi>. 
+                        <ref target="https://www.unicode.org/versions/Unicode14.0.0/ch18.pdf">https://www.unicode.org/versions/Unicode14.0.0/ch18.pdf</ref>, (accessed 20 November 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold"><hi rend="Japanese">上地</hi>, <hi rend="Japanese">宏一</hi></hi>(2018). 
+                        <hi rend="italic">GlyphWiki<hi rend="Japanese">：漢字字形自由共有サイト</hi></hi>. <hi rend="Japanese">学芸国語国文学</hi>, 48: 181–91 doi:10.24672/gkokugokokubun.48.0_181.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

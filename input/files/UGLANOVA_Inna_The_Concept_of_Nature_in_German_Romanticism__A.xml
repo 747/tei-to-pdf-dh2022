@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">The Concept of Nature in German Romanticism: An Approximation</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Uglanova</surname>
+                        <forename>Inna</forename>
+                    </persName>
+                    <affiliation>Technical University of Darmstadt, Germany</affiliation>
+                    <email>inna.uglanova@tu-darmstadt.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gius</surname>
+                        <forename>Evelyn</forename>
+                    </persName>
+                    <affiliation>Technical University of Darmstadt, Germany</affiliation>
+                    <email>evelyn.gius@tu-darmstadt.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T09:55:24.865000000</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>computational literary studies</term>
+                    <term>German Romanticism</term>
+                    <term>nature</term>
+                    <term>word2vec</term>
+                    <term>t-SNE</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>cultural analytics</term>
+                    <term>text mining and analysis</term>
+                    <term>Cultural studies</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>Nature plays a particular role in the Romantics’ worldview. This concept is characterised by a shift in emphasis from nature as a passive principle (cf. natura naturata by Schelling, 1994) to nature as a subject, an active, creative principle (natura naturans ibid.). The unifying force between these states is the spirit (‘Weltseele’). This leads to the dissolving of established boundaries and oppositions between a human being and nature in romanticist texts (cf. Wanning, 2005). Romantics transform the vertical world order into a horizontal one and create a worldview where human being forms a unity with the world around them. Among other, these transformations manifest themselves in the anthropomorphisation of nature.</p>
+                <p>Our approach is therefore to find out how nature is represented in Romanticist texts by analysing whether it is depicted as an active entity and related to the concept of human being, both in terms of anthropomorphism and the possible semantic projection as a holistic concept. While we acknowledge that nature is a complex concept with blurred boundaries, in this contribution we would like to demonstrate how one can gain insights with a relatively simple approach focused on nature as ‘nature’ and comparing Romanticism to other epochs.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Data</head>
+                <p>For our analysis, we compiled two corpora. Our main corpus contains 90 novels (10,511,420 tokens) from 1780 until 1850, coinciding with the epoch of German Romanticism. A comparative corpus with 102 novels (10,423,812 tokens) from Realism (56 novels) and Naturalism (46 novels) published from 1880 until 1900 was taken from the d-Prose corpus (Gius et al., 2020). This corpus was selected for a contrastive analysis since, in Naturalism and Realism, writers saw their conception of the world as the antithesis of Romanticism.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Methods</head>
+                <p>For exploring nature’s agency in the sociological sense, i.e., the ability to act independently, we took the grammatical position of ‘nature’ as a proxy and parsed both corpora using spaCy (Honnibal et al., 2021). The subsequent analysis of the possible anthropomorphic representation of nature in Romanticism and Naturalism is based on bigram collocations of ‘nature’ identified with NLTK (Bird et al., 2009). The strength of association between collocates was measured by log-likelihood for collocations occurring more than three times. As an exploration of the semantic dimensions of nature, we finally constructed word embedding models for nature and human beings in Romanticism and Naturalism using word2vec in gensim (Mikolov et al. 2013; Rehurek, 2021) and visualised them with the t-SNE-algorithm (Maaten and Hinton, 2008) implemented by scikit-learn (Pedregosa et al., 2011).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Selected Results</head>
+                <p>We now sketch some key results from our project. Table 1 shows the most frequent verbs in sentences where ‘nature’ is used in the subject and thus, from a grammatical perspective, in an active position. In both cases, nature seems to be conceptualised as acting human-like. However, the proportion of sentences with ‘nature’ as subject is higher in Romanticism with 0,38% (i.e., 1,382 sentences out of 363,318) against 0,06% (305 sentences out of 545,023).</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/d2709ae23c867c1cc96ecb83011579a9.jpg"/>
+                    </figure>
+                    <hi rend="bold">Table 1</hi>: Most frequent verbs in sentences with ‘nature’ as subject in Romanticism and Naturalism/Realism
+                </p>
+                <p>Interestingly, we found more human-related words in bigrams in the Naturalist’s subset than in Romanticism (see highlighted words in Table 2). However, the semantics of these words refer rather to human nature in the sense of character traits than to nature.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/61335d9e04f47e54a1757c3166dc083c.jpg"/>
+                    </figure>
+                    <hi rend="bold">Table 2</hi>: Collocations with ‘nature’ in Romanticism and Naturalism
+                </p>
+                <p>The word2vec analysis (see Table 3) seems to confirm this. In the compared datasets, different concepts of ‘nature’ are contextualised. While the Romantics aestheticise 
+                    <hi rend="bold">nature</hi>, Naturalists refer to ‘nature’ as 
+                    <hi rend="bold">human</hi> characteristics and thus as 
+                    <hi rend="bold">human</hi> nature.
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/c7121bb1dce0a75ce2e79d7eb0f29485.jpg"/>
+                    </figure>
+                    <hi rend="bold">Table 3: </hi>Similar word vectors to the keyword ‘nature’
+                </p>
+                <p>Finally, the t-SNE-visualisations with the projections of the vectors ‘human being’ and ‘nature’ into the same two-dimensional space make the different conceptions of Romanticism and Naturalism visible (cf. Fig. 1 and 2).</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/3551f008183186b004963fd7cd0c8171.jpg"/>
+                    </figure>
+                    <hi rend="bold">Figure 1</hi>: The t-SNE projection of the word vectors ‘nature’ and ‘human being’ (Romanticism)
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/8cc7c6655b1d3985a07b4f2d63411d62.jpg"/>
+                    </figure>
+                    <hi rend="bold">Figure 2</hi>: The t-SNE projection of the word vectors ‘nature’ and ‘human being’ (Naturalism)
+                </p>
+                <p>While the–more compact–cluster of the ‘nature’ vector in Romanticism is built by words belonging to the semantic field of human being or aesthetical, metaphysical concepts, in Naturalism, it is more directed towards human-related, often moral or character-related, properties. The ‘human being’ clusters, on the contrary, address humans in their social roles in both epochs. Moreover, the ‘nature’ cluster for Romanticism seems to point at the ‘Universalpoesie’ in Romanticism with its ideal of merging the fields of life, science, art and nature.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Bird, S., Klein, E. and Loper, E.</hi> (2009). 
+                        <hi rend="italic">Natural Language Processing with Python</hi>. Beijing; Cambridge [Mass.]: O’Reilly.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gius, E., Guhr, S. and Adelmann, B.</hi> (2020). d-Prose 1870-1920 Zenodo doi:10.5281/zenodo.4315209. https://zenodo.org/record/4315209 (accessed 7 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Honnibal, M., Montani, I. and Van Landeghem, S.</hi> (2021). 
+                        <hi rend="italic">SpaCy · Industrial-Strength Natural Language Processing in Python</hi>. Python and Cython Berlin: Explosion https://spacy.io/ (accessed 7 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Maaten, L. van der and Hinton, G.</hi> (2008). Visualizing Data using t-SNE. 
+                        <hi rend="italic">Journal of Machine Learning Research</hi>, 
+                        <hi rend="bold">9</hi>(86): 2579–605.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mikolov, T., Sutskever, I., Chen, K., Corrado, G. S. and Dean, J.</hi> (2013). Distributed Representations of Words and Phrases and their Compositionality. 
+                        <hi rend="italic">Advances in Neural Information Processing Systems</hi>, vol. 26. Curran Associates, Inc. https://papers.nips.cc/paper/2013/hash/9aa42b31882ec039965f3c4923ce901b-Abstract.html (accessed 7 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., et al.</hi> (2011). Scikit-learn: Machine Learning in Python. 
+                        <hi rend="italic">The Journal of Machine Learning Research</hi>, 
+                        <hi rend="bold">12</hi>: 2825–30.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Řehůřek, R.</hi> (2021). 
+                        <hi rend="italic">Gensim: Topic Modelling for Humans</hi>. https://radimrehurek.com/gensim/models/word2vec.html (accessed 7 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schelling, F. W. J. von</hi> (1994). 
+                        <hi rend="italic">Ideen zu einer Philosophie der Natur: (1797)</hi>. (Ed.) Durner, M. (Historisch-Kritische Ausgabe). Stuttgart: Frommann-Holzboog.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wanning, B.</hi> (2005). 
+                        <hi rend="italic">Die Fiktionalität der Natur: Studien zum Naturbegriff in Erzähltexten der Romantik und des Realismus</hi>. Berlin: Weidler.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

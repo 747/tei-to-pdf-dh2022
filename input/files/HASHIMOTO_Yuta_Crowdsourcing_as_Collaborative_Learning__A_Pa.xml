@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Crowdsourcing as Collaborative Learning: A Participatory Annotation Project for the Photographic Materials of Shibusawa Eiichi</title>
+                <author>
+                    <persName>
+                        <surname>Hashimoto</surname>
+                        <forename>Yuta</forename>
+                    </persName>
+                    <affiliation>National Museum of Japanese History, Japan</affiliation>
+                    <email>yhashimoto1984@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kim</surname>
+                        <forename>Boyoung</forename>
+                    </persName>
+                    <affiliation>Shibusawa Eiichi Memorial Foundation</affiliation>
+                    <email>kim@shibusawa.or.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nakamura</surname>
+                        <forename>Satoru</forename>
+                    </persName>
+                    <affiliation>University of Tokyo</affiliation>
+                    <email>nakamura@hi.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kokaze</surname>
+                        <forename>Naoki</forename>
+                    </persName>
+                    <affiliation>Chiba University</affiliation>
+                    <email>xiao3feng10324@yahoo.co.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Inoue</surname>
+                        <forename>Sayaka</forename>
+                    </persName>
+                    <affiliation>Shibusawa Eiichi Memorial Foundation</affiliation>
+                    <email>s.inoue@shibusawa.or.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Shigehara</surname>
+                        <forename>Toru</forename>
+                    </persName>
+                    <affiliation>Shibusawa Eiichi Memorial Foundation</affiliation>
+                    <email>shigehara@shibusawa.or.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nagasaki</surname>
+                        <forename>Kiyonori</forename>
+                    </persName>
+                    <affiliation>International Institute for Digital Humanities</affiliation>
+                    <email>nagasaki@dhii.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-19T08:02:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>crowdsourcing</term>
+                    <term>annotation</term>
+                    <term>Shibusawa Eiichi</term>
+                    <term>photography</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>crowdsourcing</term>
+                    <term>Asian studies</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">Although crowdsourcing in the humanities has become common in the last decade (Hedges and Dunn, 2017; Terras, 2013) it is still challenging for most humanities scholars and academic institutions to conduct research successfully because they must draw public attention to their project, keep the participants engaged and motivated, and pay close attention to the quality of the outcome. </p>
+                <p style="text-align: left; ">Nevertheless, the subjects of humanities crowdsourcing can also serve as educational resources for humanities studies. We hypothesize that this characteristic can be used to resolve crowdsourcing difficulties. In this study, we conducted a crowdsourcing project to test this hypothesis, which aims to annotate historical photographs related to Shibusawa Eiichi.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Background and Aims of the Project</head>
+                <p style="text-align: left; ">Shibusawa Eiichi
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p rend="footnote text"> Shibusawa is the surname.</p>
+                    </note> (1840-1931, Fig. 1) was a leading figure in the development of modern Japan, who introduced many financial and economic reforms as a member of the Ministry of Finance in the fledgling Meiji government. After leaving the government in 1873, he ventured into the business world and established a wide variety of companies and economic organizations, including the First National Bank, the Tokyo Chamber of Commerce, and the Tokyo Stock Exchange. He was involved in the foundation of roughly 500 companies and 600 non-profit organizations in the fields of education, social welfare, and health.
+                </p>
+                <p style="text-align: left; ">The Shibusawa Eiichi Memorial Foundation compiled primary sources related to Shibusawa’s life and achievements, including his diaries, letters, and newspaper articles, and published them in 68 volumes as 
+                    <hi rend="italic">Shibusawa Eiichi Denki Shiryo</hi> (Shibusawa Eiichi Biographical Materials)
+                    <note place="foot" xml:id="ftn2" n="2">
+                        <p rend="footnote text"> Available online at 
+                            <ref target="https://www.shibusawa.or.jp/english/eiichi/denki_shiryo.html">https://www.shibusawa.or.jp/english/eiichi/denki_shiryo.html</ref>. 
+                        </p>
+                    </note>. Among these volumes, supplementary volume 10 was devoted to photographic materials and contained over 700 photos of people, monuments, documents, buildings, and landscapes in which Shibusawa was involved (see Fig. 2). 
+                </p>
+                <p style="text-align: left; ">Our project is part of the ongoing efforts of the Foundation to digitize 
+                    <hi rend="italic">Shibusawa Eiichi Denki Shiryo</hi>, which aims to enrich the metadata of the digitized photos in supplementary volume 10 through crowdsourcing. As Shibusawa had been involved with many important businesspersons and was related to a wide variety of economic organizations and legislation, digitizing these photographs in a structured way will make a considerable contribution to the field of modern Japanese history.
+                </p>
+                <p style="text-align: left; ">
+                    <graphic n="1001" width="9.395533333333333cm" height="12.267427777777778cm" url="Pictures/387a8d9802bddfb8e81884840ecea527.jpeg" rend="inline"/>
+                    <lb/>Fig. 1 A portrait of Shibusawa Eiichi (1840-1931)
+                </p>
+                <p style="text-align: left; ">
+                    <graphic n="1002" width="8.088541666666666cm" height="11.657591666666667cm" url="Pictures/d915cd4c6474035bf30841d7aa9b28f8.jpeg" rend="inline"/>
+                    <lb/>Fig. 2 Photogpraphs in Supplementary Volume 10.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Method</head>
+                <p style="text-align: left; ">To resolve the difficulties of academic crowdsourcing, we designed our system based on the concept of “collaborative learning” in pedagogy. Collaborative learning refers to a situation or environment in which multiple people learn or attempt to learn something together (Dillenbourg, 1999). Unlike individual learning, in collaborative learning, people capitalize on one another's resources and skills.</p>
+                <p style="text-align: left; ">Our fundamental idea is to brand our crowdsourcing system as a place for collaborative learning in which participants share their knowledge related to the historical photographs by performing annotation tasks. A similar attempt has already been made to the transcription of historical Japanese documents with considerable success (Hashimoto et al., 2018). However, it is unknown whether the same approach can be applied to photographic materials or not.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Implementation</head>
+                <p style="text-align: left; ">Our crowdsourcing system, 
+                    <hi rend="italic">Minna de Koshashin</hi> (let’s annotate historical photographs together; 
+                    <ref target="https://denkiphoto.shibusawa.or.jp/annotate/">https://denkiphoto.shibusawa.or.jp/annotate/</ref>), is a single-page application (SPA) built with Vue.js
+                    <note place="foot" xml:id="ftn3" n="3">
+                        <p rend="footnote text"> Vue.js. 
+                            <ref target="https://vuejs.org/">https://vuejs.org/</ref>. 
+                        </p>
+                    </note> and Firebase
+                    <note place="foot" xml:id="ftn4" n="4">
+                        <p rend="footnote text"> Firebase. 
+                            <ref target="https://firebase.com/">https://firebase.com/</ref>. 
+                        </p>
+                    </note>. The participants of 
+                    <hi rend="italic">Minna de Koshashin</hi> are invited to browse the photos of Shibusawa Eiichi and to conduct the following six tasks on each photo:
+                </p>
+                <list rend="numbered">
+                    <item>Identifying a person</item>
+                    <item>Identifying a location</item>
+                    <item>Transcription of textual information</item>
+                    <item>Uploading a current photo of a place</item>
+                    <item>Registration of bibliographic information</item>
+                    <item>Writing a comment.</item>
+                </list>
+                <p style="text-align: left; ">Since Tasks 4-6 are open-ended tasks that cannot be determined as completed, we use Tasks 1-3 to track the progress of our project; The annotation of a photo is considered completed when all of Tasks 1-3 are completed. Deciding which task to perform is up to each participant.</p>
+                <p style="text-align: left; ">To ensure that collaborative learning is achieved through the above tasks, we implemented the following four features:</p>
+                <list rend="numbered">
+                    <item>
+                        <hi rend="bold">Task history</hi>. When conducting a task, participants are required to write the reason for their decision, which will be recorded in the “history” tab (see Fig. 3) and can be referenced by others. This process makes the tacit knowledge of participants explicit, thus facilitating mutual learning among participants.
+                    </item>
+                    <item>
+                        <hi rend="bold">Activity sharing</hi>. All the activities of participants are shared on the “timeline” view in a chronological order (see Fig. 4), promoting horizontal propagation of knowledge and providing social stimuli.
+                    </item>
+                    <item>
+                        <hi rend="bold">Communication and feedback</hi>. Participants can seek advice and help from others in the “discussion” tab (see Fig. 5) or use the comment function. Anyone can correct the annotations of the other participants. Through communication and collaboration among participants, annotations undergo multiple checks, leading to improved output quality.
+                    </item>
+                    <item>
+                        <hi rend="bold">Mutual evaluation</hi>. The system has a leaderboard to stimulate participants' competitive spirit, but the rank is determined not by the number of tasks but by the number of "likes" received from others, inducing altruistic behavior.
+                    </item>
+                </list>
+                <p style="text-align: left; ">
+                    <graphic n="1003" width="13.546666666666667cm" height="9.771944444444445cm" url="Pictures/c740fb8c9502b43aa784b1bc4d460a40.png" rend="inline"/>
+                    <lb/>Fig. 3 History tab
+                </p>
+                <p style="text-align: left; ">
+                    <graphic n="1004" width="13.546666666666667cm" height="9.807222222222222cm" url="Pictures/f1678c5d908037934315261743a272fc.png" rend="inline"/>
+                    <lb/>Fig. 4 Timeline view
+                </p>
+                <p style="text-align: left; ">
+                    <graphic n="1005" width="13.546666666666667cm" height="8.819444444444445cm" url="Pictures/6cb99c5c17feb860ce24193d327caa23.png" rend="inline"/>
+                    <lb/>Fig. 5 Discussion tab
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results</head>
+                <p style="text-align: left; text-align: justify;">
+                    <hi rend="italic">Minna de Koshashin</hi>, as an outcome of our project, was launched in December 2021. As of April 2022, four months after the system launch, 59 people have created user accounts on our website. A total of 1,405 annotations have been created. The breakdown is described in Table 1. 159 photos out of 734 (22%) are marked as “completed”. Although we have not been able to recruit a large number of participants, a small number of dedicated participants have continually involved in performing annotations.
+                </p>
+                <p style="text-align: left; ">Table 1 Breakdown of the annotations according to types
+                    <lb/>
+                    <graphic n="1006" width="12.576697222222222cm" height="7.684372222222223cm" url="Pictures/2bc24474e03c99ccf39c233dacb393ff.png" rend="inline"/>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left; ">Our project has just entered the operational phase. Still, our approach based on collaborative learning seems to be working to some extent. The majority of participants provide bibliographic information as the basis for their annotations, allowing others to learn about the information. On the other hand, communication and discussion among participants is not very active. This may change as the user base expands.</p>
+                <p style="text-align: left; ">In any case, further research is needed to evaluate the effectiveness of our approach. We plan to conduct further investigations, such as assessment of annotation qualities and interviews with participants.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hedges, M. and Dunn, S.</hi> (2017). 
+                        <hi rend="italic">Academic crowdsourcing in the humanities: Crowds, communities and co-production</hi>. Chandos Publishing.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Terras, M.</hi> (2013). Crowdsourcing in the digital humanities. In book: 
+                        <hi rend="italic">A New Companion to Digital Humanities</hi>, pp. 420-439.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Dillenbourg, P</hi>. (1999). What do you mean by collaborative learning? In book: Collaborative-learning: Cognitive and Computational Approaches, pp. 1-19.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hashimoto, Y., et al.</hi> (2018). Minna de Honkoku: Learning-driven Crowdsourced Transcription of Pre-modern Japanese Earthquake Records. In 
+                        <hi rend="italic">Book of Abstracts, Digital Humanities 2018</hi>, Mexico City, pp. 207-210, 
+                        <ref target="https://dh2018.adho.org/en/minna-de-honkoku-learning-driven-crowdsourced-transcription-of-%E2%80%A8pre-modern-japanese-earthquake-records/">https://dh2018.adho.org/en/minna-de-honkoku-learning-driven-crowdsourced-transcription-of-%E2%80%A8pre-modern-japanese-earthquake-records/</ref> (accessed April 18, 2022).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

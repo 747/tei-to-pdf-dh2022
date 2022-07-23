@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Agency of Brokerage: Reading Positioning and Power in Character Networks</title>
+                <author>
+                    <persName>
+                        <surname>Selisker</surname>
+                        <forename>Scott</forename>
+                    </persName>
+                    <affiliation>University of Arizona, United States of America</affiliation>
+                    <email>selisker@arizona.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-25T22:57:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>network analysis</term>
+                    <term>brokerage</term>
+                    <term>novel</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p rend="First Paragraph">This paper considers brokerage as a key interpretive aspect of character networks within narratives. Automatically extracted co-occurrence networks find brokerage through relatively high betweenness centrality. Brokerage anchors interpretations of various forms of social power, here explored through the grassroots political networks of Karen Tei Yamashita’s 2010 novel 
+                <hi rend="italic">I Hotel</hi> (Yamashita, 2010).
+            </p>
+            <p>In this work, I have been developing and building on models for automatic extraction of social networks, while at the same time developing interpretive methods for considering a major feature of networks: brokerage and betweenness centrality (Burt, 2005). I use Bamman et al’s BookNLP package to extract and correct characters and organizations and pronominal mentions of them to exract a highly accurate co-occurrence network, then discuss findings on betweenness centrality relative to characters’ roles within the text.</p>
+            <p>For my project, network analysis allows us to interpret and think closely about how figures’ positioning between groups becomes meaningful within fiction: as a point for identifying go-between figures like native informants and racial passers, as a model of privacy within fictional narrative, and for considering the relationships between community and identity (Selisker, 2018). Within fictional narratives, conventional measures of centrality used in other fields’ implementations of social network analysis are seldom immediately meaningful; rather, following and building on work by Algee-Hewitt and Sims and Bamman, betweenness centrality and the flow of information allow us to see how positioning matters within character networks (Sims and Bamman, 2020; Algee-Hewitt, 2017). Access to information, and privileged access to other groups, is both a major thematic feature of many narratives that consider segregated social spaces, access to power, and more, and an aspect of a text that is readily visible in the highly abstract “slice” of information that a co-occurrence network can provide.</p>
+            <p>Yamashita’s 
+                <hi rend="italic">I Hotel</hi>, a novel about a multiracial coalition of Asian Americans in 1970s San Francisco, is both thematically and structurally a demonstration of the agency of brokerage: the heroes of the text are those who build out the coalition, both among Asian American progressive communities and with other groups. The non-hierarchical collectives described in the novel, based on meticulous archival research and interviews by Yamashita, resemble the non-hierarchical, and decentralized network forms explicitly espoused by many political movements betwen the 1970s and the present (the Combahee River Collective, Zapatistas, Occupy Wall Street, Black Lives Matter).
+            </p>
+            <p>We see, by using network extraction and the methods of social network analysis, that the text’s explicitly non-hierarchical collectivity is anything but formless, and that the social network is by no means the freeform opposite to the restraints of institutions. Social network analysis as a reading practice allows us to discover and consider brokerage as a textual theme: the network “protocols” that hold the coalition together, the labor involved in coalition-building, and the importance of broker figures to the novel’s project as a whole. High betweenness centrality relative to other metrics (degreee, eigenvector centrality) offers a tool for highlighting go-between roles within the text, and for seeing the structure of the coalition at the center of the novel. These are the concrete features of networked collectivity as we imagine its ideals, and the question of brokerage as a form of agency can allow us to explore and compare how this ideal functions in this and other contemporary fiction that addresses diversity and identity.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Algee-Hewitt2017"/>
+                        <anchor xml:id="refs"/>
+                        <anchor xml:id="Hlk101794017"/>
+                        <hi rend="bold">Algee-Hewitt, M.</hi> (2017). Distributed Character: Quantitative Models of the English Stage, 1550–1900. 
+                        <hi rend="italic">New Literary History</hi>, 
+                        <hi rend="bold">48</hi>(4): 751–82.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Burt2005"/>
+                        <hi rend="bold">Burt, R. S.</hi> (2005). 
+                        <hi rend="italic">Brokerage and Closure: An Introduction to Social Capital</hi>. New York: Oxford University Press.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Jagoda2016"/>
+                        <hi rend="bold">Jagoda, P.</hi> (2016). 
+                        <hi rend="italic">Network Aesthetics</hi>. Chicago: University of Chicago Press.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Le-Khac2020"/>
+                        <hi rend="bold">Le-Khac, L.</hi> (2020). 
+                        <hi rend="italic">Giving Form to an Asian and Latinx America</hi>. Stanford: Stanford University Press.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Moretti2011"/>
+                        <hi rend="bold">Moretti, F.</hi> (2011). Network Theory, Plot Analysis. 
+                        <hi rend="italic">New Left Review</hi>, 
+                        <hi rend="bold">68</hi>: 80–102.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Schantz2008"/>
+                        <hi rend="bold">Schantz, N.</hi> (2008). 
+                        <hi rend="italic">Gossip, Letters, Phones: The Scandal of Female Networks in Film and Literature</hi>. New York: Oxford University Press.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Selisker2018"/>
+                        <hi rend="bold">Selisker, S.</hi> (2018). The Novel and WikiLeaks: Transparency and the Social Life of Privacy. 
+                        <hi rend="italic">American Literary History</hi>, 
+                        <hi rend="bold">30</hi>(4): 756–76.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Sims2020"/>
+                        <hi rend="bold">Sims, M. and Bamman, D.</hi> (2020). Measuring Information Propagation in Literary Social Networks. 
+                        <hi rend="italic">Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)</hi>. Association for Computational Linguistics, pp. 642–52.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Smeets2021a"/>
+                        <hi rend="bold">Smeets, R.</hi> (2021). 
+                        <hi rend="italic">Character Constellations: Representations of Social Groups in Present-Day Dutch Literary Fiction</hi>. Leuven: Leuven University Press.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-So2013"/>
+                        <hi rend="bold">So, R. J. and Long, H.</hi> (2013). Network Analysis and the Sociology of Modernism. 
+                        <hi rend="italic">Boundary 2</hi>, 
+                        <hi rend="bold">2</hi>(40): 2.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Stier2013"/>
+                        <hi rend="bold">Stier, A.</hi> (2013). Ties That Bind: American Fiction and the Origins of Social Network Analysis. 
+                        <hi rend="italic">ProQuest Dissertations Publishing</hi>.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Woloch2003"/>
+                        <hi rend="bold">Woloch, A.</hi> (2003). 
+                        <hi rend="italic">The One Vs. The Many: Minor Characters and the Space of the Protagonist in the Novel</hi>. Princeton: Princeton University Press.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Wong2017"/>
+                        <hi rend="bold">Wong, L.</hi> (2017). Dwelling over China: Minor Transnationalisms in Karen Tei Yamashita’s I Hotel. 
+                        <hi rend="italic">American Quarterly</hi>, 
+                        <hi rend="bold">69</hi>(3): 719–39.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <anchor xml:id="ref-Yamashita2010"/>
+                        <hi rend="bold">Yamashita, K. T.</hi> (2010). 
+                        <hi rend="italic">I Hotel</hi>. Minneapolis, MN: Coffee House Press.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

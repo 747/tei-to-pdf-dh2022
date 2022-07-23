@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Changing Work Cultures - A Field Report from 20 Years of DH Practice</title>
+                <author>
+                    <persName>
+                        <surname>Czmiel</surname>
+                        <forename>Alexander</forename>
+                    </persName>
+                    <affiliation>Berlin-Brandenburg Academy of Sciences and Humanities, Germany</affiliation>
+                    <email>czmiel@bbaw.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Neuber</surname>
+                        <forename>Frederike</forename>
+                    </persName>
+                    <affiliation>Berlin-Brandenburg Academy of Sciences and Humanities, Germany</affiliation>
+                    <email>frederike.neuber@bbaw.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>project management</term>
+                    <term>research software engineering</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>project design</term>
+                    <term>organization</term>
+                    <term>management</term>
+                    <term>software development</term>
+                    <term>systems</term>
+                    <term>analysis and methods</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>In contrast to traditional research processes, DH stand for 'teamwork' and 'collaboration' and for a way of researching and publishing that is 'process-oriented' rather than 'product-oriented'. In order to internalize and adapt those paradigms of the digital research process in practice, TELOTA (short for 'The Electronic Life Of The Academy'), the DH department of the Berlin-Brandenburg Academy of Sciences and Humanities (BBAW), has evaluated and revised its own working structures several times in its 20-year history. Based on this, the talk will present an organizational structure and collaboration methods that has been established since 2020. It includes thoughts about team structure, projects, and research software engineering, as well as reflections on experiences in its implementation. The TELOTA portfolio, which includes the development of research software such as digital editions, object collections, web services, frameworks, and other tools, currently includes about 30 projects currently running or under development, as well as about 30 legacy projects that are kept available and periodically revised and migrated.</p>
+                <p>Since the DH not only stands for humanities research with digital methods, but also for a change in the research process itself, the topic of 'organization and workflows' counts as context and conditional framework in which cultural heritage is digitally accessed, and forms around the question of DH-specific 'work cultures'. Orientation points for a restructuring of work processes and methods in DH can be, among others, methods from software engineering (Usher et al. 2020, Agile Business Consortium 2014, Rubin 2012) as well as - partly derived from them - DH-specific approaches from the international context (Smithies/Ciula 2020, Smithies et al. 2019, Ferraro/Sichani 2018, Tabak 2017, Reed 2014).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Challenges</head>
+                <p>The general challenges of work organization can be outlined using a vertical and a horizontal scaling level. The vertical level describes the growing complexity of individual digital projects from data modeling, data storage, programming interfaces and visualizations to publication, long-term availability, and archiving. The competencies required to cover this range of tasks are rarely found in one single person, so it is no longer sufficient to rely on one digital specialist in a project; here, too, the tasks must be distributed among a team. </p>
+                <p>The second level is the horizontal level, which simply describes the quantity of digital projects to be implemented in parallel in the facilities, as well as the needs and individual requirements of these projects, which in turn have an influence on the vertical level. If a DH team manages many projects in parallel, not all requirements can be implemented in these projects in a short development time. Conversely, this means that if complex projects are handled, few to no parallel projects can be managed. </p>
+                <p>Since the intersection of both levels has increased significantly in recent years, it was necessary to evaluate and test various models of restructuring the work organization at TELOTA during the last years.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Team structure</head>
+                <p>The restructuring of TELOTA initially involved the introduction of a coordination officer, whose tasks - in consultation with the management - include communication and medium- to long-term development planning. The coordination officer develops and accompanies the newly established project workflow, supports, and advises the project partners in the planning of DH-specific goals, coordinates the agreements with the development teams and intervenes as a mediator in cases of conflict.</p>
+                <p>Another restructuring measure was the assignment of the approximately eighteen employees to smaller teams, which in turn work together on clusters of thematically and technologically similar projects to create the greatest possible synergy effects between projects. The resulting teams consist of about 6 to 8 people (with different job shares), each working on a project in pairs or threes. During the development phases, the developers are also involved in planning tasks for the directly pending software development tasks but are relieved of larger tasks (strategic meetings etc.) by the coordination officer.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Project workflow</head>
+                <p>Since the beginning of 2020, the development work of the above-mentioned teams has been carried out according to the 'development blocks' model (Fig. 1). Based on the concept of 'sprints' from the Agile methodology (Rubin 2012). The intermediate goals are defined iteratively, in each case before a development block. In contrast to the classic Scrum sprint, which is designed according to features and as small-scale as possible, development blocks are work packages that group together a set of features or tasks that are processed according to a jointly determined prioritization. Due to this approach, the development blocks with a duration of 4-12 weeks also last significantly longer than classic Scrum sprints of about 2-4 weeks.</p>
+                <p>
+                    <graphic n="1001" width="15.927916666666667cm" height="8.960555555555555cm" url="Pictures/18c7758ea25251e10b41d52f0169cc91.png" rend="inline"/>
+                </p>
+                <p>Figure 1: Sequence of a development block at TELOTA.</p>
+                <p>Even though the classical Scrum model of 'sprints' is not feasible in all consistency at TELOTA due to human resources, the research software engineering and the parallel humanities research can benefit from some principles of the method. For example, the concept of 'time-boxes', the intensive processing of sub-goals and immediate releases have the effect of increasing motivation, because one is heading for concrete results or 'visible' results from the beginning. At the same time, frequent releases allow problems to be identified at an early stage and course corrections to be made. Finally, the regular meetings, the moment of success at release, and the feedback culture generate a feeling of togetherness among all project participants that dissolves the "us" and "them" that often exists in the collaboration between research software engineers and humanities scholars.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Outlook</head>
+                <p>Each DH-lab or working group operates and works under specific resource, personnel, and financial conditions, which makes it difficult to derive general recommendations for structuring teams, projects and software from the considerations and results presented. In principle, however, greater reflection on and conceptualization of 'work culture' can be useful not only for DH centers that are in the process of being established, but also for working groups with a long tradition and more 'entrenched' structures. In addition to the procedures presented here, there are several other points that make regular evaluation and revision of one's own working structures seem sensible and that will be considered in the future. These include, among other things, further professionalization, and specialization of individual team members in specific technologies or technology clusters, which, in addition to reducing the risk of failures, also leads to a stronger focus of competencies. Furthermore, this ensures the quality of research software and thus the longevity of our digital heritage.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Baars, Wouter et al.</hi> (2006): 
+                        <hi rend="italic">Project management handbook</hi>. Data Archiving and Networked Services, The Hague, 
+                        <ref target="https://www.projectmanagement-training.net/articles-tools/book/">
+                            <hi rend="underline color(1155CC)">https://www.projectmanagement-training.net/articles-tools/book/</hi>
+                        </ref>   
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ferraro, Ginestra/Sichani, Anna-Maria</hi> (2018). 
+                        <hi rend="italic">Design as Part of the Plan: Introducing Agile Methodology in Digital Editing Projects</hi>, in: Bleier, Roman / Bürgermeister, Martina / Klug, Helmut / Neuber, Frederike / Schneider Gerlinde (eds.): 
+                        <hi rend="italic">Digital Scholarly Editions as Interfaces</hi>, 83-105. Norderstedt: BoD. 
+                        <ref target="https://kups.ub.uni-koeln.de/9113/">
+                            <hi rend="underline color(1155CC)">https://kups.ub.uni-koeln.de/9113/</hi>
+                        </ref>  
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Reed, Ashley</hi> (2014): 
+                        <hi rend="italic">Managing an Established Digital Humanities Project: Principles and Practices from the Twentieth Year of the William Blake Archive</hi>, in: 
+                        <hi rend="italic">Digital Humanities Quarterly</hi>, Vol. 8, 1. 
+                        <ref target="http://www.digitalhumanities.org/dhq/vol/8/1/000174/000174.html">
+                            <hi rend="underline color(1155CC)">http://www.digitalhumanities.org/dhq/vol/8/1/000174/000174.html</hi>
+                        </ref>  
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Smithies, James/Ciula, Ariana </hi>(2020): 
+                        <hi rend="italic">Humans in the Loop. Epistemology &amp; Method in King’s Digital Lab</hi>, in: Schuster, Kristen / Dunn, Stuart. (eds.): 
+                        <hi rend="italic">Routledge international handbook of research methods in digital humanities.</hi> London: Routlege, 155-172.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Smithies, James et al.</hi> (2019): 
+                        <hi rend="italic">Managing 100 Digital Humanities Projects: Digital Scholarship &amp; Archiving in King’s Digital Lab</hi>, in: 
+                        <hi rend="italic">Digital Humanities Quarterly</hi>, 13, 1. 
+                        <ref target="http://www.digitalhumanities.org/dhq/vol/13/1/000411/000411.html">
+                            <hi rend="underline color(1155CC)">http://www.digitalhumanities.org/dhq/vol/13/1/000411/000411.html</hi>
+                        </ref>  
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Spiro, Lisa</hi> (2012): 
+                        <hi rend="italic">This Is Why We Fight: Defining the Values of the Digital Humanities</hi>, in: Gold, Matthew K.: Debates in the Digital Humanities. Minneapolis 2012, S. 16-35. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Tabak, Edin </hi>(2017): 
+                        <hi rend="italic">A Hybrid Model for Managing DH Projects</hi>, in: 
+                        <hi rend="italic">Digital Humanities Quarterly</hi>, 11, 
+                        <ref target="http://www.digitalhumanities.org/dhq/vol/11/1/000284/000284.html">http://www.digitalhumanities.org/dhq/vol/11/1/000284/000284.html</ref>  
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Usher, Will et al.</hi> (2020): 
+                        <hi rend="italic">How do RSE groups work?</hi>, A blog post from the 2nd International RSE Leaders Workshop 2020. 
+                        <ref target="https://researchsoftware.org/2020/11/19/how-do-RSE-groups-work.html">https://researchsoftware.org/2020/11/19/how-do-RSE-groups-work.html</ref>   
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

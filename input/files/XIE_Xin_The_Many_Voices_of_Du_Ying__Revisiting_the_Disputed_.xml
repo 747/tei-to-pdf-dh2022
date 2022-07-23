@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Many Voices of Du Ying: Revisiting the Disputed Writings of Lu Xun and Zhou Zuoren</title>
+                <author>
+                    <persName>
+                        <surname>Xie</surname>
+                        <forename>Xin</forename>
+                    </persName>
+                    <affiliation>Shanghai Normal University, Shanghai, China</affiliation>
+                    <email>rwxiexin@shnu.edu.cn</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wang</surname>
+                        <forename>Haining</forename>
+                    </persName>
+                    <affiliation>Indiana University Bloomington, Bloomington, Indiana, USA</affiliation>
+                    <email>hw56@indiana.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Riddell</surname>
+                        <forename>Allen</forename>
+                    </persName>
+                    <affiliation>Indiana University Bloomington, Bloomington, Indiana, USA</affiliation>
+                    <email>riddella@indiana.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T12:11:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>authorship attribution</term>
+                    <term>stylometry</term>
+                    <term>style</term>
+                    <term>Lu Xun</term>
+                    <term>Zhou Zuoren</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>attribution studies and stylometric analysis</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Summary</head>
+                <p style="text-align: left; ">We revisit essays by Lu Xun (<hi rend="Chinese">鲁迅</hi>) and Zhou Zuoren (<hi rend="Chinese">周作人</hi>) that were initially published pseudonymously. The authorship of several of these essays is disputed. Through a quantitative analysis of the author’s writing styles, we find evidence supporting the following:
+                </p>
+                <p style="text-align: left; ">1. Two pseudonyms, Du Ying (<hi rend="Chinese">独应</hi>) and Du (<hi rend="Chinese">独</hi>), are used by both authors, 
+                </p>
+                <p style="text-align: left; ">2. The 
+                    <hi rend="italic">On the Difference Between the Russian Revolution and Nihilism</hi> (<hi rend="Chinese">论俄国革命与虚无主义之别</hi>) and seven other essays are likely written by Lu Xun,
+                </p>
+                <p style="text-align: left; ">3. The 
+                    <hi rend="italic">People of Yue, Forget Not Your Ancestors’ Instructions</hi> (<hi rend="Chinese">尔越人毋忘先民之训</hi>) and two additional essays are likely written by Zhou Zuoren, and
+                </p>
+                <p style="text-align: left; ">4. the authors may have written 
+                    <hi rend="italic">The Strings of Melancholy</hi> (<hi rend="Chinese">哀弦篇</hi>) and another two essays collaboratively.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Backgrounds</head>
+                <p style="text-align: left; ">Lu Xun (1881–1936) is perhaps the best-known writer in modern China. His essays feature in textbooks used in secondary and tertiary education across East Asia. As a short story writer, essayist, and critic, Lu Xun’s work is known for its incisive social commentary as well as its use of irony and satire.</p>
+                <p style="text-align: left; ">Although several compilations of Lu Xun’s writing exist, completing a comprehensive collection of his works is a challenge because so many of his works were written under a pseudonym. Over the course of his writing career, Lu Xun employed at least 150 pen names (Xu and Hong, 1988). Nobody—including Lu Xun himself—kept precise records of his publications. Lu Xun’s frequent use of pseudonyms primarily served to help him evade censorship from the government of the Republic of China. But he also used a pseudonym for other reasons, such as to express his dissatisfaction with society. Finally, some writings were forged for effect or for other reasons, e.g., 
+                    <hi rend="italic">Literary Chatters</hi> (<hi rend="Chinese">艺文杂话</hi>) (Ding and Ding, 1989). Further complicating efforts to assemble a comprehensive collection of his works is the fact that the authorship of several of his essays is actively disputed: four articles signed with the pen name Du Ying are also claimed by Zhuo Zuoren (1885–1967). Zhou is a younger brother of Lu Xun. Both studied in Japan in their youth and later led the New Culture Movement advocating writing using vernacular Chinese.
+                </p>
+                <p style="text-align: left; ">Peng and Ma (1981) assign four essays signed by Du Ying to Lu Xun, but none of them can be found in the
+                    <hi rend="italic" xml:space="preserve"> Complete Collection of Lu Xun</hi> (<hi rend="Chinese">鲁迅全集</hi>), a compilation published in the same year (Lu Xun, 1981). Zhong Shuhe includes these essays in the 
+                    <hi rend="italic">Complete Prose Collection of Zhou Zuoren</hi> (<hi rend="Chinese">周作人散文全集</hi>) (Zhou, 2009). Interestingly, the essays are not found in the collection that Zhou edited himself (the 
+                    <hi rend="italic">Self-edited Collection of Zhou Zuoren</hi>, <hi rend="Chinese">周作人自编文集</hi> (Zhou, 2002)).
+                </p>
+                <p style="text-align: left; ">Other opinions about the identity of Du Ying exist. Chen (1980) concludes the pseudonym can be used by both authors. Chen grounds his conclusion by studying the development of each writer’s thinking over time. Collaboration between the two brothers is another possibility (Meng, 2017).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Research Question</head>
+                <p style="text-align: left; ">Who wrote under the pseudonym Du Ying? Is it Lu Xun or Zhou Zuoren—or has the pseudonym been used in a collaboratively written work? To begin to tackle this problem, we frame this research question as one of authorship attribution (Juola, 2006). Authorship attribution techniques infer the likely author of an unsigned or disputed text based on quantitative analysis of lexical and syntactic features found in the text. Standard authorship attribution assumes:</p>
+                <p style="text-align: left; ">• The candidate set is known, e.g., two possible authors in our case.</p>
+                <p style="text-align: left; ">• The unsigned text is singularly authored, i.e., no collaboration or substantial editorial moderation is present.</p>
+                <p style="text-align: left; ">Authorship attribution has been applied in numerous cases. Notable examples include the Federalist papers (Mosteller and Wallace, 1963), disputed plays between Shakespeare and Fletcher (Matthews and Merriam, 1993), and the rabbinic responsa 
+                    <hi rend="italic">Torah Lishmah</hi> (Koppel et al., 2007), and disputed Latin Visons the 
+                    <hi rend="italic">Visio ad Guibertum missa</hi> and 
+                    <hi rend="italic">Visio de Sancto Martino</hi> (Kestemont et al., 2015) to name a few.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Corpus</head>
+                <p style="text-align: left; ">We begin by organizing a corpus suited to the problem. Instead of only looking at the four disputed essays, we retrieve all texts published under the pen names Du Ying and Du. These essays were published at roughly the same time and in similar publication venues. We are, in effect, expanding the range of texts we intend to consider using authorship attribution analysis. This is appropriate as we are dealing with texts whose authorship is at least somewhat uncertain. Twenty-one essays in total are recovered and comprise the “test set,” the essays whose authorship we intend to predict. Table 1 lists the texts.</p>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Author</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Purpose</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Title</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Topic</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Length</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Chunks</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Train</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Lessons from the History of Science (<hi rend="Chinese">科学史教篇</hi>)</cell>
+                        <cell style="text-align: left;" rend="DH-Default">history &amp; science</cell>
+                        <cell style="text-align: left;" rend="DH-Default">7,032</cell>
+                        <cell style="text-align: left;" rend="DH-Default">7</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Train</cell>
+                        <cell style="text-align: left;" rend="DH-Default">On the Aberrant Development of Culture (<hi rend="Chinese">文化偏至论</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">culture &amp; politics</cell>
+                        <cell style="text-align: left;" rend="DH-Default">8,556</cell>
+                        <cell style="text-align: left;" rend="DH-Default">7</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Validation</cell>
+                        <cell style="text-align: left;" rend="DH-Default">On Radium (<hi rend="Chinese">说镭</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">science</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3,094</cell>
+                        <cell style="text-align: left;" rend="DH-Default">4</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Validation</cell>
+                        <cell style="text-align: left;" rend="DH-Default">On the Power of Mara Poetry (<hi rend="Chinese">摩罗诗力说</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary &amp; politics</cell>
+                        <cell style="text-align: left;" rend="DH-Default">23,779</cell>
+                        <cell style="text-align: left;" rend="DH-Default">22</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Zhou Zuoren</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Train</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Preface to Midst the Wild Carpathians (<hi rend="Chinese">《匈奴奇士录》序</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary</cell>
+                        <cell style="text-align: left;" rend="DH-Default">627</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Train</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Preface to Charcoal Drawing (<hi rend="Chinese">《炭画》序</hi>)</cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary</cell>
+                        <cell style="text-align: left;" rend="DH-Default">258</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Train</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Preface to The Lost History of Red Star (<hi rend="Chinese">《红星佚史》序</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,145</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Train</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Preface to The Yellow Rose (<hi rend="Chinese">《黄蔷薇》序</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary</cell>
+                        <cell style="text-align: left;" rend="DH-Default">786</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Train</cell>
+                        <cell style="text-align: left;" rend="DH-Default">A Brief Discussion on Fairy Tales (<hi rend="Chinese">童话略论</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3,093</cell>
+                        <cell style="text-align: left;" rend="DH-Default">4</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Train</cell>
+                        <cell style="text-align: left;" rend="DH-Default">A Study on Fairy Tales (<hi rend="Chinese">童话研究</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
+                        <cell style="text-align: left;" rend="DH-Default">5,083</cell>
+                        <cell style="text-align: left;" rend="DH-Default">6</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Validation</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Preface to Qiucao Garden Diary (<hi rend="Chinese">《秋草园日记》序</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">history</cell>
+                        <cell style="text-align: left;" rend="DH-Default">178</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0.7</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Validation</cell>
+                        <cell style="text-align: left;" rend="DH-Default">An Addendum to Yisi Diary (<hi rend="Chinese">乙巳日记附记一则</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">culture &amp; history</cell>
+                        <cell style="text-align: left;" rend="DH-Default">63</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0.3</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Validation</cell>
+                        <cell style="text-align: left;" rend="DH-Default">A Glimpse of Jiangnan Examinees (<hi rend="Chinese">江南考先生之一斑</hi>)</cell>
+                        <cell style="text-align: left;" rend="DH-Default">history</cell>
+                        <cell style="text-align: left;" rend="DH-Default">147</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0.5</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Validation</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Plight and Broil in a Steamboat (<hi rend="Chinese">汽船之窘况及苦热</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">history</cell>
+                        <cell style="text-align: left;" rend="DH-Default">144</cell>
+                        <cell style="text-align: left;" rend="DH-Default">0.5</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Du Ying</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">The Issue of Women’s Suffrage (<hi rend="Chinese">妇女选举权问题</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">politics</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,068</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">The Issue of Women's Suffrage, Continued (<hi rend="Chinese">妇女选举权问题续</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">politics</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1,494</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">George Eliot (<hi rend="Chinese">乔治爱里阿德</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
+                        <cell style="text-align: left;" rend="DH-Default">618</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Prisoners of Siberia (<hi rend="Chinese">西伯利亚之囚</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
+                        <cell style="text-align: left;" rend="DH-Default">893</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Eliza Orzeszko (<hi rend="Chinese">爱理萨阿什斯珂</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
+                        <cell style="text-align: left;" rend="DH-Default">322</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Stepniak (<hi rend="Chinese">斯谛勃咢克</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
+                        <cell style="text-align: left;" rend="DH-Default">459</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Petofi (<hi rend="Chinese">斐彖飞</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
+                        <cell style="text-align: left;" rend="DH-Default">489</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">The Power of Writing (<hi rend="Chinese">文章之力</hi>)</cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary</cell>
+                        <cell style="text-align: left;" rend="DH-Default">720</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">An Extraordinary Stratagem to Prevent Illicit Sex (<hi rend="Chinese">防淫奇策</hi>)</cell>
+                        <cell style="text-align: left;" rend="DH-Default">culture &amp; politics</cell>
+                        <cell style="text-align: left;" rend="DH-Default">872</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">The Chinese Patriotism (<hi rend="Chinese">中国人之爱国</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
+                        <cell style="text-align: left;" rend="DH-Default">857</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Reaction to the Prison Book Sold at the Store (<hi rend="Chinese">见店头监狱书所感</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
+                        <cell style="text-align: left;" rend="DH-Default">925</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">On the Difference Between the Russian Revolution and Nihilism (<hi rend="Chinese">论俄国革命与虚无主义之别</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
+                        <cell style="text-align: left;" rend="DH-Default">2,602</cell>
+                        <cell style="text-align: left;" rend="DH-Default">3</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Translator's Note to Silence (<hi rend="Chinese">《寂漠》译记</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
+                        <cell style="text-align: left;" rend="DH-Default">348</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Translator's Note to At a Country House (<hi rend="Chinese">《庄中》译记</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary</cell>
+                        <cell style="text-align: left;" rend="DH-Default">192</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">The Strings of Melancholy (<hi rend="Chinese">哀弦篇</hi>)</cell>
+                        <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
+                        <cell style="text-align: left;" rend="DH-Default">13,112</cell>
+                        <cell style="text-align: left;" rend="DH-Default">21</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Looking at the Land of Yue (<hi rend="Chinese">望越篇</hi>)</cell>
+                        <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
+                        <cell style="text-align: left;" rend="DH-Default">741</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Looking at the Country of China (<hi rend="Chinese">望华国篇</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
+                        <cell style="text-align: left;" rend="DH-Default">749</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Du</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">People of Yue, Forget Not Your Ancestors' Instructions (<hi rend="Chinese">尔越人毋忘先民之训</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
+                        <cell style="text-align: left;" rend="DH-Default">317</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Where Has the Character of the Republic Gone? (<hi rend="Chinese">民国之征何在</hi>)</cell>
+                        <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
+                        <cell style="text-align: left;" rend="DH-Default">354</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">Test</cell>
+                        <cell style="text-align: left;" rend="DH-Default">The Ordinary Folks' Responsibility (<hi rend="Chinese">庸众之责任</hi>)
+                        </cell>
+                        <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
+                        <cell style="text-align: left;" rend="DH-Default">334</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                    </row>
+                </table>
+                <p style="text-align: left; ">Table 1: Summary of the corpus containing works of Lu Xun, Zhou Zuoren, “Du Ying”, and “Du”. Four distinct validation samples of Zhou are combined to make two longer texts.</p>
+                <p style="text-align: left; ">We then search for texts which we are certain give us information about the brothers’ classical writing styles. The texts gathered are written using classical non-fictional prose and were published roughly at the same time relative to the disputed works. With these controls in place, we mitigate concerns about the possible influence on writing style of time (Glover and Hirst,1996), genre (Kestemont et al., 2012), and register (Wang et al., 2021). With the exception of six essays reserved for validation, these texts are used for training. Validation texts are chosen such that they have somewhat different topics than the training samples. Classification accuracy on the validation texts should give us some rough sense of how well the classifier performs. The training and validating texts are from self-edited collections of the authors. Hence their authorship is not in question.</p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Preprocessing</head>
+                    <p style="text-align: left; ">We carefully remove quotations, dialog, and known text reuse
+                        <note place="foot" xml:id="ftn1" n="1">
+                            <p rend="footnote text"> We drop the dispute essay, 
+                                <hi rend="italic">On the Significances of Writing: The Origins of Its Mission and the Faults of Recent Literary Criticism in China</hi>, for now because it contains (unmarked) quotations from other texts. (Zhou, 1999)
+                            </p>
+                        </note>. The longer samples are split into chunks of ca. 800 characters (without breaking paragraphs). Chunking in this fashion does not affect any of the authorship attribution techniques we consider but does let us explore style variation within longer texts. Given that previous research has raised the question of collaborative authorship, this is useful (e.g., some essays published in 
+                        <hi rend="italic">Tianyi</hi> in 1907 may have been collaborations (Meng, 2017)). Analysis of chunks may capture clues of collaboration even the chunking procedure is somehow arbitrary. For example, if one isolated chunk within a test set essay has high probability of being written by Lu Xun and the other chunks have high probability of being written by Zhou, this essay may merit further investigation as potentially having been a collaboration.
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Model</head>
+                <p style="text-align: left; ">We use a standard authorship attribution model. It uses function word frequencies as features. The particular set of function words is taken from (Wang et al., 2021). Wang et al. (2021) demonstrated that the function word set was useful in predicting authorship in Ming-Qing fiction written in classical Chinese.</p>
+                <p style="text-align: left; ">Function word usage is telltale signs of writing style. Function words are mostly unrelated to topic (e.g., “the” and “on” in English; “<hi rend="Chinese">和</hi>” and “<hi rend="Chinese">况且</hi>” in Chinese) and have been successfully applied in extensive authorship attribution studies (Kestemont, 2014). Our function word list has 819 function characters/words in total (262 unigrams, 545 bigrams, ten trigrams, and two quadgrams).</p>
+                <p style="text-align: left; ">The classification model uses standard logistic regression (ℓ
+                    <hi rend="subscript">2</hi> regularization, λ = 1.0). Logistic regression is chosen for its wide use and interpretability. We use the same preprocessing procedure found in the previous research (Wang et al., 2021): function word counts are normalized by document length in characters and scaled to have unit variance after deducting means.
+                    <note place="foot" xml:id="ftn2" n="2">
+                        <p rend="footnote text"> The implementation relies on 
+                            <hi rend="italic">scikit-learn</hi> (v.1.0.1) and 
+                            <hi rend="italic">functionwords</hi> (v.0.6) packages on PyPI.
+                        </p>
+                    </note>
+                </p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Decision Rule</head>
+                    <p style="text-align: left; ">For longer prose, a decision is made only when the predicted labels of all chunks agree. If an essay is short, the predictive probability of the author should be no less than 0.75. This decision rule counts as conservative, we think. Readers are welcome to use their thresholds.</p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results</head>
+                <p style="text-align: left; ">The model shows 93% accuracy on the validation set. This gives us confidence that it should provide useful information when making predictions about disputed texts. </p>
+                <p style="text-align: left; ">The summary of the results is shown in Table 2. Clearly the two pseudonyms are shared between by Lu Xun and Zhou Zuoren. 
+                    <hi rend="italic">The Power of Writing</hi> and seven other prose appear to be written by Lu Xun. The 
+                    <hi rend="italic">Prisoners of Siberia</hi> and another two essays appear to be written by Zhou Zuoren. We withhold judgement about the rest of our decisions.
+                </p>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Pseudonym</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Publication Date</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Title</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Decision</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Note</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Du Ying</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1907.07.25 </cell>
+                        <cell style="text-align: left;" rend="DH-Default">The Issue of Women’s Suffrage</cell>
+                        <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
+                        <cell style="text-align: left;" rend="DH-Default">labels disagree</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1907.09.15 </cell>
+                        <cell style="text-align: left;" rend="DH-Default">The Issue of Women’s Suffrage, Continued</cell>
+                        <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
+                        <cell style="text-align: left;" rend="DH-Default">labels disagree</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1907.09.15</cell>
+                        <cell style="text-align: left;" rend="DH-Default">George Eliot</cell>
+                        <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
+                        <cell style="text-align: left;" rend="DH-Default">low confidence</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1907.09.15</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Prisoners of Siberia</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Zhou</cell>
+                        <cell style="text-align: left;" rend="DH-Default">–</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1907.09.15</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Eliza Orzeszko</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Zhou</cell>
+                        <cell style="text-align: left;" rend="DH-Default">–</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1907.10.30 </cell>
+                        <cell style="text-align: left;" rend="DH-Default">Stepniak</cell>
+                        <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
+                        <cell style="text-align: left;" rend="DH-Default">low confidence</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1907.10.30 </cell>
+                        <cell style="text-align: left;" rend="DH-Default">Petofi</cell>
+                        <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
+                        <cell style="text-align: left;" rend="DH-Default">low confidence</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1907.10.30 </cell>
+                        <cell style="text-align: left;" rend="DH-Default">The Power of Writing</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
+                        <cell style="text-align: left;" rend="DH-Default">–</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1907.11.30</cell>
+                        <cell style="text-align: left;" rend="DH-Default">An Extraordinary Stratagem to Prevent Illicit Sex</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
+                        <cell style="text-align: left;" rend="DH-Default">–</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1907.11.30</cell>
+                        <cell style="text-align: left;" rend="DH-Default">The Chinese Patriotism</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
+                        <cell style="text-align: left;" rend="DH-Default">–</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1907.11.30</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Reaction to the Prison Book Sold at the Store</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
+                        <cell style="text-align: left;" rend="DH-Default">–</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1907.11.30</cell>
+                        <cell style="text-align: left;" rend="DH-Default">On the Difference Between the Russian Revolution and Nihilism</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Lu Xu</cell>
+                        <cell style="text-align: left;" rend="DH-Default">–</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1908.12.05</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Translator’s Note to Silence</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Zhou</cell>
+                        <cell style="text-align: left;" rend="DH-Default">-</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1908.12.05</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Translator’s Note to At a Country House </cell>
+                        <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
+                        <cell style="text-align: left;" rend="DH-Default">low confidence</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1908.12.20</cell>
+                        <cell style="text-align: left;" rend="DH-Default">The Strings of Melancholy</cell>
+                        <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
+                        <cell style="text-align: left;" rend="DH-Default">labels disagree</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1912.01.18</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Looking at the Land of Yue</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
+                        <cell style="text-align: left;" rend="DH-Default">–</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1912.01.22</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Looking at the Country of China</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
+                        <cell style="text-align: left;" rend="DH-Default">–</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Du</cell>
+                        <cell style="text-align: left;" rend="DH-Default">1912.02.01</cell>
+                        <cell style="text-align: left;" rend="DH-Default">People of Yue, Forget Not Your Ancestors’ Instructions</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Zhou</cell>
+                        <cell style="text-align: left;" rend="DH-Default">–</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1912.02.02</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Where Has the Character of the Republic Gone?</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
+                        <cell style="text-align: left;" rend="DH-Default">–</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">1912.02.16</cell>
+                        <cell style="text-align: left;" rend="DH-Default">The Ordinary Folks’ Responsibility</cell>
+                        <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
+                        <cell style="text-align: left;" rend="DH-Default">low confidence</cell>
+                    </row>
+                </table>
+                <p style="text-align: left; ">Table 2: Summary of the authorship attribution results.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Discussion</head>
+                <p style="text-align: left; ">We found predicted chunk labels disagree in 
+                    <hi rend="italic">The Strings of Melancholy</hi> and other two essays. For example, the fifth chunk of 
+                    <hi rend="italic">The Strings of Melancholy</hi> is predicted to be written by Zhou with 0.85 confidence. But the first and second chunks of the essay have over 0.94 probability of being written by Lu Xun. A similar phenomenon also happens in 
+                    <hi rend="italic">The Issue of Women’s Suffrage</hi> and 
+                    <hi rend="italic">The Issue of Women’s Suffrage, Continued</hi>. Evidence like this could be a hint of collaboration. As Meng (2017) suggested, the brothers read and wrote closely in 1907.
+                </p>
+                <p style="text-align: left; ">The impact of topics on the classifier deserves further investigation. (Some function words may be more (or less) likely to appear in certain topics.) We do, however, think this concern should not be overstated. For example, 
+                    <hi rend="italic">People of Yue, Forget Not Your Ancestors’ Instructions</hi> concerns political matters and is assigned to Zhou with high probability. Yet Zhou has few training examples that concern politics. We intend to further investigate the possibly interplay between subject matter and authorial style.
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Chen, S.</hi> (1980). Revisiting the article signed by “Du Ying” in Tianyi newspaper. 
+                        <hi rend="italic">Historical Studies of Modern Literature</hi>, 
+                        <hi rend="bold">3</hi>: 115–121.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Ding, J. and Ding, Y.</hi> (1989). Literary rogue Shi Jixing in the 1930s and 1940s—various deceptions and false accusations against Lu Xun, Yu Dafu and others. 
+                        <hi rend="italic">Jianghuai Forum</hi>, 
+                        <hi rend="bold">2</hi>: 92–104.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Glover, A. and Hirst, G.</hi> (1996). Detecting stylistic inconsistencies in collaborative writing. In The new writing environment, pp. 147–168. Springer.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Juola, P.</hi> (2006). Authorship Attribution. 
+                        <hi rend="italic">Foundations and Trends in Information Retrieval</hi>, 
+                        <hi rend="bold">1</hi>(3): 233–334.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kestemont, M., Luyckx, K., Daelemans, M. and Crombez, T.</hi> (2012). Cross-genre authorship verification using unmasking. 
+                        <hi rend="italic">English Studies</hi>, 
+                        <hi rend="bold">93</hi>(3): 340–356.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kestemont, M.</hi> (2014). Function words in authorship attribution. from black magic to theory? 
+                        <hi rend="italic">Proceedings of the 3rd Workshop on Computational Linguistics for Literature (CLFL)</hi>, pp. 59–66.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kestemont, M., Moens, S., &amp; Deploige, J.</hi> (2015). Collaborative authorship in the twelfth century: A stylometric study of Hildegard of Bingen and Guibert of Gembloux. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 
+                        <hi rend="bold">30</hi>(2): 199–224.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Koppel, M., Schler, J. and BonchekDokow, E.</hi> (2007). Measuring differentiability: Unmasking pseudonymous authors. 
+                        <hi rend="italic">Journal of Machine Learning Research</hi>, 
+                        <hi rend="bold">8</hi>(6): 1261–1276.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Lu, X.</hi> (1981). 
+                        <hi rend="italic">Complete Collection of Lu Xun</hi>. Beijing: People’s Literature Publishing House.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Matthews, R. and Merriam, T. </hi>(1993). Neural computation in stylometry I: An application to the works of Shakespeare and Fletcher. 
+                        <hi rend="italic">Literary and Linguistic computing</hi>, 
+                        <hi rend="bold">8</hi>(4): 203–209.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Meng, Q.</hi> (2017). Reading and writing in the presence of each other: The Zhou brothers in 1907. 
+                        <hi rend="italic">Modern Chinese Literature Research Series</hi>, 
+                        <hi rend="bold">3</hi>: 106–115.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Mosteller, F. and Wallace, D. L. </hi>(1963). Inference in an authorship problem: A comparative study of discrimination methods applied to the authorship of the disputed federalist papers. 
+                        <hi rend="italic">Journal of the American Statistical Association</hi>, 
+                        <hi rend="bold">58</hi>(302): 275–309.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Peng, D. and Ma, T. </hi>(1981). On four classical essays signed with Du Ying should be written by Lu Xun. 
+                        <hi rend="italic">Journal of Liaoning University: Philosophy and Social Science Edition</hi>, 
+                        <hi rend="bold">5</hi>: 22–28.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Wang, H., Xie, X. and Riddell, A.</hi> (2021). The challenge of vernacular and classical Chinese crossregister authorship attribution. 
+                        <hi rend="italic">Proceedings of the Conference on Computational Humanities Research 2021</hi>, pp. 299–309.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Xu, N. and Hong, Q.</hi> (1988). 
+                        <hi rend="italic">Pen Name Index of Modern Chinese Writers</hi>. Changsha: Hunan Literature and Art Publishing House.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Zhou, Z.</hi> (1999). 
+                        <hi rend="italic">Selected Collection of Zhou Zuoren</hi>. 2. Beijing: The Masses Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Zhou, Z.</hi> (2002). 
+                        <hi rend="italic">Self-edited Collection of Zhou Zuoren</hi>. Shijiazhuang: Hebei Education Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Zhou, Z.</hi> (2009). 
+                        <hi rend="italic">Complete Prose Collection of Zhou Zuoren</hi>. Guilin: Guangxi Normal University Press.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

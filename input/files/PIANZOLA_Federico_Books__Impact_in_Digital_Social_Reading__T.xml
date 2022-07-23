@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Books’ Impact in Digital Social Reading: Towards a Conceptual and Methodological Framework</title>
+                <author>
+                    <persName>
+                        <surname>Pianzola</surname>
+                        <forename>Federico</forename>
+                    </persName>
+                    <affiliation>University of Groningen, Netherlands, The</affiliation>
+                    <email>f.pianzola@rug.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Viviani</surname>
+                        <forename>Marco</forename>
+                    </persName>
+                    <affiliation>University of Milano-Bicocca, Italy</affiliation>
+                    <email>marco.vivani@unimib.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fossati</surname>
+                        <forename>Alessandro</forename>
+                    </persName>
+                    <affiliation>University of Milano-Bicocca, Italy</affiliation>
+                    <email>a.fossati@campus.unimib.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Boot</surname>
+                        <forename>Peter</forename>
+                    </persName>
+                    <affiliation>Huygens Institute for the History of the Netherlands, Netherlands, The</affiliation>
+                    <email>peter.boot@huygens.knaw.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fialho</surname>
+                        <forename>Olivia</forename>
+                    </persName>
+                    <affiliation>Huygens Institute for the History of the Netherlands, Netherlands, The; Utrecht University, Netherlands, The</affiliation>
+                    <email>olivia.fialho@huygens.knaw.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Koolen</surname>
+                        <forename>Marijn</forename>
+                    </persName>
+                    <affiliation>Huygens Institute for the History of the Netherlands, Netherlands, The; KNAW Humanities Cluster, Netherlands, The</affiliation>
+                    <email>marijn.koolen@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Neugarten</surname>
+                        <forename>Julia</forename>
+                    </persName>
+                    <affiliation>Huygens Institute for the History of the Netherlands, Netherlands, The</affiliation>
+                    <email>j.neugarten@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Van Hage</surname>
+                        <forename>Willem Robert</forename>
+                    </persName>
+                    <affiliation>Netherlands eScience Center, Netherlands, The</affiliation>
+                    <email>w.vanhage@esciencecenter.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Rebora</surname>
+                        <forename>Simone</forename>
+                    </persName>
+                    <affiliation>Università degli Studi di Verona. Italy</affiliation>
+                    <email>simone.rebora81@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hermann</surname>
+                        <forename>J. Berenike</forename>
+                    </persName>
+                    <affiliation>University of Basel, Switzerland</affiliation>
+                    <email>berenike.herrmann@uni-bielefeld.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Messerli</surname>
+                        <forename>Thomas C.</forename>
+                    </persName>
+                    <affiliation>University of Basel, Switzerland</affiliation>
+                    <email>thomas.messerli@unibas.ch</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Jorschick</surname>
+                        <forename>Annett</forename>
+                    </persName>
+                    <affiliation>University of Basel, Switzerland</affiliation>
+                    <email>annett.jorschick@uni-bielefeld.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sharma</surname>
+                        <forename>Srishti</forename>
+                    </persName>
+                    <affiliation>Independent scholar</affiliation>
+                    <email>srishti.0118@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T20:58:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Panel</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital social reading</term>
+                    <term>book reviews</term>
+                    <term>empirical literary studies</term>
+                    <term>dataset curation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>social media analysis and methods</term>
+                    <term>Humanities computing</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">The aim of this panel is to debate the challenges and opportunities offered by online reviews for measuring the impact that books can have on readers (Boot and Koolen, 2020). The focus is specifically on culture- and language-specificity, thus we will compare insights from the analysis of Korean, English, Italian, German, and Dutch reviews. </p>
+            <p style="text-align: left; ">Digital social reading platforms – like Goodreads, Lovelybooks, or Naver Books – host millions of reviews and, thus, offer unique possibilities for research into literature, reading, and reader response (Rebora et al., 2021; Walsh and Antoniak, 2021). Computational tools are especially relevant, given the large amount of available data, but finding associations between textual features, cultural conventions (e.g. genre), and cognitive, affective, and aesthetic responses is not a straightforward task (Koolen et al., 2020; Pianzola et al., 2020).</p>
+            <p style="text-align: left; ">By comparing research done with different platforms, datasets, and languages, we aim at improving the methods that we employ, in a dialogue involving both data-driven insight and theoretical reflection on literature and readers. Questions that we will address are: what aspects of a book’s impact on readers can reviews help us to measure? What are the limitations of online book reviews for studying impact? How do we know to what extent these review texts reflect the actual reading experiences? What are unwanted, confounding influences (e.g. reviewers projecting a favourable self-image, socially desired responses, aspects of identity formation, fake reviews). How do online book reviews differ from experimentally controlled gathering of reader responses (lab studies, questionnaires, psychologically validated scales) (Lendvai et al., 2020)? How do platforms for reviewing and social interactions around books influence reviewers and their perceptions? How do reviewers compare to other readers?</p>
+            <p style="text-align: left; ">To answer such questions, we will present four case studies dealing with different languages and cultures, followed by an open discussion of the results and methods, reflecting on their generalizability, efficacy, and limitations.</p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Cross-cultural and Multilingual Book Reading and Reviewing: Building and Analyzing a Dataset for English, Italian, and Korean</head>
+                <p rend="DH-AuthorAffiliation">Fossati, A., Pianzola, F., Viviani, M.</p>
+                <p style="text-align: left; ">In this project, we analyze the differences between English, Italian, and Korean speaking readers in relation to the impact that a book has on them, namely in relation to the attitude that reviewers of different cultures have in providing their opinion about books on a digital platform. To this aim, we scraped reviews from the biggest reviewing platforms for each language: Amazon.com (270k reviews collected) and Goodreads (247k) for English (999 books collected), Amazon.it (93k) and Anobii (64k) for Italian (975 books), and Naver Books (40k) and Yes24 (67k) for Korean (900 books). We sampled one retail and one non-retail platform for each language because one of our goals was to reproduce the results by (Dimitrov et al., 2015; Newell et al., 2016) about the differences in readers’ behavior (Fig. 1).</p>
+                <figure>
+                    <graphic n="1001" width="15.992433333333333cm" height="12.010319444444445cm" url="Pictures/ee68595d7a2fb6994cae869b1b252d7c.png" rend="inline"/>
+                    <head>Average rating from 3,000 books in English, Italian, and Korean taken from retail (blue) and no-retail (yellow) platforms. Reproduction of the results obtained for English by (Newell et al. 2016).</head>
+                </figure>
+                <p style="text-align: left; ">We are providing an important cross-cultural and multilingual resource and analytical contribution to this kind of research. We present the process of construction and preliminary analyses of this multilingual corpus, which is aimed both at containing common books (about a thousand for each language, with their respective reviews) in all three languages, and at highlighting reading preferences in terms of genres (books from Children, Romance, Sci-fi, Thriller and Fantasy genres) and authors that are peculiar for each language/culture (Fig. 2). This kind of dataset is necessary – but so far unavailable – to implement analyses that could reliably explore the impact that books have on both Western and Asian readers.</p>
+                <figure>
+                    <figure>
+                        <graphic n="1002" width="15.993277777777777cm" height="10.971388888888889cm" url="Pictures/af8b406bbd64ee99d5a56688f4af4f7c.png" rend="inline"/>
+                    </figure>
+                    <figure>
+                        <graphic n="1003" width="15.998472222222222cm" height="11.198930555555556cm" url="Pictures/4c5b92e84f72ac35747e50dce81c973d.png" rend="inline"/>
+                    </figure>
+                    <head>Average sentiment scores for books belonging to 5 different genres. Values are computed using a transformer-based multilingual model (XLM-R) specifically fine-tuned for sentiment analysis of book reviews.</head>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Reading Impact in Online Book Reviews: Challenges and Prospects</head>
+                <p rend="DH-AuthorAffiliation">Boot, P., Fialho, O., Koolen, M., Neugarten, J., Van Hage, W.R.</p>
+                <p style="text-align: left; ">What is the impact of fiction? In the
+                    <hi rend="italic" xml:space="preserve"> Impact and Fiction</hi> project we investigate that question by measuring impact in a corpus of 500k+ online book reviews and relating this to high-level features (mood, topic, style, narrative) computationally extracted from a corpus of novels discussed in these reviews. In predicting the impact we also take reader features into account. We draw from a growing tradition of studies on the impact of reading fiction, including the phenomenological and experimental tradition (e.g. Miall and Kuiken, 1995; Kuijpers, 2014; Fialho, 2012, 2019), studies of literary evaluation (e.g., Von Heydebrand and Winko, 1996), of newspaper criticism (Linders, 2012), of online reviews, depending on site and book genre (Koolen et al., 2020; Newell et al., 2016), of the influence of reader gender on reviews (Thelwall and Boerrier, 2019), and of self-presentation in social media (e.g. Hollenbaugh, 2021). 
+                </p>
+                <p style="text-align: left; ">Despite the wealth of research in these domains, there are many open questions on the impact of fiction in the context of book reviews. Are existing typologies of reading experiences applicable to the context of book reviews? Can impact be reliably measured from reviews? How do reviewer characteristics and textual features (e.g., genre, perspective) affect impact? Do genre effects influence review content? Are book reviews mostly about books, or do they primarily reflect the self-image readers want to present to the world? What forms of reflection occur in book reviews? In this presentation, we will offer a series of reflections on these issues.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Dealing with messy data. A methodological solution for analysing unbalanced social media datasets</head>
+                <p rend="DH-AuthorAffiliation">Rebora, S., Hermann, J. B., Messerli, T., Jorschick, A.</p>
+                <p style="text-align: left; ">In the study of natural social media data standard solutions for dealing with “messy” and high frequency data in hypothesis-testing statistics are still missing. This paper contributes to a solution for the issues of hypothesis testing of (a) big-scale and (b) unbalanced datasets. Building on the development of deep learning classifiers for the recognition of evaluative language and sentiment (Rebora et al., 2022), we thus present a possible methodological groundwork for the study of book impact at a large scale. </p>
+                <p style="text-align: left; ">Our project focuses on German book reviews published on the 
+                    <hi rend="italic" xml:space="preserve">LovelyBooks </hi>platform (~1.3M reviews). Fig. 3 (evaluation) and 4 (sentiment) show the application of the two classifiers on the corpus.
+                </p>
+                <figure>
+                    <graphic n="1004" width="15.92cm" height="8.960555555555555cm" url="Pictures/16e81897abd56fe8182f08b7b24eb1fd.png" rend="inline"/>
+                    <head>Proportion of evaluative language per review</head>
+                </figure>
+                <figure>
+                    <graphic n="1005" width="15.92cm" height="8.960555555555555cm" url="Pictures/e040c424dc71a374678bde6ea8d2de72.png" rend="inline"/>
+                    <head>Proportion of sentiment per review (green = positive; red = negative)</head>
+                </figure>
+                <p style="text-align: left; ">In order to deal with the issue of a “messy” big-data corpus, we evaluated advanced statistical strategies. As Anova-style tests tend to increase type I errors, we applied Linear Mixed-Effects Models (Winter and Grice, 2019), using a subsection of our dataset (30,000 reviews, most popular genres). Book GENRE, RATING, and total Number of Reviews by User (NRU) were independent variables predicting the proportion of evaluative language. Table 1 shows significant main effects for 
+                    <hi rend="italic">NRU, RATING, GENRE</hi>, and a significant interaction effect for 
+                    <hi rend="italic" xml:space="preserve">NRU </hi>and
+                    <hi rend="italic" xml:space="preserve"> GENRE</hi>. Figure 6 shows an interaction effect of GENRE, RATING and USERTYPE (high vs. low NRU), with high NRU users deviating for the novel GENRE. As such dynamics might often be missed in data analysis, our case study shall advocate for the use of advanced statistical modeling.
+                </p>
+                <figure>
+                    <graphic n="1006" width="15.92cm" height="7.161388888888889cm" url="Pictures/d48b7d81ea72b9ab68daf24e9db30fe8.png" rend="inline"/>
+                    <head>Anova type III table of main effects and interactions. Significant effects are bold.</head>
+                </figure>
+                <figure>
+                    <graphic n="1007" width="15.92cm" height="11.359444444444444cm" url="Pictures/79b189558df9adba92d47fd26da1cf85.png" rend="inline"/>
+                    <head>Rating vs. evaluative language</head>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>A preregistered analysis investigating the relation between emotions in books and reviews</head>
+                <p rend="DH-AuthorAffiliation">Sharma, S., Pianzola, F.</p>
+                <p style="text-align: left; ">In this paper we look at the emotional impact a book can have, focusing on the relation between emotions in books and emotions in reviews. We test the psychological theory known as “framing effect” (Tversky and Kahneman, 1981) – which states that the response of the audience is influenced by the way in which the information is presented to them – and operationalize it as a task of computational text analysis. To do this, we use a dataset of 450 books, divided across 9 genres, and with more than 5 million English reviews. We conduct sentiment analysis of three different components: the average book sentiment, the average review sentiment of the corresponding book, and the emotional story arc of each book (Reagan et al., 2016; Jockers, 2017). We compare three different methods – distilBERT (Sanh et al., 2020), a dictionary-based model testing different lexica (Mohammad and Turney, 2013), and SentiArt, a vector space model (Jacobs and Kinder, 2019) – and reflect on their accuracy and interpretability in the context of a DH project, rather than as a general NLP task. This is among the first studies that quantitatively investigate relations between stories’ sentiment and reader response (Jacobs and Kinder, 2019; Pianzola et al., 2020), and it uses both state-of-the-art machine learning as well as hypothesis-testing statistics.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Dimitrov, S. et al.</hi> (2015). Goodreads versus Amazon: The Effect of Decoupling Book Reviewing and Book Selling. 
+                        <hi rend="italic">Proceedings of the International AAAI Conference on Web and Social Media</hi>, 
+                        <hi rend="bold">9</hi>(1), 602-05. https://ojs.aaai.org/index.php/ICWSM/article/view/14662
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Fialho, O.</hi> (2012). Self-Modifying Experiences in Literary Reading: A Model for Reader Response. PhD Dissertation, University of Alberta. https://era.library.ualberta.ca/items/94ecceb5-56a7-4601-b1e5-bc2117d12e01
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Fialho, O.</hi> (2019). What is literature for? The role of transformative reading. 
+                        <hi rend="italic">Cogent Arts &amp; Humanities,</hi>
+                        <hi rend="bold">6</hi>(1), special issue “The place of the cognitive in literary studies”, Kukkonen, K., Kuzmičová, A., Ledet Christiansen, S., and Polvinen, M. (eds.), https://doi.org/10.1080/23311983.2019.1692532
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Hollenbaugh, E. E. </hi>(2021). Self-Presentation in Social Media: Review and Research Opportunities. 
+                        <hi rend="italic">Review of Communication Research</hi>, 
+                        <hi rend="bold">9</hi>, pp. 80-98.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Jacobs, A. M. and Kinder, A.</hi> (2019). Computing the Affective-Aesthetic Potential of Literary Texts. 
+                        <hi rend="italic">AI</hi>, 
+                        <hi rend="bold">1</hi>(1), pp. 11–27. 10.3390/ai1010002.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Jockers, M.</hi> (2017). 
+                        <hi rend="italic">Introduction to the Syuzhet Package</hi>. 
+                        <hi rend="italic">The Comprehensive R Archive Network</hi>. https://cran.r-project.org/web/packages/syuzhet/vignettes/syuzhet-vignette.html (accessed 29 May 2018).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Koolen, M., Boot, P., and Van Zundert, J.</hi> (2020). Online Book Reviews and the Computational Modelling of Reading Impact, 
+                        <hi rend="italic">Computational Humanities Research 2020</hi>. http://ceur-ws.org/Vol-2723/long13.pdf 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kuijpers, M.</hi> (2014). Absorbing stories: The effects of textual devices on absorption and evaluative responses. PhD Dissertation, Utrecht University.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Linders, Y.</hi> (2012). Argumentation in Dutch literary criticism 1945–2005. In C. Perry and M. Szurawitzki (eds.), 
+                        <hi rend="italic" xml:space="preserve">Sprache und Kultur im Spiegel der Rezension </hi>(Frankfurt am M.: Peter Lang), pp. 261-68.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Miall, D. S. and Kuiken, D.</hi> (1995). Aspects of literary response: A new questionnaire', 
+                        <hi rend="italic">Research in the Teaching of English</hi>, pp. 37-58.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Mohammad, S. and Turney, P.</hi> (2013). Crowdsourcing a Word-Emotion Association Lexicon. 
+                        <hi rend="italic">Computational Intelligence</hi>, 
+                        <hi rend="bold">29</hi>(3), pp. 436–65. http://dx.doi.org/10.1111/j.1467-8640.2012.00460.x.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Newell, E. et al.</hi> (2016). To Buy or to Read: How a Platform Shapes Reviewing Behavior. In 
+                        <hi rend="italic">Proceedings of the Tenth International AAAI Conference on Web and Social Media (ICWSM 2016)</hi>, pp. 643–6.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Pianzola, F., Rebora, S., and Lauer, G.</hi> (2020). Wattpad as a Resource for Literary Studies. Quantitative and Qualitative Examples of the Importance of Digital Social Reading and Readers’ Comments in the Margins. 
+                        <hi rend="italic">PLoS ONE</hi>, 
+                        <hi rend="bold">15</hi>(1). https://doi.org/10.1371/journal. pone.0226708.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rebora, S., Messerli, T. C. and Herrmann, J. B.</hi> (2022). Towards a Computational Study of German Book Reviews. A Comparison between Emotion Dictionaries and Transfer Learning in Sentiment Analysis. DHd 2022 Kulturen des digitalen Gedächtnisses. 8. Tagung des Verbands "Digital Humanities im deutschsprachigen Raum" (DHd 2022), Potsdam. https://doi.org/10.5281/zenodo.6328141
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Reagan, A. J. et al.</hi> (2016). The Emotional Arcs of Stories Are Dominated by Six Basic Shapes. 
+                        <hi rend="italic">EPJ Data Sci.</hi>, 
+                        <hi rend="bold">5</hi>, pp. 5–31. 10.1140/epjds/s13688-016-0093-1.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sanh, V. et al.</hi> (2020). DistilBERT, a Distilled Version of BERT: Smaller, Faster, Cheaper and Lighter. 
+                        <hi rend="italic">ArXiv:1910.01108 [Cs]</hi>. http://arxiv.org/abs/1910.01108 (accessed 1 June 2020).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Thelwall, Mike and Bourrier, Karen</hi> (2019), The reading background of Goodreads book club members: a female fiction canon? 
+                        <hi rend="italic">Journal of Documentation</hi>, 
+                        <hi rend="bold">75</hi>(5), pp. 1139-61.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Tversky, A. and Kahneman, D.</hi> (1981). The Framing of Decisions and the Psychology of Choice. 
+                        <hi rend="italic">Science</hi>, 
+                        <hi rend="bold">211</hi>(4481), pp. 453–8. 10.1126/science.7455683.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Von Heydebrand, R. and Winko, S.</hi> (1996). 
+                        <hi rend="italic">Einführung in die Wertung von Literatur: Systematik, Geschichte, Legitimation</hi> (Paderborn: Schöningh).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Winter, B. and Grice, M.</hi> (2019). Independence and generalizability in linguistics. OSF https://osf.io/zdrpc/ (accessed 24 September 2021).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

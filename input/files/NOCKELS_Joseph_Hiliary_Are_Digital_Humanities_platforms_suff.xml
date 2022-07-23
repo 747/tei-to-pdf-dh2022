@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Are Digital Humanities platforms sufficiently facilitating diversity in research? <hi rend="italic">A study of Transkribus free processing requests.</hi></title>
+                <author>
+                    <persName>
+                        <surname>Nockels</surname>
+                        <forename>Joseph Hiliary</forename>
+                    </persName>
+                    <affiliation>University of Edinburgh</affiliation>
+                    <email>j.h.nockels@sms.ed.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Terras</surname>
+                        <forename>Melissa</forename>
+                    </persName>
+                    <affiliation>University of Edinburgh</affiliation>
+                    <email>m.terras@ed.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gooding</surname>
+                        <forename>Paul</forename>
+                    </persName>
+                    <affiliation>University of Glasgow</affiliation>
+                    <email>paul.gooding@glasgow.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Muehlberger</surname>
+                        <forename>Guenter</forename>
+                    </persName>
+                    <affiliation>University of Innsbruck</affiliation>
+                    <email>guenter.muehlberger@uibk.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Stauder</surname>
+                        <forename>Andy</forename>
+                    </persName>
+                    <affiliation>Recognition and Enrichment of Archival Documents</affiliation>
+                    <email>a.stauder@read.coop</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-08T12:17:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Transkribus</term>
+                    <term>Handwritten Text Recognition (HTR)</term>
+                    <term>free processing</term>
+                    <term>digital humanities</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>optical character recognition and handwriting recognition</term>
+                    <term>Humanities computing</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Introduction</p>
+            <p>
+                This paper examines whether free processing initiatives are truly supporting and facilitating research among early career researchers (ECRs), students and those with a lack of funding, as current observations, concerning who is applying for such schemes, suggest that further clarification is often needed. Financial support is necessary to increase the diversity of work seen in the digital humanities (DH), where access to platforms is still unequal. The findings presented in this paper will address several related questions. What demographics are making use of free processing from software developers? What work will this enable? Are schemes being utilised by the intended groups? How can more equitable access be reached?
+            </p>
+            <p>Research Context</p>
+            <p>
+                This paper will focus on one software: Transkribus, a handwritten text recognition (HTR) platform which has broadened user access to historical collections through automatic image-to-text recognition, resulting in plain text files which can be presented in a variety of formats by content-holding institutions for instance (Muehlberger et. al, 2019). Current work using Transkribus showcases the breadth of digital humanities research, with models being trained on the manuscripts of Jeremy Bentham (National Library of Scotland, 2021), materials from Ethiopia and Eritrea (Universitat Hamburg, 2021) as well as 18
+                <hi rend="superscript" style="font-size:12pt">th</hi>
+                -19
+                <hi rend="superscript" style="font-size:12pt">th</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> century Bengali print, documents written in Malayalam, and 19</hi>
+                <hi rend="superscript" style="font-size:12pt">th</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> century Devanagari scripts (READ-COOP, 2021).</hi>
+            </p>
+            <p>
+                Since 2020, Transkribus has been developed by the READ-COOP, a cooperative of currently 82 institutions and 20 individual researchers, becoming a paid-for service in October of 2020. With this recent change, a gap has emerged in understanding who is using the tool and what research is being conducted. Alongside this, no systematic review of free processing user requests has been carried out. With the software no longer supplying no-cost text recognition, READ began a free processing scheme for students and those carrying out workshops under the “Transkribus Scholarship Programme” (Transkribus, 2021). Those applying must fill out an online form, indicating the amount of credits needed, their home institution and details of their work. If accepted, credits are then added to the system and a notification is sent. This move to a funded model, with limited free access, offers a glimpse at how software companies are balancing sustainability with ensuring as equitable access as possible to their products.
+            </p>
+            <p>There is a historical issue of access inequality for DH tools and infrastructures. This goes beyond cost, raising issues of language, hardware requirements and barriers to entry in terms of computational knowledge, raising a bigger problem of limiting access to culture (Spiro, 2011: 1-10). As such, an unhealthy weighting toward Global North insights has occurred within the field (Risam, 2015: 161-175). This requires a social justice minded approach, designing new workflows and tools which resist previous inequalities.</p>
+            <p>That said, due to the nature of the processing requests, this paper looks at access in terms in funding, aiming to answer whether free processing schemes can be part of a social justice approach toward making DH platforms more equitable. Using a pay-for model can easily create marginalisation for certain user groups. Though hard to define precisely across institutions and nationalities, this study will focus on students, those completing degree awards; ECRs, those who are engaging in post-doctoral research and transitioning toward being independent academics (UKRI, 2020), and those who lack funding for their work. Though students are easily identifiable through these requests, ECRs are harder to ascertain - despite many offering only details of their position when writing about their research. In the case of missing data, world rankings will be used to detail the institutional income of those making requests (QS World Rankings, 2022), while strategies for further engagement are developed. </p>
+            <p>
+                This paper looks to fill a gap in understanding concerning who is benefiting from this free processing scheme through a systematic review of online requests. In turn, a glimpse at how HTR tools are currently being made accessible will be reached. Whether current schemes are truly facilitating diverse research, or ignoring existing inequalities in the field, will also be cited.
+            </p>
+            <p>Methodology</p>
+            <p>
+                Content analysis will be applied to these processing requests, alongside interviewing READ staff. While these online requests vary in detail, they provide data on: the required number of processing credits; the discipline and institution of the user; the user’s current academic position; and a short project description. This study will examine over 150 requests collected between November 2020 and March 2022. These requests will be aggregated and anonymised, in accordance with gained ethics approval from the University of Edinburgh. They will then be interrogated using content analysis, a research technique for the “objective, systematic and quantitative description of manifest content of communication” (Harvey, 2020). These requests will be coded, capturing their contents, using a mix of in vivo codes, quoted directly from the data (Saldana, 2012: 10), and process codes to gain a sense of the actions users are completing with Trankribus (Corbin and Strauss, 2015: 283). Through this method, this research will apply a set of procedures to make valid inferences from free-processing requests, presenting replicable and valid results (Krippendorff, 1980: 71) as to whether current schemes are weakening the financial barriers being faced by users of Transkribus.
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">The information gained from reviewing the free processing requests will sit alongside information from interviews of READ staff, ascertaining what influenced the decision to supply free processing to these groups and what the aims were. </hi>
+            </p>
+            <p>Conclusion</p>
+            <p>
+                This paper explores the extent to which Transkribus supports early career and marginalised scholars in accessing the platform, using content analysis of free processing requests and interviews with members of the Transkribus staff. As the first study to systematically analysis these requests, it provides important insights into how the transition to a paid-for model has impacted Transkribus’s users. It provides insights into the demographics of users requiring free processing, the types of projects which are being supported, and how successful the READ-COOP has been in supporting research. These findings allow us to develop recommendations for improving access to Transkribus, as well as begin to draw parallels to other HTR providers in making these platforms more equitable.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="footnote text">
+                        <hi rend="bold" style="font-size:12pt">Corbin, J., Strauss, A.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 2015. Basics of Qualitative Research. Thousand Oaks, CA: Sage.</hi>
+                    </bibl>
+                    <bibl rend="footnote text">
+                        <hi rend="bold" style="font-size:12pt">Harvey, L.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 2020. Content Analysis, Social Research Glossary, Quality Research International. </hi>
+                        <ref target="https://www.qualityresearchinternational.com/socialresearch/">
+                            https://www.qualityresearchinternational.com/socialresearch/
+                        </ref>
+                        . Accessed June 1, 2021.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Krippendorff, K</hi>
+                        . 1980. Validity in Content Analysis. In E. Mochmann, E. (ed.), 
+                        <hi rend="italic">Computerstrategien </hi>
+                        für
+                        <hi rend="italic"> die kommunikationsanalyse</hi>
+                        . Frankfurt, Germany: University of Frankfurt Press, pp. 69-101.
+                    </bibl>
+                    <bibl rend="footnote text">
+                        <hi rend="bold" style="font-size:12pt">Muehlberger, G., Seaward, L., Terras, M., Ares Oliveira, S., Bosch, V., Bryan, M., Colutto, S., Dejean, H., Diem, M., Fiel, S., Gatos, B., Greinoecker, A., Gruning, T., Hackl, G., Haukkoyaara, V., Heyer, G., Hirvonen, L., Hodel, T., Jokinen, M., Kahle, P., Kallio, M., Kaplan, F., Kleber, F., Labahn, R., Lang, E.M., Laube, S., Leifert, G., Louloudis, G., McNicholl, R., Meunier, J.L., Michael, J., Muhlbauer, E., Philipp, N., Pratikakis, I., Puigcerver Perez, J., Putz, H., Retsinas, G., Romero, V., Sablatnig, R., Sanchez, J.A., Schofield, P., Sfikas, G., Sieber, C., Stamatopoulos, N., Strauss, T., Terbul, T., Toselli, A.H., Ulreich, B., Villegas, M., Vidal, E., Walcher, J., Weidemann, M., Wurster, H., Zagoris, K.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2019). Transforming scholarship in the archives through handwriting text recognition, Transkribus as a case study. </hi>
+                        <hi rend="italic" style="font-size:12pt">emerald publishing</hi>
+                        , 75(50): 960-970.
+                    </bibl>
+                    <bibl rend="footnote text">
+                        <hi rend="bold" style="font-size:12pt">National Library of Scotland Data Foundry.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 2021. Diaries, letters and poems of Marjory Fleming’s diary. </hi>
+                        <ref target="https://data.nls.uk/data/digitised-collections/marjory-fleming">
+                            https://data.nls.uk/data/digitised-collections/marjory-fleming
+                        </ref>
+                        . Accessed November 16, 2021.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">QS World Rankings</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. 2021. </hi>
+                        <ref target="https://www.topuniversities.com/university-rankings/world-university-rankings/2022">
+                            https://www.topuniversities.com/university-rankings/world-university-rankings/2022
+                        </ref>
+                        . Accessed November 20, 2021.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">READ-COOP</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. 2021. Recognising printed Asian texts with Transkribus. </hi>
+                        <ref target="https://readcoop.eu/printed-asian-text/">
+                            https://readcoop.eu/printed-asian-text/
+                        </ref>
+                        . Accessed November 16, 2021.
+                    </bibl>
+                    <bibl rend="footnote text">
+                        <hi rend="bold" style="font-size:12pt">Risam, Roopika.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 2015. South Asian Digital Humanities: An Overview. </hi>
+                        <hi rend="italic" style="font-size:12pt">South Asian Review</hi>
+                        , 36(3): 161-175.
+                    </bibl>
+                    <bibl rend="footnote text">
+                        <hi rend="bold" style="font-size:12pt">Saldana, Johnny</hi>
+                        . 2012. The Coding Manual for Qualitative Researchers. London: Routledge.
+                    </bibl>
+                    <bibl rend="footnote text">
+                        <hi rend="bold" style="font-size:12pt">Spiro, Lisa</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. 2011. Getting Started in Digital Humanities. </hi>
+                        <hi rend="italic" style="font-size:12pt">Journal of Digital Humanities</hi>
+                        , 1(1): 1-10.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Transkribus Scholarship Programme.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 2021. </hi>
+                        <ref target="https://readcoop.eu/transkribus/scholarship/">
+                            https://readcoop.eu/transkribus/scholarship/
+                        </ref>
+                        . Accessed November 19, 2021.
+                    </bibl>
+                    <bibl rend="footnote text">
+                        <hi rend="bold" style="font-size:12pt">UK Research and Innovation (UKRI).</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 2020. Early career researchers: career and skills development. https://www.ukri.org/councils/ahrc/career-and-skills-development/early-career-researchers-career-and-skills’, development/. Accessed November 10, 2020.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Universitat Hamburg</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. 2021. About beta masaheft. </hi>
+                        <ref target="https://www.betamasaheft.uni-hamburg.de/about.html">
+                            https://www.betamasaheft.uni-hamburg.de/about.html
+                        </ref>
+                        . Accessed November 16, 2021.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

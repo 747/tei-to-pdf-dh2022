@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>PRISMS: a new platform for digital Book History</title>
+                <author>
+                    <persName>
+                        <surname>Huber</surname>
+                        <forename>Alexander</forename>
+                    </persName>
+                    <affiliation>Huber Digital</affiliation>
+                    <email>alexander@hubers.org.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Huber</surname>
+                        <forename>Emma</forename>
+                    </persName>
+                    <affiliation>Huber Digital</affiliation>
+                    <email>emma@hubers.org.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital book history</term>
+                    <term>knowledge modelling</term>
+                    <term>scholarly editing</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>linked (open) data</term>
+                    <term>scholarly editing and editions development</term>
+                    <term>analysis</term>
+                    <term>and methods</term>
+                    <term>Book and print history</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction and motivation</head>
+                <p style="text-align: left; ">In a 2020 talk entitled “A Hornbook for Digital Book History”, Whitney Trettien weaves together many of the strands that have led book history, bibliography, media studies, and the digital humanities to have become deeply entangled in recent years. She convincingly argues for the potential of Book History done digitally “to build connective tissue across scattered collections” and advocates “using the digital tools at our disposal in order to see the big picture of the past”.
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p rend="footnote text">
+                            <ref target="https://rarebookschool.org/rbs-online/a-hornbook-for-digital-book-history/">https://rarebookschool.org/rbs-online/a-hornbook-for-digital-book-history/</ref>. She shares this vision of a continuum of print and digital with other influential voices at the intersection of book history, media studies, and the digital humanities, among them Henrike Laehnemann, Sarah Werner, and Matt Kirschenbaum to name but a few.
+                        </p>
+                    </note>
+                </p>
+                <p style="text-align: left; ">It is in this vein that this paper presents the motivation for and realisation of a new open-access open scholarship platform (currently in public beta) named PRISMS.
+                    <note place="foot" xml:id="ftn2" n="2">
+                        <p rend="footnote text">
+                            <ref target="https://www.prisms.digital/">https://www.prisms.digital/</ref>
+                        </p>
+                    </note> The aim of the PRISMS Open Scholarship platform is two-fold:
+                </p>
+                <list type="ordered">
+                    <item>It offers a publication platform for digital scholarly editions, with full-text (preferably encoded in TEI) and facsimiles, and any accompanying materials, such as introduction, editorial statement, critical apparatus, contextual source materials, bibliography, and indices;</item>
+                    <item>It facilitates the semantic annotation of these editions and their related scholarship (in any format) by enabling easy-to-perform formal ontological modelling (based on the CIDOC-CRM family of ontologies
+                        <note place="foot" xml:id="ftn3" n="3">
+                            <p rend="footnote text">
+                                <ref target="http://www.cidoc-crm.org/">http://www.cidoc-crm.org/</ref>
+                            </p>
+                        </note>), and thus hopes to contribute to providing the abovementioned “connective tissue” not only for scattered collections, but to overcome the artificial print/digital divide.
+                    </item>
+                </list>
+                <p style="text-align: left; ">PRISMS was born out of the realization that digital editions do not break with the historicity or materiality of the sources they organize and present, but instead remediate and extend them in ways that enable new forms of access, engagement, presentation, and analysis. PRISMS conceptualizes digital editions as living entities that perform rather than merely document the remediation they engage in.</p>
+                <p style="text-align: left; ">The scholarship that underpins each digital edition provides the essential context for these remediation processes, and collectively they sustain the knowledge network that supports all academic engagement with the texts from any disciplinary viewpoint. PRISMS is designed to allow for the collaborative and collective modelling of this continuum of digital editions and scholarship by placing digital editions, their material and contextual basis, and the resulting academic engagement in a linked context, building on the standards and tools provided by the Semantic Web.</p>
+                <p style="text-align: left; ">We believe that this type of formalization is beneficial for the purposes of this project in at least three ways: firstly, ontologies facilitate modelling with reduced reliance on implicit knowledge through an explicit, shared conceptualization of the domain. Secondly, formal models encourage collaboration as they can be shared, re-used, adapted (forked), enhanced, aggregated, and developed collaboratively. Thirdly, as a form of knowledge representation, visualization, and preservation, formal models support computational processing and ultimately reasoning, and can develop alongside the mental models and human reasoning we engage in as scholars. PRISMS facilitates scholarship that is based on these principles
+                    <note place="foot" xml:id="ftn4" n="4">
+                        <p rend="footnote text"> Ground-breaking research projects in this domain include the 
+                            <ref target="https://researchspace.org/">ResearchSpace</ref> platform and the 
+                            <ref target="https://sphaera.mpiwg-berlin.mpg.de/">Sphaera CorpusTracer</ref> project.
+                        </p>
+                    </note>.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Approach and implementation</head>
+                <p style="text-align: left; ">The PRISMS Open Scholarship platform integrates the task of publishing digital editions with the need for analytical and modelling tools to perform the type of knowledge representation that connects the material, digital, and the scholarship that builds on them. PRISMS aims to support digital editors, book historians, experts in media and cultural studies, librarians, literary scholars, and of course digital humanists, to ensure a wide range of domain expertise, disciplinary practices, and methodological approaches are reflected in the platform. To this end, the PRISMS platform hosts a variety of tools alongside the digital editions, which can be categorized as component tools (such as text-based tools, image-based tools, XML-based tools, etc.) and workbench tools (those available across document types and editions).</p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="8.200319444444444cm" url="Pictures/d07cb664d746dee79113a8b75d7b65f4.jpeg" rend="inline"/>
+                    <head>Figure 1 
+                        <hi rend="italic color(474747)" style="font-family:Open Sans;font-size:10pt">Some of the built-in analysis and visualization tools in PRISMS. Voyant-Tools is shown alongside a relation being made between two editions, and some highlighted annotations</hi>
+                    </head>
+                </figure>
+                <p style="text-align: left; ">The former category of tools is useful for any type of close scholarly work, and in PRISMS these tools include a bookmarking tool, an annotation tool (initially focussing on texts and images, but with a vision to extend annotation capabilities across all media types), the ability to keep research records (and other forms of note-taking, e.g. transcriptions, translations etc.) in the form of notebooks, and integration of Voyant Tools
+                    <note place="foot" xml:id="ftn5" n="5">
+                        <p rend="footnote text">
+                            <ref target="https://voyant-tools.org/">https://voyant-tools.org/</ref>
+                        </p>
+                    </note> for statistical analysis and a variety of visualisations of texts. The latter category includes the ability to participate in the shaping of the knowledge graph by modelling concepts and relationships, an easy way to organize research materials, and the ability to download, share, and publish contributions for the benefit of all.
+                </p>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="8.200319444444444cm" url="Pictures/a59b90da3ac111e8830619980ef05599.jpeg" rend="inline"/>
+                    <head>Figure 2 
+                        <hi rend="italic color(474747)" style="font-family:Open Sans;font-size:10pt">Modelling both the material legacies and digital remediation processes with Linked Data technologies and Cytoscape.js</hi>
+                    </head>
+                </figure>
+                <p style="text-align: left; ">All semantic modelling work, e.g. with regard to the provenance of the material and digital manifestations of an edition, can be performed both directly in a visual representation of the graph using Cytoscape.js or via a set of customizable HTML forms. All resulting triples are stored in an RDF-native graph database (using the abovementioned ontologies) for long-term preservation, collaboration, and re-use. Every user of PRISMS has both read access to this global graph that underpins the platform and unlimited access (via SPARQL Update operations) to a private graph. By default, everything in PRISMS is private. Everything contributors add is immediately visible to them, and they can conduct their scholarship in complete privacy, without delay or interference. Only when the user decides to publish their contributions will they be made available to everyone. Depending on the type of contribution made, there are options to share, download, and/or publish them. All contributions made to the PRISMS platform are stored in standard formats, e.g. the W3C Web Annotation Data Model for annotations and relations.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Contribution and further work</head>
+                <p style="text-align: left; ">PRISMS has been launched with corpora from the EEBO-TCP
+                    <note place="foot" xml:id="ftn6" n="6">
+                        <p rend="footnote text">
+                            <ref target="https://textcreationpartnership.org/tcp-texts/eebo-tcp-early-english-books-online/">https://textcreationpartnership.org/tcp-texts/eebo-tcp-early-english-books-online/</ref>
+                        </p>
+                    </note>, ECCO-TCP
+                    <note place="foot" xml:id="ftn7" n="7">
+                        <p rend="footnote text">
+                            <ref target="https://textcreationpartnership.org/tcp-texts/ecco-tcp-eighteenth-century-collections-online/">https://textcreationpartnership.org/tcp-texts/ecco-tcp-eighteenth-century-collections-online/</ref>
+                        </p>
+                    </note>, EVANS-TCP
+                    <note place="foot" xml:id="ftn8" n="8">
+                        <p rend="footnote text">
+                            <ref target="https://textcreationpartnership.org/tcp-texts/evans-tcp-evans-early-american-imprints/">https://textcreationpartnership.org/tcp-texts/evans-tcp-evans-early-american-imprints/</ref>
+                        </p>
+                    </note>, the DTA extended core corpus
+                    <note place="foot" xml:id="ftn9" n="9">
+                        <p rend="footnote text">
+                            <ref target="https://www.deutschestextarchiv.de/">https://www.deutschestextarchiv.de/</ref>
+                        </p>
+                    </note>, and the Taylor Editions
+                    <note place="foot" xml:id="ftn10" n="10">
+                        <p rend="footnote text">
+                            <ref target="https://editions.mml.ox.ac.uk/">https://editions.mml.ox.ac.uk/</ref>
+                        </p>
+                    </note> scholarly editions platform. And it is easy to add new editions to the platform either as part of a dedicated digital scholarly editing process, for which training is provided, or by simply adding a IIIF manifest and using a built-in XML-aware or standard text-editor to start transcribing and adding contextual materials. The platform already supports the addition and semantic annotation of a wide range of primary and secondary materials, such as facsimiles in IIIF, a transcription of a source text, a PDF of a journal article, a video of a theatrical performance, an audio book, an image, or a 3D-model of a sculpture mentioned in a text, etc. 
+                </p>
+                <figure>
+                    <graphic n="1003" width="16.002cm" height="8.19326388888889cm" url="Pictures/ddf3b307349c15c53eafbeda53a58283.jpeg" rend="inline"/>
+                    <head>Figure 3 
+                        <hi rend="italic color(474747)" style="font-family:Open Sans;font-size:10pt">A view of the PRISMS workbench, with three editions of Faust loaded, and an aggregation of primary and research materials in support of a performance analysis, with a facsimile, two videos, and an audio book</hi>
+                    </head>
+                </figure>
+                <p style="text-align: left; ">Moving forward, we will continue to work on integrating the digital research and tools important to PRISMS’ users (e.g. reference manager, images taken in reading rooms, items deposited in institutional repositories). With end of the beta phase, the project also intends to provide access to the entire PRISMS knowledge graph through regular data dumps and a public SPARQL endpoint. We envision that over time, PRISMS will evolve both as a powerful discovery tool and a personal research tool.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Ciotti, F. (2015) “Digital methods for Literary Criticism.” Lecture slides. University of Rome Tor Vergata, 
+                        <ref target="http://didattica.uniroma2.it/files/scarica/insegnamento/161783-Informatica-Umanistica-Lm-Per-Il-Llea/37175-Slide">http://didattica.uniroma2.it/files/scarica/insegnamento/161783-Informatica-Umanistica-Lm-Per-Il-Llea/37175-Slide</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">Ciula, A. and Marras, C. (2016) “Circling around texts and language: towards 'pragmatic modelling' in Digital Humanities.” 
+                        <hi rend="titlej">
+                            <hi rend="italic">Digital Humanities Quarterly (DHQ)</hi>
+                        </hi> 10.3 
+                        <ref target="http://www.digitalhumanities.org/dhq/vol/10/3/000258/000258.html">http://www.digitalhumanities.org/dhq/vol/10/3/000258/000258.html</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">Ciula, A. and Eide, Ø. (2107) “Modelling in digital humanities: Signs in context.” 
+                        <hi rend="titlej">
+                            <hi rend="italic">Digital Scholarship in the Humanities</hi>
+                        </hi> 32: i33–i46. 
+                        <ref target="https://doi.org/10.1093/llc/fqw045">https://doi.org/10.1093/llc/fqw045</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">Ciula, A., Eide, Ø, Marras, C. and Sahle, P. (2018) 
+                        <hi rend="italic" xml:space="preserve">Models and Modelling between Digital and Humanities — A Multidisciplinary Perspective. </hi>
+                        <hi rend="titlej">Historical Social Research (HSR)</hi> Supplement 31.
+                    </bibl>
+                    <bibl style="text-align: left; ">Eide, Ø. (2015)
+                        <hi rend="italic" xml:space="preserve"> Media Boundaries and Conceptual Modelling: Between Texts and Maps.</hi> Pre-print manuscript, 
+                        <ref target="https://www.oeide.no/research/eideBetween.pdf">https://www.oeide.no/research/eideBetween.pdf</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">Kirschenbaum, M. and Werner, S. (2014) “Digital Scholarship and Digital Studies: The State of the Discipline.” 
+                        <hi rend="italic">Book History</hi> 17, 406-458 
+                        <ref target="https://www.academia.edu/15995371/Digital_Studies_and_Digital_Scholarship_The_State_of_the_Discipline">https://www.academia.edu/15995371/Digital_&#8203;Studies_&#8203;and_&#8203;Digital_&#8203;Scholarship_&#8203;The_&#8203;State_&#8203;of_&#8203;the_&#8203;Discipline</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">Kräutli, F. and Valleriani, M. (2018) “CorpusTracer: A CIDOC database for tracing knowledge networks.” 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi> 33(2): 336-346. 
+                        <ref target="https://pure.mpg.de/rest/items/item_2472866_10/component/file_3002633/content">https://pure.mpg.de/rest/items/item_2472866_10/component/file_3002633/content</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">Laehnemann, H. (2022) “History of the Book blog.” 
+                        <ref target="https://historyofthebook.mml.ox.ac.uk/">https://historyofthebook.mml.ox.ac.uk/</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">Oldman, D., Doerr, M. and Gradmann, S. (2016) “Zen and the Art of Linked Data: New Strategies for a Semantic Web of Humanist Knowledge.” In Schreibman, S., Siemens, R., Unsworth, J. (eds.) 
+                        <hi rend="italic">A New Companion to Digital Humanities.</hi> Malden, MA: Wiley Blackwell, 251-273.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

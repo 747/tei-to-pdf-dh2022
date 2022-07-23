@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>DeXTER: A post-authentic approach to heritage visualisation</title>
+                <author>
+                    <persName>
+                        <surname>Viola</surname>
+                        <forename>Lorella</forename>
+                    </persName>
+                    <affiliation>University of Luxembourg, Luxembourg</affiliation>
+                    <email>lorella.viola@uni.lu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-22T15:43:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Digital heritage</term>
+                    <term>heritage visualisation</term>
+                    <term>interface design</term>
+                    <term>data ambiguity</term>
+                    <term>network analysis</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>meta-criticism (reflections on digital humanities and humanities computing)</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>Design studies</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <div>
+                    <head>INTRODUCTION</head>
+                    <p>Cultural heritage institutions and academics are resorting more and more to visual representations of cultural heritage material as a way to enhance access to collections for users’ appreciation and research purposes (Windhager et al., 2019). However, scholars have pointed out (Drucker, 2011; 2013; 2014; 2020; Windhager et al., 2019) how a critical approach to visualisation is still largely missing and how on the whole, user-interface (UI) design still shows a functional and task-driven approach, oriented towards satisfying a need for information rather than towards eliciting curiosity, engagement and reflection. With this presentation, I aim to contribute to the urgent need for the establishment of a critical data and visualisation literacy in current task-driven approaches to interface design which continue to see the user as a consumer and to operate within a problem solver model. Drawing on critical posthumanities (Braidotti, 2017; 2019), I here propose a critical framework to digital cultural heritage and digital cultural heritage visualisation. With this approach —which I labelled “post-authentic framework” (Viola, 2021) —I want to initiate a discussion and critique of the fetishization of empriricism and technical objectivity in digital knowledge creation. To exemplify how the post-authentic framework works in practice, I present the design choices for developing the tool DeXTER – DeepteXTminER, an interactive visualisation app to explore enriched cultural heritage material. The discussion will revolve around the challenges facing product design, with specific reference to visualising the ambiguities and uncertainties of network analysis (NA) and sentiment analysis (SA). DeXTER is currently loaded with Chroniclitaly 3.0 (Viola and Fiscarelli, 2021a), a digital heritage collection of Italian American newspapers published in the USA by Italian immigrants between 1897 and 1936.</p>
+                </div>
+                <div>
+                    <head>POST-AUTHENTIC FRAMEWORK</head>
+                    <p>My argument for a post-authentic framework to digital cultural heritage builds upon recent digital heritage positions (see for instance Cameron, 2021; Goriunova, 2019; Jones et al., 2018) and extends on posthuman critical theory which understands the matter as an extremely complex assemblage of “forces, entities, and encounters” (Braidotti, 2017, 16). A post-authentic framework to digital cultural heritage understands curatorial interventions as cyclic processes that shape and are shaped by humans, entities, and processes connected to each other according to the various forms of power embedded in computational processes and beyond. As these processes are never neutral, their implementation requires constant critical supervision. Whilst exploiting the new opportunities offered by computational technologies, a post-authentic framework rejects an uncritical adoption of digital methods and it contests the main discourse that still presents such techniques and outputs as exact, final, objective and true.</p>
+                </div>
+                <div>
+                    <head>NETWORK ANALYSIS – USEFUL BUT PROBLEMATIC</head>
+                    <p>NA is a method that models pairwise relations (i.e., edges) between objects (i.e., nodes) (Biggs, Lloyd, and Wilson, 1986). When applied to cultural heritage material, NA is typically used to investigate how referential entities (i.e., people, organisations, places) are connected with each other. However, the guiding assumption that modelling how entities relate to each other provides adequate explanations of social phenomena conceals the fact that the results are highly dependent on which entities are modelled and more importantly, which ones are not. NA therefore tends to present as accurate conclusions that may be based on over-represented actors or conversely, on underrepresented categories. When NA is applied to cultural heritage material, this issue is particularly significant as the resulting analysis can impact on the provided interpretation of the past. </p>
+                    <p>Another critical issue of NA is related to the intrinsic nature of the technique itself. Nodes are understood as discrete objects, i.e., completely independent from each other, meaning that they are modelled to remain stable regardless of the relationship between them. This offers a rather artificial view of the analysed phenomena as in reality, actors are always affected by mutual relations (Drucker, 2020, 180). Although extremely significant, this issue is often obfuscated by attractive visualisations which present as accurate what in reality is only approximated information (ibid., 87).</p>
+                </div>
+                <div>
+                    <head>DEXTER - INTERFACE DESIGN AND NETWORK ANALYSIS VISUALISATION</head>
+                    <p>DeXTER introduces a counter narrative in the main discourse —public and academic —by documenting, explaining and motivating all the data selections and interventions in the project’s GitHub repository (Viola and Fiscarelli, 2021b). In this way, the management of data is acknowledged as problematic, an act of constant interpretation and manipulation which transforms, selects, aggregates, and ultimately creates data. In the case of NA, DeXTER openly acknowledges that the displayed entities are not ALL the entities in the collection but in fact a representative, yet small selection. This choice –as explained in the app’s documentation –had the advantage to provide a less crowded network graph; on the other hand, however, it resulted in a loss of representation of the less occurring entities. </p>
+                </div>
+                <div>
+                    <head>INFORMATION RETRIEVAL</head>
+                    <p>DeXTER’s interface allows users to carry out efficient information retrieval. As said earlier, NA visualisations are typically static, and nodes and edges remain unchanged no matter their relation. In DeXTER it is always possible to explore the changing relationships between entities over time or at specific intervals; this is done by swiping the time bar on the top left of the interface which reflects the collection’s timespan, i.e., 1897-1936 (Figure 1). This allows users to obtain a more realistic representation of how the modelled entities were mentioned by migrants over time or at specific points in history. Users can also select/deselect specific titles and observe how entities of interest were mentioned by migrants in titles of different political orientation and geographical location.</p>
+                    <figure>
+                        <head>Figure 1: DeXTER default landing interface for NA. The red oval highlights the time bar</head>
+                        <graphic n="1001" width="16.002cm" height="7.665269444444444cm" url="Pictures/16207147a4999144b3e7c5bd70a950b7.jpeg" rend="inline"/>
+                    </figure>
+                </div>
+                <div>
+                    <head>DATA MULTI-DIMENSIONALITY</head>
+                    <p>DeXTER exposes the data multi-dimensional complexity by allowing users to explore three types of networks: two entity-focused graphs and one issue-focused network. In the entity-focused graph (i.e., ego-network), users start from a selected entity of their choice (i.e., the ego) to explore the net of entities (i.e., the alters) most frequently mentioned in the same sentence as the selected entity. The network also displays the number of times entities were mentioned together, the titles in which they were mentioned and the prevailing emotional attitude of the sentence in which they were mentioned. If ego-network is not selected, the graph displays also the relations among the alters. Figures 2 and 3 show the different entity-focused displays of the same entity/ego when selecting/deselecting the ego-network option. Finally, it is possible to obtain additional points of view by starting from a specific issue (i.e., issue-focused network) so as to research which actors were mostly mentioned on a specific day (or days) by a specific newspaper or several (Figure 4).</p>
+                    <figure>
+                        <head>Figure 2: DeXTER entity-focused NA - egocentric network</head>
+                        <graphic n="1002" width="12.697319444444444cm" height="6.205786111111111cm" url="Pictures/1f4408975e188ec46df1b5fec054300c.jpeg" rend="inline"/>
+                        <head>Figure 3: DeXTER entity-focused NA</head>
+                    </figure>
+                    <figure>
+                        <head>Figure 3: DeXTER entity-focused NA</head>
+                        <graphic n="1003" width="13.27325cm" height="6.3993cm" url="Pictures/8a7c7f1fa61d03aa0b5a0bd66d0dcb34.jpeg" rend="inline"/>
+                        <head>Figure 4: DeXTER issue-focused NA</head>
+                    </figure>
+                    <figure>
+                        <head>Figure 4: DeXTER issue-focused NA</head>
+                        <graphic n="1004" width="13.08496388888889cm" height="6.269530555555556cm" url="Pictures/a19dfd667d2715240bcdbee0776cb3ee.jpeg" rend="inline"/>
+                    </figure>
+                </div>
+                <div>
+                    <head>SENTIMENT ANALYSIS</head>
+                    <p>SA aims to identify the prevailing emotional attitude in a given text, e.g., positive, negative, or neutral. However, these labels are typically presented as if they were unambiguous categories universally accepted. As a way to acknowledge the ambiguities behind a ‘sentiment score’, we implemented a fluid visualisation through colour gradients which go from a darker shade of blue for the lowest score (i.e., negative) to a darker shade of red for the highest score (i.e., positive). We also chose pastel shades as opposed to solid shades as an open way to acknowledge SA as problematic and to promote a visualisation that would not be presented as precise and accurate. The description of how the sentiment categories have been identified, how the classification has been conducted, what the scores mean and how they have been rendered in the visualisation, and how the results have been aggregated is been thoroughly documented in the dedicated OA GitHub repository (Viola and Fiscarelli, 2021b).</p>
+                </div>
+                <div>
+                    <head>DATA ACCESSIBILITY</head>
+                    <p>Finally, the data behind the interface is accessible and downloadable through the tab ‘Data’ which remains always active from anywhere in the interface. Users can choose to either download the entire data-set or the data-set that reflects their specific selections operated through the available filters (e.g., title, time interval, frequency, entity), which also remain visible at all times. The intention is to emphasise the continuous making and re-making of data and to encode this process of forming, arranging and interpreting data within the interface itself. Moreover, in this way, DeXTER also advocates transparency, traceability, and accountability. Indeed, a post-authentic framework to digital cultural heritage primarily acknowledges the collective responsibility of building a source of knowledge for current and future generations and frames it as honest and accountable, unfinished and receptive to alternatives. </p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Biggs, Norman, E. Keith Lloyd, and Robin J. Wilson. (1986). 
+                        <hi rend="italic">Graph Theory</hi>, 1736-1936. Oxford [Oxfordshire] ; New York: Clarendon Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">Braidotti. (2017). “Posthuman Critical Theory.” 
+                        <hi rend="italic">Journal of Posthuman Studies</hi> 1 (1): 9. https://doi.org/10.5325/jpoststud.1.1.0009.
+                    </bibl>
+                    <bibl style="text-align: left; ">Braidotti, Rosi. (2019). “A Theoretical Framework for the Critical Posthumanities.” Theory, 
+                        <hi rend="italic">Culture &amp; Society</hi> 36 (6): 31–61. https://doi.org/10.1177/0263276418771486.
+                    </bibl>
+                    <bibl style="text-align: left; ">Cameron, Fiona. (2021). 
+                        <hi rend="italic">The Future of Digital Data, Heritage and Curation in a More-than Human World</hi>. Abingdon, Oxon; New York, NY: Routledge.
+                    </bibl>
+                    <bibl style="text-align: left; ">Drucker, Johanna. (2011). “Humanities Approaches to Graphical Display.” 
+                        <hi rend="italic">Digital Humanities Quarterly</hi> 5 (1). http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html.
+                    </bibl>
+                    <bibl style="text-align: left; ">———. (2013). “Performative Materiality and Theoretical Approaches to Interface.” DHQ: 
+                        <hi rend="italic">Digital Humanities Quarterly</hi> 7 (1).
+                    </bibl>
+                    <bibl style="text-align: left; ">———. (2014). “Visualizing Temporality: Modelling Time from the Textual Record.” Queen Mary University of London, March 25. http://www.qmul.ac.uk/events/items/2014/119740.html.</bibl>
+                    <bibl style="text-align: left; ">———. (2020). 
+                        <hi rend="italic">Visualization and Interpretation: Humanistic Approaches to Display</hi>. Cambridge, Massachusetts: The MIT Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">Goriunova, Olga. (2019). “The Digital Subject: People as Data as Persons.” 
+                        <hi rend="italic">Theory, Culture &amp; Society</hi> 36 (6): 125–45. https://doi.org/10.1177/0263276419840409.
+                    </bibl>
+                    <bibl style="text-align: left; ">Jones, Siân, Stuart Jeffrey, Mhairi Maxwell, Alex Hale, and Cara Jones. (2018). “3D Heritage Visualisation and the Negotiation of Authenticity: The ACCORD Project.” 
+                        <hi rend="italic">International Journal of Heritage Studies</hi> 24 (4): 333–53. https://doi.org/10.1080/13527258.2017.1378905.
+                    </bibl>
+                    <bibl style="text-align: left; ">Viola, Lorella. (2021). “Keynote: The Importance of Being Digital.” In 
+                        <hi rend="italic">HistoInformatics2021 Workshop</hi> - 6th International Workshop on Computational History. Co-Located with JCDL2021. University of Illinois. https://sites.google.com/view/histoinformatics2021workshop/home?authuser=0.
+                    </bibl>
+                    <bibl style="text-align: left; ">Viola, Lorella, and Antonio Maria Fiscarelli. (2021a). 
+                        <hi rend="italic">ChroniclItaly 3.0. A deep-learning, contextually enriched digital heritage collection of Italian immigrant newspapers published in the USA, 1898-1936</hi>. Zenodo. 
+                        <ref target="https://doi.org/10.5281/ZENODO.4596345">https://doi.org/10.5281/ZENODO.4596345</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">Viola, Lorella, and Antonio M. Fiscarelli. (2021b). 
+                        <hi rend="italic">DeXTER (DeepTextMiner): A Deep Learning, Critical Workflow to Contextually Enrich Digital Collections and Visualise Them</hi> (version v1.0.0). Zenodo. https://doi.org/10.5281/ZENODO.4633404.
+                    </bibl>
+                    <bibl style="text-align: left; ">Windhager, Florian, Paolo Federico, Gunther Schreder, Katrin Glinka, Marian Dork, Silvia Miksch, and Eva Mayr. (2019). “Visualization of Cultural Heritage Collection Data: State of the Art and Future Challenges.” 
+                        <hi rend="italic">IEEE Transactions on Visualization and Computer Graphics</hi> 25 (6): 2311–30. https://doi.org/10.1109/TVCG.2018.2830759.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

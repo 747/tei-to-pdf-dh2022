@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Measuring Space in German Novels</title>
+                    <title type="sub">The spatial index (SI) as measurement for narrative space</title>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Schumacher</surname>
+                        <forename>Mareike Katharina</forename>
+                    </persName>
+                    <affiliation>Technical University of Darmstadt, Germany</affiliation>
+                    <email>schumacher@linglit.tu-darmstadt.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-08T07:10:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Space</term>
+                    <term>Narratology</term>
+                    <term>Machine Learning</term>
+                    <term>automated annotation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>cultural analytics</term>
+                    <term>Cultural studies</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">In this paper, I show how indicators for spatial aspects of narration can be annotated automatically by a German-language machine learning classifier trained on 18th–21st-century novels reaching an overall F1-Score of 0.75 (cf. Schumacher 2021). These indicators can be used as a means of quantification (cf. Bernhart et al. 2018, Kuhn 2018, Schruhl 2018) of narrative space in the form of a spatial index (SI). The formula used for this task sums up the number of annotations per category weighted by explicitness and sets them in relation to the length of the novel. Comparing the SI in a diachronic corpus of 100 German novels, one can detect that indicators for narrative space form a nearly constant part of novels taking up an average of 12% of the content. Compare texts in this way not only opens up a quantitative diachronic perspective on space in novels but also makes it possible to spot outliers that do not fit into this development.</p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Classifying Space in Novels</head>
+                <p style="text-align: left; ">Narrative space has been a frequent topic in literary studies (an overview is given by Ryan 2012). Yet it has often been considered less important for narratives than time, because the sequential organisation of events underlying the narrative structure heavily relies on this aspect of human experience (cf. Ryan 2012 §1). The approach presented in this paper takes a first step toward measuring how important the category of space is for narratives. The theoretical foundation used for operationalizing narrative space includes approaches to space from literary studies (e.g. Dennerlein 2009, Piatti 2008, Ryan et al. 2016), Digital Humanities (e.g. Viehauser 2020, Barth and Viehauser 2017, Bodenhammer et al. 2010) and phenomenological studies. The most basic is the distinction between place and space, going back to Descartes (2007;1644). Place is defined as a fixed point in space that can be mapped geographically. Space is understood as a multidimensional continuum whose premiere quality is to be extended. Different conceptions of space were considered when operationalizing narrative space, such as the container space going back to Aristotle (cf. 1995), the geometric euclidean space (Euklid 1971), relational space
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p>
+                            Subject-centered space (Leibniz 2014;1714), metaphysical space (Kant 2006;1768), perceptual space (Husserl 2007;1991)
+                        </p>
+                    </note> and space as a socio-cultural phenomenon
+                    <note place="foot" xml:id="ftn2" n="2">
+                        <p>
+                            Aesthetic space (Cassirer 2006;1931), movement space (de Certeau 2006;1980), action space (Foucault 2008) and milieu (Bourdieu 2006;1989)
+                        </p>
+                    </note>. In narratives, space can be regarded as a semiotic system, a thematic aspect, or a structural phenomenon of texts (cf. Schumacher forthcoming). Taking operationalizable aspects from all of the above-mentioned approaches to space, I came up with a category system including six categories: place, relations, relational verbs, spatial descriptions, hints on space and topoi. 
+                </p>
+                <p style="text-align: left; ">This category system is implemented in a machine learning process using StanfordNER (cf. Finkel et al. 2005), an implementation of Conditional Random Fields Algorithms (cf. Sutton and McCallum 2007). The machine learning training is organized as an iterative process, including the creation of extensive annotation guidelines (cf. Reiter 2020), manual annotation of training and test data, calculation of an inter-annotator agreement (cf. Artstein 2007, Artstein and Poesio 2008) and an incremental construction on observation of training and test data (cf. e.g. Jannidis et al. 2015, Schumacher and Flüh 2020). The (manually annotated) training corpus consists of 320.000 tokens taken from 80 novels from 18th–21st century. An opening passage of 4.000 tokens of each novel has been intergrated. For testing and validating the classifier a leave-one-out-procedure was followed for which 10.000-token passages werde taken from eight novels (two per century) not integrated in the training corpus
+                    <note place="foot" xml:id="ftn3" n="3">
+                        <p>
+                            Training data and test results can be found in the github-repository of the space-classifier
+                            <ref target="https://github.com/M-K-Schumacher/Raum-Classifier">
+                                <hi rend="color(1155CC)" style="font-size:9pt">https://github.com/M-K-Schumacher/Raum-Classifier</hi>
+                            </ref>
+                        </p>
+                    </note>.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>A measurement for narrative space</head>
+                <p style="text-align: left; ">To bring all spatial information into one measurement an index value is calculated, which considers that indicators for representations of space in narratives can be more or less explicit. The most explicit categories are place and relations which are therefore fully counted into the spatial index (SI). Relational verbs are less explicit. For example, when characters in a novel “dance”, it is implied that they move, but some other meanings also play an important role. Relational verbs are therefore multiplied by 0.8. The other categories are less and less explicitly referencing space and descend in order: topoi (0.7), spatial descriptions (0.6), hints on space (0.5). The SI is calculated as follows:</p>
+                <figure>
+                    <graphic n="1001" width="16.298333333333332cm" height="1.8139333333333334cm" url="Pictures/598f3319d8819c25645a62452b99ae7c.png" rend="inline"/>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Space as a categorical constant in novels</head>
+                <p style="text-align: left; ">Calculating the SI for 100 novels taken from 4 centuries is a good starting point for a diachronic analysis of the representation of space in narratives. As can be seen from figure 1, the representation of space takes up a nearly constant portion of novels from the 18th–21st century with a very slight tendency to rise towards contemporary times. </p>
+                <figure>
+                    <graphic n="1002" width="15.980833333333333cm" height="9.477002777777777cm" url="Pictures/b9667830d8773fb4a03dd0847d46c883.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="bold" style="font-size:9pt">Figure 1: Spatial indexes in 100 novels from 18th–21st century</hi>
+                    <note place="foot" xml:id="ftn4" n="4">
+                        <p>
+                            Not all novels in the corpus are shown and abbreviations are used. For a full list see the github-repository complementing this work
+                            <ref target="https://github.com/M-K-Schumacher/Forschungsdaten-Orte-und-Raeume-im-Roman/tree/main/Datenbasis_der_Analysen/Raum-Index-Werte">
+                                <hi rend="color(1155CC)" style="font-size:9pt">https://github.com/M-K-Schumacher/Forschungsdaten-Orte-und-Raeume-im-Roman/tree/main/Datenbasis_der_Analysen/Raum-Index-Werte</hi>
+                            </ref>
+                        </p>
+                    </note>
+                </p>
+                <p style="text-align: left; ">What is also striking here is that there is not one single novel without representations of space – in all novels, at least 5% of words carry spatial information. On the other side, there is no novel showing an SI of more than 18. The novel showing the lowest SI (6.66) is 
+                    <hi rend="italic">Agathon</hi> by Wieland, the one with the highest (17.29) is 
+                    <hi rend="italic">Ahnung und Gegenwart</hi> by Eichendorff. Interestingly in both novels, the protagonists travel, but whereas Wieland’s 
+                    <hi rend="italic">Agathon</hi> is a Bildungsroman in which the psychological transformation is more important than physical movement, Eichendorff’s 
+                    <hi rend="italic" xml:space="preserve">Ahnung und Gegenwart </hi>is about a character who severely suffers from war experiences (war being classified as one of the most frequent topoi in novels) and finds his peace in the heterotopic space of a monastery.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left; ">Automatic recognition and classification of narrative space in novels can be fruitful for distant reading approaches and help to quantify this aspect of narratives. The calculation of the SI opens up the possibility to compare the representation of space in a diachronic view. From this perspective, we get first hints on the average representation of narrative space in novels and can spot outliers. Used in this way, the classification and calculation of indicators of narrative space can lead to interesting phenomena in specific texts. For future work it could be interesting to operationalise other basic narrative categories such as time in a similar way. By comparing two or more indexes of such categories would shed more light on the relative importance of space in novels.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Aristoteles (1995): "Physikvorlesung". In: Ders.: 
+                        <hi rend="italic">Werke</hi> Band XI. Berlin: Akademie-Verlag.
+                    </bibl>
+                    <bibl style="text-align: left; ">Artstein, Ron (2017): „Inter-annotator Agreement“. In: Ide, Nancy und Pustejovsky, James: 
+                        <hi rend="italic">Handbook of Linguistic Annotation</hi>. Dordrecht: Springer, pages 297–313. DOI: 10.1007/978-94-024-0881-2_11. 
+                    </bibl>
+                    <bibl style="text-align: left; ">Artstein, Ron and Poesio, Massimo (2008): „Inter-Coder Agreement for Computational Linguistics“. In: 
+                        <hi rend="italic">Computational Linguistics</hi>, 34(4). DOI:
+                    </bibl>
+                    <bibl style="text-align: left; ">https://www.mitpressjournals.org/doi/pdfplus/10.1162/coli.07-034-R2.</bibl>
+                    <bibl style="text-align: left; ">Barth, Florian und Viehauser, Gabriel (2017): „Digitale Modellierung literarischen Raums“. In: Konferenzabstracts. 
+                        <hi rend="italic">DHd2017 Bern. Digitale Nachhaltigkeit</hi>. http://www.dhd2017.ch/wp-content/uploads/2017/03/Abstractband_def3_M%C3%A4rz.pdf [24.2.2020].
+                    </bibl>
+                    <bibl style="text-align: left; ">Toni Bernhart, Marcus Willand, Sandra Richter, Andrea Albrecht (2018): “Einleitung: Quantitative Ansätze in den Literatur- und Geisteswissenschaften”. In: Bernhart, T., Willand, M., Richter, S. and Albrecht, A. ed. 
+                        <hi rend="italic">Quantitative Ansätze in den Literatur- und Geisteswissenschaften: Systematische und historische Perspektiven</hi>. Berlin, Boston: De Gruyter, pp. 1-8.
+                        <ref target="https://doi.org/10.1515/9783110523300-001" xml:space="preserve"> https://doi.org/10.1515/9783110523300-001</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">Bodenhammer, David J., Corrigan, John und Harris, Trevor M. (2010): 
+                        <hi rend="italic">Spatial Humanities. GIS and the Future of Humanities Scholarship</hi>. Indiana: Indiana University Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">Bourdieu, Pierre (2006; 1989): “Sozialer Raum, symbolischer Raum.” In: Dünne, J.rg und Günzel, Stephan (Hrsg.): 
+                        <hi rend="italic">Raumtheorie</hi>. Grundlagentexte aus Philosophie und Kulturwissenschaften. Frankfurt am Main: Suhrkamp, 354-366.
+                    </bibl>
+                    <bibl style="text-align: left; ">Cassirer, Ernst (2006; 1931): "Mythischer, ästhetischer und theoretischer Raum." In: Dünne, J.rg und Günzel, Stephan (Hrsg.): 
+                        <hi rend="italic">Raumtheorie</hi>. Grundlagentexte aus Philosophie und Kulturwissenschaften. Frankfurt am Main: Suhrkamp, 485-500.
+                    </bibl>
+                    <bibl style="text-align: left; ">Certeau, Michel de (2006; 1980): „Praktiken im Raum.“ In: Dünne, J.rg und</bibl>
+                    <bibl style="text-align: left; ">Günzel, Stephan: 
+                        <hi rend="italic">Raumtheorie</hi>. Frankfurt am Man: Suhrkamp, 343-353.
+                    </bibl>
+                    <bibl style="text-align: left; ">Dennerlein, Katrin und Jörg Schönert (2009): 
+                        <hi rend="italic">Narratologie Des Raumes</hi>. Berlin; New York: De Gruyter, 2009.
+                    </bibl>
+                    <bibl style="text-align: left; ">Descartes, René (2007; 1644): 
+                        <hi rend="italic">Die Prinzipien Der Philosophie</hi>. Unverändertes eBook der 1. Aufl. von 2007. Hamburg: Meiner. DOI: https://dx.doi.org/10.28937/978-3-7873-2041-7 [29.4.2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">Euklid (1971): 
+                        <hi rend="italic">Elemente</hi>. Darmstadt: Wissenschaftliche Buchgesellschaft.
+                    </bibl>
+                    <bibl style="text-align: left; ">Finkel, Jenny Rose, Grenager, Trond und Manning, Christopher (2005): „Incorporating Non-local Information into Information Extraction Systems by Gibbs Sampling“. In: 
+                        <hi rend="italic">Proceedings of the 43nd Annual Meeting of the Association for Computational Linguistics</hi> (ACL 2005), 363-370. http://nlp.stanford.edu/~manning/papers/gibbscrf3.pdf [5.5.2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">Foucault, Michel (2008): "Die Ordnung der Dinge" In: Ders. 
+                        <hi rend="italic">Hauptwerke</hi>. Frankfurt am Main: Suhrkamp, 7-470.
+                    </bibl>
+                    <bibl style="text-align: left; ">Husserl, Edmund (2007; 1991): 
+                        <hi rend="italic">Ding Und Raum</hi>. Hamburg: Meiner.
+                    </bibl>
+                    <bibl style="text-align: left; ">Jannidis, Fotis, Krug, Markus, Reger, Isabella, Toepfer, Martin, Weimer, Lukas und Puppe, Frank (2015): „Automatische Erkennung von Figuren in deutschsprachigen Romanen“. In: 
+                        <hi rend="italic">Von Daten zu Erkenntnissen</hi>, 1–6. Graz. http://gams.uni-graz.at/o:dhd2015.abstracts-vortraege [5.5.2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">Kant, Immanuel (2006; 1768): „Von dem ersten Grunde des Unterschiedes der Gegenden im Raum.“ In: Dünne, J.rg und Günzel, Stephan (Hrsg.): 
+                        <hi rend="italic">Raumtheorie</hi>. Grundlagentexte aus Philosophie und Kulturwissenschaften. Suhrkamp: Frankfurt/Main, S. 74-76.
+                    </bibl>
+                    <bibl style="text-align: left; ">Kuhn, Jonas (2018): “Computerlinguistische Textanalyse in der Literaturwissenschaft? Oder: »The Importance of Being Earnest« bei quantitativen Untersuchungen”. In: Bernhart, T., Willand, M., Richter, S. and Albrecht, A. ed. 
+                        <hi rend="italic">Quantitative Ansätze in den Literatur- und Geisteswissenschaften: Systematische und historische Perspektiven</hi>. Berlin, Boston: De Gruyter, pp. 11-44.
+                        <ref target="https://doi.org/10.1515/9783110523300-002" xml:space="preserve"> https://doi.org/10.1515/9783110523300-002</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">Leibniz, Gottfried Wilhelm (2014; 1714): 
+                        <hi rend="italic">Monadologie Und Andere Metaphysische Schriften</hi>. Hamburg: Felix Meiner Verlag. DOI: https://dx.doi.org/10.28937/978-3-7873-2117-9 [29.4.2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">Piatti, Barbara (2008). 
+                        <hi rend="italic">Die Geographie Der Literatur</hi>. Göttingen: Wallstein.
+                    </bibl>
+                    <bibl style="text-align: left; ">Reiter, Nils (2020): „Anleitung zur Erstellung von Annotationsrichtlinien“. In: Reiter, Nils, Pichler, Axel und Kuhn, Jonas (Hrsg.): 
+                        <hi rend="italic">Reflektierte algorithmische Textanalyse</hi>. Berlin, Boston: de Gruyter, Seiten 193-202.
+                    </bibl>
+                    <bibl style="text-align: left; ">Ryan, Marie-Laure, Foote, Kenneth E. und Azaryahu, Maoz (2016): 
+                        <hi rend="italic">Narrating Space, spatializing narrative. Where narrative theory and geography meet</hi>. Columbus: Ohio State University Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">Schruhl, Friederike (2018): "Quantifizieren in der Interpretationspraxis der Digital Humanities". 
+                        <hi rend="italic">Quantitative Ansätze in den Literatur- und Geisteswissenschaften: Systematische und historische Perspektiven</hi>, edited by Toni Bernhart, Marcus Willand, Sandra Richter and Andrea Albrecht, Berlin, Boston: De Gruyter, 2018, pp. 235-268.
+                        <ref target="https://doi.org/10.1515/9783110523300-011" xml:space="preserve"> https://doi.org/10.1515/9783110523300-011</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">Schumacher, Mareike K. (2021): 
+                        <hi rend="italic">Raum-Classifier</hi> (kompatibel mit StanfordNER) (v1.0.0). Zenodo. 
+                        <ref target="https://doi.org/10.5281/zenodo.4992662">https://doi.org/10.5281/zenodo.4992662</ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">Schumacher, Mareike K. (forthcoming): 
+                        <hi rend="italic">Orte und Räume im Roman. Ein Beitrag zur digitalen Literaturwissenschaft</hi>. Berlin, Heidelberg: Metzler.
+                    </bibl>
+                    <bibl style="text-align: left; ">Sutton, Charles, und McCallum, Andrew (2007): 
+                        <hi rend="italic">An Introduction to Conditional Random Fields for Relational Learning</hi>. https://people.cs.umass.edu/~mccallum/papers/crf-tutorial.pdf [24.4.2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">Schumacher, Mareike und Flüh, Marie (2020): "m*w: Figurengender zwischen Stereotypisierung und literarischen und theoretischen Spielräumen. Genderstereotype und -bewertungen in der Literatur des 19. Jahrhunderts." In: Schöch, Christof (2020). 
+                        <hi rend="italic">DHd 2020 Spielräume: Digital Humanities zwischen Modellierung und Interpretation</hi>. Konferenzabstracts. DOI: http://doi.org/10.5281/zenodo.3666690 [22.3.2020].
+                    </bibl>
+                    <bibl style="text-align: left; ">Viehauser, Gabriel (2020): „Zur Erkennung von Raum in narrativen Texten“. In: Reiter, Nils, Pichler, Axel und Kuhn, Jonas: 
+                        <hi rend="italic">Reflektierte algorithmische Textanalyse</hi>. Berlin: de Gruyter, 373-390.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Getting Started with the Advanced Research Consortium</title>
+                <author>
+                    <persName>
+                        <surname>Liebe</surname>
+                        <forename>Lauren</forename>
+                    </persName>
+                    <affiliation>Texas A&amp;M University, United States of America</affiliation>
+                    <email>leliebe@tamu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mandell</surname>
+                        <forename>Laura</forename>
+                    </persName>
+                    <affiliation>Texas A&amp;M University, United States of America</affiliation>
+                    <email>mandell@tamu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tarpley</surname>
+                        <forename>Bryan</forename>
+                    </persName>
+                    <affiliation>Texas A&amp;M University, United States of America</affiliation>
+                    <email>bptarpley@tamu.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T14:12:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>research</term>
+                    <term>peer review</term>
+                    <term>project management</term>
+                    <term>discoverability</term>
+                    <term>digital resources</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>linked (open) data</term>
+                    <term>History</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Workshop Description</head>
+                <p>This workshop will serve as an introduction to the 
+                    <ref target="http://ar-c.org/">
+                        <hi rend="color(1155CC)">Advanced Research Consortium</hi>
+                    </ref> (ARC), a vibrant community of researchers who peer review and curate digital cultural heritage materials for humanities research. 
+                </p>
+                <p>Since 2004 with the founding of
+                    <ref target="http://www.nines.org/">
+                        <hi rend="color(1155CC)">NINES</hi>
+                    </ref>, ARC has the dual goals of providing a vetting community for digital scholarship in particular fields and a technological infrastructure to support dissemination and use of this scholarship.
+                    <hi rend="color(222222)" xml:space="preserve"> In addition to</hi>
+                    <ref target="http://www.nines.org/">
+                        <hi rend="color(1155CC)">NINES.org</hi>
+                    </ref>, ARC communities include
+                    <ref target="http://18thconnect.org/">
+                        <hi rend="color(1155CC)">18thConnect.org</hi>
+                    </ref>
+                    <hi rend="color(222222)">,</hi>
+                    <ref target="http://www.mesa-medieval.org/">
+                        <hi rend="color(1155CC)">MESA-medieval.org</hi>
+                    </ref>
+                    <hi rend="color(222222)">, Modernist Networks (</hi>
+                    <ref target="http://modnets.org/">
+                        <hi rend="color(1155CC)">ModNets.org</hi>
+                    </ref>
+                    <hi rend="color(222222)">), and SiRO (</hi>
+                    <ref target="http://www.studiesinradicalism.org/">
+                        <hi rend="color(1155CC)">Studies in Radicalism Online.org</hi>
+                    </ref>
+                    <hi rend="color(222222)">), with others currently organizing in the fields of early American studies and disability studies. The ARC community seeks to develop itself towards greater cultural inclusiveness.</hi>
+                </p>
+                <p>The workshop begins by teaching researchers how to use ARC to enhance their research through searching both open access and proprietary resources curated by field experts. Because ARC’s catalog includes a wide array of resources not generally cataloged by university libraries or other discovery services, using ARC allows for more nuanced searching, particularly for primary materials. Additionally, this portion of the workshop will preview the Corpora Dataset Studio for researchers interested in further developing their own digital projects. </p>
+                <p>Next, the workshop familiarizes researchers with the process of submitting their own projects or datasets for inclusion in ARC. To contribute to ARC, projects must undergo both content and technical peer review. Once peer review has been successfully passed, metadata about each digital artifact in the project is added to ARC’s catalog, which then links back to the project itself. Inclusion in ARC makes independent digital humanities projects more easily discoverable and allows for greater interoperability between different projects and proprietary data from resources such as JSTOR and Adam Matthew. Furthermore, ARC’s work with the 
+                    <ref target="https://lincsproject.ca/">
+                        <hi rend="color(1155CC)">Linked Infrastructure for Networked Cultural Scholarship</hi>
+                    </ref> (LINCS) project means that each included project will be enhanced through the inclusion of linked open data.
+                </p>
+                <p>Finally, the workshop will discuss the process for creating new period-specific or thematic research nodes within ARC. Historically, ARC’s nodes have been quite broad, encompassing broadly defined periods such as the eighteenth century or modernism. However, in order to facilitate greater collaboration between digital humanities projects, ARC is now developing smaller, more specific nodes to address individual scholarly communities. In order to expand our offerings, ARC seeks proposals for editorial groups who wish to serve scholarly communities with particular interests — e.g., early modern book history, eighteenth-century Caribbean literature, animal studies, Victorian children’s literature, etc. This portion of the workshop will include discussion of forming content and technical editorial boards, locating relevant projects, managing peer review, and working with the ARC office to create a user interface. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Workshop Instructors</head>
+                <p>
+                    <hi rend="underline">Dr. Laura Mandell</hi> (
+                    <ref target="mailto:mandell@tamu.edu">
+                        <hi rend="color(1155CC)">mandell@tamu.edu</hi>
+                    </ref>) — Laura Mandell is the author of 
+                    <ref target="http://www.amazon.com/Breaking-Book-Humanities-Wiley-Blackwell-Manifestos/dp/1118274555/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1455487538&amp;sr=1-1&amp;keywords=laura+mandell+Breaking+Book">
+                        <hi rend="color(1155CC)">Breaking the Book: Print Humanities in the Digital Age (2015)</hi>
+                    </ref>, Misogynous Economies: The Business of Literature in Eighteenth-Century Britain (1999), and, recently, “Gendering Digital Literary History: What Counts for Digital Humanities,” in the New Companion to Digital Humanities (Blackwell 2016). She is Project Director of the Poetess Archive, an online scholarly edition and database of women poets, 1750-1900 (
+                    <ref target="http://www.poetessarchive.org/">
+                        <hi rend="color(1155CC)">http://www.poetessarchive.org</hi>
+                    </ref>), Acquisitions Editor of 18thConnect (
+                    <ref target="http://www.18thconnect.org/">
+                        <hi rend="color(1155CC)">http://www.18thConnect.org</hi>
+                    </ref>), and Director of ARC (
+                    <ref target="http://www.ar-c.org/">
+                        <hi rend="color(1155CC)">http://www.ar-c.org</hi>
+                    </ref>), the Advanced Research Consortium overseeing NINES, 18thConnect, and MESA.  She spearheaded the Early Modern OCR project or “eMOP” (
+                    <ref target="http://emop.tamu.edu/">
+                        <hi rend="color(1155CC)">http://emop.tamu.edu</hi>
+                    </ref>), a project concerned with improving OCR for early modern and 18th-c. texts via high performance and cluster computing, and is currently at work on a text-mining project to discover emergent genders in essays and novels comprising the Feminist Controversy debates in England, 1788-1810.
+                </p>
+                <p>
+                    <hi rend="underline">Dr. Bryan Tarpley</hi> (
+                    <ref target="mailto:bptarpley@tamu.edu">
+                        <hi rend="color(1155CC)">bptarpley@tamu.edu</hi>
+                    </ref>) — Bryan Tarpley is Associate Research Scientist of Critical Infrastructure Studies at the Center of Digital Humanities Research at Texas A&amp;M University. He is also the Associate Director of Technology for the Advanced Research Consortium (
+                    <ref target="http://ar-c.org/">
+                        <hi rend="color(1155CC)">ar-c.org</hi>
+                    </ref>). Dr. Tarpley’s recent software development includes the Corpora Dataset Studio, to be released open source in 2023.
+                </p>
+                <p>
+                    <hi rend="underline">Dr. Lauren Liebe</hi> (
+                    <ref target="mailto:leliebe@tamu.edu">
+                        <hi rend="color(1155CC)">leliebe@tamu.edu</hi>
+                    </ref>) — Lauren Liebe is a postdoctoral researcher at Texas A&amp;M University, where she serves as the project manager of the Advanced Research Consortium. Her doctoral research focused on the intertwining of politics and theatrical performance during the English Restoration. She is also the creator of Digital Restoration Drama (
+                    <ref target="http://restorationdrama.org">
+                        <hi rend="color(1155CC)">restorationdrama.org</hi>
+                    </ref>), a database of TEI-encoded Restoration playtexts. 
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Description of target audience and expected number of participants</head>
+                <p>The target audience for this workshop is scholars who are interested in collaborating to form new thematic research nodes to join the Advanced Research Consortium. </p>
+                <p>This workshop is open to all interested participants. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Syllabus (3 hour workshop) </head>
+                <list rend="bulleted">
+                    <item>What is ARC? (10 minutes) </item>
+                    <item>Using ARC (45 minutes) 
+                        <list rend="bulleted">
+                            <item>Researching via the nodes</item>
+                            <item>BigDIVA</item>
+                            <item>Corpora</item>
+                        </list>
+                    </item>
+                    <item>Contributing to ARC (40 minutes)
+                        <list rend="bulleted">
+                            <item>Submitting for peer review</item>
+                            <item>Peer review process</item>
+                            <item>Metadata ingestion</item>
+                            <item>Linked open data</item>
+                        </list>
+                    </item>
+                    <item>Break (15 minutes)</item>
+                    <item>Developing an ARC Node (50 minutes)
+                        <list rend="bulleted">
+                            <item>Determining scope</item>
+                            <item>Directors and editorial boards</item>
+                            <item>Determining relevant resources for the research environment (digital projects, datasets, journals, library collections, proprietary digital resources)</item>
+                            <item>Designing your Collex instance</item>
+                            <item>ARC Office Contributions
+                                <list rend="bulleted">
+                                    <item>Conducting Peer Review</item>
+                                    <item>Negotiating, obtaining, and ingesting metadata from open access projects and vendors</item>
+                                    <item>Node maintenance, including the solicitation of classroom and exhibit features. </item>
+                                </list>
+                            </item>
+                        </list>
+                    </item>
+                    <item>Q&amp;A session (20 minutes)</item>
+                </list>
+            </div>
+        </body>
+    </text>
+</TEI>

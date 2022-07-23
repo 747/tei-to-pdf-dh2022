@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Infrastructural Sovereignty in the Black Atlantic</title>
+                <author>
+                    <persName>
+                        <surname>Thorat</surname>
+                        <forename>Dhanashree</forename>
+                    </persName>
+                    <affiliation>Mississippi State University, United States of America</affiliation>
+                    <email>dhanashreepune@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-17T03:36:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Infrastructure</term>
+                    <term>Sovereignty</term>
+                    <term>Postcolonialism</term>
+                    <term>Media Archaeology</term>
+                    <term>Black Digital Humanities</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Africa</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>18th Century</term>
+                    <term>Contemporary</term>
+                    <term>media archaeology</term>
+                    <term>rhetorical analysis</term>
+                    <term>African and African American Studies</term>
+                    <term>History of science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">In June 2019, Google announced a new undersea fiber-optic cable line connecting Portugal and South Africa and named the line “Equiano” after the eighteenth-century Black man who was sold into the Transatlantic Slave Trade and later purchased his own freedom. Undersea fiber-optic cable lines are the material backbone of the global Internet network and responsible for almost all Internet connectivity worldwide. In this presentation, I read Google’s infrastructural politics against the grain of Equiano’s autobiographical account, </hi>
+                <hi rend="italic" style="font-size:12pt">The Interesting Narrative of the Life of Olaudah Equiano, or Gustavus Vassa, the African</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> (1789), to locate how the afterlives of slavery and colonialism manifest in Internet infrastructure. Google’s choice of name for the new cable line enmeshes a historical moment with contemporary infrastructure threaded through by the iterative logic of racial subjugation. I argue that Internet infrastructural projects like Google’s new line reroute colonial ambitions, operating in the oceanic pathways of the slave trade and on the ideologies of racial capitalism now trading in datafied Black bodies. In the context of Google’s project, I pursue the deeper implications of Equiano’s invocation to ask how Internet corporations might acknowledge their own complicity in inherently inequitable projects of techno-modernity.</hi>
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">Methodologically, I draw on literary criticism and rhetorical analysis to illuminate historically situated (infra)structural modalities by specifically focusing on Equiano’s autobiography and press releases by Google. I build on extant scholarship in Black digital humanities (Jessica Marie Johnson, 2018; Kim Gallon, 2016) and postcolonial and decolonial approaches to data justice (Paola Ricaurte, 2019, Syed Mustafa Ali, 2016; Roopika Risam, 2018; Abeha Birhane, 2019; Marisa Duarte, 2017; Noopur Raval, 2019) to examine how contemporary infrastructural projects undertaken by Internet era companies like Google, Microsoft, and Facebook ultimately enable datafication projects and algorithmic violence. I advance two threads of conversation: First, my paper highlights the implications of such cable projects for infrastructural sovereignty when Western and capitalist corporations drive the development of Internet infrastructure in postcolonial nation-states like Nigeria. Second, I forward Equiano’s testimony and his unrestrained desire for freedom as a call to reimagine infrastructural politics and data justice. </hi>
+            </p>
+            <p>
+                As Google begins construction on this new cable project, other tech corporations like Facebook have already made parallel competitive moves in other postcolonial locations. This model of Western ownership of key communications infrastructure undermines the long arc of independence struggles which wrested control away from colonial empires so that postcolonial countries could own and govern their own critical infrastructures. Until corporations and governments reconcile the violent histories that Internet infrastructures are part of and call into being, these projects will continue to channel reductive ideologies about the Global South and undermine the infrastructural sovereignty of postcolonial nations. The need for robust Internet infrastructures is likely to continue increasing in postcolonial countries with increases in data traffic, AI technologies, and ubiquitous computing worldwide, and it is imperative that we take account of and divest Internet infrastructures from the racial genealogies they emerge from.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Ali SM.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2016). “A brief introduction to decolonial computing.” </hi>
+                        <hi rend="italic" style="font-size:12pt">XRDS: Crossroads</hi>
+                        . 22 (4):16-21.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Birhane A.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2019). “The Algorithmic Colonization of Africa.” </hi>
+                        <hi rend="italic" style="font-size:12pt">Real Life Magazine</hi>
+                        . 18 July, 2019.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Equiano O</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. (1789). </hi>
+                        <hi rend="italic" style="font-size:12pt">The Interesting Narrative of the Life of Olaudah Equiano, or Gustavus Vassa, the African</hi>
+                        . Vol I &amp; II London. Accessed on Documenting the American South (Docsouth) website.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Duarte M.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2017). </hi>
+                        <hi rend="italic" style="font-size:12pt">Network Sovereignty: Building the Internet Across Indian Country</hi>
+                        . Seattle: U Washington Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Gallon K.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2016). “Making a Case for the Black Digital Humanities.” </hi>
+                        <hi rend="italic" style="font-size:12pt">Debates in the Digital Humanities</hi>
+                        . Minneapolis: U of Minnesota Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Johnson JM.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2018). Markup Bodies: Black [Life] Studies and Slavery [Death] Studies at the Digital Crossroads. </hi>
+                        <hi rend="italic" style="font-size:12pt">Social Text</hi>
+                        . 36.4: 57-79.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Raval N.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2019). “An Agenda for Decolonizing Data Science.” </hi>
+                        <hi rend="italic" style="font-size:12pt">Spheres: Journal for Digital Cultures</hi>
+                        . 5.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Ricaurte P.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2019). Data Epistemologies, Coloniality of Power, and Resistance. </hi>
+                        <hi rend="italic" style="font-size:12pt">Television &amp; New Media</hi>
+                        . 20.4: 350-365.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:12pt">Risam R.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2018). Decolonizing the Digital Humanities in Theory and Practice. </hi>
+                        <hi rend="italic" style="font-size:12pt">The Routledge Companion to Media Studies and Digital Humanities</hi>
+                        . Ed. Jentery Sayers. New York: Routledge. Print.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

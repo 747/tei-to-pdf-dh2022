@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Exploring the Correlations Between Picasso’s Artworks and his Personal Contacts</title>
+                <author>
+                    <persName>
+                        <surname>Meneses</surname>
+                        <forename>Luis</forename>
+                    </persName>
+                    <affiliation>Vancouver Island University, Canada</affiliation>
+                    <email>ldmm@uvic.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mallen</surname>
+                        <forename>Enrique</forename>
+                    </persName>
+                    <affiliation>Sam Houston State University, United States of America</affiliation>
+                    <email>edm012@shsu.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Picasso</term>
+                    <term>correlations</term>
+                    <term>artworks</term>
+                    <term>personal contacts</term>
+                    <term>time periods</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>text mining and analysis</term>
+                    <term>Art history</term>
+                    <term>Computer science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The digital humanities are at a turning point where we can digitize and analyze materials using computers with relative ease. The use of digital and computer-based methodologies can make these approaches seem innovative to researchers in the humanities, not necessarily because they are digital but because of the conclusions that can be reached. However, it is clear that we should make a departure from the traditional analyses used in other disciplines, devising our own methods to address our research questions 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"bArVLJsU","properties":{"formattedCitation":"(Orlandi, 2019)","plainCitation":"(Orlandi, 2019)","noteIndex":0},"citationItems":[{"id":636,"uris":["http://zotero.org/users/283672/items/FWSMYARZ"],"itemData":{"id":636,"type":"speech","abstract":"Digital Humanities, also known as Humanities Computing, developed slowly between 1946-1980, accompanied by a deep and attentive analysis of its principles and significance; while its rapid development in the following period was characterized by the utilization of the new technologies in software and communications.\n\nWe cannot but register satisfaction regarding the remarkable results obtained recently in university teaching. A large number of (mainly) European and American universities offer Digital Humanities, or some of its specialisms, as part of their curricula.\n\nFrom this point of view, one may affirm that the Digital Humanities has won its struggle to obtain official recognition. On the other hand, despite this achievement the impression remains that many of the methodological discussions of the first decades have not been sufficiently digested, and have not generated some kind of general agreement — a kind of “Kuhnian paradigm” of the discipline. The main scope of my lecture is to get back to the old discussions, with the benefit of new hindsights, to see what we can learn from them to address today’s problems, if properly evaluated.","event":"Digital Humanities 2019","event-place":"Utrecht, The Netherlands","publisher-place":"Utrecht, The Netherlands","title":"Reflections on the Development of Digital Humanities","author":[{"family":"Orlandi","given":"Tito"}],"issued":{"date-parts":[["2019"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Orlandi, 2019).
+            </p>
+            <p>For some time now, our research has taken us through different approaches to analyze Picasso’s artistic legacy 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"xug2iUEj","properties":{"formattedCitation":"(Meneses et al., 2008a)","plainCitation":"(Meneses et al., 2008a)","noteIndex":0},"citationItems":[{"id":37,"uris":["http://zotero.org/users/283672/items/EIUDI9QT"],"itemData":{"id":37,"type":"paper-conference","container-title":"Proceedings of Digital Humanities 2008","event":"Digital Humanities 2008","page":"160 - 162","title":"Exploring the Biography and Artworks of Picasso with Interactive Calendars and Timelines","title-short":"Exploring the Biography and Artworks of Picasso with Interactive Calendars and Timelines","author":[{"family":"Meneses","given":"Luis"},{"family":"Furuta","given":"Richard"},{"family":"Mallen","given":"Enrique"}],"issued":{"date-parts":[["2008"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Meneses et al., 2008a), his poetry 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"cxVHdq2l","properties":{"formattedCitation":"(Meneses et al., 2008b)","plainCitation":"(Meneses et al., 2008b)","noteIndex":0},"citationItems":[{"id":36,"uris":["http://zotero.org/users/283672/items/D87ZGA7M"],"itemData":{"id":36,"type":"paper-conference","container-title":"Proceedings of Digital Humanities 2008","event":"Digital Humanities 2008","page":"157 - 159","title":"Picasso’s Poetry: The Case of a Bilingual Concordance","author":[{"family":"Meneses","given":"Luis"},{"family":"Monroy","given":"Carlos"},{"family":"Mallen","given":"Enrique"},{"family":"Furuta","given":"Richard"}],"issued":{"date-parts":[["2008"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Meneses et al., 2008b), its semantic domains 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"viURFkw6","properties":{"formattedCitation":"(Meneses and Mallen, 2017)","plainCitation":"(Meneses and Mallen, 2017)","noteIndex":0},"citationItems":[{"id":35,"uris":["http://zotero.org/users/283672/items/3UVW29US"],"itemData":{"id":35,"type":"speech","event":"Digital Humanities 2017","event-place":"Montreal, Canada","publisher-place":"Montreal, Canada","title":"Semantic Domains in Picasso’s Poetry","author":[{"family":"Meneses","given":"Luis"},{"family":"Mallen","given":"Enrique"}],"issued":{"date-parts":[["2017",8,8]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Meneses and Mallen, 2017) and its distinctions 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"VqtOABuA","properties":{"formattedCitation":"(Meneses and Mallen, 2018)","plainCitation":"(Meneses and Mallen, 2018)","noteIndex":0},"citationItems":[{"id":913,"uris":["http://zotero.org/users/283672/items/2TPM28HN"],"itemData":{"id":913,"type":"speech","event":"Digital Humanities 2018","event-place":"Mexico City, Mexico","publisher-place":"Mexico City, Mexico","title":"Distinctions between Conceptual Domains in the Bilingual Poetry of Pablo Picasso","author":[{"family":"Meneses","given":"Luis"},{"family":"Mallen","given":"Enrique"}],"issued":{"date-parts":[["2018",6,24]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Meneses and Mallen, 2018). We also used computer vision to identify the graphic elements in Picasso’s poetry 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"sJL8MDEL","properties":{"formattedCitation":"(Meneses and Mallen, 2020)","plainCitation":"(Meneses and Mallen, 2020)","noteIndex":0},"citationItems":[{"id":914,"uris":["http://zotero.org/users/283672/items/KSW9NYCN"],"itemData":{"id":914,"type":"speech","event":"Digital Humanities 2020","event-place":"Ottawa, ON, Canada","publisher-place":"Ottawa, ON, Canada","title":"Using computer vision to identify graphic elements in Picasso’s poetry","author":[{"family":"Meneses","given":"Luis"},{"family":"Mallen","given":"Enrique"}],"issued":{"date-parts":[["2020",7,22]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Meneses and Mallen, 2020). However, there are many facets of Picasso as an artist that are still unexplored.
+            </p>
+            <p>Many authors have argued that there is a correlation between the person Picasso was with at a certain time and what he painted then, hence the so-called Olga Period, Marie-Thérèse Years, Dora Maar Years, etc. 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"fWYTdh9T","properties":{"formattedCitation":"(Freeman, 1994)","plainCitation":"(Freeman, 1994)","noteIndex":0},"citationItems":[{"id":915,"uris":["http://zotero.org/users/283672/items/I2QXG2LY"],"itemData":{"id":915,"type":"book","call-number":"ND553.P5 A4 1994","event-place":"Los Angeles, Calif. : New York","ISBN":"978-0-8478-1800-6","number-of-pages":"215","publisher":"Los Angeles County Museum of Art ; Rizzoli","publisher-place":"Los Angeles, Calif. : New York","source":"Library of Congress ISBN","title":"Picasso and the weeping women: the years of Marie-Thérèse Walter & Dora Maar","title-short":"Picasso and the weeping women","author":[{"family":"Freeman","given":"Judi"}],"issued":{"date-parts":[["1994"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Freeman, 1994) 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"K3hbWejD","properties":{"formattedCitation":"(M\\uc0\\u252{}ller et al., 2002)","plainCitation":"(Müller et al., 2002)","noteIndex":0},"citationItems":[{"id":926,"uris":["http://zotero.org/users/283672/items/YHIJ3MAM"],"itemData":{"id":926,"type":"book","call-number":"N6853.P5 A4 2002h","event-place":"Bielefeld","ISBN":"978-3-933040-95-4","language":"eng","note":"OCLC: ocm51061662","number-of-pages":"239","publisher":"Kerber","publisher-place":"Bielefeld","source":"Library of Congress ISBN","title":"Pablo Picasso: the time with Francoise Gilot","title-short":"Pablo Picasso","author":[{"family":"Müller","given":"Markus"},{"family":"Picasso","given":"Pablo"},{"family":"Andral","given":"Jean-Louis"},{"family":"Picasso","given":"Bernard Ruiz"}],"issued":{"date-parts":[["2002"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Müller et al., 2002). We propose to verify if this correlation exists by examining how frequently specific individuals found in Picasso’s biography are mentioned with respect to each other, and then correlate those frequencies with specific techniques, artworks, places, periods, etc. For this purpose, we will use the entries found on the extensive Online Picasso Project biographical narrative.
+            </p>
+            <p>The Online Picasso Project 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"XtnN0b57","properties":{"formattedCitation":"(Mallen, 2018)","plainCitation":"(Mallen, 2018)","noteIndex":0},"citationItems":[{"id":112,"uris":["http://zotero.org/users/283672/items/6ZVTC7IS"],"itemData":{"id":112,"type":"webpage","title":"Online Picasso Project","URL":"https://picasso.shsu.edu/","author":[{"family":"Mallen","given":"Enrique"}],"accessed":{"date-parts":[["2018",2,23]]},"issued":{"date-parts":[["2018"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Mallen, 2018) originated from an emphasis on an interactive, digitally encoded art publication, moving away from an understanding of art criticism as predominantly stative and print-based. It consists of a complex system of interrelated databases which include both texts and images pertaining to Pablo Picasso. As a result of close collaboration between art scholars and computer scientists, the Picasso Project has adopted an innovative architecture with three major objectives: First: to facilitate the maintenance of a large collection of artworks along with its associated critical narratives. Second, to overcome the limitations of printed art publications; and third, to provide new ways for composing, browsing, and exploring the artworks in ways not possible with printed versions. The biographical entries included in the Online Picasso Project are particularly important since they provide a historical framework that is crucial to the understanding of the artist’s legacy which is tightly bound to the experiences he had in his life. Our study aims to employ this historical framework to highlight the hidden connections between Picasso’s life and his artistic output.
+            </p>
+            <p>Our methodology is based on the taxonomy-based approach that we have used to identify the semantic domains in Picasso’s poetry 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"6ij2IIJx","properties":{"formattedCitation":"(Meneses and Mallen, 2019)","plainCitation":"(Meneses and Mallen, 2019)","noteIndex":0},"citationItems":[{"id":929,"uris":["http://zotero.org/users/283672/items/WA2JYYWZ"],"itemData":{"id":929,"type":"article-journal","abstract":"Abstract\n The question of why Pablo Picasso dedicated a considerable amount of his time to writing around 1935 is open to speculation. Many have cited, among possible causes: the Spanish artist’s emotional crisis, the political turmoil in Europe in the period between the two wars, and the menace of a confrontation in Spain. All of these views are predicated on an assumed irreducible conflict between visual composition and verbal expression. However, we cannot forget that Picasso’s interest in alternative methods of expression might have started with his fascination for linguistic structure as a whole during his cubist period. In this article, we explore the possibility that the transition into poetry that we observe in Picasso is simply one more manifestation of his pursuit of alternative approaches to language as a means of representation. In this sense, one thing that remained to be determined was how concrete concepts in both languages cluster into representative semantic categories and how these categories interact with each other in semantic networks.","container-title":"Digital Scholarship in the Humanities","DOI":"10.1093/llc/fqy078","ISSN":"2055-7671, 2055-768X","issue":"Supplement_1","language":"en","page":"i123-i128","source":"DOI.org (Crossref)","title":"Semantic domains in Picasso’s poetry","volume":"34","author":[{"family":"Meneses","given":"Luis"},{"family":"Mallen","given":"Enrique"}],"issued":{"date-parts":[["2019",12,1]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Meneses and Mallen, 2019), but with three differences. First, we analyze 
+                <hi rend="background(white)" xml:space="preserve">the </hi>term frequency-inverse document frequency (
+                <hi rend="background(white)" xml:space="preserve">TF-IDF) </hi>for keywords in 
+                <hi rend="background(white)" xml:space="preserve">each biographical entry in the databases of the Online Picasso Project. TF-IDF is a statistical measure that evaluates how relevant a word is to a document in a collection of documents. More specifically, </hi>from a list of relationships/friends/dealers, we examine who are mentioned the most and how they are related to each other. For instance, are certain dealers mentioned when a certain model is also mentioned? Second, we analyze how the frequencies in those mentions correlate with specific years/seasons/months. If so, might there be a demonstrable correlation not only with a certain model, but also with a certain dealer or collector in specific periods in his career? Finally, are certain techniques (oil, watercolor, gouache, etc) more frequent in some of those periods? If so, could they be related to the people he is in contact with? Our computational analysis aims to objectively confirm correlations that until now have been simply stipulated by art scholars.
+            </p>
+            <p>
+                <hi rend="background(white)" xml:space="preserve">To summarize, we propose to explore and verify the correlations </hi>between Picasso’s personal contacts at certain times and his artistic output. This correlation will also provide 
+                <hi rend="background(white)">an alternate method for exploring the existing document collection by using a curated list of keywords and metadata as an ordering criterion. In this sense, the presentation of our results draws upon our previous work that utilized interactive calendars and timelines, as it also involves utilizing appropriate user interfaces to visualize the results. In the end, the methodological contribution of our proposal is to exemplify the departure from traditional analysis while devising our own methods that are based on other disciplines (in this case statistics and computer science) to address research questions that are unique to the digital humanities.</hi>
+            </p>
+        </body>
+    </text>
+</TEI>

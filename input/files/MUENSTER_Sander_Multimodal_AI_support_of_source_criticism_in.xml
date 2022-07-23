@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Multimodal AI support of source criticism in the humanities – work in progress</title>
+                <author>
+                    <persName>
+                        <surname>Muenster</surname>
+                        <forename>Sander</forename>
+                    </persName>
+                    <affiliation>FSU Jena, Germany</affiliation>
+                    <email>sander.muenster@uni-jena.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bruschke</surname>
+                        <forename>Jonas</forename>
+                    </persName>
+                    <affiliation>JMU Wuerzburg, Germany</affiliation>
+                    <email>jonas.bruschke@uni-wuerzburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hoppe</surname>
+                        <forename>Stephan</forename>
+                    </persName>
+                    <affiliation>LMU Muenchen, Germany</affiliation>
+                    <email>stephan.hoppe@lmu.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Maiwald</surname>
+                        <forename>Ferdinand</forename>
+                    </persName>
+                    <affiliation>FSU Jena, Germany</affiliation>
+                    <email>ferdinand.maiwald@uni-jena.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Niebling</surname>
+                        <forename>Florian</forename>
+                    </persName>
+                    <affiliation>JMU Wuerzburg, Germany</affiliation>
+                    <email>florian.nuebling@uni-wuerzburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pattee</surname>
+                        <forename>Aaron</forename>
+                    </persName>
+                    <affiliation>LMU Muenchen, Germany</affiliation>
+                    <email>aaron.pattee@lmu.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Utescher</surname>
+                        <forename>Ronja</forename>
+                    </persName>
+                    <affiliation>U. Bielefeld, Germany</affiliation>
+                    <email>ronja.utescher@uni-bielefeld.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Zarriess</surname>
+                        <forename>Sina</forename>
+                    </persName>
+                    <affiliation>U. Bielefeld, Germany</affiliation>
+                    <email>sina.Zarriess@uni-bielefeld.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T05:56:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>AI</term>
+                    <term>Source Criticism</term>
+                    <term>History</term>
+                    <term>Multimodality</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>spatial &amp; spatio-temporal analysis</term>
+                    <term>modeling and visualization</term>
+                    <term>Art history</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p rend="ewic-Introduction" style="font-weight: bold; text-align: left; ">Introduction</p>
+            <p>The use of images, texts and objects is an essential foundation of history studies. This project funded by the 
+                <hi rend="italic">German Ministry of Education and Research</hi> (BMBF), seeks to establish an AI-based approach towards modelling image sources and their multimodal contexts as a new technique for researchers in architectural history studies. Related questions are: How do architectural historians discover and evaluate sources? How can AI best be of service to this end? 
+            </p>
+            <p rend="ewic-Introduction" style="font-weight: bold; text-align: left; ">State of the Art</p>
+            <p>The point of departure for this project is the use of sources and source criticism in history studies. This is usually led by a constructive problem-oriented approach, featuring a critical analysis of the topics and methodologies in question 
+                <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Reich</Author><Year>2006</Year><RecNum>9787</RecNum><DisplayText>(Reich, 2006)</DisplayText><record><rec-number>9787</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1584554411" guid="28f9c57a-41ea-438b-a19a-05c6881111fe">9787</key></foreign-keys><ref-type name="Book Section">5</ref-type><contributors><authors><author>Kersten Reich</author></authors></contributors><titles><title>Konstruktivistische Ansätze in den Sozial- und Kulturwissenschaften</title><secondary-title>Konstruktivistische Didaktik: Lehr-und Studienbuch mit Methodenpool</secondary-title></titles><pages>356-376</pages><dates><year>2006</year></dates><publisher>Beltz</publisher><urls></urls></record></Cite></EndNote>?>(Reich, 2006) and is highly experience and tacit knowledge based 
+                <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Polanyi</Author><Year>1966</Year><RecNum>2030</RecNum><DisplayText>(Polanyi, 1966)</DisplayText><record><rec-number>2030</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1584539080" guid="862bb5c1-3e51-4f5e-8673-b1eeb25484ff">2030</key></foreign-keys><ref-type name="Book">6</ref-type><contributors><authors><author>Polanyi, Michael</author></authors></contributors><titles><title>The tacit dimension</title></titles><edition>18th edition (2009)</edition><dates><year>1966</year></dates><pub-location>Chicago</pub-location><publisher>University of Chicago Press</publisher><urls></urls></record></Cite></EndNote>?>(Polanyi, 1966).
+            </p>
+            <p>
+                <hi rend="italic">Language &amp; Vision</hi>: Deep Learning (DL) prove themselves ideal for 
+                <hi rend="italic">transfer learning</hi> at the intersection of image and language processing. For example, semantic representations such as 
+                <hi rend="italic">word</hi> or 
+                <hi rend="italic">sentence embeddings</hi>, which the computer learns from texts, are enriched by multimodal data such as image descriptions paired with actual visual representations 
+                <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Hessel</Author><Year>2019</Year><RecNum>12513</RecNum><DisplayText>(Hessel et al., 2019)</DisplayText><record><rec-number>12513</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1626329748" guid="7ae1e98c-82d4-4ae1-98ea-cd98291f625b">12513</key></foreign-keys><ref-type name="Conference Proceedings">10</ref-type><contributors><authors><author>Jack Hessel</author><author>Lillian Lee</author><author>David Mimno</author></authors></contributors><titles><title>Unsupervised Discovery of Multimodal Links in Multi-image, Multi-sentence Documents</title><secondary-title>Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)</secondary-title></titles><dates><year>2019</year></dates><urls></urls></record></Cite></EndNote>?>(Hessel et al., 2019). However, for the extraction of multimodal information from scientific texts, it is still necessary to refine the referential connections between text and image components 
+                <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Utescher</Author><Year>2021</Year><RecNum>12514</RecNum><DisplayText>(Utescher and Zarrieß, 2021)</DisplayText><record><rec-number>12514</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1626329837" guid="7d8e51d0-ef6a-4751-a624-a2d75f45bdf1">12514</key></foreign-keys><ref-type name="Conference Proceedings">10</ref-type><contributors><authors><author>Ronja Utescher</author><author>Sina Zarrieß</author></authors></contributors><titles><title>What Did This Castle Look like before? Exploring Referential Relations in Naturally Occurring Multimodal Texts&#xD;</title><secondary-title>Proceedings of the Third Workshop on Beyond Vision and LANguage: inTEgrating Real-world kNowledge (LANTERN)</secondary-title></titles><dates><year>2021</year></dates><urls><related-urls><url>https://aclanthology.org/2021.lantern-1.5</url></related-urls></urls></record></Cite></EndNote>?>(Utescher and Zarrieß, 2021).
+            </p>
+            <p>
+                <hi rend="italic">Segmentation and Object Recognition</hi>: Photogrammetric processes deliver spatial relations between the photographs and the 3D geometries. The datasets that are developed in this method allow for the automatic segmentation 
+                <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Martinovic</Author><Year>2015</Year><RecNum>9811</RecNum><DisplayText>(Martinovic et al., 2015, Hackel et al., 2016)</DisplayText><record><rec-number>9811</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1584554451" guid="0266a30b-b000-43cb-83b0-81ee00a1c2f2">9811</key></foreign-keys><ref-type name="Conference Proceedings">10</ref-type><contributors><authors><author>Martinovic, A.</author><author>Knopp, J.</author><author>Riemenschneider, H.</author><author>Van Gool, L.</author></authors></contributors><titles><title>3d all the way: Semantic segmentation of urban scenes from start to end in 3d</title><secondary-title>IEEE Computer Vision &amp; Pattern Recognition</secondary-title></titles><pages>4456–4465</pages><dates><year>2015</year></dates><urls></urls></record></Cite><Cite><Author>Hackel</Author><Year>2016</Year><RecNum>9812</RecNum><record><rec-number>9812</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1584554451" guid="01ba1e07-ea65-4c6b-8717-9a26672dbfae">9812</key></foreign-keys><ref-type name="Journal Article">17</ref-type><contributors><authors><author>Hackel, T.</author><author>Wegner, J. D.</author><author>Schindler, K.</author></authors></contributors><titles><title>Fast semantic segmentation of 3D point clouds with strongly varying density</title><secondary-title>ISPRS Annals</secondary-title></titles><periodical><full-title>ISPRS Annals</full-title></periodical><pages>177–184</pages><volume>3</volume><number>3</number><dates><year>2016</year></dates><urls></urls></record></Cite></EndNote>?>(Martinovic et al., 2015, Hackel et al., 2016) of simple structures 
+                <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Vosselman</Author><Year>2004</Year><RecNum>9808</RecNum><DisplayText>(Vosselman et al., 2004)</DisplayText><record><rec-number>9808</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1584554451" guid="491e5a6e-0621-41da-9bac-42c03de42962">9808</key></foreign-keys><ref-type name="Journal Article">17</ref-type><contributors><authors><author>Vosselman, G.</author><author>Gorte, B. G.</author><author>Sithole, G.</author><author>Rabbani, T.</author></authors></contributors><titles><title>Recognising structure in laser scanner point clouds</title><secondary-title>ISPRS Archives</secondary-title></titles><periodical><full-title>ISPRS Archives</full-title></periodical><pages>33-38</pages><volume>46</volume><number>8</number><dates><year>2004</year></dates><urls></urls></record></Cite></EndNote>?>(Vosselman et al., 2004), as well as a complex objects such as buildings 
+                <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Li</Author><Year>2016</Year><RecNum>9806</RecNum><DisplayText>(Li et al., 2016, Agarwal et al., 2011)</DisplayText><record><rec-number>9806</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1584554451" guid="9ef76747-8f3f-4db4-9513-acdf864e4e4c">9806</key></foreign-keys><ref-type name="Journal Article">17</ref-type><contributors><authors><author>Li, M.</author><author>Nan, L.</author><author>Smith, N.</author><author>Wonka, P.</author></authors></contributors><titles><title>Reconstructing building mass models from UAV images</title><secondary-title>Computers &amp; Graphics</secondary-title></titles><periodical><full-title>Computers &amp; Graphics</full-title></periodical><pages>84-93</pages><volume>54</volume><dates><year>2016</year></dates><urls></urls></record></Cite><Cite><Author>Agarwal</Author><Year>2011</Year><RecNum>7526</RecNum><record><rec-number>7526</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1584548460" guid="d1c46b12-e8f6-4093-b1ae-15e0cb7144ef">7526</key></foreign-keys><ref-type name="Journal Article">17</ref-type><contributors><authors><author>Agarwal, S.</author><author>Furukawa, Y.</author><author>Snavely, N.</author><author>Simon, I.</author><author>Curless, B.</author><author>Seitz, S. M.</author><author>Szeliski, R.</author></authors></contributors><titles><title>Building rome in a day</title><secondary-title>Communications of the ACM</secondary-title></titles><periodical><full-title>Communications of the ACM</full-title></periodical><pages>105</pages><volume>54</volume><number>10</number><dates><year>2011</year></dates><urls></urls></record></Cite></EndNote>?>(Li et al., 2016, Agarwal et al., 2011). 
+            </p>
+            <p>Machine Learning (ML) is playing an ever increasing role in the segmentation of images and object recognition 
+                <?biblio ADDIN EN.CITE?>
+                <?biblio ADDIN EN.CITE.DATA?>(Minaee et al., 2021, Jiao et al., 2019).
+            </p>
+            <p rend="ewic-Introduction" style="font-weight: bold; text-align: left; ">Research Outline</p>
+            <p>The following will provide a brief overview of the first steps in the research.</p>
+            <list rend="numbered">
+                <item>
+                    <hi rend="bold">Identifying Research Scenarios</hi>
+                </item>
+            </list>
+            <p>A series of generic scenarios were identified with the assistance of expert consultation and workshops during the preliminary investigations 
+                <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Kröber</Author><Year>2021</Year><RecNum>12197</RecNum><DisplayText>(Kröber, 2021, Dewitz et al., 2019)</DisplayText><record><rec-number>12197</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1614865737" guid="27288d34-79db-4feb-95c9-2a9b87ad6a52">12197</key></foreign-keys><ref-type name="Book Section">5</ref-type><contributors><authors><author>Cindy Kröber</author></authors></contributors><titles><title>German Art History Students’ use of Digital Repositories: an Insight </title><secondary-title>Papers Proceedings, Diversity, Divergence, Dialogue</secondary-title></titles><dates><year>2021</year></dates><pub-location>Cham</pub-location><publisher>Springer LNCS</publisher><urls></urls></record></Cite><Cite><Author>Dewitz</Author><Year>2019</Year><RecNum>10567</RecNum><record><rec-number>10567</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1587745708" guid="cf1fc72f-c3f5-45f7-836f-2701eb36a261">10567</key></foreign-keys><ref-type name="Journal Article">17</ref-type><contributors><authors><author>Dewitz, L.</author><author>Kröber, C.</author><author>Messemer, H.</author><author>Maiwald, F.</author><author>Münster, S.</author><author>Bruschke, J.</author><author>Niebling, F.</author></authors></contributors><titles><title>Historical Photos and Visualizations: Potential for Research</title><secondary-title>ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</secondary-title></titles><periodical><full-title>ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</full-title></periodical><pages>405–412</pages><volume>XLII-2/W15</volume><section>405</section><dates><year>2019</year></dates><isbn>2194-9034</isbn><urls></urls><electronic-resource-num>10.5194/isprs-archives-XLII-2-W15-405-2019</electronic-resource-num></record></Cite></EndNote>?>(Kröber, 2021, Dewitz et al., 2019), and consequently ordered by relevance and priority. Of the 20 described scenarios, the cross-media identification of object descriptions (“Which images, texts, and 3D data describe the same object?”), and the analysis of such descriptions (“How can the dating of historical image and text depictions be supported by multimodal validation using media whose dating has already been established?”), were chosen as the focal points of the research. 
+            </p>
+            <list rend="numbered">
+                <item>Cross-Media Classification </item>
+            </list>
+            <p>
+                <graphic n="1001" width="16.009055555555555cm" height="1.1782777777777778cm" url="Pictures/c6d859598b60945ebfb1b2bd650959f7.png" rend="block"/>
+                <graphic n="1003" width="15.966722222222222cm" height="4.319763888888889cm" url="Pictures/c6d859598b60945ebfb1b2bd650959f7.png" rend="inline"/>
+                <hi style="font-size:9pt" xml:space="preserve">Figure 1: Identified architectural elements using the </hi>
+                <hi rend="italic" style="font-size:9pt">Kronentor</hi>
+                <hi style="font-size:9pt" xml:space="preserve"> of the </hi>
+                <hi rend="italic" style="font-size:9pt">Zwinger</hi>
+                <hi style="font-size:9pt" xml:space="preserve"> in Dresden in the photograph (left), in text (middle), and in the 3D model (right).</hi>
+            </p>
+            <p>A key requirement to this end, is to identify and name such cross-media elements (Fig. 1). The framework for the description of architectural elements in our project is provided by the Getty Art and Architectural Thesaurus (AAT). In our project the subgroup 
+                <hi rend="italic">architectural elements</hi>
+                <hi rend="Fußnotenanker">
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p rend="footnote text">
+                            <ref target="http://vocab.getty.edu/aat/300000885">
+                                <hi rend="Internetverknüpfung">http://vocab.getty.edu/aat/300000885</hi>
+                            </ref>
+                            <hi rend="Internetverknüpfung" xml:space="preserve">, </hi>15.07.2021.
+                        </p>
+                    </note>
+                </hi> is being used. The identified elements from texts (single words or word groups), images (polygonal image details), and 3D models (individual subgroup objects) are assigned to the concept from the AAT. Different processes are necessary depending upon the source type, e.g. semantic segmentation, 
+                <hi rend="italic">Named Entity Recognition</hi> (NER), and discourse parsing, in addition to what concerns the identification of the concepts and semantic accumulation.
+            </p>
+            <list rend="numbered">
+                <item>
+                    <hi rend="bold">Multimodal Data Accumulation</hi>
+                </item>
+            </list>
+            <p>In a further step, various approaches are used for the accumulation and validation of multimodal data. In this way, within the 3D realm for example, 2D images can be used in relation to the 3D model in order to transfer them to the structure at hand provided by the 3D model 
+                <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Niebling</Author><Year>2018</Year><RecNum>9950</RecNum><DisplayText>(Niebling et al., 2018)</DisplayText><record><rec-number>9950</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1584561177" guid="1549a13e-523c-4e8f-bc07-5e69c0697400">9950</key></foreign-keys><ref-type name="Conference Proceedings">10</ref-type><contributors><authors><author>F. Niebling</author><author>F. Maiwald</author><author>S. Münster</author><author>J. Bruschke</author><author>F. Henze</author></authors></contributors><titles><title>Accessing Urban History by Historical Photographs</title><secondary-title>2018 3rd Digital Heritage International Congress (DigitalHERITAGE) held jointly with 2018 24th International Conference on Virtual Systems &amp; Multimedia (VSMM 2018)</secondary-title></titles><pages>1-8</pages><dates><year>2018</year></dates><pub-location>San Francisco</pub-location><urls></urls><electronic-resource-num>10.1109/DigitalHeritage.2018.8809998</electronic-resource-num></record></Cite></EndNote>?>(Niebling et al., 2018).
+            </p>
+            <list rend="numbered">
+                <item>
+                    <hi rend="bold">Automated classification</hi>
+                </item>
+            </list>
+            <p>A current step is to investigate approaches towards automating the identification and annotation of objects. For this purpose, AI-based models will be used that are specialized on the respective modalities (3D models, images, and texts). Based on the pipeline described in 
+                <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Wu</Author><Year>2021</Year><RecNum>12535</RecNum><DisplayText>(Wu et al., 2021)</DisplayText><record><rec-number>12535</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1630330225" guid="3efd25ef-8942-49d9-96f4-a1b7dc280652">12535</key></foreign-keys><ref-type name="Book">6</ref-type><contributors><authors><author>Wu, Xiaoshi</author><author>Averbuch-Elor, Hadar</author><author>Sun, Jin</author><author>Snavely, Noah</author></authors></contributors><titles><title>Towers of Babel: Combining Images, Language, and 3D Geometry for Learning Multimodal Vision</title></titles><dates><year>2021</year></dates><urls></urls></record></Cite></EndNote>?>(Wu et al., 2021) we currently test to enhance quality by better text identification as well as modular object retrieval for the identification of architectural structures in images 
+                <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Münster</Author><Year>in print</Year><RecNum>10075</RecNum><DisplayText>(Münster et al., in print)</DisplayText><record><rec-number>10075</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1587569780" guid="f6cfc210-7cf3-421c-9033-b1f89c93ccaf">10075</key></foreign-keys><ref-type name="Book Section">5</ref-type><contributors><authors><author>Sander Münster</author><author>Christopher Lehmann</author><author>Taras Lazariv</author><author>Ferdinand Maiwald</author><author>Susanne Karsten</author></authors><secondary-authors><author>Florian Niebling</author><author>Sander Münster</author></secondary-authors></contributors><titles><title>Toward an Automated Processing Pipeline for a Browser-based, City-scale Mobile 4D VR Application Based on Historical Images</title><secondary-title>Proceedings of the 2nd UHDL Workshop</secondary-title></titles><dates><year>in print</year></dates><pub-location>Cham</pub-location><publisher>Springer CCIS</publisher><urls></urls></record></Cite></EndNote>?>(Münster et al., in print), and the transfer of this segmentation to 3D models.
+            </p>
+            <p rend="ewic-Introduction" style="font-weight: bold; text-align: left; ">Next steps</p>
+            <p>Based upon the developed demonstrator, next steps will be to cross-validate and multimodal enrich content and test those results with historians in step 1 the research scenario. It is within this area to examine the discrepancy between the requirement of large data amounts for AI models and the complexity of historical expertise can be investigated and evaluate, how existing AI models can be employed within the field of architectural history research and criticism.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="EndNote Bibliography">
+                        <?biblio ADDIN EN.REFLIST?>AGARWAL, S., FURUKAWA, Y., SNAVELY, N., SIMON, I., CURLESS, B., SEITZ, S. M. &amp; SZELISKI, R. 2011. Building rome in a day. 
+                        <hi rend="italic">Communications of the ACM,</hi> 54
+                        <hi rend="bold">,</hi> 105.
+                    </bibl>
+                    <bibl rend="EndNote Bibliography">DEWITZ, L., KRÖBER, C., MESSEMER, H., MAIWALD, F., MÜNSTER, S., BRUSCHKE, J. &amp; NIEBLING, F. 2019. Historical Photos and Visualizations: Potential for Research. 
+                        <hi rend="italic">ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences,</hi> XLII-2/W15
+                        <hi rend="bold">,</hi> 405–412.
+                    </bibl>
+                    <bibl rend="EndNote Bibliography">HACKEL, T., WEGNER, J. D. &amp; SCHINDLER, K. 2016. Fast semantic segmentation of 3D point clouds with strongly varying density. 
+                        <hi rend="italic">ISPRS Annals,</hi> 3
+                        <hi rend="bold">,</hi> 177–184.
+                    </bibl>
+                    <bibl rend="EndNote Bibliography">HESSEL, J., LEE, L. &amp; MIMNO, D. Unsupervised Discovery of Multimodal Links in Multi-image, Multi-sentence Documents. Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), 2019.</bibl>
+                    <bibl rend="EndNote Bibliography">JIAO, L., ZHANG, F., LIU, F., YANG, S., LI, L., FENG, Z. &amp; QU, R. 2019. A Survey of Deep Learning-Based Object Detection. 
+                        <hi rend="italic">IEEE Access,</hi> 7
+                        <hi rend="bold">,</hi> 128837-128868.
+                    </bibl>
+                    <bibl rend="EndNote Bibliography">KRÖBER, C. 2021. German Art History Students’ use of Digital Repositories: an Insight 
+                        <hi rend="italic">Papers Proceedings, Diversity, Divergence, Dialogue.</hi> Cham: Springer LNCS.
+                    </bibl>
+                    <bibl rend="EndNote Bibliography">LI, M., NAN, L., SMITH, N. &amp; WONKA, P. 2016. Reconstructing building mass models from UAV images. 
+                        <hi rend="italic">Computers &amp; Graphics,</hi> 54
+                        <hi rend="bold">,</hi> 84-93.
+                    </bibl>
+                    <bibl rend="EndNote Bibliography">MARTINOVIC, A., KNOPP, J., RIEMENSCHNEIDER, H. &amp; VAN GOOL, L. 3d all the way: Semantic segmentation of urban scenes from start to end in 3d. IEEE Computer Vision &amp; Pattern Recognition, 2015. 4456–4465.</bibl>
+                    <bibl rend="EndNote Bibliography">MINAEE, S., BOYKOV, Y. Y., PORIKLI, F., PLAZA, A. J., KEHTARNAVAZ, N. &amp; TERZOPOULOS, D. 2021. Image Segmentation Using Deep Learning: A Survey. 
+                        <hi rend="italic">IEEE Transactions on Pattern Analysis and Machine Intelligence</hi>
+                        <hi rend="bold">,</hi> 1-1.
+                    </bibl>
+                    <bibl rend="EndNote Bibliography">MÜNSTER, S., LEHMANN, C., LAZARIV, T., MAIWALD, F. &amp; KARSTEN, S. in print. Toward an Automated Processing Pipeline for a Browser-based, City-scale Mobile 4D VR Application Based on Historical Images. 
+                        <hi rend="italic">In:</hi> NIEBLING, F. &amp; MÜNSTER, S. (eds.) 
+                        <hi rend="italic">Proceedings of the 2nd UHDL Workshop.</hi> Cham: Springer CCIS.
+                    </bibl>
+                    <bibl rend="EndNote Bibliography">NIEBLING, F., MAIWALD, F., MÜNSTER, S., BRUSCHKE, J. &amp; HENZE, F. Accessing Urban History by Historical Photographs. 2018 3rd Digital Heritage International Congress (DigitalHERITAGE) held jointly with 2018 24th International Conference on Virtual Systems &amp; Multimedia (VSMM 2018), 2018 San Francisco. 1-8.</bibl>
+                    <bibl rend="EndNote Bibliography">POLANYI, M. 1966. 
+                        <hi rend="italic" xml:space="preserve">The tacit dimension, </hi>Chicago, University of Chicago Press.
+                    </bibl>
+                    <bibl rend="EndNote Bibliography">REICH, K. 2006. Konstruktivistische Ansätze in den Sozial- und Kulturwissenschaften. 
+                        <hi rend="italic">Konstruktivistische Didaktik: Lehr-und Studienbuch mit Methodenpool.</hi> Beltz.
+                    </bibl>
+                    <bibl rend="EndNote Bibliography">UTESCHER, R. &amp; ZARRIEß, S. What Did This Castle Look like before? Exploring Referential Relations in Naturally Occurring Multimodal Texts</bibl>
+                    <bibl rend="EndNote Bibliography"> Proceedings of the Third Workshop on Beyond Vision and LANguage: inTEgrating Real-world kNowledge (LANTERN), 2021.</bibl>
+                    <bibl rend="EndNote Bibliography">VOSSELMAN, G., GORTE, B. G., SITHOLE, G. &amp; RABBANI, T. 2004. Recognising structure in laser scanner point clouds. 
+                        <hi rend="italic">ISPRS Archives,</hi> 46
+                        <hi rend="bold">,</hi> 33-38.
+                    </bibl>
+                    <bibl rend="EndNote Bibliography">WU, X., AVERBUCH-ELOR, H., SUN, J. &amp; SNAVELY, N. 2021. 
+                        <hi rend="italic">Towers of Babel: Combining Images, Language, and 3D Geometry for Learning Multimodal Vision</hi>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

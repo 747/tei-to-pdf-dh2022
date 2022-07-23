@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Who’s In and Who’s Out: 10 Years On</title>
+                <author>
+                    <persName>
+                        <surname>Bleeker</surname>
+                        <forename>Elli</forename>
+                    </persName>
+                    <affiliation>Huygens Institute for the History of the Netherlands – Royal Netherlands Academy of Arts and Sciences</affiliation>
+                    <email>elli.bleeker@huygens.knaw.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Beelen</surname>
+                        <forename>Kaspar</forename>
+                    </persName>
+                    <affiliation>Alan Turing Institute</affiliation>
+                    <email>kasparvonbeelen@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chambers</surname>
+                        <forename>Sally</forename>
+                    </persName>
+                    <affiliation>Ghent University</affiliation>
+                    <email>Sally.Chambers@ugent.be</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Koolen</surname>
+                        <forename>Marijn</forename>
+                    </persName>
+                    <affiliation>Huygens Institute for the History of the Netherlands – Royal Netherlands Academy of Arts and Sciences</affiliation>
+                    <email>marijn.koolen@di.huc.knaw.nl</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Melga-Estrada</surname>
+                        <forename>Liliana</forename>
+                    </persName>
+                    <affiliation>0</affiliation>
+                    <email>lilianamelgar@runbox.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Van Zundert</surname>
+                        <forename>Joris J.</forename>
+                    </persName>
+                    <affiliation>Huygens Institute for the History of the Netherlands – Royal Netherlands Academy of Arts and Sciences</affiliation>
+                    <email>joris.van.zundert@huygens.knaw.nl</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T21:11:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>code literacy</term>
+                    <term>survey</term>
+                    <term>reccomendations</term>
+                    <term>pedagogy</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>ethnographic analysis</term>
+                    <term>meta-criticism (reflections on digital humanities and humanities computing)</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">At the 2011 Convention of the Modern Language Association Stephen Ramsay stirred up a controversy that had been smoldering within the Digital Humanities (DH) community for a while. In a lightning talk Ramsay provocatively asserted that digital humanists should be able to code or else they were “out”. Ramsay’s statement met considerable criticism (Ramsay, 2013a, 2013b). Ten years on it would probably not provoke as strong a reaction as Ramsay witnessed in 2011. However, it has also not become more clear to what extent programming skills are – or should be – a requirement for practitioners in the field of DH (cf. O’Sullivan, James, Jakacki, and Galvin 2015; Callaway et al. 2020; Van Zundert, Antonijević, and Andrews 2020). </p>
+            <p style="text-align: left; ">This paper reports on a large-scale survey into the role of code in the digital humanities. The survey used an online questionnaire to investigate what the target community understands by ‘code literacy’, its relevance for the field of DH, and how it can be promoted among students and researchers. Answering these questions allows us to suggest, first, a shared definition and vocabulary for talking about code literacy grounded in the community’s own conceptualizations and norms. It also serves to make recommendations for situating code literacy sustainably in (digital) humanities curricula. </p>
+            <p style="text-align: left; ">The question of code does not merely concern the availability of practical skills that might be convenient to handle, for instance, digital texts. Rather the matter goes straight to that wretched question at the heart of the community: “What is Digital Humanities?” To code or not to code presents a dichotomy that is strongly coupled with epistemological choices, for which matters whether 5 or 95 percent of a community of practice thinks the ability to create code is an essential analytical faculty or merely a possibly handy tool. </p>
+            <p style="text-align: left; ">There is no lack of opinions and discussions on the topic, but most are based on anecdotal evidence and personal experience. Some analytical work has been done (cf. Callaway 2020; Van Zundert, Antonijević, and Andrews 2020) but a thorough, comprehensive investigation that both quantitatively and qualitatively surveys the digital humanities landscape with regard to the question remains wanting. For that reason we decided to carry out an investigation in great depth and breadth. </p>
+            <p style="text-align: left; ">A comprehensive literature review (Webster and Webster 1985; Hockey 1986; Dobberstein 1993; Tafazoli, Parra, and Abril 2017, Tannenbaum 1987; Vee 2013; Montfort 2015; Melgar, Wigham, and Koolen 2019; Earhart et al. 2016; Spante et al. 2018; Potter 2010; Piotrowski and Fafinski 2020; Vee 2017; and so forth) served to establish a conceptual and analytical framework around the issue of ‘code literacy’. Our quantitatively-oriented approach consisted, given the complex nature of the topic, of a mixed-method (Timans et al., 2019) online survey that was designed and tested in several reflective iterations over the space of seven months. </p>
+            <p style="text-align: left; ">The survey gathered demographic information about the respondents, information on their career levels and phases, self-estimations of code skills, pedagogical context, teaching needs, and provided the ability to submit a definition for ‘code literacy’. The survey was globally announced through most well known DH channels. It yielded 399 completed responses in 2.5 months, which provided us with a solid basis to correlate the scores on the various variables with characteristics of given code literacy definitions. </p>
+            <p style="text-align: left; ">Closed questions have been statistically analyzed to establish significant correlation between variables. For the open question on the definition of ‘code literacy’ we followed an inductive approach to coding the results. Overlapping samples representing more than two-thirds of all answers were subject to open manually coding to establish inter annotator agreement and a shared set of codes. These codes were then applied to the full data, after which axial coding resulted in a hierarchy of aspects that captures all code literacy aspects shared importantly between many definitions. A methodological overview and first results will be published in 
+                <hi rend="italic">DH Benelux Journal</hi> (Bleeker et al., accepted for publication). 
+            </p>
+            <p style="text-align: left; ">Our initial analysis focused on representativeness, demographics, and their relation to views on code literacy. Results indicate that 93% of a representative sample of the DH community finds code literacy ‘at least somewhat important’ to ‘crucial’ while 7% of respondents found code literacy not important at all. Obviously distribution varies with academic background, career level and phase, and self-estimated competence, but overall a majority consensus is clear, even assuming a considerable self-selection effect within the survey’s audience makeup.</p>
+            <p style="text-align: left; ">The fine grained data allows us to infer many more observations and details. In our presentation we will further unpack these results. We will expound what skills and epistemological aspects crucially relate to code literacy according to the respondents. We detail differences in the interpretations and role of code literacy across humanities disciplines. The data also allow us to list the distribution of teaching needs as to skills and techniques, and how current levels of code proficiency were attained. </p>
+            <p style="text-align: left; ">One of our findings is that ‘context is crucial’. That is: the code literacy skills most valued by the most code proficient scholars tend to become developed in the context of research where there is a clear methodological motivation to do so. What also becomes clear from the data is that most code literate scholars, no matter the (self-estimated) level of code literacy, are dissatisfied about their coding proficiency. This provides further evidence that there is a discrepancy between the specific code literacy requirement in DH methodology and the abilities (e.g., within university curricula) to acquire these skills in a concrete humanities context.</p>
+            <p style="text-align: left; ">Our observations allow us to propose ways for DH scholars and students to develop their code literacy skills, and to provide evidence-based suggestions for the incorporation of code literacy training in curricula. We will disclose results from our current research, notably an ontology of skills based on the practices described by participants through the survey. The ontology thus provides an evidence based means of discussing code literacy, its aspects, and related skills. We hope it will be productive as a resource for planning elements of code literacy training to be embedded in curricula.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bleeker, E., Beelen, K., Chambers, S., Koolen, M., Melgar-Estrada, L. and Van Zundert, J.</hi> (submitted). Persistence, self-doubt, and curiosity: Surveying code literacy in Digital Humanities. 
+                        <hi rend="italic">DH Benelux Journal</hi>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Callaway, E., Turner, J., Stone, H. and Halstrom, A.</hi> (2020). The Push and Pull of Digital Humanities: Topic Modeling the ‘What is digital humanities?’ Genre. 
+                        <hi rend="italic">DHQ: Digital Humanities Quarterly</hi>, 
+                        <hi rend="bold">14</hi>(1): 450 
+                        <ref target="http://www.digitalhumanities.org/dhq/vol/14/1/000450/000450.html">http://www.digitalhumanities.org/dhq/vol/14/1/000450/000450.html</ref> (accessed 6 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Dobberstein, M.</hi> (1993). Computer literacy for the rest of us. 
+                        <hi rend="italic">Computers and the Humanities</hi>, 
+                        <hi rend="bold">27</hi>(5): 429–33 doi:
+                        <ref target="https://doi.org/10.1007/BF01829393">10.1007/BF01829393</ref>. 
+                        <ref target="https://doi.org/10.1007/BF01829393">https://doi.org/10.1007/BF01829393</ref> (accessed 6 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Earhart, A., Kirschenbaum, M., Nowviskie, B., Harris, K., Zafrin, V., Murray, P. J. and Allington, D.</hi> (2016). Doing DH vs. Theorizing DH 
+                        <hi rend="italic">ACH: Digital Humanities Questions &amp; Answers</hi>
+                        <ref target="https://dhanswers.ach.org/topic/doing-dh-v-theorizing-dh/">https://dhanswers.ach.org/topic/doing-dh-v-theorizing-dh/</ref> (accessed 6 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hockey, S.</hi> (1986). Susan Hockey. Workshop on Teaching Computers and the Humanities Courses. 
+                        <hi rend="italic">Literary and Linguistic Computing</hi>, 
+                        <hi rend="bold">1</hi>(4): 228–229 doi:
+                        <ref target="https://doi.org/doi.org/10.1093/llc/1.4.228">doi.org/10.1093/llc/1.4.228</ref>. 
+                        <ref target="https://doi.org/10.1093/llc/1.4.228">https://doi.org/10.1093/llc/1.4.228</ref> (accessed 6 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Melgar-Estrada, L., Wigham, M. and Koolen, M.</hi> (2019). Programming humanists - What is the role of coding literacy in DH and why does it matter?. 
+                        <hi rend="italic">DH Benelux 2019</hi>. Liège: Université de Liège, p. 25 
+                        <ref target="http://2019.dhbenelux.org/wp-content/uploads/sites/13/2019/08/DH_Benelux_2019_paper_25.pdf">http://2019.dhbenelux.org/wp-content/uploads/sites/13/2019/08/DH_Benelux_2019_paper_25.pdf</ref> (accessed 15 September 2019).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Montfort, N.</hi> (2015). Exploratory Programming in Digital Humanities Pedagogy and Research. 
+                        <hi rend="italic">A New Companion to Digital Humanities</hi>. John Wiley &amp; Sons, Ltd, pp. 98–109 doi:
+                        <ref target="https://doi.org/10.1002/9781118680605.ch7">https://doi.org/10.1002/9781118680605.ch7</ref>. 
+                        <ref target="https://onlinelibrary.wiley.com/doi/abs/10.1002/9781118680605.ch7">https://onlinelibrary.wiley.com/doi/abs/10.1002/9781118680605.ch7</ref> (accessed 6 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">O’Sullivan, J., Jakacki, D. and Galvin, M.</hi> (2015). Programming in the Digital Humanities. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 
+                        <hi rend="bold">30</hi>(suppl_1): i142–47 doi:
+                        <ref target="https://doi.org/10.1093/llc/fqv042">10.1093/llc/fqv042</ref>. 
+                        <ref target="https://doi.org/10.1093/llc/fqv042">https://doi.org/10.1093/llc/fqv042</ref> (accessed 20 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Piotrowski, M. and Fafinski, M.</hi> (2020). Nothing New Under the Sun? Computational Humanities and the Methodology of History. 
+                        <hi rend="italic">Proceedings of the Workshop on Computational Humanities Research (CHR 2020)</hi>, vol. 2723. Amsterdam: CEUR Workshop Proceedings, pp. 171–181 doi:
+                        <ref target="https://doi.org/urn:nbn:de:0074-2723-3">urn:nbn:de:0074-2723-3</ref>. 
+                        <ref target="http://ceur-ws.org/Vol-2723/short16.pdf">http://ceur-ws.org/Vol-2723/short16.pdf</ref> (accessed 5 October 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Potter, W. J.</hi> (2010). The State of Media Literacy. 
+                        <hi rend="italic">Journal of Broadcasting &amp; Electronic Media</hi>, 
+                        <hi rend="bold">54</hi>(4). Routledge: 675–696 doi:
+                        <ref target="https://doi.org/10.1080/08838151.2011.521462">10.1080/08838151.2011.521462</ref>. 
+                        <ref target="https://doi.org/10.1080/08838151.2011.521462">https://doi.org/10.1080/08838151.2011.521462</ref> (accessed 5 October 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Ramsay, S.</hi> (2013a). On building. In Vanhoutte, E., Nyhan, J. and Terras, M. (eds), 
+                        <hi rend="italic">Defining Digital Humanities: A Reader</hi>. Surrey: Ashgate, pp. 243–46 
+                        <ref target="https://web.archive.org/web/20131205051042/http:/stephenramsay.us/text/2011/01/11/on-building/">https://web.archive.org/web/20131205051042/http://stephenramsay.us/text/2011/01/11/on-building/</ref> (accessed 6 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Ramsay, S.</hi> (2013b). Who’s In and Who’s Out. In Vanhoutte, E., Nyhan, J. and Terras, M. (eds), 
+                        <hi rend="italic">Defining Digital Humanities: A Reader</hi>. Surrey: Ashgate, pp. 239–42 
+                        <ref target="https://web.archive.org/web/20121015012254/http:%20/stephenramsay.us/text/2011/01/08/whos-in-and-whos-out.html">https://web.archive.org/web/20121015012254/http: //stephenramsay.us/text/2011/01/08/whos-in-and-whos-out.html</ref> (accessed 6 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Spante, M., Hashemi, S. S., Lundin, M. and Algers, A.</hi> (2018). Digital competence and digital literacy in higher education research: Systematic review of concept use. (Ed.) Wang, S. 
+                        <hi rend="italic">Cogent Education</hi>, 
+                        <hi rend="bold">5</hi>(1). Cogent OA: 1519143 doi:
+                        <ref target="https://doi.org/10.1080/2331186X.2018.1519143">10.1080/2331186X.2018.1519143</ref>. 
+                        <ref target="https://doi.org/10.1080/2331186X.2018.1519143">https://doi.org/10.1080/2331186X.2018.1519143</ref> (accessed 5 October 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Tafazoli, D., Parra, M. E. G. and Abril, C. A. H.</hi> (2017). Computer literacy: Sine qua non for digital age of language learning &amp; teaching. 
+                        <hi rend="italic">Theory and Practice in Language Studies</hi>, 
+                        <hi rend="bold">7</hi>(9). Academy Publication Co., Ltd.: 716 doi:
+                        <ref target="https://doi.org/10.17507/tpls.0709.02">10.17507/tpls.0709.02</ref>. 
+                        <ref target="https://www.researchgate.net/profile/Dara-Tafazoli/project/My-PhD-Thesis-A-cross-cultural-study-on-the-relationship-between-CALL-literacy-and-the-attitudes-of-Spanish-and-Iranian-English-language-students-and-teachers-towards-CALL/attachment/59bc435a4cde26fd91fbe78c/AS:538963140988929@1505510234363/download/1248-4859-1-PB.pdf?context=ProjectUpdatesLog">https://www.researchgate.net/profile/Dara-Tafazoli/project/My-PhD-Thesis-A-cross-cultural-study-on-the-relationship-between-CALL-literacy-and-the-attitudes-of-Spanish-and-Iranian-English-language-students-and-teachers-towards-CALL/attachment/59bc435a4cde26fd91fbe78c/AS:538963140988929@1505510234363/download/1248-4859-1-PB.pdf?context=ProjectUpdatesLog</ref> (accessed 5 October 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Tannenbaum, R. S.</hi> (1987). How Should We Teach Computing to Humanists?. 
+                        <hi rend="italic">Computers and the Humanities</hi>, 
+                        <hi rend="bold">21</hi>(4). Springer: 217–25 
+                        <ref target="http://www.jstor.org/stable/30207392">http://www.jstor.org/stable/30207392</ref> (accessed 6 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Timans, R., Wouters, P. and Heilbron, J.</hi> (2019). Mixed methods research: what it is and what it could be. 
+                        <hi rend="italic">Theory and Society</hi>, 
+                        <hi rend="bold">48</hi>(2): 193–216 doi:
+                        <ref target="https://doi.org/10.1007/s11186-019-09345-5">10.1007/s11186-019-09345-5</ref>. 
+                        <ref target="https://doi.org/10.1007/s11186-019-09345-5">https://doi.org/10.1007/s11186-019-09345-5</ref> (accessed 6 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Van Zundert, J. J., Antonijević, S. and Andrews, T. L.</hi> (2020). ‘BlackBoxes’ andTrue Colour — A Rhetoric of Scholarly Code. In Edmond, J. (ed), 
+                        <hi rend="italic">Digital Technology and the Practices of Humanities Research</hi>. Cambridge, UK: Open Book Publishers, pp. 123–62 
+                        <ref target="https://www.openbookpublishers.com/product/1108">https://www.openbookpublishers.com/product/1108</ref> (accessed 17 February 2020).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Vee, A.</hi> (2013). Understanding Computer Programming as a Literacy. 
+                        <hi rend="italic">LiCS</hi>, 
+                        <hi rend="bold">1</hi>(2): 42–64 
+                        <ref target="https://licsjournal.org/index.php/LiCS/article/view/794">https://licsjournal.org/index.php/LiCS/article/view/794</ref> (accessed 30 September 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Vee, A.</hi> (2017). 
+                        <hi rend="italic">Coding Literacy: How Computer Programming Is Changing Writing</hi>. (Software Studies). Cambridge: The MIT Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Webster, S. W. and Webster, L. S.</hi> (1985). Computer Literacy or Competency?. 
+                        <hi rend="italic">Teacher Education Quarterly</hi>, 
+                        <hi rend="bold">12</hi>(2). Caddo Gap Press: 1–7 
+                        <ref target="http://www.jstor.org/stable/23474573">http://www.jstor.org/stable/23474573</ref> (accessed 6 December 2021).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

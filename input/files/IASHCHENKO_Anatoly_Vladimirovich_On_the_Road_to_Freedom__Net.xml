@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>On the Road to Freedom: Network models of interviews of Czechoslovak respondents in the optics of audio-emotional analysis and computational linguistics.</title>
+                <author>
+                    <persName>
+                        <surname>Iashchenko</surname>
+                        <forename>Anatoly Vladimirovich</forename>
+                    </persName>
+                    <affiliation>Universita, Roma, Itali</affiliation>
+                    <email>yaschenko.anatoliy.ay@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T14:50:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Computational Linguistics</term>
+                    <term>Emotional analysis</term>
+                    <term>Network Analysis</term>
+                    <term>historical memory</term>
+                    <term>The Velvet Revolution</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>text mining and analysis</term>
+                    <term>History</term>
+                    <term>Linguistics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">This Today, relations between Russia, on the one hand, and the Czech Republic and Slovakia, on the other, are rather problematic both politically and socio-culturally. Most of the disagreements arise against a backdrop of reinterpreted history, where any interpretation of domestic political events becomes an occasion for international scandals on both sides (I.M. Savelyeva, 2004; Hradilek, 2010). </p>
+            <p style="text-align: left; ">The source for the study was an archive of video interviews from the Czech Institute for the Study of Totalitarian Regimes "Memory and History of Totalitarian Regimes". </p>
+            <p style="text-align: left; ">In order to build network models and conduct comparative analysis between models derived by mixed methods of computational linguistics and emotional analysis of audio recordings, 45 transcribed video interviews were selected from the source database.</p>
+            <p style="text-align: left; ">The transcribed interviews were analysed in the MAXQDA 2020 PRO software. In the first step of the analysis of the interviews, codes were generated to break down the text. It is the cluster approach of breaking down the text into valences, meaning groups, that allows the linguistic analysis to be carried out so quickly and with such a high quality. From the first minutes of working with dissidents' memories, it becomes possible to study the field of historical consciousness.</p>
+            <p style="text-align: left; ">Once the coding of the corpus of texts according to the results of the frequency analysis was completed, it became possible to create matrices of the frequencies of the coded keys in the text.</p>
+            <p style="text-align: left; ">The next step in the interview process was to analyse the texts using the 'interactive word tree' method. This approach allowed us to identify "noise" and cleanse the matrix from unnecessary word combinations. Further analysis of the texts was carried out using content analysis tools: document portrait, document comparison table and code layout.</p>
+            <p style="text-align: left; ">The resulting frequency tables and matrices for each interview were converted to CSV format and exported to the Gephi database, where network models of keywords in the form of graphs were constructed.</p>
+            <p style="text-align: left; ">Speech cues are a natural way of human communication, involving both direct linguistic content (e.g., texts) and implicit paralinguistic information (e.g., speaker emotions). Although visual emotion identification is more advanced in modern science, emotional audio analysis is gaining popularity among researchers due to ever-improving algorithms and increasing accuracy.</p>
+            <p style="text-align: left; ">The construction of network models of Czechoslovak dissidents' audio interviews based on emotional analysis allows not only a new perspective on computer analysis and visualisation methods as a researcher's tool, but also a wider disclosure of information potential of the sources under study. An important feature of this approach is the exclusion of the influence of emotional information of words.</p>
+            <p style="text-align: left; ">A frequency classification table based on a two-dimensional vector model of emotion was created to conduct emotional analysis of audio interviews and subsequent construction of network models. Pyhton script was written and Librosa audio analysis package was used to investigate the acoustic features of the interviews. The audio files were analysed: fundamental frequencies (f0), spectral characteristics, chromaticity, amplitude, harmonic characteristics, MFCC, logarithmic spectra, etc. Also, to extract markers of vocal emotion from speech (Ma, Y., et al., 2019), logarithmic spectrum conversion to Mel scale followed by discrete cosine transformation was performed (Scherer, K.R., 2003).</p>
+            <p style="text-align: left; ">The data were classified based on the audio recording spectra on a logarithmic scale for nine key emotions: sadness, fear, anger, frustration, excitement, disgust, happiness, surprise and neutral calm. </p>
+            <p style="text-align: left; ">In the study, the first time the matrices of emotional models were constructed, an accuracy of 42% was achieved. In further analysis, difficulties were found in interpreting the emotions sadness and fear in female interviewees due to the lack of an extensive sound base of emotions in Czech. The algorithm was modified to incorporate expert judgement, and the accuracy of determination increased by more than 15%. </p>
+            <p style="text-align: left; ">The tables of emotion analysis and emotion frequency were also translated into CSV files and uploaded to the Gephi software database to build network models in the form of graphs.</p>
+            <p style="text-align: left; ">Results of comparative analysis of online models of audio-interviews and transcribed texts gave different representations of the same events, allowing the researcher, on the one hand, to expand the information potential of the source, and on the other hand, to interpret personal experiences and experiences of interviewees within a constructive group memory about the fall of the communist regime in Czechoslovakia. </p>
+            <p style="text-align: left; ">The proposed methodology of analysis, based on the comparison of network models, allows not only a broader disclosure of the information potential of historical sources, but also provides a basis for modelling and studying the mechanisms of transmission of group memory.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="DH-Quotation">I.M. Savelyeva, A.V. Poletaev. Social perceptions of the past: the types and mechanisms of formation. Preprint WP6/2004/07. - Moscow: State University of Higher School of Economics, 2004. 56 с.</bibl>
+                    <bibl rend="DH-Quotation">Hradilek, Adam (ed.): Za vaši a naši svobodu. Torst, ÚSTR, Praha 2010.</bibl>
+                    <bibl rend="DH-Quotation">Ma, Y.; Hao, Y.; Chen, M.; Chen, J.; Lu, P.; Košir, A. Audio-Visual Emotion Fusion (AVEF): A Deep Efficient Weighted Approach. Inf. Fusion 2019, 46, 184–192.</bibl>
+                    <bibl rend="DH-Quotation">Scherer, K.R. Vocal Communication of Emotion: A Review of Research Paradigms. Speech Commun. 2003, 40, 227–256.</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

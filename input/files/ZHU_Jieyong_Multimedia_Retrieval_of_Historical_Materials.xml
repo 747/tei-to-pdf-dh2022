@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Multimedia Retrieval of Historical Materials</title>
+                <author>
+                    <persName>
+                        <surname>Zhu</surname>
+                        <forename>Jieyong</forename>
+                    </persName>
+                    <affiliation>Graduate School of Informatics, Kyoto University</affiliation>
+                    <email>zjsczjy04@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nishimura</surname>
+                        <forename>Taichi</forename>
+                    </persName>
+                    <affiliation>Graduate School of Informatics, Kyoto University</affiliation>
+                    <email>taichitary@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Goto</surname>
+                        <forename>Makoto</forename>
+                    </persName>
+                    <affiliation>National Museum of Japanese History</affiliation>
+                    <email>m-goto@rekihaku.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mori</surname>
+                        <forename>Shinsuke</forename>
+                    </persName>
+                    <affiliation>Academic Center for Computing and Media Studies, Kyoto University</affiliation>
+                    <email>forest@i.kyoto-u.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Multimedia Retrieval</term>
+                    <term>Natural Language Processing</term>
+                    <term>Computer Vision</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>natural language processing</term>
+                    <term>Asian studies</term>
+                    <term>Computer science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">Historical material is a collection of history, archaeology, and folklore materials. With the rapid advancement of digitization, large-scale multimedia data of historical materials have become available on the web. As the data grows, it is difficult for researchers to study the relationship between historical images and text. Multimedia retrieval is a technique to perform retrieval tasks across multiple media. Recently, deep learning has accelerated research on natural language understanding and computer vision, with remarkable performance reported in multimedia retrieval tasks 
+                    <anchor xml:id="ZOTERO_BREF_5EqKw7bMqQKFRM25vOHUE"/>(Salvador et al., 2017). In this paper, we apply the state-of-the-art multimedia retrieval methods to Japanese historical materials and demonstrate the constructed multimedia retrieval system. Fig 1 shows an example of multimodal retrieval tasks of historical materials.
+                </p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="8.281458333333333cm" url="Pictures/c7e8d7bd9b1bf41b84202dc8c08758ae.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Fig 1. Examples of image-to-text and text-to-image retrieval tasks. Retrieved results in the boxes are the associated ones with the query on the left.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Multimedia Retrieval</head>
+                <p style="text-align: left; ">Multimedia retrieval takes one type of media (e.g., images and texts) as the query to retrieve corresponding media of another type 
+                    <anchor xml:id="ZOTERO_BREF_mUBQ8JR9sbNH0BHI0VH6U"/>(Liu et al., 2010). The key challenge of multimedia retrieval is how to convert different media data into a shared subspace, where semantically associated inputs are mapped to similar locations. Various kinds of deep-learning-based approaches have been proposed in the literature 
+                    <anchor xml:id="ZOTERO_BREF_1XuwykeKGZBHjJxq5sFgw"/>(Sirirattanapol et al., 2017). We here employ one of them to realize our system.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Proposal</head>
+                <p style="text-align: left; ">This paper proposes a deep-learning-based approach to achieve multimedia retrieval of historical materials. Figure 2 shows an overview of our proposed model. The proposed method consists of two major processes. </p>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="3.6406666666666667cm" url="Pictures/4f918e65883cb5e3482a956a8968dac5.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Fig 2. An overview of our proposed method.</p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Text encoder</head>
+                    <p style="text-align: left; ">Recently, large-scale pre-trained model, such as BERT (Bidirectional Encoder Representations from Transformers) 
+                        <anchor xml:id="ZOTERO_BREF_vpEn4c52BhKyxxOMNTDcA"/>(Devlin et al., 2019), has achieved great performance in NLP tasks. However, we don't use BERT model because of the domain gap, since Japanese BERT is trained on Japanese Wikipedia texts. The text data of historical materials include three main types: material name, collection name, and notes. All the three types of data are in a tabular format instead of a sentence format. Therefore, we use a word2vec model to convert the texts into vectors, which is more simple and more reasonable.
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Image encoder</head>
+                    <p style="text-align: left; ">The input of the image side is a single image of historical materials. To convert images into vectors, we employ ResNet50 
+                        <anchor xml:id="ZOTERO_BREF_qyVSY9uBrbBpffXekmSZn"/>(He et al., 2016), a Convolutional Neural Network pre-trained on ImageNet.
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Shared subspace learning</head>
+                    <p style="text-align: left; ">Finally, we convert text/image vectors into shared subspace using symmetric multi-layer perceptrons with ReLU activation functions. To train the model, we compute triplet margin loss 
+                        <anchor xml:id="ZOTERO_BREF_UnvELQH6sE8wfmGlwEaxV"/>(Vassileios Balntas and Mikolajczyk, 2016), which makes the vectors in the subspace for a given text-image pair close and otherwise long.
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Dataset</head>
+                <p style="text-align: left; ">This is the first attempt to tackle multimedia retrieval of historical materials, so no datasets exist in this field; thus we created the Japanese historical dataset of textual descriptions and corresponding images by crawling them from the National Museum of Japanese History. The dataset contains 18,429 objects, including over 18k textual descriptions and over 79k corresponding images.</p>
+                <figure>
+                    <graphic n="1003" width="16.002cm" height="5.094111111111111cm" url="Pictures/06914c423bcc49f096e6468e8bdc2b7c.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Fig 3. Image-to-text retrieval examples. The ground truth in the retrieved results is highlighted in the box.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Experiments</head>
+                <p style="text-align: left; ">To measure the performance of the model, we perform multimedia retrieval tasks. Figure 3 shows two examples of the image-to-text task. The query images are on the left side while the top five retrieved texts are on the right side. As with previous studies, we compute three mainstream evaluation metrics, median rank (MedR), Recall@K (R@K) 
+                    <anchor xml:id="ZOTERO_BREF_ViidW44XIljqAkxQk6SNM"/>(Salvador et al., 2017), and mean average precision (mAP) 
+                    <anchor xml:id="ZOTERO_BREF_bXQ8AKpuk7VRJ0NllTvVK"/>(Rasiwasia et al., 2010) to evaluate the performance. Table 1 shows the results of 1,000 samples. The result indicates that our system performs well in multimedia retrieval tasks compared with the random ranking baseline.
+                </p>
+                <figure>
+                    <graphic n="1004" width="16cm" height="5.3396888888888885cm" url="Pictures/64640d533ad95a3b2f715388e07ed3e6.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Table 1. Retrieval results on 1,000 samples.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left; ">This paper tackled the multimedia retrieval of historical materials using deep-learning-based multimedia retrieval methods. This work is the first attempt to tackle this problem, thus we constructed the dataset of Japanese historical texts and images, and evaluated the model's performance on it. The experimental results show that our constructed system performs well in the multimedia retrieval of historical materials. Future work will study a better method to represent the textual data. We expect that our research will help researchers in gaining a better understanding of Japanese historical materials, and will give a general approach to learning the shared subspace between textual and visual data.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <anchor xml:id="ZOTERO_BREF_G3m6ADZ1yMDrhaQMVcbfe"/>
+                        <hi rend="bold">Devlin, J., Chang, M.-W., Lee, K. and Toutanova, K.</hi> (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. 
+                        <hi rend="italic">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)</hi>. Minneapolis, Minnesota: Association for Computational Linguistics, pp. 4171–86 doi:10.18653/v1/N19-1423. https://aclanthology.org/N19-1423.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">He, K., Zhang, X., Ren, S. and Sun, J.</hi> (2016). Deep residual learning for image recognition. 
+                        <hi rend="italic">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</hi>. pp. 770–78.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Liu, J., Xu, C. and Lu, H.</hi> (2010). Cross-media retrieval: state-of-the-art and open issues. 
+                        <hi rend="italic">International Journal of Multimedia Intelligence and Security</hi>, 
+                        <hi rend="bold">1</hi>(1). Inderscience Publishers: 33–52.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Rasiwasia, N., Costa Pereira, J., Coviello, E., Doyle, G., Lanckriet, G. R., Levy, R. and Vasconcelos, N.</hi> (2010). A new approach to cross-modal multimedia retrieval. 
+                        <hi rend="italic">Proceedings of the 18th ACM International Conference on Multimedia</hi>. pp. 251–60.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Salvador, A., Hynes, N., Aytar, Y., Marin, J., Ofli, F., Weber, I. and Torralba, A.</hi> (2017). Learning cross-modal embeddings for cooking recipes and food images. 
+                        <hi rend="italic">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</hi>. pp. 3020–28.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Sirirattanapol, C., Matsui, Y., Satoh, S., Matsuda, K. and Yamamoto, K.</hi> (2017). Deep image retrieval applied on kotenseki ancient japanese literature. 
+                        <hi rend="italic">2017 IEEE International Symposium on Multimedia (ISM)</hi>. IEEE, pp. 495–99.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Vassileios Balntas, D. P., Edgar Riba and Mikolajczyk, K.</hi> (2016). Learning local feature descriptors with triplets and shallow convolutional neural networks. In Richard C. Wilson, E. R. H. and Smith, W. A. P. (eds), 
+                        <hi rend="italic">Proceedings of the British Machine Vision Conference (BMVC)</hi>. BMVA Press, p. 119.1-119.11 doi:10.5244/C.30.119. https://dx.doi.org/10.5244/C.30.119.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

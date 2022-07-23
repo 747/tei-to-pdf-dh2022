@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Seven Steps: Building the DiGA Thesaurus</title>
+                <author>
+                    <persName>
+                        <surname>Autiero</surname>
+                        <forename>Serena</forename>
+                    </persName>
+                    <affiliation>Ruhr University Bochum, Germany</affiliation>
+                    <email>serena.autiero@rub.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Elwert</surname>
+                        <forename>Frederik</forename>
+                    </persName>
+                    <affiliation>Ruhr University Bochum, Germany</affiliation>
+                    <email>frederik.elwert@rub.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Moscatelli</surname>
+                        <forename>Cristiano</forename>
+                    </persName>
+                    <affiliation>Ruhr University Bochum, Germany</affiliation>
+                    <email>cristiano.moscatelli@rub.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pons</surname>
+                        <forename>Jessie</forename>
+                    </persName>
+                    <affiliation>Ruhr University Bochum, Germany</affiliation>
+                    <email>jessie.pons@rub.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T08:56:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>gandhara</term>
+                    <term>buddhism</term>
+                    <term>LOD</term>
+                    <term>thesaurus</term>
+                    <term>digitization</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>linked (open) data</term>
+                    <term>Art history</term>
+                    <term>South Asian studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">DiGA, short for “Digitization of Gandharan Artefacts. A project for the preservation and the study of the Buddhist art of Pakistan”, is a project that aims to digitize and catalogue a corpus of just under 2,000 Buddhist sculptures from ancient Gandhāra (Elwert and Pons 2020). Gandhāra is a historical region which covers present-day North-western Pakistan and Eastern Afghanistan and which was a pivot between South and Central Asia. Produced during the first centuries of the Common Era, the objects which the project will digitize bear testimony to the rich cultural and religious heritage of this region that was once considered a Buddhist Holy Land.
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p>
+                        For an introduction to the study of Gandharan art refer to
+                        <hi rend="color(17191C)" style="font-size:10pt">Drachenfels and Luczanits 2008.</hi>
+                    </p>
+                </note>
+            </p>
+            <p style="text-align: left; ">Relying on a solid digital concept that complies with current standards in the field of cultural heritage, DiGA will produce a database of objects available on OpenAccess that will lend itself to exciting new research questions and will establish best practices in the field.</p>
+            <p style="text-align: left; ">The DiGA Project started in February 2021 and among the very first tasks figures the development of a Thesaurus for the description of Gandharan art and – more in general – Buddhist art. Our core vocabulary has been built starting from a limited selection of sources, a prominent one being the 
+                <hi rend="italic">Repertorio Terminologico per la schedatura delle sculture dell’arte gandharica</hi> (indicated below as ‘Repertorio’), a bilingual resource in Italian and English (Faccenna and Filigenzi 2007).
+            </p>
+            <p style="text-align: left; ">In the hagiography of the Buddha we read that, right after his miraculous birth emerging from the side of his mother Maya Devi, he immediately stood up and took seven steps.
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p rend="footnote text"> For an overview on the hagiography of the historical Buddha with references to the primary sources see Strong 2001.</p>
+                </note> At this point the intended pun in the title of this presentation should be clear also to those reader not familiar with Buddhist studies. Building up the DiGA Thesaurus is part of the early life of our project, and, therefore, the coincidence of including seven steps, as shown below, appears as an auspicious sign.
+            </p>
+            <p style="text-align: left; ">Constructing the Thesaurus starting from a printed source as the Repertorio poses many challenges, it is not a simple translation from a language (analogue) to another (digital), but it is about interpreting what a language wants to convey into a completely different system.</p>
+            <p style="text-align: left; ">As for the core of this presentation, the Seven Steps leading to the Thesaurus include:</p>
+            <list rend="numbered">
+                <item>Collecting and building upon existing sources both digital and printed.</item>
+                <item>Building the core of the Thesaurus starting from OCRing the Repertorio.</item>
+                <item>Restructure, edit and enrich the Repertorio in RDF/SKOS.</item>
+                <item>Add a concept hierarchy for narratives that can univocally identify scenes, episodes, actions.</item>
+                <item>Add a concept hierarchy for Figures including the actors involved in Gandharan narratives. </item>
+                <item>Reconcile the Concepts with existing entries in Getty AAT and Iconclass.</item>
+                <item>Work with other projects and institutions to make the DiGA Thesaurus useful beyond the project itself.
+                    <note place="foot" xml:id="ftn3" n="3">
+                        <p rend="footnote text"> Much of the reflection around the thesaurus stems from the Pelagios Working group involving partners from the Gandhara Project, Gandhari.org, and the Italian Archaeological Mission to Pakistan.</p>
+                    </note>
+                </item>
+            </list>
+            <p style="text-align: left; ">These Seven Steps summarize the work done to set up what we consider an initial core to a growing tool. With the progress of digitization of unpublished material is foreseeable that it will be necessary to add more concepts; the DiGA Thesaurus is indeed a compiled resource, bound to grow with the growth of digitization of Buddhist art. </p>
+            <p style="text-align: left; ">Once the Seven Steps are completed, the DiGA Thesaurus is ready to fulfil its purposes of cataloguing and research. Its use is threefold: first, it serves as a controlled vocabulary for cataloguing in the DiGA project. The hierarchical organization of the concepts improves documentation and allows to set into relation objects apparently unrelated (mostly for geographical dispersion of the collections). Second, by its open access publication as a SKOS resource, the DiGA Thesaurus serves as a best practice example in the field of Buddhist art through the introduction of controlled vocabularies for figures, monuments, objects, elements, components, etc. Finally, the DiGA Thesaurus aims to contribute to the growing use of Linked Open Data (LOD) in order to bridge different collections of Gandharan Buddhist resources, also in different media (i.e., text and visual art), and to link generic art historical resources (Getty AAT, Iconoclass, etc.) with those specific to Buddhist studies.</p>
+            <p style="text-align: left; ">We are confident that with the first release of the DiGA Thesaurus we accomplished the first (seven) steps to achieve an important goal and vision for a future of Gandharan studies where the availability of digital collections will actually lead to new insights. Already during the implementation of the Thesaurus we envisioned interesting avenues for future research both on the side of Gandharan studies and on that of Digital Humanities.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Drachenfels, D. and Luczanits, C.</hi> (eds) (2008). ‘Gandhara, The Buddhist Heritage of Pakistan, Legends, Monasteries, and Paradise’. Mayence: Philipp von Zabern.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Elwert, F. and Pons, J.</hi> (2020). ‘Linked Data Methodologies in Gandhāran Buddhist Art and Texts. Pelagios Working Group Final Report’, doi10.13154/rub.148.125
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Faccenna, D., Filigenzi, A., and Istituto italiano per l'Africa e l'Oriente</hi>. (2007). ‘Repertorio terminologico per la schedatura delle sculture dell'arte gandharica: Sulla base dei materiali provenienti dagli scavi della Missione archeologica italiana dell'IsIAO nello Swat, Pakistan’. Roma: IsIAO.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Strong, J.</hi> (2001). ‘The Buddha: A short biography’. Oxford: Oneworld.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

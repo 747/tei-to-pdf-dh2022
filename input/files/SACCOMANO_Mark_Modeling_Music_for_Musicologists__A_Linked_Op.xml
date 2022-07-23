@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Modeling Music for Musicologists: A Linked Open Data Approach</title>
+                <author>
+                    <persName>
+                        <surname>Saccomano</surname>
+                        <forename>Mark</forename>
+                    </persName>
+                    <affiliation>Paderborn University, Center for Music, Edition, Media (ZenMEM)</affiliation>
+                    <email>mark.saccomano@uni-paderborn.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Shibata</surname>
+                        <forename>Elisabete</forename>
+                    </persName>
+                    <affiliation>Beethoven-Haus Bonn, Research Centre “Beethoven-Archiv”</affiliation>
+                    <email>shibata@beethoven.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lewis</surname>
+                        <forename>David</forename>
+                    </persName>
+                    <affiliation>University of Oxford e-Research Centre</affiliation>
+                    <email>david.lewis@oerc.ox.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hankinson</surname>
+                        <forename>Andrew</forename>
+                    </persName>
+                    <affiliation>Répertoire International des Sources Musicales (RISM) Digital Center</affiliation>
+                    <email>andrew.hankinson@rism.digital</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Page</surname>
+                        <forename>Kevin</forename>
+                    </persName>
+                    <affiliation>University of Oxford e-Research Centre</affiliation>
+                    <email>kevin.page@oerc.ox.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-29T12:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>data modeling</term>
+                    <term>linked open data</term>
+                    <term>musicology</term>
+                    <term>metadata</term>
+                    <term>digital archives</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>data modeling</term>
+                    <term>linked (open) data</term>
+                    <term>Musicology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Modeling work in the digital humanities has traditionally focused on written texts; music, however, requires data models that can capture the varied, overlapping layers that are characteristic of its structure. Most encoding models for notated music—i.e., those presenting a precise representation of what can be performed by a musician—provide good coverage of the layers on the immediate music ‘surface,’ like measures, staves, and notes. Other, more analytical and less apparent structures are often not as well addressed. This includes formal objects such as musical themes and motifs, as well as properties that often lack explicit means for symbolic notation, such as texture and timbre. Our paper describes a model that includes a component to specifically address these types of musical structure, using different arrangements of the same musical work as examples.</p>
+            <p style="text-align: left; ">
+                <hi rend="background(white)">Musical figures require descriptions that include both the beginning and end points that mark their extent, as well as a specification of the individual parameters lying at different structural layers that comprise that figure. For example, early arrangements of Beethoven’s Eighth Symphony contain a replacement of the novel triple forte dynamic marking with a simple fortissimo, or double forte, at the moment of the first movement’s recapitulation. We can point to the respective measures and state that one has a different dynamic marking than the other, but this does not include our identification of the measures as different expressions of the same music-theoretical structure: a recapitulation. Although digital annotations can reference passages in multiple works, these references do not make sense unless they are linked together as separate expressions of the same analytic object. In order to present such a comparison, we need to posit a distinct, abstract class to model it. Such parallelism is entailed in our common understanding of what an arrangement is, though as Flanders and Jannidis (2021) note, the modeling already inherent in such a term is ‘invisible through [its] very familiarity.’ Before beginning work on a data model, therefore, we are obliged to examine what it is we are looking for when examining ‘versions.’</hi>
+            </p>
+            <p style="text-align: left; ">Our model builds on Linked Data principles demonstrated in projects using the Music Encoding and Linked Data (MELD) framework and consists of three modules: one for identifying resources, one for scholarly annotation, and, at the core, a framework for categorizing, labeling, and comparing user-selected structural features along with their formal analogues in different arrangements. After considering other standards, we have aligned our framework with the Functional Requirements for Bibliographic Records (FRBR), adding specialized subclasses of the standard FRBR entities for use in music comparison. Our model's music component introduces a class at the FRBR Expression level so that targeted commentary can be attached not simply to a contiguous block of music, but also, for example, to symbols that indicate the manner in which an accompanying melodic figure is to be played, or to the repetition and variation of a certain theme within a single piece.</p>
+            <p style="text-align: left; ">The data model has further been designed to accommodate source materials in different formats, including standardized methods to refer to segments (e.g., Media Fragments, EMA, and IIIF): by collecting individuated classes at the manifestation level, a specific portion of music can be treated independently of its realization in different media. This way, an annotation can target a semantically meaningful musical selection across file formats, rather than a set of resource-specific IDs.</p>
+            <p style="text-align: left; ">A prototype using the model has been successfully developed for a digital musicology study of 19th-century arrangements of orchestral works: 
+                <ref target="https://github.com/DomesticBeethoven/bith-annotator">https://github.com/DomesticBeethoven/bith-annotator</ref>. This application lets a user view scores encoded as MEI files side-by-side. They can then select a group of measures from two different versions of the same work and mark them as corresponding excerpts of the same passage of music. These excerpts are then saved as a single object—a parallel passage—ready for scholarly annotation.
+            </p>
+            <p style="text-align: left; ">Targeting musicological objects in an encoding involves more than capturing the symbols present in a particular region of a printed score. It entails the selection of parameters that are constitutive of the object, yet cannot be specified in advance. By introducing a class that incorporates these features into a single object with a musicologically meaningful label, this data model allows such abstract structures to be compared to one another in multiple versions and multiple files. In addition, because the model is compatible with Linked Data formats, these objects can be reused in future research, thus providing digital musicology projects with the potential to have a greater, longer-lasting contribution to scholarship in the field.</p>
+            <p style="text-align: left; ">
+                <hi rend="bold">Funding:</hi> This research was undertaken by the project 
+                <hi rend="italic">‘Beethoven in the House: Digital Studies of Domestic Music Arrangements</hi>,’ and supported by a UK-Germany funding initiative: in the UK by the Arts and Humanities Research Council (AHRC) [project number AH/T01279X/1], and in Germany funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) [project number 429039809].
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Flanders J. and Jannidis, F.</hi> (2019). Data Modeling in a Digital Humanities Context: An Introduction. In Flanders, J. and Jannidis, F. (eds.), 
+                        <hi rend="italic">The Shape of Data in the Digital Humanities: Modeling Texts and Text-based </hi>Resources. New York: Routledge, 2019, pp. 26–96.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">International Image Interoperability Framework (IIIF).</hi> (2020). API Specifications. 
+                        <anchor xml:id="Hlk102038544"/>
+                        <ref target="https://iiif.io/api/ ">https://iiif.io/api</ref>
+                        <ref target="https://iiif.io/api/ ">/</ref> (accessed April 28, 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Lewis, D., Page, K. and Dreyfus, L.</hi> (2021). Narratives and Exploration in a Musicology App: Supporting Scholarly Argument with the Lohengrin TimeMachine. In 
+                        <hi rend="italic">8th International Conference on Digital Libraries for Musicology</hi> (DLfM ’21). New York: Association for Computing Machinery, pp. 50–58. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Music Encoding and Linked Data (MELD).</hi> (2021). Overview. 
+                        <ref target="https://meld.web.ox.ac.uk/">https://meld.web.ox.ac.uk/</ref> (accessed April 28, 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Music Encoding Initiative (MEI).</hi> (2019). 
+                        <ref target="https://music-encoding.org">https://music-encoding.org</ref>/ (accessed April 28, 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Viglianti, R.</hi> (2015). Enhancing Music Notation Addressability (EMA). 
+                        <ref target="https://music-addressability.github.io/ema/">https://music-addressability.github.io/ema/</ref> (accessed April 28, 2022). 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Weigl, D., et al.</hi> (2021). Notes on the Music: A Social Data Infrastructure for Music Annotation. In 
+                        <hi rend="italic">8th International Conference on Digital Libraries for Musicology</hi> (DLfM ’21). New York: Association for Computing Machinery, pp. 23–31.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">W3C Media Fragments Working Group.</hi> (2012). Media Fragments URI 1.0. 
+                        <ref target="https://www.w3.org/TR/media-frags/">https://www.w3.org/TR/media-frags/</ref> (accessed April 28, 2022). 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

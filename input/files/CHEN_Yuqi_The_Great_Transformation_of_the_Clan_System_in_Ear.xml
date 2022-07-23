@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Great Transformation of the Clan System in Early China: A Social Network Analysis of Clan-sign Inscriptions from 1300 BC to 900 BC</title>
+                <author>
+                    <persName>
+                        <surname>Chen</surname>
+                        <forename>Yuqi</forename>
+                    </persName>
+                    <affiliation>Department of History, Peking University</affiliation>
+                    <email>cyq0722@pku.edu.cn</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wang</surname>
+                        <forename>Linxu</forename>
+                    </persName>
+                    <affiliation>Department of Information Management, Peking University</affiliation>
+                    <email>wanglinxu@pku.edu.cn</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Chinese bronze inscription</term>
+                    <term>clan sign</term>
+                    <term>co-occurrence</term>
+                    <term>historical network analysis</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>Archaeology</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="bold">Abstract</hi>
+                <anchor xml:id="OLE_LINK23"/>
+                <anchor xml:id="OLE_LINK24"/>This paper analyzes 1206 inscribed bronzes excavated from different archaeological sites. Treating the phenomenon that bronzes with different clan signs appeared in the same tomb as a kind of co-occurrence, the co-occurrence networks of clan signs in two sequential time periods (1300 BC – 1046 BC and 1046 BC – 900 BC) are constructed to examine the interrelationship of the clans. The
+                <anchor xml:id="OLE_LINK22"/> strong heterogeneity of the networks in different periods shows the huge impact of the Zhou conquest of Shang, which is called “the Great Transformation from Shang to Zhou” by historians and archaeologists.
+            </p>
+            <p>
+                <hi rend="bold">Keyword</hi> Chinese bronze inscription; 
+                <anchor xml:id="OLE_LINK8"/>clan sign; co-occurrence; historical network analysis
+            </p>
+            <p>
+                <hi rend="bold" style="font-size:12pt">1</hi>
+                <hi rend="bold" style="font-size:12pt">BACKGROUND</hi>
+            </p>
+            <p>One well-recognized cultural trait of ancient China was the existence of the clan system, which can be traced to the Shang dynasty and has deeply affected Chinese history for three thousand years.</p>
+            <p>Due to a lack of historical documents, bronze inscriptions are 
+                <anchor xml:id="OLE_LINK13"/>of great value to the study of clans in early China. During the late Shang dynasty (1300 BC – 1046 BC), the most common form of bronze inscriptions was a single graph functioning as a kind of emblem designating the clan name of the ancestor to whom the bronze was dedicated. After the Zhou people conquered the Shang dynasty, this cultural custom still lasted for a period of time among the Shang people in the early Western Zhou dynasty (1046 BC – 900 BC). 
+            </p>
+            <p>According to our current estimate, there are about 6800 bronzes with the so-called clan signs. 1200 of them are unearthed, while the rest are unprovenanced. A thorough investigation of these materials can increase our understanding of the clan system and fill the gaps in the early history of China.</p>
+            <figure>
+                <figure>
+                    <graphic n="1001" width="8.432341666666666cm" height="11.77636388888889cm" url="Pictures/4717233ee37e7c56c85376f6940b138c.png" rend="inline"/>
+                </figure>
+                <figure>
+                    <graphic n="1002" width="15.979069444444445cm" height="6.009569444444445cm" url="Pictures/b2e40ecf5a35083ad940a45614518a58.png" rend="inline"/>
+                </figure>
+            </figure>
+            <p style="text-align: center;">
+                <hi rend="bold">Figure 1.</hi> Bronzes with different clan signs unearthed from Shigushan(<hi rend="Chinese">石鼓山</hi>) M1
+            </p>
+            <p>
+                <hi rend="bold" style="font-size:12pt">2</hi>
+                <hi rend="bold" style="font-size:12pt">RELATED WORK</hi>
+            </p>
+            <p>Scholars have been studying the clan-sign inscriptions since the Song dynasty. However, traditional humanities researchers mostly focused on the paleographical study of clan signs or the historical origin of each clan. The inter-clan associations haven’t been paid enough attention. </p>
+            <p> Archaeological discoveries in recent decades provided new clues. Bronze objects belonging to one clan were often found to be buried in tombs of another clan, which can be attributed to gift-giving, marriage, exchange or pillage. Bronzes with different clan signs excavated from the same tomb can reflect the interrelationships between the tomb occupant’s clan and other clans.</p>
+            <p> Some scholars have realized the potential of such investigation (Barnard, 1986; Sun, 2017). But their attempts were all limited to case studies, not from a macro perspective. Using methods of Social Network Analysis, we can discuss the clan system and social structure of early China from a whole new perspective. </p>
+            <p>
+                <hi rend="bold" style="font-size:12pt">3</hi>
+                <hi rend="bold" style="font-size:12pt">DATA AND METHOD</hi>
+            </p>
+            <p>Our data were extracted from 
+                <hi rend="italic">A Compendium of Inscriptions and Images on Bronzes from the Shang and Zhou Period</hi> (<hi rend="Chinese">商周青銅器銘文暨圖像集成</hi>) by manual, including 1206 unearthed bronzes with clan signs. Among them, 684 bronzes were excavated from 219 tombs of the late Shang dynasty, while 522 bronzes were excavated from 185 tombs or hoards of the Western Zhou dynasty. The collected data underwent text preprocessing including tokenization, standardization and manual proofreading. 309 clan signs were recognized on these bronzes. 
+            </p>
+            <p>The following methods were then applied:</p>
+            <p>(1) Frequency analysis of clan signs from the two periods was conducted to show the rise or decline of different clans, since the bronzes were thought to be the symbol of wealth and status.</p>
+            <p>(2) Treating the archaeological phenomenon that different clan signs appeared in the same tomb as a kind of co-occurrence, the co-occurrence networks of clan signs in the two periods (1300 BC – 1046 BC and 1046 BC – 900 BC) were constructed to examine the interrelationships of these clans.</p>
+            <figure>
+                <graphic n="1003" width="13.43121111111111cm" height="7.1231cm" url="Pictures/98163b59aa4b6a722977ae37ce5fff9f.png" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                <hi rend="bold">Figure 2.</hi> Clan sign frequency in the Shang and Western Zhou dynasty
+            </p>
+            <figure>
+                <graphic n="1004" width="16.016111111111112cm" height="9.70138888888889cm" url="Pictures/e109aec4b25ca9fbaba7596f977564aa.png" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                <anchor xml:id="OLE_LINK12"/>
+                <hi rend="bold">Figure 3.</hi> Co-occurrence network of clan signs in the late Shang dynasty (1300 BC – 1046 BC)
+            </p>
+            <figure>
+                <graphic n="1005" width="15.984361111111111cm" height="9.766652777777777cm" url="Pictures/f01f77c6a2380471fc9878395cc62908.png" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                <hi rend="bold">Figure 4.</hi> Co-occurrence network of clan signs in the early Zhou dynasty 
+                <anchor xml:id="OLE_LINK15"/>(1046 BC – 900 BC)
+            </p>
+            <p style="text-align: center;">
+                <anchor xml:id="OLE_LINK1"/>
+                <hi rend="bold">Table 1.</hi> Clan groups in the late Shang dynasty (1300 BC – 1046 BC)
+            </p>
+            <figure>
+                <graphic n="1006" width="14.993055555555555cm" height="8.784166666666666cm" url="Pictures/5c3c91d17c6752408ae5010c8eef5786.png" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">
+                <hi rend="bold">Table 2.</hi> Clan groups in the early Zhou dynasty (1046 BC – 900 BC)
+            </p>
+            <figure>
+                <graphic n="1007" width="15.063611111111111cm" height="11.006666666666666cm" url="Pictures/d6688010a3c32600423589902aa2ba50.png" rend="inline"/>
+            </figure>
+            <p>
+                <hi rend="bold" style="font-size:12pt">4</hi>
+                <hi rend="bold" style="font-size:12pt">RESULTS AND DISCUSSION</hi>
+            </p>
+            <p>
+                <hi rend="bold" xml:space="preserve">4.1 </hi>
+                <anchor xml:id="OLE_LINK14"/>
+                <hi rend="bold">Changes of the networks over time</hi>
+            </p>
+            <p>The network in the early Western Zhou dynasty (1046 – 900 BC) is denser than the network in the late Shang dynasty (1300 – 1046 BC), although the size of nodes in the two networks are almost the same. More frequent co-occurrences of clan signs reflect more frequent associations between clans. </p>
+            <p style="text-align: center;">
+                <hi rend="bold" xml:space="preserve">Table 3. </hi>Metrics of the co-occurrence networks of clan signs
+            </p>
+            <table rend="rules">
+                <row>
+                    <cell style="text-align: center;">
+                        Period
+                    </cell>
+                    <cell style="text-align: center;">Clan signs</cell>
+                    <cell style="text-align: center;">Edges</cell>
+                    <cell style="text-align: center;">
+                        Density
+                    </cell>
+                    <cell style="text-align: center;">
+                        Average degree
+                    </cell>
+                    <cell style="text-align: center;">
+                        Average weighted degree
+                    </cell>
+                    <cell style="text-align: center;">
+                        Average path length
+                    </cell>
+                    <cell style="text-align: center;">
+                        Modularity
+                    </cell>
+                </row>
+                <row>
+                    <cell style="text-align: center;">
+                        <anchor xml:id="OLE_LINK16"/>
+                        <anchor xml:id="Hlk90123254"/>1300 – 1046 BC
+                    </cell>
+                    <cell style="text-align: center;">
+                        137
+                    </cell>
+                    <cell style="text-align: center;">
+                        261
+                    </cell>
+                    <cell style="text-align: center;">
+                        0.028
+                    </cell>
+                    <cell style="text-align: center;">
+                        3.810
+                    </cell>
+                    <cell style="text-align: center;">
+                        7.737
+                    </cell>
+                    <cell style="text-align: center;">
+                        3.079
+                    </cell>
+                    <cell style="text-align: center;">
+                        0.708
+                    </cell>
+                </row>
+                <row>
+                    <cell style="text-align: center;">1046 – 900 BC</cell>
+                    <cell style="text-align: center;">
+                        130
+                    </cell>
+                    <cell style="text-align: center;">
+                        428
+                    </cell>
+                    <cell style="text-align: center;">
+                        0.051
+                    </cell>
+                    <cell style="text-align: center;">
+                        6.585
+                    </cell>
+                    <cell style="text-align: center;">
+                        13.631
+                    </cell>
+                    <cell style="text-align: center;">
+                        2.657
+                    </cell>
+                    <cell style="text-align: center;">
+                        0.526
+                    </cell>
+                </row>
+            </table>
+            <p>
+                <hi rend="bold">4.2 Clan groups in different periods</hi>
+            </p>
+            <p>Using the Louvain algorithm with a resolution at 1.0, we partitioned the two networks separately into different communities, which can be seen as the clan groups. We laid out the network with 
+                <anchor xml:id="OLE_LINK18"/>the Yifan Hu algorithm and used different colors for different groups (Figure 3 and 4). Clans of the same group had closer connections.
+            </p>
+            <p>Besides, we used the Kulczynski distance (Cha, 2007; Shang, 2021) to
+                <anchor xml:id="OLE_LINK19"/> measure the similarity between groups in different periods. There is no similarity score higher than 0.2, proving that the heterogeneity of the two networks is very strong.
+            </p>
+            <p style="text-align: center;">
+                <hi rend="bold" xml:space="preserve">Table 4. </hi>Kulczynski similarity between the clan groups in different periods
+            </p>
+            <table rend="rules">
+                <row>
+                    <cell style="text-align: center;"/>
+                    <cell style="text-align: center;">
+                        Group 1
+                    </cell>
+                    <cell style="text-align: center;">
+                        Group 2
+                    </cell>
+                    <cell style="text-align: center;">
+                        Group 3
+                    </cell>
+                    <cell style="text-align: center;">
+                        Group 4
+                    </cell>
+                    <cell style="text-align: center;">
+                        Group 5
+                    </cell>
+                    <cell style="text-align: center;">
+                        Group 6
+                    </cell>
+                    <cell style="text-align: center;">
+                        Group 7
+                    </cell>
+                </row>
+                <row>
+                    <cell style="text-align: center;">
+                        Group A
+                    </cell>
+                    <cell style="text-align: center;">0.042</cell>
+                    <cell style="text-align: center;">0.091</cell>
+                    <cell style="text-align: center;">0.091</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0.072</cell>
+                    <cell style="text-align: center;">0.099</cell>
+                    <cell style="text-align: center;">0</cell>
+                </row>
+                <row>
+                    <cell style="text-align: center;">
+                        Group B
+                    </cell>
+                    <cell style="text-align: center;">0.053</cell>
+                    <cell style="text-align: center;">0.111</cell>
+                    <cell style="text-align: center;">0.111</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0.126</cell>
+                </row>
+                <row>
+                    <cell style="text-align: center;">
+                        Group C
+                    </cell>
+                    <cell style="text-align: center;">0.056</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0.085</cell>
+                    <cell style="text-align: center;">0.170</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                </row>
+                <row>
+                    <cell style="text-align: center;">
+                        Group D
+                    </cell>
+                    <cell style="text-align: center;">0.060</cell>
+                    <cell style="text-align: center;">0.063</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0.133</cell>
+                </row>
+                <row>
+                    <cell style="text-align: center;">
+                        Group E
+                    </cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0.142</cell>
+                    <cell style="text-align: center;">0.071</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0.125</cell>
+                    <cell style="text-align: center;">0</cell>
+                </row>
+                <row>
+                    <cell style="text-align: center;">
+                        Group F
+                    </cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0.159</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                </row>
+                <row>
+                    <cell style="text-align: center;">
+                        Group G
+                    </cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                    <cell style="text-align: center;">0</cell>
+                </row>
+            </table>
+            <p>Cultural and political changes from the late Shang to the early Western Zhou dynasty is called “the Great Transformation from Shang to Zhou” by some scholars (Wang, 1923). With methods of network analysis, we examined this traditional topic from a new angle and displayed it in a visual way. The results showed us how deeply the Zhou conquest of Shang changed the inter-clan associations and the entire clan system of the Shang people.</p>
+            <p> For future work, we plan to build a hyper-network with three different types of nodes (tombs, bronzes and clan-sign inscriptions) to reveal more historical details, which can not only increase our understanding of the clan system but also contribute to the study of burial custom in early China.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Bastian, M., Heymann, S. and Jacomy, M.</hi> (2009). Gephi: An Open Source Software for Exploring and Manipulating Networks. 
+                        <hi rend="italic">Proceedings of the International AAAI Conference on Web and Social Media</hi>, 3(1): 361-62.
+                    </bibl>
+                    <bibl>
+                        <anchor xml:id="OLE_LINK2"/>
+                        <hi rend="bold">Barnard, N.</hi> (1986). A New Approach to the Study of Clan-sign Inscriptions of Shang. In Chang, K. C. (ed), 
+                        <hi rend="italic">Studies of Shang Archaeology</hi>. New Haven: Yale University Press, pp. 141-206.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Cha, S.-H.</hi> (2007). Comprehensive Survey on Distance/Similarity Measures Between Probability Density Functions. 
+                        <hi rend="italic">International Journal of Mathematical Models and Methods in Applied Sciences</hi>, 1(4): 300-307.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Fei, J. C. H. and Liu, T.-J.</hi> (1982). The Growth and Decline of Chinese Family Clans. 
+                        <hi rend="italic">The Journal of Interdisciplinary History</hi>, 12(3): 375-408.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">He, J.</hi> (2009). 
+                        <hi rend="italic">Studies of Clan Inscriptions on Bronzes in the Shang and Zhou Dynasty</hi>. Jinan: Qilu shushe.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Liu, J., Wang, Z. and Xin, Y.</hi> (2013). The Excavation of the Western Zhou Tombs at Shigushan in Baoji, Shaanxi. 
+                        <hi rend="italic">Wenwu</hi>, 2: 4-54.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" xml:space="preserve">Painter, D. T., Daniels, B. C. and </hi>
+                        <anchor xml:id="OLE_LINK3"/>
+                        <hi rend="bold">Jost, J.</hi> (2019). Network Analysis for the Digital Humanities: Principles, Problems, Extensions. 
+                        <hi rend="italic">Isis</hi>, 110(3): 538-54.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rawson, J.</hi> (1985). Late Western Zhou: A Break in the Shang Bronze Tradition. 
+                        <hi rend="italic">Early China</hi>, 11: 289-96.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sun, Y.</hi> (2017). 
+                        <anchor xml:id="OLE_LINK6"/>Inscribed Bronzes, Gift-giving and Social Networks in the Early Western Zhou: A Case Study of the Yan Cemetery at Liulihe. In 
+                        <anchor xml:id="OLE_LINK7"/>Shaughnessy, E. C. (ed), 
+                        <hi rend="italic">Imprints of Kinship: Studies of Recently Discovered Bronze Inscriptions from Ancient China</hi>. Hong Kong: The Chinese University Press, pp. 47-70.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Shang, W.</hi> (2021). The Aristocratic Social Network in the Eastern Jin Dynasty (317-420 C.E.) [Panel discussion]. Historical Network Research in Chinese Studies. (Online conference)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wang, G.</hi> (1923). Institutional Change in the Yin and Zhou Dynasties. In Wang, G., 
+                        <hi rend="italic">Guantang Jilin</hi>. Shanghai: Wucheng Jiangshi kanben.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wu, Z.</hi> (2012). 
+                        <hi rend="italic">A Compendium of Inscriptions and Images on Bronzes from the Shang and Zhou Period</hi>. Shanghai: Shanghai guji chubanshe.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

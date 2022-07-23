@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Realizing a multilingual tool for best legal and ethical practices in DH research: The ELDAH Consent Form Wizard as a model for community-driven internationalization</title>
+                <author>
+                    <persName>
+                        <surname>Hannesschläger</surname>
+                        <forename>Vanessa</forename>
+                    </persName>
+                    <affiliation>Austrian National Library, Austria</affiliation>
+                    <email>vanessa.hannesschlaeger@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kuzman-Slogar</surname>
+                        <forename>Koraljka</forename>
+                    </persName>
+                    <affiliation>Institute of Ethnology and Folklore Research, Zagreb, Croatia</affiliation>
+                    <email>koraljka@ief.hr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Scholger</surname>
+                        <forename>Walter</forename>
+                    </persName>
+                    <affiliation>University of Graz, Austria</affiliation>
+                    <email>walter.scholger@uni-graz.at</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T11:10:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Consent</term>
+                    <term>Data Protection</term>
+                    <term>Research ethics</term>
+                    <term>Multilingual tools</term>
+                    <term>internationalization</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>copyright</term>
+                    <term>licensing</term>
+                    <term>and permissions standards</term>
+                    <term>systems</term>
+                    <term>and processes</term>
+                    <term>digital access</term>
+                    <term>privacy</term>
+                    <term>and ethics analysis</term>
+                    <term>Cultural studies</term>
+                    <term>Law and legal studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">In May 2018, the European Union General Data Protection Regulation (GDPR) came into effect. This rigorous legislation on data protection and privacy, among many other things, significantly changed the way research with data from living persons is conducted since it introduced a number of obligations and restrictions to ensure a high level of protection of individuals' rights. The research community has been struggling with fulfilling these new obligations and desperately requires training, knowledge and tools to support their research under the new circumstances. </p>
+            <p style="text-align: left; ">In reaction to this demand, the working group Ethics and Legality in Digital Arts and Humanities (ELDAH) of the European research infrastructure consortium DARIAH-EU developed the ELDAH Consent Form Wizard (CFW) , a tool that provides researchers, cultural heritage institutions and research infrastructures with GDPR-compliant consent form templates for DH research purposes. With the help of this tool, valid consent to processing personal data according to the current European legal regulations can be gathered. The CFW offers support and guidance with three main scenarios:</p>
+            <p style="text-align: left; ">1. Gathering data from and/or about living people for research purposes</p>
+            <p style="text-align: left; ">2. communicating through mailing lists or other (digital) communication media</p>
+            <p style="text-align: left; ">3. collecting data and/or consent from participants as the host of an academic event</p>
+            <p style="text-align: left; ">The tool, which was developed based on community-driven input by (mostly) European DH researchers and administrators, has been well received and is broadly used even beyond the scope of its legal application, since colleagues from South-Africa, New Zealand and India have also been using this tool as a means to transparently provide information to and gather informed consent from their research subjects: not in order to fulfill a legal obligation but to establish a high and transparent ethical standard in their own research practices despite legal differences.</p>
+            <p style="text-align: left; ">Other than fulfilling legal and ethical community demands, the development of the CFW tool also addresses another important topic in the dissemination of DH methods and contents: the goal to create a multilingual resource. A prominent and successful example for efforts at multilingual tool development and internationalisation are the TEI Publisher and the activities of the TEI working group on Internationalisation. </p>
+            <p style="text-align: left; ">In a legal and ethical context, internationalisation is particularly important not only in terms of increased accessibility but also as a means to create trust and accountability between researchers and their data subjects when gathering and processing personal data for research purposes. Participants in interviews, surveys and the likes need to fully understand their rights and the purposes for which their data are collected in order to make an informed decision about their participation. Therefore, having such resources available in their native language should be considered best practice. The - originally English - ELDAH CFW has already addressed this need with translations into Croatian, Italian and German. Additional translations into French, Greek, Slovene and even Hindi are already in progress, while translations into Spanish and Japanese are being planned.</p>
+            <p style="text-align: left; ">For the translation of the UI, a dedicated translation interface was developed. With the help of this interface, CFW translators can internationalize the tool to their national languages line by line, field by field, button by button. Since the tool provides not only building blocks for a consent form, but also aims to educate its users with larger informative text passages as they complete the online form, a fully automated, dictionary-based translation approach was considered too inaccurate and therefore inadequate, especially since translations of legal contexts and formulations have to be accurate and reliable. While the translation of the webform used to collect the information from the individual user of the CFW worked very well, the consequently automatically generated template for the consent form ended up with some room for improvement. Furthermore, a purely participant-driven approach to translations in a field which is subject to regular revisions and changes (because of legislation changes) poses significant problems regarding sustainability and accuracy.</p>
+            <p style="text-align: left; ">The proposed paper will discuss two important aspects, presenting the CFW as a showcase and starting point: a) the importance of tools that provide support to the global research community regarding aspects of data protection (or legal and ethical research standards in general), and b) the challenges, ways and benefits of developing such a tool as a multilingual resource.</p>
+            <p style="text-align: left; ">We would like to highlight the potential of our internationalization approach as a template for other projects, e.g. for the development of a multilingual library of terms that are commonly used on comparable interfaces. In addition, we would like to critically discuss issues that can arise in the course of translation - especially in the case of legal tech where portability and compatibility with national legislations are essential. Keeping a multilingual tool sustainable and accurate presents a tremendous challenge: We will explore how this could be achieved as a collaborative, community-driven effort and invite colleagues to share their own expertise in implementing multilingual resources.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Asef, E. / Wagner, C. / Lee, M. / Nowak, S. (2019)</hi>: 
+                        <hi rend="italic">Workshop Report Non-Latin Scripts in Multilingual Environments: research data and digital humanities in area studies</hi>. 
+                        <ref target="https://blogs.fu-berlin.de/bibliotheken/2019/01/18/workshop-nls2018/">https://blogs.fu-berlin.de/bibliotheken/2019/01/18/workshop-nls2018/</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bermúdez Sabel, H. / Cayless, H. / Meneses, L. / Nagasaki, K. / Rio Riande, G. / Scholger, M.</hi> (2019): 
+                        <hi rend="italic">Communicating the TEI Across Linguistic and Cultural Boundaries</hi>. 
+                        <ref target="https://trianglesci.org/2019/07/17/communicating-the-tei-to-a-multilingual-user-community">https://trianglesci.org/2019/07/17/communicating-the-tei-to-a-multilingual-user-community</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">DARIAH-EU Working Group Ethics and Legality in Digital Arts and Humanities</hi> (2020): 
+                        <hi rend="italic">The ELDAH Consent Form Wizard</hi>. 
+                        <ref target="https://consent.dariah.eu/">https://consent.dariah.eu/</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">e-editiones</hi> (2017): 
+                        <hi rend="italic">TEI publisher</hi>. 
+                        <ref target="https://teipublisher.com/">https://teipublisher.com/</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">European Union</hi> (2019): 
+                        <hi rend="italic">Directive (EU) 2019/790 of the European Parliament and of the Council of 17 April 2019 on copyright and related rights in the Digital Single Market and amending Directives 96/9/EC and 2001/29/EC</hi>. 
+                        <ref target="https://eur-lex.europa.eu/eli/dir/2019/790/oj">https://eur-lex.europa.eu/eli/dir/2019/790/oj</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kamocki, P.</hi> (2021): 
+                        <hi rend="italic">Handouts on the processing of personal data for the purposes of language research and archiving of language resources under the General Data Protection Regulation</hi>. 
+                        <ref target="https://doi.org/10.14618/ids-pub-10695">https://doi.org/10.14618/ids-pub-10695</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kamocki, P. / Ketzan, E. / Wildgans, J.</hi> (2018): 
+                        <hi rend="italic">Language Resources and Research Under the General Data Protection Regulation</hi>. 
+                        <ref target="http://nbn-resolving.de/urn:nbn:de:bsz:mh39-97562">http://nbn-resolving.de/urn:nbn:de:bsz:mh39-97562</ref>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

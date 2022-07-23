@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>VisColl 2.0 and VCEditor. A new model and tool in the quiver of codicologists and bibliographers</title>
+                <author>
+                    <persName>
+                        <surname>Campagnolo</surname>
+                        <forename>Alberto</forename>
+                    </persName>
+                    <affiliation>Université Catholique de Louvain, Louvain-la-Neuve, Belgium</affiliation>
+                    <email>alberto.campagnolo@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Porter</surname>
+                        <forename>Dot</forename>
+                    </persName>
+                    <affiliation>Schoenberg Institute for Manuscript Studies, University of Pennsylvania Libraries</affiliation>
+                    <email>dorp@pobox.upenn.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Emery</surname>
+                        <forename>Doug</forename>
+                    </persName>
+                    <affiliation>Schoenberg Institute for Manuscript Studies, University of Pennsylvania Libraries</affiliation>
+                    <email>emeryr@pobox.upenn.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Perkins</surname>
+                        <forename>Patrick</forename>
+                    </persName>
+                    <affiliation>Schoenberg Institute for Manuscript Studies, University of Pennsylvania Libraries</affiliation>
+                    <email>pperkins@upenn.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ransom</surname>
+                        <forename>Lynn</forename>
+                    </persName>
+                    <affiliation>Schoenberg Institute for Manuscript Studies, University of Pennsylvania Libraries</affiliation>
+                    <email>lransom@upenn.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-10T16:22:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Codicology</term>
+                    <term>Bibliography</term>
+                    <term>collation</term>
+                    <term>gatherings</term>
+                    <term>quires</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>digital libraries creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>manuscripts description</term>
+                    <term>representation</term>
+                    <term>and analysis</term>
+                    <term>Book and print history</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>Today’s quintessential book form is the codex, i.e., collections of sheets folded double and fastened at the spine, usually protected by covers (Roberts and Skeat, 1983: 1; Ligatus, 2015a; Harnett, 2017: 184). Historically this has been true for most of the book production in the Middle East and the West since the appearance of codex books around the third century CE. The ultimate working unit of books in codex format is the gathering (or quire): a group of folded (or single) leaves bound together with other gatherings to form the textblock (Andrist et al., 2013: 50; Ligatus, 2015b). </p>
+                <p>The gathering structure represents the first key to studying the genesis and history of codices and their content (Andrist et al., 2010). This structure is fundamental to studying the codex format for manuscripts and early printed books. The study of gathering structures helps assess provenance and dating or illustrate—highlighting irregularities and discontinuities—complex histories.</p>
+                <p>Traditionally, gathering structures are described in highly formalized alphanumerical formulaic representations—collation formulas—whose information density hinders the immediacy of their interpretation. To tackle this problem and provide a richer and more flexible information model, Porter and Campagnolo have devised VisColl (Collation Visualization), a system for modelling and visualizing the physical collation of books in codex format (Porter et al., 2017a; Porter et al., 2017b). When gathering assemblies are captured through VisColl, taking advantage of the flexibility of the digital medium, they can, in turn, be readily visualized, thus allowing their study and that of related features, fostering a more immediate understanding and interpretation of the data.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>VisColl and VCEditor</head>
+                <p>VisColl’s development team is centred at the Schoenberg Institute for Manuscript Studies (SIMS) at the University of Pennsylvania Libraries. Conceived around 2013, VisColl’s model and project have gone through a series of ameliorations that resulted in the publishing of version 2.0 and a new graphical interface, VCEditor in October 2021 (Porter et al., 2021; Perkins and Emery, 2021). VCEditor is based on the VisCodex web application, developed by the Old Books New Science Lab at the University of Toronto, under the direction of Professor Alexandra Gillespie (Ung et al., 2021). </p>
+                <p>The XML model behind VisColl permits users to collect structured data to describe gathering assemblies. From that one can generate diagrammatic representations and digital facsimiles that re-join into virtual bifolia the photographs of the leaves of books, making overt their physical makeup. To allow for maximum flexibility and to represent complex structures, version 2.0 changes the approach and its data elements radically, switching from the quire and the bifolium as its base units (as it is customary in collation formulas) to the single leaf; each leaf can then be conjoined to form a bifolium within a gathering. Users can then collect richer data than what is traditionally captured in collation formulas—e.g., each leaf’s attachment method, the hair and flesh side of parchment leaves, animal species, and so on. The data collected can then be used to automatically generate detailed diagrammatic visualizations, recording and describing complex structures with ad hoc annotations and taxonomies. This alone represents a substantial improvement over traditional methods based on collation formulas and descriptions, or diagrams painstakingly produced for a specific volume. </p>
+                <p>VCEditor, based on UToronto’s VisCodex (Ung et al., 2021), allows users to model gathering structures through a simple graphic interface without considering or understanding VisColl’s model, thus widening the user base of the model beyond the digital humanities. Data on the structure is collected and mapped onto VisColl’s schema to generate compliant XML records. The XML record can then be downloaded or used to generate, directly in VCEditor, a series of visualizations through Idrovora, an HTTP Xproc service developed by Gregor Middell (Figure 1)(Middell, 2021). Idrovora runs XSLT scripts in the backend and generates SVG visualizations of the gatherings, HTML rendering of the reconstructed conjoined bifolia, and collation formulas. The system is very flexible, and additional visualizations or other forms of data reuse can be added through new XLST pipelines or parametrical input. </p>
+                <figure>
+                    <graphic n="1001" width="12.454897222222222cm" height="8.80793888888889cm" url="Pictures/b0ebb3ac5099e506ee7a1c24ceda6dd9.png" rend="inline"/>
+                    <head>
+                        <anchor xml:id="Ref89428804"/>Figure 1. VCEditor’s infrastructure.
+                    </head>
+                </figure>
+                <p>Since VCEditor’s beta release in early October 2021 to the time of writing, more than 250 people have registered for the service. The users vary from scholars to book conservators and students working on more than 170 individual projects. A testimony to the need and popularity of the tool. </p>
+                <p>While working on improving the tool and the user experience, we are also actively putting together new scripts for a variety of different visualizations and modelling requirements, such as imposition for printed books and manuscripts penned before folding and cutting the gatherings, watermark positioning, improved biocodicology data visualizations, engaging with users and specific communities of interest. </p>
+                <p>This presentation will showcase VCEditor’s features and the modelling capabilities of VisColl’s 2.0.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <hi rend="bold">Andrist, P., Canart, P. and Maniaci, M.</hi> (2013). 
+                        <hi rend="italic">La syntaxe du codex: essai de codicologie structurale</hi>. (Bibliologia 34). Turnhout: Brepols.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <hi rend="bold">Harnett, B.</hi> (2017). The Diffusion of the Codex. 
+                        <hi rend="italic">Classical Antiquity</hi>, 
+                        <hi rend="bold">36</hi>(2): 183–235 doi:10.1525/ca.2017.36.2.183.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <hi rend="bold">Ligatus</hi> (2015a). Codex-form Books 
+                        <hi rend="italic">Language of Bindings</hi>. London: University of the Arts London https://www.ligatus.org.uk/lob/concept/4886 (accessed 27 December 2020).
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <hi rend="bold">Ligatus</hi> (2015b). Gatherings 
+                        <hi rend="italic">Language of Bindings</hi>. London: University of the Arts London http://w3id.org/lob/concept/2286 (accessed 21 March 2021).
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <hi rend="bold">Middell, G.</hi> (2021). 
+                        <hi rend="italic">Idrovora: A Pump Station for Your XProc Pipelines</hi>. Clojure https://github.com/gremid/idrovora (accessed 10 April 2022).
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <hi rend="bold">Perkins, P. and Emery, D.</hi> (2021). 
+                        <hi rend="italic">VCEditor</hi>. JavaScript Philadelphia (PA): University of Pennsylvania Libraries https://github.com/KislakCenter/VisualCollation (accessed 3 December 2021).
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <hi rend="bold">Porter, D., Campagnolo, A. and Connelly, E.</hi> (2017a). VisColl: A New Collation Tool for Manuscript Studies. In Busch, H., Fischer, F. and Sahle, P. (eds), 
+                        <hi rend="italic">Kodikologie &amp; Paläographie Im Digitalen Zeitalter 4 | Codicology &amp; Palaeography in the Digital Age 4</hi>. Norderstedt: Books on Demand Gmbh, pp. 81–100 https://kups.ub.uni-koeln.de/7782/.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <hi rend="bold">Porter, D., Campagnolo, A., Tuohy, C. and Emery, D.</hi> (2021). 
+                        <hi rend="italic">VisColl: Release v2.1.0</hi>. Philadelphia (PA): University of Pennsylvania Libraries doi:10.5281/zenodo.5139928. https://doi.org/10.5281/zenodo.4075530 (accessed 3 December 2021).
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <hi rend="bold">Porter, D., Gillespie, A., Campagnolo, A., Mitchell, L. and Di Cresce, R.</hi> (2017b). VisColl: Visualizing the physical structure of medieval manuscripts, a poster and demonstration. 
+                        <hi rend="italic">Digital Humanities 2017</hi>. Montréal: McGill University; Université de Montréal, pp. 778–79 https://dh2017.adho.org/abstracts/DH2017-abstracts.pdf.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <hi rend="bold">Roberts, C. H. and Skeat, T. C.</hi> (1983). 
+                        <hi rend="italic">The Birth of the Codex</hi>. London; New York: Published for the British Academy by the Oxford University Press.
+                    </bibl>
+                    <bibl rend="Bibliography" style="text-align: left; ">
+                        <hi rend="bold">Ung, M., Rajakumar, J., Asghar, I., Law, D. and Liu, S.</hi> (2021). 
+                        <hi rend="italic">VisCodex</hi>. JavaScript Toronto: University of Toronto Libraries https://github.com/utlib/VisualCollation (accessed 29 August 2019).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Global and local citation networks as a new paradigm for multiple viewpoint investigation in historical literature: a case study of the Rabbinic literature corpus</title>
+                <author>
+                    <persName>
+                        <surname>Ben-Gigi</surname>
+                        <forename>Nati</forename>
+                    </persName>
+                    <affiliation>Bar Ilan University, Israel</affiliation>
+                    <email>nati.bengigi@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Katzoff</surname>
+                        <forename>Binyamin</forename>
+                    </persName>
+                    <affiliation>Bar Ilan University, Israel</affiliation>
+                    <email>binyamin.katzoff@biu.ac.il</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schler</surname>
+                        <forename>Jonathan</forename>
+                    </persName>
+                    <affiliation>Holon Institute of Technology, Israel</affiliation>
+                    <email>schler@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Zhitomirsky-Geffet</surname>
+                        <forename>Maayan</forename>
+                    </persName>
+                    <affiliation>Bar Ilan University, Israel</affiliation>
+                    <email>maayan.zhitomirsky-geffet@biu.ac.il</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>citation networks</term>
+                    <term>influence analysis</term>
+                    <term>viewpoint development</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>Computer science</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="bold">
+                    <lb/>1. Introduction
+                </hi>
+            </p>
+            <p>Rabbinical literature is characterized by a multiplicity of viewpoints and diverse and contesting opinions rooted in earlier sources whose influence persists in subsequent essays. One of the challenges in studying literature of this kind is to identify and organize the many controversies and views and to examine their influences and development over the generations. This paper offers a new paradigm and conceptual framework for the study of viewpoint plurality in historical literature through the prism of citation networks that are embedded in it, as well as a computational methodology based on advanced machine learning algorithms for automatic citation extraction from historical texts. </p>
+            <p>The proposed methodology was applied to Responsa literature, a subfield of Rabbinical literature, as a case study. Responsa literature is a vast collection of questions and answers that discuss concrete events, in which the questioners seek the appropriate guidance from the recognized Rabbinic authorities at the given period of time. The Responsa corpus began in Iraq (central Asia) and spans over 1,300 years. In particular, we investigated to which extent the Responsa Rabbis use (and thus are influenced by) early sources from the late classical period (Talmud) and early Middle Ages (Geonim) from West and Central Asia (Iraq and the land of the Israel).</p>
+            <p>The main challenge that the system has to overcome is the variety of formats of references, that are incomplete and include numerous abbreviations. Sometimes a reference only includes the name of the author, or only the name of the book, or only a piece of text from the book appears in the citation. The problem is even more complex for historical Hebrew-Aramaic texts, such as the one in the Responsa corpus and other Rabbinic texts. Therefore, applying a rule-based approach or classic machine learning techniques as in Romanello (2016) with manually predefined features can only achieve limited recall and accuracy for this corpus, or be useful for a limited scope, period, writing style and genre, such as, the Mishnah, or 20,000 responses from the last 130 years (HaCohen-Kerner et al., 2011; Zhitomirsky-Geffet and Prebor, 2019; 
+                <hi rend="color(2A2A2A)">Waxman, 2021</hi>). 
+            </p>
+            <p>
+                <hi rend="bold">2. Research Methodology</hi>
+            </p>
+            <p>To build an effective reference extractor for broader and heterogeneous Rabbinic corpus, this research adapts more advanced machine learning algorithms, based on Conditional Random Fields (CRF) (using MALLET library 
+                <ref target="http://mallet.cs.umass.edu/">http://mallet.cs.umass.edu/</ref>
+                <ref target="http://mallet.cs.umass.edu/" xml:space="preserve">, </ref>McCallum, 2002). The system is composed from a set of five layers as follows: 
+            </p>
+            <list type="unordered">
+                <item>The initial layer identifies references within the given Responsa text including concatenated references or recursive references and breaks them down to a set of discrete references. </item>
+                <item>The second layer performs part-of-reference tagging, e.g. classifies the reference words to: book name, author name, author title, or general reference words. </item>
+                <item>The 3
+                    <hi rend="superscript">rd</hi> layer handles the various nicknames, abbreviations and acronyms of an author or a book that may be used in a reference, and maps between the name found in the text and the standard name of the author/book. 
+                </item>
+                <item>The 4
+                    <hi rend="superscript">th</hi> layer resolves ambiguity of the found names by using author and book metadata (e.g. birth/death dates and places) from the existing resources of Talmudic research. 
+                </item>
+                <item>The last layer builds the author and book citation networks of the extracted references. </item>
+                <item>Finally, traditional Rabbinical literature research is consulted to investigate whether, how and to what extent the viewpoints and influences of the authors are reflected in the obtained networks.</item>
+            </list>
+            <p>
+                <hi rend="bold">3. Results</hi>
+            </p>
+            <p>This study’s corpus comprised 5504 Responsa files from about 40 literary sources from the Rishonim (“the first ones”) period dated between 11 and 15 centuries. As a result, 557 full references (including author/s, a book title and a section/page) were identified with a precision rate of 87%. Figure 1 presents a fragment of the resulting network. As shown in Figure 2, the influence of the Babylon Talmud (and thus its approach and worldview) on the Rabbinic literature of the period of the Rishonim (1
+                <hi rend="superscript">st</hi> half of the 2
+                <hi rend="superscript">nd</hi> millennium) is significantly higher than that of the Yerushalmi Talmud (written in the land of Israel). These findings provide preliminary reflections of the diverse viewpoints of the different groups of authors (schools), as determined by the early Asian literature influence. 
+            </p>
+            <p style="text-align: left; ">Although the study examined the proposed paradigm in the Responsa corpus, the proposed methodological framework can be applied to other multi-viewpoint corpora of literature in other languages, such as the Decretum, one of the essential Latin texts of Canon law, and the Digest database of Roman law.</p>
+            <figure>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="11.345333333333333cm" url="Pictures/5ac72bf561b71abc1fe3474f766bfc1f.png" rend="inline"/>
+                </figure>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="8.817680555555556cm" url="Pictures/f9c54f39535b43a83f82be449b5f544e.png" rend="inline"/>
+                </figure>
+            </figure>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>HaCohen-Kerner, Y., Schweitzer, N. and Mughaz, D. (2011). Automatically Identifying Citations in Hebrew-Aramaic Documents. 
+                        <hi rend="italic">Cybernetics and Systems 4</hi>2(3): 180-197.
+                    </bibl>
+                    <bibl>Romanello, M. (2016). Exploring Citation Networks to Study Intertextuality in Classics. 
+                        <hi rend="italic">Digital humanities quarterly</hi>, 10 (2).
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(2A2A2A)">Waxman, J. (2021). A graph database of scholastic relationships in the Babylonian Talmud, </hi>
+                        <hi rend="italic">
+                            <hi rend="color(2A2A2A)">Digital Scholarship in the Humanities</hi>
+                        </hi>
+                        <hi rend="color(2A2A2A)">, 36(2): ii277–ii289, </hi>
+                        <ref target="https://doi.org/10.1093/llc/fqab015">
+                            <hi rend="color(006FB7)">https://doi.org/10.1093/llc/fqab015</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">Zhitomirsky-Geffet and Prebor. (2019). SageBook: Towards a cross-generational network of the Jewish sages. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 34 (3): 676-695.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

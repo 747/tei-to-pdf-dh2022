@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Reconstruction of cultural memory through digital storytelling: a case study of Shanghai Memory project</title>
+                <author>
+                    <persName>
+                        <surname>Fu</surname>
+                        <forename>Yaming</forename>
+                    </persName>
+                    <affiliation>Shanghai Library/Institute of Scientific &amp; Technical Information of Shanghai, Shanghai, China; School of Information Management, Nanjing University, Nanjing, China</affiliation>
+                    <email>ymfu@libnet.sh.cn</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mahony</surname>
+                        <forename>Simon</forename>
+                    </persName>
+                    <affiliation>Research Centre for Digital Publishing and Digital Humanities, Beijing Normal University at Zhuhai, China</affiliation>
+                    <email>SimonMahony@bnu.edu.cn</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Liu</surname>
+                        <forename>Wei</forename>
+                    </persName>
+                    <affiliation>Shanghai Library/Institute of Scientific &amp; Technical Information of Shanghai, Shanghai, China</affiliation>
+                    <email>wliu@libnet.sh.cn</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T16:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Digital storytelling</term>
+                    <term>cultural memory reconstruction</term>
+                    <term>democratization of culture</term>
+                    <term>postcolonial digital humanities</term>
+                    <term>heritage management</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>crowdsourcing</term>
+                    <term>public humanities collaborations and methods</term>
+                    <term>Asian studies</term>
+                    <term>Cultural studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <anchor xml:id="OLE_LINK20"/>
+                <anchor xml:id="OLE_LINK21"/>
+                <anchor xml:id="OLE_LINK18"/>
+                <anchor xml:id="OLE_LINK19"/>
+                <anchor xml:id="Hlk100482290"/>
+                <anchor xml:id="Hlk89610860"/>The theory and practice of digital storytelling has been developing since the 1990s; firstly in media research, with a focus on audio-visual story creation using digital media 
+                <?biblio ADDIN CSL_CITATION {"citationItems":[{"id":"ITEM-1","itemData":{"author":[{"dropping-particle":"","family":"Lambert","given":"Joe","non-dropping-particle":"","parse-names":false,"suffix":""}],"edition":"5th ed.","id":"ITEM-1","issued":{"date-parts":[["2018"]]},"publisher":"Routledge","title":"Digital Storytelling: Capturing Lives, Creating Community","type":"book"},"uris":["http://www.mendeley.com/documents/?uuid=70e8172b-f3c0-4421-8199-14b8762090f2"]}],"mendeley":{"formattedCitation":"(Lambert, 2018)","plainTextFormattedCitation":"(Lambert, 2018)","previouslyFormattedCitation":"(Lambert, 2018)"},"properties":{"noteIndex":0},"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Lambert, 2018), and then extending into multiple fields such as public history 
+                <?biblio ADDIN CSL_CITATION {"citationItems":[{"id":"ITEM-1","itemData":{"author":[{"dropping-particle":"","family":"Burgess","given":"Jean","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Klaebe","given":"Helen","non-dropping-particle":"","parse-names":false,"suffix":""}],"chapter-number":"10","container-title":"Story Circle: Digital Storytelling around the World","editor":[{"dropping-particle":"","family":"Hartley","given":"John","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"McWilliam","given":"Kelly","non-dropping-particle":"","parse-names":false,"suffix":""}],"id":"ITEM-1","issued":{"date-parts":[["2009"]]},"page":"155-166","title":"Digital Storytelling as Participatory Public History in Australia","type":"chapter"},"uris":["http://www.mendeley.com/documents/?uuid=0fcd1105-602e-45da-8e42-97ff586c8481"]}],"mendeley":{"formattedCitation":"(Burgess & Klaebe, 2009)","plainTextFormattedCitation":"(Burgess & Klaebe, 2009)","previouslyFormattedCitation":"(Burgess & Klaebe, 2009)"},"properties":{"noteIndex":0},"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Burgess &amp; Klaebe, 2009) and education 
+                <?biblio ADDIN CSL_CITATION {"citationItems":[{"id":"ITEM-1","itemData":{"author":[{"dropping-particle":"","family":"Robin","given":"B. R.","non-dropping-particle":"","parse-names":false,"suffix":""}],"container-title":"Theory into Practice","id":"ITEM-1","issue":"3","issued":{"date-parts":[["2008"]]},"page":"220-228","title":"Digital storytelling: A powerful technology tool for the 21st century classroom","type":"article-journal","volume":"47"},"uris":["http://www.mendeley.com/documents/?uuid=402ab76f-b385-4d6c-a7d3-1cc243f73e52"]}],"mendeley":{"formattedCitation":"(Robin, 2008)","plainTextFormattedCitation":"(Robin, 2008)","previouslyFormattedCitation":"(Robin, 2008)"},"properties":{"noteIndex":0},"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Robin, 2008), where there is a close relationship with human narrative. These fields discussed the possibilities for digital storytelling as they encountered the so-called 
+                "digital turn
+                " which prompted the move from traditional storytelling research into the digital sphere and brought about epistemological as well as methodological shifts 
+                <?biblio ADDIN CSL_CITATION {"citationItems":[{"id":"ITEM-1","itemData":{"author":[{"dropping-particle":"","family":"Noiret","given":"Serge","non-dropping-particle":"","parse-names":false,"suffix":""}],"chapter-number":"Seven","container-title":"A Companion to Public History","edition":"1st ed.","editor":[{"dropping-particle":"","family":"Dean","given":"David","non-dropping-particle":"","parse-names":false,"suffix":""}],"id":"ITEM-1","issued":{"date-parts":[["2018"]]},"page":"111-124","title":"Digital Public History","type":"chapter"},"uris":["http://www.mendeley.com/documents/?uuid=eaf2559b-8e39-438e-a1f4-390324522222"]}],"mendeley":{"formattedCitation":"(Noiret, 2018)","plainTextFormattedCitation":"(Noiret, 2018)","previouslyFormattedCitation":"(Noiret, 2018)"},"properties":{"noteIndex":0},"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Noiret, 2018).
+            </p>
+            <p>Digital storytelling, understood here as a movement or method for creating, expressing, interpreting, and sharing stories and personal experiences using digital tools, has been viewed as a 
+                <anchor xml:id="OLE_LINK7"/>
+                <anchor xml:id="OLE_LINK8"/>
+                "democratization of culture.
+                "
+                <?biblio ADDIN CSL_CITATION {"citationItems":[{"id":"ITEM-1","itemData":{"author":[{"dropping-particle":"","family":"Clarke","given":"Robert","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Adam","given":"Andrea","non-dropping-particle":"","parse-names":false,"suffix":""}],"container-title":"Arts and Humanities in Higher Education","id":"ITEM-1","issue":"1-2","issued":{"date-parts":[["2011"]]},"page":"157-176","title":"Digital storytelling in Australia: academic perspectives and reflections","type":"article-journal","volume":"11"},"uris":["http://www.mendeley.com/documents/?uuid=d0e73f41-e94d-49e6-85c7-6cd2cab4e6fb"]}],"mendeley":{"formattedCitation":"(Clarke & Adam, 2011)","plainTextFormattedCitation":"(Clarke & Adam, 2011)","previouslyFormattedCitation":"(Clarke & Adam, 2011)"},"properties":{"noteIndex":0},"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Clarke &amp; Adam, 2011) It draws attention from the mainstream to the marginalized, the minority, the overlooked and forgotten. Despite the discourse and practice of digital storytelling in education, history, and media research, its theory construction in DH and the practice in GLAMs is still at an exploratory stage. 
+            </p>
+            <p>Digital storytelling provides new opportunities for DH as both fields seek to encourage dialogue, make the world comprehensible, and discover new ways of interaction with the support of digital tools 
+                <?biblio ADDIN CSL_CITATION {"citationItems":[{"id":"ITEM-1","itemData":{"abstract":"At first thought, combining storytelling, digital tools, and humanities seems improbable. For example, digital storytelling is characterized by interactivity, nonlinearity, flexible outcomes, user participation, even co-creation. Such affordances may be disruptive to traditional humanities scholars accustomed to working alone, with physical objects, and following established theoretical guidelines. However, they may be quite appealing to those seeking new opportunities for cross-disciplinary, iterative approaches to practice-based humanities scholarship and pedagogy. This essay defines digital storytelling as a combination of storytelling techniques, digital affordances, and humanities foci, describes several forms of digital storytelling, outlines frameworks and outcomes associated with their use, and promotes digital storytelling as providing new opportunities for humanities scholarship and teaching, especially with regard to critical thinking, communication, digital literacy, and civic engagement.","author":[{"dropping-particle":"","family":"Barber","given":"John F.","non-dropping-particle":"","parse-names":false,"suffix":""}],"container-title":"Cogent Arts and Humanities","id":"ITEM-1","issue":"1","issued":{"date-parts":[["2016"]]},"publisher":"Cogent","title":"Digital storytelling: New opportunities for humanities scholarship and pedagogy","type":"article-journal","volume":"3"},"uris":["http://www.mendeley.com/documents/?uuid=ceccbb16-d133-44d0-a065-41e561a9435e"]}],"mendeley":{"formattedCitation":"(Barber, 2016)","plainTextFormattedCitation":"(Barber, 2016)","previouslyFormattedCitation":"(Barber, 2016)"},"properties":{"noteIndex":0},"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Barber, 2016). Digital storytelling also serves as a bridge between cultural heritage and DH with 
+                "space and time as shared concepts,
+                "
+                <?biblio ADDIN CSL_CITATION {"citationItems":[{"id":"ITEM-1","itemData":{"author":[{"dropping-particle":"","family":"Münster","given":"S.","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Apollonio","given":"F. I.","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Bell","given":"P.","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Kuroczynski","given":"P.","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Lenardo","given":"I.","non-dropping-particle":"Di","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Rinaudo","given":"F.","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Tamborrino","given":"R.","non-dropping-particle":"","parse-names":false,"suffix":""}],"container-title":"The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences","id":"ITEM-1","issued":{"date-parts":[["2019"]]},"page":"813-820","title":"Digital Cultural Heritage meets Digital Humanities","type":"paper-conference"},"uris":["http://www.mendeley.com/documents/?uuid=fb807543-6385-46a2-b2b6-ef425b7287e4"]}],"mendeley":{"formattedCitation":"(Münster et al., 2019)","plainTextFormattedCitation":"(Münster et al., 2019)","previouslyFormattedCitation":"(Münster et al., 2019)"},"properties":{"noteIndex":0},"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Münster et al., 2019) essential dimensions in storytelling and other forms of narratives. A great potential exists for DH practitioners to employ GLAM collections to reconstruct knowledge and cultural heritage, discover hidden knowledge, and support knowledge creation through the lens of digital storytelling. 
+            </p>
+            <p>
+                <anchor xml:id="OLE_LINK15"/>
+                <anchor xml:id="OLE_LINK14"/>This presentation, drawing on extensive published literature and in-depth reflection, examines how digital storytelling is applied to encourage and facilitate cultural memory reconstruction as part of the Shanghai Memory project.
+                <note place="foot" xml:id="ftn0" n="1">
+                    <p rend="footnote text"> Shanghai Memory: http://memory.library.sh.cn</p>
+                </note> Relevant aspects focus on democratizing DH practice and the theory of cultural memory construction. 
+                <hi rend="italic">A Journey from Wukang Road</hi>
+                <note place="foot" xml:id="ftn1" n="2">
+                    <p rend="footnote text"> A Journey from Wukang Road: http://wkl.library.sh.cn</p>
+                </note>, a centrepiece of this project, associates the three dimensions of memory (the past), culture, and community as proposed by Assmann and Czaplicka (1995) to organize and construct the diverse collections pertaining to Wukang Road. Borrowing thinking from postcolonial studies around critical 
+                "re-reading
+                " and 
+                "re-writing
+                " of the colonial past, along with the continuing effect of memory 
+                <?biblio ADDIN CSL_CITATION {"citationItems":[{"id":"ITEM-1","itemData":{"author":[{"dropping-particle":"","family":"Ashcroft","given":"Bill","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Griffiths","given":"Gareth","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Tiffin","given":"Helen","non-dropping-particle":"","parse-names":false,"suffix":""}],"edition":"2nd ed.","id":"ITEM-1","issued":{"date-parts":[["2002"]]},"publisher":"Routledge","publisher-place":"London, New York","title":"The Empire Writes Back: Theory and Practice in Post-Colonial Literatures","type":"book"},"locator":"221","uris":["http://www.mendeley.com/documents/?uuid=a8df0d8a-93f2-4d3b-8be4-47b7d737ec03"]}],"mendeley":{"formattedCitation":"(Ashcroft et al., 2002, p. 221)","plainTextFormattedCitation":"(Ashcroft et al., 2002, p. 221)"},"properties":{"noteIndex":0},"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Ashcroft et al., 2002, p. 221), it recognizes and tells the holistic story of the past. Memory is achieved through knowledge organization and representation methods, including ontology design for people, places, time, events, architectures, etc.; resource description framework (RDF) to describe resources in a universal way and linked data to connect the entities. Culture is presented using both historical records from the library and contemporary reflections from the public. The community aspect engages citizens by having them upload photos and personal accounts of their memories and experiences of the road, adding to the underrepresented art forms housed in library collections (magazines, music recordings, photos, maps, and old movies), the places and people that constitute the history of Wukang Road. 
+            </p>
+            <p>Wukang Road is famous as the home of many celebrities and historic buildings going back to the colonial era, all having their own stories. Here with digital storytelling, sharing methodologies with oral and public history, we capture the voice of the common people so that the history and culture of Shanghai is democratized in the modern postcolonial era. While the buildings themselves are monuments to the formal history, the 
+                "road is the smallest unit of urban geography [and] another focus of urban memory is the space-time structure,
+                "
+                <?biblio ADDIN CSL_CITATION {"citationItems":[{"id":"ITEM-1","itemData":{"author":[{"dropping-particle":"","family":"Xia","given":"Cuijuan","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Wang","given":"Lihua","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Liu","given":"Wei","non-dropping-particle":"","parse-names":false,"suffix":""}],"container-title":"Digital Scholarship in the Humanities","id":"ITEM-1","issue":"4","issued":{"date-parts":[["2021"]]},"page":"841-857","title":"Shanghai memory as a digital humanities platform to rebuild the history of the city","type":"article-journal","volume":"36"},"locator":"849","uris":["http://www.mendeley.com/documents/?uuid=a6c443fa-c26c-4c0b-9342-76c572c522e6"]}],"mendeley":{"formattedCitation":"(Xia et al., 2021, p. 849)","plainTextFormattedCitation":"(Xia et al., 2021, p. 849)","previouslyFormattedCitation":"(Xia et al., 2021, p. 849)"},"properties":{"noteIndex":0},"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Xia et al., 2021, p. 849) which is why these stories fill the gaps over time and give voice to those usually unheard.
+            </p>
+            <p>The project uses crowdsourcing method for the public to create digital stories, shifting them from the private to the public sphere, from 
+                "private forms of communication and translating them into contexts where they can potentially contribute to public culture.
+                "
+                <?biblio ADDIN CSL_CITATION {"citationItems":[{"id":"ITEM-1","itemData":{"author":[{"dropping-particle":"","family":"Burgess","given":"Jean","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Klaebe","given":"Helen","non-dropping-particle":"","parse-names":false,"suffix":""}],"chapter-number":"10","container-title":"Story Circle: Digital Storytelling around the World","editor":[{"dropping-particle":"","family":"Hartley","given":"John","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"McWilliam","given":"Kelly","non-dropping-particle":"","parse-names":false,"suffix":""}],"id":"ITEM-1","issued":{"date-parts":[["2009"]]},"page":"155-166","title":"Digital Storytelling as Participatory Public History in Australia","type":"chapter"},"locator":"155","uris":["http://www.mendeley.com/documents/?uuid=0fcd1105-602e-45da-8e42-97ff586c8481"]}],"mendeley":{"formattedCitation":"(Burgess & Klaebe, 2009, p. 155)","plainTextFormattedCitation":"(Burgess & Klaebe, 2009, p. 155)","previouslyFormattedCitation":"(Burgess & Klaebe, 2009, p. 155)"},"properties":{"noteIndex":0},"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Burgess &amp; Klaebe, 2009, p. 155) Using digital storytelling in this way makes it an additional tool for researchers in public history and importantly 
+                "the recording of oral histories.
+                "
+                <?biblio ADDIN CSL_CITATION {"citationItems":[{"id":"ITEM-1","itemData":{"author":[{"dropping-particle":"","family":"Earley-Spadoni","given":"Tiffany","non-dropping-particle":"","parse-names":false,"suffix":""}],"container-title":"Journal of Archaeological Science","id":"ITEM-1","issued":{"date-parts":[["2017"]]},"page":"95-102","publisher":"Elsevier Ltd","title":"Spatial History, deep mapping and digital storytelling: archaeology's future imagined through an engagement with the Digital Humanities","type":"article-journal","volume":"84"},"locator":"97","uris":["http://www.mendeley.com/documents/?uuid=42e308b7-5fa7-486d-b24a-603b1d7852fe"]}],"mendeley":{"formattedCitation":"(Earley-Spadoni, 2017, p. 97)","plainTextFormattedCitation":"(Earley-Spadoni, 2017, p. 97)","previouslyFormattedCitation":"(Earley-Spadoni, 2017, p. 97)"},"properties":{"noteIndex":0},"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Earley-Spadoni, 2017, p. 97) The wider project identifies the material culture embedded in heritage objects and linked with sources makes 
+                "literature the historical witness for the material cultural heritage objects themselves.
+                "
+                <?biblio ADDIN CSL_CITATION {"citationItems":[{"id":"ITEM-1","itemData":{"author":[{"dropping-particle":"","family":"Xia","given":"Cuijuan","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Wang","given":"Lihua","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Liu","given":"Wei","non-dropping-particle":"","parse-names":false,"suffix":""}],"container-title":"Digital Scholarship in the Humanities","id":"ITEM-1","issue":"4","issued":{"date-parts":[["2021"]]},"page":"841-857","title":"Shanghai memory as a digital humanities platform to rebuild the history of the city","type":"article-journal","volume":"36"},"locator":"844","uris":["http://www.mendeley.com/documents/?uuid=a6c443fa-c26c-4c0b-9342-76c572c522e6"]}],"mendeley":{"formattedCitation":"(Xia et al., 2021, p. 844)","plainTextFormattedCitation":"(Xia et al., 2021, p. 844)","previouslyFormattedCitation":"(Xia et al., 2021, p. 844)"},"properties":{"noteIndex":0},"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Xia et al., 2021, p. 844) The personalized experience of citizens serve as an effective supplement to the formal literary accounts.
+            </p>
+            <p>The Shanghai Memory project brings together many aspects of memory construction as part of a comprehensive programme of heritage management 
+                <hi rend="background(none)" xml:space="preserve">to more accurately reconstruct the history </hi>of the city 
+                <?biblio ADDIN CSL_CITATION {"citationItems":[{"id":"ITEM-1","itemData":{"author":[{"dropping-particle":"","family":"Xia","given":"Cuijuan","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Wang","given":"Lihua","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Liu","given":"Wei","non-dropping-particle":"","parse-names":false,"suffix":""}],"container-title":"Digital Scholarship in the Humanities","id":"ITEM-1","issue":"4","issued":{"date-parts":[["2021"]]},"page":"841-857","title":"Shanghai memory as a digital humanities platform to rebuild the history of the city","type":"article-journal","volume":"36"},"uris":["http://www.mendeley.com/documents/?uuid=a6c443fa-c26c-4c0b-9342-76c572c522e6"]}],"mendeley":{"formattedCitation":"(Xia et al., 2021)","plainTextFormattedCitation":"(Xia et al., 2021)","previouslyFormattedCitation":"(Xia et al., 2021)"},"properties":{"noteIndex":0},"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Xia et al., 2021). This latest initiative to incorporate digital storytelling is the next phase to further democratize the practice and represent the unrepresented by presenting, creating, and sharing stories in relation to the past, current, and even the future of Shanghai city. This extension to an already established DH project adds significant value to the reconstruction of cultural memory and acts as a model for other memory projects in East Asia and beyond. 
+            </p>
+            <p>
+                <?biblio ADDIN Mendeley Bibliography CSL_BIBLIOGRAPHY?>Ashcroft, B., Griffiths, G., &amp; Tiffin, H. (2002). 
+                <hi rend="italic">The Empire Writes Back: Theory and Practice in Post-Colonial Literatures</hi> (2nd ed.). Routledge.
+            </p>
+            <p>Assmann, J., &amp; Czaplicka, J. (1995). Collective Memory and Cultural Identity. 
+                <hi rend="italic">New German Critique</hi>, 
+                <hi rend="italic">65</hi>, 125–133.
+            </p>
+            <p>Barber, J. F. (2016). Digital storytelling: New opportunities for humanities scholarship and pedagogy. 
+                <hi rend="italic">Cogent Arts and Humanities</hi>, 
+                <hi rend="italic">3</hi>(1).
+            </p>
+            <p>Burgess, J., &amp; Klaebe, H. (2009). Digital Storytelling as Participatory Public History in Australia. In J. Hartley &amp; K. McWilliam (Eds.), 
+                <hi rend="italic">Story Circle: Digital Storytelling around the World</hi> (pp. 155–166).
+            </p>
+            <p>Clarke, R., &amp; Adam, A. (2011). Digital storytelling in Australia: academic perspectives and reflections. 
+                <hi rend="italic">Arts and Humanities in Higher Education</hi>, 
+                <hi rend="italic">11</hi>(1–2), 157–176.
+            </p>
+            <p>Earley-Spadoni, T. (2017). Spatial History, deep mapping and digital storytelling: archaeology’s future imagined through an engagement with the Digital Humanities. 
+                <hi rend="italic">Journal of Archaeological Science</hi>, 
+                <hi rend="italic">84</hi>, 95–102.
+            </p>
+            <p>Lambert, J. (2018). 
+                <hi rend="italic">Digital Storytelling: Capturing Lives, Creating Community</hi> (5th ed.). Routledge.
+            </p>
+            <p>Münster, S., Apollonio, F. I., Bell, P., Kuroczynski, P., Di Lenardo, I., Rinaudo, F., &amp; Tamborrino, R. (2019). Digital Cultural Heritage meets Digital Humanities. 
+                <hi rend="italic">The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</hi>, 813–820.
+            </p>
+            <p>Noiret, S. (2018). Digital Public History. In D. Dean (Ed.), 
+                <hi rend="italic">A Companion to Public History</hi> (1st ed., pp. 111–124).
+            </p>
+            <p>Robin, B. R. (2008). Digital storytelling: A powerful technology tool for the 21st century classroom. 
+                <hi rend="italic">Theory into Practice</hi>, 
+                <hi rend="italic">47</hi>(3), 220–228.
+            </p>
+            <p>Xia, C., Wang, L., &amp; Liu, W. (2021). Shanghai memory as a digital humanities platform to rebuild the history of the city. 
+                <hi rend="italic">Digital Scholarship in the Humanities</hi>, 
+                <hi rend="italic">36</hi>(4), 841–857.
+            </p>
+        </body>
+    </text>
+</TEI>

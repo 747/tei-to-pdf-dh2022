@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">The Moderniſa Project: Orthographic Modernization of Spanish Golden Age Dramas with Language Models</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>de la Rosa</surname>
+                        <forename>Javier</forename>
+                    </persName>
+                    <affiliation>National Library of Norway, Norway</affiliation>
+                    <email>versae@nb.no</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Cuéllar</surname>
+                        <forename>Álvaro</forename>
+                    </persName>
+                    <affiliation>College of Arts &amp; Sciences, Hispanic Studies, University of Kentucky, USA</affiliation>
+                    <email>alvaro.cuellar@uky.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lehmann</surname>
+                        <forename>Jörg</forename>
+                    </persName>
+                    <affiliation>Romanistic Seminar, Eberhard Karls Universität Tübingen, Germany</affiliation>
+                    <email>joerg.lehmann@romanistik.uni-tuebingen.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-26T13:54:29.055915793</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>language models</term>
+                    <term>orthographic modernization</term>
+                    <term>normalization</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>software development</term>
+                    <term>systems</term>
+                    <term>analysis and methods</term>
+                    <term>Book and print history</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor xml:id="id_docs-internal-guid-73ec4480-7fff-8702-708c-3d1c37e53e5c"/>Introduction
+                </head>
+                <p>
+                    <hi rend="color(#000000)">The application of computational analysis to Spanish literature, and to the Golden Age period (16th-17th centuries) in particular, has grown in interest in recent years (De la Rosa and Suárez, 2016; Cerezo Soler and Calvo Tello, 2019; Demattè, 2019; Fiore, 2020; García Reidy, 2019, Vega García-Luengos, 2021). For most of this research (e.g., stylometry, sentiment analysis), a modern and homogenized orthography is usually preferred (Cuéllar and Vega García-Luengos, 2017-2021</hi>
+                    <hi rend="color(#000000)">a-b</hi>
+                    <hi rend="color(#000000)">). In addition, there is a genuine interest in modernization among historians and literature editors, who would benefit greatly from automatic modernization. Unfortunately,</hi>
+                    <hi rend="color(#000000)"> w</hi>
+                    <hi rend="color(#000000)">e failed to find such systems for Spanish.</hi>
+                    <hi rend="color(#000000)">
+                        <note xml:id="ftn0" place="foot" n="1">
+                            <hi rend="color(#000000)">Normalization alternatives exist as part of multilingual toolkits that deal with OCR post-correction (e.g., Reynaert, 2015).</hi>
+                        </note>
+                    </hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">Most digitization pipelines apply optical character recognition (OCR) to identify the characters of a text as printed, and traditional philologists transcribe texts as faithfully to the original as possible. While new approaches try to improve the existing OCR systems to produce modernized text directly (Cuéllar, 2021a-b), the vast amount of readily available digitized materials in digital libraries and archives cannot be easily re-processed. In this work, we demonstrate how techniques from natural language processing (NLP) can be employed to transform Spanish texts available with historical orthography (circa 1590–1680) into modern normalized Spanish (RAE 2021).</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Methodology</head>
+                <p>The development of the transformer architecture (Vaswani et al., 2017) caused a paradigm shift in NLP. Transformer-based language models excel at many tasks from coherent narrative generation to question answering, and from any sort of classification task to translation (Brown et al., 2020; He et al., 2021, Liu et al., 2020; Xue et al., 2021a). Unfortunately, creating these models requires billions of words, thousands of hours of computation, and many tons of carbon emissions dropped into the atmosphere (Strubell et al., 2019). The bright side is that once a pre-trained language model (PLM) exists, it can be adjusted (fine-tuned) to a specific downstream task with limited data in a fraction of the time and the resources. In this work, we approach orthographic modernization as a translation task and fine-tune existing language models on a parallel corpus of Spanish Golden Age dramas. The majority of PLMs work with vocabularies that might split words into smaller sub-word units called tokens (Devlin et al., 2019). The more frequent a word appears in the pre-training corpus, the higher the probability of keeping the word intact. Since orthographic modernization is a character-based process, we tested both token-free and token-based PLMs. In particular, we fine-tuned the multilingual versions of text-to-text transformers T5 and ByT5 (Xue et al., 2021, 2022) for translation from 17th-century Spanish to modern Spanish and evaluated the results using the BLEU metric (Papineni et al., 2002). In order to avoid misinterpretations of the translation metric caused by the similarity between 17th-century Spanish and Modern Spanish (Post, 2018), we complemented the metric with the average character error rate (CER) and calculated both metrics for the corpus pairs as our baseline.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Corpus Construction</head>
+                <p>
+                    <hi rend="color(#000000)">We built a parallel corpus of Spanish Golden Age theater texts with pairs of Golden Age orthography and current orthography. For the old orthography, we used the </hi>
+                    <hi rend="color(#000000) italic">Teatro Español del Siglo de Oro</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">(TESO) corpus (https://quod.lib.umich.edu/t/teso/), because they present the texts “</hi>
+                    <hi rend="color(#000000) background-color(#ffffff)">copied exactly as it is written, with all peculiarities captured –accents, abbreviations, etc.” (TESO Editorial Policy, online). For the current orthography, we used the </hi>
+                    <hi rend="color(#000000) background-color(#ffffff) italic">Corpus de Estilometría aplicada al Teatro del Siglo de Oro</hi>
+                    <hi rend="color(#000000) background-color(#ffffff)"> </hi>
+                    <hi rend="color(#000000) background-color(#ffffff)">(CETSO), a collection of modern editions of the same and many more texts. We chose 44 dramas by the Golden Age dramatists Juan Ruiz de Alarcón, Pedro Calderón de la Barca, Félix Lope de Vega Carpio, and Juan Pérez de Montalbán. All dramas were published in Madrid and Barcelona between 1614 and 1691 for the first time and were written in verses of similar metrical characteristics. Both corpora were aligned line by line to establish a ground truth for the translation between the different historical varieties of Spanish.</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Results</head>
+                <p>After randomizing all 141,023 lines in the corpus, we split it into training (80%), validation (10%) and test (10%) sets stratifying by play. We then fine-tuned T5 and ByT5 base models on sequence lengths of 256 doing a grid search for 3 and 5 epochs, weight decay 0 and 0.01, learning rates of 0.001 and 0.0001, and with and without a “translate” prompt. Table 1 shows the results on the test set of the best model on the validation set for each model type.</p>
+                <table rend="frame" xml:id="Table1">
+                    <row>
+                        <cell/>
+                        <cell>BLEU</cell>
+                        <cell>CER</cell>
+                    </row>
+                    <row>
+                        <cell>Baseline</cell>
+                        <cell>48.04</cell>
+                        <cell>8.95%</cell>
+                    </row>
+                    <row>
+                        <cell>T5</cell>
+                        <cell>79.22</cell>
+                        <cell>4.48%</cell>
+                    </row>
+                    <row>
+                        <cell>ByT5</cell>
+                        <cell>80.66</cell>
+                        <cell>4.20%</cell>
+                    </row>
+                </table>
+                <p>Table 1. Scores for baseline and the best models on the test set.</p>
+                <p>
+                    <hi rend="color(#000000)">While both models perform modernization reasonably well, ByT5 seems to be outperforming baseline and T5. We applied our best model to an unseen play (</hi>
+                    <hi rend="color(#000000) italic">Castelvines y Monteses</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">by Lope de Vega, 1647) and analyzed the errors produced. We discovered that the model is capable of solving some difficult corner cases in typographical marks (e.g., adding initial exclamation marks) and some other tricky words (</hi>
+                    <hi rend="color(#000000) italic">cómo</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">vs </hi>
+                    <hi rend="color(#000000) italic">como</hi>
+                    <hi rend="color(#000000)">, </hi>
+                    <hi rend="color(#000000) italic">qué</hi>
+                    <hi rend="color(#000000)"> </hi>
+                    <hi rend="color(#000000)">vs </hi>
+                    <hi rend="color(#000000) italic">que</hi>
+                    <hi rend="color(#000000)">) by leveraging contextual information. However, it struggles with proper nouns that normally would go uppercase (e.g., ‘</hi>
+                    <hi rend="color(#000000) italic">Castelvines’</hi>
+                    <hi rend="color(#000000)">, ‘Monteses</hi>
+                    <hi rend="color(#000000)">’</hi>
+                    <hi rend="color(#000000)">).</hi>
+                    <anchor xml:id="id_docs-internal-guid-8fbbc992-7fff-1850-81ca-3a4454db0f37"/>
+                    <hi rend="color(#000000)">We also discovered some strange artifacts in our ground truth corpus regarding archaisms and homogeneity of spelling that might have impacted the learning of the models (e.g., ‘</hi>
+                    <hi rend="color(#000000) italic">efeto’</hi>
+                    <hi rend="color(#000000)"> should appear as ‘</hi>
+                    <hi rend="color(#000000) italic">efecto’</hi>
+                    <hi rend="color(#000000)"> effect, ‘</hi>
+                    <hi rend="color(#000000) italic">agora’</hi>
+                    <hi rend="color(#000000)"> as ‘</hi>
+                    <hi rend="color(#000000) italic">ahora’</hi>
+                    <hi rend="color(#000000)"> now). </hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Discussion</head>
+                <p>While the overall error rate of 4.20% can be regarded as satisfying, the results were only evaluated on the basis of dramas written in verse form in 17th-century Spanish. However, there is a broad range of orthographic variation (Mediavilla, 2007) and it may differ from one publishing house or region to another. Thus, the modernization of historical texts that were not produced in the same conditions as our corpus may lead to poorer results. Finally, we found slight differences in punctuation and spelling in our own corpus, even though the aim of these editions was to use modern normalized Spanish. While some of these undesired effects may be addressed by training at the stanza or greater hierarchical level to capture longer range contextual information, it might also imply significantly higher computing resources, training times, and manual revision.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p>In this work, we have built a parallel corpus of 44 Spanish Golden Age dramas with text in both 17th-century Spanish and Modern Spanish. We have fine-tuned language models on the task of orthographic modernization and show a significant improvement of token-free models over token-based models and baseline. We analyzed closely the errors produced and assessed possible causes and mitigation formulas. We are also releasing our best model hoping to foster research within the Spanish Golden Age period and to establish an alternative to the current cumbersome approach of transcribing Golden Age texts solely by hand.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Availability</head>
+                <p>A demo of our system can be found at 
+                    <ptr target="https://huggingface.co/spaces/versae/modernisa"/>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J. D., Dhariwal, P., Neelakantan, A., et al.</hi> (2020). Language Models are Few-Shot Learners. 
+                        <hi rend="italic">Advances in Neural Information Processing Systems</hi>, vol. 33. Curran Associates, Inc., pp. 1877–901 
+                        <ptr target="https://papers.nips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html"/> (accessed 26 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Cerezo Soler, J. and Calvo Tello, J.</hi> (2019). Autoría y estilo. Una atribución cervantina desde las humanidades digitales. El caso de La conquista de Jerusalén. 
+                        <hi rend="italic">Anales Cervantinos</hi>, 
+                        <hi rend="bold">51</hi>: 231–50 doi:
+                        <ref target="https://doi.org/10.3989/anacervantinos.2019.011">10.3989/anacervantinos.2019.011</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Clark, E., August, T., Serrano, S., Haduong, N., Gururangan, S. and Smith, N. A.</hi> (2021). All That’s `Human’ Is Not Gold: Evaluating Human Evaluation of Generated Text. 
+                        <hi rend="italic">Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers)</hi>. Online: Association for Computational Linguistics, pp. 7282–96 doi:
+                        <ref target="https://doi.org/10.18653/v1/2021.acl-long.565">10.18653/v1/2021.acl-long.565</ref>. 
+                        <ptr target="https://aclanthology.org/2021.acl-long.565"/> (accessed 26 April 2022).
+                    </bibl>
+                    <bibl>
+                        <anchor xml:id="id_docs-internal-guid-dd4bb82a-7fff-b121-bf05-d590494bcb9b"/>
+                        <hi rend="color(#000000) bold">Cuéllar, Á.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021a)</hi>
+                        <hi rend="color(#000000)">. “Spanish Golden Age Theatre Prints (Spelling Modernization) 1.0”. </hi>
+                        <hi rend="color(#000000) italic">Transkribus</hi>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Cuéllar, Á.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2021b)</hi>
+                        <hi rend="color(#000000)">. “Spanish Golden Age Theatre Manuscripts (Spelling Modernization) 1.0”. </hi>
+                        <hi rend="color(#000000) italic">Transkribus</hi>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Cuéllar, Á and Vega García-Luengos, </hi>
+                        <hi rend="color(#000000) bold">G.</hi>
+                        <hi rend="color(#000000)"> (2017-2021a)</hi>
+                        <hi rend="color(#000000)">. C</hi>
+                        <hi rend="color(#000000) italic">ETSO. Corpus de Estilometría aplicada al Teatro del Siglo de Oro</hi>
+                        <hi rend="color(#000000)">, 2017-2021, </hi>
+                        <ptr target="http://etso.es/cetso/"/>
+                        <hi rend="color(#000000)">.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Cuéllar, Á and Vega García-Luengos, </hi>
+                        <hi rend="color(#000000) bold">G.</hi>
+                        <hi rend="color(#000000)"> (2017-2021b)</hi>
+                        <hi rend="color(#000000)">. </hi>
+                        <hi rend="color(#000000) italic">ETSO. Estilometría aplicada al Teatro del Siglo de Oro</hi>
+                        <hi rend="color(#000000)">. 2017-2021, http://etso.es/.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">De la </hi>
+                        <hi rend="bold">Rosa, J. and Suárez, J. L.</hi> (2016). The Life of Lazarillo de Tormes and of His Machine Learning Adversities: Non-traditional authorship attribution techniques in the context of the Lazarillo. 
+                        <hi rend="italic">Lemir: Revista de Literatura Española Medieval y Del Renacimiento</hi>(20). Universitat de València: 373–438.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Demattè, C.</hi> (2019). Una nueva comedia en colaboración entre ¿Calderón?, Rojas Zorrilla y Montalbán: ‘Empezar a ser amigos’ a la luz del análisis estilométrico Universidad de Navarra.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Devlin, J., Chang, M.-W., Lee, K. and Toutanova, K.</hi> (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. 
+                        <hi rend="italic">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)</hi>. Minneapolis, Minnesota: Association for Computational Linguistics, pp. 4171–86 doi:
+                        <ref target="https://doi.org/10.18653/v1/N19-1423">10.18653/v1/N19-1423</ref>. 
+                        <ptr target="https://aclanthology.org/N19-1423"/> (accessed 26 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fiore, A.</hi> Questioni di autorialità a proposito di tre commedie seicentesche: Pedro de Urdemalas tra Cervantes, Lope, Montalbán, Diamante e la scuola di Calderón | Artifara. 
+                        <ptr target="https://www.ojs.unito.it/index.php/artifara/article/view/3970"/> (accessed 26 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">García-Reidy, A.</hi> (2019). Deconstructing the Authorship of Siempre ayuda la verdad: A Play by Lope de Vega?. 
+                        <hi rend="italic">Neophilologus</hi>, 
+                        <hi rend="bold">103</hi>(4): 493–510 doi:
+                        <ref target="https://doi.org/10.1007/s11061-019-09607-8">10.1007/s11061-019-09607-8</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">He, P., Liu, X., Gao, J. and Chen, W.</hi> (2021). DeBERTa: Decoding-Enhanced BERT with Disentangled Attention. 
+                        <ptr target="https://www.microsoft.com/en-us/research/publication/deberta-decoding-enhanced-bert-with-disentangled-attention-2/"/> (accessed 26 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Liu, Y., Gu, J., Goyal, N., Li, X., Edunov, S., Ghazvininejad, M., Lewis, M. and Zettlemoyer, L.</hi> (2020). Multilingual Denoising Pre-training for Neural Machine Translation. 
+                        <hi rend="italic">Transactions of the Association for Computational Linguistics</hi>, 
+                        <hi rend="bold">8</hi>. Cambridge, MA: MIT Press: 726–42 doi:
+                        <ref target="https://doi.org/10.1162/tacl_a_00343">10.1162/tacl_a_00343</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Papineni, K., Roukos, S., Ward, T. and Zhu, W.-J.</hi> (2002). Bleu: a Method for Automatic Evaluation of Machine Translation. 
+                        <hi rend="italic">Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics</hi>. Philadelphia, Pennsylvania, USA: Association for Computational Linguistics, pp. 311–18 doi:
+                        <ref target="https://doi.org/10.3115/1073083.1073135">10.3115/1073083.1073135</ref>. 
+                        <ptr target="https://aclanthology.org/P02-1040"/> (accessed 26 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Post, M.</hi> (2018). A Call for Clarity in Reporting BLEU Scores. 
+                        <hi rend="italic">Proceedings of the Third Conference on Machine Translation: Research Papers</hi>. Brussels, Belgium: Association for Computational Linguistics, pp. 186–91 doi:
+                        <ref target="https://doi.org/10.18653/v1/W18-6319">10.18653/v1/W18-6319</ref>. 
+                        <ptr target="https://aclanthology.org/W18-6319"/> (accessed 26 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Reynaert, M., Gompel, M. van, Sloot, K. van der and Bosch, A. van den</hi> (2015). PICCL: Philosophical Integrator of Computational and Corpus Libraries: CLARIN Annual Conference 2015. (Ed.) De Smedt, K. 
+                        <hi rend="italic">Proceedings of CLARIN Annual Conference 2015</hi>. Wrocław, Poland: CLARIN ERIC: 75–79.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sebastián Mediavilla, F.</hi> (2007). 
+                        <hi rend="italic">Puntuación, Humanismo e Imprenta En El Siglo de Oro</hi>. (Publicaciones Académicas 9). Vigo. Pontevedra [Spain]: Academia del Hispanismo.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Strubell, E., Ganesh, A. and McCallum, A.</hi> (2019). Energy and Policy Considerations for Deep Learning in NLP. 
+                        <hi rend="italic">Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics</hi>. Florence, Italy: Association for Computational Linguistics, pp. 3645–50 doi:
+                        <ref target="https://doi.org/10.18653/v1/P19-1355">10.18653/v1/P19-1355</ref>. 
+                        <ptr target="https://aclanthology.org/P19-1355"/> (accessed 26 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł. and Polosukhin, I.</hi> (2017). Attention is All you Need. 
+                        <hi rend="italic">Advances in Neural Information Processing Systems</hi>, vol. 30. Curran Associates, Inc. 
+                        <ptr target="https://papers.nips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html"/> (accessed 26 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Vega García-Luengos, G.</hi> (2021). Las comedias de Lope de Vega: confirmaciones de autoría y nuevas atribuciones desde la estilometría (I). 
+                        <hi rend="italic">Talía. Revista de estudios teatrales</hi>, 
+                        <hi rend="bold">3</hi>: 91–108 doi:
+                        <ref target="https://doi.org/10.5209/tret.74625">10.5209/tret.74625</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Xue, L., Barua, A., Constant, N., Al-Rfou, R., Narang, S., Kale, M., Roberts, A. and Raffel, C.</hi> (2022). ByT5: Towards a Token-Free Future with Pre-trained Byte-to-Byte Models. 
+                        <hi rend="italic">Transactions of the Association for Computational Linguistics</hi>, 
+                        <hi rend="bold">10</hi>(0): 291–306.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Xue, L., Constant, N., Roberts, A., Kale, M., Al-Rfou, R., Siddhant, A., Barua, A. and Raffel, C.</hi> (2021). mT5: A Massively Multilingual Pre-trained Text-to-Text Transformer. 
+                        <hi rend="italic">Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies</hi>. Online: Association for Computational Linguistics, pp. 483–98 doi:
+                        <ref target="https://doi.org/10.18653/v1/2021.naacl-main.41">10.18653/v1/2021.naacl-main.41</ref>. 
+                        <ptr target="https://aclanthology.org/2021.naacl-main.41"/> (accessed 26 April 2022).
+                    </bibl>
+                    <bibl>Teatro Español del Siglo de Oro (TESO) Editorial Policy 
+                        <ptr target="https://quod.lib.umich.edu/t/teso/ed-policy.html"/> (accessed 26 April 2022).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

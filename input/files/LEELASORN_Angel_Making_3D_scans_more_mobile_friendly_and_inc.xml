@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Making 3D-scans more mobile-friendly and increasing online audience reach: Introduction to manual retopology</title>
+                <author>
+                    <persName>
+                        <surname>Leelasorn</surname>
+                        <forename>Angel</forename>
+                    </persName>
+                    <affiliation>Australian National University, Australia</affiliation>
+                    <email>angel.leelasorn@anu.edu.au</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T10:31:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital heritage</term>
+                    <term>3D modelling</term>
+                    <term>manual retopology</term>
+                    <term>performance optimisation</term>
+                    <term>user accessibility</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>digital publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>digitization (2D &amp; 3D)</term>
+                    <term>Humanities computing</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left;">Digital heritage has become increasingly visible in recent years and the popularity of digital museums has been on the rise, in part fuelled by the emergence of COVID-19 (Davis, 2020). Digital heritage scholars and museums alike now have an online presence and many are sharing 3D models of artefacts or historical sites created using photogrammetry, LiDAR, or other 3D-scanning methods on online platforms, e.g. Sketchfab, to increase public engagement. Digital 3D models have also seen use in digital preservation of damaged historical sites. One example is the 
+                <hi rend="color(0036CA)" xml:space="preserve">digital reconstruction of Shuri Castle </hi>in Okinawa, Japan where its real-world counterpart was destroyed in a fire in 2019 (Shiraishi, 2019). Ubisoft, one of the world’s major video game companies, has also published 
+                <hi rend="color(0036CA)" xml:space="preserve">a Virtual Reality experience of Notre-Dame de Paris </hi>which is available for free on Steam, a video game distribution service, after the fire in 2019.
+            </p>
+            <p style="text-align: left;">However, many of the 3D models of scanned historical artefacts or sites published by scholars on online 3D model sharing platforms are often poorly optimised and therefore unsuitable to be viewed on mobile devices because of their large file size. Since the majority of the users of these platforms are mobile users, the museums and scholars are at risk of losing engagement due to users being turned away from viewing the shared 3D models. The platforms have also implemented additional features exclusive to mobile devices, e.g. Sketchfab’s default high polygon count models filter, which filters out models which are deemed too heavy to be run on most portable devices and essentially discourages users from viewing the performance-intensive models.</p>
+            <p style="text-align: left;">In addition, there is a tendency for digital heritage scholars to avoid learning the geometry-based 3D modelling pipeline also used by the video game industry due to its steep learning curve, and opt for more feasible methods such as photogrammetry (Rahaman and Champion, 2019). There is also a lack in the fundamental knowledge of performance optimisation for 3D modelling and real-time rendering among digital heritage scholars, as the available online resources are focused on video game art. A clearly-defined and versatile workflow for digitisation is also lacking (Rahaman, Champion and Bekele, 2019).</p>
+            <p style="text-align: left;">A solution to this problem is performance optimisation for real-time rendering. Manual retopology is one of the performance optimisation techniques used by the video game industry to reduce the amount of triangles on a 3D model
+                <hi rend="color(4D00DA)">.</hi> While photogrammetry software, e.g. Agisoft Metashape, include features such as the decimation tool to reduce polygon count, there are still limitations with the algorithm-based 3D model generation. These limitations primarily exist since the algorithm is typically unable to prioritise potentially crucial detail of a 3D model, unlike the human eyes. It is only possible to algorithmically reduce the polygon count to a certain number before the faces start to become visible when examined in close proximity. The topology of the generated model is also unsuitable to be repurposed in other contexts, e.g. a virtual reconstruction or a Virtual Reality experience. In contrast, even though manual retopology is generally more time-consuming than algorithmic decimation, it allows precision and customisation to the point that the polygon count can be reduced from millions of triangles to merely thousands or even hundreds and drastically reduces the file size while maintaining the quality, fidelity and appearance of a 3D model. Therefore, manual retopology is an essential skill that is often overlooked in the field of digital heritage and is certainly beneficial once incorporated into the workflow.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Davis, B.</hi> (2020). In a year when many were stuck indoors, Google says ‘virtual museum tours’ was among its most popular search terms. 
+                        <hi rend="italic">Artnet News</hi>. https://news.artnet.com/art-world/virtual-museum-tours-1930875 (accessed 8 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Rahaman, H. and Champion, E.</hi> (2019). To 3D or not 3D: choosing a photogrammetry workflow for cultural heritage groups. 
+                        <hi rend="italic color(222222)">Heritage</hi>
+                        <hi rend="color(222222)">, </hi>
+                        <hi rend="italic color(222222)">2</hi>
+                        <hi rend="color(222222)">(3), pp.1835-1851.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)">Rahaman, H., Champion, E. and Bekele, M.</hi>
+                        <hi rend="color(222222)" xml:space="preserve"> (2019). From photo to 3D to mixed reality: A complete workflow for cultural heritage visualisation and experience. </hi>
+                        <hi rend="italic color(222222)">Digital Applications in Archaeology and Cultural Heritage</hi>
+                        <hi rend="color(222222)">, </hi>
+                        <hi rend="italic color(222222)">13</hi>
+                        <hi rend="color(222222)">, p.e00102.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Shiraishi S.</hi> (2019). Shuri Castle: Fire destroys 500-year-Old world heritage site in Japan. 
+                        <hi rend="italic">BBC News Japan</hi>. https://www.bbc.com/news/world-asia-50244169 (accessed 8 December 2021).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

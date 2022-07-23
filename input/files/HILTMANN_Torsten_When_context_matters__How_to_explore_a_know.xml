@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>When context matters. How to explore a knowledge graph of heraldic communication and its contexts of use in medieval and early modern Europe with methods such as graph embedding</title>
+                <author>
+                    <persName>
+                        <surname>Hiltmann</surname>
+                        <forename>Torsten</forename>
+                    </persName>
+                    <affiliation>Humboldt-Universität zu Berlin</affiliation>
+                    <email>torsten.hiltmann@hu-berlin.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Philipp</surname>
+                        <forename>Schneider</forename>
+                    </persName>
+                    <affiliation>Humboldt-Universität zu Berlin</affiliation>
+                    <email>philipp.schneider.1@hu-berlin.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-31T09:55:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Knowledge Graph</term>
+                    <term>Linked Data</term>
+                    <term>Visual Communication</term>
+                    <term>Graph embedding</term>
+                    <term>cultural heritage</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>linked (open) data</term>
+                    <term>History</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The paper reports on the ongoing development of (1) a new Knowledge Graph for visual historical sources and their contextualisation, based on the 
+                <hi rend="italic">Digital Heraldry Ontology</hi>, and (2) demonstrates by two examples how we approach the question of exploring these data to answer specific historical research questions.
+            </p>
+            <p>The ontology focuses on the description of heraldic sources from medieval and early modern Europe. During this period, heraldry was omnipresent and constituted an important but still largely understudied instrument of visual communication used by vast parts of pre-modern European societies (Hiltmann 2019; 2018). It consisted of a mostly fixed set of symbolic primitives, that were combined into an abstract code of shapes and colors which were represented as coats of arms. Applied to supports as diverse as books, walls, stained glass and objects of all kinds, they could convey identity and status, property and claims, kinship or even abstract political and theological concepts – depending on the context in which they were used and by whom (Hablot 2019).</p>
+            <p>Therefore, in order to study them, context matters. This covers their materiality (where they have been represented), relevant actors (which person or institutional entity is represented by the coat of arms and who put it on) and the social role of those actors (in what function and for what purpose did they use the coat of arms). This complexity is modelled by the 
+                <hi rend="italic">Digital Heraldry Ontology</hi>, encompassing the symbolic primitives of the coats of arms as well as the material and societal context of their usage. Drawing on multiple sources of different provenance, the project is building a Knowledge Graph that combines information on over 40,000 different coats of arms.
+            </p>
+            <p>Using Semantic Web Technologies to deal with complex and heterogeneous data like this can be considered a standard in the fields of Digital History and Digital Cultural Heritage as an increasing number of large scale projects show (Dijkshoorn et al. 2018; Gehrke et al. 2015; Zamborlini and Betti 2017; Wang et al. 2020). However, this technology is, at least in historical research, only very rarely applied to generate new knowledge with data-driven methods, e.g. as early proposed by 
+                <ref target="https://www.zotero.org/google-docs/?wcfZrD">(Lin, Hong, and Doerr 2008)</ref>. After briefly introducing the Knowledge Graph and its ontology, we will therefore focus on two examples and discuss ways how this data can not only be modeled but also explored for historical research.
+            </p>
+            <p>First, we will show how querying and analyzing the ontology can be used to trace the development of coats of arms into increasingly complex means of communication and how this development can be placed in time and space. On the one hand, this is an important historical question that has not yet been answered (Hiltmann 2019), on the other hand, it allows us to discuss how ontologies can be applied to the study of specific research questions. </p>
+            <p>The second example shows how we use Graph Embeddings (Ristoski et al. 2019; Wang et al. 2017; Yang et al. 2020; El-Hajj et al. 2021) to transform the data into vector space and then to cluster murals and painted ceilings which feature coats of arms as means of communication. We will show how Graph Embeddings allow us to account for historical context in a scalable way, including the functional, temporal, and territorial context of the edifices in which the murals were displayed, as well as their patrons, to the extent that this information is available – and thus discuss the necessities for a successful application of this method. Studying how to query over contextual data, we also address an open research problem for the analysis of Knowledge Graphs in general (Hogan et al. 2021).</p>
+            <p>To experts outside the domain of historical research, the talk will point out starting points to utilize Knowledge Graphs not only for the modeling but also for the data driven analysis of cultural heritage. This way, we want to contribute to open a dialogue on how to make use of the increasing number of data, provided by Knowledge Graphs, for domain specific research, profiting from their structure and flexibility, while also ensuring that general methodological as well as epistemological implications and challenges (Pierazzo 2019) inherent to historical data, are dealt with.</p>
+            <p>
+                <hi rend="bold">Acknowledgements</hi>
+            </p>
+            <p>
+                <hi rend="italic">The project is funded by the Volkswagen Foundation (VolkswagenStiftung) under the title “Die Performanz der Wappen (2). Zur Ausdifferenzierung der heraldischen Kommunikation im hohen und späten Mittelalter (12.-15. Jahrhundert)”.</hi>
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Dijkshoorn, Chris, Lizzy Jongma, Lora Aroyo, Jacco van Ossenbruggen, Guus Schreiber, Wesley ter Weele, and Jan Wielemaker. 2018. ‘The Rijksmuseum Collection as Linked Data’. Semantic Web 9 (2): 221–30. 
+                        <ref target="https://doi.org/10.3233/SW-170257">
+                            <hi rend="color(1155CC)">https://doi.org/10.3233/SW-170257</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl>El-Hajj, Hassan, and Matteo Valleriani. ‘CIDOC2VEC: Extracting Information from Atomized CIDOC-CRM Humanities Knowledge Graphs’. Information 12, no. 12 (2021): 503. https://doi.org/10.3390/info12120503.</bibl>
+                    <bibl>Gehrke, Stefanie, Eduard Frunzeanu, Pauline Charbonier, and Marie Muffat. 2015. ‘Biblissima’s Prototype on Medieval Manuscript Illuminations and Their Context’. In Proceedings of the First International Workshop Semantic Web for Scientific Heritage at the 12th ESWC 2015 Conference, edited by Arnaud Zucker, Isabelle Draelants, Catherine Faron-Zucker, and Monnin, Alexandre, 43–48. CEUR Workshop Proceedings. Portorož, Slovenia.</bibl>
+                    <bibl>Hablot, Laurent. 2019. 
+                        <hi rend="italic">Manuel de Héraldique Emblématique Médiévale</hi>. Tours.
+                    </bibl>
+                    <bibl>Hiltmann, Torsten. 2018. ‘Arms and Arts in the Middle Ages. In 
+                        <hi rend="italic">Heraldic Artists and Painters</hi>, edited by Torsten Hiltmann and Laurent Hablot, 1:11–23.
+                    </bibl>
+                    <bibl>———. 2019. ‘Zwischen Grundwissenschaft, Kulturgeschichte Und Digitalen Methoden’. 
+                        <hi rend="italic">Archiv Für Diplomatik</hi> 65: 287–319.
+                    </bibl>
+                    <bibl>Hogan, Aidan et al. 2021. ‘Knowledge Graphs’. 
+                        <hi rend="italic">ACM Computing Surveys</hi> 54(4): 71:1-71:37. https://doi.org/10.1145/3447772.
+                    </bibl>
+                    <bibl>Lin, Chia-Hung, Jen-Shin Hong, and Martin Doerr. 2008. ‘Issues in an Inference Platform for Generating Deductive Knowledge’. 
+                        <hi rend="italic">International Journal on Digital Libraries</hi> 8 (2): 115–132. https://doi.org/10.1007/s00799-008-0034-0.
+                    </bibl>
+                    <bibl>Pierazzo, Elena. 2019. ‘How Subjective Is Your Model?’ In 
+                        <hi rend="italic">The Shape of Data in the Digital Humanities</hi>, edited by Julia Flanders and Fotis Jannidis, 117–32. Routledge https://www.taylorfrancis.com/books/9781315552941.
+                    </bibl>
+                    <bibl>Ristoski, Petar et al. 2019. ‘RDF2Vec: RDF Graph Embeddings and Their Applications’. 
+                        <hi rend="italic">Semantic Web</hi> 10(4): 721–52. 
+                        <ref target="https://doi.org/10.3233/SW-180317">
+                            <hi rend="color(1155CC)">https://doi.org/10.3233/SW-180317</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl>Wang, Jun, Xiaoyu Li, Enhua Bian, Linxu Wang, Shuran Liu, and Nuo Chen. 2020. ‘A Visualization-Assisted Reading Systemfor a Neo-Confucian Canon’. In DH2020. Book of Abstracts. Ottowa. https://dh2020.adho.org/wp-content/uploads/2020/07/729_&#8203;A&#8203;Visualization&#8203;Assisted&#8203;Reading&#8203;System&#8203;for&#8203;a&#8203;Neo&#8203;Confucian&#8203;Canon.html.</bibl>
+                    <bibl>Wang, Quan, et al. 2017. ‘Knowledge Graph Embedding’. 
+                        <hi rend="italic">IEEE Transactions on Knowledge and Data Engineering</hi> 29(12): 2724–43. https://doi.org/10.1109/TKDE.2017.2754499.
+                    </bibl>
+                    <bibl>Yang, Luwei et al. 2020. ‘Dynamic Heterogeneous Graph Embedding Using Hierarchical Attentions’. In 
+                        <hi rend="italic">Advances in Information Retrieval</hi>, edited by Joemon M. Jose et al., 425–32. 
+                        <ref target="https://doi.org/10.1007/978-3-030-45442-5_53">
+                            <hi rend="color(1155CC)">https://doi.org/10.1007/978-3-030-45442-5_53</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl>Zamborlini, Veruska, and Arianna Betti. 2017. ‘Toward a Core Conceptual Model for (Im)Material Cultural Heritage in the Golden Agents Project’. In Workshops of SEMANTiCS 2017: Joint Proceedings of SEMANTiCS 2017 Workshops, Co-Located with the 13th International Conference on Semantic Systems (SEMANTiCS 2017), 4. Amsterdam.</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

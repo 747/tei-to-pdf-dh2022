@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mining an Interpolated Commentary for Linguistic Markup</title>
+                <author>
+                    <persName>
+                        <surname>Waxman</surname>
+                        <forename>Joshua</forename>
+                    </persName>
+                    <affiliation>Stern College for Women, Yeshiva University, United States of America</affiliation>
+                    <email>joshua.waxman@yu.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T04:21:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>projection</term>
+                    <term>digital edition</term>
+                    <term>machine learning</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>electronic literature production and analysis</term>
+                    <term>natural language processing</term>
+                    <term>Asian studies</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">The Babylonian Talmud is a multi-volume legal, ethical, narrative, and religious work containing scholastic discourse spanning several centuries and two countries - Iraq and Israel. It is written in a mixture of Biblical Hebrew, Biblical Aramaic, Middle Hebrew and Babylonian Aramaic, all Semitic languages written in Hebrew characters. The Talmud is the focus of religious and academic study, and there have been several Talmud-related digital humanities projects in recent years, e.g. (Waxman, 2021a; Satlow and Sperling, forthcoming; Zhitomirsky-Geffet and Prebor, 2019; Jutan and Regenbaum, 2019).</p>
+                <p style="text-align: left; ">However, the Talmudic text is difficult for both humans and machines to parse, for several reasons. The Hebrew alphabet is consonantal; vowels are represented by optional diacritics, which are missing in the Talmud. Hebrew words are highly inflected, and it’s sometimes difficult to separate stem from morphology. בצל could mean “in shade”, “in the shade”, “onion”, or “onion of”. Each word is thus heavily ambiguous, and each sentence exponentially so. The Talmudic corpus contains more than 1.8 million words with a unique linguistic profile. Its multiple languages, each with unique vocabulary and word forms, introduces further ambiguity. It’s unpunctuated, so sentence and phrase boundaries are uncertain, introducing ambiguity into dependency or constituent parses and NLP tasks such as NER and relation extraction. The Talmud frequently code-switches between its four Semitic languages, increasing ambiguity / incomprehensibility. Our prior Digital Humanities work (Waxman, 2021a) compensated by focusing primarily on an aligned English translation and projected to the Hebrew side, but there are good reasons to focus on the original text rather than translation. How can we build richly-tagged Talmudic corpora and associated linguistic tools?</p>
+                <p style="text-align: left; ">Sefaria, an open-source Jewish library, includes a digital edition of the Talmud. They segmented the text of the Talmud into paragraphs, and aligned many rabbinic commentaries to these paragraphs. Among these commentaries are Steinsaltz’s English commentary and his Modern Hebrew Commentary. Each commentary is “interpolated”, meaning that there is the literal Talmudic text (bolded), which is extremely concise in style, as well as elaborative gloss text (unbolded), turning brief cryptic statements into well developed ideas and sentences. One such interpolated paragraph, drawn from Taanit 17a, appears in Figure 1. </p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="5.095875cm" url="Pictures/50e92b414f49a3f5f1c778e7469714c7.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">The Hebrew interpolated commentary doesn’t precisely match Talmud’s original mix of Hebrew and Aramaic. Sometimes, it draws from variant textual sources, so words and phrases are missing. Since Steinsaltz’s goal is to produce flowing Hebrew sentences, in Hebrew / Aramaic hybrid words and cognates, he’ll sometimes replace Aramaic prefixes with their Hebrew equivalent. Thus the Talmud’s דאסור became שאסור in Figure 1. Some abbreviations and acronyms are expanded in the commentary. Still, we realized that we could word-align the Talmud with commentary and project linguistic features to create a rich Talmudic text.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Approach</head>
+                <p style="text-align: left; ">We first tokenized the Hebrew commentary, separating off punctuation and gloss, and word-aligned it with the original Talmudic text. Match-reward was based on overlap of character bigrams of the source and target words. </p>
+                <p style="text-align: left; ">We projected punctuation from the Hebrew commentary to the Talmudic text, recovering punctuation embedded within the gloss and applying a heuristic by which stronger punctuation replaced weaker punctuation (e.g. period for comma). By analogy, if the bolded English words in Figure 1 were Talmudic text, we would produce the sentence: 
+                    <hi rend="bold" xml:space="preserve">If so, even nowadays as well. </hi> and matching pairs of quotation marks surrounding literal text are selected for projection as well. We segmented the now-punctuated sentences using the projected periods, question marks, exclamation marks, and interrobangs (Waxman, 2022). 
+                </p>
+                <p style="text-align: left; ">Steinsaltz deals with arcane Middle Hebrew words / phrases by bolding the original Hebrew and following it with unbolded Modern Hebrew translation, in parentheses. For Aramaic words / phrases, he gives the bolded original and provides the Modern Hebrew in brackets, with literal translation in small text (Figure 1) and glossed prefixes and phrases in regular-sized text. He also employs parentheses to source Biblical verses.</p>
+                <p style="text-align: left; ">We next developed a rough heuristic to mark Talmudic words for language. Words default to Hebrew. When encountering open parentheses, if the following word is a Hebrew Biblical book, the words until the open quote are marked as Biblical Hebrew. If a partly Aramaic book, the quoted phrase is marked as Biblical Aramaic. When encountering open brackets, the preceding phrase until punctuation is marked as Aramaic. We trained an RNN-CRF model on this corpus to perform language identification for new texts (Waxman, 2021b).</p>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="5.117041666666666cm" url="Pictures/d4b29f85ccae81a3a8ca613ad98c2a4a.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Our new work builds on this. We produce an aligned translation corpus. Words are generally word-aligned, but we align full parenthesized / bracketed phrases to align to words / phrases (see Figure 2). For instance, the Aramaic phrase אי הכי, meaning “if so”, is paired with the equivalent Hebrew phrase אם כך, and the individual Aramaic word יין, “wine” is paired with its equivalent Hebrew יין. Some errors are present, for instance the prefix ד, "of" in דשתויי, wasn’t present in the Hebrew commentary. This translation corpus is input for our POS tagging. We employ Dicta’s API (
+                    <hi rend="background(white)">Shmidman</hi> et al., 2020) to obtain ranked POS and morphological analyses for the original Talmudic text, selecting the top Aramaic choice when we know the word is Aramaic. We also POS-tag the translated Hebrew side. Figure 3 shows an Aramaic phrase, where אין means “yes/indeed”, the same as Hebrew כן. Where there is overlap of POS options, we’ve eliminated some ambiguity and rerank the POS selections. 
+                </p>
+                <figure>
+                    <graphic n="1003" width="16.002cm" height="6.260041666666667cm" url="Pictures/c0fb652cbe8092d55e5db5756a87a03c.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Finally, we perform discourse classification of our segmented sentences, to classify sentences as statements, questions, or answers. Features include sentence-initial and final words / phrases, punctuation, and commentary’s framing words such as ושואלים / ומשיבים (“they ask / answer” - see the first Hebrew word in Figure 1). Future work involves tweaking heuristics to handle more edge cases and improve accuracy, particularly in quoted text, and developing semantic grammars to discover named entities / relations from our punctuated sentences.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results</head>
+                <p style="text-align: left; ">Our punctuation results are generally in the 90-95% range for precision and recall (see Table 1). Quotes have 95.6% recall and 93.1% precision. </p>
+                <figure>
+                    <graphic n="1004" width="16.002cm" height="6.522861111111111cm" url="Pictures/a7755bc497d3f839dfad7e7682b2de68.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Table 2 shows accuracy for our language identification process, using a CRF model. Using an RNN-CRF model we achieve 95% accuracy (93% on non-punctuation). Our POS tagging / discourse analysis are harder to assess on a large scale, but we’ll publish the resulting corpora.</p>
+                <figure>
+                    <graphic n="1005" width="16.002cm" height="7.7434722222222225cm" url="Pictures/a91921de24af868516a8242abf213544.png" rend="inline"/>
+                </figure>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Jutan, D. and Regenbaum, S.</hi> (2019). The Future of the Talmud: A Digital Humanities Case Study. Georgia Tech. 
+                        <ref target="https://dilac.iac.gatech.edu/node/66">
+                            <hi rend="underline color(1155CC)">https://dilac.iac.gatech.edu/node/66</hi>
+                        </ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Satlow M. and Sperling, M.</hi> (forthcoming). The Rabbinic Network. In 
+                        <hi rend="italic">AJS Review</hi>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold color(201F1E) background(white)">Shmidman, A., Shmidman, S., Koppel, M., and Goldberg, Y.</hi>
+                        <hi rend="color(201F1E) background(white)" xml:space="preserve">(2020). Nakdan: Professional Hebrew Diacritizer. </hi>
+                        <hi rend="italic color(201F1E) background(white)">Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics: System Demonstrations.</hi>
+                        <hi rend="color(201F1E) background(white)" xml:space="preserve"> pp. 197-203: </hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Waxman, J.</hi> (2021a). A graph database of scholastic relationships in the Babylonian Talmud. In Quené et al. (eds), 
+                        <hi rend="italic">Digital Scholarship in the Humanities.</hi> Oxford University Press, pp. ii277–ii289.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Waxman, J.</hi> (
+                        <hi rend="color(1E1E1E) background(white)" xml:space="preserve">2021b). </hi>Projecting and Detecting Code Switching in the Babylonian Talmud. Presentation at 
+                        <hi rend="color(1E1E1E) background(white)">ACH 2021.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Waxman, J.</hi> (2022). Projecting Punctuation from an Interpolated Translation and Commentary. In Chesner et al (eds), 
+                        <hi rend="italic color(1E1E1E) background(white)">Jewish Studies in the Digital Age</hi>
+                        <hi rend="color(1E1E1E) background(white)" xml:space="preserve">, </hi>
+                        <ref target="https://www.degruyter.com/serial/SDHH-B/html">
+                            <hi rend="italic background(white)">Studies in Digital History and Hermeneutics</hi>
+                        </ref>
+                        <hi rend="background(white)">.</hi> De Gruyter.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Zhitomirsky-Geffet, M. and Prebor, G.</hi> (2019). SageBook: Toward a cross-generational social network for the Jewish sages’ prosopography. In 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>. Oxford University Press, pp. 
+                        <hi rend="color(2A2A2A)" style="font-family:Source Sans Pro;font-size:13pt">676–695.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

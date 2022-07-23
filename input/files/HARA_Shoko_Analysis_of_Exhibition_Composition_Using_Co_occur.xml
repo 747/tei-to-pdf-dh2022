@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Analysis of Exhibition Composition Using Co-occurrence Network Analysis</title>
+                <author>
+                    <persName>
+                        <surname>Hara</surname>
+                        <forename>Shoko</forename>
+                    </persName>
+                    <affiliation>The University of Tokyo, Japan</affiliation>
+                    <email>shokohara@g.ecc.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ohmukai</surname>
+                        <forename>Ikki</forename>
+                    </persName>
+                    <affiliation>The University of Tokyo, Japan</affiliation>
+                    <email>i2k@l.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nagasaki</surname>
+                        <forename>Kiyonori</forename>
+                    </persName>
+                    <affiliation>International Institute for Digital Humanities, Japan</affiliation>
+                    <email>nagasaki@dhii.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Takagi</surname>
+                        <forename>Soichiro</forename>
+                    </persName>
+                    <affiliation>The University of Tokyo, Japan</affiliation>
+                    <email>stakagi@iii.u-tokyo.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T11:23:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Exhibition</term>
+                    <term>Econometric Text Analysis</term>
+                    <term>Co-occurrence Network Diagram</term>
+                    <term>Kyosai Kawanabe</term>
+                    <term>Digital Archive</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>text mining and analysis</term>
+                    <term>Art history</term>
+                    <term>Galleries and museum studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">We will focus on the difference in the contexts in which the artworks are placed in multiple exhibitions dealing with similar themes. This study targets the composition of special exhibitions in Japan and reveals that it is possible to clarify the difference in intentions of each work (Persohn, 2021) through visualization and comparison using a text-mining method called co-occurrence network analysis. An exhibition consists of some chapters, and elements that cross multiple chapters are important in understanding the intent of the whole exhibition. The subject of the analysis is the exhibitions on the theme of "Kyosai Kawanabe" held at three museums in central Tokyo in 2015, 2017, and 2019. Kyosai Kawanabe (1831-1889) was an ukiyo-e artist and Japanese-style painter active from the end of the Edo period to the beginning of the Meiji period. </p>
+            <p style="text-align: left; ">The procedure for the analysis is as follows. First, the elements depicted in the work are extracted from the title of the works. They are all in Japanese and describe the motifs depicted. In them, the motifs are usually expressed as nouns or proper nouns, such as "a raven on a dead tree. Therefore, we used KH Coder (Higuchi, 2017), a kind of text mining tool, to extract specific parts of speech from the titles in each exhibition. In the above case, "raven" and "dead tree" are extracted, while "a" and "on" are eliminated. Next, we create a co-occurrence network diagram of chapter numbers and extracted words that appear two or more times for each exhibition. For each co-occurrence network, the number of occurrences of the extracted word is represented by the size of the circle, and the stronger the co-occurrence relationship, the darker the line. The numbers in the squares indicate the chapter numbers. In addition, the Jaccard coefficient, an indicator of the strength of the co-occurrence relationship between words, is also included for your information. The higher the coefficient, the more the motif is included in the chapter.</p>
+            <p style="text-align: left; ">One of the features of this study is that we can see the range of interpretations that co-occurring words have, i.e., the many combinations of elements that are likely to be depicted in works placed in the same chapter. Although the outline of the exhibition can be obtained from the chapter titles, the co-occurrence network with the chapter number is the most effective visualization method to grasp the outline of the works placed in each chapter. When the co-occurrence of chapter and extracted words is known, it is easy to visually compare the exhibitions. It is also possible to compare the diversity of interpretations of the same word in different exhibitions.</p>
+            <figure>
+                <graphic n="1001" width="10.260594444444445cm" height="8.482547222222221cm" url="Pictures/d9f7e5cbc497f0b8dc310848fc664377.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Figure1: Exhibition in 2015.</p>
+            <figure>
+                <graphic n="1002" width="10.336038888888888cm" height="8.465055555555555cm" url="Pictures/d176bcf94da206d6dcbb44b33f022999.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Figure2: Exhibition in 2017.</p>
+            <figure>
+                <graphic n="1003" width="10.285741666666667cm" height="8.605511111111111cm" url="Pictures/37c2eda000561745781aa40ff921f32b.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Figure3: Exhibition in 2019.</p>
+            <p style="text-align: left; ">As a result of our analysis, we have learned the following about each exhibition. For example, in the 2015 exhibition (Figure1), the most frequent occurrences "frog" and "beauty" are in co-occurrence relationship with chapter "4" or another number bigger than "5", i.e., works featuring frogs and beauties, which are prominent in number in the overall lineup, are placed in the latter half of the exhibition. In the 2017 exhibition (Figure2), the fox is described as an animal in the beginning, as a demon in the end, and as something that brings laughter in another chapter. The three exhibitions all share the fact that many of the works are related to animals and monsters, but the difference in the arrangement of the works lies in the intentions of the planners. The 2019 exhibition (Figure3) is the only one that begins and ends with “beauty”. It could be suggested that displaying artworks on a co-occurrence network makes it easier to grasp the content of an exhibition that is trying to capture artworks in terms of their techniques and styles. </p>
+            <p style="text-align: left; ">This study has both academic and social significance in that it demonstrates the effectiveness of using the subject of exhibitions, which is difficult to analyze from a quantitative perspective, as a subject for mechanical analysis. Using this method and having the perspective of recognizing artworks from the perspective of chapter headings will make the experience of viewing artworks even more rewarding for individuals (Marty, 2011).</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Persohn, L.</hi> (2021). Curation as methodology. Qualitative Research, 21(1): 20-41.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Higuchi, K.</hi> (2017). A Two-Step Approach to Quantitative Content Analysis: KH Coder Tutorial Using Anne of Green Gables (Part II). Ritsumeikan Social Science Review, 53(1): 137-147.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Marty, P. F.</hi> (2011). My lost museum: User expectations and motivations for creating personal digital collections on museum websites. Library &amp; information science research, 33(3): 211-219.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

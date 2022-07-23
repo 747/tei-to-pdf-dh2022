@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Intertextuality in Large-Scale East Asian and Western European Corpora </title>
+                <author>
+                    <persName>
+                        <surname>Tharsen</surname>
+                        <forename>Jeffrey</forename>
+                    </persName>
+                    <affiliation>The University of Chicago, United States of America</affiliation>
+                    <email>tharsen@uchicago.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gladstone</surname>
+                        <forename>Clovis</forename>
+                    </persName>
+                    <affiliation>The University of Chicago, United States of America</affiliation>
+                    <email>clovisgladstone@uchicago.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-31T15:33:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Intertextuality</term>
+                    <term>Network Theory</term>
+                    <term>Text Reuse</term>
+                    <term>Digital Philology</term>
+                    <term>TextPAIR</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>text mining and analysis</term>
+                    <term>Literary studies</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left;">
+                <hi style="font-size:12pt" xml:space="preserve">Intertextuality has been a significant concern of scholarly communities around the world for centuries; fields like </hi>
+                <hi rend="italic" style="font-size:12pt">Redaktionsgeschichte</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> in Germany and </hi>
+                <hi rend="italic" style="font-size:12pt">jiaokanxue</hi>
+                <hi rend="Chinese">校勘學</hi> in China have long provided evidence-based foundations for debates on the relationships between works, editions and authors. With the advent of digital texts and computational tools, new avenues for research into intertextuality have recently emerged. In this presentation, we will discuss our initial results from the TextPAIR framework, a language-agnostic open-source unsupervised approach to detecting “text reuse” in any language or script, and discuss future avenues for algorithmically-based research into relationships between textual communities, traditions and sources.
+            </p>
+            <p style="text-align: left;">Like the vast majority of data-mining or machine-learning tools, the results provided by TextPAIR are heavily impacted by the input data. We show that TextPAIR's multilingual capabilities are made possible first by the flexible approach to text representation, that is how texts are preprocessed and transformed prior to being handed over to the matching algorithm.  Because each language is different, be it structurally or culturally, different aspects of language may be retained from one language to the other. In other words, the goal of the preprocessing stage is to bring forward the ideal features needed for maximizing the quality and yield of the text-reuse detection algorithm. We will thus describe this process of parameterizing the preprocessing steps in order to obtain a text representation that is appropriate for the language of text collections(s) being analyzed. </p>
+            <p style="text-align: left;">
+                <hi style="font-size:12pt" xml:space="preserve">Through the analysis of text reuses found within large-scale corpora in different languages, with a focus on Chinese, Japanese, French and English, we highlight how the nature of the reuses reflect particular linguistic and cultural traditions, especially in the vast number of cases where the reuse is not identical to the source. For example, the preliminary results of our research indicates that reuses detected in European languages tend to highlight orthographic variations, while reuses in Chinese (as the language employs a logographic script) evidence replacement and editorial decision-making at the level of the individual character, and reuses in our Japanese </hi>
+                <hi rend="italic" style="font-size:12pt">Aozora Bunko</hi>
+                <hi rend="Japanese">青空文庫</hi> corpus demonstrate how authors (and/or editors) chose to employ hiragana versus kanji when citing the “same” source. As we continue developing the toolkit we are looking to incorporate new large-scale corpora in Russian, German, Spanish, Arabic, Hindi and Urdu, with the goal of determining if the reuses in those datasets hew more towards what we have found in European contexts or are more similar to the types of reuses in our East Asian corpora.
+            </p>
+            <p>
+                We then move on to describing how our approach to intertextuality builds upon previous efforts such as networks of identifiable citations (Long and So, 2013) or general correspondences between intellectual traditions (Kristieva, 1980) by providing an end-to-end system for the unsupervised detection and elucidation of text reuse in all its forms, from “identical” (and lightly modified) passages to various types of allusions to conceptual parallels between and among works. Thanks to the scalability of TextPAIR, we are able to combine the raw output of many thousands of text reuses with network-based visualization techniques in order to discern previously unseen patterns within particular intertextual traditions, such as communities of works and authors that tend to rely on similar sources even though they may not borrow directly from one another. This can take many forms; for example: a group of authors who reuse the same texts to strengthen their arguments, as in a study we conducted on the uses of Lucretius in 18
+                <hi rend="superscript" style="font-size:12pt">th</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> century England (Cooney and Gladstone, 2020), or which original sources are unique to versus shared between the twenty-four Chinese official histories (Tharsen and Gladstone, 2020).</hi>
+            </p>
+            <p style="text-align: left;">
+                <hi style="font-size:12pt" xml:space="preserve">Finally, we explore the wealth of new approaches these methods make possible: detection of correspondences across multiple languages and through various intellectual traditions by leveraging advances in automatic translations made possible by deep learning methods, new ways to map the development of ideas and concepts over the </hi>
+                <hi rend="italic" style="font-size:12pt">longue durée</hi>
+                <hi style="font-size:12pt" xml:space="preserve"> provided by new matching methods within the TextPAIR framework, and insights into the sources of many of our most classic works, long obscured by time, space and/or lack of prestige.</hi>
+            </p>
+            <p>
+                <cb/>
+                <hi rend="underline" style="font-size:12pt">Screenshots and Links:</hi>
+            </p>
+            <p>
+                <hi rend="italic" style="font-size:12pt">The</hi>
+                <hi rend="italic" style="font-family:PMingLiu;font-size:12pt"><hi rend="Chinese">二十四史</hi></hi>
+                <hi rend="italic" style="font-size:12pt" xml:space="preserve"> “Twenty-four Chinese Histories” (322,000 text reuses; 90 BCE to 1927)</hi>
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">TextPair UI: </hi>
+                <ref target="https://anomander.uchicago.edu/text-pair/histories/">
+                    https://anomander.uchicago.edu/text-pair/histories/
+                </ref>
+                 
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">TextPair Viewer: </hi>
+                <ref target="https://users.rcc.uchicago.edu/~jcarlsen/TPV/TPV_histories/">
+                    https://users.rcc.uchicago.edu/~jcarlsen/TPV/TPV_histories/
+                </ref>
+                 
+            </p>
+            <figure>
+                <graphic n="1001" width="10.758877777777778cm" height="9.913055555555555cm" url="Pictures/a16a68689fdda079e8d1e022d4bac380.png" rend="inline"/>
+            </figure>
+            <p>
+                <cb/>
+                <hi rend="italic" style="font-size:12pt">The</hi>
+                <hi rend="italic" style="font-family:PMingLiu;font-size:12pt"><hi rend="Chinese">二十四史</hi></hi>
+                <hi rend="italic" style="font-size:12pt" xml:space="preserve"> “Twenty-four Chinese Histories” divided by chapter/</hi>
+                juan <hi rend="Chinese">卷</hi>
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">TextPair UI: </hi>
+                <ref target="https://anomander.uchicago.edu/text-pair/histories_juan_flex/">
+                    https://anomander.uchicago.edu/text-pair/histories_juan_flex/
+                </ref>
+                <hi rend="color(FF0000)" style="font-size:12pt"> </hi>
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">TextPair Viewer: </hi>
+                <ref target="https://users.rcc.uchicago.edu/~jcarlsen/TPV/TPV_histories_juan_flex/">
+                    https://users.rcc.uchicago.edu/~jcarlsen/TPV/TPV_histories_juan_flex/
+                </ref>
+                 
+            </p>
+            <figure>
+                <graphic n="1002" width="11.815355555555556cm" height="12.170833333333333cm" url="Pictures/14bfbdb91a113022a01e20cd62474157.png" rend="inline"/>
+            </figure>
+            <p>
+                <cb/>
+                <hi rend="italic" style="font-size:12pt" xml:space="preserve">Text reuses in the </hi>
+                Aozora Bunko
+                <hi rend="bold" style="font-size:12pt"><hi rend="Japanese">青空文庫</hi></hi>
+                <hi rend="italic" style="font-size:12pt" xml:space="preserve"> (over 15,000 works; 1,219 text reuses)</hi>
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">TextPair UI: </hi>
+                <ref target="https://anomander.uchicago.edu/text-pair/aozora/">
+                    https://anomander.uchicago.edu/text-pair/aozora/
+                </ref>
+                <hi rend="color(FF0000)" style="font-size:12pt"> </hi>
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">TextPair Viewer: </hi>
+                <ref target="https://users.rcc.uchicago.edu/~jcarlsen/TPV/TPV_aozora/">
+                    https://users.rcc.uchicago.edu/~jcarlsen/TPV/TPV_aozora/
+                </ref>
+                 
+            </p>
+            <figure>
+                <graphic n="1003" width="18.480486111111112cm" height="14.605cm" url="Pictures/3f89e130c6e614e623bddcaaf4dd3bc4.png" rend="inline"/>
+            </figure>
+            <p>
+                <cb/>
+                <hi rend="italic" style="font-size:12pt" xml:space="preserve">Diderot’s </hi>
+                <hi style="font-size:12pt" xml:space="preserve">Encyclopédie </hi>
+                <hi rend="italic" style="font-size:12pt">and 18</hi>
+                <hi rend="italic superscript" style="font-size:7pt">th</hi>
+                <hi rend="italic" style="font-size:12pt">-century French literature (over 7,000 text reuses)</hi>
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">TextPair UI: </hi>
+                <ref target="https://anomander.uchicago.edu/text-pair/encyc/">
+                    https://anomander.uchicago.edu/text-pair/encyc/
+                </ref>
+                 
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">TextPair Viewer: </hi>
+                <ref target="https://users.rcc.uchicago.edu/~jcarlsen/TPV/TPV_frantext_encyc/">
+                    https://users.rcc.uchicago.edu/~jcarlsen/TPV/TPV_frantext_encyc/
+                </ref>
+                 
+            </p>
+            <figure>
+                <graphic n="1004" width="14.710833333333333cm" height="14.389191666666667cm" url="Pictures/784fce709b45e49aaab420cc7883faef.png" rend="inline"/>
+            </figure>
+            <figure>
+                <graphic n="1005" width="12.273497222222222cm" height="10.936111111111112cm" url="Pictures/4350e8d41ab50f6207d0c7d778b7571b.png" rend="inline"/>
+            </figure>
+            <p>
+                <hi rend="italic" style="font-size:12pt" xml:space="preserve">French Literature &amp; Diderot’s </hi>
+                Encyclopédie
+                <hi rend="italic" style="font-size:12pt">: Closeup of one cluster</hi>
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Cooney, Charles and Gladstone, Clovis. (2020) "Opening New Paths for Scholarship: Algorithms to Track Text Reuse in ECCO", in </hi>
+                        <hi rend="italic" style="font-size:12pt">Digitizing Enlightenment: Digital Humanities and the Transformation of Eighteenth-Century Studies</hi>
+                        , Simon Burrows &amp; Glenn Roe ed., Oxford University Studies in the Enlightenment, Voltaire Foundation in association with Liverpool University Press.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Kristeva, Julia. (1980) </hi>
+                        <hi rend="italic" style="font-size:12pt">Desire in Language: A Semiotic Approach to Literature and Art</hi>
+                        . New York: Columbia University Press.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Long and So (2013) “Network Analysis and the Sociology of Modernism.” </hi>
+                        <hi rend="italic" style="font-size:12pt">Boundary</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 40, no 2.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Olsen, M., Horton, R., &amp; Roe, G. (2011). “Something Borrowed: Sequence Alignment and the Identification of Similar Passages in Large Text Collections.” </hi>
+                        <hi rend="italic" style="font-size:12pt">Digital Studies/le Champ Numérique</hi>
+                        , 2(1).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Smith, David A.; Cordell, Ryan; Dillon, Elizabeth Maddock (2013). “Infectious Texts: Modeling Text Reuse in Nineteenth-Century Newspapers,” </hi>
+                        <hi rend="italic" style="font-size:12pt">Proceedings of the Workshop on Big Humanities</hi>
+                        , IEEE Computer Society Press. 
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Sturgeon, Donald (2018). “Unsupervised Identification of Text Reuse in Early Chinese Literature,” </hi>
+                        <hi rend="italic" style="font-size:12pt">Digital Scholarship in the Humanities</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 33, no. 3.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Tharsen, Jeffrey, and Gladstone, Clovis (2020). “Using Philologic For Digital Textual and Intertextual Analyses of the Twenty-Four Chinese Histories <hi rend="Chinese">二十四史</hi>.” </hi>
+                        <hi rend="italic" style="font-size:12pt">Journal of Chinese History</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> 4, no. 2.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-size:12pt" xml:space="preserve">Vierthaler, Paul  and Gelin, Mees (2019). “A BLAST-based, Language-agnostic TextReuse Algorithm with a MARKUS Implementation and Sequence Alignment Optimized for Large Chinese Corpora,” </hi>
+                        <hi rend="italic" style="font-size:12pt">Journal of Cultural Analytics</hi>
+                        .
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

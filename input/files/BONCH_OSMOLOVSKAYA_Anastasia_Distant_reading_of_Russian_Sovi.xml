@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Distant reading of Russian Soviet diaries (Prozhito Database)</title>
+                <author>
+                    <persName>
+                        <surname>Bonch-Osmolovskaya</surname>
+                        <forename>Anastasia</forename>
+                    </persName>
+                    <affiliation>National Research University Higher School of Economics</affiliation>
+                    <email>abonch@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vorobieva</surname>
+                        <forename>Viktoria</forename>
+                    </persName>
+                    <affiliation>National Research University Higher School of Economics</affiliation>
+                    <email>victoria.vrbva@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kriukov</surname>
+                        <forename>Artem</forename>
+                    </persName>
+                    <affiliation>National Research University Higher School of Economics</affiliation>
+                    <email>kryukov.ai39@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Podriadchikova</surname>
+                        <forename>Maria</forename>
+                    </persName>
+                    <affiliation>National Research University Higher School of Economics</affiliation>
+                    <email>mpodr2015@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-06-26T06:09:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>diary</term>
+                    <term>distant reading</term>
+                    <term>Soviet history</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>cultural analytics</term>
+                    <term>text mining and analysis</term>
+                    <term>Anthropology</term>
+                    <term>Linguistics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor xml:id="ydt4ioee9t0m"/>Introduction
+                </head>
+                <p style="text-align: left; ">The diary as a genre has always been ambiguous and complex, balancing “between literary and historical writing, between the spontaneity of reportage and reflectiveness of the crafted text, between selfhood and events, between subjectivity and objectivity, between the private and the public” (Langford and West 1999, 8). For a long time, researchers have been struggling to define its specifics, and the historical framework has only recently been replaced by an intertextual approach. It has become realizable mostly due to the works of French structuralist Philippe Lejeune (Lejeune 2009). </p>
+                <p style="text-align: left; ">Due to its genre ambiguity and comprehensiveness, the diary gains a lot of interest both from researchers and common readers. In Russia, this interest was embodied in the Prozhito project—a large database of intimate papers written by people in the Russian Empire and modern Russia but mostly in the Soviet Union. Сreated in 2015, 
+                    <hi rend="italic">Prozhito</hi> has become a source for reflection on history on both national and personal scale.
+                </p>
+                <p style="text-align: left; ">
+                    <anchor xml:id="m9egvwqrhpuq"/>The 
+                    <hi rend="italic">Prozhito</hi> database offers an opportunity to explore diaries on a large scale, with computable methods. However, opportunities go hand-in-hand with challenges, and from this perspective, a researcher who studies the 
+                    <hi rend="italic" xml:space="preserve">Prozhito </hi>database faces certain intricacies: 
+                </p>
+                <list rend="bulleted">
+                    <item>The 
+                        <hi rend="italic">Prozhito</hi> database is heterogeneous. Unlike printed literary works, not a lot of diaries are well preserved. Unsurprisingly, the diaries written by prominent people or created during dramatic times have more chances to be saved. 
+                    </item>
+                    <item>The diary is an intimate and personal writing, and this aspect influences the data as well. Typos and incomprehensible passages inevitably affect the research process and its outcomes. </item>
+                </list>
+                <p style="text-align: left; ">Nevertheless, the 
+                    <hi rend="italic">Prozhito</hi> database is still an encompassing source of material. From a quantitative perspective, several research questions can be asked:
+                </p>
+                <list rend="bulleted">
+                    <item>How various historical events are reflected in the diaries of that time? </item>
+                    <item>How do people express their feelings in writing? Are there any patterns that people use to describe their emotions? </item>
+                    <item>Assuming that diaries are diverse and heterogeneous, is it possible to create a classification that would take this heterogeneity into account? </item>
+                </list>
+                <p style="text-align: left; ">To answer these questions, we conducted several researches based on Digital Humanities methods—topic modeling, collocation analysis, and classification tasks. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor xml:id="p4o795lm8hxf"/>How historical events are reflected in the diaries
+                </head>
+                <p style="text-align: left; ">We compared Soviet publicist articles with diaries created at the same time in order to define how historical names or events are covered in these different texts. </p>
+                <p style="text-align: left; ">With topic modeling applied, we found that collocations like “Soviet power” (“sovetskaya vlast’”), “class struggle” (“klassovaya bor’ba”), and “class enemy” (“klassovyi vrag”) were popular both in the articles and diaries throughout the whole period presented in data. Some of them like the phrase “enemy of the people” (“vrag naroda”) saw a dramatic growth during the time of the enormous purges. </p>
+                <figure>
+                    <graphic n="1001" width="16.00113888888889cm" height="9.983611111111111cm" url="Pictures/5bdb145b2e2b5f5b004e7cfe3856f1a4.png" rend="inline"/>
+                </figure>
+                <p>Figure 1. Number of the bigram “enemy of the people” during the selected period.</p>
+                <p style="text-align: left; ">With distant and close reading methods combined, we could find how people expressed their attitude towards these events in writing. We found a correlation between the records mentioning the Civil (1917-22/23) and the Second World wars (1939-45) in which people compared their severe experience and conditions. </p>
+                <p style="text-align: left; ">These outcomes were defined owing to analysis of collocations and co-occurrences. We tried a similar approach in answering the second question—whether quantitative methods are viable for analyzing emotions in diaries. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor xml:id="ym93t06ffp31"/>How to analyze emotions expressed in writing 
+                </head>
+                <p style="text-align: left; ">Using the bootstrapping method, 6283 records connected with the love topic were selected. It was challenging to define words and phrases used for expressing feelings of love owing to flexible language structure. Nevertheless, splitting data into groups was fruitful in comparing patterns during different time periods. </p>
+                <p style="text-align: left; ">We started by comparing the proportion of emotional records depending on the period. Due to the database's heterogeneity, we found two periods with a large proportion of emotional records—at the beginning of the 20th century and during the Second World War. </p>
+                <figure>
+                    <graphic n="1002" width="16.00113888888889cm" height="9.983611111111111cm" url="Pictures/257e4eebd2d7f8df45e8c1500c8b27ac.png" rend="inline"/>
+                </figure>
+                <p>Figure 2. Emotional records ratio by period.</p>
+                <p style="text-align: left; ">We selected repeating collocations and analyzed how their frequency changed over time. The postwar period that had not a lot of emotional records has seen a dramatic growth of several bigrams such as “to love passionately” (“strastno lubit’”) and “to love terribly” (“uzhasno lubit’”). The ratio of these bigrams is plummeting during the Second World War when other bigrams like “beloved person” (“lubimyi chelovek”) rocketed. Being separated, people expressed their sorrow in writings to beloved ones. </p>
+                <figure>
+                    <graphic n="1003" width="16.00113888888889cm" height="9.983611111111111cm" url="Pictures/cfaeff3b75638f938732b8ddfd884730.png" rend="inline"/>
+                </figure>
+                <p>Figure 3. Ratio of the selected bigrams by period. </p>
+                <figure>
+                    <graphic n="1004" width="16.00113888888889cm" height="9.983611111111111cm" url="Pictures/7b524aabea2eafed6204428ad8625b91.png" rend="inline"/>
+                </figure>
+                <p>Figure 4. Ratio of the selected bigrams by period. </p>
+                <p style="text-align: left; ">The way people describe feelings is changing throughout history. Undoubtedly, shifting in words’ meaning makes these explorations challenging. Nevertheless, certain strong patterns can be observed despite these limitations. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor xml:id="u8pmng1d2hh6"/>How to classify heterogeneous data 
+                </head>
+                <p style="text-align: left; ">Diaries balance between historicity and emotionality, which raises classification issues. We concluded that a proper classification should be based on the parameters apart from genre and author. Instead, we can classify diary records relying on the author's intention to express a certain type of information—a description of a particular life episode, emotion, or even literary text. </p>
+                <p style="text-align: left; ">Adding such aspects as eventual density and writing style, a preliminary classification can be prepared: </p>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Tag</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Object of description</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Eventual density</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Writing style</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">NAR</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Occurred events: everyday life</cell>
+                        <cell style="text-align: left;" rend="DH-Default">High</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Informal</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">WORK</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Occurred events: specific activity</cell>
+                        <cell style="text-align: left;" rend="DH-Default">High or middle</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Mostly formal</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">EMO</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Feelings, emotions and reflections</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Middle or low</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Informal</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">EPISODE</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Occurred events: everyday life</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Low</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Informal</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">LIT</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Fictional events</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Low</cell>
+                        <cell style="text-align: left;" rend="DH-Default">Artistic</cell>
+                    </row>
+                </table>
+                <p style="text-align: left; ">After deleting short (less than 500 symbols) texts, we trained a logistic regression model on randomly selected records—documents were represented as vectors using the TfidfVectorizer tool. </p>
+                <p style="text-align: left; ">At the next stage, in a team of annotators, we manually marked up two datasets twice—one with unbalanced data consisting of 3780 records and a balanced dataset with 2240 records. After annotating, we evaluated the consistency of markup. </p>
+                <figure>
+                    <graphic n="1005" width="16.00113888888889cm" height="9.983611111111111cm" url="Pictures/5055f45410036897db8086b0b4e656a7.png" rend="inline"/>
+                </figure>
+                <p>Figure 5. Consistency of markup</p>
+                <p style="text-align: left; ">Using built datasets, we tried various linear classifiers such as logistic regression, Naive Bayesian classifier, and Support vector machine. Logistic regression shows better results than other models (f-measure=0.81). </p>
+                <figure>
+                    <graphic n="1006" width="16.00113888888889cm" height="9.983611111111111cm" url="Pictures/ea847e966c8346e8474fbf1e6e63476a.png" rend="inline"/>
+                </figure>
+                <p>Figure 6. The error matrix of the basic solution on the balanced dataset.</p>
+                <figure>
+                    <graphic n="1007" width="16.00113888888889cm" height="9.983611111111111cm" url="Pictures/89441a7917436f044ee83a23f20af46b.png" rend="inline"/>
+                </figure>
+                <p>Figure 7. The error matrix of the basic solution on the unbalanced dataset.</p>
+                <p style="text-align: left; ">EPISODE and NAR categories were ambiguous. After combining them into one category NAR_EPISODE, the f-measure of the category increased; for a balanced dataset it was 0.78, for an unbalanced one—0.88.</p>
+                <figure>
+                    <graphic n="1008" width="16.00113888888889cm" height="9.983611111111111cm" url="Pictures/ee5cf18eb7dc76614981f077de9bad5c.png" rend="inline"/>
+                </figure>
+                <p>Figure 8. The error matrix of the basic solution on the balanced dataset.</p>
+                <figure>
+                    <graphic n="1009" width="16.00113888888889cm" height="9.983611111111111cm" url="Pictures/07b24a1cc55695e2cc33e2ddd9d89247.png" rend="inline"/>
+                </figure>
+                <p>Figure 9. The error matrix of the basic solution on the unbalanced dataset.</p>
+                <p style="text-align: left; ">The resulting classification can be variously applied. It becomes possible to analyze what topics are peculiar for authors of a certain age and how individual narrative behavior alters throughout life. </p>
+                <figure>
+                    <graphic n="10010" width="16.00113888888889cm" height="10.406944444444445cm" url="Pictures/33a3278183bfeee1445db9d30cbba543.png" rend="inline"/>
+                </figure>
+                <p>Figure 10. Ratio of different categories in the diaries of authors of different ages.</p>
+                <figure>
+                    <graphic n="10011" width="16.00113888888889cm" height="9.983611111111111cm" url="Pictures/84bf91dc86e94c617768211da7688436.png" rend="inline"/>
+                </figure>
+                <p>Figure 11. Oleg Amitrov’s narrative behavior—his diaries are among the most thorough in the database.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left; text-align: justify;">In our project, we present a framework based on a quantitative method for approaching diaries. We considered both historical and emotional aspects, and these investigations resulted in designing a classification, which, in its turn, is fruitful for new opportunities of computable research in this field.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <anchor xml:id="jbe1cd82osto"/>
+                        <hi rend="bold">Langford, Rachael and Russell West</hi>. (1999). Introduction: Diaries and Margins. 
+                        <hi rend="italic">Marginal Voices, Marginal Forms: Diaries in European Literature and History</hi>. Amsterdam: Rodopi. 
+                        <hi rend="color(212121)" xml:space="preserve">pp. </hi>6-21.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold background(white)" xml:space="preserve">Lejeune, </hi>
+                        <hi rend="bold">Philippe</hi>
+                        <hi rend="background(white)">.</hi> (2009). 
+                        <hi rend="italic background(white)">On diary</hi>
+                        <hi rend="background(white)" xml:space="preserve">. Honolulu: University of Hawaii Press. </hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

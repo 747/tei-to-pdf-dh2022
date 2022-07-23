@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Annotating 3D Scholarly Editions </title>
+                <author>
+                    <persName>
+                        <surname>Schreibman</surname>
+                        <forename>Susan</forename>
+                    </persName>
+                    <affiliation>Maastricht University, Netherlands, The</affiliation>
+                    <email>susan.schreibman@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Papadopoulos</surname>
+                        <forename>Costas</forename>
+                    </persName>
+                    <affiliation>Maastricht University, Netherlands, The</affiliation>
+                    <email>cpapadopoulos84@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-25T12:56:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>3D Digital Scholarly Editions</term>
+                    <term>annotation</term>
+                    <term>multimodality</term>
+                    <term>3D</term>
+                    <term>multisensorality</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>18th Century</term>
+                    <term>20th Century</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>scholarly editing and editions development</term>
+                    <term>analysis</term>
+                    <term>and methods</term>
+                    <term>Archaeology</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Annotation has a rich history in the digital humanities: from the by and large manually created text-based annotation found in the Text Encoding Initiative (Cummings 2008) which modelled print-based textual syntax and structures while augmenting the text with commentary; to structured data enabling linked data sources on the WWW in which dynamic annotations are created (
+                <hi rend="color(222222) background(white)">Sorbara 2020)</hi>; from standards such as IIIF which was developed to annotate non-textual electronic files such as audio and video (International Image Interoperability Framework), to automatic image annotation which utilises computer vision to classify and categorise images or parts of images (
+                <hi rend="color(222222) background(white)">Abgaz, et al 2021; Wang et al, 2021)</hi>. The theories, methods, and practices of human-generated annotation have been developed over centuries 
+                <hi rend="color(030303)">with its apotheosis, one might argue, in the meticulously researched and richly annotated scholarly editions of the late twentieth century (</hi>
+                <hi rend="color(222222) background(white)">Shillingsburg 1996).</hi>
+                <hi rend="color(030303)" xml:space="preserve"> As academics we have been schooled to create and understand the train of scholarship embedded in print-based annotative environments. It is less clear, however, how we are to interpret machine-generated annotation, as well as how the interface and inon-textual annotation play a role in knowledge production and dissemination that is multimodal, interactive, and multisensorial (Apollon, et al 2014; Drucker 2013). These new modalities and environments for annotation raise new issues,such as how to make clear provenance, intention, and context, for both users of these editions, as well as for the scholarly record. </hi>
+            </p>
+            <p>One such new environment that raises such issues is 3D Scholarly Editions. 
+                <hi rend="color(222222)" xml:space="preserve">This paper will delve deeper into one aspect of these editions: that of the affordances and challenges in annotating a 3D Scholarly Edition (3DSE) in the form of a virtual world. </hi>Previously we have argued that a 3DSE can be likened to a digital edition of an analogue text (such as a novel or a historical document) in which the 3D model is considered the text, with the annotation being part of the apparatus that surrounds it (Schreibman and Papadopoulos 2019; Papadopoulos and Schreibman 2019). However, the metaphor is not a perfect one in that the 3D object is in itself a representation, a domain specific model which simplifies the complexity of the environment being represented. Thus unlike a digital scholarly edition of an analogue text, the “author” of the model (the creator of the 3D representation) can occupy the same role as the “editor”, i.e., the person who annotates and contextualises the model. Even if the modeller and the annotator are different people, the goal of the 3DSE is not to remediate authorial intent (
+                <hi rend="color(222222) background(white)">Tanselle 1976)</hi> or in this case the intent of the modeller. Rather, the modeller is, we argue, another kind of editor in the text’s (re)construction. To further complicate the actors involved in the 3DSE, given the possibility of more dynamic annotation (e.g., linked data and computer vision), the role of the “editor'' can also be assumed by non-human actors. 
+            </p>
+            <p>Therefore, the burden of transparency in indicating agency, intent, and the decisions that the (re)construction is based on is even more complex than in traditional (Digital) Scholarly Editions. Here annotations can take many forms. They can be non-textual, for example, to indicate uncertainty or ambiguity in the (re)construction process when the model created is, for example, of an artefact that no longer exists, or exists in a deteriorated, changed, or incomplete form (such as the reconstruction of a house from antiquity based on its foundations and/or other evidence), or a reconstruction of a church at a particular moment in time when what exists today is an amalgamation of different building phases. In addition to text, annotations can include markup, tags, GIS markers, metadata or paradata that augment understanding, levels of certainty, interpretation, representation or alternative reconstructions, in formats including images, audio, video, 3D, pre-rendered animation, and simulations. </p>
+            <p>Annotations can also be active or passive. In a 3DSE, an active annotation is triggered by the user based on their interaction within the virtual environment (e.g., location, point of view etc.) and can also be personalised depending on the user’s interests or research questions. On the other hand, a passive annotation is fixed in space and activated by the user at will. Thus, we argue that within 3D environments, annotations should supply users with the tools to understand the representation (e.g., the model), historically, socially, and/or culturally, as well as the decision-making processes in the creation of the (re)construction. </p>
+            <p>To explore these issues, this paper will propose a typology of non-mutually exclusive concepts that we consider key to conceptualising annotations and ultimately annotating 3D scholarly environments. </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">Abgaz, Y., Rocha Souza, R., Methuku, J., Koch, G., &amp; Dorn, A. (2021). A Methodology for Semantic Enrichment of Cultural Heritage Images Using Artificial Intelligence Technologies. </hi>
+                        <hi rend="italic color(222222) background(white)">Journal of Imaging</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">, </hi>
+                        <hi rend="italic color(222222) background(white)">7</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">(8), 121. </hi>
+                        <ref target="https://doi.org/10.3390/jimaging7080121">
+                            <hi rend="underline color(1155CC) background(white)">https://doi.org/10.3390/jimaging7080121</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>Apollon, D., Bélisle, C., &amp; Régnier, P. (Eds.). (2014). 
+                        <hi rend="italic">Digital critical editions</hi>. University of Illinois Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">Cummings, J. (2008). The text encoding initiative and the study of literature. </hi>
+                        <hi rend="italic color(222222) background(white)">A companion to digital literary studies</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">, 451-76. </hi>
+                        <ref target="http://www.digitalhumanities.org/companion/view?docId=blackwell/9781405148641/9781405148641.xml&amp;chunk.id=ss1-6-6">
+                            <hi rend="underline color(1155CC) background(white)">http://www.digitalhumanities.org/companion/view?docId=blackwell/9781405148641/9781405148641.xml&amp;&#8203;chunk.id=ss1-6-6</hi>
+                        </ref>
+                        <hi rend="color(222222) background(white)">, Accessed 26 November 2021.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">Drucker, J. (2013). Performative Materiality and Theoretical Approaches to Interface. DHQ: Digital Humanities Quarterly, 7(1). </hi>
+                        <ref target="http://www.digitalhumanities.org/dhq/vol/7/1/000143/000143.html">
+                            <hi rend="underline color(1155CC) background(white)">http://www.digitalhumanities.org/dhq/vol/7/1/000143/000143.html</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">International Image Interoperability Framework, </hi>
+                        <ref target="https://iiif.io/">
+                            <hi rend="underline color(1155CC) background(white)">https://iiif.io/</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">Papadopoulos, C., and Schreibman, S. (2019) "Towards 3D Scholarly Editions: The Battle of Mount Street Bridge." </hi>
+                        <hi rend="italic color(222222) background(white)">DHQ: Digital Humanities Quarterly</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve"> 13.1. </hi>
+                        <ref target="http://www.digitalhumanities.org/dhq/vol/13/1/000415/000415.html">
+                            <hi rend="underline color(1155CC) background(white)">http://www.digitalhumanities.org/dhq/vol/13/1/000415/000415.html</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">Schreibman, S., and Papadopoulos, C. (2019). "Textuality in 3D: three-dimensional (re) constructions as digital scholarly editions." </hi>
+                        <hi rend="italic color(222222) background(white)">International Journal of Digital Humanities</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve"> 1(2): 221-233. </hi>
+                        <ref target="https://doi.org/10.1007/s42803-019-00024-6">
+                            <hi rend="underline color(004B83)">https://doi.org/10.1007/s42803-019-00024-6</hi>
+                        </ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">Shillingsburg, P. L. (1996). </hi>
+                        <hi rend="italic color(222222) background(white)">Scholarly editing in the computer age: Theory and practice</hi>
+                        <hi rend="color(222222) background(white)">. University of Michigan Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">Sorbara, A. (2020). Digital Humanities and Semantic Web: The New Frontiers of Transdisciplinary Knowledge. </hi>
+                        <hi rend="italic color(222222) background(white)">Journal of Higher Education Theory &amp; Practice</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">, </hi>
+                        <hi rend="italic color(222222) background(white)">20</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">(13). </hi>
+                        <ref target="http://digitalcommons.www.na-businesspress.com/JHETP/JHETP20-13/16_SorbaraFinal.pdf">
+                            <hi rend="underline color(1155CC) background(white)">http://digitalcommons.www.na-businesspress.com/JHETP/JHETP20-13/16_SorbaraFinal.pdf</hi>
+                        </ref>
+                        <hi rend="color(222222) background(white)">, Accessed 26 November 2021.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">Tanselle, G. T. (1976). The editorial problem of final authorial intention. </hi>
+                        <hi rend="italic color(222222) background(white)">Studies in Bibliography</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">, </hi>
+                        <hi rend="italic color(222222) background(white)">29</hi>
+                        <hi rend="color(222222) background(white)">, 167-211.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">Wang, X., Song, N., Liu, X., &amp; Xu, L. (2021). Data modeling and evaluation of deep semantic annotation for cultural heritage images. </hi>
+                        <hi rend="italic color(222222) background(white)">Journal of Documentation</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve">, 77(4): 906-925. </hi>
+                        <ref target="https://doi.org/10.1108/JD-06-2020-0102">
+                            <hi rend="underline color(1155CC) background(white)">https://doi.org/10.1108/JD-06-2020-0102</hi>
+                        </ref>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

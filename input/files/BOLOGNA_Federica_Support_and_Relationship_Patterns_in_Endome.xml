@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Support and Relationship Patterns in Endometriosis Narratives</title>
+                <author>
+                    <persName>
+                        <surname>Bologna</surname>
+                        <forename>Federica</forename>
+                    </persName>
+                    <affiliation>Cornell University, USA</affiliation>
+                    <email>fb265@cornell.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Thalken</surname>
+                        <forename>Rosamond</forename>
+                    </persName>
+                    <affiliation>Cornell University, USA</affiliation>
+                    <email>ret85@cornell.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mimno</surname>
+                        <forename>David</forename>
+                    </persName>
+                    <affiliation>Cornell University, USA</affiliation>
+                    <email>mimno@cornell.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wilkens</surname>
+                        <forename>Matthew</forename>
+                    </persName>
+                    <affiliation>Cornell University, USA</affiliation>
+                    <email>wilkens@cornell.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T01:59:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>medical humanities</term>
+                    <term>natural language processing</term>
+                    <term>endometriosis</term>
+                    <term>women health</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>natural language processing</term>
+                    <term>Gender and sexuality studies</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">In online support communities, people with endometriosis share experiences of navigating interpersonal relationships while living with a chronic illness. These stories suggest patterns in illness narratives that are unique to relationships with doctors, friends, and family and the kind of support patients receive. Scholarship and literature in the medical humanities have emphasized the importance of understanding relationships in the experience of pain. Therefore, we study the framing of relationships in online endometriosis medical narratives, by designing a classifier to identify the connections between characters, subject matter, and intent in patients’ stories. Resulting predictions suggest narrative arcs in the interpersonal endometriosis experience, both in and across posts, as well as societal changes in the awareness of endometriosis. We hope our methodology will be implemented in future research on illness narratives and contribute to the advancement of medical humanities. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Related Literature</head>
+                <p style="text-align: left; ">Language is the main tool available to the sick to make their pain visible to others, receive care, as well as spark collective action (Scarry, 1987). Studying illness narratives is thus essential to improve medical care, especially for marginalized communities whose experiences of pain may not be adequately acknowledged. Contemporary medical knowledge and practices are tied to the disenfranchisement of certain peoples, as they are informed with Enlightment androcentric and heteronormative notions (Lupton, 2012; Ussher, 2003; Laqueur, 2003).</p>
+                <p style="text-align: left; ">Women’s health, and endometriosis specifically, are complex subjects to consider in the study of illness narratives. Female pain is often dismissed, as the female body’s distinctive qualities are considered deviations, and hysteria discourse continues to characterize contemporary medical literature (Young et al., 2019). When treating genital conditions, women’s ability to fulfill their reproductive duties is given priority over their need for relief or pleasure (Farrell and Cacchioni, 2012; Scully and Bart, 1973; Ussher, 2003; Lupton, 2012). Consequently, women who suffer from sexual pain are faced with disbelief from their physicians, who perceive them as “difficult” for not accepting the medical system’s failure at treating them (Feldhaus-Dahir, 2011; Jones, 2015).</p>
+                <p style="text-align: left; ">In addition, relationships hold a special role in how the marginalized experience illness. Female lung-cancer patients are faced with pity, fear, or judgment by friends and family, who either give the patient up for dead, worry about being contaminated, or blame them for their condition (Sontag, 1978; Tomalia, 2014). The fear of contagion is a recurring element of AIDS narratives as well. Here, however, managing the disease and spreading awareness becomes a collective effort in which friends and partners take action. Indeed, many AIDS stories are recounted by people close to the patient (Wojnarowicz, 1991; Guibert et al., 2020). Lastly, for some patients, relationships are their only chance to be heard and to receive proper care, and thus have the power to free or imprison them (Keller, 2010; Gilman, 2018)</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Data</head>
+                <p style="text-align: left; ">Online endometriosis support communities exist on many platforms and in many forms. We focus on Reddit because it has two thriving endometriosis support communities, the subreddits r/Endo and r/endometriosis. Posts from r/Endo span from January 23rd 2012 to September 30th 2021, and r/endometriosis from November 23rd 2014 to September 30th 2021.</p>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default"/>
+                        <cell style="text-align: left;" rend="DH-Default">r/Endo</cell>
+                        <cell style="text-align: left;" rend="DH-Default">r/endometriosis</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Total number of posts</cell>
+                        <cell style="text-align: left;" rend="DH-Default">20,479</cell>
+                        <cell style="text-align: left;" rend="DH-Default">10,793</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Median number of tokens per post</cell>
+                        <cell style="text-align: left;" rend="DH-Default">135</cell>
+                        <cell style="text-align: left;" rend="DH-Default">132</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: left;" rend="DH-Default">Unique authors</cell>
+                        <cell style="text-align: left;" rend="DH-Default">9,074</cell>
+                        <cell style="text-align: left;" rend="DH-Default">6,475</cell>
+                    </row>
+                </table>
+                <p style="text-align: left; ">We merge the data from r/endometriosis and r/Endo based on substantial similarities in post content and comparable statistics of the subreddits (table 1). </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Supervised Classification </head>
+                <p style="text-align: left; ">To study the framing of common roles in endometriosis narratives, we design a supervised classification task to identify character tropes, and the post’s expressed intent. Character tropes are a set of likely relationship types that often occur in an endometriosis narrative, including family, partner, doctor, and endometriosis support community.</p>
+                <p style="text-align: left; ">We then look at the different roles a person tends to assume in online health communities, like seeking or providing support (Yang et al., 2019). We use McDowell and Antoniak’s (2020) labels for intent, including providing emotional support, seeking emotional support, providing informational support, seeking informational support, providing experiences, seeking experiences, plus an additional label, venting. This intent category turns the focus onto the post’s author, to find the role they assume as a member of the community. After labeling posts from the combined r/Endo and r/endometriosis datasets, we train and test a series of binary DistilBERT classification models for both labels. </p>
+                <p style="text-align: left; ">To explore themes in endometriosis illness narratives, we perform topic modeling at the level of the paragraph. After experimenting with LDA parameters and manually validating several different runnings of the algorithm, we find that the most suited model for our purposes is obtained when setting the number of topics to 25 and removing the 10 most frequent words in the collection. Among the identified topics, a few are dedicated to expressing empathy and gratitude confirming the importance of the patients’ relationship to the community for their well-being.</p>
+                <p style="text-align: left; ">By comparing topic model distributions with predictions about character tropes and expressed intent, we identify how community members narrativize their personal relationships by considering patterns in predicted labels. Changes in the framing of these relationships demonstrate changes in individual and societal experiences of living with endometriosis. We hope that our relationship models can be used in future humanities research on support communities and illness narratives.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left; ">By studying the framing of relationships in endometriosis support communities, we draw attention to the myriad ways endometriosis patients find support through their doctors, partners and family, and online community. We consider how such support might also be lacking, resulting in the patient relying on another relationship for emotional, experiential, and informational support. Highlighting stories about relationships in the endometriosis support community demonstrates the significance of shared experience and community when living with chronic illness.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Farrell, J. and Cacchioni, T.</hi> (2012). The Medicalization of Women’s Sexual Pain. 
+                        <hi rend="italic">Journal of Sex Research</hi>, 
+                        <hi rend="bold">49</hi>(4): 328–36 doi:10.1080/00224499.2012.688227.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Feldhaus-Dahir, M.</hi> (2011). The causes and prevalence of vestibulodynia: a vulvar pain disorder. 
+                        <hi rend="italic">Urologic Nursing</hi>, 
+                        <hi rend="bold">31</hi>(1): 51–54.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Gilman, C. P.</hi> (2018). 
+                        <hi rend="italic">The Yellow Wallpaper</hi>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Guibert, H., Durbin, A., White, E. and Coverdale, L.</hi> (2020). 
+                        <hi rend="italic">To the Friend Who Did Not Save My Life</hi>. South Pasadena, CA: Semiotext(e).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Jones, C. E.</hi> (2015). Wandering Wombs and ‘Female Troubles’: The Hysterical Origins, Symptoms, and Treatments of Endometriosis. 
+                        <hi rend="italic">Women’s Studies</hi>, 
+                        <hi rend="bold">44</hi>(8): 1083–113 doi:10.1080/00497878.2015.1078212.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Keller, H.</hi> (2010). 
+                        <hi rend="italic">The Story of My Life</hi>. New York: Signet Classics.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Laqueur, T.</hi> (2003). 
+                        <hi rend="italic">Making Sex: Body and Gender from the Greeks to Freud</hi>. 10. print. Cambridge, Mass.: Harvard University Press.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Lupton, D.</hi> (2012). 
+                        <hi rend="italic">Medicine as Culture: Illness, Disease and the Body</hi>. 1 Oliver’s Yard,  55 City Road,  London    EC1Y 1SP  United Kingdom: SAGE Publications Ltd doi:10.4135/9781446254530. http://sk.sagepub.com/books/medicine-as-culture-3e (accessed 1 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">McDowell, L. and Antoniak, M.</hi> (2020). Symptoms, Scares, and Misclassifications: Information Sharing Behavior Across Online Birth Control Communities. Paper presented at the Black in AI: Workshop at NeurIP, Virtual.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Scarry, E.</hi> (1987). 
+                        <hi rend="italic">The Body in Pain: The Making and Unmaking of the World</hi>. New York: Oxford university press.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Scully, D. and Bart, P.</hi> (1973). A funny thing happened on the way to the orifice: women in gynecology textbooks. 
+                        <hi rend="italic">The American Journal of Sociology</hi>, 
+                        <hi rend="bold">78</hi>(4): 1045–50.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Sontag, S.</hi> (1978). 
+                        <hi rend="italic">Illness as Metaphor</hi>. New York: Farrar, Straus and Giroux.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Tomalia, T.</hi> (2014). The ‘Why Me’ of Cancer 
+                        <hi rend="italic" xml:space="preserve">A Lil Lytnin’ Strikes Lung Cancer </hi>https://lil-lytnin.blogspot.com/2014/12/the-why-me-of-cancer.html.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Ussher, J. M.</hi> (2003). I. Biology as Destiny: The Legacy of Victorian Gynaecology in the 21st Century. 
+                        <hi rend="italic">Feminism &amp; Psychology</hi>, 
+                        <hi rend="bold">13</hi>(1): 17–22 doi:10.1177/0959353503013001003.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Wojnarowicz, D.</hi> (1991). 
+                        <hi rend="italic">Close to the Knives: A Memoir of Disintegration</hi>. New York: Vintage Books.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Yang, D., Kraut, R. E., Smith, T., Mayfield, E. and Jurafsky, D.</hi> (2019). Seekers, Providers, Welcomers, and Storytellers: Modeling Social Roles in Online Health Communities. 
+                        <hi rend="italic">Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems</hi>. Glasgow Scotland Uk: ACM, pp. 1–14 doi:10.1145/3290605.3300574. https://dl.acm.org/doi/10.1145/3290605.3300574 (accessed 18 October 2021).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Young, K., Fisher, J. and Kirkman, M.</hi> (2019). ‘Do mad people get endo or does endo make you mad?’: Clinicians’ discursive constructions of Medicine and women with endometriosis. 
+                        <hi rend="italic">Feminism &amp; Psychology</hi>, 
+                        <hi rend="bold">29</hi>(3): 337–56 doi:10.1177/0959353518815704.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

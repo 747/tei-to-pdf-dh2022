@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Modeling Chinese Contemporary Calligraphy: the WRITE Dataset</title>
+                <author>
+                    <persName>
+                        <surname>Pasqual</surname>
+                        <forename>Valentina</forename>
+                    </persName>
+                    <affiliation>Digital Humanities Advanced Research Centre, University of Bologna</affiliation>
+                    <email>valentina.pasqual2@unibo.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bisceglia</surname>
+                        <forename>Marta R.</forename>
+                    </persName>
+                    <affiliation>Department of Interpreting and Translation, University of Bologna</affiliation>
+                    <email>martarosa.bisceglia@unibo.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Iezzi</surname>
+                        <forename>Adriana</forename>
+                    </persName>
+                    <affiliation>Department of Interpreting and Translation, University of Bologna</affiliation>
+                    <email>adriana.iezzi2@unibo.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Merenda</surname>
+                        <forename>Martina</forename>
+                    </persName>
+                    <affiliation>Department of Interpreting and Translation, University of Bologna</affiliation>
+                    <email>martina.merenda@unibo.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tomasi</surname>
+                        <forename>Francesca</forename>
+                    </persName>
+                    <affiliation>Digital Humanities Advanced Research Centre, University of Bologna</affiliation>
+                    <email>francesca.tomasi@unibo.it</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-16T17:54:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Linked Open Data</term>
+                    <term>WRITE</term>
+                    <term>Chinese contemporary calligraphy</term>
+                    <term>data modeling</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>data modeling</term>
+                    <term>linked (open) data</term>
+                    <term>Art history</term>
+                    <term>Asian studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>
+                    <hi rend="color(0E101A)">Calligraphy has always been the “chief of all Chinese arts” and a central tenet of Chinese civilization. Today, calligraphy is still extremely pervasive in Chinese society. In recent years, many new forms of calligraphy have emerged (in all fields of visual and performing arts) as it has never happened before (Iezzi, 2013). “WRITE” ERC funded project</hi>
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p rend="footnote text">
+                            <hi style="font-size:10pt" xml:space="preserve">See </hi>
+                            <ref target="https://writecalligraphyproject.eu/">
+                                <hi rend="color(1155CC)" style="font-size:10pt">https://writecalligraphyproject.eu/</hi>
+                            </ref>
+                        </p>
+                    </note>
+                    <note place="foot" xml:id="ftn2" n="2">
+                        <p rend="footnote text">
+                            <hi style="font-size:10pt" xml:space="preserve">The project WRITE - </hi>
+                            <hi rend="italic" style="font-size:10pt">New Forms of Calligraphy in China: A Contemporary Culture Mirror</hi>
+                            is an European Research Council (ERC) Starting Grant funded project based in the Department of Interpreting and Translation of the Alma Mater Studiorum – University of Bologna (GA n. 949645).
+                        </p>
+                    </note>
+                    <hi rend="color(0E101A)" xml:space="preserve"> is the first systematic analysis of all these new art forms. Creating the first artworks dataset of these new forms of calligraphy and using a media-based categorization, WRITE will investigate the emergence of these new forms of calligraphy across four collections: (1) “fine and contemporary arts”, (2) decorative and applied arts, (3) performing arts, and (4) graffiti art.</hi>
+                </p>
+                <p>
+                    <hi rend="color(0E101A)">This contribution aims to advance scholarly knowledge and provide new tools for a deeper understanding of Chinese contemporary calligraphy through semantic technologies. WRITE dataset collects, structures and preserves the multifaceted domain of Chinese contemporary calligraphic data composed of artistic, linguistic and socio-political contents. WRITE will examine the innovative ways in which these new forms of calligraphy have responded to, subverted or reinterpreted traditional idioms to define a modern artistic identity that exists comfortably within the global art world while remaining indelibly Chinese (Iezzi, 2015).</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>State of the art</head>
+                <p>
+                    <hi rend="color(0E101A)">Linked Open Data has been nowadays a standard in the GLAM domain to increase the value and discoverability of their metadata, fostering reuse and alignment from and to external sources. A growing interest has been expressed towards Chinese asset by outstanding LOD datasets as Pagode Project in Europeana (Bianchi, 2020), Rijks Museum (Dijkshoorn, 2018), British Museum</hi>
+                    <note place="foot" xml:id="ftn3" n="3">
+                        <p rend="footnote text">
+                            <hi style="font-size:10pt" xml:space="preserve">See </hi>
+                            <ref target="https://www.britishmuseum.org/search?search_api_fulltext=chinese+calligraphy">
+                                <hi rend="color(1155CC)" style="font-size:10pt">https://www.britishmuseum.org/search?search_api_fulltext=chinese+calligraphy</hi>
+                            </ref>
+                        </p>
+                    </note>
+                    <hi rend="color(0E101A)">. As aggregators, they provide general metadata excluding a deeper scholar's analysis. In general, many conceptual models have been designed to represent the museal domain, for instance EDM (Charles, 2015), Wikidata (Erxleben et al., 2014). CIDOC CRM (Doerr et al., 2007) and FRBRoo (Bekiari et al., 2015) also broaden the domain to new forms of analysis (e.g. linguistic/textual and artistic analysis).</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Method</head>
+                <p>
+                    <hi rend="color(0E101A)">The WRITE dataset has been designed with the domain experts, by reusing the Wikidata model</hi>
+                    <note place="foot" xml:id="ftn4" n="4">
+                        <p rend="footnote text">
+                            <hi style="font-size:10pt" xml:space="preserve">See </hi>
+                            <ref target="https://www.mediawiki.org/wiki/Wikibase/DataModel">
+                                <hi rend="color(1155CC)" style="font-size:10pt">https://www.mediawiki.org/wiki/Wikibase/DataModel</hi>
+                            </ref>
+                        </p>
+                    </note>
+                    <hi rend="color(0E101A)" xml:space="preserve"> - a slim yet expressive model, fitting the project requirements and OmekaS templating structure - and extending it for representing WRITE domain information (e.g. calligraphic features as shown in figure 1). An instance of OmekaS</hi>
+                    <note place="foot" xml:id="ftn5" n="5">
+                        <p rend="footnote text"> OmekaS is a web publishing platform to collaboratively create collections with a shared pool of online resources.</p>
+                    </note>
+                    <hi rend="color(0E101A)" xml:space="preserve"> (Li, 2020) carrying WRITE data model has been built and shared with domain experts for the collaborative data entry activity. OmekaS has been used as the data registry for WRITE metadata and media.</hi>
+                </p>
+                <figure>
+                    <graphic n="1001" width="13.906605555555556cm" height="6.067777777777778cm" url="Pictures/00150aa8cac38c7b3e74099d65e51456.png" rend="inline"/>
+                </figure>
+                <p>Figure 1: a summary of the WRITE data model overview</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results</head>
+                <p>
+                    <hi rend="color(0E101A)">WRITE multilingual (English, Chinese and Pinyin Chinese) dataset stores a set of artworks organized in the four above mentioned collections. Each artwork carries one or more “calli-writing unit(s)”, representing content units with calligraphic features, to store relative artistic and linguistic/textual metadata. Considering the reshaping process of traditional calligraphy in modern production (Iezzi, 2015), such units cannot be categorized as calligraphy as an a-priori assumption. Then, artistic and linguistic/textual metadata over the “calli-writing units” are recorded to classify shared and diverging characteristics with traditional calligraphy as in figure 2.</hi>
+                </p>
+                <figure>
+                    <graphic n="1002" width="10.530416666666667cm" height="8.678333333333333cm" url="Pictures/33789ea1eb4f4c81902ae0dbe11519e2.png" rend="inline"/>
+                </figure>
+                <p>
+                    <hi rend="color(0E101A)">Figure 2. OmekaS Item visualization of Calli-Writing Unit with artistic and linguistic metadata of “The Mountains are Breaking Up”, Gu Gan (1985).</hi>
+                </p>
+                <p>
+                    <hi rend="color(0E101A)" xml:space="preserve">Additionally, the collections are enhanced through a network of domain and contextual information as exhibitions, artworks series, literary works and agents in their main life events, roles, places, and dates. </hi>
+                </p>
+                <p>
+                    <hi rend="color(0E101A)">WRITE data model documentation</hi>
+                    <note place="foot" xml:id="ftn6" n="6">
+                        <p rend="footnote text">
+                            <hi style="font-size:10pt" xml:space="preserve">See </hi>
+                            <ref target="https://write-dataset.github.io/documentation/">
+                                <hi rend="color(1155CC)" style="font-size:10pt">https://write-dataset.github.io/documentation/</hi>
+                            </ref>
+                        </p>
+                    </note>
+                    <hi rend="color(0E101A)">and some representative case studies (one artwork for each collection) are available to foster the understanding and reusability of the model. The contribution of the dataset is twofold: first, it supports scholars in investigating the WRITE domain by recording and classifying its data to allow a systematic analysis of its resources to help the domain experts answer their main research questions (e.g. the definition of a spectrum of forms and practices ranging from traditional calligraphy to modern/contemporary artistic expression: can those forms/practices still be defined as calligraphy?) and, hopefully, discover new knowledge; second, it is a challenge in the modelling of different sources from GLAM by categorizing and connecting the visual dimension of iconographic elements (calligraphy as visual artwork) with the respective textual elements (lexical features, text transcription and translation, literary sources of text) to attribute an actual meaning to the new concept of “calli-writing units” through the analysis of the hybridization of multimedia resources.</hi>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Bachi, V., Fresa, A. and Veselič, M.</hi> (2021). PAGODE – Europeana China. In Ioannides, M., Fink, E., Cantoni, L. and Champion, E. (eds), 
+                        <hi rend="italic">Digital Heritage. Progress in Cultural Heritage: Documentation, Preservation, and Protection</hi>. (Lecture Notes in Computer Science). Cham: Springer International Publishing, pp. 265–77 doi:
+                        <ref target="https://doi.org/10.1007/978-3-030-73043-7_22">10.1007/978-3-030-73043-7_22</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Bekiari, C., Doerr, M., Le Bœuf, P. and Riva, P.</hi> (2015). 
+                        <hi rend="italic">FRBR Object-Oriented Definition and Mapping from FRBRER, FRAD and FRSAD (Version 2.4)</hi>. Final Report International working group on FRBR and CIDOC CRM harmonisation 
+                        <ref target="http://www.cidoc-crm.org/frbroo/fm_releases">http://www.cidoc-crm.org/frbroo/fm_releases</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Charles, V. and Isaac, A.</hi> (2015). Enhancing the Europeana data model (EDM). 
+                        <hi rend="italic">EDM WHITE PAPER</hi>.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Dijkshoorn, C., Jongma, L., Aroyo, L., Ossenbruggen, J. van, Schreiber, G., Weele, W. ter and Wielemaker, J.</hi> (2018). The Rijksmuseum collection as Linked Data. 
+                        <hi rend="italic">Semantic Web</hi>, 
+                        <hi rend="bold">9</hi>(2). IOS Press: 221–30 doi:
+                        <ref target="https://doi.org/10.3233/SW-170257">10.3233/SW-170257</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Doerr, M., Ore, C.-E. and Stead, S.</hi> (2007). The CIDOC Conceptual Reference Model - A New Standard for Knowledge Sharing ER2007 Tutorial. , 
+                        <hi rend="bold">83</hi>: 51–56 doi:
+                        <ref target="https://doi.org/10.13140/2.1.1420.6400">https://doi.org/10.13140/2.1.1420.6400</ref>.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Erxleben, F., Günther, M., Krötzsch, M., Mendez, J. and Vrandečić, D.</hi> (2014). Introducing Wikidata to the Linked Data Web. In Mika, P., Tudorache, T., Bernstein, A., Welty, C., Knoblock, C., Vrandečić, D., Groth, P., Noy, N., Janowicz, K. and Goble, C. (eds), 
+                        <hi rend="italic">The Semantic Web – ISWC 2014</hi>. (Lecture Notes in Computer Science). Cham: Springer International Publishing, pp. 50–65 doi:
+                        <ref target="https://doi.org/10.1007/978-3-319-11964-9_4">10.1007/978-3-319-11964-9_4</ref>.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Iezzi, A.</hi> (2013). Contemporary Chinese Calligraphy Between Tradition and Innovation. 
+                        <hi rend="italic">Journal of Literature and Art Studies</hi>, 
+                        <hi rend="bold">3</hi>: 158–79 doi:
+                        <ref target="https://doi.org/10.17265/2159-5836">10.17265/2159-5836</ref>.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Iezzi, A.</hi> (2015). What is ‘Chinese Modern Calligraphy’? An Exploration of the Critical Debate on Modern Calligraphy in Contemporary China. 
+                        <hi rend="italic">Journal of Literature and Art Studies</hi>, 
+                        <hi rend="bold">5</hi>: 206–16 doi:
+                        <ref target="https://doi.org/10.17265/2159-5836/2015.03.007">10.17265/2159-5836/2015.03.007</ref>.
+                        <lb/>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Li, J.</hi> (2020). Omeka Classic vs. Omeka.net. 
+                        <hi rend="italic">Emerging Library &amp;amp; Information Perspectives</hi>, 
+                        <hi rend="bold">3</hi>(1): 232–36 doi:
+                        <ref target="https://doi.org/10.5206/elip.v3i1.8625">10.5206/elip.v3i1.8625</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Digital Narrative of Buddhist Cave Temples: A Case Study of Niche 28 of Huangze Temple in Guangyuan, Sichuan</title>
+                <author>
+                    <persName>
+                        <surname>Chen</surname>
+                        <forename>Wu Wei</forename>
+                    </persName>
+                    <affiliation>NYU Shanghai, China, People's Republic of</affiliation>
+                    <email>wc54@nyu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Zuo</surname>
+                        <forename>Lala</forename>
+                    </persName>
+                    <affiliation>NYU Shanghai, China, People's Republic of</affiliation>
+                    <email>lz2488@nyu.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Cyberarchiving</term>
+                    <term>Photogrammetry</term>
+                    <term>Cave Temple</term>
+                    <term>Guangyuan</term>
+                    <term>Digital Heritage</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>digital archiving</term>
+                    <term>digitization (2D &amp; 3D)</term>
+                    <term>Archaeology</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="color(1A1A1A)" style="font-size:11pt">The study of Buddhist cave temples is always an interdisciplinary effort. Art historians discuss artistic presentations through different media objects—— a Buddhist image could be depicted in a two-dimensional painting or a three-dimensional sculpture, or something in-between. Architectural historians explore the designs of the space and architectural features crossing different materials—— a cave temple could be an imitation of a wooden structure or blended with actual wooden parts. Other historians or scholars of religious studies explore social, cultural, or religious meanings from visual or textual data they find in the cave. It is not easy for people from different disciplines to communicate their knowledge and ideas even about the same cave. Not to mention the fact that passing such information to public visitors is even more difficult. Research institutes such as the Dunhuang Academy and the recently established Yungang Academy are demonstrations of such an interdisciplinary endeavor and how people are trying to break the disciplinary barriers. Now entering the digital age, we are equipped with new technologies such as cyber-archiving, A.I. analysis, GIS mapping, Extended Reality, among others. We may create a new form of narrative that helps people understand and appreciate the Buddhist cave temples, and more importantly, enable scholars to communicate more effectively across the times and disciplines. Therefore, this paper aims to identify the challenges, discuss possible solutions, and then use a case study to demonstrate our theories. </hi>
+            </p>
+            <p style="text-align: justify;"> </p>
+            <p>We will begin by discussing four challenges that digital methods may help to overcome. As mentioned earlier, a cave temple is a structure that contains enormous data about art, architecture, religion, society, and culture through visual (two-dimensional and three-dimensional), textual, and spatial forms. The first challenge is to integrate multi-layer information into one infrastructure. Secondly, it is still debatable if Buddhist cave temples are by definition “architecture.” We may not consider a cave a “construction” but a “subtraction” from a mountain. The cave temples are often not completed at once, so the construction timelines are more complicated than most types of architecture. With optical and digital techniques, can we utilize them to tackle the problem? The third challenge is related to the immobility of the cave temples, while most stylistic analyses and comparisons rely on references to other sites. How can we virtually move the caves and visualize the comparison through the intermediate platform? Lastly, the conservation of the Buddhist caves is a high priority. The digital technology has been adapted in the 5-year plans over the last 20 years in China to document, compare, and prevent diseases, humidity, meanwhile monitoring micro weather, plate movement, and more to sustain the lifespan of “tangible heritage objects.”</p>
+            <p> </p>
+            <p style="text-align: justify;">
+                Following the theoretical discussion, we use the  Niche 28 at Huangze Temple as a case study to demonstrate how to solve several problems from above. Niche 28, also known as the Big Buddha Niche, is the largest-sized niche at Huangze Temple located in Guangyuan, Sichuan in southwest China. It is about 6.8 meters high, 5.5 meters wide, and 3.6 meters deep. Currently dated to the Sui dynasty (581-618AD), it is well-known for its representation of the Pure Land Buddhism paradise, where the five-meter tall Amitaba sculpture is flanked by two disciples, two bodhisattvas, and two guardians. The niche is also featured for the relief sculptures of eight classes of brave divine beings (
+                <hi rend="italic" style="font-size:11pt">tianlong babu</hi>
+                <hi rend="Chinese">天龙八部</hi>) behind the sculptures. The structure is complicated, with the accessory niches flanking the main niche. Scholars also discover Tantric influence in iconography
+                <hi rend="color(1A1A1A)" style="font-size:11pt">. Therefore, our first task is to present the complicated structure and enormous details using cyber-archiving. Digital documentation onsite enables to transform the physical, immovable sites into collaborative,  interactive virtual sites online, and disseminate the research results accordingly. Through the GIS mapping, multi-layer of cultural heritage information (conservation, iconography, etc.) get to integrate cross-disciplinary perspectives towards the physical sites. Curatorial utilization is feasible through the overlaying of 3D tiles, geospatial analysis, photogrammetry texturing, and 4D timeline in the exhibitions or museum contents.</hi>
+            </p>
+            <p style="text-align: justify;"> </p>
+            <p style="text-align: justify;">
+                Another experiment is to verify different hypotheses about the construction date. Since no inscriptions have been found in this niche to prove the construction time directly, most people accept Wang Jianping’s idea that the niche was constructed during the Sui dynasty while contesting theories still exist. Moreover, Wang relies on indirect evidence in Buddhist literature and stylistic comparisons with other sites. We hope to visualize Wang’s comparison and argument to verify his hypothesis. In the traditional research routes, inscriptions and literature reviews provide convincing evidence. In the case of Niche 28, since the evidence is indirect, juxtapositions of digitized caves with similar features through the intermediate platform may provide new leads to the construction date.
+            </p>
+            <p style="text-align: justify;"> </p>
+            <p style="text-align: justify;">
+                Digital documentation, A.I. analysis, GIS mapping, Mixed Reality, and crowdsourcing will also apply to the conservation of the Big Buddha Niche. Digitization enables the lines to get further visible, and digital photo archives compare the migrating or unearthed statutes, some of which might have been relocated due to typhoons. With the GIS mapping, we can easily visualize the migration routes and the geo-locations. The site gets documented by integrated scanning. Raw data of the documentations are analyzed and re-established by SfM (Structure for Motion) technique. Point cloud data (.asc/.xyz/.ply) as the initial results can be further interpreted by modeling, texturing, and rendering to identify conservation concerns.
+            </p>
+            <p style="text-align: justify;"> </p>
+            <p style="text-align: justify;">
+                To conclude, we hope to explore a new model that can use digital technologies to facilitate the interdisciplinary approach in studying Buddhist cave temples—scholars are equipped with more tools to generate more research questions and testify their theories. A remote research platform and the exchange of digitized cultural assets for academic research are especially crucial during the Pandemic era. With substantial financial support, we will build an open-access platform with an open-source license. All scholars should have access to the Github repository.
+            </p>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Centering the Marginalized: Scholar-Curated Worksets from the HathiTrust Digital Library</title>
+                <author>
+                    <persName>
+                        <surname>Magni</surname>
+                        <forename>Isabella</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, United States of America</affiliation>
+                    <email>magni.isabella@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Worthey</surname>
+                        <forename>Glen C.</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, United States of America</affiliation>
+                    <email>gworthey@illinois.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Graham</surname>
+                        <forename>Maryemma</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, United States of America</affiliation>
+                    <email>mgraham@ku.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Walsh</surname>
+                        <forename>John A.</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, United States of America</affiliation>
+                    <email>jawalsh@indiana.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Downie</surname>
+                        <forename>Stephen J.</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, United States of America</affiliation>
+                    <email>jdownie@illinois.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dubnicek</surname>
+                        <forename>Ryan C.</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, United States of America</affiliation>
+                    <email>rdubnic2@illinois.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T12:53:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital collections</term>
+                    <term>workset</term>
+                    <term>textual analysis</term>
+                    <term>collaboration</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>text mining and analysis</term>
+                    <term>Library &amp; information science</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The 
+                <hi rend="italic">Scholar-Curated Worksets for Analysis, Reuse &amp; Dissemination</hi> (SCWAReD) project, generously supported by the Andrew W.Mellon Foundation, is producing a suite of scholar-curated, targeted worksets of materials from the HathiTrust Digital Library, facilitated by its Research Center (HTRC). HTRC worksets are user-created collections of HathiTrust volumes that can be treated as data and analyzed using a variety of tools. Worksets can be shared and cited, contributing to research reproducibility and durable scholarship. In addition to their value as focused digital collections, SCWAReD’s scholar-curated worksets also serve as illustrative, 
+                <hi rend="italic">reusable research models</hi>, and include not only the worksets themselves, but also scholarly introductions, derived datasets and related documentation, and research reports, demonstrating the collaborative workset-building, textual analysis, workflow development, and dataset creation activities typically carried out by HTRC.  
+            </p>
+            <p>The special mission of SCWAReD is to highlight and center the work of historically under-resourced and marginalized textual communities. For this purpose, a flagship project and four sub-projects were selected competitively; each of them explores new methods for creating, analyzing, and reusing curated digital collections and the research data derived from them. The need to address inequities in both library collections and digital humanities research is already well documented (e.g. among others: Gallon, 2016; McPherson, 2012; Earhart, 2012). SCWAReD aims to help address these inequities in both library collections and digital research by identifying and remediating gaps within HathiTrust, and by using computationally-assisted efforts to recover content that is already part of the HathiTrust Digital Library but may be difficult to discover with traditional metadata, in a traditional catalog, from within a massive digital collection. </p>
+            <p>SCWAReD’s flagship collaboration is with the Black Books Interactive Project, part of the longstanding History of Black Writing (HBW), founded in 1983 at the University of Mississippi by SCWAReD Co-PI Maryemma Graham and hosted since 1998 under her leadership at the University of Kansas. </p>
+            <p>Four more projects were selected to create curated worksets to be developed concurrently: </p>
+            <list rend="bulleted">
+                <item>“Mining the Native American Authored Works in HathiTrust for Insights,” in which directors Kun Lu, Raina Heaton, and Raymond Orr (University of Oklahoma) seek to develop a database of Native American authors and their bibliographic information, create a reusable workset of Native American authored works in HathiTrust, and provide insights into the characteristics of the community by text mining their works; </item>
+                <item>“The Black Fantastic: Curated Vocabularies, Artifact Analysis and Identification,” in which directors Clarissa West-White (Bethune Cookman University) and Seretha Williams (Augusta University) propose to prove that characteristics of the Black Fantastic—the cultural production of African Diasporic artists and creators who engage with the intersections of race and technology in their work—exist in historical and current cultural artifacts, including those created by and about future-forward personalities, such as Dr.Mary McLeod Bethune; </item>
+                <item>“Creating Period-Specific Worksets for Latin American Fiction,” in which director José Eduardo González (University of Nebraska, Lincoln) seeks to create datasets to research the history of Latin American fiction and question traditional periodization of this literature by attempting to detect the boundaries between literary periods and subgenre distinctions; and </item>
+                <item>“The National Negro Health Digital Project: Recovering and Restoring a Black Public Health Corpus,” in which director Kim Gallon (Purdue University) draws on HathiTrust’s collection of public health documents on Black health to explore how early twentieth century Black public health officials communicated and addressed health disparities that impacted African American communities. </item>
+            </list>
+            <p>For each of these projects, we identify and attempt to fill collection gaps (items documented by scholar-curators, but missing from HathiTrust). We also create, collect, and document our research artifacts (elements of a “reusable research model,” as described above), and include them with the curated workset. These include the search algorithms devised for the survey of existing holdings; data derived from the workset objects; bibliographies and bibliographic essays; curatorial statements; and whatever other apparatus and artifacts may be deemed significant for interpreting and analyzing the workset, or amenable for later reuse, all of which will be released open access. In each of these partnerships, project teams bring content and domain expertise, research questions, and curation experience, while HTRC provides HathiTrust collection access, research tools and environments, and technical expertise in text and data mining. Research questions suitable for interrogation in HathiTrust holdings have been developed in the course of each project, informed by the workset building process, available content, and gaps identified.</p>
+            <p style="text-align: left; ">Our poster will provide an overview of the SCWAReD project, our flagship collaboration with the Black Books Interactive Project, and our four collaborative projects. We will also provide preliminary results and report on gap-filling efforts.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">Earhart, A.</hi>
+                        <hi style="font-size:10pt" xml:space="preserve"> (2012). Can Information Be Unfettered? Race and the New Digital Humanities Canon. In Gold, M. ed. </hi>
+                        <hi rend="italic" style="font-size:10pt">Debates in the Digital Humanities</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. Minneapolis: University of Minnesota Press, chapter 18, </hi>
+                        <ref target="https://doi.org/10.5749/9781452963754">
+                            https://doi.org/10.5749/9781452963754
+                        </ref>
+                        <hi style="font-size:10pt" xml:space="preserve"> (accessed 27 April 2022).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt" xml:space="preserve">Gallon, K. (2016). </hi>
+                        <hi style="font-size:10pt" xml:space="preserve">Making a Case for the Black Digital Humanities. In Matthew Gold, ed. </hi>
+                        <hi rend="italic" style="font-size:10pt">Debates in the Digital Humanities 2016</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. Minneapolis: University of Minnesota Press, chapter 4, </hi>
+                        <ref target="https://doi.org/10.5749/9781452963761">
+                            https://doi.org/10.5749/9781452963761
+                        </ref>
+                        <hi style="font-size:10pt" xml:space="preserve"> (accessed 27 April 2022).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:10pt">McPherson, T.</hi>
+                        <hi style="font-size:10pt" xml:space="preserve"> (2012). Why Are the Digital Humanities So White? In Gold, M. ed. </hi>
+                        <hi rend="italic" style="font-size:10pt">Debates in the Digital Humanities</hi>
+                        <hi style="font-size:10pt" xml:space="preserve">. Minneapolis: University of Minnesota Press, chapter 9, </hi>
+                        <ref target="https://doi.org/10.5749/9781452963754">
+                            https://doi.org/10.5749/9781452963754
+                        </ref>
+                        <hi style="font-size:10pt" xml:space="preserve"> (accessed 27 April 2022).</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

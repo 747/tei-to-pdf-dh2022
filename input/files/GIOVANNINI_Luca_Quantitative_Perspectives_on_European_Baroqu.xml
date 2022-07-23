@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Quantitative Perspectives on European Baroque Drama: Towards a Network Theory-oriented Analysis</title>
+                <author>
+                    <persName>
+                        <surname>Giovannini</surname>
+                        <forename>Luca</forename>
+                    </persName>
+                    <affiliation>Universität Potsdam, Germany</affiliation>
+                    <email>giovannini@uni-potsdam.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Baroque drama</term>
+                    <term>network theory</term>
+                    <term>character networks</term>
+                    <term>European literary history</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>The poster presents an ongoing doctoral research project which aims at exploiting the analytical power of network visualisation to investigate European Baroque drama from a quantitative perspective. By building and exploring a balanced corpus of 150 plays in five different languages, it attempts to provide an empirical verification of the traditional view on the evolution of seventeenth-century European dramatic literature.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Related literature</head>
+                <p>In the last two decades, network analysis of literary texts has established itself as a core methodology within the field of computational criticism and is now routinely employed to gain insights into social formations and character interactions within fictional worlds. Its strength lies in the extreme formalisation of texts, which are converted in graphs made by characters (nodes) and their relations (edges); thus, it is possible to investigate large corpora and unearth formal patterns which close reading may overlook (cf. Trilcke, 2013; Trilcke and Fischer, 2018).</p>
+                <p>While many authors in the field have focused on methodological and technical issues, trying to leverage Natural Language Processing techniques to automate phases of the network extraction process, others have exploited the epistemological potential of literary networks analysis to try to answer questions concerning characters’ features, textual topologies, and literary genres: a comprehensive overview on both approaches, with a wide bibliography, is provided by Labatut and Bost (2020). Furthermore, growing ‘programmable corpora’, with dedicated tools for network visualisation, are now available for research and teaching purposes (e.g. the Drama Corpora project by Fischer et al., 2019).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Project overview </head>
+                <p>This investigation of European Baroque drama is based on a research corpus of 150 plays, which is currently being assembled and will be later merged into the Drama Corpora repository (
+                    <ref target="https://dracor.org">dracor.org</ref>). The corpus includes European plays in English, French, Spanish, German, and Italian, and covers the timespan from 1561 to 1710; despite its relatively small extension, its texts have been selected (or sampled from larger collections) with the explicit purpose of avoiding canonical bias and producing a composite and somehow ‘representative’ picture of the period investigated.
+                </p>
+                <p>In a first phase, all plays which are not already available in DraCor are being transcribed or annotated to meet the platform’s requirements, starting from structured (.xml) or plain (.txt from OCRs, .html) open-access textual sources and ending up with fully formatted XML-TEI files. Once established the corpus, character networks will be extracted from the texts by means of the DraCor scripts, which operate by linking characters by scene proximity, and visualised through Gephi (
+                    <ref target="https://gephi.org">gephi.org</ref>) or similar software. 
+                </p>
+                <p>The textual structures embodied by the graphs will then be compared and interpreted according to the essential metrics of network analysis, such as centrality and modularity. The main aim will be measuring patterns of similarity and divergence between contemporary plays from different linguistic milieus and following the progressive evolution of drama throughout the designated temporal frame. Results are expected to contribute to the larger critical discussion on the features of Baroque, with a particular focus on the verification of some well-established literary theories the next section describes.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Research question and goals</head>
+                <p>The project is meant to address the lack of comparative studies on European early modern drama, and to complement the few existing ones (e. g. Küpper, 2018) with a ‘quantitative formalist’ perspective. Such shortage of extended transnational analyses of the genre has often been explained with the assumption that each ‘local’ form of Baroque drama represents a highly idiosyncratic system, sharply separated from the others by linguistic and cultural boundaries. This theory has been notably supported by Franco Moretti, who has described the evolution of European theatre throughout the seventeenth century as a process of Darwinist ‘speciation’. In his view, indeed, the common heritage of classical and medieval drama progressively broke down into several national variations, such as the German Trauerspiel or the French théâtre classique, each one with his own set of distinctive stylistic and formal features (1994: 97-99). </p>
+                <p>Computational literary network analysis appears particularly suited to assess the validity of Moretti’s reconstruction, since it is able to investigate the formal structures of all dramatic traditions involved with equal effectiveness. Accordingly, this study could help to measure whether (and how) Baroque-era theatre has split along national and cultural lines – and, conversely, to which extent phenomena of transfer of formal elements, such as plots or characters’ roles, have nevertheless taken place. From this topological perspective, network-based evidence might thus contribute to a clearer understanding of the development of European dramatic literature during one of its defining periods.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; text-align: justify;">Fischer, F., Börner, I., Göbel, M., Hechtl, A., Kittel, C., Milling, C. and Trilcke, P. (2019). Programmable Corpora: Introducing DraCor, an Infrastructure for the Research on European Drama. Proceedings of DH2019: ‘Complexities’. Utrecht: Utrecht University doi:10.5281/ZENODO.4284002.</bibl>
+                    <bibl style="text-align: left; ">Küpper, J. (2018). The Cultural Net: Early Modern Drama as a Paradigm. Berlin and Boston: De Gruyter doi:10.1515/9783110536638.</bibl>
+                    <bibl style="text-align: left; text-align: justify;">Labatut, V. and Bost, X. (2020). Extraction and Analysis of Fictional Character Networks: A Survey. ACM Computing Surveys, 52 (5): 1–40 doi:10.1145/3344548.</bibl>
+                    <bibl style="text-align: left; text-align: justify;">Moretti, F. (1994). Modern European Literature: A Geographical Sketch. New Left Review (206): 86–109.</bibl>
+                    <bibl style="text-align: left; text-align: justify;">Trilcke, P. (2013). Social Network Analysis (SNA) als Methode einer textempirischen Literaturwissenschaft. In Ajouri, P., Mellmann, K. and Rauen, C. (eds), Empirie in der Literaturwissenschaft. Münster: Brill | mentis, pp. 201–47 doi:10.30965/9783957439710_012.</bibl>
+                    <bibl style="text-align: left; text-align: justify;">Trilcke, P. and Fischer, F. (2018). Literaturwissenschaft als Hackathon. Zur Praxeologie der Digital Literary Studies und ihren epistemischen Dingen. In Huber, M. and Krämer, S. (eds), Wie Digitalität die Geisteswissenschaften verändert: Neue Forschungsgegenstände und Methoden. Wolfenbüttel: Herzog August Bibliothek doi:10.17175/sb003_003.</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

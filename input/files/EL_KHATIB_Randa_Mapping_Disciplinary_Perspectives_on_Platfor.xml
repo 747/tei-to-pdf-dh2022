@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mapping Disciplinary Perspectives on Platform Governance</title>
+                <author>
+                    <persName>
+                        <surname>El Khatib</surname>
+                        <forename>Randa</forename>
+                    </persName>
+                    <affiliation>University of Toronto Scarborough, Canada</affiliation>
+                    <email>randa.el@utoronto.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bowen</surname>
+                        <forename>William R.</forename>
+                    </persName>
+                    <affiliation>University of Toronto Scarborough, Canada</affiliation>
+                    <email>william.bowen@utoronto.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chan</surname>
+                        <forename>Leslie</forename>
+                    </persName>
+                    <affiliation>University of Toronto Scarborough, Canada</affiliation>
+                    <email>lesliekw.chan@utoronto.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nieborg</surname>
+                        <forename>David</forename>
+                    </persName>
+                    <affiliation>University of Toronto Scarborough, Canada; University of Toronto, Canada</affiliation>
+                    <email>david.nieborg@utoronto.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-14T15:44:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>critical infrastructures</term>
+                    <term>platform governance</term>
+                    <term>digital commons</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>digital access</term>
+                    <term>privacy</term>
+                    <term>and ethics analysis</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>Media studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left;">
+                <anchor xml:id="Hlk103420961"/>
+                <anchor xml:id="Hlk103421058"/>
+                This paper draws on the fields of digital humanities, media studies, and science, technology, and society to map the current landscape of critical infrastructure studies with specific attention to platform governance models. By carrying out this review, the authors will identify the methodologies, principles, and practices that digital humanities can draw on and contribute to. The exigency of scholarship on digital infrastructures, and platform infrastructures in particular, have to do with their integral role in society (van Dijck et al. 2018) and academic scholarship (Chen et al. 2019) which has been compounded with the onset of COVID-19 that propelled a sharp shift towards virtual environments for a myriad of daily leisure and work activities. Digital humanities scholar Alan Liu (2018) draws a direct correlation between infrastructures and cultural production, arguing that the former enables the human experience and enforces constraints on it, with “much of the same scale, complexity, and general cultural impact as the idea of ‘culture’ itself” (2). Today we know that digital platforms themselves are never neutral and always inscribe a set of values and principles in their architecture, algorithms, business model, interface, and functionalities. Given the far reach of digital platforms and their significance for culture and society, the values and principles platforms inscribe are significant and demand scholarly attention. Studying these values and principles through the framework of their business models alone, such as for-profit versus open access, might fail to address the complexity of the issue since open access platforms can gatekeep access to content and commodify users in unethical ways. In addition to their business models, we need to pay closer attention to platform governance which can be opaque and invisible, but is often the means of control that dictates the performance of all other aspects of platforms.
+            </p>
+            <p style="text-align: left;">
+                First, discourse regarding infrastructure and platforms in the digital humanities has focused on scholarly communication and centred around the primary principles of the field that are concerned with open, transparent, community-oriented structures. Kathleen Fitzpatrick (2018) indicates that universities so far have failed to prioritize the public good over economic gain, and argues for a paradigm shift that prioritizes the former by creating and caring for communities (208–9), which includes building and sustaining structures for them (228). We are seeing a similar line of thinking with other cognate infrastructure debates as well. Second, from science, technology, and society, Urszula Pawlicka-Deger (2021, 6) introduced the concept of “infrastructuring” into the digital humanities, a design-first approach that embodies principles of community-led, participatory, ethical, open, diverse, non-commercial, and interventive digital infrastructures. Third, in media studies, José van Dijck and colleagues (2018) argue that platform governance ought to include the voices of those who are directly affected by how they operate; this very type of debate between competing interests is what forms a democratic society. Likewise, the field of media studies has seen an “infrastructural” turn, as the emergence of dominant platform companies (e.g., Facebook, Google, Apple, etc.) have contributed to a “platformization of infrastructure” as well as an “infrastructuralization of platforms” (Plantin et al. 2018). This is to suggest that platforms have taken on infrastructural properties such as ubiquity and reliability, whereas crucial digital infrastructures are increasingly owned, operated, and governed by platform companies.
+            </p>
+            <p style="text-align: left;">
+                As becomes clear when reviewing these three fields, their views on digital infrastructures overlap in how they envision infrastructure to be. At the same time, the norms and values constituting for profit-platforms are directly at odds with digital humanities scholarship and sustainable knowledge cultures. To advance the debate on digital infrastructure, this paper will further map the continuities between these three fields and identify their gaps. By doing so, the authors will provide recommendations for future research directions, paying particular attention to platform governance as its impacts digital scholarship.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <anchor xml:id="Hlk103421086"/>
+                        <hi rend="bold" style="font-size:12pt">Chen, G., Posada, A., &amp; Chan, L.</hi>
+                        <hi style="font-size:12pt" xml:space="preserve"> (2019). Vertical integration in academic publishing: implications for knowledge inequality.” In Chan, L. and Mounier, P. (eds.), Connecting the Knowledge Commons—From Projects to Sustainable Infrastructure: The 22nd International Conference on Electronic Publishing – Revised Selected Papers. OpenEdition Press. </hi>
+                        <ref target="http://books.openedition.org/oep/9068">
+                            <hi rend="underline color(0563C1)" style="font-size:12pt">http://books.openedition.org/oep/9068</hi>
+                        </ref>
+                        .
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:12pt">Fitzpatrick, K</hi>
+                        . (2018). Generous Thinking. Baltimore: Johns Hopkins University Press.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:12pt">Liu, A</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. (2018). Toward critical infrastructure studies. NASSR: 1-22. </hi>
+                        <ref target="https://cistudies.org/wp-content/uploads/Toward-Critical-Infrastructure-Studies.pdf">
+                            <hi rend="underline color(0563C1)" style="font-size:12pt">https://cistudies.org/wp-content/uploads/Toward-Critical-Infrastructure-Studies.pdf</hi>
+                        </ref>
+                        .
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:12pt">Pawlicka-Deger, U</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">. (2021). Infrastructuring digital humanities. Digital Scholarship in the Humanities, fqab086. </hi>
+                        <ref target="https://doi.org/10.1093/llc/fqab086">
+                            <hi rend="underline color(0563C1)" style="font-size:12pt">https://doi.org/10.1093/llc/fqab086</hi>
+                        </ref>
+                        .
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-size:12pt">Plantin, J., Lagoze, C., Edwards, P. N., and Sandvig, C</hi>
+                        . (2018). Infrastructure studies meet platform studies in the age of Google and Facebook. New Media &amp; Society, 20(1): 293-310.
+                    </bibl>
+                    <bibl rend="No Spacing">
+                        <hi rend="bold" style="font-size:12pt">van Dijck, J., Poell, T., and de Waal, M</hi>
+                        . (2018). The Platform Society: Public Values in a Connective World. New York: Oxford University Press.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

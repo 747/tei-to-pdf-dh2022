@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Digital Humanities and Replication. Ingredients for a Love Story – Experiences from the ‘(Re)counting the Uncounted’ Project</title>
+                <author>
+                    <persName>
+                        <surname>Stapel</surname>
+                        <forename>Rombert</forename>
+                    </persName>
+                    <affiliation>International Institute of Social History, Netherlands, The</affiliation>
+                    <email>rombert.stapel@iisg.nl</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T15:32:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>replication</term>
+                    <term>FAIR data</term>
+                    <term>data processing</term>
+                    <term>geospatial</term>
+                    <term>linked open data</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>Contemporary</term>
+                    <term>spatial &amp; spatio-temporal analysis</term>
+                    <term>modeling and visualization</term>
+                    <term>sustainable procedures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Geography and geo-humanities</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: justify;">Over the past years much has been written about the replication crisis in science, with humanities research slowly, and sometimes hesitantly, catching up (Peels and Bouter, 2018a; Rijcke, de and Penders, 2018; Peels and Bouter, 2018b). Strongly related to this development, is the strive for open science (UNESCO, 2021). By facilitating and compelling researchers (through research grant stipulations) to not only publish their results, but also to provide access to their data and methodologies, a major prerequisite for replication is met.
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p rend="footnote text"> A second essential perquisite for replication is making it worthwhile for researchers to spend their time to replication – by opening up grant opportunities, value replication as an integral part of in scholarly careers, etc.</p>
+                    </note> The FAIR principles to data management (Findable, Accessible, Interoperable, Reusable) are central to this approach (Wilkinson et al., 2016). 
+                </p>
+                <p style="text-align: justify;">Current literature on the relationship between digital humanities and the replication of research to a large extent focuses on the challenges of replicating digital, or more broadly speaking, quantitative-based humanities research (Tucker, 2017; Flis, 2018). In computational linguistics discussions have taken off, not least in response to a recent thought-provoking article by Nan Z. Da (Da, 2019; Algee-Hewitt et al., 2019; Arnold and Buell, 2019; Antoniak et al., 2020). </p>
+                <p style="text-align: justify;">Rather than presenting another gloomy narrative on the replicability of digital humanities research, in this paper we want to address the opportunities that digital humanities methodologies offer in mediating the ‘replication crisis.’ Although digital humanities are sometimes narrowly defined, barely interacting with quantitative historical research for instance, we will use it as a broad umbrella term for humanities research that systematically makes use of and analyses digital resources. Such research almost always includes some form of empirical analysis, thus lending itself to replication as well (Peels, 2019).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Background of the project</head>
+                <p style="text-align: justify;">Such an approach is central to the 
+                    <hi rend="italic">(Re)counting the Uncounted</hi> project, the first humanities project funded through the Dutch Scientific Council’s Replication Studies Program – unique in the world.
+                    <note place="foot" xml:id="ftn2" n="2">
+                        <p rend="footnote text"> https://www.nwo.nl/en/researchprogrammes/replication-studies. </p>
+                    </note> In this project, four seminal studies which have estimated the medieval and early-modern population in the Netherlands and Belgium are formally replicated (Faber et al., 1965; Blockmans et al., 1980; Klep, 1991; Paping, 2014). This replication is performed by using the same underlying data, many hundreds of premodern censuses, and by applying the same methodologies: usually multiplying the units of the actual censuses – typically hearths, houses, chimneys, families, communicants, able-bodied men, and sometimes individuals – with predetermined coefficients, while accounting for those who are excluded from the census (for reasons of fiscal exemption for instance) (for an introduction to the challenges with these types of sources: Arnould, 1976).
+                </p>
+                <p style="text-align: justify;"> The 
+                    <hi rend="italic">(Re)counting the Uncounted</hi> project aims to test the consistency of the methodologies applied in the four studies by using digital humanities methods as a feedback loop. For this purpose, we have a twofold approach. First, we digitise and contextualise the 
+                    <hi rend="bold">unaggregated</hi> – i.e. on village-level – premodern censuses. These statistics are then linked to specially prepared Historical GIS maps of locality boundaries in the Netherlands, Belgium, Luxembourg, and surrounding areas (Stapel, 2020). Second, there is the problem of the diverging nature of the censuses. These censuses have been created by a multitude of actors, in a multitude of territories, for a multitude of purposes, counting a full range of units, and across nearly five centuries. To exacerbate the problem of the comparability of their results, modern scholarship has never been able to reach consensus on which coefficients should be used in what circumstances (e.g.: Blockmans et al., 1980: 42–43; Stabel, 1997: 19 ff.; Hélin, 1963: 41 ff.; Brouwer, de, 1963; Cloet, 1966; Woude, van der, 1972: 77–91).
+                </p>
+                <p style="text-align: justify;"> By carefully building not only a database of digitised censuses, but also a full record of contextual information on each census (what is counted, who is counted, by whom is the census made, for what purpose, etc.), it becomes possible to analyse this contextual information, for instance to create more consistent coefficients. Moreover, it will become possible, through the advancements of GIS techniques, to contextualise the (socio)geographical context of a locality mentioned in one of these medieval or early modern censuses (e.g.: Stapel, 2017: 182). </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Facilitating replicability through database design</head>
+                <p style="text-align: justify;">Thus far, we have focused on the set up of this humanities replication study. The set up however has much wider implications for how, in this case, historical statistical databases should be constructed in our opinion. Here too, digital humanities techniques, although not uniquely developed for or within a humanities context, play an essential role. </p>
+                <p style="text-align: justify;">A traditional database of historical statistics – again we use this type of database as an example, but it can be applied much broader in humanities research as well – involves a database of, typically, rows and columns – mimicking the printed table well-known in scholarly literature for centuries. Rather than putting the rows and columns at the forefront, and defining them, we aim to put the data observation central. Every data observation is linked to contextual information, which may also include specific information usually stored in table footnotes, and will be geographically defined in GIS. We will use Linked Open Data (LOD) to facilitate this database structure. </p>
+                <p style="text-align: justify;">One may argue, with reason, that this approach is not very new. Yet, the approach is still very uncommon in quantitative humanities research and rarely applied in full. Building from our experiences in the 
+                    <hi rend="italic">(Re)counting the Uncounted</hi> project, we will also show that the amount of time needed to invest in such a data model should not necessarily be an obstacle, nor should lack of access to user-friendly methods to set this data model up. In its very core, the 
+                    <hi rend="italic">(Re)counting the Uncounted</hi> project, while promoting all four FAIR principles, aims above all to improve the interoperability of through-and-through messy historical data in this way. 
+                </p>
+                <p style="text-align: justify;">Moreover, and this is also a vital element, in relation to the replication aspect, the contextual and geographical information stored with every data observation can be further distributed to users of the data, creating a new level of transparency. After all, replication does not end with the publication of new results, but involves an ongoing conversation (Peels, 2019). Facilitating the replicability of replicated research is essential. We will exploit the possibilities of LOD to create a crumb trail from an observation in a source (a table in literature, an (image of a) archival document, etc.), via a range of carefully defined interpretations of that observation (either by existing scholars or by future users), to a scientific product: in our case population estimates based on very distinct types of sources.</p>
+                <p style="text-align: justify;">Finally, in order to facilitate source critical attitudes of the users, we aim to grant access to our (open) data through dynamic questionnaires. These have the purpose of bringing any user up to speed with the specific challenges of our source material, forcing them to think about how these challenges affect their research question. Downloading the aggregated end results in a CSV without ever considering how the data came into existence – a common research practice, at least in quantitative history – is actively discouraged in this way.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Acknowledgments</head>
+                <p style="text-align: justify;">Co-author to the paper and LOD model is Ivo Zandhuis (Fellow at the International Institute of Social History and independent researcher and consultant at ivozandhuis.nl). This publication is part of the project ‘(Re)counting the Uncounted’ (with project number 401.19.038 of the research programme Replication Studies which is (partly) financed by the Dutch Research Council (NWO).</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Algee-Hewitt, M. A., Bode, K., Brouillette, S., Finn, E., Klein, L., Long, H., Piper, A., Underwood, T., Da, N. Z. and Fish, S.</hi> (2019). Computational Literary Studies: A Critical Inquiry Online Forum 
+                        <hi rend="italic">Critical Inquiry</hi>
+                        <ref target="https://critinq.wordpress.com/2019/03/31/computational-literary-studies-a-critical-inquiry-online-forum/">https://critinq.wordpress.com/2019/03/31/computational-literary-studies-a-critical-inquiry-online-forum/</ref>.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Antoniak, M., Jannidis, F., Mimno, D., Schöch, C. and Dalen-Oskam, K. van</hi> (2020). Replication and Computational Literary Studies. 
+                        <hi rend="italic">DH2020</hi>. Ottawa: ADHO doi:http://dx.doi.org/10.17613/ekd2-ew51. https://hcommons.org/deposits/item/hc:30439/ (accessed 10 December 2021).
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Arnold, T. and Buell, R.</hi> (2019). More Responses to ‘The Computational Case against Computational Literary Studies’ 
+                        <hi rend="italic">Critical Inquiry</hi>
+                        <ref target="https://critinq.wordpress.com/2019/04/12/more-responses-to-the-computational-case-against-computational-literary-studies/">https://critinq.wordpress.com/2019/04/12/more-responses-to-the-computational-case-against-computational-literary-studies/</ref>.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Arnould, M.-A.</hi> (1976). 
+                        <hi rend="italic">Les Relevés de Feux</hi>. (Typologie Des Sources Du Moyen Âge Occidental 18). Turnhout: Brepols.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Blockmans, W. P., Pieters, G., Prevenier, W. and Van Schaïk, R. W. M.</hi> (1980). Tussen crisis en welvaart: sociale veranderingen 1300-1500. In Blok, D. P. (ed), 
+                        <hi rend="italic">Algemene Geschiedenis Der Nederlanden</hi>, vol. 4. Haarlem: Fibula-Van Dishoeck, pp. 42–86.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Brouwer, J. A. K. de</hi> (1963). Het belang van de kommunikantencijfers en de verhouding ervan tot de bevolking. 
+                        <hi rend="italic">Handelingen van de Koninklijke Zuidnederlandse Maatschappij Voor Taal- En Letterkunde En Geschiedenis</hi>, 
+                        <hi rend="bold">17</hi>: 67–80.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Cloet, M.</hi> (1966). De leeftijdsgrens tussen communicanten en niet-communicanten in de XVIIde en de XVlIlde eeuw. 
+                        <hi rend="italic">De Leiegouw</hi>, 
+                        <hi rend="bold">8</hi>(2): 451–71.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Da, N. Z.</hi> (2019). The Computational Case against Computational Literary Studies. 
+                        <hi rend="italic">Critical Inquiry</hi>, 
+                        <hi rend="bold">45</hi>(3): 601–39 doi:10.1086/702594.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Faber, J. A., Roessingh, H. K., Slicher van Bath, B. H., Van der Woude, A. M. and Xanten, H. J. van</hi> (1965). Population changes and economic developments in the Netherlands: a historical survey. 
+                        <hi rend="italic">A.A.G. Bijdragen</hi>, vol. 12. Wageningen: Afdeling Agrarische Geschiedenis, Landbouwhogeschool, pp. 47–113.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Flis, I.</hi> (2018). Digital humanities as the historian’s Trojan horse: Response to commentary in the special section on digital history. 
+                        <hi rend="italic">History of Psychology</hi>, 
+                        <hi rend="bold">21</hi>(4): 380–83 doi:10.1037/hop0000113.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Hélin, É.</hi> (1963). 
+                        <hi rend="italic">La Démographie de Liége Aux XVIIe et XVIIIe Siécles</hi>. (Académie Royale de Belgique. Classe Des Lettres et Des Sciences Morales et Politiques. Mémoires, Coll. in-8° 56/4). Brussels: Palais des Académies.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Klep, P. M. M.</hi> (1991). Population Estimates of Belgium, by Province (1375-1831). In Société Belge de Démographie (ed), 
+                        <hi rend="italic">Historiens et Populations. Liber Amicorum Étienne Hélin</hi>. Louvain-la-Neuve: Academia, pp. 485–507.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Paping, R. F. J.</hi> (2014). General Dutch Population development 1400-1850: cities and countryside. Alghero, Italy 
+                        <ref target="http://hdl.handle.net/11370/d057464a-dbb1-4d50-a217-762403c1a3e2">http://hdl.handle.net/11370/d057464a-dbb1-4d50-a217-762403c1a3e2</ref>.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Peels, R.</hi> (2019). Replicability and replication in the humanities. 
+                        <hi rend="italic">Research Integrity and Peer Review</hi>, 
+                        <hi rend="bold">4</hi>(1): 2 doi:10.1186/s41073-018-0060-4.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Peels, R. and Bouter, L.</hi> (2018a). Humanities need a replication drive too. 
+                        <hi rend="italic">Nature</hi>, 
+                        <hi rend="bold">558</hi>(7710): 372–372 doi:10.1038/d41586-018-05454-w.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Peels, R. and Bouter, L.</hi> (2018b). The possibility and desirability of replication in the humanities. 
+                        <hi rend="italic">Palgrave Communications</hi>, 
+                        <hi rend="bold">4</hi>(1): 95 doi:10.1057/s41599-018-0149-x.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Rijcke, S. de and Penders, B.</hi> (2018). Resist calls for replicability in the humanities. 
+                        <hi rend="italic">Nature</hi>, 
+                        <hi rend="bold">560</hi>(7716): 29–29 doi:10.1038/d41586-018-05845-z.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Stabel, P.</hi> (1997). 
+                        <hi rend="italic">Dwarfs among Giants: The Flemish Urban Network in the Late Middle Ages</hi>. (Studies in Urban Social, Economic and Political History of the Medieval and Modern Low Countries 8). Leuven: Garant.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Stapel, R. J.</hi> (2017). Holland rond 1500: een geografische verkenning van de 
+                        <hi rend="italic">Enqueste</hi> (1494) en 
+                        <hi rend="italic">Informacie</hi> (1514). 
+                        <hi rend="italic">Holland: Historisch Tijdschrift</hi>, 
+                        <hi rend="bold">49</hi>(4): 177–84.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Stapel, R. J.</hi> (2020). Historical Atlas of the Low Countries (1350-1800) IISH Data Collection http://hdl.handle.net/10622/PGFYTM (accessed 10 June 2020).
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Tucker, A.</hi> (2017). Replication, Visualization &amp; Tactility: Towards a Deeper Involvement of 3D Printing in Humanities Scholarship and Research. Montreal: ADHO https://dh2017.adho.org/abstracts/230/230.pdf.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">UNESCO</hi> (2021). UNESCO Recommendation on Open Science 
+                        <hi rend="italic">UNESCO</hi>
+                        <ref target="https://en.unesco.org/science-sustainable-future/open-science/recommendation">https://en.unesco.org/science-sustainable-future/open-science/recommendation</ref>.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Wilkinson, M. D., Dumontier, M., Aalbersberg, Ij. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., et al.</hi> (2016). The FAIR Guiding Principles for scientific data management and stewardship. 
+                        <hi rend="italic">Scientific Data</hi>, 
+                        <hi rend="bold">3</hi>(1): 160018 doi:10.1038/sdata.2016.18.
+                    </bibl>
+                    <bibl rend="Bibliografie2">
+                        <hi rend="bold">Woude, A. M. van der</hi> (1972). 
+                        <hi rend="italic">Het Noorderkwartier. Een Regionaal Historisch Onderzoek in de Demografische En Economische Geschiedenis van Westelijk Nederland van de Late Middeleeuwen Tot Het Begin van de Negentiende Eeuw</hi>. Vol. 1. 3 vols. (A.A.G. Bijdragen 16). Wageningen: Afdeling Agrarische Geschiedenis, Landbouwhogeschool.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

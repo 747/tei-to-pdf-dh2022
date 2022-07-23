@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> Towards a Global Analysis of Changes in Shape over Time based on Digitised Artefacts: The East-Asian Perspective </title>
+                <author>
+                    <persName>
+                        <surname>Costiner</surname>
+                        <forename>Lisandra</forename>
+                    </persName>
+                    <affiliation>University of Oxford, United Kingdom</affiliation>
+                    <email>lia.costiner@history.ox.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pala</surname>
+                        <forename>Giovanni</forename>
+                    </persName>
+                    <affiliation>University of Oxford, United Kingdom</affiliation>
+                    <email>giovanni.pala@magd.ox.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Liu</surname>
+                        <forename>Yidan</forename>
+                    </persName>
+                    <affiliation>University of Edinburgh, United Kingdom</affiliation>
+                    <email>Y.Liu-237@sms.ed.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wang</surname>
+                        <forename>Shuofei</forename>
+                    </persName>
+                    <affiliation>University of Durham, United Kingdom</affiliation>
+                    <email>Kwwn34@durham.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T14:38:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>3D models</term>
+                    <term>shape analysis</term>
+                    <term>digital humanities</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>cultural analytics</term>
+                    <term>data</term>
+                    <term>object</term>
+                    <term>and artefact preservation</term>
+                    <term>Art history</term>
+                    <term>Design studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">This study tests the use of a novel computational approach, one that analyses changes in shape of historical artefacts across time, in a new context. Previously developed by the authors and tested upon Western art, in particular ancient Greek pottery, this methodology is here applied for the first time to East-Asian art, in particular Chinese vases [1]. The East-Asian perspective is crucial in understanding the adaptability of the approach to different geographical regions and time periods, contributing to the construction of a global history of shape evolution and design progression over time. </p>
+            <p style="text-align: left; ">The study of shapes and styles as embodying the cultural concerns of a particular historical moment has been at the center of several disciplines including art history and archaeology. It has captured the interest of scholars since the eighteenth century when Johann Joachim Winckelmann devised his categorisation of style, focusing particularly on Greek and Roman art [2]. In more recent times, George Kubler proposed new ways of historical sequencing of form based on continuous change across time [3]. In Chinese art, surveys of the development of pottery over time have also been conducted, most recently by Ye Zhemin<hi rend="Chinese">叶喆民</hi> [4].</p>
+            <p style="text-align: left; ">The current research inscribes itself within this intellectual tradition yet propose a new way of quantifying changes in shape and exploring connections between objects: a computational technique. A few studies have attempted to move in this direction although they have been restricted by the technology, and materials, namely photographs [5, 6]. This paper employs a new methodology and material, 3D scans of historical artefacts, therefore providing one of the first case studies of corpus research on 3D digitised objects. </p>
+            <p style="text-align: left; ">The approach has been tested on a case study of four Chinese vases of the Beaker type, deriving from late Ming and early Qing Dynasties (1620-1683). These objects are held in the Ashmolean Museum in Oxford, U.K., under ascension numbers EA1978.799, EA1978.798, EA1971.22, and EA1978.1903. These were chosen because of the transformation in shape of beaker vases between the late-Ming and early-Qing Dynasties (1620-1683), due to changing tastes in this period of dynastic transition. This has captured much scholarly interest. Some scholars, such as Geng Baochang <hi rend="Chinese">耿宝昌</hi>, Zhu Jun<hi rend="Chinese">朱军</hi> and Xu Jingjing<hi rend="Chinese">徐菁菁</hi> have examined the changing shapes of vases in this period, noting that appraisers were required to memorise shapes when inspecting and identifying ceramic vases [7, 8, 9]. Other scholars, such as Soame Jenyns and Margaret Medley, applied a topological method of visual analysis of ceramic vases, leading to a revision in their dating [10, 11]. A combination of quantitative methods and topological techniques were used by Ji Dongge
+                <hi rend="Chinese">纪东歌</hi> and Yu Haiyang <hi rend="Chinese">于海洋</hi>, both of whom were interested in the historical and societal influences over shape design and patterns in the two dynasties [12, 13]. This paper proposes a new, quantitative approach to undertake the study of shapes and forms. 
+            </p>
+            <p style="text-align: left; ">To analyse the dataset, the vases were captured in three dimensions using photogrammetry, from which a 3D model was built. From the mesh of each model, a random sample of vertices of 1000 points was extracted. The vases were roto-translated and centered so that the orientations were standardised across models. These models were compared by relying on metrics that measured the distance between their distribution of points. In this study, an approximation of the Wasserstein metric, known as the Sinkhorn distance, was used. The benefit of the Wasserstein metric for this comparative approach lies in its capacity to synthetise into one ‘number’ the dissimilarity between two distributions (shapes): the greater the difference, the greater the cost (value) to reposition the points. A pre-existing suite was deployed to implement the algorithm [14, 15]. The Sinkhorn distances are the final output of the analysis. The comparison produced is a series of pairwise distances that can be used to assess the relative closeness or similarity between shapes.</p>
+            <p style="text-align: left; ">This study has outlined the usefulness of this new computational approach for quantifying changes in East-Asian pottery. The method can be scaled to large datasets of 3D objects scans where changes can be computed automatically, without the need for human intervention. As museums and cultural institutions move to digitise their collections in three dimensions, this approach opens new possibilities for the large-scale study of form across time and geographical locations.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="western" style="text-align: left; ">[1] Pala, G. and Costiner, L. (2022). “Tracing Changes in Shape of Historical Artefacts across Time using 3D Scans: A New Computational Approach”, 
+                        <hi rend="italic">Journal of Open Humanities Data</hi>, forthcoming. 
+                    </bibl>
+                    <bibl rend="western" style="text-align: left; ">[2] Winckelmann, J. (1764). 
+                        <hi rend="italic">Johann Winckelmanns, […] Geschichte der Kunst des Alterthums</hi>. Dresden: In der Waltherischen Hof-Buchhandlung. The English translation is Winckelmann, J. (2006), 
+                        <hi rend="italic" xml:space="preserve">The History of the Art of Antiquity. </hi>Los Angeles: Getty Research Institute.
+                    </bibl>
+                    <bibl rend="western" style="text-align: left; ">[3] Kubler, G. (1962). 
+                        <hi rend="italic">The shape of time: Remarks on the history of things</hi>. New Haven: Yale University Press.
+                    </bibl>
+                    <bibl rend="western" style="text-align: left; ">[4] Zhemin, Y., <hi rend="Chinese">叶喆民</hi> (2011), 
+                        <hi rend="italic">Zhongguo taoci shi</hi><hi rend="Chinese">中国陶瓷史</hi> [
+                        <hi rend="italic">History of Chinese Pottery and Porcelain</hi>]. Beijing: SDX Joint Publishing Company. 
+                    </bibl>
+                    <bibl rend="western" style="text-align: left; ">[5] Liming, G., L. Hongjie and J. Wilcock (1989). “The Analysis of Ancient Chinese Pottery and Porcelain Shapes: a Study of Classical Profiles from the Yangshao Culture to the Qing Dynasty Using Computerised Profile Data Reduction, Cluster Analysis and Fuzzy Boundary Discrimination”, in Rahtz, S. (ed.),
+                        <hi rend="italic" xml:space="preserve"> Computer Applications and Quantitative Methods in Archaeology</hi>. CAA89 (BAR International Series 548). Oxford: B.A.R., pp. 362-374.
+                    </bibl>
+                    <bibl rend="western" style="text-align: left; ">[6] Liying W., and B. Marwick (2020). “Standardization of ceramic shape: A case study of Iron Age pottery from northeastern Taiwan”. 
+                        <hi rend="italic">Journal of Archaeological Science: Report,</hi> Vol. 33, pp. 1-11. 
+                    </bibl>
+                    <bibl rend="western" style="text-align: left; ">[7] Baochang, G. <hi rend="Chinese">耿宝昌</hi> (1993).
+                        <hi rend="italic" xml:space="preserve"> Ming Qing ciqi jianding</hi> <hi rend="Chinese">明清瓷器鉴定</hi> [Ming and Qing Porcelain on Inspection]. Beijing: The Palace Museum.
+                    </bibl>
+                    <bibl rend="western" style="text-align: left; ">[8] Jun Z. <hi rend="Chinese">朱军</hi> (2002). “
+                        <hi rend="italic">Mingmo Qingchu qinghau huagu jianding</hi> <hi rend="Chinese">明末清初青花花觚鉴定</hi> [A late Ming and early Qing dynasty blue and white goblet identification]”, 
+                        <hi rend="italic">Wenwu Shijie</hi> <hi rend="Chinese">文物世界</hi> 4, pp. 38-42.
+                    </bibl>
+                    <bibl rend="western" style="text-align: left; ">[9] Jingjing, X <hi rend="Chinese">徐菁菁</hi> (2017). “
+                        <hi rend="italic">Mingqing cigu yuanliu ji tezheng</hi><hi rend="Chinese">明清瓷觚源流及特征</hi> [Sources and Characteristics of Ming and Qing beaker vases].” 
+                        <hi rend="italic">Yishupin</hi> <hi rend="Chinese">艺术品</hi>, 11, pp. 66-73.
+                    </bibl>
+                    <bibl rend="western" style="text-align: left; ">[10] Medley, M. (1987). “The Ming-Qing Transition in Chinese Porcelain”, 
+                        <hi rend="italic">Arts Asiatiques</hi> 42, pp. 65-76.
+                    </bibl>
+                    <bibl rend="western" style="text-align: left; ">[11] Jenyns,S. (1955). “The Wares of the Transitional Period Between the Ming and Ch’ing, 1620-1683”, 
+                        <hi rend="italic">Archives of the Chinese Art Society of Americas</hi> 9, pp. 20-42.
+                    </bibl>
+                    <bibl rend="western" style="text-align: left; ">[12] Dongge, J. (2012). <hi rend="Chinese">纪东歌</hi>, “
+                        <hi rend="italic">Qingchuqi Jingdezhen Jinian ciqi fenqi yanjiu</hi> <hi rend="Chinese">清初期景德镇纪年瓷器分期研究</hi>[A staging study of early Qing dynasty Jingdezhen chronological porcelain]”, 
+                        <hi rend="italic">Zhongguo yishu yanjiu yuan</hi> <hi rend="Chinese">中国艺术研究院</hi>.
+                    </bibl>
+                    <bibl rend="western" style="text-align: left; ">[13] Haiyang, Y. (2012) <hi rend="Chinese">于海洋</hi>, “
+                        <hi rend="italic">Mingqing guxing ciqi yanjiu</hi> <hi rend="Chinese">明清觚形瓷器研究</hi> [A study of Ming and Qing beaker vases]”, PhD diss., Jilin Daxue <hi rend="Chinese">吉林大学</hi>[Jilin University].
+                    </bibl>
+                    <bibl rend="western" style="text-align: left; ">[14] Point Cloud Utils (pcu) - A Python library for common, 
+                        <ref target="https://github.com/fwilliams/point-cloud-utils">https://github.com/fwilliams/point-cloud-utils</ref>.
+                    </bibl>
+                    <bibl rend="western" style="text-align: left; ">[15] Cuturi, M. (2013). 
+                        <hi rend="italic">Sinkhorn distances: Lightspeed computation of optimal transport. Advances in Neural Information Processing Systems</hi>, 26, pp. 2292-2300.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

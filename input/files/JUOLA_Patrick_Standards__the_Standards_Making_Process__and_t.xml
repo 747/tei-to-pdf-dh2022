@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Standards, the Standards-Making Process, and their Relevance to Stylometry</title>
+                <author>
+                    <persName>
+                        <surname>Juola</surname>
+                        <forename>Patrick</forename>
+                    </persName>
+                    <affiliation>Duquesne University, United States of America</affiliation>
+                    <email>juola@mathcs.duq.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-10T14:15:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>text analysis</term>
+                    <term>stylometry</term>
+                    <term>forensic science</term>
+                    <term>best practices</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>attribution studies and stylometric analysis</term>
+                    <term>digital activism and advocacy</term>
+                    <term>Law and legal studies</term>
+                    <term>Linguistics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                The stakes have never been higher for stylometry applications and research. In addition to investigating academic literary and historical questions (Burrows, 2003), stylometrists are increasingly called upon to provide forensic evidence. Stylometry is being employed to resolve legal issues such as murder (Chaski, 2007; Grant, 2012), fraud (McMenamin, 2011), and asylum applications (Juola, 2014). Judges and juries need straightforward and understandable answers to questions such as “did the defendant write this email?” “is this will forged?” or “is this suicide note genuine?” (Chaski, 2007; Ainsworth &amp; Juola, 2018) With questions of justice, substantial financial outcomes, and individual safety hanging in the balance, the need for accuracy in stylistic analysis is crucial.
+            </p>
+            <p>
+                Accuracy in forensic science has been recognized as a “crisis” (National Research Council, 2009) in that much of it relies on "questionable or questioned science" (National Research Council, 2009) with little empirical support. For example, forensic odontology (dentistry) simply doesn't work. (PCAST, p. 3; Pilkington, 2022) The (US) President's Council of Advisors on Science and Technology (PCAST) discussed both “foundational validity” and “validity as applied” as absolute requirements for forensic evidence, and further focused on the need for standards of practice to evaluate whether these requirements have been met. The American Academy of Forensic Sciences (AAFS) Standards Board was established in 2015 to provide ``high quality science-based consensus forensic standards’’ in a variety of disciplines, including forensic document examination. While the (US) government does not typically set standards or mandate their use, cleaving to standards can enhance reliability, credibility, and transparency of forensic evidence.
+            </p>
+            <p>
+                <hi style="font-family:Baskerville" xml:space="preserve">As peer reviewers, the stylometric community is used to evaluating the validity of individual stylometric analyses on a paper-by-paper basis.  We are familiar with questionable practices that may produce inaccurate or untrustworthy results, and can recommend changes for better outcomes.  For instance, machine learning methods can easily “overfit” the training data at the expense of accuracy on the actual data of interest, hence the need for validation on representative data prior to analysis.  At the same time, we recognize that scholarly disciplines are continually changing and the best practices of twenty years ago, while still good practices, may have been overtaken by new and improved practices.  For example, improved classification methods such as deep learning may outperform simple feature comparison methods such as Burrow’s Delta (2003), but at the same time may require an impractical amount of training data for real-world problems, and may also be too confusing to explain to a judge and a jury.   </hi>
+            </p>
+            <p>However familiar these points are to DH practitioners, legal experts cannot be expected to know or understand them. Formal standards and best practices can provide guidance to the general public in recognizing and excluding clearly unacceptable work. </p>
+            <p>
+                This paper discusses the standards-making process, including the language of standards, the creation and publication process, and the role of standards in interpreting forensic evidence, in order to promote discussion of accountability and accuracy in high-stakes application of stylometry. We specifically highlight the work of Rudman (2005; 2012) and Juola (2015) on stylometric accuracy and the handling of documents to maximize accuracy. We address the nature of unreliable analyses and appropriate methods to exclude less dependable techniques in situations with profound legal, financial, and human rights implications, while still allowing for scholarly research and exploration. The consequences of bad stylometry are significant; it would be valuable to draw up a list of guard rails and red lines that can mark an analysis as untrustworthy and therefore not to be accepted or relied upon.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-family:Baskerville" xml:space="preserve">Burrows, John. </hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville">"Questions of authorship: attribution and beyond: a lecture delivered on the occasion of the Roberto Busa Award ACH-ALLC 2001, New York." </hi>
+                        <hi rend="italic color(222222)" style="font-family:Baskerville">Computers and the Humanities</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville"> 37, no. 1 (2003): 5-32.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-family:Baskerville">Chaski, Carole.</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville" xml:space="preserve"> "The keyboard dilemma and authorship identification." In </hi>
+                        <hi rend="italic color(222222)" style="font-family:Baskerville">IFIP International Conference on Digital Forensics</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville">, pp. 133-146. Springer, New York, NY, 2007.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-family:Baskerville" xml:space="preserve">Grant, </hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville">Tim. "TXT 4N6: method, consistency, and distinctiveness in the analysis of SMS text messages." </hi>
+                        <hi rend="italic color(222222)" style="font-family:Baskerville">Journal of Law &amp; Policy</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville"> 21 (2012): 467-494.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-family:Baskerville" xml:space="preserve">McMenamin, Gerald. </hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville">"Declaration of Gerald McMenamin."</hi>
+                        <hi rend="italic color(222222)" style="font-family:Baskerville" xml:space="preserve">Ceglia v. Zuckerberg and Facebook, WD 2012 WL 1392965 </hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville">(W.D.N.Y). (2012). Available online at</hi>
+                        <hi rend="color(222222)" style="font-family:American Typewriter">http://www.scribd.com/doc/67951469/Expert-Report-Gerald-McMenamin.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold" style="font-family:Baskerville">Juola, Patrick.</hi>
+                        <hi style="font-family:Baskerville" xml:space="preserve">, Stylometry and Immigration: A Case Study, </hi>
+                        <hi rend="italic color(222222)" style="font-family:Baskerville">Journal of Law &amp; Policy</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville"> 21 (2012):</hi>
+                        287-298
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-family:Baskerville">Ainsworth, Janet, and Patrick Juola.</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville" xml:space="preserve"> "Who wrote this: Modern forensic authorship analysis as a model for valid forensic science." </hi>
+                        <hi rend="italic color(222222)" style="font-family:Baskerville" xml:space="preserve">Washington University Law Review </hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville">96 (2018): 1159.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-family:Baskerville">National Research Council.</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville"> </hi>
+                        <hi rend="italic color(222222)" style="font-family:Baskerville">Strengthening Forensic Science in the United States: A Path Forward</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville">. Washington, DC:National Academies Press, 2009.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(323232)" style="font-family:Baskerville">President’s Council of Advisors on Science and Technology</hi>
+                        <hi rend="color(323232)" style="font-family:Baskerville">.</hi>
+                        <hi rend="italic color(323232)" style="font-family:Baskerville">REPORT TO THE PRESIDENT Forensic Science in Criminal Courts: Ensuring Scientific Validity of Feature-Comparison Methods</hi>
+                        <hi rend="color(323232)" style="font-family:Baskerville">, Washington DC, 2016.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-family:Baskerville">Pilkington, Ed.</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville" xml:space="preserve"> "A bite mark, a forensic dentist, a murder: How junk science ruins innocent lives." </hi>
+                        <hi rend="italic color(222222)" style="font-family:Baskerville">The Guardian, 28 April 2022</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville">. Available online at</hi>
+                        <hi rend="color(222222)" style="font-family:American Typewriter">https://www.theguardian.com/us-news/2022/apr/28/forensics-bite-mark-junk-science-charles-mccrory-chris-fabricant</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-family:Baskerville" xml:space="preserve">Rudman, Joseph. </hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville">"Unediting, de-editing, and editing in nontraditional authorship attribution studies: With an emphasis on the canon of Daniel Defoe." </hi>
+                        <hi rend="italic color(222222)" style="font-family:Baskerville">The Papers of the Bibliographical Society of America</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville"> 99, no. 1 (2005): 5-36.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-family:Baskerville">Rudman, Joseph.</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville" xml:space="preserve"> "The State of Non-Traditional Authorship Attribution Studies—2012: Some Problems and Solutions." </hi>
+                        <hi rend="italic color(222222)" style="font-family:Baskerville">English Studies</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville"> 93, no. 3 (2012): 259-274.</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold color(222222)" style="font-family:Baskerville">Juola, Patrick.</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville" xml:space="preserve"> "The Rowling case: A proposed standard analytic protocol for authorship questions." </hi>
+                        <hi rend="italic color(222222)" style="font-family:Baskerville">Digital Scholarship in the Humanities</hi>
+                        <hi rend="color(222222)" style="font-family:Baskerville"> 30, no. suppl_1 (2015): i100-i113.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

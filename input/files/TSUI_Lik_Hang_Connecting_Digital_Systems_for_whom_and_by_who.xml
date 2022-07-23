@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Connecting Digital Systems for whom and by whom? Taking Stock of the Digital Research Infrastructures in China</title>
+                <author>
+                    <persName>
+                        <surname>Tsui</surname>
+                        <forename>Lik Hang</forename>
+                    </persName>
+                    <affiliation>City University of Hong Kong</affiliation>
+                    <email>lhtsui@cityu.edu.hk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chen</surname>
+                        <forename>Jing</forename>
+                    </persName>
+                    <affiliation>Nanjing University</affiliation>
+                    <email>cjchen@nju.edu.cn</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T13:24:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Digital Research Infrastructure</term>
+                    <term>Cyberinfrastructure</term>
+                    <term>China</term>
+                    <term>Chinese studies</term>
+                    <term>Asia</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>digital ecologies and digital communities creation management and analysis</term>
+                    <term>linked (open) data</term>
+                    <term>Asian studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The term “cyberinfrastructure” is derived from research in the natural sciences. In a 2003 NSF report, cyberinfrastructure was described as “an idea that has emerged… from some basic technological realities,” which “have led researchers to envision a tightly integrated, planet-wide grid of computing, information, networking and sensor resources” (Hart, 2003). As such, a cyberinfrastructure is akin to a new knowledge environment and an ecology of virtually connected organizational resources, rather than research materials only. Later, the ACLS specified the role of cyberinfrastructure in humanities research (Courant et al., 2006). More than 15 years has passed now; it seems that the conception of a cyberinfrastructure in digital humanities still fits such criteria in the American scholarly community. Other strategies have also been devised in Europe, UK, and Australia etc. However, is the “cyberinfrastructure” idea readily applicable to research communities in non-Western contexts? How should this issue be evaluated and who should serve as the target users and participants of this infrastructure? Based on the DH2022 theme, this study will zoom in on an Asian context, especially the Chinese-speaking world.</p>
+            <p>Since the end of the 2000s decade, there have been increasing discussions advocating or taking part in the building of cyberinfrastructure in China, especially to link various resources and systems for digital research (<hi rend="Chinese">刘炜</hi>, et al., 2016; <hi rend="Chinese">王宏甦、徐力恒、包弼德</hi>, 2020; <hi rend="Chinese">刘炜</hi>, 2020). Chinese researchers have been developing digital projects for decades, at least from the 1980s (<hi rend="Chinese">徐力恒</hi>, 2020; Chen &amp; Tsui, 2022). Substantial preparation is already in place for an infrastructure. Our study critically analyzes such efforts in mainland China and also serves to globalize and diversify the discussions on digital research infrastructures. This takes the form of an evaluation of the current state of the field and an outline of some theoretical provocations in order to achieve an understanding of the epistemological and socio-technical differences that arise when building research infrastructures in diverse socio-cultural environments.</p>
+            <p>Digital projects are developed in the region so that users dealing with data in Chinese could upload them to online platforms, as well as harness tools to analyze and visualize them in an online, mostly open and sharable environment. Examples of platforms that have a presence among users in mainland China include DocuSky, Jihe Net <hi rend="Chinese">籍合网</hi>, MARKUS, Shanghai Library’s Open Data Platform, Zhejiang University’s Academic Map Publishing Platform, and several others (Tsui, 2020). By the 2020s, there is already substantial preparation for a digital infrastructure for humanities research in China.</p>
+            <p>Our intervention poses two questions about the digital infrastructures in China that are taking shape. First of all, for whom is the infrastructure in China built? Since the drive that we see in this is mostly academic, the incentives are primarily about producing academic outputs, such as scholarly articles. The role of community projects in the digital research infrastructure is still largely absent. Community involvement is also seriously lacking in academic projects, even when the aforementioned platforms are already in place and operative (<hi rend="Chinese">陈静</hi>, 2018). The infrastructure, even if it is for supporting academic research, should not be confined to the academe. Since it should inherently be an “infrastructural” and basic system, it should be open and should not incur too much costs to access for the participants and stakeholders.</p>
+            <p>A second question is by whom this cyberinfrastructure should be built. Even though some standard procedures and workflows for such an infrastructure are already under discussion, there are still challenges in the development of digital humanities in China (Zhu &amp; Zhang, 2020). For instance, there are barriers for the streamlined text mining of Chinese data, including in word segmentation. Humanists also face various problems when digitizing their materials. These are challenges that a cyberinfrastructure could help tackle. Who then should be building a broad-purposed cyberinfrastructure that serves these general but foundational and much-needed functions for Chinese(-originating and Chinese-language) data? Ideally, the infrastructure should also include utilities, software, and algorithms that aid such digital humanities endeavors in the Chinese world. Most of the actors engaging in the building of an infrastructure for digital humanities in China are from the fields of engineering, computer science, and information technology, coming from libraries, university digital humanities centers, and database companies. The participation of humanists, artists, product designers, user experience designers, and community members are still relatively lacking. A collaborative model in which these actors come together to work on this is much needed.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Chen, J. and Tsui, L. H. (Forthcoming in 2022). Debating and Developing Digital Humanities in China: New or Old? In Fiormonte, D., Chaudhuri, S. and Ricaurte, P. (eds), Global Debates in the Digital Humanities. Minneapolis: University of Minnesota Press.</bibl>
+                    <bibl>Courant, P. N., et al. (2006). Our Cultural Commonwealth: The Report of the American Council of Learned Societies Commission on Cyberinfrastructure for the Humanities and Social Sciences. http://acls.org/uploadedFiles/Publications/Programs/Our_Cultural_Commonwealth.pdf (accessed 21 April 2021).</bibl>
+                    <bibl>
+                        <hi rend="color(222222)" xml:space="preserve">Hart, D. (2003). Cyberinfrastructure: A Special Report. </hi>https://www.nsf.gov/news/special_reports/cyber/Cyberinfrastructure%20_NSF.pdf (accessed 21 April 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(222222)" xml:space="preserve">Tsui, L. H. (2020). </hi>Charting the Emergence of the Digital Humanities in China. In Chan, K. Y. and Lau G. C. S. (eds.), Chinese Culture in the 21st Century and its Global Dimensions: Comparative and Interdisciplinary Perspectives. Singapore: Springer, 2020, pp. 203-216.
+                    </bibl>
+                    <bibl>Zhu, B. and Zhang, J. (2020). Digital Humanities Cyberinfrastructure for Ancient China Studies: Past, Present, and Future, Library Trends, 69 (1): 319-333.</bibl>
+                    <bibl><hi rend="Chinese">包弼德、夏翠娟、王宏甦</hi> (2018). <hi rend="Chinese">数字人文与中国研究的网路基础设施建设</hi>, <hi rend="Chinese">图书馆杂志</hi>, 37 (11): 18-25.</bibl>
+                    <bibl><hi rend="Chinese">陈静</hi> (2018). <hi rend="Chinese">当下中国</hi> “<hi rend="Chinese">数字人文</hi>” <hi rend="Chinese">研究状况及意义</hi>, <hi rend="Chinese">山东社会科学</hi>, 7: 61-65.</bibl>
+                    <bibl><hi rend="Chinese">刘炜</hi>, et al. (2016). <hi rend="Chinese">面向人文研究的国家数据基础设施建设</hi>, <hi rend="Chinese">中国图书馆学报</hi>, 42 (5): 29-39.</bibl>
+                    <bibl><hi rend="Chinese">刘炜</hi> (2020). <hi rend="Chinese">作为数字人文基础设施的图书馆</hi>: <hi rend="Chinese">从不可或缺到无可替代</hi>, <hi rend="Chinese">图书馆论坛</hi>, 40 (5): 1-2.</bibl>
+                    <bibl><hi rend="Chinese">王宏甦、徐力恒、包弼德</hi> (2020). <hi rend="Chinese">用于中国历史研究的网路基础设施：对相关探索的建议和展望</hi>, <hi rend="Chinese">数位典藏与数位人文</hi>, 6: 1-35.</bibl>
+                    <bibl><hi rend="Chinese">徐力恒</hi> (2020). <hi rend="Chinese">华文学界的数位人文探索：一种</hi> “<hi rend="Chinese">史前史</hi>” <hi rend="Chinese">的观察角度</hi>, <hi rend="Chinese">中国文哲研究通讯</hi>, 30 (2): 107-127.</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

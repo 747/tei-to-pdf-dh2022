@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> Digitizing Derrida’s Concept of Dissemination: From Returntocinder.com to Databyss.org</title>
+                <author>
+                    <persName>
+                        <surname>Reeder</surname>
+                        <forename>Jake</forename>
+                    </persName>
+                    <affiliation>Birkbeck College, United States of America</affiliation>
+                    <email>jreed03@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T13:10:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Dissemination</term>
+                    <term>Hypertext</term>
+                    <term>Web Publishing</term>
+                    <term>Online Resource</term>
+                    <term>Software Development</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>concordancing and indexing</term>
+                    <term>digital publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Computer science</term>
+                    <term>Philosophy</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>“To write is to produce a mark that is a kind of machine, legible in a scribe
+                ’s absence.” Jacques Derrida, 
+                <hi rend="italic">Signature, Event, Context</hi> (1982)
+            </p>
+            <p>Dissemination is an activity or practice; it is the process of grafting text into other contexts—or, to put it simply, 
+                <hi rend="bold">spreading the word</hi> (Derrida, 1982). In this sense, the act of annotating a text is already a sort of dissemination. Indeed, when beginning work on the website returntocinder.com, a published index of margin notes from the works of Jacques Derrida, the authors regarded annotation as “additive, useful, social, a means to collaborate with a text, and a ‘meta conversation running in the margin’” (Kalir and Garcia, 2021: 7). Returntocinder.com and its companion application, Databyss, affirm the social usefulness of the margin note, believing that the publication of notes, ideas, and quotations in a hypertext format can accelerate these conversations, producing new notes, ideas, quotations and digital projects.
+            </p>
+            <p> Inspired by Ted Nelson’s original theoretical work in hypertext and his writing application, Xanadu, the authors understood that “non-sequential writing” could benefit from developing software and thus algorithms that process text (Nelson, 1987). This processing, as Kalir and Garcia note, is an act of annotation in the computer science sense, meaning “labeling data—images, text, and audio—for the purposes of identifying, categorizing, and training machines and algorithms” (Ibid.). That is to say, generating metadata is a form of annotation. The supposed juxtaposition between that of the writer writing in the margins and that of the algorithm (programmer) categorizing, databasing and hyperlinking, is exactly what Derrida’s dissemination combines into a single concept. Both writer and developer are performing the same action of annotation/dissemination because the act of margin notes is already an act of labeling, an act of creating grammar, searchability, and organization, while the act of automatic indexing, databasing and hyperlinking is already an act of grafting new texts in the (hypertextual) margins. The margin note is already a minimal program and the hypertext program is a margin note; together, they facilitate the practice of digital dissemination through annotation.</p>
+            <p> The Databyss Foundation (the non-profit company that has created returntocinder.com and databyss.org) began, as mentioned, as a project to build an index of several of Derrida's works and publish it in a way that was true to his concept of dissemination. The data was originally collected “manually” in a long word processor document, but because Derrida sees every written thought as a graft, ready to connect to another graft, it didn
+                ’t make sense to publish this index as a single web page or even as a set of linear pages. Instead, we wrote the document using a grammar that would allow us to process and publish each note separately. Each paragraph began with a short code indicating the book from which the note was taken, followed by a page number. Notes were grouped under bolded headings that indicated a motif common to the notes below. We then wrote a parser script that broke the linear document into separate database entries, linking each to a table containing all of the sources and to another table that contained the motif headings.
+            </p>
+            <p> The result was returntocinder.com, an online database of margin notes (quasi-quotations) from several of Derrida
+                ’s works that is searchable and navigable by way of an index of keywords and sources. After its initial launch, we discovered that one could easily add other authors to the database structure we had designed. This was quite exciting, as it meant that the 
+                <hi rend="bold">carrier of ideas</hi> could, in a sense, have a life separate from the ideas that originally inspired them. Since its initial publication five years ago, returntocinder.com has grown to include notes from texts by over 50 authors and receives hundreds of visitors every day.
+            </p>
+            <p> As more people used the site, researchers approached us hoping to build a similar resource for their work. Rather than suggest that they write a long document using our grammar and run it through our parser, we set about on a second project: The Databyss App. This web-based application codifies the grammar we used to generate returntocinder.com into a word processor-like interface. The short codes indicating sources and the bold headings indicating motifs are recognized by the app as you write them and linked to useful index pages that show other notes with the same tag(s). These links or tags are browsable and searchable in a sidebar to the left of the editor. We also set out to create a workspace that caters to humanities workers (researchers and students), with additional features like the ability to pull PDF highlights and annotations straight into your workflow, and search book and journal catalogs to generate Zotero-like citations. Future modules will facilitate interoperability with other annotation and bibliography applications such as Zotero, Hypothes.is and Readwise. When users share some or all of their Databyss notes, all the links remain intact and the workspace interface (i.e all the search options in the sidebar) is fully functional for the reader, so there is no need for a separate parsing and publishing step. True to Derrida
+                ’s concept of the written mark, these Databyss notes become self-disseminating machines.
+            </p>
+            <p> In our presentation, we will first cover the theoretical foundations of our work and situate it within the context of prior hypertext resources, such as David Kolb's “Socrates in the Labyrinth" and Eric Steinhart's “Fragments of the Dionysian Body.” We will then demonstrate how the current features of the Databyss application can be used for humanities research and introduce some use cases already proposed or practiced on Databyss (a Critical Race Theory resource, a film studies curriculum, notes for an academic podcast, student reading assignments, and the distribution of a professor
+                ’s lecture notes). Finally, we will discuss the ideas generated by our present work for the future of the application and foundation.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Derrida, Jacques</hi>. (1982). Signature Event Context: 
+                        <hi rend="italic">Margins in Philosophy</hi>. Translated by Alan Bass. Chicago: University of Chicago Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(0F0E0B)">Kalir, Remi H., and Antero Garcia</hi>
+                        <hi rend="color(0F0E0B)">. (2021). </hi>
+                        <hi rend="italic color(0F0E0B)">Annotation</hi>
+                        <hi rend="color(0F0E0B)">. Cambridge: MIT Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(0F0E0B)">Nelson, Theodor H</hi>
+                        <hi rend="color(0F0E0B)">. (1987).</hi>
+                        <hi rend="italic color(0F0E0B)"> Computer lib: Dream machines</hi>
+                        <hi rend="color(0F0E0B)">. Redmond: Tempus Books of Microsoft Press.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

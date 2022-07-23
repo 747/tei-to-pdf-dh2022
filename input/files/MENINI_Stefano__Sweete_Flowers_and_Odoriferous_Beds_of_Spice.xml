@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>“Sweete Flowers and Odoriferous Beds of Spice”: Sensory Mining Techniques to Trace Olfactory Orientalism</title>
+                <author>
+                    <persName>
+                        <surname>Tullett</surname>
+                        <forename>William</forename>
+                    </persName>
+                    <affiliation>Anglia Ruskin University , Cambridge, United Kingdom</affiliation>
+                    <email>william.tullett@aru.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Menini</surname>
+                        <forename>Stefano</forename>
+                    </persName>
+                    <affiliation>Fondazione Bruno Kessler, Trento, Italy</affiliation>
+                    <email>menini@fbk.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Leemans</surname>
+                        <forename>Inger</forename>
+                    </persName>
+                    <affiliation>KNAW Humanities Cluster, Amsterdam, Netherlands</affiliation>
+                    <email>inger.leemans@huc.knaw.nl</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Sensory mining</term>
+                    <term>Olfactory information</term>
+                    <term>Text mining</term>
+                    <term>Orientalism</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>text mining and analysis</term>
+                    <term>Cultural studies</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>How to compute the nose, mapping smells and odor perception? Olfactory informatics is a fast growing field, which aims to develop machine learning technologies to capture the enigma of olfaction. One challenge is the classification of flavors and fragrances, grouping odors into similar classes. For this task most projects work with chemical and physio-psychological data, and with the taxonomies which are in use in perfumery and odor industries. </p>
+            <p>The EU Horizon2020 
+                <hi rend="italic">Odeuropa</hi> project takes another turn, as it works with historical text and image collections from European digital heritage collections. Here, we find rich data on
+                <hi rend="italic" xml:space="preserve"> historical scent perceptions </hi>and
+                <hi rend="italic" xml:space="preserve"> scent classifications</hi>. How did people, both expert ‘noses’ and laymen, describe and classify scents in the period between 1600 and 1900? Here we present the first results of the NLP phase of the Odeuropa project, focusing on one specifically interesting ‘class’ of scents: 
+                <hi rend="color(212121)">‘</hi>oriental
+                <hi rend="color(212121)">’</hi>.
+            </p>
+            <p>Since the early twentieth century 
+                <hi rend="color(212121)">“</hi>oriental
+                <hi rend="color(212121)">“</hi> has been a term used in perfumery to describe scents that include notes such as amber, sandalwood, and gum resins. Guerlain’s 
+                <hi rend="italic" xml:space="preserve">Shalimar </hi>(1921) was one of the first ‘oriental’ fragrances. Today, many argue that the term is offensive and campaigns to remove the category from the perfumer’s lexicon have proliferated. The use of the term in perfumery is the olfactory equivalent of the nineteenth and early twentieth-century literary and visual culture that, as Edward Said demonstrated, constructed the 'east' or 'the Orient' as sensual, primitive, irrational, and therefore opposed to the 'Occidental' West. However, recent scholarship has pushed the development of this orientalist discourse back into the early modern period. 
+            </p>
+            <p>In this paper we therefore seek to historicise the relationship between smell and ‘the Orient’ or ‘the East’ in collections of texts from the period 1600-1920: what did European noses across this period smell as ‘Oriental’ and what scents were associated with ‘the Orient’ or the ‘East’? How did this change and how does this relate to the emergence of the term ‘Oriental’ in perfumery in the early twentieth century?</p>
+            <p>For this case study we analyze three corpora: EEBO (covering the timespan up to 1700), Project Gutenberg and Wikisource (using, in both, English documents up to 1920). In order to extract the potentially useful passages in the texts we defined a list of terms related to the Far East (e.g. 
+                <hi rend="italic">Orient</hi>, 
+                <hi rend="italic">oriental</hi>, 
+                <hi rend="italic">Indies</hi>, etc), and a list of seed terms relating to smell (e.g. 
+                <hi rend="italic">smell</hi>, 
+                <hi rend="italic">odor</hi>, 
+                <hi rend="italic">scent</hi>, 
+                <hi rend="italic">perfume</hi>, 
+                <hi rend="italic">etc</hi>.). From the corpora we extracted the passages containing at least one word affine to the ‘oriental’ topic and at the same time a term related to smell. We extracted then the nouns and adjectives close to the smell related words (limiting the range to 5 words before and after to reduce data noise), that may refer and describe the smells and the sources of smell related to the Orient, and that, associated with the year of the document, can provide insights into how smells related the Orient change over the time.
+            </p>
+            <p>For example, it is clear that in the early 1600s many of the key scents that were associated with the ‘oriental’ perfume category from the 1920s onwards were already part of how Europeans imagined the olfactory Orient, including amber, musk, rose, civet, and general references to ‘spice’. These scents remained common throughout the time period. In the late 1700s jasmine and resins and in the first half of the nineteenth century woods, spices, and opium were then added into the imagined bouquet. This parallels the emergence of orientalising stereotypes in French cosmetic and perfume advertising during the late eighteenth and early nineteenth century. The spaces and feelings evoked by these scents also changed: earlier descriptions emphasize fragrant, odoriferous, and sweet scents that are linked to tales about fragrant Arabian coasts or biblical incense. However, beginning in the seventeenth century the Oriental associations with sensuality and eroticism that ‘Oriental’ perfume advertising would play on - most famously in the case of Yves Saint Laurent’s ‘Opium’ - clearly appear as terms such as ‘ravishing’ and later ‘intoxicating’ become prominent in the data. This matches the importance of the harem in literary and visual evocations of the Orient - as in Delacroix’s painting of the 
+                <hi rend="italic color(212121)">“</hi>
+                <hi rend="italic">Women of Algiers</hi>
+                <hi rend="italic color(212121)">“</hi>, which was said by Baulelaire to 
+                <hi rend="color(212121)">“</hi>exhale the heady scent of a house of ill repute
+                <hi rend="color(212121)">“</hi>. 
+            </p>
+            <p>In this contribution we present our results and discuss what conclusions we can derive from this exploration. We aim to show that both the smells linked to the ‘Orient’ and the feelings, atmosphere, and spaces they evoked had a long history before it consolidated as a perfume group, but that the population of this class and its evaluation changed over time. Our plea is that Digital Humanities technologies for mining scent perception can bring a new perspective to the field of odor informatics.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt">Candau, J.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2016). L’anthropologie des odeurs : un état des lieux. </hi>
+                        <hi rend="italic" style="font-size:11pt">Bulletin d’études orientales</hi>
+                        , no. LXIV: 43–61.
+                        <ref target="https://doi.org/10.4000/beo.4642"> </ref>
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt">Candau, J, and Wathelet, O.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2011). Les catégories d’odeurs en sont-elles vraiment ?. </hi>
+                        <hi rend="italic" style="font-size:11pt">Langages</hi>
+                        , no. 181: 37–52.
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt">Classe, C.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (1992). The Odor of the Other: Olfactory Symbolism and Cultural Categories. </hi>
+                        <hi rend="italic" style="font-size:11pt">Ethos</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 20, no. 2: 133–66.</hi>
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt">Huang, X.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2016). Deodorizing China: Odour, Ordure, and Colonial (Dis)Order in Shanghai, 1840s–1940s*. </hi>
+                        <hi rend="italic" style="font-size:11pt">Modern Asian Studies</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> 50, no. 3: 1092–1122.</hi>
+                        <ref target="https://doi.org/10.1017/S0026749X15000165"> </ref>
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt">Kettler, A.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2020). The Smell of Slavery. Olfactory Racism and the Atlantic World</hi>
+                        <hi rend="italic" style="font-size:11pt">.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> Cambridge: Cambridge University Press, 2020.</hi>
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt">Lisena, P. and Van Erp, M. and Bembibre, C. and Leemans, I.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2021). Data Mining and Knowledge Graphs as a Backbone for Advanced Olfactory Experiences. </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of Smell, Taste, and Temperature Interfaces</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (STT2021).</hi>
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt">Morag, M.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2003). French Harems: Images of the Orient in Cosmetic Advertisements, 1750-1815. </hi>
+                        <hi rend="italic" style="font-size:11pt">Journal of the Western Society for French History</hi>
+                        , 31.
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt">Tonelli, S. and Menini, S.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2021). FrameNet-like Annotation of Olfactory Information in Texts, </hi>
+                        <hi rend="italic" style="font-size:11pt">The 5th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature 2021</hi>
+                        . 
+                    </bibl>
+                    <bibl>
+                        <lb/>
+                        <hi rend="bold">Tullett, W.</hi> (2019). Smell in Eighteenth-Century England: A Social Sense. Oxford: Oxford University Press.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

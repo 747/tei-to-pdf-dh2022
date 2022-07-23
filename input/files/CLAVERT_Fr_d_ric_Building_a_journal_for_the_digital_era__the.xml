@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Building a journal for the digital era: the Journal of Digital History</title>
+                <author>
+                    <persName>
+                        <surname>Clavert</surname>
+                        <forename>Frédéric</forename>
+                    </persName>
+                    <affiliation>Centre for Contemporary and Digital History, University of Luxembourg, Luxembourg</affiliation>
+                    <email>frederic.clavert@uni.lu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Fickers</surname>
+                        <forename>Andreas</forename>
+                    </persName>
+                    <affiliation>Centre for Contemporary and Digital History, University of Luxembourg, Luxembourg</affiliation>
+                    <email>andreas.fickers@uni.lu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-22T17:42:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital history</term>
+                    <term>publishing</term>
+                    <term>notebooks</term>
+                    <term>code</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>data publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">The 
+                <ref target="https://journalofdigitalhistory.org">
+                    <hi rend="color(4F81BD)">Journal of Digital History</hi>
+                </ref> (JDH) was launched in October 2021. It is a joint effort of the Centre for Contemporary and Digital History (University of Luxembourg) and De Gruyter Publishing. For two years, the building of the JDH required the collaboration of a fully interdisciplinary team. The JDH is based on the concept of multilayered articles, that was defined taking into consideration a full genealogy of rethinking academic publications in the digital era.
+            </p>
+            <p style="text-align: left; ">In 1999, Robert Darnton (Darnton, 1999) explained his vision of the post-web scholarship, through the multilayered book, that would make sense of the emergence of the Internet, of possible new formats of digital storytelling and narration. He described this vision of a book as layers ‘arranged like a pyramid’, a pyramid which would bring together exchanges with readers, pedagogic contributions, historiographical discussions, primary sources, extended version of the content and, on top of that, the book itself.</p>
+            <p style="text-align: left; ">Darnton had not been the only one to think about academic writing in the digital era. In history, 
+                <ref target="https://valley.lib.virginia.edu/">
+                    <hi rend="italic color(4F81BD)">The Valley of the Shadow</hi>
+                </ref> is an early attempt at finding new forms of critical engagements with historical scholarship. Both directors of this project insisted on the possibilities of ‘mature hypertextual history’ (Ayers, 2001) that enables readers to ‘follow the logic of our thinking’ (Thomas, 2004).
+            </p>
+            <p style="text-align: left; ">With the JDH, we are enabling authors to go beyond those first attempts and enabling readers to not only read the article itself but understand the research practices and multiple decisions that finally led to the writing of the article. Producing here transparency about how the digital interferes in the iterative research process is a matter of epistemological imperative. This is linked with digital hermeneutics, a combination of critical digital skills with a self-reflexive approach (Fickers, 2020).</p>
+            <p style="text-align: left; ">The multilayered article is the JDH’s answer to this challenge of making explicit how the production of historical knowledge by means of digital tools and technologies is the result of co-construction of the ‘epistemic object’ of historical investigation through human-machine interaction (Rheinberger, 2010; Spencer, 2019). We defined three layers: narrative – allowing authors to make use of all the web’s possibilities in terms of transmedia storytelling – , hermeneutics – methods, tools and code – , and data – the dataset.</p>
+            <p style="text-align: left; ">To implement the multilayered article, the JDH team reviewed several existing open source software and finally chose 
+                <ref target="https://jupyter.org/">
+                    <hi rend="color(4F81BD)">code notebooks</hi>
+                </ref>. Though with some short ends – poor structure, no proper way to cite literature – , notebooks offered many possibilities: markdown (that allows lightweight structuration); support for the main computing languages used in digital humanities; interaction through the use of 
+                <ref target="https://mybinder.org/">
+                    <hi rend="color(4F81BD)">myBinder</hi>
+                </ref>. Jupyter notebooks became the central piece of the JDH infrastructure (figure 1). Datasets are stored on a dataverse instance. Notebooks are stored on a git server – github at the moment. We then set up a conversion pipe from the notebooks to the journal’s website.
+            </p>
+            <figure>
+                <graphic n="1001" width="14.816666666666666cm" height="4.1671861111111115cm" url="Pictures/88e19b8c3cf7226b73ce9923beeb30e2.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Figure 1 – The JDH infrastructure</p>
+            <p style="text-align: left; ">The reader will experiment with multilayered articles thanks to an interface that crosses the different layers in different ways. When arriving on the landing page of the article, the reader will first see the narrative layer (figure 2) and can open the hermeneutic cells to punctually see the methods or the code written (figure 3). Another possibility is to choose the ‘hermeneutics first’ layout (figure 4). The last option is to launch the notebook in the myBinder service from the submenu ‘Data’ (figure 5), where readers may interact with the code (and hence with the dataset) which is also a way to question the article’s hypotheses.</p>
+            <figure>
+                <graphic n="1002" width="14.816666666666666cm" height="7.810013888888889cm" url="Pictures/54c167fb1e8ac1f6b0c394c805dec39e.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Figure 2 – The narrative layer</p>
+            <figure>
+                <graphic n="1003" width="14.816666666666666cm" height="7.789094444444444cm" url="Pictures/3105c706c9c91fd6c52d8a470a449212.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Figure 3 – Hermeneutics cells through the narrative layer</p>
+            <figure>
+                <graphic n="1004" width="14.816666666666666cm" height="7.848019444444445cm" url="Pictures/2aa93142b47947f358a7328fa166feb9.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Figure 4 – The hermeneutics layer</p>
+            <figure>
+                <graphic n="1005" width="14.816666666666666cm" height="7.822669444444444cm" url="Pictures/0809986732ed5248acaf4e85ac525419.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; ">Figure 5 – Interacting with the article through myBinder</p>
+            <p style="text-align: left; ">All along the process of designing and developing the infrastructure, we entered a process of co-building the journal’s infrastructure with authors through the organisation of workshops. The idea to use notebooks, for instance, has been discussed with authors during one of those. When abstracts are submitted, individual meetings with authors allowed us to adapt to their needs. </p>
+            <p style="text-align: left; ">The interdisciplinarity of the JDH’s team at the C
+                <hi rend="superscript">2</hi>DH and its horizontal functioning have also been a strong strength: the cumulative competences of designers (2), developers (2), server admin (1), copy editors (1) and historians (2) allowed us to build a publishing infrastructure within 18 months, from the use of open source bricks.
+            </p>
+            <p style="text-align: left; ">We are currently facing several limitations:</p>
+            <p style="text-align: left; ">The JDH is open access and favours open data, but legal restrictions, especially for the 20th and the 21
+                <hi rend="superscript">st</hi> century, restrict this policy as well as technical limitations when the notebook deals with very large amounts of data;
+            </p>
+            <p style="text-align: left; ">Finding reviewers who are literate in history and in computing is not easy;</p>
+            <p style="text-align: left; ">It is still unclear how code and datasets should be evaluated;</p>
+            <p style="text-align: left; ">Citations are dealt with by zotero, through a notebook extension (cite2c) that deserves much more development.</p>
+            <p style="text-align: left; ">The JDH’s next perspectives are editorial: we will experiment with the notion of ‘issue’. A JDH issue is a stream of articles. We do not publish all articles of an issue at the same time, because the JDH team’s workload for each article is high. We would now like to investigate open-ended issues, on teaching digital history for instance.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Ayers, E. (2001). The Pasts and Futures of Digital History. 
+                        <hi rend="italic">History News</hi>, 56(4): 5-9.
+                    </bibl>
+                    <bibl style="text-align: left; ">Darnton, R. (1999). The New Age of the Book. 
+                        <hi rend="italic">New York Times</hi>, March.
+                    </bibl>
+                    <bibl style="text-align: left; ">Fickers, A. (2020). 
+                        <hi rend="italic">Update für die Hermeneutik. Geschichtswissenschaft auf dem Weg zur digitalen Forensik?</hi> ZZF Centre for Contemporary History: Zeithistorische Forschungen, 
+                        <ref target="https://doi.org/10.14765/ZZF.DOK-1765">https://doi.org/10.14765/ZZF.DOK-1765</ref> (accessed 22 March 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">Rheinberger, H-J. (2010). 
+                        <hi rend="italic">On Historicizing Epistemology: An Essay</hi>. Stanford University Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">Spencer, M. (2019). The Difference a Method Makes: Methods as Epistemic Objects in Computational Science. 
+                        <hi rend="italic">Distinktion: Journal of Social Theory</hi>, 20(3): 313–27, 
+                        <ref target="https://doi.org/10.1080/1600910X.2019.1610018">
+                            <hi rend="color(4F81BD)">https://doi.org/10.1080/1600910X.2019.1610018</hi>
+                        </ref> (accessed 22 March 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">Thomas, W. G. II. (2004). Computing and the Historical Imagination. In Susan, S. 
+                        <hi rend="italic">et al.</hi>, 
+                        <hi rend="italic">Companion to Digital Humanities</hi>, Oxford: Blackwell, 56-68.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

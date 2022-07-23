@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Spatio-Temporal Analysis of the Dutch East India Company Archive through Paper Watermarks</title>
+                <author>
+                    <persName>
+                        <surname>Sakamoto</surname>
+                        <forename>Shouji</forename>
+                    </persName>
+                    <affiliation>Ryukoku University, Japan</affiliation>
+                    <email>sakamoto@mac.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-12T14:35:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>paper analysis</term>
+                    <term>watermark</term>
+                    <term>Dutch East India Company</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>digitization (2D &amp; 3D)</term>
+                    <term>image processing and analysis</term>
+                    <term>Book and print history</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">
+                <hi rend="bold">1. Introduction</hi>
+            </p>
+            <p style="text-align: left; "> Digital archives of paper-based cultural properties, such as documents, printings, provide digital images and bibliographic data, but they do not usually provide material data such as paper, ink. Various paper features, such as paper fiber and watermark, which are useful data in the study of paper-based cultural properties, are recently being extracted from paper (Sakamoto et al., 2013, 2016; Sakamoto, 2020; Johnson, 2018; Johnson et al., 2021;).</p>
+            <p style="text-align: left; "> The Dutch East India Company (VOC) archives, consisting of around 20,000 items (or books), are held by the Nationaal Archief, Den Haag. In particular, the archive concerning the VOC Japan factory consists of 1,952 items (Roessingh, 1964). In this study, 220 items on VOC Japan factory from 1614 to 1831 are investigated. Paper diversity as well as change of paper are studied, depending on periods, through spatiotemporal analysis. The reasons for the change in paper are also discussed.</p>
+            <p style="text-align: left; ">
+                <hi rend="bold">2. Methodology</hi>
+            </p>
+            <p style="text-align: left; "> Beta radiography is useful in the making of a watermark and a laid pattern (Ash, 1998); however, it is not easy to prepare the equipment, and the exposure times are longer than several hours (Rakvin et al., 2014; Boyle et al., 2009). Therefore, white LEDs were adopted as a light source along with a digital camera to take digital images of the paper under transmitting light.</p>
+            <p style="text-align: left; ">
+                <hi rend="bold">3. Results and Discussions</hi>
+            </p>
+            <p style="text-align: left; "> Among the 220 items, over 20 watermarks, such as 
+                <hi rend="italic">Strasburg Fleur de Lis, Pro Patria, Arms of Amsterdam</hi> were found, and there were at least 49 countermarks, such as the papermaker’s initial, company name, and so forth. Such watermarks provide information on the location of the production, paper mill, and papermaker’s name (Nicolaï, 2005; Heawood, 2003; Churchill, 1965). As the VOC archive usually has date information (year, month, day), spatiotemporal analysis is possible.
+            </p>
+            <p style="text-align: left; ">Result 1: In the period between 1610 and 1663, Japanese 
+                <hi rend="italic">torinoko</hi> paper (high-quality 
+                <hi rend="italic">gampi</hi> paper) was used for archival purposes (Yasuda, 2016; Sakamoto et al., 2022).
+            </p>
+            <p style="text-align: left; "> According to VOC records around 1660, VOC spent too much (40,000-50,000 gulden/year) for archival paper and decided to establish the paper mill in Batavia (Landwehr, 1994) to cut the cost of paper. At that time, 
+                <hi rend="italic">torinoko</hi> paper was more expensive than western paper, which may have been the reason for not adopting 
+                <hi rend="italic">torinoko</hi> paper for the VOC archival.
+            </p>
+            <p style="text-align: left; ">Result 2: In the period between the 1640s and 1710s, mainly French paper, which was made in the Angoumois region, was used, except for the Japanese 
+                <hi rend="italic">torinoko</hi> paper mentioned above.
+            </p>
+            <p style="text-align: left; "> Initials AJ and GVH stand for the Dutch factories Abraham Janssen and Gills van Hoven, respectively. Abraham Janssen managed several paper mills in Angoumois in the period between 1635 and 1710, and the paper produced was exported to neighboring countries, such as England and Holland (Churchill, 1965).</p>
+            <p style="text-align: left; ">Result 3: In the period between the 1730s and 1790s, mainly Dutch paper, which was made in the Zaan region, was used.</p>
+            <p style="text-align: left; "> The change from French paper to Dutch paper is attributed to the religious war in France (Edict of Fontainebleau etc.) and the invention of Hollander beater in Holland. Many Huguenots (French protestant) craftsmen, including papermakers, moved to other countries such as England and Holland [the decline of French paper] (Scoville, 1967; Rosenband, 2000). On the other hand, Holland accepted many immigrants, including the Huguenots, and grew to be an industrial country. Especially, in the Zaan region located north of Amsterdam, paper mills were established by Pieter Van der Ley, Jan Honig, and so on. Zaan paper was exported to neighboring countries [the rise of Holland paper]. </p>
+            <p style="text-align: left; ">Result 4: In the period between the 1800s and 1820s, types of Dutch (Zaan and Veluwe), French, American, English, Japanese 
+                <hi rend="italic">kozo</hi> paper were uncovered, and probably Batavian paper, as well.
+            </p>
+            <p style="text-align: left; "> After the French Revolution, Holland was controlled by France, and VOC ceased to exist after 1799. At that time, no ship from Holland visited Batavia; therefore, the VOC Batavia factory hired mainly American ships to continue trading (1798-1809) in Asia (Kanai, 1966). Subsequently, Batavia was occupied by England (1811-1816). This chaotic situation broke the stable supply of paper from Holland. As a result, different types of paper from various countries exist in that period.</p>
+            <p style="text-align: left; ">
+                <hi rend="bold">4. Concluding Remarks</hi>
+            </p>
+            <p style="text-align: left; "> The results obtained from paper feature analysis are completely new knowledge, which is impossible to derive from usual digital archive data. However, the results are based only on 220 items, and thus more accurate results are likely to be uncovered by the investigation of additional items. Consequently, paper analysis data are useful in the study of paper-based cultural properties in digital archives.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Ash, N. E.</hi> (1998). Watermarks in Rembrandt's Prints, National Gallery of Art.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Boyle, R. D. and Hiary, H.</hi> (2009). Watermark location via back-lighting and recto removal, International Journal of Document Analysis and Recognition (IJDAR), 12(1): 33–46.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Churchill, W. A.</hi> (1965). Watermarks in Paper in Holland, England, France, Etc., in the XVII and XVIII Centuries &amp; Their Interconnection, MENNO HERTZBERGER &amp; CO.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Heawood, E.</hi> (2003). Watermarks, Mainly Of The 17th And 18th Centuries, Martino Pub.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Johnson, C. R.</hi> (2018). WImBo — Watermark imaging box project: A digital art history data acquisition tool, 2018 52nd Annual Conference on Information Sciences and Systems (CISS), IEEE.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Johnson, C. R., Sethares W. A. and Ellis, M. H.</hi> (2021). Overlay Videos for Quick and Accurate Watermark Identification, Comparison, and Matching, Journal of Historians of Netherlandish Art, 13:2.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kanai, M.</hi> (1966). Japan-Netherlands trade in the period of chartering neutral vessels (<hi rend="Japanese">中立国傭船期の日蘭貿易</hi>), Journal of the Japan Society for Nautical Research, 8: 55-68. (in Japanese)
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Landwehr, J.</hi> (1994). De Boekenwereld, 11: 261-263.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Nicolaï, A.</hi> (2005). Histoire des Moulins à papier du Sud-Ouest de la France (1300-1800) - tome 1, REGIONALISMES.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rakvin, M., Dragojević, A. and Markučič, D.</hi> (2014). Application of Computed Radiography (CR) for characterization of historical documents, 11th European Conference on Non-Destructive Testing (ECNDT 2014).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Rosenband, L. N.</hi> (2000). The Competitive Cosmopolitanism of an Old Regime Craft, French Historical Studies, 23(3): 455-476.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Roessingh, M. P. H.</hi> (1964). Inventaris van de archieven van de Nederlandse Factorij in Japan te Hirado [1609-1641] en te Deshima, [1641-1860], 1609-1860, Nationaal Archief, Den Haag.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sakamoto, S. and Okada, Y.</hi> (2013). Paper Analysis and Paper History from Ancient Chinese Paper to Japanese Washi, The International Conference on Culture and Computing 2013, 51-56.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sakamoto, S. and Oda, H.</hi> (2016). Paper Analysis of East Asian Historical Documents with a focus on Paper Laid and Chain Lines, IPSJ SIG Technical Report, 2016-CH-111: 1-8. (in Japanese)
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sakamoto, S.</hi> (2020). Paper Feature Extraction from Digital Images, Digital Humanities 2020, http://dx.doi.org/10.17613/4p5t-tn15
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sakamoto, S. and Vilmont, L.V.</hi> (2022). Japanese and Chinese Paper in Rembrandt Etchings, The Future of Tradition in the Arts, East and West, Proceedings of the ICDAD, ICFA, and GLASS International Committees at the ICOM Kyoto 2019 General Conference. (in press)
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Scoville, W. J.</hi> (1967). Government Regulation and Growth in the French Paper Industry During the Eighteenth Century, The American Economic Review, 57(2): 283-293.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Yasuda, T.</hi> (2016). Study on “Oriental Papers” in the Archives of the 17th century Dutch East India Company, Study of Washi Culture, 24: 20-51. (in Japanese)
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

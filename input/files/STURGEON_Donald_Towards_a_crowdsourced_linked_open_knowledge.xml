@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Towards a crowdsourced linked open knowledge base of East Asian historical sources</title>
+                <author>
+                    <persName>
+                        <surname>Sturgeon</surname>
+                        <forename>Donald</forename>
+                    </persName>
+                    <affiliation>Durham University</affiliation>
+                    <email>djs@dsturgeon.net</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Chinese</term>
+                    <term>history</term>
+                    <term>linked open data</term>
+                    <term>knowledge graph</term>
+                    <term>East Asia</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>digital libraries creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>linked (open) data</term>
+                    <term>Asian studies</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">Substantial records of East Asian history exist in sources written in the classical Chinese language, covering important aspects of both Chinese history as well as the histories of many historical states and dynasties throughout the region, including those overlapping with the modern regions of Korea, Japan, and Vietnam. To date, substantial amounts of relevant primary source material have been digitized and transcribed, while many more materials are in the process of digitization. While digital editions are already enormously valuable to researchers, their utility can be greatly improved by semantic contextualization of aspects of their content – for example, by connecting mentions of historical people, places, events, bureaucratic structures, time periods, and similar entities to concrete data about these entities as well as to other mentions of the same concept. This benefits human readers by enabling contextualized reading assistance and improved search functionality based on semantic data (mentions of an entity) rather than purely surface-level textual content (strings of words – in the Chinese case, strings of characters, as word boundaries are not recorded in either the premodern or modern writing system). It also facilitates quantitative analysis of important aspects of the historical record, and lays the groundwork for fully automated annotation of – and knowledge extraction from – vast corpora of premodern sources.</p>
+                <p style="text-align: left; ">This paper introduces a scalable approach to the creation of a large dataset of such material, intended to provide a sustainable mechanism for annotation and knowledge base construction in a fully crowdsourced environment. While previous work (such as Simon et al 2015, and De Weerdt et al 2016) has generally used the approach of connecting mentions in a static text (which once annotated cannot easily be edited) to entities in a static knowledge base (which may occasionally be updated at intervals, but generally changes very infrequently), the work described in this paper aims to connect a dynamic text (which may require corrections at any point during or after the annotation process) to a dynamic knowledge base (which is expected to continually evolve and grow during – and as a consequence of – the process of annotation). </p>
+                <p style="text-align: left; ">This work offers the following contributions: 1) the creation of a crowdsourced XML-based annotation framework building on and integrated with an existing digital library of over 5 billion characters of Chinese premodern text;
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p rend="footnote text">
+                            <ref target="https://ctext.org/instructions/annotation">https://ctext.org/instructions/annotation</ref>
+                        </p>
+                    </note> 2) a linked open knowledge graph of knowledge extracted from annotated texts and serialized as RDF;
+                    <note place="foot" xml:id="ftn2" n="2">
+                        <p rend="footnote text">
+                            <ref target="https://ctext.org/tools/linked-open-data">https://ctext.org/tools/linked-open-data</ref>
+                        </p>
+                    </note> 3) a semi-automatic approach for automatically extracting knowledge systematically from annotated texts;
+                    <note place="foot" xml:id="ftn3" n="3">
+                        <p rend="footnote text">
+                            <ref target="https://ctext.org/instructions/annotation/client">https://ctext.org/instructions/annotation/client</ref>
+                        </p>
+                    </note> and 4) a fully machine-readable representation of East Asian dates which avoids the previously ubiquitous Eurocentric approach of representing dates only through their conversion to Gregorian or Julian calendars – leading to direct practical benefits through use of a data model more appropriate to the task.
+                    <note place="foot" xml:id="ftn4" n="4">
+                        <p rend="footnote text">
+                            <ref target="https://ctext.org/instructions/annotation#conventions">https://ctext.org/instructions/annotation#conventions</ref>
+                        </p>
+                    </note>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Annotation and knowledge extraction</head>
+                <p style="text-align: left; ">In this implementation, annotations are used to supplement textual content with just two pieces of information: an entity identifier in the local knowledge base, and the type of the entity referenced; any further information known about the entity is encoded separately in the knowledge base itself.
+                    <note place="foot" xml:id="ftn5" n="5">
+                        <p rend="footnote text"> Of these, the type could in principle be omitted, as it can always be inferred from the entity record. However, its inclusion directly in the annotation is practically useful for performance reasons: some common actions, such as visually indicating the presence of annotations, rely only on the type of the annotation. Additionally, unlike many attributes, in the system described, entity type always has exactly one value for a given entity.</p>
+                    </note> The only exception to this is for date references, which also encode data numerically representing literal information (often contextually provided) about the meaning of the date in its original expression – such as a year, month, and day (in the relevant historical calendar used in the text), corresponding to an offset within the specific time period represented by the linked entity, which itself refers to either a historical ruler or named era. This provides a straightforward method for encoding historical date references on their own terms, without requiring calendar conversion at the point of representation (Figure 1); instead, interpretation and calendar conversion operate as separate processes performed in real time using a comprehensive model of East Asian calendar dates, created in part using open data published in Bingenheimer et al (2016).
+                </p>
+                <p style="text-align: left; ">A purpose-designed annotation client (Figure 2) implements browser-based functionality to create and correct annotations both manually and automatically using a variety of approaches, including automatic suggestions using the current state of the knowledge base, and explicit tagging using flexible user-specified rules and lists of correspondences between patterns and entity identifiers. Annotation and knowledge graph state are updated by communication with the digital library via publicly documented APIs.</p>
+                <p style="text-align: left; ">The annotation client also provides manual and semi-automatic functionality to directly augment the knowledge base itself during and after the annotation process (Figure 3). Knowledge is encoded in a structure closely following that of Wikidata, in which all information is stored as a series of 
+                    <hi rend="italic">claims,</hi> each representing a subject-verb-object sentence, each optionally associated with a series of qualifications (qualifier-object pairs) that qualify the claim. Initial work has created over 400,000 annotations of over 60,000 entities, with over 300,000 knowledge claims, covering a period of almost 3000 years of East Asian history.
+                    <note place="foot" xml:id="ftn6" n="6">
+                        <p rend="footnote text">
+                            <ref target="https://ctext.org/tools/linked-open-data">https://ctext.org/tools/linked-open-data</ref>
+                        </p>
+                    </note>
+                </p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="10.992555555555555cm" url="Pictures/0b7bbfb1ba5539a62a6392894b65d153.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="italic">Figure 1: Flow of contextual date information across a fragment of text. Indicated in blue boxes are explicit references to eras; pink boxes are references to dates. English text in green glosses show the literal content of the annotated text circled. The correct annotation for the last highlighted date reference (which in the text literally contains only numerical content meaning “1st in a cycle of 60”) supplements this with a reference to the era entity, a specific year and month, and indicates that the numerical content refers to a day (as opposed to a year). Note that the flow of information is non-trivial, because the reference to year 8 is parenthetical and does not alter the year of the subsequent date references, which still refer to year 9.</hi>
+                </p>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="7.33425cm" url="Pictures/2ad2daa0606dda6ef96bbe81daf175f2.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="italic">Figure 2: Entity annotation interface, showing linked data in the 15</hi>
+                    <hi rend="italic superscript">th</hi>
+                    <hi rend="italic" xml:space="preserve"> chapter of the History of the Song Dynasty (<hi rend="Chinese">宋史</hi>).</hi>
+                </p>
+                <figure>
+                    <graphic n="1003" width="16.002cm" height="5.7820277777777775cm" url="Pictures/cd85fb8b224bde14961004ded4ebbd7b.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">
+                    <hi rend="italic">Figure 3: Automatic suggestions during manual knowledge claim input. An entity representing the office of <hi rend="Chinese">樞密使</hi> has been suggested as the object of the verb “held-office”; a machine-readable date incorporating textual context corresponding to “<hi rend="Chinese">明道元年十二月壬寅</hi>” (Mingdao era, year 1, month 12, day 39 [sexagenary]), and resolving to 8 January 1033 AD (Julian) has been suggested as the value for the “from-date” qualifier for this claim based on existing annotations in the text.</hi>
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bingenheimer, M., Hung, J.-J., Wiles, S. and Boyong, Z.</hi> (2016). Modelling East Asian Calendars in an Open Source Authority Database. 
+                        <hi rend="italic">International Journal of Humanities and Arts Computing</hi>, 
+                        <hi rend="bold">10</hi>(2). Edinburgh University Press 22 George Square, Edinburgh EH8 9LF UK: 127–44.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Simon, R., Barker, E., Isaksen, L. and Soto Cañamares, P. de</hi> (2015). Linking early geospatial documents, one place at a time: annotation of geographic documents with Recogito. 
+                        <hi rend="italic">E-Perimetron</hi>, 
+                        <hi rend="bold">10</hi>(2): 49–59.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sturgeon, D.</hi> (2020). Digitizing Premodern Text with the Chinese Text Project. 
+                        <hi rend="italic">Journal of Chinese History</hi>, 
+                        <hi rend="bold">4</hi>(2). Cambridge University Press: 486–98 doi:10.1017/jch.2020.19.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sturgeon, D.</hi> (2021). Chinese Text Project: A dynamic digital library of premodern Chinese. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 
+                        <hi rend="bold">36</hi>(Supplement_1): i101–12 doi:10.1093/llc/fqz046.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Weerdt, H. D., Ming-Kin, C. and Hou-Ieong, H.</hi> (2016). Chinese Empires in Comparative Perspective: A Digital Approach. 
+                        <hi rend="italic">Verge: Studies in Global Asias</hi>, 
+                        <hi rend="bold">2</hi>(2). University of Minnesota Press: 58–69 doi:10.5749/vergstudglobasia.2.2.0058.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

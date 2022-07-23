@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Digital Dating and its Discontents: AI, Masculinity and Consent </title>
+                <author>
+                    <persName>
+                        <surname>Roy</surname>
+                        <forename>Dibyadyuti</forename>
+                    </persName>
+                    <affiliation>Indian Institute of Technology Jodhpur ,India,</affiliation>
+                    <email>dibyadyutir@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dahiya</surname>
+                        <forename>Lavanya</forename>
+                    </persName>
+                    <affiliation>Indian Institute of Technology Jodhpur ,India,</affiliation>
+                    <email>dahiya.3@iitj.ac.in</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dahiya</surname>
+                        <forename>Vasundhra</forename>
+                    </persName>
+                    <affiliation>Indian Institute of Technology Jodhpur ,India,</affiliation>
+                    <email>dahiya.2@iitj.ac.in</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T15:13:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital dating; AI; masculinity; consent; algorithmic cultures</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>digital access</term>
+                    <term>privacy</term>
+                    <term>and ethics analysis</term>
+                    <term>Computer science</term>
+                    <term>Gender and sexuality studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Abstract</p>
+            <p>
+                <hi rend="italic">Tinder’s Future of Dating Report</hi> released in 2021 and purportedly incorporating a survey of 2000 single individuals from India, unequivocally asserted that AI-enabled digital dating had radically altered conversations around consent during the pandemic. Incidentally only a year earlier in 2020, India had been outraged by the 
+                <hi rend="italic">Bois Locker Room i</hi>ncident: wherein an 
+                <hi rend="italic" xml:space="preserve">Instagram </hi>group chat created and disseminated by 27 teenage school students, all male, had circulated nude photos of their female classmates without their consent, along with offensive comments, including mentions of gang rape and other heinous sexual offenses. While igniting heated—albeit short-lived—debates about the ethical and social responsibilities of algorithmically governed platforms these conversations failed to acknowledge how algorithmic cultures and structurations have become embodied in our desiring selves and gendered lives. Therefore, sweeping simplifications about the nature of consent in India emerging from an organization that monetizes desire through an AI-enabled platform environment—where users’ agency is operationalized only within the boundaries of that platform—requires an urgent interrogation into both the lack of transparency within such algorithmic systems as well as the concomitant fallacy of stripping algorithmic outcomes from their local specificities and contexts. Particularly in India where (postcolonial) masculinities exist within an irreconcilable field of binaries, between the histories of colonial emasculation and the current hypermasculine machinations of a neoliberal nation (Roy 2021), the algorithmic identities of users while masked under apparent technologized objectivity, are always inflected by complex socio-historical realities (Motihar 2017). 
+            </p>
+            <p>While digital outlets to dating in Global South contexts (like India) should seemingly offer agency to female subjectivities in Gen Z (18–25-year-olds), there is unfortunately little proof that virtual sites of intimacy like Tinder challenge the heteronormative patriarchy and regressive gender roles legitimized through offline social traditions. We chose 
+                <hi rend="italic">Tinder’s Future Dating Report</hi> (2021) as an initial point to dive into the algorithmic lives, afterlives, and harms of digital dating platforms for two primary reasons. Firstly, the report contextualises users’ engagement with the dating application amidst the Covid-19 pandemic with a particular focus on consent, which the report posits as having become "more commonplace." (Tinder, 2021). Secondly, we operationalize this report as a primer to interrogate the purported premise about the next “decade of [algorithmic] dating” which is posited to be "more honest and authentic." (Tinder, 2021). As gendered subjects of the digital age from the Global South, we found this assertion provocative and a particularly useful entry point into the complex history of gender relations and masculinities in the Indian subcontinent.
+            </p>
+            <p>In operationalizing the Critical Participatory Inquiry methodological framework (Orlando Fals-Borda 2001) through snowball sampling, based on informed consent, we explore the experiences, fear, and apprehensions of eight Indian respondents in the age group 19-28 regarding digital dating on algorithmically governed platforms. In Indian context, it can be challenging for people to talk about dating experiences. Due to the intimate nature of the research and data, such a sampling method made it easier for respondents to share this data simultaneously allowing us to traverse experiences with greater depth. We analyze the responses received being particularly alive to the socio-economic, class and gendered contexts of our respondents, which thereby inform our discussion into the gendered and intersectional dimensions of algorithmic harms. </p>
+            <p>Bookended by Global South masculinity studies on one end (Srivastava ; Dasgupta; Kabesh; Roy) and algorithmic accountability scholarship on the other (Acemoglu; Hoffman; Katell et.al; Metcalf et. al), this pilot project explores how AI based digital dating platforms mediate the troubling legacies of hegemonic masculinity in postcolonial spaces, while simultaneously erasing both the gendered anxieties and the human biases from the constituent algorithmic processes. Finally, in a polemic conclusion, we discuss the potential of our project to be an exemplar of critical and decolonial methodologies for examining algorithmic harm and propose paths forward for democratizing conversations around algorithm-driven platforms.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Acemoglu, Daron. 2021. “Harms of AI.” Working Paper 29247. Cambridge, MA: National Bureau of Economic Research.</bibl>
+                    <bibl>Borda F. , Orlando, Delgado O., and Sandoval R. P. 2009. “Sociólogos o ‘sociólogos’: La polémica de 1959.” Revista Colombiana de Sociología 32(2): 45–60. https://revistas.unal.edu.co/index.php/recs/article/view/12713.  </bibl>
+                    <bibl>Hoffmann, A. L. (2018, August 25). Data Violence and How Bad Engineering Choices Can Damage Society. Medium. https://medium.com/s/story/data-violence-and-how-bad-engineering-choices-can-damage-society-39e44150e1d4</bibl>
+                    <bibl>Kabesh A. T.(2013). “Postcolonial Masculinities: Emotions, Histories and Ethics (The Feminist Imagination - Europe and Beyond)”. Ashgate.</bibl>
+                    <bibl>Katell, M., Young M., Dailey D., Herman B., Guetler V., Tam A., Binz C., Raz D., and Krafft P M. 2020. “Toward Situated Interventions for Algorithmic Equity: Lessons from the Field,” 11.</bibl>
+                    <bibl>Metcalf, Jacob, Emanuel Moss, Elizabeth Anne Watkins, Ranjit Singh, and Madeleine Clare Elish. 2021. “Algorithmic Impact Assessments and Accountability: The Co-Construction of Impacts,” ACM Conference on Fairness, Accountability, and Transparency. https://doi.org/10.1145/3442188.3445935</bibl>
+                    <bibl>Roy, D. (2020, May 26). Decoding Digital Desires: Postcolonial Masculinity in the Bois Locker Room. The Wire. Retrieved February 6, 2022, from https://thewire.in/women/digital-desires-postcolonial-masculinity-bois-locker-room</bibl>
+                    <bibl>Srivastava, S. (2014, December 31). “Sane Sex,” the Five-Year Plan Hero and Men on Footpaths and in Gated Communities. On the Cultures of Twentieth-Century Masculinity. Academia.edu. https://www.academia.edu/9967093/_Sane_&#8203;Sex_&#8203;the_&#8203;Five_&#8203;Year_&#8203;Plan_&#8203;Hero_&#8203;and_&#8203;Men_&#8203;on_&#8203;Footpaths_&#8203;and_&#8203;in_&#8203;Gated_&#8203;Communities_&#8203;On_&#8203;the_&#8203;Cultures_&#8203;of_&#8203;Twentieth_&#8203;Century_&#8203;Masculinity</bibl>
+                    <bibl>Tinder Newsroom. (2021). The future of dating is fluid. 
+                        <ref target="https://www.tinderpressroom.com/futureofdating">https://www.tinderpressroom.com/futureofdating</ref>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

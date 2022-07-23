@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>CLIP and beyond: Multimodal and Explainable Machine Learning in the Digital Humanities</title>
+                <author>
+                    <persName>
+                        <surname>Offert</surname>
+                        <forename>Fabian</forename>
+                    </persName>
+                    <affiliation>University of California, Santa Barbara, United States of America</affiliation>
+                    <email>offert@ucsb.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Impett</surname>
+                        <forename>Leonardo</forename>
+                    </persName>
+                    <affiliation>Durham University, United Kingdom; Cambridge University, United Kingdom</affiliation>
+                    <email>leonardo.l.impett@durham.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Al Moubayed</surname>
+                        <forename>Noura</forename>
+                    </persName>
+                    <affiliation>Durham University, United Kingdom</affiliation>
+                    <email>noura.al-moubayed@durham.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Cetinic</surname>
+                        <forename>Eva</forename>
+                    </persName>
+                    <affiliation>Ruđer Bošković Institute, Croatia</affiliation>
+                    <email>eva.cetinic@irb.hr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bell</surname>
+                        <forename>Peter</forename>
+                    </persName>
+                    <affiliation>Marburg University, Germany</affiliation>
+                    <email>peter.bell@uni-marburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Smits</surname>
+                        <forename>Thomas</forename>
+                    </persName>
+                    <affiliation>University of Antwerp, Belgium</affiliation>
+                    <email>thomas.smits@uantwerpen.be</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Leone</surname>
+                        <forename>Anna</forename>
+                    </persName>
+                    <affiliation>Durham University, United Kingdom</affiliation>
+                    <email>noura.al-moubayed@durham.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Watson</surname>
+                        <forename>Matthew</forename>
+                    </persName>
+                    <affiliation>Durham University, United Kingdom</affiliation>
+                    <email>noura.al-moubayed@durham.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Winterbottom</surname>
+                        <forename>Tom</forename>
+                    </persName>
+                    <affiliation>Durham University, United Kingdom</affiliation>
+                    <email>noura.al-moubayed@durham.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kluvanec</surname>
+                        <forename>Dan</forename>
+                    </persName>
+                    <affiliation>Durham University, United Kingdom</affiliation>
+                    <email>noura.al-moubayed@durham.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lawrence</surname>
+                        <forename>Dan</forename>
+                    </persName>
+                    <affiliation>Durham University, United Kingdom</affiliation>
+                    <email>noura.al-moubayed@durham.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kosti</surname>
+                        <forename>Ronak</forename>
+                    </persName>
+                    <affiliation>University of Erlangen-Nuremberg, Germany</affiliation>
+                    <email>peter.bell@uni-marburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wevers</surname>
+                        <forename>Melvin</forename>
+                    </persName>
+                    <affiliation>University of Amsterdam, the Netherlands</affiliation>
+                    <email>thomas.smits@uantwerpen.be</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lefranc</surname>
+                        <forename>Lith</forename>
+                    </persName>
+                    <affiliation>University of Antwerp, Belgium</affiliation>
+                    <email>thomas.smits@uantwerpen.be</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T03:56:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Panel</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>deep learning</term>
+                    <term>digital art history</term>
+                    <term>visual culture</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>image processing and analysis</term>
+                    <term>Computer science</term>
+                    <term>Media studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Panel Introduction (Fabian Offert, Leonardo Impett)</head>
+                <p style="text-align: left; ">Until very recently, the computational analysis of text and images have been regarded as two entirely separate areas of research within the digital humanities (DH), mirroring the technical separation of natural language processing and computer vision in computer science. In the age of deep learning, this separation has begun to erode, as models increasingly become more general (e.g. Lu et al. 2021) and more multimodal (e.g. Dosovitskiy et al. 2020).</p>
+                <p style="text-align: left; ">This development towards an integration of text and images has culminated in the release of the CLIP (Contrastive Language–Image Pre-training, Radford et al. 2021) model by OpenAI at the beginning of 2021. CLIP allows us to study images in a linguistic context, and vice versa. Applications include zero-shot labeling, semantic clustering, and zero-shot object generation, among others. In conjunction with more established generative techniques like GANs (Goodfellow et al. 2014) and diffusion models (Dhariwal et al. 2021), CLIP even facilitates the prompt-guided generation of images from scratch, as evidenced by the recent emergence of CLIP-based AI artworks on the web. By generating images that seek to maximize the activation of a specific neural network, these CLIP-generated images overlap heavily with techniques from interpretable machine learning (see e.g. Molnar 2020, Doshi-Velez and Kim 2017); and the generated images themselves give scholars in the digital humanities new tools to interpret the implicit visual culture in large neural models.</p>
+                <p style="text-align: left; ">Consequently, DH researchers are now beginning to integrate CLIP in particular, and multimodal models in general, into their research. Recent digital humanities projects utilize CLIP to automatically classify cultural heritage datasets with no specific training, to reimagine contemporary artworks based on their titles alone, and to explore large image corpora with natural language prompts (e.g. Offert 2021). CLIP has also significantly facilitated the development of new explainability techniques that promise to further consolidate computational (distant) and hermeneutical (close) approaches in DH (see Liu 2013).</p>
+                <p style="text-align: left; ">The proposed panel reflects on this development by bringing together researchers from computer science, digital art history, computational literary studies, and related disciplines, facilitating an interdisciplinary discussion on the current state of multimodal machine learning and the potential of models like CLIP for DH. Importantly, the panel aims to not only discuss practical aspects of CLIP and related models but also to evaluate their clear limitations and inherent biases. Moreover, the panel seeks to provide a space for the discussion of the epistemological implications of such models, focusing in particular on the increasing reliance of the digital humanities on pre-trained models and inaccessible large-scale datasets from computer science, and the “downstream” effects of this dependency. Finally, the panel proposes to examine the artistic potential of CLIP and its implications for DH, including the significant lack of a proper conceptual apparatus to evaluate projects at the intersection of the digital humanities and creative practice.</p>
+                <p style="text-align: left; ">Contributions to the panel investigate these broader topics in relation to specific digital humanities projects and questions, including explainable machine learning models within archaeology, the potential for CLIP in nuancing gender classification, the role of CLIP-generated images in the digital humanities as both artworks and diagnostic tools, and CLIP as a case study for the epistemological analysis of deep learning models within the digital humanities.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Multimodal Deep Learning Meets Digital Art History (Eva Cetinic)</head>
+                <p style="text-align: left; ">Multimodality is inherent to almost all aspects of human perception, communication, and production of information. However, as a phenomenon, multimodality is particularly important for the epistemological, interpretive and creative processes within art and art history. The historical beginning of multimodality research in art history can be traced back to Lessing’s Treatise on Laocoön (1766) and the discussion of spatio-temporal differences of poetry and painting. Modern multimodality research emerged from the field of functional linguistics and evolved in the last three decades into established theoretical frameworks, linked to various other disciplines such as semiotics, media studies or information design. However, in the context of humanities, most theories of multimodality lack strong empirical foundations and might therefore potentially benefit from embracing computational methods for building and analysing large multimodal data collections. In the context of computer science, multimodal machine learning is a well-established field (see Baltrušaitis et al. 2018) which has very recently been revolutionized with the introduction of transformer-based large-scale vision-language pre-trained models, such as CLIP (Radford et al. 2021). This paper discusses how such models can be integrated with methodological practices in the domain of digital humanities. In particular, the paper shows how CLIP can be used to analyze complex relations between aspects of multimodal objects in digitized art collections. Furthermore, the paper aims to discuss how CLIP can be utilized to produce new digitally-born content and novel navigational mechanisms in virtual artistic spaces, with specific reference to one of its first implementations in this context, namely the “The Next Biennial Should be Curated by a Machine” project (Krysa and Impett 2021).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>“CLIP Studies”: Analyzing Large-scale Deep Learning Models in the Digital Humanities (Fabian Offert)</head>
+                <p style="text-align: left; ">Pre-trained deep learning models have become important tools for exploratory data analysis. Replacing earlier attempts at sorting large search spaces by formal aspects like color (see Manovich 2020), neural network architectures like Inception (Szegedy et al. 2015) and VGG (Simonyan and Zisserman, 2014) have significantly improved the semantic clustering of images. OpenAI’s CLIP model (Radford et al. 2021) represents another improvement over these approaches, both in terms of the quality of its image embeddings and its ability to relate image and text. Thus, CLIP promises to become a de-facto standard in digital art history (see Brey 2021, Brown 2020). At the same time, the black-box character of earlier visual models (Offert and Bell 2020) is amplified in CLIP, which has been trained on proprietary data sources and cannot be retrained on consumer hardware. Taking up this development, the paper suggests that specific models like CLIP have become “influential” enough to warrant a dedicated epistemological analysis. Echoing Alan Liu’s call for a “close reading of distant reading” (Liu 2020), the paper argues that such an analysis needs to be separate from applied DH work but also cannot be “outsourced” to disciplines like media studies and science and technology studies. Concretely, such an analysis needs to reach beyond the established call for “datasheets” (Gebru et al. 2018) or “model cards” (Mitchell et al. 2019) that specify training data sources and potential biases. It needs to address the inductive biases of a model’s underlying architecture and include reproducible tests (using standardized test datasets). Most importantly, it needs to make use of existing interpretability techniques, including generative approaches. Taking all this into account, the paper sketches a preliminary epistemological analysis of the CLIP model as a first case study.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Debinarizing Gender Classification: Teaching CLIP to Postpone Binarization as an Algorithmic Quality (Thomas Smits, Lith Lefranc, Melvin Wevers)</head>
+                <p style="text-align: left; ">In cultural theory, scholars have conceptualized gender identities and the ways in which they find (visual) expression in heritage collections, as non-binary socio-cultural constructs (Matsuno and Budge 2017). In contrast, most applications of machine learning in digital humanities classify gender into two mutually exclusive classes. Common performance metrics further exacerbate binarity by penalizing models for uncertainty and non-response. This paper uses CLIP (Radford et. al 2021), a multimodal model, in combination with C@1 (Peñas and Rodrigo 2011), a F1 metric that allows (and rewards) non-response, to propose a new method for gender classification on (historical) images. Binary (gender) classification is built on the conceptual fallacy that a 0.05 prediction for class A automatically entails a 0.95 prediction for class B. We previously showed that CLIP can only simulate (binary) classification tasks (Smits and Kestemont 2021). CLIP can only approach binary classification by asking two questions (Is this A? Is this B?) and normalizing the outcomes into a single prediction. By measuring CLIP’s approximation of binary prediction with C@1, we hypothesize that we can calibrate algorithms to know when they do not have enough information to make a binary prediction (self-awareness), or when they should postpone binarization. We test our recalibrated algorithm on stratified sets of nineteenth-century magic lantern slides (Smits and Kestemont 2021), mid-twentieth century advertisements (Wevers and Smits 2020), and ‘modern’ photographs scraped from the internet (Schumann et. al 2021). We hope this helps to shed light on the ways in which gender functioned as an historical social-cultural construct.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Explainability in Deep Learning for Archaeology (Anna Leone, Noura Al Moubayed, Matthew Watson, Tom Winterbottom, Dan Kluvanec, Dan Lawrence)</head>
+                <p style="text-align: left; ">The rise of explainable Machine Learning (ML) has seen the development of tools that aim to decipher decisions made by black-box ML models. These techniques can be used to both understand and verify these decisions by providing interpretable outputs from ML models. They highlight which features of the input were deemed most (and least) important by the model. Explainable ML has also been used to help better understand the limitations of these models, providing the basis for model improvement. Thus, the use of explainable ML can increase the understanding of, and trust placed in, ML models; especially in applications where ML-expertise is not expected of the end user. We discuss applying explainability to ML models trained on a number of varying archaeology-based tasks and how this could aid their wider adoption. For example, in our model for generating artefact metadata such as “this artefact is from Iraq”, explanations are produced that highlight regions of interest that attempt to explain ‘why’ the model believes the artefact to be from Iraq. These explanations can then be compared to explanations from domain experts to confirm the model is looking at the correct parts of the image. Similar techniques could be used to identify which parts of the image were most useful when identifying (possibly) stolen artefacts, and to highlight parts of the images that were most useful when retrieving similar images. These examples showcase how important explainability is when it comes to increasing understanding, and hence trust, of ML models to non-ML experts.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Do Parrots Dream of Electric Sheep? (Leonardo Impett)</head>
+                <p style="text-align: left; ">OpenAI published two new models on January 5th 2021: CLIP (Radford et al. 2021) and DALL·E (Ramesh et al. 2021). Whilst CLIP (which is open source) focuses on calculating image-text similarity, DALL·E is a closed-source pipeline (postprocessed with CLIP) for generating images based on texts. DALL·E generated at least as much public excitement as CLIP, and soon a host of community solutions, based on the public CLIP model, had been proposed to generate images: including Ryan Murdock’s BigSleep (CLIP-guided BigGAN) and Aleph (which reuses the only open-source part of DALL·E, the autoencoder), Phil Wang’s Deep-Daze (CLIP and SIREN), Katherine Crowson’s CLIP+VQGAN and CLIP-guided image diffusion models; and a host of others in 2022 (including DALL·E 2). These image generation systems build on interpretable machine learning techniques such as DeepDream (Mordvintsev et al. 2015). A key role for CLIP-guided image models within the digital humanities is as a window onto deep neural models of contemporary visual culture - seeming to know more about Studio Ghibli than Ghiberti. This paper will argue that text-guided image generation speaks to two important debates within critical AI studies: Molyneux’s problem, and the Chinese room argument (Searle 1980). The first concerns the relationship between seeing and knowing, and the role of knowledge (as probabilistic priors) in vision; and the second on the relationship between symbolic and embodied knowledge. Purely symbolic models can be dismissed as stochastic parrots; but models that can visualise, as well as describe, new situations offer us a far deeper view on the cultural and ideological assumptions of large neural networks.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>AI Art and its Limits (Peter Bell, Ronak Kosti)</head>
+                <p style="text-align: left; ">Pre-training on large-scale unlabeled datasets has proven quite useful recently for language (GPT-3, Brown et al. 2020), vision (ViT, Dosovitskiy et al. 2020) and language+vision (CLIP, Radford et al. 2021) models alike. With networks like IIN (disentangling invertible interpretation network, Esser et al. 2020), it has become possible to use expert language and vision models in conjunction while increasing their interpretability. At the same time, the general public’s fascination with the CLIP+VQGAN generative model, which is not unfounded, has led to a glut of “AI Art” on social media. But how can this so-called generative art be classified? Is it the artist (original source of inspiration for the AI), the composer of the text prompt, or is it the algorithm itself that determines its aesthetic status? In a series of experiments we confront CLIP+VQGAN (and other networks) with works and concepts from art history. We evaluate the data biases that may have seeped into the generative aspects of these models, using different models trained on large-scale image sets like ImageNet, COCO, Open-Images and Flickr. Furthermore, we investigate the general problem of the a-historical training of CNNs via contemporary training sets by using art historical iconographies and topics in our prompt lines. We observe that the networks are capable of blending various cultural concepts but are easily misled by polysemy and biases. Their generative aspects also suffer from mis-attribution of basic concepts, as well as prudent localization. Hence, we suggest the necessity of a “critical machine vision” approach that combines methods of interpretation from both an art historical and a technical perspective.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Baltrušaitis, T., Chaitanya A., and Morency, L.-P. (2018). Multimodal machine learning: A survey and taxonomy. 
+                        <hi rend="italic">IEEE Transactions on Pattern Analysis and Machine Intelligence</hi>, 41(2): 423-443.
+                    </bibl>
+                    <bibl style="text-align: left; ">Brey, A. (2021). Digital art history in 2021. 
+                        <hi rend="italic">History Compass</hi> 19(8).
+                    </bibl>
+                    <bibl style="text-align: left; ">Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., and Askell, A. (2020). Language models are few-shot learners. arXiv preprint 2005.14165.</bibl>
+                    <bibl style="text-align: left; ">Brown, K., ed. (2020). 
+                        <hi rend="italic">The Routledge Companion to Digital Humanities and Art History</hi>. Routledge.
+                    </bibl>
+                    <bibl style="text-align: left; ">Dhariwal, P., and Nichol, A. (2021). Diffusion models beat GANs on image synthesis. arXiv preprint arXiv:2105.05233.</bibl>
+                    <bibl style="text-align: left; ">Doshi-Velez, F., and Kim B. (2017). Towards a rigorous science of interpretable machine learning. arXiv preprint 1702.08608.</bibl>
+                    <bibl style="text-align: left; ">Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., Dehghani, M. et al. (2020). An image is worth 16x16 words: Transformers for image recognition at scale. arXiv preprint 2010.11929.</bibl>
+                    <bibl style="text-align: left; ">Esser, P., Rombach, R. and Ommer, B. (2020). A disentangling invertible interpretation network for explaining latent representations. 
+                        <hi rend="italic">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</hi>: 9223-9232.
+                    </bibl>
+                    <bibl style="text-align: left; ">Gebru, T., Morgenstern, J., Vecchione, B., Wortman Vaughan, J., Wallach, H., Daumeé, H., and Crawford, K. (2018). Datasheets for datasets. arXiv preprint 803.09010.</bibl>
+                    <bibl style="text-align: left; ">Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A. and Bengio, Y. (2014). Generative adversarial nets. 
+                        <hi rend="italic">Advances in Neural Information Processing Systems</hi>: 2672-80.
+                    </bibl>
+                    <bibl style="text-align: left; ">Joasia, K. and Impett, L. (2021). The next Biennial should be curated by a machine - A research proposition. 
+                        <hi rend="italic">Stages</hi> 9.
+                    </bibl>
+                    <bibl style="text-align: left; ">Liu, A. (2020). Humans in the loop: Humanities hermeneutics and machine learning. DHd 2020 keynote. URL: https://liu.english.ucsb.edu/humans-in-the-loop-dhd2020-conference/.</bibl>
+                    <bibl style="text-align: left; ">Liu, A. (2013). The meaning of the digital humanities. 
+                        <hi rend="italic">PMLA</hi> 128(2): 409-23.
+                    </bibl>
+                    <bibl style="text-align: left; ">Lu, K., Grover, A., Abbeel, P., and Mordatch, I. (2021). Pretrained transformers as universal computation engines. arXiv preprint 2103.05247.</bibl>
+                    <bibl style="text-align: left; ">Manovich, L. (2020). 
+                        <hi rend="italic">Cultural Analytics</hi>. MIT Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">Matsuno, E., and Budge, S. L. (2017). Non-binary/genderqueer identities: A critical review of the literature. 
+                        <hi rend="italic">Current Sexual Health Reports</hi> 9(3): 116-120.
+                    </bibl>
+                    <bibl style="text-align: left; ">Mitchell, M., Wu, S., Zaldivar, A., Barnes, P., Vasserman, L., Hutchinson, B., Spitzer, E., Raji, I. D., and Gebru, T. (2019). Model cards for model reporting. 
+                        <hi rend="italic">Proceedings of the 2019 Conference on Fairness, Accountability, and Transparency</hi>: 220-229.
+                    </bibl>
+                    <bibl style="text-align: left; ">Molnar, C., Casalicchio, G. and Bischl, B. (2020). Interpretable machine learning - A brief history, state-of-the-art and challenges. arXiv preprint 2010.09337.</bibl>
+                    <bibl style="text-align: left; ">Offert, F. (2021). imgs.ai - a fast, dataset-agnostic, deep visual search engine for digital art history. URL: https://imgs.ai.</bibl>
+                    <bibl style="text-align: left; ">Offert, F., and Bell, P. (2020). Perceptual bias and technical metapictures. Critical machine vision as a humanities challenge. AI &amp; Society 36: 1133-1144. URL: https://link.springer.com/article/10.1007/s00146-020-01058-z</bibl>
+                    <bibl style="text-align: left; ">Peñas, A., and Rodrigo, A. (2011). A simple measure to assess non-response. 
+                        <hi rend="italic">Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics</hi>: 1415-1424. 
+                    </bibl>
+                    <bibl style="text-align: left; ">Radford, A., Kim J. W., Hallacy, C., Ramesh, A., Goh, G., Agarwal, S., Sastry, G. et al. (2021). Learning transferable visual models from natural language supervision. arXiv preprint 2103.00020.</bibl>
+                    <bibl style="text-align: left; ">Ramesh, A., Pavlov, M., Goh, G., Gray, S., Voss, C., Radford, A., Chen, M., and Sutskever, I. (2021). Zero-shot text-to-image generation. arXiv preprint 2102.12092.</bibl>
+                    <bibl style="text-align: left; ">Searle, J. R. (1980). Minds, brains, and programs. 
+                        <hi rend="italic">Behavioral and Brain Sciences</hi> 3(3): 417-24.
+                    </bibl>
+                    <bibl style="text-align: left; ">Simonyan, K., and Zisserman, A. (2014). Very deep convolutional networks for large-scale image recognition. arXiv preprint 1409.1556.</bibl>
+                    <bibl style="text-align: left; ">Smits, T., and Kestemont, M. (2021). Towards multimodal computational humanities. Using CLIP to analyze late-nineteenth century magic lantern slides. 
+                        <hi rend="italic">Proceedings of CHR 2021: Computational Humanities Research Conference, November 17–19, 2021, Amsterdam, The Netherlands</hi>.
+                    </bibl>
+                    <bibl style="text-align: left; ">Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan, D., Vanhoucke, V., and Rabinovich. A. (2015). Going deeper with convolutions. 
+                        <hi rend="italic">Computer Vision and Pattern Recognition (CVPR)</hi>.
+                    </bibl>
+                    <bibl style="text-align: left; ">Wevers, M., and Smits, T. (2020). The visual digital turn: Using neural networks to study historical images. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi> 35(1): 194-207.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

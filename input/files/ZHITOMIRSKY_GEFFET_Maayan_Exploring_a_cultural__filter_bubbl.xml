@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Exploring a cultural “filter bubble” in artwork databases of two large museums of fine art</title>
+                <author>
+                    <persName>
+                        <surname>Minster</surname>
+                        <forename>Sara</forename>
+                    </persName>
+                    <affiliation>Bar Ilan University, Israel</affiliation>
+                    <email>bttechsol@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kizhner</surname>
+                        <forename>Inna</forename>
+                    </persName>
+                    <affiliation>Siberian Federal University, Russian Federation</affiliation>
+                    <email>inna.kizhner@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Zhitomirsky-Geffet</surname>
+                        <forename>Maayan</forename>
+                    </persName>
+                    <affiliation>Bar Ilan University, Israel</affiliation>
+                    <email>maayan.zhitomirsky-geffet@biu.ac.il</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-22T15:51:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>bias</term>
+                    <term>cultural filter bubble</term>
+                    <term>museum databases</term>
+                    <term>ethical evaluation</term>
+                    <term>Wikidata</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>cultural analytics</term>
+                    <term>digital art production and analysis</term>
+                    <term>Cultural studies</term>
+                    <term>Galleries and museum studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p rend="Текстовый блок A">
+                <hi rend="bold">1. Introduction</hi>
+            </p>
+            <p rend="Текстовый блок A" style="text-align: justify;">Digitization of cultural information by GLAM (Galleries, Libraries, Archives and Museums) institutions opens new opportunities for dissemination of cultural data to heterogenous audiences. However, selective information dissemination related to biases in physical collections, policies or difficulties of digitization and aggregation (Mak 2014; Bode 2020; Zhitomirsky-Geffet and Hajibayova 2020; Kizhner et al 2021; Ortolja-Baird and Nyhan 2021) may lead to the creation of a global cultural “filter bubble” where much of the world cultural heritage remains concealed from the public view, thus missing the opportunity to correct the historical injustices and bias in cultural knowledge representation. A filter bubble is a situation when users are only exposed to homogenous information that conforms with their views and prejudices (Pariser 2011). We can say that a cultural “filter bubble” created by culturally and geographically homogenous artwork collections published online encircles users within the information from the dominant culture, thus narrowing their intellectual and cultural horizons (Zhitomirsky-Geffet 2019). </p>
+            <p rend="Текстовый блок A" style="text-align: justify;">In this study, we aim to investigate and quantitatively measure the cultural “filter bubble” by comparing data publishing and dissemination practices of two famous national museums of fine arts, the Metropolitan Museum of Art, New York, and the Rijksmuseum, Amsterdam. Both museums present artworks to ‘contemporary national and international audiences
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> https://www.rijksmuseum.nl/en/about-us/what-we-do/vision-and-mission</p>
+                </note>’ and appear in a study of the most influential museums published in 2017 (Van Riel and Heijndijk 2017). The study’s contribution to bias or “filter bubble” detection in large cultural heritage databases is crucial to many research projects in digital humanities that are based on the analysis of such databases and large amounts of cultural heritage data. 
+            </p>
+            <p rend="Текстовый блок A" style="text-align: justify;">
+                <hi rend="bold">2. Research methodology</hi>
+            </p>
+            <p rend="Текстовый блок A" style="text-align: justify;">The study examined three dissemination channels used by the two museums: 1) data extracted from searchable online collections
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p rend="По умолчанию A">
+                        <ref target="https://www.metmuseum.org/art/collection">
+                            <hi rend="Hyperlink.0">https://www.metmuseum.org/art/collection</hi>
+                        </ref>, 
+                        <ref target="https://www.rijksmuseum.nl/en/search">
+                            <hi rend="Hyperlink.0">https://www.rijksmuseum.nl/en/search</hi>
+                        </ref>
+                    </p>
+                </note>, 2) data extracted from the museum datasets available for the general use via open APIs of both museums as CSV files for the Metropolitan Museum
+                <note place="foot" xml:id="ftn3" n="3">
+                    <p rend="По умолчанию A">
+                        <ref target="https://github.com/metmuseum/openaccess/commit/420254f751b4c9d55a3ea7d1dab2d5d1e74e5255#diff-9f9583202c5d326e17789ac08f06b9ec913a7c546a4ab5f68dc32fa9f3732d66">
+                            <hi rend="Hyperlink.1">https://github.com/metmuseum/openaccess/commit/420254f751b4c9d55a3ea7d1dab2d5d1e74e5255#&#8203;diff-9f9583202c5d326e17789ac08f06b9ec913a7c54&#8203;6a4ab5f68dc32fa9f3732d66</hi>
+                        </ref>
+                    </p>
+                </note> and an XML file for the Rijksmuseum
+                <note place="foot" xml:id="ftn4" n="4">
+                    <p rend="По умолчанию A">
+                        <ref target="https://old.datahub.io/dataset/rijksmuseum-api">
+                            <hi rend="Hyperlink.1">https://old.datahub.io/dataset/rijksmuseum-api</hi>
+                        </ref>
+                    </p>
+                </note>, and 3) items with a Collection Property (P195) retrieved from Wikidata using SPARQL query language. As a result, we obtained six databases (three databases for each of the two museums under study, as shown in Table 1). To measure the geographical and cultural diversity of the databases as conveyed by the five criteria of the ethical evaluation framework (Zhitomirsky-Geffet and Hajibayova 2020) adopted in this study, we ran queries in the six databases that computed the distribution of artworks according to the following variables: artworks’ continent, country of origin, artist’s nationality, and culture.
+            </p>
+            <p rend="Текстовый блок A" style="text-align: justify;">
+                <hi rend="bold">3. Results</hi>
+            </p>
+            <p rend="Текстовый блок A" style="text-align: justify;">Our results demonstrate that all six databases from both museums focus on the Western culture (Western and Central Europe and North America), although the Metropolitan Museum of Art shows higher cultural diversity scores compared to Rijksmuseum as it also covers ancient cultures, such as Egypt or Mesopotamia (in line with an art historical canon), in its API dataset (Figure 1). Surprisingly, Metropolitan Museum’s Wikidata collection focuses on the United States with 90% of all artworks, while almost all the items in the Rijksmuseum Wikidata collection were created in Europe. </p>
+            <p rend="Текстовый блок A" style="text-align: justify;">We found that Asian cultures are weakly pronounced in all six datasets (16-18% in Metropolitan’s API dataset and online search system, less than 5% for all Rijksmuseum’s databases, and almost none in both museums’ Wikidata collections) compared to Western and Central European cultures (with over 50% for Rijksmuseum’s databases and Metropolitan’s online database) and North American cultures (with over 20% in all Metropolitan’s databases). Japanese culture, with the highest amount of records from Asia, accounts for 4.7% of the records published online by Metropolitan and 2.3% of records accessed via the Rijksmuseum API, with other Asian countries presented to a much lesser extent. In addition, we found that the representation of the native peoples’ artworks (mostly from Asia) that the Netherlands conquered in early modern history, such as Dutch East Indies, Java, Batavia or Indonesia, ranges between 0.6% to 2.8% in the three Rijksmuseum databases. Similarly, the artworks of Native Americans constituted only less than 1% of the three Metropolitan’s databases. Although our findings may reflect the rates of physical collections of these museums, they do not comply with the ethical evaluation criteria, nor do they reflect the museums’ mission statements, e.g. “Metropolitan collects, studies, conserves, and presents significant works of art across all times and cultures
+                <note place="foot" xml:id="ftn5" n="5">
+                    <p rend="footnote text"> https://www.metmuseum.org/about-the-met</p>
+                </note>”, “Rijskmuseum offers a representative overview of Dutch art and history … as well as major aspects of European and Asian art
+                <note place="foot" xml:id="ftn6" n="6">
+                    <p rend="footnote text"> https://www.rijksmuseum.nl/en/about-us/what-we-do/vision-and-mission</p>
+                </note>”. 
+            </p>
+            <figure>
+                <graphic n="1001" width="13.146552777777778cm" height="8.62838611111111cm" url="Pictures/ece9df1a69661e7d79981122a77f6d75.png" rend="inline"/>
+            </figure>
+            <p rend="Текстовый блок A" style="text-align: justify;">Figure 1 – Percentage of items for each continent in all the databases. </p>
+            <p rend="Текстовый блок A" style="text-align: justify;">Interestingly, the dominance of the Western culture in Wikidata is also reflected by geographic distribution of contributing institutions. Thus, out of the 5,040 (as of June 2021) museums and galleries from around the globe that published their artwork data in Wikidata, 42.25% are located in Western and Central Europe and 17.92% are in North America, while leaving less than 40% to the rest of the world. Only 19.07% of Wikidata museums are located in Asia and 11.93% are in Eastern Europe.</p>
+            <table rend="rules">
+                <row>
+                    <cell style="text-align: justify;" rend="Текстовый_блок_A">Database name</cell>
+                    <cell style="text-align: justify;" rend="Текстовый_блок_A">
+                        <hi rend="bold">Online system</hi>
+                    </cell>
+                    <cell style="text-align: justify;" rend="Текстовый_блок_A">API Dataset</cell>
+                    <cell style="text-align: justify;" rend="Текстовый_блок_A">Wikidata</cell>
+                </row>
+                <row>
+                    <cell style="text-align: justify;" rend="Текстовый_блок_A">Metropolitan</cell>
+                    <cell style="text-align: justify;" rend="Текстовый_блок_A">516,458</cell>
+                    <cell style="text-align: justify;" rend="Текстовый_блок_A">474,383</cell>
+                    <cell style="text-align: justify;" rend="Текстовый_блок_A">22,586</cell>
+                </row>
+                <row>
+                    <cell style="text-align: justify;" rend="Текстовый_блок_A">Rijksmuseum</cell>
+                    <cell style="text-align: justify;" rend="Текстовый_блок_A">716,308</cell>
+                    <cell style="text-align: justify;" rend="Текстовый_блок_A">656,665</cell>
+                    <cell style="text-align: justify;" rend="Текстовый_блок_A">6,009</cell>
+                </row>
+            </table>
+            <p rend="Текстовый блок A" style="text-align: justify;">Table 1 - Amounts of museum items in each database. </p>
+            <p rend="Текстовый блок A" style="text-align: justify;">
+                <hi rend="bold">4. Conclusion</hi>
+            </p>
+            <p style="text-align: left; ">We provide evidence to the existence of a cultural “filter bubble” (namely, bias towards Western cultures) in the online databases of the two influential museums, accessed via website search, APIs or queried from Wikidata. All databases appear to have significant constraints and biases in terms of presenting the diversity of cultures, especially in the data submitted to Wikidata, a channel that is important for the dissemination of cultural content among those users who rarely visit institutional websites and museums (Navarrete and Villaespesa 2020). Further investigation into the reasons for the obtained results is needed that could include underrepresentation of various cultures in physical museum collections, curatorial decisions on selective digitization and publishing policies influenced by art history canons or previous institutional policies.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="По умолчанию B" style="text-align: justify;">Bode, K. (2020). Why you can’t model away bias, 
+                        <hi rend="italic">Modern Language Quarterly</hi>, 81: 1.
+                    </bibl>
+                    <bibl rend="Текстовый блок B" style="text-align: justify;">
+                        <hi style="font-size:11pt" xml:space="preserve">Inna Kizhner, Melissa Terras, Maxim Rumyantsev, Valentina Khokhlova, Elisaveta Demeshkova, Ivan Rudov, Julia Afanasieva, Digital cultural colonialism: measuring bias in aggregated digitized content held in Google Arts and Culture, </hi>
+                        <hi rend="italic" style="font-size:11pt">Digital Scholarship in the Humanities</hi>
+                        , Volume 36, Issue 3, September 2021, Pages 607–640.
+                    </bibl>
+                    <bibl rend="По умолчанию B" style="text-align: justify;">Mak, B. (2014). Archaeology of a digitization. 
+                        <hi rend="italic">Journal of the Association for Information Science and Technology</hi>, 65(8): 1515–26.
+                    </bibl>
+                    <bibl rend="Текстовый блок A" style="text-align: justify;">Navarrete, T., &amp; Villaespesa, E. (2020). Digital Heritage Consumption: The case of the Metropolitan Museum of Art. Magazén, 1(2).</bibl>
+                    <bibl rend="Текстовый блок A" style="text-align: justify;">Ortolja-Baird, A. &amp; Julianne Nyhan, (2021). Encoding the haunting of an object catalogue: on the potential of digital technologies to perpetuate or subvert the silence and bias of the early-modern archive, 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 2021; fqab065.
+                    </bibl>
+                    <bibl rend="Текстовый блок A" style="text-align: justify;">Pariser, E. (2011). The filter bubble: What the Internet is hiding from you. Penguin UK.</bibl>
+                    <bibl rend="Текстовый блок A" style="text-align: justify;">Van Riel C., Heijndijk P. (2017). Why people love art museums: a reputation study about the 18 most famous museums among visitors in 10 countries. Rotterdam School of Management, Erasmus University.</bibl>
+                    <bibl rend="Текстовый блок B">
+                        Zhitomirsky-Geffet, M. and Hajibayova, L. (2020), "A new framework for ethical creation and evaluation of multi-perspective knowledge organization systems", 
+                        <hi rend="italic" style="font-size:11pt">Journal of Documentation</hi>
+                        , Vol. 76 No. 6, pp. 1459-1471. 
+                        <ref target="https://doi.org/10.1108/JD-04-2020-0053">
+                            <hi rend="Hyperlink.2">https://doi.org/10.1108/JD-04-2020-0053</hi>
+                        </ref>
+                        <hi rend="color(007377)" style="font-size:11pt">.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="color(00280F)">Zhitomirsky-Geffet M. (2019). Towards a Diversified Knowledge Organization System – An Open Network of Inter-Linked Subsystems with Multiple Validity Scopes. </hi>
+                        <hi rend="italic color(00280F)" xml:space="preserve">Journal of Documentation, </hi>
+                        <hi rend="italic" xml:space="preserve">75(5): </hi>1124-1138
+                        <hi rend="color(00280F)">.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

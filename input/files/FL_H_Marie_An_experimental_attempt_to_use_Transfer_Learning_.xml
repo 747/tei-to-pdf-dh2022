@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>An experimental attempt to use Transfer Learning for Named Entity Recognition in letters from the 19th and 20th century</title>
+                <author>
+                    <persName>
+                        <surname>Flüh</surname>
+                        <forename>Marie</forename>
+                    </persName>
+                    <affiliation>Universität Hamburg, Germany</affiliation>
+                    <email>marie.flueh@uni-hamburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Marc</surname>
+                        <forename>Lemke</forename>
+                    </persName>
+                    <affiliation>Universität Rostock, Germany</affiliation>
+                    <email>marc.lemke@uni-rostock.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T12:24:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>NER</term>
+                    <term>BERT</term>
+                    <term>Scholarly Editions</term>
+                    <term>Letters</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>scholarly editing and editions development</term>
+                    <term>analysis</term>
+                    <term>and methods</term>
+                    <term>Cultural studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">In this contribution, we investigate to what extent data from one digital scholarly edition project (
+                <hi rend="italic">Dehmel digital</hi>
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> https://www.slm.uni-hamburg.de/germanistik/forschung/forschungsprojekte/dehmel-digital.html</p>
+                </note>) can be used to fine-tune a large-scale language model, which was pre-trained for the purposes of another project (
+                <hi rend="italic">The Complete Works of Uwe Johnson</hi>
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p rend="footnote text"> https://www.bbaw.de/en/research/uwe-johnson-werkausgabe-the-complete-works-of-uwe-johnson</p>
+                </note>). We discuss the opportunities and practical limitations of such an attempt dealing with differences in the language properties of the material that was used to pre-train the transferred model and the material that is applied to fine-tune this model for the specific NER task. As part of this, we investigate to what extent the quantity and quality of training data affects the performance of NER models. This places our contribution in the line of approaches dealing with computational analysis of textual material from different periods of time (Labusch et al., 2019; Schmidt et al., 2021; Ehrmann et al. 2022).
+            </p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Technical prerequisites</head>
+                <p style="text-align: left; ">We use the software 
+                    <hi rend="italic">NEISS TEI Entity Enricher</hi> (NTEE).
+                    <note place="foot" xml:id="ftn3" n="3">
+                        <p rend="footnote text"> https://github.com/NEISSproject/tei_entity_enricher</p>
+                    </note> Following a Transfer Learning (Kamath et al., 2019) approach the tool provides access to large-scale language models in a Bidirectional Encoder Representations from Transformers (BERT) architecture (Devlin et al., 2019; Underwood, 2019) for different languages, which can be fine-tuned to be applicable for NER tasks. The pre-trained model selected for our investigation is a representation of modern German of the 20th and 21st centuries, trained on 8 GB of text data from German Wikipedia and a web crawl of various German newspaper portals (Zöllner et al., 2021: 2–3).
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Datasets</head>
+                <p style="text-align: left; ">The investigation is based on two differently sized datasets, which were taken from the 
+                    <hi rend="italic">Dehmel digital</hi> project and consist of German-language letters from the early 20th century (see table 1). 10 per cent of the sets were taken for validation purposes respectively.
+                </p>
+                <table rend="rules">
+                    <row>
+                        <cell style="text-align: center;">
+                            <hi rend="bold">Token category</hi>
+                        </cell>
+                        <cell style="text-align: center;">big</cell>
+                        <cell style="text-align: center;">small</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: center;">Person</cell>
+                        <cell style="text-align: center;">9397</cell>
+                        <cell style="text-align: center;">3683</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: center;">Place</cell>
+                        <cell style="text-align: center;">3056</cell>
+                        <cell style="text-align: center;">1092</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: center;">Organisation</cell>
+                        <cell style="text-align: center;">635</cell>
+                        <cell style="text-align: center;">269</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: center;">Work</cell>
+                        <cell style="text-align: center;">654</cell>
+                        <cell style="text-align: center;">294</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: center;">unlabeled</cell>
+                        <cell style="text-align: center;">190970</cell>
+                        <cell style="text-align: center;">52271</cell>
+                    </row>
+                    <row>
+                        <cell style="text-align: center;">total</cell>
+                        <cell style="text-align: center;">204712</cell>
+                        <cell style="text-align: center;">57609</cell>
+                    </row>
+                </table>
+                <p style="text-align: left; ">Table 1: Composition of the big and small set of training data used as ground truth for NER model training</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Assumptions</head>
+                <p style="text-align: left; ">Historical-linguistics insights show that grammatical properties of language change slowly over long periods (Damaris et al., 2017). We assume that the difference in time between the 21st and the early 20th century is not associated with an essential difference in the German language system, that would prevent useful entity predictions.</p>
+                <p style="text-align: left; ">We suppose that the difference at hand in text types (newspaper and encyclopedia articles vs. letters) can be neglected for our purpose based on the experiences made in the 
+                    <hi rend="italic">Complete Works of Uwe Johnson</hi> project: The same language model has already been successfully used for NER tasks on a corpus of letters.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Investigation</head>
+                <p style="text-align: left; ">The investigation focuses on the question of how the amount of training data affects the performance of NER models for the detection of places, persons, organisations and works in historical letters. </p>
+                <p style="text-align: left; ">The evaluation of the performance happens in two steps: We evaluate the E-
+                    <hi rend="italic">F</hi>
+                    <hi rend="subscript" style="font-size:6.5pt">1</hi> of each training epoch determined on the validation set by NTEE itself during the training processes and we use the created models to predict entities on four specific sample texts, which are not part of the validation or the training set. Subsequently, we calculate Precision, Recall and E-
+                    <hi rend="italic">F</hi>
+                    <hi rend="subscript" style="font-size:6.5pt">1</hi> for all of them. To determine the strengths and weaknesses in detail this quantitative approach is accompanied by a qualitative analysis of the predictions.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Selected results</head>
+                <figure>
+                    <graphic n="1001" width="8.466666666666667cm" height="5.221111111111111cm" url="Pictures/9b2de15f48fda4c7b978c64daf54d1bc.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Figure 1: E-
+                    <hi rend="italic">F</hi>
+                    <hi rend="subscript" style="font-size:6.5pt">1</hi>-scores of four models comparing the performances depended on the ground truth data amount and annotation consistency
+                </p>
+                <figure>
+                    <graphic n="1002" width="8.466666666666667cm" height="5.221111111111111cm" url="Pictures/ba4db257eea93c5645c009112923b784.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Figure 2: E-
+                    <hi rend="italic">F</hi>
+                    <hi rend="subscript" style="font-size:6.5pt">1</hi>-scores of four models calculated in the sample text prediction analysis, entity-wise and overall
+                </p>
+                <p style="text-align: left; ">The big model performs worse on the validation set of its respective ground truth than the small one (fig. 1). This finding contradicts the general assumption, that more ground truth leads to better prediction results. But if we take a closer look at the data, we encounter a problem inside the big ground truth dataset: About 5.3% of the text was not annotated. In this case, fixing the big ground truth by adding the missing annotations or by deleting the unannotated sequence leads to equivalent performance values to just using the small one.</p>
+                <p style="text-align: left; ">The data collected leads to qualitative insights regarding the training process and the difficulties that come along with it. From the incorrectly predicted annotations, three problem categories can be derived:</p>
+                <list rend="numbered">
+                    <item>a lack of ground truth data, including a lack of samples for representatives of the categories ‘work’ and ‘organisations’ within the training data,</item>
+                    <item>inconsistent annotations,</item>
+                    <item>ambiguous entities, which can belong to several categories.</item>
+                </list>
+                <p style="text-align: left; ">In the talk, we would like to go into more detail on the quantitative and qualitative analyses to present conclusions with which we shed light on the computer-assisted, transfer-learning-based analysis of historical letters in digital scholarly editions.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Devlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2019): Bert: Pre-training of deep bidirectional transformers for language understanding. In: </hi>
+                        <hi rend="italic" style="font-size:11pt">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics 1</hi>
+                        , p. 4171–4186.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Ehrmann, Maud, Ahmed Hamdi, Elvys Linhares Pontes, Matteo Romanello, and Antoine Doucet</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2022): Named Entity Recognition and Classification on Historical Documents: A Survey. URL: </hi>
+                        <ref target="http://arxiv.org/abs/2109.11406">
+                            <hi rend="color(1155CC)" style="font-size:11pt">http://arxiv.org/abs/2109.11406</hi>
+                        </ref>
+                        .
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Kamath, Uday, John Liu, and James Whitaker</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2019): Deep Learning for NLP and Speech Recognition. Cham: Springer. URL: </hi>
+                        <ref target="https://doi.org/10.1007/978-3-030-14596-5">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://doi.org/10.1007/978-3-030-14596-5</hi>
+                        </ref>
+                        <hi style="font-size:11pt" xml:space="preserve"> [Access: 8th December 2021].</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Labusch, Kai, Clemens Neudecker, and David Zellhöfer</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2019): BERT for Named Entity Recognition in Contemporary and Historical German.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Nübling, Damaris, Antje Dammel, Janet Duke, and Renata Szczepaniak</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2017): Historische Sprachwissenschaft des Deutschen. Eine Einführung in die Prinzipien des Sprachwandels. 5th revised and updated edition. Narr Francke Attempto: Tübingen.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Schmidt, Thomas, Katrin Dennerlein, and Christian Wolff</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2021): Emotion Classification in German Plays with Transformer-based Language Models Pretrained on Historical and Contemporary Language.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Underwood, Ted</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2019): Do Humanists need BERT? URL: </hi>
+                        <ref target="https://tedunderwood.com/2019/07/15/do-humanists-need-bert/">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://tedunderwood.com/2019/07/15/do-humanists-need-bert/</hi>
+                        </ref>
+                        <hi style="font-size:11pt" xml:space="preserve"> [Access: 8th December 2021].</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:11pt">Zöllner, Jochen, Konrad Sperfeld, Christoph Wick, and Roger Labahn</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2021): Optimizing small berts trained for german NER. arXiv. URL: </hi>
+                        <ref target="https://arxiv.org/abs/2104.11559">
+                            <hi rend="color(1155CC)" style="font-size:11pt">https://arxiv.org/abs/2104.11559</hi>
+                        </ref>
+                        <hi style="font-size:11pt" xml:space="preserve"> [Access: 8th December 2021].</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

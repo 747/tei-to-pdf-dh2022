@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">“Es war einmal …” – First Sentences in Literature: A German-Language Reference Corpus</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Busch</surname>
+                        <forename>Anna</forename>
+                    </persName>
+                    <affiliation>Theodor-Fontane-Archiv, Universität Potsdam</affiliation>
+                    <email>annabusch@uni-potsdam.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Roeder</surname>
+                        <forename>Torsten</forename>
+                    </persName>
+                    <affiliation>Bergische Universität Wuppertal, Germany</affiliation>
+                    <email>dh@torstenroeder.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T09:55:24.865000000</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>literature</term>
+                    <term>incipits</term>
+                    <term>corpus</term>
+                    <term>analysis</term>
+                    <term>classification</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>attribution studies and stylometric analysis</term>
+                    <term>text mining and analysis</term>
+                    <term>Literacy</term>
+                    <term>composition</term>
+                    <term>and creative writing</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading">
+                <head>Idea</head>
+                <p>In literary and linguistic studies, the first sentence of a narratological context is a regularly studied object (on this, among others, Alt 2020, Haubrichs 1995, Hirdt 1974, Queng 2019, Miller 1965, Neuhaus 2019, Raulff 2019, Retsch 2000, Selbmann 2019). This is hardly surprising, since the first sentence has been regarded since Wolfgang Iser's study The Act of Reading as the entrance into the text through reading, as the key point of interaction between text and reader (1976: 38). In the richness of its various forms, the first sentence reveals “the treasures of literature in nuce” (Alt 2020: 18) and, with Alain Robbe-Grillet, it could be put forward that literary history is to be written from the study of its opening sentences (1992: 38).</p>
+                <p>A systematic, digitally supported study of “first sentences” has yet to be carried out. Occasionally, corpora of first sentences in German have been collected by hand (Beck 1992, Beck 1993, Wolkersdorf 1994) and attempts have been made to draw up a typology of the first sentence in literature on the basis of selected individual analyses (most recently Alt 2020). A systematic categorisation on the basis of a semi-automated, larger corpus of research – as presented here – seems helpful. There are similar studies that inquire into the quintessence of the poetic in literature through its countability (cf. for example Moretti 2009, also Fischer/Strötgen 2015, Fischer/Jäschke 2018a/b); a single quantifying study dealing decidedly with German-language narrative beginnings (not first sentences) can be found in the work of Herrmann 2018.</p>
+                <p>The aim of the corpus “First Sentences in German-Language Literature” is to address the “lack of an overall view” (Alt 2020: 246) of all previous studies on first sentences. To this end, a data corpus is created and published, on which an initial evaluation will be undertaken in an interlocking of quantitative and text-analytical approaches.</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Project</head>
+                <p>Several full-text, open access corpora (
+                    <hi rend="italic">Deutsches Textarchiv</hi>, 
+                    <hi rend="italic">Zeno</hi>, etc.), from which texts were extracted according to genre, serve as source material. It is clear that although the existing full-text offerings provide varying degrees of structural information about the respective document, the automatic delimitation of closed text units is often non-trivial and not possible reliably without individual examination (e.g. in the case of anthologies, texts with several chapters, texts in several volumes). However, this is the prerequisite for extracting the first sentences. In addition, the beginning of the "poetic text" cannot always be clearly localised automatically, e.g. due to prefaces, dedication texts or introductions.
+                </p>
+                <p>Furthermore, the delimitation of “first sentences” is a semantic problem. Sentences can be understood as grammatical-analytical units that are separated from each other by certain punctuation marks, which accommodates machine processing. However, the signs used to delimit a sentence differ and change considerably. The absolute selectivity of some punctuation marks is also questionable depending on the context, which is why sentences are sometimes to be understood as units of meaning in which punctuation marks have a structuring but not interrupting function (cf. fig. 2a/b). Should we therefore rather speak of a flowing “beginning” or “start”? Thus, areas of vagueness play into the determination of "first sentences", which in turn can affect corpus consistency and comparability.</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Evaluation</head>
+                <p>The currently created corpuses of novels, novellas and fairytales is completely encoded in TEI, including metadata and source information, including positional information (available at 
+                    <ptr target="https://github.com/satzomat/corpus"/>). Depending on the genre, the number of first sentences ranges between 100 and 1,000 entries. With the help of the manually and automatically created annotations, the corpus can be analysed and visualised according to various parameters, such as date of publication, text genre, gender of author, references to persons, places or time in the text (cf. Fig. 1c) or length of the entire text. In addition, it is documented which selection criteria the respective data sources were subject to and how this should be taken into account in the evaluation with regard to the balance of the corpus (cf. Hug/Boenig 2021). To disseminate the corpus, the Twitter project 
+                    <ref target="https://twitter.com/satzomat">@satzomat</ref> was launched in 2021, which sends two first sentences daily (cf. Figures 1–3).
+                </p>
+                <p>The aim is to create a “typology of incipits” with the help of computer-philological evaluation methods and to ask to what extent genres determined certain types of first sentences in the course of history (e.g. landscape image, frame story) and whether further correlations can be determined with the help of the metadata and annotations (see the project page 
+                    <ptr target="http://satzomat.de/"/>for more information).
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Figures</head>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/ae90af34ce85d1faef04b07006c56452.png"/>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/5ec6ce09037a7a7c73c51d056cacfb15.png"/>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/de93487cbf6e6778d157968392dc8bcb.png"/>
+                    </figure>
+                </p>
+                <p>Fig. 1a/b/c: Novella beginnings</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/81eb9b011ed87213dbd5a7116cba6008.png"/>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/e5b018cafcecf2c5d4b1fba09716c439.png"/>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/c0a605ec19cd60c0615f038292e39a16.png"/>
+                    </figure>
+                </p>
+                <p>Fig. 2a/b/c: Novel beginnings</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/5f3716a4396165b7f6afa539116d8324.png"/>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/d04d8f258769ae70356fd51b36a5c91d.png"/>
+                    </figure>
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/609c65163cf34d3a5f76d5e605aa980b.png"/>
+                    </figure>
+                </p>
+                <p>Fig. 3a/b/c: Fairy tale beginnings</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Alt, Peter-André</hi> (2020): 
+                        <hi rend="italic">‘Jemand musste Josef K. verleumdet haben …’ Erste Sätze der Weltliteratur und was sie uns verraten.</hi> München: Beck.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Beck, Harald </hi>(1992)
+                        <hi rend="bold">:</hi>
+                        <hi rend="italic">Roman-Anfänge. Rund 500 erste Sätze</hi>. Zürich: Haffmans.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Beck, Harald </hi>(1993)
+                        <hi rend="bold">:</hi>
+                        <hi rend="italic">Romanenden. Rund 500 letzte Sätze</hi>. Zürich: Haffmans.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fischer, Frank / Strötgen, Jannik</hi> (2015): “Wann findet die deutsche Literatur statt? – Zur Untersuchung von Zeitausdrücken in großen Korpora.” Presented at the DHd2015 
+                        <hi rend="italic">Von Daten zu Erkenntnissen: Digitale Geisteswissenschaften als Mittler zwischen Information und Interpretation. </hi>2. Tagung des Verbands "Digital Humanities im deutschsprachigen Raum" (DHd2015), Graz: Zenodo. 
+                        <ptr target="http://doi.org/10.5281/zenodo.4623384"/> [last access: 9. December 2021]
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fischer, Frank / Jäschke, Robert</hi> (2018a): “Liebe und Tod in der Deutschen Nationalbibliothek. Der DNB-Katalog als Forschungsobjekt der digitalen Literaturwissenschaft.” Presented at the DHd 2018 Kritik der digitalen Vernunft. 5. Tagung des Verbands "Digital Humanities im deutschsprachigen Raum" (DHd 2018), Köln: Zenodo. 
+                        <ptr target="http://doi.org/10.5281/zenodo.4622376"/> [last access: 9. December 2021]
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fischer, Frank / Jäschke, Robert</hi> (2018b): “Ein Quantum Literatur. Empirische Daten zu einer Theorie des literarischen Textumfangs.” DFG-Symposium “Digitale Literaturwissenschaft”. Villa Vigoni, 9.–13. Oktober 2017. [unpublished]
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Haubrichs, Wolfgang </hi>(1995): “Kleine Bibliographie zu “Anfang” und “Ende” in narrativen Texten (seit 1965)”, in: Zeitschrift für Literaturwissenschaft und Linguistik 25, 99: 36-50.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Herrmann, Berenike</hi> (2018): “Anschaulichkeit messen. Eine quantitative Metaphernanalyse an deutschsprachigen Erzählanfängen zwischen 1880 und 1926”, in: Köppe, Tilmann / Singer, Rüdiger (eds.): 
+                        <hi rend="italic">Show, don’t tell: Konzepte und Strategien anschaulichen Erzählens.</hi> Bielefeld: Aisthesis 167-212.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hirdt, Willi </hi>(1974): “Incipit. Zu einer Poetik des Romananfangs”, in: Romanische Forschungen LXXXVI: 419-436.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hug, Marius / Boenig, Matthias</hi> (2021): Die Geschichte der Digitalen Bibliothek, oder: Aller guten Kurationen sind drei+: 
+                        <ptr target="https://sprache.hypotheses.org/2436"/> [last access: 9. December 2021]
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Iser, Wolfgang</hi> (1976): Der Akt des Lesens. Theorie ästhetischer Wirkung. München: Fink.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Miller, Norbert</hi> (1965): 
+                        <hi rend="italic">Romananfänge. Versuch zu einer Poetik des Romans.</hi> Berlin: Verl. Literarisches Colloquium.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Moretti, Franco</hi> (2009): Style, Inc Reflections on Seven Thousand Titles (British Novels, 1740-1850), in: 
+                        <hi rend="italic">Critical Inquiry</hi> 36, I: 134-158.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Neuhaus, Stefan</hi> (2019): “Aber wehe, wehe, wehe! Wenn ich auf das Ende sehe!!” Wie in Romanen und Erzählungen durch Anfang und Ende ein Rahmen erzeugt wird, in: Neuhaus, Stefan / Weber, Petra (eds.): 
+                        <hi rend="italic">Anfangen und Aufhören</hi>. Paderborn: Wilhelm Fink 141-157.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Queng, Jesse</hi> (2019): “Syntaktische Strukturen als poetologisches Mittel des Anfangens in der Prosa: Der erste Satz von Heinrich Bölls Irischem Tagebuch”, in: Neuhaus, Stefan / Weber, Petra (eds.): 
+                        <hi rend="italic">Anfangen und Aufhören</hi>. Paderborn: Wilhelm Fink 89-101.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Raulff, Ulrich </hi>(2019): “Letzte Sätze”, in: 
+                        <hi rend="italic">Zeitschrift für Ideengeschichte</hi> 13: 129-142.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Retsch, Annette</hi> (2000): 
+                        <hi rend="italic">Paratext und Textanfang. </hi>Würzburg: Königshausen &amp; Neumann.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Richardson, Brian</hi> (2008): 
+                        <hi rend="italic">Narrative Beginnings: Theories and Practices</hi>. University of Nebraska Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Robbe-Grillet, Alain </hi>(1992): “Warum und für wen schreibe ich”, in: Bühler, Karl Alfred (ed.): 
+                        <hi rend="italic">Robbe-Grillet zwischen Moderne und Postmoderne - "nouveau roman", "nouveau cinéma" und "nouvelle autobiographie</hi>". Tübingen: Narr.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Selbmann, Rolf</hi> (2019): “Lauter erste Sätze”, in: Neuhaus, Stefan / Weber, Petra (eds.): 
+                        <hi rend="italic">Anfangen und Aufhören</hi>. Paderborn: Wilhelm Fink 67-87.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wolkersdorfer, Andreas</hi> (1994): 
+                        <hi rend="italic">Der erste Satz. Österreichische Romananfänge 1960-1980</hi>. Wien: WUV Univ.-Verl.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

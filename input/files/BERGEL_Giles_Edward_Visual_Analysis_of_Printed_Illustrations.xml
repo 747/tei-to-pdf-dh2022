@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Visual Analysis of Printed Illustrations using Computer Vision </title>
+                <author>
+                    <persName>
+                        <surname>Bergel</surname>
+                        <forename>Giles Edward</forename>
+                    </persName>
+                    <affiliation>University of Oxford, United Kingdom</affiliation>
+                    <email>giles.bergel@eng.ox.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dutta</surname>
+                        <forename>Abhishek</forename>
+                    </persName>
+                    <affiliation>University of Oxford, United Kingdom</affiliation>
+                    <email>adutta@robots.ox.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T11:45:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>computer vision; AI; machine learning; bibliography; typography</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>image processing and analysis</term>
+                    <term>Art history</term>
+                    <term>Book and print history</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                <p style="text-align: left;">This half-day tutorial will provide a practical and theoretical introduction to the computer vision applied to illustrations in various domains. Participants will learn how to make image collections searchable by means of free, open-source tools developed by Oxford's Visual Geometry Group for extracting, matching, comparing and classifying illustrations.</p>
+                <p>
+                    <hi style="font-size:12pt" xml:space="preserve">Participants will gain a practical and theoretical understanding of the state of the art in computer vision applied to illustrations. They will learn how to make image collections searchable by means of a modular image processing pipeline composed of free and open-source tools. Participants will learn how to apply, integrate and extend the software tools and processing pipeline to their own images; how visual search and analysis can scale to many millions of images; and will learn how computer vision can provide a deeper understanding of the visual content of image collections. Both the tools and the datasets are based on real-world research projects involving Oxford’s </hi>
+                    <ref target="https://www.robots.ox.ac.uk/~vgg/">
+                        <hi rend="underline color(1155CC)" style="font-size:12pt">Visual Geometry Group</hi>
+                    </ref>
+                    <hi style="font-size:12pt" xml:space="preserve"> and collaborators in the digital humanities and cultural heritage fields.</hi>
+                </p>
+                <div>
+                    <head>
+                        <anchor xml:id="f9ga0z2xq1nn"/>Relevance to Digital Humanities Audiences
+                    </head>
+                    <p>Researchers in many disciplines allied to the digital humanities are interested in the graphical content of books and such other forms of documents as periodicals, posters and pamphlets. While researchers already have many tools for extracting and processing text from documents, there are fewer options for the computational analysis of their visual elements – despite the fundamental importance of non-textual elements in printed communications. </p>
+                    <p>This half-day tutorial is designed to address the needs of such researchers. The tutorial will present a processing pipeline for printed illustrations that are based on the following four open source software applications developed by the VGG based on over a decade of collaboration with different academic disciplines and industrial sectors:</p>
+                    <list rend="numbered">
+                        <item>
+                            <hi rend="bold" style="font-size:12pt">Illustration Detection</hi>
+                            <hi style="font-size:12pt" xml:space="preserve"> using a pre-trained </hi>
+                            <ref target="https://gitlab.com/vgg/nls-chapbooks-illustrations/-/blob/master/Illustration-Detector.md">
+                                <hi rend="underline color(1155CC)" style="font-size:12pt">object detector model</hi>
+                            </ref>
+                            <hi style="font-size:12pt" xml:space="preserve"> that has been retrained to automatically detect printed illustrations in early printed books. It has been successfully applied to detect a broad range of printed illustrations (e.g. Spanish Chapbooks). It will be taught in conjunction with the </hi>
+                            <ref target="https://gitlab.com/vgg/lisa">
+                                <hi rend="underline color(1155CC)" style="font-size:12pt">List Annotator (LISA)</hi>
+                            </ref>
+                            <hi style="font-size:12pt" xml:space="preserve"> tool, which is used to review and refine the automatically detected illustrations. The tutorial will show how domain experts can readily use LISA to define regions of interest, and refine the detector by adding missed detections.</hi>
+                        </item>
+                        <item>
+                            <hi rend="bold" style="font-size:12pt">Visual image search and grouping</hi>
+                            <hi style="font-size:12pt" xml:space="preserve"> capability is provided by the </hi>
+                            <ref target="https://www.robots.ox.ac.uk/~vgg/software/vise/">
+                                <hi rend="underline color(1155CC)" style="font-size:12pt">VGG Image Search Engine (VISE)</hi>
+                            </ref>
+                            <hi style="font-size:12pt" xml:space="preserve"> software which allows visual search of a large collection of images (e.g. a million image) using image (or image regions) as search queries within a graphical interface. VISE is based on features that are robust to different image transformations like rotation, scaling, translation, and shear. Furthermore, VISE uses features extracted from different regions of an illustration which enables search using a part of an illustration. This is useful for identifying damaged illustrations (e.g. due to torn book pages) or illustrations that have been modified in certain ways.</hi>
+                        </item>
+                        <item>
+                            <ref target="https://www.robots.ox.ac.uk/~vgg/software/imcomp/">
+                                <hi rend="bold underline color(1155CC)" style="font-size:12pt">Image Comparison</hi>
+                            </ref> software allows researchers to finely and forensically investigate the difference between two illustrations which appear similar, but on closer comparison can be seen to have fine differences. 
+                        </item>
+                        <item>
+                            <hi rend="bold" style="font-size:12pt">Visual classification</hi>
+                            <hi style="font-size:12pt" xml:space="preserve"> using </hi>
+                            <ref target="https://www.robots.ox.ac.uk/~vgg/software/vic/">
+                                <hi rend="underline color(1155CC)" style="font-size:12pt">VGG Image Classifier (VIC)</hi>
+                            </ref>
+                            . This software incorporates an ImageNet trained model, which can be readily retrained using either local images or images retrieved with user-defined keywords (e.g. ship) via online image search engines (e.g. Google, Bing, etc.). VIC software uses this knowledge to classify and find images in a dataset with content that semantically matches the search keyword.
+                        </item>
+                    </list>
+                    <p>Participants in the tutorial will step through these applications using the case study data, which will demonstrate both the relevance of these methods for specific use-cases and their general applicability. While the focus of the tutorial is on technical methods in computer vision, it will also cover critical and operational issues such as data capture and cleanup; bias in training data; user experience; and good practice in research reproducibility, software citation and accreditation of invisible labour – issues that digital humanists have a strong interest in foregrounding.</p>
+                </div>
+                <div>
+                    <head>
+                        <anchor xml:id="p6gmcvuy993h"/>Target Audience
+                    </head>
+                    <p>The target audience includes</p>
+                    <list rend="bulleted">
+                        <item>Early-career researchers in the humanities wishing to develop their skills.</item>
+                        <item>Established humanities academics with knowledge of computational methods, not necessarily including computer vision</item>
+                        <item>Research software engineers based in digital humanities centres or projects</item>
+                        <item>Academic support staff and research facilitators in digital humanities centres or projects.</item>
+                        <item>Museum, library and other cultural heritage professionals</item>
+                    </list>
+                    <p style="text-align: left; ">The tutorial will be open to all-comers: no prior knowledge of computer vision or programming experience is assumed, but the tutorial will also support technically capable users. The hands-on portion can be followed either through Web demos hosted by VGG, or by user-installable software.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

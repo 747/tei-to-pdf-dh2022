@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">A new gesture-based browsing experience for art historical research</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Bernasconi</surname>
+                        <forename>Valentine</forename>
+                    </persName>
+                    <affiliation>Digital Visual Studies, University of Zurich, Switzerland</affiliation>
+                    <email>valentine.bernasconi@uzh.ch</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-18T11:09:31.950316109</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Gesture</term>
+                    <term>Browsing</term>
+                    <term>Navigation</term>
+                    <term>Hands</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>Art history</term>
+                    <term>Computer science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading">
+                <head>Introduction</head>
+                <p>Thanks to the increase of digital artworks collections and the latest sophistication of computer vision techniques, there is now the possibility to computationaly apprehend large corpuses of paintings and to propose different research perspectives to the field of art history. Recent works on pattern recognition, allowing similar patterns extraction from sets of images, enable to better understand the importance of replicas within the work of an artist (Shen et al., 2019), as well as the circulation of artistic practices in the past (Lenardo, di et al., 2016). Such techniques fostered the creation of innovative browsing tools based on similarity detection from areas of images and dedicated to the practice of art history (Seguin, 2018). The specific task of automated body pose estimation also allows new methodologies for the comparison of gestures in corpuses of paintings and drawings (Impett, 2020). Applied more specifically to the hand, automated gesture retrieval can ease the task of the art historian to analyze an important number of hand gestures and their possible underlying meaning in relation to their context (Bell et al., 2013). Thus, hands and gestures can be characterised geometrically over large sets of paintings
+                    <hi rend="italic"> </hi>and considered through similarities or specific movements, enlighting their complex role in the pictorial practice(Impett and Süsstrunk, 2016). However, in spite of such developments, most navigation systems publicly available require some previous knowledge of the data and are still based on textual research
+                    <note xml:id="ftn1" place="foot" n="1">
+                        <p>For examples see 
+                            <ptr target="https://www.biblhertz.it/it/photographic-collection"/> and https://
+                        </p>
+                        <p>
+                            <ref target="http://www.europeana.eu/fr/collections">www.europeana.eu/fr/collections</ref>
+                        </p>
+                    </note>. Furthermore, other browsing approaches that rely on formal qualities
+                    <hi rend="sup">
+                        <note xml:id="ftn2" place="foot" n="2"> See projects proposed on the open platform 
+                            <ptr target="https://artsandculture.google.com/"/>
+                        </note>
+                    </hi> or propose new interactive systems based on gestures recognition
+                    <hi rend="sup">
+                        <note xml:id="ftn3" place="foot" n="3"> See the ArtLens Wall from the Cleveland Museum of Art 
+                            <ptr target="https://www.clevelandart.org/artlens-gallery/artlens-wall"/>
+                        </note>
+                    </hi> (Derry et al., 2021) rather aim at fostering the curiosity of a non-expert audience in a context of cultural heritage preservation, than promoting significant discoveries for researchers. It is based on this need for an innovative browsing tool and to better apprehend a corpus of painted hands for a research project on computational and historical analysis of hands and gestures in Early Modern time that the Gestures for Artwork Browsing (GAB) project was developed.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>A gesture-based tool</head>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/a84ab1abe8beb56cc1d3471fa60d64a2.png"/>
+                        <head>Figure 1: Results page of the GAB application with details for each hand</head>
+                    </figure>
+                </p>
+                <p>The objectives of the main research are to better understand hand poses, their signification and implications in possible gestures from a dataset of Italian paintings from the 14th to the 18th Century. Based on a subset of the digitized Fototeca from the Bibliotheca Hertziana
+                    <hi rend="sup">
+                        <note xml:id="ftn4" place="foot" n="4">
+                            <ptr target="https://www.biblhertz.it/it/photographic-collection"/>
+                        </note>
+                    </hi>, a collection of 5’993 hands was created by using the 
+                    <hi rend="italic">OpenPose</hi>
+                    <hi rend="sup">
+                        <note xml:id="ftn5" place="foot" n="5"> See 
+                            <ptr target="https://github.com/CMU-Perceptual-Computing-Lab/openpose"/>
+                        </note>
+                    </hi> model (Cao et al., 2021). The results of the model are a set of coordinates from keypoints describing the pose of each body detected on an image. From this information, the hands were automatically cropped. The browsing tool consists of recording a hand gesture performed by the user in front of a webcamera for five seconds. The keypoints of the hand detected
+                    <note xml:id="ftn6" place="foot" n="6"> The library mediapipe was used for the real time extraction of keypoints, see
+                        <ptr target="https://google.github.io/mediapipe/"/>(Zhang et al., 2020)
+                    </note> at each frame are then analysed in order to retrieve, via a K-NN algorithm, similar hand poses from the collection. Finally, a .gif animation is created, reproducing the hand gesture of the user with painted hands from the Early Modern time. Apart from the animation, the user also has the possibility to see the detail of each hand used and the painting it belongs to with corresponding metadata for a better contextualisation and further investigation.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>The research scope</head>
+                <p>The idea to translate a gesture to an animation has several research scopes, one of which is the possibility to show different representations of similar hand poses. It proposes a new context, different from the one of a single painting where still hands summarise a longer action, and allows researchers to envision these hands under a new perspective. Even though the fundamental meaning of a gesture greatly relies on the iconographic context and the character performing it (Burke, 1992; Dimova, 2020), the idea here is to understand and question the significance of the depicted moments in order to outline specific codes and conventions of representation from the time they were painted. Furthermore, the fact that a hand gesture can or cannot be translated with painted hands not only provides information on the practices of the studied period, but also on the divergences from contemporary ones. Overall, there is a great potential to learn from the data through the browsing process and to develop an understanding of the kind of poses that belong to the narrative spectrum of Early Modern art. However, it is important to acknowledge that the collection used is a subset of paintings from the Italian Early Modern period and results have to be apprehended with this curatorial aspect in mind. Any outcome cannot be considered as a ground truth as it is the result of multiple selections that occurred throughout the shaping and digitization process of the collection. In addition to the curation, the performance of the 
+                    <hi rend="italic">OpenPose</hi> model primarily used for hands detection impacts on the results proposed, with an estimated accuracy of 32%. Many hands are thereby missing, whereas others, in spite of manual corrections, have misplaced keypoints, resulting in different pose interpretations from the machine than what they actually represent.
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Bell, P., Schlecht, J. and Ommer, B.</hi> (2013). Nonverbal Communication in Medieval Illustrations Revisited by Computer Vision and Art History. 
+                        <hi rend="italic">Visual Resources Journal, Special Issue on Digital Art History</hi>, 
+                        <hi rend="bold">29</hi>. Taylor &amp;amp; Francis: 26–37.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Burke, P.</hi> (1992). The language of gesture in early modern Italy. 
+                        <hi rend="italic">A Cultural History of Gesture</hi>. Cornell University Press, p. 14.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Cao, Z., Hidalgo, G., Simon, T., Wei, S.-E. and Sheikh, Y.</hi> (2021). OpenPose: Realtime Multi-Person 2D Pose Estimation Using Part Affinity Fields. 
+                        <hi rend="italic">IEEE Transactions on Pattern Analysis and Machine Intelligence</hi>, 
+                        <hi rend="bold">43</hi>(1): 172–86 doi:10.1109/TPAMI.2019.2929257.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Derry, L., Duhaime, D., Kruguer, J., Rodighiero, D., Schnapp, J. and Pietsch, C.</hi> (2021). 
+                        <hi rend="italic">Surprise Machines</hi>. (Information+ Conference). Online https://vimeo.com/595473865 (accessed 4 February 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Dimova, T.</hi> (2020). 
+                        <hi rend="italic">Le Langage Des Mains Dans L’art: Histoire, Significations Et Usages Des Chirogrammes Picturaux Aux XVIIe Et XVIIIe Siecles</hi>. 1er édition. Brepols Publishers.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Impett, L.</hi> (2020). Analyzing Gesture in Digital Art History. 
+                        <hi rend="italic">The Routledge Companion to Digital Humanities and Art History</hi>. Routledge.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Impett, L. and Süsstrunk, S.</hi> (2016). Pose and Pathosformel in Aby Warburg’s Bilderatlas. 
+                        <hi rend="italic">Undefined</hi> /paper/Pose-and-Pathosformel-in-Aby-Warburg%27s-Bilderatlas-Impett-S%C3%BCsstrunk/f3a34525fa7021322f132c80c9517f240cf1e742 (accessed 3 June 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Lenardo, I. di, Seguin, B. L. A. and Kaplan, F. (eds).</hi> (2016). 
+                        <hi rend="italic">Visual Patterns Discovery in Large Databases of Paintings</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Seguin, B.</hi> (2018). The Replica Project: Building a visual search engine for art historians. 
+                        <hi rend="italic">XRDS: Crossroads, The ACM Magazine for Students</hi>, 
+                        <hi rend="bold">24</hi>(3): 24–29 doi:10.1145/3186653.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Shen, X., Efros, A. A. and Aubry, M.</hi> (2019). Discovering Visual Patterns in Art Collections With Spatially-Consistent Feature Learning. 
+                        <hi rend="italic">2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</hi>. Long Beach, CA, USA: IEEE, pp. 9270–79 doi:10.1109/CVPR.2019.00950. https://ieeexplore.ieee.org/document/8954148/ (accessed 18 October 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Zhang, F., Bazarevsky, V., Vakunov, A., Tkachenka, A., Sung, G., Chang, C.-L. and Grundmann, M.</hi> (2020). MediaPipe Hands: On-device Real-time Hand Tracking. 
+                        <hi rend="italic">ArXiv:2006.10214 [Cs]</hi> http://arxiv.org/abs/2006.10214 (accessed 21 December 2021).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Teaching Basic Buddhism Using a Chatbot: Evaluation and Comparison</title>
+                <author>
+                    <persName>
+                        <surname>Wong</surname>
+                        <forename>Kwong-Cheong</forename>
+                    </persName>
+                    <affiliation>College of Professional and Continuing Education, The Hong Kong Polytechnic University</affiliation>
+                    <email>kwongcheong.wong@cpce-polyu.edu.hk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chan</surname>
+                        <forename>Andrew Marcus</forename>
+                    </persName>
+                    <affiliation>College of Professional and Continuing Education, The Hong Kong Polytechnic University</affiliation>
+                    <email>am.chan@cpce-polyu.edu.hk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Law</surname>
+                        <forename>Shun-Man</forename>
+                    </persName>
+                    <affiliation>College of Professional and Continuing Education, The Hong Kong Polytechnic University</affiliation>
+                    <email>shunman.law@cpce-polyu.edu.hk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tse</surname>
+                        <forename>Devi</forename>
+                    </persName>
+                    <affiliation>College of Professional and Continuing Education, The Hong Kong Polytechnic University</affiliation>
+                    <email>devitcf@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>AI Chatbot</term>
+                    <term>Buddhism</term>
+                    <term>The Four Noble Truths</term>
+                    <term>Religious education</term>
+                    <term>Technology Acceptance Model</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>natural language processing</term>
+                    <term>Education/ pedagogy</term>
+                    <term>Theology and religious studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">The world is becoming more and more technological thanks to the emergence of advanced technologies like Artificial Intelligence (AI). Unfortunately, technological advances themselves have not been able to bring about the solving of the fundamental problems of human existence arising from birth, </hi>
+                aging, disease and death
+                . What we need, instead, is penetrating wisdom. We believe that the ancient Buddhist wisdom, which is aimed at alleviating suffering and gaining happiness and ultimately at enlightenment, is still an effective antidote to the fundamental human existential problems in our time (
+                Wright
+                , 2017). However, learning Buddhism is not easy, for a number of reasons. One is that it contains a lot of terminology whose meaning deviates subtly from its common usage (e.g., the words “dukkha” and “suññatā” are usually, but not entirely satisfactorily, translated as “suffering” and “emptiness”, respectively), rendering Buddhism hard to grasp, especially for beginners. Although technologies cannot, in the parlance of Buddhism, be the moon itself, they can act as a finger pointing at the moon. Accordingly, the goal of this project is to leverage recent AI technology to develop a chatbot to teach the basic Buddhist doctrines revolving around the Four Noble Truths (Suffering, The Arising of Suffering, The Cessation of Suffering, The Path Leading to the Cessation of Suffering). The inspiration of this idea comes from the exhilarating story in which the Buddha, upon attaining Buddhahood, returned to teach the Four Noble Truths to the Five Bhiksus, thereby enabling the latter to attain nibbāna (enlightenment).
+            </p>
+            <p>
+                <hi style="font-size:12pt" xml:space="preserve">Technically, our chatbot is a task-oriented one. It works in the narrow domain of explaining the Four Noble Truths. It is also text-based. During its conversation with the user, the chatbot asks the user concrete questions and the user answers. Based on these answers and their sentiment (positive or negative), the chatbot would recommend the user to learn a specific Noble Truth. Throughout, emphasis is put on explaining the terminology of basic Buddhism. To be more specific, the Buddhist knowledge contained in our chatbot comes from </hi>
+                <hi rend="italic" style="font-size:12pt">What the Buddha Taught</hi>
+                <hi style="font-size:12pt" xml:space="preserve">by W. Rāhula (1974). This highly acclaimed book has been praised for its clarity, accessibility and reliability, and as such has been widely adopted as an introduction to the basic Buddhist doctrines. </hi>
+            </p>
+            <p>
+                We took a mixed method approach to evaluating our chatbot. Qualitatively, we conducted in-depth interviews with the users, soliciting their perceptions towards, and subjective experiences of, using the chatbot to learn the basic doctrines of Buddhism. Quantitatively, we extended the original Technology Acceptance Model (TAM) (Davis et al., 1989) with some external variables (e.g., Perceived Enjoyment) in order to evaluate the users’ acceptance of using the chatbot to learn basic Buddhism. Based on this extended model, we designed a survey questionnaire. The focus of this paper is on reporting the quantitative findings of this survey questionnaire and their analysis – the qualitative counterparts were reported in (Chan et al., 2021).
+            </p>
+            <p>
+                There exists a diversity of religions, especially in Asia, that can offer wisdom to solve the fundamental human existential problems (see, e.g.,
+                Koller, 2018)
+                <hi style="font-size:12pt" xml:space="preserve">. Buddhism is just one of them; there are many others, e.g., Confucianism. In the final part of this paper, we first compare our work with </hi>
+                Cheok and Zhang (2019),
+                <hi style="font-size:12pt" xml:space="preserve">which builds a chatbot to teach the basic doctrines of Confucianism, and then compare our particular approach with that of </hi>
+                Pataranutaporn
+                et al. (2019), which, like us, builds a chatbot to teach basic Buddhism. Joining Tan (2020) and BBC (2021), we conclude the paper with a critical discussion on exploiting AI chatbot/robot technology in religious/spiritual education.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi style="font-size:10.5pt" xml:space="preserve">British Broadcasting Corporation (BBC) (2021). TV documentary “God and Robots: Will AI Transform Religion?” at </hi>
+                        <ref target="https://www.bbc.com/news/av/technology-58983047">
+                            https://www.bbc.com/news/av/technology-58983047
+                        </ref>
+                        .
+                    </bibl>
+                    <bibl>
+                        Chan, A. M., Law, S., Wong, K. &amp; Tse, D. (2021). Digital Humanities in Teaching: The Case of Bodhi Chat in Action.
+                        <hi rend="italic" style="font-size:10.5pt">The 12</hi>
+                        <hi rend="italic superscript" style="font-size:10.5pt">th</hi>
+                        <hi rend="italic" style="font-size:10.5pt">International Conference of Digital Archives and Digital Humanities</hi>
+                        <hi style="font-size:10.5pt" xml:space="preserve"> (DADH2021).</hi>
+                    </bibl>
+                    <bibl>
+                        Cheok, A. D., &amp; Zhang, E. Y. (2019). A Virtual Confucius Chatbot. In 
+                        <hi rend="italic" style="font-size:10.5pt">Human–Robot Intimate Relationships</hi>
+                         (pp. 123-151). Springer, Cham.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:10.5pt" xml:space="preserve">Davis, F. D., Bagozzi, R. P., &amp; Warshaw, P. R. (1989). User Acceptance of Computer Technology: A Comparison of Two Theoretical Models. </hi>
+                        <hi rend="italic" style="font-size:10.5pt">Management Science</hi>
+                        <hi style="font-size:10.5pt" xml:space="preserve">, </hi>
+                        <hi rend="italic" style="font-size:10.5pt">35</hi>
+                        (8), 982-1003.
+                    </bibl>
+                    <bibl>
+                        Koller, J. M. (2018). 
+                        <hi rend="italic" style="font-size:10.5pt">Asian Philosophies</hi>
+                        (7
+                        <hi rend="superscript" style="font-size:10.5pt">th</hi>
+                        <hi style="font-size:10.5pt" xml:space="preserve"> edition). Routledge.</hi>
+                    </bibl>
+                    <bibl>
+                        Pataranutaporn, P., Ngamarunchot, B., Chaovavanich, K., Chatwiriyachai, S., Ngamkajornwiwat, P., Ninyawee, N., &amp; Surareungchai, W. (2019). Buddha Bot: The Exploration of Embodied Spiritual Machine in Chatbot. In 
+                        <hi rend="italic" style="font-size:10.5pt">Proceedings of the Future Technologies Conference</hi>
+                         (pp. 589-595). Springer, Cham.
+                    </bibl>
+                    <bibl>
+                        <anchor xml:id="Hlk88753334"/>
+                        <hi style="font-size:10.5pt" xml:space="preserve">Rāhula, W. (1974). </hi>
+                        <hi rend="italic" style="font-size:10.5pt">What the Buddha Taught</hi>
+                        (Revised edition). Grove Press.
+                    </bibl>
+                    <bibl>
+                        <hi style="font-size:10.5pt" xml:space="preserve">Tan, C. (2020). Digital Confucius? Exploring the Implications of Artificial Intelligence in Spiritual Education. </hi>
+                        <hi rend="italic" style="font-size:10.5pt">Connection Science</hi>
+                        <hi style="font-size:10.5pt" xml:space="preserve">, </hi>
+                        <hi rend="italic" style="font-size:10.5pt">32</hi>
+                        (3), 280-291.
+                    </bibl>
+                    <bibl>
+                        Wright, R. (2017). 
+                        <hi rend="italic" style="font-size:10.5pt">Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment</hi>
+                        . Simon and Schuster.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

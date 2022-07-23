@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main"> Finding Ortese’s Voice for Ferrante Fans: A Stylometric Study of <hi rend="italic">Neapolitan Chronicles </hi></title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Haggin</surname>
+                        <forename>Patience</forename>
+                    </persName>
+                    <affiliation>Independent Scholar, United States of America</affiliation>
+                    <email>patiencehaggin@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T11:12:18</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Stylometry</term>
+                    <term>Literary Translation Studies</term>
+                    <term>Literary Translator Studies</term>
+                    <term>Italian-to-English Translation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>attribution studies and stylometric analysis</term>
+                    <term>Literary studies</term>
+                    <term>Translation studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading">
+                <head>Statement of purpose</head>
+                <p>When New Vessel Press published Anna Maria Ortese's 
+                    <hi rend="italic">Neapolitan Chronicles</hi> in 2018, it unabashedly marketed the book to fans of international best-selling author Elena Ferrante. Both authors were women who wrote fiction set in post-war Naples. The cover of 
+                    <hi rend="italic">Neapolitan Chronicles</hi> even quoted Ferrante: "As for Naples, today I feel drawn above all by Anna Maria Ortese ..."
+                </p>
+                <p>This paper stylometrically examines a translation of Anna Maria Ortese's 1953 
+                    <hi rend="italic">Il mare non bagna Napoli</hi>. This paper concludes the translation was influenced by Ferrante's popularity.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Applicability</head>
+                <p>I intend for this paper to contribute to the growing body of research on translatorial style and to demonstrate that stylometric techniques originally developed to prove authorship can be used to analyse translatorial style (Rybicki, 2012; Rybicki, 2009; Lynch and Vogel, 2018; Forsyth and Lam, 2014).</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Framework</head>
+                <p>My computational analysis relies on a code library created for stylometry in the programming language R by Drs. Maciej Eder, Mike Kestemont and Jan Rybicki (Eder et al., 107-121). This library, which was originally developed to resolve cases of disputed authorship, analyses authorial style by detecting patterns in each author's most frequent words. I present the results using methods that previous stylometric scholars have established as valid: scoring the texts based on stylometric similarity, comparing the most frequent words used by each author, and training a classifier to distinguish the authors' style (Rybicki et al., 123-144).</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Methodology</head>
+                <p>
+                    <hi rend="italic">Neapolitan Chronicles</hi> is a collaboration by Jenny McPhee and Ferrante's acclaimed translator Ann Goldstein. This paper investigates the nature of their collaboration and their claim to have "merged into yet another translator" with a unique, unified style (Goldstein and McPhee, 11). Stylometric study shows that they have indeed translated the book in a unified style, but that it is very similar to the style that Goldstein adopted for Ferrante translations.
+                </p>
+                <p> This research relies on five corpora:</p>
+                <p>(1) 
+                    <hi rend="italic">Neapolitan Chronicles</hi>, translated by Ann Goldstein and Jenny McPhee
+                </p>
+                <p>(2) Goldstein's translations of Ferrante novels, including the four novels that make</p>
+                <p>up her best-selling series</p>
+                <p>(3) English translations of Ortese's fiction by other translators</p>
+                <p>(4) Goldstein's solo fiction translations from Italian</p>
+                <p>(5) McPhee's solo fiction translations from Italian</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Stylometric opposition</head>
+                <p>Below are the results from using stylometric opposition to compare 
+                    <hi rend="italic">Neapolitan Chronicles</hi> with Goldstein's translations of Ferrante's Neapolitan tetralogy. Stylometric opposition identifies the words that are "most unique" to each corpus.
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/d8e6cfcaaa1177a5663699ea2694c279.jpg"/>
+                    </figure>
+                </p>
+                <p>On the left are the 70 words most unique to Ferrante. On the right are the 70 words most unique to Ortese. Their distance to the right or left is based on the Zeta score of how distinctive they are. Many of Ferrante's most unique words are about school, family, or fear. Many of Ortese's most unique words come from her visual descriptions of a blighted city.</p>
+                <p>Notably, these lists are packed with "content words" (which address a book's topic) rather than "function words" (such as conjunctions, articles, prepositions and pronouns). Function words are a much better indicator of an author's signature style. Typically, when comparing two different authors, the results of stylometric opposition are dominated by function words. The results indicate these corpora use function words in very similar patterns—a classic sign of a deep similarity of writing styles.</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Rolling classifier: Ferrante or Ortese?</head>
+                <p>Below are the results of a "rolling classifier" (Eder, 457-469) trained to recognize the most frequent words in Goldstein's Ferrante translations and other English translations of Ortese. The classifier analyses 
+                    <hi rend="italic">Neapolitan Chronicles</hi> passage by passage and determines whether each segment is more similar to Goldstein's Ferrante or other translators' Ortese.
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/8f2c574ed3e8fc1ad72752fe10fddab8.jpg"/>
+                    </figure>
+                </p>
+                <p>The horizontal band labeled "1st" gives the classifier's first judgment for each 5,000-word passage. The rolling classifier classified all of 
+                    <hi rend="italic">Neapolitan Chronicles</hi> as more stylometrically similar to Ferrante works, rather than Ortese works—with the exception of one story: "The Gold of Forcella," which focuses on the abject poverty of a Naples neighbourhood and has the most unique style.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Rolling classifier: Goldstein or McPhee?</head>
+                <p>Stylometry's rolling classifier has been proven capable of distinguishing individual translators' voices in cases of collaborative translation (Rybicki and Heydel, 708-717). Below are the results of a rolling classifier trained on Goldstein and McPhee's solo translations.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/58222b035c7f0b57acab494cf1a04e5c.jpg"/>
+                    </figure>
+                </p>
+                <p> The classifier classified all parts of the book as more like Goldstein's work. The results support Goldstein and McPhee's claim to have "merged into yet another translator" with a coherent style throughout the book. Yet they don't support the claim that this translator had "a style all her own." Rather, this blended translator adopted a style very similar to the style that Goldstein used when translating Ferrante.</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Stylistic features</head>
+                <p>This paper will discuss the stylistic features that 
+                    <hi rend="italic">Neapolitan Chronicles</hi> shares with Goldstein's Ferrante translations, such as: sentence length, gerunds, calqued Italian idioms and punctuation. This paper will discuss the stylistic traits that set "The Gold of Forcella" apart from the rest of 
+                    <hi rend="italic">Neapolitan Chronicles</hi>.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Conclusions</head>
+                <p>1. Goldstein and McPhee's collaboration achieved a unified style, yet their blended translator doesn't have "a style all her own." The pair adopted a style very similar to the style Goldstein used for Ferrante translations.</p>
+                <p>2. 
+                    <hi rend="italic">Neapolitan Chronicles</hi>' style is more similar to Goldstein's Ferrante than it is to any other English translations of Ortese. Goldstein and McPhee essentially "Ferrantized" Ortese's work to appeal to Ferrante fans. They subdued the unique style, which critics have described as "feverish," (Basile, 21) of Ortese's stories.
+                </p>
+                <p> This paper is also a case study in the way that forgotten authors can see their reputations renewed and bolstered when contemporary authors that draw inspiration from them. This can be understood within David Damrosch's framework for understanding the hypercanon, countercanon and shadow canon, and the ways in which the three influence one another's status (Damrosch, 45-48). In this case, the renewed attention has influenced how a forgotten author is being translated and studied. Readers, publishers, and translators now read Ortese through a Ferrante lens.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Basile, E.</hi> (2014). 
+                        <hi rend="italic">Anna Maria Ortese</hi>. Ali&amp;no editrice.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Damrosch, D.</hi> (2016). World Literature in a Postcanonical, Hypercanonical Age. 
+                        <hi rend="italic">Comparative Literature in an Age of Globalization</hi>. The Johns Hopkins University Press, pp. 43–53.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Eder, M.</hi> (2016). Rolling stylometry. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 31(3): 457–69.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Eder, M., Kestemont, M. and Rybicki, J.</hi> (2016). Stylometry with R: A package for computational text analysis. 
+                        <hi rend="italic">R Journal</hi>, 16(1): 107–21.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Forsyth, R. S. and Lam, P. W. Y.</hi> (2014). Found in translation: To what extent is authorial discriminability preserved by translators?. 
+                        <hi rend="italic">Literary and Linguistic Computing</hi>, 29(2): 199–217.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Goldstein, A. and McPhee, J.</hi> (2018). Translators' Introduction. 
+                        <hi rend="italic">Neapolitan Chronicles</hi>. New Vessel Press, pp. 3–11.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Lynch, G. and Vogel, C.</hi> (2018). The translator's visibility: Detecting translatorial fingerprints in contemporaneous parallel translations. 
+                        <hi rend="italic">Computer Speech &amp; Language</hi>, 52: 79–104.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rybicki, J.</hi> (2009). Translation and Delta revisited: when we read translations, is it the author or the translator that we really read?. 
+                        <hi rend="italic">Digital Humanities 2009: Conference Abstracts</hi>. University of Maryland, College Park, pp. 245–47.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rybicki, J.</hi> (2012). The great mystery of the (almost) invisible translator: stylometry in translation. 
+                        <hi rend="italic">Quantitative Methods in Corpus-Based Translation Studies</hi>. pp. 231–48.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rybicki, J., Eder, M. and Hoover, D.</hi> (2016). Computational stylistics and text analysis. 
+                        <hi rend="italic">Doing Digital Humanities</hi>. Routledge, pp. 123–44.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Rybicki, J. and Heydel, M.</hi> (2013). The stylistics and stylometry of collaborative translation: Woolf's 'Night and Day' in Polish. 
+                        <hi rend="italic">Literary and Linguistic Computing</hi>, 28(4): 708–17.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

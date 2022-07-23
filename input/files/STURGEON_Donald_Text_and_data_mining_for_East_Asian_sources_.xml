@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Text and data mining for East Asian sources in classical Chinese</title>
+                <author>
+                    <persName>
+                        <surname>Sturgeon</surname>
+                        <forename>Donald</forename>
+                    </persName>
+                    <affiliation>Durham University</affiliation>
+                    <email>djs@dsturgeon.net</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Chinese</term>
+                    <term>East Asia</term>
+                    <term>history</term>
+                    <term>data mining</term>
+                    <term>linked open data</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>digital biography</term>
+                    <term>personography</term>
+                    <term>and prosopography</term>
+                    <term>digital libraries creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>Asian studies</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Brief description</head>
+                <p style="text-align: left; ">Substantial volumes of primary sources important to the historical written record of China and other East Asian civilizations have been scanned and made available through online databases. Amongst these, the contents of many important sources have been transcribed into textual form, while many more remain available only as images with uncorrected OCR transcriptions. A small but growing number of texts have been semantically annotated, with named entities explicitly marked in the texts and linked to open knowledge bases. Using the Chinese Text Project (
+                    <ref target="https://ctext.org">https://ctext.org</ref>) as a source, this interactive workshop introduces participants to ways of efficiently working with digitized and annotated historical texts, as well as demonstrating how to improve the state of digitization of such texts in a crowdsourced environment supporting manual correction of OCR, semantic annotation of named entities, and construction and use of a Linked Open Data knowledge graph.
+                </p>
+                <p style="text-align: left; ">This session will introduce participants to:</p>
+                <list rend="numbered">
+                    <item>Basic navigation of this large and moderately complex digital library – e.g. handling of multiple editions, complex metadata etc.</item>
+                    <item>Text mining using openly available browser-based tools that use interactive visualizations to allow user-driven exploration of the contents of both this digital library, and arbitrary user-supplied materials in any language.</item>
+                    <item>Hands-on introduction to crowdsourced editing to correct errors in textual transcriptions – such as errors introduced through OCR – and principles of versioned textual repositories.</item>
+                    <item>Semantic annotation and knowledge base construction. This will introduce the motivation of semantic annotation with concrete examples, and equip participants with the tools to contribute directly to the annotation of classical Chinese sources through crowdsourcing, as well as to the construction of a crowdsourced knowledge graph of data extracted from these same materials.</item>
+                    <item>Basic knowledge graph querying and data mining. The knowledge graph introduced supports online querying, the semantics and use of which will be explained in this section.</item>
+                    <item>Introduction to querying the knowledge graph with RDF and SPARQL. The knowledge graph introduced closely follows the design principles used in Wikidata, and as such has an RDF representation
+                        <note place="foot" xml:id="ftn1" n="1">
+                            <p rend="footnote text">
+                                <ref target="https://ctext.org/tools/linked-open-data">https://ctext.org/tools/linked-open-data</ref>
+                            </p>
+                        </note> which can be queried in substantially the same way using SPARQL. This section will provide a brief introduction to this process.
+                    </item>
+                </list>
+                <p style="text-align: left; ">Participants are encouraged to create a free account on ctext.org prior to the workshop by visiting this page: 
+                    <ref target="https://ctext.org/account.pl?if=en">https://ctext.org/account.pl?if=en</ref> .
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Target audience</head>
+                <p style="text-align: left; ">Scholars of East Asian history in fields where important source materials are written in classical Chinese (including in particular: China, Japan, Korea, and Vietnam), with interests in any period from around the first millennium BC to 1911 AD. Note that although the source materials used are in classical Chinese, all software used has complete English and Chinese interfaces, and the workshop content should be intelligible to anyone with a minimal degree of Chinese language ability, and/or familiarity with any language written using Sinitic characters (e.g. modern Japanese). Due to the regional importance of classical Chinese historically, sources written in the classical Chinese language remain important in many East Asian historical domains of study.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Motivation</head>
+                <p style="text-align: left; ">While many researchers working with these materials are likely to have used the Chinese Text Project before – it is accessed by over 30,000 unique users each day – most will not have experience of either the text mining or data mining extensions available, which require a greater investment of effort to meaningfully engage with.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Outline</head>
+                <p style="text-align: left; ">1. ~20 mins Introduction and overview</p>
+                <p style="text-align: left; ">2. ~40 mins Interactive text mining using Text Tools (Sturgeon 2018a) and the ctext API (Sturgeon 2021a)</p>
+                <p style="text-align: left; ">3. ~20 mins Collaborative editing and correcting errors</p>
+                <p style="text-align: left; ">4. ~40 mins Semantic annotation and knowledge base construction</p>
+                <p style="text-align: left; ">5. ~30 mins Basic knowledge graph querying and data mining</p>
+                <p style="text-align: left; ">6. ~30 mins Brief introduction to querying the knowledge graph with RDF and SPARQL</p>
+                <p style="text-align: left; ">A number of previous workshops run by the same instructor have variously covered many aspects of the material in parts 1 through 5 above, e.g.:</p>
+                <p style="text-align: left; ">
+                    <ref target="https://dsturgeon.net/aas2021/">https://dsturgeon.net/aas2021/</ref>
+                </p>
+                <p style="text-align: left; ">
+                    <ref target="https://dsturgeon.net/maraas/">https://dsturgeon.net/maraas/</ref>
+                </p>
+                <p style="text-align: left; ">Online written tutorials (created in part for use in previous workshops) exist for much of the content in parts 1, 2, and 3 (available in English, Japanese, and Chinese): 
+                    <ref target="https://dsturgeon.net/tutorials/">https://dsturgeon.net/tutorials/</ref>
+                </p>
+                <p style="text-align: left; ">Part 6 of the tutorial will be entirely new, as RDF serialization of the knowledge graph is a relatively new feature, and previous shorter workshops have lacked sufficient time to cover this aspect.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Instructor</head>
+                <p style="text-align: left; ">Donald Sturgeon is Assistant Professor of Computer Science at Durham University, and the creator of ctext.org. His research interests include digital libraries, text and data mining, natural language processing of premodern Chinese, and classical Chinese philosophy.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sturgeon, D.</hi> (2018a). Digital Approaches to Text Reuse in the Early Chinese Corpus. 
+                        <hi rend="italic">Journal of Chinese Literature and Culture</hi>, 
+                        <hi rend="bold">5</hi>(2). Duke University Press: 186–213.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sturgeon, D.</hi> (2018b). Large-scale Optical Character Recognition of Pre-modern Chinese Texts. 
+                        <hi rend="italic">International Journal of Buddhist Thought and Culture</hi> doi:10.16893/IJBTC.2018.12.28.2.11.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sturgeon, D.</hi> (2018c). Unsupervised identification of text reuse in early Chinese literature. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 
+                        <hi rend="bold">33</hi>(3): 670–84 doi:10.1093/llc/fqx024.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sturgeon, D.</hi> (2020). Digitizing Premodern Text with the Chinese Text Project. 
+                        <hi rend="italic">Journal of Chinese History</hi>, 
+                        <hi rend="bold">4</hi>(2). Cambridge University Press: 486–98 doi:10.1017/jch.2020.19.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sturgeon, D.</hi> (2021a). Chinese Text Project: A dynamic digital library of premodern Chinese. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 
+                        <hi rend="bold">36</hi>(Supplement_1): i101–12 doi:10.1093/llc/fqz046.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sturgeon, D.</hi> (2021b). Constructing a crowdsourced linked open knowledge base of Chinese history. 
+                        <hi rend="italic">2021 Pacific Neighborhood Consortium Annual Conference and Joint Meetings (PNC)</hi>. pp. 1–6 doi:10.23919/PNC53575.2021.9672294.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

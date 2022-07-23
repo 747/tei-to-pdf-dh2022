@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">The benefits of increasing the digital availability of Alsatian theater</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Ruiz Fabo</surname>
+                        <forename>Pablo</forename>
+                    </persName>
+                    <affiliation>Université de Strasbourg, France</affiliation>
+                    <email>ruizfabo@unistra.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Werner</surname>
+                        <forename>Carole</forename>
+                    </persName>
+                    <affiliation>Université de Strasbourg, France</affiliation>
+                    <email>wernerc@unistra.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bernhard</surname>
+                        <forename>Delphine</forename>
+                    </persName>
+                    <affiliation>Université de Strasbourg, France</affiliation>
+                    <email>dbernhard@unistra.fr</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-15T18:58:57.066920248</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>dialect literature</term>
+                    <term>computational literary studies</term>
+                    <term>TEI</term>
+                    <term>under-resourced languages</term>
+                    <term>Alsatian</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>data publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>Linguistics</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Extensive efforts have been made to create digital corpora for major European dramatic traditions. A recent corpus hub is DraCor (Fischer &amp; Börner, 2019), offering programmatic access to theater collections in 11 languages.
+                <hi rend="sup">
+                    <note xml:id="ftn2" place="foot" n="1">
+                        <ptr target="https://dracor.org/doc/credits"/>lists corpora and languages. Our first 25 TEI-encoded Alsatian plays were also accepted in DraCor.
+                    </note>
+                </hi>
+            </p>
+            <p>The creation of such corpora was accompanied by computational literary research on their traditions. Focusing on German and French drama (immediately relevant for our work), one may name projects like DLINA (Fischer et al., 2017),
+                <hi rend="sup">
+                    <note xml:id="ftn10" place="foot" n="2">
+                        <ptr target="https://dlina.github.io/"/>
+                    </note>
+                </hi> QuaDramA and Q:TRACK (Reiter, 2020)
+                <hi rend="sup">
+                    <note xml:id="ftn0" place="foot" n="3">
+                        <ptr target="https://quadrama.github.io/"/>
+                    </note>
+                </hi> or 
+                <hi rend="italic">Emotions in Drama</hi> (cf. Schmidt et al., 2021), for German; for French, studies like Schöch’s (2017), or works in the 
+                <hi rend="italic">Revue Historiographique du Théâtre</hi>’s special issue on Digital Humanities and theater (Galleron, 2017).
+                <hi rend="sup">
+                    <note xml:id="ftn1" place="foot" n="4">
+                        <hi rend="italic">Journal for Theater Historiography</hi>. Special issue: 
+                        <ptr target="https://sht.asso.fr/revue/etudes-theatrales-et-humanites-numeriques/"/>
+                    </note>
+                </hi>
+            </p>
+            <p>
+                <hi rend="italic">Alsatian</hi> refers to Germanic varieties from Alsace (Eastern France), the main oral communication language in the area for over 14 centuries, until their decline vs. French in the last third of the 20th century (Huck et al., 2007: 11–17). Despite Alsatian’s mainly oral status, it has a rich theatrical tradition, where comedic and popular genres predominate (Gall, 1974). Unlike major European traditions, digital resources for Alsatian theater are scarce, which precludes related computational literary research. To help make such research feasible, our project
+                <hi rend="sup">
+                    <note xml:id="ftn6" place="foot" n="5"> MeThAL, “Towards a macroanalysis of theater in Alsatian” (
+                        <ptr target="https://methal.pages.unistra.fr/en.html"/>)
+                    </note>
+                </hi> is building a large TEI-encoded corpus of Alsatian theater, annotated with rich metadata, and making this corpus publicly available in formats appropriate for research and for the non-specialist community, covering mostly the 1870-1940 period. Our proposal discusses the relevance of developing such materials, in terms of opportunities for (computational) literary studies (CLS) and natural language processing (NLP), besides their potential to promote linguistic diversity through the digital medium.
+            </p>
+            <p>Our corpus both complements and challenges existing knowledge of Alsatian theater. Earlier studies on the corpus period (Cerf, 1972, 1975; Huck, 1998, 2005; Hülsen, 2003) examined plots, plays’ social groups, and dialect representation in character speech, based on corpora with under 40 plays. Annotating the characters’ socio-professional groups in 109 plays (Ruiz Fabo and Werner, 2021) revealed the importance of artisans in plays set in small towns, contrary to claims in earlier studies, which presented agricultural professions as almost exclusive in such settings (Cerf, 1972: 340). The corpus also has potential for comparisons with the two hegemonic dramatic traditions that surround Alsatian theater: French and German. Hülsen (2003: 98 ff.) described the influence of German popular comedy in Alsatian theater, based on thirteen major Alsatian plays around 1900. Our corpus could be used for a larger-sample comparison, covering a longer period, with German and French plays from the same timeframe. A concrete first aspect to compare could be the 
+                <hi rend="italic">dramatis personae</hi>, following our work on character annotation, cited above.
+            </p>
+            <p>Digital literary collections for under-resourced languages also benefit NLP. Current NLP models like contextual embeddings (e.g. Devlin et al., 2018) require large amounts of text, yet unavailable for languages like Alsatian. However, the NLP community is interested in improving the viability of these technologies for low-resource languages, and in developing corpora in such languages (cf. Bernhard et al., 2019). Increasing the availability of Alsatian electronic text contributes to this effort and is a test-bed for new technology developments.</p>
+            <p>Towards our goals, we selected a varied corpus mixing major and lesser-known works. We performed optical character recognition (OCR) on National Library digitizations,
+                <hi rend="sup">
+                    <note xml:id="ftn3" place="foot" n="6"> Numistral portal, BNU Strasbourg:
+                        <ptr target="https://numistral.fr/fr/theatre-alsacien"/>
+                    </note>
+                </hi> creating 25 TEI plays (300,000 tokens). OCR was also manually corrected for 28 further plays, awaiting TEI conversion. Bibliographical metadata were transcribed for 359 plays, and the settings and 
+                <hi rend="italic">dramatis personae</hi> for 257 plays (2,253 characters). We also annotated characters’ social variables when possible (gender, professional group, estimated social class, age). Synopses were written for 38 plays. TEI materials are publicly available
+                <hi rend="sup">
+                    <note xml:id="ftn4" place="foot" n="7">
+                        <ptr target="https://git.unistra.fr/methal/methal-sources"/>
+                    </note>
+                </hi> and accepted at the DraCor platform. Publication with a DOI on open repository Nakala was also carried out.
+                <hi rend="sup">
+                    <note xml:id="ftn5" place="foot" n="8"> Nakala set 
+                        <ptr target="https://nakala.fr/collection/10.34847/nkl.feb4r8j9"/>contains our data
+                    </note>
+                </hi>
+            </p>
+            <p>A corpus exploration interface exposes all data.
+                <hi rend="sup">
+                    <note xml:id="ftn7" place="foot" n="9">
+                        <ptr target="https://methal.eu/ui/"/>
+                    </note>
+                </hi> Reiter et al. (2017) warn that a graphical user interface does not always help literary research. However, our project intends to promote public interest in Alsatian beyond research, and we believe that a web interface is a suitable means. Our interface gives access to all plays with corrected OCR output, TEI-encoded or not, searching by author, author gender, dates or publisher. It also allows filtering the corpus based on the presence of characters with different social attributes (professional group, social class, gender, see Figure 1). We believe that such navigation workflows are an attractive way for the public to engage with the corpus and with the social picture it conveys, and will assess this hypothesis with a user sample. Character co-occurrence is also relevant for research on plot and for sociolinguistic studies on character speech representation according to social variables. 
+            </p>
+            <p>Regarding limitations, male authors predominate, even if we sought variety. There are only five female authors, with 14 plays. Deeper research in non-digitized collections should counter this bias. Note also that sexism and racism are present in the corpus, and, even if the interface targets the general public, it does not at this point provide means that would help non-specialists be aware of these biases and critically question such social representations. This is important future work.</p>
+            <p>In sum, we present a digital corpus of plays in Alsatian varieties with rich metadata, including character annotations for social variables. TEI encoding is ongoing; where not available, corrected OCR output is provided. This material helps CLS research on Alsatian theater, impossible before given lack of a corpus, and has shown potential to challenge existing knowledge on the tradition. The texts also have relevance for NLP research on low-resource languages. To promote interest in the corpus’ language varieties, a corpus exploration interface opens up these resources to the community.</p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/d9368413b0aaa1988e9eb76c910a6e09.png"/>
+                </figure>
+            </p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/094b5f8cf41346122fc50bfaa6b6cd87.png"/>
+                    <head>Character cooccurrences in cast list per professional group. 
+                        <hi rend="bold">Top:</hi> Plays by female authors. 
+                        <hi rend="bold">Bottom:</hi> Plays by male authors. Proportion of female characters with profession in cast list is 45.71% with female authors and 11.30% with male authors.
+                    </head>
+                </figure>
+            </p>
+            <p>Acknowledgements</p>
+            <p>We thank further project members, Dominique Huck and Pascale Erhart, for advice on corpus selection and other project aspects. We also thank all interns who contributed to corpus or interface development: Nathanaël Beiner, Andrew Briand, Lena Camillone, Hoda Chouaib, Audrey Deck, Barbara Hoff, Valentine Jung, Salomé Klein, Audrey Li-Thiao-Te, Kévin Michoud and Vedisha Toory.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Bernhard, D., Bras, M., Erhart, P., Ligozat, A.-L. and Vergez-Couret, M.</hi> (2019). Language Technologies for Regional Languages of France: The RESTAURE Project. 
+                        <hi rend="italic">International Conference Language Technologies for All (LT4All): Enabling Linguistic Diversity and Multilingualism Worldwide</hi>. Paris, France 
+                        <ptr target="https://hal.archives-ouvertes.fr/hal-02418928"/> (accessed 14 January 2020).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Cerf, E.</hi> (1972). Le théâtre alsacien de Strasbourg, miroir d’une société (1898-1939). 
+                        <hi rend="italic">Saisons d’Alsace</hi>(43).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Cerf, E.</hi> (1975). Les contes merveilleux du théâtre alsacien de Strasbourg. 
+                        <hi rend="italic">Revue des sciences sociales de la France de l’Est</hi>, 
+                        <hi rend="bold">4</hi>: 3–30.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Devlin, J., Chang, M.-W., Lee, K. and Toutanova, K.</hi> (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. 
+                        <hi rend="italic">ArXiv:1810.04805 [Cs]</hi>
+                        <ptr target="http://arxiv.org/abs/1810.04805"/> (accessed 6 December 2020).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fischer, F. and Börner, I.</hi> (2019). Programmable Corpora: Introducing DraCor, an Infrastructure for the Research on European Drama. 
+                        <hi rend="italic">Digital Humanities 2019</hi>. Utrecht, p. 5.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Fischer, F., Göbel, M., Kampkaspar, D. and Kittel, C.</hi> (2017). Network Dynamics, Plot Analysis: Approaching the Progressive Structuration of Literary Texts. 
+                        <hi rend="italic">Digital Humanities 2017</hi>. Montreal, pp. 437–41.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gall, J.-M.</hi> (1974). 
+                        <hi rend="italic">Le théâtre populaire alsacien au XIXe siècle</hi>. (Recherches et Documents XIX). Strasbourg: Istra.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Galleron, I. (ed).</hi> (2017). 
+                        <hi rend="italic">Revue d’Historiographie Du Théâtre, Numéro 4 :  Études Théâtrales et Humanités Numériques</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Huck, D.</hi> (1998). D’r Herr Maire (1898) de Gustave Stoskopf. Entre ethnologie et littérature : les Alsaciens en auto-représentation. 
+                        <hi rend="italic">Recherches Germaniques</hi>, 
+                        <hi rend="bold">28</hi>: 163–90.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Huck, D.</hi> (2005). Le «Théâtre Alsacien de Strasbourg» et la production dramaturgique de ses fondateurs (1898-1914). 
+                        <hi rend="italic">Culture et Histoire Des Spectacles En Alsace et En Lorraine : De l’annexion à La Décentralisation (1871-1946)</hi>. Peter Lang, pp. 198–222.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Huck, D., Bothorel-Witz, A. and Geiger-Jallet, A.</hi> (2007). L’Alsace et ses langues. Eléments de description d’une situation sociolinguistique en zone frontalière. In Abel, A., Stuflesser, M. and Voltmer, L. (eds), 
+                        <hi rend="italic">Aspects of Multilingualism in European Border Regions: Insights and Views from Alsace, Eastern Macedonia and Thrace, the Lublin Voivodeship and South Tyrol</hi>. Bozen/Bolzano: EURAC Research (Europäische Akademie / Accademia Europea / European Academy), pp. 13–101 
+                        <ptr target="http://ala.u-strasbg.fr/documents/Publication%20-%20L%27Alsace%20et%20ses%20langues.pdf"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hülsen, B. von</hi> (2003). 
+                        <hi rend="italic">Szenenwechsel im Elsass: Theater und Gesellschaft in Strassburg zwischen Deutschland und Frankreich 1890-1944</hi>. Leipziger Universitätsverlag.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Reiter, N.</hi> (2020). Möglichkeiten Quantitativer Dramenanalyse. 
+                        <hi rend="italic">Comparatio. Zeitschrift für Vergleichende Literaturwissenschaft</hi>, 
+                        <hi rend="bold">12</hi>(2): 39–52 doi:
+                        <ref target="https://doi.org/10.1007/978-3-476-04516-4_16">10.1007/978-3-476-04516-4_16</ref>. 
+                        <ptr target="https://comp.winter-verlag.de/article/COMP/2020/2/7"/> (accessed 7 December 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Reiter, N., Kuhn, J. and Willand, M.</hi> (2017). To GUI or not to GUI?. 
+                        <hi rend="italic">INFORMATIK 2017</hi>. Gesellschaft für Informatik 
+                        <ptr target="https://dl.gi.de/bitstream/handle/20.500.12116/3880/B14-8.pdf?sequence=1&amp;isAllowed=y"/> (accessed 13 November 2019).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ruiz Fabo, P. and Werner, C.</hi> (2021). Exploration du théâtre alsacien à travers ses listes de personnages pendant la période 1870-1940. 
+                        <hi rend="italic">Humanistica 2021</hi>. Rennes (online): Zenodo doi:
+                        <ref target="https://doi.org/10.5281/zenodo.4762733">10.5281/zenodo.4762733</ref>. 
+                        <ptr target="https://doi.org/10.5281/zenodo.4762732"/> (accessed 8 December 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schmidt, T., Dennerlein, K. and Wolff, C.</hi> (2021). Emotion Classification in German Plays with Transformer-based Language Models Pretrained on Historical and Contemporary Language. 
+                        <hi rend="italic">Proceedings of the 5th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature</hi>. Punta Cana, Dominican Republic (online): Association for Computational Linguistics, pp. 67–79 
+                        <ptr target="https://aclanthology.org/2021.latechclfl-1.8"/> (accessed 7 December 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Schöch, C.</hi> (2017). Topic Modeling Genre: An Exploration of French Classical and Enlightenment Drama. 
+                        <hi rend="italic">Digital Humanities Quarterly</hi>, 
+                        <hi rend="bold">011</hi>(2).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

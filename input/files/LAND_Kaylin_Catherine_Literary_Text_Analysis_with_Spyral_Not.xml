@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Literary Text Analysis with Spyral Notebooks, a Notebook Environment Companion to Voyant Tools</title>
+                <author>
+                    <persName>
+                        <surname>Land</surname>
+                        <forename>Kaylin Catherine</forename>
+                    </persName>
+                    <affiliation>McGill University</affiliation>
+                    <email>kaylin.land@mail.mcgill.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Rockwell</surname>
+                        <forename>Geoffrey</forename>
+                    </persName>
+                    <affiliation>University of Alberta</affiliation>
+                    <email>grockwel@ualberta.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>MacDonald</surname>
+                        <forename>Andrew</forename>
+                    </persName>
+                    <affiliation>McGill University</affiliation>
+                    <email>andrewjames.code@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tchoc</surname>
+                        <forename>Bennett Kuwan</forename>
+                    </persName>
+                    <affiliation>University of Alberta</affiliation>
+                    <email>tchoh@ualberta.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Damasah</surname>
+                        <forename>Elliot</forename>
+                    </persName>
+                    <affiliation>University of Alberta</affiliation>
+                    <email>damasah@ualberta.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-19T19:19:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>notebook environments</term>
+                    <term>literary text analysis</term>
+                    <term>JavaScript</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>Interface design</term>
+                    <term>development</term>
+                    <term>and analysis</term>
+                    <term>text mining and analysis</term>
+                    <term>Education/ pedagogy</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Digital literary text analysis is increasingly becoming an integral part of literary studies. However, many tools designed for performing such analysis remain inaccessible to researchers without significant coding and computing skills. Voyant Tools was designed in part to address this gap. Spyral Notebooks are an extension of Voyant Tools and allow researchers to expand upon their findings from Voyant in a notebook environment. Unlike other notebook environments, Spyral Notebooks are accessible without downloading any programs or advanced set-up. Spyral Notebooks are available in an entirely online format. To use Spyral Notebooks, one needs only a connection to the Internet. The notebooks are easily adaptable, shareable, and editable. </p>
+            <p style="text-align: left; ">Spyral is a notebook development environment that is integrated into Voyant Tools. Notebook environments can be thought of as both extensions of traditional research notebooks and as novel tools that integrate documentation, active analysis and presentation of results. At their core, notebooks are made up of three types of blocks or cells that a user can add or delete in a sequence. </p>
+            <list rend="numbered">
+                <item>There are text cells that can contain headings and other text elements found in word processors or browser editors (usually based in HTML) for typing unstructured text. Depending on the notebook environment, the text blocks can be simple or more sophisticated. Spyral Notebooks use HTML for text and offer an in- browser WYSIWYG HTML editor for the text blocks. </item>
+                <item>There are code cells where the user inputs code, be it Python, the Wolfram language used in Mathematica, or JavaScript, which is used in Spyral. The code cells can be run in sequence or individually as you debug your code. Code cells can contain as much or as little code as the user desires. </item>
+                <item>There are output cells which produce the output of the code you input in the associated code cell. It is important to recognize that the output of the code is dependent on what you have instructed the computer to do; that is, it is not a printout of the code cell but the results of running your code. You thus have to instruct the computer to print out the desired results. </item>
+            </list>
+            <p style="text-align: left; ">In our tutorial we introduce participants to Spyral Notebooks. We illustrate how to create a corpus for textual analysis from Voyant Tools or directly in Spyral Notebooks. After walking through the basic mechanisms for using Spyral Notebooks including saving, editing, and sharing notebooks, we move on to more specific features available in Spyral. Participants will learn how to enhance the capabilities of Voyant and go deeper with their textual analysis using Spyral. Finally we provide participants with several tutorial notebooks designed to highlight some of Spyral’s advanced features such as categories for use in sentiment analysis. </p>
+            <p style="text-align: left; ">Spyral Notebooks are a welcome addition to the field of digital humanities as they provide an accessible notebook environment specifically designed for literary text analysis. Spyral Notebooks are thoughtfully designed to serve researchers with limited coding skills who want to take their analysis from Voyant one step further. We especially envisage Spyral proving useful for digital humanities instructors. Spyral provides a useful platform for student work, allowing students to embed their analysis from Voyant, perform more complex analysis using JavaScript, and annotate their code with their thought processes.</p>
+        </body>
+    </text>
+</TEI>

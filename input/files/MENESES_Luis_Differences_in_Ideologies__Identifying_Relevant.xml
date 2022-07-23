@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Differences in Ideologies: Identifying Relevant Topics in Ecuadorian Presidential Speeches from 2007 – 2022</title>
+                <author>
+                    <persName>
+                        <surname>Meneses</surname>
+                        <forename>Luis</forename>
+                    </persName>
+                    <affiliation>Vancouver Island University, Canada</affiliation>
+                    <email>ldmm@uvic.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Presidential speeches</term>
+                    <term>topic modeling</term>
+                    <term>unavailable corpus</term>
+                    <term>Ecuador</term>
+                    <term>Latin America</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>South America</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>digital archiving</term>
+                    <term>text mining and analysis</term>
+                    <term>Chicano/a/x</term>
+                    <term>Latino/a/x studies</term>
+                    <term>Computer science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>La República del Ecuador is a small country in South America. It is 283561 km2, making it 35 times smaller than Canada. It has a population of approximately 17 million people. The official language is Spanish, and the country uses the US Dollar as their official currency. Ecuador’s economy is highly dependent on commodities, namely petroleum and agricultural products. Ecuador has a unique ecological heritage, hosting many endangered plants and animals, including those found in the Galápagos Islands.</p>
+            <p>Ecuador is currently in a state of political transition. After a series of ousted governments in the early 2000s, Rafael Correa was elected as the President of Ecuador from 15 January 2007 to 24 May 2017. Correa’s political ideology was labeled as the “Socialism of the 21st Century,” and it was heavily influenced by Cuba’s socialism and by Fidel Castro’s style of government as Prime Minister and President from 1959 to 2008. Correa’s presidency was characterized by a difficult relationship with the press and was not shy of controversies. In 2020, Correa was found guilty of bribery and sentenced to serve eight years in prison. This sentence has not been executed on Correa because he left Ecuador right after his mandate ended. He is currently living in Belgium.</p>
+            <p>Correa was immediately succeeded in 2017 by Lenin Moreno, a member of his political party and one of his former Vice Presidents. As it can be expected, Moreno tried to distance himself from Correa with different policies on journalism, freedom of speech, and tackling corruption. However, the political undercurrent of Moreno’s government was very similar to the one established by Correa. A political departure allegedly took place when Guillermo Lasso assumed the presidency in 2021 and distanced his government from other socialist-influenced regimes such as Cuba and Venezuela.</p>
+            <p>In this paper, I propose to continue the exploratory analysis that I have presented in previous years at the Digital Humanities Summer Institute Conference &amp; Colloquium 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"Lu2B6ez6","properties":{"formattedCitation":"(Meneses, 2017)","plainCitation":"(Meneses, 2017)","noteIndex":0},"citationItems":[{"id":931,"uris":["http://zotero.org/users/283672/items/V3DKXAN4"],"itemData":{"id":931,"type":"speech","event":"Digital Humanities Summer Institute 2017 Conference & Colloquium","event-place":"Victoria, BC, Canada","publisher-place":"Victoria, BC, Canada","title":"An analysis of the political environment in Ecuador through Presidential discourses","author":[{"family":"Meneses","given":"Luis"}],"issued":{"date-parts":[["2017",6,5]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Meneses, 2017) 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"Uwf1O7Rn","properties":{"formattedCitation":"(Meneses, 2018)","plainCitation":"(Meneses, 2018)","noteIndex":0},"citationItems":[{"id":932,"uris":["http://zotero.org/users/283672/items/KDQE7DK8"],"itemData":{"id":932,"type":"speech","event":"Digital Humanities Summer Institute 2018 Conference & Colloquium","event-place":"Victoria, BC, Canada","publisher-place":"Victoria, BC, Canada","title":"Faraway, so close: Has the political environment really changed in Ecuador?","author":[{"family":"Meneses","given":"Luis"}],"issued":{"date-parts":[["2018",6,4]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Meneses, 2018) 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"KEZDR8pN","properties":{"formattedCitation":"(Meneses, 2019)","plainCitation":"(Meneses, 2019)","noteIndex":0},"citationItems":[{"id":933,"uris":["http://zotero.org/users/283672/items/C8YN8L2Q"],"itemData":{"id":933,"type":"speech","event":"Digital Humanities Summer Institute 2019 Conference & Colloquium","event-place":"Victoria, BC, Canada","publisher-place":"Victoria, BC, Canada","title":"Identifying Changes in the Political Environment in Ecuador","author":[{"family":"Meneses","given":"Luis"}],"issued":{"date-parts":[["2019",6,2]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Meneses, 2019) 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"40w5HGWP","properties":{"formattedCitation":"(Meneses, 2020)","plainCitation":"(Meneses, 2020)","noteIndex":0},"citationItems":[{"id":934,"uris":["http://zotero.org/users/283672/items/IQLWQV5K"],"itemData":{"id":934,"type":"speech","event":"Digital Humanities Summer Institute 2020 Conference & Colloquium","event-place":"Victoria, BC, Canada","publisher-place":"Victoria, BC, Canada","title":"Identifying Relevant Topics in Presidential Speeches","author":[{"family":"Meneses","given":"Luis"}],"issued":{"date-parts":[["2020",6,1]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Meneses, 2020) 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"7TC3neh6","properties":{"formattedCitation":"(Meneses, 2021)","plainCitation":"(Meneses, 2021)","noteIndex":0},"citationItems":[{"id":935,"uris":["http://zotero.org/users/283672/items/ERVEH78P"],"itemData":{"id":935,"type":"speech","event":"Digital Humanities Summer Institute 2021 Conference & Colloquium","event-place":"Victoria, BC, Canada","publisher-place":"Victoria, BC, Canada","title":"Viva la Revolución: Identifying Relevant Topics in Ecuadorian Presidential Speeches from 2007 – 2021","author":[{"family":"Meneses","given":"Luis"}],"issued":{"date-parts":[["2021",6,2]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Meneses, 2021). More specifically, I propose to analyze and identify the common topics in Ecuadorian Presidential speeches from fourteen years (between 2007 and 2022) by drawing inferences over those years using topic modeling. I will also contrast the Ecuadorian speeches with speeches given by Fidel Castro, whose ideology has had great influence in Ecuador and Latin America. For this purpose, I have harvested the speeches given by Correa, Moreno, Lasso, and Castro over time. These speeches were published online by the Ecuadorian Presidency 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"EEYD8ofK","properties":{"formattedCitation":"(Presidencia de La Rep\\uc0\\u250{}blica Del Ecuador)","plainCitation":"(Presidencia de La República Del Ecuador)","noteIndex":0},"citationItems":[{"id":845,"uris":["http://zotero.org/users/283672/items/KLX4JV2T"],"itemData":{"id":845,"type":"webpage","title":"Presidencia de la República del Ecuador » Discursos","URL":"https://www.presidencia.gob.ec/discursos/","author":[{"family":"Presidencia de La República Del Ecuador","given":""}],"accessed":{"date-parts":[["2020",10,15]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Presidencia de La República Del Ecuador) and by the Cuban Government 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"mOCvgcAj","properties":{"formattedCitation":"(Rep\\uc0\\u250{}blica de Cuba)","plainCitation":"(República de Cuba)","noteIndex":0},"citationItems":[{"id":818,"uris":["http://zotero.org/users/283672/items/LAP85VVX"],"itemData":{"id":818,"type":"webpage","title":"Discursos e Intervenciones del Comandante en Jefe Fidel Castro Ruz","URL":"http://www.cuba.cu/gobierno/discursos/","author":[{"family":"República de Cuba","given":""}],"accessed":{"date-parts":[["2020",10,1]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(República de Cuba). I will address three research questions in this paper. First, as the three Ecuadorian Presidents in those years, how far apart are the political ideologies of Correa, Moreno, and Lasso? Second, can we identify any overlapping topics in their ideologies? And finally, are the ideologies of Correa, Moreno, and Lasso similar to the political ideals of Castro?
+            </p>
+            <p>Furthermore, the Ecuadorian Presidency has systematically removed all the discourses from previous presidents, which means that most of the assets in the document corpus that I analyzed and referenced in this paper have been taken offline. Thus, this proposal contributes methods that can be used to explore sensitive situations where a document corpus is not readily available, and these situations are becoming increasingly relevant in political scenarios. The captures stored in the Internet Archive show the different sets of discourses available on the website of the Ecuadorian Presidency in 2017, 2018, and 2021 
+                <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"dDD2VD3Y","properties":{"formattedCitation":"(Internet Archive, 2019)","plainCitation":"(Internet Archive, 2019)","noteIndex":0},"citationItems":[{"id":936,"uris":["http://zotero.org/users/283672/items/WA785WX9"],"itemData":{"id":936,"type":"webpage","title":"Presidencia de la República del Ecuador » Discursos","URL":"https://web.archive.org/web/20190601011217/https://www.presidencia.gob.ec/discursos/","author":[{"family":"Internet Archive","given":""}],"accessed":{"date-parts":[["2022",4,20]]},"issued":{"date-parts":[["2019",6,1]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Internet Archive, 2019).
+            </p>
+            <p>My analysis using topic modeling has produced two core results. First, it has outlined document clusters that are clearly delimited with multiple intersecting topics; and second, it showed that increasing the topic modeling iterations increases the prominence of the overlap between the topics. Finally, the goals of this proposal are to engage in an analysis of a document corpus, identify the common trends among the four sets of discourses, and emphasize the strengths of our field, all while addressing how my research questions fit into the interdisciplinary conversation of the digital humanities.</p>
+        </body>
+    </text>
+</TEI>

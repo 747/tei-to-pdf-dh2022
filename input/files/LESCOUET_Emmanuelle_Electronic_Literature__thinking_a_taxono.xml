@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Electronic Literature: thinking a taxonomy</title>
+                <author>
+                    <persName>
+                        <surname>Lescouet</surname>
+                        <forename>Emmanuelle</forename>
+                    </persName>
+                    <affiliation>Université de Montréal, Canada</affiliation>
+                    <email>emmanuelle.lescouet@umontreal.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vitali-Rosati</surname>
+                        <forename>Marcello</forename>
+                    </persName>
+                    <affiliation>Université de Montréal, Canada</affiliation>
+                    <email>marcello.vitali.rosati@umontreal.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>reading</term>
+                    <term>electronic literature</term>
+                    <term>taxonomy</term>
+                    <term>open science</term>
+                    <term>game study</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>electronic literature production and analysis</term>
+                    <term>mixed-media analysis</term>
+                    <term>Literary studies</term>
+                    <term>Media studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Documenting the digital literature represents a research challenge (Vitali-Rosati, 2017) because it requests the institution of modularity in digital taxonomies, on a field in constant evolution (Hayles, 2007). The fast evolution of media and their global diffusion give access to many technologies and tools. The latter brings vast diversity as much on the practices of reading as on physical manipulations: the digital literature covers at the same time network literature, interactive fictions, digital books, virtual reality experiments or notifictions (Bouchardon, 2009 and 2012; Lescouet, 2021).</p>
+            <p>The very existence and dissemination of literature build a trans-platform, inclusive and plastic culture (Ryan, 2015). It challenges researchers to find and identify artworks. These reading’s materialities are evolving beyond the fictional ‘magic circle’ often took in consideration in reading theories (Huizinga 1938; Picard 1986; Mace, 2011). Hyperconnection overlaps with contemporary tools and creates geographical and geolocalized fragmentation, as well as temporal fragmentation. This allows a unique user immersion, that is up to us to document in its current and permanent developments.</p>
+            <p>These creations find their audience in particular online communities. For this reason, they could be difficult to find and to present to a larger public, academic or not. However, the institutionalization of these artworks and their qualification allow us to study them: they become analyzable because they belong to an academic environment. Therefore, we must provide new ways to talk about them. It is imperative to establish a common vocabulary (see the early 2000s CELL Project research on this issue), a common language, to unify an approach and a documentation between the existing databases. It is at the same time a necessity and an obstacle in the conservation of the particularities of each project.</p>
+            <p>Nonetheless, we observe common trends as well as common descriptors. This recognition has led us to build a thesaurus within the inter-university partnership
+                <hi rend="apple-converted-space"> </hi>
+                <hi rend="italic">Littérature Québécoise Mobile</hi>. Starting from there, we have then established collaborative vocabularies in OpenTheso. The urgency of working together to establish definitions and hierarchies of vocabularies requires the institution of equitable governance and a tool to allow discussions and linkage between artworks.
+            </p>
+            <p>Building a thesaurus was therefore imperative. We must build an ontology in the technical sense of the term, which was structured and shareable. The descriptors had to be included, structured, editable and manipulable, but above all they had to be linkable to the descriptive files of the artworks studied. The choice of SKOS appeared obvious. Moreover, it was necessary to choose a tool that would allow to manage and store the permanent id of the terms to stabilize the descriptors. Opentheso allows this. Created in 2005 by the Federation and Resources on Antiquity, it is now part of the tools hosted by Huma-Num.</p>
+            <p>This proposal, without being exhaustive, focuses on three main aspects of this documentation:</p>
+            <p>The technical aspects and reading supports of the artworks in the corpus; The possible interactions between the reader and the artwork established through the gestures of readings or through the experimentation implemented, in duo with the principles of the artwork’s internal organization; The genres and literary forms convened, in the diversity and the flexibility that such a position implies.</p>
+            <p>The aim of this documentation for digital artworks is to understand the close interaction between them and their influence on the reception of the artworks. The influence of the techniques concerning the presence and the incorporation of the body-reader in the propositions allow us to study the immersion and the temporalized lectorial propositions or the disciplinary borders between the different digital artistic disciplines, notably between video game and literature.</p>
+            <p>To do so, we will study in detail how such taxonomies could be set up and how the collaborative work around them is organized. We will then confront the studied fields with the real corpus (on the questions of ‘corpus place’, see Emerit, 2016) in order to consider the limitations and constraints encountered.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Bouchardon, S. (2009) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Littérature numérique : le récit interactif</hi>
+                        . Paris: Hermès Science.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Bouchardon, S. (2012) ‘Du récit hypertextuel au récit interactif’, </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Revue de la BNF</hi>
+                        , (42), pp. 13–20.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Collectif (no date) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">CELL Project</hi>
+                        . Available at: https://cellproject.net/ (Accessed: 19 October 2020).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Emerit, L. (2016) ‘La notion de lieu de corpus : un nouvel outil pour l’étude des terrains numériques en linguistique’, </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Corela</hi>
+                        , 14(1). doi:https://doi.org/10.4000/corela.4594.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Hayles, K.N. (2007) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Electronic literature: what is it?</hi>
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve"> Available at: https://eliterature.org/pad/elp.html (Accessed: 2 April 2019).</hi>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Huizinga, J. (1938) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Homo ludens. Essai sur la fonction sociale du jeu</hi>
+                        . Translated by C. Sérésia. Paris: Gallimard (Les Essais).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Lescouet, E. (2021) ‘La notifiction : ancrer le livre dans le quotidien’, in </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Études du livre au XXIe siècle</hi>
+                        . Québec, Canada. Available at: https://projets.ex-situ.info/etudesdulivre21/liv5/lescouet/ (Accessed: 15 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Macé, M. (2011) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Façons de lire, manières d’être</hi>
+                        . Paris: Gallimard (NRF essais).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Picard, M. (1986) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">La lecture comme jeu : essai sur la littérature</hi>
+                        . Paris: Les Éditions de Minuit (Critique).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Ryan, M.-L. (2015) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Narrative as Virtual Reality 2</hi>
+                        . Baltimore: Johns Hopkins UP.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">Vitali-Rosati, M. (2018) </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">La littérature numérique francophone : enjeux théoriques et pratiques pour l’identification d’un corpus</hi>
+                        <hi style="font-family:Helvetica;font-size:12pt" xml:space="preserve">, </hi>
+                        <hi rend="italic" style="font-family:Helvetica;font-size:12pt">Culture numérique. Pour une philosophie du numérique</hi>
+                        . Available at: http://blog.sens-public.org/marcellovitalirosati/la-litterature-numerique-francophone-enjeux-theoriques-et-pratiques-pour-lidentification-dun-corpus/ (Accessed: 22 November 2021).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

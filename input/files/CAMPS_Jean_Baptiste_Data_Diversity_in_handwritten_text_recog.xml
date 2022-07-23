@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Data Diversity in handwritten text recognition: challenge or opportunity?</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Camps</surname>
+                        <forename>Jean-Baptiste</forename>
+                    </persName>
+                    <affiliation>École nationale des chartes | Université PSL, France</affiliation>
+                    <email>jean-baptiste.camps@chartes.psl.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pinche</surname>
+                        <forename>Ariane</forename>
+                    </persName>
+                    <affiliation>École nationale des chartes | Université PSL, France</affiliation>
+                    <email>ariane.pinche@chartes.psl.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Stutzmann</surname>
+                        <forename>Dominique</forename>
+                    </persName>
+                    <affiliation>Institut de recherche et d'histoire des textes/CNRS</affiliation>
+                    <email>dominique.stutzmann@irht.cnrs.fr</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vernet</surname>
+                        <forename>Marguerite</forename>
+                    </persName>
+                    <affiliation>École nationale des chartes | Université PSL, France</affiliation>
+                    <email>marguerite.vernet@chartes.psl.eu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vidal-Gorène</surname>
+                        <forename>Chahan</forename>
+                    </persName>
+                    <affiliation>École nationale des chartes | Université PSL, France</affiliation>
+                    <email>chahan.vidal-gorene@chartes.psl.eu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-30T11:49:14.639542090</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>handwritten text recognition</term>
+                    <term>medieval manuscripts</term>
+                    <term>machine learning</term>
+                    <term>natural language processing</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>optical character recognition and handwriting recognition</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor type="bookmark-start" xml:id="id_introduction"/>Introduction
+                    <ptr type="bookmark-end" target="#id_introduction"/>
+                </head>
+                <p>In this paper, we wish to show approaches in handling diversity in larger collections of training data for text acquisition pipelines, specifically handwritten text recognition for medieval manuscripts in Latin and French. Present throughout medieval Europe, Latin is one, if not the most used written language of the time on this continent, while French has known from a relatively early date (around the 12th century judging from preserved manuscripts) a vernacular production that soon became one of the most prominent of Western Europe, influencing the written culture of its neighbours from its central position. Combined, they provide a case study whose diversity and general scope could, we hope, allow to provide results with broader applicability, even beyond medieval Western manuscripts.</p>
+                <p>Heterogeneity or diversity in the collections can result from intrinsic features (e.g. linguistic, palaeographic, diachronic variation in the sources), but also from extrinsic features (aim and provenance of transcriptions, idiosyncrasies of transcribers…). We propose to approach both types of diversity by reusing several open data sets from various research projects in diverse fields and involving many collaborators. We add a double focus, linguistic (Latin vs. French manuscripts) and graphic (abbreviated vs. normalised transcriptions). We hope to be able to overcome, to some extent, the issue of linguistic diversity and propose a common, modular pipeline for different languages, related but different in their inner structure and declension mechanisms.</p>
+                <p>When, on the one hand, recent studies focus on “hyperdiplomatic” digital editions to study the production of specific items, the implementation of natural language processing and text mining is commonly based on a normalised text. Instead of aiming at defining a single universal translinguistic transcriptional standard to merge all existing standards – an utopic endeavour, and perhaps even not desirable –, and instead of designing a unified pipeline supported by dedicated libraries (e.g. image &gt; hyperdiplomatic &gt; normalised &gt; lemmatised+POS-tagged &gt; critical text) to constrain all existing editions, we applied a more modular approach to reuse and pool datasets to train multiple models and design paths more fitted to the variety of goals encountered in medieval studies.</p>
+                <p>In this attempt, we will strive to answer more specifically the following questions:</p>
+                <list type="ordered">
+                    <item>To what extent can we (and should we) mutualise HTR training material between preexisting datasets and even related languages? (and is it worth the effort?)</item>
+                    <item>Are approaches that decompose image to text prediction and further linguistic normalisations (abbreviation expansion for instance) better performing for that goal than straightforward “image to normalised text” approaches?</item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor type="bookmark-start" xml:id="id_diversity-in-our-corpus"/>Diversity in our corpus
+                    <ptr type="bookmark-end" target="#id_diversity-in-our-corpus"/>
+                </head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>
+                        <anchor type="bookmark-start" xml:id="id_extrinsic-diversity-variation-in-data-production"/>Extrinsic diversity: variation in data production
+                        <ptr type="bookmark-end" target="#id_extrinsic-diversity-variation-in-data-production"/>
+                    </head>
+                    <p>The most obvious source of diversity is artificial, in the sense that it is the result of the production of the data (and particularly of transcription choices) and not of the sources itself.</p>
+                    <p>For this research three macro-datasets, themselves mostly aggregates of smaller micro-datasets, have been used, one French and two Latin.</p>
+                    <p>The French dataset is Cremma-medieval, composed of 17431 lines from eleven Old French manuscripts written between the 13
+                        <hi rend="sup">th</hi> and 14
+                        <hi rend="sup">th</hi> centuries (Table 1). It is made from pre-existing transcriptions, and sample size is very different from one source manuscript to the other. A graphemic
+                        <note xml:id="ftn1" place="foot" n="1"> We use the terminology graphemic (
+                            <hi rend="italic">graphématique</hi>) and graphetic (
+                            <hi rend="italic">allographétique</hi>) following (Stuzmann 2011).
+                        </note> transcription method has been chosen to maintain a many to one mapping between signs in the source and the transcription (abbreviations and their expansions are both kept, 
+                        <hi rend="italic">u/v</hi> or 
+                        <hi rend="italic">i/j</hi> are not dissimilated), but allographs are normalised (
+                        <hi rend="italic">e.g</hi>., round and long 
+                        <hi rend="italic">s</hi> are both transcribed 
+                        <hi rend="italic">s</hi>). Finally, spaces are not homogeneously represented in the ground truth text annotation, with transcribers reproducing the manuscript spacing while others are using lexical spaces. It must be stressed that spaces are the most important source of errors in medieval HTR models (see for instance the model Bicerin, where spaces represent 33.9% of errors Pinche 2021). In this cremma-medieval macro-dataset, several transcriptions from different transcribers, coming from different projects, have been collected.
+                    </p>
+                    <p>This diversity is also very present in the Oriflamms macro-dataset, containing 120 111 lines from no less than 779 manuscripts (Table 1). This dataset has been composed along several different projects over a substantial interval of time, and is a mix of aligned preexisting normalised editions (without abbreviations) and graphemic transcriptions (including abbreviations and their expansion). It is composed of both French, Latin and bilingual texts.</p>
+                    <table rend="frame" xml:id="Table1">
+                        <head>Table 1: Composition of the cremma-medieval, Oriflamms and st-victor macro-datasets [For this abstract, only corpora in bold have been used] Table 2: Distribution of corpora into the four main datasets Table 3: Facsimile with ground truth abbreviated and extended and abbreviated and extended predictions from an extract of latin corpus of St Victor (BnF, Latin 14525, fol. 41va). Table 3: Facsimile with ground truth abbreviated and extended and abbreviated and extended predictions from an extract of latin corpus of St Victor. </head>
+                        <row role="label">
+                            <cell rend="bold">Corpus</cell>
+                            <cell rend="bold">Editors</cell>
+                            <cell rend="end bold">Manuscripts</cell>
+                            <cell rend="end bold">Pages</cell>
+                            <cell rend="end bold">Lines</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell rend="bold">Otinel</cell>
+                            <cell>Camps</cell>
+                            <cell rend="end">2</cell>
+                            <cell rend="end">75</cell>
+                            <cell rend="end bold">13568</cell>
+                        </row>
+                        <row>
+                            <cell rend="bold">Wauchier</cell>
+                            <cell>Pinche</cell>
+                            <cell rend="end">1</cell>
+                            <cell rend="end">49</cell>
+                            <cell rend="end bold">6148</cell>
+                        </row>
+                        <row>
+                            <cell>Maritem</cell>
+                            <cell>Mariotti</cell>
+                            <cell rend="end">1</cell>
+                            <cell rend="end">18</cell>
+                            <cell rend="end">1026</cell>
+                        </row>
+                        <row>
+                            <cell>CremmaLab</cell>
+                            <cell>Pinche et al.</cell>
+                            <cell rend="end">7</cell>
+                            <cell rend="end">55</cell>
+                            <cell rend="end">13568</cell>
+                        </row>
+                        <row>
+                            <cell>—</cell>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell rend="italic">Total</cell>
+                            <cell/>
+                            <cell rend="end">11</cell>
+                            <cell rend="end">149</cell>
+                            <cell rend="end">17431</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Reg.chancell. Poitou</cell>
+                            <cell>Guérin</cell>
+                            <cell rend="end">  200</cell>
+                            <cell rend="end">1217</cell>
+                            <cell rend="end">30015</cell>
+                        </row>
+                        <row>
+                            <cell>Reg.chancell. Paris</cell>
+                            <cell>Viard</cell>
+                            <cell rend="end">2</cell>
+                            <cell rend="end">29</cell>
+                            <cell rend="end">474</cell>
+                        </row>
+                        <row>
+                            <cell>Morchesne</cell>
+                            <cell>Guyotjeannin et al.</cell>
+                            <cell rend="end">1</cell>
+                            <cell rend="end">189</cell>
+                            <cell rend="end">10394</cell>
+                        </row>
+                        <row>
+                            <cell>Cartulaire de Nesle</cell>
+                            <cell>Hélary</cell>
+                            <cell rend="end">1</cell>
+                            <cell rend="end">117</cell>
+                            <cell rend="end">3899</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell rend="bold">Chartes Fontenay</cell>
+                            <cell>Stutzmann</cell>
+                            <cell rend="end">104</cell>
+                            <cell rend="end">104</cell>
+                            <cell rend="end bold">1384</cell>
+                        </row>
+                        <row>
+                            <cell>Psautiers</cell>
+                            <cell>Oriflamms</cell>
+                            <cell rend="end">27</cell>
+                            <cell rend="end">48</cell>
+                            <cell rend="end">5793</cell>
+                        </row>
+                        <row>
+                            <cell rend="bold">PsautierIMS</cell>
+                            <cell>Stutzmann</cell>
+                            <cell rend="end">48</cell>
+                            <cell rend="end">132</cell>
+                            <cell rend="end bold">3145</cell>
+                        </row>
+                        <row>
+                            <cell rend="bold">MSS dat. lat.</cell>
+                            <cell>Oriflamms / 
+                                <hi rend="smallcaps">ecmen</hi>
+                            </cell>
+                            <cell rend="end">101</cell>
+                            <cell rend="end">101</cell>
+                            <cell rend="end bold">2299</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell>Queste del saint Graal</cell>
+                            <cell>Marchello-Nizia, Lavrentiev</cell>
+                            <cell rend="end">1</cell>
+                            <cell rend="end">130</cell>
+                            <cell rend="end">10725</cell>
+                        </row>
+                        <row>
+                            <cell rend="bold">BnF fonds fr.</cell>
+                            <cell rend="smallcaps">ecmen</cell>
+                            <cell rend="end">159</cell>
+                            <cell rend="end">189</cell>
+                            <cell rend="end">13510</cell>
+                        </row>
+                        <row>
+                            <cell>Mss dat. fr.</cell>
+                            <cell rend="smallcaps">ecmen</cell>
+                            <cell rend="end">45</cell>
+                            <cell rend="end">55</cell>
+                            <cell rend="end">3355</cell>
+                        </row>
+                        <row>
+                            <cell>Album XIIIe.</cell>
+                            <cell>Careri, et al.+
+                                <hi rend="smallcaps">ecmen</hi>
+                            </cell>
+                            <cell rend="end">52</cell>
+                            <cell rend="end">52</cell>
+                            <cell rend="end">1992</cell>
+                        </row>
+                        <row>
+                            <cell>Légende dorée</cell>
+                            <cell>
+                                <hi rend="smallcaps">irht</hi>+
+                                <hi rend="smallcaps">ecmen</hi>
+                            </cell>
+                            <cell rend="end">18</cell>
+                            <cell rend="end">679</cell>
+                            <cell rend="end">31742</cell>
+                        </row>
+                        <row>
+                            <cell>Pèlerinage</cell>
+                            <cell>
+                                <hi rend="smallcaps">opvs</hi>+
+                                <hi rend="smallcaps">ecmen</hi>
+                            </cell>
+                            <cell rend="end">20</cell>
+                            <cell rend="end">56</cell>
+                            <cell rend="end">1384</cell>
+                        </row>
+                        <row>
+                            <cell>—</cell>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell rend="italic">Total</cell>
+                            <cell/>
+                            <cell rend="end">779</cell>
+                            <cell rend="end">3098</cell>
+                            <cell rend="end">120111</cell>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                            <cell/>
+                        </row>
+                        <row>
+                            <cell rend="bold">Saint-Victor</cell>
+                            <cell>Vernet</cell>
+                            <cell rend="end">2</cell>
+                            <cell rend="end">54</cell>
+                            <cell rend="end bold">12596</cell>
+                        </row>
+                    </table>
+                    <p>The last macro-dataset Saint-Victor is the most homogeneous, composed of transcriptions from two Victorine mss, i.e., BnF latin 14588 and BnF latin 14525 written by no less than twelve scribes at the end of the 12
+                        <hi rend="sup">th</hi> century and the first part of the 13
+                        <hi rend="sup">th</hi> century (Table 1). Both mss have the same type of writing. It has been created during a master’s thesis. It is divided into two sub-corpus. A first corpus is transcribed without abbreviations. The transcription uses lexical spaces. It is the most important of the two sub-corpus with 10736 lines. The second sub-corpus consists of a small part of the first (1860 lines), which has been transcribed with abbreviations.
+                    </p>
+                    <p>Early tests have shown the tremendous variations in the choice of signs used to transcribed medieval graphemes, in particular abbreviations, including MUFI and out of MUFI characters. For example, the common abbreviative marker has been transcribed alternatively as U+0303 COMBINING TILDE, U+0304 COMBINING MACRON, U+0305 COMBINING OVERLINE, F00A COMBINING HIGH MACRON WITH FIXED HEIGHT (PART-WIDTH), and even, in composition, U+1EBD LATIN SMALL LETTER E WITH TILDE, U+0113 LATIN SMALL LETTER E WITH MACRON, etc. Even when using MUFI (Medieval Unicode Font Initiative), different types of Tironian 
+                        <hi rend="italic">et</hi> or 
+                        <hi rend="italic">p</hi> flourish can be used. To facilitate machine learning, a conversion table was used to apply a first level of normalisation, and to reduce the 262 preexisting character class to around 30 (Clérice and Pinche 2021).
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>
+                        <anchor type="bookmark-start" xml:id="id_intrinsic-diversity-variation-in-language-script-and-scribal-practice"/>Intrinsic diversity: variation in language, script and scribal practice
+                        <ptr type="bookmark-end" target="#id_intrinsic-diversity-variation-in-language-script-and-scribal-practice"/>
+                    </head>
+                    <p>Diversity is also due to linguistic differences inside the corpus, with a main distinction between Latin and French texts, the latter in a variety of regional 
+                        <hi rend="italic">scriptae</hi>, including Anglo-French, Eastern (Lorrain) and Picard, and also diachronic variation, from 12 to 14th century.
+                    </p>
+                    <p>The variety is also in the writing styles. Copyists used different script types according to their place and date of activity (e.g. 
+                        <hi rend="italic">praegothica</hi>, 
+                        <hi rend="italic">textualis</hi>, 
+                        <hi rend="italic">cursiva</hi>, 
+                        <hi rend="italic">semitextualis </hi>
+                        <note xml:id="ftn2" place="foot" n="2"> For classification criteria and the lack of consensus among palaeographers, see (Derolez 2003; Stutzmann, Tensmeyer, and Christlein 2020).</note>). Some script types were used preferentially according to the genre of the text under copy (e.g. liturgy, literature, diplomatic and pragmatic texts). Conversely, textual genres could influence some specific scribal practices (layout, abbreviations, etc.).
+                    </p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor type="bookmark-start" xml:id="id_pipeline-description"/>Pipeline description
+                    <ptr type="bookmark-end" target="#id_pipeline-description"/>
+                </head>
+                <p>Our aim is to evaluate the impact of data heterogeneity to build models for Latin and medieval French. Our corpus contains two levels of heterogeneity: it contains documents in one of two different languages (including internally some diatopic variation)
+                    <note xml:id="ftn3" place="foot" n="3"> We excluded documents with mixed contents (i.e., parts in French intertwined with parts in Latin), except for the ECMEN corpus which only contains small quotations or single words in Latin.</note>, and variety of specifications for transcriptions. Each sentence of our corpus includes both abbreviated forms and expanded forms of words, thanks to the original encoding of the editions, that followed the Guidelines of the Text Encoding Initiative, and used a combination of &lt;choice&gt;, &lt;abbr&gt; and &lt;expan&gt; (TEI Consortium 2022).
+                </p>
+                <p>Corpus have endured varying types of normalisations, sometimes contradictory (combined or decombined, etc.), to smooth discrepancies between transcriptions. The normalisation step follows this pipeline:</p>
+                <list type="ordered">
+                    <item>lowercasing;</item>
+                    <item>normalising unicode (NFKD);</item>
+                    <item>making substitutions based on an equivalence table and the use of “chocoMUFIn” (Clérice and Pinche 2021). In particular,</item>
+                </list>
+                <list type="unordered">
+                    <item>
+                        <list type="unordered">
+                            <item>normalisation of allographs (hypernormalised);</item>
+                            <item>suppression of ramist distinctions (
+                                <hi rend="italic">u</hi>/
+                                <hi rend="italic">v</hi> and 
+                                <hi rend="italic">i</hi>/
+                                <hi rend="italic">j</hi>);
+                            </item>
+                            <item>removal of punctuation;</item>
+                            <item>suppression of editorial marks (diacritics, apostrophes, cedillas, …).</item>
+                        </list>
+                    </item>
+                </list>
+                <p>We have divided our corpus into four training datasets to perform our evaluations and see potential benefits of fine-tuning for such an approach, on Latin or French texts and on abbreviated or expanded texts. The distribution of each corpus is described in table 2.</p>
+                <table rend="frame" xml:id="Table2">
+                    <head>Table 2: Distribution of corpora into the four main datasets Table 3: Facsimile with ground truth abbreviated and extended and abbreviated and extended predictions from an extract of latin corpus of St Victor (BnF, Latin 14525, fol. 41va). Table 3: Facsimile with ground truth abbreviated and extended and abbreviated and extended predictions from an extract of latin corpus of St Victor. </head>
+                    <row role="label">
+                        <cell/>
+                        <cell rend="bold">Abbr (Lines)</cell>
+                        <cell rend="bold">Exp (Lines)</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell rend="bold">TOTAL : 8,528</cell>
+                        <cell rend="bold">TOTAL :17,404</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell>Fontenay : 1,365</cell>
+                        <cell>Fontenay : 1,365</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell>MsDat : 2,217</cell>
+                        <cell>MsDat : 2,217</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell>PsautierIMS : 3,086</cell>
+                        <cell>PsautierIMS : 3,086</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell>StVictorLite : 1,860</cell>
+                        <cell>StVictorFull : 10,736</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell rend="bold">TOTAL : 19,532</cell>
+                        <cell rend="bold">TOTAL : 19,530</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell>
+                            <hi rend="smallcaps">ecmen</hi> : 9,831
+                        </cell>
+                        <cell>
+                            <hi rend="smallcaps">ecmen</hi> : 9,831
+                        </cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell>otinel bodmer : 1,977</cell>
+                        <cell>otinel bodmer : 1,977</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell>otinel vaticane : 1,758</cell>
+                        <cell>otinel vaticane : 1,758</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell>wauchier : 4,582</cell>
+                        <cell>wauchier : 4,580</cell>
+                    </row>
+                    <row>
+                        <cell/>
+                        <cell>Pelerinage : 1,384</cell>
+                        <cell>Pelerinage : 1,384</cell>
+                    </row>
+                </table>
+                <p>Based on the experiments made by (Camps, Vidal-Gorène, and Vernet 2021) on abbreviated manuscripts, two approaches have been considered. Training on abbreviated data has been carried out with Kraken (Kiessling 2019; Kiessling et al. 2019), an OCR and HTR system previously used with success on a wide range of manuscripts (Camps, Clérice, and Pinche 2021; Scheithauer et al. 2021; Thompson and others 2021), and training on expanded data with Calfa, an OCR and HTR system originally developped for highly abbreviated Oriental manuscripts (Vidal-Gorène et al. 2021). These two architectures use an encoder-decoder approach, the first one trained at the character level, the second one at the word level. If we keep the same hyperparameters defined previously (Camps, Vidal-Gorène, and Vernet 2021), we use a deeper architecture for the first one, architecture capable of high recognition rate in CREMMA (Pinche and Clérice 2021).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>
+                    <anchor type="bookmark-start" xml:id="id_preliminary-results-and-discussion"/>Preliminary results and discussion
+                    <ptr type="bookmark-end" target="#id_preliminary-results-and-discussion"/>
+                </head>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/bf361bc87947c63ed7be3441d089a420.png"/>
+                    </figure>
+                </p>
+                <p>Figure 1: Matrix of the cross evaluation of models</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/1523574800007192d3b92edf9eb04cae.png"/>
+                    </figure>
+                    <figure>
+                        <graphic url="Pictures/7040e6d3a9b271a6c89240da1edc841a.png"/>
+                        <head>Figure 2: Distribution of character error rates per page in the test sets; histograms (top) and boxplots (with outliers above 25% removed)</head>
+                    </figure>
+                </p>
+                <p>Current results show, perhaps counter intuitively, a better performance for expanded models, at least for Latin (fig. 1 and table 3), while, for French, the abbreviated model seem to perform slightly better (fig. 1). Perhaps more importantly, they show important variation in the distribution of the character error rates per page inside each test set and between test sets (fig. 3). Apart from a few strong outliers on the Latin corpora, with CER between 40 and 90% (due to issues in the test material), they show a situation that varies according mostly to the origin of the data. For some subcorpora, the CERs display very limited variation, with a very small interquartile range (CREMMA corpora for instance), while the results obtained for corpora such as ECMEN could reflect the larger variety of material they contain.</p>
+                <p>Nevertheless, among various observations, the following cases can be noted. On the one hand, on LAT-Exp predictions, the efficiency of the model is especially linked to the script used. Thus, the particularly angular 
+                    <hi rend="italic">textualis quadrata</hi>, widely used in PsautierIMS and some manuscripts of MSS dat. lat, is poorly recognised. We find a lot of issues related to the stems 
+                    <hi rend="bold">ii</hi> / 
+                    <hi rend="bold">u</hi> / 
+                    <hi rend="bold">n</hi> / etc. In the most extreme cases a significant difficulty in differentiating 
+                    <hi rend="bold">c</hi> and 
+                    <hi rend="bold">e</hi> occurs. For these scripts, tildes are seldom understood and abbreviations are therefore badly expanded. Meanwhile, in diplomatic texts of Fontenay, although the form of the letters is often sophisticated and flourished - especially in the first line of the charters - the model is able to recognise tildes and abbreviations. We also observe that the quality of the ink greatly influences the efficiency of the model. On the other hand, this multi-level heterogeneity seems to affect benefits we could expect of fine-tuning. We do not notice any gain in recognition by fine-tuning abbreviated models with expanded data yet. Nevertheless we can already observe that cross-lingual fine-tuned models achieve similar recognition rates, even though abbreviations are widely different for these languages.
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/0f54-resaved.png"/>
+                    </figure>
+                </p>
+                <table rend="frame" xml:id="Table3">
+                    <head>Table 3: Facsimile with ground truth abbreviated and extended and abbreviated and extended predictions from an extract of latin corpus of St Victor (BnF, Latin 14525, fol. 41va). Table 3: Facsimile with ground truth abbreviated and extended and abbreviated and extended predictions from an extract of latin corpus of St Victor. </head>
+                    <row role="label">
+                        <cell rend="bold">GT Abbr</cell>
+                        <cell rend="bold">GT Expan</cell>
+                    </row>
+                    <row>
+                        <cell>one pecc̃oꝝ sicut scͥptum ẽ gaudiũ ẽangl̃is d̃i suꝑ uno pecc̃ore penitentiãagente uñ ⁊ signis ext̃iorib penitẽtieplurimũ delectant<hi rend="math">᷑</hi> ut pote usu ciliciiꝓfundis suspiriis deuotis or̃onib<hi rend="math">᷒</hi> cre</cell>
+                        <cell>one peccatorum sicut scriptum est gaudium est angelis dei super uno peccatore penitentiamagente unde et signis exterioribus penitentieplurimum delectantur ut pote usu ciliciiprofundis suspiriis deuotis orationibus cre</cell>
+                    </row>
+                </table>
+                <table rend="frame" xml:id="Table4">
+                    <head>Table 3: Facsimile with ground truth abbreviated and extended and abbreviated and extended predictions from an extract of latin corpus of St Victor. </head>
+                    <row role="label">
+                        <cell rend="bold">Prediction Abbr</cell>
+                        <cell rend="bold">Prediction Expan</cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <p>one 
+                                <hi rend="bold">pec̃c̃oꝝꝝ</hi> sicut scͥptum ẽ 
+                                <hi rend="bold">sudiũ</hi> ẽ
+                            </p>
+                            <p>angl̃is dĩ suꝑ uno pecc̃ore penitentiã</p>
+                            <p>agente uñ ⁊ signis ext̃iorib penitẽtie</p>
+                            <p>plurimũ delectant<hi rend="math">᷑</hi> ut pote usu cilicii</p>
+                            <p>ꝓfundis 
+                                <hi rend="bold">suspinis</hi> deuotis or̃onib<hi rend="math">᷒</hi> cre
+                            </p>
+                        </cell>
+                        <cell>
+                            <p>one peccatorum sicut scriptum est 
+                                <hi rend="bold">saudium</hi> est
+                            </p>
+                            <p>angelis dei super uno peccatore penitentiam</p>
+                            <p>agente unde et signis exterioribus penitentie</p>
+                            <p>plurimum delectantur ut pote usu cilicii</p>
+                            <p>profundis suspiriis deuotis orationibus cre</p>
+                        </cell>
+                    </row>
+                </table>
+                <p>All of this is deserving of further investigations, particularly to evaluate the impact of training set size versus training set diversity, and to measure the robustness of models trained with and applied to mixed language corpora. . Moreover, further normalisation of the training sets, and a direct inspection of outliers could allow to increase performance and intelligibility of the results.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Camps, Jean-Baptiste, Thibault Clérice, and Ariane Pinche. 2021.</hi> “Noisy Medieval Data, from Digitized Manuscript to Stylometric Analysis: Evaluating Paul Meyer’s Hagiographic Hypothesis.” 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi> 36 (Supplement_2): ii49–ii71. 
+                        <ptr target="https://doi.org/10.1093/llc/fqab033"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Camps, Jean-Baptiste, Chahan Vidal-Gorène, and Marguerite Vernet. 2021.</hi> “Handling Heavily Abbreviated Manuscripts: HTR Engines Vs Text Normalisation Approaches.” In 
+                        <hi rend="italic">International Conference on Document Analysis and Recognition</hi>, 306–16. Springer.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Clérice, Thibault, and Ariane Pinche. 2021.</hi> “Choco-Mufin, a tool for controlling characters used in OCR and HTR projects.” 
+                        <ptr target="https://doi.org/10.5281/zenodo.5356154"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Derolez, Albert. 2003.</hi>
+                        <hi rend="italic">The Palaeography of Gothic Manuscript Books from the Twelfth to the Early Sixteenth Century</hi>. Cambridge Studies in Palaeography and Codicology 9. Cambridge: Cambridge University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kiessling, Benjamin. 2019.</hi> “Kraken - an Universal Text Recognizer for the Humanities.” In 
+                        <hi rend="italic">Proceedings of the Dh2019 Conference - Digital Humanities: Complexities, Utrecht, the Netherlands, 9–12 July 2019</hi>. Utrecht: CLARIAH. 
+                        <ptr target="https://dev.clariah.nl/files/dh2019/boa/0673.html"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kiessling, Benjamin, Robin Tissot, Peter Stokes, and Daniel Stökl Ben Ezra. 2019.</hi> “EScriptorium: An Open Source Platform for Historical Document Analysis.” In 
+                        <hi rend="italic">2019 International Conference on Document Analysis and Recognition Workshops (Icdarw)</hi>, 2:19–19. IEEE.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pinche, Ariane. 2021.</hi> “CREMMA Medieval, an Old French dataset for HTR and segmentation.” 
+                        <ptr target="https://doi.org/10.5281/zenodo.5235186"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pinche, Ariane, and Thibault Clérice. 2021.</hi> “HTR-United/Cremma-Medieval: 1.0.1 Bicerin (Doi).” Zenodo. 
+                        <ptr target="https://doi.org/10.5281/zenodo.5235186"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Scheithauer, Hugo, Alix Chagué, Rostaing Aurélia, Lucas Terriel, Laurent Romary, Marie-Françoise Limon-Bonnet, Benjamin Davy, et al. 2021.</hi> “Production d’un Modèle Affiné de Reconnaissance d’écriture Manuscrite Avec eScriptorium et évaluation de Ses Performances.” In 
+                        <hi rend="italic">Les Futurs Fantastiques-3e Conférence Internationale Sur L’Intelligence Artificielle Appliquée Aux Bibliothèques, Archives et Musées, Ai4lam</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stutzmann, Dominique, Christopher Tensmeyer, and Vincent Christlein. 2020.</hi> “Writer Identification and Script Classification. Two Tasks for a Common Understanding of Cultural Heritage.” 
+                        <hi rend="italic">Manuscript Cultures</hi> 15: 11–24. 
+                        <ptr target="https://www.csmc.uni-hamburg.de/publications/mc/files/articles/mc15-02-stutzmann.pdf"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Stuzmann, Dominique. 2011.</hi> “Paléographie Statistique Pour décrire, Identifier, Dater. . . Normaliser Pour Coopérer et Aller Plus Loin ?” In 
+                        <hi rend="italic">Kodikologie Und Paläographie Im Digitalen Zeitalter 2 - Codicology and Palaeography in the Digital Age 2</hi>, edited by Franz Fischer, Christiane Fritze, and Georg Vogeler, 3:247–77. Norderstedt: Books on Demand (BoD).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">TEI Consortium. 2022.</hi> “3.6.5 Abbreviations and Their Expansions.” In 
+                        <hi rend="italic">TEI P5: Guidelines for Electronic Text Encoding and Interchange, V4.4.0</hi>. Text Encoding Initiative Consortium. 
+                        <ptr target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#CONAAB"/>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Thompson, Walker, and others. 2021.</hi> “Using Handwritten Text Recognition (Htr) Tools to Transcribe Historical Multilingual Lexica.” 
+                        <hi rend="italic">Scripta &amp; E-Scripta</hi> 21: 217–31.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Vidal-Gorène, Chahan, Boris Dupin, Aliénor Decours-Perez, and Thomas Riccioli. 2021.</hi> “A Modular and Automated Annotation Platform for Handwritings: Evaluation on Under-Resourced Languages.” In 
+                        <hi rend="italic">International Conference on Document Analysis and Recognition</hi>, 507–22. Springer.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

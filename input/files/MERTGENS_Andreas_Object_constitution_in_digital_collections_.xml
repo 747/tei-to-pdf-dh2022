@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Object constitution in digital collections: An Ethnomethodological View</title>
+                <author>
+                    <persName>
+                        <surname>Türkoglu</surname>
+                        <forename>Enes</forename>
+                    </persName>
+                    <affiliation>University of Wuppertal, Germany</affiliation>
+                    <email>enes.tuerkoglu@uni-koeln.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mertgens</surname>
+                        <forename>Andreas</forename>
+                    </persName>
+                    <affiliation>University of Wuppertal, Germany</affiliation>
+                    <email>mertgens@uni-wuppertal.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T09:50:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Garfinkel</term>
+                    <term>Ethnomethodology</term>
+                    <term>Theory</term>
+                    <term>Archive</term>
+                    <term>Critique</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>digital archiving</term>
+                    <term>meta-criticism (reflections on digital humanities and humanities computing)</term>
+                    <term>Media studies</term>
+                    <term>Sociology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Libraries, archives, museums, collections or other similar memory and research institutions collect, preserve, organize, exhibit and grant access to culturally, informatively and historically significant objects from heterogeneous domains, because these objects act as proxies for “epistemic things” of real word phenomenons. As a result of these processes, objects become things of knowledge. The systematic “Wirklichkeitserschließung” (roughly: indexing of reality) through the organization of the objects can be seen as a process of intellectual measurement, which in turn is a product of specific context-dependent cultural grammar (Marx 2020). Therefore, this form of “measurement” can not claim a status of objectivity, and it can not fully exhaust the significance of the objects. Especially, the loss of context by separation from the initial cultural practices and modes of circulation cannot be counteracted solely through terminological or functional categorization. This phenomenon is prominently discussed in the museum context on the axis of de- and recontextualization (Jones 1992)(Malraux 1960). Similar concerns are raised in archival discourse, in which document collections are disassembled, textual and visual material are separated, disregarding their respective context. (Darms 2009)</p>
+            <p style="text-align: left; ">Through digitization efforts of the collected objects, these troubles are deepened. With digitization, it can be observed that the objects go through another layer of decontextualization and intellectual appropriation. On the one hand the objects get separated from their initial materiality as they get digitized, on the other hand decisions are being made that impact what and how contextual information is recorded and represented (Beaudoin 2012). Moreover, this layer constitutes the objects themselves akin to the previous constitution by the activities of memory institutions. The objects are decontextualized from their social circulation and cultural practices as they are collected and preserved, then they are made digitally operational and with that they get decontextualized and reconstituted again. The activity of making objects digitally operational and representable is discussed intellectually in DH with the terms models and modelling (Ciula et al. 2018), and their complex relationship with the target object explained through the notion of “creative process” to underline the productive nature of the activity rather than reproductive.  </p>
+            <p style="text-align: left; ">As argued, initial institutional activities convey “Wirklichkeitserschließung”; comparably,  digitization conveys indexing and exploration of objects as epistemic things derived from real world phenomenons. In his work “how reproductive is reproduction?” Björk investigates how the informative configuration of the digital archival documents is situationally conditioned. Björk argues that the institutional ideals can intervene in the relationship of objects and their potential informative capacity as they get digitized and made accessible. Similar notions with slightly different perspectives can be observed. </p>
+            <p style="text-align: left; ">Under these conditions there is a need for discourse about the practices of digitization, collection and organization that constitute objects of interest and with that our understanding of reality. Within the 
+                <hi rend="color(202122)">Collaborative Research Center</hi> “Media of Cooperation” the opportunity to carefully scrutinize these practices arose when confronted with the task of digitizing papers from the estate of Harold Garfinkel, regarded as the pioneer of ethnomethodology and was known for his non-conventional methodologies. The digitization of his papers allows for an interesting “hybrid study” which ethnomethodology utilizes “to merge ethnomethodological studies with investigative topics treated within the settings being studied” (Ikeya 2020: 23). With this approach, a practice can be utilized, while the practices themselves get studied. To great advantage for the project, Garfinkel already worked on a theory of information and specifically on a mechanical information retrieval system 
+                <hi rend="italic" xml:space="preserve">Zatocoding </hi>as hybrid study. His insights are helpful to understand  formal information practices and give clues for a conception which can take these practices meaningfully further. At its core, his theory of information describes that “‘information is constituted’ — not  just  interpreted ‘or  symbolically  represented  and  exchanged but  actually  constituted  as  information  by  the  social  (cooperatively  ordered)  aspects  of  the  situated  social  orders  in  which  it occurs.’” (
+                <hi rend="color(373E45)" xml:space="preserve">qtd. in </hi>Ekbia 2009). 
+            </p>
+            <p style="text-align: left; ">In the practices of DH projects, this theory is reflected in constant self-scrutiny in regard to object-constitution. At each stage of the project - from digitization, metadata collection, indexing, information-modeling and presentation - an attempt is made to question conventional or best-practice approaches towards object constitution and to allow for differing dimensions of representation to co-exist. This includes a digitization effort focussed strictly on the material findings and on recording the structure and material context of the boxes, folders and documents within the collection. Subsequently, a more conventional finding-aid was created, which necessarily contextualized and restructured the documents into units from an archival point of view. The collection includes material that could be read as the genesis of an unpublished academic work. With this perspective, the documents would be contextualized as part of a genetic edition not based on their material findings but as academic artefacts, witnesses of research practices and the evolution of ideas that eventually led to drafts of a work. Another approach is to structure the collection according to Garfinkel’s use of language, i.e. identifying terms and phrases within and across documents. </p>
+            <p style="text-align: left; ">Due to the experimental nature of the project, these varying approaches are followed concurrently with constant self-observation and documentation of the limitations and affordances of each practice. One aspect that emerged is that despite the prevalence of models and best-practices to guide such a digitization project, many decisions relied heavily on ad-hoc decisions made by individuals. This echoes Garfinkel’s understanding in observing that ad-hoc decisions are an invariable and essential part of any practice and who claimed that “treating ad hoc features as a nuisance to complaining that if the walls of a building were only gotten out of the way that one could better see what was keeping the roof up” (qtd. in Caron 2013). This multivariate, self-observative, bias-conscious project configuration transposes concepts of ethnomethodology into the field and can open up discussions within the DH community. Similar to the question of how information is not just interpreted but constituted, so are the objects in Digital Humanities projects and with every “best”-practice and every standard we employ, we change the objects we constitute, preserve and present to the public.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Beaudoin, J. E. (2012). Context and Its Role in the Digital Preservation of Cultural Objects. 
+                        <hi rend="italic">D-Lib Magazine</hi> 18 (11/12). 
+                        <ref target="https://doi.org/10.1045/november2012-beaudoin1">
+                            <hi rend="color(1155CC)">doi.org/10.1045/november2012-beaudoin1</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">Björk, L. (2015). How Reproductive Is a Reproduction?: Digital Transmission of Textbased Documents. Borås: University of Borås.</bibl>
+                    <bibl style="text-align: left; ">Caron, C. O. (2013). 
+                        <hi rend="italic">Reflexivity at Work: Making Sense of Mannheim’s, Garfinkel’s, Gouldner’s, and Bourdieu’s Sociology</hi>. Canadian Theses. Library and Archives Canada. 
+                    </bibl>
+                    <bibl style="text-align: left; ">Ciula, A., Eide, Ø., Marras, C., and Sahle, P. (2018). Models and Modelling between Digital and Humanities. Remarks from a Multidisciplinary Perspective. 
+                        <hi rend="italic">Historical Social Research / Historische Sozialforschung Vol. 43</hi> No. 4:. 
+                        <ref target="https://doi.org/10.12759/HSR.43.2018.4.343-361">
+                            <hi rend="color(1155CC)">doi.org/10.12759/HSR.43.2018.4.343-361</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">Darms, L. (2009). The Archival Object: A Memoir of Disintegration. 
+                        <hi rend="italic">Archivaria</hi> 67 (July), pp. 143-55. 
+                        <ref target="https://archivaria.ca/index.php/archivaria/article/view/13212">
+                            <hi rend="color(1155CC)">archivaria.ca/index.php/archivaria/article/view/13212</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">Ekbia, H. (2009). Information in Action: A Situated View. 
+                        <hi rend="italic">Proceedings of the American Society for Information Science and Technology</hi> 46 (1): 1–11. 
+                        <ref target="https://doi.org/10.1002/meet.2009.1450460233">
+                            <hi rend="color(1155CC)">doi.org/10.1002/meet.2009.1450460233</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">Ikeya, N. (2020). Hybridity of hybrid studies of work: Examination of informing practitioners in practice. 
+                        <hi rend="italic">Ethnographic Studies,</hi> 17: 22-40.
+                        <ref target="https://doi.org/10.5281/ZENODO.4050533">
+                            <hi rend="color(1155CC)">https://doi.org/10.5281/ZENODO.4050533</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">Jones, P. (1992). Museums and the Meanings of Their Contents. 
+                        <hi rend="italic">New Literary History</hi> 23 (4): 911. 
+                        <ref target="https://doi.org/10.2307/469177">
+                            <hi rend="color(1155CC)">doi.org/10.2307/469177</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl style="text-align: left; ">Malraux, A. (1960). 
+                        <hi rend="italic">Stimmen der Stille</hi>. Deutsche Buch-Gemeinschaft. pp. 10-12
+                    </bibl>
+                    <bibl style="text-align: left; ">Marx, P. W. (2020). Maßgabe der Dinge. In 
+                        <hi rend="italic">Dokumente, Pläne, Traumreste: 100 Jahre Theaterwissenschaftliche Sammlung Köln</hi>, pp. 16-13. Berlin: Alexander Verlag.
+                    </bibl>
+                    <bibl style="text-align: left; ">Schweibenz, W. (2020). “Wenn das Ding digital ist …” in 
+                        <hi rend="italic" xml:space="preserve">Objekte im Netz. </hi>eds. 
+                        <hi rend="italic" xml:space="preserve">Udo Andraschke und Sarah Wagner. </hi>transcript. pp. 15 - 28. 
+                        <ref target="https://doi.org/10.1515/9783839455715-002">
+                            <hi rend="color(1155CC)">https://doi.org/10.1515/9783839455715-002</hi>
+                        </ref>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Discovering Civil Disputes Hidden in the Court Judgment Documents for Applications in Social Studies and Legal Informatics</title>
+                <author>
+                    <persName>
+                        <surname>Liu</surname>
+                        <forename>Chao-Lin</forename>
+                    </persName>
+                    <affiliation>National Chengchi University, Taiwan</affiliation>
+                    <email>chaolin@g.nccu.edu.tw</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Liu</surname>
+                        <forename>Yi-Fan</forename>
+                    </persName>
+                    <affiliation>National Chengchi University, Taiwan</affiliation>
+                    <email>108753213@nccu.edu.tw</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Liu</surname>
+                        <forename>Wei-Zhi</forename>
+                    </persName>
+                    <affiliation>National Chengchi University, Taiwan</affiliation>
+                    <email>109753157@nccu.edu.tw</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lin</surname>
+                        <forename>Hong-Ren</forename>
+                    </persName>
+                    <affiliation>National Chengchi University, Taiwan</affiliation>
+                    <email>109753156@nccu.edu.tw</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T14:41:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>artificial intelligence</term>
+                    <term>legal informatics</term>
+                    <term>clustering</term>
+                    <term>topic modeling</term>
+                    <term>machine learning</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>natural language processing</term>
+                    <term>Asian studies</term>
+                    <term>Law and legal studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Background</head>
+                <p>Civil and criminal cases provide direct clues about the relatively serious conflicts in a human society. These conflicts were not resolvable privately or easily via mediation, so were resorted to the legal system. The judgment documents publicized by the courts offer opportunities for us to analyze the main causes of the conflicts, and we focus on the civil disputes in this study.</p>
+                <p>The analysis of civil cases and the resulting observations are relevant to multiple social issues. Researchers studied the lawsuits for litigation strategies (Huang et al., 2010). One may study the previous cases to understand whether mediation will be a better choice than litigation (Anderson et al., 2018). Analogous research procedure that relied on the Chinese local gazetteers may help us investigate the social conflicts in the history (Li, 2000). </p>
+                <p>We aim at understanding the main causes that led to the civil disputes, and report preliminary results of analyzing the cases of labor and employment (
+                    <hi rend="bold color(0000FF)">L&amp;E</hi>, henceforth) litigations and of family support (
+                    <hi rend="bold color(0000FF)">FS</hi>, henceforth) litigations. This line of work is possible because the judicial law in Taiwan requires the courts to publicize their judgment documents except for special cases with specific concerns and because we can obtain and analyze these open data with computing techniques.
+                </p>
+                <p>We show the main steps of our work in Figure 1.</p>
+                <figure>
+                    <graphic n="1001" width="11.9126cm" height="12.9286cm" url="Pictures/b248c45d861a5fef6493db7a63a3ded6.jpg" rend="inline"/>
+                </figure>
+                <p style="text-align: center;">
+                    <hi rend="bold">Figure 1. Main steps of our work</hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Court judgment documents</head>
+                <p>We may download the court judgment documents from the official website that is maintained by the Judicial Yuan which governs the courts in Taiwan.
+                    <hi rend="superscript">1</hi> For the L&amp;E litigations, we use 3524 cases of between 2007 and 2020. There are three tiers of courts, and we use only the documents of the lowest tier, i.e., the local courts. For the FS litigations, we use 1223 cases of between 2014 and 2020 and also of the local courts. 
+                </p>
+                <p>There were a lot more relevant litigations than the number of documents that we use in the current studies. We chose documents of the local courts because the documents usually provide more preliminary and direct information about the disputes. In addition, only a portion of the documents for the L&amp;E litigations contain standard segments that should record a summary about the specific issues that the plaintiffs and the defendants were contesting. Without such specific summaries, it is not easy to identify the issues being contested, which were recorded in typically long judgment documents. Hence, we chose only 3524 instances that provide such summaries. Notice that, even if we have the summaries, it is not easy for computer programs to “understand” the statements. The statements were written for individual cases in the form of natural language (not keywords, for instance), and the wordings often differ for conflicts of the same type. </p>
+                <p>The documents for the FS litigations may have paragraphs that provide information about the reasons that the plaintiffs were seeking for financial assistance from the defendants and about the reasons that the defendants did not agree with the requests. We employed a keywords-based approach to identify 1223 documents that have such paragraphs for the current studies. Similar to what we discussed above, reasons of the same type might be written in very different styles in the documents. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Clustering for dispute identification</head>
+                <p>While we selected the documents with specific sections, we also extracted the statements within those sections. As we just explained above, we believe that these statements described the disputes in question. We tried some different ways to preprocess the extracted statements, which consisted of typical steps for natural language processing, but we could not explain them clearly in this abstract. We obtained more than 17000 statements and 1223 paragraphs for the L&amp;E and FS litigations, respectively. </p>
+                <p>We then converted the statements and paragraphs to vectors using both the typical TF-IDF vector-space-model approach (Croft et al., 2010) and the SBERT pretrained model (Reimers and Gurevych, 2019). In computer science, we hope that the vectors somehow represent the semantics of the original statements. </p>
+                <p>We apply and hope that clustering (Alpaydin, 2020) the vectors of statements would lead us to identify different types of issues. For this step, we explored the well-known 
+                    <hi rend="italic">k</hi>-means clustering
+                    <hi rend="superscript">2</hi> and the FAISS method of Facebook (Johnson et al., 2017). In essence, we are applying the concept of topic modeling with tools of our choice (Blei, 2010a, 2010b). 
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Observations and discussion</head>
+                <p>The results of topic modeling can be useful if we inspect and interpret the results with some appropriate principles (Ramage et al., 2009; Sievert and Shirley, 2014). For the L&amp;E litigations, we could identify interesting topics that were indicated by the statements about issues in individual clusters. Inspection by human experts certainly takes time, but that is still more efficient than reading the complete judgment documents over the years directly. The disputes may be caused by different types of compensation/payment problems. Some examples follow.</p>
+                <list rend="numbered">
+                    <item>for retirement benefits</item>
+                    <item>for unlawful or debatable layoff</item>
+                    <item>for body injuries or fatality during worktime</item>
+                    <item>for the salaries and the late-night meals as a result of overtime work</item>
+                </list>
+                <p>Some clusters contain statements about non-monetary issues or for special types of labor force.</p>
+                <list rend="numbered">
+                    <item>the interpretation of the non-compete clause</item>
+                    <item>the time for paid leave</item>
+                    <item>the disputes for sailors</item>
+                </list>
+                <p>Once we identify these topics, we can find the lawsuits that share the same or similar combinations of disputes. Since we know when and which local courts handled these litigations, we can analyze and visualize such similar cases spatiotemporally, offering a foundation for social studies. We can also build focused databases by collecting information about similar litigations, thus providing references for future judgments. </p>
+                <p>In contrast, our current achievements for the FS litigations were less impressive. Our clustering approach could find that the involvement of the parents of the couple that was fighting for divorce. We could also algorithmically identify cases in which adult children battled for fair shares for the support of their retired parents. The issues behind FS litigations often consist of complex and mixed daily problems, and our current algorithms could not differentiate the core disputes precisely yet. We report the relatively poor results for the FS litigations to contrast our promising accomplishments for the L&amp;E litigations in this proposal, and we certainly will continue to refine our approach for the FS litigations. </p>
+                <p>We are thankful to the reviewers, and shall provide more technical details about our work in the oral presentation as requested. This work was supported in part by the Ministry of Science and Technology of Taiwan.</p>
+                <p>Notes</p>
+                <list rend="numbered">
+                    <item>The website of the Judicial Yuan is located at &lt;https://opendata.judicial.gov.tw/&gt;</item>
+                    <item>The software tools were implemented in scikit-learn and accessible at &lt;https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html&gt;</item>
+                </list>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Alpaydin, E.</hi> (2020). 
+                        <hi rend="italic">Introduction to Machine Learning</hi>, fourth edition, chapter seven, The MIT Press. (Clustering, a type of machine learning technique, aims to put similar data into a cluster. Given a collection of data, clustering may assign individual datum into one of a selected number of clusters.)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Anderson, D. Q., Chua, E. and My, N. T.</hi> (2018). How Should the Courts Know Whether Dispute Is Ready and Suitable for Mediation: An Empirical Analysis of The Singapore Courts' Referral of Civil Disputes to Mediation, 
+                        <hi rend="italic">Harvard Negotiation Law Review</hi>, 23(2):265‒318.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Blei, D. M.</hi> (2012a). Probabilistic Topic Models, 
+                        <hi rend="italic">Communications of the ACM</hi>, 55(4):77‒84.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Blei, D. M.</hi> (2012b). Topic Modeling and Digital Humanities,
+                        <hi rend="italic" xml:space="preserve"> Journal of Digital Humanities</hi>, 2(1). &lt;http://journalofdigitalhumanities.org/2-1/topic-modeling-and-digital-humanities-by-david-m-blei/&gt;
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Croft, W. B., Metzler, D. and Strohman, T. </hi>(2010). 
+                        <hi rend="italic">Search Engines: Information Retrieval in Practice</hi>, 241‒247, Pearson.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Huang, K.-C., Chen, K.-P. and Lin, C.-C.</hi> (2010). An Empirical Investigation of Settlement and Litigation—The Case of Taiwanese Labor Disputes, 
+                        <hi rend="italic">Journal of Empirical Legal Studies</hi>, 7(4):786‒810.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Johnson, J., Douze, M. and Jégou, H.</hi> (2017). Billion-Scale Similarity Search with GPUs, arXiv preprint, arXiv:1702.08734. &lt;https://github.com/facebookresearch/faiss&gt;
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Li, B.</hi> (2000). Civil Disputes and Law Suits in Huizhou of The Ming Dynasty, 
+                        <hi rend="italic">Historical Research</hi>, Chinese Academy of History, I:94‒105.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ramage, D., Rosen, E., Chuang, J., Manning, C. D. and McFarland, D. A.</hi> (2009). Topic Modeling for the Social Sciences, 
+                        <hi rend="italic">Proceedings of the Workshop on Applications for Topic Models: Text and Beyond</hi>, Twenty-Third Conference on Neural Information Processing Systems.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Reimers, N. and Gurevych, I.</hi> (2019). Sentence-BERT: Sentence Embeddings Using Siamese BERT-Networks, 
+                        <hi rend="italic">Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the Ninth International Joint Conference on Natural Language Processing</hi>, 3982‒3992. &lt;https://www.sbert.net/&gt;
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Sievert, C. and Shirley, K. E. </hi>(2014). LDAvis: A Method for Visualizing and Interpreting Topics, 
+                        <hi rend="italic">Proceedings of the Workshop on Interactive Language Learning, Visualization, and Interfaces</hi>, 63‒70.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

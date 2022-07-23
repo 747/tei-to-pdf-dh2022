@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Developing a text readability system for Sesotho based on classical readability metrics</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Sibeko</surname>
+                        <forename>Johannes</forename>
+                    </persName>
+                    <affiliation>Nelson Mandela University, South Africa</affiliation>
+                    <email>johannes.sibeko@mandela.ac.za</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>van Zaanen</surname>
+                        <forename>Menno</forename>
+                    </persName>
+                    <affiliation>South African Centre for Digital Language Resources, South Africa</affiliation>
+                    <email>menno.vanzaanen@nwu.ac.za</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-14T12:15:27.425025869</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>text readability</term>
+                    <term>indigenous languages</term>
+                    <term>Sesotho</term>
+                    <term>readability metrics</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Africa</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>text mining and analysis</term>
+                    <term>Linguistics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Sesotho as one of South Africa’s (SA) eleven official languages is a home language to about eight percent of SA inhabitants and 98 percent of the population in Lesotho (Reid et al., 2019). Like many Asian languages, Sesotho is an under-resourced language (Wills et al., 2020). The repository of the South African Centre for Digital Language Resources (SADiLaR) provides the limited Sesotho resources (see https://repo.sadilar.org/).</p>
+            <p>This project aims to develop a readability tool for Sesotho texts. When additional language resources are required, these will also be developed. For readers (especially learners) to select texts suitable for their reading level, a measure of readability for texts is essential.</p>
+            <p>Existing text readability investigations in the context of SA, have focused mainly on health documents (Joubert and Githinji, 2014; Krige and Reid, 2017; Leopeng, 2019; De Wet, 2021) and textbooks (Sibanda, 2013; Wissing et al., 2016). Krige and Reid (2017) used three English metrics to measure readability of medical pamphlets in Sesotho, which does not consider differences between the languages. Language specific readability metrics should be developed before proper conclusions can be drawn. To our knowledge, no language specific readability metrics have exist for any African language, apart from Afrikaans (Jansen et al., 2017). Unfortunately, no implementations of these metrics could be found.</p>
+            <p>To develop readability metrics, texts with known readability levels are needed. Unfortunately, for Sesotho, copyright restrictions limit access to texts with (expected) known readability levels, such as textbooks. However, in SA, Sesotho is tested at high school on two levels, home language (HL) and first additional language (FAL). We expect these exam texts to have consistent readability over the years, with HL texts more difficult to read than FAL texts. To test this, we analyzed the readability of SA English HL and FAL exam texts (Sibeko and Zaanen, 2021) using existing metrics, which showed that the readability of the texts is consistent over time and different between the two levels.</p>
+            <p>If we assume that the development of the exam texts for Sesotho (and the other SA languages) follows the same process as that for English texts (Sibeko and Zaanen, 2021), Sesotho exam texts also show clear differences in levels of readability. They can then be used for the development of readability metrics for Sesotho.</p>
+            <p>We currently build on text properties used in nine readability metrics for English (Sibeko and Zaanen, 2021): Flesch-Kincaid Grade Level (Kincaid) (Kincaid et al., 1975), Flesch Reading Ease (Flesch) (Flesch, 1948), Simple Measure of Gobbledygook (SMOG) (Mc Laughlin, 1969), Gunning Fog index (Fog) (Gunning, 1952; Gunning, 1969), läsbarhetsindex (LIX) (Björnsson, 1968), Rate index (RIX) (Anderson, 1983), Automated Readability index (ARI) (Senter and Smith, 1967; Kincaid and Delionbach, 1973), Coleman-Liau index (Coleman and Liau, 1975), and the Dale-Chall index (Dale and Chall, 1948).</p>
+            <p>The readability metrics rely on text properties such as word and sentence length. Due to differences in language structure, these properties cannot be applied readily to other languages. To this end, we are re-conceptualising properties, such as long words, which have more than six characters in the LIX and RIX metrics, difficult words, which do not appear in the 3000 most frequently used English words in the Dale-Chall Index, and complex words, which have more than two syllables in the Gunning Fog Index, to reflect Sesotho’s context. In particular, features such as syllables and frequently used words are language specific.</p>
+            <p>To resolve these issues, we currently develop automated Sesotho syllabification systems, including a rule-based system based on Guma (1982)’s (1982) description and a pattern-based system (using TeX’s hyphenation system (Liang, 1983)). Additionally, we investigate the concepts of long, difficult, and complex words in Sesotho. To make matters more complex, Sesotho has two orthographies, Lesotho (LS) and SA orthography (SAS) (Motjope-Mokhali et al., 2020). We currently use SAS orthography given the usage of the SA high school exam texts.</p>
+            <p>Once the different text properties are defined, they can be applied to the Sesotho exam texts. The values can then be combined in linear regression models, which will provide mathematical formulas that provide a level of text readability for Sesotho texts.</p>
+            <p>This contribution describes progress in the development of the first automated text readability analysis tool for a SA language (Sesotho). Given the limited availability of computational resources for Sesotho, we also describe language resources developed within the project. To aid the development of digital language resources, all developed Sesotho resources will be published in open repositories, such as Github and SADiLaR’s repository.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Anderson, J.</hi> (1983). Lix and rix: Variations on a little-known readability index. 
+                        <hi rend="italic">Journal of Reading</hi>, 
+                        <hi rend="bold">26</hi>(6): 490–96.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Björnsson, C.</hi> (1968). 
+                        <hi rend="italic">Läsbarhet.</hi> (Pedagogiskt Utvecklingsarbete Vid Stockholms Skolor. 6). Liber: Solna, Seelig.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Coleman, M. and Liau, T. L.</hi> (1975). A computer readability formula designed for machine scoring. 
+                        <hi rend="italic">Journal of Applied Psychology</hi>, 
+                        <hi rend="bold">60</hi>(2): 283–84.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Dale, E. and Chall, J. S.</hi> (1948). A formula for predicting readability: Instructions. 
+                        <hi rend="italic">Educational Research Bulletin</hi>: 37–54.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">De Wet, A.</hi> (2021). The development of a contextually appropriate measure of individual recovery for mental health service users in a South African context Stellenbosch University, Stellenbosch, South Africa PhD thesis.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Flesch, R.</hi> (1948). A new readability yardstick. 
+                        <hi rend="italic">Journal of Applied Psychology</hi>, 
+                        <hi rend="bold">32</hi>(3): 221.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Guma, S.</hi> (1982). 
+                        <hi rend="italic">An Outline Structure of Southern Sotho</hi>. 2nd ed. Pietermaritzburg, South Africa: Shooter; Shuter Publishers.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gunning, R.</hi> (1952). 
+                        <hi rend="italic">Technique of Clear Writing</hi>. McGraw-Hill.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gunning, R.</hi> (1969). The fog index after twenty years. 
+                        <hi rend="italic">Journal of Business Communication</hi>, 
+                        <hi rend="bold">6</hi>(2): 3–13.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Jansen, C., Richards, R. and Van Zyl, L.</hi> (2017). Evaluating four readability formulas for Afrikaans. 
+                        <hi rend="italic">Stellenbosch Papers in Linguistics Plus</hi>, 
+                        <hi rend="bold">53</hi>: 149–66.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Joubert, K. and Githinji, E.</hi> (2014). Quality and readability of information pamphlets on hearing and paediatric hearing loss in the gauteng province, South Africa. 
+                        <hi rend="italic">International Journal of Pediatric Otorhinolaryngology</hi>, 
+                        <hi rend="bold">78</hi>: 354–58.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kincaid, J. P. and Delionbach, L. J.</hi> (1973). Validation of the automated readability index: A follow-up. 
+                        <hi rend="underline">Human Factors</hi>, 
+                        <hi rend="bold">15</hi>(1): 17–20.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Kincaid, J. P., Fishburne Jr, R. P., Rogers, R. L. and Chissom, B. S.</hi> (1975). 
+                        <hi rend="italic">Derivation of New Readability Formulas (Automated Readability Index, Fog Count and Flesch Reading Ease Formula) for Navy Enlisted Personnel</hi>. Naval Technical Training Command Millington TN Research Branch.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Krige, D. and Reid, M.</hi> (2017). A pilot investigation into the readability of sesotho health information pamphlets. 
+                        <hi rend="italic">Communitas</hi>, 
+                        <hi rend="bold">22</hi>: 113–23.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Leopeng, M. T.</hi> (2019). Translations of informed consent documents for clinical trials in South Africa: Are they readable? University of Cape Town, Cape Town, South Africa Master’s thesis.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Liang, F.</hi> (1983). Word hy-phen-a-tion by com-put-er Stanford, USA: Stanford University PhD thesis.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Mc Laughlin, G. H.</hi> (1969). SMOG grading-a new readability formula. 
+                        <hi rend="italic">Journal of Reading</hi>, 
+                        <hi rend="bold">12</hi>(8): 639–46.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Motjope-Mokhali, T., Kosch, I. and Mafela, M. J.</hi> (2020). Sethantso sa sesotho and Sesuto-English dictionary: A comparative analysis of their designs and entries. 
+                        <hi rend="italic">Lexikos</hi>, 
+                        <hi rend="bold">30</hi>: 1–17.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Reid, M., Nel, M. and Janse van Rensburg-Bonthuyzen, E.</hi> (2019). Development of a Sesotho health literacy test in a South African context. 
+                        <hi rend="italic">African Journal of Primary Health Care and Family Medicine</hi>, 
+                        <hi rend="bold">11</hi>(1): 1–13.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Senter, R. and Smith, E. A.</hi> (1967). 
+                        <hi rend="italic">Automated Readability Index</hi>. Cincinnati University, OH.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sibanda, L.</hi> (2013). A case study of the readability of two grade 4 natural sciences textbooks currently used in South African schools Rhodes University, Grahamstown, South Africa Master’s thesis.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Sibeko, J. and Zaanen, M. van</hi> (2021). An analysis of readability metrics on English exam texts. In, 
+                        <hi rend="italic">Proceedings of the International Conference of the Digital Humanities Association of Southern Africa (Dhasa)</hi>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wills, S., Uys, P., Heerden, C. J. van and Barnard, E.</hi> (2020). Language modeling for speech analytics in under-resourced languages. In, 
+                        <hi rend="italic">Proceedings of the 21st Annual Conference of the International Speech Communication Association (Interspeech 2020), Shanghai, China</hi>. International Speech Communication Association, pp. 4941–45.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Wissing, G.-J., Blignaut, A. S. and Van den Berg, K.</hi> (2016). Using readability, comprehensibility and lexical coverage to evaluate the suitability of an introductory accountancy textbook to its readership. 
+                        <hi rend="italic">Stellenbosch Papers in Linguistics</hi>, 
+                        <hi rend="bold">46</hi>: 155–79.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

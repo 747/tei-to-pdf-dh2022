@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Beyond the Tracks: connecting people, places and stations to re-assess the impact of rail in Victorian Britain</title>
+                <author>
+                    <persName>
+                        <surname>Beelen</surname>
+                        <forename>Kaspar</forename>
+                    </persName>
+                    <affiliation>The Alan Turing Institute, United Kingdom</affiliation>
+                    <email>kbeelen@turing.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>McDonough</surname>
+                        <forename>Katherine</forename>
+                    </persName>
+                    <affiliation>The Alan Turing Institute, United Kingdom</affiliation>
+                    <email>kmcdonough@turing.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lawrence</surname>
+                        <forename>Jon</forename>
+                    </persName>
+                    <affiliation>University of Exeter</affiliation>
+                    <email>j.lawrence3@exeter.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Rhodes</surname>
+                        <forename>Josh</forename>
+                    </persName>
+                    <affiliation>The Alan Turing Institute, United Kingdom</affiliation>
+                    <email>jrhodes@turing.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wilson</surname>
+                        <forename>Daniel C.S.</forename>
+                    </persName>
+                    <affiliation>The Alan Turing Institute, United Kingdom</affiliation>
+                    <email>dwilson@turing.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-20T10:57:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Mapping</term>
+                    <term>Urban History</term>
+                    <term>Demography</term>
+                    <term>Railway</term>
+                    <term>Infrastructure</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>image processing and analysis</term>
+                    <term>Geography and geo-humanities</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">In historical research it is rare to have very detailed information that is: (a) about people in the places they lived (b) broad in its geographical and temporal scope and (c) pertains to complementary aspects of lived experience. Historians construct arguments about the past with far less, writing microhistories or grand narratives that are based on much smaller sets of collected evidence. Here, we introduce a method for creating and connecting high-resolution, geolocated historical information, and we outline an approach for the humanistic interpretation of this evidence. Historical studies using big datasets typically interrogate single source types. More rarely, researchers combine two source types to create new insights (e.g., Gregory and Martí-Henneberg, 2010). We combine three significant new, open datasets in a series of ‘convergence experiments’ which use place as a means of framing new historical questions. We discuss the challenges and opportunities of making different types of datasets interoperable. Like recent work that makes use of spatial information embedded in text, termed ‘geospatial semantics’ (Gidal and Gavin, 2019) or geographical text analysis (Taylor and Gregory, 2022), we seek to combine structured, spatial data of different forms. </p>
+            <p rend="DH-Heading2">Census</p>
+            <p style="text-align: left; ">Most previous work with nineteenth-century British census data has aggregated individual-level data at the parish level to chart national occupational and demographic change over time (Shaw-Taylor and Wrigley, 2014). Our approach retains the national scale but vastly increases the resolution we work at by linking c.70% of individuals in 1881, 1891, and 1901 to the streets they lived on (using Ordnance Survey [OS] Open Roads and GB1900 data [Aucott and Southall, 2019]). Though sampling raises its own issues, there remain significant benefits to working at the more precise level of streets. </p>
+            <p rend="DH-Heading2">Maps</p>
+            <p style="text-align: left; ">Unlike the census, historical series maps have received almost no attention at the collection, rather than individual sheet, level. We treat the rich details found in large-scale OS Maps as a ‘visual census’ to be examined computationally alongside the population census (Hosseini et al, 2021a). 
+                <ref target="https://living-with-machines.github.io/MapReader/">MapReader</ref> is a Computer Vision software library we have developed that creates open, reproducible labeled data based on queries of OS maps (Hosseini et al, 2021b). Producing data using our ‘patchwork method’ allows us to investigate thousands of maps and to predict the presence of buildings and rail infrastructure across Britain. Unlike other railway track datasets, our data is: (a) more complete and (b) richer (because it includes sheet-level metadata about survey and print dates) and so by its nature, this ‘railspace’ dataset offers a novel measure of how industrialisation impacted the physical and social landscape.
+            </p>
+            <p rend="DH-Heading2">Stations</p>
+            <p style="text-align: left; ">Although researchers know the location of Britain’s c.12,000 railway stations, this information has not previously been in a structured form with rich attributes like company names and opening and closing dates. Our 
+                <ref target="https://bl.iro.bl.uk/concern/datasets/0abea1b1-2a43-4422-ba84-39b354c8bb09">StopsGB</ref> dataset can be linked to ‘railspace’ to distinguish distinctive aspects of the railway system: the total footprint of railspace v. its specifically passenger-facing structures (Coll Ardanuy et al, 2021).
+            </p>
+            <p rend="DH-Heading2">Convergence</p>
+            <p style="text-align: left; ">The power of our approach lies in combining the datasets through the prism of place, and being able to do so whilst varying the degrees of geographic precision. In this presentation, we use this approach to investigate not only the much-discussed network-amenity aspects of rail (Bogart et al, 2022), but also the locally negative impacts (‘disamenity’). We investigate this ambient or environmental effect in relation to a broader conception of railspace using MapReader patches which, uniquely, capture the wider footprint of the infrastructure beyond the railway track and stations typically vectorised into points and lines.</p>
+            <p style="text-align: left; "> Triangulating three datasets allows us to investigate the social effects of rail as a key facet of industrialisation. We quantify the spatial relationships between railway infrastructure, street-level socio-demographic data (e.g. the percentage of residents working in particular economic sectors, or of households with servants), and proximity/access to railway stations (e.g. as a means of access to work). In addition, by calculating the density of ‘railspace’ per street, we categorise individuals based on their proximity to substantial railway infrastructure (see fig.1). These metrics suggest how rail could operate as an ‘amenity’ (e.g. a station with little accompanying rail infrastructure) and/or a ‘disamenity’ in different communities. For instance, we find contrasting proximities to stations among wealthy households (professional/finance workers; multiple servant-keeping; low room occupancy) depending on whether they were in urban or rural areas. </p>
+            <p style="text-align: left; "> Structuring historically-rich digital sources so that they can be integrated in novel and flexible ways promises to open new perspectives on the social history of industrialization and urbanization. Our method allows scholars to shift easily between big-picture macro analysis, and the fine-grained, human-scale exploration of social context.</p>
+            <figure>
+                <graphic n="1001" width="16.002cm" height="13.49375cm" url="Pictures/cc8a7afd33d47a1a5535f08a9deeb282.png" rend="inline"/>
+            </figure>
+            <p>Fig. 1. Streets in Leeds in 1901 coloured according to their proximity to dense railspace (from yellow to dark red; MapReader railspace patch-centroids shaded grey). Map data courtesy of NLS.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Aucott, P. and Southall, H.</hi> (2019). Locating Past Places. 
+                        <hi rend="italic">International Journal of Humanities and Arts Computing</hi> 13(1-2): 69-94.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Bogart, D. et al.</hi> (2022) Railways, Divergence, and Structural Change. 
+                        <hi rend="italic">Journal of Urban Economics</hi> 128: 1-23.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Coll Ardanuy, M. et al.</hi> (2021) ​​Station to Station: Linking and Enriching Historical British Railway Data. 
+                        <hi rend="italic">CHR 2021: Computational Humanities Research Conference</hi>. Amsterdam: CEUR Workshop Proceedings, pp. 249-265.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Gidal, E. and Gavin, M.</hi> (2019). Infrastructural Semantics. 
+                        <hi rend="italic">International Journal of Geographical Information Science</hi> 33(12): 2523-2544.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Gregory, I. and Martí-Henneberg, J.</hi> (2010) The Railways, Urbanization, and Local Demography. 
+                        <hi rend="italic">Social Science History</hi> 34(2): 199-228.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Hosseini, K. et al.</hi> (2021a) MapReader. arXiv:2111.15592.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Hosseini, K. et al.</hi> (2021b) Maps of a Nation? 
+                        <hi rend="italic">Journal of Victorian Culture</hi> 26(2): 284-99. 
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Shaw-Taylor, L. and Wrigley, E.A.</hi> (2014) Occupational Structure and Population Change. In Floud, R., Humphries, J. et al. (eds), 
+                        <hi rend="italic">The Cambridge Economic History of Modern Britain</hi>. Cambridge, pp. 53-88. 
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Taylor, J. and Gregory, I.</hi> (2022) 
+                        <hi rend="italic">Deep Mapping the Literary Lake District: A Geographical Text Analysis</hi>. Bucknell University Press: Lewisburg, PA.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

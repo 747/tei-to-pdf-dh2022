@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Relating the Unread: A Data-Rich Approach to the Literary Canon and the “Great Unread”</title>
+                <author>
+                    <persName>
+                        <surname>Brottrager</surname>
+                        <forename>Judith</forename>
+                    </persName>
+                    <affiliation>TU Darmstadt, Germany</affiliation>
+                    <email>judith.brottrager@tu-darmstadt.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-19T14:36:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>computational literary studies</term>
+                    <term>canonisation</term>
+                    <term>metadata</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>data modeling</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Since the emergence of computational approaches in literary studies, the inclusion of more than established and thoroughly researched literary works has been a crucial argument for using quantitative methods despite the inevitable loss of detail caused by necessary formalisations and operationalisations. Franco Moretti (2013: 48 f), for example, argues that so-called 
+                <hi rend="italic">Distant Reading</hi> approaches enable the modelling of an alternative literary history that does not exclude the “Great Unread”, i.e. works of literature which have been excluded from the canonical spheres of literary history. Numerous digitisation projects have been launched with this premise in mind: the more texts are available as high-resolution scans, or even better, transcribed as digital text, the broader this alternative literary history can be defined. However, recent contributions to the field (Algee-Hewitt et al., 2016; Underwood and Sellers, 2016; Porter, 2018; Underwood, 2019: 68–110) have shown that besides an ever-expanding archive of digitally available texts, additional data is needed to embed the analysed texts in what Kathrine Bode calls a “data-rich literary history” (2018: 37–57).
+            </p>
+            <p>This contribution exemplifies how a bespoke context-rich dataset can be compiled by describing the theory-driven creation process of a dataset for the comparative analysis of approximately 1,200 canonised and non-canonised English and German novels and narratives from 1688 to 1914. The description of this use case will focus on the encoding of literary history on two main levels: first, the canon-conscious corpus selection, and second, the data-based operationalisation of canonisation and contemporary reception. </p>
+            <p>For the corpus compilation, an approach suggested by Algee-Hewitt and McGurl (2015) for the creation of a representative corpus of 20
+                <hi rend="superscript">th</hi> century English literature, which focuses on the counterbalancing of inherent biases in available data, has been systematically adapted for the time frame in question. When research projects rely solely on standard collections of already digitised material for their corpus creation, they work with what Algee-Hewitt and McGurl would call a “found” corpus, which builds on layered selection processes that are not transparent but generally linked to a text’s status in the canon. To compensate these biases, Algee-Hewitt and McGurl suggest to move from a “found” to a “made” list of texts: By using a predefined list of works to be included in a corpus, gaps in the digitised archive are made visible and can be filled by retro-digitisation (see also Algee-Hewitt et al., 2016).
+            </p>
+            <p>Even though a canon-conscious corpus selection encodes some aspects of literary history by reconstructing a text’s “history of transmission” (Bode, 2018: 38) in terms of its availability and accessibility, additional data is needed to operationalise literary categories such as canonisation and contemporary reception as numerical scores to be able to use them for quantitative analyses. For both operationalisations, categories suggested by Heydebrand and Winko (1996) have been used. Defining a text’s canonisation status as the result of consecutive selective processes, Heydebrand and Winko (1996: 222–23) propose, among others, the continuous scientific engagement with the text (formalised as student editions), interest in its author (formalised as complete/collected works editions), and its treatment in literary history (formalised as mentions in narrative literary histories and other secondary sources) as markers for canonisation. These proxies encompass blurrier features of canonisation, such as longevity (see Bloom, 1994; Assmann, 2008) and cultural capital (see Bourdieu, 1986; Guillory, 1998), while being more generalisable and widely available than publishing records. Analogously to the canonisation status, contemporary reception can be modelled by collecting instances of value judgements, i.e. reviews, from representative journals (
+                <hi rend="italic">The Monthly Review</hi>, 
+                <hi rend="italic">The Critical Review</hi>, 
+                <hi rend="italic">La Belle Assemblée</hi>, 
+                <hi rend="italic">Flowers of Literature</hi>, 
+                <hi rend="italic">The Star</hi>, 
+                <hi rend="italic">The Athenaeum</hi>, 
+                <hi rend="italic">Allgemeine Literatur-Zeitung</hi>, 
+                <hi rend="italic">Morgenblatt für gebildete Stände</hi>, 
+                <hi rend="italic">Blätter für literarische Unterhaltung, Deutsche Literaturzeitung</hi>) and implicit markers of audiences’ interests, as, for example, entries in circulating libraries, which are, in contrast to sales numbers, more representative of lay audience’s reading habits (Martino, 1990; Gamer, 2000). Both reviews and circulating library catalogues represent to a certain extent samples of convenience, as the existence of digital surrogates was a prerequisite for their inclusion in the dataset. 
+            </p>
+            <p>Especially for markers of reception and evaluation, the dataset also draws heavily from already existing databases (e.g. 
+                <ref target="http://www.british-fiction.cf.ac.uk/">British Fiction 1800-1829</ref>, 
+                <ref target="http://estc.bl.uk/F/?func=file&amp;file_name=login-bl-estc">English Short Title Catalogue (ESTC)</ref>, 
+                <ref target="http://www.vd17.de/">VD17</ref>, 
+                <ref target="https://kxp.k10plus.de/">VD18</ref>, 
+                <ref target="https://gelehrte-journale.de">Gelehrte Journale und Zeitungen der Aufklärung</ref>, 
+                <ref target="https://athenaeum.city.ac.uk/">The Athenaeum Projects</ref>) and is in turn also designed to be sustainable, compatible, and re-usable by adhering to community standards, including international identifiers (as, for example, 
+                <ref target="http://viaf.org/">VIAF</ref>), and providing open access and documentation.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Algee-Hewitt, M., Allison, S., Gemma, M., Heuser, R., Moretti, F. and Walser, H.</hi> (2016). Canon/Archive. Large-scale Dynamics in the Literary Field. 
+                        <hi rend="italic">Pamphlets of the Stanford Literary Lab</hi>(11) https://litlab.stanford.edu/LiteraryLabPamphlet11.pdf.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Algee-Hewitt, M. and McGurl, M.</hi> (2015). Between Canon and Corpus: Six Perspectives on 20th-Century Novels. 
+                        <hi rend="italic">Pamphlets of the Stanford Literary Lab</hi>(8) https://litlab.stanford.edu/LiteraryLabPamphlet8.pdf.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Assmann, A.</hi> (2008). Canon and Archive. In Erll, A., Nünning, A. and Young, S. B. (eds), 
+                        <hi rend="italic">Cultural Memory Studies: An International and Interdisciplinary Handbook</hi>. Berlin; New York, NY: Walter de Gruyter, pp. 97–107.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Bloom, H.</hi> (1994). 
+                        <hi rend="italic">The Western Canon: The Books and School of the Ages</hi>. New York, NY: Harcourt Brace.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Bode, K.</hi> (2018). 
+                        <hi rend="italic">A World of Fiction: Digital Collections and the Future of Literary History</hi>. Ann Arbor, MI: University of Michigan Press.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Bourdieu, P.</hi> (1986). The Forms of Capital. In Richardson, J. (ed), 
+                        <hi rend="italic">Handbook of Theory and Research for the Sociology of Education</hi>. Westport, CT: Greenwood, pp. 241–58.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Gamer, M.</hi> (2000). 
+                        <hi rend="italic">Romanticism and the Gothic: Genre, Reception, and Canon Formation</hi>. Cambridge, UK; New York, NY: Cambridge University Press.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Guillory, J.</hi> (1998). 
+                        <hi rend="italic">Cultural Capital: The Problem of Literary Canon Formation</hi>. Chicago, IL: University of Chicago Press.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Heydebrand, R. von and Winko, S.</hi> (1996). 
+                        <hi rend="italic">Einführung in die Wertung von Literatur: Systematik - Geschichte - Legitimation</hi>. Paderborn: Schöningh.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Martino, A.</hi> (1990). 
+                        <hi rend="italic">Die Deutsche Leihbibliothek: Geschichte Einer Literarischen Institution (1756-1914)</hi>. Wiesbaden: Harassowitz.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Moretti, F.</hi> (2013). 
+                        <hi rend="italic">Distant Reading</hi>. London, UK; New York, NY: Verso.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Porter, J. D.</hi> (2018). Popularity/Prestige. 
+                        <hi rend="italic">Pamphlets of the Stanford Literary Lab</hi>(17) https://litlab.stanford.edu/LiteraryLabPamphlet17.pdf.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Underwood, T.</hi> (2019). 
+                        <hi rend="italic">Distant Horizons: Digital Evidence and Literary Change</hi>. Chicago: The University of Chicago Press.
+                    </bibl>
+                    <bibl rend="Bibliography">
+                        <hi rend="bold">Underwood, T. and Sellers, J.</hi> (2016). The Longue Durée of Literary Prestige. 
+                        <hi rend="italic">Modern Language Quarterly</hi>, 77(3): 321–44 doi:10.1215/00267929-3570634.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

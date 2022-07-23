@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Git for Humanists: Versioning Research and Code</title>
+                <author>
+                    <persName>
+                        <surname>Tagliaferri</surname>
+                        <forename>Lisa</forename>
+                    </persName>
+                    <affiliation>Rutgers University</affiliation>
+                    <email>lisa.tagliaferri@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-11T14:20:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>git</term>
+                    <term>open source</term>
+                    <term>version control</term>
+                    <term>collaboration</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>public humanities collaborations and methods</term>
+                    <term>software development</term>
+                    <term>systems</term>
+                    <term>analysis and methods</term>
+                    <term>Computer science</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">This workshop will provide an overview of collaborating on computational humanities projects in Git. A distributed version control system, Git helps both individuals and teams contribute to and maintain software projects, and is very popular within open source. Git can also be useful for version control of text, and we’ll explore several ways that humanities researchers can leverage Git effectively. </p>
+            <p style="text-align: left; ">We’ll go over the Git ecosystem, terminology, and how to open a pull request on a team project. Additionally, we’ll discuss the various players in the Git space, including GitHub, GitLab, and Bitbucket, and what alternatives there are outside of big tech. </p>
+            <p style="text-align: left; ">The workshop will also cover an introduction to markdown for those who may be working primarily in text instead of code. We’ll also go through the review process and how to add to others’ contributions for truly collaborative work.</p>
+            <p style="text-align: left; ">
+                It is recommended to have a 
+                <ref target="https://github.com/join">GitHub account</ref> and 
+                <ref target="https://desktop.github.com/">GitHub Desktop</ref> installed prior to attending this workshop.
+            </p>
+        </body>
+    </text>
+</TEI>

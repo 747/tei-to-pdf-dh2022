@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Finding Haiku – Enhancing Findability and Accessibility of Poetry Resources in Multi-genre Collections across Different Languages</title>
+                <author>
+                    <persName>
+                        <surname>Mrugalski</surname>
+                        <forename>Michał</forename>
+                    </persName>
+                    <affiliation>Humboldt University of Berlin, Germany</affiliation>
+                    <email>michal.mrugalski@hu-berlin.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Odebrecht</surname>
+                        <forename>Carolin</forename>
+                    </persName>
+                    <affiliation>Humboldt University of Berlin, Germany</affiliation>
+                    <email>carolin.odebrecht@hu-berlin.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Charvat</surname>
+                        <forename>Vera</forename>
+                    </persName>
+                    <affiliation>Austrian Academy of Sciences</affiliation>
+                    <email>veramaria.charvat@oeaw.ac.at</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Börner</surname>
+                        <forename>Ingo</forename>
+                    </persName>
+                    <affiliation>University of Potsdam</affiliation>
+                    <email>ingo.boerner@uni-potsdam.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Data curation and selection</term>
+                    <term>the European haiku</term>
+                    <term>FAIR</term>
+                    <term>genre-specific metamodel for metadata</term>
+                    <term>machine-readable archive of queries</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>information retrieval and querying algorithms and methods</term>
+                    <term>metadata standards</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>Library &amp; information science</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p rend="No Spacing">
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text">Ingo Börner is with the Department of German Studies; University of Potsdam, email: ingo.boerner@uni-potsdam.de</p>
+                    <p rend="footnote text">Vera Maria Charvat is with the Austrian Centre for Digital Humanities and Cultural Heritage, Austrian Academy of Sciences, email: veramaria.charvat@oeaw.ac.at</p>
+                    <p rend="footnote text">Michał Mrugalski is with the Institute of German Language and Linguistics, Humboldt University of Berlin, email: michal.mrugalski@hu-berlin.de</p>
+                    <p rend="footnote text">Carolin Odebrecht is with the Institute of German Language and Linguistics, Humboldt University of Berlin, email: carolin.odebrecht@hu-berlin.de</p>
+                </note>Abstract
+            </p>
+            <p rend="No Spacing">
+                The refinement of data curation and selection takes a fundamental part in Computational Literary Studies. Using the exemplary case of scanning European text collections for instances of the genre “haiku”, this short presentation will illustrate the need for the methods and tools being developed in the CLS INFRA project
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p rend="footnote text">
+                        <hi style="font-size:8pt" xml:space="preserve">“Computational Literary Studies Infrastructure” (CLS INFRA, No. 101004984) is a Integrating Activities for Starting Communities (IASC)-project, launched in March 2021 and funded by Horizon Europe 2020 (Call:  H2020-INFRAIA-2020-1) for the duration of 48 months. Its overall goal is to create uniform and easy access to the best European and national infrastructures for the CLS community. See also: </hi>
+                        <ref target="https://clsinfra.io/">
+                            https://clsinfra.io/
+                        </ref>
+                        (last accessed: 2021-11-26)
+                    </p>
+                </note>
+                <hi style="font-size:9pt" xml:space="preserve"> in order to enhance data findability and accessibility according to the FAIR framework (findable, accessible, interoperable, reusable; Wilkinson et al. 2016). Specifically, it will show which procedures and steps are necessary to optimally prepare and structure literary corpora for the CLS community.</hi>
+            </p>
+            <p rend="No Spacing">Problem Statement</p>
+            <p rend="No Spacing">
+                To all appearances, the haiku as a well-established and strictly prescribed short form should be easy to identify in multi-genre and multilingual collections. Yet, difficulties arise from both cultural (Hokenson 2007; Johnson 2011; Śniecikowska 2016) and infrastructural factors. Given the stringent rules of application for Japanese phonetics (mora
+                <note place="foot" xml:id="ftn3" n="3">
+                    <p rend="footnote text">
+                        <hi style="font-size:8pt" xml:space="preserve"> A unit of duration in Japanese used to measure the length of words and utterances; mora languages differ from syllable languages like English.</hi>
+                    </p>
+                </note>
+                <hi rend="baseline" style="font-size:9pt">,</hi>
+                <hi rend="italic" style="font-size:9pt">kireji</hi>
+                <note place="foot" xml:id="ftn4" n="4">
+                    <p rend="footnote text">
+                        Cutting syllable, separating the first verse from the others.
+                    </p>
+                </note>
+                ), syntax, and semantics (
+                <hi rend="italic" style="font-size:9pt">kigo</hi>
+                ),
+                <note place="foot" xml:id="ftn5" n="5">
+                    <p rend="footnote text">
+                        <hi style="font-size:8pt" xml:space="preserve">Codified signals of seasons: plus 1000 lexemes contained in </hi>
+                        <hi rend="color(202122)" style="font-size:8pt" xml:space="preserve">the </hi>
+                        <hi rend="italic color(202122)" style="font-size:8pt">saijki</hi>
+                        <hi rend="color(202122) background(white)" style="font-size:8pt">, a prescriptive list of such words</hi>
+                        <hi rend="color(202122)" style="font-size:8pt">.</hi>
+                    </p>
+                </note>
+                <hi style="font-size:9pt" xml:space="preserve"> the genre of the haiku appears to be untranslatable into European literary systems. All European haikus are merely approximations of the precise form contingent on the specific structure of the Japanese language. This impossibility of identifying the canonical version of the haiku outside Japanese literature, paired with the heterogeneity of the existing infrastructure of text collections, makes the search for sustainable data extremely time and resource consuming. The following questions arise: </hi>
+            </p>
+            <p rend="No Spacing">Which features of different European approaches to the strict Japanese genre should be given priority in identifying a poem as a haiku?</p>
+            <p rend="No Spacing">How can the evaluation and exploration of literary text collections be facilitated in regard to these features?</p>
+            <p rend="No Spacing">Adapted Approach </p>
+            <p rend="No Spacing">
+                To answer these questions, a selection of corpora
+                <note place="foot" xml:id="ftn6" n="6">
+                    <p rend="footnote text">
+                        <hi style="font-size:8pt" xml:space="preserve">The history of our searches is provisionally stored in Gitlab (please note that the access at this time is limited to CLS INFRA project members): </hi>
+                        <ref target="https://gitlab.clsinfra.io:11435/cls-infra/haiku-challenge">
+                            https://gitlab.clsinfra.io:11435/cls-infra/haiku-challenge
+                        </ref>
+                        <hi style="font-size:8pt" xml:space="preserve">; </hi>
+                        <ref target="https://gitlab.clsinfra.io:11435/cls-infra/haiku-challenge/-/issues">
+                            https://gitlab.clsinfra.io:11435/cls-infra/haiku-challenge/-/issues
+                        </ref>
+                    </p>
+                </note>
+                <hi style="font-size:9pt" xml:space="preserve"> from a list of literary resources (collected and curated since the beginning of the CLS INFRA project as part of a deliverable) was selected for closer examination.</hi>
+            </p>
+            <p rend="No Spacing">
+                <hi style="font-size:9pt" xml:space="preserve">Relying on metadata- and data-derived information, the corpora were scanned for both “explicit” and “implicit” (“adaptations” according to Long and So 2016) realizations. </hi>
+            </p>
+            <p rend="No Spacing">
+                Explicit haikus are either translations of the Japanese models or original creations labeled as “haiku”. Their findability relies heavily on metadata provided by corpus compilers/distributors. Two telling cases are Wikisource
+                <note place="foot" xml:id="ftn7" n="7">
+                    <p rend="footnote text">
+                        <ref target="https://wikisource.org/wiki/Main_Page">https://wikisource.org/wiki/Main_Page</ref> (last accessed: 2021-11-26).
+                    </p>
+                </note>
+                <hi style="font-size:9pt" xml:space="preserve"> and the Russian National Corpus,</hi>
+                <note place="foot" xml:id="ftn8" n="8">
+                    <p rend="footnote text">
+                        <ref target="https://ruscorpora.ru/new/search-poetic.html">https://ruscorpora.ru/new/search-poetic.html</ref> (last accessed: 2021-11-26).
+                    </p>
+                </note>
+                <hi style="font-size:9pt" xml:space="preserve"> which recognize the haiku as a distinct form, but only in annotations to separate poems and not in the inventory of genres.</hi>
+            </p>
+            <p rend="No Spacing">As for implicit haikus, their findability depends on the addressability of certain textual features (such as: verses, syllables, and topics) ensuing from the structure of a corpus.</p>
+            <p rend="No Spacing">
+                Example: As a result of favoring the cultural universal of verse count over the relation to the number of syllables (absent in Japanese, instead divisible in mora), an algorithm was devised that extracts three-verse poems from the DLK (German Lyrik Corpus, cf. Haider 2021). In the DLK syllables are already marked-up, which makes counting syllables possible and thus provides an additional criterion to identify possible haikus. However, the ideal structure of 17 (5+7+5) syllables could not be identified.
+            </p>
+            <p rend="No Spacing">
+                Two problems arise: inconsistencies in the recording of metadata and discrepancies in the structural annotation of texts in literary corpora.
+            </p>
+            <p rend="No Spacing">Proposed Solution</p>
+            <p rend="No Spacing">Based on implementation concepts being developed within the CLS INFRA project, the following solution is proposed for the aforementioned problems: on the one hand, a descriptive metamodel for poetry corpora will be introduced, which is derived from the “Metamodel for Corpus Metadata” [MCM; Odebrecht 2018], allowing a fine-grained genre-specific description of collections. On the other hand, a machine-readable archive will be provided, which contains the results of previous searches for particular poetry forms; it will contain explicit statements about various features of the corpus (e.g., whether a certain method yielded positive results). </p>
+            <p rend="No Spacing">
+                The metamodel will be realized as an extension to CIDOC CRM,
+                <note place="foot" xml:id="ftn9" n="9">
+                    <p rend="footnote text">
+                        <ref target="https://cidoc-crm.org/">https://cidoc-crm.org/</ref> (last accessed: 2021-11-26).
+                    </p>
+                </note>
+                <hi style="font-size:9pt" xml:space="preserve"> using other well-established ontologies, e.g., FRBRoo.</hi>
+                <note place="foot" xml:id="ftn10" n="10">
+                    <p rend="footnote text">
+                        <ref target="https://cidoc-crm.org/frbroo/home-0">https://cidoc-crm.org/frbroo/home-0</ref> (last accessed: 2021-11-26).
+                    </p>
+                </note>
+                <hi style="font-size:9pt" xml:space="preserve"> The class “Annotation” of the MCM will be introduced to CIDOC CRM’s event-centered model to record various features of corpora including provenance information. This allows to express even conflicting statements about a resource, which can thereby be traced back and assessed individually. </hi>
+            </p>
+            <p style="text-align: left; ">
+                In the haiku-example, this approach will be tested by attaching information to corpora such as tokenization rules, syllable structure, verse structure, etc. By linking concepts to external reference resources, e.g., Wikidata,
+                <note place="foot" xml:id="ftn11" n="11">
+                    <p rend="footnote text">
+                        <ref target="https://www.wikidata.org/">
+                            <hi rend="color(0563C1)">https://www.wikidata.org/</hi>
+                        </ref> (last accessed: 2021-11-26).
+                    </p>
+                </note>
+                <hi style="font-size:9pt" xml:space="preserve"> it will be possible to search for literary studies’ notions used in the annotation of documents in the corpus.</hi>
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" style="font-size:9pt">Haider, Thomas (2021):</hi>
+                        "
+                        <hi rend="color(24292F)" style="font-size:9pt">Metrical Tagging in the Wild: Building and Annotating Poetry Corpora with Rhythmic Features</hi>
+                        "
+                        <hi rend="italic bold" style="font-size:9pt" xml:space="preserve">. </hi>
+                        <hi rend="color(24292F)" style="font-size:9pt">Proceedings of the European Association for Computational Linguistics, arXiv:2102.08858</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:9pt" xml:space="preserve">Hokenson, Jan Walsh </hi>
+                        (2007): "Haiku as a Western Genre. Fellow-Traveller of Modernism". Eysteinsson, Astradur/ Liska, Vivien (eds.), Modernism. Amsterdam/Philadelphia: , vol. 2, 693-714.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:9pt">Johnson, Jeffrey</hi>
+                        <hi style="font-size:9pt" xml:space="preserve"> (2011): Haiku poetics in Twentieth-Century Avant-Garde Poetry. Langham et al.: Lexington Books.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:9pt">Long, Hoyt / So, Richard J.</hi>
+                        <hi style="font-size:9pt" xml:space="preserve"> (2016): "Literary Pattern Recognition: Modernism between Close Reading and Machine Learning". Critical Inquiry 42 (Winter 2016): 235–67.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:9pt">Odebrecht, Carolin</hi>
+                        <hi style="font-size:9pt" xml:space="preserve"> (2018): "MKM – ein Metamodell für Korpusmetadaten. Dokumentation und Wiederverwendung historischer Korpora", Dissertation. Humboldt-Universität zu Berlin, Sprach- und literaturwissenschaftliche Fakultät, Berlin. doi:</hi>
+                        <ref target="https://doi.org/10.18452/19407">
+                            https://doi.org/10.18452/19407
+                        </ref>
+                          
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" style="font-size:9pt" xml:space="preserve">Śniecikowska, Beata </hi>
+                        (2016): Haiku po polsku. Genologia w perspektywie transkulturowej. Toruń: Wydawnictwo UMK.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-size:9pt">Wilkinson, Mark D. / Dumontier, Michel / Aalbersberg, IJsbrand J. / et al.</hi>
+                        <hi style="font-size:9pt" xml:space="preserve">(2016): "The FAIR Guiding Principles for scientific data management and stewardship". Sci Data 3, 160018. doi: </hi>
+                        <hi rend="color(0563C1)" style="font-size:9pt">https://doi.org/10.1038/sdata.2016.18</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

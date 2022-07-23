@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Online Readership and Perceptions of Genres Over Time </title>
+                <author>
+                    <persName>
+                        <surname>Antoniak</surname>
+                        <forename>Maria</forename>
+                    </persName>
+                    <affiliation>Cornell University</affiliation>
+                    <email>maa343@cornell.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Walsh</surname>
+                        <forename>Melanie</forename>
+                    </persName>
+                    <affiliation>University of Washington</affiliation>
+                    <email>melwalsh@uw.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mimno</surname>
+                        <forename>David</forename>
+                    </persName>
+                    <affiliation>Cornell University</affiliation>
+                    <email>mimno@cornell.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T16:01:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>online reading communities</term>
+                    <term>genres</term>
+                    <term>publication year</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>social media analysis and methods</term>
+                    <term>Computer science</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">When today’s readers think about “science fiction,” what kinds of books do they think of? Do they think of Ursula K. Le Guin’s 1969 novel 
+                <hi rend="italic">The Left Hand of Darkness</hi>, or Neal Stephenson’s 1992 
+                <hi rend="italic">Snow Crash</hi>, or Hugh Howey’s 2011 
+                <hi rend="italic">Silo</hi> series? Another way of phrasing this question might be: When today’s readers think about “science fiction,” what 
+                <hi rend="italic">era</hi> of books do they think of? Do they think of the 1960s, the 1990s, the 2010s, or all of the above? What about “romance,” “fantasy,” “classics,” and “vampires”? What historical eras do readers imagine when they think about these categories, and how do they compare to science fiction?
+            </p>
+            <p style="text-align: left; ">Data from online reading communities like Goodreads and LibraryThing — where readers rate, review, and categorize books — enables us to answer these questions and to explore the relationship between genre and historical period in the minds of readers. We specifically examine reception data from LibraryThing, where users can add any number of free-text tags to any book and where all of this data is publicly available (unlike Goodreads, where review data is mostly hidden (Walsh and Antoniak 2021)) and we combine it with book publication information in order to better understand which eras of books readers are categorizing with which tags. For example, it turns out that the median publication date for books tagged as “science fiction” is the year 1989, which is significantly earlier than the median publication date for the tag “vampires,” the year 2007. This information can help us identify emergent genres as well as understand how readers perceive genres historically. </p>
+            <p style="text-align: left; ">This work builds on recent studies of online reading communities that take advantage of the scale and diversity of online data to examine readers’ preferences (Manshel et al., 2019; Bourier and Thelwall, 2020; English et al., 2021). In particular, our work adds to explorations of online readers’ perceptions of genres (Hegel, 2018; Antoniak et al., 2021; Walsh and Antoniak, 2021), which have used natural language processing methods on reviews to measure affinities and differences between user-applied tags. By focusing on publication dates, we contribute a new layer in understanding how today’s readers perceive literary genres.</p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Comparing the Top 20 Most Popular Tags By Publication Date</head>
+                <p style="text-align: left; ">We begin by examining the distribution of publication years for the 20 most popular tags. From the set of most popularly used tags on LibraryThing, we select the 20 most popular tags that are not meta (e.g., 
+                    <hi rend="italic">to-read</hi>) or repetitive (e.g., 
+                    <hi rend="italic">classic</hi> when already including 
+                    <hi rend="italic">classics</hi>), which ensures that the selected tags more closely resemble genre or subject labels.  For each of these 20 tags, we scrape the metadata of the 1,000 books most often assigned that tag. This metadata includes the book’s title, author, original publication year, user ratings, user reviews, and the full set of tags that users have applied to this book. Of the tags assigned to any book, we include only those assigned by at least 10 users. 
+                </p>
+                <p style="text-align: left; ">The resulting distributions suggest that users perceive certain tags as belonging to earlier historical periods than others. For example, the median publication date for 
+                    <hi rend="italic" xml:space="preserve">classics </hi>(1900), 
+                    <hi rend="italic" xml:space="preserve">children </hi>(1971), and 
+                    <hi rend="italic">picture book</hi> (1989) are all decades earlier than 
+                    <hi rend="italic" xml:space="preserve">graphic novel </hi>(2006), 
+                    <hi rend="italic" xml:space="preserve">vampires </hi>(2007), or 
+                    <hi rend="italic" xml:space="preserve">young adult </hi>(2005). This contrast likely points to the fact that 
+                    <hi rend="italic">graphic novel</hi>, 
+                    <hi rend="italic">vampires</hi>, and 
+                    <hi rend="italic">young adult</hi> are more recent, emergent genres. The publication distribution for 
+                    <hi rend="italic">horror</hi>, a genre that sometimes includes characters who are vampires, is also much earlier and wider than 
+                    <hi rend="italic">vampires</hi>, again suggesting that 
+                    <hi rend="italic">vampires</hi> is its own distinct, historically-specific genre. Unlike vampires, the tags 
+                    <hi rend="italic">mystery</hi> and 
+                    <hi rend="italic">science fiction</hi> both have wide publication distributions that begin in the early 20th century. 
+                </p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="13.851819444444445cm" url="Pictures/91af338f99b958acd02b636a18aa4eb5.png" rend="inline"/>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Exploring Each Tag By Co-Occurring Tags and Publication Date </head>
+                <p style="text-align: left; ">We then consider each of the most popular 20 tags in turn, examining each tag’s 40 most commonly 
+                    <hi rend="italic">co-occurring tags</hi> and their corresponding publication date distributions. This view allows us to see at an even more granular level which aspects of a tag might contribute to its perceived relationship with different historical eras. For example, 
+                    <hi rend="italic">mystery</hi> books that receive the tag 
+                    <hi rend="italic">USA</hi> are, on average, newer than 
+                    <hi rend="italic" xml:space="preserve">mystery </hi>books that receive the tags 
+                    <hi rend="italic">England</hi> or 
+                    <hi rend="italic">British</hi>. Similarly, 
+                    <hi rend="italic">mystery</hi> books that receive the 
+                    <hi rend="italic" xml:space="preserve">hardcover </hi>tag are typically newer than 
+                    <hi rend="italic">mystery</hi> books that receive the 
+                    <hi rend="italic">paperback</hi> tag, likely because new books are published in hardcover before they are published in paperback. These co-occurring tags and publication date distributions give us a more multidimensional understanding of how readers use the tag 
+                    <hi rend="italic">mystery</hi>.
+                </p>
+                <figure>
+                    <graphic n="1002" width="16.002cm" height="16.640527777777777cm" url="Pictures/618701f7cc74e65e75855c9eb421ab23.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">We also examine the difference between the median publication year for a tag over all the books and the median publication year for only those books most often assigned to one of our 20 target tags. For example, for the books most often receiving the tag 
+                    <hi rend="italic">horror</hi>, the co-occurring tag 
+                    <hi rend="italic">20th century</hi> is assigned to books with more recent publication years compared to the full set of books receiving the 
+                    <hi rend="italic">20th century</hi> tag. But when 
+                    <hi rend="italic">horror</hi> books receive the 
+                    <hi rend="italic" xml:space="preserve">vampires </hi>or 
+                    <hi rend="italic">werewolves</hi> tags, these tend to have older median publication dates than they normally would. The 
+                    <hi rend="italic" xml:space="preserve">horror </hi>genre, according to LibraryThing users, consists of newer books tagged 
+                    <hi rend="italic">20th century</hi>, 
+                    <hi rend="italic">American literature</hi>, and 
+                    <hi rend="italic">short stories</hi> as well as  older books tagged 
+                    <hi rend="italic">classics</hi>, 
+                    <hi rend="italic">vampires</hi>, and 
+                    <hi rend="italic">supernatural</hi> books, in comparison to the other genres.
+                </p>
+                <figure>
+                    <graphic n="1003" width="16.002cm" height="11.371791666666667cm" url="Pictures/683356af6ab69442b97c9309a7f14293.png" rend="inline"/>
+                </figure>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left; ">We have shown that tags and book publication dates can be combined to give us multidimensional views of how readers use tags in online reading communities. Of course readers’ use of tags and their perceptions of genre are shaped by a multitude of economic and sociological factors (McGrath, 2020) that we do not address here. And we believe that considering these factors and attendant critical scholarship would help draw out the significance of our findings even more. While we leave this specific synthesis to future work, we conclude with the claim that reception data like tags and data-driven research like our study can contribute to ongoing conversations about literary genre and help illuminate how contemporary readers think about and interact with books.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">​​
+                        <hi rend="bold">Antoniak, M., Walsh, M., and D. Mimno.</hi> (2021). "Tags, Borders, and Catalogs: Social Re-Working of Genre on LibraryThing." Proceedings of the ACM on Human-Computer Interaction 5. CSCW (2021): 1-29.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bourrier, K., and Thelwall, M.</hi> (2020). "The social lives of books: Reading Victorian literature on Goodreads." Journal of Cultural Analytics 1.1: 12049.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">English, J. F., Enderle, S., and Dhakecha, R</hi>. (2018). "Mining Goodreads: Literary Reception Studies at Scale," 
+                        <ref target="https://pricelab.sas.upenn.edu/projects/goodreads-project">
+                            <hi rend="color(1155CC)" style="font-family:Source Serif Pro">https://pricelab.sas.upenn.edu/projects/goodreads-project</hi>
+                        </ref>, accessed December 10, 2021.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Hegel, A.</hi> (2018). Social Reading in the Digital Age. University of California, Los Angeles.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">McGrath, L.</hi> (2020). "America’s Next Top Novel." Post45.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Walsh, M., and Antoniak, M.</hi> (2021). "The Goodreads “Classics”: A Computational Study of Readers, Amazon, and Crowdsourced Amateur Criticism." Journal of Cultural Analytics 4: 243-260.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Manshel, A., McGrath, L.B., and Porter, J. D.</hi> (2019). "Who Cares about Literary Prizes?." Public Books 3.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

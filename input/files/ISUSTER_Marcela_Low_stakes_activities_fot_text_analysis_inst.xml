@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Low-stakes activities fot text analysis instruction in the undergraduate classroom</title>
+                <author>
+                    <persName>
+                        <surname>Isuster</surname>
+                        <forename>Marcela Y.</forename>
+                    </persName>
+                    <affiliation>McGill University</affiliation>
+                    <email>marcela.isuster@mcgill.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-07T19:00:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>text analysis</term>
+                    <term>assessment</term>
+                    <term>pedagogy</term>
+                    <term>instruction</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>curricular and pedagogical development and analysis</term>
+                    <term>text mining and analysis</term>
+                    <term>Education/ pedagogy</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">The introduction of digital text analysis tools and methodologies in (non-digital) humanities undergraduate courses has been sparsely documented in the literature. Furthermore, most of the times we encounter it, it is done in the context of semester-long or mid-term projects (Boyle and Hall 2016; Ficke 2014), where the stakes for the students are very high. Other times, they include a session on text analysis but no practical application of the tools and methodologies discussed in the course, other than a follow along demonstration.</p>
+            <p style="text-align: left; ">This short paper introduces a middle point between these two extremes through the introduction of low stakes activities and assignments to help student discover and use digital text analysis tools and methodologies.</p>
+            <p style="text-align: left; ">Besides giving students the opportunity to interact with the material in a safe and relaxed manner, low stakes activities help with student retention, confidence, and relationship building (Hamilton 2020; Meer and Chapman 2014). Low stakes activities are also a useful tool to assess comprehension and instruction when the person delivering the lesson is not the regular or official instructor in the course, such as the case of a librarian or a guest speaker. Furthermore, these types of activities are particularly useful for digital humanities instruction because they contribute to scaffolding, a method that has been identified as ideal in this type of instruction (Griffin and Taylor 2017; Isuster 2020; Sample and Schrum 2013; Tracy and Hoiem, 2018).</p>
+            <p style="text-align: left; ">In the context of a Hispanic Studies course, a librarian offered a workshop series on digital text analysis and the web-based reading and analysis environment Voyant Tools. Interspersed with instruction there were a series of low stakes assessments that helped students understand and apply the content of the workshops. Working with the class readings, the librarian created activities that did not rely on having a single answer but encouraged students to discuss and interrogate both the methods and the information used. For example, when preparing a text for text analysis, students debated how different research questions necessitate different text preparation. The activities were completed in groups and were not graded. Results were discussed within the class.</p>
+            <p style="text-align: left; ">The short paper presentation will explore the process of creating and implementing low stakes activities for digital text analysis and other digital humanities instruction. It will discuss the benefits of these types of activities as they pertain to digital humanities instruction and engagement and will share best practices and tips to help attendees create these kinds of activities in their own classrooms, including assignment design and sourcing materials.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">Boyle, M. and Hall, C. (2016) ‘Teaching “Don Quixote” in the Digital Age: Page and Screen, Visual and Tactile’, 
+                        <hi rend="italic">Hispania</hi>, 99(4), pp. 600–614.
+                    </bibl>
+                    <bibl style="text-align: left;">Ficke, S.H. (2014) ‘From Text to Tags: The Digital Humanities in an Introductory Literature Course’, 
+                        <hi rend="italic">CEA Critic</hi>, 76(2), pp. 200–210. 
+                        <ref target="https://doi.org/10.1353/cea.2014.0012">10.1353/cea.2014.0012</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">Griffin, M. and Taylor, T.I. (2017) ‘Shifting expectations: Revisiting core concepts of academic librarianship in undergraduate classes with a digital humanities focus’, 
+                        <hi rend="italic">College &amp; Undergraduate Libraries</hi>, 24(2–4), pp. 452–466. 
+                        <ref target="https://doi.org/10.1080/10691316.2017.1325346">10.1080/10691316.2017.1325346</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">Hamilton, M. (2020) ‘Implementation of a low-stakes daily assessment in a large introductory LAC course’, 
+                        <hi rend="italic">Teaching and Assessment Symposium</hi> [Preprint]. Available at: 
+                        <ref target="https://digscholarship.unco.edu/posters_2020/4">https://digscholarship.unco.edu/posters_2020/4</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">Isuster, M.Y. (2020) ‘From students to authors: Fostering student content creation with Scalar’, 
+                        <hi rend="italic">College &amp; Undergraduate Libraries</hi>, 27(2-4), pp. 133–148. 
+                        <ref target="https://doi.org/10.1080/10691316.2020.1830908">10.1080/10691316.2020.1830908</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">Meer, N.M. and Chapman, A. (2014) ‘Assessment for confidence: Exploring the impact that low-stakes assessment design has on student retention’, 
+                        <hi rend="italic">The International Journal of Management Education</hi>, 12(2), pp. 186–192. 
+                        <ref target="https://doi.org/10.1016/j.ijme.2014.01.003">10.1016/j.ijme.2014.01.003</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">Sample, M. and Schrum, K. (2013) ‘What’s Wrong with Writing Essays: A Conversation’, in Cohen, D.J. and Scheinfedlt, J.T. (eds) 
+                        <hi rend="italic">Hacking the academy : new approaches to scholarship and teaching from digital humanities</hi>. Ann Arbor, MI: University of Michigan Press, pp. 87–96.
+                    </bibl>
+                    <bibl style="text-align: left;">Tracy, D.G. and Hoiem, E.M. (2018) ‘Scaffolding and Play Approaches to Digital Humanities Pedagogy: Assessment and Iteration in Topically-Driven Courses’, 
+                        <hi rend="italic">Digital Humanities Quarterly</hi>, 11(4). Available at: 
+                        <ref target="http://digitalhumanities.org:8081/dhq/vol/11/4/000358/000358.html">http://digitalhumanities.org:8081/dhq/vol/11/4/000358/000358.html</ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

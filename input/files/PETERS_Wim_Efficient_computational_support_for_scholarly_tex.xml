@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Efficient computational support for scholarly textual research</title>
+                <author>
+                    <persName>
+                        <surname>Peters</surname>
+                        <forename>Wim</forename>
+                    </persName>
+                    <affiliation>University of Mainz, Germany</affiliation>
+                    <email>wilhelmuswim@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T09:38:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>natural language processing</term>
+                    <term>research methodology</term>
+                    <term>workflow</term>
+                    <term>mixed methods</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>Contemporary</term>
+                    <term>natural language processing</term>
+                    <term>text mining and analysis</term>
+                    <term>History</term>
+                    <term>Law and legal studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>This presentation discusses and investigates the integration of computational natural language processing methods into established digital humanities workflows. This integration aims at optimizing the scholarly exploration of the conceptual structure of the thematic domain under consideration in a particular corpus of text.</p>
+            <p>The overall tasks of identifying, extracting, and formalizing knowledge contained in larger volumes of text as part of a scholarly interpretation process are highly specialized and both knowledge and labour-intensive activities, especially when performed manually. The availability of increasing amounts of digital (related) textual data and metadata in the last decades has posed a challenge to the traditional scholarly research workflows in terms of textual data analysis and research data production. Because the traditional close reading method is often time consuming, a large amount of textual source material, to be interpreted in a traditional hermeneutic approach, creates a significant bottleneck for an exhaustive scholarly understanding of the semantic content of the subject revealed in the texts.</p>
+            <p>The overall emphasis of our work is on how computer-based analysis can be integrated into the incremental hermeneutic cycle of Understanding - Contextualization - Explanation (a.o. Dilthey 1904), resulting in a Digital Hermeneutics workflow. </p>
+            <p>Central to our interest in this context is the methodological issue of the interpretation of text with the help of digital technology in the form of natural language processing (NLP), which forms a bridge between the linguistic surface structure and the underlying conceptual content of textual resources by means of the computer-based, automatic acquisition of content.</p>
+            <p>A principled methodology enabling the integration of manual and automatic analysis of textual material aims at identifying and integrating computationally derived suggestions for further focused close reading by scholars, and integrating these results into a workflow that maximizes scholarly conceptual acquisition and exploration.</p>
+            <p>The underlying assumption is that scholars and computers do not have mutually exclusive ways of working. Often there is not an opposition but a synergetic interaction between algorithmic analysis and close interpretative reading (Hayles 2012). In order to realize a sucessful workflow, computational analysis should conform to some strict criteria. It should be minimally intrusive towards scholarly research strategy, and offer customizability of analysis in service to scholars’ requirements, enabling researchers to flexibly follow leads in their resource analysis, focus on material that has a high potential of touching on their research questions, and incrementally expand the scope of their insights.</p>
+            <p>In this context it is important to note the partiality of computional interpretation. Computational analysis using NLP is hermeneutically imprecise and incomplete, and can only offer partial suggestions for scholarly hermeneutic research (van Zundert, 2016, Shadrova, 2021). It should not technocratically dictate the research agenda, avoiding that the inclusion of computer-supported data analyses into hermeneutic scholarly workflows entail the replacement of the scholar's interpretive and hermeneutic work (Zaagsma, 2013). Rather, it should establish a balanced integration of both traditional qualitative approaches, such as close reading, and quantitative or other computational techniques, which can help address the limitations of each method alone (Gibbs and Owens, 2013).</p>
+            <p>For each incremental phase within the Digital Hermeneutic cycle NLP techniques should be selected and customised to scholars’ research questions (Peters et al, 2019; Woolf and Silver, 2018). The advisory, ancillary role of computer analysis ensures maximum scholarly control of research activity and strategy, and causes computational text analysis in the humanities to be minimally intrusive and overbearing (Peters, 2019).</p>
+            <p>We present a Digital Hermeneutic workflow model for the computer-mediated interpretation and understanding of born digital texts (which precludes error-prone workflows working with texts obtained through OCR). This workflow integrates scholarly activity and digital technologies in the form of both existing tools and custom computational processing. Its circularity fosters deep text interpretation by scholars with the aim of incrementally addressing and expanding the range of research questions asked about a particular theme, within a particular text corpus, with the hermeneutic core goal of understanding in mind.</p>
+            <p>Overall, we argue that NLP brings possibilities for more focused and fine-grained qualitative text analysis. A tailored combination of quantitative and qualitative text analysis methods within a flexible methodological workflow, involving both scholars and NLP experts, will enable scholars to identify and put into practice research avenues of exploration and verification.</p>
+            <p>As a use case for our methodology we use textual material from two different sources within the legal domain in the form of digitised medieval council records and minutes from the Convention of the Parties (COP).</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Dilthey, W. </hi>(1904). Hermeneutics and the Study of History: Selected Works, Volume IV. Edited by R. A. Makkreel and F. Rodi. Princeton, NJ: Princeton University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Gibbs and Owens </hi>(2013). The Hermeneutics of Data and Historical Writing.
+                    </bibl>
+                    <bibl>In: Dougherty, J. and Nawrotzki, K. (eds.) (2013), Writing History in the Digital Age.</bibl>
+                    <bibl>E-book, Ann Arbor, MI: University of Michigan Press, DOI: 10.3998/dh.12230987.0001.001</bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Hayles, K.N. </hi>(2012), How We Think: Digital Media and Contemporary Technogenesis. Chicago: University of Chicago Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Peters, W., Parks, L. and Lennan, M. </hi>(2019). Integrating Language Technology into Scholarly Research Workflows.
+                    </bibl>
+                    <bibl>In: Lana Pitcher and Michael Pidd. Proceedings of the Digital Humanities Congress 2018. Studies in the Digital Humanities. Sheffield: The Digital Humanities Institute.</bibl>
+                    <bibl>Available at: &lt;https://www.dhi.ac.uk/openbook/chapter/dhc2018-peters&gt;</bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Shadrova, A. </hi>(2021). Topic models do not model topics: epistemological remarks and steps towards best practices. Journal of Data Mining &amp; Digital Humanities. 2021. 10.46298/jdmdh.7595. 
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">van Zundert, J. J. </hi>(2016). Screwmeneutics and Hermenumericals: The Computationality of
+                    </bibl>
+                    <bibl>Hermeneutics. In S. Schreibman, R. Siemens, &amp; J. Unsworth (Eds.), A New Companion to</bibl>
+                    <bibl>Digital Humanities (pp. 331-347). Wiley-Blackwell.</bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Woolf, N., Silver, C. </hi>(2018). Qualitative Analysis Using ATLAS.ti. New York: Routledge,
+                    </bibl>
+                    <bibl>https://doi.org/10.4324/9781315181684</bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Zaagsma, G., </hi>(2013). On Digital History. BMGN - Low Countries Historical Review, 128(4)
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

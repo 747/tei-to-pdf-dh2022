@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Mining the Native American Authored Works in HathiTrust for Insights</title>
+                <author>
+                    <persName>
+                        <surname>Lu</surname>
+                        <forename>Kun</forename>
+                    </persName>
+                    <affiliation>University of Oklahoma, United States of America</affiliation>
+                    <email>kunlu@ou.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Heaton</surname>
+                        <forename>Raina</forename>
+                    </persName>
+                    <affiliation>University of Oklahoma, United States of America</affiliation>
+                    <email>rainaheaton@ou.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Orr</surname>
+                        <forename>Raymond</forename>
+                    </persName>
+                    <affiliation>University of Oklahoma, United States of America</affiliation>
+                    <email>raymond_orr@ou.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vetter</surname>
+                        <forename>Alyssa</forename>
+                    </persName>
+                    <affiliation>University of Oklahoma, United States of America</affiliation>
+                    <email>alyssavetter@ou.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dubnicek</surname>
+                        <forename>Ryan</forename>
+                    </persName>
+                    <affiliation>University of Illinois, United States of America</affiliation>
+                    <email>rdubnic2@illinois.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Magni</surname>
+                        <forename>Isabella</forename>
+                    </persName>
+                    <affiliation>Indiana University, United States of America</affiliation>
+                    <email>isamagni@indiana.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Text mining</term>
+                    <term>Native-authored workset</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>natural language processing</term>
+                    <term>Indigenous studies</term>
+                    <term>Informatics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p> Native Americans represent a historically under-resourced textual community. While there has been an ever-increasing number of Native authors creating works since the 1960s, no corpus of Native-authored works exists from which to draw insights about this particular community, and give them the recognition equal to other similar communities of practice (e.g. History of Black Writing1). In collaboration with the HathiTrust Research Center (HTRC) and with the support of a Scholar-Curated Worksets for Analysis, Re-use and Dissemination grant (SCWAReD2), we have created a preliminary database of Native-authored works, which allows us to use text mining techniques to reveal novel characteristics of this community, such as their identity, worldview, representation, and modes of expression. Text mining also offers a new approach to looking at the ways in which Native authors express themselves and how they may differ from other authors. For example, there is a common assertion that Native peoples forefront the natural world or communitarian relationships more so than non-Native authors (e.g. Schweninger, 1993; Weaver, 1997). Additionally, we are interested in the rhetorical characteristics of the Native American Studies academic genre as illustrated by corpora of Native Studies journals, and how these trends define the evolution of the discipline over time.</p>
+            <table rend="rules">
+                <row>
+                    <cell style="text-align: left;" rend="DH-Default">Dataset</cell>
+                    <cell style="text-align: left;" rend="DH-Default"># of titles searched</cell>
+                    <cell style="text-align: left;" rend="DH-Default"># of titles found in HTDL</cell>
+                    <cell style="text-align: left;" rend="DH-Default">Coverage</cell>
+                </row>
+                <row>
+                    <cell style="text-align: left;" rend="DH-Default">IPL</cell>
+                    <cell style="text-align: left;" rend="DH-Default">2013</cell>
+                    <cell style="text-align: left;" rend="DH-Default">900</cell>
+                    <cell style="text-align: left;" rend="DH-Default">44.71%</cell>
+                </row>
+                <row>
+                    <cell style="text-align: left;" rend="DH-Default">NAL</cell>
+                    <cell style="text-align: left;" rend="DH-Default">122</cell>
+                    <cell style="text-align: left;" rend="DH-Default">37</cell>
+                    <cell style="text-align: left;" rend="DH-Default">30.33%</cell>
+                </row>
+                <row>
+                    <cell style="text-align: left;" rend="DH-Default">Linguistics dissertations</cell>
+                    <cell style="text-align: left;" rend="DH-Default">34</cell>
+                    <cell style="text-align: left;" rend="DH-Default">0</cell>
+                    <cell style="text-align: left;" rend="DH-Default">0%</cell>
+                </row>
+            </table>
+            <p>
+                <hi rend="bold" xml:space="preserve">Schweninger, L. </hi>(1993). Writing Nature: Silko and Native Americans as Nature Writers. 
+                <hi rend="italic">Melus</hi>, 
+                <hi rend="bold">18</hi>(2), 47-60.
+            </p>
+        </body>
+    </text>
+</TEI>

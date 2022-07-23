@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Pragmatic Research Data Management in the Humanities: Dark and Cold Archiving at the Data Center for the Humanities </title>
+                <author>
+                    <persName>
+                        <surname>Rau</surname>
+                        <forename>Felix</forename>
+                    </persName>
+                    <affiliation>Data Center for the Humanities (DCH), University of Cologne, Germany</affiliation>
+                    <email>f.rau@uni-koeln.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Helling</surname>
+                        <forename>Patrick</forename>
+                    </persName>
+                    <affiliation>Data Center for the Humanities (DCH), University of Cologne, Germany</affiliation>
+                    <email>patrick.helling@uni-koeln.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Barabucci</surname>
+                        <forename>Gioele</forename>
+                    </persName>
+                    <affiliation>Department of Design Faculty of Architecture and Design, Norwegian University of Science and Technology, Norway</affiliation>
+                    <email>gioele.barabucci@ntnu.no</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-14T13:09:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Research Data Management</term>
+                    <term>Research Data</term>
+                    <term>RDM</term>
+                    <term>Archiving</term>
+                    <term>Workflows</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>digital archiving</term>
+                    <term>digital libraries creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">Centers for Research Data Management (RDM) rightly focus on making research data findable, accessible, interoperable, and reusable in the sense of the FAIR Principles (Wilkinson et al. 2016). Repositories for storing research data in a FAIR way are of fundamental importance (Mathiak et al. 2019).</p>
+                <p style="text-align: left; ">However, data protection or copyright can impose restrictions on making data FAIR. The software and workflows commonly used by RDM centers are often unable to accommodate such particular needs, or, when they do, require expensive manual interventions.</p>
+                <p style="text-align: left; ">There is thus the need to find pragmatic solutions to provide safe, state-of-art archival workflows for data that follows good scientific practice (DFG 2019) but is currently unable to comply with all mandates of the FAIR principles</p>
+                <p style="text-align: left; ">This poster introduces the archiving workflow established at the Data Center for the Humanities (DCH) at the University of Cologne for those cases where accessibility is not desired, and findability is optional.
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p style="text-align: left; ">
+                            <ref target="https://dch.phil-fak.uni-koeln.de/">
+                                <hi rend="underline color(0000FF)">https://dch.phil-fak.uni-koeln.de/</hi>
+                            </ref> [last request: 26th of November 2021]. 
+                        </p>
+                    </note> This workflow allows us to archive research data in a structured, automated way on tape-storage from infrastructure providers at the University. The research data is thus sustainably stored but not findable and accessible (dark archiving) or, optionally, its metadata is published and findable (cold archiving).
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Background</head>
+                <p style="text-align: left; ">The DCH is a central institution at the Faculty of Arts and Humanities of the University of Cologne. DCH supports and advises researchers within the Humanities in RDM questions over the entire research data life cycle (Blumtritt et al. 2018, Helling et al. 2018).
+                    <note place="foot" xml:id="ftn2" n="2">
+                        <p style="text-align: left; ">
+                            <ref target="https://dch.phil-fak.uni-koeln.de/fdm-services">https://dch.phil-fak.uni-koeln.de/fdm-services</ref> [last request: 26th of November 2021]. 
+                        </p>
+                    </note> While the DCH is responsible for domain-specific RDM in the Humanities, central institutions of the university offer basic IT services for RDM, which are used by the DCH. 
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Implementation of the archiving workflow </head>
+                <p style="text-align: left; ">The University of Cologne does not provide an institutional archive and there are no regional, national, or supranational cold and/or dark archiving solutions available to the researchers of the Faculty of Arts and Humanities. </p>
+                <p style="text-align: left; ">To meet the demand articulated by the faculty’s researchers, we implemented a dark archiving service. In designing the service, we focused on sustainability, in particular in making it maintainable with a minimal amount of person hours. To achieve this, we developed an archival workflow around standards and technologies that could easily be implemented using software and hardware that is already available at the University and maintained by the IT department.
+                    <note place="foot" xml:id="ftn3" n="3">
+                        <p style="text-align: left; ">
+                            <ref target="https://rrzk.uni-koeln.de/en/">
+                                <hi rend="underline color(0000FF)">https://rrzk.uni-koeln.de/en/</hi>
+                            </ref> [last request: 08th of December 2021].
+                        </p>
+                    </note>
+                </p>
+                <p style="text-align: left; ">All the software code that supports the workflow is written in the form of short Bash scripts. Bash was chosen for its ubiquity, stability, and for being a well understood technology (many experienced users and a wealth of published information).</p>
+                <p style="text-align: left; ">The archiving service comprises four key steps: 1) preparation of archival packages, 2) ingestion via university’s long-term tape archive, 3) creation of human-readable descriptive metadata, and 4) optionally, publication of metadata. Mirroring this workflow, we also implemented a retrieval workflow.</p>
+                <p style="text-align: left; ">The archival packages are prepared by our software by laying out the received research data according to the BagIt conventions and adding BagIt metadata. BagIt (Kunze et al. 2018) defines a simple way of packaging digital content with data integrity checks and metadata. The bag also contains a structured readme file with basic information provided by the researcher.</p>
+                <p style="text-align: left; ">The BagIt-compliant archival packages are ingested into the IBM Tivoli Storage Manager robotic tape library maintained by the IT department.
+                    <note place="foot" xml:id="ftn4" n="4">
+                        <p style="text-align: left; ">
+                            <ref target="https://rrzk.uni-koeln.de/en/data-storage-and-share/backup-system-tsm">
+                                <hi rend="underline color(0000FF)">https://rrzk.uni-koeln.de/en/data-storage-and-share/backup-system-tsm</hi>
+                            </ref> [last request: 08th of December 2021].
+                        </p>
+                    </note> The archival workflow guidelines describe how to map the research data files to the structure required by Tivoli. This mapping is implemented in code and is performed automatically.
+                </p>
+                <p style="text-align: left; ">Once the data is archived, descriptive metadata with core information about the data and how to access it is generated and made available for internal use.</p>
+                <p style="text-align: left; ">Regarding the requirements of the researchers, we later extended the service with a cold archiving process with published and findable metadata. When that is desired, the core information is published as a webpage via the university’s Typo3 CMS. Structured dataset metadata is embedded as Schema.org/JSON-LD. Additionally, a DataCite metadata file is created from the readme file and is used to register a digital object identifier (DOI) via the DOI service of the university library.
+                    <note place="foot" xml:id="ftn5" n="5">
+                        <p style="text-align: left; ">
+                            <ref target="https://schema.datacite.org/">
+                                <hi rend="underline color(0000FF)">https://schema.datacite.org/</hi>
+                            </ref> [last request: 08th of December 2021].
+                        </p>
+                    </note>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left; ">Our archiving service provides state-of-the-art dark and cold archiving for research data that cannot be published as FAIR data. It achieves its goals in pragmatic ways: it saves manual labor by being fully automated, and it ensures the sustainability of the process by making use of existing, widely available and well maintained technologies.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Blumtritt, J., Helling, P., Mathiak, B., Rau, F. and Witt, A.</hi> (2018) Forschungsdatenmanagement in den Geisteswissenschaften an der Universität zu Köln. In: 
+                        <hi rend="italic">o-bib, Das offene Bibliotheksjournal</hi>, p. 104-17. DOI: 
+                        <ref target="https://doi.org/10.5282/o-bib/2018H3S104-117">
+                            <hi rend="underline color(1155CC)">10.5282/o-bib/2018H3S104-117</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">DFG, Deutsche Forschungsgemeinschaft</hi> (2019). Guidelines for Safeguarding Good Research Practice. Code of Conduct. DOI: 
+                        <ref target="https://doi.org/10.5281/zenodo.3923601">
+                            <hi rend="underline color(1155CC)">10.5281/zenodo.3923601</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Helling, P., Blumtritt, J. and Mathiak, B.</hi> (2018). Der Beratungsworkflow des Data Center for the Humanities (DCH) an der Universität zu Köln. In: 
+                        <hi rend="italic">o-bib, Das offene Bibliotheksjournal</hi>, p. 248-61. DOI: 
+                        <ref target="https://doi.org/10.5282/o-bib/2018H4S248-261">
+                            <hi rend="underline color(1155CC)">10.5282/o-bib/2018H4S248-261</hi>
+                        </ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kunze, J., Littman, J., Madden, E., Scancella, J. and Adams, C.</hi> (2018). RFC8493 “The BagIt File Packaging Format (V1.0). 
+                        <hi rend="italic">Internet Engineering Task Force</hi>. Online:
+                        <ref target="%20" xml:space="preserve"> </ref>
+                        <ref target="HYPERLINK">
+                            <hi rend="underline color(1155CC)">https://tools.ietf.org/html/rfc8493</hi>
+                        </ref> [last request: 08th of December 2021]; DOI: 
+                        <ref target="https://doi.org/10.17487/RFC8493">10.17487/RFC8493</ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Mathiak, B., Metzmacher, K., Helling, P. and Blumtritt, J. </hi>(2019). The Role Of Data Archives In The Humanities At The University Of Cologne. 
+                        <hi rend="italic">DH 2019 Conference</hi>, 8-12 July 2019, Utrecht University. DOI: 
+                        <ref target="https://doi.org/10.34894/geqeko">10.34894/geqeko</ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Wilkinson, M. D., Dumontier, M., Aalbersberg, I. J., Appleton, G., Axton, M., Baak, A., Blomberg, N., Boiten, J.-W., Bonino da Silva Santos, L., Bourne, P. E., Bouwman, J., Brookes, A. J., Clark, T., Crosas, M., Dillo, I., Dumon, O.,  Edmunds, S., Evelo, C. T., Finkers, R., Gonzalez-Beltran, A., Gray, A. J. G., Groth, P., Goble, C., Grethe, J. S., Heringa, J., ’t Hoen, P. A. C., Hooft, R., Kuhn, T., Kok, R., Kok, J., Lusher, S. J., Martone, M. E., Mons, A., Packer, A. L.,  Persson, B., Rocca-Serra, P., Roos, M., van Schaik, R., Sansone, S.-A.,  Schultes, E., Sengstag, T., Slater, T., Strawn, G., Swertz, M. A., Thompson, M., van der Lei, J., van Mulligen, E., Velterop, J., Waagmeester, A., Wittenburg, P., Wolstencroft, K., Zhao, J. and Mons, B. </hi>(2016). The FAIR Guiding Principles for scientific data management and stewardship. In: 
+                        <hi rend="italic">Scientific Data 3</hi>, Article number: 160018. DOI:
+                        <ref target="https://doi.org/10.1038/sdata.2016.18" xml:space="preserve"> </ref>
+                        <ref target="https://doi.org/10.1038/sdata.2016.18">
+                            <hi rend="underline color(1155CC)">10.1038/sdata.2016.18</hi>
+                        </ref>.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>From Concepts to Textual Phenomena and Back: Operationalization in the Digital Humanities</title>
+                <author>
+                    <persName>
+                        <surname>Pichler</surname>
+                        <forename>Axel</forename>
+                    </persName>
+                    <affiliation>University of Stuttgart, Germany</affiliation>
+                    <email>axel.pichler@ts.uni-stuttgart.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Krautter</surname>
+                        <forename>Benjamin</forename>
+                    </persName>
+                    <affiliation>University of Cologne, Germany</affiliation>
+                    <email>Benjamin.Krautter@uni-koeln.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pagel</surname>
+                        <forename>Janis</forename>
+                    </persName>
+                    <affiliation>University of Cologne, Germany</affiliation>
+                    <email>janis.pagel@uni-koeln.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Andresen</surname>
+                        <forename>Melanie</forename>
+                    </persName>
+                    <affiliation>University of Stuttgart, Germany</affiliation>
+                    <email>melanie.andresen@ims.uni-stuttgart.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Pre-Conference Workshop and Tutorial</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>operationalization</term>
+                    <term>modeling</term>
+                    <term>algorithmic text analysis</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>data modeling</term>
+                    <term>text mining and analysis</term>
+                    <term>Literary studies</term>
+                    <term>Philosophy</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Abstract</head>
+                <p>This tutorial addresses one of the central challenges of the digital humanities: the operationalization of theoretical concepts from the humanities for computer-based research.</p>
+                <p>While humanities scholars primarily work with concepts that often encompass several textual phenomena and furthermore draw on contexts deemed relevant for their interpretation, computer-based work is bound to identifiable phenomena on the textual surface. The resulting discrepancy between theoretical expectations and concrete results needs to be bridged by an adequate operationalization. Thereby, the goal is to develop procedures to trace back theoretical concepts to text surface phenomena, potentially in several sub-steps. Or, in short: to detect and measure instantiations of theoretical concepts.</p>
+                <p>With our tutorial, we want to focus on this practice and its theoretical backgrounds: On the basis of selected use cases, we will show which challenges arise from the use of computational methods for questions in the humanities and how they can be dealt with. In a practical part, the participants will have the opportunity to work on the operationalization of relevant concepts for exemplary text analyses. For this purpose, we provide Jupyter notebooks for the prepared use cases. Programming skills are not required. </p>
+                <p>The aim of the tutorial is to raise awareness of the differences between established methods in the humanities and computer-based approaches, to address typical challenges, and to develop approaches for adequately operationalizing theoretical concepts from the humanities. We are convinced that reflecting the underlying assumptions of an operationalization is the only way to ensure that one can then handle the results appropriately.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Target Audience</head>
+                <p>This tutorial targets all researchers with an interest in reflecting their understanding of operationalization theoretically and practically. Group size between 15 and 25 people would be preferable. </p>
+                <p rend="DH-Heading3"><hi rend="italic">Schedule</hi></p>
+                <p>(total 4 hours incl. 30 min. break)</p>
+                <list rend="numbered">
+                    <item>Introduction and procedure (10 min.)</item>
+                    <item>Theoretical part (40 minutes in total)
+                        <list rend="bulleted">
+                            <item>Problem outline</item>
+                            <item>Introduction to the use cases</item>
+                        </list>
+                    </item>
+                    <item>Practical part
+                        <list rend="bulleted">
+                            <item>Introduction to the primary texts and tools, distribution of the draft guidelines (10 min.)</item>
+                            <item>First practical round (small groups): manual annotation of a phenomenon, parallel extension/revision of the guidelines, iterative (40-50 min.)</item>
+                            <item>- Coffee break (30 min) -</item>
+                            <item>Collection of results and discussion of approaches (20 min.)</item>
+                            <item>Second practice round (small groups): work on operationalization toolbox, feedback on output file, iterative (40-50 min.)</item>
+                        </list>
+                    </item>
+                    <item>Final discussion: collecting results, discussion of experiences and learning objectives (40 min.) </item>
+                </list>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Tutorial Instructors</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Melanie Andresen</head>
+                    <p>
+                        <ref target="mailto:melanie.andresen@ims.uni-stuttgart.de">
+                            <hi rend="underline color(1155CC)">melanie.andresen@ims.uni-stuttgart.de</hi>
+                        </ref>
+                    </p>
+                    <p>University of Stuttgart</p>
+                    <p>Institut for Natural Language Processing</p>
+                    <p>Pfaffenwaldring 5b</p>
+                    <p>D-70569 Stuttgart</p>
+                    <p>Melanie Andresen is a postdoc researcher at the Institute for Natural Language Processing at the University of Stuttgart. She studied German Linguistics at the University of Hamburg and received her PhD in corpus linguistics there in 2020. She can draw on a lot of experience with the operationalization of questions in the humanities and social sciences from the projects hermA (University of Hamburg) and Q:TRACK (University of Stuttgart, University of Cologne).</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Benjamin Krautter</head>
+                    <p>
+                        <ref target="mailto:Benjamin.Krautter@uni-koeln.de">
+                            <hi rend="underline color(1155CC)">Benjamin.Krautter@uni-koeln.de</hi>
+                        </ref>
+                    </p>
+                    <p>University of Cologne</p>
+                    <p>Department for Digital Humanities</p>
+                    <p>Albertus-Magnus-Platz</p>
+                    <p>D-50931 Cologne</p>
+                    <p>Benjamin Krautter is a PhD student at the Department of German Studies at the University of Heidelberg and a member of the Q:TRACK project (Cologne). Among other things, he is working on the operationalization of literary concepts for quantitative drama analysis. In his research he focuses on how to meaningfully combine quantitative and qualitative methods for the analysis and interpretation of literary texts.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Janis Pagel</head>
+                    <p>
+                        <ref target="mailto:janis.pagel@ims.uni-stuttgart.de">
+                            <hi rend="underline color(1155CC)">janis.pagel@uni-koeln.de</hi>
+                        </ref>
+                    </p>
+                    <p>University of Cologne</p>
+                    <p>Department for Digital Humanities</p>
+                    <p>Albertus-Magnus-Platz</p>
+                    <p>D-50931 Cologne</p>
+                    <p>Janis Pagel is a PhD student at the Institute for Natural Language Processing at the University of Stuttgart and research associate at the Department for Digital Humanities at the University of Cologne. He studied German studies and linguistics in Bochum, and computational linguistics in Stuttgart and Amsterdam. His research focuses on the application of computational linguistic methods to literary studies and coreference resolution on literary texts.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Axel Pichler</head>
+                    <p>
+                        <ref target="mailto:axel.pichler@ts.uni-stuttgart.de">axel.pichler@ts.uni-stuttgart.de</ref>
+                    </p>
+                    <p>Universität Stuttgart</p>
+                    <p>Institut für Maschinelle Sprachverarbeitung </p>
+                    <p>Pfaffenwaldring 5b</p>
+                    <p>D-70569 Stuttgart </p>
+                    <p>Axel Pichler studied Philosophy and Literary Studies in Vienna and Graz (Austria). Currently, he is working as a postdoc on, among other things, the development and reflection of methods of computer-aided text analysis at the Institute for Machine Language Processing at the University of Stuttgart.</p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

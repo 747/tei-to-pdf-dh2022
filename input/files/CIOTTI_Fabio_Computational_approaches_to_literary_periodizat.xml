@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Computational approaches to literary periodization: an experiment in Italian narrative of 19<hi rend="sup">th</hi> and 20<hi rend="sup">th</hi> century</title>
+                <author>
+                    <persName>
+                        <surname>Ciotti</surname>
+                        <forename>Fabio</forename>
+                    </persName>
+                    <affiliation>Università di Roma Tor Vergata, Italy</affiliation>
+                    <email>fabio.ciotti@uniroma2.it</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-01T12:36:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Computational Literary studies</term>
+                    <term>distant reading</term>
+                    <term>Italian modernism</term>
+                    <term>theory of literature</term>
+                    <term>history of literature</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>cultural analytics</term>
+                    <term>text mining and analysis</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Theoretical background</head>
+                <p style="text-align: left; ">Periodization is one of the fundamental topics of literary studies. As Rene Wellek puts it in one of the most notorious and important books of the last century theory of literature: “the concept of period is certainly one of the main instruments of historical knowledge”, meaning, of course, literary-historical knowledge. 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"MHb3gcBk","properties":{"formattedCitation":"(Wellek, 1956: 268)","plainCitation":"(Wellek, 1956: 268)","noteIndex":0},"citationItems":[{"id":23068,"uris":["http://zotero.org/users/563326/items/X69H59ED"],"uri":["http://zotero.org/users/563326/items/X69H59ED"],"itemData":{"id":23068,"type":"book","archive":"/z-wcorg/","event-place":"New York","ISBN":"0-15-689084-4","language":"English","publisher":"Harcourt, Brace & World","publisher-place":"New York","source":"http://worldcat.org","title":"Theory of literature","author":[{"family":"Wellek","given":"Ren??.","suffix":"Warren, Austin,,"}],"issued":{"date-parts":[["1956"]]}},"locator":"268"}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Wellek, 1956: 268). And yet is one of the most controversial and debated:
+                </p>
+                <quote>It is virtually impossible to divide periods according to dates for, as [Jurij] Lotman points out, human culture is a dynamic system. Attempts to locate stages of cultural development within strict temporal boundaries contradict that dynamism. 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"fS5WjYLz","properties":{"formattedCitation":"(Bassnett, 2013: 41)","plainCitation":"(Bassnett, 2013: 41)","noteIndex":0},"citationItems":[{"id":23069,"uris":["http://zotero.org/users/563326/items/HYAW8M2G"],"uri":["http://zotero.org/users/563326/items/HYAW8M2G"],"itemData":{"id":23069,"type":"book","archive":"/z-wcorg/","event-place":"London","ISBN":"978-0-415-50670-0","language":"English","publisher":"Routledge","publisher-place":"London","source":"http://worldcat.org","title":"Translation studies","author":[{"family":"Bassnett","given":"Susan","suffix":""}],"issued":{"date-parts":[["2013"]]}},"locator":"41"}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Bassnett, 2013: 41)
+                </quote>
+                <p style="text-align: left; ">How it comes that we can hypostatize the dynamic nature of cultural systems, superimposing on them a scalar chronology? How can we say, as Jameson puts it, that Ulysses is something that happened in 1922 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"wceoZivr","properties":{"formattedCitation":"(Jameson, 1971: 313)","plainCitation":"(Jameson, 1971: 313)","noteIndex":0},"citationItems":[{"id":23070,"uris":["http://zotero.org/users/563326/items/PPXFBW2C"],"uri":["http://zotero.org/users/563326/items/PPXFBW2C"],"itemData":{"id":23070,"type":"book","archive":"/z-wcorg/","event-place":"Princeton (N.J.)","ISBN":"0-691-01311-X","language":"English","publisher":"Princeton University Press","publisher-place":"Princeton (N.J.)","source":"http://worldcat.org","title":"Marxism and form : twentieth-century dialectical theories of literature","author":[{"family":"Jameson","given":"Fredric.","suffix":""}],"issued":{"date-parts":[["1971"]]}},"locator":"313"}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Jameson, 1971: 313)? Following Meneghelli 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"xtBsafhB","properties":{"formattedCitation":"(Meneghelli, 2013)","plainCitation":"(Meneghelli, 2013)","noteIndex":0},"citationItems":[{"id":23071,"uris":["http://zotero.org/users/563326/items/94BW622F"],"uri":["http://zotero.org/users/563326/items/94BW622F"],"itemData":{"id":23071,"type":"article-journal","container-title":"CLCWeb: Comparative Literature and Culture","DOI":"10.7771/1481-4374.2386","ISSN":"1481-4374","issue":"7","journalAbbreviation":"CLCWeb: Comparative Literature and Culture","language":"en","source":"DOI.org (Crossref)","title":"Periodization, Comparative Literature, and Italian Modernism","URL":"https://docs.lib.purdue.edu/clcweb/vol15/iss7/12","volume":"15","author":[{"family":"Meneghelli","given":"Donata"}],"accessed":{"date-parts":[["2021",12,8]]},"issued":{"date-parts":[["2013",12,31]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Meneghelli, 2013), we can individuate at least 4 critical issues, or even aporias in literary periodization:
+                </p>
+                <list rend="numbered">
+                    <item>Historical categories are related to cultural and social phenomena and overlap and interact in complex ways, determining 
+                        <hi rend="italic">anisochronies</hi> and 
+                        <hi rend="italic">dischronies</hi>;
+                    </item>
+                    <item>Most if not all literary-historical categories have an ontological and trans-historical status and meaning embedded in them (take for instance Romanticism or Modernism);</item>
+                    <item>Historical categories interact with and are dependent on geospatial ones, resulting in a multiplicity of asynchronous periodizations;</item>
+                    <item>The notion of a historical category in literature is strictly associated with the canonical corpus of texts that are considered representative of a period, and the “dialectics between these two poles, period and canon, are complex and manifold” (Meneghelli, 2013: 3).</item>
+                </list>
+                <p style="text-align: left; ">This last point is particularly relevant: literary periodization is usually the product of a process of generalization and synthesis, within a historical and social horizon, of the small-scale critical and interpretive practices that characterize the study of literary texts. Being bound to idiosyncratic hermeneutical practices and to the “epistemology of close reading”, periodization suffers from all the pitfalls and limitations of that approach. In the last two decades, the landscape of literary and cultural studies has been enriched by a methodological perspective that is based on a quantitative approach. Among the various disciplinary labels that identify this current in studies, the most common is distant reading, introduced by Franco Moretti in his work on World Literature 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"ximCqQmL","properties":{"formattedCitation":"(Moretti, 2000)","plainCitation":"(Moretti, 2000)","noteIndex":0},"citationItems":[{"id":9395,"uris":["http://zotero.org/groups/113737/items/TBZ8UJQZ"],"uri":["http://zotero.org/groups/113737/items/TBZ8UJQZ"],"itemData":{"id":9395,"type":"article-magazine","container-title":"The New Left Review","issue":"1","language":"en","title":"Conjectures on World Literature","URL":"http://newleftreview.org/A2094","author":[{"family":"Moretti","given":"Franco"}],"issued":{"date-parts":[["2000"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Moretti, 2000) and subsequently extended to denote (even retroactively) the entire tradition of quantitative literary studies 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"qgkuCAs2","properties":{"formattedCitation":"(Moretti, 2013; Underwood, 2019; Piper, 2018; Jockers, 2013)","plainCitation":"(Moretti, 2013; Underwood, 2019; Piper, 2018; Jockers, 2013)","noteIndex":0},"citationItems":[{"id":9592,"uris":["http://zotero.org/groups/113737/items/NXW5B9R3"],"uri":["http://zotero.org/groups/113737/items/NXW5B9R3"],"itemData":{"id":9592,"type":"book","abstract":"How does a literary historian end up thinking in terms of z-scores, principal component analysis, and clustering coefficient?\n\nIn the ten essays collected in this volume, Franco Moretti reconstructs the intellectual trajectory of his philosophy of ‘distant reading’. From the evolutionary model of ‘Modern European Literature’, through the geo-cultural dominant of ‘Conjectures on World Literature’ and ‘Planet Hollywood’ to the quantitative findings of ‘Style, inc.’ and the abstract patterns of ‘Network Theory, Plot Analysis’, the book follows two decades of critical explorations that have come to define – well beyond the wildest expectations of its author – a growing field of unorthodox literary studies.","event-place":"London","ISBN":"978-1-78168-084-1","language":"en","number-of-pages":"224","publisher":"Verso","publisher-place":"London","title":"Distant reading","URL":"http://www.amazon.de/Distant-Reading-Franco-Moretti/dp/1781680841","author":[{"family":"Moretti","given":"Franco"}],"issued":{"date-parts":[["2013"]]}}},{"id":78,"uris":["http://zotero.org/users/563326/items/B3AUADSC"],"uri":["http://zotero.org/users/563326/items/B3AUADSC"],"itemData":{"id":78,"type":"book","call-number":"PN73 .U53 2019","event-place":"Chicago","ISBN":"978-0-226-61266-9","publisher":"The University of Chicago Press","publisher-place":"Chicago","source":"Library of Congress ISBN","title":"Distant horizons: digital evidence and literary change","title-short":"Distant horizons","author":[{"family":"Underwood","given":"Ted"}],"issued":{"date-parts":[["2019"]]}}},{"id":77,"uris":["http://zotero.org/users/563326/items/DWL7YP9A"],"uri":["http://zotero.org/users/563326/items/DWL7YP9A"],"itemData":{"id":77,"type":"book","call-number":"PN98.E4 P56 2018","event-place":"Chicago ; London","ISBN":"978-0-226-56861-4","number-of-pages":"243","publisher":"The University of Chicago Press","publisher-place":"Chicago ; London","source":"Library of Congress ISBN","title":"Enumerations: data and literary study","title-short":"Enumerations","author":[{"family":"Piper","given":"Andrew"}],"issued":{"date-parts":[["2018"]]}}},{"id":9743,"uris":["http://zotero.org/groups/113737/items/NCNSAG62"],"uri":["http://zotero.org/groups/113737/items/NCNSAG62"],"itemData":{"id":9743,"type":"book","abstract":"In this volume, Matthew L. Jockers introduces readers to large-scale literary computing and the revolutionary potential of macroanalysis--a new approach to the study of the literary record designed for probing the digital-textual world as it exists today, in digital form and in large quantities. Using computational analysis to retrieve key words, phrases, and linguistic patterns across thousands of texts in digital libraries, researchers can draw conclusions based on quantifiable evidence regarding how literary trends are employed over time, across periods, within regions, or within demographic groups, as well as how cultural, historical, and societal linkages may bind individual authors, texts, and genres into an aggregate literary culture.\n \nMoving beyond the limitations of literary interpretation based on the \"close-reading\" of individual works, Jockers describes how this new method of studying large collections of digital material can help us to better understand and contextualize the individual works within those collections.","collection-title":"Topics in the Digital Humanities","ISBN":"978-0-252-07907-8","language":"en","publisher":"University of Illinois Press","title":"Macroanalysis: Digital Methods and Literary History","URL":"http://books.google.de/books?hl=de&lr=&id=mPOdxQgpOSUC&oi=fnd&pg=PP2&dq=Macroanalysis:+Digital+Methods+and+Literary+History&ots=R8NZyYyjSh&sig=OkLlZGTVZZMmpYgvq8CQgRzlRSw#v=onepage&q=Macroanalysis%3A%20Digital%20Methods%20and%20Literary%20History&f=false","author":[{"family":"Jockers","given":"Matthew L."}],"issued":{"date-parts":[["2013",6]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Moretti, 2013; Underwood, 2019; Piper, 2018; Jockers, 2013). In this framework literary texts are elements of a population whose synchronic and diachronic characteristics should be empirically investigated on a molar scale, adopting statistical-probabilistic and computational methods. This would require the move from 
+                    <hi rend="italic">interpretation</hi> to 
+                    <hi rend="italic">explanation</hi> as the primary methodology of scholarly inquiry in the cultural and literary domains 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"fpyviCGK","properties":{"formattedCitation":"(Ciotti, 2021)","plainCitation":"(Ciotti, 2021)","noteIndex":0},"citationItems":[{"id":23073,"uris":["http://zotero.org/users/563326/items/NYDFYR4I"],"uri":["http://zotero.org/users/563326/items/NYDFYR4I"],"itemData":{"id":23073,"type":"article-journal","abstract":"Since Franco Moretti coined the successful term distant reading, quantitative/computational text analysis methods have gained wide circulation in literary studies. The diffusion of distant reading approaches has raised a lively debate and has attracted various criticisms, both from “traditional literary scholars” and from self-critical adopters. One important reason underlying these critical positions is the fact that it lacks sound and coherent rationales from the point of view of the theory: distant reading is the first methodology in literary studies that does not come with a theory of literature embedded in it. Consequently, all distant reading studies derive their theoretical frameworks and terms from literary theories that mostly rely on the notion that literary texts can be explained only by the way of interpretation. On what grounds, then, can we construct a theory of literature amenable to distant reading methods? I think that the better theoretical frameworks are the cognitive and bio-evolutionistic approaches to literature and cultural evolution studies. These theoretical approaches require a change in the level of description of the literary domain and justify the move from \"interpretation\" to \"explanation\" as the real aim of the scholarly inquiry.","container-title":"TESTO & SENSO","ISSN":"2036-2293","issue":"23","title":"Distant reading in literary studies: a methodology in quest of theory","author":[{"family":"Ciotti","given":"Fabio"}],"issued":{"date-parts":[["2021"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Ciotti, 2021). 
+                </p>
+                <p style="text-align: left; ">The possible contribution of a distant reading approach to the literary periodization problem, has been previously explored by some important studies, like 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"6nGWCm9S","properties":{"formattedCitation":"(Jockers, 2013: chap. 6)","plainCitation":"(Jockers, 2013: chap. 6)","noteIndex":0},"citationItems":[{"id":9743,"uris":["http://zotero.org/groups/113737/items/NCNSAG62"],"uri":["http://zotero.org/groups/113737/items/NCNSAG62"],"itemData":{"id":9743,"type":"book","abstract":"In this volume, Matthew L. Jockers introduces readers to large-scale literary computing and the revolutionary potential of macroanalysis--a new approach to the study of the literary record designed for probing the digital-textual world as it exists today, in digital form and in large quantities. Using computational analysis to retrieve key words, phrases, and linguistic patterns across thousands of texts in digital libraries, researchers can draw conclusions based on quantifiable evidence regarding how literary trends are employed over time, across periods, within regions, or within demographic groups, as well as how cultural, historical, and societal linkages may bind individual authors, texts, and genres into an aggregate literary culture.\n \nMoving beyond the limitations of literary interpretation based on the \"close-reading\" of individual works, Jockers describes how this new method of studying large collections of digital material can help us to better understand and contextualize the individual works within those collections.","collection-title":"Topics in the Digital Humanities","ISBN":"978-0-252-07907-8","language":"en","publisher":"University of Illinois Press","title":"Macroanalysis: Digital Methods and Literary History","URL":"http://books.google.de/books?hl=de&lr=&id=mPOdxQgpOSUC&oi=fnd&pg=PP2&dq=Macroanalysis:+Digital+Methods+and+Literary+History&ots=R8NZyYyjSh&sig=OkLlZGTVZZMmpYgvq8CQgRzlRSw#v=onepage&q=Macroanalysis%3A%20Digital%20Methods%20and%20Literary%20History&f=false","author":[{"family":"Jockers","given":"Matthew L."}],"issued":{"date-parts":[["2013",6]]}},"locator":"6","label":"chapter"}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Jockers, 2013: chap. 6), 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"SFTfOWSB","properties":{"formattedCitation":"(Piper, 2018: chap. 4)","plainCitation":"(Piper, 2018: chap. 4)","noteIndex":0},"citationItems":[{"id":77,"uris":["http://zotero.org/users/563326/items/DWL7YP9A"],"uri":["http://zotero.org/users/563326/items/DWL7YP9A"],"itemData":{"id":77,"type":"book","call-number":"PN98.E4 P56 2018","event-place":"Chicago ; London","ISBN":"978-0-226-56861-4","number-of-pages":"243","publisher":"The University of Chicago Press","publisher-place":"Chicago ; London","source":"Library of Congress ISBN","title":"Enumerations: data and literary study","title-short":"Enumerations","author":[{"family":"Piper","given":"Andrew"}],"issued":{"date-parts":[["2018"]]}},"locator":"4","label":"chapter"}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Piper, 2018: chap. 4), 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"JXUMQRFz","properties":{"formattedCitation":"(Underwood, 2019)","plainCitation":"(Underwood, 2019)","noteIndex":0},"citationItems":[{"id":78,"uris":["http://zotero.org/users/563326/items/B3AUADSC"],"uri":["http://zotero.org/users/563326/items/B3AUADSC"],"itemData":{"id":78,"type":"book","call-number":"PN73 .U53 2019","event-place":"Chicago","ISBN":"978-0-226-61266-9","publisher":"The University of Chicago Press","publisher-place":"Chicago","source":"Library of Congress ISBN","title":"Distant horizons: digital evidence and literary change","title-short":"Distant horizons","author":[{"family":"Underwood","given":"Ted"}],"issued":{"date-parts":[["2019"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Underwood, 2019) for English narrative fiction, all based on a supervised classification approach; while 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"XdMNW8Qe","properties":{"formattedCitation":"(Jannidis and Lauer, 2014)","plainCitation":"(Jannidis and Lauer, 2014)","noteIndex":0},"citationItems":[{"id":14351,"uris":["http://zotero.org/groups/643516/items/4DAVX3FR"],"uri":["http://zotero.org/groups/643516/items/4DAVX3FR"],"itemData":{"id":14351,"type":"chapter","container-title":"Distant Readings. Topologies of German Culture in the Long Nineteenth Century","event-place":"Rochester","language":"en","note":"bibtex: jannidis_burrowss_2014","page":"29-54","publisher":"Camden House","publisher-place":"Rochester","title":"Burrows’s Delta and Its Use in German Literary History","URL":"gerhardlauer.de/index.php/download_file/view/335/1/","author":[{"family":"Jannidis","given":"Fotis"},{"family":"Lauer","given":"Gerhard"}],"editor":[{"family":"Erlin","given":"Matt"},{"family":"Tatlock","given":"Lynne"}],"issued":{"date-parts":[["2014"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Jannidis and Lauer, 2014) for German literature adopted a stylometric method. This paper explores the results of a mainly explorative and unsupervised analysis of a corpus of 19
+                    <hi rend="superscript">th</hi> and 20th century Italian narrative fiction.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>The corpus and the methodology</head>
+                <p style="text-align: left; ">The main research hypothesis is if adopting computational quantitative methods, it’s possible to identify time-based groupings in a set of texts distributed over a long historical period. Related to this there is the question of whether those eventual groupings are aligned with traditional historical periodization. The corpus consists of 660 Italian novels and short novels written between 1810 and 2000 of different aesthetic "levels", canonization status, genre, dimension, and authors’ gender. Admittedly, this corpus is still far from being adequate and well balanced, mainly due to the uneven chronological distribution, but it is sufficient for an exploratory inquiry.</p>
+                <p style="text-align: left; ">I wanted to test if the corpus can be clustered in a chronological sensible way using an algorithmic approach without presuming any prior categorization: this explains the preference for unsupervised methods in this research. In particular, I have adopted two different approaches, based on different assumptions, analytical techniques and features selection:</p>
+                <list rend="numbered">
+                    <item>bootstrap consensus network, following (Eder, 2017) that applies phylogenetic consensus networks method to MFW based clustering;</item>
+                    <item>lexicon-based text analysis and subsequent K-Means clustering of the results.</item>
+                </list>
+                <p style="text-align: left; ">Fort the first experiment I have adopted the popular stylometric R package 
+                    <hi rend="italic">Stylo</hi>
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"DOw0LjCA","properties":{"formattedCitation":"(Eder et al., 2016)","plainCitation":"(Eder et al., 2016)","noteIndex":0},"citationItems":[{"id":21620,"uris":["http://zotero.org/groups/1624882/items/BUVWB3VR"],"uri":["http://zotero.org/groups/1624882/items/BUVWB3VR"],"itemData":{"id":21620,"type":"article-journal","container-title":"The R Journal","ISSN":"2073-4859","issue":"1","language":"en","page":"107-121","title":"Stylometry with R: A Package for Computational Text Analysis","volume":"8","author":[{"family":"Eder","given":"Maciej"},{"family":"Rybicki","given":"Jan"},{"family":"Kestemont","given":"Mike"}],"issued":{"date-parts":[["2016"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Eder et al., 2016) to generate the consensus network dataset, conflating ten hierarchical clusterings generated comparing from 100 to 1000 most frequent words. The resulting output dataset is imported into the network analysis tool Gephi 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"dKwsbgCF","properties":{"formattedCitation":"(Bastian et al., 2009)","plainCitation":"(Bastian et al., 2009)","noteIndex":0},"citationItems":[{"id":21501,"uris":["http://zotero.org/groups/1624882/items/NUL5XE72"],"uri":["http://zotero.org/groups/1624882/items/NUL5XE72"],"itemData":{"id":21501,"type":"webpage","language":"en","title":"Gephi - The Open Graph Viz Platform","URL":"https://gephi.org/","author":[{"family":"Bastian","given":"Mathieu"},{"family":"Heymann","given":"Sebastien"},{"family":"Jacomy","given":"Mathieu"}],"accessed":{"date-parts":[["2018",11,26]]},"issued":{"date-parts":[["2009"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Bastian et al., 2009) and each node is associated with an attribute that specifies its decade of composition. Then modularity is calculated with a resolution set at 4, resulting in 10 modules, and the final layout is generated applying the layout algorithm Force Atlas 2.
+                </p>
+                <p style="text-align: left; ">The second approach is based on the text analysis of the corpus with the tool 
+                    <hi rend="italic">Linguistic Inquiry and Word Count</hi> (
+                    <hi rend="italic">LIWC</hi>) 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"jOFaMGB9","properties":{"formattedCitation":"(Pennebaker et al., 2015)","plainCitation":"(Pennebaker et al., 2015)","noteIndex":0},"citationItems":[{"id":23075,"uris":["http://zotero.org/users/563326/items/8PZK35JN"],"uri":["http://zotero.org/users/563326/items/8PZK35JN"],"itemData":{"id":23075,"type":"article-journal","abstract":"The paper summarizes the nature of the LIWC2015 text analysis program, including the development of the dictionaries and the basic psychometrics of the output. Results of the 2015 version are compared with the 2007 version.","DOI":"10.15781/T29G6Z","note":"publisher: University of Texas at Austin","source":"DOI.org (Datacite)","title":"The Development and Psychometric Properties of LIWC2015","URL":"http://hdl.handle.net/2152/31333","author":[{"family":"Pennebaker","given":"James W."},{"family":"Boyd","given":"Ryan L."},{"family":"Jordan","given":"Kayla"},{"family":"Blackburn","given":"Kate"}],"accessed":{"date-parts":[["2021",12,8]]},"issued":{"date-parts":[["2015"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Pennebaker et al., 2015). For each text, LIWC produces a vector containing the relative frequencies of various words-classes (E.g.: "Affect Words", "Cognitive Processes", "Perceptual Processes", "Biological Processes"....). The final output is a low dimensional document matrix, to which I have applied a K-Means clustering process, adopting the Python implementation of the algorithm in the 
+                    <hi rend="italic">SciKit-Learn</hi> library 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"A7QCNvwN","properties":{"formattedCitation":"(Pedregosa et al., 2011)","plainCitation":"(Pedregosa et al., 2011)","noteIndex":0},"citationItems":[{"id":23079,"uris":["http://zotero.org/users/563326/items/AM5MGWGN"],"uri":["http://zotero.org/users/563326/items/AM5MGWGN"],"itemData":{"id":23079,"type":"article-journal","container-title":"Journal of Machine Learning Research","page":"2825–2830","title":"Scikit-learn: Machine Learning in Python","volume":"12","author":[{"family":"Pedregosa","given":"F."},{"family":"Varoquaux","given":"G."},{"family":"Gramfort","given":"A."},{"family":"Michel","given":"V."},{"family":"Thirion","given":"B."},{"family":"Grisel","given":"O."},{"family":"Blondel","given":"M."},{"family":"Prettenhofer","given":"P."},{"family":"Weiss","given":"R."},{"family":"Dubourg","given":"V."},{"family":"Vanderplas","given":"J."},{"family":"Passos","given":"A."},{"family":"Cournapeau","given":"D."},{"family":"Brucher","given":"M."},{"family":"Perrot","given":"M."},{"family":"Duchesnay","given":"E."}],"issued":{"date-parts":[["2011"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Pedregosa et al., 2011). The choice of the number of clusters has been done evaluating 20 different models with 
+                    <hi rend="italic">Elbow method</hi> and 
+                    <hi rend="italic">Silhouette Score</hi> tests, which both indicated an optimal value of 4 clusters.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results and future directions</head>
+                <p style="text-align: left; ">The results of the stylometric approach represented in Fig.1 shows that the texts clustered in time sensible way are only those written in the second half of the 20
+                    <hi rend="superscript">th</hi> century (that in the network have a blue color tone), while texts written in the first and second half of the 19
+                    <hi rend="superscript">th</hi> century e in the first half of 20
+                    <hi rend="superscript">th</hi> are not clearly separated, with the exception of the island in the upper right part of the graph, which is mostly composed of canonical Italian modernist texts.
+                </p>
+                <figure>
+                    <graphic n="1001" width="12.319cm" height="12.319cm" url="Pictures/f514364a2180618c1abff11b98f948cf.png" rend="inline"/>
+                    <head>Consensus Network of the corpus: red 1810-1860; green 1860-1900; yellow 1900-1940; blue 1940-2010</head>
+                </figure>
+                <p style="text-align: left; ">This overall result is confirmed by the K-Means approach. For my analysis I have produced two matrices using the LIWC dictionary for Italian 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"Oe6Nh7RK","properties":{"formattedCitation":"(Agosti and Rellini, 2007)","plainCitation":"(Agosti and Rellini, 2007)","noteIndex":0},"citationItems":[{"id":23078,"uris":["http://zotero.org/users/563326/items/NXQXPK6N"],"uri":["http://zotero.org/users/563326/items/NXQXPK6N"],"itemData":{"id":23078,"type":"article-journal","container-title":"Austin, TX: LIWC. net","title":"The Italian LIWC dictionary","author":[{"family":"Agosti","given":"A."},{"family":"Rellini","given":"A."}],"issued":{"date-parts":[["2007"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Agosti and Rellini, 2007):
+                </p>
+                <list rend="bulleted">
+                    <item>a matrix with all LIWC lexical categories;</item>
+                    <item>a matrix limited to the following word categories: Verbs, Pronouns, orthographic signs of represented speech, and categories related to emotional and cognitive activity.</item>
+                </list>
+                <p style="text-align: left; ">In this way I can test an additional hypothesis very common in literary-historical and critical scholarship: the linguistic sphere of the cognitive and emotional dimension is a characteristic feature of the evolution of narrative along the nineteenth and twentieth centuries, namely it’s a characteristic of the transition to the Modernism. While the K-Means clustering of the first matrix has very little relation to chronology, the second one provides clear indicators of temporal segmentation (Figure 2). Therefore, we can say that the incidence of the lexicon related to the sphere of thought/consciousness/emotivity is a signal of an evolutional pattern in the Italian novel. Anyway, also in this case the more clearly time-based cluster is that of the text written in the second half of the 20
+                    <hi rend="superscript">th</hi> century.
+                </p>
+                <figure>
+                    <graphic n="1002" width="13.399322222222223cm" height="9.051636111111112cm" url="Pictures/7ba82f17121d4aa77bfcec9b222cb72f.png" rend="inline"/>
+                    <head>K-Means clusters in the document matrix restricted to the cognitive/emotional lexicon</head>
+                </figure>
+                <p style="text-align: left; ">In conclusion, the first analysis in general confirms for Italian literature the limited role of the time dimension for clustering texts on a purely stylometric base already observed by 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"rjihgbqd","properties":{"formattedCitation":"(Jockers, 2013: chap. 6)","plainCitation":"(Jockers, 2013: chap. 6)","noteIndex":0},"citationItems":[{"id":9743,"uris":["http://zotero.org/groups/113737/items/NCNSAG62"],"uri":["http://zotero.org/groups/113737/items/NCNSAG62"],"itemData":{"id":9743,"type":"book","abstract":"In this volume, Matthew L. Jockers introduces readers to large-scale literary computing and the revolutionary potential of macroanalysis--a new approach to the study of the literary record designed for probing the digital-textual world as it exists today, in digital form and in large quantities. Using computational analysis to retrieve key words, phrases, and linguistic patterns across thousands of texts in digital libraries, researchers can draw conclusions based on quantifiable evidence regarding how literary trends are employed over time, across periods, within regions, or within demographic groups, as well as how cultural, historical, and societal linkages may bind individual authors, texts, and genres into an aggregate literary culture.\n \nMoving beyond the limitations of literary interpretation based on the \"close-reading\" of individual works, Jockers describes how this new method of studying large collections of digital material can help us to better understand and contextualize the individual works within those collections.","collection-title":"Topics in the Digital Humanities","ISBN":"978-0-252-07907-8","language":"en","publisher":"University of Illinois Press","title":"Macroanalysis: Digital Methods and Literary History","URL":"http://books.google.de/books?hl=de&lr=&id=mPOdxQgpOSUC&oi=fnd&pg=PP2&dq=Macroanalysis:+Digital+Methods+and+Literary+History&ots=R8NZyYyjSh&sig=OkLlZGTVZZMmpYgvq8CQgRzlRSw#v=onepage&q=Macroanalysis%3A%20Digital%20Methods%20and%20Literary%20History&f=false","author":[{"family":"Jockers","given":"Matthew L."}],"issued":{"date-parts":[["2013",6]]}},"locator":"6","label":"chapter"}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Jockers, 2013: chap. 6), as compared to authorship and even author gender. Instead, there is some evidence that quantitative empirical analysis partially confirms the relevance of cognitive/emotional lexicon in the evolution of literature. In this direction, I think that a fruitful development of the research will require a more effective way to identify the presence of cognitive/emotional attitudes in texts. To this end, we are training a streamlined Italian BERT language model to identify the relevant textual blocks, and the provisional results are promising.
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Agosti, A. and Rellini, A.</hi> (2007). The Italian LIWC dictionary. 
+                        <hi rend="italic">Austin, TX: LIWC. Net</hi>.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bassnett, S.</hi> (2013). 
+                        <hi rend="italic">Translation Studies</hi>. London: Routledge.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Bastian, M., Heymann, S. and Jacomy, M.</hi> (2009). Gephi - The Open Graph Viz Platform https://gephi.org/ (accessed 26 November 2018).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Ciotti, F.</hi> (2021). Distant reading in literary studies: a methodology in quest of theory. 
+                        <hi rend="italic">TESTO &amp; SENSO</hi>(23).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Eder, M.</hi> (2017). Visualization in stylometry: Cluster analysis using networks. 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 
+                        <hi rend="bold">32</hi>(1): 50–64 doi:10.1093/llc/fqv061.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Eder, M., Rybicki, J. and Kestemont, M.</hi> (2016). Stylometry with R: A Package for Computational Text Analysis. 
+                        <hi rend="italic">The R Journal</hi>, 
+                        <hi rend="bold">8</hi>(1): 107–21.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Jameson, Fredric.</hi> (1971). 
+                        <hi rend="italic">Marxism and Form : Twentieth-Century Dialectical Theories of Literature</hi>. Princeton (N.J.): Princeton University Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Jannidis, F. and Lauer, G.</hi> (2014). Burrows’s Delta and Its Use in German Literary History. In Erlin, M. and Tatlock, L. (eds), 
+                        <hi rend="italic">Distant Readings. Topologies of German Culture in the Long Nineteenth Century</hi>. Rochester: Camden House, pp. 29–54 gerhardlauer.de/index.php/download_file/view/335/1/.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Jockers, M. L.</hi> (2013). 
+                        <hi rend="italic">Macroanalysis: Digital Methods and Literary History</hi>. (Topics in the Digital Humanities). University of Illinois Press 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">helli, D.</hi> (2013). Periodization, Comparative Literature, and Italian Modernism. 
+                        <hi rend="italic">CLCWeb: Comparative Literature and Culture</hi>, 
+                        <hi rend="bold">15</hi>(7) doi:10.7771/1481-4374.2386. https://docs.lib.purdue.edu/clcweb/vol15/iss7/12 (accessed 8 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Moretti, F.</hi> (2000). Conjectures on World Literature. 
+                        <hi rend="italic">The New Left Review</hi> http://newleftreview.org/A2094.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Moretti, F.</hi> (2013). 
+                        <hi rend="italic">Distant Reading</hi>. London: Verso http://www.amazon.de/Distant-Reading-Franco-Moretti/dp/1781680841.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., et al.</hi> (2011). Scikit-learn: Machine Learning in Python. 
+                        <hi rend="italic">Journal of Machine Learning Research</hi>, 
+                        <hi rend="bold">12</hi>: 2825–30.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Pennebaker, J. W., Boyd, R. L., Jordan, K. and Blackburn, K.</hi> (2015). The Development and Psychometric Properties of LIWC2015. University of Texas at Austin doi:10.15781/T29G6Z. http://hdl.handle.net/2152/31333 (accessed 8 December 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Piper, A.</hi> (2018). 
+                        <hi rend="italic">Enumerations: Data and Literary Study</hi>. Chicago ; London: The University of Chicago Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Underwood, T.</hi> (2019). 
+                        <hi rend="italic">Distant Horizons: Digital Evidence and Literary Change</hi>. Chicago: The University of Chicago Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Wellek, R., Warren, Austin,,</hi> (1956). 
+                        <hi rend="italic">Theory of Literature</hi>. New York: Harcourt, Brace &amp; World.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

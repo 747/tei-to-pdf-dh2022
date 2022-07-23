@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Towards a Structured Description of the Taisho Tripitaka: How to show contributors</title>
+                <author>
+                    <persName>
+                        <surname>Watanabe</surname>
+                        <forename>Yoichiro</forename>
+                    </persName>
+                    <affiliation>University of Tokyo</affiliation>
+                    <email>tt648h@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nagasaki</surname>
+                        <forename>Kiyonori</forename>
+                    </persName>
+                    <affiliation>International Institute for Digital Humanities</affiliation>
+                    <email>nagasaki@dhii.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Park</surname>
+                        <forename>Hyunjin</forename>
+                    </persName>
+                    <affiliation>Graduate school of University of Tokyo</affiliation>
+                    <email>sudhana0811@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wang</surname>
+                        <forename>Yifan</forename>
+                    </persName>
+                    <affiliation>Graduate school of University of Tokyo, International Institute for Digital Humanities</affiliation>
+                    <email>747.neutron@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Murase</surname>
+                        <forename>Tomohiro</forename>
+                    </persName>
+                    <affiliation>Council for the Promotion of Tripitaka Research</affiliation>
+                    <email>arcana@witchcraft.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Watanabe</surname>
+                        <forename>Masayoshi</forename>
+                    </persName>
+                    <affiliation>Jodo Shu Research Institute</affiliation>
+                    <email>evenorodd.1or8@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Yajima</surname>
+                        <forename>Norimichi</forename>
+                    </persName>
+                    <affiliation>Waseda University</affiliation>
+                    <email>yajima0618@fuji.waseda.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sato</surname>
+                        <forename>Yoshihiro</forename>
+                    </persName>
+                    <affiliation>Graduate school of University of Tokyo</affiliation>
+                    <email>yoshihiros1218@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Sakuma</surname>
+                        <forename>Yui</forename>
+                    </persName>
+                    <affiliation>Graduate school of University of Tokyo</affiliation>
+                    <email>y.1202.sakuma@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Yu</surname>
+                        <forename>Xinxing</forename>
+                    </persName>
+                    <affiliation>Graduate school of University of Tokyo</affiliation>
+                    <email>xinpuyu0505@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Katakura</surname>
+                        <forename>Shumpei</forename>
+                    </persName>
+                    <affiliation>Graduate school of University of Tokyo</affiliation>
+                    <email>katakura-shumpei642@g.ecc.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Shimoda</surname>
+                        <forename>Masahiro</forename>
+                    </persName>
+                    <affiliation>University of Tokyo</affiliation>
+                    <email>shimoda@l.u-tokyo.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ohmukai</surname>
+                        <forename>Ikki</forename>
+                    </persName>
+                    <affiliation>University of Tokyo</affiliation>
+                    <email>i2k@l.u-tokyo.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T07:29:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>classical Chinese</term>
+                    <term>Buddhism</term>
+                    <term>TEI</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>20th Century</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>Asian studies</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">We, the SAT Daizōkyō Text Database Committee, maintain a database of the e-texts of the Buddhist scriptures contained in the Taisho Tripitaka, which contains 2,920 Buddhist scriptures and over 100 million Chinese characters, and have made them available to the public in searchable form [1]. However, these text data are based on tagged e-texts designed in 1990’s, and are not yet structured enough. For this reason, we are in the process of converting e-texts of the Taisho Tripitaka into the TEI-compliant format.</p>
+            <p style="text-align: left; ">While undertaking such a large-scale renovation, it is imperative that the information in the Taisho-Tripitaka be reproduced in electronic form to the greatest extent possible without loss of information. This is because for more than one 100 years, the Taisho-Tripitaka has been the foundation for Buddhist studies to this day, and distributing e-texts that differs from the published Taisho-Tripitaka would cause unnecessary confusion in research. Today, it is rare for Buddhist scholars to conduct research without the use of e- texts, and the platform for research seems to be shifting from the Taisho-Tripitaka as published texts to the Taisho-Tripitaka as e-texts. However, the status of the Taisho-Tripitaka as a standard text for reference in Buddhist studies has not changed. It would be beneficial for researchers to have e-texts that are as accurate as possible so that the basis for discussion can be shared even when e-texts did not exist.</p>
+            <p style="text-align: left; ">However, in some cases interpretation is unavoidable in markup. How to distinguish between the preservation of the edition itself and the contribution of the person in charge of the work is one of the most important issues for our project, and I will discuss this point in this presentation.</p>
+            <p style="text-align: left; ">As a precedent work, CBETA (Chinese Buddhist Electronic Text Association) which publishes e-texts of Buddhist scriptures including Taisho-Tripitaka, has added its own punctuation marks which are not written in the Taisho-Tripitaka itself [2]. While these are certainly useful in many cases when reading the text, there might be a possibility that any arbitrary interpretation of the person who edited the e-text may enter uncritically.</p>
+            <p style="text-align: left; ">Our research group has decided to adopt a markup policy that takes care to describe as much information as possible about how the text is actually written in the Taisho-Tripitaka, while making it possible to identify the parts that are the responsibility of the person who marked up the text. In addition, even if it is clearly a typographical error by an editor of the Taisho-Tripitaka, we try to retain the original description, such as &lt;choice&gt;, &lt;sic&gt; and &lt;corr&gt;, rather than correcting it without notification. I show an example [fig1], where the information of variant readings in the Taisho-Tripitaka is indicated. In general, lemma, i.e., &lt;lem&gt; in the &lt;app&gt; should be the same as the string written in the text body. However, if we compare them, we will notice that the Chinese character “<hi rend="Chinese">盖</hi>” in &lt;lem&gt; is slightly different from the character “<hi rend="Chinese">蓋</hi>” in the text body. In fact, these two characters are just variants, not semantically different, but it should be noted that different characters are used here. In such a case, we mark it up as shown in this figure to describe the difference between the two characters.</p>
+            <figure>
+                <graphic n="1001" width="15.922230555555556cm" height="6.25475cm" url="Pictures/a13259dfdd08f8875d0ecf6034c52892.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; text-align: center;">[Fig 1] See [3]</p>
+            <p style="text-align: left; ">In addition, if a text is structurally analyzed by previous research, it would be possible to markup the text to reflect the content of the research. In this case, &lt;editorialDesc&gt; tag in &lt;teiHeader&gt; indicating the research used as the basis for the markup is provided, and the @resp attribute is also used to distinguish it from the original Taisho-Tripitaka structure such as paragraphing.</p>
+            <figure>
+                <graphic n="1002" width="8.5721cm" height="9.15033888888889cm" url="Pictures/f51d730cb2765995e089a2a816645aff.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; text-align: center;">[Fig 2] See [4]</p>
+            <p style="text-align: left; ">[Fig 2] is one Zen text. There are seemingly no line break or paragraph changes. However, Zen texts are well-structured in general and if read by a specialized researcher, the structure can be understood as I have shown in the red dashed line. We can mark up this part as following [Fig3] with @resp.</p>
+            <figure>
+                <graphic n="1003" width="14.24163888888889cm" height="2.778125cm" url="Pictures/1d7a2aa33d06bf0adf14038d9df5a139.png" rend="inline"/>
+            </figure>
+            <p style="text-align: left; text-align: center;">[Fig 3] Marked up text of [Fig2]</p>
+            <p style="text-align: left; ">In this way, it is possible to save the descriptions of Taisho-Tripitaka and reflect the interpretations of the workers at the same time. In addition, our group has introduced GitHub, which allows us to keep detailed records of the actual work of workers and their contributions.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">[1] The SAT Daizōkyō Text Database, 
+                        <ref target="https://21dzk.l.u-tokyo.ac.jp/SAT/">https://21dzk.l.u-tokyo.ac.jp/SAT/</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">[2] CBETA (Chinese Buddhist Electronic Text Association), 
+                        <ref target="https://www.cbeta.org/">https://www.cbeta.org/</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">[3] 
+                        <hi rend="italic">Taishō Shinshū Daizōkyō</hi>, Junjiro Takakusu and Kaigyoku Watanabe (eds), Tokyo: Taisho Issaikyo Kankokai, 1924-1934, vol. 14, p. 48.
+                    </bibl>
+                    <bibl style="text-align: left; ">[4] 
+                        <hi rend="italic">Taishō Shinshū Daizōkyō</hi>, Junjiro Takakusu and Kaigyoku Watanabe (eds), Tokyo: Taisho Issaikyo Kankokai, vol. 82, p. 344.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Modelling Time Ontology in Ancient Chinese Texts</title>
+                <author>
+                    <persName>
+                        <surname>Wang</surname>
+                        <forename>Linxu</forename>
+                    </persName>
+                    <affiliation>Department of Information Management, Peking University; The Center for Digital Humanities at Peking University, Beijing, China</affiliation>
+                    <email>wanglinxu@pku.edu.cn</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tong</surname>
+                        <forename>Wei</forename>
+                    </persName>
+                    <affiliation>Department of Information Management, Peking University; The Center for Digital Humanities at Peking University, Beijing, China</affiliation>
+                    <email>weitong@pku.edu.cn</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wang</surname>
+                        <forename>Jun</forename>
+                    </persName>
+                    <affiliation>Department of Information Management, Peking University; The Center for Digital Humanities at Peking University, Beijing, China</affiliation>
+                    <email>junwang@pku.edu.cn</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital humanities</term>
+                    <term>ancient Chinese time</term>
+                    <term>time ontology</term>
+                    <term>Chinese calendar</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>15th-17th Century</term>
+                    <term>Contemporary</term>
+                    <term>data modeling</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="bold" xml:space="preserve">Abstract </hi>
+                <hi style="font-size:10pt" xml:space="preserve">This paper aims to build </hi>an ontology of temporal concepts to describe the temporal properties of resources in the Chinese history. To represent ancient Chinese time and transform that time in history into our familiar timestamp, we present the Ancient Chinese Traditional Time Ontology (ACTO). ACTO focuses on the Calendars reference system and Clocks reference system and splits the former one into lunar year representation subsystems and lunar date representation subsystems, which makes 
+                the time can be expressed and transformed more clearly and convenience.
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> This research is supported by the NSFC project "the Construction of the Knowledge Graph for the History of Chinese Confucianism" (Grant No. 72010107003).</p>
+                </note>
+            </p>
+            <p rend="keywords" style="text-align: left; ">
+                <hi rend="bold" style="font-size:10.5pt" xml:space="preserve">Keyword </hi>digital humanities, ancient Chinese time, time ontology, Chinese calendar
+            </p>
+            <p>
+                <hi rend="bold" style="font-size:14pt">1. Introduction</hi>
+            </p>
+            <p>Temporal information is one of the essential components in humanity researches in the various disciplines. However, because of the unique representation approach of ancient Chinese time, it can’t analyze and compute time directly. The most significant part of this approach is the traditional Chinese calendar, a type of lunisolar calendar, which is totally different from the Gregorian calendar. The traditional Chinese calendar stressed importance about the existence of the cycle about time when recording time by characters. For thousands of years, there was neither interruption nor disorder since the Chinese have used 60 symbols in the stem-branch system to mark time. But this tradition makes it is more difficult to identify exact date for repeated temporal information. For instance, A.D.2021 and A.D. 1961 can be called by one word, which is Xin-chou (<hi rend="Chinese">辛丑</hi> in Chinese).</p>
+            <p>It orders to translate the traditional Chinese calendar into the Gregorian calendar which is more familiar for us and transform the temporal cycle into a line, which is more convenient for analysis and computing. It’s necessary and crucial to apply ontology. Ontology can provide a rich "schema" underlying data as well as the terminological and semantic basis for dramatic improvements in data application (Kendall, McGuinness 2019), which is the necessary support for organization of data. By modelling time ontology, we can use a general framework to determine, represent, sort and manage temporal information in a historical resource to improve searching, navigating, annotating, indexing and analyzing. However, there are few studies focus on the modelling and application of the traditional Chinese time.</p>
+            <p>In this paper, we address the Ancient Chinese Traditional Time Ontology (ACTO). ACTO is an ontology of temporal concepts to describe the temporal properties of resources in the Chinese history texts. Time positions and durations may be expressed using either the conventional calendar (Gregorian calendar) and clock, or traditional Chinese calendar. The reset part of the paper is organized as follows. Section 2 introduces the related work and state of the art. Section 3 describes the construction of the ACTO, including objectives and methodology. And in the Section 4, we summary our work and talk about the future work.</p>
+            <p>
+                <hi rend="bold" style="font-size:14pt">2. Related Work</hi>
+            </p>
+            <p>Many efforts have been made on building explicit time ontologies, such as the DAML ontology of time(Daml n.d.), the time ontology in OWL(W3C n.d.), KSL time ontology(KSL n.d.), the time ontology in KIF(KIF n.d.), Times and Dates in Cyc knowledge base(CYC n.d.), the time of DAML-S(DAML n.d.), the temporal portion of IEEE Standard Upper Ontology(IEEE n.d.), and other works(Schilder, Katz &amp; Pustejovsky 2007), (Schreiber 1994). OWL-Time is one of the most common and generalized models for expressing temporal information. It provides a lightweight model for the formalization of temporal objects, based on Allen’s temporal interval calculus(Allen 1983). Since OWL-Time only allows for Gregorian dates and times, many other calendars and temporal reference systems used in the particular culture and scholarly contexts must look elsewhere. The traditional Chinese calendar is one of those calendars. Therefore, it’s crucial to express the traditional temporal information encoded by literals correctly and translate it to the timestamp for calculating.</p>
+            <p>There’re some studies talked the Chinese time ontology. Zhang et al. presented a Chinese time ontology involving temporal entities or temporal properties (Zhang et al. 2011), but they neither explained the structure of various concepts nor given evaluation to show the feasibility of the time scheme. Zou et al. categorized the usage of Chinese calendar under the framework of owl time (Zou et al. 2011). But the concepts in the framework are too wide, and ignores the mapping of Chinese calendar and the other calendar. Therefore, modelling Chinese time not only need to build a knowledge framework in the form of an open ontology but also need to provide a practice of that framework.</p>
+            <p>
+                <hi rend="bold" style="font-size:14pt">3. Objectives and Methodology</hi>
+            </p>
+            <p>This study proposes the Ancient Chinese Traditional Time Ontology(ACTO) for modelling and publishing time entities by using OWL. By examining the distinctive features of ancient Chinese traditional time from the western time scale, the ACTO ontology has two aims. The first one is to build a knowledge representation of the time recorded in the ancient Chinese document in the form of an open ontology. The second one is to provide a practice of transformation of Chinese traditional calendar. In Figure. 1 we illustrate a part of the ontology.</p>
+            <figure>
+                <graphic n="1001" width="15.963194444444444cm" height="8.942916666666667cm" url="Pictures/dbaad905bf4bb767fb8f5a6aeb37ad50.jpeg" rend="inline"/>
+                <head>A sample of the ACTO ontology</head>
+            </figure>
+            <p>We followed a term-and-characteristic guided approach (Wei et al. 2021) to construct the ACTO ontology. The term-and-characteristic guided approach includes seven steps as following. But in the step 4, we defined time concept depended on the existed temporal reference systems rather than relying on essential characteristics. </p>
+            <p rend="bullet list">
+                <hi rend="italic bold" style="font-size:11pt">Step 1: Identify the scope of the domain and the objectives.</hi>
+                The aim of this step is to define the scope of the project and its objectives. In this step, we defne the scope of ACTO is the temporal information recorded in the historical document, not the Chinese traditional Calendars itself.
+            </p>
+            <p rend="bullet list">
+                <hi rend="italic bold" style="font-size:11pt">Step 2: Identify terms and objects.</hi>
+                We collect records about time from history documents and select the terms and objects in those records.
+            </p>
+            <p rend="bullet list">
+                <hi rend="italic bold" style="font-size:11pt">Step 3: Identify the essential characteristic.</hi>
+                One of methods to identifye essential characteristics is based on a morphological analysis of Chinese terms whose characters directly express knowledge of the denoted objects. Terms are composed of a set of characters of which the last one corresponds to the type of time and the others, called modifiers, precise the type. For example, a year can be described as the following order: Dynasty’s name + Emperor’s Title + Reign’s Title + Ordinal Number, like ‘<hi rend="Chinese">唐太宗貞觀元年</hi>’. This object belongs to the type of the description of general year time.
+            </p>
+            <p rend="bullet list">
+                <hi rend="italic bold" style="font-size:11pt">Step 4: Term-guided approach for defining concepts based on essential characteristics.</hi> Concepts are defined as meaningful combinations of essential characteristics. 
+                We apply the classification of temporal reference systems provided in ISO 19018 to describe temporal information, especially Calendars and Clocks (Cox 2016). Besides, some vocabulary from OWL-Time are used in our ontology for expressing facts about topological (ordering) relations among instants and intervals. And finally, we summary and distinguish the objects about Clocks and Calendars. Although the construction of ontology to describe temporal in the ancient China is our aim, time is not only one needed to be considered. For instance, Emperor is critical for the representation of histoical period.
+            </p>
+            <p rend="bullet list">
+                <hi rend="italic bold" style="font-size:11pt">Step 5: Building ontology by tools.</hi>
+                <hi style="font-size:11pt" xml:space="preserve"> Protégé was used for developing the ACTO, while OWL was chosen as a modeling language.</hi>
+            </p>
+            <p rend="bullet list">
+                <hi rend="italic bold" style="font-size:11pt">Step 6: Integration.</hi>
+                We could consider reuse of definitions already built into other ontologies instead of starting from scratch.
+            </p>
+            <p rend="bullet list">
+                <hi rend="italic bold" style="font-size:11pt">Step 7: Equations.</hi>
+            </p>
+            <p>ACTO contains 46 classes and 21 object properties. By 44 subclasses, it can describe eighteen different kinds of traditional Chinese temporal records. In Figure. 2, we use some temporal records in the 
+                <hi rend="italic">Zi Zhi Tong Jian</hi> (the another name of this book is 
+                <hi rend="italic">History as a Mirror</hi>) as a sample to show the usage of ACTO.
+            </p>
+            <figure>
+                <graphic n="1002" width="15.980833333333333cm" height="6.332361111111111cm" url="Pictures/90d5ca95902cca3707a2644d83778149.jpeg" rend="inline"/>
+                <head>A sample of usage</head>
+            </figure>
+            <p>
+                <hi rend="bold" style="font-size:14pt">4. Conclusion</hi>
+            </p>
+            <p>Building a model of time ontology is a significant task in the field of information organization and representation. Especially with regards to an ancient time, when many aspects of historical events are highly related to other time points. It's necessary and valuable to express time and transform that time in history into our familiar timestamp. </p>
+            <p>To express and transform that, we present the Ancient Chinese Traditional Time Ontology. ACTO focuses on the Calendars reference system and Clocks reference system. And it splits the former one into lunar year representation subsystems (including nine kinds of representation methods about year) and lunar date representation subsystems (including nine kinds of representation approaches about day). Therefore, the time can be expressed and transformed more clearly and convenience. Meanwhile, we also value the independence about time entities and any calendar, culture and language by separating the calendar system and the time system. It can provide a reference for cross-cultural time translation. </p>
+            <p>Still, our work has many limitations which we will address in the future. In the next step, our work will carry out in three different directions, including enriching individuals; visualizing the ontology for query; and address a generalized proposal for evaluating the time ontology.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Allen, J. F.</hi> (1983). Maintaining knowledge about temporal intervals. Communications of the ACM, 26(11), pp.832-843.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Cox, S. J.</hi> (2016). Time ontology extended for non-Gregorian calendar applications. Semantic Web, 7(2), pp.201-209.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Daml-time homepage</hi>. Available from: http://www.cs.rochester.edu/~ferguson/daml. [10 December 2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Daml-s</hi>. Available from: http://www.daml.org/services/daml-s/0.9. [10 December 2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Time and dates</hi>. Available from: http://www.cyc.com/cycdoc/vocab/time-vocab.html. [10 December 2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Time ontology needed</hi>. Available from: http://suo.ieee.org/SUO/SUMO/index.html. [10 December 2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Time ontology in owl</hi>. Available from: http://www.w3.org/TR/owl-time. [10 December 2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Time ontology in kif</hi>. Available from: http://www-cs-students.stanford.edu/~omart/timeont.html. [10 December 2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Ksl-time</hi>. Available from: http://www.ksl.stanford.edu/ontologies/time. [10 December 2021].
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Schilder, F., Katz, G., &amp; Pustejovsky, J.</hi> (2007). Annotating, extracting and reasoning about time and events. In Annotating, extracting and reasoning about time and events. Springer, Berlin, Heidelberg, pp. 1-6.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Schreiber, F. A.</hi> (1994). Is time a real time? An overview of time ontology in informatics. Real time computing, pp. 283-307.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Kendall, E. F., &amp; McGuinness, D. L. (2019).</hi> Ontology engineering. Synthesis Lectures on The Semantic Web: Theory and Technology, 9(1), pp. i-102.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Wei, T., Roche, C., Papadopoulou, M., &amp; Jia, Y.</hi> (2021). Using ISO and Semantic Web standard for building a multilingual terminology e-Dictionary: A use case of Chinese ceramic vases. Journal of Information Science, 01655515211022185.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" xml:space="preserve">Zhang, C., Cao, C., Sui, Y., &amp; Wu, X. (2011). </hi>A Chinese time ontology for the Semantic Web. Knowledge-Based Systems, 24(7), pp. 1057-1074.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Zou, Q., &amp; Park, E. G. (2011).</hi> Modelling ancient Chinese time ontology. Journal of Information Science, 37(3), pp. 332-341.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

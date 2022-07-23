@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Architectura Sinica and Collaborative Digital Database Development</title>
+                <author>
+                    <persName>
+                        <surname>Miller</surname>
+                        <forename>Tracy</forename>
+                    </persName>
+                    <affiliation>Vanderbilt University, United States of America</affiliation>
+                    <email>tracy.g.miller@vanderbilt.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Benda</surname>
+                        <forename>Yuh-Fen</forename>
+                    </persName>
+                    <affiliation>Vanderbilt University, United States of America</affiliation>
+                    <email>yuh-fen.benda@vanderbilt.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Zhuge</surname>
+                        <forename>Jing</forename>
+                    </persName>
+                    <affiliation>Southeast University, China</affiliation>
+                    <email>zhuge@seu.edu.cn</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Zuo</surname>
+                        <forename>Lala</forename>
+                    </persName>
+                    <affiliation>New York University, Shanghai, China</affiliation>
+                    <email>lz2488@nyu.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-15T15:20:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Chinese architecture</term>
+                    <term>digital cultural heritage</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>5th-14th Century</term>
+                    <term>curricular and pedagogical development and analysis</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>Art history</term>
+                    <term>Theology and religious studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Initially made available in 2019, Architectura Sinica (
+                <ref target="http://www.architecturasinica.org">www.architecturasinica.org</ref>) is the first open-source, publicly accessible research database focusing on the timber-frame tradition of pre-modern China. Developed using the codebase of the Srophé app, and eXist DB application developed by David Michaelson (Vanderbilt University) and Dan Schwartz (Texas A&amp;M) written in TEI, as it stands today Architectura Sinica consists of three important elements: 1. A Dynamic Site Archive of more than 140 historic (mostly religious) sites containing at least one timber-frame building thought to date from the 8
+                <hi rend="superscript">th</hi> – 13
+                <hi rend="superscript">th</hi> centuries; 2. a Chinese-English thesaurus of technical architecture terminology used by craftsmen and bureaucrats in pre-modern China; and 3. a bibliography of sources used in individual entries for historic sites, individual structures, and technical terminology. A fourth module dedicated to epigraphy preserved at these historic sites is planned for future development. Critical to this project is the display of public-domain images of historic sites and artifacts located within them. Curation of these images presents ongoing challenges as we seek to find a nimble platform for expanding our collection of digital photographs donated by researchers and students.
+            </p>
+            <p>Over the past two years we have successfully made Architectura Sinica work as an international, collaborative, research and teaching platform. With support from the Vanderbilt University libraries, we have established a system of developing, reviewing, and publishing new data on traditional Chinese architecture in a single calendar year. This collaboration includes faculty, librarians, and students (both undergraduate and graduate) from Vanderbilt, Southeast University <hi rend="Chinese">東南大學</hi> in Nanjing, and NYU Shanghai, who work together to explore essential DH tools such as GitHub and TEI while also learning about the architectural heritage of China. We have found that this process is extremely satisfying for students and can make a seemingly esoteric topic accessible and compelling, thus sparking interest in further work in the field. </p>
+            <p>Our challenges currently revolve around the desire to keep the application open-source, while making it efficient to maintain. Securing storage for the code and data remains a problem. Our institution requires AWS hosting, and our current IT staff finds integrating our open-source XML codebase with AWS difficult. Additionally, although we currently house our high-resolution image files in FlickrPro, we have concerns about the long-term viability of using this commercial product. Yet other options, including JSTOR Forum (aka Artstor), which have a more sophisticated metadata structure, present challenges in cost and accessibility for international collaboration.</p>
+            <p>Our purpose for presenting Architectura Sinica at DH 2022 in Tokyo is two-fold. First, we would like to give a short presentation of the results of our research as an example of a collaborative DH project addressing Asian material for analysis in a global context. Second, we seek feedback on the functionality of the site. We aspire to integrate GIS data, object-based, site-specific research, and philological exploration of technical terminology into a single platform to create a useful starting point for advanced research in the history of sacred sites and the built environment in East Asia. Although our current results are satisfactory, are there ways of making the process more efficient? Are eXist DB and TEI our best tools for developing cultural heritage metadata for the future? Are there better tools available for archiving and presenting visual data in an open-source environment?</p>
+        </body>
+    </text>
+</TEI>

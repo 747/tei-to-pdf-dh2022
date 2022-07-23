@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Japanese Old Maps Online for Promoting Digital Humanities</title>
+                <author>
+                    <persName>
+                        <surname>Yano</surname>
+                        <forename>Keiji</forename>
+                    </persName>
+                    <affiliation>Ritsumeikan University, Japan</affiliation>
+                    <email>yano@lt.ritsumei.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Natsume</surname>
+                        <forename>Muneyuki</forename>
+                    </persName>
+                    <affiliation>Ritsumeikan University, Japan</affiliation>
+                    <email>natsume@fc.ritsumei.ac.jp</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Imamura</surname>
+                        <forename>Satoshi</forename>
+                    </persName>
+                    <affiliation>CAD CENTER Co., Ltd.</affiliation>
+                    <email>imamurarumami285@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Kamata</surname>
+                        <forename>Ryo</forename>
+                    </persName>
+                    <affiliation>Geolonia Inc.</affiliation>
+                    <email>ryo@geolonia.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-24T02:21:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>portal site</term>
+                    <term>GIS</term>
+                    <term>Japanese old maps</term>
+                    <term>georeference</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>open access methods</term>
+                    <term>spatial &amp; spatio-temporal analysis</term>
+                    <term>modeling and visualization</term>
+                    <term>Geography and geo-humanities</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>1. Introduction</p>
+            <p>The field of historical GIS has been driving a branch of digital humanities, collaborating with history, literature, cartography, and place name studies. Historical GIS is a fusion of historical geography and GIS and has been developed as a spatial humanities.</p>
+            <p>A large amount of geospatial information—such as drawings, maps, registers, statistics, and other data in Japan's Early Modern and Modern eras—remains undigitized and unavailable in GIS form, unshared, and unavailable to the public. In order to advance historical GIS, it will be necessary to promote the digitization of geospatial information that is primarily paper-based, convert it in an appropriate manner to GIS, and share it with the public. </p>
+            <p>The purpose of this paper is to construct ‘ARC Map Portal Database’ to serve as a portal to Japan's old maps; 2) ‘Japanese Map Warper’; and 3) ‘Japanese Old Maps Online’. This will make it possible to select old maps for analysis from the ARC Map Portal Database, which allows cross-searching of old maps from multiple collections, to share geo-referenced and GIS-enabled maps of old maps with other sites using “Japanese Map Warper”, and finally to import them into “Japanese Old Maps Online”. You will be able to create detailed maps for analysis of various themes by importing them into "Japan Old Maps Online".</p>
+            <p>
+                <hi rend="bold">2. ARC Map Portal Database</hi>
+            </p>
+            <p>‘ARC Map Portal Database’, a portal for old maps of Japan, currently facilitates searching and browsing of over 5,000 old Japanese maps across numerous possessing institutions (https://www.dh-jac.net/db/maps/search_portal.php)—among them, the Kyoto Institute, Library and Archives; the Museum of Kyoto; the Kyoto City Library of Historical Documents; Ritsumeikan University Library; the British Library; the Sainsbury Institute for the Study of Japanese Arts and Cultures (SISJAC); the University of British Columbia (UBC); the University of California, Berkeley (UCB); Harvard University, and so on.</p>
+            <p>The maps from these institutions available to the public on the database can be classified into one of three categories: 1) cases where the maps are digitized by the institutions that possess them; 2) cases where the material used has been released on the web, with the possessing institutions themselves pursuing digitization; and 3) cases where the maps are stored at the individual institutions and have not released on the web, but where the institutions have supported releasing photographs of these articles to share for research and educational purposes. </p>
+            <p>In these cases, when the possessing institutions did not support general release, access was provided to certain users only for research &amp; educational purposes through ID &amp; password authentication.</p>
+            <p>Old Japanese maps possessed by overseas institutions lack Japanese-language metadata; conversely, those possessed by Japanese institutions lack English-language metadata. Therefore, bilingual metadata for these documents is currently in the process of being revised.</p>
+            <p>Building this portal has opened up access to a great number of maps useful in geohistorical research and education to everyone. </p>
+            <p>3. Japanese Map Warper</p>
+            <p>Adding spatial information to these old maps would allow them to be overlaid and compared with current maps. For this, we create ‘Japanese Map Warper’ web application (https://mapwarper.h-gis.jp/?locale=en). ‘Map Warper’ is an open-source web application for sharing maps and making them available to the public, developed by geospatial information developer and consultant Tim Waters. The application is capable of applying georeference to uploaded maps, searching metadata such as titles and notes, and performing searches within the displayed base map range, as well as narrowing down maps to a certain range of publication years—in other words, making it possible to perform spatiotemporal searches. Map Warper also enables georeferenced maps to be shared in a variety of formats: GeoTIFF, WMS, XYZ tiles, and more.</p>
+            <p>As of this writing, in late November 2021, 4,465 maps have been uploaded, including old topographic maps; of these, 2,352 have been georeferenced. A large number of people uploading and georeferencing old maps in this manner could greatly increase this platform's usefulness in research and education regarding the landscapes of the past.</p>
+            <p>
+                <hi rend="bold" xml:space="preserve">4. </hi>
+                <anchor xml:id="Hlk88987964"/>
+                <anchor xml:id="Hlk88984140"/>
+                <hi rend="bold">Japanese Old Maps Online</hi>
+            </p>
+            <p>By using the vast number of old maps available on ‘the ARC Map Portal Database’ on ‘Japanese Map Warper’, we can expect further acceleration of and advancements in historical GIS. However, ‘Japanese Map Warper’ is not capable of conducting detailed analysis such as overlaying multiple old maps and creating vector data. Map-sharing functions indeed allow maps to be used on desktop applications such as ArcGIS and QGIS; however, in order to promote the maps' usage among researchers who do not specialize in GIS—as well as in school, museums, and other educational venues—it is believed that establishing environments where detailed analysis can be conducted conveniently on the web will be required. </p>
+            <p>Therefore, in this framework (Figure 1), we built ‘Japanese Old Maps Online’ that enables GIS analysis by freely importing geo-referenced old maps of Japan based on ArcGIS Hub. ArcGIS Hub is a feature of ArcGIS Online (a cloud GIS offered by ESRI) that makes it easy to construct open data sites to share data uploaded to ArcGIS Online (https://japanese-old-maps-online-rstgis.hub.arcgis.com/). It is possible to use ArcGIS Online as a bidirectional platform where private citizens, NPOs, and academic institutions can plan the resolution of common issues through participation and sharing. On the data viewing page, data can be exported in a variety of formats, with CSV, KML, Shapefile, and GeoJSON selectable. It is also possible from here to switch to the ArcGIS Online map creation screen directly, create a map using the target data, overlay multiple maps, and (with an ArcGIS paid account) analyse the data with advanced spatial analysis.</p>
+            <p>
+                <hi rend="bold">5. Conclusion and further challenges</hi>
+            </p>
+            <p>Through this framework, it is now possible even for GIS novices to work with data or old maps they themselves or other users have georeferenced easily, through the Internet—as well as to conduct analysis using a variety of maps and data. Establishing this sort of environment should lead to further advancements in historical GIS research and education. Future issues include making the three systems multilingual and streamlining the transfer of data between them. In addition, we plan to expand the system into applied research, such as comparative analysis using geo-referenced old maps and automatic extraction of place names.</p>
+            <figure>
+                <graphic n="1001" width="16.003763888888887cm" height="11.997972222222222cm" url="Pictures/ec816ce9dc9e5b59b1317451d9b624c4.jpeg" rend="inline"/>
+            </figure>
+            <p>Figure 1 Framework of Japanese Old Maps Online</p>
+        </body>
+    </text>
+</TEI>

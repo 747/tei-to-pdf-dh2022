@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Digital debating cultures: Communicative practices on Reddit</title>
+                <author>
+                    <persName>
+                        <surname>Messerli</surname>
+                        <forename>Thomas C.</forename>
+                    </persName>
+                    <affiliation>University of Basel, Switzerland</affiliation>
+                    <email>thomas.messerli@unibas.ch</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Dayter</surname>
+                        <forename>Daria</forename>
+                    </persName>
+                    <affiliation>Tampere University, Finland</affiliation>
+                    <email>daria.dayter@tuni.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bohmann</surname>
+                        <forename>Axel</forename>
+                    </persName>
+                    <affiliation>University of Freiburg, Germany</affiliation>
+                    <email>axel.bohmann@anglistik.uni-freiburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Donlan</surname>
+                        <forename>Lisa</forename>
+                    </persName>
+                    <affiliation>University of Manchester, UK</affiliation>
+                    <email>lisa.donlan@manchester.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Maccori Kozma</surname>
+                        <forename>Gustavo</forename>
+                    </persName>
+                    <affiliation>University of Freiburg, Germany</affiliation>
+                    <email>gustavo.maccori.kozma@saturn.uni-freiburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Leuckert</surname>
+                        <forename>Sven</forename>
+                    </persName>
+                    <affiliation>TU Dresden, Germany</affiliation>
+                    <email>sven.leuckert@tu-dresden.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Liimatta</surname>
+                        <forename>Aatu</forename>
+                    </persName>
+                    <affiliation>University of Helsinki, Finland</affiliation>
+                    <email>aatu.liimatta@helsinki.fi</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Mahler</surname>
+                        <forename>Hanna</forename>
+                    </persName>
+                    <affiliation>University of Freiburg, Germany</affiliation>
+                    <email>mahlerhanna@aol.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Massanari</surname>
+                        <forename>Adrienne</forename>
+                    </persName>
+                    <affiliation>American University, Washington D.C., USA</affiliation>
+                    <email>adrienne@american.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>McConnell</surname>
+                        <forename>Kyla</forename>
+                    </persName>
+                    <affiliation>University of Freiburg, Germany</affiliation>
+                    <email>kyla.mcconnel@anglistik.uni-freiburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Tosin</surname>
+                        <forename>Rafaela</forename>
+                    </persName>
+                    <affiliation>University of Freiburg, Germany</affiliation>
+                    <email>rafaela.tosin@anglistik.uni-freiburg.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T03:33:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Panel</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>reddit</term>
+                    <term>social media</term>
+                    <term>online communities</term>
+                    <term>communicative practices</term>
+                    <term>computer-mediated communication</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>social media analysis and methods</term>
+                    <term>Communication studies</term>
+                    <term>Linguistics</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="bold">Panel abstract</hi>
+            </p>
+            <p style="text-align: left; ">The social media platform Reddit understands itself as a “home to thousands of communities”, where every used can find their community (
+                <ref target="https://www.redditinc.com/">https://www.redditinc.com</ref>). As researchers in humanities, we find that the submissions and comments posted to Reddit’s subreddits do indeed comprise authentic digital human interaction by groups of people that are in some cases prototypical communities and in other cases merely chance encounters of users who find themselves oriented towards the same virtual space. The collective communicative acts of Reddit users can be positioned in the tradition of computer-mediated communication (CMC) – as one key site of digitalised communication, shaped partially by the affordances provided by the platform, and uniquely available to researchers not just in terms of their linguistic content, but also their multimodal context and discursive structure. Importantly, however, Reddit (sub-)communities are not necessarily subject to identical communicative patterns – within each community, user types and even individual users communicate following particular patterns or even idiosyncratically. 
+            </p>
+            <p style="text-align: left; ">Our recently formed interdisciplinary network, copRe (
+                <hi rend="bold">co</hi>mmunicative 
+                <hi rend="bold">p</hi>ractices on 
+                <hi rend="bold">Re</hi>ddit – copre.org), is dedicated to exploring Reddit discourse(s) from different theoretical perspectives, but all with the aim to contribute to the understanding of Reddit’s own communicative culture as well as the exploration of digital practices more generally. 
+            </p>
+            <p style="text-align: left; ">Specifically, our panel at the DH2022 conference explores aspects of digital culture and participatory culture, manifest in the communicative acts of different (sub-)communities on the online social platform Reddit. These subreddit-communities and the digital genres they give rise to are sites of linguistic innovation as well as of new debating practices – from the combative far-right subreddit r/The_Donald to the more harmonious r/changemyview. They let us gain insights into individual and group identities, as on r/Mountaineering, and they raise question of methodology, such as the understanding of text length as both a challenge for research and a motivated choice of text authors and the employment of mixed-methods to gain insights that are both driven by big data as well as by in-depth understanding of individual and collective communicative acts.</p>
+            <div type="div1" rend="DH-Heading1">
+                <head>Language innovation and diffusion online.</head>
+                <p style="text-align: left; ">Lisa Donlan (University of Manchester)</p>
+                <p style="text-align: left; ">Who are the innovators of lexical terms online? What are the community roles of the early adopters who successfully diffuse linguistic innovations?</p>
+                <p style="text-align: left; ">In offline communities, the weak-tie theory of language change envisions the innovators of linguistic forms as peripheral to a community while early adopters are the community's central members. However, the only study to explore the applicability of the theory in an online Community of Practice (CoFP) was grounded in an unusual linguistic context. My research addresses this gap in the literature by using a mixed-methods approach to analyse the status of the innovators and early adopters of four community-salient innovative linguistic forms which diffused through an online music-orientated CofP, Popheads.</p>
+                <p style="text-align: left; ">Contrary to expectations, three of the four forms studied were innovated by non-peripheral members who scored highly across multiple markers of status. This departure from previous findings may be related to the fact that linguistic creativity is highly valued in many virtual contexts. Consequently, high-status members may perceive linguistic innovation as desirable behaviour online. </p>
+                <p style="text-align: left; ">This research also found that identifying the hierarchical structures that underpin a community leads to more precise descriptions of the characteristics of early adopters. Specifically, it has been possible to conclude that early adopters are prolific contributors, whose posts are successful at generating discussion, and who are on inbound trajectories in the community. Therefore, to speak of an early-adopter as being 'central' or 'high-status' is, I argue, ultimately too vague and fails to acknowledge the multidimensional nature of status. </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Functions of text length on Reddit</head>
+                <p style="text-align: left; ">Aatu Liimatta (University of Helsinki)</p>
+                <p style="text-align: left; ">In corpus-linguistic studies, text length is typically seen as a potential confounding factor (see e.g. Liimatta, 2020), largely because its effects have been difficult to study using even the largest traditional corpora. However, like any other linguistic choice, the length of a text is also a choice made by the writer or speaker: it is also affected by the communicative purpose of the text and the limitations and affordances of the communicative situation.</p>
+                <p style="text-align: left; ">Fortunately, large social media datasets with a range of text lengths have allowed us to approach this previously unassailable topic. Reddit is particularly interesting in terms of text length, since the length of a Reddit comment is free to vary according to the commenter’s needs. Recent studies have shown that Reddit comment length is linked to the distribution of functional linguistic features: for instance, simple information-seeking comments tend to be very short, whereas narrative registers appear to favor longer comments on average (Liimatta, forthc.).</p>
+                <p style="text-align: left; ">In order to further explore the role and functions of comment length on Reddit, I analyze a number of subreddits in terms of both the distribution of comment lengths and the distribution of functional linguistic features across comment lengths. To do this, I make use of a large-scale dataset of Reddit comments and a simple but powerful pooling-based computational methodology.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Register variation in Reddit comments - A multidimensional analysis</head>
+                <p style="text-align: left; ">Hanna Mahler, Kyla McConnell, Axel Bohmann, Gustavo Maccori Kozma, Rafaela Tosin (University of Freiburg)</p>
+                <p style="text-align: left; ">Researchers are increasingly becoming interested in the many opportunities that Reddit provides for linguistic analysis. In this large-scale natural language processing project, we focus on register variation within Reddit comments (inspired by Liimatta 2016, 2020).</p>
+                <p style="text-align: left; ">We analyze Biber’s (1998) linguistic features for register analysis, as well as platform-specific features, on all Reddit comments since 2005, using the Pushshift Reddit Corpus (Baumgartner et al. 2020). We are using this feature annotation to implement a short-text MDA (Clarke &amp; Grieve 2019), a version of Biber’s (1988) multi-dimensional analysis, to find out which dimensions describe the linguistic variation found on the platform and whether the topical "subreddits" can be described as different registers. Our method also promises to serve as a useful tool for analysing other topics such as adaptation of linguistic norms or register diversification over time.</p>
+                <p style="text-align: left; ">Our study therefore adds to the state of knowledge in several ways:</p>
+                <p style="text-align: left; ">1. We regard a single comment as one text (with features extracted on the sentence level), which allows us to accurately locate linguistic variation within individual users.</p>
+                <p style="text-align: left; ">2. We train a tagger specifically to overcome previous difficulties of tagging social media data (e.g. Banga &amp; Mehndiratta 2017), based on data from Behzad &amp; Zeldes (2020) and Gessler et al. (2020).</p>
+                <p style="text-align: left; ">3. The feature extraction script, a refined and elaborated version of Biber's (1988) initial features, is written in Python and will be made openly available.</p>
+                <p style="text-align: left; ">4. Our long-term goal is to develop an MDA solution that captures variation within and among all (English) subreddits.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Combating the Far-/Alt-Right on Reddit: Lessons from r/AgainstHateSubreddits</head>
+                <p style="text-align: left; ">Adrienne Massanari (American University, Washington D.C.)</p>
+                <p style="text-align: left; ">Reddit embodies a carnivalesque spirit, often reflecting a kind of geek masculinity (Kendall, 2011) that champions both niche, technical prowess and clever humor (Massanari, 2015). At the same time, communities engaging in far-right rhetoric, such as the now-banned (and widely popular) r/The_Donald, have flourished in part because the platform relies almost exclusively on volunteer labor to moderate and grow communities (Matias, 2019). Shifting the responsibility and risk of moderating onto unpaid individuals allows Reddit to remain a “lean” organization with few employees, but also creates a kind of plausible deniability when it comes to so-called “alt-right” subreddits.</p>
+                <p style="text-align: left; ">In response to the growing threat that these subreddits present, and the lack of response from Reddit administrators, activists on the platform have created their own communities focused on highlighting hate speech pervasive on the platform. One such example is r/AgainstHateSubreddits, which is dedicated to exposing subreddits that may superficially conform to Reddit’s few rules, but also engage in transphobic, misogynistic, Islamophobic, and racist rhetoric. Through a critical discourse analysis (Fairclough, 2013) of popular postings on the subreddit, I explore how this community challenges Reddit’s politics and offers an ethical counterpoint to the toxic geek masculinity that pervades much of the platform. Drawing on work from platform studies (Bucher, 2018; Gillespie, 2010) and design justice (Costanza-Chock, 2020; D'Ignazio &amp; Klein, 2020), I argue that Reddit’s governance, design, and platform policies work implicitly welcome and mainstream far-right communities, but that spaces like r/AgainstHateSubreddits provide critical forms of resistance and community for activists.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Share my view: Harmonious debating culture on r/changemyview</head>
+                <p style="text-align: left; ">Thomas C. Messerli (University of Basel), Daria Dayter (University of Tampere)</p>
+                <p style="text-align: left; ">In current times, digital discourses are often understood in terms of polarization. Public lay metadiscourses are full of references to social bubbles and disparate parts of society, whereas academic scholars give a lot of focus to binary categories such as information/disinformation, truth/post-truth or outrage culture. Within this context, the debating culture on the subreddit r/ChangeMyView (CMV) stands out because it encourages what we could term persuasibility – the capacity or willingness of someone to change their opinion when encountering new information. While some work has been done on the specific strategies that commenters use to achieve the task at hand, i.e. to change the original poster’s (OP) view, little attention has been paid to the question how prepared OPs actually are to change their mind and how this “malleability of opinion” (Tan et al. 2016: 621) is discursively constructed. From this perspective, original posts – 
+                    <hi rend="italic">submissions</hi> in Reddit terminology – are firstly performances of persuasibility, and secondly access points to persuasible-persuasive pairings, in which the subreddit community enacts its codified and tacit norms. In order to explore these pairings, we make use of the CMV corpus we have compiled and specifically compare submissions, delta-awarded comments, i.e. those comments that have changed the OP’s view, and the OP’s responses to delta-awarded comments. We do this comparison itself with a mixed-methods approach that is grounded in qualitative annotation of persuasibility in a sample of r/changemyview threads and scaled up to the corpus using corpus linguistic methods.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>“Science has no business in the mountains”: Stance-taking and expert knowledge on r/Mountaineering</head>
+                <p style="text-align: left; ">Sven Leuckert (TU Dresden)</p>
+                <p style="text-align: left; ">Stance-taking, as popularised in pragmatics and sociolinguistics by Du Bois (2007), refers to “the speaker’s (or writer)’s relationship to (a) the topic of discussion, (b) the interlocutor or audience, and (c) the talk (or writing) itself” (Kiesling et al. 2018: 684). On social media, stance-taking plays an important role in the discursive construction of relationships and may be employed as a gatekeeping device. In this talk, I focus on strategies of stance-taking as it is linked to the expression of expert knowledge on the subreddit r/Mountaineering. On this subreddit, stance-taking represents a dominant tool to establish who can be considered an expert and, hence, part of the knowledgeable in-group.</p>
+                <p style="text-align: left; ">In this talk, I explore which specific linguistic phenomena are employed by users of the subreddit to express stance in situations where expertise in mountaineering is in focus. After an initial manual assessment of recurring phenomena on the basis of randomly selected threads, a quantitative approach inspired by Kiesling et al.’s (2018) annotation scheme is used to establish the bigger picture of how stance-taking is employed as a gatekeeping device on r/Mountaineering. For this study, the entirety of r/Mountaineering from 2012 to August 2021 has been scraped and is taken into consideration. In sum, the findings suggest that, while quantitative methods are a useful addition in the investigation of stance on Reddit, they can only be complementary to an in-depth study of stance-taking phenomena in their discursive context.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Banga, R. and Mehndiratta, P.</hi> (2017). Tagging Efficiency Analysis on Part of Speech Taggers: International Conference on Information Technology (ICIT: 264–267.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Baumgartner, J., Zannettou, S., Keegan, B., Squire, M. and Blackburn, J.</hi> (2020). The Pushshift Reddit Dataset: Proceedings of the International AAAI Conference on Web and Social Media, 14th edn.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Behzad, S. and Zeldes, A.</hi> (2020). A Cross-Genre Ensemble Approach to Robust Reddit Part of Speech Tagging. http://arxiv.org/pdf/2004.14312v1.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Biber, D.</hi> (1988). Variation Across Speech and Writing. Cambridge University Press.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Bucher, T.</hi> (2018). If...then : algorithmic power and politics. Oxford University Press.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Clarke, I. and Grieve, J.</hi> (2019). Stylistic Variation on the Donald Trump Twitter Account: A Linguistic Analysis of Tweets Posted between 2009 and 2018. PloS one, 14(9), e0222062.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Costanza-Chock, S.</hi> (2020). Design justice: Community-led practices to build the worlds we need. The MIT Press.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">D'Ignazio, C. and Klein, L. F.</hi> (2020). Data feminism
+                        <hi rend="italic">.</hi> The MIT Press.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Dayter, D, &amp; Messerli, T. C.</hi> (2021). Persuasive language and features of formality on the r/ChangeMyView subreddit. Internet Pragmatics, 5(1): 165–195. 
+                        <ref target="https://doi.org/10.1075/ip.00072.day">
+                            <hi rend="underline color(1155CC)">https://doi.org/10.1075/ip.00072.day</hi>
+                        </ref>
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Du Bois, J. W.</hi> (2007). The stance triangle. In Engelbretson, R. (Ed.), Stancetaking in Discourse. John Benjamins, pp. 139–182
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Fairclough, N.</hi> (2013). Critical discourse analysis: The critical study of language. Routledge.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Gessler, L., Peng, S., Liu, Y., Zhu, Y., Behzad, S. and Zeldes, A.</hi> (2020). AMALGUM – A Free, Balanced, Multilayer English Web Corpus: Proceedings of The 12th Language Resources and Evaluation Conference: 5267–5275.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Gillespie, T.</hi> (2010). The politics of ‘platforms’. New Media &amp; Society, 12(3): 347–364.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Kendall, L.</hi> (2011). ‘White and nerdy’: Computers, race, and the nerd stereotype. The Journal of Popular Culture, 44(3): 505–524.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Kiesling, S. F, Pavalanathan, U., Fitzpatrick, J., Han, X. and Eisenstein, J.</hi> (2018). Interactional Stancetaking in Online Forums. Computational Linguistics 44(4): 683-718
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Liimatta, A.</hi> (2016). Exploring Register Variation on Reddit: A Mulit-Dimensional Study
+                        <hi rend="italic">.</hi> Master thesis, University of Helsinki.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Liimatta, A.</hi> (2020). Using lengthwise scaling to compare feature frequencies across text lengths on Reddit. In Rüdiger, S. and Dayter, D. (Eds.), Corpus Approaches to Social Media
+                        <hi rend="italic">.</hi> John Benjamins, pp. 111–130.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Liimatta, A.</hi> (forthc.). Register variation across text lengths: Evidence from social media. International Journal of Corpus Linguistics.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Massanari, A. L.</hi> (2015). Participatory culture, community, and play: Learning from reddit
+                        <hi rend="italic" xml:space="preserve">. </hi>Peter Lang.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Matias, J. N.</hi> (2019). The Civic Labor of Volunteer Moderators Online. Social Media + Society, 5(2). https://doi.org/10.1177/2056305119836778
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Tan, C., Niculae, V., Danescu-Niculescu-Mizil, C. and Lee, L.</hi> (2016). Winning arguments: Interaction dynamics and persuasion strategies in good-faith online discussions: Proceedings of the 25th International Conference on World Wide Web: 613–624.
+                        <ref target="https://doi.org/10.1145/2872427.2883081">
+                            <hi rend="underline color(1155CC)" xml:space="preserve"> https://doi.org/10.1145/2872427.2883081</hi>
+                        </ref>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

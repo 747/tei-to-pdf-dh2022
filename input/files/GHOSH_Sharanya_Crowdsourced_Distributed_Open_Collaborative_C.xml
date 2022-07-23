@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Crowdsourced Distributed Open Collaborative Courses (DOCC) for inclusive, self-regulated learning: A study on OERs in India</title>
+                <author>
+                    <persName>
+                        <surname>Ghosh</surname>
+                        <forename>Sharanya</forename>
+                    </persName>
+                    <affiliation>Indian Institute of Technology, Jodhpur, India</affiliation>
+                    <email>ghosh.5@iitj.ac.in</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Das</surname>
+                        <forename>Rajarshi</forename>
+                    </persName>
+                    <affiliation>Indian Institute of Technology, Jodhpur, India</affiliation>
+                    <email>das.16@iitj.ac.in</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-19T12:25:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>DOCC</term>
+                    <term>Digital archive</term>
+                    <term>OER</term>
+                    <term>course content metadata</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Comparative (2 or more geographical areas)</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>curricular and pedagogical development and analysis</term>
+                    <term>open access methods</term>
+                    <term>Education/ pedagogy</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: center;">Crowdsourced and Inclusive Distributed Open Collaborative Courses (DOCC): An Indian Perspective on OERs</p>
+            <p>
+                <hi rend="color(0E101A)" style="font-size:11pt" xml:space="preserve">Our inquiry delves into the pedagogical potential of openly accessible educational and informational resources, in the form of Distributed Open Collaborative Courses or DOCC, as they might be introduced in the Indian higher education context or the larger Asian contexts, offering the scope of incorporating diverse ideas and materials from indigenous resources as we promote a crowdsourced and inclusive learning environment. Open Educational Resources are the net result of significant technology and policy shifts in the field of education. Massive Open Online Courses or MOOCs are one of the most prominent examples of OERs that engage learners from across the globe via the internet. However, David Wiley, a major voice in open education, has questioned the genuine openness of MOOCs in his historical overview of the sector. Similarly, Karen Head has highlighted some of these concerns regarding MOOCs, such as the possibility of exclusivity in such courses and the privileging of certain dominating voices, particularly those from specific parts of the world and socioeconomic status (SES) levels. </hi>
+                <hi rend="bold color(0E101A)" style="font-size:11pt">FemTechNet</hi>
+                <hi rend="color(0E101A)" style="font-size:11pt" xml:space="preserve"> is a breakthrough initiative that grew out of a network of scholars, artists, and students interested in the convergence of technology, science, and feminism. They work together to provide everyday course experiences and content within individually directed courses in a MOOC derivative known as a Distributed Open Collaborative Course or DOCC. The </hi>
+                <hi rend="bold color(0E101A)" style="font-size:11pt">GE Academy</hi>
+                <hi rend="color(0E101A)" style="font-size:11pt" xml:space="preserve"> is a DOCC built around 7 mini-courses that represent the main thematic areas as suggested by the European Commission to build a Gender Equality Plan (GE Academy, 2019).</hi>
+            </p>
+            <p>
+                <hi rend="color(0E101A)" style="font-size:11pt">India is a country of rich diversity and deep-rooted divisions. As we rethink higher education pedagogy in the Indian context to offer inclusive, participatory, and open-access education to a larger learner community, many of whom are victims of the great digital divide in the country, DOCCs come to offer some solutions. One important observation made by Aparicio et al. (2015) is that "DOCC... differentiates from MOOC in its focus on the pedagogic engagement of all actors, underlining, on the one hand, the invisible work of teachers, and on the other the collective intelligence of scholars.'' The use of DOCC as a democratising and sensitising tool for issues like gender, caste, class, race etc., has already been established by FemTechNet and GE Academy. Our proposal here is to visualise the DOCC as a space allowing its stakeholders to take part in course designing to create crowdsourced content, accessible through an open platform that engages itself with everyday issues and experiences emanating from the fault lines of caste, gender, and marginalisation of the indigenous population, which also becomes a new pedagogical model for online education. Such a bottom-up approach may result in greater learner involvement in researching, exploring, reflecting, and deciding what and how they want to learn. This learner-oriented approach is so far missing in the MOOCs, such as those offered by SWAYAM-NPTEL in India. Open learning is also about open access, which may be facilitated by the digital revolution's strategic changes in media infrastructure. The flexible and collaborative format that DOCCs offer may help underprivileged learners learn at their own pace in a culturally sensitive digital space while engaging in curating the platform/course contents and metadata.</hi>
+            </p>
+            <p>
+                <hi rend="color(0E101A)" style="font-size:11pt" xml:space="preserve">In our presentation, we will look at the two existing DOCCs mentioned above as we attempt a comparative analysis of the relevance of DOCC as an OER for Indian higher education, focusing primarily on our proposed model of a crowdsourced, learner-centric, open-access platform for training into some socially relevant issues. We have tried to develop some critical questions from detailed surveying of the SWAYAM-NPTEL MOOCs and the extant literature. By reviewing existing course contents and platforms, we now intend to test the efficacy of these existing coursewares in the South Asian context, particularly in India. Moreover, we have also been reflecting upon the kind of courses, their content, and the metadata for such courses. We contend that a top-down approach in designing such need-based courseware will only end in futility. Instead, our DOCC prototype will include features such as qualitative questions for users to arrive at pertinent keywords, crowdsourced course design, and multimodal, multilingual interface to address issues of digital literacy, digital divide, learner-centred pedagogy, and the more technical issues such as the limitations of the existing subject heading norms, such as the Library of Congress Subject Heading (LCSH) List, in the context of DOCCs. We shall present </hi>
+                <hi rend="bold color(0E101A)" style="font-size:11pt">at least a wireframe of this prototype</hi>
+                <hi rend="color(0E101A)" style="font-size:11pt" xml:space="preserve"> in our final poster.</hi>
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt">Aparicio M., Bacao F., and Oliveira T.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2016). An e-Learning Theoretical</hi>
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi style="font-size:11pt" xml:space="preserve">Framework. In Altanay, F, Cagiltay, K., Gemini, M., and Altanay, Z. (eds.), </hi>
+                        <hi rend="italic" style="font-size:11pt">Journal of Educational Technology &amp; Society</hi>
+                        <hi style="font-size:11pt" xml:space="preserve">, </hi>
+                        <hi rend="italic bold" style="font-size:11pt">19</hi>
+                        (1):292–307, http://www.jstor.org/stable/jeductechsoci.19.1.292 (accessed: 22 March 2022).
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt">Bonk, C. J., Lee, M. M., Reeves, T.C., and Reynolds, T.H. (eds.)</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2015). </hi>
+                        <hi rend="italic" style="font-size:11pt">MOOCs and Open Education around the World</hi>
+                        , New York:Taylor &amp; Francis.
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt">Edwards, J. C.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2015). Wiki Women: Bringing Women Into Wikipedia through Activism and</hi>
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi style="font-size:11pt" xml:space="preserve">Pedagogy. </hi>
+                        <hi rend="italic" style="font-size:11pt">The History Teacher</hi>
+                        <hi style="font-size:11pt" xml:space="preserve">, </hi>
+                        <hi rend="italic bold" style="font-size:11pt">48</hi>
+                        (3), 409–436. http://www.jstor.org/stable/24810523
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt" xml:space="preserve">FemTechNet, </hi>
+                        <hi style="font-size:11pt" xml:space="preserve">(2013). </hi>
+                        <hi rend="italic" style="font-size:11pt" xml:space="preserve">Transforming Higher Education with Distributed Open Collaborative Courses (DOCCs): Feminist Pedagogies and Networked Learning, </hi>
+                        FemTechNet White Paper Committee, https://www.femtechnet.org/about/white-paper/ (accessed: 19 April 2022).
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt">GE Academy, (</hi>
+                        2019)
+                        <hi rend="bold" style="font-size:11pt" xml:space="preserve">. </hi>
+                        <hi rend="italic" style="font-size:11pt" xml:space="preserve">Gender Equality Training Materials, </hi>
+                        GE Academy, https://ge-academy.eu (accessed: 19 April 2022). 
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt" xml:space="preserve">Head, K. J. </hi>
+                        <hi style="font-size:11pt" xml:space="preserve">(2017). Talking Business in Higher Education: </hi>
+                        <hi rend="italic" style="font-size:11pt">Disrupt This! - Moocs and the Promises of Technology</hi>
+                        . Lebanon: University Press Of New England.
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt">Smith, M. N.</hi>
+                        <hi style="font-size:11pt" xml:space="preserve"> (2014). Frozen Social Relations and Time for a Thaw: Visibility, Exclusions, and</hi>
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi style="font-size:11pt" xml:space="preserve">Considerations for Postcolonial Digital Archives. </hi>
+                        <hi rend="italic" style="font-size:11pt">Journal of Victorian Culture</hi>
+                        <hi style="font-size:11pt" xml:space="preserve">, </hi>
+                        <hi rend="italic bold" style="font-size:11pt">19</hi>
+                        <hi rend="italic" style="font-size:11pt">(</hi>
+                        3): 403–410, https://doi.org/10.1080/13555502.2014.947189 (accessed 20 March 2022).
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold" style="font-size:11pt" xml:space="preserve">Wiley, D. </hi>
+                        <hi style="font-size:11pt" xml:space="preserve">(2018). Open Educational Resources: </hi>
+                        <hi rend="italic" style="font-size:11pt" xml:space="preserve">Foundations of Learning and Instructional Design Technology. </hi>
+                        EdTech Books, https://lidtfoundations.pressbooks.com/chapter/open-educational-resources/ (accessed: 30 March 2022). 
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

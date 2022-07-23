@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Information Platform for Linked Data of Regional Historical Materials and its Agent Name Finding Process</title>
+                <author>
+                    <persName>
+                        <surname>Kameda</surname>
+                        <forename>Akihiro</forename>
+                    </persName>
+                    <affiliation>National Museum of Japanese History, Japan</affiliation>
+                    <email>cm3ak@outlook.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Goto</surname>
+                        <forename>Makoto</forename>
+                    </persName>
+                    <affiliation>National Museum of Japanese History, Japan</affiliation>
+                    <email>m-goto@rekihaku.ac.jp</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T14:41:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>regional historical resources</term>
+                    <term>linked data</term>
+                    <term>names entity recognition</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>linked (open) data</term>
+                    <term>text mining and analysis</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Overview</p>
+            <p>This presentation describes the construction of a system and the analysis and maintenance of data for the advanced use of the inventory of regional historical resources, especially using interactive annotation of agent names. We are driving a project for the inheritance and preservation of regional historical resources. In order to achieve the objectives of this project, we have developed a data infrastructure for advanced use of the inventories of regional historical resources. In particular, we aimed to create a system in which computers help people to discover information, rather than the conventional system in which people search and browse directly. Specifically, we resolved orthographical variants and integrated values, constructed identifiers and URIs, and described the provenance and components of resources. As a result, we were able to provide a Linked Data for regional historical resources, and we found the design of appropriate information infrastructure and its data generation process. In regional historical resources, there are many people and companies described. Some people can be associated with clans and positioned in family tree diagrams, other people are nameless and their detailed profiles are unknown. Those agent names and relationships among them in the archive of regional historical resources characterize the archive itself. If we only focus on some famous people already known in other documents, it is efficient to bring the dictionary of those names including alternative names and find those names in the archive. However, some names which are quite frequently used in the archive and not so much known in other documents are worth being analyzed and described. So, we extract the candidate names from the archive, list up the information of famous people from external resources such as encyclopedias of history, and extend the list as the archive specific directory based on frequency and co-occurrence analyses. </p>
+            <p>Platform: khirin-c</p>
+            <p>We have a series of systems named 
+                <hi rend="italic">khirin</hi>(Knowledgebase of Historical Resources in Institutes). The system described in this presentation is named 
+                <hi rend="italic">khirin-c</hi>, which collaborate with a IIIF based image presentation system 
+                <hi rend="italic">khirin-i</hi>. 
+                <hi rend="italic">Khirin-c</hi> stores four types of URIs: (1)dataset-wise, (2)type-wise, (3)accompanying information of type 1 , and (4)external URIs. We can import data from some format including the RDF 1.1 Turtle
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text"> https://www.w3.org/TR/turtle/</p>
+                </note>, which we most frequently use. Moreover, 
+                <hi rend="italic">khirin-c</hi> has web-based GUI interface and we can edit the data online. To set the relationships among the dataset and options of HTML rendering, we use GUI interface mainly. To edit the data, we do it offline so that we can maintain the data and track the changes and versions.
+            </p>
+            <p>Agent Name Finding Process</p>
+            <p style="text-align: left; ">In this presentation, we focus on describing how we organized information about people and organizations to support their reading and understanding. First, we extract candidate names using Entity Names Recognition software GiNZA
+                <note place="foot" xml:id="ftn2" n="2">
+                    <p rend="footnote text"> https://github.com/megagonlabs/ginza</p>
+                </note>. In the cleansing stage, for the data received in tabular form, we set tentative identifiers, clustered the values using OpenRefine
+                <note place="foot" xml:id="ftn3" n="3">
+                    <p rend="footnote text"> https://openrefine.org/</p>
+                </note>, and used Wikidata to expand and identify the information. To support the deciphering of the data, we provided some interfaces which can narrowed down the list by each person or organization related to each item and visualized the network based on the sender-recipient relation of letters.
+            </p>
+        </body>
+    </text>
+</TEI>

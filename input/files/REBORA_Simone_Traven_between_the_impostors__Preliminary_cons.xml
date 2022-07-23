@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Traven between the impostors. Preliminary considerations on an authorship verification case</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Rebora</surname>
+                        <forename>Simone</forename>
+                    </persName>
+                    <affiliation>University of Verona, Italy</affiliation>
+                    <email>simone.rebora@univr.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Salgaro</surname>
+                        <forename>Massimo</forename>
+                    </persName>
+                    <affiliation>University of Verona, Italy</affiliation>
+                    <email>massimo.salgaro@univr.it</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T10:38:29.732500364</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>B. Traven</term>
+                    <term>stylometry</term>
+                    <term>impostors method</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>attribution studies and stylometric analysis</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <anchor xml:id="id_docs-internal-guid-cd0be6ba-7fff-92dc-6d63-43ac21787969"/>
+                <hi rend="color(#000000)">This paper sets up the groundwork for an authorship verification project dedicated to the German novelist B. Traven, author of novels such as </hi>
+                <hi rend="color(#000000) italic">The Death Ship</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">(1926) and </hi>
+                <hi rend="color(#000000) italic">The Treasure of the Sierra Madre</hi>
+                <hi rend="color(#000000)"> </hi>
+                <hi rend="color(#000000)">(1927), whose real identity is still a mystery. </hi>
+                <hi rend="color(#000000)">Among the different theories, the most established is the one that sees B. Traven as the pseudonym of Otto Feige, author of a series of political pamphlets for the metal workers' union in Gelsenkirchen, who then changed his name into Ret Marut (publisher of the anarchist periodical Der Ziegelbrenner), before moving to Mexico and acquiring his final, world-famous pseudonym (Goldwasser, 1993; Hauschild, 2012).</hi>
+            </p>
+            <p>
+                <hi rend="color(#000000)">From the point of view of stylometry, that of Feige/Matut/Traven is a typical authorship verification problem, where the goal is not that of attributing an anonymous text to a candidate author, but that of verifying if two (or more) texts were written by the same author. Extensive research is currently dedicated to the subject (see e.g. Kestemont et al., 2020), while an established approach is that of the “impostors” (Koppel and Winter, 2014), recently included also in the stylo package (Eder et al., 2016).</hi>
+            </p>
+            <p>
+                <hi rend="color(#000000)">The impostors are intended as a group of writers who cannot be the authors of the texts under examination, but who could function as “distractors” in their attribution. Impostors become useful in authorship verification studies, as they can put into question the attribution of two texts to the same author, even when an alternative candidate author is missing. Main limitation is in their being just surrogates of a possible author, thus never offering a conclusive answer, but only casting doubt on an attribution. The implementation in the stylo package (Eder, 2018) stresses this aspect even further, by providing as result a probability of confirmed attribution which varies slightly at each repetition (due to an element of randomness in the procedure).</hi>
+            </p>
+            <p>
+                <hi rend="color(#000000)">To test the efficiency of the impostors in the Traven case study, a corpus was created by collecting essays and articles by Feige, Marut, and Traven, together with texts by Paul Ernst, Erich Mühsam, Robert Musil, and Ludwig Rubiner (see Table 1). This genre limitation was </hi>
+                <hi rend="color(#000000)">imposed by the fact that Feige wrote just political pamphlets. Ideally, the best impostors would have then been journalists and essayists active at the beginning of the XIX century, but no corpus provided access to this kind of material. The Mannheimer Korpus Historischer Zeitungen und Zeitschriften (Mannheim, 2013) was adopted with the (inevitably forceful) assumption that each journal issue corresponded to one impostor. The Kolimo corpus (Herrmann and Lauer, 2017) offered a more coherent distinction between impostors, but included just fictional and narrative texts (see Table 2).</hi>
+            </p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/08b3f8fbc9ae4d9d9c2e8bac4a9a0e88.png"/>
+                </figure>
+            </p>
+            <p>Table 1. Corpus overview</p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/3757769ccf1b362b2a3b3e437152c161.png"/>
+                </figure>
+            </p>
+            <p>Table 2. Imposters corpora</p>
+            <p>Main idea behind the whole procedure was that of verifying if the impostors could produce high scores when comparing texts written by the same author (e.g. Feige with Feige) and low scores when comparing texts written by different authors (e.g. Traven with Musil). Analyses were performed by combining the 11 distance measures available in the stylo package, 20 different selections of most frequent words (from 50 to 1,000 MFW), 5 culling percentages (0%, 25%, 50%, 75%, 100%), and 8 selections of the number of impostors (from 5 to 40). Computation was repeated 20 times in each condition with the two impostors corpora, thus resulting in a total of 352,000 analyses.</p>
+            <p>Figure 1 shows a first overview of the results, confirming how in most of the cases impostors work efficiently (with a relatively lower efficiency for Feige). </p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/e8ff33459f0548e0d92da8f1e2e66e74.png"/>
+                </figure>
+            </p>
+            <p>Figure 1. Testing results</p>
+            <p>
+                <hi rend="color(#000000)">Table 3 confirms how high culling helps overcome the genre differences in Kolimo, while Figure 2 shows how efficiency increases with MFW selections, but soon reaches a plateau (even at 150 MFW for the Kolimo corpus, 100% culling). Finally, Figure 3 shows how a low number of imposters causes a substantial drop in efficiency (especially for high MFW selections), while more than 10 impostors do not improve the results. Full documentation can be found here: </hi>
+                <ptr target="https://github.com/SimoneRebora/Traven_stylometry"/>
+                <hi rend="color(#000000)">.</hi>
+            </p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/34b597c2453e0c9b652e81c443077ed0.png"/>
+                </figure>Table 3. Culling results
+            </p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/6984779bc84185b56d13c5d50c5f9884.png"/>
+                </figure>
+            </p>
+            <p>Figure 2. MFW/culling results</p>
+            <p>
+                <figure>
+                    <graphic url="Pictures/242e40a51e2e6073231c2cbd942cac36.png"/>
+                </figure>
+            </p>
+            <p>Figure 3. MFW/impostors number results</p>
+            <p>The results of this paper will be used for setting up an analysis that needs extensive verification before being put into place, in order to at least minimize the dangers in the application of the impostors method to authorship verification cases like that of B. Traven.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <anchor xml:id="id_docs-internal-guid-cd77acee-7fff-6a14-f46e-dae7df9a324b"/>
+                        <hi rend="color(#000000) bold">Eder, M.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2018). Authorship verification with the package stylo </hi>
+                        <hi rend="color(#000000) italic">Computational Stylistics Group Blog </hi>
+                        <hi rend="color(#000000)">https://computationalstylistics.github.io/blog/imposters/.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Eder, M., Rybicki, J. and Kestemont, M.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2016). Stylometry with R: A Package for Computational Text Analysis. </hi>
+                        <hi rend="color(#000000) italic">The R Journal</hi>
+                        <hi rend="color(#000000)">, </hi>
+                        <hi rend="color(#000000) bold">8</hi>
+                        <hi rend="color(#000000)">(1): 107–21.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Goldwasser, J.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(1993). Ret Marut: The Early B. Traven. </hi>
+                        <hi rend="color(#000000) italic">The Germanic Review: Literature, Culture, Theory</hi>
+                        <hi rend="color(#000000)">, </hi>
+                        <hi rend="color(#000000) bold">68</hi>
+                        <hi rend="color(#000000)">(3): 133–42 doi:10.1080/00168890.1993.9934225.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Hauschild, J.-C.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2012). </hi>
+                        <hi rend="color(#000000) italic">B. Traven: Die Unbekannten Jahre</hi>
+                        <hi rend="color(#000000)">. Zürich : Wien ; New York: Edition Voldemeer ; Springer.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Herrmann, J. B. and Lauer, G.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2017). </hi>
+                        <hi rend="color(#000000) italic">KOLIMO. A Corpus of Literary Modernism for Comparative Analysis</hi>
+                        <hi rend="color(#000000)">. https://kolimo.uni-goettingen.de/about.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Kestemont, M., Manjavacas, E., Markov, I., Bevendorff, J., Wiegmann, M., Stamatatos, E., Potthast, M. and Stein, B.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2020). Overview of the Cross-Domain Authorship Veriﬁcation Task at PAN 2020. </hi>
+                        <hi rend="color(#000000) italic">CLEF 2020 Working Notes</hi>
+                        <hi rend="color(#000000)">. CEUR, p. 14.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Koppel, M. and Winter, Y.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2014). Determining if two documents are written by the same author: Determining If Two Documents Are Written by the Same Author. </hi>
+                        <hi rend="color(#000000) italic">Journal of the Association for Information Science and Technology</hi>
+                        <hi rend="color(#000000)">, </hi>
+                        <hi rend="color(#000000) bold">65</hi>
+                        <hi rend="color(#000000)">(1): 178–87 doi:10.1002/asi.22954.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000) bold">Mannheim, I.</hi>
+                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000)">(2013). </hi>
+                        <hi rend="color(#000000) italic">Mannheimer Korpus Historischer Zeitungen Und Zeitschriften</hi>
+                        <hi rend="color(#000000)">. Mannheim: Institut für Deutsche Sprache Mannheim https://doi.org/10.34644/laudatio-dev-miUsD3MB7CArCQ9C6Cul.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

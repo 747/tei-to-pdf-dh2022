@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Fingerprinting a Community of Scientific Instrument Makers in Early Modern London</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Butterworth</surname>
+                        <forename>Alex</forename>
+                    </persName>
+                    <affiliation>University of Sussex, United Kingdom</affiliation>
+                    <email>a.butterworth@sussex.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hay</surname>
+                        <forename>Duncan</forename>
+                    </persName>
+                    <affiliation>University of Sussex, United Kingdom</affiliation>
+                    <email>dh418@sussex.ac.uk</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Jardine</surname>
+                        <forename>Boris</forename>
+                    </persName>
+                    <affiliation>University of Cambridge, United Kingdom</affiliation>
+                    <email>borisjardine@gmail.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-29T14:05:09.887572330</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Scientific Instruments</term>
+                    <term>Semantic Graph</term>
+                    <term>Actor Networks</term>
+                    <term>Microhistory</term>
+                    <term>Exploratory DataVis</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>18th Century</term>
+                    <term>digital biography</term>
+                    <term>personography</term>
+                    <term>and prosopography</term>
+                    <term>spatial &amp; spatio-temporal analysis</term>
+                    <term>modeling and visualization</term>
+                    <term>History</term>
+                    <term>History of science</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>This paper presents a keyhole case study of the scientific revolution in Britain as revealed through the development of the production and circulation of optical instruments in seventeenth century London, with a specific focus on Clerkenwell and the City. The outcome of a series of data-led investigations and analytic focalisation, such a study affords novel insights into how identity and community were shaped and defined, and suggests the under-appreciated coherence of the organized trade in scientific instruments during its early development. The work is an early output of a thirty-month AHRC-funded research project, ‘Tools of Knowledge: Modelling the Creative Communities of Scientific Instrument Makers in Britain, 1550-1914.’ The project is grounded in the semantic remodelling of an inherited legacy database (Scientific Instrument Makers, Observations and Notes) of over ten thousand makers, their careers and relationships, and enhanced with complementary data aggregated from many diverse supplementary sources.</p>
+            <p>The broader project explores the diverse communities of scientific instrument makers – and the complex and nuanced histories of their businesses – as defined by their known activities and products, their family, education, professional (guild), ethnic and geospatial relations (Morrison-Low, 2007). It considers how these relations intersect (and fuse), and how the patterns discovered in the knowledge graph might constitute the ‘identity’ of a maker business: a distinct fingerprint. We consider ‘Identity’, in these terms, framed as an actor network (Latour, 1988) involving the complex interplay between interests, influences and rivalries in an economy grounded in expertise, utility and prestige. The ‘fingerprinting’ allows comparative study of maker businesses with reference to the different actor networks within which they existed: the similarities and differences between fingerprint-graphs as they change over time, suggesting continuities and ruptures.</p>
+            <p>The paper will present this fingerprinting process as a narrative of data-led methodological exploration, told through the unpacking of a single micro-historical investigation of one such moment of change: the flourishing of the Spectacle Makers Livery Company, and the factors that may have influenced their commercial status and success (Bennett et al, 2019). These include the production of new instruments such as Newton’s Prism in response to demand from a range of clients; the quality of the glass used; and the physical and professional proximity of related specialisms and specialist suppliers (Cormack, 2017, Jardine, 2018).</p>
+            <p>The methods used across the project as a whole are diverse, including combining data from heterogeneous sources with the original database; computer vision to extract information from digitised sources; XRF metallurgical analysis (Adlington, 2017); and natural language processing to trace developments in conceptual discourse. This paper draws specifically on network analysis and community detection (Ahnert and Ahnert, 2019) and geospatial analysis of urban distribution (Griffiths and Vaughan), and the intersection of these two approaches. Initial probes to visualise the data and inform subsequent visualisation designs demonstrate the ways in which these techniques can be used to identify makers, their communities, and the processes which shaped their formation and evolution over time.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="color(#000000)">Adlington, L. W. and Freestone, I. C., ‘Using Handheld pXRF to study medieval stained glass: A methodology using trace elements’, </hi>
+                        <hi rend="color(#000000) italic">MRS Advances </hi>
+                        <hi rend="color(#000000)">2 (2017).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000)">Anhert, R. and Ahnert, S. E., 'Networking the Republic of Letters', in </hi>
+                        <hi rend="color(#000000) italic">Reassembling the Republic of Letters in the Digital Age: Standards, Systems, Scholarship</hi>
+                        <hi rend="color(#000000)">, ed. Howard Hotson and Thomas Wallnig (Göttingen University Press, 2019).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000)">Ahnert, R. </hi>
+                        <hi rend="color(#000000) italic">et al.</hi>
+                        <hi rend="color(#000000)">, ‘Reconciling Metadata: Semi- Automated Tools’ in </hi>
+                        <hi rend="color(#000000) italic">Reassembling the Republic of Letters in the Digital Age: Standards, Systems, Scholarship</hi>
+                        <hi rend="color(#000000)">, ed. Howard Hotson and Thomas Wallnig (Göttingen University Press, 2019).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000)">Bennett, J. and Higgitt, R., ‘London 1600–1800: communities of natural knowledge and artificial practice’, </hi>
+                        <hi rend="color(#000000) italic">British Journal for the History of Science </hi>
+                        <hi rend="color(#000000)">52 (2019), pp. 183–196.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000)">Cormack, L. B., Walton, S. A., and Schuster, J. A. (eds), </hi>
+                        <hi rend="color(#000000) italic">Mathematical Practitioners and the Transformation of Natural Knowledge in Early Modern Europe </hi>
+                        <hi rend="color(#000000)">(Cham: Springer, 2017). </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000)">Griffiths, S. and Vaughan, L., ‘Mapping spatial cultures: contributions of space syntax to research in the urban history of the nineteenth century city’, </hi>
+                        <hi rend="color(#000000) italic">Urban History </hi>
+                        <hi rend="color(#000000)">47 (2020), pp. 488-511.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000)">Jardine, B. ‘Instruments of Statecraft: Humphrey Cole, Elizabethan Economic Policy and the Rise of Practical Mathematics’, </hi>
+                        <hi rend="color(#000000) italic">Annals of Science </hi>
+                        <hi rend="color(#000000)">75 (2018), pp.304-329. </hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000)">Latour, B., </hi>
+                        <hi rend="color(#000000) italic">Science in Action: How to Follow Scientists and Engineers through Society </hi>
+                        <hi rend="color(#000000)">(Harvard University Press, 1988).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="color(#000000)">Morrison-Low, A., </hi>
+                        <hi rend="color(#000000) italic">Making Scientific Instruments in the Industrial Revolution </hi>
+                        <hi rend="color(#000000)">(Burlington: Ashgate, 2007).</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

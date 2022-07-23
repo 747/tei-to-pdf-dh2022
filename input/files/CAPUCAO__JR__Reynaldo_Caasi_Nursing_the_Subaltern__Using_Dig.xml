@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Nursing the Subaltern: Using Digital Prosopography to Explore the Transnational Makings of Filipino Nurses Since 1898</title>
+                <author>
+                    <persName>
+                        <surname>Capucao. Jr.</surname>
+                        <forename>Reynaldo Caasi</forename>
+                    </persName>
+                    <affiliation>University of Virginia, United States of America</affiliation>
+                    <email>rcc9vq@virginia.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Nursing</term>
+                    <term>Prosopography</term>
+                    <term>Mapping</term>
+                    <term>Animation</term>
+                    <term>Oral History</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>digital biography</term>
+                    <term>personography</term>
+                    <term>and prosopography</term>
+                    <term>spatial &amp; spatio-temporal analysis</term>
+                    <term>modeling and visualization</term>
+                    <term>Asian studies</term>
+                    <term>History of science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p> Historical scholarship in nursing has proven significant in elucidating gender roles in medicine and society but often disregards race and ethnicity in its framing of the middle-class white woman as the focus of its discourse. One ethnic group at the periphery of nursing history are Filipinos, as evident with the historiography failing to mirror these nurses’ present-day hypervisibility within the global healthcare arena. This relationship between the Philippines and professional nursing, however, can be traced to the importation of the United States (US) model of nursing following the aftermath of the Spanish American War. Although the Philippines gained autonomy in 1946, its Americanized nurses still don the traditional white uniform and continue to migrate in droves to placate US labor shortages. The ahistorical Filipino nurse subject, through ongoing migrations, haunts the legacy of American colonialism and its imperialist agenda of creating an overseas market in Asia. </p>
+            <p> My attempt to capture this elusive subject along its ghostly passage occurs through my use of digital prosopography. This historical method has the capacity to collectively capture the ephemeral identity of the Filipino nurse.
+                <hi rend="endnote_reference">
+                    <note place="end" xml:id="end1" n="1">
+                        <p rend="endnote text"> Prosopographical research in nursing remains an underutilized method, but when used, it examines the history of Western civilization. </p>
+                    </note>
+                </hi> To address the limits of the Filipino nurse archive, I focus my study on autobiography instead of biography as a source of life history. As Peter Cunningham demonstrates the potential for oral history in prosopographical study, I draw upon oral history interviews of Filipino nurses located in the U.S. for this pilot study. My corpus currently contains thirteen interviews: four archived interviews from Seattle, Washington and nine interviews from Virginia conducted by me. The structure of interviews varies due to intersubjectivity and dissimilar interviewers and project objectives among them, but the aggregate covers the lives of subjects. 
+            </p>
+            <p> Despite the small corpus, digital humanities approaches have the capacity to visualize data and create new modes of interpretation from a few records–a problem that persists among subaltern archives. Approaches used to extend the limits of my archive entail mid-range reading with markup, constructing a searchable database, and georeferencing. My use of mid-range reading adapts the Biographical Elements and Structural Schema (BESS) tagging method implemented by the 
+                <hi rend="italic">Collective Biographies of Women</hi> (
+                <hi rend="italic">CBW</hi>) to explore narrative structure and composition of responses. BESS explores particularities of national identity, occupation, and space, and therefore, provides a model for my analysis of oral history interviews. Instead of an analysis at the paragraph-level, I segment and number portions of text in correspondence to discourses around geography and the built environment. Tagging involves categories of persona type, events, persona description, discourse, and topos. This process begins by digitizing interview transcripts to undergo markup via Oxygen XML editor, and the end goal is to produce a searchable database of categories that is linked to the 
+                <hi rend="italic">CBW</hi> website. Tags thus provide the basis for distant scale analysis to establish relational networks and typologies. 
+            </p>
+            <p> Events (observable actions in time and space) tagged can be further defined with attributes to a particular event, which includes georeferencing. For example, events tagged as, “travel for work,” can include attributes for specific and non-specific location structures or settings and dates. The array of attributes reflects initial findings of highly mobile, professional female immigrants. The immigration dates of subjects to the U.S. range between 1926 and 2004. Although subjects settled in Seattle or Virginia, these locations were not usually the sites of arrival. The number of migrations prior to their final destinations vary greatly and must be contextualized spatially and historically. Mapping, thus, as a digital tool, allows visual comparisons among groups within my corpus: place (Seattle and Virginia) and immigration dates (1925-1950, 1951-1975, and 1976-). Beyond the mapping of toponyms, I highlight the capability of mapping as a critical practice using ArcGIS Pro to highlight the significance of prosopographical findings in delineating upon human relationships, migration, and the built environment.</p>
+            <p> This project illuminates the individual voices of Filipino nurses which serve as a critique to view the contradictions of American liberal ideals. But the scarcity of oral history interviews, particularly of Filipino nurses who migrated to the U.S. during the first half of the twentieth century, limits the ability of systematic investigation. The capacity of digital humanities approaches, however, can make meaningful analyses from a limited archive to then limn a collective portrait of the Filipino nurse identity. Although the project is in its preliminary stages, it has begun the process of excavating this identity through a myriad of digital methods and tools.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Booth, A. (2017). </hi>Mid-range reading: Not a manifesto. 
+                        <hi rend="italic">PMLA/Publications of the Modern Language Association of America</hi>, 
+                        <hi rend="bold">132</hi>(3): 620-627, DOI: 10.1632/pmla.2017.132.3.620.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bullough, V.L., Bullough, B., and Wu, Y.B.</hi> (1992). Achievement of eminent American nurses of the past: A prosopographical study. 
+                        <hi rend="italic">Nursing Research</hi>, 
+                        <hi rend="bold">41</hi>(2): 120-124.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Choy, C. C.</hi> (2003). 
+                        <hi rend="italic">Empire of Care: Nursing and Migration in Filipino American History</hi>. Durham: Duke University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Cunningham, P.</hi> (2001). Innovators, networks and structures: Towards a prosopography of progressivism. 
+                        <hi rend="italic">History of Education</hi>, 
+                        <hi rend="bold">30</hi>(5): 433-451, DOI: 10.1080/00467600110064726.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gordon, Avery</hi>
+                        <hi rend="color(262626)" xml:space="preserve"> (2008). </hi>
+                        <hi rend="italic color(262626)">Ghostly Matters: Haunting and the Sociological Imagination</hi>
+                        <hi rend="color(262626)">. Minneapolis: University of Minnesota Press.</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hawkins, S.</hi> (2012). 
+                        <hi rend="italic">Nursing and Women's Labour in the Nineteenth Century: The Quest for Independence</hi>. Abingdon, Oxfordshire, UK: Routledge.
+                    </bibl>
+                    <bibl>
+                        <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"xTWhc4Ay","properties":{"formattedCitation":"Lisa Lowe, {\\i{}Immigration Acts: On Asian American Cultural Politics:} (Durham: Duke University Press, 1996).","plainCitation":"Lisa Lowe, Immigration Acts: On Asian American Cultural Politics: (Durham: Duke University Press, 1996).","noteIndex":8},"citationItems":[{"id":728,"uris":["http://zotero.org/users/local/EcQ7i1Qb/items/2X39DYN7"],"itemData":{"id":728,"type":"book","event-place":"Durham","publisher":"Duke University Press","publisher-place":"Durham","title":"Immigration Acts: On Asian American Cultural Politics:","title-short":"Immigration Acts","author":[{"literal":"Lisa Lowe"}],"issued":{"date-parts":[["1996"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
+                        <hi rend="bold" xml:space="preserve">Lowe, L. </hi>(1996). 
+                        <hi rend="italic">Immigration Acts: On Asian American Cultural Politics</hi>. Durham: Duke University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Pollitt, P. and Humphries, A. </hi>(2013). Nursing in a time and place of peril: Five North Carolina nurses. 
+                        <hi rend="italic">Journal of Nursing Education and Practice</hi>, 
+                        <hi rend="bold">3</hi>(9): 176-186. DOI: 10.5430/jnep.v3n9p176.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Spires, K. A.</hi> (2013). Nurses in the Boer War (1899-1902): What was it about the collective body of nurses caring for the sick and wounded during the Boer War that shaped the future of military nursing? Ph.D. thesis, London South Bank University.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(262626)">Sy, L.</hi>
+                        <hi rend="color(262626)" xml:space="preserve"> (2020). BESS: A very short primer. </hi>
+                        <hi rend="italic color(262626)">Scholar’s Lab Blog</hi>
+                        <hi rend="color(262626)">, https://scholarslab.lib.virginia.edu/blog/bess-primer/ (accessed 8 December 2021).</hi>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold color(262626)">Verboven, K., Carlier, M., and Dumolyn J.</hi>
+                        <hi rend="color(262626)" xml:space="preserve"> (2007). A short manual to the art of prosopography. In Keats-Rohan, K. (ed),</hi>
+                        <hi rend="italic color(262626)">Prosopography Approaches and Applications: A Handbook</hi>
+                        <hi rend="color(262626)">. Oxford: University of Oxford, pp. 35-70.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A code for Murakami’s Tokyo: spatial diversity analyzed by digital means</title>
+                <author>
+                    <persName>
+                        <surname>Abbiati</surname>
+                        <forename>Simone</forename>
+                    </persName>
+                    <affiliation>University of Bergamo</affiliation>
+                    <email>simone.abbiati@unibg.it</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Text mining</term>
+                    <term>NLP</term>
+                    <term>Named Entity Recognition</term>
+                    <term>Geocriticism</term>
+                    <term>Murakami</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>spatial &amp; spatio-temporal analysis</term>
+                    <term>modeling and visualization</term>
+                    <term>text mining and analysis</term>
+                    <term>Geography and geo-humanities</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">From Shibuya ward with its intense nightlife in 
+                <hi rend="italic" xml:space="preserve">After Dark </hi>and the commercial area of Kichijōji in 
+                <hi rend="italic">Sputnik Sweetheart</hi>, to Setagaya’s highway in 
+                <hi rend="italic">1Q84</hi>, Bunkyo's Rikugien Garden in 
+                <hi rend="italic">Norwegian Wood</hi>, Aoyama Cemetery in 
+                <hi rend="italic">South of the Border, West of the Sun</hi>, and the Pacific Hotel near Shinagawa station in 
+                <hi rend="italic" xml:space="preserve">The Wind-Up Bird Chronicle – </hi>Haruki Murakami, arguably the most famous Japanese contemporary writer, has left his mark on the capital of Japan both within and outside of fiction. In his fourteen novels, Tokyo’s thousand faces appear in great detail, even though they are filtered through a wide variety of characters’ perspectives and reconceptualized by magical realism. Regardless of the literary space abstraction, Seymour Chatman’s theory affirms that literary characters are cognitively experienced in the same way a reader would get to know a person in real life; and Akhil Gupta’s research argues the existence of a link between spatial perception and cultural identity. This would suggest that the spatial conceptualization performed by literary characters entail a 
+                <hi rend="italic" xml:space="preserve">forma vivendi </hi>ascribable to a certain cultural environment. But is it really that simple? Does an identifiable Tokyo's 
+                <hi rend="italic">genius loci</hi> emerge from Murakami’s novels? In the wake of Computational Criticism, we will use code-writing to help us get a glimpse of the characters’ cognitive mapping processes and thus delve into a literary-cultural analysis, bearing in mind that imaginative literature is the result of layers of mediation and re-presentation causing straightforward cultural seeping-through to be questioned. In order to do this, we present a Python script able to extract spatial data concerning the cognitive mapping of Murakami’s fictional figures. 
+            </p>
+            <p style="text-align: left; "> In fact, in the last few years, literary spatiality has emerged both from a theoretical and a digital perspective. In light of this, the results given by the software application will be discussed in order to reflect on Tokyo as an example of Japanese urbanisation, and to identify pros and cons of digitally-assisted interpretive acts regarding spatiality. Lastly, in treating Murakami’s fictional spatiality with digital tools, particular attention will be given to recent criticism of distant reading and corpus selection. </p>
+            <p style="text-align: left; "> From a technical perspective, the presented script will use Natural Language Processing to tokenize, tag, and parse a selected corpus from of Murakami's novels to eventually perform Named Entity Recognition. The script will identify when movement verbs present fictional characters as subjects, leading to the extraction of the starting points and destinations of some of their itineraries. Thus, it will be possible to identify meaningful landmarks and itineraries of some characters, leading to the schematization of their cognitive maps. </p>
+            <p style="text-align: left; "> The spatial structures extracted by digital means will be interpreted in view of cultural differences that Eastern and Western societies present as far as living in metropolitan areas is concerned. Spurious results (counterfactual spatial indications, and phraseological expressions, among others) will also be considered from a technical perspective. Lastly, with respect to the multilingual DH approach, the analysis will be conducted onto the English corpus but a few observations the original text in Japanese language will be presented, thus suggesting new possible research paths.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Algee-Hewitt, M.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2017). Canon/Archive: Studies in Quantitative Formalism from the Stanford Literary Lab, N+1 Foundation</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Bode K.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2018). A World of Fiction: Digital Collections and the Future of Literary History, University of Michigan Press.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Bode, K.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2020). </hi>
+                        <hi rend="italic" style="font-family:Helvetica Neue;font-size:9pt">«Why You Can</hi>
+                        <hi rend="italic" style="font-family:Arial Unicode MS;font-size:9pt">’</hi>
+                        <hi rend="italic" style="font-family:Helvetica Neue;font-size:9pt">t Model Away Bias»</hi>
+                        , Modern Language Quarterly, 81, 95-124
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Bushell, S.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2020). Reading and Mapping Fiction: Spatialising the Literary Text, Cambridge University Press</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Chatman, S.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2019). Story and Discourse: Narrative Structure in Fiction and Film, Cornell University Press</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Cooper, D. and Gregory, I.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2011) «</hi>
+                        <hi rend="italic" style="font-family:Helvetica Neue;font-size:9pt">Mapping the English Lake District: A Literary GIS»</hi>
+                        , Transactions of the Institute of British Geographers 36, no. 1, 89–108
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Cooper, D., Donaldson, C., and Murrieta-Flores, P.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2016). Literary Mapping in the Digital Age, Burlington</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Gitelman L.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2013). Raw Data Is an Oxymoron, MIT Press</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Gupta, A. and Ferguson, J.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (1992). «</hi>
+                        <hi rend="italic" style="font-family:Helvetica Neue;font-size:9pt">Space, Identity, and the Politics of Difference»</hi>
+                        , in Cultural Anthropology, Vol. 7, No. 1, pp. 6-23
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Herman, D.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2002). Story logic. Problems and possibilities of narrative, University of Nebraska Press.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Heuser, R., Moretti, M., and Steiner, E.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2016). </hi>
+                        <hi rend="italic" style="font-family:Helvetica Neue;font-size:9pt">«The Emotions of London»</hi>
+                        , Pamphlets of the Stan- ford Literary Lab
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve">Hillman, J. </hi>
+                        (1992). The Thought of the Heart and the Soul of the World, Spring
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Loper, E., Klein, E., Bird, S</hi>
+                        . (2009). Natural Language Processing with Python, O’Reilly Media
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Marie-Laure Ryan, et al.</hi>
+                        (2016). Narrating Space/spatializing Narrative: Where Narrative Theory and Geography Meet, Ohio State University Press
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Moretti F.</hi>
+                        (1997). Atlas of the European Novel, Einaudi
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Moretti, F.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2013). Distant Reading, Verso</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Nan Z, D.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2019).</hi>
+                        <hi rend="italic" style="font-family:Helvetica Neue;font-size:9pt">«The Computational Case against Computational Literary Studies»</hi>
+                        , in Critical Inquiry, 45
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve">Schmid, C., Karaman, O., Hanakata, N. C., Kallenberger, P., Kockelkorn, A., Sawyer, L., Streule, M., &amp; Wong, K. P. </hi>
+                        (2018). Towards a new vocabulary of urbanisation processes: A comparative approach, Urban Studies, 55(1), 19–52
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Sorensen, A.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (1999). </hi>
+                        <hi rend="italic" style="font-family:Helvetica Neue;font-size:9pt">«Land Readjustment, Urban Planning and Urban Sprawl in the Tokyo Metropolitan Area»</hi>
+                        , Urban Studies, 36(13), 2333–2360
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Strecher, M. C.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (1999). </hi>
+                        <hi rend="italic" style="font-family:Helvetica Neue;font-size:9pt">«Magical Realism and the Search for Identity in the Fiction of Murakami Haruki»</hi>
+                        , The Journal of Japanese Studies , Vol. 25, No. 2, pp. 263-298
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Strecher, M. C.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2021). Dances with Sheep: The Quest for Identity in the Fiction of Murakami Haruki, University of Michigan Press</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Suter, R.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2008). The Japanization of modernity: Murakami Haruki between Japan and the United States, Harvard University Asia Center</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Tally, R.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2013). Spatiality, Routledge</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Underwood, T.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2019). Distant Horizons: Digital Evidence and Literary Change, University of Chicago Press</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Vasiliev, Y</hi>
+                        . (2020). Natural Language Processing with Python and SpaCy: A Practical Intro- duction, No Starch Pres
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Westphal B.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2009). Geocriticism: Real and Fictional Spaces, Armando editore</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Helvetica Neue;font-size:9pt">Wilkens, M.</hi>
+                        <hi style="font-family:Helvetica Neue;font-size:9pt" xml:space="preserve"> (2021). «</hi>
+                        <hi rend="italic" style="font-family:Helvetica Neue;font-size:9pt">“Too isolated, too insular”: American Literature and the World»</hi>
+                        , The journal of Cultural analytics
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

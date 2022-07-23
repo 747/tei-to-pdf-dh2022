@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main"> The Postil Time Machine: The Lithuanian Lutheran Postils of the 16th Century </title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Chiarcos</surname>
+                        <forename>Christian</forename>
+                    </persName>
+                    <affiliation>Goethe Universität Frankfurt, Germany</affiliation>
+                    <email>christian.chiarcos@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gelumbeckaite</surname>
+                        <forename>Jolanta</forename>
+                    </persName>
+                    <affiliation>Goethe Universität Frankfurt, Germany</affiliation>
+                    <email>gelumbeckaite@em.uni-frankfurt.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Drach</surname>
+                        <forename>Mortimer</forename>
+                    </persName>
+                    <affiliation>Goethe Universität Frankfurt, Germany</affiliation>
+                    <email>drach@em.uni-frankfurt.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T15:39:51.612958026</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Old Lithuanian</term>
+                    <term>religious literature</term>
+                    <term>digital edition</term>
+                    <term>intertextuality</term>
+                    <term>linked data</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>15th-17th Century</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>linked (open) data</term>
+                    <term>Linguistics</term>
+                    <term>Central/Eastern European Studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>We introduce the Postil Time Machine, a novel research project dedicated to the study of knowledge transfer in 16th century Europe, with a particular focus on the situation in Lithuania. The project is funded by the German Research Foundation (DFG, 2021-2024) as a collaboration between Baltic studies and computational linguistics and pursues historical-philological as well as technological research questions.</p>
+            <p>In terms of philology, the project will provide the digital edition and linguistic annotation of the Old Lithuanian Lutheran postils and their Latin, German, and (in the case of the Bible passages) Greek and Hebrew sources, the detailed qualitative and quantitative analysis of the intertextual relations among the Lithuanian texts and of the relations between them and their respective foreign-language sources. The term ‘postils’ originally referred to Bible commentaries (Latin post illa verba textus “after these words from the scripture”), but later came to mean pericope sermons, and during the time covered by our project referred to an annual cycles of homilies. The study of postils and their transnational, theological and cross-lingual ties with political and theological movements (and the literature of said movements) at the time can provide a window into the formative period of Protestant faith. Furthermore, the postils covered here are among the oldest textual witnesses for the Baltic languages, and thus are of particular importance for the study of Lithuanian in the context of Indo-European studies and comparative linguistics (Gelumbeckaite, 2018).</p>
+            <p>In terms of technology, project goals include the development of a language technology stack for Old Lithuanian, the automated, cross-lingual detection of intertextual relations and citations, and the digital edition of the texts and their relations. While the first two aspects are innovative applications of existing technologies to a novel (and due to the sparsity and heterogeneity of available data, challenging) domain, the digital edition has somewhat larger implications for Digital Humanities as a whole: In the project we bring together four distinct types of data for different applications:</p>
+            <list type="unordered">
+                <item>manual annotation/IGT: Manual linguistic annotation is performed using the Field Linguist’s Toolbox, standard software for the annotation of interlinear glossed text, which produces an idiosyncratic text format.</item>
+                <item>automated annotation/CoNLL: The automated annotation is performed using state-of-the-art NLP software that produces CoNLL-TSV, a tabular data format. For training NLP tools, we convert Toolbox data to CoNLL.</item>
+                <item>intertextual relations/Linked Data: Intertextual relations are manually annotated in Toolbox and automatically detected as part of the NLP workflow, but subsequently stored as a knowledge graph separate from the text and published as Linked Data. This facilitates interoperability with other initiatives working on intertextual relations and theological discourse.</item>
+                <item>digital edition/TEI: The digital edition of text and annotations uses TEI and an XML stack.</item>
+            </list>
+            <p>While these solutions and the technologies behind are all well established, their combination has proven to be challenging on different levels, and this is where a major contribution of the project lies. These challenges include the limited interoperability between IGT and CoNLL formats, a lack of agreement about how to represent IGTs in TEI, and the conjunct usage of TEI and LOD technologies. Focusing on the latter aspect, we have been advocating the use of RDFa for this purpose (Tittel et al., 2018), as this is (at the moment) the only W3C-compliant way to implement a TEI-LOD bridge in inline XML (Chiarcos and Ionov, 2018). After more than a decade of discussion, this suggestion has eventually led to a novel TEI customization for TEI+RDFa (see 
+                <ptr target="https://github.com/TEIC/TEI/issues/1860"/>). Our project represents the first application of this novel customization to a large-scale edition project and aims to demonstrate its scalability, robustness and, as a specific benefit, the application of off-the-shelf RDF technology to digital editions (as well as human-readable representations generated from it) created in this way.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Chiarcos, Ch., and Ionov, M. (2018), Linking the TEI: Approaches, Limitations, Use Cases. Paper presented at DH2019, Utrecht, The Netherlands.</bibl>
+                    <bibl>Gelumbeckaitė, J. (2018). Predigtkultur in Litauen: Corpus der altlitauischen Postillen. In Reformatio Baltica (pp. 573-586). De Gruyter.</bibl>
+                    <bibl>Tittel, S., Bermúdez-Sabel, H., &amp; Chiarcos, C. (2018). Using RDFa to link text and dictionary data for Medieval French. Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018), Miyazaki, Japan.</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

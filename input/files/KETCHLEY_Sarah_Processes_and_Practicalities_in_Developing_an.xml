@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Processes and Practicalities in Developing and Sustaining a Text Mining Platform: Gale Digital Scholar Lab</title>
+                <author>
+                    <persName>
+                        <surname>Ketchley</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <affiliation>University of Washington/Gale, United States of America</affiliation>
+                    <email>ketchley@uw.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ludwig</surname>
+                        <forename>Jess</forename>
+                    </persName>
+                    <affiliation>Gale</affiliation>
+                    <email>jess.ludwig@cenage.com</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>text-mining</term>
+                    <term>development</term>
+                    <term>project-management</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>curricular and pedagogical development and analysis</term>
+                    <term>Interface design</term>
+                    <term>development</term>
+                    <term>and analysis</term>
+                    <term>History</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Gale Digital Scholar Lab was developed in 2018 to fulfil requests for a platform for text mining primary source documents without necessarily having to learn to code in Python or R. Based on beta-testing user interviews, it was determined that some of the most significant barriers to entry into the field of text-based digital humanities data mining include not knowing how or where to start in order to build a DH project, not having time to gather a significant data set or to clean and organize data for analysis, and having limited institutional infrastructure and support for projects that include text mining methodologies. In designing the DS Lab, the goal was to provide a scaffolded experience for users new to the field of digital humanities, while offering options for extensibility for researchers with established projects. This included providing pathways for research, teaching and learning by both students, faculty, and librarians.</p>
+            <p style="text-align: left; ">The DS Lab has been iteratively developed since its first release, with updates including tool enhancements and support for pedagogical use of the platform, and more recently a platform migration, workflow tweaks and improved accessibility. The DS Lab integrates six GUI-based tools for conducting text analysis of primary source archives and user-uploaded plaintext documents. These tools comprise Named Entity Recognition, Sentiment Analysis, Ngrams, Parts of Speech Tagging, Topic Modeling and Clustering. Recognizing that quality of OCR text is key in achieving meaningful analysis outputs, the DS Lab also presents options for text cleaning as part of the curation process. Import and export of text and metadata are also supported.</p>
+            <p style="text-align: left; ">To orient users who are new to the field of DH to the workflow and outcomes, the platform incorporates an extensive Learning Center with contextual help documentation including brief recorded videos, images, text, and sample projects. Similarly, for teachers who are looking for ideas or additional support in the platform, there are draft syllabi, outline learning objectives, and downloadable project outlines.</p>
+            <p style="text-align: left; ">This 10-minute talk will focus on describing the process and challenges of developing the DS Lab interface, meeting the often-competing demands of balancing developer time, the scope of individual project sprints, and projected cost. Consideration will be given to the workflows which were successful as well as those that needed to be adapted or scrapped altogether. It will discuss using personas to design the features and functionality in the platform, and the advantages and drawbacks of doing so. The development of the Learning Centre is a case in point, since its development drew on a range of internal and external expertise such as academic advisors, curriculum developers, and UX designers as well as in-house software and content engineers, metadata and content architects and the product and archives team. This collaborative undertaking took considerable management to balance expectations and outcomes, and to ensure that communication flowed clearly. These considerations are not unique to the Gale Digital Scholar Lab development project but can be extrapolated to other similar DH projects. The intent of the talk is to highlight how the lessons learned by the Gale development team and external stakeholders can be used to provide guidance for others.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Besette, Lee. (2012). “Challenges in Digital Humanities.” 
+                        <hi rend="italic">Inside Higher Ed.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">https://www.insidehighered.com/blogs/college-ready-writing/challenges-digital-humanities. Accessed 16 March 2022.</bibl>
+                    <bibl style="text-align: left; ">Campese, C., Thiago Bertolini, d. S., Lorena Pereira, d. C., &amp; Janaina Mascarenhas, H. C. </bibl>
+                    <bibl style="text-align: left; ">(2019). 
+                        <hi rend="italic">User stories method and assistive technology product development: A new approach to requirements elicitation</hi>. Cambridge: Cambridge University Press. doi:http://dx.doi.org/10.1017/dsi.2019.385
+                    </bibl>
+                    <bibl style="text-align: left; ">Coutu, Diane. (2015). “Why Teams Don’t Work.” 
+                        <hi rend="italic">Harvard Business Review.</hi> https://hbr.org/2009/05/why-teams-dont-work. Accessed 25 Apr. 2022.
+                    </bibl>
+                    <bibl style="text-align: left; ">Currier, Brent D. (2017). “They Think all of this is new: Leveraging Librarians’ Project Management Skills for the Digital Humanities.” 
+                        <hi rend="italic">College &amp; Undergraduate Libraries</hi> 24, 270-289. 
+                        <ref target="https://doi.org/10.1080/10691316.2017.1347541">https://doi.org/10.1080/10691316.2017.1347541</ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">Dingsøyr, Torgeir, et al. (2018). “Coordinating Knowledge Work in Multiteam Programs: Findings From a Large-Scale Agile Development Program.” 
+                        <hi rend="italic">Project Management Journal</hi>, vol. 49, no. 6. 64–77, doi:10.1177/8756972818798980.
+                    </bibl>
+                    <bibl style="text-align: left; ">Gratton, Lynda, and Tamara J. Erickson. (2016). “Eight Ways to Build Collaborative Teams.” 
+                        <hi rend="italic">Harvard Business Review</hi>. hbr.org/2007/11/eight-ways-to-build-collaborative-teams. Accessed 25 Apr. 2022.
+                    </bibl>
+                    <bibl style="text-align: left; ">Jenkins, Nick. (2008) 
+                        <hi rend="italic">A Software Testing Primer An Introduction to Software Testing</hi>. San Francisco: Creative Commons.
+                    </bibl>
+                    <bibl style="text-align: left; ">Nielsen, Jakob. (nd). “Why You Only Need to Test with 5 Users.” 
+                        <hi rend="italic">Nielsen Norman Group</hi>. 
+                        <hi rend="italic">www.nngroup.com</hi>, 
+                        <hi rend="underline">https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/</hi>. Accessed 30 Apr. 2022.
+                    </bibl>
+                    <bibl style="text-align: left; ">Siemens, L. (2011). The Balance between On-line and In-person Interactions: Methods for the Development of Digital Humanities Collaboration. 
+                        <hi rend="italic">Digital Studies/le Champ Numérique</hi>, 
+                        <hi rend="italic">2</hi>(1). DOI: 
+                        <ref target="http://doi.org/10.16995/dscn.259">http://doi.org/10.16995/dscn.259</ref>. Accessed 16 March 2022.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

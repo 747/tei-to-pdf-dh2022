@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Vectorian API – A Research Framework for Semantic Textual Similarity (STS) Searches</title>
+                <author>
+                    <persName>
+                        <surname>Liebl</surname>
+                        <forename>Bernhard</forename>
+                    </persName>
+                    <affiliation>Leipzig University, Germany</affiliation>
+                    <email>liebl@informatik.uni-leipzig.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Burghardt</surname>
+                        <forename>Manuel</forename>
+                    </persName>
+                    <affiliation>Leipzig University, Germany</affiliation>
+                    <email>burghardt@informatik.uni-leipzig.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>intertextuality</term>
+                    <term>text reuse</term>
+                    <term>text mining</term>
+                    <term>alignments</term>
+                    <term>word embeddings</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>Contemporary</term>
+                    <term>natural language processing</term>
+                    <term>text mining and analysis</term>
+                    <term>Computer science</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>In the humanities, texts are often quoted, referenced or alluded to (see Bamman &amp; Crane, 2008). In order to automatically detect complex cases of so-called intertextual references, it is not enough to match two texts on the purely lexical level, but rather to also take into account the semantic level (see Fig. 1).</p>
+            <figure>
+                <graphic n="1001" width="14.338947222222222cm" height="3.114261111111111cm" url="Pictures/dd98be3142f5da70ef32e4f2802d6cba.png" rend="inline"/>
+                <head>Example for an intertextual reference to Shakespeare’s “Macbeth”. </head>
+            </figure>
+            <p>The task at hand is typically referred to as 
+                <hi rend="italic">semantic textual similarity</hi> (STS; Cer et al., 2017) and neural text embeddings have long been recognized as a foundational building block of SOTA solutions (Zhelezniak et al., 2020). In recent years, many different approaches to neural embeddings have emerged and have been deemed suitable for different application scenarios. One line of approaches focuses on providing a single embedding for a span of text, as for example in the case of sentence embeddings (Wang et al., 2021). Another line of approaches uses high quality word embeddings and builds algorithms on top of them, to operate on spans of tokens. Common approaches on this group are optimal transport (Kusner et al., 2015), fuzzy sets (Zhelezniak et al., 2019), or various statistical approaches (Zhelezniak et al., 2020). Interestingly, most of the existing tools for the detection of intertextuality – for instance 
+                <hi rend="italic">Tesserae</hi> (Scheirer et al., 2016) or 
+                <hi rend="italic">Tracer</hi> (Büchler et al., 2014) – do not utilize such neural embeddings at all.
+            </p>
+            <p>To close this gap, we present the 
+                <hi rend="italic">Vectorian</hi> as an intertextuality search engine (see Manjavacas et al., 2019) that aims to serve as a research framework for running STS queries using established embedding methods on both token and span levels. Besides various types of embeddings, the Vectorian can also combine custom alignment algorithms and further NLP operations, such as the weighting of POS. Two notable features of the Vectorian framework are its fast instantiation of new search indices on pre-processed corpora – including full support for pre-computed static and contextual embeddings – and a fast and optimized alignment search implementation that scales reasonably well to moderately sized corpora.
+            </p>
+            <p>In our poster, we present the Vectorian API as a software demonstration. The Vectorian can be used to experiment with various configurations of embeddings and alignments for different tasks of intertextuality detection. Figure 2 shows the overall workflow of the Vectorian API
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p rend="footnote text">
+                        Vectorian API: https://poke1024.github.io/vectorian/index.html
+                    </p>
+                </note>.
+            </p>
+            <figure>
+                <graphic n="1002" width="15.92cm" height="9.383888888888889cm" url="Pictures/9d79290fb7a087f69041022d1feebec4.jpg" rend="inline"/>
+                <head>The Vectorian workflow and core elements of the API.</head>
+            </figure>
+            <p>First, the
+                <hi rend="bold" xml:space="preserve"> Importer</hi> is used to preprocess text resources. Essentially, the documents are segmented into tokens and sentences. If the document contains additional structural XML markup, the importer can also be customized to parse this information. Moreover, POS tags are annotated utilizing spaCy. The result of this step is a 
+                <hi rend="bold">Corpus</hi> of segmented and annotated 
+                <hi rend="bold">Documents</hi>. In the next step, the corpus is enriched with contextual information for each word to provide an additional layer for semantic analyses. This is solved via embeddings. At this point, different 
+                <hi rend="bold">TokenEmbeddings</hi> are calculated and stored as vectors. The Vectorian implements various static (e.g. fastText, GloVe) as well as contextual (e.g. BERT-based models) token embeddings.
+            </p>
+            <p>For technical reasons, 
+                <hi rend="bold">SentenceEmbeddings</hi> are generated in a later step if required. At this stage, all the necessary steps have been taken to instantiate a 
+                <hi rend="bold">Session</hi>, which is an optimized in-memory representation of the given corpus and the selected embeddings. The purpose of a session is to generate a searchable 
+                <hi rend="bold">Index</hi> of the embedded corpus. 
+            </p>
+            <p>For the similarity comparison in 
+                <hi rend="bold">SentenceSim</hi>, first of all a similarity measure (e.g. cosine similarity) is defined. Next, the approach for the actual string comparison is chosen. This can be a local, global, or semi-global 
+                <hi rend="bold">Alignment</hi> approach (Aluru, 2005) with variable gap costs, or the 
+                <hi rend="bold">Word Mover’s Distance</hi> (Kusner et al., 2015). Finally, there is an option to use the previously annotated POS as additional weights. The idea of 
+                <hi rend="bold">POS weights</hi> is based on Batanovic ́&amp; Bojic (2015) and ensures that differing tokens that still have the same POS are classified as more similar than if they have a POS mismatch. SentenceSim also allows for an entirely alternative approach to compare the query and document partitions, which is an approach that utilizes the aforementioned 
+                <hi rend="bold">SentenceEmbeddings</hi>. With this approach, sentences are represented as embedding vectors of their own, which means similarity can be directly assessed by comparing sentence vectors.
+            </p>
+            <p>Once the index has been created, a 
+                <hi rend="bold">Query</hi> can be searched in the previously created corpus. Figure 3 shows an example query for the Shakespeare phrase “old men’s crotchets”. Two example results that were retrieved by the Vectorian are also provided. These results illustrate how the Vectorian evaluates every word according to the selected embeddings and then provides a score for its match to the original query.
+            </p>
+            <figure>
+                <graphic n="1003" width="12.946944444444444cm" height="6.856830555555556cm" url="Pictures/03b455a766ec34c147d968f418a773e0.png" rend="inline"/>
+                <head>Example results for a query that is matched with the predefined corpus through the Vectorian API.</head>
+            </figure>
+            <p>With our poster, we hope to spark some discussion with the DH community on how to apply and further develop the Vectorian API, which we believe will be a useful resource for any kind of intertextuality research in the DH.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Aluru, S. (Ed.). (2005). Handbook of Computational Molecular Biology. Chapman and Hall/CRC. https://doi.org/10.1201/9781420036275)</bibl>
+                    <bibl>Bamman, D. &amp; Crane, G. (2008). The logic and discovery of textual allusion. In In Proceedings of the 2008 LREC Workshop on Language Technology for Cultural Heritage Data. </bibl>
+                    <bibl>Batanovic ́&amp; Bojic, 2015). Using Part-of-Speech Tags as Deep Syntax Indicators in Determining Short Text Semantic Similarity. Computer Science and Information Systems, 12(1):1–31, January.)</bibl>
+                    <bibl>Büchler, M., Burns, P. R., Müller, M., Franzini, E., &amp; Franzini, G. (2014). Towards a historical text re-use detection. In Text Mining (pp. 221-238). Springer, Cham.</bibl>
+                    <bibl>Cer, D., Diab, M., Agirre, E., Lopez-Gazpio, I., &amp; Specia, L. (2017). SemEval-2017 Task 1: Semantic Textual Similarity - Multilingual and Cross-lingual Focused Evaluation. https://doi.org/10.18653/v1/S17-2001</bibl>
+                    <bibl>Kusner, M. J., Sun, Y., Kolkin, N. I., &amp; Weinberger, K. Q. (n.d.). From Word Embeddings To Document Distances.</bibl>
+                    <bibl>Manjavacas, E., Long, B., &amp; Kestemont, M. (2019). On the Feasibility of Automated Detection of Allusive Text Reuse. arXiv:1905.02973 [cs], May. </bibl>
+                    <bibl>Scheirer, W., Forstall, C., &amp; Coffee, N. (2016). The sense of a connection: Automatic tracing of intertextuality by meaning. Digital Scholarship in the Humanities, 31(1), 204-21.</bibl>
+                    <bibl>Zhelezniak, V., Savkov, A., Shen, A., Moramarco, F., Flann, J., Hammerla, N. Y., &amp; Health, B. (2019). Don’t settle for average, go for the max: Fuzzy sets and max-pooled word vectors.</bibl>
+                    <bibl>Zhelezniak, V., Savkov, A., Hammerla, N., &amp; Health, B. (2020). Estimating Mutual Information Between Dense Word Embeddings.</bibl>
+                    <bibl>Wang, K., Reimers, N., &amp; Gurevych, I. (2021). TSDAE: Using Transformer-based Sequential Denoising Auto-Encoder for Unsupervised Sentence Embedding Learning. </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

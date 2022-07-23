@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title> A Five-Star Model for Linked Humanities Data Usability </title>
+                <author>
+                    <persName>
+                        <surname>Middle</surname>
+                        <forename>Sarah</forename>
+                    </persName>
+                    <affiliation>Open University, National Museums Scotland</affiliation>
+                    <email>sarah.middle@open.ac.uk</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T11:15:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Linked Data</term>
+                    <term>usability</term>
+                    <term>user research</term>
+                    <term>openness</term>
+                    <term>sustainability</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>BCE-4th Century</term>
+                    <term>linked (open) data</term>
+                    <term>user experience design and analysis</term>
+                    <term>History</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p>Of the various approaches to modelling Humanities data, Linked Data is particularly effective for representing complexity and nuance, while facilitating implementation of the FAIR data principles (Findable, Accessible, Interoperable, Reusable) (Wilkinson et al., 2016). However, despite a recent increase in Linked Humanities Data production, uptake remains low, partly due to usability issues. This paper presents key findings from a study that investigated these issues by focusing on the Ancient World, a subject domain where Linked Data implementation is relatively mature and which, due to its multi-faceted nature, could be considered a microcosm of Humanities research. My study sought to establish user and producer needs through a survey of the research community and detailed interviews with selected participants. Responses informed a series of recommendations, presented as a 
+                    <hi rend="italic">Five-Star Model</hi> for Linked Humanities Data usability.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Background</head>
+                <p>The term ‘Linked Data’ refers to a set of technologies to describe entities, such as places, people, or objects, and connect them based on features they have in common. A Linked Data approach can provide significant benefits for Humanities research: its rich semantic descriptions, disambiguation capabilities, and interoperability can unlock opportunities to address new research questions and reveal previously undiscovered relationships. However, previous research has identified barriers to producing Linked Humanities Data, including unfamiliarity with a graph data model (Barbera, 2013: 96; Ross et al., 2015: 118), the significant time investment required for training, and difficulties in securing support (Isaksen, 2011: 153–54; Geser, 2016: 12, 56; Granados-García, 2020: 261–64). Where time is short and training/support are limited, Linked Data producers naturally prioritise immediate project goals over long-term usability.</p>
+                <p>Recommendations to assist the production of usable Linked Humanities Data tools and resources are therefore required. Progress has been made by the ‘Linked Open Usable Data’ (LOUD) initiative, resulting in the definition of five ‘Design Principles’(Linked Art Contributors, no date); however, their primary aim is usability by developers, rather than end users. Elsewhere, user consultations have been conducted in relation to specific tools and resources, such as 
+                    <hi rend="italic">Europeana</hi> (Angelis et al., 2015) and 
+                    <hi rend="italic">Recogito</hi> (Simon et al., 2015). My study differed from these in investigating the usability of multiple tools and resources across the wider digital ecosystem.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Methodology</head>
+                <p>The first phase of my study comprised a survey of Ancient World researchers. Assuming Linked Data use among this audience would be relatively low and intending to gain broader insights, I aimed the survey at all Ancient World researchers who use digital tools or resources, with specific questions about Linked Data use and production. The survey ran during spring 2018 and received 212 responses. The second phase involved interviews with 16 survey participants to explore their experiences in more depth (between autumn 2018 and spring 2019
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p rend="footnote text"> Although usage of digital tools and resources has likely since increased due to the COVID-19 pandemic, the majority of those discussed by participants have not subsequently undergone significant developments. My findings and recommendations should therefore still be applicable.</p>
+                    </note>). Interview participants had differing levels of technical experience, while being broadly representative of the survey demographics.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Findings</head>
+                <p>From analysing participant responses, I found that usability can be facilitated by considering six key factors when planning a Linked Humanities Data project: training, collaboration, user-centred design, documentation, access, and sustainability. Based on these factors, and inspired by Berners-Lee’s (2010) five-star model for Linked Open Data, I propose the following 
+                    <hi rend="italic">Five-Star Model for Linked Humanities Data Usability</hi>, aimed at project leaders:
+                </p>
+                <p><hi rend="Chinese">★</hi> 
+                    <hi rend="bold" xml:space="preserve">Transparency: </hi>provide clear documentation about the tool/resource, its data structures, and functionality
+                </p>
+                <p><hi rend="Chinese">★★</hi> 
+                    <hi rend="bold" xml:space="preserve">Extensibility: </hi>build upon existing systems or facilitate future extension; encourage integration of new data
+                </p>
+                <p><hi rend="Chinese">★★★</hi> 
+                    <hi rend="bold" xml:space="preserve">Intuitiveness: </hi>develop clear user journeys to facilitate completion of intended tasks
+                </p>
+                <p><hi rend="Chinese">★★★★</hi> 
+                    <hi rend="bold" xml:space="preserve">Reliability: </hi>ensure consistent functionality, while minimising downtime
+                </p>
+                <p><hi rend="Chinese">★★★★★</hi> 
+                    <hi rend="bold" xml:space="preserve">Sustainability: </hi>support continued functionality for (at least) a fixed period
+                </p>
+                <p>The above components appear in the order in which they might be considered when planning production of a Linked Humanities Data tool or resource; however, during development they are likely to be addressed simultaneously. Throughout the development process, it is crucial for people with requisite skills and knowledge (or sufficient interest to acquire them through training) to work collaboratively. Eventually, these collaborations can form communities of practice, e.g., those that support 
+                    <ref target="https://pelagios.org/">
+                        <hi rend="italic">Pelagios</hi>
+                    </ref> and 
+                    <ref target="https://papyri.info/">
+                        <hi rend="italic">Papyri.info</hi>
+                    </ref>. Such communities can assist in maintaining tools or resources in the long term, facilitating development, managing new contributions, and sharing knowledge.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusions</head>
+                <p style="text-align: left; ">Linked Humanities Data usability is affected by decisions made during the planning stages of tool or resource development; key factors that facilitate this usability, as demonstrated through my 
+                    <hi rend="italic">Five-Star Model</hi>, could equally apply to other technological approaches. However, because Linked Data production is relatively complex and because the potential for reuse is so great, particular care must be taken in ensuring its usability by the research community. This framework of key factors to consider early in the development process should help encourage future Linked Humanities Data producers to prioritise usability and identify areas requiring support or training. As a result, a wider audience will be better able to benefit from the advantages of Linked Data technologies.
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Barbera, M.</hi> (2013). Linked (open) data at web scale: research, social and engineering challenges in the digital humanities. 
+                        <hi rend="italic">JLIS.it</hi>, 4(1): 91–101.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Berners-Lee, T.</hi> (2010). 
+                        <hi rend="italic">Linked Data - Design Issues</hi>. Available at: https://www.w3.org/DesignIssues/LinkedData.html.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Geser, G.</hi> (2016). 
+                        <hi rend="italic">ARIADNE WP15 Study: Towards a Web of Archaeological Linked Open Data</hi>. ARIADNE. Available at: http://legacy.ariadne-infrastructure.eu/wp-content/uploads/2019/01/ARIADNE_archaeological_LOD_study_10-2016-1.pdf (Accessed: 26 March 2020).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Granados-García, P.L.</hi> (2020). 
+                        <hi rend="italic">Cultural Contact in Early Roman Spain through Linked Open Data</hi>. PhD. The Open University. Available at: http://oro.open.ac.uk/73887/ (Accessed: 4 March 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Isaksen, L.</hi> (2011). 
+                        <hi rend="italic">Archaeology and the semantic web</hi>. PhD. University of Southampton. Available at: http://eprints.soton.ac.uk/206421 (Accessed: 24 October 2016).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Linked Art Contributors</hi> (no date). 
+                        <hi rend="italic">LOUD: Linked Open Usable Data</hi>, 
+                        <hi rend="italic">Linked Art</hi>. Available at: https://linked.art/loud/ (Accessed: 21 July 2021).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Ross, S. </hi>
+                        <hi rend="italic bold">et al.</hi> (2015). Building the Bazaar: Enhancing Archaeological Field Recording Through an Open Source Approach. In Wilson, A.T. and Edwards, B. (eds), 
+                        <hi rend="italic">Open Source Archaeology: Ethics and Practice</hi>. De Gruyter, pp. 111–29. doi:10.1515/9783110440171-009.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Simon, R. </hi>
+                        <hi rend="italic bold">et al.</hi> (2015). Linking Early Geospatial Documents, One Place at a Time: Annotation of Geographic Documents with Recogito. 
+                        <hi rend="italic">e-Perimetron</hi>, 10(2): 49–59.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Wilkinson, M.D. </hi>
+                        <hi rend="italic bold">et al.</hi> (2016). The FAIR Guiding Principles for scientific data management and stewardship. 
+                        <hi rend="italic">Scientific Data</hi>, 3(1). doi:10.1038/sdata.2016.18.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

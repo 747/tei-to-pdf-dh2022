@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Pose Clustering for Martial Arts Action Recognition: the case studies of Kata and Tai Chi</title>
+                <author>
+                    <persName>
+                        <surname>Marsocci</surname>
+                        <forename>Valerio</forename>
+                    </persName>
+                    <affiliation>Sapienza University of Rome, Italy</affiliation>
+                    <email>valerio.marsocci@uniroma1.it</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Lastilla</surname>
+                        <forename>Lorenzo</forename>
+                    </persName>
+                    <affiliation>Sapienza University of Rome, Italy</affiliation>
+                    <email>lorenzo.lastilla@uniroma1.it</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-19T15:45:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>pose clustering</term>
+                    <term>martial arts</term>
+                    <term>image retrieval</term>
+                    <term>Warburg</term>
+                    <term>action recognition</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Global</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>artificial intelligence and machine learning</term>
+                    <term>information retrieval and querying algorithms and methods</term>
+                    <term>Computer science</term>
+                    <term>Cultural studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <hi rend="color(222222)">The history of martial arts is lost in the mists of time: from time immemorial mankind has sought methods of combat fundamental for self-defense, and not only. Just such a millenary tradition has ignited great interest in mass culture towards these techniques, often leading to false beliefs derived from myths without valid sources (Bowman, 2016).</hi>
+            </p>
+            <p>Thus, to overcome this issue, since the end of the last century, the academy has developed an increasing interest in the martial arts, studying these disciplines from increasingly varied perspectives, such as performative arts, anthropology, history and so on. At the same time, there has been an increasing need to provide a comprehensive and consistent definition of "martial art".</p>
+            <p>
+                <hi rend="color(222222)">According to the Japanese model (Green, 2010), “</hi>
+                <hi rend="italic color(222222)" xml:space="preserve">martial arts are [...] systems that blend the physical components of combat with strategy, philosophy, tradition, or other features, thereby distinguishing them from pure physical reaction” </hi>
+                <hi rend="color(222222)">(Green, 2010). This definition implies that a fighting technique can be considered a martial art only when it is codified.</hi>
+            </p>
+            <p>
+                <hi rend="color(222222)">In this work, we try to formalize this property in mathematical terms, to make the process of studying martial arts not only qualitative, but also quantitative. In particular, we consider the enhancement of artistic image understanding through computer vision and machine learning techniques, with particular reference to the estimation and proper representation of human poses in artworks (Impett et al., 2016).</hi>
+            </p>
+            <p>
+                <hi rend="color(222222)">These methodologies suit well for the study of martial arts since these arts are based on encoded movements and postures of the body: in this sense, therefore, the development of tools and technologies able to facilitate the monitoring, representation and automatic analysis of human poses and movements in the execution of these arts could lead to several benefits in their practice.</hi>
+            </p>
+            <p>
+                <hi rend="color(222222)" xml:space="preserve">Thus, we investigate the movement and the codification of the aforementioned martial arts, by performing action recognition in martial arts action sequences via human pose clustering, and following  Aby Warburg's concept of </hi>
+                <hi rend="italic color(222222)">Pathosformel</hi>
+                <hi rend="color(222222)">, which describes the representation of emotion, movement, and passion through a repeatable visual paradigm or formula (Impett et al., 2016).</hi>
+            </p>
+            <p>
+                <hi rend="color(222222)" xml:space="preserve">The poses are modeled as 2D skeletons and are defined as sets of 15 points connected by limbs. To perform our analysis, we make use of some of the Tai Chi and Kata sequences from the </hi>
+                <hi rend="italic color(222222)">MADS dataset</hi>
+                <hi rend="color(222222)">(Zhang et al., 2017).</hi>
+            </p>
+            <p>Particularly, based on the theoretical framework established in (Marsocci et al., 2021), we carry out two series of experiments: a pose clustering to segment the whole video sequence into intervals corresponding to a given set of canonical poses; “pose spotting”, based on a similarity assessment with respect to canonical poses.</p>
+            <p>Pose Clustering</p>
+            <p>We selected from the first Tai Chi progression in the MADS dataset the “Qishi” (or “Commencing Form”) sequence, and we clustered the poses extracted from each frame via angular K-Medians, (with 3 clusters) based on the poses that encodes the sequence (Fig. 1). Particularly, starting from the assumption that each sequence of actions can be defined through a succession of very specific poses, we used the standard representations of these poses as predefined centroids of a partition of all the poses assumed during the sequence; as visible in Fig. 1,  the obtained clusters are well ordered and easily identifiable. </p>
+            <figure>
+                <graphic n="1001" width="13.335cm" height="7.514166666666667cm" url="Pictures/bb51621724d4fe8c114b614c4bd4923e.jpeg" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">Fig. 1 - Canonical poses (first line) and sequence clustered according to angular K-Medians (second line).</p>
+            <p>Similarity assessment</p>
+            <p>For the pose spotting task, we focused on the “Qishi” and “Buddha’s Warrior Attendant Pounds Mortar (I)” (i.e. “Jin Gang Dao Dui (1)”) sequence from the first Tai Chi progression in the MADS dataset, made of 800 frames (i.e. poses). Then, we selected two canonical poses and we computed the distance among them and the rest of the poses. As we can observe from Figs. 2 and 3, the most similar frames to the query pose can be correctly detected by setting a proper threshold on the similarity score.</p>
+            <p>Similar experiments are shown  in Figs. 4 and 5 for the Kata “Fukyugata Ni” sequence (made of 600 poses). In this case, some interesting results can be outlined: the higher thresholds set for the selected poses highlight that they encode very precise movements that cannot be found in the remaining part of the sequence.</p>
+            <figure>
+                <graphic n="1002" width="15.927916666666667cm" height="8.964083333333333cm" url="Pictures/a3b5c5a6aa2703270bf0795bedf65a9e.jpeg" rend="inline"/>
+                <graphic n="1003" width="15.927916666666667cm" height="8.964083333333333cm" url="Pictures/8c6bb4c6ccb02df29d6a59e5d84532f5.jpeg" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">Fig. 2 - Pose spotting (Tai Chi), pose 1: the frames corresponding to the query pose are correctly detected for a threshold of 0.01.</p>
+            <figure>
+                <graphic n="1004" width="15.927916666666667cm" height="8.964083333333333cm" url="Pictures/9fd251f7faaf5be99d4e570c952f45fe.jpeg" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">Fig. 3 -  Pose spotting (Tai Chi), pose 2: the frames corresponding to the query pose are correctly detected for a threshold of 0.1.</p>
+            <figure>
+                <graphic n="1005" width="15.927916666666667cm" height="8.964083333333333cm" url="Pictures/577066fcd725df555352db68cdad4890.jpeg" rend="inline"/>
+            </figure>
+            <p style="text-align: center;">Fig. 4 -  Pose spotting (Kata), pose 1: the frames corresponding to the query pose are correctly detected for a threshold of 0.1.
+                <graphic n="1006" width="15.927916666666667cm" height="8.964083333333333cm" url="Pictures/58b2279f335518d73068e6fda9a1b95e.jpeg" rend="inline"/>
+            </p>
+            <p style="text-align: center;">Fig. 5 -  Pose spotting (Kata), pose 2: the frames corresponding to the query pose are correctly detected for a threshold of 0.1.</p>
+            <p>Conclusions</p>
+            <p>Considering the aforementioned results, the downstream applications for martial arts of our framework are immediately intuitive: indeed, it could be used to compare a performed sequence to the ideal sequence of gestures, and the single poses could be compared to the coded poses too, to correct possible errors during the execution of a progression.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold color(222222)" style="font-size:11pt">Bowman, Paul</hi>
+                        <hi rend="color(222222)" style="font-size:11pt" xml:space="preserve">(2016). "Making martial arts history matter." </hi>
+                        <hi rend="italic color(222222)" style="font-size:11pt">The International Journal of the History of Sport</hi>
+                        <hi rend="color(222222)" style="font-size:11pt" xml:space="preserve"> 33.9: 915-933.</hi>
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold color(222222)" style="font-size:11pt">Green, Thomas A.</hi>
+                        <hi rend="color(222222)" style="font-size:11pt">(2010).</hi>
+                        <hi rend="italic color(222222)" style="font-size:11pt">Martial arts of the world: an encyclopedia of history and innovation</hi>
+                        <hi rend="color(222222)" style="font-size:11pt">. Vol. 2. Abc-Clio.</hi>
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold color(222222)" style="font-size:11pt">Impett, Leonardo, and Sabine Süsstrunk</hi>
+                        <hi rend="color(222222)" style="font-size:11pt" xml:space="preserve">(2016). "Pose and pathosformel in Aby Warburg’s bilderatlas." </hi>
+                        <hi rend="italic color(222222)" style="font-size:11pt">ECCV</hi>
+                        <hi rend="color(222222)" style="font-size:11pt">. Springer, Cham.</hi>
+                    </bibl>
+                    <bibl style="text-align: justify;">
+                        <hi rend="bold color(222222)" style="font-size:11pt">Marsocci, Valerio, and Lorenzo Lastilla</hi>
+                        <hi rend="color(222222)" style="font-size:11pt" xml:space="preserve">(2021). "POSE-ID-on—A Novel Framework for Artwork Pose Clustering." </hi>
+                        <hi rend="italic color(222222)" style="font-size:11pt">ISPRS International Journal of Geo-Information</hi>
+                        <hi rend="color(222222)" style="font-size:11pt" xml:space="preserve"> 10.4 (2021): 257.</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold color(222222)">Zhang, Weichen, et al</hi>
+                        <hi rend="color(222222)" xml:space="preserve">(2017). "Martial arts, dancing and sports dataset: A challenging stereo and multi-view dataset for 3d human pose estimation." </hi>
+                        <hi rend="italic color(222222)">Image and Vision Computing</hi>
+                        <hi rend="color(222222)" xml:space="preserve"> 61: 22-39.</hi>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

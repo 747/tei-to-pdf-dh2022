@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Study on the Accuracy of OCR-based and NLP-based detection of Japanese Text in the HathiTrust Extracted Features v2.0 Dataset</title>
+                <author>
+                    <persName>
+                        <surname>Bainbridge</surname>
+                        <forename>David</forename>
+                    </persName>
+                    <affiliation>Department of Computer Science, University of Waikato, New Zealand</affiliation>
+                    <email>davidb@waikato.ac.nz</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hilbing</surname>
+                        <forename>Genna</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, iSchool, University of Illinois Urbana-Champaign, USA</affiliation>
+                    <email>hilbing4@illinois.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Jiang</surname>
+                        <forename>Ming</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, iSchool, University of Illinois Urbana-Champaign, USA</affiliation>
+                    <email>mjiang17@illinois.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Hu</surname>
+                        <forename>Yuerong</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, iSchool, University of Illinois Urbana-Champaign, USA</affiliation>
+                    <email>yuerong2@illinois.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Layne-Worthey</surname>
+                        <forename>Glen</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, iSchool, University of Illinois Urbana-Champaign, USA</affiliation>
+                    <email>gworthey@illinois.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Downie</surname>
+                        <forename>J Stephen</forename>
+                    </persName>
+                    <affiliation>HathiTrust Research Center, iSchool, University of Illinois Urbana-Champaign, USA</affiliation>
+                    <email>jdownie@illinois.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-05-08T23:14:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Lexical Analysis</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>digital libraries creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>Asian studies</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>The HathiTrust Research Center (HTRC) Extracted Features (EF) Dataset [1] consists of volume-, page-, and word-level data for more than 17 million volumes in a wide array of languages. Every volume is described by a library catalogue record, which includes at least one cataloguer-determined primary language for that volume. Although it is generally accurate, volume-level language information does not tell the whole story of a book: such description likely disregards substantial but incidental additional language material at the page level. Accompanying and supplementing this human-created, volume-level language metadata in the HTRC EF Dataset is page-level, machine-generated language metadata for each of the 6.2 billion pages—a design decision we consider appropriate, given the overwhelmingly daunting task that page-level manual cataloguing would be.</p>
+            <p>Machine-generated language detection occurs at two different stages of the EF production process: during initial OCR, and as part of a complex pipeline of other natural language processes [5, 6]. This poster reports on a set of related studies to assess the quality and usability of this machine-generated metadata, and to suggest means to improve them. In recognition of DH2022’s host country, and acknowledging that both NLP and OCR are notoriously problematic for Asian languages [2, 3, 4], we have narrowed our focus here on texts identified by either human or algorithm as being in Japanese.</p>
+            <p>Both page-level and volume-level metadata are searchable in HTRC’s Solr-based search interface, the “Workset Builder,” which, in an ideal scenario, allows scholars to unearth pages of content written in their language of study that would otherwise go undiscovered—or at least would be much more difficult to find—as a result of them being “masked” by appearing in a volume identified as being in a different language. We focused our study precisely on these cases.</p>
+            <p>Having randomly sampled 400 items where the volume level language metadata was 
+                <hi rend="italic">not</hi> Japanese but the NLP language identification tool had classified a page as having Japanese text, we relied on human classification to determine the actual language of each page. Overall the accuracy of the NLP Japanese text was poor. Examples of pages erroneously identified as Japanese included: illustrations, blank pages with a few “noise” marks on them, handwritten texts, mathematical or musical notation, pages with a substantial portion of characters misidentified as Japanese 
+                <hi rend="italic">kanji</hi>. We found the largest category of error to be scanned images that included Kanji characters that the NLP tool had classified as being Japanese when they were actually Chinese. In fact, out of the 400 sampled pages, only 1 example was found that was actually Japanese text. (Keep in mind that our sample set consisted purposefully as volume-page “mismatches” of language identification.) We then studied the opposite phenomenon, sampling pages identified as anything 
+                <hi rend="italic">other than</hi> Japanese, from volumes human-cataloged as Japanese. This second study also surfaced a substantial number of algorithmically-introduced errors, assignable to a different set of error categories.
+            </p>
+            <p>What is the research cost of these errors in terms of misidentified language materials? Figure 1 summarizes our initial calculations. HathiTrust contains 559,718 volumes human-identified as Japanese, consisting of 249,252,918 pages. There are also 176,300,305 pages algorithmically-identified as Japanese, spanning 623,623 volumes. The intersection of these sets is the degree of agreement between these two methods of identifying Japanese language materials: there are 168,026,395 pages in common, coming from 501,150 volumes. This mismatch indicates that scholars are likely to miss a substantial amount of text from either search methodology.</p>
+            <p style="text-align: left;"> =================================================</p>
+            <p style="text-align: left;"> Query Term | Volumes | Pages</p>
+            <p style="text-align: left;"> =================================================</p>
+            <p style="text-align: left;">
+                volumelanguage_htrcstrings:jpn
+                <hi style="font-family:Consolas" xml:space="preserve">| </hi>559,718 | 249,252,918
+            </p>
+            <p style="text-align: left;">
+                ja_htrctokentext:*
+                <hi style="font-family:Consolas" xml:space="preserve">| </hi>623,623 | 176,300,305
+            </p>
+            <p style="text-align: left;">
+                ja_htrctokentext:* AND
+                <hi style="font-family:Consolas" xml:space="preserve">| </hi>501,150 | 168,026,395
+                <lb/>
+                volumelanguage_htrcstrings:jpn
+                <lb/>
+                 ====================================================
+            </p>
+            <p>Figure 1. Summary of potentially “missing” Japanese-language materials between two methods of retrieval.</p>
+            <p>The error rates found through both these analyses are high enough that we are considering changes both in the Workset Builder interface (to provide caveats for researchers upon executing page-level language searches), and in the production pipeline for the next release of the EF dataset: to employ newer and different language-detection packages (an approach that appears promising in pilot tests), and to seek access to an altogether new source of language detection: that often—but not always—is provided during the initial OCR processes, and encoded in metadata not previously available to us.</p>
+            <p>While we stand by the decisions that led us to favor human language identification at the volume level, and algorithmic language identification at the page level, we are nonetheless inspired to refine and qualify both process and presentation of this important dataset.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>[1] 
+                        <hi rend="bold">Jett, J., Capitanu, B., Kudeki, D., Cole, T., Hu, Y., Organisciak, P., Underwood, T., Dickson Koehl, E., Dubnicek, R., &amp; Downie, J. S.</hi> (2020). 
+                        <hi rend="italic">The HathiTrust Research Center Extracted Features Dataset (2.0)</hi>. HathiTrust Research Center. https://doi.org/10.13012/R2TE-C227
+                    </bibl>
+                    <bibl>[2] 
+                        <hi rend="bold">Meknavin, S., Kijsirikul, B., Chotimongkol, A., &amp; Nuttee, C.</hi> (1998). 
+                        <hi rend="italic">Combining trigram and winnow in Thai OCR error correction. COLING 1998 Volume 2: The 17th International Conference on Computational Linguistics.</hi>
+                    </bibl>
+                    <bibl>[3] 
+                        <hi rend="bold">Ikeda, K., Hayashi, R., Nagasaki, K., &amp; Morishima, A.</hi> (2017). 
+                        <hi rend="italic">Human-assisted OCR of Japanese books with different kinds of microtasks. iConference 2017 Proceedings Vol. 2.</hi>
+                    </bibl>
+                    <bibl>[4] 
+                        <hi rend="bold">Yin, Y., Zhang, W., Hong, S., Yang, J., Xiong, J., &amp; Gui, G.</hi> (2019). Deep learning-aided OCR techniques for Chinese uppercase characters in the application of Internet of Things. 
+                        <hi rend="italic">IEEE Access</hi>, 7, 47043–47049.
+                    </bibl>
+                    <bibl>[5] The Optimaize Language Detector. https://github.com/optimaize/language-detector.</bibl>
+                    <bibl>[6] 
+                        <hi rend="bold">Manning, C. D., Surdeanu, M., Bauer, J., Finkel, J. R., Bethard, S., &amp; McClosky, D.</hi> (2014). 
+                        <hi rend="italic">The Stanford CoreNLP natural language processing toolkit</hi>. 
+                        <hi rend="italic">In Proceedings of 52nd annual meeting of the association for computational linguistics: system demonstrations</hi> (pp. 55–60).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main"> Applying LERA for collating witnesses of The Tale of Kiều, a Vietnamese poem written in Nôm script </title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Luu</surname>
+                        <forename>Thi Kim Hanh</forename>
+                    </persName>
+                    <affiliation>Martin Luther University Halle-Wittenberg, Germany</affiliation>
+                    <email>thi.luu@student.uni-halle.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pöckelmann</surname>
+                        <forename>Marcus</forename>
+                    </persName>
+                    <affiliation>Martin Luther University Halle-Wittenberg, Germany</affiliation>
+                    <email>marcus.poeckelmann@informatik.uni-halle.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ritter</surname>
+                        <forename>Jörg</forename>
+                    </persName>
+                    <affiliation>Martin Luther University Halle-Wittenberg, Germany</affiliation>
+                    <email>joerg.ritter@informatik.uni-halle.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Molitor</surname>
+                        <forename>Paul</forename>
+                    </persName>
+                    <affiliation>Martin Luther University Halle-Wittenberg, Germany</affiliation>
+                    <email>paul.molitor@informatik.uni-halle.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-13T14:27:02.679932576</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>LERA</term>
+                    <term>collation</term>
+                    <term>alignment</term>
+                    <term>text comparison</term>
+                    <term>scholarly edition</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>natural language processing</term>
+                    <term>scholarly editing and editions development</term>
+                    <term>analysis</term>
+                    <term>and methods</term>
+                    <term>Asian studies</term>
+                    <term>Computer science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading">
+                <head>Introduction</head>
+                <p>The collation tool LERA
+                    <note xml:id="ftn1" place="foot" n="1"> Homepage of LERA ‒ Locate, Explore, Retrace and Apprehend complex text variants: 
+                        <ptr target="https://lera.uzi.uni-halle.de/"/>
+                    </note> is a working environment that combines the entire process of document management, tokenization/segmentation, normalization, alignment and visualization with interactive control options and exploratory tools. It is being successfully applied in several Digital Humanities projects of different languages, e.g., Arabic (Gründler and Pöckelmann 2018, Gründler 2019, Gründler et. al 2020), French (Bremer 2013), Hebrew (Necker et. al 2019, Molitor et. al 2020), Portuguese/Spanish/Latin (Bragagnolo 2017), English (Alder et. al 2020) and German (Hahn et. al 2020). A comprehensive description of LERA including a comparison with other state-of-the-art approaches for collation can be found in Pöckelmann et. al (2022).
+                </p>
+                <p>Here we describe a recent experiment in which we applied LERA to the poem Truyện Kiều by Nguyễn Du (1765-1820) to reveal necessary adaptation needs of the software to compare Vietnamese text witnesses written in Nôm script, the historic writing system of Vietnam. Truyện Kiều ‒ or the Tale of Kiều ‒ is one of the most famous texts of Vietnamese literature. For our experiment, we used text witnesses from 1866, 1870, 1871, 1872, and 1902 made available by the Vietnamese Nôm Preservation Foundation (Balaban et. al 2001).</p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Specifics of Truyện Kiều</head>
+                <p>The text was written in Nôm script. It follows the traditional Vietnamese verse form Lục bát according to which lines of six Nôm characters (respectively syllables) alternate with lines of eight. The text is organized in pages whose amount of lines varies among the witnesses. The writing direction is top-to-bottom and right-to-left.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/f8dabc64a6a8896a4cb0100da181646d.jpg"/>
+                    </figure>
+                </p>
+                <p>
+                    <hi rend="bold">Fig. 1</hi>: Facsimile of the first page of Truyện Kiều (1866), adopted from Balaban et. al (2001). 
+                </p>
+                <p>The data includes philological commentaries and a translation of the text in
+                    <hi rend="color(#ff4000) italic"> </hi>Quốc Ngữ, the modern writing system of Vietnam. There is no one-to-one mapping between the original Nôm script and its translation, although the verse structure is the same in both scripts. This is due to synonyms (e.g., <hi rend="Chinese">劄</hi> → chép or ghi), the not normalized placement of diacritics (e.g., <hi rend="Chinese">鎖</hi> → khoá or khóa), regional preferences of translators in the choice of words (e.g., <hi rend="Chinese">改</hi> → gửi or gởi), and occasional spelling errors (e.g., <hi rend="Chinese">色</hi> → sắo instead of sắc).
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Data processing</head>
+                <p>For the processing in LERA, we converted the original plain text files into a XML format according to the Text Encoding Initiative
+                    <note xml:id="ftn2" place="foot" n="2"> See: 
+                        <ptr target="https://tei-c.org/"/>
+                    </note> guidelines. Always two lines of Nôm script ‒ one of six, the other of eight characters ‒ were combined into one segment (by &lt;ab&gt;-tag). The original division was preserved with line breaks (&lt;lb/&gt;-tags). We have chosen this approach because two lines normally form a sense unit. Each segment is also extended by its translation. To simplify the tokenization of Nôm script, we added zero-width-spaces (Unicode U+200B) between the individual characters so that lines are not considered falsely as single words by the system. The philological commentaries have been added as well to the XML at their respective positions.
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/7923b6303d4e91ca068a2fb7891d729b.png"/>
+                    </figure>
+                </p>
+                <p>
+                    <hi rend="bold">Fig. 2</hi>: Left: the original plain text format in Nôm script (
+                    <hi rend="italic">hn</hi>) and Quốc Ngữ (
+                    <hi rend="italic">qn</hi>) including the commentary (
+                    <hi rend="italic">hw1</hi> and 
+                    <hi rend="italic">nt1</hi>) for the first two lines of Truyện Kiều (1866). Right: excerpt of the data transformed into a XML-format readable by LERA, where the two lines have been merged into one segment. The philological commentary was transformed to a &lt;note&gt;-tag.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Collation with LERA</head>
+                <p>In order to display Nôm script properly, an appropriate font
+                    <note xml:id="ftn3" place="foot" n="3"> The font 
+                        <hi rend="italic">Nom Na Tong</hi> is also provided by the Vietnamese Nôm Preservation Foundation at 
+                        <ptr target="https://github.com/nomfoundation/font/releases/tag/v4.8"/>
+                    </note> was embedded into LERA. To make the text segments more legible, options for displaying the inserted line breaks and centering the text have been added (see Fig. 3).
+                </p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/44acfb35055c2d57f350460032d3a12e.png"/>
+                    </figure>
+                </p>
+                <p>
+                    <hi rend="bold">Fig. 3</hi>: Representation of a text segment of Truyện Kiều in LERAs full text visualization. Philological commentaries are indicated by consecutive numbers, with their text fading in via mouse-over.
+                </p>
+                <p>LERA uses a two-step approach for collation (Pöckelmann et. al 2022), both applied to the four-line segments: an alignment of text segments according to their similarity and a detailed comparison of the aligned segments.</p>
+                <p>For the first step the manual assignment already encoded via line numbers into the data can be used for Truyện Kiều. However, the algorithm for alignment integrated in LERA produces nearly the same alignment.</p>
+                <p>The detailed comparison reveals many textual variants spread over the entire length of the work for both scripts. This is still true for modern Vietnamese when minor variants, like differences in capitalization and punctuation marks, or even diacritics, which are very important for a word's meaning, are ignored with the aid of LERAs filter system. Overall, textual variants occur more frequently in the Nôm script versions than in the modern Vietnamese versions. The reasons for this are almost all in the complex phonetic-semantic-composition of characters. Phono-semantic compound characters (such as <hi rend="Chinese">份</hi>) have two components: one suggesting the word's meaning (<hi rend="Chinese">分</hi>) and the other its approximate sound (<hi rend="Chinese">亻</hi>). The characters <hi rend="Chinese">分</hi> and <hi rend="Chinese">份</hi> (used in the last witness only) have the same meaning 
+                    <hi rend="italic">phần</hi>. There are also rules in the positioning depending on function: semantic components tend to appear on the top or left side of characters; phonetic components at their bottom or right side, e.g.: <hi rend="Chinese">藝</hi> = <hi rend="Chinese">⿱𥿠云</hi>. Variant characters, which are homophones and synonyms caused by allography, occur also in the work, e.g., <hi rend="Chinese">句</hi> and <hi rend="Chinese">勾</hi>, which were both translated to 
+                    <hi rend="italic">câu, </hi>vary in their phonetic component because the second uses with <hi rend="Chinese">厶</hi> another written representation of <hi rend="Chinese">口</hi>. The Nôm script characters have been compared so far only as a whole, so those variants could not be further differentiated. 
+                </p>
+                <p>It should be noted that the fixed structure of the segments with the verse form makes the comparison somewhat easier than for other texts: with a few exceptions, there are only substitutions of characters and no insertions or deletions.</p>
+                <p>
+                    <figure>
+                        <graphic url="Pictures/b8027d18e6382989da7c725817202eb1.png"/>
+                    </figure>
+                </p>
+                <p>
+                    <hi rend="bold">Fig. 4</hi>: Screenshot of LERA showing an excerpt of the five collated version of Truyện Kiều. The navigation bar shows a very similar structure for all witnesses (with the exception of 1866, recognizable by the gaps at the top), while the density of the blue highlightings indicate textual variance within all aligned segments (the darker the more different the aligned segments are).
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading">
+                <head>Discussion and Future Work</head>
+                <p>Only minor adaptations of LERA were necessary to allow a basic comparison of the text witnesses of Truyện Kiều, such as the integration of the font or a slightly adapted display of text segments. </p>
+                <p>The work shows further potential for the improvement of LERA for an application to Asian languages. This includes an approach to process, normalize and compare the components of complex composite characters separately and represent the results in an appropriate way. Furthermore, the demand for integrating the top-to-bottom writing direction
+                    <note xml:id="ftn4" place="foot" n="4"> Right-to-left has been added in the course of scholarly editions of Arabic and Hebrew texts.</note> became apparent.
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Alder, E. </hi>
+                        <hi rend="bold">and</hi>
+                        <hi rend="bold"> Cranﬁeld, J., Dryden, L., Duncan, I., Ferguson, C., James, S.J., Kerr, D., Luckhurst, R., Machin, J., Schwan, A. </hi>
+                        <hi rend="bold">and</hi>
+                        <hi rend="bold"> Wild, J.</hi> (2020). 
+                        <hi rend="italic">Edinburgh Conan Doyle Project</hi>. 
+                        <ref target="https://edinburgh-conan-doyle.org/">https://edinburgh-conan-doyle</ref>
+                        <anchor type="bookmark-start" xml:id="id__Hlt89353090"/>
+                        <ref target="https://edinburgh-conan-doyle.org/">.</ref>
+                        <ptr type="bookmark-end" target="#id__Hlt89353090"/>
+                        <ref target="https://edinburgh-conan-doyle.org/">org/</ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Balaban, J., Collins, L., Lesser, S., Phan, J., Schmid, D. N. and Việt, N. T.</hi> (2001). 
+                        <hi rend="italic">Vietnamese Nôm Preservation Foundation.</hi>
+                        <ref target="http://www.nomfoundation.org/">http://www.nomfoundation.org</ref>/
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bragagnolo, M.</hi> (2017). 
+                        <hi rend="italic">HyperAzpilcueta – Visualizing the instability of early modern normative knowledge</hi>. 
+                        <ptr target="https://www.rg.mpg.de/research-project/hyperazpilcueta"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Bremer, T</hi>. (2013). 
+                        <hi rend="italic">Guillaume Thomas Francois Raynal: Histoire philosophique et politique des établissements et du commerce des européens dans les deux Indes. </hi>
+                        <hi rend="italic">Semi-automatische Di</hi>
+                        <hi rend="italic">ﬀ</hi>
+                        <hi rend="italic">erenzanalyse von komplexen Textvarianten</hi>. 
+                        <ptr target="https://www.izea.uni-halle.de/forschung/d-erschliessungsprojekte-und-editionen/guillaume-thomas-francois-raynal.html"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gründler, B., Pöckelmann, M.</hi> (2018). 
+                        <hi rend="italic">Adjusting LERA for the comparison of arabic manuscripts of kalıla wa-dimna.</hi> In: Digital Humanities 2018 - Book of Abstracts. pp. 467–468. Mexico City, Mexico (2018)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gründler, B.</hi> (2019). 
+                        <hi rend="italic">Kalıla and Dimna – AnonymClassic.</hi>
+                        <ptr target="https://www.geschkult.fu-berlin.de/en/e/kalila-wa-dimna/"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gründler, B., van Ginkel, J.J., Redwan, R., Khalfallah, K., Toral, I., Stephan, J., Keegan, M.L., Beers, T.S., Kozae, M., Ahmed, M.M.</hi> (2020). 
+                        <hi rend="italic">An interim report on the editorial and analytical work of the AnonymClassic project</hi>. Medieval Worlds (11), 241–279 (2020), 
+                        <ref target="https://doi.org/10.1553/medievalworlds_no11_2020s241">https://doi.org/10.1553/medievalworlds_no1</ref>
+                        <ref target="https://doi.org/10.1553/medievalworlds_no11_2020s241">1</ref>
+                        <ref target="https://doi.org/10.1553/medievalworlds_no11_2020s241">_2020s241</ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Hahn, B., Eusterschulte, A., Kieslich, I. and Pischel, C. </hi>(2020). 
+                        <hi rend="italic">Hannah Arendt Digital ‒ Kritische Gesamtausgabe.</hi>
+                        <ref target="https://hannah-arendt-edition.net/">https://hannah-arendt-edition.net</ref>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Molitor, P., Necker, G., Pöckelmann, M., Rebiger, B., Ritter, J. </hi>(2020). 
+                        <hi rend="italic">Keter Shem Tov – Prozessualisierung eines Editionsprojekts mit 100 Textzeugen</hi>. Conference of the Digital Humanities Association in German-speaking Countries (DHd). Paderborn (2020)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Necker, G., Molitor, P., Ritter, J., Rebiger, B., Pöckelmann, M</hi>. (2019). 
+                        <hi rend="italic">Kabbalah Editions.</hi>
+                        <ptr target="https://kabbalaheditions.org/"/>
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Pöckelmann, M., Medek, A., Ritter, J. and Molitor, P.</hi>(2022). 
+                        <hi rend="italic">LERA - An interactive platform for synoptical representations of multiple text witnesses</hi>. Will appear in: Digital Scholarship in the Humanities (DSH). Oxford University Press 2022, 
+                        <ptr target="https://doi.org/10.1093/llc/fqac021"/>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

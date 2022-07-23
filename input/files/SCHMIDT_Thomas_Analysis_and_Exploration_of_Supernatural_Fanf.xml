@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Analysis and Exploration of Supernatural Fanfictions from the Platform Archive of Our Own</title>
+                <author>
+                    <persName>
+                        <surname>Kleindienst</surname>
+                        <forename>Nina</forename>
+                    </persName>
+                    <affiliation>Media Informatics Group, University of Regensburg, Germany</affiliation>
+                    <email>Nina.Kleindienst@stud.uni-regensburg.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Schmidt</surname>
+                        <forename>Thomas</forename>
+                    </persName>
+                    <affiliation>Media Informatics Group, University of Regensburg, Germany</affiliation>
+                    <email>thomas.schmidt@ur.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wolff</surname>
+                        <forename>Christian</forename>
+                    </persName>
+                    <affiliation>Media Informatics Group, University of Regensburg, Germany</affiliation>
+                    <email>christian.wolff@ur.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>fanfictions</term>
+                    <term>corpus</term>
+                    <term>literary studies</term>
+                    <term>fan studies</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>electronic literature production and analysis</term>
+                    <term>text mining and analysis</term>
+                    <term>Cultural studies</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">Fanfictions are fan-created written works using already existing characters and plot elements of existing famous media to write new stories based on those characters (Dym et al. 2018). This genre of online literature has gained a lot of interest in literary studies and the humanities (cf. Hellekson and Busse, 2006; Thomas, 2011; Van Steenhuyse, 2011; Jamison, 2013) but also in digital humanities (DH) in recent years (Milli &amp; Bamman, 2016; Fast et al. 2016; Yin et al. 2017; Frens et al. 2018; Rebora and Pianzola, 2018; Pianzola et al. 2020; Schmidt et al. 2021d).</p>
+                <p style="text-align: left; ">We present first results of the analysis of around 15 years of fanfiction production for the fandom Supernatural and fanfictions from the platform Archive of Our Own (AO3)
+                    <note place="foot" xml:id="ftn1" n="1">
+                        <p rend="footnote text">
+                            <ref target="https://archiveofourown.org/">https://archiveofourown.org/</ref>
+                        </p>
+                    </note>. Supernatural is a popular mystery-fantasy American TV show running from 2005 to 2020 and the fan fiction community is regarded as one of the most productive which has led to research in DH (Kleindienst and Schmidt, 2020). AO3 is one of the most popular fan fiction websites and hosts, to our knowledge, the largest number of Supernatural fan fictions compared to other platforms.
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Corpus</head>
+                <p style="text-align: left; ">We developed a script to scrape all Supernatural fanfictions from AO3 which we used in January 2021 to gather all fan fictions available at that moment.
+                    <note place="foot" xml:id="ftn2" n="2">
+                        <p rend="footnote text"> Due to legal constraints, the data is only available via request (thomas.schmidt@ur.de).</p>
+                    </note> We scraped the entire HTML page and transformed the content into structured JSON including the text of the stories and metadata. The general corpus analysis was performed similar to research on social media (e.g. Moßburger et al., 2020) Overall, the corpus consists of 170,436 unique fan fictions and over 1 billion tokens. On average a fanfiction has a length of around 6,000 tokens but this length varies between 100 to 2 million tokens (table 1).
+                </p>
+                <figure>
+                    <graphic n="1001" width="16.002cm" height="5.528027777777778cm" url="Pictures/1841dc21760cc94cf8fee5242c5ea11e.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Table 1. General corpus statistics.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Results</head>
+                <p style="text-align: left; ">In the following section, we present a small subset of first corpus and metadata results. We focus on diachronic analysis across the respective time spans of the seasons of the show from 2005-2020. Each season basically represents one year. We regard fanfictions as part of a season if the publication date is during the airing of this seasons or before the airing of the next season.</p>
+                <p style="text-align: left; ">As figure 1 shows, the most significant increase in production begins in season 4 and peaks in season 10. Indeed, season 4 sees the appearance of the character “Castiel” which is of great importance for the community.</p>
+                <figure>
+                    <graphic n="1002" width="12.917713888888889cm" height="7.875647222222222cm" url="Pictures/2139fb7298845634cc57c2b479f38493.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Figure 1. Fanfiction production across seasons.</p>
+                <p style="text-align: left; ">We also compared the production of the airing time of a season to the in-between time. As figure 2 shows, the production takes a significant decrease in between seasons. This is in line with research by De Kosnik et al. (2015) who have found that fanfiction production tends to happen immediately after release.</p>
+                <figure>
+                    <graphic n="1003" width="13.401525cm" height="7.1527972222222225cm" url="Pictures/aeb9c98981b01d6da413900a79160ca5.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Figure 2. Fanfiction production across and in-between seasons.</p>
+                <p style="text-align: left; ">The average length of the individual fanfiction increases throughout the airing of the show peaking with almost 8,000 tokens in the more recent seasons (figure 3).</p>
+                <figure>
+                    <graphic n="1004" width="10.637591666666667cm" height="6.934602777777778cm" url="Pictures/7b21a1622d1bacad0357cd9cd14f6970.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Figure 3. Average number of tokens per fanfiction.</p>
+                <p style="text-align: left; ">Considering the number of different authors, we found that up until season 6 this number stays rather small below a limited core of 1,000 authors but increases drastically, again, in season 4 and season 7 (figure 4). </p>
+                <figure>
+                    <graphic n="1005" width="11.849302777777778cm" height="7.11585cm" url="Pictures/e8b14ab7d830462cd1ccbecdc85743b8.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Figure 4. Number of authors per season.</p>
+                <p style="text-align: left; ">One important factor of fanfictions is the relationship type of the characters the fanfiction depicts. Indeed, as the overall distribution of this AO3 metadata shows, the majority (55.4%) of all fanfictions of this corpus deals with male-male homo-erotic and romantic content (slash). This is a well-known phenomenon of fanfictions (cf. Hellekson &amp; Busse, 2006) and an important part of Supernatural fanfictions.</p>
+                <figure>
+                    <graphic n="1006" width="12.591155555555556cm" height="3.9496083333333334cm" url="Pictures/e3e7dd4b182f66ee30c13caf1cac694f.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Table 2. Distribution of relationship type tags for the entire corpus.</p>
+                <p style="text-align: left; ">Again, the dominance of this slash fanfictions (M/M) becomes striking over time beginning in season 4 as figure 5 shows. </p>
+                <figure>
+                    <graphic n="1007" width="16.002cm" height="9.129888888888889cm" url="Pictures/213f86efd64be2a928e09383ecf21ea4.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Figure 5. Proportion of relationship type tags across seasons.</p>
+                <p style="text-align: left; ">Fanfiction authors can explicitly add the specific character relationship as metadata which is also curated by AO3. Looking at the proportion of the three most popular relationships (figure 6), we identified that (1) all of them are of M/M-nature and (2) the rise in popularity of the show and the fanfictions goes hand in hand with the introduction of the character Castiel and the imaginations about the relationship with the main character Dean Winchester. This is especially striking since Castiel is a mere side character in season 4 that became part of the main cast due to his popularity that can also be seen in our data.</p>
+                <figure>
+                    <graphic n="1008" width="16.002cm" height="9.17398611111111cm" url="Pictures/d0bc0419600a54e79c01dfbcbcac6898.png" rend="inline"/>
+                </figure>
+                <p style="text-align: left; ">Figure 6. Proportion of the three most popular relationships across seasons.</p>
+                <p style="text-align: left; ">Please note, that we only presented a subset of the results this corpus has to offer. Furthermore, we also see great potential form more advanced methods that have gained popularity in recent years in DH like sentiment analysis (Schmidt and Burghardt, 2018; Schmidt et al., 2021a; Schmidt et al., 2021b) or even multimodal approaches including the video channel of the TV show in further studies (similar to Schmidt et al., 2019; Schmidt et al., 2020a; Schmidt et al., 2020b; Schmidt et al., 2021c; Schmidt and Wolff, 2021).</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">De Kosnik, A., El Ghaoui, L., Cuntz-Leng, V., Godbehere, A., Horbinski, A., Hutz, A., Pastel, R. and Pham, V.</hi> (2015). Watching, creating, and archiving: Observations on the quantity and temporality of fannish productivity in online fan fiction archives. 
+                        <hi rend="italic">Convergence</hi>, 
+                        <hi rend="bold">21</hi>(1). SAGE Publications Ltd: 145–64 doi:
+                        <ref target="https://doi.org/10.1177/1354856514560313">10.1177/1354856514560313</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Dym, B., Aragon, C., Bullard, J., Davis, R. and Fiesler, C.</hi> (2018). Online Fandom: Boldly Going Where Few CSCW Researchers Have Gone Before. 
+                        <hi rend="italic">Companion of the 2018 ACM Conference on Computer Supported Cooperative Work and Social Computing</hi>. Jersey City NJ USA: ACM, pp. 121–24 doi:
+                        <ref target="https://doi.org/10.1145/3272973.3274542">10.1145/3272973.3274542</ref>. 
+                        <ref target="https://dl.acm.org/doi/10.1145/3272973.3274542">https://dl.acm.org/doi/10.1145/3272973.3274542</ref> (accessed 6 October 2020).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Fast, E., Vachovsky, T. and Bernstein, M. S.</hi> (2016). Shirtless and Dangerous: Quantifying Linguistic Signals of Gender Bias in an Online Fiction Writing Community. 
+                        <hi rend="italic">ICWSM</hi>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Hellekson, K. and Busse, K.</hi> (2006). 
+                        <hi rend="italic">Fan Fiction and Fan Communities in the Age of the Internet: New Essays</hi>. McFarland.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Jamison, A.</hi> (2013). 
+                        <hi rend="italic">Fic: Why Fanfiction Is Taking Over the World</hi>. Illustrated Auflage. Dallas, Texas: Smart Pop.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Kleindienst, N. and Schmidt, T.</hi> (2020). Investigating the Transformation of Original Work by the Online Fan Fiction Community: A Case Study for Supernatural. Basel, Switzerland 
+                        <ref target="https://digitalpractices2020.philhist.unibas.ch/en/abstracts/#ABSTRACTSCHMIDT">https://digitalpractices2020.philhist.unibas.ch/en/abstracts/#ABSTRACTSCHMIDT</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Milli, S. and Bamman, D.</hi> (2016). Beyond Canonical Texts: A Computational Analysis of Fanfiction. 
+                        <hi rend="italic">Proceedings of the 2016 Conference on Empirical Methods in Natural          Language Processing</hi>. Austin, Texas: Association for Computational Linguistics, pp. 2048–53 doi:
+                        <ref target="https://doi.org/10.18653/v1/D16-1218">10.18653/v1/D16-1218</ref>. 
+                        <ref target="http://aclweb.org/anthology/D16-1218">http://aclweb.org/anthology/D16-1218</ref> (accessed 6 October 2020).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Moßburger, L., Wende, F., Brinkmann, K. and Schmidt, T.</hi> (2020). Exploring Online Depression Forums via Text Mining: A Comparison of Reddit and a Curated Online Forum. 
+                        <hi rend="italic">Proceedings of the Fifth Social Media Mining for Health Applications Workshop &amp; Shared Task</hi>. Barcelona, Spain (Online): Association for Computational Linguistics, pp. 70–81 
+                        <ref target="https://aclanthology.org/2020.smm4h-1.11">https://aclanthology.org/2020.smm4h-1.11</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Pianzola, F., Rebora, S. and Lauer, G.</hi> (2020). Wattpad as a resource for literary studies. Quantitative and qualitative examples of the importance of digital social reading and readers’ comments in the margins. (Ed.) Orrego-Carmona, D. 
+                        <hi rend="italic">PLOS ONE</hi>, 
+                        <hi rend="bold">15</hi>(1): e0226708 doi:
+                        <ref target="https://doi.org/10.1371/journal.pone.0226708">10.1371/journal.pone.0226708</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Rebora, S. and Pianzola, F.</hi> (2018). A New Research Programme for Reading Research: Analysing Comments in the Margins on Wattpad. 
+                        <hi rend="italic">DigitCult | Scientific Journal on Digital Cultures</hi>(3.2): 19–36 doi:
+                        <ref target="https://doi.org/10.4399/97888255181532">10.4399/97888255181532</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Schmidt, T. and Burghardt, M.</hi> (2018). An Evaluation of Lexicon-based Sentiment Analysis Techniques for the Plays of Gotthold Ephraim Lessing. 
+                        <hi rend="italic">Proceedings of the Second Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature</hi>. Santa Fe, New Mexico: Association for Computational Linguistics, pp. 139–49 
+                        <ref target="https://www.aclweb.org/anthology/W18-4516">https://www.aclweb.org/anthology/W18-4516</ref> (accessed 6 April 2020).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Schmidt, T., Burghardt, M. and Wolff, C.</hi> (2019). Toward Multimodal Sentiment Analysis of Historic Plays: A Case Study with Text and Audio for Lessing’s Emilia Galotti. In Navarretta, C., Agirrezabal, M. and Maegaard, B. (eds), 
+                        <hi rend="italic">Proceedings of the Digital Humanities in the Nordic Countries 4th Conference (DHN 2019)</hi>. Copenhagen, Denmark, pp. 405–14 
+                        <ref target="http://ceur-ws.org/Vol-2364/37_paper.pdf">http://ceur-ws.org/Vol-2364/37_paper.pdf</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Schmidt, T., Dangel, J. and Wolff, C.</hi> (2021a). SentText: A Tool for Lexicon-based Sentiment Analysis in Digital Humanities. vol. 74. Glückstadt: Werner Hülsbusch, pp. 156–72 
+                        <ref target="https://epub.uni-regensburg.de/44943/">https://epub.uni-regensburg.de/44943/</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Schmidt, T., Dennerlein, K. and Wolff, C.</hi> (2021b). Emotion Classification in German Plays with Transformer-based Language Models Pretrained on Historical and Contemporary Language. 
+                        <hi rend="italic">Proceedings of the 5th Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature</hi>. Punta Cana, Dominican Republic (online): Association for Computational Linguistics, pp. 67–79 doi:
+                        <ref target="https://doi.org/10.18653/v1/2021.latechclfl-1.8">10.18653/v1/2021.latechclfl-1.8</ref>. 
+                        <ref target="https://aclanthology.org/2021.latechclfl-1.8">https://aclanthology.org/2021.latechclfl-1.8</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Schmidt, T., El-Keilany, A., Eger, J. and Kurek, S.</hi> (2021c). Exploring Computer Vision for Film Analysis: A Case Study for Five Canonical Movies. 
+                        <hi rend="italic">2nd International Conference of the European Association for Digital Humanities (EADH 2021)</hi>. Krasnoyarsk, Russia 
+                        <ref target="https://www.researchgate.net/publication/355446064_Exploring_Computer_Vision_for_Film_Analysis_A_Case_Study_for_Five_Canonical_Movies">https://www.researchgate.net/publication/355446064_&#8203;Exploring_&#8203;Computer_&#8203;Vision_&#8203;for_&#8203;Film_&#8203;Analysis_&#8203;A_&#8203;Case_&#8203;Study_&#8203;for_&#8203;Five_&#8203;Canonical_&#8203;Movies</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Schmidt, T., Engl, I., Halbhuber, D. and Wolff, C.</hi> (2020a). Comparing Live Sentiment Annotation of Movies via Arduino and a Slider with Textual Annotation of Subtitles. In Reinsone, S., Skadiņa, I., Daugavietis, J. and Baklāne, A. (eds), 
+                        <hi rend="italic">Post-Proceedings of the 5th Conference Digital Humanities in the Nordic Countries (DHN 2020)</hi>, vol. 2865. Riga, Latvia: CEUR Workshop Proceedings, pp. 212–23 
+                        <ref target="http://ceur-ws.org/Vol-2865/poster1.pdf">http://ceur-ws.org/Vol-2865/poster1.pdf</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Schmidt, T., Grünler, J., Schönwerth, N. and Wolff, C.</hi> (2021d). Towards the Analysis of Fan Fictions in German Language: Exploration of a Corpus from the Platform Archive of Our Own. Krasnoyarsk, Russia 
+                        <ref target="https://www.researchgate.net/publication/355228481_Towards_the_Analysis_of_Fan_Fictions_in_German_Language_Exploration_of_a_Corpus_from_the_Platform_Archive_of_Our_Own">https://www.researchgate.net/publication/355228481_&#8203;Towards_&#8203;the_&#8203;Analysis_&#8203;of_&#8203;Fan_&#8203;Fictions_&#8203;in_&#8203;German_&#8203;Language_&#8203;Exploration_&#8203;of_&#8203;a_&#8203;Corpus_&#8203;from_&#8203;the_&#8203;Platform_&#8203;Archive_&#8203;of_&#8203;Our_&#8203;Own</ref> (accessed 21 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Schmidt, T., Mosiienko, A., Faber, R., Herzog, J. and Wolff, C.</hi> (2020b). Utilizing HTML-analysis and computer vision on a corpus of website screenshots to investigate design developments on the web. 
+                        <hi rend="italic">Proceedings of the Association for Information Science and Technology</hi>, 
+                        <hi rend="bold">57</hi>(1): e392 doi:
+                        <ref target="https://doi.org/10.1002/pra2.392">10.1002/pra2.392</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Schmidt, T. and Wolff, C.</hi> (2021). Exploring Multimodal Sentiment Analysis in Plays: A Case Study for a Theater Recording of Emilia Galotti. 
+                        <hi rend="italic">Proceedings of the Conference on Computational Humanities Research 2021 (CHR 2021)</hi>. Amsterdam, The Netherlands, pp. 392–404.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Thomas, B.</hi> (2011). What Is Fanfiction and Why Are People Saying Such Nice Things about It?. 
+                        <hi rend="italic">Storyworlds: A Journal of Narrative Studies</hi>, 
+                        <hi rend="bold">3</hi> doi:
+                        <ref target="https://doi.org/10.5250/storyworlds.3.2011.0001">10.5250/storyworlds.3.2011.0001</ref>.
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Van Steenhuyse, V.</hi> (2011). The Writing and Reading of Fan Fiction and Transformation Theory. 
+                        <hi rend="italic">CLCWeb: Comparative Literature and Culture</hi>, 
+                        <hi rend="bold">13</hi>(4) doi:
+                        <ref target="https://doi.org/10.7771/1481-4374.1691">10.7771/1481-4374.1691</ref>. 
+                        <ref target="https://docs.lib.purdue.edu/clcweb/vol13/iss4/4">https://docs.lib.purdue.edu/clcweb/vol13/iss4/4</ref> (accessed 7 October 2020).
+                    </bibl>
+                    <bibl style="text-align: left;">
+                        <hi rend="bold">Yin, K., Aragon, C., Evans, S. and Davis, K.</hi> (2017). Where No One Has Gone Before: A Meta-Dataset of the World’s Largest Fanfiction Repository. 
+                        <hi rend="italic">Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems</hi>. Denver Colorado USA: ACM, pp. 6106–10 doi:
+                        <ref target="https://doi.org/10.1145/3025453.3025720">10.1145/3025453.3025720</ref>. 
+                        <ref target="https://dl.acm.org/doi/10.1145/3025453.3025720">https://dl.acm.org/doi/10.1145/3025453.3025720</ref> (accessed 6 October 2020).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

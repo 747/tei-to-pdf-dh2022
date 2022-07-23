@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Semantic Data Lakes for Knowledge Extraction in the Humanities: A Case Study on Bernard Berenson’s Network of Acquaintances</title>
+                <author>
+                    <persName>
+                        <surname>Spinaci</surname>
+                        <forename>Gianmarco</forename>
+                    </persName>
+                    <affiliation>I Tatti - The Harvard University Center for Italian Renaissance Studies, Italy</affiliation>
+                    <email>gspinaci@itatti.harvard.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Grillo</surname>
+                        <forename>Remo</forename>
+                    </persName>
+                    <affiliation>I Tatti - The Harvard University Center for Italian Renaissance Studies, Italy</affiliation>
+                    <email>grilloremo@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Klic</surname>
+                        <forename>Lukas</forename>
+                    </persName>
+                    <affiliation>I Tatti - The Harvard University Center for Italian Renaissance Studies, Italy</affiliation>
+                    <email>lklic@itatti.harvard.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Bonora</surname>
+                        <forename>Paolo</forename>
+                    </persName>
+                    <affiliation>Alma Mater Studiorum - Università di Bologna</affiliation>
+                    <email>paolo.bonora@unibo.it</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-21T09:49:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>knowledge extraction</term>
+                    <term>humanities</term>
+                    <term>semantic</term>
+                    <term>data lake</term>
+                    <term>networks</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Asia</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>20th Century</term>
+                    <term>information retrieval and querying algorithms and methods</term>
+                    <term>semantic analysis</term>
+                    <term>Computer science</term>
+                    <term>Humanities computing</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: left; ">Problem description and research question:</p>
+            <p style="text-align: left; ">It is frequent practice in Digital Humanities (DH) studies to create Knowledge Bases (KB) limited to specific domains of interest. This leads to the creation of a plethora of highly specialized data silos [1]. As a result, the extraction of knowledge dispersed across KBs can be challenging. We argue that an extended KB — a Semantic Data Lake [2] (SDL) — obtained by aggregating heterogeneous vertical KBs could help define a set of heuristics to support transversal Knowledge Extraction [3]. We propose a case study based on a set of vertical KBs with converging content based on the correspondence of Bernard Berenson (1909-1960), the diaries of Mary Berenson (1879-1935), and their personal photographic archive.</p>
+            <p style="text-align: left; ">As these semantic silos contain converging content, we aim to demonstrate that their union could support the discovery of original information. Through inductive reasoning, we aim to analyze data looking for graphs in order to assess the likelihood of a relationship among two or more actors. We aim to reconstruct a network of acquaintances by analyzing these paths within a consolidated dataset. If the proposal will be effective in identifying and qualifying the relationships among actors in the Berenson Circle, Art historians and domain experts will evaluate the relevance of these relationships.</p>
+            <p style="text-align: left; ">Methodology:</p>
+            <p style="text-align: left; ">The data lake-based approach does not require a prior alignment of different ontologies within KBs. In other words, sources do not necessarily need to use the same ontological framework or re-use the same modelling patterns, as long as each source is modeled consistently. KBs are then selected exclusively on the basis of their contents. The only prerequisite is that they are represented in RDF. In order to take into account a broader set of available KBs, we adopted an ontology-agnostic methodology. Knowledge Extraction begins with the analysis of the structure of the paths connecting target entities, in our case Berenson’s acquaintances. This requires a reconciliation of actor identifiers and harmonized space/time dimensions. Regarding the entities that have not been already qualified, we used a NER algorithm to extract them and, together with qualified entities, we used Wikidata for a semi-supervised reconciliation process.</p>
+            <p style="text-align: left; ">Paths are then identifiable through the data lake’s composite graph, both from a quantitative (i.e. shortest paths) and a qualitative (i.e. semantics of the resulting paths’ graph patterns) approach. Among this set of identified paths, the most relevant ones will be selected for answering the research question.</p>
+            <p style="text-align: left; ">The extraction process will be organized into the following steps:</p>
+            <list rend="numbered">
+                <item>The SDL is built from source KBs partitioned within their own named graph</item>
+                <item>Reconciliation of target entities (i.e. people);</item>
+                <item>Harmonization of space/time coordinates (i.e. toponyms disambiguation and georeferencing);</item>
+                <item>Extraction of paths between instances of people;</item>
+                <item>Analysis and selection of paths that allow for relationships among people to be inferred;</item>
+                <item>Formalization of these paths as SPARQL Property Paths or SWRL rules;</item>
+                <item>Validation of extracted paths across KBs;</item>
+            </list>
+            <p style="text-align: left; ">Sources:</p>
+            <p style="text-align: left; ">This case study is designed around a strong convergence of sources with a known set of interactions between actors across space and time through common references to events, people, and places. Sources comprise letters exchanged between Berenson and Yukio Yashiro [4] (115 texts written from 1925 to 1960), letters sent from Belle Da Costa Greene to Berenson (470 texts written from 1909 to 1949), diaries of Mary Berenson (30 annual diaries written from 1879 to 1935), and metadata from historical photographs housed in the Berenson archive. We are focusing on the 1925 to 1935 period when we have the best overlapping of the corpora.</p>
+            <p style="text-align: left; ">Expected results and validation:</p>
+            <p style="text-align: left; ">In the correspondence between Yukio Yashiro and Bernard Berenson, numerous references are made regarding meetings with unspecified art historians. Diary entries by Mary Berenson report the guests at their residence for most days of the year, including Yashiro. By cross-referencing these sources, we can reconstruct a network of acquaintances between Yashiro, the Bereson’s, and others. The numbers of extracted entities are: more than 1k names tagged as persons of which 20 qualified, and almost 300 toponyms of which 150 qualified. Once this information has been extracted through the proposed methodology and formalized in new assertions, new validation criteria should be adopted in order to refine the data quality and assess their effectiveness. These criteria need to consider metrics such as frequency count, recall and precision, and accuracy analysis by reconciliation with sources.</p>
+            <p style="text-align: left; ">Conclusions:</p>
+            <p style="text-align: left; ">We presented a SDL methodology that allows for a lightly supervised, model agnostic, data-driven approach to Knowledge Extraction from heterogeneous KBs. We expect that the experimentation performed on Berenson’s network of acquaintances will help determine the feasibility of Knowledge Extraction from highly coherent and focused SDLs. This would motivate a further experimentation of this methodology with a broader scope and less converging sources. Moreover, it would help define a quality assessment framework for the extracted information.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">[1] Nichols, Stephen G. "Time to Change Our Thinking: Dismantling the Silo Model of Digital Scholarship." Ariadne, no. 58 (30 January 2009)http://www.ariadne.ac.uk/issue58/nichols/ </bibl>
+                    <bibl style="text-align: left; ">[2] Dibowski, Henrik, et al. “Using Knowledge Graphs to Manage a Data Lake”, 2021.</bibl>
+                    <bibl style="text-align: left; ">[3] Darmont, Jérôme, et al. "Data lakes for digital humanities." Proceedings of the 2nd International Conference on Digital Tools &amp; Uses Congress, October 15, 2020, 1–4.</bibl>
+                    <bibl style="text-align: left; ">[4] Takagishi, Akira. “A Twentieth-Century Dream with a Twenty-First -Century Outlook: Yashiro Yukio, a Japanese Historian of Western Art, and His Conception of Institutions for the Study of East Asian Art,” in Asian Art in the Twenty-First Century, Williamstown (Mass.): Sterling and Francine Clark Institute 2007, 138–48.</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

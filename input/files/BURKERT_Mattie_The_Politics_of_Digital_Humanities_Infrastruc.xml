@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Politics of Digital Humanities Infrastructure and Sustainability</title>
+                <author>
+                    <persName>
+                        <surname>Burkert</surname>
+                        <forename>Mattie</forename>
+                    </persName>
+                    <affiliation>University of Oregon, United States of America</affiliation>
+                    <email>mburkert@uoregon.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Moore</surname>
+                        <forename>Shawn</forename>
+                    </persName>
+                    <affiliation>Florida Southwestern State College, United States of America</affiliation>
+                    <email>shawn.moore@fsw.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gil</surname>
+                        <forename>Alex</forename>
+                    </persName>
+                    <affiliation>Columbia University, United States of America</affiliation>
+                    <email>agil@columbia.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Liebe</surname>
+                        <forename>Lauren</forename>
+                    </persName>
+                    <affiliation>Texas A&amp;M University, United States of America</affiliation>
+                    <email>leliebe@tamu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Nicosia</surname>
+                        <forename>Marissa</forename>
+                    </persName>
+                    <affiliation>The Pennsylvania State University – Abington College, United States of America</affiliation>
+                    <email>mon4@psu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Otis</surname>
+                        <forename>Jessica</forename>
+                    </persName>
+                    <affiliation>George Mason University, United States of America</affiliation>
+                    <email>jotis2@gmu.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Wikle</surname>
+                        <forename>Olivia</forename>
+                    </persName>
+                    <affiliation>University of Idaho, United States of America</affiliation>
+                    <email>omwikle@uidaho.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Williamson</surname>
+                        <forename>Evan Peter</forename>
+                    </persName>
+                    <affiliation>University of Idaho, United States of America</affiliation>
+                    <email>ewilliamson@uidaho.edu</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Becker</surname>
+                        <forename>Devin</forename>
+                    </persName>
+                    <affiliation>University of Idaho, United States of America</affiliation>
+                    <email>dbecker@uidaho.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-18T17:31:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Panel</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>sustainability</term>
+                    <term>infrastructure</term>
+                    <term>minimal computing</term>
+                    <term>politics</term>
+                    <term>institutions</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>digital research infrastructures development and analysis</term>
+                    <term>meta-criticism (reflections on digital humanities and humanities computing)</term>
+                    <term>Cultural studies</term>
+                    <term>Library &amp; information science</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Session Overview</head>
+                <p>In November 2021, a heated discussion broke out on social media about Johanna Drucker’s article on “Sustainability and Complexity,” which detailed her experiences with digital project migration and obsolescence. While many researchers applauded Drucker for drawing attention to the sustainability problem in DH, information professionals pointed out that they have long recognized and worked to address the challenges of hosting, maintenance, and preservation Drucker identifies. The fact that Drucker’s piece cited little of this work reflects a pernicious tendency among humanities scholars to disregard the expertise of librarians, designers, and developers (Posner 2013; @ThatAndromeda). Our panel addresses the widespread degradation of DH projects as a crisis, not of inattention or negligence, but of misalignment between the technical, institutional, and social infrastructures of DH work. </p>
+                <p>Challenges of project endurance and afterlife management are well documented in DH (for example, see Barats, Schafer, and Fickers 2020). In the wake of high-profile collapses like Project Bamboo (Dombrowski 2014, Almas 2017), funders including ACLS and NEH have offered grants for recovery, extension, and preservation of existing work. In addition, projects like the Socio-Technical Sustainability Roadmap (Visual Media Workshop at the University of Pittsburgh) and the Endings Project (Humanities Computing Media Centre at the University of Victoria) have emerged to educate teams about the reality of impermanence and to assist with the sunsetting process (see also Otis 2021). Recognizing the labor and environmental costs of maintenance, a growing number of DH thinkers and institutions are rejecting the imperative to keep projects alive forever, embracing ephemerality and a minimalist ethos (Lincoln 2020; Sayers 2016; Gil 2015).</p>
+                <p>Drawing on insights from critical infrastructure studies, our panel begins from the premise that technical infrastructures are inseparable from social and political concerns (Thylstrup 2018; Deger-Pawlicka 2021). Attempting to address sustainability as a technical challenge without attention to its sociopolitical dimensions leads to tribalism, retrenchment, and re-inscription of existing power imbalances and resource inequities. This panel will therefore explore the sustainability problem in DH as a 
+                    <hi rend="italic" xml:space="preserve">matter of concern </hi>(Latour 2005), a complex object constructed by multiple intersecting and competing agencies. 
+                </p>
+                <p>Our panel is led by two faculty project directors and brings together academic researchers, teachers, librarians, information technologists, software designers, engineers, and project managers with a range of experience as DH makers and maintainers. By highlighting the perspectives of different kinds of workers within and adjacent to different kinds of institutions, we hope to identify specific frictions between the material and technical conditions of our work and the sociocultural realities in which it takes place. Together, we will take a fresh look at well-known sustainability issues, reframing them through the lens of critical infrastructure and critical university studies in order to imagine a new set of interconnected disciplinary, institutional, and technical infrastructures that would enable DH scholarship to thrive.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Presentations</head>
+                <div type="div2" rend="DH-Heading2">
+                    <head>
+                        <hi rend="bold">Alex Gil,</hi>
+                        <hi rend="italic">The Post-Infrastructures of Our Trash Futures</hi>
+                    </head>
+                    <p>In this paper, I propose that minimal computing operates in a future and past that repurposes that which has been discarded, trashed, ignored. The dream of a shared and reliable humanities infrastructure has been a mainstay of digital humanities for decades: projects like Humanities Commons, DARIAH, Omeka and others, are results of the pursuit of our collective scholarly independence from corporate solutions and control of our own work. In this paper, I argue for a Plan B where all of our infrastructural dreams fall by the wayside and we are left in the position of scavengers of corporate tech infrastructure and open standards without sacrificing the mission of the humanities—to steward and interpret human culture.</p>
+                    <p>In this talk, I will also directly address the social and political challenge posed by faculty project directors who fail to understand, or understand too late, the real cost of invisible labor, and their often unrealistic expectations around the stewardship of their projects—made vanity by their own failure in transforming tenure &amp; promotion guidelines and other material reward mechanisms in their departments. Within the context of shifting blame to neoliberalism, I will argue for the vacuity of theory absent critical infrastructural practice tied to the means of production of humanistic knowledge. Plan B, I will argue,  makes all the more sense within the grim prospect that faculty project directors will continue to behave as they have in the past few decades. </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>
+                        <hi rend="bold">Lauren Liebe,</hi>
+                        <hi rend="italic">Flexibility as Sustainability in Digital Humanities Projects</hi>
+                    </head>
+                    <p>Johanna Drucker’s recent article “Sustainability and Complexity: Knowledge and Authority in the Digital Humanities” raises important questions about knowledge specialization within digital humanities projects. While Drucker asserts that the digital humanities must incorporate humanistic methodologies, not just humanistic content, the reverse is also true: humanist digital projects must also make use of the full potential of their digital expressions. To do this successfully requires that both the humanities scholars and the technical experts possess nuanced understandings of both the project’s content and the technology upon which it relies.</p>
+                    <p>Such an understanding allows digital humanities projects to explore the nuances of their work as both digital 
+                        <hi rend="italic">and</hi> humanist. One of these nuances, as Drucker points out, is that “we need to think of the work of digital humanities as radically incomplete, always ongoing” (93). While physical media creates a sense of stability, the digital always operates with a level of ephemerality. Even archival projects like the Internet Archive capture only snapshots, not projects in their entirety. Key to this notion of digital ephemerality is the need to embrace flexible technology, particularly in the creation and storage of data and metadata, to allow for a wider user base and interoperability with other projects. In this presentation, I approach this problem from the perspective of my work as the project manager for the Advanced Research Consortium, an aggregator of data from digital humanities, proprietary scholarly resources, and library databases, to discuss how flexible data management enriches digital humanities projects.
+                    </p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>
+                        <hi rend="bold">Marissa Nicosia,</hi>
+                        <hi rend="italic">Secretary Hand, Digital Interface: Sustainable Collaborative Research with Undergraduate Students</hi>
+                    </head>
+                    <p>This paper has been withdrawn.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>
+                        <hi rend="bold">Jessica Otis,</hi>
+                        <hi rend="italic">Cui Bono? Costs, Benefits, and Priorities in Digital Sustainability</hi>
+                    </head>
+                    <p>Digital humanists are good at making do: cobbling together projects with "free" resources, volunteer labor, time-limited funding, and access to university infrastructures. But while we are generally more aware of economic realities than other humanists—recognizing concepts such as overhead costs and fringe benefit rates—there is still a widespread misunderstanding about the real costs of digital scholarship, especially sustainability costs. In part this is because digital humanists from book-based disciplines have been conditioned to expect scholarly immortality. Books are distributed into university libraries with low marginal costs and survive for decades or centuries. Eventually, librarians must decide if books are valuable enough or being used enough to justify their ongoing preservation costs, but there is no additional work required from the author. Yet unlike books, digital projects have significant sustainability costs that escalate over time and require regular reassessment over how, and how long, to keep them online.</p>
+                    <p>This paper argues digital humanists must learn to understand the real costs of digital sustainability and assess the benefits of keeping projects online. It will frankly discuss RRCHNM's backlist of digital projects, and the socioeconomic and political foundations of our analyses of costs and benefits for sustaining those projects. Crucially, it will filter that discussion through the lens of potential institutional priorities, from avoiding hacking to benefiting current students to advancing certain types of scholarship to generating prestige. When infrastructural resources are finite, we must learn to consider costs, benefits, and priorities when deciding how to employ them for digital sustainability.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>
+                        <hi rend="bold">Olivia Wikle, Evan Peter Williamson, and Devin Becker,</hi>
+                        <hi rend="italic">Using Static Web Methodology as a Sustainable Approach to Digital Humanities Projects</hi>
+                    </head>
+                    <p>The web platforms adopted for digital humanities projects come with significant short and long term costs. In the realities of academic funding, this often results in huge sums sunk into outsourced development, contract work, and 3rd party subscriptions, reflecting an economic model that prioritizes purchasing systems over internal development of people and capacity. As DH practitioners, the time (or money paid to contractors) we must invest in managing servers, maintaining platform updates, and learning idiosyncratic administrative systems ultimately limits our ability to create and sustain unique, innovative projects. In response, librarians and DH practitioners are reexamining DH platforms through a minimal computing lens, pursuing new project-development methods that minimize digital infrastructure as a means to maximize investment in people, growing agency, agility, and long term sustainability in both the organization and digital outputs. Eager to explore this potential, faculty librarians at University of Idaho have been developing digital collections, scholarship projects, and instructional content using static web tools for more than five years, beginning with the digital collections template CollectionBuilder and expanding to include projects such as oral history exhibits, deep maps, and digital editions. This development approach, which we call Lib-Static, seeks to increase the return on learning new technical skills that all digital projects require, while also establishing technical solutions and social workflows that more closely match the structure of academic work cycles and DH project needs. In particular, the static web approach encourages the creation of preservation-ready project data, enables periods of iterative development, and capitalizes on the low-cost/low-maintenance characteristics of statically-generated sites to optimize limited economic resources and personnel time. This presentation will introduce the Lib-Static development methodology as a provocation to rethink DH infrastructure choices, asking how our frameworks can build internal skills, collaboration, and empowerment to generate more sustainable digital projects.</p>
+                </div>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">@ThatAndromeda</hi>. (2021). 
+                        <hi rend="italic">Twitter</hi>. 10 Nov 2021,  
+                        <ref target="https://web.archive.org/web/20211122202905/https:/threadreaderapp.com/thread/1458445616409939971.html">https://web.archive.org/web/20211122202905/https://threadreaderapp.com/thread/1458445616409939971.html</ref> (accessed 1 Dec 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Almas, Bridget</hi>. (2017). “Perseids: Experimenting with Infrastructure for Creating and Sharing Research Data in the Digital Humanities.” 
+                        <hi rend="italic">Data Science Journal</hi>, 16: 19, DOI: 
+                        <ref target="http://doi.org/10.5334/dsj-2017-019">https://doi.org/10.5334/dsj-2017-019</ref>. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Barats, Christine, Valerie Schafer, and Andreas Fickers</hi>. (2021). “Fading Away… The challenge of sustainability in digital studies”, 
+                        <hi rend="italic">DHQ</hi> 14.3, 
+                        <ref target="http://www.digitalhumanities.org/dhq/vol/14/3/000484/000484.html">http://www.digitalhumanities.org/dhq/vol/14/3/000484/000484.html</ref> (accessed November 22, 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Deger-Pawlicka, Urszula</hi>. (2021). “Infrastructuring digital humanities: On relational infrastructure and global reconfiguration of the field. 
+                        <hi rend="italic" xml:space="preserve">Digital Scholarship in the Humanities </hi>fqab086: 
+                        <ref target="https://doi.org/10.1093/llc/fqab086">https://doi.org/10.1093/llc/fqab086</ref> (accessed 18 Nov 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Dombrowski, Quinn</hi>. (2014). “What Ever Happened to Project Bamboo?” 
+                        <hi rend="italic">Literary and Linguistic Computing</hi> 29.3: 326–339 
+                        <ref target="https://doi.org/10.1093/llc/fqu026">https://doi.org/10.1093/llc/fqu026</ref> (accessed 22 Nov 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Drucker, Johanna</hi>. (2021). “Sustainability and Complexity: Knowledge and Authority in the Digital Humanities.” 
+                        <hi rend="italic">Digital Scholarship in the Humanities</hi>, 36 supp_2: ii86–ii94, 
+                        <ref target="https://doi.org/10.1093/llc/fqab025">https://doi.org/10.1093/llc/fqab025</ref> (accessed 20 Nov 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Gil, Alex</hi>. (2015). “The User, the Learner and the Machines We Make.” 
+                        <hi rend="italic">Minimal Computin,</hi>. 
+                        <ref target="http://go-dh.github.io/mincomp/thoughts/2015/05/21/user-vs-learner/">http://go-dh.github.io/mincomp/thoughts/2015/05/21/user-vs-learner</ref> (accessed 19 Nov 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Humanities Computing Media Centre at the University of Victoria</hi>. (2021). 
+                        <hi rend="italic">The Endings Project</hi>. 
+                        <ref target="https://endings.uvic.ca/contact.html">https://endings.uvic.ca</ref> (accessed 22 Nov 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Latour, Bruno</hi>. (2005). 
+                        <hi rend="italic">Reassembling the Social: An Introduction to Actor-Network Theory</hi>. Oxford University Press. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Lincoln, Matthew</hi>. (2020). “From Supercomputer to Static Site: Boiling Down Big Research Data for Preservation and Usability.” code4lib 2020, Pittsburgh, PA, https://kilthub.cmu.edu/articles/presentation/From_&#8203;Supercomputer_&#8203;to_&#8203;Static_&#8203;Site_&#8203;Boiling_&#8203;Down_&#8203;Big_&#8203;Research_&#8203;Data_&#8203;for_&#8203;Preservation_&#8203;and_&#8203;Usability/18280082 (accessed 2 April 2022).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Otis, Jessica</hi>. (2021). “Managing the Digital Backlist: Sustaining, Preserving, and Deleting Old Projects.” Digital Humanities Summer Institute Colloquium (virtual). June 15, 2021, 
+                        <ref target="https://dhsi.org/timetable/event/institute-lecture-jessica-otis/">https://dhsi.org/timetable/event/institute-lecture-jessica-otis</ref> (accessed 15 Nov 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Posner, Miriam</hi>. (2013). “No Half Measures: Overcoming Common Challenges to Doing Digital Humanities in the Library.” 
+                        <hi rend="italic">Journal of Library Administration</hi>, 53.1: 43-52, 
+                        <ref target="https://doi.org/10.1080/01930826.2013.756694">https://doi.org/10.1080/01930826.2013.756694</ref> (accessed 19 Nov 2021). 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Sayers, Jentery</hi>. (2016). “Minimal Definitions.” 
+                        <hi rend="italic">Minimal Computing</hi>, 
+                        <ref target="http://go-dh.github.io/mincomp/thoughts/2016/10/02/minimal-definitions/">http://go-dh.github.io/mincomp/thoughts/2016/10/02/minimal-definitions</ref> (accessed 18 Nov 2021).
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Thylstrup, Nanna Bonde</hi>. (2018). 
+                        <hi rend="italic">The Politics of Mass Digitization</hi>. Cambridge, MA: MIT Press.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Visual Media Workshop at the University of Pittsburgh</hi>. (2021). 
+                        <hi rend="italic">The Socio-Technical Sustainability Roadmap</hi>, 
+                        <ref target="http://sustainingdh.net/">http://sustainingdh.net</ref> (accessed 22 Nov 2021).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

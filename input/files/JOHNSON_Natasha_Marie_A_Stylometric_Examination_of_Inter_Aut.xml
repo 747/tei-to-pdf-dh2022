@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>A Stylometric Examination of Inter-Authorial Influence within Fanfiction Communities</title>
+                <author>
+                    <persName>
+                        <surname>Johnson</surname>
+                        <forename>Natasha Marie</forename>
+                    </persName>
+                    <affiliation>Stanford University</affiliation>
+                    <email>nmj@stanford.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-29T07:01:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Fanfiction</term>
+                    <term>Stylometry</term>
+                    <term>Influence</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>attribution studies and stylometric analysis</term>
+                    <term>cultural analytics</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>With popular fanfiction websites like Archive of Our Own and FanFiction.Net boasting over 11 million fanfics and over 15 million registered users combined, fanfiction has become an increasingly popular form of literature in the past two decades. One key and unique element of fanfiction is the relationship that exists between writers and readers. Lammers and Marsh (2015) have looked at this relationship from the authors’ perspectives, examining how reader feedback might influence their writing. Lammers, Magnifico, and Curwood (2020) have looked at the other side of the reader-author relationship by exploring the participation patterns of readers in online writing spaces. Korobkova and Black (2014) have explored the fanfiction creation and consumption practices of members of the One Direction fandom, with an emphasis on how these practices related to the members’ identity within the fandom. However, there is no significant research examining what the online experience looks like for those who both read and write fanfic from the perspective of authorial influence. This project explores how reading fanfiction might influence the writing styles of fanfic authors through the lens of stylistic fingerprints, i.e. “traceable features of language [that] betray authorial uniqueness” (Eder, 2011).</p>
+            <p>The fanfics and authors being examined in this project have been sourced from Archive of Our Own (AO3). I selected 100 popular fanfics (from the same fandom, featuring the same ship, featuring over 10,000 words, written in English) and collected the usernames of all the AO3-members who had left kudos on each one. I narrowed these members down to include only those who had also published stories on AO3, with at least one story having been published before the popular fanfic was published and at least one story having been published after the reader left kudos on the popular fanfic. Now, I am using stylometric methods such as those explored by Burrows (2002), Smith and Aldridge (2011), and Eder (2011) to see whether the stylistic fingerprint of the author who left a kudos on the popular fanfic appears to have grown more similar to the stylistic fingerprint of the author who wrote the popular fanfic after they read the popular fanfic.</p>
+            <p>Some of the stylistic variables I am looking at include n-gram frequency, literary device usage, and how these elements are used in emotion evocation. For literary devices, I have trained a supervised machine-learning model to recognize repetition-based rhetorical devices, such as anaphora and polysyndeton, by identifying repeating terms between sentence units identified through natural language processing. To examine emotion evocation, I am using sentiment analysis to map emotional valence within fanfics and then tracking similarities between word usage and rhetorical devices within scenes written by different authors that operate in the same emotional register. I am using relationships in this metadata to examine the relationship between the fanfics in which these relationships are present.</p>
+            <p>My poster will show the importance of fandom networks and the ways in which consuming fanfics influences the textual production of fanfiction authors. I will showcase the methods I used to assess textual similarity in order to detect patterns of influence that popular stories have on writers who have read those stories. My poster will also include visualizations of the patterns I found.</p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Burrows, J</hi>. (2002). ‘Delta’: a Measure of Stylistic Difference and a Guide to Likely Authorship. 
+                        <hi rend="italic">Literary and Linguistic Computing</hi>, 17(3) [online]. Available at: https://doi.org/10.1093/llc/17.3.267 (Accessed: 28 April 2022)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Eder, M.</hi> (2011). Style-Markers in Authorship Attribution A Cross-Language Study of the Authorial Fingerprint. 
+                        <hi rend="italic" xml:space="preserve">Studies in Polish Linguistics, </hi>6 [online]. Available at: https://www.ejournals.eu/pliki/art/1171/pl (Accessed: 28 April 2022)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Korobkova, K. A.</hi> and Black, R. W. (2014). Contrasting Visions: Identity, Literacy, and Boundary Work in a Fan Community. 
+                        <hi rend="italic">E-Learning and Digital Media</hi>, 11(6) [online]. Available at: https://doi.org/10.2304/elea.2014.11.6.619 (Accessed: 28 April 2022)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Lammers, J. C.</hi> and Marsh, V. L. (2015). An Adolescent’s Networked Writing on Fanfiction.net. 
+                        <hi rend="italic">Journal of Adolescent &amp; Adult Literacy</hi>, 59(3) [online]. Available at: https://eric.ed.gov/?id=EJ1079836 (Accessed: 28 April 2022)
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Magnifico, A. M., Lammers, J. C., and Curwood, J. S.</hi> (2020). Developing methods to trace participation patterns across online writing. 
+                        <hi rend="italic">Learning, Culture and Social Interaction</hi>, 24 [online]. Available at: https://doi.org/10.1016/j.lcsi.2019.02.013 (Accessed: 28 April 2022)
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-size:12pt">Smith, P. W. H., and Aldridge, W. (2011).</hi>
+                        <hi style="font-size:12pt" xml:space="preserve">Improving Authorship Attribution: Optimizing Burrows’ Delta Method*. </hi>
+                        <hi rend="italic" style="font-size:12pt">Journal of Quantitative Linguistics</hi>
+                        , 18(1) [online]. Available at: https://doi.org/10.1080/09296174.2011.533591 (Accessed: 28 April 2022)
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

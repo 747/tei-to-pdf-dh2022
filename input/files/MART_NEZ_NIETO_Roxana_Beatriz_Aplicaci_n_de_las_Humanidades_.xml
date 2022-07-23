@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Aplicación de las Humanidades Digitales a los estudios sobre Teatro de la Antigüedad Clásica</title>
+                    <title type="sub">Una revision de las dos últimas décadas (2001-2020) </title>
+                </title>
+                <author>
+                    <persName>
+                        <surname>Martínez Nieto</surname>
+                        <forename>Roxana Beatriz</forename>
+                    </persName>
+                    <affiliation>Universidad Internacional de la Rioja UNIR, Spain</affiliation>
+                    <email>roxana.martinez@unir.net</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T14:02:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>humanidades digitales</term>
+                    <term>teatro clásico</term>
+                    <term>investigación digital textual</term>
+                    <term>aplicaciones informáticas en teatro antiguo</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>German</term>
+                    <term>Spanish</term>
+                    <term>Contemporary</term>
+                    <term>bibliographic analysis</term>
+                    <term>network analysis and graphs theory and application</term>
+                    <term>Education/ pedagogy</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <anchor xml:id="Hlk102053954"/>A partir del creciente interés suscitado por humanistas y estudiosos del mundo clásico en la investigación y tratamiento digital de datos sobre la Antigüedad clásica, y más en concreto sobre el teatro y la transmisión de los trágicos griegos y latinos, se aborda en el presente en el presente artículo una presentación de los estudios más relevantes realizados durante las últimas dos décadas (2001-2020). Es innegable que el campo de las Humanidades Digitales aplicado a la investigación textual de nuestros clásicos antiguos está abriendo nuevas líneas de actuación que acercan la investigación a la enseñanza y ofrecen nuevas perspectivas en el campo de la enseñanza en entornos virtuales sobre el teatro de época clásica. El presente artículo evidencia finalmente el gran avance en el campo del análisis computacional puesto al servicio de la interpretación textual tradicional y su repercusión en performance y tratamiento estructural de las piezas trágicas más representativas de la Antigüedad clásica.
+            </p>
+            <p>
+                <hi rend="bold" xml:space="preserve">Propuesta de investigación: </hi>Partiendo de la premisa de que las humanidades digitales son un campo de investigación al servicio de los estudiosos del mundo antiguo, filólogos, estudiosos del teatro clásico e historiadores de la Antigüedad clásica, se ofrece una aproximación a la interpretación del teatro clásico a partir de los estudios realizados por humanistas digitales en las últimas dos décadas. Las ediciones digitales y los estudios de crítica textual, junto al análisis computacional del léxico teatral de época clásica permiten actualmente obtener resultados cuantitativos que a su vez redundarán en resultados cualitativos sobre la enseñanza en entornos virtuales y puesta en escena del teatro clásico. 
+            </p>
+            <p>
+                <hi rend="bold" xml:space="preserve">Marco metodológico: </hi>La entrada de las tecnologías digitales en el mundo de las humanidades y del teatro es una realidad que confirma la nueva dimensión cultural de la sociedad actual. Los modelos educativos en entornos virtuales también ponen de manifiesto la transformación en la enseñanza del siglo XXI, se hacen eco de los nuevos retos docentes y ofrecen innovadoras perspectivas en aplicaciones digitales al ámbito académico. Luego de entender el contexto de crecimiento dinámico social en el que se insertan las Humanidades Digitales como disciplina, cabe citar la constitución de Proyectos de investigación, formación de Asociaciones, grupos específicos de investigación en un campo determinado, la celebración de Congresos 
+                <hi rend="italic">ad hoc</hi> y la proliferación de revistas sobre el Humanidades Digitales de carácter internacional. Los materiales publicados en el ámbito de estudio teatral de la Antigüedad clásica conforman el propósito de análisis del presente trabajo y la metodología de investigación establecida se basa en la identificación de los estudios relevantes, temática de su contenido y transferencia de la información a otros ámbitos de estudio, a partir de su aplicación y divulgación. 
+            </p>
+            <p>
+                <hi rend="bold">Discusión de naturaleza crítica:</hi> La interpretación del drama griego y latino a la luz de las Humanidades Digitales plantea una discusión de naturaleza crítica, la cual pretende arrojar luz sobre el 
+                <hi rend="italic" xml:space="preserve">status quaestionis </hi>en torno al tratamiento digital de textos teatrales clásicos. El acercamiento al estudio del teatro clásico a través de aplicaciones como Shiny DraCor, la marcación en lenguaje XML-TEI y el análisis cuantitativo del léxico puede dar lugar a nuevas interpretaciones filológicas acerca de los patrones del teatro clásico, su estructura interna y su proyección hacia el público. Concretamente a partir de los resultados cuantitativos disponibles actualmente, se persigue extraer unos hallazgos cualitativos que nos permitan interpretar los modelos de performance teatrales objeto de estudio, mediante el cotejo de patrones tradicionales de la tragedia antigua, que a su vez incluye el análisis de la presencia tanto de personajes principales y secundarios, como de intervenciones por parte del coro dentro de una misma pieza dramática. La interrelación resultante puede ser confirmada o desestimada por la evidencia de los datos digitales extraídos, ayudando sobremanera al estudio de las redes sociales implícitas en el teatro clásico antiguo. Todo el proceso será tratado partiendo de las obras conservadas de los trágicos griegos Esquilo, Sófocles y Eurípides y podrá extenderse al análisis estructural de otras piezas teatrales clásicas. Se persigue asimismo una aplicación real de estos resultados en el aula considerando aspectos pedagógicos y académicos que ayuden al docente a trasladar los resultados de investigación en HD sobre teatro clásico antiguo. En cuanto a la relación entre investigación y puesta en escena, serán los datos digitales sobre reconstrucción en 3D los que ayuden a ofrecer una visión de los espacios teatrales en entornos virtuales no disponible hasta el momento. Ello hará posible describir nuevas herramientas para el análisis textual digital aplicadas a los textos teatrales clásicos, que podrían producir importantes ideas disciplinarias y trasladar de forma efectiva las actuales investigaciones en HD al aula dentro de un futuro muy cercano.
+            </p>
+            <p>
+                <hi rend="bold">Valor de la contribución teórica a las humanidades digitale</hi>s: Los resultados obtenidos ayudan a demostrar que actualmente los humanistas digitales y estudiosos de la época clásica, quienes se dedican a investigar sobre teatro de origen griego y latino, centran sus investigaciones principalmente en el análisis digital cuantitativo de datos, con el fin de llegar a comprender las relaciones dialógicas entre personajes centrales dentro de una misma obra o entre piezas distintas. Se hace necesario, por ende, profundizar en el sentido propedéutico del proceso de enseñanza-aprendizaje de los distintos modelos de teatro, que se están ofreciendo en las aulas actuales, cada vez más integradas en entornos virtuales; y se consideran campos abiertos a la exploración y la investigación los análisis cuantitativos y estadísticos, el tratamiento digital de textos y el análisis de la estructura de los patrones teatrales, entre otras vías de investigación. Cabe señalar además la necesidad de seguir indagando en el campo de las realidades virtuales, especialmente en las réplicas de espacios teatrales en el mundo antiguo, reconstrucciones en 3D de artefactos antiguos y patrones artísticos, considerados nuevas áreas de investigación y futuras líneas de desarrollo y prospectiva. Los avances tecnológicos, así como su directa implementación en la investigación dedicada al drama clásico, resultan enormemente fructíferos para los estudios académicos en torno a problemas de interpretación, representación escénica y crítica textual tradicionales, que podrán ser reconsiderados desde la nueva perspectiva que ofrecen los tratamientos digitales en del campo de las Humanidades, contribuyendo a acercar al gran público el teatro clásico.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliografía</head>
+                    <bibl>
+                        <hi rend="bold">Bozia, E.</hi> (2018). Reviving Classical Drama: virtual reality and experiential learning in a traditional classroom. 
+                        <hi rend="italic" xml:space="preserve">Digital Humanities Quarterly, </hi>12(3): 1-19.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Laan, N. M.</hi> (1995). Stylometry and Method: the Case of Euripides. 
+                        <hi rend="italic" xml:space="preserve">Literary and Linguistic Computing. </hi>10(4): 271-278.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Slaney, H.</hi> (2017). Motion Sensors: Perceiving Movement in Roman Pantomime. In Betts, E. (ed.) 
+                        <hi rend="italic" xml:space="preserve">Senses of the Empire: Multisensory Approaches to Roman Culture. </hi>Routledge. New York and London (2017): 159-175
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Vervain, C</hi>. Performing ancient drama in mask: The case of Greek new comedy. 
+                        <hi rend="italic">New Theatre Quarterly</hi>. 20(3), pp. 245-264.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

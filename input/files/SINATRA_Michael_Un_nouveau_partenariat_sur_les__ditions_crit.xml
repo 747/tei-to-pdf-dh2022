@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Un nouveau partenariat sur les éditions critiques en contexte numérique</title>
+                <author>
+                    <persName>
+                        <surname>Sinatra</surname>
+                        <forename>Michael</forename>
+                    </persName>
+                    <affiliation>Université de Montréal, Canada</affiliation>
+                    <email>michaelesinatra@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Vitali-Rosati</surname>
+                        <forename>Marcello</forename>
+                    </persName>
+                    <affiliation>Université de Montréal, Canada</affiliation>
+                    <email>marcello.vitali.rosati@umontreal.ca</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Chateau-Dutier</surname>
+                        <forename>Emmanuel</forename>
+                    </persName>
+                    <affiliation>Université de Montréal, Canada</affiliation>
+                    <email>emmanuel.chateau.dutier@umontreal.ca</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-07-20T00:54:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital edition</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>French</term>
+                    <term>North America</term>
+                    <term>Contemporary</term>
+                    <term>scholarly editing and editions development</term>
+                    <term>analysis</term>
+                    <term>and methods</term>
+                    <term>text encoding and markup language creation</term>
+                    <term>deployment</term>
+                    <term>and analysis</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p style="text-align: justify;">
+                Nous souhaitons présenter dans un poster les enjeux au cœur du projet « 
+                <hi rend="bold">Nouvelles réflexions sur les éditions critiques en contexte numérique</hi>
+                 » qui réunit des partenaires, des praticiens et des théoriciens provenant de quatre pays, impliqués dans plusieurs projets concernés au premier chef par les outils et la culture numériques, se positionne au centre des travaux de réflexion sur ces nouvelles formes d’environnements de recherche. Ce projet se base sur les travaux du Groupe de recherche sur les éditions critiques en contexte numérique (GREN). Après plusieurs années d’activités, les membres du groupe ont souhaité maximiser son expertise en collaborant de façon étroite avec quatre centres de recherche internationaux et 13 chercheurs universitaires américains, canadiens, allemand et français pour qui la question des éditions critiques est au cœur de leurs travaux, ainsi qu’avec une maison d’édition ouverte à expérimenter sur des nouvelles formes de publications savantes.
+            </p>
+            <p style="text-align: justify;">
+                Subventionné par le Conseil de Recherche en Sciences Humaines du Canada de 2021 à 2024 dans le cadre du programme de développement de partenariat, le thème central de notre projet de développement de partenariat consiste à cerner les changements entraînés par le numérique dans le domaine de la production et de la diffusion du savoir dans les humanités. Plus précisément, les membres de notre projet étudient comment le numérique provoque un réagencement des dispositifs de production et de diffusion de la connaissance et des contenus en littérature, en communication, en histoire de l’art. Pour ce faire, ils s’appuient sur une expertise de haut niveau dans les sciences de l’information et l’informatique. Cette conjonction opportune de chercheurs et de domaines de spécialités nous a permis de jeter les bases d’une analyse et d’une appréhension à la fois pratique et théorique d’un objet d’étude crucial dans nos domaines respectifs, soit l’édition critique (au sens large) et ce qu’il en advient à l’ère du numérique (ici, édition critique étant entendue comme la production savante d’un document accompagnée d’annotations, de commentaires et autres matériaux jugés opportuns par l’éditeur). La nature même des éditions critiques a subi des changements majeurs avec l’explosion des données et la transformation des savoirs, et ce, tant sur le plan de la quantité d’information disponible que de la manière de la représenter. L’étude de ces changements et l’exploration concrète de nouvelles formes d’éditions critiques via l’implémentation d’outils informatiques sont au cœur de cette recherche ambitieuse et innovante.
+            </p>
+            <p style="text-align: justify;">Souhaitant encourager un dialogue entre théories et pratiques de l’éditorialisation, avec une série d’expérimentations basée sur les projets déjà en cours de nos chercheurs, notre projet de développement de partenariat compte réfléchir aux deux objectifs suivants :</p>
+            <list rend="numbered">
+                <item>
+                    Au plan des pratiques : dresser un état des lieux des expériences existantes en inventoriant les points forts et les points faibles des outils et des plateformes ; discuter de possibles stratégies de développement ; expérimenter l’utilisation d’outils de fouille et de visualisation ; intégrer ces outils dans des projets en cours et en développement ;
+                </item>
+                <item>
+                    Au plan théorique : cerner l’impact du numérique sur le processus de production et de circulation du savoir : quels nouveaux modèles de lecture / écriture peut-on concevoir pour les éditions critiques du 21
+                    <hi rend="superscript" style="font-family:Open Sans;font-size:10.5pt">e</hi>
+                    <hi style="font-family:Open Sans;font-size:10.5pt" xml:space="preserve"> siècle? Quels dispositifs de validation des contenus, quels rapports entre chercheurs et communautés scientifiques?</hi>
+                </item>
+            </list>
+            <p style="text-align: justify;">Notre projet a été conçu de manière interinstitutionnelle afin de refléter la maturité des humanités numériques, avec une masse critique de chercheurs provenant d’institutions canadiennes mais aussi complémenté par des chercheurs reconnus aux États-Unis et en Europe. Les chercheurs impliqués dans notre équipe présentent un taux d’activité fort élevé dans le secteur, notre équipe étant composé de professeurs à différents stades de leurs carrières (nouveaux professeurs adjoints comme professeurs titulaires avec plus de vingt ans de carrière) qui ont également été impliqués dans de multiples collaborations. Nos chercheurs rassemblent des compétences essentielles au succès de notre initiative. L’appartenance disciplinaire des chercheurs et partenaires est distribuée au sein de départements de littérature, de communication, d’histoire de l’art, de philosophie et des sciences de l’information, et rassemble un ensemble d’expertises diversifiées et parfaitement adaptées à l’étude des éditions critiques en contexte numérique.</p>
+            <p style="text-align: justify;">
+                Notre poster mettra en avant le résultat des travaux de la première année.
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">Site du GREN: https://gren.openum.ca</bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

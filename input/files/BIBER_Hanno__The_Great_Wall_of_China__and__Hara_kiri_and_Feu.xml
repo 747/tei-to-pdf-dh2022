@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>“The Great Wall of China” and “Hara-kiri and Feuilleton“ or how to search in a digital edition of satirical texts with a focus on the theme of “an oriental fantasy especially oriented about the orient”.</title>
+                <author>
+                    <persName>
+                        <surname>Biber</surname>
+                        <forename>Hanno</forename>
+                    </persName>
+                    <affiliation>Austrian Academy of Sciences, Austria</affiliation>
+                    <email>hanno.biber@oeaw.ac.at</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-15T14:45:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Electronic Poster</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>digital edition</term>
+                    <term>cultural stereotypes</term>
+                    <term>corpus lingustics</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Global</term>
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>German</term>
+                    <term>20th Century</term>
+                    <term>digital publishing projects</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>scholarly editing and editions development</term>
+                    <term>analysis</term>
+                    <term>and methods</term>
+                    <term>Literary studies</term>
+                    <term>Philology</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">
+                    <hi style="font-family:Adobe Garamond Pro;font-size:12pt" xml:space="preserve">Digital editions have to be evaluated and examined with respect to their practical use for certain research purposes. In the following proposal an exploration of one specific digital edition will be suggested, which shall meet two aims. First, by thematically referring to the general theme of the conference, a study of the historical clichés of how the East is viewed from the West, will be carried out. Second, an investigation of the practical use of a digital edition will be done to demonstrate the feasibility for a such special research purpose of digital literary studies. The precise question put forward considers the functions of a well-developed digital edition of satirical texts for the purpose of carefully exploring the research topic of the exemplary theme mentioned above as implied in the quotation of “an oriental fantasy especially oriented about the orient”. </hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Digital Edition and Methodology</head>
+                <p style="text-align: left; ">
+                    <hi style="font-family:Adobe Garamond Pro;font-size:12pt" xml:space="preserve">The edition in question is the online digital edition </hi>
+                    <hi rend="italic" style="font-family:Adobe Garamond Pro;font-size:12pt">AAC-Fackel</hi>
+                    <hi style="font-family:Adobe Garamond Pro;font-size:12pt" xml:space="preserve"> (Biber 2007) of the literary journal, published on the basis of the print version of the German original that was edited and almost entirely written by the famous Viennese satirist Karl Kraus between 1899 and 1936. The digital edition of this important historical resource of </hi>
+                    <hi rend="italic" style="font-family:Adobe Garamond Pro;font-size:12pt">Die Fackel</hi>
+                    enables literary scholars to study the texts in great detail, not only because of the digital accessibility of its more than six million tokens (cf. Biber 2015), but also because the numerous digital sources to be studied are provided with additional linguistic information (cf. Fischer-Starcke 2010), so that all of their lexical entities, words and phrases to be studied, are searchable based upon technologies offered by corpus linguistics (cf. Stefanowitsch 2020).
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Texts and Examples</head>
+                <p style="text-align: left; ">
+                    <hi style="font-family:Adobe Garamond Pro;font-size:12pt" xml:space="preserve">In several cases the satirical texts by the language and social critic address the theme of the highly questionable cliché-ridden relations between orient and occident, in particular as the East is viewed from the West in newspaper articles of the time, of which many different feuilletons, essays, editorials and the like, are quoted and satirically commentated upon by the satirist. The satires from the period before 1914 are particularly relevant and interesting in this respect, because they give an impression and at the same time offer methods as how to judge the public impact of notoriously influential cultural stereotypes propagated by newspapers. Two texts by Karl Kraus are of particular concern as starting points of this demonstration: </hi>
+                    <hi rend="italic" style="font-family:Adobe Garamond Pro;font-size:12pt">The Great Wall of China</hi>
+                    <hi style="font-family:Adobe Garamond Pro;font-size:12pt" xml:space="preserve"> from 1909 and </hi>
+                    <hi rend="italic" style="font-family:Adobe Garamond Pro;font-size:12pt">Hara-kiri and Feuilleton</hi>
+                    <hi style="font-family:Adobe Garamond Pro;font-size:12pt" xml:space="preserve"> from 1911. In the first text, the true story of the murder of a young white missionary allegedly by a Chinese waiter in New York and how this crime is reported in the press, exposes and criticises the stereotypes about China and the Chinese, the hypocrisy in the context of sexual and racial morals of society. The second text about the reports of the ritual suicide of a famous general investigates the martial platitudes about Japan and the Japanese and also satirically explores and sharply criticises the language of cultural clichés and decadent aestheticism in journalism. In both texts the specific tone of voice as well as the special choice of words carrying the moral prejudices about peoples from the Far East, in the context of sex and crime as exposed and thus exploited by the media of the time, the press, are to be investigated in detail and carried out beyond these in other texts of comparable thematic scope, by making use of the instruments of a digital edition, which means to use the search mechanisms available, to use key-word-in-context lists, extract linguistic information as concerns part-of-speech, perform word form searches and reversed word form searches, investigate collocational patterns, metaphorical usage etc. </hi>
+                </p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Conclusion</head>
+                <p style="text-align: left; ">
+                    The limits and constraints as well as the advantages of various word searches by making use of the digital edition are going to be demonstrated. The satires by Karl Kraus expose the hypocrisy of the newspapers by using these observable yet still very powerful clichés and the bourgeois double standards of society to be followed in newspaper feuilletons, which are quoted and analysed in the texts to be studied with linguistic precision in order to give an example of how to search successfully in a digital edition.
+                </p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Adobe Garamond Pro;font-size:12pt">Biber, H.</hi>
+                        <hi style="font-family:Adobe Garamond Pro;font-size:12pt" xml:space="preserve"> et al. (eds.) (2007). AAC-Austrian Academy Corpus. AAC-Fackel. Online Version: Die Fackel. Herausgeber: Karl Kraus, Wien 1899-1936. </hi>
+                        <ref target="https://fackel.oeaw.ac.at">
+                            https://fackel.oeaw.ac.at
+                        </ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Adobe Garamond Pro;font-size:12pt">Biber, H.</hi>
+                        <hi style="font-family:Adobe Garamond Pro;font-size:12pt" xml:space="preserve"> (2015): AAC-Fackel. Das Beispiel einer digitalen Musteredition. In Baum, C. and Stäcker, T. (eds.): Grenzen und Möglichkeiten der Digital Humanities. Sonderband 1 (2015) der Zeitschrift für digitale Geisteswissenschaften, DOI 10.17175/sb001_019, </hi>
+                        <ref target="https://www.zfdg.de/sb001_019">
+                            https://www.zfdg.de/sb001_019
+                        </ref>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Adobe Garamond Pro;font-size:12pt">Fischer-Starcke, B.</hi>
+                        (2010). Corpus linguistics in literary analysis: Jane Austen and her contemporaries. London: Continuum
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold" style="font-family:Adobe Garamond Pro;font-size:12pt">Stefanowitsch, A.</hi>
+                        (2020). Corpus linguistics: A guide to the methodology. (Textbooks in Language Sciences 7). Berlin: Language Science Press
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

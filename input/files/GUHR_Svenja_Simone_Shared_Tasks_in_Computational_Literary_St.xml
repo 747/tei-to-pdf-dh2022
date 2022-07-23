@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Shared Tasks in Computational Literary Studies: Guideline Creation, Annotation and Text Generation for the Analysis of Narrative Levels</title>
+                <author>
+                    <persName>
+                        <surname>Guhr</surname>
+                        <forename>Svenja Simone</forename>
+                    </persName>
+                    <affiliation>Technical University of Darmstadt, Germany</affiliation>
+                    <email>svenja.guhr@tu-darmstadt.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Reiter</surname>
+                        <forename>Nils</forename>
+                    </persName>
+                    <affiliation>University of Cologne</affiliation>
+                    <email>nils.reiter@uni-koeln.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Zarrieß</surname>
+                        <forename>Sina</forename>
+                    </persName>
+                    <affiliation>University of Bielefeld</affiliation>
+                    <email>sina.zarriess@uni-bielefeld.de</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Gius</surname>
+                        <forename>Evelyn</forename>
+                    </persName>
+                    <affiliation>Technical University of Darmstadt, Germany</affiliation>
+                    <email>evelyn.gius@tu-darmstadt.de</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-03-06T00:18:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>computational literary studies</term>
+                    <term>narrative levels</term>
+                    <term>training data induction</term>
+                    <term>annotation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>18th Century</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>annotation structures</term>
+                    <term>systems</term>
+                    <term>and methods</term>
+                    <term>text mining and analysis</term>
+                    <term>Humanities computing</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference virtually</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading1">
+                <head>Introduction</head>
+                <p style="text-align: left; ">With this short presentation we would like to give an update on our ongoing shared tasks for text annotation. In natural language processing, shared tasks are well established and highly productive frameworks for bringing together researchers. Organizers define a research task and the conditions for a competition-like setting in which others can submit their approaches to the task. We believe that shared tasks are a productive way of collaboration for the digital humanities and thus we hope that our presentation encourages others to organize shared tasks. We started to design our shared tasks on the identification of narrative levels in 2017. Here, we report on the successful conclusion of our first shared task on guideline creation and give an outlook on the subsequent task of automated annotation.</p>
+                <p style="text-align: left; ">The goal of our shared task is the annotation of narrative levels. Automated segmentation of prose texts into meaningful units remains challenging, but would enable more robust and meaningful subsequent processing tasks, such as authorship determination, computation of topics, sentiment analysis, or procedures for determining semantic similarities, because they can be better connected to literary studies theories and assumptions (e.g., the characteristics property of an author might be a certain rhythm in their texts). In addition, any content-related analysis of narrative texts (e.g., about the characters or the plot) greatly benefit from knowledge of the level structure. Narrative levels are segments of prose texts determined by a largely stable expression of their fictional world in terms of space, time, and events, as well as the mediation of the events by a narrator.</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>First Shared Task on the Systematic Annotation of Narrative Levels</head>
+                <p style="text-align: left; ">In an initial shared task, which we had announced in a presentation at DH2017 (Reiter et al., 2017), eight teams of linguists, computational linguists and literary scholars developed guidelines for the annotation of narrative levels. These reflect the diverse, heterogeneous theories of narrative levels. (Cf. Gius et al. (2019) for the setting and the guidelines of the initial round and Gius et al. (2021) for the guidelines of the second round and a final overall reflection on the shared task.)</p>
+                <p style="text-align: left; ">Each of the submitted guidelines had strengths and weaknesses that emerged in the evaluation (Gius et al., 2019; Gius et al., 2021).</p>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Second Shared Task on the Automatic Annotation of Literary Texts and Generation of Training Data</head>
+                <p style="text-align: left; ">A second shared task with a different focus is currently in preparation. It uses the level-annotated texts from the first shared task as the basis for creating a training and test set for developing automated level recognition methods. In addition to automating level recognition, it also addresses the automated generation of training data, since manual annotation is expensive and time-consuming. </p>
+                <p style="text-align: left; ">The second shared task will consist of two connected but independently solvable tracks, and it will focus on the English language.</p>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Track One: Automating Generation of Level-Annotated Training Data</head>
+                    <p style="text-align: left; ">Track participants address the task to develop procedures for the automatic generation or synthesis of texts that are organized in terms of different narrative levels. We expect participants to experiment with different rule-, template- and language-model/AI-based techniques to assemble texts that display typical patterns of narrative level changes. The resulting texts will be used as training data for a BERT-based baseline system that automatically learns to detect narrative levels. Hence, the objective of narrative level generation is not primarily to produce high-quality, aesthetically pleasing text, but rather to obtain data of sufficient quantity and quality for supporting machine learning techniques in narrative level detection.</p>
+                </div>
+                <div type="div2" rend="DH-Heading2">
+                    <head>Track Two: Automatic Detection of Narrative Levels in Literary Prose</head>
+                    <p style="text-align: left; ">The second track builds on experiments on automatic detection of narrative level boundaries using a pre-trained BERT-model to detect artificially generated level boundaries that we conducted in 2021 (Reiter et al., 2022).</p>
+                    <p style="text-align: left; ">Participants will use annotated training data (some of which will be generated in the first track) to develop systems for automatic detection of narrative levels in texts.</p>
+                </div>
+            </div>
+            <div type="div1" rend="DH-Heading1">
+                <head>Evaluation</head>
+                <p style="text-align: left; ">The evaluation of the first track will be done via the performance of the BERT-based recognition model, using the generated data as training data. Thus, the generated texts are measured on whether they contain well-recognizable narrative levels that are useful for training. The second track will be evaluated using manually annotated gold data from the first shared task in 2020.</p>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Devlin, J., Chang, M.-W., Lee, K., Toutanova, K.</hi> (2019). BERT: Pre-Training of Deep Bidirectional Transformers for Language Understanding. DOI 10.48550/arXiv.1810.04805. 
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Gius, E., Willand, M., Reiter, N.</hi> (2021). On Organizing a Shared Task for the Digital Humanities – Conclusions and Future Paths. 
+                        <hi rend="italic">Journal of Cultural Analytics</hi>, 6(4). DOI 10.22148/001c.30697.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Gius, E., Reiter, N., Willand, M.</hi> (2019). A Shared Task for the Digital Humanities Chapter 2: Evaluating Annotation Guidelines. 
+                        <hi rend="italic">Journal of Cultural Analytics</hi>, 4(3). DOI 10.22148/16.049.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Reiter, N., Sieker, J., Guhr, S., Gius, E., Zarrieß, S.</hi> (2022). Exploring Text Recombination for Automatic Narrative Level Detection. 
+                        <hi rend="italic">Proceedings of the 13th Conference on Language Resources and Evaluation (LREC 2022).</hi>
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Reiter, N., Gius, E. Strötgen, J., Willand, M.</hi> (2017). A Shared Task for a Shared Goal: Systematic Annotation of Literary Texts. 
+                        <hi rend="italic">Book of Abstracts</hi>. DH 2017. Montreal, Canada: ADHO. https://dh2017.adho.org/abstracts/192/192.pdf.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Reiter, N., Willand, M., Gius, E.</hi> (2019). A Shared Task for the Digital Humanities Chapter 1: Introduction to Annotation, Narrative Levels and Shared Tasks. 
+                        <hi rend="italic">Journal of Cultural Analytics</hi>, 4(3), DOI 10.22148/16.048.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Ryan, M.-L.</hi> (1991). Possible Worlds, 
+                        <hi rend="italic">Artificial Intelligence, and Narrative Theory</hi>. Bloomington: Indiana University Press.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>
