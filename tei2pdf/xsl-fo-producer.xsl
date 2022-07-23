@@ -809,7 +809,20 @@
                                         
                                 </fo:flow>
                 </fo:page-sequence>        
-                                        
+
+                                <!-- DH2022: Sponsor logo page -->
+                                <xsl:if test="@n='intro-004'">
+                                    <fo:page-sequence master-reference="Full">
+                                        <fo:flow flow-name="xsl-region-body">
+                                            <fo:block>
+                                                <fo:external-graphic 
+                                                    src="../input/images/sponsors.pdf#page=1"
+                                                    content-width="8.5in"
+                                                    content-height="scale-to-fit"/>
+                                            </fo:block>
+                                        </fo:flow>
+                                    </fo:page-sequence>
+                                </xsl:if>
                             </xsl:if>
                         </xsl:for-each>
                     

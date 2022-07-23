@@ -127,7 +127,7 @@
     <text>
         <body>
             <div type="div1">
-                <head>
+                <head type="main">
                     <anchor xml:id="id_docs-internal-guid-65d18228-7fff-966e-a7d8-1321d871c3f2"/>Introduction
                 </head>
                 <p>(Frank Fischer)</p>
@@ -135,7 +135,7 @@
                 <p>The five European Research Infrastructure Consortia CESSDA, CLARIN, DARIAH, ESS and SHARE as well as 20 other European partner institutions have come together to connect their communities to the EOSC via SSHOC. In this panel, we will discuss its emerging role for the Digital Humanities and related fields and the different facets needed to design, coordinate and operate this domain-specific infrastructure and cloud. A panel of speakers will discuss the following topics:</p>
             </div>
             <div type="div1">
-                <head>The SSH Open Marketplace – Contextualised practical knowledge for day-to-day research in the Digital Humanities</head>
+                <head type="main">The SSH Open Marketplace – Contextualised practical knowledge for day-to-day research in the Digital Humanities</head>
                 <p>(Laure Barbot, Edward Gray, Klaus Illmayer, Alexander König)</p>
                 <p>
                     <hi rend="color(#000000)">Tool directories and discovery portals have a long history in the Digital Humanities. There is a clear demand for them in the community but their sustainability beyond project fundings and their collective maintenance is challenging (Dombrowski, 2019; Edmond, 2016). In the enabling EOSC environment, in which research and data infrastructures find a suitable framework to provide research services, DARIAH, CLARIN and CESSDA </hi>
@@ -148,7 +148,7 @@
                 </p>
             </div>
             <div type="div1">
-                <head>The Sharing of Services and Data Between SSH Infrastructures</head>
+                <head type="main">The Sharing of Services and Data Between SSH Infrastructures</head>
                 <p>(Daan Broeder)</p>
                 <p>By sharing infrastructure resources we gain considerable advantages:</p>
                 <list type="unordered">
@@ -158,17 +158,17 @@
                 <p>This concerns not only newly created services and datasets, e.g. the SSH Open Marketplace, but also existing resources which were prepared to serve a wider audience. Within the SSHOC project, a couple of services originally developed for the CLARIN community were generalised to address additional user scenarios and provide new functionalities. Recommendations and tools for creating and managing SSH vocabularies were aligned through an SSH Vocabulary Commons initiative. SSHOC also provided an opportunity for new and emerging communities to discover and investigate what and how already established communities have arranged their infrastructure and what is useful for them.</p>
             </div>
             <div type="div1">
-                <head>Data Repository/Service Certification</head>
+                <head type="main">Data Repository/Service Certification</head>
                 <p>(Mari Kleemola)</p>
                 <p>FAIR data (Findable, Accessible, Interoperable, Reusable) is essential for the success of the EOSC, but the demand for high quality and FAIR data and metadata is global. However, the FAIR principles do not take into account the inevitable changes in the data environment and in the needs of data users. Any digital system that accepts, stores and provides access to data can be termed a 'digital repository' in the broadest sense. Only an organisation that meets clear criteria, including the provision of active long-term preservation measures for a designated community, can be termed a “trustworthy digital repository”. Trustworthy digital repositories play a key role in enabling data to become and remain FAIR over time within all disciplines, including SSH. Reaching FAIRness and trustworthiness is a journey that requires expertise, investment and cooperation. Many actors and multiple tiers of data storage, protection and preservation are needed to address the long tail of at-risk data and metadata. Setting standards and pass/fail criteria is not sufficient; compliance with trustworthiness standards is best supported by community efforts such as repository certification through CoreTrustSeal, existing coordination networks for digital repositories in disciplinary contexts and other global, regional and national networks.</p>
             </div>
             <div type="div1">
-                <head>Technology and Services</head>
+                <head type="main">Technology and Services</head>
                 <p>(Carsten Thiel)</p>
                 <p>Research Infrastructures are increasingly digital, providing virtual access to resources at physical places like libraries and archives. Developing the technology that makes this possible is a fundamental part of building modern infrastructures and enabling interdisciplinary research requires interoperability on the technical level. But delivering added value to the researcher requires more than bare technology. In collaboration across disciplines, both within the SSHOC project and the wider EOSC landscape, the focus has shifted towards the service layer, combining tools with training and support into a complete package that addresses end user needs. As domain infrastructures, CESSDA, CLARIN and DARIAH are uniquely positioned between researchers, resources and tools to process them in order to sustainably ensure open research.</p>
             </div>
             <div type="div1">
-                <head>EOSC FUTURE – Connecting Scientific Projects to EOSC Core Services</head>
+                <head type="main">EOSC FUTURE – Connecting Scientific Projects to EOSC Core Services</head>
                 <p>(Matej Ďurčo)</p>
                 <p>To connect thematic services to the EOSC basic agnostic components are needed. The EOSC Architecture provides the so-called EOSC-Core layer offering fundamental building blocks such as an AAI (Authentication and Authorization Infrastructure), Helpdesk and Monitoring. By easily integrating these core services, science projects benefit from an interoperable and more stable infrastructural environment. The domain-oriented cluster projects are at the crossroads between agnostic service providers and research communities to overcome the "last mile challenge" (Koureas, 2016) and build mid-level tools and platforms that serve the needs of individual research communities (Lamanna, 2021).</p>
             </div>

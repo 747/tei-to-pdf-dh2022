@@ -161,23 +161,14 @@
                                     <body>
                                         <xsl:for-each select="/TEI">
                                             <div  type="{text/@type}">
-                                                <head type="main"><xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/></head>
+                                                <!-- <head type="main"><xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/></head> --><!-- DH2022 mod -->
                                                 <xsl:if test="normalize-space(teiHeader/fileDesc/titleStmt/author[1])">
                                                 </xsl:if>
                                                 <!-- <xsl:copy-of select="text/body/div/node()"/> -->
                                                 <!-- DH2022: accept div-less formats -->
-                                                <xsl:choose>
-                                                    <xsl:when test="text/body/div">
-                                                        <xsl:apply-templates select="text/body/div/node()">
-                                                            <xsl:with-param name="tei_id" select="$id" tunnel="yes"/>
-                                                        </xsl:apply-templates>
-                                                    </xsl:when>
-                                                    <xsl:otherwise>
-                                                        <xsl:apply-templates select="text/body/p">
-                                                            <xsl:with-param name="tei_id" select="$id" tunnel="yes"/>
-                                                        </xsl:apply-templates>
-                                                    </xsl:otherwise>
-                                                </xsl:choose>
+                                                <xsl:apply-templates select="text/body/div/node()|text/body/p|text/body/head">
+                                                    <xsl:with-param name="tei_id" select="$id" tunnel="yes"/>
+                                                </xsl:apply-templates>
                                                 
                                                 <xsl:if test="//back">
                                                     <div type="back">
