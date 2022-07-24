@@ -228,7 +228,7 @@
             <p>While Arnold (forthcoming) presented first promising experiments regarding (1), in this presentation we will concentrate on (2). Our evaluation metric for OCR output is the character error rate (CER) with regard to the ground truth annotation of every text block crop, which, based on the Levenshtein distance, is computed by:</p>
             <p>
                 <figure>
-                    <graphic url="Pictures/59fbbe7bc21d630585cad5745f6aefaa.png"/>
+                    <graphic url="Pictures/59fbbe7bc21d630585cad5745f6aefaa.png" width="1.5in"/>
                 </figure>
             </p>
             <p>

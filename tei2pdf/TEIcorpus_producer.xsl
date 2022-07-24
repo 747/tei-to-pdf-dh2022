@@ -300,26 +300,26 @@
             <teiHeader>
                 <fileDesc>
                     <titleStmt>
-                        <title>Digital Humanities 2013 Combined Abstracts</title>
+                        <title>Digital Humanities 2022 Combined Abstracts</title>
                         <author>
                         </author>
                     </titleStmt>
                     <publicationStmt>
                         <authority></authority>
-                        <publisher>University of Nebraska-Lincoln</publisher>
+                        <publisher>DH2022 Local Organizing Committee</publisher>
                         <distributor>
-                            <name>Center for Digital Research in the Humanities</name>
+                            <name>DH2022 Local Organizing Committee</name>
                             <address>
-<addrLine>319 Love Library</addrLine>
-<addrLine>University of Nebraska&#8211;Lincoln</addrLine>
-<addrLine>Lincoln, NE 68588-4100</addrLine>
-<addrLine>cdrh@unl.edu</addrLine>
+<addrLine>7-3-1</addrLine>
+<addrLine>Hongo, Bunkyo-ku</addrLine>
+<addrLine>Tokyo, 113-0033</addrLine>
+<addrLine>dh2022-local{at}l.u-tokyo.ac.jp</addrLine>
 </address>
                         </distributor>
-                        <pubPlace>Lincoln, Nebraska</pubPlace> 
+                        <pubPlace>Tokyo, Japan</pubPlace> 
                         <address>
-<addrLine>University of Nebraska-Lincoln</addrLine>
-<addrLine>Lincoln, NE 68588-4100</addrLine>
+<addrLine>The University of Tokyo</addrLine>
+<addrLine>Tokyo, 113-0033</addrLine>
 </address>
                         <availability>
                             <p></p>
@@ -340,8 +340,8 @@
                 
                 <revisionDesc>
                     <change>
-                        <date when="2013-03-27"></date>
-                        <name>Laura Weakly</name>
+                        <date when="2022-07-24"></date>
+                        <name>Wang Yifan</name>
                         <desc>Initial encoding</desc>
                     </change>
                 </revisionDesc>
@@ -369,8 +369,8 @@
             <xsl:attribute name="n">
                 <xsl:value-of select="replace(name/surname,'[^a-zA-Z0-9]','')"/>
                 <xsl:value-of select="replace(name/forename,'[^a-zA-Z0-9]','')"/>
-                <xsl:value-of select="replace(persName/surname,'[^a-zA-Z0-9]','')"/><!-- DH2022 mod -->
-                <xsl:value-of select="replace(persName/forename,'[^a-zA-Z0-9]','')"/><!-- DH2022 mod -->
+                <xsl:value-of select="replace(normalize-unicode(persName/surname/(@key | text())[1], 'NFD'), '[^a-zA-Z0-9]', '')"/><!-- DH2022 mod -->
+                <xsl:value-of select="replace(normalize-unicode(persName/forename/(@key | text())[1], 'NFD'), '[^a-zA-Z0-9]', '')"/><!-- DH2022 mod -->
                 <xsl:choose>
                     <xsl:when test="/teiCorpus">
                         <xsl:value-of select="/teiCorpus/@xml:id"/>
@@ -385,8 +385,8 @@
                 <xsl:attribute name="n">
                     <xsl:value-of select="replace(name/surname,'[^a-zA-Z0-9]','') "/>
                     <xsl:value-of select="replace(name/forename,'[^a-zA-Z0-9]','') "/>
-                    <xsl:value-of select="replace(persName/surname,'[^a-zA-Z0-9]','') "/><!-- DH2022 mod -->
-                    <xsl:value-of select="replace(persName/forename,'[^a-zA-Z0-9]','') "/><!-- DH2022 mod -->
+                    <xsl:value-of select="replace(normalize-unicode(persName/surname/(@key | @nymRef | text())[1], 'NFD'), '[^a-zA-Z0-9]', '')"/><!-- DH2022 mod -->
+                    <xsl:value-of select="replace(normalize-unicode(persName/forename/(@key | @nymRef | text())[1], 'NFD'), '[^a-zA-Z0-9]', '')"/><!-- DH2022 mod -->
                 </xsl:attribute>
                 <!-- <xsl:copy-of select="name/node()"/></name> -->
                 <xsl:copy-of select="name/node()"/><xsl:copy-of select="persName/node()"/></name><!-- DH2022 mod -->

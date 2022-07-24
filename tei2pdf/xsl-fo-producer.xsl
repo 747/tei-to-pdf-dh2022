@@ -1351,10 +1351,16 @@
                     
                     <xsl:for-each-group group-by="." select="//TEI/teiHeader/fileDesc/titleStmt/author/name/@n">
                         <xsl:sort select="."/>
+                        <xsl:variable name="current-name" select="current-group()/parent::name"/><!-- DH2022 mod -->
                         
                         <fo:block text-align-last="justify"><xsl:call-template name="text"/>
                             <!-- <xsl:value-of select="parent::name"/><xsl:text> </xsl:text> -->
-                            <xsl:value-of select="parent::name/surname"/><xsl:text>, </xsl:text><xsl:value-of select="parent::name/forename"/><xsl:text> </xsl:text><!-- DH2022 mod -->
+                            <!-- DH2022 mod -->
+                            <xsl:value-of select="distinct-values($current-name/surname[not(@nymRef)])[1]"/><xsl:if test="$current-name/surname[@nymRef]">
+                                (<xsl:value-of select="string-join(distinct-values($current-name/surname[@nymRef]), ',')"/>)</xsl:if><xsl:text>, </xsl:text>
+                            <xsl:value-of select="distinct-values($current-name/forename[not(@nymRef)])[1]"/><xsl:if test="$current-name/forename[@nymRef]">
+                                (<xsl:value-of select="string-join(distinct-values($current-name/forename[@nymRef]), ',')"/>)</xsl:if><xsl:text> </xsl:text>
+                            <!-- end DH2022 mod -->
                             <fo:leader leader-pattern="dots"/>
                             <xsl:for-each select="current-group()">
                                 <fo:basic-link internal-destination="{parent::name/parent::author/@n}">
@@ -1848,6 +1854,10 @@
                     <xsl:if test="not(parent::figure)">
                         <xsl:call-template name="figure_container"/>
                     </xsl:if>
+                    <xsl:if test="@n='span_all'">
+                        <xsl:attribute name="span">all</xsl:attribute>
+                        <fo:block>&#160;</fo:block>
+                    </xsl:if>
                     <!-- DH2022: hack, it is a simple figure if itself is <p>'s only child -->
                     <xsl:if test="parent::p[count(*) = 1]">
                         <xsl:attribute name="text-indent">0</xsl:attribute>
@@ -1885,6 +1895,9 @@
                 <!-- end DH2022 mod -->
                     <fo:block><xsl:call-template name="figure_head"/><xsl:apply-templates select="head"/></fo:block>
                     <fo:block><xsl:call-template name="figure_p"/><xsl:apply-templates select="p"/></fo:block>
+                    <xsl:if test="@n='span_all'"><!-- DH2022 mod (cont) -->
+                        <fo:block>&#160;</fo:block>
+                    </xsl:if>
                 </fo:block>
             </xsl:otherwise>
         </xsl:choose>
@@ -1901,9 +1914,6 @@
         <xsl:choose>
             <xsl:when test="@n='span_all'">
                 <fo:block span="all">
-                    <xsl:attribute name="space-before">.1in</xsl:attribute>
-                    <xsl:attribute name="space-after">.1in</xsl:attribute>
-                    <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute>
                     <fo:block>&#160;</fo:block>
                     <xsl:call-template name="table_main"/>
                     <fo:block>&#160;</fo:block>

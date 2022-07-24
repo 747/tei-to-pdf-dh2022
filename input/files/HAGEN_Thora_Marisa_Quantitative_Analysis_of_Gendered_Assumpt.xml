@@ -147,42 +147,41 @@
                     <hi rend="italic">Brockhaus 1837</hi> (about 1%), where entries tend to be relatively long, but higher in 
                     <hi rend="italic">Brockhaus 1911</hi> (about 37%), for example.
                 </p>
-                <p>
-                    <figure>
+                    <figure n="span_all">
                         <table rend="frame" xml:id="Tabelle1">
                             <row>
                                 <cell/>
-                                <cell>
-                                    <p rend="center">Brockhaus</p>
-                                    <p rend="center">1809</p>
+                                <cell rend="center">
+                                    Brockhaus
+                                    <lb/>1809
                                 </cell>
-                                <cell>
-                                    <p rend="center">DamenLex</p>
-                                    <p rend="center">1834</p>
+                                <cell rend="center">
+                                    DamenLex
+                                    <lb/>1834
                                 </cell>
-                                <cell>
-                                    <p rend="center">Brockhaus</p>
-                                    <p rend="center">1837</p>
+                                <cell rend="center">
+                                    Brockhaus
+                                    <lb/>1837
                                 </cell>
-                                <cell>
-                                    <p rend="center">Herder</p>
-                                    <p rend="center">1854</p>
+                                <cell rend="center">
+                                    Herder
+                                    <lb/>1854
                                 </cell>
-                                <cell>
-                                    <p rend="center">Meyer</p>
-                                    <p rend="center">1905</p>
+                                <cell rend="center">
+                                    Meyer
+                                    <lb/>1905
                                 </cell>
-                                <cell>
-                                    <p rend="center">Brockhaus</p>
-                                    <p rend="center">1911</p>
+                                <cell rend="center">
+                                    Brockhaus
+                                    <lb/>1911
                                 </cell>
-                                <cell>
-                                    <p rend="center">Wikipedia</p>
-                                    <p rend="center">2014</p>
+                                <cell rend="center">
+                                    Wikipedia
+                                    <lb/>2014
                                 </cell>
-                                <cell>
-                                    <p rend="center">Wikipedia</p>
-                                    <p rend="center">2015</p>
+                                <cell rend="center">
+                                    Wikipedia
+                                    <lb/>2015
                                 </cell>
                             </row>
                             <row>
@@ -210,7 +209,6 @@
                         </table>
                         <p>Table 1. Estimate of male and female biographies in historical German encyclopedias. Wikipedia results reported by Bamman and Schmith (2014) and Graells-Garrido et al. (2015)</p>
                     </figure>
-                </p>
                 <p>
                     <figure>
                         <graphic url="Pictures/affd6ce6f6dca69db4e8d591b327d700.png"/>
@@ -240,32 +238,41 @@
                 </p>
                 <p>
                     <figure>
-                        <table rend="frame" xml:id="Tabelle2">
+                        <table rend="frame" xml:id="Tabelle2" n="text_smaller">
+                            <note type="direction">
+                                <width unit="pt">21</width>
+                                <width unit="pt">37</width>
+                                <width unit="pt">37</width>
+                                <width unit="pt">37</width>
+                                <width unit="pt">37</width>
+                                <width unit="pt">37</width>
+                                <width unit="pt">37</width>
+                            </note>
                             <row>
                                 <cell/>
-                                <cell>
-                                    <p rend="center">Brockhaus</p>
-                                    <p rend="center">1809</p>
+                                <cell rend="center">
+                                    Brockhaus
+                                    <lb/>1809
                                 </cell>
-                                <cell>
-                                    <p rend="center">DamenLex</p>
-                                    <p rend="center">1834</p>
+                                <cell rend="center">
+                                    DamenLex
+                                    <lb/>1834
                                 </cell>
-                                <cell>
-                                    <p rend="center">Brockhaus</p>
-                                    <p rend="center">1837</p>
+                                <cell rend="center">
+                                    Brockhaus
+                                    <lb/>1837
                                 </cell>
-                                <cell>
-                                    <p rend="center">Herder</p>
-                                    <p rend="center">1854</p>
+                                <cell rend="center">
+                                    Herder
+                                    <lb/>1854
                                 </cell>
-                                <cell>
-                                    <p rend="center">Meyer</p>
-                                    <p rend="center">1905</p>
+                                <cell rend="center">
+                                    Meyer
+                                    <lb/>1905
                                 </cell>
-                                <cell>
-                                    <p rend="center">Brockhaus</p>
-                                    <p rend="center">1911</p>
+                                <cell rend="center">
+                                    Brockhaus
+                                    <lb/>1911
                                 </cell>
                             </row>
                             <row>

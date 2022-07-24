@@ -15,7 +15,7 @@
                 <author>
                     <persName>
                         <surname>Bergel</surname>
-                        <forename>Giles</forename>
+                        <forename key="Giles Edward" nymRef="Giles Edward">Giles</forename>
                     </persName>
                     <affiliation>University of Oxford, United Kingdom</affiliation>
                     <email>giles.bergel@eng.ox.ac.uk</email>
@@ -62,16 +62,16 @@
                 </author>
                 <author>
                     <persName>
-                        <surname>Andrew</surname>
-                        <forename>Zisserman</forename>
+                        <surname>Zisserman</surname>
+                        <forename>Andrew</forename>
                     </persName>
                     <affiliation>University of Oxford, United Kingdom</affiliation>
                     <email>az@robots.ox.ac.uk</email>
                 </author>
                 <author>
                     <persName>
-                        <surname>Loïc</surname>
-                        <forename>Denis</forename>
+                        <surname>Denis</surname>
+                        <forename>Loïc</forename>
                     </persName>
                     <affiliation>Université Jean Monnet, Saint-Etienne, France</affiliation>
                     <email>loic.denis@univ-st-etienne.fr</email>
@@ -295,7 +295,7 @@
                 <hi rend="italic" style="font-family:Helvetica">et al.</hi>
                 <hi style="font-family:Helvetica" xml:space="preserve">, 2020), enabling a more or less well-resolved visualization of novelties in the current query. Rey’s emblematic mark is analyzed to illustrate our argument. </hi>
             </p>
-            <p>Paper 4</p>
+            <head type="main">Paper 4</head>
             <p>
                 <hi rend="bold" style="font-family:Helvetica">Title:</hi>
                 <hi style="font-family:Helvetica" xml:space="preserve"> Visual Analysis of Chapbooks Printed in Scotland</hi>

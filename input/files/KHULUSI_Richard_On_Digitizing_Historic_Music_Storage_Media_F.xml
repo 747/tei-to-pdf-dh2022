@@ -110,32 +110,32 @@
             <div type="div1" rend="DH-Heading1">
                 <head>Introduction </head>
                 <p>Between 2018 and 2020, the digitization project TASTEN, funded by the German
-                    <lb/>government, digitized 3200 piano rolls for self-playing pianos preserved at the
-                    <lb/>Musical Instruments Museum at Leipzig University (MIMUL). A piano roll is a historic
-                    <lb/>music storage media (MSM) coding movement impulses through holes punched into
-                    <lb/>paper (Focht, 2020). When played, a pneumatic system uses this code to create
-                    <lb/>sounds at runtime.
-                    <lb/>For musicologists, such piano rolls are of high value. First, they are the only source of
-                    <lb/>musical performances by famous pianists in times preceding sound recording
-                    <lb/>technologies. Secondly, for researchers they offer a rich repository to study the
-                    <lb/>music-making practice and musical interpretation around 1900. We expand our prior
-                    <lb/>source catalogue to include their technical predecessors: Cardboard and metal plates,
-                    <lb/>which also use punched holes as code (Focht, 2021). They share the issue of being
-                    <lb/>fragile – after decades of usage and storage – making it important to digitize them
-                    <lb/>for preservation, also.
+                    government, digitized 3200 piano rolls for self-playing pianos preserved at the
+                    Musical Instruments Museum at Leipzig University (MIMUL). A piano roll is a historic
+                    music storage media (MSM) coding movement impulses through holes punched into
+                    paper (Focht, 2020). When played, a pneumatic system uses this code to create
+                    sounds at runtime.
+                    For musicologists, such piano rolls are of high value. First, they are the only source of
+                    musical performances by famous pianists in times preceding sound recording
+                    technologies. Secondly, for researchers they offer a rich repository to study the
+                    music-making practice and musical interpretation around 1900. We expand our prior
+                    source catalogue to include their technical predecessors: Cardboard and metal plates,
+                    which also use punched holes as code (Focht, 2021). They share the issue of being
+                    fragile – after decades of usage and storage – making it important to digitize them
+                    for preservation, also.
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Related Work </head>
                 <p>We found a lack of publications dealing with challenges, issues, and processing of MSM in general. This may be due to most of such projects being on a small scale in
-                    <lb/>private settings (pianola.co.nz, 2021; IAMMP, 2021). Scientific publications are
-                    <lb/>presented by Debrunner (2013), who developed a scanner capable of reading
-                    <lb/>information directly from piano rolls and dealing with paper based distortion issues,
-                    <lb/>for a single format (Welte piano rolls). Shi et al. (2019) built an online database of almost 500 digitized
-                    <lb/>piano rolls offering representations including images, audios, and MIDI files, focusing
-                    <lb/>only on the same format.
-                    <lb/>No published scientific or private projects are to be found concerning metal or
-                    <lb/>cardboard plates and their digitization.
+                    private settings (pianola.co.nz, 2021; IAMMP, 2021). Scientific publications are
+                    presented by Debrunner (2013), who developed a scanner capable of reading
+                    information directly from piano rolls and dealing with paper based distortion issues,
+                    for a single format (Welte piano rolls). Shi et al. (2019) built an online database of almost 500 digitized
+                    piano rolls offering representations including images, audios, and MIDI files, focusing
+                    only on the same format.
+                    No published scientific or private projects are to be found concerning metal or
+                    cardboard plates and their digitization.
                 </p>
                 <figure>
                     <graphic n="1001" width="15.980833333333333cm" height="9.233958333333334cm" url="Pictures/6892e6f7baf681be247f60f5399a989f.png" rend="inline"/>
@@ -145,80 +145,80 @@
             <div type="div1" rend="DH-Heading1">
                 <head>Digitizing MSM</head>
                 <p>While prior projects show great results in digitizing piano rolls, processes capable of
-                    <lb/>dealing with multiple formats of piano rolls and plates in general are non-existent.
-                    <lb/>Furthermore, digitizing is only the first step for musicologists. This data allows them
-                    <lb/>to answer research questions by reading and hearing the encoded works which are
-                    <lb/>difficult to impossible to read. Additionally, these processes allow for distant reading
-                    <lb/>analysis and comparative approaches.
-                    <lb/>We propose a workflow (Figure~1) capable of digitizing all 3,200 piano rolls of 30
-                    <lb/>different formats available in the MIMUL. Currently, work is done to include more
-                    <lb/>than 25 formats of 438 plates.
-                    <lb/>The workflow begins with a conservator-led cleaning process to protect the objects
-                    <lb/>and the researchers. Damages which would lead to the destruction of the object
-                    <lb/>were documented. Next, metadata like weight, measurements, format, title,
-                    <lb/>composer, and performer was extracted to be included in our research tool
-                    <lb/>musiXplora. For the actual digitizing, a scanning company was commissioned, for which we constructed an unwinding mechanism, making it possible to create a single
-                    <lb/>scan of the piano rolls (as 300dpi .tif images, resulting in up to 5.000x550.000 pixels and up to 5GB).
-                    <lb/>While the prior project (TASTEN – 2018-2020) generated scans of piano rolls, the
-                    <lb/>current DISKOS project focuses more deeply on musicologists’ research questions.
-                    <lb/>Examples would be “How did composers play their own compositions on the piano?”,
-                    <lb/>or “Can the computer use this digital knowledge to identify which pianist played a
-                    <lb/>piano roll of unknown origin?” Also, exploration and visual analysis of the objects can
-                    <lb/>be offered through distant reading visualization systems embedded in the
-                    <lb/>musiXplora.
+                    dealing with multiple formats of piano rolls and plates in general are non-existent.
+                    Furthermore, digitizing is only the first step for musicologists. This data allows them
+                    to answer research questions by reading and hearing the encoded works which are
+                    difficult to impossible to read. Additionally, these processes allow for distant reading
+                    analysis and comparative approaches.
+                    We propose a workflow (Figure~1) capable of digitizing all 3,200 piano rolls of 30
+                    different formats available in the MIMUL. Currently, work is done to include more
+                    than 25 formats of 438 plates.
+                    The workflow begins with a conservator-led cleaning process to protect the objects
+                    and the researchers. Damages which would lead to the destruction of the object
+                    were documented. Next, metadata like weight, measurements, format, title,
+                    composer, and performer was extracted to be included in our research tool
+                    musiXplora. For the actual digitizing, a scanning company was commissioned, for which we constructed an unwinding mechanism, making it possible to create a single
+                    scan of the piano rolls (as 300dpi .tif images, resulting in up to 5.000x550.000 pixels and up to 5GB).
+                    While the prior project (TASTEN – 2018-2020) generated scans of piano rolls, the
+                    current DISKOS project focuses more deeply on musicologists’ research questions.
+                    Examples would be “How did composers play their own compositions on the piano?”,
+                    or “Can the computer use this digital knowledge to identify which pianist played a
+                    piano roll of unknown origin?” Also, exploration and visual analysis of the objects can
+                    be offered through distant reading visualization systems embedded in the
+                    musiXplora.
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Technical Details</head>
                 <p>Starting with the preprocessing of the backlit images the actual process labels
-                    <lb/>connected components (musical notes) on the image and applies filtering to keep
-                    <lb/>only the components representing notes. Calculating the distance from each hole to
-                    <lb/>the edge of the medium and using mean shift clustering we can assign each note to
-                    <lb/>its respective track. We finally apply corrections to account for empty tracks and
-                    <lb/>distortions and calculate the position and width of each hole. Combining this
-                    <lb/>information with an expert created mapping of tracks to MIDI notes, we can then
-                    <lb/>generate a MIDI file accurately representing the information on the medium.
-                    <lb/>Relevance for Musicology
-                    <lb/>These files allow users to work interactively with the music and help musicologists in
-                    <lb/>their work with these sources. Furthermore, this offers an enhanced experience for
-                    <lb/>museum visitors, by making it possible to voice the digitized piano rolls and plates
-                    <lb/>using the digital representation of keyboard instruments created during TASTEN.
-                    <lb/>Hence, historic media can be experienced on historic instruments even if the physical
-                    <lb/>instruments would not have been interoperable.
-                    <lb/>For the musicologists, these results offer a way to open up previously unreadable
-                    <lb/>sources. Besides close reading approaches, the generated data allows for distant
-                    <lb/>reading (visualization) methodology and novel research questions like examining
-                    <lb/>which schools of interpretation and playing techniques are represented and how they
-                    <lb/>have spread between performers. 
-                    <lb/>Further, these results are also important for educational and playful aspects like
-                    <lb/>listening to these historical virtuous interpretations without risking the media and
-                    <lb/>instruments.
+                    connected components (musical notes) on the image and applies filtering to keep
+                    only the components representing notes. Calculating the distance from each hole to
+                    the edge of the medium and using mean shift clustering we can assign each note to
+                    its respective track. We finally apply corrections to account for empty tracks and
+                    distortions and calculate the position and width of each hole. Combining this
+                    information with an expert created mapping of tracks to MIDI notes, we can then
+                    generate a MIDI file accurately representing the information on the medium.
+                    Relevance for Musicology
+                    These files allow users to work interactively with the music and help musicologists in
+                    their work with these sources. Furthermore, this offers an enhanced experience for
+                    museum visitors, by making it possible to voice the digitized piano rolls and plates
+                    using the digital representation of keyboard instruments created during TASTEN.
+                    Hence, historic media can be experienced on historic instruments even if the physical
+                    instruments would not have been interoperable.
+                    For the musicologists, these results offer a way to open up previously unreadable
+                    sources. Besides close reading approaches, the generated data allows for distant
+                    reading (visualization) methodology and novel research questions like examining
+                    which schools of interpretation and playing techniques are represented and how they
+                    have spread between performers. 
+                    Further, these results are also important for educational and playful aspects like
+                    listening to these historical virtuous interpretations without risking the media and
+                    instruments.
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Limitations</head>
                 <p>As we are in the first of three project years, some challenges still exist: The image
-                    <lb/>processing results are highly dependable on a suitable preprocessing, which differs
-                    <lb/>quite a lot even between different formats of the same media type. Metal plates in
-                    <lb/>particular are operated under pressure during playback. While the playback
-                    <lb/>instruments themselves are constructed to negate this deformation, a plain
-                    <lb/>photography of the media does not lead to correct results and needs a semi-manual
-                    <lb/>correction process. In general, we are content with our results for cardboard plates
-                    <lb/>and piano rolls of specific formats, but are aware of needed improvements.
+                    processing results are highly dependable on a suitable preprocessing, which differs
+                    quite a lot even between different formats of the same media type. Metal plates in
+                    particular are operated under pressure during playback. While the playback
+                    instruments themselves are constructed to negate this deformation, a plain
+                    photography of the media does not lead to correct results and needs a semi-manual
+                    correction process. In general, we are content with our results for cardboard plates
+                    and piano rolls of specific formats, but are aware of needed improvements.
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Conclusion</head>
                 <p>Even with the best preservation techniques, most materials deteriorate from
-                    <lb/>humidity and stress through time. Hence, valuable information stored on analog
-                    <lb/>media is prone to damage and even loss. Such information includes original
-                    <lb/>recordings of famous virtuosos like Edvard Grieg, not only valuable as music
-                    <lb/>recording, but also important for musicologists interested in analyzing playing
-                    <lb/>techniques and differences between musical notation and interpretation by their
-                    <lb/>composers. To allow digital processing of such media, digitization is mandatory. We
-                    <lb/>present a pipeline taking image sources of circular and linear played storage media
-                    <lb/>and creating digital representations in form of MIDI files, which then can be analyzed,
-                    <lb/>further processed, edited, or even played through modern and historical instruments.
+                    humidity and stress through time. Hence, valuable information stored on analog
+                    media is prone to damage and even loss. Such information includes original
+                    recordings of famous virtuosos like Edvard Grieg, not only valuable as music
+                    recording, but also important for musicologists interested in analyzing playing
+                    techniques and differences between musical notation and interpretation by their
+                    composers. To allow digital processing of such media, digitization is mandatory. We
+                    present a pipeline taking image sources of circular and linear played storage media
+                    and creating digital representations in form of MIDI files, which then can be analyzed,
+                    further processed, edited, or even played through modern and historical instruments.
                 </p>
             </div>
         </body>
