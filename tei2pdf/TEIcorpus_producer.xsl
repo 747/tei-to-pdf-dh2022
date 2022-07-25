@@ -360,7 +360,7 @@
                     <change>
                         <date when="2022-07-25"></date>
                         <name>Wang Yifan</name>
-                        <desc>Added Keynotes</desc>
+                        <desc>Added Keynotes, updated presentation list</desc>
                     </change>
                     <change>
                         <date when="2022-07-24"></date>

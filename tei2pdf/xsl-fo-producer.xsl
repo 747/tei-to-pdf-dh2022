@@ -760,7 +760,7 @@
             <!-- Intro -->
             <xsl:if test="//keywords[@n='category']/term[1] = 'Intro'">
                         
-                        <xsl:for-each select="//TEI">
+                        <!-- <xsl:for-each select="//TEI"> --><xsl:for-each select="//TEI[not(.//editionStmt/@rend='cancelled')]"><!-- DH2022 mod -->
                             <!-- if Intro -->
                             <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='category']/term[1]) = 'Intro'">
                                 
@@ -778,7 +778,7 @@
                                     </xsl:choose>
                                     <xsl:attribute name="format">i</xsl:attribute> 
                                     <!-- Don't apply page numbers to title pages, etc. -->
-                                    <xsl:if test="not(@n='intro-001' or @n='intro-002' or @n='intro-003' or @n='intro-004')"><xsl:copy-of select="$header_and_footer"/></xsl:if>
+                                    <xsl:if test="not(@n='intro-001' or @n='intro-002' or @n='intro-003' or @n='intro-004' or @n='intro-005')"><xsl:copy-of select="$header_and_footer"/></xsl:if>
                                    
                                     
                                     <fo:flow flow-name="xsl-region-body">
@@ -850,7 +850,7 @@
                 </fo:page-sequence>        
 
                                 <!-- DH2022: Sponsor logo page -->
-                                <xsl:if test="@n='intro-004'">
+                                <xsl:if test="@n='intro-005'">
                                     <fo:page-sequence master-reference="Full">
                                         <fo:flow flow-name="xsl-region-body">
                                             <fo:block>
@@ -870,7 +870,7 @@
             <!-- Table of Contents -->
             <fo:page-sequence master-reference="Single">
                 <fo:flow flow-name="xsl-region-body">
-                    <xsl:for-each select="//TEI">
+                    <!-- <xsl:for-each select="//TEI"> --><xsl:for-each select="//TEI[not(.//editionStmt/@rend='cancelled')]"><!-- DH2022 mod -->
                         <!-- Controlled by individual templates below, gives section headers for TOC -->
                         
                         <!-- <xsl:apply-templates select="teiHeader/profileDesc/textClass/keywords[1]/term[1]" mode="toc"/> -->
@@ -947,7 +947,7 @@
                     <xsl:copy-of select="$header_and_footer"/>
                     
                     <fo:flow flow-name="xsl-region-body">
-                        <xsl:for-each select="//TEI">
+                        <!-- <xsl:for-each select="//TEI"> --><xsl:for-each select="//TEI[not(.//editionStmt/@rend='cancelled')]"><!-- DH2022 mod -->
                             <!-- if panel. This is a lazy way to select the panels, but I wasn't too concerned with code efficiency. -->
                             <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='category']/term[1]) = 'Reviewers'">
                                 <!-- Title -->
@@ -994,7 +994,7 @@
             <!-- Content -->
             
                 
-                        <xsl:for-each select="//TEI">
+                        <!-- <xsl:for-each select="//TEI"> --><xsl:for-each select="//TEI[not(.//editionStmt/@rend='cancelled')]"><!-- DH2022 mod -->
                             <!-- if panel. This is a lazy way to select the panels, but I wasn't too concerned with code efficiency. -->
                             <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='category']/term[1]) = 'Plenary'">
                                 
@@ -1063,7 +1063,7 @@
                     <xsl:copy-of select="$header_and_footer"/>
                     
                     <fo:flow flow-name="xsl-region-body">
-                        <xsl:for-each select="//TEI">
+                        <!-- <xsl:for-each select="//TEI"> --><xsl:for-each select="//TEI[not(.//editionStmt/@rend='cancelled')]"><!-- DH2022 mod -->
                             <!-- if panel. This is a lazy way to select the panels, but I wasn't too concerned with code efficiency. -->
                             <!-- <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='category']/term[1]) = 'Workshops'"> -->
                             <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='subcategory']/term[1]) = 'Pre-Conference Workshop and Tutorial'"><!-- DH2022 mod -->
@@ -1133,7 +1133,7 @@
                 <xsl:copy-of select="$header_and_footer"/>
                 
                 <fo:flow flow-name="xsl-region-body">
-                    <xsl:for-each select="//TEI">
+                    <!-- <xsl:for-each select="//TEI"> --><xsl:for-each select="//TEI[not(.//editionStmt/@rend='cancelled')]"><!-- DH2022 mod -->
                         <!-- if panel. This is a lazy way to select the panels, but I wasn't too concerned with code efficiency. -->
                         <!-- <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='category']/term[1]) = 'Panel'"> -->
                         <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='subcategory']/term[1]) = 'Panel'"><!-- DH2022 mod -->
@@ -1205,7 +1205,7 @@
             <fo:page-sequence master-reference="Double"> 
                 <xsl:copy-of select="$header_and_footer"/>
                 <fo:flow flow-name="xsl-region-body">
-                    <xsl:for-each select="//TEI">
+                    <!-- <xsl:for-each select="//TEI"> --><xsl:for-each select="//TEI[not(.//editionStmt/@rend='cancelled')]"><!-- DH2022 mod -->
                         <!-- if paper. This is a lazy way to select the panels, but I wasn't too concerned with code efficiency. -->
                         <!-- <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='category']/term[1]) = 'Paper'"> -->
                         <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='subcategory']/term[1]) = 'Long Presentation'"><!-- DH2022 mod -->
@@ -1269,7 +1269,7 @@
             <fo:page-sequence master-reference="Double"> 
                 <xsl:copy-of select="$header_and_footer"/>
                 <fo:flow flow-name="xsl-region-body">
-                    <xsl:for-each select="//TEI">
+                    <!-- <xsl:for-each select="//TEI"> --><xsl:for-each select="//TEI[not(.//editionStmt/@rend='cancelled')]"><!-- DH2022 mod -->
                         <!-- if paper. This is a lazy way to select the panels, but I wasn't too concerned with code efficiency. -->
                         <!-- <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='category']/term[1]) = 'Paper'"> -->
                         <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='subcategory']/term[1]) = 'Short Presentation'"><!-- DH2022 mod -->
@@ -1335,7 +1335,7 @@
             <fo:page-sequence master-reference="Double"> 
                 <xsl:copy-of select="$header_and_footer"/>
                 <fo:flow flow-name="xsl-region-body">
-                    <xsl:for-each select="//TEI">
+                    <!-- <xsl:for-each select="//TEI"> --><xsl:for-each select="//TEI[not(.//editionStmt/@rend='cancelled')]"><!-- DH2022 mod -->
                         <!-- if poster. This is a lazy way to select the panels, but I wasn't too concerned with code efficiency. -->
                         <!-- <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='category']/term[1]) = 'Poster'"> -->
                         <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='subcategory']/term[1]) = 'Electronic Poster'"><!-- DH2022 mod -->
@@ -1388,16 +1388,17 @@
                         <xsl:text>Author Index</xsl:text>
                     </fo:block>
                     
-                    <xsl:for-each-group group-by="." select="//TEI/teiHeader/fileDesc/titleStmt/author/name/@n">
+                    <!-- <xsl:for-each-group group-by="." select="//TEI/teiHeader/fileDesc/titleStmt/author/name/@n"> -->
+                    <xsl:for-each-group group-by="." select="//TEI[not(.//editionStmt/@rend='cancelled')]/teiHeader/fileDesc/titleStmt/author/name/@n"><!-- DH2022 mod -->
                         <xsl:sort select="."/>
                         <xsl:variable name="current-name" select="current-group()/parent::name"/><!-- DH2022 mod -->
                         
                         <fo:block text-align-last="justify"><xsl:call-template name="text"/>
                             <!-- <xsl:value-of select="parent::name"/><xsl:text> </xsl:text> -->
                             <!-- DH2022 mod -->
-                            <xsl:value-of select="distinct-values($current-name/surname[not(@nymRef)])[1]"/><xsl:if test="$current-name/surname[@nymRef]">
+                            <xsl:value-of select="($current-name/surname[not(@nymRef)], $current-name/surname/@nymRef)[1]"/><xsl:if test="$current-name/surname[@nymRef]">
                                 (<xsl:value-of select="string-join(distinct-values($current-name/surname[@nymRef]), ',')"/>)</xsl:if><xsl:text>, </xsl:text>
-                            <xsl:value-of select="distinct-values($current-name/forename[not(@nymRef)])[1]"/><xsl:if test="$current-name/forename[@nymRef]">
+                            <xsl:value-of select="($current-name/forename[not(@nymRef)], $current-name/forename/@nymRef)[1]"/><xsl:if test="$current-name/forename[@nymRef]">
                                 (<xsl:value-of select="string-join(distinct-values($current-name/forename[@nymRef]), ',')"/>)</xsl:if><xsl:text> </xsl:text>
                             <!-- end DH2022 mod -->
                             <fo:leader leader-pattern="dots"/>
@@ -1618,7 +1619,9 @@
             <fo:list-item-label><xsl:call-template name="list_item_label"/>
                 <xsl:choose>
                     <xsl:when test="parent::list/@type='simple' or parent::list/@type='ordered'">
-                        <fo:block></fo:block>
+                        <!-- <fo:block></fo:block> -->
+                        <xsl:attribute name="margin-left">-1.6em</xsl:attribute>
+                        <fo:block><xsl:number format="1."/></fo:block>
                     </xsl:when>
                     <!-- <xsl:when test="parent::list/@type='unordered'"> -->
                     <xsl:when test="parent::list/@type='unordered' or parent::list/@rend='bulleted'"><!-- DH2022 mod -->
@@ -1629,7 +1632,11 @@
                     </xsl:otherwise>
                 </xsl:choose>
             </fo:list-item-label>
-            <fo:list-item-body><xsl:call-template name="list-item-body"/>
+            <fo:list-item-body>
+                <xsl:if test="parent::list/@type='unordered' or parent::list/@rend='bulleted'">
+                    <xsl:call-template name="list-item-body"/>
+                </xsl:if>
+                
                 <fo:block>
                     <!-- <xsl:if test="parent::list/@type='unordered'"><xsl:text>•&#160;&#160;&#160;&#160;&#160;</xsl:text></xsl:if> -->
                     <xsl:if test="parent::list/@type='unordered' or parent::list/@rend='bulleted'"><xsl:text>•&#160;&#160;&#160;&#160;&#160;</xsl:text></xsl:if><!-- DH2022 mod -->

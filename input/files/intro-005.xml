@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="intro-005">
+
+<teiHeader>
+<fileDesc>
+<titleStmt>
+    <title type="nodisplay">Conference Sponsors</title>
+</titleStmt>
+<publicationStmt>
+<authority></authority>
+    <publisher>DH2022 Local Organizing Committee</publisher>
+    <distributor>
+        <name>DH2022 Local Organizing Committee</name>
+        <address>
+            <addrLine>7-3-1</addrLine>
+            <addrLine>Hongo, Bunkyo-ku</addrLine>
+            <addrLine>Tokyo, 113-0033</addrLine>
+            <addrLine>dh2022-local{at}l.u-tokyo.ac.jp</addrLine>
+        </address>
+    </distributor>
+    <pubPlace>Tokyo, Japan</pubPlace> 
+    <address>
+        <addrLine>The University of Tokyo</addrLine>
+        <addrLine>Tokyo, 113-0033</addrLine>
+    </address>
+    <availability>
+<p></p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<p>No source: created in electronic format.</p>
+</sourceDesc>
+</fileDesc>
+
+<profileDesc>
+<textClass>
+<keywords scheme="original" n="category">
+<term>Intro</term>
+</keywords>
+<keywords scheme="original" n="subcategory">
+<term>Short Paper</term>
+</keywords>
+<keywords scheme="original" n="topic">
+<term></term>
+</keywords>
+<keywords scheme="original" n="keywords">
+<term></term>
+</keywords>
+</textClass>
+</profileDesc>
+
+<revisionDesc>
+<change>
+<date/>
+<name/>
+<desc/>
+</change>
+</revisionDesc>
+</teiHeader>
+
+    <text type="paper" n="double">
+<body>
+    <div n="nobreak">
+        <head n="intro_head_small">Conference Sponsors</head>
+        <list n="intro">
+            <item>COMMERCIAL SPONSORS</item>
+            <item><list>
+                <item>Bronze sponsor: Gale</item>
+<item>                Bungaku-Report</item><item>
+                Flx style co.,LTD.</item><item>
+                Infomage</item><item>
+                Google</item><item>
+                Metainfo</item><item>
+                Stanford University Press</item>
+            </list></item>
+
+            
+        </list>
+        <list n="intro">
+            <item>FUNDINGS</item>
+            <item><list>
+             <item>   JSPS KAKENHI Grant-in-Aid for Scientific Research (A) "Inheritance and development of the digital knowledge base of Buddhist studies" JP19H00516 (PI: Professor Masahiro Shimoda, The University of Tokyo)
+                </item><item>
+                JSPS Program for Constructing Data Infrastructure for the Humanities and Social Sciences (Historiographical Institute, The University of Tokyo) (PI: Keiko Hongo)</item>
+                
+                
+            </list></item>
+
+        </list>
+        <list n="intro">
+            
+            <item>INSTITUTIONAL SPONSORS</item>
+            <item><list>
+            <item>    BUKKYO DENDO KYOKAI
+                </item><item>
+                International Insitute for Digital Humanities, Tokyo
+                </item><item>
+                The Mitsubishi Foundation
+                </item><item>
+                National Insitute for Japanese Literture, Tokyo
+                </item>
+                
+            </list></item>
+            
+        </list>
+        
+    </div>
+    
+
+    
+ 
+    
+
+
+</body>
+
+
+</text>
+</TEI>
