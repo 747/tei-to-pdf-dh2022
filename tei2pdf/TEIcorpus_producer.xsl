@@ -68,7 +68,10 @@
             <!-- Plenary Sessions -->
             <xsl:for-each select="$files[normalize-space(//keywords[@n='category']) = 'Plenary']">
                 <!-- <xsl:sort select="normalize-space(/teiCorpus/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/name[1])"/> -->
-                <xsl:sort select="normalize-space(/teiCorpus/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1])"/><!-- DH2022 mod -->
+                <xsl:sort select="replace(normalize-unicode(concat(
+                    /teiCorpus/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1]/surname/(@key | text())[1],
+                    /teiCorpus/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1]/forename/(@key | text())[1]
+                ), 'NFD'), '[^a-zA-Z0-9]', '')"/><!-- DH2022 mod -->
                     <!-- <xsl:variable name="id"><xsl:value-of select="/TEI/@xml:id"/></xsl:variable> -->
                     <xsl:variable name="id"><xsl:value-of select="concat(normalize-space(//keywords[@n='category']), '-', position())"/></xsl:variable><!-- DH2022 mod -->
                     <TEI n="{$id}">
@@ -86,7 +89,10 @@
             <!-- <xsl:for-each select="$files[normalize-space(//keywords[@n='category']) = 'Workshops']"> -->
             <xsl:for-each select="$files[normalize-space(//keywords[@n='subcategory']) = 'Pre-Conference Workshop and Tutorial']"><!-- DH2022 mod -->
                 <!-- <xsl:sort select="normalize-space(/TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/name[1])"/> -->
-                <xsl:sort select="normalize-space(/TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1])"/><!-- DH2022 mod -->
+                <xsl:sort select="replace(normalize-unicode(concat(
+                    /TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1]/surname/(@key | text())[1],
+                    /TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1]/forename/(@key | text())[1]
+                ), 'NFD'), '[^a-zA-Z0-9]', '')"/><!-- DH2022 mod -->
                     <!-- <xsl:variable name="id"><xsl:value-of select="/TEI/@xml:id"/></xsl:variable> -->
                     <xsl:variable name="id"><xsl:value-of select="concat('Workshop-', position())"/></xsl:variable><!-- DH2022 mod -->
                     <TEI n="{$id}">
@@ -114,7 +120,10 @@
             <!-- <xsl:for-each select="$files[normalize-space(//keywords[@n='category']) = 'Panel']"> -->
             <xsl:for-each select="$files[normalize-space(//keywords[@n='subcategory']) = 'Panel']"><!-- DH2022 mod -->
                 <!-- <xsl:sort select="normalize-space((//author)[1]/(name)[1])"/> -->
-                <xsl:sort select="normalize-space((//author)[1]/(persName)[1])"/><!-- DH2022 mod -->
+                <xsl:sort select="replace(normalize-unicode(concat(
+                    //author[1]/persName[1]/surname/(@key | text())[1],
+                    //author[1]/persName[1]/forename/(@key | text())[1]
+                ), 'NFD'), '[^a-zA-Z0-9]', '')"/><!-- DH2022 mod -->
                     <!-- <xsl:variable name="id"><xsl:value-of select="/*/@xml:id"/></xsl:variable> -->
                     <xsl:variable name="id"><xsl:value-of select="concat(normalize-space(//keywords[@n='subcategory']), '-', position())"/></xsl:variable><!-- DH2022 mod -->
                     <TEI n="{$id}">
@@ -195,7 +204,10 @@
             <!-- <xsl:for-each select="$files[normalize-space(//keywords[@n='category']) = 'Paper']"> -->
             <xsl:for-each select="$files[normalize-space(//keywords[@n='subcategory']) = 'Long Presentation']"><!-- DH2022 mod -->
                 <!-- <xsl:sort select="normalize-space(/TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/name[1])"/> -->
-                <xsl:sort select="normalize-space(/TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1])"/><!-- DH2022 mod -->
+                <xsl:sort select="replace(normalize-unicode(concat(
+                    /TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1]/surname/(@key | text())[1],
+                    /TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1]/forename/(@key | text())[1]
+                ), 'NFD'), '[^a-zA-Z0-9]', '')"/><!-- DH2022 mod -->
                     <!-- <xsl:variable name="id"><xsl:value-of select="/TEI/@xml:id"/></xsl:variable> -->
                     <xsl:variable name="id"><xsl:value-of select="concat('Long-', position())"/></xsl:variable><!-- DH2022 mod -->
                     <TEI n="{$id}">
@@ -220,7 +232,10 @@
             <!-- <xsl:for-each select="$files[normalize-space(//keywords[@n='category']) = 'Paper']"> -->
             <xsl:for-each select="$files[normalize-space(//keywords[@n='subcategory']) = 'Short Presentation']"><!-- DH2022 mod -->
                 <!-- <xsl:sort select="normalize-space(/TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/name[1])"/> -->
-                <xsl:sort select="normalize-space(/TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1])"/><!-- DH2022 mod -->
+                <xsl:sort select="replace(normalize-unicode(concat(
+                    /TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1]/surname/(@key | text())[1],
+                    /TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1]/forename/(@key | text())[1]
+                ), 'NFD'), '[^a-zA-Z0-9]', '')"/><!-- DH2022 mod -->
                     <!-- <xsl:variable name="id"><xsl:value-of select="/TEI/@xml:id"/></xsl:variable> -->
                     <xsl:variable name="id"><xsl:value-of select="concat('Short-', position())"/></xsl:variable><!-- DH2022 mod -->
                     <TEI n="{$id}">
@@ -247,7 +262,10 @@
             <!-- <xsl:for-each select="$files[normalize-space(//keywords[@n='category']) = 'Poster']"> -->
             <xsl:for-each select="$files[normalize-space(//keywords[@n='subcategory']) = 'Electronic Poster']"><!-- DH2022 mod -->
                 <!-- <xsl:sort select="normalize-space(/TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/name[1])"/> -->
-                <xsl:sort select="normalize-space(/TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1])"/><!-- DH2022 mod -->
+                <xsl:sort select="replace(normalize-unicode(concat(
+                    /TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1]/surname/(@key | text())[1],
+                    /TEI/teiHeader[1]/fileDesc[1]/titleStmt[1]/author[1]/persName[1]/forename/(@key | text())[1]
+                ), 'NFD'), '[^a-zA-Z0-9]', '')"/><!-- DH2022 mod -->
                     <!-- <xsl:variable name="id"><xsl:value-of select="/TEI/@xml:id"/></xsl:variable> -->
                     <xsl:variable name="id"><xsl:value-of select="concat('Poster-', position())"/></xsl:variable><!-- DH2022 mod -->
                     <TEI n="{$id}">  
@@ -339,6 +357,11 @@
                 </profileDesc>
                 
                 <revisionDesc>
+                    <change>
+                        <date when="2022-07-25"></date>
+                        <name>Wang Yifan</name>
+                        <desc>Added Keynotes</desc>
+                    </change>
                     <change>
                         <date when="2022-07-24"></date>
                         <name>Wang Yifan</name>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xmt="http://www.cch.kcl.ac.uk/xmod/tei/1.0" xml:id="intro-007">
+
+<teiHeader>
+<fileDesc>
+<titleStmt>
+    <title type="nodisplay">The journey to make billions of Japanese historical documents accessible</title>
+<author>
+<name>
+    <surname>Klanuwat</surname>
+    <forename>Tarin</forename>
+</name>
+    <affiliation>Google Brain</affiliation>
+</author>
+</titleStmt>
+<publicationStmt>
+<authority></authority>
+<publisher>DH2022 Local Organizing Committee</publisher>
+<distributor>
+    <name>DH2022 Local Organizing Committee</name>
+<address>
+<addrLine>7-3-1</addrLine>
+<addrLine>Hongo, Bunkyo-ku</addrLine>
+<addrLine>Tokyo, 113-0033</addrLine>
+<addrLine>dh2022-local{at}l.u-tokyo.ac.jp</addrLine>
+</address>
+</distributor>
+<pubPlace>Tokyo, Japan</pubPlace> 
+<address>
+<addrLine>The University of Tokyo</addrLine>
+<addrLine>Tokyo, 113-0033</addrLine>
+</address>
+<availability>
+<p></p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<p>No source: created in electronic format.</p>
+</sourceDesc>
+</fileDesc>
+
+<profileDesc>
+<textClass>
+<keywords scheme="original" n="category">
+<term>Intro</term>
+</keywords>
+<keywords scheme="original" n="subcategory">
+<term>Keynote</term>
+</keywords>
+<keywords scheme="original" n="topic">
+<term></term>
+</keywords>
+<keywords scheme="original" n="keywords">
+<term></term>
+</keywords>
+</textClass>
+</profileDesc>
+
+<revisionDesc>
+<change>
+<date/>
+<name/>
+<desc/>
+</change>
+</revisionDesc>
+</teiHeader>
+
+    <text type="paper" n="single">
+<body>
+<div type="intro_material">
+    <div type="keynote_header">
+    <head type="author">Dr. Tarin Klanuwat</head>
+    <head type="title">Google Brain</head>
+
+    <figure type="keynote">
+        <graphic url="Pictures/tarin.jpg"/>
+    </figure>
+    </div>
+    <p>Japan is a unique country with one of the world's most distinctive cultures. Over a thousand years of Japanese culture and knowledge are preserved inside historical documents, currently inaccessible to 99.99% of Japanese people to whom the documents are unreadable. They are written in Kuzushiji, or cursive Japanese, which looks like patterns on paper for most people. Hence, in order to preserve the culture of Japan, collaboration and participation of the general public is indispensable. In this keynote, I will describe what Kuzushiji is, what makes it so important and how machine learning can help us unlock and shed some light on our rich history. I will also talk about the efforts of many organizations in tackling this problem and how we collaborate despite completely different approaches to the same goal: to make Japanese historical documents accessible to everyone.</p>
+    <head type="main">Profile</head>
+    <p>Dr. Tarin Clanuwat is a senior research scientist at Google Brain based in Tokyo. She received her PhD in classical Japanese literature from the Graduate school of Letters Arts and Sciences at Waseda University, where she specialized in Kamakura-era Tale of Genji commentaries. In 2018, while she was a project assistant professor at ROIS-DS Center for Open Data in the Humanities (CODH), she developed an AI-based kuzushiji recognition model called KuroNet. In 2019, she hosted a Kaggle machine learning competition for kuzushiji recognition which attracted over 300 machine learning researchers and engineers from around the world. In order to make Japanese historical documents more accessible to the general public, Tarin also developed  “miwo” AI Kuzushiji recognition smartphone application.</p>
+
+    <p>Her kuzushiji recognition research and applications won several awards including Yamashita Memorial Research Award from the Information Processing Society of Japan, research paper award from Japan Society for Digital Archive Conference and Excellent award from Vitalizing Local Economy Organization by Open Data &amp; Big Data.</p>
+</div>
+
+</body>
+
+
+</text>
+</TEI>

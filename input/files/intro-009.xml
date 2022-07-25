@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xmt="http://www.cch.kcl.ac.uk/xmod/tei/1.0" xml:id="intro-008">
+
+<teiHeader>
+<fileDesc>
+<titleStmt>
+    <title type="nodisplay">The Winner of the Triennial Antonio Zampolli Prize: Voyant Tools</title>
+<author>
+<persName>
+    <surname>Rockwell</surname>
+    <forename key="Geoffrey Martin" nymRef="Geoffrey Martin">Geoffrey</forename>
+</persName>
+    <affiliation>University of Alberta</affiliation>
+</author>
+</titleStmt>
+<publicationStmt>
+<authority></authority>
+<publisher>DH2022 Local Organizing Committee</publisher>
+<distributor>
+    <name>DH2022 Local Organizing Committee</name>
+<address>
+<addrLine>7-3-1</addrLine>
+<addrLine>Hongo, Bunkyo-ku</addrLine>
+<addrLine>Tokyo, 113-0033</addrLine>
+<addrLine>dh2022-local{at}l.u-tokyo.ac.jp</addrLine>
+</address>
+</distributor>
+<pubPlace>Tokyo, Japan</pubPlace> 
+<address>
+<addrLine>The University of Tokyo</addrLine>
+<addrLine>Tokyo, 113-0033</addrLine>
+</address>
+<availability>
+<p></p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<p>No source: created in electronic format.</p>
+</sourceDesc>
+</fileDesc>
+
+<profileDesc>
+<textClass>
+<keywords scheme="original" n="category">
+<term>Intro</term>
+</keywords>
+<keywords scheme="original" n="subcategory">
+<term>Keynote</term>
+</keywords>
+<keywords scheme="original" n="topic">
+<term></term>
+</keywords>
+<keywords scheme="original" n="keywords">
+<term></term>
+</keywords>
+</textClass>
+</profileDesc>
+
+<revisionDesc>
+<change>
+<date/>
+<name/>
+<desc/>
+</change>
+</revisionDesc>
+</teiHeader>
+
+    <text type="paper" n="single">
+<body>
+<div type="intro_material">
+    <div type="keynote_header">
+    <head type="author">Dr. Geoffrey Rockwell</head>
+    <head type="title">University of Alberta</head>
+
+    <figure type="keynote">
+        <graphic url="Pictures/geoffrey.jpg"/>
+    </figure>
+    </div>
+
+    <div rend="float_end">
+    <figure>
+        <graphic url="Pictures/voyant.jpg"/>
+    </figure>
+    </div>
+    <p>Voyant Tools is an in-browser suite of tools for the study of electronic texts. You upload a text to the Voyant server or use one already indexed and then you have access to coordinated set of analysis and visualization tools. Voyant will show you trends over the text or allow you to compare different texts in a corpus. It will provide textual statistics and word lists that you can export for use in other tools.</p>
+
+    <p>Voyant was designed by humanists for the interpretation of texts. It doesn’t give you answers, it allows you to explore small or large text collections intuitively. As it is free and runs in the browser on our server it is used for introducing students to text analysis. To learn more about the computer-assisted interpretation of texts with Voyant see our book:</p>
+        
+    <p>Rockwell G. &amp; S. Sinclair. Hermeneutica. MIT Press, 2016</p>
+    <head type="main">Profile</head>
+    <p>Dr. Geoffrey Rockwell is a Professor of Philosophy and Digital Humanities at the University of Alberta, Canada. He is also the Director of the Kule Institute for Advanced Study and Associate Director of AI for Society signature area. He received his MA and PhD in Philosophy from the University of Toronto where he also worked in computing as a Senior Instructional Technology Specialist. From 1994 to 2008 he was at McMaster University where he directed the Humanities Media and Computing Centre and helped found the Department of Communication Studies and Multimedia.</p>
+        
+    <p>Rockwell publishes on video games, textual visualization, text analysis, ethics of technology and on digital humanities including a co-edited book on Right Research: Modelling Sustainable Research Practices in the Anthropocene (Open Book Publishers, 2021) and a co-authored book Hermeneutica: Computer-Assisted Interpretation in the Humanities (MIT Press, 2016). He is co-developer of Voyant Tools (voyant-tools.org), an award winning suite of text analysis tools. He is a co-organizer of the Replaying Japan conference, co-editor of the Journal of Replaying Japan, and President of the Canadian Society for Digital Humanities.</p>
+</div>
+
+</body>
+
+
+</text>
+</TEI>

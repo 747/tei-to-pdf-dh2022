@@ -803,9 +803,48 @@
                                     </xsl:for-each>
                                 </fo:block>
                                 <!-- Text -->
+                                <!-- DH2022: add keynote styling -->
+                                <xsl:choose>
+                                    <xsl:when test=".//keywords[@n='subcategory']/term[1]='Keynote'">
+                                        <xsl:variable name="keynote_header" select="text//div[@type='keynote_header'][1]"/>
+                                        <fo:table width="7in">
+                                            <fo:table-column column-width="5in"/>
+                                            <fo:table-column column-width="2in"/>
+                                            <fo:table-body>
+                                            <fo:table-row>
+                                                <fo:table-cell border-width="none">
+                                                    <fo:block><xsl:call-template name="subhead"/>Keynote</fo:block>
+                                                    <fo:block><xsl:call-template name="head"/>
+                                                        <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title/node()"/>
+                                                    </fo:block>
+                                                    <xsl:apply-templates select="$keynote_header/head[@type=('author', 'email', 'title')]"/>
+                                                </fo:table-cell>
+                                                <fo:table-cell>
+                                                    <xsl:choose>
+                                                        <xsl:when test="$keynote_header/figure[@type='keynote']">
+                                                            <xsl:apply-templates select="$keynote_header/figure[@type='keynote']"/>
+                                                        </xsl:when>
+                                                        <xsl:otherwise>
+                                                            <fo:block></fo:block>
+                                                        </xsl:otherwise>
+                                                    </xsl:choose>
+                                                </fo:table-cell>
+                                            </fo:table-row>
+                                            </fo:table-body>
+                                        </fo:table>
+                                        <fo:block><xsl:call-template name="text"/>
+                                            <xsl:apply-templates select="text"/>
+                                        </fo:block>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                <!-- end DH2022 mod -->
                                         <fo:block><xsl:call-template name="text"/>
                                     <xsl:apply-templates select="text"/>
                                 </fo:block>
+                                <!-- DH2022 mod (cont) -->
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                                <!-- end DH2022 mod -->
                                         
                                 </fo:flow>
                 </fo:page-sequence>        
@@ -1676,6 +1715,16 @@
     <xsl:template match="div[@n='publisher_info']">
         <fo:block><xsl:call-template name="publisher_info"/><xsl:apply-templates/></fo:block>
     </xsl:template>
+
+    <xsl:template match="div[@rend='float_end']">
+        <fo:float float="right">
+            <xsl:apply-templates/>
+        </fo:float>
+    </xsl:template>
+
+    <xsl:template match="div[@type='keynote_header']"><!-- DH2022 mod -->
+        <!-- do nothing -->
+    </xsl:template>
     
     <!-- Notes -->
     
@@ -1843,6 +1892,18 @@
                     
                 </fo:block>
             </xsl:when>
+            <xsl:when test="@type='keynote'"><!-- DH2022 mod -->
+                <!-- <fo:float float="end"> -->
+                    <fo:block>
+                        <fo:external-graphic>
+                            <xsl:attribute name="src"><xsl:text>../input/files/</xsl:text><xsl:value-of select="graphic/@url"/></xsl:attribute>
+                            <xsl:attribute name="content-height">scale-to-fit</xsl:attribute>
+                            <xsl:attribute name="content-width">2in</xsl:attribute>
+                            <xsl:attribute name="scaling">non-uniform</xsl:attribute>
+                        </fo:external-graphic>
+                    </fo:block>
+                <!-- </fo:float> -->
+            </xsl:when>
             <xsl:otherwise>
                 <!-- <fo:block><xsl:call-template name="figure_container"/>
                     <fo:external-graphic>
@@ -1857,6 +1918,9 @@
                     <xsl:if test="@n='span_all'">
                         <xsl:attribute name="span">all</xsl:attribute>
                         <fo:block>&#160;</fo:block>
+                    </xsl:if>
+                    <xsl:if test="@rend='center'">
+                        <xsl:attribute name="text-align">center</xsl:attribute>
                     </xsl:if>
                     <!-- DH2022: hack, it is a simple figure if itself is <p>'s only child -->
                     <xsl:if test="parent::p[count(*) = 1]">

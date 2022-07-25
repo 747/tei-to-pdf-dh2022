@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xmt="http://www.cch.kcl.ac.uk/xmod/tei/1.0" xml:id="intro-008">
+
+<teiHeader>
+<fileDesc>
+<titleStmt>
+    <title type="nodisplay">Harnessing Chinese Historical Writings for Digital Humanities</title>
+<author>
+<name>
+    <surname>Hsiang</surname>
+    <forename>Jieh</forename>
+</name>
+    <affiliation>National Taiwan University</affiliation>
+</author>
+</titleStmt>
+<publicationStmt>
+<authority></authority>
+<publisher>DH2022 Local Organizing Committee</publisher>
+<distributor>
+    <name>DH2022 Local Organizing Committee</name>
+<address>
+<addrLine>7-3-1</addrLine>
+<addrLine>Hongo, Bunkyo-ku</addrLine>
+<addrLine>Tokyo, 113-0033</addrLine>
+<addrLine>dh2022-local{at}l.u-tokyo.ac.jp</addrLine>
+</address>
+</distributor>
+<pubPlace>Tokyo, Japan</pubPlace> 
+<address>
+<addrLine>The University of Tokyo</addrLine>
+<addrLine>Tokyo, 113-0033</addrLine>
+</address>
+<availability>
+<p></p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<p>No source: created in electronic format.</p>
+</sourceDesc>
+</fileDesc>
+
+<profileDesc>
+<textClass>
+<keywords scheme="original" n="category">
+<term>Intro</term>
+</keywords>
+<keywords scheme="original" n="subcategory">
+<term>Keynote</term>
+</keywords>
+<keywords scheme="original" n="topic">
+<term></term>
+</keywords>
+<keywords scheme="original" n="keywords">
+<term></term>
+</keywords>
+</textClass>
+</profileDesc>
+
+<revisionDesc>
+<change>
+<date/>
+<name/>
+<desc/>
+</change>
+</revisionDesc>
+</teiHeader>
+
+    <text type="paper" n="single">
+<body>
+<div type="intro_material">
+    <div type="keynote_header">
+    <head type="author">Dr. Jieh Hsiang</head>
+    <head type="title">National Taiwan University</head>
+
+    <figure type="keynote">
+        <graphic url="Pictures/jiehhsiang.jpg"/>
+    </figure>
+    </div>
+    <p>About nine hundred years ago Zheng Qiao (<hi rend="Chinese">鄭樵</hi>, 1104~1162 CE), a Chinese scholar of the Southern Song Dynasty, ventured on an ambitious project of “collecting all books into one book”. The backdrop of his motivation was that China had a uniform written language for more than a millennium at the time (more than two at present) with a long tradition of keeping historical records even with the dynastic changes.  To illustrate his idea, Zheng Qiao wrote a book called Tongzhi (<hi rend="Chinese">通志</hi>, Comprehensive Treatises) in which he condensed pre-Tang Chinese history into 200 volumes (about 5,000,000 characters).  For example, in the Outline of Anomalies (<hi rend="Chinese">《通志。災祥略》</hi>), he listed all the anomalies such as solar eclipses and earthquakes that he could find from historical records and used their frequencies to argue that, contrary to common belief, such natural phenomena did not correlate to how benign the ruler was (and therefore were not warnings from heaven).  Zheng Qiao was way ahead of his time and Tongzhi had largely been ignored by later scholars.</p>
+
+    <p>The emergence of digital humanities has cast new lights on Zheng Qiao’s vision.</p>
+        
+    <p>In this talk, we shall give a brief overview of the issues and challenges facing the digitization of Chinese historical writings, together with the current state of digitally available searchable full-text.  We shall describe the importance of tagging (of time, person, place, and objects), how they are done, and how they can be used to connect documents to create textual contexts.  We shall present a theory of (textual) context discovery and show how it can be used to build retrieval systems aimed at discovering, analyzing, and visualizing contexts hidden among documents.  A platform, DocuSky, which enables humanities scholars to build their own personal context discovery retrieval systems without the help of IT specialists will also be presented.  We shall complete the presentation by giving a short discussion of how Zheng Qiao might have done were he living in the DH era.
+        </p>
+    <head type="main">Profile</head>
+    <p>Jieh Hsiang is a Distinguished Professor in Computer Science of the National Taiwan University.  He is also the director of the NTU Research Center for Digital Humanities, the first such center in the Sinophone world.  In his pre-DH life, he received a Ph.D. in computer science from the University of Illinois at Urbana-Champaign and worked mainly in automated theorem proving, in particular term rewriting systems.  After returning to Taiwan in 1993, Jieh Hsiang started to work with with historians and anthropologists and initialized the digitization of Taiwanese cultural heritage at his university.  Through the years, he and his team built over 30 large scale digital libraries of Chinese/Taiwanese historical archives, all of which utilize a context-discovery retrieval methodology that is designed for scholarly use of digital archives.  His team also developed DocuSky, a personal DH platform for humanities scholars to process, annotate, analyze and visualize data and build their own searchable text databases without the help of an IT specialist.  The NTU Digital Library of Buddhist Studies, a comprehensive bibliographic on-line database that he has been in charge of since 2005, attracts more than 11,000 users around the world each day.</p>
+
+    <p>Jieh Hsiang was the author/editor of six books on digital humanities in Chinese.  Being the first of its kind, the books made significant impact in promoting DH in the Sinophone world.  He organized the first Conference on Digital Archives and Digital Humanities in 2009, which becomes the first annual DH conference in East Asia.  He also helped establishing the Taiwanese Association for Digital Humanities in 2016, and the first Chinese language journal on DH, the Journal of Digital Archives and Digital Humanities, which was inaugurated in 2018.  Jieh Hsiang served 6 years as the University Librarian of NTU and 8 years as the Director of NTU Press.   Before returning to Taiwan, he was a full professor in Computer Science at Stony Brook University.</p>
+</div>
+
+</body>
+
+
+</text>
+</TEI>
