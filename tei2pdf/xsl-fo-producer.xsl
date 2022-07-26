@@ -118,19 +118,27 @@
     <xsl:template name="chinese">
         <!-- <xsl:attribute name="font-family">Arial Unicode MS</xsl:attribute> -->
         <xsl:attribute name="font-family">Source Han Serif CN</xsl:attribute><!-- DH2022 mod -->
+        <xsl:call-template name="cjk-align"/><!-- DH2022 mod -->
     </xsl:template>
 
     <xsl:template name="taiwan"><!-- DH2022 mod -->
         <xsl:attribute name="font-family">Source Han Serif TW</xsl:attribute>
+        <xsl:call-template name="cjk-align"/>
     </xsl:template>
     
     <xsl:template name="japanese"> 
         <!-- <xsl:attribute name="font-family">Arial Unicode MS</xsl:attribute> -->
         <xsl:attribute name="font-family">Source Han Serif JP</xsl:attribute><!-- DH2022 mod -->
+        <xsl:call-template name="cjk-align"/><!-- DH2022 mod -->
     </xsl:template>
 
     <xsl:template name="korean"> 
         <xsl:attribute name="font-family">Source Han Serif KR</xsl:attribute><!-- DH2022 mod -->
+        <xsl:call-template name="cjk-align"/><!-- DH2022 mod -->
+    </xsl:template>
+    
+    <xsl:template name="cjk-align"><!-- DH2022 mod -->
+        <xsl:attribute name="vertical-align">-.05em</xsl:attribute>
     </xsl:template>
     
     <xsl:template name="hebrew"> 
@@ -141,6 +149,11 @@
     <xsl:template name="devanagari"><!-- DH2022 mod -->
         <xsl:attribute name="font-family">Sanskrit Text</xsl:attribute>
         <xsl:attribute name="font-style">normal</xsl:attribute>
+    </xsl:template>
+
+    <xsl:template name="thai"><!-- DH2022 mod -->
+        <xsl:attribute name="font-family">IrisUPC</xsl:attribute>
+        <xsl:attribute name="font-size">1.2em</xsl:attribute>
     </xsl:template>
     
     <xsl:template name="math"> 
@@ -796,6 +809,9 @@
                                     <xsl:choose>
                                         <xsl:when test="text/@n = 'single'">
                                             <xsl:attribute name="master-reference">Single</xsl:attribute>
+                                        </xsl:when>
+                                        <xsl:when test="text/@n = 'triple'"><!-- DH2022 mod -->
+                                            <xsl:attribute name="master-reference">Triple</xsl:attribute>
                                         </xsl:when>
                                         <xsl:otherwise>
                                             <xsl:attribute name="master-reference">Double</xsl:attribute>
@@ -1892,7 +1908,7 @@
         <xsl:variable name="styles" select="tokenize(@rend, ' ')"/>
         <xsl:choose>
             <xsl:when test="$styles=(
-                'italic', 'bold', 'underline', 'smallcaps',
+                'italic', 'bold', 'underline', 'smallcaps', 'native-script',
                 'superscript', 'super', 'sup', 'subscript', 'sub',
                 'Hebrew', 'Chinese', 'TChinese', 'Japanese', 'Korean', 'math', 'fraction', 'math_alt_font', 'Deva'
             )">
@@ -1908,6 +1924,9 @@
                     </xsl:if>
                     <xsl:if test="$styles='smallcaps'">
                         <xsl:call-template name="smallcaps"/>
+                    </xsl:if>
+                    <xsl:if test="$styles='native-script'">
+                        <xsl:attribute name="color">dimgrey</xsl:attribute>
                     </xsl:if>
                     <xsl:choose>
                         <xsl:when test="$styles='superscript' or $styles='super' or $styles='sup'">
@@ -1947,6 +1966,9 @@
                         </xsl:when>
                         <xsl:when test="$styles='Deva'">
                             <xsl:call-template name="devanagari"/>
+                        </xsl:when>
+                        <xsl:when test="$styles='Thai'">
+                            <xsl:call-template name="thai"/>
                         </xsl:when>
                     </xsl:choose>
                     <xsl:apply-templates/>

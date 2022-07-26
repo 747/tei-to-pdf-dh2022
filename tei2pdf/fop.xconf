@@ -157,6 +157,19 @@ the location of this file.
             <font-triplet name="Source Han Serif KR" style="italic" weight="bold"/>
         </font>
 
+        <font kerning="yes" embed-url="/mnt/c/Windows/Fonts/upcil.ttf">
+          <font-triplet name="IrisUPC" style="normal" weight="normal"/>
+        </font>
+        <font kerning="yes" embed-url="/mnt/c/Windows/Fonts/upcii.ttf">
+          <font-triplet name="IrisUPC" style="italic" weight="normal"/>
+        </font>
+        <font kerning="yes" embed-url="/mnt/c/Windows/Fonts/upcib.ttf">
+          <font-triplet name="IrisUPC" style="normal" weight="bold"/>
+        </font>
+        <font kerning="yes" embed-url="/mnt/c/Windows/Fonts/upcibi.ttf">
+          <font-triplet name="IrisUPC" style="italic" weight="bold"/>
+        </font>
+
         <font kerning="yes" embed-url="/mnt/c/Windows/Fonts/seguiemj.ttf">
           <font-triplet name="Segoe UI Emoji" style="normal" weight="normal"/>
         </font>

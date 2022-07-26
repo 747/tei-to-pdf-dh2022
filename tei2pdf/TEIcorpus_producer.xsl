@@ -358,9 +358,9 @@
                 
                 <revisionDesc>
                     <change>
-                        <date when="2022-07-25"></date>
+                        <date when="2022-07-26"></date>
                         <name>Wang Yifan</name>
-                        <desc>Added Keynotes, updated presentation list</desc>
+                        <desc>First release</desc>
                     </change>
                     <change>
                         <date when="2022-07-24"></date>
