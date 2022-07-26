@@ -126,11 +126,11 @@
     </teiHeader>
     <text>
         <body>
-            <p rend="ewic-Introduction" style="font-weight: bold; text-align: left; ">Introduction</p>
+            <p rend="ewic-Introduction" style="font-weight: bold; text-align: left; "><hi rend="bold">Introduction</hi></p>
             <p>The use of images, texts and objects is an essential foundation of history studies. This project funded by the 
                 <hi rend="italic">German Ministry of Education and Research</hi> (BMBF), seeks to establish an AI-based approach towards modelling image sources and their multimodal contexts as a new technique for researchers in architectural history studies. Related questions are: How do architectural historians discover and evaluate sources? How can AI best be of service to this end? 
             </p>
-            <p rend="ewic-Introduction" style="font-weight: bold; text-align: left; ">State of the Art</p>
+            <p rend="ewic-Introduction" style="font-weight: bold; text-align: left; "><hi rend="bold">State of the Art</hi></p>
             <p>The point of departure for this project is the use of sources and source criticism in history studies. This is usually led by a constructive problem-oriented approach, featuring a critical analysis of the topics and methodologies in question 
                 <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Reich</Author><Year>2006</Year><RecNum>9787</RecNum><DisplayText>(Reich, 2006)</DisplayText><record><rec-number>9787</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1584554411" guid="28f9c57a-41ea-438b-a19a-05c6881111fe">9787</key></foreign-keys><ref-type name="Book Section">5</ref-type><contributors><authors><author>Kersten Reich</author></authors></contributors><titles><title>Konstruktivistische Ansätze in den Sozial- und Kulturwissenschaften</title><secondary-title>Konstruktivistische Didaktik: Lehr-und Studienbuch mit Methodenpool</secondary-title></titles><pages>356-376</pages><dates><year>2006</year></dates><publisher>Beltz</publisher><urls></urls></record></Cite></EndNote>?>(Reich, 2006) and is highly experience and tacit knowledge based 
                 <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Polanyi</Author><Year>1966</Year><RecNum>2030</RecNum><DisplayText>(Polanyi, 1966)</DisplayText><record><rec-number>2030</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1584539080" guid="862bb5c1-3e51-4f5e-8673-b1eeb25484ff">2030</key></foreign-keys><ref-type name="Book">6</ref-type><contributors><authors><author>Polanyi, Michael</author></authors></contributors><titles><title>The tacit dimension</title></titles><edition>18th edition (2009)</edition><dates><year>1966</year></dates><pub-location>Chicago</pub-location><publisher>University of Chicago Press</publisher><urls></urls></record></Cite></EndNote>?>(Polanyi, 1966).
@@ -158,14 +158,11 @@
             <list rend="numbered">
                 <item>
                     <hi rend="bold">Identifying Research Scenarios</hi>
-                </item>
-            </list>
             <p>A series of generic scenarios were identified with the assistance of expert consultation and workshops during the preliminary investigations 
                 <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Kröber</Author><Year>2021</Year><RecNum>12197</RecNum><DisplayText>(Kröber, 2021, Dewitz et al., 2019)</DisplayText><record><rec-number>12197</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1614865737" guid="27288d34-79db-4feb-95c9-2a9b87ad6a52">12197</key></foreign-keys><ref-type name="Book Section">5</ref-type><contributors><authors><author>Cindy Kröber</author></authors></contributors><titles><title>German Art History Students’ use of Digital Repositories: an Insight </title><secondary-title>Papers Proceedings, Diversity, Divergence, Dialogue</secondary-title></titles><dates><year>2021</year></dates><pub-location>Cham</pub-location><publisher>Springer LNCS</publisher><urls></urls></record></Cite><Cite><Author>Dewitz</Author><Year>2019</Year><RecNum>10567</RecNum><record><rec-number>10567</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1587745708" guid="cf1fc72f-c3f5-45f7-836f-2701eb36a261">10567</key></foreign-keys><ref-type name="Journal Article">17</ref-type><contributors><authors><author>Dewitz, L.</author><author>Kröber, C.</author><author>Messemer, H.</author><author>Maiwald, F.</author><author>Münster, S.</author><author>Bruschke, J.</author><author>Niebling, F.</author></authors></contributors><titles><title>Historical Photos and Visualizations: Potential for Research</title><secondary-title>ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</secondary-title></titles><periodical><full-title>ISPRS - International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</full-title></periodical><pages>405–412</pages><volume>XLII-2/W15</volume><section>405</section><dates><year>2019</year></dates><isbn>2194-9034</isbn><urls></urls><electronic-resource-num>10.5194/isprs-archives-XLII-2-W15-405-2019</electronic-resource-num></record></Cite></EndNote>?>(Kröber, 2021, Dewitz et al., 2019), and consequently ordered by relevance and priority. Of the 20 described scenarios, the cross-media identification of object descriptions (“Which images, texts, and 3D data describe the same object?”), and the analysis of such descriptions (“How can the dating of historical image and text depictions be supported by multimodal validation using media whose dating has already been established?”), were chosen as the focal points of the research. 
             </p>
-            <list rend="numbered">
-                <item>Cross-Media Classification </item>
-            </list>
+                </item>
+                <item><hi rend="bold">Cross-Media Classification </hi>
             <figure>
                 <graphic n="1001" width="16.009055555555555cm" height="1.1782777777777778cm" url="Pictures/c6d859598b60945ebfb1b2bd650959f7.png" rend="block"/>
                 <graphic n="1003" width="15.966722222222222cm" height="4.319763888888889cm" url="Pictures/c6d859598b60945ebfb1b2bd650959f7.png" rend="inline"/>
@@ -190,25 +187,22 @@
                     </note>
                 </hi> is being used. The identified elements from texts (single words or word groups), images (polygonal image details), and 3D models (individual subgroup objects) are assigned to the concept from the AAT. Different processes are necessary depending upon the source type, e.g. semantic segmentation, 
                 <hi rend="italic">Named Entity Recognition</hi> (NER), and discourse parsing, in addition to what concerns the identification of the concepts and semantic accumulation.
-            </p>
-            <list rend="numbered">
+            </p></item>
                 <item>
                     <hi rend="bold">Multimodal Data Accumulation</hi>
-                </item>
-            </list>
             <p>In a further step, various approaches are used for the accumulation and validation of multimodal data. In this way, within the 3D realm for example, 2D images can be used in relation to the 3D model in order to transfer them to the structure at hand provided by the 3D model 
                 <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Niebling</Author><Year>2018</Year><RecNum>9950</RecNum><DisplayText>(Niebling et al., 2018)</DisplayText><record><rec-number>9950</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1584561177" guid="1549a13e-523c-4e8f-bc07-5e69c0697400">9950</key></foreign-keys><ref-type name="Conference Proceedings">10</ref-type><contributors><authors><author>F. Niebling</author><author>F. Maiwald</author><author>S. Münster</author><author>J. Bruschke</author><author>F. Henze</author></authors></contributors><titles><title>Accessing Urban History by Historical Photographs</title><secondary-title>2018 3rd Digital Heritage International Congress (DigitalHERITAGE) held jointly with 2018 24th International Conference on Virtual Systems &amp; Multimedia (VSMM 2018)</secondary-title></titles><pages>1-8</pages><dates><year>2018</year></dates><pub-location>San Francisco</pub-location><urls></urls><electronic-resource-num>10.1109/DigitalHeritage.2018.8809998</electronic-resource-num></record></Cite></EndNote>?>(Niebling et al., 2018).
             </p>
-            <list rend="numbered">
+                </item>
                 <item>
                     <hi rend="bold">Automated classification</hi>
-                </item>
-            </list>
             <p>A current step is to investigate approaches towards automating the identification and annotation of objects. For this purpose, AI-based models will be used that are specialized on the respective modalities (3D models, images, and texts). Based on the pipeline described in 
                 <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Wu</Author><Year>2021</Year><RecNum>12535</RecNum><DisplayText>(Wu et al., 2021)</DisplayText><record><rec-number>12535</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1630330225" guid="3efd25ef-8942-49d9-96f4-a1b7dc280652">12535</key></foreign-keys><ref-type name="Book">6</ref-type><contributors><authors><author>Wu, Xiaoshi</author><author>Averbuch-Elor, Hadar</author><author>Sun, Jin</author><author>Snavely, Noah</author></authors></contributors><titles><title>Towers of Babel: Combining Images, Language, and 3D Geometry for Learning Multimodal Vision</title></titles><dates><year>2021</year></dates><urls></urls></record></Cite></EndNote>?>(Wu et al., 2021) we currently test to enhance quality by better text identification as well as modular object retrieval for the identification of architectural structures in images 
                 <?biblio ADDIN EN.CITE <EndNote><Cite><Author>Münster</Author><Year>in print</Year><RecNum>10075</RecNum><DisplayText>(Münster et al., in print)</DisplayText><record><rec-number>10075</rec-number><foreign-keys><key app="EN" db-id="arvxesr27aewvaevtveve52qzvevvxarazaa" timestamp="1587569780" guid="f6cfc210-7cf3-421c-9033-b1f89c93ccaf">10075</key></foreign-keys><ref-type name="Book Section">5</ref-type><contributors><authors><author>Sander Münster</author><author>Christopher Lehmann</author><author>Taras Lazariv</author><author>Ferdinand Maiwald</author><author>Susanne Karsten</author></authors><secondary-authors><author>Florian Niebling</author><author>Sander Münster</author></secondary-authors></contributors><titles><title>Toward an Automated Processing Pipeline for a Browser-based, City-scale Mobile 4D VR Application Based on Historical Images</title><secondary-title>Proceedings of the 2nd UHDL Workshop</secondary-title></titles><dates><year>in print</year></dates><pub-location>Cham</pub-location><publisher>Springer CCIS</publisher><urls></urls></record></Cite></EndNote>?>(Münster et al., in print), and the transfer of this segmentation to 3D models.
             </p>
-            <p rend="ewic-Introduction" style="font-weight: bold; text-align: left; ">Next steps</p>
+                </item>
+            </list>
+            <p rend="ewic-Introduction" style="font-weight: bold; text-align: left; "><hi rend="bold">Next steps</hi></p>
             <p>Based upon the developed demonstrator, next steps will be to cross-validate and multimodal enrich content and test those results with historians in step 1 the research scenario. It is within this area to examine the discrepancy between the requirement of large data amounts for AI models and the complexity of historical expertise can be investigated and evaluate, how existing AI models can be employed within the field of architectural history research and criticism.</p>
         </body>
         <back>

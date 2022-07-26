@@ -105,13 +105,13 @@
                 <hi rend="color(222222)">(Zhang et al., 2017).</hi>
             </p>
             <p>Particularly, based on the theoretical framework established in (Marsocci et al., 2021), we carry out two series of experiments: a pose clustering to segment the whole video sequence into intervals corresponding to a given set of canonical poses; “pose spotting”, based on a similarity assessment with respect to canonical poses.</p>
-            <p>Pose Clustering</p>
+            <p><hi rend="bold">Pose Clustering</hi></p>
             <p>We selected from the first Tai Chi progression in the MADS dataset the “Qishi” (or “Commencing Form”) sequence, and we clustered the poses extracted from each frame via angular K-Medians, (with 3 clusters) based on the poses that encodes the sequence (Fig. 1). Particularly, starting from the assumption that each sequence of actions can be defined through a succession of very specific poses, we used the standard representations of these poses as predefined centroids of a partition of all the poses assumed during the sequence; as visible in Fig. 1,  the obtained clusters are well ordered and easily identifiable. </p>
             <figure>
                 <graphic n="1001" width="13.335cm" height="7.514166666666667cm" url="Pictures/bb51621724d4fe8c114b614c4bd4923e.jpeg" rend="inline"/>
             </figure>
             <p style="text-align: center;">Fig. 1 - Canonical poses (first line) and sequence clustered according to angular K-Medians (second line).</p>
-            <p>Similarity assessment</p>
+            <p><hi rend="bold">Similarity assessment</hi></p>
             <p>For the pose spotting task, we focused on the “Qishi” and “Buddha’s Warrior Attendant Pounds Mortar (I)” (i.e. “Jin Gang Dao Dui (1)”) sequence from the first Tai Chi progression in the MADS dataset, made of 800 frames (i.e. poses). Then, we selected two canonical poses and we computed the distance among them and the rest of the poses. As we can observe from Figs. 2 and 3, the most similar frames to the query pose can be correctly detected by setting a proper threshold on the similarity score.</p>
             <p>Similar experiments are shown  in Figs. 4 and 5 for the Kata “Fukyugata Ni” sequence (made of 600 poses). In this case, some interesting results can be outlined: the higher thresholds set for the selected poses highlight that they encode very precise movements that cannot be found in the remaining part of the sequence.</p>
             <figure>
@@ -132,7 +132,7 @@
                 <graphic n="1006" width="15.927916666666667cm" height="8.964083333333333cm" url="Pictures/58b2279f335518d73068e6fda9a1b95e.jpeg" rend="inline"/>
             </figure>
             <p style="text-align: center;">Fig. 5 -  Pose spotting (Kata), pose 2: the frames corresponding to the query pose are correctly detected for a threshold of 0.1.</p>
-            <p>Conclusions</p>
+            <p><hi rend="bold">Conclusions</hi></p>
             <p>Considering the aforementioned results, the downstream applications for martial arts of our framework are immediately intuitive: indeed, it could be used to compare a performed sequence to the ideal sequence of gestures, and the single poses could be compared to the coded poses too, to correct possible errors during the execution of a progression.</p>
         </body>
         <back>

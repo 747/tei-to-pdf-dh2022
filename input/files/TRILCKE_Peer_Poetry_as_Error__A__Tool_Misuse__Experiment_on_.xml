@@ -84,7 +84,7 @@
             <p style="text-align: left; ">In the following, we report on a 
                 <hi rend="italic">Tool Misuse</hi> experiment on German lyric poetry – a genre that is usually associated with a high degree of deviance (Müller-Zettelmann, 2000: 100; Zymner, 2019: 29–30) – in which we develop a pipeline that provokes tokenization, lemmatization and POS tagging 'errors' of NLP tools and typologises these 'errors' in a rule-based way. 
             </p>
-            <p style="text-align: left; ">2. Operationalization</p>
+            <p style="text-align: left; "><hi rend="bold">2. Operationalization</hi></p>
             <figure>
                 <graphic n="1001" width="15.920861111111112cm" height="8.528402777777778cm" url="Pictures/a2db260a3aba82fe4a88712f797527c3.png" rend="inline"/>
                 <head>Pipeline for error typing of the corpora.</head>
@@ -134,7 +134,7 @@
                 <graphic n="1002" width="16.002cm" height="16.69873611111111cm" url="Pictures/0960c097bf9db429b9efb0b418c600c6.png" rend="inline"/>
                 <head>Description of error types.</head>
             </figure>
-            <p style="text-align: left; ">4. Results</p>
+            <p style="text-align: left; "><hi rend="bold">4. Results</hi></p>
             <figure>
                 <graphic n="1003" width="12.272141666666666cm" height="12.483169444444444cm" url="Pictures/f3d5d7e4292c1cc925909a7a425d92ac.png" rend="inline"/>
                 <head>Relative frequency for the types of potential errors for the two pFail sets.</head>

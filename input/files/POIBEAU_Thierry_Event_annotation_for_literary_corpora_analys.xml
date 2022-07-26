@@ -188,8 +188,8 @@
                     <hi rend="italic">generally</hi> a negation means that no event has occurred. But this is not always the case and examples like 2a can be found:
                 </p>
                 <quote>2a. Il ne put retenir ses larmes. </quote>
-                <quote>2b
-                    <hi rend="italic">. He could not hold back his tears.</hi>
+                <quote>2b.
+                    <hi rend="italic">He could not hold back his tears.</hi>
                 </quote>
                 <p style="text-align: left; ">which roughly means that the character cried. In an example like this one, there is definitely an action so in our opinion it should be annotated as such. Here our choices differ slightly from the ones in the original BookNLP project. </p>
                 <p style="text-align: left; ">All annotations were carried out after multiple rounds of discussions and the creation of a set of annotation guidelines heavily dependent on the initial BookNLP annotation scheme for events (but including the differences highlighted in this section). The total dataset comprises 14,305 events among 184,000 tokens in the 20 books in our corpus.</p>

@@ -94,7 +94,7 @@
     </teiHeader>
     <text>
         <body>
-            <p>1. Introduction</p>
+            <p><hi rend="bold">1. Introduction</hi></p>
             <p>The field of historical GIS has been driving a branch of digital humanities, collaborating with history, literature, cartography, and place name studies. Historical GIS is a fusion of historical geography and GIS and has been developed as a spatial humanities.</p>
             <p>A large amount of geospatial information—such as drawings, maps, registers, statistics, and other data in Japan's Early Modern and Modern eras—remains undigitized and unavailable in GIS form, unshared, and unavailable to the public. In order to advance historical GIS, it will be necessary to promote the digitization of geospatial information that is primarily paper-based, convert it in an appropriate manner to GIS, and share it with the public. </p>
             <p>The purpose of this paper is to construct ‘ARC Map Portal Database’ to serve as a portal to Japan's old maps; 2) ‘Japanese Map Warper’; and 3) ‘Japanese Old Maps Online’. This will make it possible to select old maps for analysis from the ARC Map Portal Database, which allows cross-searching of old maps from multiple collections, to share geo-referenced and GIS-enabled maps of old maps with other sites using “Japanese Map Warper”, and finally to import them into “Japanese Old Maps Online”. You will be able to create detailed maps for analysis of various themes by importing them into "Japan Old Maps Online".</p>
@@ -106,7 +106,7 @@
             <p>In these cases, when the possessing institutions did not support general release, access was provided to certain users only for research &amp; educational purposes through ID &amp; password authentication.</p>
             <p>Old Japanese maps possessed by overseas institutions lack Japanese-language metadata; conversely, those possessed by Japanese institutions lack English-language metadata. Therefore, bilingual metadata for these documents is currently in the process of being revised.</p>
             <p>Building this portal has opened up access to a great number of maps useful in geohistorical research and education to everyone. </p>
-            <p>3. Japanese Map Warper</p>
+            <p><hi rend="bold">3. Japanese Map Warper</hi></p>
             <p>Adding spatial information to these old maps would allow them to be overlaid and compared with current maps. For this, we create ‘Japanese Map Warper’ web application (https://mapwarper.h-gis.jp/?locale=en). ‘Map Warper’ is an open-source web application for sharing maps and making them available to the public, developed by geospatial information developer and consultant Tim Waters. The application is capable of applying georeference to uploaded maps, searching metadata such as titles and notes, and performing searches within the displayed base map range, as well as narrowing down maps to a certain range of publication years—in other words, making it possible to perform spatiotemporal searches. Map Warper also enables georeferenced maps to be shared in a variety of formats: GeoTIFF, WMS, XYZ tiles, and more.</p>
             <p>As of this writing, in late November 2021, 4,465 maps have been uploaded, including old topographic maps; of these, 2,352 have been georeferenced. A large number of people uploading and georeferencing old maps in this manner could greatly increase this platform's usefulness in research and education regarding the landscapes of the past.</p>
             <p>

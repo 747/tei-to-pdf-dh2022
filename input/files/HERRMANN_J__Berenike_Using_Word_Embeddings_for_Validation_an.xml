@@ -82,7 +82,7 @@
     </teiHeader>
     <text>
         <body>
-            <p>Introduction</p>
+            <p><hi rend="bold">Introduction</hi></p>
             <p>Spatial distant reading uses computational means to investigate fictional representations of space as a central category of sense-making (Lefebre, 1974), both in fictional world building (e.g., Bologna, 2020) and in societal contexts (e.g., Wilkens, 2021).</p>
             <p>Our spatial distant reading project investigates the affective topologies of German-Swiss literature to examine different types of spatial representation in fictional Swiss-German prose between 1854 and 1930, assessing iconic differences such as culture/nature, urban/rural (Rehm, 2014), as well as the (alpine) mountains’ role in Swiss literary national framing (Zimmer, 1998). A key resource is a list of spatial terms (N=187,421 entities), including spatial named entities, other urban and rural toponyms, as well as natural terms (Grisot &amp; Herrmann, in prep.). In the current paper, we take a methodological focus on this resource, exploring 
                 <hi rend="italic" xml:space="preserve">word embeddings </hi>for validation (Task A) and extension (Task B) of our spatial entity lists.
@@ -94,9 +94,9 @@
                     <hi rend="underline color(1155CC)">https://www.projekt-gutenberg.org/</hi>
                 </ref>). Compilation ensured a maximally broad range of spatial terms, across time and genres, generalizing over the whole population of spatial terms in German (literature) with extensive training material, counting around N= 500 million tokens. Part of the corpus was our collection of German-Swiss literature, built using a combined list of 10,000 titles of fictional narratives written by Swiss authors in German (Herrmann et al., 2021), and a list of 1,997 names of authors with Swiss nationality, extracted from Wikidata. Open repositories were searched for digital versions of texts written by Swiss authors. A corpus of N= 482 Swiss novels was thus compiled, combining n= 450 novels in digital form, and n= 38 more novels newly digitized.
             </p>
-            <p>Method</p>
+            <p><hi rend="bold">Method</hi></p>
             <p>We followed Ehrmanntraut et al.’s (2021) suggestion of fastText as the better performing solution for word embeddings in German. As our goal was to assess the usefulness of this method for discovery of terms related to terms associated with fictional space, with special attention on spatial interiors, we used a combined corpus of German and Swiss German literature to build a fastText model of vector relationships. We first built a model of spatial relationships and similarities as evidenced in German literature (extrapolated from the large and specialized collections described above). This model was examined using lists of seed words, requesting the 10 closest neighbors for each of the terms earlier distinguished as matching relevant categories by philological expertise. Our work was divided into two tasks with separate goals: Validating spatial entities lists (task A), Extending a manual list (task B).</p>
-            <p>Task A: Validating spatial entities lists</p>
+            <p><hi rend="bold">Task A: Validating spatial entities lists</hi></p>
             <p>Goal of this task was validation of two entity lists compiled in a mixture of manual and automatic retrieval. We searched for the 10 most “similar” words for each item from the urban and rural spatial entities lists (for more details see Herrmann &amp; Grisot, 2022):</p>
             <list rend="bulleted">
                 <item>Rural entities (n= 274): spatial terms relating to – or characteristic of – the countryside, in particular human settlements or infrastructures, as opposed to those of the city (for example 
@@ -111,16 +111,16 @@
                 </item>
             </list>
             <p>For both lists we determined whether seed words from the same list appear among the similarity matches. High overlap indicates well-formation of the list, approaching the true population of spatial terms used in literature written in German for “urban” and “rural”, respectively. We also perused the list for new relevant spatial entities to extend the list.</p>
-            <p>Task B: Extending a manual list</p>
+            <p><hi rend="bold">Task B: Extending a manual list</hi></p>
             <p>During our research, we noted that elements for the description of “interior” space were still missing from our spatial entities lists. Given that interiors are a vital part of not only realist literary narration (Fludernik, 2014), a resource was needed. In absence of a validated external resource, we use word embeddings to extend a small list of interior items. In the first step, a student assistant was instructed to compile a first list of objects and elements of furniture, but also of elements that are structural and yet part of a building/home environment (like ‘table’ or ‘ceiling’, but also ‘column’). They were told to find as many terms as possible, from world knowledge, as well as by synonym lists (
                 <ref target="http://openthesaurus.de/">
                     <hi rend="underline color(1155CC)">openthesaurus.de</hi>
                 </ref>). The embeddings were used to discover new terms, with questions about which words were crucial for detecting the largest amount of other terms.
             </p>
-            <p>Results &amp; Discussion </p>
+            <p><hi rend="bold">Results &amp; Discussion</hi></p>
             <p>Task A rendered only little overlap among the ten most similar matches. Rather, we observed a high frequency of hyperonyms or specific variants of the seedwords, such as "Gartenpavillon", "Glas-Pavillon", "Teepavillon" (for "Pavillon", urban list), or synonyms such as "Trambahn", "Pferdebahn", "Autobus”, "Straßenbahn", "Tramway", "Tramwaywagen", "Pferderlbahn", "Taxameterdroschke" (for “Tram”, urban list). The same rich pattern was observed for Task B, the interiors list, which could indeed be appended by many elements (see repository). However, for the ensuing detection of spatial entities in our “affective spatial analysis,” other procedures for parsing nouns into their components to increase term matching need to be considered as well, including for diminutives (“Dachstübchen”, “Kartoffeläckerchen") and other within-word combinations. On a philological level, the observed degree of lexical specialization (e.g., “Gummibadewanne”, rubber bath tub; interiors list) is interesting with respect to a realism effect (sensu Roland Barthes). </p>
             <p>Altogether, using word embeddings provided a very constructive basis for improvement of our spatial entities lists, both for existing resources and the compilation of a new list. Our next step is to explore the distribution of the words obtained by the large language model in an exploratory analysis on our specialized corpus of German-Swiss literature around 1900.</p>
-            <p>Acknowledgments</p>
+            <p><hi rend="bold">Acknowledgments</hi></p>
             <p>The research was done as part of the Short Term Scientific Mission of JB at the Bielefeld University, funded by the Polish National Science Center (NCN) and the COST Action "Distant Reading for European Literary History (CA16204), supported by COST (European Cooperation in Science and Technology, www.cost.eu). JB was also supported by the Large-Scale Text Analysis and Methodological Foundations of Computational Stylistics project (SONATA-BIS 2017/26/E/HS2/01019). BH and GG were funded by "High Mountains Low Arousal? Distant Reading Topographies of Sentiment in German Swiss Novels in the early 20th Century" (SNSF)-COST-Project.</p>
         </body>
     </text>

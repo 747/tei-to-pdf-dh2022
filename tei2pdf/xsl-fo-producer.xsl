@@ -329,6 +329,31 @@
         <xsl:attribute name="space-after">.2in</xsl:attribute>
         <xsl:attribute name="page-break-inside">avoid</xsl:attribute>
     </xsl:template>
+
+    <!-- DH2022: copy of "head" & "subhead" except to be used together -->
+    <xsl:template name="full_head">
+        <xsl:attribute name="font-family"><xsl:value-of select="$header_font"/></xsl:attribute>
+        <xsl:attribute name="font-size">20pt</xsl:attribute>
+        <xsl:attribute name="page-break-inside">avoid</xsl:attribute>
+        <xsl:choose>
+            <xsl:when test="$output = 'print'">
+                <xsl:attribute name="color">#000</xsl:attribute>
+            </xsl:when>
+            <xsl:when test="$output = 'pdf'">
+                <xsl:attribute name="color">#d00011</xsl:attribute><!-- red -->
+            </xsl:when>
+        </xsl:choose>
+        <xsl:attribute name="space-before">.2in</xsl:attribute>
+    </xsl:template>
+    
+    <xsl:template name="full_subhead">
+        <xsl:attribute name="font-family"><xsl:value-of select="$header_font"/></xsl:attribute>
+        <xsl:attribute name="font-size">16pt</xsl:attribute>
+        <xsl:attribute name="color">#000</xsl:attribute>
+        <xsl:attribute name="space-after">.2in</xsl:attribute>
+        <xsl:attribute name="page-break-inside">avoid</xsl:attribute>
+    </xsl:template>
+    <!-- end DH2022 mod -->
     
     <xsl:template name="subsubhead">
         <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute>
@@ -785,9 +810,12 @@
                                 
                                 <!-- Title -->
                                         <xsl:if test="not(teiHeader/fileDesc/titleStmt/title[1]/@type = 'nodisplay')">
-                                            <fo:block id="{@n}"><xsl:call-template name="head"/>
-                                                <!-- <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/> -->
-                                                <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title/node()"/><!-- DH2022 mod -->
+                                            <!-- <fo:block id="{@n}"><xsl:call-template name="head"/>
+                                                <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/> -->
+                                            <!-- DH2022 mod -->
+                                            <fo:block id="{@n}">
+                                                <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title"/>
+                                            <!-- end DH2022 mod -->
                                             </fo:block>
                                         </xsl:if>
 
@@ -903,7 +931,7 @@
                                     <fo:block text-align-last="justify">
                                         <xsl:call-template name="text"/>
                                         <!-- <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/><xsl:text> </xsl:text> -->
-                                        <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title/node()"/><xsl:text> </xsl:text><!-- DH2022 mod -->
+                                        <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title" mode="toc"/><xsl:text> </xsl:text><!-- DH2022 mod -->
                                         <fo:leader leader-pattern="dots"/>
                                         <fo:basic-link internal-destination="{@n}">
                                             <fo:page-number-citation letter-spacing="0" ref-id="{@n}" />
@@ -915,7 +943,7 @@
                                     <fo:block page-break-inside="avoid">
                                         <fo:block><xsl:call-template name="text"/>
                                             <!-- <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/> -->
-                                            <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title/node()"/><!-- DH2022 mod -->
+                                            <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title" mode="toc"/><!-- DH2022 mod -->
                                         </fo:block>
                                         
                                         <fo:block text-align-last="justify"><xsl:call-template name="toc_author"/>
@@ -1068,9 +1096,12 @@
                             <!-- <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='category']/term[1]) = 'Workshops'"> -->
                             <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='subcategory']/term[1]) = 'Pre-Conference Workshop and Tutorial'"><!-- DH2022 mod -->
                                 <!-- Title -->
-                                <fo:block id="{@n}"><xsl:call-template name="head"/>
-                                    <!-- <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/> -->
-                                    <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title/node()"/><!-- DH2022 mod -->
+                                <!-- <fo:block id="{@n}"><xsl:call-template name="head"/>
+                                    <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/> -->
+                                <!-- DH2022 mod -->
+                                <fo:block id="{@n}">
+                                    <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title"/>
+                                <!-- end DH2022 mod -->
                                     <!-- if variable is set, print ID's for proofing -->
                                     <xsl:if test="$id= 'yes'">
                                         <xsl:text> - </xsl:text>
@@ -1138,9 +1169,12 @@
                         <!-- <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='category']/term[1]) = 'Panel'"> -->
                         <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='subcategory']/term[1]) = 'Panel'"><!-- DH2022 mod -->
                             <!-- Title -->
-                            <fo:block id="{@n}"><xsl:call-template name="head"/>
-                                <!-- <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/> -->
-                                <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title/node()"/><!-- DH2022 mod -->
+                            <!-- <fo:block id="{@n}"><xsl:call-template name="head"/>
+                                <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/> -->
+                            <!-- DH2022 mod -->
+                            <fo:block id="{@n}">
+                                <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title"/>
+                            <!-- end DH2022 mod -->
                                 <!-- if variable is set, print ID's for proofing -->
                                 <xsl:if test="$id= 'yes'">
                                     <xsl:text> - </xsl:text>
@@ -1210,9 +1244,12 @@
                         <!-- <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='category']/term[1]) = 'Paper'"> -->
                         <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='subcategory']/term[1]) = 'Long Presentation'"><!-- DH2022 mod -->
                             <!-- Title -->
-                            <fo:block id="{@n}"><xsl:call-template name="head"/>
-                                <!-- <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/> -->
-                                <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title/node()"/><!-- DH2022 mod -->
+                            <!-- <fo:block id="{@n}"><xsl:call-template name="head"/>
+                                <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/> -->
+                            <!-- DH2022 mod -->
+                            <fo:block id="{@n}">
+                                <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title"/>
+                            <!-- end DH2022 mod -->
                                 <!-- if variable is set, print ID's for proofing -->
                                 <xsl:if test="$id= 'yes'">
                                     <xsl:text> - </xsl:text>
@@ -1274,9 +1311,12 @@
                         <!-- <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='category']/term[1]) = 'Paper'"> -->
                         <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='subcategory']/term[1]) = 'Short Presentation'"><!-- DH2022 mod -->
                             <!-- Title -->
+                            <!-- <fo:block id="{@n}">
+                                <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/> -->
+                            <!-- DH2022 mod -->
                             <fo:block id="{@n}"><xsl:call-template name="head"/>
-                                <!-- <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/> -->
-                                <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title/node()"/><!-- DH2022 mod -->
+                                <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title"/>
+                            <!-- end DH2022 mod -->
                                 <!-- if variable is set, print ID's for proofing -->
                                 <xsl:if test="$id= 'yes'">
                                     <xsl:text> - </xsl:text>
@@ -1340,9 +1380,12 @@
                         <!-- <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='category']/term[1]) = 'Poster'"> -->
                         <xsl:if test="normalize-space(teiHeader[1]/profileDesc[1]/textClass[1]/keywords[@n='subcategory']/term[1]) = 'Electronic Poster'"><!-- DH2022 mod -->
                             <!-- Title -->
-                            <fo:block id="{@n}"><xsl:call-template name="head"/>
-                                <!-- <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/> -->
-                                <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title/node()"/><!-- DH2022 mod -->
+                            <!-- <fo:block id="{@n}"><xsl:call-template name="head"/>
+                                <xsl:value-of select="teiHeader/fileDesc/titleStmt/title"/> -->
+                            <!-- DH2022 mod -->
+                            <fo:block id="{@n}">
+                                <xsl:apply-templates select="teiHeader/fileDesc/titleStmt/title"/>
+                            <!-- end DH2022 mod -->
                                 <!-- if variable is set, print ID's for proofing -->
                                 <xsl:if test="$id= 'yes'">
                                     <xsl:text> - </xsl:text>
@@ -1618,7 +1661,7 @@
         <fo:list-item>
             <fo:list-item-label><xsl:call-template name="list_item_label"/>
                 <xsl:choose>
-                    <xsl:when test="parent::list/@type='simple' or parent::list/@type='ordered'">
+                    <xsl:when test="parent::list/@type='simple' or parent::list/@type='ordered' or parent::list/@rend='numbered'">
                         <!-- <fo:block></fo:block> -->
                         <xsl:attribute name="margin-left">-1.6em</xsl:attribute>
                         <fo:block><xsl:number format="1."/></fo:block>
@@ -1696,6 +1739,38 @@
     
     <xsl:template match="bibl">
         <fo:block><xsl:call-template name="p"/><xsl:apply-templates/></fo:block>
+    </xsl:template>
+
+    <!-- DH2022: support title type="full" -->
+    <xsl:template match="titleStmt/title">
+        <xsl:choose>
+            <xsl:when test="@type='full'">
+                <fo:block>
+                    <xsl:call-template name="full_head"/>
+                    <xsl:apply-templates select="title[@type='main']/node()"/>
+                </fo:block>
+                <fo:block>
+                    <xsl:call-template name="full_subhead"/>
+                    <xsl:apply-templates select="title[@type='sub']/node()"/>
+                </fo:block>
+            </xsl:when>
+            <xsl:otherwise>
+                <fo:block>
+                    <xsl:call-template name="head"/>
+                    <xsl:apply-templates select="node()"/>
+                </fo:block>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    <xsl:template match="titleStmt/title" mode="toc">
+        <xsl:choose>
+            <xsl:when test="@type='full'">
+                <fo:inline><xsl:apply-templates select="title[@type='main']/node()"/></fo:inline>
+            </xsl:when>
+            <xsl:otherwise>
+                <fo:inline><xsl:apply-templates select="node()"/></fo:inline>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <!-- DIV's -->

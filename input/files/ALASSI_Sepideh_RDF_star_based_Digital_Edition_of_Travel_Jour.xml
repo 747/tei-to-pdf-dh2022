@@ -118,7 +118,7 @@
                 We intend to use NLP algorithms to automatically recognize and tag the named entities within the text, such as locations and persons. The tagged entities will then be verified by comparing against the glossary given in the old transcription that lists the places and people mentioned in Reisbüchlein. The algorithm will then find (by querying Wikidata) and add geo-identifiers to locations and GND numbers to persons and will create resources for locations and persons. The tagged elements within the text will be linked to the corresponding resources. This will allow queries for a text that contains a certain person and/or location.
                 <note place="foot" xml:id="ftn5" n="5">
                     <p>
-                        <hi style="font-size:10pt" xml:space="preserve"> See the proof of concept in “open research data queriable by location” report of Swiss ORD hackathon 2021, in https://docs.google.com/document/d/1lbD6go_mSNAH3Gmj_Ao9GFnGwPFd4ZyGo1HrP_tYtBs/edit#</hi>
+                        <hi style="font-size:10pt" xml:space="preserve"> See the proof of concept in “open research data queriable by location” report of Swiss ORD hackathon 2021, in https://docs.google.com/document/d/1lbD6go_&#8203;mSNAH3Gmj_&#8203;Ao9G&#8203;FnGw&#8203;PFd4&#8203;ZyGo&#8203;1HrP_&#8203;tYtBs/edit#</hi>
                     </p>
                 </note>
             </p>

@@ -93,32 +93,32 @@
     </teiHeader>
     <text>
         <body>
-            <p style="text-align: left; ">Introduction</p>
+            <p style="text-align: left; "><hi rend="bold">Introduction</hi></p>
             <p style="text-align: left; ">The 
                 <hi rend="italic">Lord Mayor's Costume Balls in Sydney in 1857 and 1879</hi> (LMB) is a prototype that focuses on a single page in a vast archive: a list of attendees at a fancy-dress costume ball, hosted by the Lord Mayor of Sydney in the British Colony of New South Wales in 1857, and published in the 
                 <hi rend="italic">Sydney Morning Herald</hi>, the colony’s leading newspaper. The tabular dataset is structurally simple, containing the names, titles, and the fancy-dress costumes worn by 994 invited guests: it is captured in 6,347 RDF triples.  A prosopographical analysis of this list provides insight into the vicissitudes of Sydney’s socio-political composition. 
             </p>
             <p style="text-align: left; ">The overarching archive and the LMB ontology have been described elsewhere (Nurmikko-Fuller and Pickering, 2021): the latter is simple, but fit-for-purpose to prove the suitability of Linked Data (LD) for enriching scholarship into the origins of Australia’s modern politics. </p>
-            <p style="text-align: left; ">Background</p>
+            <p style="text-align: left; "><hi rend="bold">Background</hi></p>
             <p style="text-align: left; ">The value of connecting complementary data across disparate datasets has been a feature of the study of Australian history for decades (e.g. Pope and Withers, 1993; Holman, et al., 1999; Moses, 2004). Outside of Australia, LD has been applied very successfully to historical investigations (Rantala et al., 2021; Schmidt and Eggert, 2019; Kaplan et al., 2021; Meroño-Peñuela et al., 2015; Dijkshoorn et al., 2014; de Boer, 2015). Although the potential is clear, few projects have successfully combined the two. Part of the problem is that SPARQL endpoints can be cryptic, lack helpful error messages or executable suggestions, and require prior knowledge of the syntax (Ngonga et al., 2013)., Past attempts to solve this problem (Russell et al., 2008; Lohmann et al., 2016; Haag et al., 2015; Ochieng, 2020; Pradel, 2014; Yang et al., 2018) have not explicitly focused on Humanities data.</p>
             <p style="text-align: left; ">In recognition of this dichotomy, we developed a bespoke user interface that enables researchers with little or no prior experience of SPARQL to engage with the LMB’s knowledge graph. We have dubbed this the LMB SPARQL Explorer.</p>
-            <p style="text-align: left; ">Bespoke UI</p>
+            <p style="text-align: left; "><hi rend="bold">Bespoke UI</hi></p>
             <p style="text-align: left; ">The SPARQL Explorer (Figure 1) consists of the Suggestion Generator (SG); Canvas, and Graph-to-SPARQL compiler. It is a single-page web application made using React, hosted on an Apache web server, utilising an Blazegraph-mandated API.</p>
             <figure>
                 <graphic n="1001" width="15.980833333333333cm" height="8.43138888888889cm" url="Pictures/11195781aad35f452b6996905eca60d0.png" rend="inline"/>
             </figure>
             <p style="text-align: left; ">Figure 1: The LMB SPARQL Explorer</p>
             <p style="text-align: left; ">A deliberate design feature was ontology-agnosticism: it should work equally well with any ontology. The SG enforces syntactic integrity through querying the triplestore for (any) ontologies; when found, they are cached locally and deconstructed into constituent Classes and properties whilst retaining metadata (e.g. comments, notes). Semantically useful queries are generated through the detection of each domain and range. The Canvas converts the query into a set of .SVG elements and displays it as a graph stored in two arrays, one for the state of nodes and the other for edges. A 1-1 mapping between the graph format and query language syntax ensures that every valid graph is a valid SPARQL query.</p>
-            <p style="text-align: left; ">Example Query </p>
+            <p style="text-align: left; "><hi rend="bold">Example Query </hi></p>
             <p style="text-align: left; ">Figure 2 illustrates the function of the SPARQL Explorer. The graph has been created by the user dragging suggested Classes and properties from the grey panel on the far right into the white space. Behind the scenes, a SPARQL query is generated.</p>
             <figure>
                 <graphic n="1002" width="15.980833333333333cm" height="4.092222222222222cm" url="Pictures/ed37a48a2f185ec5366b4ce1f641dbd9.png" rend="inline"/>
             </figure>
             <p style="text-align: left; ">Figure 2: Query and its representation in the LMB SPARQL Explorer</p>
             <p style="text-align: left; ">This query (left, Figure 2) produces a result set of 32 individuals who have the title of “Mr” and a costume categorised as “royal”. It is small enough to enable domain experts to use tacit prior knowledge to infer further knowledge about who among them were royalists, dressed in homage to their monarchical ideals, and how many, in turn, donned royal garbs as a form of satire.</p>
-            <p style="text-align: left; ">Preliminary Evaluation </p>
+            <p style="text-align: left; "><hi rend="bold">Preliminary Evaluation </hi></p>
             <p style="text-align: left; ">The SPARQL Explorer was preliminarily tested with bespoke (JazzCats ontology, the LMB ontology) and ISO-standard ontologies (CIDOC-CRM and FOAF). For three out of the four, every possible path was representable: there was 100% coverage. The JazzCats ontology had 84% coverage: properties and Classes that had blank nodes as domains and/or ranges were inaccessible. </p>
-            <p style="text-align: left; ">Conclusion</p>
+            <p style="text-align: left; "><hi rend="bold">Conclusion</hi></p>
             <p style="text-align: left; ">We have reported on a prototype web-based interface that can leverage any ontological structure to deliver syntactic validity and semantically useful queries over RDF without the need to learn SPARQL explicitly. Our preliminary testing has shown that a conceptual mapping between a visual query language and SPARQL is possible. What has been achieved is portentous: a pointer to a way forward for domain experts to seek richer answers by asking more complex questions of their (Linked) data.</p>
         </body>
         <back>

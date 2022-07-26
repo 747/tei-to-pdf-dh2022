@@ -100,13 +100,13 @@
     </teiHeader>
     <text>
         <body>
-            <p>Introduction</p>
+            <p><hi rend="bold">Introduction</hi></p>
             <p>Discussions around diversity and bias in language representations are a hot topic in contemporary natural language processing. Countless papers have pointed out that these representations can be shown to contain specific biases, such as in the case of both so-called static embeddings (Bolukbasi et al., 2016) and more state-of-the-art contextual approaches (Zhao et al., 2019). </p>
             <p>In this paper, we contribute to on-going attempts to quantify and measure the effects of this bias for specific NLP tasks. We present results of an experiment which tests the effect of data biases on the performance of different NLP frameworks for named entity recognition (NER) in Danish. While the immediate results deal specifically with only this language, the methods employed can be adapted to other linguistic and cultural contexts, given appropriate modifications. We choose to focus specifically on biases in the sense of representational harms (Barocas et al., 2017) by investigating the performance differences of NER in Danish for different social groups, namely gender and ethnicity (Shah et al., 2019). Despite this quite narrow focus, we aim to contribute to wider discussions in the field of 
                 <hi rend="italic">fairML</hi> and bias in NLP. 
             </p>
             <p>Recent work has pointed out how unintended bias in NLP systems leads to systematic differences in performance for different demographic groups (Borkan et al, 2019). Building on these insights, frameworks, fairness metrics and recommendations for the field have been developed to quantify and mitigate bias (Borkan et al., 2019; Shah et al., 2019; Zhao et al., 2019; Blodgett et al., 2020; Czarnowska et al., 2021). More specifically relevant for this work, Zhao et al. (2018) have shown how data augmentation on training data can eliminate gender bias for coreference resolution. With our work, we propose another use of data augmentation, namely as a method to test the robustness of NLP models as well as uncover potential social biases in the model.</p>
-            <p>Method</p>
+            <p><hi rend="bold">Method</hi></p>
             <p>We define bias as systematic difference in error – 
                 <hi rend="italic">error disparity</hi> – as a function of a given sensitive features (Shah et al. 2019). In other words, bias in the model is measured through difference of performance accuracy when data is augmented with different gender and ethnicity features. 
             </p>
@@ -119,7 +119,7 @@
             </list>
             <p>The purpose of these augmentations was to test specifically the robustness of named entity recognition in each of the Danish NLP frameworks given data which had been augmented relative to gender and ethnicity. If a framework performed just as well (or better) with these augmentation as without, this is taken to indicate robustness. If a framework performs worse, we are able to quantify exactly where the model is failing and, hence, where potential biases reside.</p>
             <p>Table 1 illustrates general performance of contemporary Danish NLP frameworks on a range of tasks. We can see that larger, transformer-based models consistently outperform other models, particularly on NER tasks. At a general level, these results underline three well-known trends in deep learning and NLP: 1) larger models tend to perform better; 2) higher quality pre-training data leads to better models; and 3) multilingual models perform competitively with monolingual models (Brown et al., 2020; Raffel et al., 2020; Xue et al., 2021).</p>
-            <p>Results</p>
+            <p><hi rend="bold">Results</hi></p>
             <p>The results from the full range of augmentation strategies can be found in Enevoldsen et al. (2021). In Table 2, we see only the results following name augmentation. From this table, we can see that the NER performance of every model is affected to some degree by the data augmentations. What is immediately apparent, though, is that not all models are affected equally and not all augmentations cause as pronounced effects. Our results seem to demonstrate that Danish language models are relatively robust to the effects of gender. However, the same can not be said for Muslim names, which cause significantly worse performance for all models. This suggests that Danish NLP models contain a greater relative bias in terms of ethnicity than gender.</p>
             <figure>
                 <figure>
@@ -129,7 +129,7 @@
                     <graphic n="1002" width="15.910277777777777cm" height="9.424458333333334cm" url="Pictures/f939a94b23ae4441deb8accffd70b437.png" rend="inline"/>
                 </figure>
             </figure>
-            <p>Conclusions</p>
+            <p><hi rend="bold">Conclusions</hi></p>
             <p>There are some notable limitations to the current study. Firstly, we have presented experimental results for a single, comparatively small Indo-European language. Nevertheless, we predict that similar results could be obtained for different languages, given an appropriate change of experimental conditions. Secondly, by making augmentation on male and female names we continue the folk conception of gender, where gender is understood as binary and static. Finally, we have not further separated Muslim names into typically male Muslim names and typically female Muslim names. Were our results stratified in this manner, we would be in the position to conduct a more intersectional analysis into the relative effect of gender and ethnicity. This more nuanced perspective is the goal of a future experiment.</p>
             <p>However, the present results already paint a complex but essentially coherent picture. We have demonstrated that data augmentation is a simple and transparent way of testing the robustness of contemporary language models on tasks like named entity recognition. Moreover, we have shown that these data augmentation tasks can be used to test for specific biases in language models with respect to categories such as gender, race, and ethnicity. Doing so puts us in the position to evaluate the performance of specific language models not only in relation their overall performance metrics such as accuracy and micro-F1 scores but also their robustness and biases relative to these categories.</p>
             <p>Our proposal is that in the domain of NLP and language modelling 

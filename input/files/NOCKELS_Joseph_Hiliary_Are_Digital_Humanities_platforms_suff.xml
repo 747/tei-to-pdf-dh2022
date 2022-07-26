@@ -103,11 +103,11 @@
     </teiHeader>
     <text>
         <body>
-            <p>Introduction</p>
+            <p rend="bold">Introduction</p>
             <p>
                 This paper examines whether free processing initiatives are truly supporting and facilitating research among early career researchers (ECRs), students and those with a lack of funding, as current observations, concerning who is applying for such schemes, suggest that further clarification is often needed. Financial support is necessary to increase the diversity of work seen in the digital humanities (DH), where access to platforms is still unequal. The findings presented in this paper will address several related questions. What demographics are making use of free processing from software developers? What work will this enable? Are schemes being utilised by the intended groups? How can more equitable access be reached?
             </p>
-            <p>Research Context</p>
+            <p rend="bold">Research Context</p>
             <p>
                 This paper will focus on one software: Transkribus, a handwritten text recognition (HTR) platform which has broadened user access to historical collections through automatic image-to-text recognition, resulting in plain text files which can be presented in a variety of formats by content-holding institutions for instance (Muehlberger et. al, 2019). Current work using Transkribus showcases the breadth of digital humanities research, with models being trained on the manuscripts of Jeremy Bentham (National Library of Scotland, 2021), materials from Ethiopia and Eritrea (Universitat Hamburg, 2021) as well as 18
                 <hi rend="superscript" style="font-size:12pt">th</hi>
@@ -125,14 +125,14 @@
             <p>
                 This paper looks to fill a gap in understanding concerning who is benefiting from this free processing scheme through a systematic review of online requests. In turn, a glimpse at how HTR tools are currently being made accessible will be reached. Whether current schemes are truly facilitating diverse research, or ignoring existing inequalities in the field, will also be cited.
             </p>
-            <p>Methodology</p>
+            <p rend="bold">Methodology</p>
             <p>
                 Content analysis will be applied to these processing requests, alongside interviewing READ staff. While these online requests vary in detail, they provide data on: the required number of processing credits; the discipline and institution of the user; the user’s current academic position; and a short project description. This study will examine over 150 requests collected between November 2020 and March 2022. These requests will be aggregated and anonymised, in accordance with gained ethics approval from the University of Edinburgh. They will then be interrogated using content analysis, a research technique for the “objective, systematic and quantitative description of manifest content of communication” (Harvey, 2020). These requests will be coded, capturing their contents, using a mix of in vivo codes, quoted directly from the data (Saldana, 2012: 10), and process codes to gain a sense of the actions users are completing with Trankribus (Corbin and Strauss, 2015: 283). Through this method, this research will apply a set of procedures to make valid inferences from free-processing requests, presenting replicable and valid results (Krippendorff, 1980: 71) as to whether current schemes are weakening the financial barriers being faced by users of Transkribus.
             </p>
             <p>
                 <hi style="font-size:12pt" xml:space="preserve">The information gained from reviewing the free processing requests will sit alongside information from interviews of READ staff, ascertaining what influenced the decision to supply free processing to these groups and what the aims were. </hi>
             </p>
-            <p>Conclusion</p>
+            <p rend="bold">Conclusion</p>
             <p>
                 This paper explores the extent to which Transkribus supports early career and marginalised scholars in accessing the platform, using content analysis of free processing requests and interviews with members of the Transkribus staff. As the first study to systematically analysis these requests, it provides important insights into how the transition to a paid-for model has impacted Transkribus’s users. It provides insights into the demographics of users requiring free processing, the types of projects which are being supported, and how successful the READ-COOP has been in supporting research. These findings allow us to develop recommendations for improving access to Transkribus, as well as begin to draw parallels to other HTR providers in making these platforms more equitable.
             </p>

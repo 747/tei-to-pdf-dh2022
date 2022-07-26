@@ -86,23 +86,29 @@
             <div type="div1" rend="DH-Heading1">
                 <head>Acknowledgments</head>
                 <p style="text-align: left; ">This project is funded by NPRP grant NPRP13S-0206-200281 from the Qatar National Research Fund (a member of Qatar Foundation).</p>
-                <p rend="DH-BibliographyHeading">References</p>
-                <p rend="DH-BibliographyHeading">Albadi, N., Kurdi, M., &amp; Mishra, S. (2018). Are they our brothers? analysis and detection of religious hate speech in the Arabic Twittersphere. In 2018 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM) (pp. 69-76). IEEE. https://doi.org/10.1109/ASONAM.2018.8508247</p>
-                <p rend="DH-BibliographyHeading">
-                    <hi rend="normalweight" style="font-size:11pt">Fersini, E., Rosso, P., Anzovino, M. (2018). Overview of the Task on Automatic Misogyny Identification at IberEval. In Proceedings of the Third Workshop on Evaluation of Human Language Technologies for Iberian Languages (IberEval 2018).</hi>
-                </p>
-                <p rend="DH-BibliographyHeading">
-                    <hi rend="normalweight" style="font-size:11pt">Hasan, K.S., Ng, V. (2013). Stance Classification of Ideological Debates: Data, Models, Features, and Constraints. In Proceeding of the Sixth International Joint Conference on Natural Language Processing</hi>
-                </p>
-                <p rend="DH-BibliographyHeading">Howell, Lee. (2013). Digital Wildfires in a Hyperconnected World. WEF Report 3.</p>
-                <p rend="DH-BibliographyHeading">
-                    <hi rend="normalweight" style="font-size:11pt">Jones, M. O. (2016). Automated sectarianism and pro-Saudi propaganda on Twitter. Exposing the Invisible (Tactical Technology Collective).</hi>
-                </p>
-                <p rend="DH-BibliographyHeading">
-                    <hi rend="normalweight" style="font-size:11pt">Jones, M. O. (2019). The Gulf Information War| Propaganda, Fake News, and Fake Trends: The Weaponization of Twitter Bots in the Gulf Crisis. International Journal of Communication</hi>
-                </p>
-                <p rend="DH-BibliographyHeading">Mubarak, H., Darwish, K., &amp; Magdy, W. (2017). Abusive language detection on Arabic social media. In Proceedings of the first workshop on abusive language online (pp. 52-56).</p>
             </div>
         </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                <head rend="DH-BibliographyHeading">Bibliography</head>
+                <bibl rend="DH-BibliographyHeading">Albadi, N., Kurdi, M., &amp; Mishra, S. (2018). Are they our brothers? analysis and detection of religious hate speech in the Arabic Twittersphere. In 2018 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM) (pp. 69-76). IEEE. https://doi.org/10.1109/ASONAM.2018.8508247</bibl>
+                <bibl rend="DH-BibliographyHeading">
+                    <hi rend="normalweight" style="font-size:11pt">Fersini, E., Rosso, P., Anzovino, M. (2018). Overview of the Task on Automatic Misogyny Identification at IberEval. In Proceedings of the Third Workshop on Evaluation of Human Language Technologies for Iberian Languages (IberEval 2018).</hi>
+                </bibl>
+                <bibl rend="DH-BibliographyHeading">
+                    <hi rend="normalweight" style="font-size:11pt">Hasan, K.S., Ng, V. (2013). Stance Classification of Ideological Debates: Data, Models, Features, and Constraints. In Proceeding of the Sixth International Joint Conference on Natural Language Processing</hi>
+                </bibl>
+                <bibl rend="DH-BibliographyHeading">Howell, Lee. (2013). Digital Wildfires in a Hyperconnected World. WEF Report 3.</bibl>
+                <bibl rend="DH-BibliographyHeading">
+                    <hi rend="normalweight" style="font-size:11pt">Jones, M. O. (2016). Automated sectarianism and pro-Saudi propaganda on Twitter. Exposing the Invisible (Tactical Technology Collective).</hi>
+                </bibl>
+                <bibl rend="DH-BibliographyHeading">
+                    <hi rend="normalweight" style="font-size:11pt">Jones, M. O. (2019). The Gulf Information War| Propaganda, Fake News, and Fake Trends: The Weaponization of Twitter Bots in the Gulf Crisis. International Journal of Communication</hi>
+                </bibl>
+                <bibl rend="DH-BibliographyHeading">Mubarak, H., Darwish, K., &amp; Magdy, W. (2017). Abusive language detection on Arabic social media. In Proceedings of the first workshop on abusive language online (pp. 52-56).</bibl>
+                </listBibl>
+            </div>
+        </back>
     </text>
 </TEI>

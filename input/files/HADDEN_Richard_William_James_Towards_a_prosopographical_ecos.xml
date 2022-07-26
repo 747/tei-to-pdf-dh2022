@@ -135,14 +135,14 @@
                     <item>Persons and Sources allow multiple URIs (interpreted as owl:sameAs). Strictly, these should be Statements (i.e. non-definitive assertion that one Person or Source is the same as another: see Zedlitz 2009); but reconciling data from multiple endpoints is considerably easier when this information is a ‘meta’ field of a Person entity.</item>
                     <item>IPIF requires a Source for each Factoid. In many projects, data that would comprise an IPIF Statement is given with no source (e.g. name, death, profession of a person”). In this case, the source is taken to be the project itself. </item>
                     <item>
-                        <p>TEI-XML personographies can express a factoid model by applying the @source and @resp attributes to the sub-elements of a &lt;person&gt; entry (see Schwarz 2020), </p>
-                        <p>but this is optional. Pragmatically, we suggest using the metadata of the TEI document as fallback (@source, @resp, ancestor::TEI/teiHeader/ titleStmt/editor etc.). </p>
+                        TEI-XML personographies can express a factoid model by applying the @source and @resp attributes to the sub-elements of a &lt;person&gt; entry (see Schwarz 2020), <lb/>
+                        but this is optional. Pragmatically, we suggest using the metadata of the TEI document as fallback (@source, @resp, ancestor::TEI/teiHeader/ titleStmt/editor etc.).
                     </item>
                     <item>
-                        <p>To avoid ambiguity in combining statement filters in Person queries (does person/?place=Graz&amp;role=professor mean “a professor in Graz” or “a professor, located in Graz for any reason”?), we defined a default behaviour (both conditions apply to the 
+                        To avoid ambiguity in combining statement filters in Person queries (does person/?place=Graz&amp;role=professor mean “a professor in Graz” or “a professor, located in Graz for any reason”?), we defined a default behaviour (both conditions apply to the 
                             <hi rend="italic">same </hi>Statement) and an optional parameter independentStatements=true to allow ‘or’ conditions. 
-                        </p>
-                        <p>In this presentation, we will argue that such decisions are justified by the requirements of interoperability; and that our experiences in developing IPIF thus far contribute usefully to debates surrounded data interoperability in the digital humanities. </p>
+                        <lb/>
+                        In this presentation, we will argue that such decisions are justified by the requirements of interoperability; and that our experiences in developing IPIF thus far contribute usefully to debates surrounded data interoperability in the digital humanities.
                     </item>
                 </list>
             </div>

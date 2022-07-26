@@ -83,23 +83,19 @@
         <body>
             <div type="div1" rend="DH-Heading1">
                 <head>Introduction</head>
-                <p style="text-align: left; "> </p>
                 <p style="text-align: left; ">We introduce the Birth of the Modern Detective Story (BMDS) Corpus, a new dataset for exploring the evolution of detective fiction during a crucial period of its development. It currently comprises 380 detective stories published between 1890 and 1920, provided in full text with relevant metadata and richly annotated for 61 categories related to the types of crimes, clues, and evidence represented. The project explores in more systematic fashion some of the work begun in Franco Moretti’s “The Slaughterhouse of Literature” (2000). All data is freely accessible and open-access. We explain our motivations for developing the dataset, describe the dataset, explain our theoretical discoveries, and lay out some research trajectories.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Motivations</head>
-                <p style="text-align: left; "> </p>
                 <p style="text-align: left; ">Moretti’s “Slaughterhouse of Literature” asks a fascinating question: Why did the Sherlock Holmes stories “survive” when so many contemporaneous “competitors” were forgotten? It comes to an interesting conclusion: that their success 
                     <hi rend="italic" xml:space="preserve">cannot </hi>be explained by their use of what Moretti calls “decodable” clues — which, he finds, are neither exclusive to the Holmes stories nor consistently employed in them.
                 </p>
                 <p style="text-align: left; ">However promising, Moretti’s approach is hampered by theoretical and methodological limitations as well as by its limited and opaque corpus. His categories of clues — necessary, visible, decodable — are poorly defined. The corpus of texts he investigates is small, inaccessible, and not described in detail. He performs two experiments: the first on a set of “about twenty” stories he calls “very narrow” and “haphazard” in selection; the second on 108 detective stories published in 
                     <hi rend="italic" xml:space="preserve">The Strand </hi>in the 1890s, the titles of which are not provided. Given its opaque corpus and imprecise terms, it is impossible to verify the article’s claims. 
                 </p>
-                <p style="text-align: left; "> </p>
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Description of the BMDS Corpus</head>
-                <p style="text-align: left; "> </p>
                 <p style="text-align: left; ">The BMDS corpus offers several methodological advances over “Slaughterhouse,” and makes available all texts and annotations available. Whereas Moretti focuses haphazardly on the 1890s, we look at the years 1890–1920, during which the genre’s conventions are agreed to have consolidated (Humphreys 2017). We aim to include 
                     <hi rend="italic">all</hi> detective stories published in English during this period. At present, we have 380 stories. We began with those available for free in accessible data formats (now complete), moved next to those that can be purchased (underway), and will then ingest those that must be scanned and OCR’ed.
                 </p>
@@ -111,9 +107,8 @@
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Theoretical Contributions </head>
-                <p style="text-align: left; "> </p>
                 <p style="text-align: left; ">The BMDS Corpus makes several important theoretical advances over “Slaughterhouse”; most notably, it provides several new categories of clues, and it introduces the distinction between the “investigation” and “reveal” phases of detective stories. </p>
-                <p style="text-align: left; ">            Our Guidelines clearly distinguish between four types of clue: evoked, illegible, legible, and usable. For instance, a legible clue is defined as one that is “presented in sufficient detail to appear to the reader as a clue” whereas a usable clue is “a legible clue that leads an alert reader in the direction of the correct solution to the crime” (this distinction is not present is Moretti). </p>
+                <p style="text-align: left; ">Our Guidelines clearly distinguish between four types of clue: evoked, illegible, legible, and usable. For instance, a legible clue is defined as one that is “presented in sufficient detail to appear to the reader as a clue” whereas a usable clue is “a legible clue that leads an alert reader in the direction of the correct solution to the crime” (this distinction is not present is Moretti). </p>
                 <p style="text-align: left; ">Our understanding of clues depends not merely on whether clues are 
                     <hi rend="italic" xml:space="preserve">present </hi>but how they are 
                     <hi rend="italic" xml:space="preserve">used </hi>in the story’s plot. We divide detective fiction plots into two parts: the “investigation phase,” during which the crime is actively investigated; and the “reveal phase,” during which the detective presents their solution. Our clue categories depend on how particular clues 

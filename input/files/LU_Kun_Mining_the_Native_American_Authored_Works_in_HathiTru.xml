@@ -135,11 +135,18 @@
                     <cell style="text-align: left;" rend="DH-Default">0%</cell>
                 </row>
             </table>
-            <p>
-                <hi rend="bold" xml:space="preserve">Schweninger, L. </hi>(1993). Writing Nature: Silko and Native Americans as Nature Writers. 
-                <hi rend="italic">Melus</hi>, 
-                <hi rend="bold">18</hi>(2), 47-60.
-            </p>
         </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold" xml:space="preserve">Schweninger, L. </hi>(1993). Writing Nature: Silko and Native Americans as Nature Writers. 
+                        <hi rend="italic">Melus</hi>, 
+                        <hi rend="bold">18</hi>(2), 47-60.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
     </text>
 </TEI>

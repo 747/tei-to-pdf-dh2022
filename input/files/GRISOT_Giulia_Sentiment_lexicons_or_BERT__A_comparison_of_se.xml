@@ -88,7 +88,7 @@
     </teiHeader>
     <text>
         <body>
-            <p>Abstract</p>
+            <p><hi rend="bold">Abstract</hi></p>
             <p>With the development of new powerful technologies for computational data analysis, the opportunities for – and interest in – the detection of sentiments and opinion in texts have grown considerably (Liu 2015). Because of the vast amount of material available online, these investigations have focused mostly on textual material gathered from social media, making use of traditional corpus linguistic approaches as well as deep learning tools.</p>
             <p>Sophisticated sentiment analysis (SA) of literary texts, especially in languages other than English, is still in its infancy (Kim and Klinger 2019). This has depended partly on the limited amount of digital texts available, partly the complex structure of literary texts, and finally on methodological challenges, with skills needed that seldom form part of the training of literary scholars.</p>
             <p>Emotions are however central to the experience of literary narrative (Oatley 2012; Hogan 2016), and recent advances in their systematic, quantitative analysis have been made within computational literary studies (Jockers 2017, Burghardt et al 2019). Yet, such investigations have mostly relied on existing lists of words associated with sentiment and emotion values, the so-called 

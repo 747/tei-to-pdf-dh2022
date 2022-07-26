@@ -148,46 +148,53 @@
                 <hi rend="background(none)" xml:space="preserve">to more accurately reconstruct the history </hi>of the city 
                 <?biblio ADDIN CSL_CITATION {"citationItems":[{"id":"ITEM-1","itemData":{"author":[{"dropping-particle":"","family":"Xia","given":"Cuijuan","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Wang","given":"Lihua","non-dropping-particle":"","parse-names":false,"suffix":""},{"dropping-particle":"","family":"Liu","given":"Wei","non-dropping-particle":"","parse-names":false,"suffix":""}],"container-title":"Digital Scholarship in the Humanities","id":"ITEM-1","issue":"4","issued":{"date-parts":[["2021"]]},"page":"841-857","title":"Shanghai memory as a digital humanities platform to rebuild the history of the city","type":"article-journal","volume":"36"},"uris":["http://www.mendeley.com/documents/?uuid=a6c443fa-c26c-4c0b-9342-76c572c522e6"]}],"mendeley":{"formattedCitation":"(Xia et al., 2021)","plainTextFormattedCitation":"(Xia et al., 2021)","previouslyFormattedCitation":"(Xia et al., 2021)"},"properties":{"noteIndex":0},"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Xia et al., 2021). This latest initiative to incorporate digital storytelling is the next phase to further democratize the practice and represent the unrepresented by presenting, creating, and sharing stories in relation to the past, current, and even the future of Shanghai city. This extension to an already established DH project adds significant value to the reconstruction of cultural memory and acts as a model for other memory projects in East Asia and beyond. 
             </p>
-            <p>
+        </body>
+        <back>
+            <div type="bibliogr">
+            <head>Bibliography</head>
+                <listBibl>
+            <bibl>
                 <?biblio ADDIN Mendeley Bibliography CSL_BIBLIOGRAPHY?>Ashcroft, B., Griffiths, G., &amp; Tiffin, H. (2002). 
                 <hi rend="italic">The Empire Writes Back: Theory and Practice in Post-Colonial Literatures</hi> (2nd ed.). Routledge.
-            </p>
-            <p>Assmann, J., &amp; Czaplicka, J. (1995). Collective Memory and Cultural Identity. 
+            </bibl>
+            <bibl>Assmann, J., &amp; Czaplicka, J. (1995). Collective Memory and Cultural Identity. 
                 <hi rend="italic">New German Critique</hi>, 
                 <hi rend="italic">65</hi>, 125–133.
-            </p>
-            <p>Barber, J. F. (2016). Digital storytelling: New opportunities for humanities scholarship and pedagogy. 
+            </bibl>
+            <bibl>Barber, J. F. (2016). Digital storytelling: New opportunities for humanities scholarship and pedagogy. 
                 <hi rend="italic">Cogent Arts and Humanities</hi>, 
                 <hi rend="italic">3</hi>(1).
-            </p>
-            <p>Burgess, J., &amp; Klaebe, H. (2009). Digital Storytelling as Participatory Public History in Australia. In J. Hartley &amp; K. McWilliam (Eds.), 
+            </bibl>
+            <bibl>Burgess, J., &amp; Klaebe, H. (2009). Digital Storytelling as Participatory Public History in Australia. In J. Hartley &amp; K. McWilliam (Eds.), 
                 <hi rend="italic">Story Circle: Digital Storytelling around the World</hi> (pp. 155–166).
-            </p>
-            <p>Clarke, R., &amp; Adam, A. (2011). Digital storytelling in Australia: academic perspectives and reflections. 
+            </bibl>
+            <bibl>Clarke, R., &amp; Adam, A. (2011). Digital storytelling in Australia: academic perspectives and reflections. 
                 <hi rend="italic">Arts and Humanities in Higher Education</hi>, 
                 <hi rend="italic">11</hi>(1–2), 157–176.
-            </p>
-            <p>Earley-Spadoni, T. (2017). Spatial History, deep mapping and digital storytelling: archaeology’s future imagined through an engagement with the Digital Humanities. 
+            </bibl>
+            <bibl>Earley-Spadoni, T. (2017). Spatial History, deep mapping and digital storytelling: archaeology’s future imagined through an engagement with the Digital Humanities. 
                 <hi rend="italic">Journal of Archaeological Science</hi>, 
                 <hi rend="italic">84</hi>, 95–102.
-            </p>
-            <p>Lambert, J. (2018). 
+            </bibl>
+            <bibl>Lambert, J. (2018). 
                 <hi rend="italic">Digital Storytelling: Capturing Lives, Creating Community</hi> (5th ed.). Routledge.
-            </p>
-            <p>Münster, S., Apollonio, F. I., Bell, P., Kuroczynski, P., Di Lenardo, I., Rinaudo, F., &amp; Tamborrino, R. (2019). Digital Cultural Heritage meets Digital Humanities. 
+            </bibl>
+            <bibl>Münster, S., Apollonio, F. I., Bell, P., Kuroczynski, P., Di Lenardo, I., Rinaudo, F., &amp; Tamborrino, R. (2019). Digital Cultural Heritage meets Digital Humanities. 
                 <hi rend="italic">The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</hi>, 813–820.
-            </p>
-            <p>Noiret, S. (2018). Digital Public History. In D. Dean (Ed.), 
+            </bibl>
+            <bibl>Noiret, S. (2018). Digital Public History. In D. Dean (Ed.), 
                 <hi rend="italic">A Companion to Public History</hi> (1st ed., pp. 111–124).
-            </p>
-            <p>Robin, B. R. (2008). Digital storytelling: A powerful technology tool for the 21st century classroom. 
+            </bibl>
+            <bibl>Robin, B. R. (2008). Digital storytelling: A powerful technology tool for the 21st century classroom. 
                 <hi rend="italic">Theory into Practice</hi>, 
                 <hi rend="italic">47</hi>(3), 220–228.
-            </p>
-            <p>Xia, C., Wang, L., &amp; Liu, W. (2021). Shanghai memory as a digital humanities platform to rebuild the history of the city. 
+            </bibl>
+            <bibl>Xia, C., Wang, L., &amp; Liu, W. (2021). Shanghai memory as a digital humanities platform to rebuild the history of the city. 
                 <hi rend="italic">Digital Scholarship in the Humanities</hi>, 
                 <hi rend="italic">36</hi>(4), 841–857.
-            </p>
-        </body>
+            </bibl>
+                </listBibl>
+            </div>
+        </back>
     </text>
 </TEI>
