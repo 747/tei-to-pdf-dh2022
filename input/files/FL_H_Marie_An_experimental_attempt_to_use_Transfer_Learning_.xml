@@ -144,7 +144,7 @@
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Assumptions</head>
-                <p style="text-align: left; ">Historical-linguistics insights show that grammatical properties of language change slowly over long periods (Damaris et al., 2017). We assume that the difference in time between the 21st and the early 20th century is not associated with an essential difference in the German language system, that would prevent useful entity predictions.</p>
+                <p style="text-align: left; ">Historical-linguistics insights show that grammatical properties of language change slowly over long periods (Nübling et al., 2017). We assume that the difference in time between the 21st and the early 20th century is not associated with an essential difference in the German language system, that would prevent useful entity predictions.</p>
                 <p style="text-align: left; ">We suppose that the difference at hand in text types (newspaper and encyclopedia articles vs. letters) can be neglected for our purpose based on the experiences made in the 
                     <hi rend="italic">Complete Works of Uwe Johnson</hi> project: The same language model has already been successfully used for NER tasks on a corpus of letters.
                 </p>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Visualising Women’s Lives : A Feminist Approach to Distant Reading</title>
+                <author>
+                    <persName>
+                        <surname>Schreibman</surname>
+                        <forename>Susan</forename>
+                    </persName>
+                    <affiliation>Maastricht University, Netherlands, The</affiliation>
+                    <email>susan.schreibman@gmail.com</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Barget</surname>
+                        <forename>Monika</forename>
+                    </persName>
+                    <affiliation>Maastricht University, Netherlands, The</affiliation>
+                    <email>m.barget@maastrichtuniversity.nl</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-07-17T14:09:00Z</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from a Word document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Short Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>Irish history</term>
+                    <term>First World War</term>
+                    <term>Data Mining</term>
+                    <term>Data Feminism</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>cultural analytics</term>
+                    <term>text mining and analysis</term>
+                    <term>Feminist studies</term>
+                    <term>History</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>This presentation describes ongoing research which adopts a distant reading approach to recovering the lives of women in early 20th century Ireland. Our case studies are based on a comparatively small and diverse sub-corpus of letters made public by the 
+                <hi rend="italic" xml:space="preserve">Letters 1916-1923 </hi>project, a dataset of some 6000 letters from public and private sources in Ireland and beyond. The first case study concerns women who were active in supporting the war effort during the First World War from 1916-1918 and the second revolves around a central male figure, Charlie Daly, a Republican combatant in the Irish Civil War (1922-1923) 
+            </p>
+            <p>This research is a conscious act of recovery that combines the analysis of anecdotal thoughts and feelings (common in traditional scholarship that uses letters as a primary source) with different methods of distant reading(Moretti 2013; Drucker 2017a;). By including sources beyond the 
+                <hi rend="italic" xml:space="preserve">Letters 1916-1923 </hi>collection (e.g. newspapers and reports), we get a broader picture of the networks in which the women operated, how gender norms changed, culturally, politically, and socially, from the years of the Great War to the post-war period. Moreover, we contribute to a growing feminist discourse in Irish historiography by reinstating the contributions of female non-combatants in two wars that were pivotal in shaping the modern Irish state (Walsh, 2020, Cullen 2017; Pašeta 2017). This research takes an iterative approach to reading which we call 
+                <hi rend="italic">reading at the middle distance</hi>: eg. looking for patterns by distant reading the data to find points of interest for close reading. This approach to text analysis overlaps with the concept of “scalable reading” promoted by digital historians who seek “a critical engagement with data-driven historical scholarship” and combine “different ‘modes’ of reading.” (Fickers &amp; Clavert, 2021) Our feminist approach also requires more than one method of quantitative text analysis: apart from descriptive statistics based on our metadata categories and tags, we apply topic modelling and mapping to trace women’s activities and their networks.
+            </p>
+            <p>In creating the visualisations that support the research process, we take a critical visualisation approach, being aware that the visualisations we produce are the results of an inherently remediated and interpretative process (Dork et al 2013; d’Ignazio &amp; Klein 2016) in which lacuna and missing information is difficult if not impossible to represent (eg -- visualising the absence of data is inherently impossible as what is not available remains an unknown). Contextualising our visualisations in our public GITHUB repository (Barget and Schreibman 2020) is, therefore, an important step. The data tables behind our visualisations make the (ambiguous) sources of our findings transparent and highlight cases in which incomplete information in the letters was supplemented with information from other primary sources or secondary works. Thus, the resultant data sets and the visualisation formats we choose become agents in meaning-making, embedding implicit knowledge into the design process itself (Drucker 2017b).</p>
+            <p>This short paper will highlight the connection that recent theoretical developments in data feminism and interactive, explorative 
+                <hi rend="italic">scalable reading</hi> have with our perception of 
+                <hi rend="italic">middle distance reading</hi>. While our work on women’s stories in the Letters 1916-1923 collection began prior to the publication of 
+                <hi rend="italic">Data Feminism (2020)</hi>, the principles that D’Ignazio and Klen outline
+                <note place="foot" xml:id="ftn1" n="1">
+                    <p>
+                        <hi style="font-size:10pt" xml:space="preserve"> (1) Examine power; 2) Challenge power; 3) Elevate emotion and embodiment; 4) Rethink binaries and hierarchies; 5) Embrace pluralism; 6) Consider context; 7) Make labor visible)</hi>
+                    </p>
+                </note> prove a useful touching stone from which to examine biases in data and reflect our own subjectivity as authors and researchers (Leurs 2017). The concept of 
+                <hi rend="italic">Data Feminism</hi> stressed our central claim that using methods of quantitative text analysis comparatively and in new contexts, rather than to reify bias in the records, provides a creative and disruptive perspective on women’s experience, surfaces alternative narratives of historical periods, and re-evaluates power dynamics and hierarchies of influence. 
+            </p>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>Barget, Monika, and Schreibman, S. (2020) ‘Women’s Agency and Networks in Ireland (1915-1923)’. Github Pages. FeministDH.
+                        <ref target="https://monikabarget.github.io/FeministDH/">
+                            <hi rend="underline color(1155CC)">https://monikabarget.github.io/FeministDH/</hi>
+                        </ref>.
+                    </bibl>
+                    <bibl>Cullen, C (2017). War Work on the Home Front: The Central Sphagnum Depot for Ireland at the Royal College of Science for Ireland, 1915–1919’. 
+                        <hi rend="italic">Medicine, Health and Irish Experiences of Conflict, 1914–45</hi>, ed. David Durnin and Ian Miller (Manchester: Manchester University Press, 155–70.
+                    </bibl>
+                    <bibl>D’Ignazio, C., &amp; Klein, L. F. (2016). Feminist data visualization. Workshop on Visualization for the Digital Humanities (VIS4DH), Baltimore. IEEE.</bibl>
+                    <bibl>D'Ignazio, C., &amp; Klein, L. F. (2020). 
+                        <hi rend="italic">Data feminism</hi>. MIT press.
+                    </bibl>
+                    <bibl>Dörk, M., Feng, P., Collins, C., &amp; Carpendale, S. (2013). Critical InfoVis: exploring the politics of visualization. In 
+                        <hi rend="italic">CHI'13 Extended Abstracts on Human Factors in Computing Systems</hi> (pp. 2189-2198).
+                    </bibl>
+                    <bibl>Drucker, J. (2017a). Why Distant Reading Isn't. 
+                        <hi rend="italic">PMLA/Publications of the Modern Language Association of America</hi>, 
+                        <hi rend="italic">132</hi>(3), 628-635.
+                    </bibl>
+                    <bibl>Drucker, J. (2017b). Information visualization and/as enunciation. 
+                        <hi rend="italic">Journal of Documentation</hi>.
+                    </bibl>
+                    <bibl>Fickers, A., &amp; Clavert, F. (2021). On pyramids, prisms, and scalable reading. 
+                        <hi rend="italic">Journal of Digital History</hi>, 
+                        <hi rend="italic">jdh001</hi>. 
+                        <ref target="https://journalofdigitalhistory.org/en/article/jXupS3QAeNgb">https://journalofdigitalhistory.org/en/article/jXupS3QAeNgb</ref>
+                    </bibl>
+                    <bibl>Leurs, K. (2017). Feminist data studies: Using digital methods for ethical, reflexive and situated socio-cultural research. 
+                        <hi rend="italic">Feminist Review</hi>, 
+                        <hi rend="italic">115</hi>(1), 130-154.
+                    </bibl>
+                    <bibl>Moretti, Franco. (2013) Distant Reading. London, New York: Verso.</bibl>
+                    <bibl>Pašeta, S. (2017). Feminist Political Thought and Activism in Revolutionary Ireland, c. 1880–1918. 
+                        <hi rend="italic">Transactions of the Royal Historical Society</hi>, 
+                        <hi rend="italic">27</hi>, 193-209.
+                    </bibl>
+                    <bibl>Walsh, F. (2020). 
+                        <hi rend="italic">Irish Women and the Great War</hi>. Cambridge University Press.
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

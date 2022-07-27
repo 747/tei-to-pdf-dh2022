@@ -118,16 +118,16 @@
             </figure>
             <p style="text-align: left; ">Figure 5 – Interacting with the article through myBinder</p>
             <p style="text-align: left; ">All along the process of designing and developing the infrastructure, we entered a process of co-building the journal’s infrastructure with authors through the organisation of workshops. The idea to use notebooks, for instance, has been discussed with authors during one of those. When abstracts are submitted, individual meetings with authors allowed us to adapt to their needs. </p>
-            <p style="text-align: left; ">The interdisciplinarity of the JDH’s team at the C
-                <hi rend="superscript">2</hi>DH and its horizontal functioning have also been a strong strength: the cumulative competences of designers (2), developers (2), server admin (1), copy editors (1) and historians (2) allowed us to build a publishing infrastructure within 18 months, from the use of open source bricks.
+            <p style="text-align: left; ">The interdisciplinarity of the JDH’s team at the C<hi rend="superscript">2</hi>DH and its horizontal functioning have also been a strong strength: the cumulative competences of designers (2), developers (2), server admin (1), copy editors (1) and historians (2) allowed us to build a publishing infrastructure within 18 months, from the use of open source bricks.
             </p>
             <p style="text-align: left; ">We are currently facing several limitations:</p>
-            <p style="text-align: left; ">The JDH is open access and favours open data, but legal restrictions, especially for the 20th and the 21
-                <hi rend="superscript">st</hi> century, restrict this policy as well as technical limitations when the notebook deals with very large amounts of data;
+            <p style="text-align: left; ">The JDH is open access and favours open data, but legal restrictions, especially for the 20<hi rend="superscript">th</hi> and the 21<hi rend="superscript">st</hi> century, restrict this policy as well as technical limitations when the notebook deals with very large amounts of data;
             </p>
-            <p style="text-align: left; ">Finding reviewers who are literate in history and in computing is not easy;</p>
-            <p style="text-align: left; ">It is still unclear how code and datasets should be evaluated;</p>
-            <p style="text-align: left; ">Citations are dealt with by zotero, through a notebook extension (cite2c) that deserves much more development.</p>
+            <list type="unordered">
+            <item style="text-align: left; ">Finding reviewers who are literate in history and in computing is not easy;</item>
+            <item style="text-align: left; ">It is still unclear how code and datasets should be evaluated;</item>
+            <item style="text-align: left; ">Citations are dealt with by zotero, through a notebook extension (cite2c) that deserves much more development.</item>
+            </list>
             <p style="text-align: left; ">The JDH’s next perspectives are editorial: we will experiment with the notion of ‘issue’. A JDH issue is a stream of articles. We do not publish all articles of an issue at the same time, because the JDH team’s workload for each article is high. We would now like to investigate open-ended issues, on teaching digital history for instance.</p>
         </body>
         <back>

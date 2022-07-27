@@ -17,6 +17,12 @@
     <!-- Print paper ID's: yes or no -->
     <xsl:variable name="id">no</xsl:variable>
 
+    <xsl:template name="capitalize"><!-- DH2022 mod -->
+        <xsl:param name="s"/>
+        <xsl:value-of select="concat(
+            upper-case(substring($s, 1, 1)), substring($s, 2)
+        )"/>
+    </xsl:template>
     
     <!-- =================================================================================
          XSL to create xsl-fo file from the combined TEI Corpus file. 
@@ -965,7 +971,7 @@
                                         <fo:block text-align-last="justify"><xsl:call-template name="toc_author"/>
                                             <xsl:for-each select="teiHeader[1]/fileDesc[1]/titleStmt[1]/author/name[1]">
                                                 <!-- <fo:inline><xsl:call-template name="text"/><xsl:value-of select="normalize-space(.)"/> -->
-                                                <fo:inline><xsl:value-of select="./surname"/><xsl:text>, </xsl:text><xsl:value-of select="./forename"/><!-- DH2022 mod -->
+                                                <fo:inline><xsl:call-template name="capitalize"><xsl:with-param name="s" select="./surname"/></xsl:call-template><xsl:text>, </xsl:text><xsl:value-of select="./forename"/><!-- DH2022 mod -->
                                                     <xsl:if test="position() != last()"><xsl:text>; </xsl:text></xsl:if>
                                                 </fo:inline>
                                             </xsl:for-each>
@@ -1132,7 +1138,7 @@
                                                 <xsl:value-of select="@n"></xsl:value-of>
                                             </xsl:attribute>
                                             <!-- <xsl:value-of select="name"/> -->
-                                            <xsl:value-of select="name/surname"/><xsl:text>, </xsl:text><xsl:value-of select="name/forename"/><!-- DH2022 mod -->
+                                            <xsl:call-template name="capitalize"><xsl:with-param name="s" select="name/surname"/></xsl:call-template><xsl:text>, </xsl:text><xsl:value-of select="name/forename"/><!-- DH2022 mod -->
                                         </fo:block>
                                         <fo:block><xsl:call-template name="author_email"/>
                                             <xsl:value-of select="email"/>
@@ -1205,7 +1211,7 @@
                                             <xsl:value-of select="@n"></xsl:value-of>
                                         </xsl:attribute>
                                         <!-- <xsl:value-of select="name"/> -->
-                                        <xsl:value-of select="name/surname"/><xsl:text>, </xsl:text><xsl:value-of select="name/forename"/><!-- DH2022 mod -->
+                                        <xsl:call-template name="capitalize"><xsl:with-param name="s" select="name/surname"/></xsl:call-template><xsl:text>, </xsl:text><xsl:value-of select="name/forename"/><!-- DH2022 mod -->
                                     </fo:block>
                                     <fo:block><xsl:call-template name="author_email"/>
                                         <xsl:value-of select="email"/>
@@ -1280,7 +1286,7 @@
                                             <xsl:value-of select="@n"></xsl:value-of>
                                         </xsl:attribute>
                                         <!-- <xsl:value-of select="name"/> -->
-                                        <xsl:value-of select="name/surname"/><xsl:text>, </xsl:text><xsl:value-of select="name/forename"/><!-- DH2022 mod -->
+                                        <xsl:call-template name="capitalize"><xsl:with-param name="s" select="name/surname"/></xsl:call-template><xsl:text>, </xsl:text><xsl:value-of select="name/forename"/><!-- DH2022 mod -->
                                     </fo:block>
                                     <fo:block><xsl:call-template name="author_email"/>
                                         <xsl:value-of select="email"/>
@@ -1347,7 +1353,7 @@
                                             <xsl:value-of select="@n"></xsl:value-of>
                                         </xsl:attribute>
                                         <!-- <xsl:value-of select="name"/> -->
-                                        <xsl:value-of select="name/surname"/><xsl:text>, </xsl:text><xsl:value-of select="name/forename"/><!-- DH2022 mod -->
+                                        <xsl:call-template name="capitalize"><xsl:with-param name="s" select="name/surname"/></xsl:call-template><xsl:text>, </xsl:text><xsl:value-of select="name/forename"/><!-- DH2022 mod -->
                                     </fo:block>
                                     <fo:block><xsl:call-template name="author_email"/>
                                         <xsl:value-of select="email"/>
@@ -1416,7 +1422,7 @@
                                             <xsl:value-of select="@n"></xsl:value-of>
                                         </xsl:attribute>
                                         <!-- <xsl:value-of select="name"/> -->
-                                        <xsl:value-of select="name/surname"/><xsl:text>, </xsl:text><xsl:value-of select="name/forename"/><!-- DH2022 mod -->
+                                        <xsl:call-template name="capitalize"><xsl:with-param name="s" select="name/surname"/></xsl:call-template><xsl:text>, </xsl:text><xsl:value-of select="name/forename"/><!-- DH2022 mod -->
                                     </fo:block>
                                     <fo:block><xsl:call-template name="author_email"/>
                                         <xsl:value-of select="email"/>
@@ -1455,10 +1461,14 @@
                         <fo:block text-align-last="justify"><xsl:call-template name="text"/>
                             <!-- <xsl:value-of select="parent::name"/><xsl:text> </xsl:text> -->
                             <!-- DH2022 mod -->
-                            <xsl:value-of select="($current-name/surname[not(@nymRef)], $current-name/surname/@nymRef)[1]"/><xsl:if test="$current-name/surname[@nymRef]">
-                                (<xsl:value-of select="string-join(distinct-values($current-name/surname[@nymRef]), ',')"/>)</xsl:if><xsl:text>, </xsl:text>
-                            <xsl:value-of select="($current-name/forename[not(@nymRef)], $current-name/forename/@nymRef)[1]"/><xsl:if test="$current-name/forename[@nymRef]">
-                                (<xsl:value-of select="string-join(distinct-values($current-name/forename[@nymRef]), ',')"/>)</xsl:if><xsl:text> </xsl:text>
+                            <xsl:variable name="head-surname" select="($current-name/surname[not(@nymRef)], $current-name/surname/@nymRef)[1]"/>
+                            <xsl:variable name="head-forename" select="($current-name/forename[not(@nymRef)], $current-name/forename/@nymRef)[1]"/>
+                            <xsl:variable name="var-surname" select="$current-name/surname[@nymRef and lower-case(.) != lower-case($head-surname)]"/>
+                            <xsl:variable name="var-forename" select="$current-name/forename[@nymRef and lower-case(.) != lower-case($head-forename)]"/>
+                            <xsl:value-of select="$head-surname"/><xsl:if test="$var-surname">
+                                (<xsl:value-of select="string-join(distinct-values($var-surname), ',')"/>)</xsl:if><xsl:text>, </xsl:text>
+                            <xsl:value-of select="$head-forename"/><xsl:if test="$var-forename">
+                                (<xsl:value-of select="string-join(distinct-values($var-forename), ',')"/>)</xsl:if><xsl:text> </xsl:text>
                             <!-- end DH2022 mod -->
                             <fo:leader leader-pattern="dots"/>
                             <xsl:for-each select="current-group()">

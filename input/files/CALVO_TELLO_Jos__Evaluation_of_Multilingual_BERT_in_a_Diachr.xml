@@ -136,9 +136,7 @@
                         <hi rend="color(#000000)">Classification tasks</hi>
                         <hi rend="color(#000000)">: </hi>
                         <anchor xml:id="id_docs-internal-guid-315a86dc-7fff-931d-249d-40ad7bec6f63"/>
-                        <hi rend="color(#000000)">We apply classification to three annotated categories for each book: genre (e.g., historical, law, letter, </hi>
-                        <ref target="https://www.zotero.org/google-docs/?aLK3GE">Zimmermann, 2010)</ref>
-                        <hi rend="color(#000000)">, historical group (e.g., Gospel, Pentateuch), and Testament (Old and New). We create balanced datasets and guarantee each language has at least the same number of Bibles per category. We then split in a training (80%), validation (10%), and test set (10%) and build models for each language as well as combined ones for each century (except for translations pre-1500). We assess the performance of each model using the F1-macro metric (the higher, the better).</hi>
+                        <hi rend="color(#000000)">We apply classification to three annotated categories for each book: genre (e.g., historical, law, letter, Zimmermann, 2010), historical group (e.g., Gospel, Pentateuch), and Testament (Old and New). We create balanced datasets and guarantee each language has at least the same number of Bibles per category. We then split in a training (80%), validation (10%), and test set (10%) and build models for each language as well as combined ones for each century (except for translations pre-1500). We assess the performance of each model using the F1-macro metric (the higher, the better).</hi>
                     </item>
                 </list>
                 <p>

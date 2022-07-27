@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="full">
+                    <title type="main">Democratizing Poetry Corpora with Averell</title>
+                    <title type="sub"/>
+                </title>
+                <author>
+                    <persName>
+                        <surname key="Rosa">de la Rosa</surname>
+                        <forename>Javier</forename>
+                    </persName>
+                    <affiliation>National Library of Norway, Norway</affiliation>
+                    <email>versae@nb.no</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Díaz</surname>
+                        <forename>Aitor</forename>
+                    </persName>
+                    <affiliation>UNED, Spain</affiliation>
+                    <email>adiazm@scc.uned.es</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Pérez</surname>
+                        <forename>Álvaro</forename>
+                    </persName>
+                    <affiliation>UNED, Spain</affiliation>
+                    <email>alvaro.perez@linhd.uned.es</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>Ros</surname>
+                        <forename>Salvador</forename>
+                    </persName>
+                    <affiliation>UNED, Spain</affiliation>
+                    <email>sros@scc.uned.es</email>
+                </author>
+                <author>
+                    <persName>
+                        <surname>González-Blanco</surname>
+                        <forename>Elena</forename>
+                    </persName>
+                    <affiliation>IE School of Human Sciences and Technology, Spain</affiliation>
+                    <email>egonzalezblanco@faculty.ie.edu</email>
+                </author>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <date>2022-04-28T14:46:29.219913891</date>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>DH2022 Local Organizing Committee</publisher>
+                <address>
+                    <addrLine>7-3-1, Hongo, </addrLine>
+                    <addrLine>Bunkyo-ku, Tokyo</addrLine>
+                    <addrLine>Japan</addrLine>
+                    <addrLine>DH2022 Local Organizing Committee</addrLine>
+                </address>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Converted from an OASIS Open Document</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application ident="DHCONVALIDATOR" version="1.22">
+                    <label>DHConvalidator</label>
+                </application>
+            </appInfo>
+        </encodingDesc>
+        <profileDesc>
+            <textClass>
+                <keywords scheme="ConfTool" n="category">
+                    <term>Paper</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="subcategory">
+                    <term>Long Presentation</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="keywords">
+                    <term>corpus management</term>
+                    <term>collections as data</term>
+                    <term>poetic corpora</term>
+                </keywords>
+                <keywords scheme="ConfTool" n="topics">
+                    <term>Europe</term>
+                    <term>English</term>
+                    <term>19th Century</term>
+                    <term>20th Century</term>
+                    <term>Contemporary</term>
+                    <term>database creation</term>
+                    <term>management</term>
+                    <term>and analysis</term>
+                    <term>software development</term>
+                    <term>systems</term>
+                    <term>analysis and methods</term>
+                    <term>Humanities computing</term>
+                    <term>Literary studies</term>
+                    <term>I plan to attend the conference in Tokyo in person</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="div1" rend="DH-Heading2">
+                <head>Introduction</head>
+                <p>Broadly defined, a corpus is a collection of machine-readable texts that are somewhat representative of a particular reality of scholarly interest (McEnery et al. 2006: 5, Xiao 2012: 147). Corpus creation has been part of the research practices of linguists and philologists for decades, and it has recently entered the computer sciences via the mixture field of natural language processing (NLP). Corpora have become a key resource in the development and evaluation of computer systems that deal with language. As these approaches from NLP are being re-discovered, applied, and enriched within the computational humanities, the making of these corpora and their transformation into structured or plain digital texts is of vital importance. Just in the literary domain, there are arguably thousands of corpora available to download or query. In a comprehensive survey, Xiao (2010) describes over a hundred well-known and highly influential corpora in English and other languages. Smaller corpora for understudied or endangered languages have also recently appeared (see Scannell 2007, Ostler 2008, Cox 2011). Notably, only five corpora in these surveys contained poetry and only one of them was annotated with relevant poetic features. As newer poetic corpora with rich annotations are becoming available, we need a proper tool to uniformly access them.</p>
+            </div>
+            <div type="div1" rend="DH-Heading2">
+                <head>Averell</head>
+                <p>Among the characteristics that should guide the building of a corpus (McEnery and Wilson, 2001; Gries and Berez, 2015), two are commonly desired: machine readability and availability to researchers. Unfortunately, even when corpora is made fully available in electronic format, it is often the case that scholars struggle to find a proper way to address their research questions using the ready-made corpora (see e.g., Xiao, 2010). In this sense, Averell is a tool that tries to lower the barrier for researchers interested in the study of multilingual poetry corpora. It provides a unified interface to query, manage, download, and merge corpora of poetic nature in multiple languages based on features relevant for poetry scansion and meter analysis. At its core, Averell is a Python library that connects existing annotated corpora in either JSON, XML, or TEI formats, and makes them available into rich CSV and JSON-lines formats that can be later converted into semantic RDF according to the POSTDATA network of ontologies (González-Blanco et al., 2020). Averell exposes a consistent programming application interface to integrate its functionalities into larger software projects, and it is also packaged as a command line tool for its direct use from the terminal.</p>
+            </div>
+            <div type="div1" rend="DH-Heading2">
+                <head>Granularity</head>
+                <p>Averell is structured around two key aspects: the catalogue and its granularity. Each corpus defines a granularity level at which its documents can be split. All corpora support splitting by poems and lines (verses), but a line can also be split into words, and then syllables, for which metrical patterns might be provided. In some cases, stanzas, a set of structural and often semantical units within the poem, are also available. Extra information such as the lengths of verses, the amount of lines per stanza, or the type of rhymes is also added when available. This granular annotation allows scholars to merge different corpora and extract sets of poems that meet specific criteria. For example, a corpus of hendecasyllabic safic verses, or poems for a specific period only at the level of the stanza. Instances of the use of Averell to carry out studies in poetry already exist. De la Rosa et al. (2020, 2021) used Averell to create training and validation datasets to fine-tune transformers-based models and to create rule-based systems to a metrical prediction task.</p>
+            </div>
+            <div type="div1" rend="DH-Heading2">
+                <head>Catalogue</head>
+                <p>The current catalogue in Averell (Table 1) contains corpora in Czech, English, French, Italian, Portuguese, and Spanish. A total of 12 corpora with 3,847,739 verses are available to download and remix, with different levels of granularity but all of them annotated to a certain extent.</p>
+                <p>Since corpora have different sizes, formats, and metrical information, we pre-processed each corpus looking for common metadata tags and structures. We then created reusable parsers to extract the relevant information exposed by Averell. The result is a JSON-lines structure capable of capturing the common details of the different corpora. From this common intermediate format, Averell is able to produce data in formats suitable for analysis such as CSV, Parquet, XML TEI, and even POSTDATA RDF triplets.</p>
+            </div>
+            <div type="div1" rend="DH-Heading2">
+                <head>Conclusions</head>
+                <p>In this work, we have introduced the tool Averell for the management and remixing of annotated poetic corporar in a multilingual setting. We have described its structure and showcased a few of its uses in existing scholarly work. We hope to enrich the tool supporting more formats, better interoperability, a larger catalogue, and an easy-to-use web interface.</p>
+                <p>Table 1. Corpora available and granularity levels for each</p>
+                <table rend="frame" xml:id="Table1">
+                    <note type="direction">
+                        <width unit="pt">51</width>
+                        <width unit="pt">141</width>
+                        <width unit="pt">51</width>
+                    </note>
+                    <row>
+                        <cell>Name</cell>
+                        <cell>Description</cell>
+                        <cell>Granularity</cell>
+                    </row>
+                    <row>
+                        <cell>Disco v2.1 and v3</cell>
+                        <cell>The Diachronic Spanish Sonnet Corpus (DISCO) Spanish 15th and the 19th centuries sonnets corpus</cell>
+                        <cell>stanza
+                            <lb/>line
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>Sonetos siglo de oro</cell>
+                        <cell>Spanish 16th and the 17th centuries sonnets corpus (Miguel de Cervantes Virtual Library)</cell>
+                        <cell>stanza
+                            <lb/>line
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>ADSO 100</cell>
+                        <cell>Spanish Golden age sonnet corpus</cell>
+                        <cell>stanza
+                            <lb/>line
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>Poesía Lírica Castellana del Siglo de Oro</cell>
+                        <cell> Golden Age Castilian lyric poetry corpus </cell>
+                        <cell>stanza
+                            <lb/>line
+                            <lb/>word
+                            <lb/>syllable
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>Gongocorpus</cell>
+                        <cell>Luis de Gongora poetry corpus </cell>
+                        <cell>stanza
+                            <lb/>line
+                            <lb/>word
+                            <lb/>syllable
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>Eighteenth-Century
+                            <lb/>Poetry Archive
+                        </cell>
+                        <cell>English Eighteenth Century poetry corpus</cell>
+                        <cell>stanza
+                            <lb/>line
+                            <lb/>word
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>For Better For Verse</cell>
+                        <cell>University of Virginia poetry corpus</cell>
+                        <cell>Stanza
+                            <lb/>line
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>Métrique en Ligne</cell>
+                        <cell>Université de Caen Normandie (CRISCO) french poetry corpus</cell>
+                        <cell>stanza
+                            <lb/>line
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>Biblioteca Italiana</cell>
+                        <cell>Italian Medioevo to Novecento poetry corpus</cell>
+                        <cell>stanza </cell>
+                    </row>
+                    <row>
+                        <cell>Corpus of Czech Verse</cell>
+                        <cell>Corpus of Czech poetry of the 19th and of the beginning of the 20th centuries</cell>
+                        <cell>stanza
+                            <lb/>line
+                            <lb/>word
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>Stichotheque Portuguese</cell>
+                        <cell>Stichotheque project portuguese poetry copus</cell>
+                        <cell>stanza
+                            <lb/>line
+                        </cell>
+                    </row>
+                </table>
+            </div>
+        </body>
+        <back>
+            <div type="bibliogr">
+                <listBibl>
+                    <head>Bibliography</head>
+                    <bibl>
+                        <hi rend="bold">Cox, C.</hi> (2011). 
+                        <hi rend="italic">Corpus Linguistics and Language Documentation: Challenges for Collaboration</hi>. Brill doi:
+                        <ref target="https://doi.org/10.1163/9789401206884_013">10.1163/9789401206884_013</ref>. 
+                        <ptr target="https://brill.com/view/book/edcoll/9789401206884/B9789401206884-s013.xml"/> (accessed 28 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">De la </hi>
+                        <hi rend="bold">Rosa, J., Pérez, Á., Hernández, L., Ros, S. and González-Blanco, E.</hi> (2020). Rantanplan, Fast and Accurate Syllabification and Scansion of Spanish Poetry. 
+                        <hi rend="italic">Procesamiento del Lenguaje Natural</hi>, 
+                        <hi rend="bold">65</hi>(0): 83–90.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">De la </hi>
+                        <hi rend="bold">Rosa, J., Pérez, Á., Sisto, M. de, Hernández, L., Díaz, A., Ros, S. and González-Blanco, E.</hi> (2021). Transformers analyzing poetry: multilingual metrical pattern prediction with transfomer-based language models. 
+                        <hi rend="italic">Neural Computing and Applications</hi> doi:
+                        <ref target="https://doi.org/10.1007/s00521-021-06692-2">10.1007/s00521-021-06692-2</ref>. 
+                        <ptr target="https://doi.org/10.1007/s00521-021-06692-2"/> (accessed 28 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">González-Blanco, E., Ros Muñoz, S., De la Rosa, J., Pérez Pozo, Á., Hernández, L., De Sisto, M., Díaz, A., Khalil, O., Rodríguez, J. L. and Leguina, L.</hi> (2020). Towards an Ontology for European Poetry doi:
+                        <ref target="https://doi.org/10.5281/zenodo.4299645">10.5281/zenodo.4299645</ref>. 
+                        <ptr target="https://zenodo.org/record/4299645"/> (accessed 28 April 2022).
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Gries, S. Th.</hi> (2009). What is Corpus Linguistics?. 
+                        <hi rend="italic">Language and Linguistics Compass</hi>, 
+                        <hi rend="bold">3</hi>(5): 1225–41 doi:
+                        <ref target="https://doi.org/10.1111/j.1749-818X.2009.00149.x">10.1111/j.1749-818X.2009.00149.x</ref>.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">McEnery, T. and Wilson, A.</hi> (2001). 
+                        <hi rend="italic">Corpus Linguistics: An Introduction</hi>. Edinburgh University Press.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Ostler, N.</hi> (2008). Corpora of less studied languages. 
+                        <hi rend="italic">Corpus Linguistics: An International Handbook</hi>, 
+                        <hi rend="bold">1</hi>. Walter de Gruyter Berlin: 457–83.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Scannell, K. P.</hi> (2007). The Crњbadсn Project: Corpus building for under-resourced languages. 
+                        <hi rend="italic">Cahiers Du Cental</hi>, 
+                        <hi rend="bold">5</hi>. Citeseer: 1.
+                    </bibl>
+                    <bibl>
+                        <hi rend="bold">Xiao, R.</hi> (2010). Corpus creation. In Indurkhya, N. and Damerau, F. (eds), 
+                        <hi rend="italic">The Handbook of Natural Language Processing</hi>. 2nd edition. CRC PRESS-TAYLOR &amp; FRANCIS GROUP, pp. 147–65.
+                    </bibl>
+                    <bibl>Corpus-Based Language Studies: An Advanced Resource Book 
+                        <hi rend="italic">Routledge &amp; CRC Press</hi>
+                        <ptr target="https://www.routledge.com/Corpus-Based-Language-Studies-An-Advanced-Resource-Book/McEnery-Xiao-Tono/p/book/9780415286237"/> (accessed 28 April 2022).
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>

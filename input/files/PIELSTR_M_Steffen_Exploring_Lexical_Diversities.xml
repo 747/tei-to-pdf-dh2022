@@ -111,6 +111,30 @@
     </teiHeader>
     <text>
         <body>
+            <div type="div1">
+            <head>Introduction</head>
+            <p>
+                The assumption that literary texts are particularly complex is one of
+                the most important premises of work in literary studies (for example
+                Koschorke 2016, Nan Da 2019). This complexity can be perceived on many
+                different levels, with lexical diversity being one of many determining
+                factors. Different disciplines have proposed different measures over
+                time, but only recently some attempts have been made to consolidate
+                research findings into a comprehensive overview (for example Jarvis
+                2013; Tweedie/Baayen 1998). Here, we propose a multi-dimensional model
+                of lexical complexity. We provide a definition for each dimension and
+                suggest a best-practice operationalization for most. These
+                operationalizations are validated by comparing a collection of texts for
+                adult readers with a collection of comparable texts aimed at children.
+                Finally, we illustrate the usefulness of our approach in application to
+                literary texts. Though we work with German texts, previous work on
+                variability with different languages including Chinese and Japanese has
+                shown that these measures are not language specific (Pielström et al. in
+                preparation).
+            </p>
+            </div>
+            <div type="div1">
+                <head>Corpora</head>
             <p>
                 <anchor xml:id="id_docs-internal-guid-1e510014-7fff-82bf-179f-c9346e6aefa9"/>
                 <hi rend="color(#000000)">The validation corpora (Weiß &amp; Meurers 2018) contain German non-fiction text from the educational magazine “Geo” (</hi>
@@ -121,6 +145,7 @@
                 <hi rend="color(#000000)"> </hi>
                 <hi rend="color(#000000)">(161 works, approx. 17 mio. tokens) with “dime novels” (1167 works in six different genres, approx. 40 mio. tokens), both under copyright. Dime novels are a type of fiction mass-produced in long-lasting series and sold in kiosks rather than book stores.</hi>
             </p>
+            </div>
             <div type="div1">
                 <head>Aspects of complexity and measurement</head>
                 <p>Quantifying diversity is no trivial task. As Jarvis (2013b) points out, existing measures of lexical diversity often lack an underlying construct definition and intuitive concepts of diversity vary. Jarvis proposes six dimensions to properly define the construct: variability, volume (which we do not consider separately), evenness, rarity, dispersion, and disparity. Additionally, we look at innovation, surprise, and density.</p>

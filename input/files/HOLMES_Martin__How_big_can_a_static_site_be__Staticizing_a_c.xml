@@ -131,7 +131,7 @@
                 </head>
                 <p>
                     <hi rend="italic">VIHistory</hi> (
-                    <ptr target="https://vihistory.uvic.ca/"/>), a PostgreSQL/PHP project created about 15 years ago, presents census data from the City of Victoria and Vancouver Island, from censuses taken in 1871, 1881, 1891, 1901, and 1911, comprising nearly 150,000 individual census records, along with associated tables of occupations, familial relationships, locations, addresses, religion, languages, nationalities and other associated concepts. In terms of the number of individual HTML pages required for a static site, it is between five and ten times the size of the largest project we have previously staticized. VIHistory has undergone successive infrastructure migrations over the years, and various features have broken as a result. A looming server migration will render it non-functional, so we must take action within a short period. Furthermore, a new dataset (an addendum to the 1901 census) is now available for addition to the collection. Rather than invest more time in patching the existing site, we are instead creating a static version, with a completion deadline of April 2022.
+                    <ptr target="https://vihistory.uvic.ca/"/>), a PostgreSQL/PHP project created about 15 years ago, presents census data from the City of Victoria and Vancouver Island, from censuses taken in 1871, 1881, 1891, 1892, 1901, and 1911, comprising nearly 150,000 individual census records, along with associated tables of occupations, familial relationships, locations, addresses, religion, languages, nationalities and other associated concepts. In terms of the number of individual HTML pages required for a static site, it is between five and ten times the size of the largest project we have previously staticized. VIHistory has undergone successive infrastructure migrations over the years, and various features have broken as a result. A looming server migration will render it non-functional, so we must take action within a short period. Furthermore, a new dataset (an addendum to the 1901 census) is now available for addition to the collection. Rather than invest more time in patching the existing site, we are instead creating a static version, with a completion deadline of April 2022.
                 </p>
                 <p>Census data brings with it a range of challenges, particularly when multiple censuses are to be presented as an integrated dataset. From one census to another, the range of data collected will vary; ward boundaries change; and descriptors such as nationality, race, occupation, familial relationships and languages mutate as social and political norms evolve.
                     <hi rend="sup">
@@ -171,7 +171,6 @@
                         <ptr target="https://dev.clariah.nl/files/dh2019/boa/0648.html"/>.
                     </bibl>
                     <bibl>Dombrowski, Quinn. 2019. “Sorry for all the Drupal: Reflections on the 3rd anniversary of ‘Drupal for Humanists.’” Quinn Dombrowski (blog), November 8, 2019.
-                        <ref target="http://www.quinndombrowski.com/?q=blog/2019/11/08/sorry-all-drupal-reflections-3rd-anniversary-drupal-humanists"> </ref>
                         <ptr target="http://www.quinndombrowski.com/?q=blog/2019/11/08/sorry-all-drupal-reflections-3rd-anniversary-drupal-humanists"/>.
                     </bibl>
                     <bibl>Goddard, Lisa. 2018. “The Endings Project @ UVic: Concluding, Archiving, and Preserving Digital Projects for Long-Term Usability.” @Risk North 2: Digital Collections, Montreal, Canada. 
@@ -197,8 +196,7 @@
                     <bibl>Holmes, Martin, and Joey Takeda. 2020b. “Nine Projects, One Codebase: A Static Search Engine for Digital Editions.” Presented at the COLLABORATION Digital Humanities Conference, University of British Columbia / online. 
                         <ptr target="http://dhconference.sites.olt.ubc.ca/conference-info/program/day-4/"/>.
                     </bibl>
-                    <bibl>Nowviskie, Bethany, and Dot Porter. 2010. “
-                        <ref target="http://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-722.html">
+                    <bibl>Nowviskie, Bethany, and Dot Porter. 2010. “<ref target="http://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-722.html">
                             <hi rend="color(#1155cc) underline">Graceful Degradation: Results of the Survey</hi>
                         </ref>.” Presented at Digital Humanities 2010, King’s College, London. 
                         <ptr target="https://nowviskie.org/Graceful_Degradation.pdf"/>.

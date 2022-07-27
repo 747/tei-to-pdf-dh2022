@@ -28,7 +28,7 @@
                         <surname>Diehr</surname>
                         <forename>Franziska</forename>
                     </persName>
-                    <affiliation>Freie Universität Berlin, Germany</affiliation>
+                    <affiliation>Robert Koch Institute, Germany</affiliation>
                     <email>diehrf@rki.de</email>
                 </author>
                 <author>
@@ -104,8 +104,7 @@
                     <anchor xml:id="id_docs-internal-guid-64e52c94-7fff-798b-ffe8-964428c0d14b"/>How may we model gender to account for its diversity while remaining simple enough to implement and query?
                 </p>
                 <p>We address why gender diversity needs to be represented in databases, especially when confronted with historical sources. Analysing examples of gender modelling in established metadata schemata and descriptive data models, we propose a model that strikes a balance between an atomic and flexible ontology that returns valid results even for naïve data queries. We introduce the use of 
-                    <hi rend="bold">gender qualifiers</hi>, which allow nuanced statements on how the gender information was formulated. Use of the proposed modelling strategies are demonstrated following the Wikibase data model.
-                    <note xml:id="ftn1" place="foot" n="1">Funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany’s Excellence Strategy in the context of the Cluster of Excellence Temporal Communities: Doing Literature in a Global Perspective – EXC 2020 – Project ID 390608380.</note>
+                    <hi rend="bold">gender qualifiers</hi>, which allow nuanced statements on how the gender information was formulated. Use of the proposed modelling strategies are demonstrated following the Wikibase data model.<note xml:id="ftn1" place="foot" n="1">Funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany’s Excellence Strategy in the context of the Cluster of Excellence Temporal Communities: Doing Literature in a Global Perspective – EXC 2020 – Project ID 390608380.</note>
                 </p>
             </div>
             <div type="div1" rend="DH-Heading">
@@ -145,15 +144,11 @@
                     <hi rend="bold">non-binary</hi>, and more) from 
                     <hi rend="bold">gender modality</hi>, a concept proposed by Ashley (pre-published) as an umbrella term that includes but is not limited to transgender and cisgender modalities, we make it possible for more precise information on a person’s gender. Nonetheless, we avoid using the term gender 
                     <hi rend="bold">identity</hi>, because historical sources seldom include gender self-identification, but instead are based on presumed or ascribed gender. In order to create a reliable data basis, we believe it indispensable to make explicit how the gender-specific information was formulated. We therefore propose extending gender information with qualifying statements. The terminology assembled in the GSSO ontology (Kronk &amp; Dexheimer, 2020), which includes 
-                    <hi rend="bold">assumed</hi>,
-                    <note xml:id="ftn2" place="foot" n="2">assumed gender: ‘The assumption of a person’s gender based on any predefined characteristics and biases.’</note>
-                    <hi rend="bold">experienced</hi>
-                    <note xml:id="ftn3" place="foot" n="3">experienced gender: ‘The gender with which a person identifies.’</note> (we propose using the term 
+                    <hi rend="bold">assumed</hi>,<note xml:id="ftn2" place="foot" n="2">assumed gender: ‘The assumption of a person’s gender based on any predefined characteristics and biases.’</note>
+                    <hi rend="bold">experienced</hi><note xml:id="ftn3" place="foot" n="3">experienced gender: ‘The gender with which a person identifies.’</note> (we propose using the term 
                     <hi rend="bold">self-identified</hi> instead), 
-                    <hi rend="bold">lived</hi>,
-                    <note xml:id="ftn4" place="foot" n="4">lived gender: ‘The gender in which an individual lives their everyday life. This is usually a combination of performance of expected gender roles and gender expression, and may not represent a person’s actual gender.’</note> and 
-                    <hi rend="bold">recorded</hi>
-                    <note xml:id="ftn5" place="foot" n="5">recorded gender: ‘Gender as recorded by any of various institutions, organisations, writings, etc.’</note> gender, appears especially suitable to this task. However, while the GSSO lists non-Western genders such as hijra, muxe and X-gender as ‘culturally specific’ non-binary gender identities (Kronk &amp; Dexheimer, 2020), we propose to instead place all gender instances on one level, countering the Eurocentrism in subsuming all genders under the concepts of non-binary and transgender (Kravitz, 2021).
+                    <hi rend="bold">lived</hi>,<note xml:id="ftn4" place="foot" n="4">lived gender: ‘The gender in which an individual lives their everyday life. This is usually a combination of performance of expected gender roles and gender expression, and may not represent a person’s actual gender.’</note> and 
+                    <hi rend="bold">recorded</hi><note xml:id="ftn5" place="foot" n="5">recorded gender: ‘Gender as recorded by any of various institutions, organisations, writings, etc.’</note> gender, appears especially suitable to this task. However, while the GSSO lists non-Western genders such as hijra, muxe and X-gender as ‘culturally specific’ non-binary gender identities (Kronk &amp; Dexheimer, 2020), we propose to instead place all gender instances on one level, countering the Eurocentrism in subsuming all genders under the concepts of non-binary and transgender (Kravitz, 2021).
                 </p>
                 <div type="div2" rend="DH-Heading2">
                     <head>Examples</head>
@@ -162,10 +157,10 @@
                         <hi rend="bold">self-identified gender</hi> should only be used if there is evidence of the gender identity given by the respective persons themselves. This is more often the case with contemporary, non-historical individuals (Figure 1). But historical exceptions exist: 18th-century preacher Public Universal Friend (Figure 2), for instance, who publicly identified as being reborn genderless and requested to be referred to without pronouns from 1776 on (Moyer, 2015, pp. 12–13).
                     </p>
                     <p>Where there is no personal record available, the 
-                        <hi rend="bold">self-identified gender</hi> cannot be determined. Diné weaver and healer Hastiin Tł’a (1867–1937), for instance, was a nádleehi, a Diné Two-Spirit, or third-gendered person. According to Naruszewicz (2016, pp. 2–3), weaving and the ceremonial duties of healers were gendered activities within the Diné tribe, and only nádleehi were allowed to follow both. The fact that Tł’a was both suggests that Tł’a’s gender can be assumed as nádleehi (Figure 3). We suggest using 
+                        <hi rend="bold">self-identified gender</hi> cannot be determined. Diné weaver and healer Hastiin Tł’a (1867–1937), for instance, was a nádleehi, a Diné Two-Spirit person. According to Naruszewicz (2016, pp. 2–3), weaving and the ceremonial duties of healers were gendered activities within the Diné tribe, and only nádleehi were allowed to follow both. The fact that Tł’a was both suggests that Tł’a’s gender can be assumed as nádleehi (Figure 3). We suggest using 
                         <hi rend="bold">assumed gender</hi> as a qualifier in this case and whenever there are only weak indicators (e.g. gendered pronouns, titles, occupations) available. This might also be the case when we are confronted with gender information derived from authority files, because there are no indicators available on how the information was determined in the first place.
                     </p>
-                    <p>Sometimes a gender may be recorded, but the reliability of the record is questionable or sources are contradictory. Throughout his life, 19th-century politician Murray Hall (Figure 4), presented male and registered a male name upon migrating to the US. When he died, his body was examined and his gender was posthumously legally determined to be female (Nelson, 2014, pp. 137–145). National media ridiculed him as a ‘passing woman,’ a term that carried an accusation of deception and trickery. In a case like this, we suggest users of the model settle on an approach that allows marking some statements as preferred over others. In the Wikibase context, so-called ranks may be used to emphasise or de-emphasise statements of the same property: The statement of recorded gender being female should be assigned a rank of 
+                    <p>Sometimes a gender may be recorded, but the reliability of the record is questionable or sources are contradictory. Throughout his life, 19th-century politician Murray Hall (Figure 4) presented male and registered a male name upon migrating to the US. When he died, his body was examined and his gender was posthumously legally determined to be female (Nelson, 2014, pp. 137–145). National media ridiculed him as a ‘passing woman,’ a term that carried an accusation of deception and trickery. In a case like this, we suggest users of the model settle on an approach that allows marking some statements as preferred over others. In the Wikibase context, so-called ranks may be used to emphasise or de-emphasise statements of the same property: The statement of recorded gender being female should be assigned a rank of 
                         <hi rend="bold">deprecated</hi> to highlight that 
                         <hi rend="bold">lived gender</hi> and 
                         <hi rend="bold">self-recorded gender</hi> are more credible sources than the official record. Colonial records should be treated in the same fashion, especially when dealing with terms employed by colonial administrations, missionaries or ethnographers. Records from Christian missionaries, for instance, do not ascribe Tł’a a nádleehi gender but rather that of ‘berdache,’ a derogatory colonial term (Naruszewicz, 2016, p. 12; Figure 3).
@@ -199,8 +194,7 @@
                     </head>
                     <p>
                         <anchor xml:id="id_docs-internal-guid-e2dee691-7fff-e03f-fa16-9f4c2d4a7c30"/>One advantage of this approach is that a SPARQL query for persons and the value of their 
-                        <hi rend="bold">gender</hi> property returns valid and readable results. Using Wikibase, ranks may be applied to indicate the reliability of statements.
-                        <note xml:id="ftn6" place="foot" n="6">Although we chose Wikibase as a suitable environment for this task, we wish to highlight that our approach may also be adapted to other systems.</note> For instance, statements based on self-identification should be designated as preferred compared to statements that are based on records or assumptions. Queries would then, by default, only return the highest-ranked statements. Those wishing to go further in their analysis may explicitly query the gender qualifiers attached to a statement and receive the full range of nuances that the model is able to represent (Table 1).
+                        <hi rend="bold">gender</hi> property returns valid and readable results. Using Wikibase, ranks may be applied to indicate the reliability of statements.<note xml:id="ftn6" place="foot" n="6">Although we chose Wikibase as a suitable environment for this task, we wish to highlight that our approach may also be adapted to other systems.</note> For instance, statements based on self-identification should be designated as preferred compared to statements that are based on records or assumptions. Queries would then, by default, only return the highest-ranked statements. Those wishing to go further in their analysis may explicitly query the gender qualifiers attached to a statement and receive the full range of nuances that the model is able to represent (Table 1).
                     </p>
                     <table rend="frame" xml:id="Table2">
                         <note type="direction">
