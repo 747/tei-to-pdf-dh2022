@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- DH2022: needed to update to XSLT 3.0 for suppress-indentation -->
 <xsl:stylesheet 
-    version="2.0" 
+    version="3.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:tei="http://www.tei-c.org/ns/1.0" 
     xmlns:fo="http://www.w3.org/1999/XSL/Format"
     xmlns:m="http://www.w3.org/1998/Math/MathML"
     xpath-default-namespace="http://www.tei-c.org/ns/1.0" >
     
-    <xsl:output indent="yes"/>
-    <!--<xsl:strip-space elements="*"/>-->
+    <xsl:output indent="yes" suppress-indentation="fo:inline fo:basic-link"/><!-- DH2022 mod -->
+    <xsl:strip-space elements="*"/><!-- DH2022 mod -->
     <!--<xsl:preserve-space elements="bibl"/>-->
     
     <!-- Two outputs are: print or pdf. This adjusts colors (for headers), margins, and a few other small things -->
@@ -198,8 +199,7 @@
     </xsl:template>
     
     <xsl:template name="subscript"> 
-        <!-- <xsl:attribute name="vertical-align">sub</xsl:attribute> -->
-        <xsl:attribute name="vertical-align">bottom</xsl:attribute><!-- DH2022 mod -->
+        <xsl:attribute name="vertical-align">sub</xsl:attribute>
         <xsl:attribute name="font-size">8pt</xsl:attribute>
     </xsl:template>
     
@@ -543,6 +543,10 @@
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <!-- <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute> --><!-- DH2022 mod -->
     </xsl:template>
+
+    <xsl:template name="normal"><!-- DH2022 mod -->
+        <xsl:attribute name="font-style">normal</xsl:attribute>
+    </xsl:template>
     
     <!-- Figures -->
     <xsl:template name="figure_container">
@@ -636,37 +640,65 @@
     </xsl:variable>
     
     <!-- Templates for TOC Headers -->
-    
+
+    <xsl:template name="toc_header"><!-- DH2022: for unified condition handling -->
+        <xsl:param name="term"/>
+        <xsl:param name="text"/>
+        <xsl:if test="(//TEI[not(.//editionStmt/@rend='cancelled')]//term[text()=$term])[1] is .">
+            <fo:block><xsl:call-template name="subhead"/><xsl:value-of select="$text"/></fo:block>
+        </xsl:if>
+    </xsl:template>
+
     <xsl:template match="//term[text()='Plenary']" mode="toc">
-        <xsl:if test="(//term[text()='Plenary'])[1] is ."><fo:block><xsl:call-template name="subhead"/>Plenary Sessions</fo:block></xsl:if>
+        <!-- <xsl:if test="(//term[text()='Plenary'])[1] is ."><fo:block><xsl:call-template name="subhead"/>Plenary Sessions</fo:block></xsl:if> -->
+        <xsl:call-template name="toc_header"><!-- DH2022 mod -->
+            <xsl:with-param name="term">Plenary</xsl:with-param>
+            <xsl:with-param name="text">Plenary Sessions</xsl:with-param>
+        </xsl:call-template>
     </xsl:template>
     
     <!-- <xsl:template match="//term[text()='Workshops']" mode="toc"> -->
     <xsl:template match="//term[text()='Pre-Conference Workshop and Tutorial']" mode="toc"><!-- DH2022 mod -->
         <!-- <xsl:if test="(//term[text()='Workshops'])[1] is ."><fo:block><xsl:call-template name="subhead"/>Pre-Conference Workshops and Tutorials</fo:block></xsl:if> -->
-        <xsl:if test="(//term[text()='Pre-Conference Workshop and Tutorial'])[1] is ."><fo:block><xsl:call-template name="subhead"/>Pre-Conference Workshops and Tutorials</fo:block></xsl:if><!-- DH2022 mod -->
+        <xsl:call-template name="toc_header"><!-- DH2022 mod -->
+            <xsl:with-param name="term">Pre-Conference Workshop and Tutorial</xsl:with-param>
+            <xsl:with-param name="text">Pre-Conference Workshops and Tutorials</xsl:with-param>
+        </xsl:call-template>
     </xsl:template>
     
     <xsl:template match="//term[text()='Panel']" mode="toc">
-        <xsl:if test="(//term[text()='Panel'])[1] is ."><fo:block><xsl:call-template name="subhead"/>Panels</fo:block></xsl:if>
+        <!-- <xsl:if test="(//term[text()='Panel'])[1] is ."><fo:block><xsl:call-template name="subhead"/>Panels</fo:block></xsl:if> -->
+        <xsl:call-template name="toc_header"><!-- DH2022 mod -->
+            <xsl:with-param name="term">Panel</xsl:with-param>
+            <xsl:with-param name="text">Panels</xsl:with-param>
+        </xsl:call-template>
     </xsl:template>
     
     <!-- DH2022: divided into long and short presentations -->
     <!-- <xsl:template match="//term[text()='Paper']" mode="toc"> -->
     <xsl:template match="//term[text()='Long Presentation']" mode="toc"><!-- DH2022 mod -->
         <!-- <xsl:if test="(//term[text()='Paper'])[1] is ."><fo:block><xsl:call-template name="subhead"/>Papers</fo:block></xsl:if> -->
-        <xsl:if test="(//term[text()='Long Presentation'])[1] is ."><fo:block><xsl:call-template name="subhead"/>Long Presentations</fo:block></xsl:if><!-- DH2022 mod -->
+        <xsl:call-template name="toc_header"><!-- DH2022 mod -->
+            <xsl:with-param name="term">Long Presentation</xsl:with-param>
+            <xsl:with-param name="text">Long Presentations</xsl:with-param>
+        </xsl:call-template>
     </xsl:template>
     <!-- <xsl:template match="//term[text()='Paper']" mode="toc"> -->
     <xsl:template match="//term[text()='Short Presentation']" mode="toc"><!-- DH2022 mod -->
         <!-- <xsl:if test="(//term[text()='Paper'])[1] is ."><fo:block><xsl:call-template name="subhead"/>Papers</fo:block></xsl:if> -->
-        <xsl:if test="(//term[text()='Short Presentation'])[1] is ."><fo:block><xsl:call-template name="subhead"/>Short Presentations</fo:block></xsl:if><!-- DH2022 mod -->
+        <xsl:call-template name="toc_header"><!-- DH2022 mod -->
+            <xsl:with-param name="term">Short Presentation</xsl:with-param>
+            <xsl:with-param name="text">Short Presentations</xsl:with-param>
+        </xsl:call-template>
     </xsl:template>
     
     <!-- <xsl:template match="//term[text()='Poster']" mode="toc"> -->
     <xsl:template match="//term[text()='Electronic Poster']" mode="toc"><!-- DH2022 mod -->
         <!-- <xsl:if test="(//term[text()='Poster'])[1] is ."><fo:block><xsl:call-template name="subhead"/>Posters</fo:block></xsl:if> -->
-        <xsl:if test="(//term[text()='Electronic Poster'])[1] is ."><fo:block><xsl:call-template name="subhead"/>Electronic Posters</fo:block></xsl:if><!-- DH2022 mod -->
+        <xsl:call-template name="toc_header"><!-- DH2022 mod -->
+            <xsl:with-param name="term">Electronic Poster</xsl:with-param>
+            <xsl:with-param name="text">Electronic Posters</xsl:with-param>
+        </xsl:call-template>
     </xsl:template>
 
     
@@ -1923,12 +1955,17 @@
                 'Hebrew', 'Chinese', 'TChinese', 'Japanese', 'Korean', 'math', 'fraction', 'math_alt_font', 'Deva'
             )">
                 <fo:inline>
-                    <xsl:if test="$styles='italic'">
-                        <xsl:call-template name="italic"/>
-                    </xsl:if>
-                    <xsl:if test="$styles='bold'">
-                        <xsl:call-template name="bold"/>
-                    </xsl:if>
+                    <xsl:choose>
+                        <xsl:when test="$styles='normal'">
+                            <xsl:call-template name="normal"/>
+                        </xsl:when>
+                        <xsl:when test="$styles='italic'">
+                            <xsl:call-template name="italic"/>
+                        </xsl:when>
+                        <xsl:when test="$styles='bold'">
+                            <xsl:call-template name="bold"/>
+                        </xsl:when>
+                    </xsl:choose>
                     <xsl:if test="$styles='underline'">
                         <xsl:call-template name="underline"/>
                     </xsl:if>

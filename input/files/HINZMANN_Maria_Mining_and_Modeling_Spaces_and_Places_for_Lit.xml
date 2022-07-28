@@ -6,8 +6,8 @@
                 <title>Mining and Modeling Spaces and Places for Literary History as Linked Open Data</title>
                 <author>
                     <persName>
-                        <surname>Julia</surname>
-                        <forename>Röttgermann</forename>
+                        <surname>Röttgermann</surname>
+                        <forename>Julia</forename>
                     </persName>
                     <affiliation>Trier University, Germany</affiliation>
                     <email>roettger@uni-trier.de</email>
@@ -130,10 +130,10 @@
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Project context</head>
-                <p style="text-align: left; ">The aim of the project Mining and Modeling Text is to establish an information network for the humanities built from various sources
+                <p style="text-align: left; ">The aim of the project Mining and Modeling Text is to establish an information network for the humanities built from various sources.
                     <note place="foot" xml:id="ftn1" n="1">
                         <p style="text-align: left; "> See https://mimotext.uni-trier.de/en/.</p>
-                    </note>. This aim is closely linked to the finding that, considering the steadily growing digital cultural heritage, the acquisition of knowledge from large amounts of text and data can no longer be handled by individuals. In representing knowledge as LOD, we see untapped potential that we are exploring in the current project phase on the French Enlightenment novel (Delon/Malandain, 1996; Mylne, 1981).
+                    </note> This aim is closely linked to the finding that, considering the steadily growing digital cultural heritage, the acquisition of knowledge from large amounts of text and data can no longer be handled by individuals. In representing knowledge as LOD, we see untapped potential that we are exploring in the current project phase on the French Enlightenment novel (Delon/Malandain, 1996; Mylne, 1981).
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
@@ -172,7 +172,7 @@
                 <head>Infrastructure</head>
                 <p style="text-align: left; ">For the provision of data, we follow Open Science principles, such as the publication of FAIR data in open access as well as the use of open source software – in particular Wikibase (see fig.4).
                     <note place="foot" xml:id="ftn3" n="3">
-                        <p style="text-align: left; "> Generally, see Suber 2012 and Wilkinson et al. 2016; related to the project, see Röttgermann and Schöch 2020 and Schöch, 2021. We expect the Wikibase instance to become publicly available in mid-2022: https://www.mimotext.uni-trier.de/aktuelles-1/prototype-our-mimotext-graph.</p>
+                        <p style="text-align: left; "> Generally, see Suber 2012 and Wilkinson et al. 2016; related to the project, see Röttgermann and Schöch 2020 and Schöch, 2021. We expect the Wikibase instance to become publicly available in mid-2022: https://mimotext.uni-trier.de/en.</p>
                     </note> We created a custom bot using the Python library Pywikibot to import and update the RDF triples into our Wikibase instance from TSV files.
                     <hi rend="Footnote_Symbol">
                         <note place="foot" xml:id="ftn4" n="4">

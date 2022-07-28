@@ -89,7 +89,7 @@
                 <p>It has long been recognized that building DH web applications which do not have perpetual funding on complex computing stacks that require regular updates presents an overwhelming problem for long-term maintenance and archivability (Nowviskie and Porter 2010; Dombrowski 2019; Smithies et al. 2019). Project Endings is a collaboration between DH scholars, librarians and programmers, aiming to create tools and recommendations for building extremely low-maintenance, easily archivable, but still highly functional digital edition projects (Goddard 2018; Holmes and Takeda 2019a). Starting in 2016, the Endings team have converted a number of high-traffic, well-known digital edition projects that previously ran on XML databases and similar back-end infrastructure into entirely static websites
                     <hi rend="sup">
                         <note xml:id="ftn1" place="foot" n="1">See 
-                            <ptr target="https://endings.uvic.ca/projects.html"/>for the full list of staticized projects.
+                            <ptr target="https://endings.uvic.ca/projects.html"/> for the full list of staticized projects.
                         </note>
                     </hi> built with HTML5, CSS and client-side JavaScript (Holmes 2017; Arneil, Holmes and Newton 2019). We have also developed a set of Principles
                     <hi rend="sup">
@@ -144,14 +144,13 @@
                 <head>
                     <anchor xml:id="id__j1euv3g3eovz"/>Plan, approach, and prospects
                 </head>
-                <p>We initially considered converting all the existing census data into XML as the first phase of the project, but we have not found any XML standard suitable for this historical census data. Since we would be devising our own schema anyway, we have decided to make that schema a customization of the HTML5 standard,
-                    <hi rend="sup">
-                        <note xml:id="ftn7" place="foot" n="7">This is also the approach taken by Holmes with the project 
-                            <ref target="https://johnkeats.uvic.ca/">
-                                <hi rend="color(#1155cc) underline italic">Mapping Keats’s Progress</hi>
-                            </ref>(Holmes 2021).
-                        </note>
-                    </hi> thus merging data and presentation in a form which can be easily viewed and styled but also readily processed, since it will be XHTML5, and therefore accessible to XSLT.
+                <p>We initially considered converting all the existing census data into XML as the first phase of the project, but we have not found any XML standard suitable for this historical census data.
+                    We then considered converting the data directly into HTML5, but found
+                    it more effective to design an intermediate custom XML schema, which
+                    enables records from all the different censuses to be encoded in a
+                    single flexible structure, and also permits us to apply datatype
+                    constraints and catch errors. The XML is then converted into XHTML5 for
+                    the website.
                 </p>
                 <list type="unordered">
                     <item>Each census entry page will present a standardized tabular view of the data from the census record, with explanations to clarify differences between census datasets.</item>
