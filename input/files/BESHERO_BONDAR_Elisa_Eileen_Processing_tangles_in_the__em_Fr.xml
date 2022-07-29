@@ -140,7 +140,7 @@
             <p> </p>
             <p>We need to improve our stand-off pointing mechanism to the 
                 <hi rend="italic">S-GA</hi> edition. Our interface needs to pinpoint in the original
-                <hi rend="italic" xml:space="preserve"> S-GA</hi> files the precise location of the variant passages identified by the collation process. To improve this, we are revisiting the process of re-sequencing the document in the first place. We are retracing our steps in the early XSLT written for the project and set clearer markers to identify the locations of marginalia passages in the original 
+                <hi rend="italic" xml:space="preserve"> S-GA</hi> files the precise location of the variant passages identified by the collation process. To improve this, we are revisiting the process of re-sequencing the document in the first place. We are retracing our steps in the early XSLT written for the project to set clearer markers to identify the locations of marginalia passages in the original 
                 <hi rend="italic">S-GA</hi> files. Those markers need to be delivered to the collation output XML, to assist in calculating the XPath and string locations of variant passages in the source S
                 <hi rend="italic">-GA</hi>.
             </p>

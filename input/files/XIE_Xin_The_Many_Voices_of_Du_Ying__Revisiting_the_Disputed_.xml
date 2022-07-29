@@ -129,316 +129,286 @@
                     <note type="direction">
                         <width unit="pt">60</width>
                         <width unit="pt">50</width>
-                        <width unit="pt">233</width>
-                        <width unit="pt">81</width>
-                        <width unit="pt">40</width>
-                        <width unit="pt">40</width>
+                        <width unit="pt">256</width>
+                        <width unit="pt">74</width>
+                        <width unit="pt">32</width>
+                        <width unit="pt">32</width>
                     </note>
                     <row>
                         <cell style="text-align: left;" rend="DH-Default">Author</cell>
                         <cell style="text-align: left;" rend="DH-Default">Purpose</cell>
                         <cell style="text-align: left;" rend="DH-Default">Title</cell>
                         <cell style="text-align: left;" rend="DH-Default">Topic</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Length</cell>
-                        <cell style="text-align: left;" rend="DH-Default">Chunks</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">Length</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">Chunks</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
+                        <cell rows="4" rend="DH-Default">Lu Xun</cell>
                         <cell style="text-align: left;" rend="DH-Default">Train</cell>
                         <cell style="text-align: left;" rend="DH-Default">Lessons from the History of Science (<hi rend="Chinese">科学史教篇</hi>)</cell>
                         <cell style="text-align: left;" rend="DH-Default">history &amp; science</cell>
-                        <cell style="text-align: left;" rend="DH-Default">7,032</cell>
-                        <cell style="text-align: left;" rend="DH-Default">7</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">7,032</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">7</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Train</cell>
                         <cell style="text-align: left;" rend="DH-Default">On the Aberrant Development of Culture (<hi rend="Chinese">文化偏至论</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">culture &amp; politics</cell>
-                        <cell style="text-align: left;" rend="DH-Default">8,556</cell>
-                        <cell style="text-align: left;" rend="DH-Default">7</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">8,556</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">7</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Validation</cell>
                         <cell style="text-align: left;" rend="DH-Default">On Radium (<hi rend="Chinese">说镭</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">science</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3,094</cell>
-                        <cell style="text-align: left;" rend="DH-Default">4</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">3,094</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">4</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Validation</cell>
                         <cell style="text-align: left;" rend="DH-Default">On the Power of Mara Poetry (<hi rend="Chinese">摩罗诗力说</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">literary &amp; politics</cell>
-                        <cell style="text-align: left;" rend="DH-Default">23,779</cell>
-                        <cell style="text-align: left;" rend="DH-Default">22</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">23,779</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">22</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default">Zhou Zuoren</cell>
+                        <cell rows="10" rend="DH-Default">Zhou Zuoren</cell>
                         <cell style="text-align: left;" rend="DH-Default">Train</cell>
                         <cell style="text-align: left;" rend="DH-Default">Preface to Midst the Wild Carpathians (<hi rend="Chinese">《匈奴奇士录》序</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">literary</cell>
-                        <cell style="text-align: left;" rend="DH-Default">627</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">627</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Train</cell>
                         <cell style="text-align: left;" rend="DH-Default">Preface to Charcoal Drawing (<hi rend="Chinese">《炭画》序</hi>)</cell>
                         <cell style="text-align: left;" rend="DH-Default">literary</cell>
-                        <cell style="text-align: left;" rend="DH-Default">258</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">258</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Train</cell>
                         <cell style="text-align: left;" rend="DH-Default">Preface to The Lost History of Red Star (<hi rend="Chinese">《红星佚史》序</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1,145</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1,145</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Train</cell>
                         <cell style="text-align: left;" rend="DH-Default">Preface to The Yellow Rose (<hi rend="Chinese">《黄蔷薇》序</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">literary</cell>
-                        <cell style="text-align: left;" rend="DH-Default">786</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">786</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Train</cell>
                         <cell style="text-align: left;" rend="DH-Default">A Brief Discussion on Fairy Tales (<hi rend="Chinese">童话略论</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3,093</cell>
-                        <cell style="text-align: left;" rend="DH-Default">4</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">3,093</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">4</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Train</cell>
                         <cell style="text-align: left;" rend="DH-Default">A Study on Fairy Tales (<hi rend="Chinese">童话研究</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
-                        <cell style="text-align: left;" rend="DH-Default">5,083</cell>
-                        <cell style="text-align: left;" rend="DH-Default">6</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">5,083</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">6</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Validation</cell>
                         <cell style="text-align: left;" rend="DH-Default">Preface to Qiucao Garden Diary (<hi rend="Chinese">《秋草园日记》序</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">history</cell>
-                        <cell style="text-align: left;" rend="DH-Default">178</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.7</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">178</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">0.7</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Validation</cell>
                         <cell style="text-align: left;" rend="DH-Default">An Addendum to Yisi Diary (<hi rend="Chinese">乙巳日记附记一则</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">culture &amp; history</cell>
-                        <cell style="text-align: left;" rend="DH-Default">63</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.3</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">63</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">0.3</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Validation</cell>
                         <cell style="text-align: left;" rend="DH-Default">A Glimpse of Jiangnan Examinees (<hi rend="Chinese">江南考先生之一斑</hi>)</cell>
                         <cell style="text-align: left;" rend="DH-Default">history</cell>
-                        <cell style="text-align: left;" rend="DH-Default">147</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.5</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">147</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">0.5</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Validation</cell>
                         <cell style="text-align: left;" rend="DH-Default">Plight and Broil in a Steamboat (<hi rend="Chinese">汽船之窘况及苦热</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">history</cell>
-                        <cell style="text-align: left;" rend="DH-Default">144</cell>
-                        <cell style="text-align: left;" rend="DH-Default">0.5</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">144</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">0.5</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default">Du Ying</cell>
+                        <cell rows="17" rend="DH-Default">Du Ying</cell>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">The Issue of Women’s Suffrage (<hi rend="Chinese">妇女选举权问题</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">politics</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1,068</cell>
-                        <cell style="text-align: left;" rend="DH-Default">2</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1,068</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">2</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">The Issue of Women's Suffrage, Continued (<hi rend="Chinese">妇女选举权问题续</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">politics</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1,494</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1,494</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">3</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">George Eliot (<hi rend="Chinese">乔治爱里阿德</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
-                        <cell style="text-align: left;" rend="DH-Default">618</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">618</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">Prisoners of Siberia (<hi rend="Chinese">西伯利亚之囚</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
-                        <cell style="text-align: left;" rend="DH-Default">893</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">893</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">Eliza Orzeszko (<hi rend="Chinese">爱理萨阿什斯珂</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
-                        <cell style="text-align: left;" rend="DH-Default">322</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">322</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">Stepniak (<hi rend="Chinese">斯谛勃咢克</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
-                        <cell style="text-align: left;" rend="DH-Default">459</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">459</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">Petofi (<hi rend="Chinese">斐彖飞</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
-                        <cell style="text-align: left;" rend="DH-Default">489</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">489</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">The Power of Writing (<hi rend="Chinese">文章之力</hi>)</cell>
                         <cell style="text-align: left;" rend="DH-Default">literary</cell>
-                        <cell style="text-align: left;" rend="DH-Default">720</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">720</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">An Extraordinary Stratagem to Prevent Illicit Sex (<hi rend="Chinese">防淫奇策</hi>)</cell>
                         <cell style="text-align: left;" rend="DH-Default">culture &amp; politics</cell>
-                        <cell style="text-align: left;" rend="DH-Default">872</cell>
-                        <cell style="text-align: left;" rend="DH-Default">2</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">872</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">2</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">The Chinese Patriotism (<hi rend="Chinese">中国人之爱国</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
-                        <cell style="text-align: left;" rend="DH-Default">857</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">857</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">Reaction to the Prison Book Sold at the Store (<hi rend="Chinese">见店头监狱书所感</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
-                        <cell style="text-align: left;" rend="DH-Default">925</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">925</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">On the Difference Between the Russian Revolution and Nihilism (<hi rend="Chinese">论俄国革命与虚无主义之别</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
-                        <cell style="text-align: left;" rend="DH-Default">2,602</cell>
-                        <cell style="text-align: left;" rend="DH-Default">3</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">2,602</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">3</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">Translator's Note to Silence (<hi rend="Chinese">《寂漠》译记</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
-                        <cell style="text-align: left;" rend="DH-Default">348</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">348</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">Translator's Note to At a Country House (<hi rend="Chinese">《庄中》译记</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">literary</cell>
-                        <cell style="text-align: left;" rend="DH-Default">192</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">192</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">The Strings of Melancholy (<hi rend="Chinese">哀弦篇</hi>)</cell>
                         <cell style="text-align: left;" rend="DH-Default">literary &amp; history</cell>
-                        <cell style="text-align: left;" rend="DH-Default">13,112</cell>
-                        <cell style="text-align: left;" rend="DH-Default">21</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">13,112</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">21</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">Looking at the Land of Yue (<hi rend="Chinese">望越篇</hi>)</cell>
                         <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
-                        <cell style="text-align: left;" rend="DH-Default">741</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">741</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">Looking at the Country of China (<hi rend="Chinese">望华国篇</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
-                        <cell style="text-align: left;" rend="DH-Default">749</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">749</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default">Du</cell>
+                        <cell rows="3" rend="DH-Default">Du</cell>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">People of Yue, Forget Not Your Ancestors' Instructions (<hi rend="Chinese">尔越人毋忘先民之训</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
-                        <cell style="text-align: left;" rend="DH-Default">317</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">317</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">Where Has the Character of the Republic Gone? (<hi rend="Chinese">民国之征何在</hi>)</cell>
                         <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
-                        <cell style="text-align: left;" rend="DH-Default">354</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">354</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">Test</cell>
                         <cell style="text-align: left;" rend="DH-Default">The Ordinary Folks' Responsibility (<hi rend="Chinese">庸众之责任</hi>)
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">history &amp; politics</cell>
-                        <cell style="text-align: left;" rend="DH-Default">334</cell>
-                        <cell style="text-align: left;" rend="DH-Default">1</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">334</cell>
+                        <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
                 </table>
                 <p style="text-align: left; ">Table 1: Summary of the corpus containing works of Lu Xun, Zhou Zuoren, “Du Ying”, and “Du”. Four distinct validation samples of Zhou are combined to make two longer texts.</p>
@@ -480,7 +450,14 @@
                     <hi rend="italic">The Power of Writing</hi> and seven other prose appear to be written by Lu Xun. The 
                     <hi rend="italic">Prisoners of Siberia</hi> and another two essays appear to be written by Zhou Zuoren. We withhold judgement about the rest of our decisions.
                 </p>
-                <table rend="rules">
+                <table rend="rules" n="span_all">
+                    <note type="direction">
+                        <width unit="pt">50</width>
+                        <width unit="pt">70</width>
+                        <width unit="pt">264</width>
+                        <width unit="pt">50</width>
+                        <width unit="pt">70</width>
+                    </note>
                     <row>
                         <cell style="text-align: left;" rend="DH-Default">Pseudonym</cell>
                         <cell style="text-align: left;" rend="DH-Default">Publication Date</cell>
@@ -489,140 +466,122 @@
                         <cell style="text-align: left;" rend="DH-Default">Note</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default">Du Ying</cell>
+                        <cell rows="17" rend="DH-Default">Du Ying</cell>
                         <cell style="text-align: left;" rend="DH-Default">1907.07.25 </cell>
                         <cell style="text-align: left;" rend="DH-Default">The Issue of Women’s Suffrage</cell>
                         <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
                         <cell style="text-align: left;" rend="DH-Default">labels disagree</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1907.09.15 </cell>
                         <cell style="text-align: left;" rend="DH-Default">The Issue of Women’s Suffrage, Continued</cell>
                         <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
                         <cell style="text-align: left;" rend="DH-Default">labels disagree</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1907.09.15</cell>
                         <cell style="text-align: left;" rend="DH-Default">George Eliot</cell>
                         <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
                         <cell style="text-align: left;" rend="DH-Default">low confidence</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1907.09.15</cell>
                         <cell style="text-align: left;" rend="DH-Default">Prisoners of Siberia</cell>
                         <cell style="text-align: left;" rend="DH-Default">Zhou</cell>
                         <cell style="text-align: left;" rend="DH-Default">–</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1907.09.15</cell>
                         <cell style="text-align: left;" rend="DH-Default">Eliza Orzeszko</cell>
                         <cell style="text-align: left;" rend="DH-Default">Zhou</cell>
                         <cell style="text-align: left;" rend="DH-Default">–</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1907.10.30 </cell>
                         <cell style="text-align: left;" rend="DH-Default">Stepniak</cell>
                         <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
                         <cell style="text-align: left;" rend="DH-Default">low confidence</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1907.10.30 </cell>
                         <cell style="text-align: left;" rend="DH-Default">Petofi</cell>
                         <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
                         <cell style="text-align: left;" rend="DH-Default">low confidence</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1907.10.30 </cell>
                         <cell style="text-align: left;" rend="DH-Default">The Power of Writing</cell>
                         <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
                         <cell style="text-align: left;" rend="DH-Default">–</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1907.11.30</cell>
                         <cell style="text-align: left;" rend="DH-Default">An Ex&#173;traor&#173;di&#173;nary Stratagem to Prevent Illicit Sex</cell>
                         <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
                         <cell style="text-align: left;" rend="DH-Default">–</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1907.11.30</cell>
                         <cell style="text-align: left;" rend="DH-Default">The Chinese Patriotism</cell>
                         <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
                         <cell style="text-align: left;" rend="DH-Default">–</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1907.11.30</cell>
                         <cell style="text-align: left;" rend="DH-Default">Reaction to the Prison Book Sold at the Store</cell>
                         <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
                         <cell style="text-align: left;" rend="DH-Default">–</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1907.11.30</cell>
                         <cell style="text-align: left;" rend="DH-Default">On the Difference Between the Russian Revolution and Nihilism</cell>
                         <cell style="text-align: left;" rend="DH-Default">Lu Xu</cell>
                         <cell style="text-align: left;" rend="DH-Default">–</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1908.12.05</cell>
                         <cell style="text-align: left;" rend="DH-Default">Translator’s Note to Silence</cell>
                         <cell style="text-align: left;" rend="DH-Default">Zhou</cell>
                         <cell style="text-align: left;" rend="DH-Default">-</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1908.12.05</cell>
                         <cell style="text-align: left;" rend="DH-Default">Translator’s Note to At a Country House </cell>
                         <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
                         <cell style="text-align: left;" rend="DH-Default">low confidence</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1908.12.20</cell>
                         <cell style="text-align: left;" rend="DH-Default">The Strings of Melancholy</cell>
                         <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
                         <cell style="text-align: left;" rend="DH-Default">labels disagree</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1912.01.18</cell>
                         <cell style="text-align: left;" rend="DH-Default">Looking at the Land of Yue</cell>
                         <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
                         <cell style="text-align: left;" rend="DH-Default">–</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1912.01.22</cell>
                         <cell style="text-align: left;" rend="DH-Default">Looking at the Country of China</cell>
                         <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
                         <cell style="text-align: left;" rend="DH-Default">–</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default">Du</cell>
+                        <cell rows="3" rend="DH-Default">Du</cell>
                         <cell style="text-align: left;" rend="DH-Default">1912.02.01</cell>
                         <cell style="text-align: left;" rend="DH-Default">People of Yue, Forget Not Your Ancestors’ Instructions</cell>
                         <cell style="text-align: left;" rend="DH-Default">Zhou</cell>
                         <cell style="text-align: left;" rend="DH-Default">–</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1912.02.02</cell>
                         <cell style="text-align: left;" rend="DH-Default">Where Has the Character of the Republic Gone?</cell>
                         <cell style="text-align: left;" rend="DH-Default">Lu Xun</cell>
                         <cell style="text-align: left;" rend="DH-Default">–</cell>
                     </row>
                     <row>
-                        <cell style="text-align: left;" rend="DH-Default"/>
                         <cell style="text-align: left;" rend="DH-Default">1912.02.16</cell>
                         <cell style="text-align: left;" rend="DH-Default">The Ordinary Folks’ Re&#173;spon&#173;si&#173;bil&#173;i&#173;ty</cell>
                         <cell style="text-align: left;" rend="DH-Default">uncertain</cell>

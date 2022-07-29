@@ -106,10 +106,10 @@
             <p>The extracted reference information can be understood as the graph structure of an archived web object. We visualize this structure as a network showing each resource as a node and the references between resources as edges. Graph data analytics provide different measures that can be used to gain insights into the object’s structure, e.g. in order to describe the functional role of certain nodes in the network. The network thus provides a structural overview of the hypertext work, which opens up new possibilities for reading hyperfiction, which, by the nature of its medium often defies the rules of linearity: Besides the sequential connection of network nodes, the graph data analysis e.g. reveals possible end points of the story line(s), which can be manifold in hypertext. It is also possible to detect central passages that can be crucial for the decisions the reader has to make, as she finds her own way through the text, since it is likely that these passages are represented by nodes that show characteristic patterns.</p>
             <figure>
                 <graphic n="1001" width="10.662708333333333cm" height="10.662708333333333cm" url="Pictures/570da5ff38777c668df0e5ba4bd195af.png" rend="inline"/>
-            </figure>
-            <p>Figure 1: Internal reference structure of 
-                <hi rend="italic">The Unknown,</hi> node size pertaining to degree
+            <head>Figure 1:</head><p>Internal reference structure of 
+                <hi rend="normal">The Unknown,</hi> node size pertaining to degree
             </p>
+            </figure>
             <p>Figure 1 shows such a network of 
                 <hi rend="italic">The Unknown</hi>.
                 <note place="foot" xml:id="ftn1" n="1">

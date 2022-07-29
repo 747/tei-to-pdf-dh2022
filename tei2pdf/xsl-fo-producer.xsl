@@ -338,6 +338,7 @@
         </xsl:choose>
         <xsl:attribute name="space-before">.2in</xsl:attribute>
         <xsl:attribute name="space-after">.2in</xsl:attribute>
+        <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute><!-- DH2022 mod -->
     </xsl:template>
     
     <xsl:template name="subhead">
@@ -347,6 +348,7 @@
         <xsl:attribute name="space-before">.2in</xsl:attribute>
         <xsl:attribute name="space-after">.2in</xsl:attribute>
         <xsl:attribute name="page-break-inside">avoid</xsl:attribute>
+        <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute><!-- DH2022 mod -->
     </xsl:template>
 
     <!-- DH2022: copy of "head" & "subhead" except to be used together -->
@@ -380,6 +382,7 @@
         <xsl:attribute name="color">black</xsl:attribute>
         <xsl:attribute name="space-before">.2in</xsl:attribute>
         <xsl:attribute name="space-after">.2in</xsl:attribute>
+        <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute><!-- DH2022 mod -->
     </xsl:template>
     
     <!-- This is just getting silly... -->
@@ -389,6 +392,7 @@
         <xsl:attribute name="color">black</xsl:attribute>
         <xsl:attribute name="space-before">.2in</xsl:attribute>
         <xsl:attribute name="space-after">.2in</xsl:attribute>
+        <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute><!-- DH2022 mod -->
     </xsl:template>
     
     <xsl:template name="text_bigger">
@@ -398,6 +402,7 @@
         <xsl:attribute name="color">black</xsl:attribute>
         <xsl:attribute name="space-before">.2in</xsl:attribute><!-- DH2022 mod -->
         <xsl:attribute name="space-after">.2in</xsl:attribute><!-- DH2022 mod -->
+        <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute><!-- DH2022 mod -->
     </xsl:template>
     
     <xsl:template name="text_smaller">
@@ -1950,7 +1955,7 @@
         <xsl:variable name="styles" select="tokenize(@rend, ' ')"/>
         <xsl:choose>
             <xsl:when test="$styles=(
-                'italic', 'bold', 'underline', 'smallcaps', 'native-script',
+                'normal', 'italic', 'bold', 'underline', 'smallcaps', 'native-script',
                 'superscript', 'super', 'sup', 'subscript', 'sub',
                 'Hebrew', 'Chinese', 'TChinese', 'Japanese', 'Korean', 'math', 'fraction', 'math_alt_font', 'Deva'
             )">

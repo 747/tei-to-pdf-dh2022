@@ -134,10 +134,10 @@
                     </figure>
                 </p>
                 <p>
-                    <hi rend="bold">Fig. 2</hi>: Left: the original plain text format in Nôm script (
-                    <hi rend="italic">hn</hi>) and Quốc Ngữ (
-                    <hi rend="italic">qn</hi>) including the commentary (
-                    <hi rend="italic">hw1</hi> and 
+                    <hi rend="bold">Fig. 2</hi>: Left: the original plain text format in Nôm script
+                    (<hi rend="italic">hn</hi>) and Quốc Ngữ
+                    (<hi rend="italic">qn</hi>) including the commentary
+                    (<hi rend="italic">hw1</hi> and 
                     <hi rend="italic">nt1</hi>) for the first two lines of Truyện Kiều (1866). Right: excerpt of the data transformed into a XML-format readable by LERA, where the two lines have been merged into one segment. The philological commentary was transformed to a &lt;note&gt;-tag.
                 </p>
             </div>
@@ -160,7 +160,7 @@
                 <p>LERA uses a two-step approach for collation (Pöckelmann et. al 2022), both applied to the four-line segments: an alignment of text segments according to their similarity and a detailed comparison of the aligned segments.</p>
                 <p>For the first step the manual assignment already encoded via line numbers into the data can be used for Truyện Kiều. However, the algorithm for alignment integrated in LERA produces nearly the same alignment.</p>
                 <p>The detailed comparison reveals many textual variants spread over the entire length of the work for both scripts. This is still true for modern Vietnamese when minor variants, like differences in capitalization and punctuation marks, or even diacritics, which are very important for a word's meaning, are ignored with the aid of LERAs filter system. Overall, textual variants occur more frequently in the Nôm script versions than in the modern Vietnamese versions. The reasons for this are almost all in the complex phonetic-semantic-composition of characters. Phono-semantic compound characters (such as <hi rend="Chinese">坦</hi>) have two components: one suggesting the word's meaning (<hi rend="Chinese">土</hi>) and the other its approximate sound (<hi rend="Chinese">旦</hi>). The characters <hi rend="Chinese">旦</hi> and <hi rend="Chinese">坦</hi> (used in the last witness only) have the same meaning 
-                    <hi rend="italic">đắn</hi>. There are also rules in the positioning depending on function: semantic components tend to appear on the top or left side of characters; phonetic components at their bottom or right side, e.g.: <hi rend="Chinese">藝</hi> = <hi rend="Chinese">⿱𥿠云</hi>. Variant characters, which are homophones and synonyms caused by allography, occur also in the work, e.g., <hi rend="Chinese">句</hi> and <hi rend="Chinese">勾</hi>, which were both translated to 
+                    <hi rend="italic">đắn</hi>. There are also rules in the positioning depending on function: semantic components tend to appear on the top or left side of characters; phonetic components at their bottom or right side, e.g.: <hi rend="Chinese">撑</hi> = <hi rend="Chinese">⿰扌掌</hi>. Variant characters, which are homophones and synonyms caused by allography, occur also in the work, e.g., <hi rend="Chinese">句</hi> and <hi rend="Chinese">勾</hi>, which were both translated to 
                     <hi rend="italic">câu, </hi>vary in their phonetic component because the second uses with <hi rend="Chinese">厶</hi> another written representation of <hi rend="Chinese">口</hi>. The Nôm script characters have been compared so far only as a whole, so those variants could not be further differentiated. 
                 </p>
                 <p>It should be noted that the fixed structure of the segments with the verse form makes the comparison somewhat easier than for other texts: with a few exceptions, there are only substitutions of characters and no insertions or deletions.</p>

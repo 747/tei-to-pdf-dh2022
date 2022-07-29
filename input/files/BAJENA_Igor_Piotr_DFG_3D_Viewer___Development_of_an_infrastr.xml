@@ -3,7 +3,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>DFG-3D-Viewer – Development of an infrastructure for digital 3D reconstructions</title>
+                <title>DFG 3D-Viewer – Development of an infrastructure for digital 3D reconstructions</title>
                 <author>
                     <persName>
                         <surname>Bajena</surname>
@@ -104,67 +104,43 @@
         <body>
             <div type="div1" rend="DH-Heading1">
                 <head>Introduction</head>
-                <p>An important element in digital reconstructions, in the fields of archeology, art and architecture history, is the subsequent visualization of the result (Messemer, 2016). The standardization of the documentation and publication is seen as the most important priority across the board (Cieslik, 2020). Widely established web-based 3D viewers such as Sketchfab (
-                    <ref target="https://sketchfab.com/">https://sketchfab.com/</ref>) belong to a commercial offer, while viewers prepared by scientific institutions like Kompakkt (
-                    <ref target="https://kompakkt.de/home">https://kompakkt.de/home</ref>
-                    <hi rend="underline color(0563C1)">)</hi> or by other research projects like patrimonium.net (Dworak, Kuorczyński, 2016) have not provided approved and applied standards for the documentation and publication of 3D models. Questions about legal security, verified long-term availability of data, or scientific traceability in the light of the Semantic Web are recognised but still to be solved (Kuroczyński, 2017).
+                <p>An important element in digital 3D reconstruction, in the fields of archeology, art and architecture history, is the subsequent visualization of the result (Messemer, 2016). The standardization of the documentation and publication is seen as the most important priority across the board (Cieslik, 2020). Widely established 3D repositories with integrated 3D visualization such as Sketchfab
+                    (<ref target="https://sketchfab.com/">https://sketchfab.com/</ref>) belong to a commercial offer, while 3D viewers introduced by scientific institutions like Kompakkt 
+                    (<ref target="https://kompakkt.de/home">https://kompakkt.de/home</ref>)
+                    or by other research projects like patrimonium.net (Dworak, Kuroczyński, 2016) have still not provided approved and applied standards for the documentation and publication of 3D models in the field of hypothetical 3D reconstruction of art and architecture.
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Project assumptions</head>
-                <p>Against this background, the project “DFG 3D-Viewer - Infrastructure for digital 3D reconstructions” was launched, which the goal is to provide an offer of permanent infrastructure for decentralized web-based display of models in the DFG 3D-Viewer and in suitable Virtual Research Environments (VRE), accompanied by low threshold interface usage (
-                    <ref target="http://dfg-viewer.de/en/dfg-3d-viewer">http://dfg-viewer.de/en/dfg-3d-viewer</ref>
-                    <hi rend="Hyperlink" xml:space="preserve">). </hi>The work presented here concerns the results of the first phase of the project including the definition of documentation standards for web-based 3D publication of the digital reconstruction models and the development of the web-based 3D-viewer for digital datasets as a minimal-effort plugin. Proposed solution considers a generic approach with adaptability and reusability (Münster, 2019), respects FAIR principles (
-                    <ref target="https://www.go-fair.org/fair-principles/">https://www.go-fair.org/fair-principles/</ref>) and follows existing DFG (German Research Foundation) standards (
-                    <ref target="https://www.dfg.de/en/research_funding/principles_dfg_funding/">https://www.dfg.de/en/research_funding/principles_dfg_funding/</ref>).
+                <p>Against this background, the project “DFG 3D-Viewer - Infrastructure for digital 3D reconstructions” was launched, which the goal is to provide an offer of permanent infrastructure for decentralized web-based display of models in the DFG 3D-Viewer and in suitable Virtual Research Environments (VRE), accompanied by low threshold interface usage
+                    (<ref target="http://dfg-viewer.de/en/dfg-3d-viewer">http://dfg-viewer.de/en/dfg-3d-viewer</ref>).
+                    The work presented here concerns the results of the first phase of the project including the definition of documentation standards for web-based 3D publication of the digital reconstruction models and the development of the web-based 3D-viewer for digital datasets as a minimal-effort plugin. Proposed solution considers a generic approach with adaptability and reusability (Münster, 2019), respects FAIR principles
+                    (<ref target="https://www.go-fair.org/fair-principles/">https://www.go-fair.org/fair-principles/</ref>) and follows existing DFG (German Research Foundation) standards
+                    (<ref target="https://www.dfg.de/en/research_funding/principles_dfg_funding/good_scientific_practice/index.html">https://www.dfg.de/en/research_funding/principles_dfg_funding/good_scientific_practice/index.html</ref>).
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Minimal documentation standard</head>
-                <p>Analysis of documented metadata of the chosen commercial and institutional 3D repositories formed the basis for the definition of a scheme for documentation. The developed data set was discussed among the community in the form of a survey, which significantly advanced the work towards establishing a standard. It also allowed to emerge documentation-related functionalities of the viewer, such as automatic rendering of the preview images or the displaying the information about model geometry (3D metadata) in the viewer window. The documentation scheme was implemented in a new prototypical 3D repository created in WissKI-based VRE [15], which has already been successfully used in several projects of digital reconstructions at the University of Applied Sciences Mainz [5, 13]. The data model in the repository uses the CIDOC Conceptual Reference Model [8] as an ontology. The fundamental research on data modelling was carried out along the community in order to concerns about different combinations of classes and properties to describe the same aspects of documentation.</p>
-                <table rend="rules">
-                    <row>
-                        <cell style="text-align: left;">
+                <p>Analysis of documented metadata of the chosen commercial and institutional 3D repositories formed the basis for the definition of a scheme for documentation (Fig. 1). The developed data set was discussed among the community in the form of a survey, which significantly advanced the work towards establishing a standard. It also allowed to emerge documentation-related functionalities of the viewer, such as automatic rendering of the preview images or the displaying the information about model geometry (3D metadata) in the viewer window. The documentation scheme was implemented in a new prototypical 3D repository created in WissKI-based VRE (<ref target="http://wiss-ki.eu/">http://wiss-ki.eu/</ref>), which has already been successfully used in several projects of digital reconstructions at the University of Applied Sciences Mainz (Kuroczyński et al., 2022; <ref target="https://www.new-synagogue-breslau-3d.hs-mainz.de">https://www.new-synagogue-breslau-3d.hs-mainz.de</ref>). The data model in the repository uses the CIDOC Conceptual Reference Model (<ref target="https://www.cidoc-crm.org/">https://www.cidoc-crm.org/</ref>) as an ontology. The fundamental research on data modelling was carried out along the community in order to concerns about different combinations of classes and properties to describe the same aspects of documentation.</p>
                             <figure>
                                 <graphic n="1001" width="15.578666666666667cm" height="14.499166666666667cm" url="Pictures/bbce4e4878f90176ee0d4b8b29de8151.jpeg" rend="inline"/>
+                        <head>Fig.1</head><p>The comparison of metadata sets in chosen institutional and commercial 3D web-based repositories (©2021, Hochschule Mainz).</p>
                             </figure>
-                        </cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">Fig.1 The comparison of metadata sets in chosen institutional and commercial 3D web-based repositories (©2021, AI MAINZ).</cell>
-                    </row>
-                </table>
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Framework architecture of the 3D Viewer</head>
                 <p>Comparing present 3D viewer solutions, it was decided to take the following properties into account: support for 2D &amp; 3D objects, variety of source formats, support for complex objects, modern technology based, suitable for hand-modeled and laser-scanned objects, 3D world operations, level of detail (LoD) as models representations, compression of 3D objects, 3D metadata, utilities/tools, documentation.</p>
                 <p>It appears that only a few 3D viewers fulfill more than half of the requirements. In fact, some of the analyzed applications support 2D/3D objects and a variety of formats, but some are still missing (PLY, XYZ, DAE) (Champion, Rahaman, 2020). These technologies are optimized for hand-modeled objects, while others only for laser-scanned ones. Three of them allow 3D world operations and support 3D metadata, nevertheless none of them supports 3D compression.</p>
-                <table rend="rules">
-                    <row>
-                        <cell style="text-align: left;">
                             <figure>
                                 <graphic n="1002" width="15.536333333333333cm" height="8.487833333333333cm" url="Pictures/b0be88dad23201e16a47cb7873819cf4.png" rend="inline"/>
-                            </figure>
-                        </cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">Fig.2 Comparison of functionalities of the most competitive 3D viewers on the market (©2021, AI MAINZ).</cell>
-                    </row>
-                </table>
-                <p>The architecture of the DFG 3D-Viewer is developed considering existing web-based 3D viewers (Champion, Rahaman, 2020; Fernie at al., 2020). Conducted research compares existing infrastructures and viewers, as well as the concept of a modular architecture for the DFG 3D-Viewer. It concludes that the framework for the scientific 3D infrastructure (considering documentation and publication) should be cross-browser, platform independent and based on modern, promising and long-term supported technology. The viewer should allow viewing of 3D models with textures, stored in the most common formats used nowadays , i.e. OBJ, DAE, FBX, JSON (Cieslik, 2020). It should be also capable of loading 2D images (JPG, PNG, TIFF) (Cieslik, 2020), 3D metadata and provide 3D world operations on models (Fernie at al., 2020). Solution should be integrable out of the box, open source and client-only in order to distribute workload away from the server and minimize the requirements for repository providers to support the DFG 3D-Viewer.</p>
-                <p>The developed framework is based on the existing 3D library - three.js. Implementation was prepared in modern and interchangeable programming languages and technologies as JavaScript, PHP or Python. Architecture is optimized to be technology-independent and can be easily exchanged for any other client-side viewer. The solution is suitable for complex, hand-modeled, laser-scanned objects and 3D metadata as well. The viewer is extended to meet the requirements of the specialist community, including the possibility of displaying highly complex geometries and multiple data formats (inter alia IFC and FBX) (Fernie at al., 2020). Moreover, uploading 3D data triggers automatic unattended compression, based on Draco algorithm, and encoding into the glTF format which is optimized for web-based visualization.</p>
-                <table rend="rules">
-                    <row>
-                        <cell style="text-align: left;">
+                        <head style="text-align: left;">Fig.2</head><p>Comparison of functionalities of the most competitive 3D viewers on the market (©2021, Hochschule Mainz).
+                            </p></figure>
+                <p>The architecture of the DFG 3D-Viewer is developed considering existing web-based 3D viewers (Champion, Rahaman, 2020; Fernie at al., 2020). Conducted research compares existing infrastructures and viewers (Fig. 2), as well as the concept of a modular architecture for the DFG 3D-Viewer. It concludes that the framework for the scientific 3D infrastructure (considering documentation and publication) should be cross-browser, platform independent and based on modern, promising and long-term supported technology. The viewer should allow viewing of 3D models with textures, stored in the most common formats used nowadays , i.e. OBJ, DAE, FBX, JSON (Cieslik, 2020). It should be also capable of loading 2D images (JPG, PNG, TIFF) (Cieslik, 2020), 3D metadata and provide 3D world operations on models (Fernie at al., 2020). Solution should be integrable out of the box, open source and client-only in order to distribute workload away from the server and minimize the requirements for repository providers to support the DFG 3D-Viewer.</p>
+                <p>The developed framework is based on the existing 3D library - three.js. Implementation was prepared in modern and interchangeable programming languages and technologies as JavaScript, PHP or Python. Architecture is optimized to be technology-independent and can be easily exchanged for any other client-side viewer. The solution is suitable for complex, hand-modeled, laser-scanned objects and 3D metadata as well. The viewer is extended to meet the requirements of the specialist community, including the possibility of displaying highly complex geometries and multiple data formats (inter alia IFC and FBX) (Fernie at al., 2020). Moreover, uploading 3D data triggers automatic unattended compression, based on Draco algorithm, and encoding into the glTF format which is optimized for web-based visualization (Fig. 3).</p>
                             <figure>
-                                <graphic n="1003" width="15.726833333333333cm" height="14.499166666666667cm" url="Pictures/3bb7b3c0d28c30b6a9af9227966ddee8.jpeg" rend="inline"/>
+                                <graphic n="1003" width="15.726833333333333cm" height="14.499166666666667cm" url="Pictures/220727_mockup.jpg" rend="inline"/>
+                        <head style="text-align: left;">Fig.3</head><p>Rendered entity in the 3D Repository with visualized 3D model in the DFG 3D-Viewer (©2022, Hochschule Mainz).</p>
                             </figure>
-                        </cell>
-                    </row>
-                    <row>
-                        <cell style="text-align: left;">Fig.3 Mockup of prototypical 3D repository with implemented DFG 3D-Viewer (©2021, AI MAINZ).</cell>
-                    </row>
-                </table>
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Further research</head>
@@ -195,8 +171,8 @@
                         . Baltimore: Dr. Samuel D. Harris National Museum of Dentistry.
                     </bibl>
                     <bibl rend="List Paragraph">
-                        <ref target="https://www.dfg.de/en/research_funding/principles_dfg_funding/">
-                            https://www.dfg.de/en/research_funding/principles_dfg_funding/
+                        <ref target="https://www.dfg.de/en/research_funding/principles_dfg_funding/good_scientific_practice/index.html">
+                            https://www.dfg.de/en/research_funding/principles_dfg_funding/good_scientific_practice/index.html
                         </ref>
                         <hi style="font-size:9pt" xml:space="preserve"> (accessed 11 April 2022)</hi>
                     </bibl>

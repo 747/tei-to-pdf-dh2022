@@ -119,15 +119,15 @@
             </p>
             <figure>
                 <graphic n="1001" width="16.002cm" height="12.481277777777779cm" url="Pictures/785e200f3a007a6a4af9add9a21cb4c5.png" rend="inline"/>
-                <head>1 An OWL representation of the relevant CIDOC-CRM classes and properties for a Gender Assignment Event</head>
+                <head>Fig. 1: An OWL representation of the relevant CIDOC-CRM classes and properties for a Gender Assignment Event</head>
             </figure>
             <p style="text-align: left; ">In Figure 2 is a schematic example of an assertion in our data model, claiming on the basis of the Chronicle of Michael the Syrian that the son of the last Doukas emperor, Michael VII, was castrated by the usurper Nikephoros Botaneiates during his reign. This approach to modeling, taken together with the wider context of RELEVEN’s assertion-based (rather than fact-based) data model (Baillie et al. 2021), means that we can also represent conflict or confusion in the sources about a person’s gender identity, where this conflict arises, simply by adding a competing assertion based on another source.</p>
             <figure>
                 <graphic n="1002" width="16.002cm" height="14.215180555555555cm" url="Pictures/5eb79517ef1eb4df3cc043d577935d7a.png" rend="inline"/>
-                <head>2 Assertion that Constantine Doukas became a eunuch between 1078–81</head>
+                <head>Fig. 2: Assertion that Constantine Doukas became a eunuch between 1078–81</head>
             </figure>
             <p style="text-align: left; ">We present our approach in the hope that it will not only be useful in the context of our own project, but that its applicability to other prosopographical data sets in historical and geographical contexts can be recognised. The Hijras of South Asia and the 
-                <hi rend="italic">burrnesha</hi> of Albania indeed often acquire their gender status via an event (a ritual or the taking of an oath), making this a very suitable model for these cases; transgender people all over the world can also easily be represented this way. The model is also relevant to post-mortem gender attributions, such as those often made in the context of archaeological excavations.
+                <hi rend="italic">burrneshat</hi> of Albania indeed often acquire their gender status via an event (a ritual or the taking of an oath), making this a very suitable model for these cases; transgender people all over the world can also easily be represented this way. The model is also relevant to post-mortem gender attributions, such as those often made in the context of archaeological excavations.
             </p>
             <p rend="DH-Heading2">Acknowledgments</p>
             <p style="text-align: left; ">This work arises from a project that has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (Grant agreement No. 101002357).</p>

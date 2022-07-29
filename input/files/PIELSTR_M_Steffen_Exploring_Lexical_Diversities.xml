@@ -153,63 +153,31 @@
                     <head>Variability</head>
                     <p>The most intuitive indicator of lexical diversity is the variability of the words used in a text. The most widely known measure is the type-token ratio (TTR).</p>
                     <p>TTR depends systematically on sample size. Among the solutions proposed for this problem, standardized TTRs (STTR) calculated from fixed-length text chunks provide a practical and intuitive solution (Fig. 1).</p>
-                    <table rend="frame" xml:id="Table1">
-                        <row>
-                            <cell/>
-                        </row>
-                        <row>
-                            <cell>
-                                <p rend="justify color(#000000)">
                                     <figure>
                                         <graphic url="Pictures/a09166bd92d41ef059ecc6a4c7751706.png"/>
+                                <head rend="justify color(#000000)">Figure 1: STTR in GEO and GEOlino</head>
                                     </figure>
-                                </p>
-                                <p rend="justify color(#000000)">Figure 1: STTR in GEO and GEOlino</p>
-                            </cell>
-                        </row>
-                    </table>
                 </div>
                 <div type="div2">
                     <head>Rarity</head>
                     <p>A text containing many rare words will generally be perceived as more difficult and more complex than a text with a higher proportion of very common words. We use a simple approach to model rarity. For each text, we compute the proportion of content words not included in the 5,000 most frequent content words from a large web corpus that covers many different registers, the DECOW16BX (Fig. 2, Schäfer and Bildhauer 2012, Schäfer 2015). </p>
-                    <table rend="frame" xml:id="Table2">
-                        <row>
-                            <cell/>
-                        </row>
-                        <row>
-                            <cell>
-                                <p rend="justify color(#000000)">
                                     <figure>
                                         <graphic url="Pictures/b8fd11ba6bb92fcfe05d0da24dddda2c.png"/>
-                                    </figure>
-                                </p>
-                                <p rend="justify">
+                                <head rend="justify">
                                     <hi rend="color(#000000)">Figure 2: </hi>
                                     <hi rend="color(#000000) italic">Rarity </hi>
                                     <hi rend="color(#000000)">in GEO and GEOlino</hi>
-                                </p>
-                            </cell>
-                        </row>
-                    </table>
+                                </head>
+                        </figure>
+
                 </div>
                 <div type="div2">
                     <head>Dispersion</head>
                     <p>According to Jarvis (2013b), the perceived lexical diversity is higher if the occurrences of a particular type are more dispersed, whereas a more clustered pattern produces an impression of redundancy. To measure this effect, we again use a window-based approach (Fig. 3). Inside a window, we calculate a dispersion score based on the Gini coefficient (Gini 1912) for each type and use the arithmetic mean of this score over all types with a frequency greater than one as dispersion measure for the whole text (see Blombach et al. in preparation for a detailed description).</p>
-                    <table rend="frame" xml:id="Table3">
-                        <row>
-                            <cell/>
-                        </row>
-                        <row>
-                            <cell>
-                                <p rend="justify color(#000000)">
                                     <figure>
                                         <graphic url="Pictures/9f6953e66d3ba830110b213de51b58f3.png"/>
+                                <head rend="justify color(#000000)">Figure 3: Dispersion in GEO and GEOlino</head>
                                     </figure>
-                                </p>
-                                <p rend="justify color(#000000)">Figure 3: Dispersion in GEO and GEOlino</p>
-                            </cell>
-                        </row>
-                    </table>
                 </div>
                 <div type="div2">
                     <head>Disparity</head>
@@ -219,40 +187,18 @@
                         <hi rend="color(#000000)"> </hi>
                         <hi rend="color(#000000)">words on a semantic level. To measure global disparity, a document is segmented and a vector is then generated for each segment by averaging over the vectors of the content words. The disparity of a segment is then calculated from the pairwise euclidean distance of all its segments. The document's disparity is the mean over all its segment disparities (Fig. 4).</hi>
                     </p>
-                    <table rend="frame" xml:id="Table4">
-                        <row>
-                            <cell/>
-                        </row>
-                        <row>
-                            <cell>
-                                <p rend="justify color(#000000)">
                                     <figure>
                                         <graphic url="Pictures/d4a7e07e910d6bbe58550c38fb895711.png"/>
+                                <head rend="justify color(#000000)">Figure 4: Disparity in GEO and GEOlino</head>
                                     </figure>
-                                </p>
-                                <p rend="justify color(#000000)">Figure 4: Disparity in GEO and GEOlino</p>
-                            </cell>
-                        </row>
-                    </table>
                 </div>
                 <div type="div2">
                     <head>Density</head>
                     <p>A text containing a higher proportion of content words can be considered denser and therefore more complex (Fig. 5).</p>
-                    <table rend="frame" xml:id="Table5">
-                        <row>
-                            <cell/>
-                        </row>
-                        <row>
-                            <cell>
-                                <p rend="justify color(#000000)">
                                     <figure>
                                         <graphic url="Pictures/abe836b410db577e5d49fd27da5e46cb.png"/>
+                                <head rend="justify color(#000000)">Figure 5: Density in GEO and GEOlino</head>
                                     </figure>
-                                </p>
-                                <p rend="justify color(#000000)">Figure 5: Density in GEO and GEOlino</p>
-                            </cell>
-                        </row>
-                    </table>
                 </div>
                 <div type="div2">
                     <head>Tools</head>
@@ -275,27 +221,14 @@
                 <head>Application to Literature</head>
                 <p>Fig. 6 shows the measures of lexical complexity applied to six genres of dime novels and a set of highbrow novels. Counter to our expectations, science fiction and fantasy equal or even surpass the highbrow novels in some respects (disparity, density, dispersion and rarity). We assume that we have different forms of lexical complexity at work here: In science fiction and fantasy, a noun-heavy prose is depicting new worlds with new words. In high literature on the other hand, high variability shows the influence of a stylistic ideal which aims to avoid repetition and show elegance. There might be a difference in the scope which authors control for complexity, for example variability. We found less repetition in small windows in genre texts, whereas variability in highbrow literature increases with window size. </p>
                 <p>Fig. 7 shows that genre similarities can be perceived immediately using this kind of representation. A multi-dimensional model of lexical complexity allows a clearer understanding of genre differences.</p>
-                <table rend="frame" xml:id="Table6">
-                    <row>
-                        <cell/>
-                    </row>
-                    <row>
-                        <cell>
-                            <p rend="color(#000000)">
                                 <figure>
                                     <graphic url="Pictures/ec4098325dae2ba9b78f400a5f9385a3.png"/>
+                            <head rend="color(#000000)">Figure 6: Diversity per aspect. All dimensions have been scaled to values between 0 and 1</head>
                                 </figure>
-                            </p>
-                            <p rend="color(#000000)">Figure 6: Diversity per aspect. All dimensions have been scaled to values between 0 and 1</p>
-                        </cell>
-                    </row>
-                </table>
-                <p>
                     <figure>
                         <graphic url="Pictures/8f4f7e3a4b57e8fabb6795e24de47402.png"/>
+                <head>Figure 7: Radarplots, highlighting the similarities between genres</head>
                     </figure>
-                </p>
-                <p>Figure 7.: Radarplots, highlighting the similarities between genres</p>
             </div>
         </body>
         <back>

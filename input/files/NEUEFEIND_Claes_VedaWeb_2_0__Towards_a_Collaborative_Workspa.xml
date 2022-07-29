@@ -95,95 +95,65 @@
         <body>
             <div type="div1" rend="DH-Heading">
                 <head>Introduction</head>
-                <p>VedaWeb, developed in the course of a project funded by the German Research Foundation (DFG) from 2017-2020, is a web-based platform for linguistic and philological work with Old Indo-Aryan texts (
-                    <ref target="https://vedaweb.uni-koeln.de/">
+                <p>VedaWeb, developed in the course of a project funded by the German Research Foundation (DFG) from 2017-2021, is a web-based platform for linguistic and philological work with Old Indo-Aryan texts (<ref target="https://vedaweb.uni-koeln.de/">
                         <hi rend="color(#1155cc) underline">https://vedaweb.uni-koeln.de</hi>
-                    </ref>). In this contribution, we report on the key features of the VedaWeb platform and give a prospect on the recently started follow-up project VedaWeb 2.0 (2021-2024), which aims at transforming VedaWeb from a locally developed and curated platform into a collaborative workspace which will be shaped by the needs of the community of Indo-Aryanist researchers as a whole.
+                    </ref>). In this contribution, we report on the key features of the VedaWeb platform and give a prospect on the recently started follow-up project VedaWeb 2.0 (2022-2025), which aims at transforming VedaWeb from a locally developed and curated platform into a collaborative workspace which will be shaped by the needs of the community of Indo-Aryanist researchers as a whole.
                 </p>
             </div>
             <div type="div1" rend="DH-Heading">
                 <head>The VedaWeb project</head>
                 <p>The VedaWeb platform was developed on the basis of the Rigveda (about 160.000 words) as the pilot text, supplemented by multiple translations and linguistic annotations, lemma- as well as word form-based links to dictionary entries, alongside a tailored search engine based on elasticsearch.
-                    <hi rend="sup">
                         <note xml:id="ftn1" place="foot" n="1">
                             <ptr target="https://vedaweb.uni-koeln.de/rigveda/"/>
-                        </note>
-                    </hi> The Rigveda was annotated by researchers of the University of Zurich with rich, albeit partially incomplete morphological glosses. Gaps in the annotations were filled in and existing ones stream-lined by the VedaWeb project team. Moreover, novel information was added (e.g. morphological annotations of verb classes, verbal stem formations such as desideratives, nominal forms such as comparatives and superlatives, word classes such as local particles, etc). Additional translations, metrical information, and access to APIs for Sanskrit dictionaries (Mondaca et al. 2019a/2019b)
-                    <hi rend="sup">
+                        </note> The Rigveda was annotated by researchers of the University of Zurich with rich, albeit partially incomplete morphological glosses. Gaps in the annotations were filled in and existing ones stream-lined by the VedaWeb project team. Moreover, novel information was added (e.g. morphological annotations of verb classes, verbal stem formations such as desideratives, nominal forms such as comparatives and superlatives, word classes such as local particles, etc). Additional translations, metrical information, and access to APIs for Sanskrit dictionaries (Mondaca et al. 2019a/2019b)
                         <note xml:id="ftn2" place="foot" n="2">
                             <ptr target="https://cceh.github.io/c-salt_sanskrit_data"/>
-                        </note>
-                    </hi> were integrated. All data layers have been modeled and encoded in TEI-P5
-                    <hi rend="sup">
+                        </note> were integrated. All data layers have been modeled and encoded in TEI-P5
                         <note xml:id="ftn3" place="foot" n="3">
                             <ptr target="https://github.com/cceh/c-salt_vedaweb_tei"/>
-                        </note>
-                    </hi> and a state-of-the-art web application
-                    <hi rend="sup">
+                        </note> and a state-of-the-art web application
                         <note xml:id="ftn4" place="foot" n="4">
                             <ptr target="https://github.com/vedawebplatform/vedaweb"/>
-                        </note>
-                    </hi> has been developed for accessing data offered via APIs.
-                    <hi rend="sup">
+                        </note> has been developed for accessing data offered via APIs.
                         <note xml:id="ftn5" place="foot" n="5">See also Kiss et al. (2019) for reflections on collaboration within and beyond the project team.</note>
-                    </hi>
                 </p>
                 <p>There are several web portals making ancient Indo-Aryan texts available such as TITUS (Thesaurus Indogermanischer Text- und Sprachmaterialien, University of Frankfurt
-                    <hi rend="sup">
                         <note xml:id="ftn6" place="foot" n="6">
                             <ptr target="http://titus.uni-frankfurt.de/indexe.htm"/>
-                        </note>
-                    </hi>), GRETIL (Göttingen Register of Electronic Texts in Indian Languages, University of Göttingen
-                    <hi rend="sup">
+                        </note>), GRETIL (Göttingen Register of Electronic Texts in Indian Languages, University of Göttingen
                         <note xml:id="ftn7" place="foot" n="7">
                             <ptr target="http://gretil.sub.uni-goettingen.de/gretil.html"/>
-                        </note>
-                    </hi>), DCS (Digital Corpus of Sanskrit, University of Heidelberg
-                    <hi rend="sup">
+                        </note>), DCS (Digital Corpus of Sanskrit, University of Heidelberg
                         <note xml:id="ftn8" place="foot" n="8">
                             <ptr target="http://www.sanskrit-linguistics.org/dcs/"/>
-                        </note>
-                    </hi>) and SARIT (Search and Retrieval of Indic Texts
-                    <hi rend="sup">
+                        </note>) and SARIT (Search and Retrieval of Indic Texts
                         <note xml:id="ftn9" place="foot" n="9">
                             <ptr target="http://sarit.indology.info/"/>
-                        </note>
-                    </hi>). By providing a combination of several text versions, translations, linguistic analyses and combined searchability across morphological, syntactic, lexical and metrical features, VedaWeb by far exceeds the scope of existing platforms and has already significantly improved the digital presence of Old Indo-Aryan texts.
+                        </note>). By providing a combination of several text versions, translations, linguistic analyses and combined searchability across morphological, syntactic, lexical and metrical features, VedaWeb by far exceeds the scope of existing platforms and has already significantly improved the digital presence of Old Indo-Aryan texts.
                 </p>
             </div>
             <div type="div1" rend="DH-Heading">
                 <head>VedaWeb 2.0</head>
                 <p>Primary goal of the follow-up project is to develop the VedaWeb platform into a collaborative workspace to open it up to more texts and to further enrichment through annotations and analyses. Particularly in view of the widespread traditional practices of work in this field that hinder local and international collaboration (e.g., excel files, paper, or similar approaches), the further development of VedaWeb promises substantial advances for anyone working with Indo-Aryan texts, including linguists, philologists, cultural anthropologists, and researchers in philosophical and religious studies. </p>
                 <p>Furthermore, we will add several new textual and lexical resources. This includes the Śaunaka version of the Atharvaveda, the second oldest Vedic text, and the early Vedic prose text Aitareya Brahmana. These texts and their nearly complete morphological annotation will be provided by our project partners at the University of Zurich (Paul Widmer and Oliver Hellwig). Our cooperation partner J.S. Kim (Würzburg) will provide an 
-                    <hi rend="italic">index verborum </hi>to the Atharvaveda
-                    <hi rend="italic">.</hi>
-                    <hi rend="sup">
+                    <hi rend="italic">index verborum</hi> to the Atharvaveda.
                         <note xml:id="ftn10" place="foot" n="10">
                             <ptr target="https://www.phil.uni-wuerzburg.de/fileadmin/04080400/2019/Atharvaveda_Index_verborum_10.2019.pdf"/>
-                        </note>
-                    </hi> In addition, parts of the Maitrayani Samhita, Jaiminiya Brahmana, and the Śatapatha Brahmana will be added. As for lexical resources, we will integrate several additional dictionaries that are part of the Cologne Digital Sanskrit Dictionaries.
-                    <hi rend="sup">
+                        </note> In addition, parts of the Maitrayani Samhita, Jaiminiya Brahmana, and the Śatapatha Brahmana will be added. As for lexical resources, we will integrate several additional dictionaries that are part of the Cologne Digital Sanskrit Dictionaries.
                         <note xml:id="ftn11" place="foot" n="11">
                             <ref target="https://www.sanskrit-lexicon.uni-koeln.de/">https://www.sanskrit-lexicon.uni-koeln.de</ref>
-                        </note>
-                    </hi> These have been modeled in TEI-P5 and OntoLex-Lemon (Mondaca/Rau 2020), and are available via the C-SALT APIs for Sanskrit Dictionaries.
-                    <hi rend="sup">
+                        </note> These have been modeled in TEI-P5 and OntoLex-Lemon (Mondaca/Rau 2020), and are available via the C-SALT APIs for Sanskrit Dictionaries.
                         <note xml:id="ftn12" place="foot" n="12">
                             <ptr target="https://cceh.github.io/c-salt_sanskrit_data"/>
                         </note>
-                    </hi>
                 </p>
                 <p>Additionally, we will include audio recordings of recitations of the Rigveda and Atharvaveda, made available through the National Library of Denmark.
-                    <hi rend="sup">
                         <note xml:id="ftn13" place="foot" n="13">
                             <ptr target="http://www.kb.dk/en"/>
-                        </note>
-                    </hi> These recitations stand in the tradition of the uninterrupted oral transmission of the early sacred texts of Hinduism since their conception roughly three millennia ago. Supported by the Language Archive Cologne
-                    <hi rend="sup">
+                        </note> These recitations stand in the tradition of the uninterrupted oral transmission of the early sacred texts of Hinduism since their conception roughly three millennia ago. Supported by the Language Archive Cologne
                         <note xml:id="ftn14" place="foot" n="14">
                             <ptr target="https://lac.uni-koeln.de/"/>
-                        </note>
-                    </hi>, the recordings will be segmented and made available for online listening, aligned with the corresponding hymns, stanzas and verses.
+                        </note>, the recordings will be segmented and made available for online listening, aligned with the corresponding hymns, stanzas and verses.
                 </p>
             </div>
             <div type="div1" rend="DH-Heading">

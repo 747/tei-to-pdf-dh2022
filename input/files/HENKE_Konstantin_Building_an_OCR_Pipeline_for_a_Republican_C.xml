@@ -99,7 +99,7 @@
                     </note>, 
                 and Living with Machines<note xml:id="ftn8" place="foot" n="9">
                         <anchor xml:id="id_docs-internal-guid-fafb278d-7fff-ea09-b19a-6ce4928e7f59"/> https://livingwithmachines.ac.uk/
-                    </note>emerged that are building up on and going beyond sheer digitisation, venturing into various areas of content analysis (Oberbichler et al, 2021). Also, the outcomes of these initiatives are usually provided online with open access, and publications increasingly follow the FAIR principles (Wilkinson et al, 2016). However, most of the textual content covered is printed in Latin script languages, and to a large degree the analytical systems rely on linguistic features like word boundaries, digital lexica, or tagged corpora.
+                    </note> emerged that are building up on and going beyond sheer digitisation, venturing into various areas of content analysis (Oberbichler et al, 2021). Also, the outcomes of these initiatives are usually provided online with open access, and publications increasingly follow the FAIR principles (Wilkinson et al, 2016). However, most of the textual content covered is printed in Latin script languages, and to a large degree the analytical systems rely on linguistic features like word boundaries, digital lexica, or tagged corpora.
             </p>
             <p>
                 Responding to this from an Asian perspective, i.e. looking at materials from regions where non-Latin scripts prevail, the situation is different. In our case we are working with newspapers from Republican China. Although there are some projects working on historical Chinese newspapers (Stewart et al, 2020), results have so far rarely been published. Other initiatives provide their final results as commercial products. In general, a certain reluctance can be observed when it comes to publishing research methodologies, not to mention the open access sharing of ground truth, test corpora, or trained models (Arnold et al, forthcoming).
@@ -125,7 +125,7 @@
                  
                 <hi rend="color(#000000) italic">(The Crystal)</hi>
                  (cf. Fig. 1), an entertainment newspaper that ran from 1919 to 1940, we soon learned that the key issue of OCR’ing the material actually lies in the page-level segmentation. We therefore started creating ground truth (GT) for geometrical data featuring semantically grouped bounding boxes with labels (article, image, advertisement, marginalia). We then used the resulting dataset to train dhSegment
-                 and have the network detect content areas on the folds (Arnold, forthcoming)(Fig. 2).
+                 and have the network detect content areas on the folds (Arnold, forthcoming) (Fig. 2).
             </p>
             <p>
                 <figure>
@@ -138,8 +138,7 @@
             </p>
             <p>
                 In our presentation we introduce our work on developing a document image processing pipeline currently focusing on Republican Chinese newspapers with complex layouts like the 
-                <hi rend="color(#000000) italic">Jing bao</hi>
-                . We will present the following concrete contributions:
+                <hi rend="color(#000000) italic">Jing bao</hi>. We will present the following concrete contributions:
             </p>
             <list type="ordered">
                 <item>A page-level segmentation approach (as seen in Fig. 2) yielding single text blocks.</item>
@@ -158,8 +157,8 @@
                 = number of substitutions, deletions, insertions; L = length of the reference sequence, i.e. corresponding GT text).
             </p>
             <p>
-                The character segmentation approach presented in Henke (2021)can however only process text blocks where characters are printed in a grid-like layout, which accounts for a very small portion of the 
-                <hi rend="color(#000000) italic">Jing bao</hi>. Hence, there is a particular need for efficient character detection in less stable layout situations within text blocks, before passing single character images on to the actual OCR engine. As a baseline, we leverage the publicly available state-of-the-art OCR tool Tesseract (Smith, 2007)which provides out-of-the-box segmentation+recognition models even for vertically printed traditional Chinese. Tesseract however seems to struggle with the low input image resolution (~ 25x25 px per character) and overall inconsistent scan quality, leading to a very high CER of 
+                The character segmentation approach presented in Henke (2021) can however only process text blocks where characters are printed in a grid-like layout, which accounts for a very small portion of the 
+                <hi rend="color(#000000) italic">Jing bao</hi>. Hence, there is a particular need for efficient character detection in less stable layout situations within text blocks, before passing single character images on to the actual OCR engine. As a baseline, we leverage the publicly available state-of-the-art OCR tool Tesseract (Smith, 2007) which provides out-of-the-box segmentation+recognition models even for vertically printed traditional Chinese. Tesseract however seems to struggle with the low input image resolution (~ 25x25 px per character) and overall inconsistent scan quality, leading to a very high CER of 
                 <hi rend="color(#000000) bold">47.85%</hi>
                  on the test set from Henke (2021).
             </p>
@@ -233,7 +232,7 @@
                 <hi rend="color(#000000) italic">Fig 4: Effects of contrast enhancement on character detection using HRCenterNet</hi>
             </p>
             <p>
-                Using the above method, the CER on the test set of Henke (2021)is reduced to 
+                Using the above method, the CER on the test set of Henke (2021) is reduced to 
                 <hi rend="color(#000000) bold">5.64%</hi>.
             </p>
             <p>

@@ -137,7 +137,7 @@
                     <p>
                         <figure>
                             <graphic url="Pictures/5b427b46663d4966e7f1babd6838fed2.png"/>
-                            <head>Narrativity score</head>
+                            <head>Figure 1. Narrativity score</head>
                         </figure>
                     </p>
                 </div>
@@ -164,7 +164,7 @@
                     <p>
                         <figure>
                             <graphic url="Pictures/e274101ed46c355d8590797e9011c1aa.png"/>
-                            <head>Quotation frequency</head>
+                            <head>Figure 2. Quotation frequency</head>
                         </figure>
                     </p>
                 </div>
@@ -175,7 +175,7 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/e6e11955724c95fea58c4381ae39f107.png"/>
-                        <head>Narrativity score and quotation frequency </head>
+                        <head>Figure 3. Narrativity score and quotation frequency </head>
                     </figure>
                 </p>
             </div>
@@ -183,8 +183,7 @@
                 <head>Outlook</head>
                 <p>While these findings point out how the quotation of text passages may relate to their narrativity, they should be evaluated against a broader corpus of texts. There, the classification of functions of 
                     <hi rend="background-color(#ffffff)">quotations</hi> is the most interesting aspect. We assume that plot-orientated 
-                    <hi rend="background-color(#ffffff)">quotation</hi>s in the secondary literature correlate with higher narrativity, whereas passages quoted in order to develop a more comprehensive interpretation of the text display less narrativity. For evaluating this, we plan to combine our automated analysis of narrativity with the automated detection of key passages
-                    <hi rend="bold">.</hi>
+                    <hi rend="background-color(#ffffff)">quotation</hi>s in the secondary literature correlate with higher narrativity, whereas passages quoted in order to develop a more comprehensive interpretation of the text display less narrativity. For evaluating this, we plan to combine our automated analysis of narrativity with the automated detection of key passages.
                 </p>
             </div>
         </body>

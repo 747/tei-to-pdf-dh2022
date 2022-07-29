@@ -10,9 +10,9 @@
                 <author>
                     <persName>
                         <surname>Zinnen</surname>
-                        <forename>Mathias Julius</forename>
+                        <forename>Mathias</forename>
                     </persName>
-                    <affiliation>Friedrich-Alexander Universität Erlangen-Nürnberg, Germany</affiliation>
+                    <affiliation>Friedrich-Alexander-Universität Erlangen-Nürnberg, Germany</affiliation>
                     <email>mathias.zinnen@fau.de</email>
                 </author>
                 <author>
@@ -20,7 +20,7 @@
                         <surname>Madhu</surname>
                         <forename>Prathmesh</forename>
                     </persName>
-                    <affiliation>Friedrich-Alexander Universität Erlangen-Nürnberg, Germany</affiliation>
+                    <affiliation>Friedrich-Alexander-Universität Erlangen-Nürnberg, Germany</affiliation>
                     <email>prathmesh.madhu@fau.de</email>
                 </author>
                 <author>
@@ -36,7 +36,7 @@
                         <surname>Maier</surname>
                         <forename>Andreas</forename>
                     </persName>
-                    <affiliation>Friedrich-Alexander Universität Erlangen-Nürnberg, Germany</affiliation>
+                    <affiliation>Friedrich-Alexander-Universität Erlangen-Nürnberg, Germany</affiliation>
                     <email>andreas.maier@fau.de</email>
                 </author>
                 <author>
@@ -44,8 +44,8 @@
                         <surname>Christlein</surname>
                         <forename>Vincent</forename>
                     </persName>
-                    <affiliation>Friedrich-Alexander Universität Erlangen-Nürnberg, Germany</affiliation>
-                    <email>vvincent.christlein@fau.de</email>
+                    <affiliation>Friedrich-Alexander-Universität Erlangen-Nürnberg, Germany</affiliation>
+                    <email>vincent.christlein@fau.de</email>
                 </author>
             </titleStmt>
             <editionStmt>
@@ -115,7 +115,7 @@
                     <figure>
                         <graphic url="Pictures/9fe30b6001764fc21d5cad2cfca0f9cd.jpg"/>
                         <head>Figure 1: Smell. The Five Senses. 1558 – 1617. Jan Pietersz Saenredam. National Gallery of Art.</head>
-                    </figure>However, the detection of olfactory objects in historical artworks is achallenging task. The visual representation of objects differs significantlybetween artworks and photographs (Hall et al., 2015). Since state-of-the-art object detectionalgorithms are trained and evaluated on large-scale photographic datasetssuch as ImageNet (Russakovsky et al., 2015), MS COCO (Lin et al., 2014), or OpenImages (Kuznetsova et al., 2020), their performancedrops significantly when applied to artistic data. This domain gap betweenstandard object detection datasets and artistic imagery can be mitigatedby training directly on artworks, either by using existing datasets or bycreating an annotated dataset for the target domain. Another challengeis the mismatch between object categories present in modern datasets andhistorical olfactory objects, caused by historical diachrony on the one hand(Marinescu et al., 2020), and the particularity of some smell-relevant objects on the other (Ehrich et al., 2021).
+                    </figure>However, the detection of olfactory objects in historical artworks is achallenging task. The visual representation of objects differs significantlybetween artworks and photographs (Hall et al., 2015). Since state-of-the-art object detectionalgorithms are trained and evaluated on large-scale photographic datasetssuch as ImageNet (Russakovsky et al., 2015), MS COCO (Lin et al., 2014), or OpenImages (Kuznetsova et al., 2020), their performancedrops significantly when applied to artistic data. This domain gap betweenstandard object detection datasets and artistic imagery can be mitigatedby training directly on artworks, either by using existing datasets or bycreating an annotated dataset for the target domain. Another challengeis the mismatch between object categories present in modern datasets andhistorical olfactory objects, caused by historical diachrony on the one hand (Marinescu et al., 2020), and the particularity of some smell-relevant objects on the other (Ehrich et al., 2021).
                 </p>
             </div>
             <div type="div1" rend="DH-Heading">
@@ -138,7 +138,7 @@
                     A common transfer learning procedure is to use detection backbones that
                     have been pre-trained on ImageNet and fine-tune them for object detection
                     (Zhuang et al., 2020). We expand this strategy by an additional pre-training step, where we
-                    train an ImageNet pre-trained object detection network(Ren et al., 2015) using different
+                    train an ImageNet pre-trained object detection network (Ren et al., 2015) using different
                     datasets. Finally, we fine-tune the resulting model using our olfactory
                     artworks dataset (fig. 3).
                     
@@ -195,13 +195,13 @@
                 <p>training set of the olfactory artworks dataset and evaluated on a separate
                     test set. To mitigate random variations that can occur during the training
                     process, we train five separate models for each experimental setting and
-                    report their average. Evaluation results are reported in pascal VOC (mAP 50,Everingham et al., 2010) and COCO mAP (mAP 50:95:5 (Lin et al., 2014), the two standard metrics to evaluate
+                    report their average. Evaluation results are reported in pascal VOC (mAP 50, Everingham et al., 2010) and COCO mAP (mAP 50:95:5 (Lin et al., 2014), the two standard metrics to evaluate
                     object detection models. We conduct two separate sets of experiments: In
                     the first, we fine-tune the whole network, including the backbone, to assess
                     the detection performance under realistic conditions (table 2).
                 </p>
                 <table rend="frame" xml:id="Table1">
-                    <head>Table 3: Evaluation of object detection performance for fine-tuning of thedetection heads only. All pre-training schemes increase the detection perfor-mance, while pre-training with OI leads to the best results with an increaseof 7.7% mAP 50 or 4% COCO mAP. For every pre-training dataset, wereport the evaluation averaged over five models, fine-tuned for 50 epochs onour olfactory artworks datasets each. Best evaluation results are marked in bold. The merge of two datasets D1 and D2 is written as D1 <hi rend="math">∪</hi> D2.</head>
+                    <head>Table 3: Evaluation of object detection performance for fine-tuning of thedetection heads only. All pre-training schemes increase the detection perfor-mance, while pre-training with OI leads to the best results with an increaseof 7.7% mAP 50 or 4% COCO mAP. For every pre-training dataset, we report the evaluation averaged over five models, fine-tuned for 50 epochs onour olfactory artworks datasets each. Best evaluation results are marked in bold. The merge of two datasets D1 and D2 is written as D1 <hi rend="math">∪</hi> D2.</head>
                     <row>
                         <cell rend="start color(#000000)">Pretraining Dataset</cell>
                         <cell rend="start color(#000000)">Pascal mAP (%)</cell>
