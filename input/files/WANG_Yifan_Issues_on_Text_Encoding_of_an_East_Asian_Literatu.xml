@@ -94,44 +94,39 @@
                 <hi rend="italic">Xu Yiqiejing Yinyi</hi> <hi rend="Chinese">續一切經音義</hi> (Xilin, 1928), which has a non-trivial structure. The text is a kind of dictionary which glosses characters, words, and their pronunciation occurred in Buddhist scriptures. As the headwords are sequenced by the order of occurrence in the scriptures, it provides at least two pieces of interesting information, that is: firstly, the glosses usually explain them in the contexts of each text; and secondly, it preserves more traditional forms of the characters and the words rather than what in ordinary scriptures referred by the dictionary. Since the editor of the dictionary consulted or annotated against various manuscript texts of the Buddhist scriptures available in the 8
                 <hi rend="sup">th</hi> century before woodcut printing became popular in East Asia, it often preserves the older forms than the texts we currently know, which has been changed through the historical inheritance. The feature makes it useful in reconstruction of the original texts and the old form of the characters. However, since many characters cited by the dictionary are marked as non-standard at that time, those characters are sometimes difficult to gain support for encoding, in spite of the increasingly academic attitude of character encoding communities including Unicode Consortium, ISO/IEC JTC1/SC2/WG2, and IRG (Ideographic Research Group).
             </p>
-            <p>According to the situation, encoding of the dictionary requires not only the structure of a dictionary, but also linkage to the targeted scriptures. So, we aim to mark it up according to the following policy based on the Best Practices Level 3 (
-                <hi rend="italic">Best Practices for TEI in Libraries</hi>, n.d.).
+            <p>According to the situation, encoding of the dictionary requires not only the structure of a dictionary, but also linkage to the targeted scriptures. So, we aim to mark it up according to the following policy based on the Best Practices Level 3 (<hi rend="italic">Best Practices for TEI in Libraries</hi>, n.d.).
             </p>
-            <list type="ordered">
-                <item>
-                    <p>The dictionary has a common style in East Asia, that a headword is glossed by following doubled lines (Fig. 1). It is necessary to encode not only the headword and the gloss, but also the typical style of the sub-lines with a line break. We currently adopt &lt;seg&gt; and &lt;lb/&gt; with @type=”wari” to describe it (Fig. 2) but see the necessity of unambiguous handling of sub-linear layout with additional attribute(s).</p>
-                    <p>
+
+                    <p>1. The dictionary has a common style in East Asia, that a headword is glossed by following doubled lines (Fig. 1). It is necessary to encode not only the headword and the gloss, but also the typical style of the sub-lines with a line break. We currently adopt &lt;seg&gt; and &lt;lb/&gt; with @type=”wari” to describe it (Fig. 2) but see the necessity of unambiguous handling of sub-linear layout with additional attribute(s).</p>
+
                         <figure>
                             <graphic url="Pictures/d840234c0bb96ae4e1deb23a2c01d36a.png"/>
+                            <head>Fig. 1</head>
                         </figure>
                         <figure>
                             <graphic url="Pictures/7322d66c2d4fbbad745c16170260d887.png"/>
+                            <head>Fig. 2</head>
                         </figure>
-                    </p>
-                </item>
-                <item>The structure of the dictionary is related to both the physical form of itself and that of referenced scriptures. While the two divisions are sometimes overlapped, we constructed the basic hierarchy based on the latter and the former is marked up by &lt;milestone/&gt;.</item>
-                <item>
-                    <p>As mentioned above, character encoding is an issue in this text. Although our proposal to encode several hundred characters occurred in this text have already accepted in the UCS (Universal coded Character Set), that is, Unicode, many remain unencoded due to not only the uncertainty such as erroneousness and blur, but procedural restrictions (Lu, 2022). In this case, gaiji module in TEI Guidelines (
-                        <hi rend="italic">Characters, glyphs, and Writing Modes</hi>, n.d.) is useful. The following situations are seen in East Asian literature: a) appearance of characters not reducible to an existing UCS character are fairly common; b) with a high number of unencoded characters, they need to queue long for Unicode standardization and take progressive steps before completion; c) character sets with questionable Unicode compatibility are sometimes popular to cover missing characters. The gaiji module is almost compatible with East Asian characters, but not enough for self-contained character description needed at this level. To solve the issue, we suggest the following extensions to the TEI Guidelines in the meantime.
-                    </p>
+
+                <p>2. The structure of the dictionary is related to both the physical form of itself and that of referenced scriptures. While the two divisions are sometimes overlapped, we constructed the basic hierarchy based on the latter and the former is marked up by &lt;milestone/&gt;.</p>
+
+                <p>3. As mentioned above, character encoding is an issue in this text. Although our proposal to encode several hundred characters occurred in this text have already accepted in the UCS (Universal coded Character Set), that is, Unicode, many remain unencoded due to not only the uncertainty such as erroneousness and blur, but procedural restrictions (Lu, 2022). In this case, gaiji module in TEI Guidelines (<hi rend="italic">Characters, glyphs, and Writing Modes</hi>, n.d.) is useful. The following situations are seen in East Asian literature: a) appearance of characters not reducible to an existing UCS character are fairly common; b) with a high number of unencoded characters, they need to queue long for Unicode standardization and take progressive steps before completion; c) character sets with questionable Unicode compatibility are sometimes popular to cover missing characters. The gaiji module is almost compatible with East Asian characters, but not enough for self-contained character description needed at this level. To solve the issue, we suggest the following extensions to the TEI Guidelines in the meantime.</p>
+                    
                     <list type="unordered">
                         <item>To add declaration of non-Unicode source to &lt;localProp&gt; as @scheme.</item>
                         <item>To add minimum and maximum version numbers to &lt;unicodeProp&gt;, &lt;unihanProp&gt;, and &lt;localProp&gt; as @minVer and @maxVer for mutable properties.</item>
                         <item>To add datable attributes (att.datable) to &lt;mapping&gt; for traceability of historical identities of a character in standards.</item>
                     </list>
                     <p>The extension provides a way to keep persistent reference of non-Unicode characters in TEI document.</p>
-                </item>
-            </list>
+
         </body>
         <back>
             <div type="bibliogr">
                 <listBibl>
                     <head>Bibliography</head>
                     <bibl>
-                        <hi rend="bold">Lu, </hi>
-                        <hi rend="bold">Q</hi>
-                        <hi rend="bold">. </hi>
-                        <hi rend="bold">(ed).</hi> (2022). IRG Principles and Procedures (IRG PnP) Version 15. https://appsrv.cse.cuhk.edu.hk/~irg/irg/irg58/IRGN2515PnP15Confirmed.pdf (accessed 19 April 2022).
+                        <hi rend="bold">Lu, Q. </hi>
+                        (ed). (2022). IRG Principles and Procedures (IRG PnP) Version 15. https://appsrv.cse.cuhk.edu.hk/~irg/irg/irg58/IRGN2515PnP15Confirmed.pdf (accessed 19 April 2022).
                     </bibl>
                     <bibl>
                         <hi rend="bold">Xilin</hi> [<hi rend="Chinese">希麟</hi>]. (1928). Xu Yiqiejing Yinyi [<hi rend="Chinese">續一切經音義</hi>]. In Takakusu, J. and Watanabe K. [<hi rend="Japanese">高楠順次郎・渡邊海旭</hi>] (eds), 

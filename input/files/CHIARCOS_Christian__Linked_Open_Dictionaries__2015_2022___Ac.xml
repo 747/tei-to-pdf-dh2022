@@ -102,8 +102,7 @@
                 <item>CoNLL-RDF: We developed an RDF vocabulary and a converter suite for annotations as used in NLP and corpus linguistics (Chiarcos &amp; Fäth 2017).</item>
                 <item>TEI+RDFa: Following a survey of the relation of TEI and RDF (Chiarcos and Ionov 2019), we proposed RDFa for an inline XML representation. Together with the Academy of Sciences in Heidelberg, Germany, and the POSTDATA project, we provided the first implementation of TEI+RDFa for a small-scale digital edition and demonstrated its benefits for linking and querying via open web services (Tittel et al. 2018).</item>
             </list>
-            <p>All our code and all distributable data are available over our GitHub repository (
-                <ptr target="https://github.com/acoli-repo/"/>, 
+            <p>All our code and all distributable data are available over our GitHub repository (<ptr target="https://github.com/acoli-repo/"/>, 
                 <ptr target="https://acoli-repo.github.io/liodi"/>). Language resources produced on this basis include the single largest collection of machine-readable open source bi-dictionaries, the ACoLi Dictionary Graph, published in accordance with Linked Data principles and using OntoLex-Lemon (Chiarcos et al. 2020a, see Fig. 1). In terms of software, notable contributions include tools for the detection of cognates and loan words and for translation inference across dictionaries (Chiarcos et al. 2020c).
             </p>
             <p>

@@ -367,20 +367,11 @@
                         <hi rend="color(#000000)">.</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="color(#000000) bold">Eder, </hi>
-                        <hi rend="color(#000000) bold">Maciej</hi>
-                        <hi rend="color(#000000) bold">, Rybicki, </hi>
-                        <hi rend="color(#000000) bold">Jan</hi>
-                        <hi rend="color(#000000) bold"> and Kestemont, M</hi>
-                        <hi rend="color(#000000) bold">ike</hi>
-                        <hi rend="color(#000000)">.</hi>
-                        <hi rend="color(#000000) bold"> </hi>
+                        <hi rend="color(#000000) bold">Eder, Maciej, Rybicki, Jan and Kestemont, Mike</hi>
+                        <hi rend="color(#000000)">. </hi>
                         <hi rend="color(#000000)">2016. Stylometry with R: a package for computational text analysis. </hi>
                         <hi rend="color(#000000) italic">R Journal</hi>
-                        <hi rend="color(#000000)">, 8(1): 107-21.</hi>
-                        <ref target="https://journal.r-project.org/archive/2016/RJ-2016-007/index.html">
-                            <hi rend="color(#000000)"> </hi>
-                        </ref>
+                        <hi rend="color(#000000)">, 8(1): 107-21. </hi>
                         <ptr target="https://journal.r-project.org/archive/2016/RJ-2016-007/index.html"/>
                     </bibl>
                     <bibl>
@@ -392,8 +383,7 @@
                     <bibl>
                         <hi rend="color(#000000) bold">Heiden, Serge</hi>
                         <hi rend="color(#000000)">. 2010. The TXM Platform: Building Open-Source Textual Analysis Software Compatible with the TEI Encoding Scheme. In </hi>
-                        <hi rend="color(#000000) italic">24th Pacific Asia Conference on Language, Information and Computation</hi>
-                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000) italic">24th Pacific Asia Conference on Language, Information and Computation </hi>
                         <hi rend="color(#000000)">(pp. 10 p.). Sendai, </hi>
                         <hi rend="color(#000000)">Japan.</hi>
                         <hi rend="color(#000000)"> Retrieved from </hi>
@@ -420,8 +410,7 @@
                     <bibl>
                         <hi rend="color(#000000) bold">Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg</hi>
                         <hi rend="color(#000000)">. 2016. The FAIR Guiding Principles for Scientific Data Management and Stewardship. </hi>
-                        <hi rend="color(#000000) italic">Scientific Data</hi>
-                        <hi rend="color(#000000)"> </hi>
+                        <hi rend="color(#000000) italic">Scientific Data </hi>
                         <hi rend="color(#000000)">3(1). </hi>
                         <ptr target="https://doi.org/10.1038/sdata.2016.18"/>
                         <hi rend="color(#000000)">.</hi>

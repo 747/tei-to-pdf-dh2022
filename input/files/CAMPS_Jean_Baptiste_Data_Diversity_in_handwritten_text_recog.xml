@@ -129,13 +129,10 @@
                     <p>The French dataset is Cremma-medieval, composed of 17431 lines from eleven Old French manuscripts written between the 13
                         <hi rend="sup">th</hi> and 14
                         <hi rend="sup">th</hi> centuries (Table 1). It is made from pre-existing transcriptions, and sample size is very different from one source manuscript to the other. A graphemic
-                        <note xml:id="ftn1" place="foot" n="1"> We use the terminology graphemic (
-                            <hi rend="italic">graphématique</hi>) and graphetic (
-                            <hi rend="italic">allographétique</hi>) following (Stuzmann 2011).
+                        <note xml:id="ftn1" place="foot" n="1"> We use the terminology graphemic (<hi rend="italic">graphématique</hi>) and graphetic (<hi rend="italic">allographétique</hi>) following (Stuzmann 2011).
                         </note> transcription method has been chosen to maintain a many to one mapping between signs in the source and the transcription (abbreviations and their expansions are both kept, 
                         <hi rend="italic">u/v</hi> or 
-                        <hi rend="italic">i/j</hi> are not dissimilated), but allographs are normalised (
-                        <hi rend="italic">e.g</hi>., round and long 
+                        <hi rend="italic">i/j</hi> are not dissimilated), but allographs are normalised (<hi rend="italic">e.g</hi>., round and long 
                         <hi rend="italic">s</hi> are both transcribed 
                         <hi rend="italic">s</hi>). Finally, spaces are not homogeneously represented in the ground truth text annotation, with transcribers reproducing the manuscript spacing while others are using lexical spaces. It must be stressed that spaces are the most important source of errors in medieval HTR models (see for instance the model Bicerin, where spaces represent 33.9% of errors Pinche 2021). In this cremma-medieval macro-dataset, several transcriptions from different transcribers, coming from different projects, have been collected.
                     </p>
@@ -419,8 +416,7 @@
                     <item>
                         <list type="unordered">
                             <item>normalisation of allographs (hypernormalised);</item>
-                            <item>suppression of ramist distinctions (
-                                <hi rend="italic">u</hi>/
+                            <item>suppression of ramist distinctions (<hi rend="italic">u</hi>/
                                 <hi rend="italic">v</hi> and 
                                 <hi rend="italic">i</hi>/
                                 <hi rend="italic">j</hi>);

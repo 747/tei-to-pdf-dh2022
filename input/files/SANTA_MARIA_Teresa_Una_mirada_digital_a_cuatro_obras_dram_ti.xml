@@ -88,8 +88,7 @@
             <p><hi rend="bold">Método</hi></p>
             <p>En el trabajo se aplican métodos de análisis cuantitativo y cualitativo. Los textos digitalizados en formato TEI, GEFX y CVS provienen de Drama Corpora Proyect (DraCor, disponible en: 
                 <ref target="about:blank">https://dracor.org/</ref>). Para representar la red de conexiones entre los personajes se crearán los grafos, que representan la red de protagonistas y el peso cuantitativo de las intervenciones discursivas de cada una. Para su procesamiento y generación de representaciones gráficas se utiliza el software libre Gephi 0.9.2-beta (Gephi.org 2008-2017) y RAWGraphs (https://rawgraphs.io/). Se comparan los grafos generados por ambas herramientas con los creados por la API de
-                <anchor xml:id="Hlk89878062"/> DraCor llamada Shiny DraCor (
-                <ref target="about:blank">https://shiny.dracor.org/</ref>). Para visualizar las relaciones entre las palabras y unidades léxicas más significativas se recurre a los grafos léxicos. Para mapear las estadísticas textuales se rastrean otras 29 herramientas de representación gráfica incluidas en la interfaz de RAWGraphs. 
+                <anchor xml:id="Hlk89878062"/> DraCor llamada Shiny DraCor (<ref target="about:blank">https://shiny.dracor.org/</ref>). Para visualizar las relaciones entre las palabras y unidades léxicas más significativas se recurre a los grafos léxicos. Para mapear las estadísticas textuales se rastrean otras 29 herramientas de representación gráfica incluidas en la interfaz de RAWGraphs. 
             </p>
             <p><hi rend="bold">Avance de conclusiones</hi></p>
             <p>El interés principal de la propuesta radica en la exploración de las visualizaciones y detección de las singularidades de los elementos léxicos en el tejido del texto lorquiano. Los 

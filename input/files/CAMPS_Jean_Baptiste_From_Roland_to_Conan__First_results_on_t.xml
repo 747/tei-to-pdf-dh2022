@@ -135,8 +135,7 @@
                     </figure>
                 </p>
                 <p>Figure 1: Composition of the corpus by decade</p>
-                <p>Such high coverage seems to alleviate most concerns related to the representativeness of digital corpora: it becomes less likely that important genres or themas are neglected. Yet the novels registered on the French National Library catalog do not encompass the total sum of literary fiction published or circulated on the period. The comparison with Google Books showed that numerous editions were not recorded by Gallica. In the context of the project, we only checked novels recorded on the catalogue, but this discrepancy shows that some published novels could definitely have been overlooked, although by definition these documents are not necessarily expected to belong to those with the largest impact, as they failed to be noticed by bibliographic records. After the 19th century, nearly all published monographs are expected to be indexed in the catalogue of the French National Library due to progress in the implementation of the policy of legal deposit (
-                    <hi rend="italic">dépôt légal</hi>, established in 1537). Yet, at this time, a large amount of literature was increasingly being published in periodicals and newspapers.
+                <p>Such high coverage seems to alleviate most concerns related to the representativeness of digital corpora: it becomes less likely that important genres or themas are neglected. Yet the novels registered on the French National Library catalog do not encompass the total sum of literary fiction published or circulated on the period. The comparison with Google Books showed that numerous editions were not recorded by Gallica. In the context of the project, we only checked novels recorded on the catalogue, but this discrepancy shows that some published novels could definitely have been overlooked, although by definition these documents are not necessarily expected to belong to those with the largest impact, as they failed to be noticed by bibliographic records. After the 19th century, nearly all published monographs are expected to be indexed in the catalogue of the French National Library due to progress in the implementation of the policy of legal deposit (<hi rend="italic">dépôt légal</hi>, established in 1537). Yet, at this time, a large amount of literature was increasingly being published in periodicals and newspapers.
                 </p>
                 <p>In short as representativeness of existing library catalogues becomes less of a concern, digital collections are bound to raise more complex issues and address a more critical perspective on existing bibliographic resources: what is a “novel”? what is a “publication”? what about piracy edition or periodical fictions?</p>
                 <p>The creation of the third corpus also aims to benefit from unprecedented progresses in the detection of historical OCR. The OCR17+ model trained by Claire Jahan and Simon Gabay (2021) on a collection of 17th century prints already yields a usable text for most of the 16th to 18th century documents
@@ -171,8 +170,7 @@
                 <p>Preliminary results from the 21st century model have revealed significant examples of “missing links” between the early modern chivalric romances and the fantasy novels (Table 1). Of special interest is 
                     <hi rend="italic">La Mort de Roland</hi> a 1858 rewrite of the 
                     <hi rend="italic">Chanson de Roland</hi> by Alfred Assolant that explicitly claims to be an 
-                    <hi rend="italic">epic fantasy</hi> (
-                    <hi rend="italic">Fantaisie épique</hi>).
+                    <hi rend="italic">epic fantasy</hi> (<hi rend="italic">Fantaisie épique</hi>).
                 </p>
                 <p>
                     <figure>
@@ -186,8 +184,7 @@
                     <hi rend="italic">Roman d’amour</hi>, 
                     <hi rend="italic">Roman historique</hi>, 
                     <hi rend="italic">Roman comique</hi>, 
-                    <hi rend="italic">Roman politique</hi>, etc. Ongoing work aims to reconcile the classification of Lenglet du Fresnoy with our corpus of digitized novels. Preliminary results suggest that the generic identity in the catalogue of Fresnoy is much stronger than in the Babelio dataset, with as much as 93% accuracy on four genres (
-                    <hi rend="italic">Roman d’amour</hi>, 
+                    <hi rend="italic">Roman politique</hi>, etc. Ongoing work aims to reconcile the classification of Lenglet du Fresnoy with our corpus of digitized novels. Preliminary results suggest that the generic identity in the catalogue of Fresnoy is much stronger than in the Babelio dataset, with as much as 93% accuracy on four genres (<hi rend="italic">Roman d’amour</hi>, 
                     <hi rend="italic">Roman historique</hi>, 
                     <hi rend="italic">Roman de chevalerie</hi> and 
                     <hi rend="italic">Roman comique &amp; satirique</hi>) in our initial run. While this high accuracy may be caused by overfitting on a limited samples of novels, it seems also consistent with the significance of genre classification in the meta-discourse about the novel in the 18th century.
@@ -214,8 +211,7 @@
                     </bibl>
                     <bibl>
                         <hi rend="bold">Fièvre, </hi>
-                        <hi rend="bold">P.</hi>
-                        <hi rend="bold"> </hi>
+                        <hi rend="bold">P. </hi>
                         <hi rend="bold">(2007)</hi>. Théâtre classique. URL 
                         <ptr target="http://www.theatre-classique.fr/"/>.
                     </bibl>
@@ -225,15 +221,13 @@
                     </bibl>
                     <bibl>
                         <hi rend="bold">Langlais, </hi>
-                        <hi rend="bold">P.C.</hi>
-                        <hi rend="bold"> </hi>
+                        <hi rend="bold">P.C. </hi>
                         <hi rend="bold">(2021)</hi>. Classified News, Redefining the history of newspaper genre with supervised models. In 
                         <hi rend="italic">Digital Newspaper: a new Eldorado for the historians</hi>. De Gruyter.
                     </bibl>
                     <bibl>
                         <hi rend="bold">Langlais, </hi>
-                        <hi rend="bold">P.C.</hi>
-                        <hi rend="bold"> </hi>
+                        <hi rend="bold">P.C. </hi>
                         <hi rend="bold">(2021</hi>
                         <hi rend="bold">b</hi>
                         <hi rend="bold">)</hi>. 
@@ -242,8 +236,7 @@
                     </bibl>
                     <bibl>
                         <hi rend="bold">Moretti, </hi>
-                        <hi rend="bold">F.</hi>
-                        <hi rend="bold"> </hi>
+                        <hi rend="bold">F. </hi>
                         <hi rend="bold">(2009)</hi>. Style, Inc. Reflections on Seven Thousand Titles (British Novels, 1740–1850), 
                         <hi rend="italic">Critical Inquiry</hi>, 36(1):134–158, 2009. doi: 10.1086/606125. URL 
                         <ptr target="http://www.jstor.org/stable/10.1086/606125"/>.
@@ -254,23 +247,20 @@
                         <hi rend="bold">, Burnard, </hi>
                         <hi rend="bold">L.</hi>
                         <hi rend="bold">, and Schöch, </hi>
-                        <hi rend="bold">C.</hi>
-                        <hi rend="bold"> </hi>
+                        <hi rend="bold">C. </hi>
                         <hi rend="bold">(</hi>
                         <hi rend="bold">2021</hi>
                         <hi rend="bold">)</hi>. European literary text collection (eltec).
                     </bibl>
                     <bibl>
                         <hi rend="bold">Calvo Tello, </hi>
-                        <hi rend="bold">J.</hi>
-                        <hi rend="bold"> </hi>
+                        <hi rend="bold">J. </hi>
                         <hi rend="bold">(2021)</hi>. 
                         <hi rend="italic">The Novel in the Spanish Silver Age: A Digital Analysis of Genre Using Machine Learning</hi>. Bielefeld University Press. doi: 10.1515/9783839459256.
                     </bibl>
                     <bibl>
                         <hi rend="bold">Underwood, </hi>
-                        <hi rend="bold">T.</hi>
-                        <hi rend="bold"> </hi>
+                        <hi rend="bold">T. </hi>
                         <hi rend="bold">(2019)</hi>. 
                         <hi rend="italic">Distant Horizons: Digital Evidence and Literary Change</hi>. University of Chicago Press.
                     </bibl>
@@ -278,8 +268,7 @@
                         <hi rend="bold">Walsh, </hi>
                         <hi rend="bold">M.</hi>
                         <hi rend="bold"> and Antoniak, </hi>
-                        <hi rend="bold">M.</hi>
-                        <hi rend="bold"> </hi>
+                        <hi rend="bold">M. </hi>
                         <hi rend="bold">(</hi>
                         <hi rend="bold">2021</hi>
                         <hi rend="bold">)</hi>. The goodreads “Classics”: A computational study of readers, amazon, and crowdsourced amateur criticism. 

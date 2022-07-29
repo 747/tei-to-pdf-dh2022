@@ -101,15 +101,13 @@
             <p style="text-align: left; ">Our objective here was 
                 <hi rend="italic">not</hi> to produce a good translation of the text, or even one that might serve as the basis for a readable edition. Rather, this machine-generated edition serves as a ‘pivot-text’ between the two corpora, allowing for an automatic comparison of the two (or three) versions using ARTFL’s highly fault-tolerant sequence alignment package, Text-PAIR [2]. In order to determine the parameters for this task, we ran a series of tests with different matching parameters on a representative selection of 100 articles where Chambers was identified as the possible source. It is important to note that even with the best parameters, which we adjusted to get favourable recall and precision results, we were only able to identify 81 of these 100 articles.
             </p>
-            <p style="text-align: left; ">Once settled on the optimal parameters, we then used Text-PAIR to generate both an alignment database, for interactive examination, and a set of static results tables. The alignment database contains some 7,304 aligned passage pairs. The system allows queries on metadata, such as author and article title as well as words or phrases found in the aligned passages. Each aligned passage is presented as a facing page representation and the user can toggle a display of the variations between the two aligned passages. As seen below, the variations between the texts can be extensive (
-                <hi rend="italic">fig. 1</hi>).
+            <p style="text-align: left; ">Once settled on the optimal parameters, we then used Text-PAIR to generate both an alignment database, for interactive examination, and a set of static results tables. The alignment database contains some 7,304 aligned passage pairs. The system allows queries on metadata, such as author and article title as well as words or phrases found in the aligned passages. Each aligned passage is presented as a facing page representation and the user can toggle a display of the variations between the two aligned passages. As seen below, the variations between the texts can be extensive (<hi rend="italic">fig. 1</hi>).
             </p>
             <figure>
                 <graphic n="1001" width="15.920861111111112cm" height="10.567458333333333cm" url="Pictures/12597ed0ddc2a5d2557c1ef73d3670b4.png" rend="inline"/>
             </figure>
             <p style="text-align: left; text-align: center;">Figure 1. Text-PAIR interface showing differences in the article “Air”.</p>
-            <p style="text-align: left; ">Text-PAIR also contextualises results back to the original document(s). For example, the following is the article “Almanach” by d'Alembert, showing the aligned passage from Chambers in blue (
-                <hi rend="italic">fig. 2</hi>).  
+            <p style="text-align: left; ">Text-PAIR also contextualises results back to the original document(s). For example, the following is the article “Almanach” by d'Alembert, showing the aligned passage from Chambers in blue (<hi rend="italic">fig. 2</hi>).  
             </p>
             <figure>
                 <graphic n="1002" width="15.920861111111112cm" height="9.03111111111111cm" url="Pictures/c2f10e8edcdd0f78c556bf1858a7cbe5.png" rend="inline"/>
@@ -136,8 +134,7 @@
                     <hi rend="italic">encyclopédistes</hi>, see (Passeron, 2006). On Text-PAIR, see 
                     <ref target="https://github.com/ARTFL-Project/text-pair">https://github.com/ARTFL-Project/text-pair</ref>.
                 </p>
-                <p style="text-align: left; ">[2] See Clovis Gladstone, Russ Horton, and Mark Olsen, "
-                    <ref target="https://github.com/ARTFL-Project/text-pair/blob/master/REFERENCES.md">TextPAIR</ref>
+                <p style="text-align: left; ">[2] See Clovis Gladstone, Russ Horton, and Mark Olsen, "<ref target="https://github.com/ARTFL-Project/text-pair/blob/master/REFERENCES.md">TextPAIR</ref>
                     <ref target="https://github.com/ARTFL-Project/text-pair/blob/master/REFERENCES.md" xml:space="preserve"> (Pairwise Alignment for Intertextual Relations)</ref>", ARTFL Project, University of Chicago, 2008-2021, and, more specifically, (Olsen, Horton and Roe, 2011).
                 </p>
                 <p style="text-align: left; ">[3] The question of the 
@@ -183,8 +180,7 @@
                     </bibl>
                     <bibl style="text-align: left; ">
                         <hi rend="bold" xml:space="preserve">Quintili, P. </hi>(1996). D'Alembert ‘traduit’ Chambers. Les articles de mécanique de la 
-                        <hi rend="italic">Cyclopædia</hi> à l'
-                        <hi rend="italic">Encyclopédie</hi>. 
+                        <hi rend="italic">Cyclopædia</hi> à l'<hi rend="italic">Encyclopédie</hi>. 
                         <hi rend="italic">Recherches sur Diderot et sur l'Encyclopédie</hi>, 
                         <hi rend="bold">21</hi>:75-90.
                     </bibl>

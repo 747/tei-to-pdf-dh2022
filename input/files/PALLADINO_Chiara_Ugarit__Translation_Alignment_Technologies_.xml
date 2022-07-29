@@ -97,20 +97,16 @@
     <text>
         <body>
             <p>
-                In this workshop, participants are going to learn the fundamentals of Translation Alignment and learn to use Ugarit (
-                <ref target="http://ugarit.ialigner.com/">
+                In this workshop, participants are going to learn the fundamentals of Translation Alignment and learn to use Ugarit (<ref target="http://ugarit.ialigner.com/">
                     http://ugarit.ialigner.com/
-                </ref>
-                ), an online environment targeted at the creation of manually aligned datasets in different languages. The goal of the workshop is to introduce participants to an important topic in Digital Humanities, and to expand our community and available datasets by targeting East Asian languages and Japanese in particular.
+                </ref>), an online environment targeted at the creation of manually aligned datasets in different languages. The goal of the workshop is to introduce participants to an important topic in Digital Humanities, and to expand our community and available datasets by targeting East Asian languages and Japanese in particular.
             </p>
             <p>Translation alignment is one of the most important tasks in Natural Language Processing. It is defined as the comparison of two or more texts in different languages, also called parallel texts or parallel corpora [6][10], by means of automated or semi-automated methods. The result often takes the form of a list of pairs of items, which can be words, sentences, or larger text chunks like paragraphs or documents. The aligned pairs may be one-to-one (one word in the source text corresponds to one word in the translation), but often align as one-to-many, many-to-many, or many-to-one. Each word correspondence may be complete or perfect (with complete overlap between two words), but also possible or incomplete (partial overlap, or both words being a translation of each other only in certain contexts [4]).</p>
             <p>There are numerous methods for automated translation alignment: the most popular ones, such as statistical machine translation, are based on various levels of manually aligned training data [2], although new models are being proposed, such as neural machine translation [1]. However, the alignment of texts in different languages is an exceptionally complex task, especially when considering word-level alignment. It is often difficult to find perfect correspondences across languages that express ideas through different morphosyntactic constructs, with variations in word order, sentence length. In addition, it is notoriously difficult to establish correspondences within wordplays, metaphors, or allusions. For these reasons, manually aligned word pairs are extremely important to establish gold standards, as sources of training data to implement machine translation methods, and for many other purposes, including text mining and creation of dynamic lexica [4][9].</p>
             <p>
-                Some modern languages, like English, German, and Chinese, have an impressive infrastructure for managing parallel corpora. However, that is not the case for historical and generally under-resourced languages, such as Classical Arabic, Persian, Latin, Ancient Greek, Gaelic, Cherokee, Georgian, and even for many languages of East Asia, including Japanese, Korean, and Sanskrit. Ugarit (
-                <ref target="http://ugarit.ialigner.com/">
+                Some modern languages, like English, German, and Chinese, have an impressive infrastructure for managing parallel corpora. However, that is not the case for historical and generally under-resourced languages, such as Classical Arabic, Persian, Latin, Ancient Greek, Gaelic, Cherokee, Georgian, and even for many languages of East Asia, including Japanese, Korean, and Sanskrit. Ugarit (<ref target="http://ugarit.ialigner.com/">
                     http://ugarit.ialigner.com/
-                </ref>
-                ) is a web-based environment designed to support the needs of these languages, providing a framework for creating and using manually aligned corpora. During the workshop, we will introduce the tool and illustrate the many ways in which parallel corpora aligned with Ugarit are currently used: these will include pedagogy and language learning, interlinguistic and translation analysis, dynamic visualization, data mining, dynamic lexica, and training of machine translation models [5][7][8][11]. We will invite the participants to test the tool on their own corpus or with a prepared dataset, to try first-hand the work of translation alignment, and to visualize and investigate the results.
+                </ref>) is a web-based environment designed to support the needs of these languages, providing a framework for creating and using manually aligned corpora. During the workshop, we will introduce the tool and illustrate the many ways in which parallel corpora aligned with Ugarit are currently used: these will include pedagogy and language learning, interlinguistic and translation analysis, dynamic visualization, data mining, dynamic lexica, and training of machine translation models [5][7][8][11]. We will invite the participants to test the tool on their own corpus or with a prepared dataset, to try first-hand the work of translation alignment, and to visualize and investigate the results.
             </p>
             <p>Ugarit currently supports most East Asian languages and alphabets, but there are very few aligned datasets currently available. With this workshop, we want to specifically target the creation of new parallel corpora in Japanese, Chinese and Korean, and gather more feedback and requests from this part of the Digital Humanities community.</p>
             <p>Instructors:</p>
@@ -118,29 +114,25 @@
                 <hi style="font-family:Palatino Linotype;font-size:10pt" xml:space="preserve">Tariq Yousef is a research associate at Leipzig University, working on Computational Linguistics, Textual Alignment, and Data Visualization. He is the Lead developer of Ugarit. Contact: </hi>
                 <ref target="mailto:tariq.yosef@uni-leipzig.de">
                     tariq.yosef@uni-leipzig.de
-                </ref>
-                .
+                </ref>.
             </p>
             <p>
                 <hi style="font-family:Palatino Linotype;font-size:10pt" xml:space="preserve">Chiara Palladino is Assistant Professor of Classics at Furman University. As project partner in Ugarit, she uses the tool in teaching and research and has led multiple workshops and seminars on translation alignment. Her main interest lies in language learning processes with translation alignment. Contact: </hi>
                 <ref target="mailto:chiara.palladino@furman.edu">
                     chiara.palladino@furman.edu
-                </ref>
-                .
+                </ref>.
             </p>
             <p>
                 <hi style="font-family:Palatino Linotype;font-size:10pt" xml:space="preserve">Farnoosh Shamsian is a PhD candidate at Leipzig University. As a project partner in Ugarit, she uses the tool in teaching and research and has led multiple workshops and seminars on translation alignment. Her main interest lies in digital pedagogy and teaching Greek through digital annotations. Contact: </hi>
                 <ref target="mailto:shamsian@informatik.uni-leipzig.de">
                     shamsian@informatik.uni-leipzig.de
-                </ref>
-                .
+                </ref>.
             </p>
             <p>
                 <hi style="font-family:Palatino Linotype;font-size:10pt" xml:space="preserve">Nadia Kanagawa is James B. Duke Assistant Professor of Asian Studies and History at Furman University. She is a Ugarit user who often works with and translates classical Japanese texts in her research on immigrants in the early Japanese state. Contact: </hi>
                 <ref target="mailto:nkanagawa@furman.edu">
                     nkanagawa@furman.edu
-                </ref>
-                .
+                </ref>.
             </p>
         </body>
         <back>

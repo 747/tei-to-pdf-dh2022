@@ -85,16 +85,13 @@
                 <note place="foot" xml:id="ftn1" n="1">
                     <p>
                         See also Jerome McGann, Bethany Nowviskie, “NINES: a federated model for integrating digital scholarship”,
-                        <hi rend="italic" style="font-size:10pt" xml:space="preserve"> Electronic Book Review</hi>
-                        , 31 January 2012, an earlier form of which is available here: https://nines.org/about/wp-content/uploads/2011/12/9swhitepaper.pdf.
+                        <hi rend="italic" style="font-size:10pt" xml:space="preserve"> Electronic Book Review</hi>, 31 January 2012, an earlier form of which is available here: https://nines.org/about/wp-content/uploads/2011/12/9swhitepaper.pdf.
                     </p>
-                </note> the metadata was rdf xml in format which was loaded into SoLR with a Lucene search engine (Nowviskie, 2007). This metadata format (
-                <ref target="https://wiki.collex.org/index.php/Submitting_RDF">
+                </note> the metadata was rdf xml in format which was loaded into SoLR with a Lucene search engine (Nowviskie, 2007). This metadata format (<ref target="https://wiki.collex.org/index.php/Submitting_RDF">
                     <hi rend="color(1155CC)">Submitting RDF</hi>
                 </ref>) made it possible to add URIs to create Linked Open Data and for ARC to organize search returns beyond traditional disciplines.
             </p>
-            <p>ARC was launched when content management systems and cultural heritage platforms were in their infancy. To maintain robust and flexible metadata and search capabilities, we are sunsetting our legacy COLLEX software and moving to WordPress to allow nodes more control over their web presence. These WordPress instances will interface with an updated backend: the Corpora Dataset Studio, developed by ARC technology director Bryan Tarpley. Corpora uses mongoDB as well as elasticsearch and neo4j databases and has been designed with data visualization and Linked Open Data in mind. In collaboration with Linked Infrastructure for Networked Cultural Scholarship (
-                <ref target="http://lincsproject.ca">
+            <p>ARC was launched when content management systems and cultural heritage platforms were in their infancy. To maintain robust and flexible metadata and search capabilities, we are sunsetting our legacy COLLEX software and moving to WordPress to allow nodes more control over their web presence. These WordPress instances will interface with an updated backend: the Corpora Dataset Studio, developed by ARC technology director Bryan Tarpley. Corpora uses mongoDB as well as elasticsearch and neo4j databases and has been designed with data visualization and Linked Open Data in mind. In collaboration with Linked Infrastructure for Networked Cultural Scholarship (<ref target="http://lincsproject.ca">
                     <hi rend="color(1155CC)">LINCS</hi>
                 </ref>, Susan Brown, PI), Tarpley is recreating ARC’s legacy visual search interface, BigDIVA, in the form of a Rich Prospect Linked Open Data Viewer. Susan Brown has argued that Linked Open Data can demonstrate that categories such as disciplines, gender, and nationality can be revealed as “categorically provisional” through forging crosswalks between traditional categories and new, anti-disciplinary, intersectional, decolonizing, and queer modes of categorization (Brown, 2020). The new LOD viewer will allow users to dynamically organize the ARC catalog in their own ways, using categories and queries that make sense to them. 
             </p>
@@ -107,8 +104,7 @@
                         <hi style="font-size:10pt" xml:space="preserve">The Digital Humanities Manifesto 2.0, dated 5/29/2009, is described and available for download: </hi>
                         <ref target="http://www.toddpresner.com/?p=7">
                             <hi rend="color(1155CC)" style="font-size:10pt">http://www.toddpresner.com/?p=7</hi>
-                        </ref>
-                        . The original manifesto, dated 12/15/2008, is no longer available: email mandell at tamu dot edu for a saved copy.
+                        </ref>. The original manifesto, dated 12/15/2008, is no longer available: email mandell at tamu dot edu for a saved copy.
                     </p>
                 </note>
                 <hi style="font-family:inherit" xml:space="preserve"> ARC and Corpora – to be released open source next year, and usable on a laptop – aspire to constitute a “diversity stack” (Liu, 2020)</hi>
@@ -122,13 +118,11 @@
                     <head>Bibliography</head>
                     <bibl>
                         <hi style="font-size:10pt" xml:space="preserve">Brown, S. (2020). Categorically provisional. </hi>
-                        <hi rend="italic" style="font-size:10pt">PMLA</hi>
-                        , 135(1): 165-174.
+                        <hi rend="italic" style="font-size:10pt">PMLA</hi>, 135(1): 165-174.
                     </bibl>
                     <bibl>
                         <hi style="font-size:10pt" xml:space="preserve">Liu, A. (2020). Toward a diversity stack: Digital humanities and diversity as technical problem. </hi>
-                        <hi rend="italic" style="font-size:10pt">PMLA</hi>
-                        , 135(1): 130-151. 
+                        <hi rend="italic" style="font-size:10pt">PMLA</hi>, 135(1): 130-151. 
                     </bibl>
                     <bibl>
                         <hi style="font-size:10pt" xml:space="preserve">Nowviskie, B. (2007). A scholar’s guide to research, collaboration, and publication in NINES. </hi>
@@ -136,13 +130,11 @@
                         <hi style="font-size:10pt" xml:space="preserve">, </hi>
                         <ref target="https://doi.org/10.7202/016707ar">
                             <hi rend="color(1155CC)" style="font-size:10pt">https://doi.org/10.7202/016707ar</hi>
-                        </ref>
-                        . 
+                        </ref>. 
                     </bibl>
                     <bibl>
                         <hi style="font-size:10pt" xml:space="preserve">Pasanek, B. and Wellmon, C. (2015). The Enlightenment index. </hi>
-                        <hi rend="italic" style="font-size:10pt">The Eighteenth Century</hi>
-                        , 56(3): 359-382. 
+                        <hi rend="italic" style="font-size:10pt">The Eighteenth Century</hi>, 56(3): 359-382. 
                     </bibl>
                     <bibl>
                         <hi style="font-size:10pt" xml:space="preserve">Risam, R. (2015). Revising history and re-authouring the left in the postcolonial digital archive. </hi>

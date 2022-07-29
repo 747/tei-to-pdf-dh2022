@@ -95,8 +95,7 @@
                 <hi style="font-size:11pt" xml:space="preserve"> designed to facilitate transcription of manuscripts in a wide variety of languages, scripts and complex layouts. The software began as part of the Scripta-PSL project which incorporated experts in dozens of scripts and languages, including Sumerian, Ugaritic, Syriac, Arabic, Hebrew, Classical and Pre-Imperial Chinese, Old and Medieval Japanese, Tibetan, Devanagari, Old Khmer, Pali, Tamil, and many more (see further </hi>
                 <ref target="https://scripta.psl.eu/langues/">
                     <hi rend="color(1155CC)" style="font-size:11pt">https://scripta.psl.eu/langues/</hi>
-                </ref>
-                ). It is designed to interact with kraken, another Free Open-Source Software developed by Benjamin Kiessling (of the same institution as the eScriptorium team).
+                </ref>). It is designed to interact with kraken, another Free Open-Source Software developed by Benjamin Kiessling (of the same institution as the eScriptorium team).
                 <note place="foot" xml:id="ftn2" n="2">
                     <p rend="footnote text"> The source code is released under an Apache 2.0 licence at 
                         <ref target="http://github.com/mittagessen/kraken">
@@ -178,8 +177,7 @@
                         <hi style="font-size:11pt" xml:space="preserve"> [no date]. Prendre en main eScriptorium. </hi>
                         <ref target="https://lectaurep.hypotheses.org/documentation/prendre-en-main-escriptorium">
                             <hi rend="color(1155CC)" style="font-size:11pt">https://lectaurep.hypotheses.org/documentation/prendre-en-main-escriptorium</hi>
-                        </ref>
-                        . English version (transl. Jonathan Allen),
+                        </ref>. English version (transl. Jonathan Allen),
                         <ref target="https://lectaurep.hypotheses.org/documentation/escriptorium-tutorial-en">
                             <hi rend="color(1155CC)" style="font-size:11pt">https://lectaurep.hypotheses.org/documentation/escriptorium-tutorial-en</hi>
                         </ref>
@@ -206,8 +204,7 @@
                         </ref>
                     </bibl>
                     <bibl>
-                        <hi rend="bold" style="font-size:11pt">Kiessling</hi>
-                        <hi rend="bold color(333333)" style="font-size:11pt" xml:space="preserve">, B. </hi>
+                        <hi rend="bold" style="font-size:11pt">Kiessling, B. </hi>
                         <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve">(2020). A Modular Region and Text Line Layout Analysis System. </hi>
                         <hi rend="italic color(333333)" style="font-size:11pt">17th International Conference on Frontiers in Handwriting Recognition (ICFHR)</hi>
                         <hi rend="color(333333)" style="font-size:11pt">.</hi>
@@ -231,13 +228,10 @@
                         </ref>
                     </bibl>
                     <bibl>
-                        <hi rend="bold" style="font-size:11pt">Kiessling</hi>
-                        <hi rend="bold color(333333)" style="font-size:11pt">, B., Stökl Ben Ezra, D., Miller M.</hi>
-                        <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve"> (2019)</hi>
-                        <ref target="https://arxiv.org/abs/1907.04041" xml:space="preserve"> </ref>
-                        BADAM: A Public Dataset for Baseline Detection in Arabic-script Manuscript
-                        <ref target="https://arxiv.org/abs/1907.04041">
-                            <hi rend="color(333333)" style="font-size:11pt">s</hi>
+                        <hi rend="bold" style="font-size:11pt">Kiessling, B., Stökl Ben Ezra, D., Miller M.</hi>
+                        <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve"> (2019) </hi>
+                        <ref target="https://arxiv.org/abs/1907.04041" xml:space="preserve">
+                        BADAM: A Public Dataset for Baseline Detection in Arabic-script Manuscripts
                         </ref>
                         <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve">, </hi>
                         <hi rend="italic color(333333)" style="font-size:11pt">HIP@ICDAR</hi>
@@ -248,8 +242,7 @@
                         <hi rend="color(333333)" style="font-size:11pt"> </hi>
                     </bibl>
                     <bibl>
-                        <hi rend="bold" style="font-size:11pt">Kiessling</hi>
-                        <hi rend="bold color(333333)" style="font-size:11pt">, B.; Tissot, R., Stökl Ben Ezra, D., Stokes P.</hi>
+                        <hi rend="bold" style="font-size:11pt">Kiessling, B.; Tissot, R., Stökl Ben Ezra, D., Stokes P.</hi>
                         <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve"> (2019) eScriptorium: An Open Source Platform for Historical Document Analysis, </hi>
                         <hi rend="italic color(333333)" style="font-size:11pt">OST@ICDAR 2019</hi>
                         <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve">. doi: </hi>
@@ -258,8 +251,7 @@
                         </ref>
                     </bibl>
                     <bibl>
-                        <hi rend="bold" style="font-size:11pt">Kiessling</hi>
-                        <hi rend="bold color(333333)" style="font-size:11pt">, B.</hi>
+                        <hi rend="bold" style="font-size:11pt">Kiessling, B.</hi>
                         <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve"> (2019) Kraken – A Universal Text Recognizer for the Humanities. </hi>
                         <hi rend="italic color(333333)" style="font-size:11pt">Digital Humanities Book of Abstracts</hi>
                         <hi rend="color(333333)" style="font-size:11pt">. doi:</hi>
@@ -268,23 +260,20 @@
                         </ref>
                     </bibl>
                     <bibl>
-                        <hi rend="italic" style="font-size:11pt">OCR-D: DFG-Funded Initiative for Optical Character Recognition Development</hi>
-                        .
+                        <hi rend="italic" style="font-size:11pt">OCR-D: DFG-Funded Initiative for Optical Character Recognition Development</hi>.
                         <ref target="https://ocr-d.de/">
                             <hi rend="color(1155CC)" style="font-size:11pt">https://ocr-d.de</hi>
                         </ref>
                     </bibl>
                     <bibl>
-                        <hi rend="italic" style="font-size:11pt">OCR/HTR Model Repository</hi>
-                        .
+                        <hi rend="italic" style="font-size:11pt">OCR/HTR Model Repository</hi>.
                         <ref target="https://www.zenodo.org/communities/ocr_models">
                             <hi rend="color(1155CC)" style="font-size:11pt">https://www.zenodo.org/communities/ocr_models</hi>
                         </ref>
                          
                     </bibl>
                     <bibl>
-                        <hi rend="italic" style="font-size:11pt">SegmOnto</hi>
-                        .
+                        <hi rend="italic" style="font-size:11pt">SegmOnto</hi>.
                         <ref target="https://github.com/SegmOnto">
                             <hi rend="color(1155CC)" style="font-size:11pt">https://github.com/SegmOnto</hi>
                         </ref>
@@ -301,8 +290,7 @@
                         </ref>
                     </bibl>
                     <bibl>
-                        <hi rend="bold" style="font-size:11pt">Stokes</hi>
-                        <hi rend="bold color(333333)" style="font-size:11pt">, P., Kiessling, B., Tissot, R., Stökl Ben Ezra, D.</hi>
+                        <hi rend="bold" style="font-size:11pt">Stokes, P., Kiessling, B., Tissot, R., Stökl Ben Ezra, D.</hi>
                         <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve"> (2019) EScripta: A New Digital Platform for the Study of Historical Texts and Writing, </hi>
                         <hi rend="italic color(333333)" style="font-size:11pt">Digital Humanities 2019 Book of Abstracts</hi>
                         <hi rend="color(333333)" style="font-size:11pt">. doi:</hi>
@@ -311,8 +299,7 @@
                         </ref>
                     </bibl>
                     <bibl>
-                        <hi rend="bold" style="font-size:11pt">Stokes</hi>
-                        <hi rend="bold color(333333)" style="font-size:11pt">, P.A., Kiessling, B., Stökl Ben Ezra, D., Tissot, R. and Gargem, H.</hi>
+                        <hi rend="bold" style="font-size:11pt">Stokes, P.A., Kiessling, B., Stökl Ben Ezra, D., Tissot, R. and Gargem, H.</hi>
                         <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve"> (2021). The eScriptorium VRE for Manuscript Cultures. </hi>
                         <hi rend="italic color(333333)" style="font-size:11pt">Ancient Manuscripts and Virtual Research Environments</hi>
                         <hi rend="color(333333)" style="font-size:11pt" xml:space="preserve">, ed. Claire Clivaz and Garrick V. Allen. Special issue of </hi>

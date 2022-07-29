@@ -77,12 +77,10 @@
     </teiHeader>
     <text>
         <body>
-            <p style="text-align: left; ">In this contribution, we investigate to what extent data from one digital scholarly edition project (
-                <hi rend="italic">Dehmel digital</hi>
+            <p style="text-align: left; ">In this contribution, we investigate to what extent data from one digital scholarly edition project (<hi rend="italic">Dehmel digital</hi>
                 <note place="foot" xml:id="ftn1" n="1">
                     <p rend="footnote text"> https://www.slm.uni-hamburg.de/germanistik/forschung/forschungsprojekte/dehmel-digital.html</p>
-                </note>) can be used to fine-tune a large-scale language model, which was pre-trained for the purposes of another project (
-                <hi rend="italic">The Complete Works of Uwe Johnson</hi>
+                </note>) can be used to fine-tune a large-scale language model, which was pre-trained for the purposes of another project (<hi rend="italic">The Complete Works of Uwe Johnson</hi>
                 <note place="foot" xml:id="ftn2" n="2">
                     <p rend="footnote text"> https://www.bbaw.de/en/research/uwe-johnson-werkausgabe-the-complete-works-of-uwe-johnson</p>
                 </note>). We discuss the opportunities and practical limitations of such an attempt dealing with differences in the language properties of the material that was used to pre-train the transferred model and the material that is applied to fine-tune this model for the specific NER task. As part of this, we investigate to what extent the quantity and quality of training data affects the performance of NER models. This places our contribution in the line of approaches dealing with computational analysis of textual material from different periods of time (Labusch et al., 2019; Schmidt et al., 2021; Ehrmann et al. 2022).
@@ -192,16 +190,14 @@
                     <bibl>
                         <hi rend="bold" style="font-size:11pt">Devlin, Jacob, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova</hi>
                         <hi style="font-size:11pt" xml:space="preserve"> (2019): Bert: Pre-training of deep bidirectional transformers for language understanding. In: </hi>
-                        <hi rend="italic" style="font-size:11pt">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics 1</hi>
-                        , p. 4171–4186.
+                        <hi rend="italic" style="font-size:11pt">Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics 1</hi>, p. 4171–4186.
                     </bibl>
                     <bibl>
                         <hi rend="bold" style="font-size:11pt">Ehrmann, Maud, Ahmed Hamdi, Elvys Linhares Pontes, Matteo Romanello, and Antoine Doucet</hi>
                         <hi style="font-size:11pt" xml:space="preserve"> (2022): Named Entity Recognition and Classification on Historical Documents: A Survey. URL: </hi>
                         <ref target="http://arxiv.org/abs/2109.11406">
                             <hi rend="color(1155CC)" style="font-size:11pt">http://arxiv.org/abs/2109.11406</hi>
-                        </ref>
-                        .
+                        </ref>.
                     </bibl>
                     <bibl>
                         <hi rend="bold" style="font-size:11pt">Kamath, Uday, John Liu, and James Whitaker</hi>

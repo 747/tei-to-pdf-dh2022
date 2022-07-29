@@ -87,8 +87,7 @@
                 <figure>
                     <graphic n="1002" width="16.002cm" height="5.117041666666666cm" url="Pictures/d4b29f85ccae81a3a8ca613ad98c2a4a.png" rend="inline"/>
                 </figure>
-                <p style="text-align: left; ">Our new work builds on this. We produce an aligned translation corpus. Words are generally word-aligned, but we align full parenthesized / bracketed phrases to align to words / phrases (see Figure 2). For instance, the Aramaic phrase אי הכי, meaning “if so”, is paired with the equivalent Hebrew phrase אם כך, and the individual Aramaic word יין, “wine” is paired with its equivalent Hebrew יין. Some errors are present, for instance the prefix ד, "of" in דשתויי, wasn’t present in the Hebrew commentary. This translation corpus is input for our POS tagging. We employ Dicta’s API (
-                    <hi rend="background(white)">Shmidman</hi> et al., 2020) to obtain ranked POS and morphological analyses for the original Talmudic text, selecting the top Aramaic choice when we know the word is Aramaic. We also POS-tag the translated Hebrew side. Figure 3 shows an Aramaic phrase, where אין means “yes/indeed”, the same as Hebrew כן. Where there is overlap of POS options, we’ve eliminated some ambiguity and rerank the POS selections. 
+                <p style="text-align: left; ">Our new work builds on this. We produce an aligned translation corpus. Words are generally word-aligned, but we align full parenthesized / bracketed phrases to align to words / phrases (see Figure 2). For instance, the Aramaic phrase אי הכי, meaning “if so”, is paired with the equivalent Hebrew phrase אם כך, and the individual Aramaic word יין, “wine” is paired with its equivalent Hebrew יין. Some errors are present, for instance the prefix ד, "of" in דשתויי, wasn’t present in the Hebrew commentary. This translation corpus is input for our POS tagging. We employ Dicta’s API (<hi rend="background(white)">Shmidman</hi> et al., 2020) to obtain ranked POS and morphological analyses for the original Talmudic text, selecting the top Aramaic choice when we know the word is Aramaic. We also POS-tag the translated Hebrew side. Figure 3 shows an Aramaic phrase, where אין means “yes/indeed”, the same as Hebrew כן. Where there is overlap of POS options, we’ve eliminated some ambiguity and rerank the POS selections. 
                 </p>
                 <figure>
                     <graphic n="1003" width="16.002cm" height="6.260041666666667cm" url="Pictures/c0fb652cbe8092d55e5db5756a87a03c.png" rend="inline"/>
@@ -132,8 +131,7 @@
                         <hi rend="italic">Digital Scholarship in the Humanities.</hi> Oxford University Press, pp. ii277–ii289.
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi rend="bold">Waxman, J.</hi> (
-                        <hi rend="color(1E1E1E) background(white)" xml:space="preserve">2021b). </hi>Projecting and Detecting Code Switching in the Babylonian Talmud. Presentation at 
+                        <hi rend="bold">Waxman, J.</hi> (<hi rend="color(1E1E1E) background(white)" xml:space="preserve">2021b). </hi>Projecting and Detecting Code Switching in the Babylonian Talmud. Presentation at 
                         <hi rend="color(1E1E1E) background(white)">ACH 2021.</hi>
                     </bibl>
                     <bibl style="text-align: left; ">

@@ -102,13 +102,11 @@
                     <hi rend="italic">Journal of Digital History</hi> (JDH) went out in October 2021. A joint-venture with De Gruyter Publishingq group, the JDH is open access (no fees for authors) and encourages open data. Its distinctiveness is that it implements the concept of multilayered articles, that is based on a long-lasting history of thinking on the future of academic writings 
                     <ref target="https://www.zotero.org/google-docs/?nQWB8x">(Darnton)</ref>. This implementation is based on a specifically designed infrastructure based on open source software, with Jupyter notebooks at its heart. JDH’s articles are composed of three layers: a narrative layer (the presentation of the results of a research), an hermeneutics layer (exposing methodologies, uses of digital tools, and code), and a data layer (the dataset itself).
                 </p>
-                <p style="text-align: left; ">The tutorial will last 4 hours and will be divided into two parts. The first part (Two hours, including a break) will show the attendees how to set up their writing environment (
-                    <ref target="https://journalofdigitalhistory.org/en/guidelines">
+                <p style="text-align: left; ">The tutorial will last 4 hours and will be divided into two parts. The first part (Two hours, including a break) will show the attendees how to set up their writing environment (<ref target="https://journalofdigitalhistory.org/en/guidelines">
                         <hi rend="color(1155CC)">https://journalofdigitalhistory.org/en/guidelines</hi>
                     </ref>). This includes: installing jupyter notebooks and several extensions (nbextensions, cite2c), linking their writing environment to their Zotero account, setting up a github repository (optional, but strongly recommended).
                 </p>
-                <p style="text-align: left; ">After the familiarization with the environment, the second part will focus on how to write an article and preview it on the JDH front-end  (
-                    <ref target="https://journalofdigitalhistory.org/en/notebook-viewer-form">
+                <p style="text-align: left; ">After the familiarization with the environment, the second part will focus on how to write an article and preview it on the JDH front-end  (<ref target="https://journalofdigitalhistory.org/en/notebook-viewer-form">
                         <hi rend="color(1155CC)">https://journalofdigitalhistory.org/en/notebook-viewer-form</hi>
                     </ref> - for this interface, using a github repo is mandatory).
                 </p>

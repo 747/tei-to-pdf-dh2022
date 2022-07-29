@@ -92,8 +92,7 @@
                 <p>Given the above assumption, it would be tempting to identify one synonym for each of the words, and to compute the relative proportions in each of the synonym pairs (Borski and Kokowski, 2021). Linguistically speaking, however, such an approach would hardly be feasible. Firstly, only a fraction of words have their synonyms. Secondly, some semantic fields are rather rich and cannot be reduced to a mere pair of synonyms. Thirdly, in the case of the most frequent words (articles, particles, prepositions) seeking their synonyms doesn’t make much sense, yet still, 
                     <hi rend="italic">relevant counterparts</hi> for these frequent words obviously exist. Rather than identifying rigid lexical synonyms, then, I used a word embedding model (GloVe, 100 dimensions) to extract 
                     <hi rend="italic">n</hi> semantic nearest neighbors for each of the words in question. Consequently, the neighbors for the word “person” were: “woman”, “gentleman”, “man”, “one”, “sort”, “whom”, “thing”, “young”, etc., whereas the neighbors for the word “the” were as follows: “of”, “this”, “in”, “there”, “on”, “one”, “which”, “its”, “was”, “a”, “and”, etc. For each target word, a relative frequency was calculated as the number of occurrences divided by the sum of occurrences of its 
-                    <hi rend="italic">n</hi> semantic neighbors (
-                    <hi rend="italic">n</hi> being the size of semantic space to be tested).
+                    <hi rend="italic">n</hi> semantic neighbors (<hi rend="italic">n</hi> being the size of semantic space to be tested).
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">

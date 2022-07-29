@@ -196,12 +196,9 @@
                             <hi style="font-size:10pt" xml:space="preserve"> Logical structure reconstruction can be performed semi-automatically (see the pipeline built for the LECTAUREP project called “LEPIDEMO”, </hi>
                             <ref target="https://github.com/lectaurep/lepidemo">
                                 <hi rend="underline color(1155CC)" style="font-size:10pt">https://github.com/lectaurep/lepidemo</hi>
-                            </ref>
-                            ), or automatically with tools such as GROBID (
-                            <ref target="https://github.com/kermitt2/grobid">
+                            </ref>), or automatically with tools such as GROBID (<ref target="https://github.com/kermitt2/grobid">
                                 <hi rend="underline color(1155CC)" style="font-size:10pt">https://github.com/kermitt2/grobid</hi>
-                            </ref>
-                            ).
+                            </ref>).
                         </p>
                     </note>.
                 </item>
@@ -233,8 +230,7 @@
                 <item>an imitative representation of the transcription based on SVG
                     <note place="foot" xml:id="ftn9" n="9">
                         <p>
-                            <hi style="font-size:10pt" xml:space="preserve"> An XML-based markup language, see the Scalable Vector Graphics (SVG) 2 recommandations at</hi>
-                            <ref target="https://www.w3.org/TR/SVG2/" xml:space="preserve"> </ref>
+                            <hi style="font-size:10pt" xml:space="preserve"> An XML-based markup language, see the Scalable Vector Graphics (SVG) 2 recommandations at </hi>
                             <ref target="https://www.w3.org/TR/SVG2/">
                                 <hi rend="underline color(1155CC)" style="font-size:10pt">https://www.w3.org/TR/SVG2/</hi>
                             </ref>

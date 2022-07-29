@@ -107,11 +107,9 @@
                 <hi rend="italic" xml:space="preserve">FV </hi>began during the recent 1818-2018 bicentennial celebrating the first publication of Mary Shelley's novel and exists now as a partial working prototype. We are constructing a digital variorum edition that highlights alterations to the novel 
                 <hi rend="italic">Frankenstein</hi> over five key moments from its first drafting in 1816 to its author’s final revisions by 1831. Source "threads" for the 
                 <hi rend="italic">FV</hi> collation "weave" include two well established digital editions:
-                <ref target="http://knarf.english.upenn.edu/"> the Pennsylvania Electronic Edition (
-                    <hi rend="italic">PAEE</hi>)
+                <ref target="http://knarf.english.upenn.edu/"> the Pennsylvania Electronic Edition (<hi rend="italic">PAEE</hi>)
                 </ref> an early hypertext edition produced at the University of Pennsylvania in the mid 1990s by Stuart Curran and Jack Lynch, and
-                <ref target="http://shelleygodwinarchive.org/contents/frankenstein/"> the Shelley-Godwin Archive's edition of the manuscript notebooks (
-                    <hi rend="italic">S-GA</hi>)
+                <ref target="http://shelleygodwinarchive.org/contents/frankenstein/"> the Shelley-Godwin Archive's edition of the manuscript notebooks (<hi rend="italic">S-GA</hi>)
                 </ref> published in 2013 by the University of Maryland. That interface relies on a backend processing pipeline that involves the software collateX in collating textual data, including markup, from each edition. To finalize our work requires iterative efforts to refine our collation and post-processing algorithms.
             </p>
             <p>The Gothenburg Model, conceptualized by the developers of collateX and Juxta in 2009 (see

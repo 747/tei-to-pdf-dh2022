@@ -122,8 +122,7 @@
             <p>
                 <hi rend="italic">Alsatian</hi> refers to Germanic varieties from Alsace (Eastern France), the main oral communication language in the area for over 14 centuries, until their decline vs. French in the last third of the 20th century (Huck et al., 2007: 11–17). Despite Alsatian’s mainly oral status, it has a rich theatrical tradition, where comedic and popular genres predominate (Gall, 1974). Unlike major European traditions, digital resources for Alsatian theater are scarce, which precludes related computational literary research. To help make such research feasible, our project
                 <hi rend="sup">
-                    <note xml:id="ftn6" place="foot" n="5"> MeThAL, “Towards a macroanalysis of theater in Alsatian” (
-                        <ptr target="https://methal.pages.unistra.fr/en.html"/>)
+                    <note xml:id="ftn6" place="foot" n="5"> MeThAL, “Towards a macroanalysis of theater in Alsatian” (<ptr target="https://methal.pages.unistra.fr/en.html"/>)
                     </note>
                 </hi> is building a large TEI-encoded corpus of Alsatian theater, annotated with rich metadata, and making this corpus publicly available in formats appropriate for research and for the non-specialist community, covering mostly the 1870-1940 period. Our proposal discusses the relevance of developing such materials, in terms of opportunities for (computational) literary studies (CLS) and natural language processing (NLP), besides their potential to promote linguistic diversity through the digital medium.
             </p>

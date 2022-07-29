@@ -85,8 +85,7 @@
             <p style="text-align: left;">Method</p>
             <p style="text-align: left;">
                 10,000 unique tweets were collected and filtered through Twitter Web API between October 1
-                <hi rend="superscript" style="font-size:7pt">st</hi>
-                , 2018 and October 3rd, 2019 surrounding the #MeToo movement in India. All tweets were collected in the English language to maintain methodological consistency, and retweets were excluded from the sample dataset. Hashtags employed as filters include #metooindia, #indiametoo, #LoSHA, #womanhood+#metooindia, #womanhood+#indiametoo, #sisterhood+#metooindia, and #sisterhood+#indiametoo. Hashtags specifically used in the Indian context have been selected. All tweets are manually annotated and labelled for the specific criterion (below) that is marked on a binary scale of 0/1 where ‘Yes’ denotes 1, and ‘No’ denotes 0 - 
+                <hi rend="superscript" style="font-size:7pt">st</hi>, 2018 and October 3rd, 2019 surrounding the #MeToo movement in India. All tweets were collected in the English language to maintain methodological consistency, and retweets were excluded from the sample dataset. Hashtags employed as filters include #metooindia, #indiametoo, #LoSHA, #womanhood+#metooindia, #womanhood+#indiametoo, #sisterhood+#metooindia, and #sisterhood+#indiametoo. Hashtags specifically used in the Indian context have been selected. All tweets are manually annotated and labelled for the specific criterion (below) that is marked on a binary scale of 0/1 where ‘Yes’ denotes 1, and ‘No’ denotes 0 - 
             </p>
             <list rend="numbered">
                 <item>Does this tweet indicate misogyny, violence against women, hate speech or advocation for men’s rights activism?</item>

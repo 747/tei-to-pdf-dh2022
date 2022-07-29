@@ -178,11 +178,11 @@
                 <hi rend="italic" style="font-family:Helvetica">versus</hi>
                 the human expert when it comes to making fine distinctions between images. It is possible to use data visualisation to draw wider conclusions from ornament usage about the activities and habits of printers, which could shape our understanding of the circulation of ideas in early modern Europe. Some of the papers will present arguments for the best use of the data these projects are producing, but the panel will also reflect on the inherent biases and flaws in digitization projects, which can skew our conclusions (Orr, 2021). The panel itself consists of both senior and early career researchers of different nationalities, and includes both men and women.
             </p>
+            <div>
             <head type="main">Paper 1</head>
             <p>
                 <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Title: </hi>
-                <hi rend="italic" style="font-family:Helvetica">Compositor</hi>
-                , Visual AI, and Quantitative Network Analysis: Opportunities and Obstacles
+                <hi rend="italic" style="font-family:Helvetica">Compositor</hi>, Visual AI, and Quantitative Network Analysis: Opportunities and Obstacles
             </p>
             <p>
                 <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Author: </hi>
@@ -199,30 +199,26 @@
                 </ref>
                 is a database of over 1 million printers’ ornaments and small illustrations from eighteenth-century British books, which was created from
                 <hi rend="italic" style="font-family:Helvetica" xml:space="preserve">Eighteenth-Century Collections Online </hi>
-                (
-                <hi rend="italic" style="font-family:Helvetica">ECCO</hi>
-                ). Its development was described in Briggs, Gorissen and Wilkinson, 2021. This paper describes how visual AI is being used to further develop
+                (<hi rend="italic" style="font-family:Helvetica">ECCO</hi>). Its development was described in Briggs, Gorissen and Wilkinson, 2021. This paper describes how visual AI is being used to further develop
                 <hi rend="italic" style="font-family:Helvetica">Compositor</hi>
                 <hi style="font-family:Helvetica" xml:space="preserve">, and advances significantly on the 2021 article by investigating new directions in research with the database. </hi>
                 <hi rend="italic" style="font-family:Helvetica">Compositor</hi>
                 <hi style="font-family:Helvetica" xml:space="preserve">is regularly cited by individual scholars as having facilitated their identification of an unknown printer (e.g. Warren </hi>
-                <hi rend="italic" style="font-family:Helvetica">et al</hi>
-                ., 2021, Levy, 2021); this paper investigates the possibility of combining VISE’s visual search engine with methods from Quantitative Network Analysis (QNA) to use
+                <hi rend="italic" style="font-family:Helvetica">et al</hi>., 2021, Levy, 2021); this paper investigates the possibility of combining VISE’s visual search engine with methods from Quantitative Network Analysis (QNA) to use
                 <hi rend="italic" style="font-family:Helvetica">Compositor</hi>
                 <hi style="font-family:Helvetica" xml:space="preserve">to identify unknown printers on a massive scale (Ahnert </hi>
-                <hi rend="italic" style="font-family:Helvetica">et al.</hi>
-                , 2020). However, first certain qualitative problems with the database must be addressed. The paper builds on Gregg (2020) and Orr (2021) to identify the inherent omissions, errors, and biases that
+                <hi rend="italic" style="font-family:Helvetica">et al.</hi>, 2020). However, first certain qualitative problems with the database must be addressed. The paper builds on Gregg (2020) and Orr (2021) to identify the inherent omissions, errors, and biases that
                 <hi rend="italic" style="font-family:Helvetica">Compositor</hi>
                 has inherited from
                 <hi rend="italic" style="font-family:Helvetica">ECCO</hi>
                 and, ultimately, from the
                 <hi rend="italic" style="font-family:Helvetica">English Short Title Catalogue</hi>
                 <hi style="font-family:Helvetica" xml:space="preserve"> (</hi>
-                <hi rend="italic" style="font-family:Helvetica">ESTC</hi>
-                ), which complicate using computer vision and QNA to automatically identify printers. The paper will propose strategies for mitigating and acknowledging such gaps and biases that might enable us to unlock the enormous potential of
+                <hi rend="italic" style="font-family:Helvetica">ESTC</hi>), which complicate using computer vision and QNA to automatically identify printers. The paper will propose strategies for mitigating and acknowledging such gaps and biases that might enable us to unlock the enormous potential of
                 <hi rend="italic" style="font-family:Helvetica">Compositor</hi>
                 to transform the field of book history.
             </p>
+            </div><div>
             <head type="main">Paper 2</head>
             <p>
                 <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Title: </hi>
@@ -241,6 +237,7 @@
                 During the 1520s, at the height of the polemical pamphlet campaigns of the Protestant Reformation, one in four of Martin Luther’s books was a counterfeit. Printers across the Holy Roman Empire falsely stated on their title pages that their books came from Wittenberg, the home of Luther’s movement. Several of these books passed into modern institutions with their true origins still unknown (Künast, 1997, Thomas, 2021
                 ). While there are several ways to uncover the printers of counterfeits (by typeface, woodcut or watermark analysis), adopting machine learning and artificial intelligence methods has proven effective. The Ornamento project at University College Dublin is an atlas of the visual geography of the early modern book. Based on forty percent of all known European books printed in the fifteenth and sixteenth centuries (ca.184,000 items), Ornamento has created a record of six million ornamental features, including: musical notation, printers’ devices, ornate letters, fleurons, maps, portraits, and illustrations. The results of our efforts allow us to suggest places of publication and printers for a large number of anonymous and counterfeit publications in the period, and to trace how blocks from letters to illustrations have been passed from printer to printer, and in some cases from city to city, region to region. This paper argues that there are clear opportunities to offer clues to assist in unsolved bibliographical mysteries, or to uncover previously hidden networks and associations. For the counterfeit works of Luther, Ornamento allows us to uncover the printers helping spread Europe’s first mass media event.
             </p>
+            </div><div>
             <head type="main">Paper 3</head>
             <p>
                 <hi rend="bold" style="font-family:Helvetica">Title:</hi>
@@ -249,20 +246,13 @@
             <p>
                 <hi rend="bold" style="font-family:Helvetica" xml:space="preserve">Authors: </hi>
                 Christelle Bahier-Porte
-                <hi rend="superscript" style="font-family:Helvetica">1</hi>
-                , Thierry Fournel
-                <hi rend="superscript" style="font-family:Helvetica">2</hi>
-                , Fabienne-Vial Bonacci
-                <hi rend="superscript" style="font-family:Helvetica">1</hi>
-                , Loïc Denis
-                <hi rend="superscript" style="font-family:Helvetica">2</hi>
-                , Rémi Emonet
-                <hi rend="superscript" style="font-family:Helvetica">2</hi>
-                , Amaury Habrard
-                <hi rend="superscript" style="font-family:Helvetica">2</hi>
-                , Vincent Ventresque
-                <hi rend="superscript" style="font-family:Helvetica">1</hi>
-                , Thomas Gautrais
+                <hi rend="superscript" style="font-family:Helvetica">1</hi>, Thierry Fournel
+                <hi rend="superscript" style="font-family:Helvetica">2</hi>, Fabienne-Vial Bonacci
+                <hi rend="superscript" style="font-family:Helvetica">1</hi>, Loïc Denis
+                <hi rend="superscript" style="font-family:Helvetica">2</hi>, Rémi Emonet
+                <hi rend="superscript" style="font-family:Helvetica">2</hi>, Amaury Habrard
+                <hi rend="superscript" style="font-family:Helvetica">2</hi>, Vincent Ventresque
+                <hi rend="superscript" style="font-family:Helvetica">1</hi>, Thomas Gautrais
                 <hi rend="superscript" style="font-family:Helvetica">2</hi>
             </p>
             <p>
@@ -290,11 +280,11 @@
                 <hi style="font-family:Helvetica" xml:space="preserve">., 2020). From that point, our paper argues that we can suggest addressing novelty localization by learning normal local image variations or how to reconstruct normal images, both from a small set of retrieved images. Different types of maps can be derived as heatmap (Li </hi>
                 <hi rend="italic" style="font-family:Helvetica">et al</hi>
                 <hi style="font-family:Helvetica" xml:space="preserve">., 2021), difference map (Baur </hi>
-                <hi rend="italic" style="font-family:Helvetica">et al.</hi>
-                , 2021) or attention map (Venkataramanan
+                <hi rend="italic" style="font-family:Helvetica">et al.</hi>, 2021) or attention map (Venkataramanan
                 <hi rend="italic" style="font-family:Helvetica">et al.</hi>
                 <hi style="font-family:Helvetica" xml:space="preserve">, 2020), enabling a more or less well-resolved visualization of novelties in the current query. Rey’s emblematic mark is analyzed to illustrate our argument. </hi>
             </p>
+        </div><div>
             <head type="main">Paper 4</head>
             <p>
                 <hi rend="bold" style="font-family:Helvetica">Title:</hi>
@@ -314,6 +304,7 @@
                 <hi rend="italic" style="font-family:Helvetica">et al.</hi>
                 <hi style="font-family:Helvetica" xml:space="preserve">, 2021). We also show how these tools are being used for analysis of other chapbook datasets (e.g. the Spanish Chapbooks) of similar nature. </hi>
             </p>
+            </div>
         </body>
         <back>
             <div type="bibliogr">
@@ -321,13 +312,10 @@
                     <head>Bibliography</head>
                     <bibl>
                         <hi style="font-family:Helvetica" xml:space="preserve">Ahnert, R., Ahnert, S., Coleman, C. N., Weingart, S. B. (2020), </hi>
-                        <hi rend="italic" style="font-family:Helvetica">The Network Turn: Changing Perspectives in the Humanities</hi>
-                        . Cambridge.
+                        <hi rend="italic" style="font-family:Helvetica">The Network Turn: Changing Perspectives in the Humanities</hi>. Cambridge.
                     </bibl>
                     <bibl>
-                        Bahier-Porte, C. and F. Vial-Bonacci (
-                        <hi rend="apple-converted-space">2020)</hi>
-                        , «Le commerce de la librairie à la lumière de la correspondance – Marc Michel Rey, Pierre rousseau, Charles Weissenbruch, F. Tilkin
+                        Bahier-Porte, C. and F. Vial-Bonacci (<hi rend="apple-converted-space">2020)</hi>, «Le commerce de la librairie à la lumière de la correspondance – Marc Michel Rey, Pierre rousseau, Charles Weissenbruch, F. Tilkin
                         <hi rend="italic" style="font-family:Helvetica" xml:space="preserve"> (dir.)</hi>
                         »
                         <hi rend="italic" style="font-family:Helvetica">Trois siècles d’histoire du livre et de la pensée à travers le Fonds Weissenbruch</hi>
@@ -339,8 +327,7 @@
                     </bibl>
                     <bibl>
                         <hi style="font-family:Helvetica" xml:space="preserve">Baur, C., Wiestler, B., Albarqouni, S., and Navab, N. (2018), «Deep autoencoding models for unsupervised anomaly segmentation in brain MR images.» In </hi>
-                        <hi rend="italic" style="font-family:Helvetica">International MICCAI Brain Lesion Workshop</hi>
-                        , pp. 161-169. Springer, Cham.
+                        <hi rend="italic" style="font-family:Helvetica">International MICCAI Brain Lesion Workshop</hi>, pp. 161-169. Springer, Cham.
                     </bibl>
                     <bibl>
                         Beavan, I. (2019), ‘Lines of defence: thoughts on Scottish chapbook title-page woodcuts and their functions’.
@@ -373,8 +360,7 @@
                     </bibl>
                     <bibl>
                         <hi style="font-family:Helvetica" xml:space="preserve">Gregg, S. H. (2020), </hi>
-                        <hi rend="italic" style="font-family:Helvetica">Old Books and Digital Publishing: Eighteenth-Century Collections Online</hi>
-                        . Cambridge.
+                        <hi rend="italic" style="font-family:Helvetica">Old Books and Digital Publishing: Eighteenth-Century Collections Online</hi>. Cambridge.
                     </bibl>
                     <bibl>Künast, H. (1997),
                         <hi rend="italic">Getruckt zu Augsburg: Buchdruck und Buchhandel in Augsburg zwischen1468 und 1555</hi>. Niemeyer, pp. 167–168.
@@ -389,8 +375,7 @@
                     </bibl>
                     <bibl>
                         <hi style="font-family:Helvetica" xml:space="preserve">Li, C. L., Sohn, K., Yoon, J., &amp; Pfister, T. (2021), «CutPaste: Self-Supervised Learning for Anomaly Detection and Localization» In </hi>
-                        <hi rend="italic" style="font-family:Helvetica">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</hi>
-                        , pp. 9664-9674.
+                        <hi rend="italic" style="font-family:Helvetica">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</hi>, pp. 9664-9674.
                     </bibl>
                     <bibl>
                         <hi style="font-family:Helvetica" xml:space="preserve">Maslen, K. I. D. (2001), </hi>
@@ -399,8 +384,7 @@
                     </bibl>
                     <bibl>
                         <hi style="font-family:Helvetica" xml:space="preserve">May, J. E. (2019), ‘False and Incomplete Imprints in Swift’s Dublin, 1710–35’, in Bischof, Juhas &amp; Real (eds), </hi>
-                        <hi rend="italic" style="font-family:Helvetica">Reading Swift: Papers from the Seventh Münster Symposium on Jonathan Swift</hi>
-                        . Brill.
+                        <hi rend="italic" style="font-family:Helvetica">Reading Swift: Papers from the Seventh Münster Symposium on Jonathan Swift</hi>. Brill.
                     </bibl>
                     <bibl>
                         <hi style="font-family:Helvetica" xml:space="preserve">Orr, L. (2021), ‘From Methods to Conclusions: The Limits of the Knowable in Digital Book History’. </hi>
@@ -414,13 +398,11 @@
                     </bibl>
                     <bibl>
                         <hi style="font-family:Helvetica" xml:space="preserve">Thomas, D. (2021), </hi>
-                        <hi rend="italic" style="font-family:Helvetica">The Industry of Evangelism: Printing for the Reformation in Martin Luther’s Wittenberg</hi>
-                        . Brill.
+                        <hi rend="italic" style="font-family:Helvetica">The Industry of Evangelism: Printing for the Reformation in Martin Luther’s Wittenberg</hi>. Brill.
                     </bibl>
                     <bibl>
                         <hi style="font-family:Helvetica" xml:space="preserve">Venkataramanan, S., Peng, K. C., Singh, R. V., &amp; Mahalanobis, A. (2020), «Attention guided anomaly localization in images» In </hi>
-                        <hi rend="italic" style="font-family:Helvetica">European Conference on Computer Vision</hi>
-                        , pp. 485-503. Springer, Cham.
+                        <hi rend="italic" style="font-family:Helvetica">European Conference on Computer Vision</hi>, pp. 485-503. Springer, Cham.
                     </bibl>
                     <bibl>
                         <hi style="font-family:Helvetica" xml:space="preserve">Warren, C. N., Wiscomb, A., Williams, P., Lemley, S. V., G’Sell, M. (2021), ‘Canst Thou Draw Out </hi>
@@ -431,8 +413,7 @@
                     </bibl>
                     <bibl>
                         <hi style="font-family:Helvetica" xml:space="preserve">Wilkinson, H. (2013), «Printers’ Flowers as Evidence in the Identification of Unknown Printers: Two Examples from 1715» </hi>
-                        <hi rend="italic" style="font-family:Helvetica">The Library</hi>
-                        , 7th ser., 14, p. 70-79.
+                        <hi rend="italic" style="font-family:Helvetica">The Library</hi>, 7th ser., 14, p. 70-79.
                     </bibl>
                     <bibl>
                         Wilkinson, H
@@ -447,12 +428,9 @@
                         Oxford University Press.
                     </bibl>
                     <bibl>
-                        Wilkinson, H, Briggs, J &amp; Gorissen, D. (2021), '
-                        <hi rend="harvard_title">Computer vision and the creation of a database of printers’ ornaments</hi>
-                        ',
+                        Wilkinson, H, Briggs, J &amp; Gorissen, D. (2021), '<hi rend="harvard_title">Computer vision and the creation of a database of printers’ ornaments</hi>',
                         <hi rend="apple-converted-space"> </hi>
-                        <hi rend="italic">Digital Humanities Quarterly</hi>
-                        , vol. 15, no. 1.
+                        <hi rend="italic">Digital Humanities Quarterly</hi>, vol. 15, no. 1.
                     </bibl>
                 </listBibl>
             </div>

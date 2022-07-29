@@ -87,8 +87,7 @@
                 <hi style="font-size:11pt" xml:space="preserve"> (OMAC) is a SW ontology (under development) to fill this gap, proposing innovative ways of modeling both musical works and the interpretive arguments about them. For space limits, we cannot document the entire ontology here. We will limit to the introduction of some aspects; readers can refer to the Web repository for more information (</hi>
                 <ref target="https://github.com/emiliosanfilippo/OMAC">
                     <hi rend="color(1155CC)" style="font-size:11pt">https://github.com/emiliosanfilippo/OMAC</hi>
-                </ref>
-                ).
+                </ref>).
             </p>
             <p>
                 <hi style="font-size:11pt" xml:space="preserve">At the current state, OMAC consists of two modules, the Musical Work module for musical works, and the Analytic Claim module for scholarly arguments. The latter can take the form of assertions about, e.g., </hi>
@@ -96,13 +95,11 @@
                 <hi style="font-size:11pt" xml:space="preserve">, </hi>
                 <hi rend="bold" style="font-size:11pt">chronology</hi>
                 <hi style="font-size:11pt" xml:space="preserve">, and </hi>
-                <hi rend="bold" style="font-size:11pt">similarity</hi>
-                , all of which figure in qualitative arguments made by analysts and critics. OMAC can be extended with further elements relevant from a musical perspective, including performances. To maximize the reuse of SW resources, we adopted elements from DBpedia, Dublin Core, etc. We have not reused ontologies based on FRBR (Bekiari et al., 2017) like the Music Ontology (Raimond et al., 2007) because of the ambiguous manner in which FRBR treats works (Sanfilippo, 2021). 
+                <hi rend="bold" style="font-size:11pt">similarity</hi>, all of which figure in qualitative arguments made by analysts and critics. OMAC can be extended with further elements relevant from a musical perspective, including performances. To maximize the reuse of SW resources, we adopted elements from DBpedia, Dublin Core, etc. We have not reused ontologies based on FRBR (Bekiari et al., 2017) like the Music Ontology (Raimond et al., 2007) because of the ambiguous manner in which FRBR treats works (Sanfilippo, 2021). 
             </p>
             <p style="text-align: left;">
                 <lb/>The Musical Work module in OMAC models the 
-                <hi rend="bold">authorial</hi> structure of works, namely, the division by the composer of a work into (sub-)sections (Fig. 1). A Renaissance Mass, for instance, consists of customary five sections (
-                <hi rend="italic">Kyrie</hi>, 
+                <hi rend="bold">authorial</hi> structure of works, namely, the division by the composer of a work into (sub-)sections (Fig. 1). A Renaissance Mass, for instance, consists of customary five sections (<hi rend="italic">Kyrie</hi>, 
                 <hi rend="italic">Gloria</hi>, 
                 <hi rend="italic">Credo</hi>, 
                 <hi rend="italic">Sanctus</hi>, and 
@@ -115,8 +112,7 @@
                 <hi rend="bold">Figure 1</hi> - Authorial structure of musical entities (partial view)
             </p>
             <p style="text-align: left;">Analytic claims could relate to an entire work or some of its parts. Two different scholars, for instance, might each argue that a work was by a different composer or that it was created in one year or another. Scholars also might want to make a claim about a single pattern in a piece, fragments that could never be called authorial. For instance, participants in the research 
-                <hi rend="italic">Citations: The Renaissance Imitation Mass</hi> (
-                <ref target="http://crimproject.org/">
+                <hi rend="italic">Citations: The Renaissance Imitation Mass</hi> (<ref target="http://crimproject.org/">
                     <hi rend="color(1155CC)">http://crimproject.org/</hi>
                 </ref>) are interested in identifying small passages in pairs of works, showing how one composer borrowed from (and transformed) the work of another. In the context of this analytic project, scholars make specific claims about the connections between what they call a 
                 <hi rend="bold">model</hi> and its 

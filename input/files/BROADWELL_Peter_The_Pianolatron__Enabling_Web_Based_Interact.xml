@@ -104,8 +104,7 @@
     </teiHeader>
     <text>
         <body>
-            <p>The Pianolatron (
-                <ref target="https://pianolatron.stanford.edu">
+            <p>The Pianolatron (<ref target="https://pianolatron.stanford.edu">
                     <hi rend="color(1155CC)">pianolatron.stanford.edu</hi>
                 </ref>) is a web browser application developed by library-based researchers in collaboration with faculty principal investigators from the Department of Music. The project’s objective is to make the world’s largest library-based collection of digitized historical player piano rolls more fully accessible to scholars and the general public. The app plays a digitized roll based on data from an image pre-processing step that detects the positions of the punch holes on the roll and converts them into MIDI events, which the app then synthesizes into a musical performance in real time via high-fidelity piano sound samples. IIIF protocols facilitate synchronization of the audio playback with a scrolling animation of the high-resolution roll image served from a digital repository. Supplementary animated graphics of a piano keyboard and pedals as well as color-coded overlay visualizations on the rolls illustrate the effect of each perforation on the music that is heard during playback.
             </p>
@@ -126,8 +125,7 @@
             <p>
                 <hi rend="bold">Figure 2.</hi> A detailed view of the optional research-oriented visualizations the Pianolatron can display on a reproducing roll: the dark green curves represent the bass and treble velocity (volume) levels as calculated according to the expression punch holes that are highlighted in green on the left and right margins of the roll; these generally align well with the black “hand nuance” dynamics curves seen in the middle of the image, which were stenciled onto the roll when it was first printed in 1905
             </p>
-            <p>The Pianolatron player app currently enables interactive playback of nearly 1,000 piano rolls, and this number will continue to increase as new rolls are scanned and added to the collection. The use of IIIF to access the roll images also means that the app potentially can play and visualize scanned piano rolls from any repository worldwide that makes its images available via IIIF. Furthermore, the modular design of the application’s source code and data files, which are fully available on Github (
-                <ref target="https://github.com/sul-cidr/pianolatron/">
+            <p>The Pianolatron player app currently enables interactive playback of nearly 1,000 piano rolls, and this number will continue to increase as new rolls are scanned and added to the collection. The use of IIIF to access the roll images also means that the app potentially can play and visualize scanned piano rolls from any repository worldwide that makes its images available via IIIF. Furthermore, the modular design of the application’s source code and data files, which are fully available on Github (<ref target="https://github.com/sul-cidr/pianolatron/">
                     <hi rend="color(1155CC)">github.com/sul-cidr/pianolatron</hi>
                 </ref>), encourages contributions from external researchers.
             </p>
@@ -152,21 +150,18 @@
                     <bibl style="text-align: left;">
                         <hi rend="bold" style="font-size:12pt">Phillips, P.</hi>
                         <hi style="font-size:12pt" xml:space="preserve"> (2017). </hi>
-                        <hi rend="italic" style="font-size:12pt">Piano Rolls and Contemporary Player Pianos: The Catalogues, Technologies, Archiving and Accessibility</hi>
-                        . Ph.D. thesis, University of Sydney.
+                        <hi rend="italic" style="font-size:12pt">Piano Rolls and Contemporary Player Pianos: The Catalogues, Technologies, Archiving and Accessibility</hi>. Ph.D. thesis, University of Sydney.
                     </bibl>
                     <bibl style="text-align: left;">
                         <hi rend="bold" style="font-size:12pt">Shi, Z., Arul, K., Smith, J.</hi>
                         <hi style="font-size:12pt" xml:space="preserve"> (2017). Modeling and Digitizing Reproducing Piano Rolls. </hi>
-                        <hi rend="italic" style="font-size:12pt">The 18th International Society for Music Information Retrieval Conference (ISMIR)</hi>
-                        . National University of Singapore, pp. 197-203.
+                        <hi rend="italic" style="font-size:12pt">The 18th International Society for Music Information Retrieval Conference (ISMIR)</hi>. National University of Singapore, pp. 197-203.
                     </bibl>
                     <bibl style="text-align: left;">
                         <lb/>
                         <hi rend="bold" style="font-size:12pt">Shi, Z., et al.</hi>
                         <hi style="font-size:12pt" xml:space="preserve"> (2019). SUPRA: Digitizing the Stanford University Piano Roll Archive. </hi>
-                        <hi rend="italic" style="font-size:12pt">The 20th International Society for Music Information Retrieval Conference (ISMIR)</hi>
-                        . Delft, Netherlands, pp. 517-523.
+                        <hi rend="italic" style="font-size:12pt">The 20th International Society for Music Information Retrieval Conference (ISMIR)</hi>. Delft, Netherlands, pp. 517-523.
                     </bibl>
                 </listBibl>
             </div>

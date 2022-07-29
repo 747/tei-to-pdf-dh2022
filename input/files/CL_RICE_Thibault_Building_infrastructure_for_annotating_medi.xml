@@ -107,8 +107,7 @@
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Producing data</head>
-                <p>Pyrrha (Clérice and Pilla, 2021) is designed to accelerate the correction of lemmatisation and morphosyntactic annotation. When we started our work, our team members were using spreadsheets, which have the ability to display all tags and context at the same time. The Pyrrha web application takes up this principle of a tabular interface but adds powerful validation functionalities thanks to checklists (lexicons of lemmas and morphosyntactic tags) guaranteeing the interoperability of the newly produced corpora, as well as batch correction functionalities, inspired by PoCoto (Vobl et al., 2014), a correction interface for OCR. Both of these functionalities are at the core of Pyrrha and have proven to be useful in speeding up the correction of out-of-domain corpora (
-                    <hi rend="italic">cf.</hi> Figure 2). The application also allows collaboration, both for corpora and checklists, logging of corrections and export to multiple standards such as TEI and TSV.
+                <p>Pyrrha (Clérice and Pilla, 2021) is designed to accelerate the correction of lemmatisation and morphosyntactic annotation. When we started our work, our team members were using spreadsheets, which have the ability to display all tags and context at the same time. The Pyrrha web application takes up this principle of a tabular interface but adds powerful validation functionalities thanks to checklists (lexicons of lemmas and morphosyntactic tags) guaranteeing the interoperability of the newly produced corpora, as well as batch correction functionalities, inspired by PoCoto (Vobl et al., 2014), a correction interface for OCR. Both of these functionalities are at the core of Pyrrha and have proven to be useful in speeding up the correction of out-of-domain corpora (<hi rend="italic">cf.</hi> Figure 2). The application also allows collaboration, both for corpora and checklists, logging of corrections and export to multiple standards such as TEI and TSV.
                 </p>
                 <p>
                     <figure>
@@ -127,11 +126,9 @@
                 </p>
                 <list type="ordered">
                     <item>respect of reference sets;</item>
-                    <item>cross-categorical annotations (
-                        <hi rend="italic">e.g. </hi>POS(dog)!=Verb);
+                    <item>cross-categorical annotations (<hi rend="italic">e.g. </hi>POS(dog)!=Verb);
                     </item>
-                    <item>n-gram tagging (
-                        <hi rend="italic">e.g.</hi> ADJ should not be followed by VERcon).
+                    <item>n-gram tagging (<hi rend="italic">e.g.</hi> ADJ should not be followed by VERcon).
                     </item>
                 </list>
                 <p>Each test failure can be manually ignored for further tests, allowing for a more agile interpretation of grammar. PyrrhaCI is meant to be used as a continuous integration tool, through Github Actions or TravisCI, to validate datasets in open repositories and track the issues raised by editions.</p>
@@ -157,8 +154,7 @@
                     <note xml:id="ftn3" place="foot" n="3">
                         <hi rend="italic">E</hi>
                         <hi rend="italic">.g.</hi> metadata token with text identifiers.
-                    </note> passthrough (
-                    <hi rend="italic">cf.</hi> Figure 3).
+                    </note> passthrough (<hi rend="italic">cf.</hi> Figure 3).
                 </p>
                 <p>
                     <figure>
@@ -170,8 +166,7 @@
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Conclusion</head>
-                <p>Over the last five years, this infrastructure has allowed us to build a 1+ million token corpus of Old French (Camps et al., 2021), a couple of datasets in both classical and late Latin (Clérice, 2021; Glaise and Clérice, 2021), one for pre-orthographic Early Modern French (Gabay et al., 2020), and others. There are improvements we would still like to make (
-                    <hi rend="italic">e.g.</hi> the user-friendliness and capacities of PyrrhaCI) and we now have our eyes on 
+                <p>Over the last five years, this infrastructure has allowed us to build a 1+ million token corpus of Old French (Camps et al., 2021), a couple of datasets in both classical and late Latin (Clérice, 2021; Glaise and Clérice, 2021), one for pre-orthographic Early Modern French (Gabay et al., 2020), and others. There are improvements we would still like to make (<hi rend="italic">e.g.</hi> the user-friendliness and capacities of PyrrhaCI) and we now have our eyes on 
                     <hi rend="italic">data valorization</hi>, through the reuse of tools such as Blacklab (Does, de et al., 2017)
                     <note xml:id="ftn4" place="foot" n="4">A demo for Latin is available at https://blacklab.alpheios.net/latin-texts/search thanks to Alpheios.</note>. Pyrrha has made lemmatization easier for our collaborators and made it a simpler task to produce data and share them across projects. This paper will be an opportunity to present a proven ecosystem, and also to assess its benefits, its costs and shortcomings.
                 </p>

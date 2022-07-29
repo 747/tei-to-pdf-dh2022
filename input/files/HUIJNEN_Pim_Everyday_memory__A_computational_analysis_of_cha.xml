@@ -91,8 +91,7 @@
                         <p style="text-align: left; ">
                             <ref target="https://github.com/PimHuijnen/looking_back_newspapers">
                                 https://github.com/PimHuijnen/looking_back_newspapers
-                            </ref>
-                            . Cleaning in this script is mostly restricted to the removal of punctuation and caps. Stop words are not removed to guarantee that the Dutch word for the English indefinite article ‘a’ (‘een’), which is part of any standard stop word list, remains part of the data. Similarly, the removal of numbers is no part of preprocessing to allow for phrases like ’10 years ago’(even though Dutch linguistic convention formally does not allow for numbers in running text).
+                            </ref>. Cleaning in this script is mostly restricted to the removal of punctuation and caps. Stop words are not removed to guarantee that the Dutch word for the English indefinite article ‘a’ (‘een’), which is part of any standard stop word list, remains part of the data. Similarly, the removal of numbers is no part of preprocessing to allow for phrases like ’10 years ago’(even though Dutch linguistic convention formally does not allow for numbers in running text).
                         </p>
                     </note>
                 </p>

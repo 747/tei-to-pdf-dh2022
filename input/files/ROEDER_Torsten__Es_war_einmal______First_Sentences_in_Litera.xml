@@ -91,8 +91,7 @@
             </div>
             <div type="div1" rend="DH-Heading">
                 <head>Project</head>
-                <p>Several full-text, open access corpora (
-                    <hi rend="italic">Deutsches Textarchiv</hi>, 
+                <p>Several full-text, open access corpora (<hi rend="italic">Deutsches Textarchiv</hi>, 
                     <hi rend="italic">Zeno</hi>, etc.), from which texts were extracted according to genre, serve as source material. It is clear that although the existing full-text offerings provide varying degrees of structural information about the respective document, the automatic delimitation of closed text units is often non-trivial and not possible reliably without individual examination (e.g. in the case of anthologies, texts with several chapters, texts in several volumes). However, this is the prerequisite for extracting the first sentences. In addition, the beginning of the "poetic text" cannot always be clearly localised automatically, e.g. due to prefaces, dedication texts or introductions.
                 </p>
                 <p>Furthermore, the delimitation of “first sentences” is a semantic problem. Sentences can be understood as grammatical-analytical units that are separated from each other by certain punctuation marks, which accommodates machine processing. However, the signs used to delimit a sentence differ and change considerably. The absolute selectivity of some punctuation marks is also questionable depending on the context, which is why sentences are sometimes to be understood as units of meaning in which punctuation marks have a structuring but not interrupting function (cf. fig. 2a/b). Should we therefore rather speak of a flowing “beginning” or “start”? Thus, areas of vagueness play into the determination of "first sentences", which in turn can affect corpus consistency and comparability.</p>

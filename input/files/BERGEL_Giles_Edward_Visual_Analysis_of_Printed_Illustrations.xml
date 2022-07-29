@@ -121,8 +121,7 @@
                             <hi style="font-size:12pt" xml:space="preserve"> using </hi>
                             <ref target="https://www.robots.ox.ac.uk/~vgg/software/vic/">
                                 <hi rend="underline color(1155CC)" style="font-size:12pt">VGG Image Classifier (VIC)</hi>
-                            </ref>
-                            . This software incorporates an ImageNet trained model, which can be readily retrained using either local images or images retrieved with user-defined keywords (e.g. ship) via online image search engines (e.g. Google, Bing, etc.). VIC software uses this knowledge to classify and find images in a dataset with content that semantically matches the search keyword.
+                            </ref>. This software incorporates an ImageNet trained model, which can be readily retrained using either local images or images retrieved with user-defined keywords (e.g. ship) via online image search engines (e.g. Google, Bing, etc.). VIC software uses this knowledge to classify and find images in a dataset with content that semantically matches the search keyword.
                         </item>
                     </list>
                     <p>Participants in the tutorial will step through these applications using the case study data, which will demonstrate both the relevance of these methods for specific use-cases and their general applicability. While the focus of the tutorial is on technical methods in computer vision, it will also cover critical and operational issues such as data capture and cleanup; bias in training data; user experience; and good practice in research reproducibility, software citation and accreditation of invisible labour – issues that digital humanists have a strong interest in foregrounding.</p>

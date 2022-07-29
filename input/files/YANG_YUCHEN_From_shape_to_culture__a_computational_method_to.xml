@@ -80,8 +80,7 @@
                 <p>In recent years, the idea that cultural change can be described as a process comparable to organic evolution has become increasingly popular 
                     <hi rend="color(666666)">(Mesoudi, 2001)</hi>. Like organic diversity, cultural diversity results from a modification-with-descent process, and some methods used to study organic diversity can be used to explore the culture. For example, the genealogical relationships among cultural artefacts (languages, folk tales, Iranian rugs) can be reconstructed using phylogenetic methods (Tehrani and Collard, 2009; Tehrani et al., 2010) and to study the evolution and ecology of cultures.  
                 </p>
-                <p>Shape, among other quantitative features, has shown great potential for such studies. Multiple works use shape to study cultural grammar and cultural diversity (
-                    <hi rend="color(222222)" style="font-size:10pt">Liu and Ren, 2021</hi>; 
+                <p>Shape, among other quantitative features, has shown great potential for such studies. Multiple works use shape to study cultural grammar and cultural diversity (<hi rend="color(222222)" style="font-size:10pt">Liu and Ren, 2021</hi>; 
                     <hi rend="color(222222)" style="font-size:10pt">Di Angelo et al., 2018</hi>). However, these attempts either are qualitative or focus on potteries in the ancient Greek time and fail to capture the pan-Asian porcelain, which is arguably the most important artefacts that connect Asian countries and the rest of the world.
                 </p>
                 <p>This study proposed 1) a quantitative method to study how MeiPing
@@ -116,11 +115,9 @@
                         <graphic n="1003" width="15.698483333333334cm" height="16.421805555555554cm" url="Pictures/c1e0429277f80fb38a6f3ee334c15836.jpg" rend="inline"/>
                     </figure>
                     <p>Figure 2. (a) a good image for binarisation extraction, (b) a contour in green extracted in OpenCV, (c) a bad image for binarisation extraction, (d) a failed contour in green extracted in OpenCV </p>
-                    <p style="text-align: left;">There is a rising attempt to use learning models for image segmentation that can detect and segment the objects of interest in given images. The perk of this is that it does not restrict image conditions, the segmentation can be done in much looser terms compared to binarisation. However, the go-to model Mask-RCNN (
-                        <hi rend="color(222222)" style="font-size:10pt">He et al., 2017</hi>) is very good at getting a rough contour but not with precision. 
+                    <p style="text-align: left;">There is a rising attempt to use learning models for image segmentation that can detect and segment the objects of interest in given images. The perk of this is that it does not restrict image conditions, the segmentation can be done in much looser terms compared to binarisation. However, the go-to model Mask-RCNN (<hi rend="color(222222)" style="font-size:10pt">He et al., 2017</hi>) is very good at getting a rough contour but not with precision. 
                     </p>
-                    <p style="text-align: left;">In this research, we integrate Pointrend (
-                        <hi rend="color(222222)" style="font-size:10pt">Kirillov et al., 2020</hi>), an improved model that treats segmentation as a rendering task for more precise contours, and compare it with the popular Mask-RCNN. The comparison is conducted using the strict metric Average Precision at IoU = 0.75 (AP75) in COCO detection evaluation.
+                    <p style="text-align: left;">In this research, we integrate Pointrend (<hi rend="color(222222)" style="font-size:10pt">Kirillov et al., 2020</hi>), an improved model that treats segmentation as a rendering task for more precise contours, and compare it with the popular Mask-RCNN. The comparison is conducted using the strict metric Average Precision at IoU = 0.75 (AP75) in COCO detection evaluation.
                     </p>
                 </div>
                 <div type="div2" rend="DH-Heading2">
