@@ -72,9 +72,9 @@
             <p>This proposal aims at showing the current progress of my doctoral research, based on the reconstruction of the seventeenth century Florentine manuscript culture. During my research I have collected and implemented 4.814 bibliographic records of Italian manuscripts that are preserved in the most important Florentine libraries (BNCF, Laurenziana, Riccardiana, Moreniana and Marucelliana). These data, of both a codicological and textual nature, have been used for statistical and quantitative analysis with the aim of reconstructing the Florentine manuscript culture of the 17th century, thanks to the new methods of distant reading. </p>
             <p style="text-align: left;">The project started by cataloguing more than four thousand 17th century manuscripts that were kept in several libraries in Florence [fig. 1]. </p>
             <figure>
-                <graphic n="1001" width="16.002cm" height="9.182805555555555cm" url="Pictures/aa220a0941f8fc427e64f65ccd7c753e.png" rend="inline"/>
-            </figure>
-            <p>Fig. 1 A sample of the manuscript corpus in each library</p>
+                <graphic height="9.182805555555555cm" n="1001" rend="inline" url="Pictures/aa220a0941f8fc427e64f65ccd7c753e.png" width="16.002cm"/>
+            <head>Fig. 1 </head><p>A sample of the manuscript corpus in each library</p></figure>
+            
             <p>Following the idea that “a large number of manuscripts cannot be studied in the same way as a single one” (<hi rend="underline color(800080)">Derolez</hi>, 2006), the initial corpus of manuscripts was parceled out into an Excel set of records and then was transformed into a database (the so-called (<hi rend="italic">MIV17</hi>), using the XML-TEI schema. The choice of using the XML-TEI standard was made to simplify the future sharing of data with other similar digital projects and archives, such as MOL (
                 <hi rend="italic">Manus OnLine)</hi>, while ensuring the durability of the data. The TEI model for MS Description was then modified and the dataset was implemented using the EAC-CFP standard to create and connect Authority and Corporate Bodies files, containing any information about manuscript responsibility and Florentines cultural environment. 
             </p>
@@ -83,11 +83,11 @@
             </p>
             <p>On the other hand, a more socio-cultural focused approach led me to define two possibilities of circulation: the so-called horizontal one (for copies and transmissions between academics, literary congregations, acquaintances), and the vertical one, which intends the manuscript as an object of luxury, collection or a gift. </p>
             <figure>
-                <graphic n="1002" width="15.832666666666666cm" height="10.3505cm" url="Pictures/bcd82c021ff6deded7fe0b4a5190f17b.png" rend="inline"/>
-            </figure>
-            <p style="text-align: center;">
-                Fig. 2 Range of manuscript (blue) and print (grey) circulation
-            </p>
+                <graphic height="10.3505cm" n="1002" rend="inline" url="Pictures/bcd82c021ff6deded7fe0b4a5190f17b.png" width="15.832666666666666cm"/>
+            <head style="text-align: center;">Fig. 2 </head><p>
+                Range of manuscript (blue) and print (grey) circulation
+            </p></figure>
+            
             <p>These preliminary studies have also led to highlight certain points of interest, such as the methods of handwritten transmission in a specific cultural environment, like Literary Academies, or the existence of social networks of readers, and they were useful to underline few aspects of the complex relation between the printed book and the manuscripts [see fig. 2]. </p>
             <p>Although these studies are still in the experimental phase, sharing the collected data can bring new information and stimulate new approaches to the study of the manuscript culture in the 17th-century Italy. Divulgation is, in fact, another central point of this project; an open access interface will be published to give researchers the possibility to use the collected data, combining targeted searches and statistical matches, following the idea of micro and macro analysis. </p>
         </body>

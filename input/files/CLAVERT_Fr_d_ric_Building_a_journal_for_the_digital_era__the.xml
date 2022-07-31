@@ -97,26 +97,27 @@
                 </ref>. Jupyter notebooks became the central piece of the JDH infrastructure (figure 1). Datasets are stored on a dataverse instance. Notebooks are stored on a git server – github at the moment. We then set up a conversion pipe from the notebooks to the journal’s website.
             </p>
             <figure>
-                <graphic n="1001" width="14.816666666666666cm" height="4.1671861111111115cm" url="Pictures/88e19b8c3cf7226b73ce9923beeb30e2.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Figure 1 – The JDH infrastructure</p>
+                <graphic height="4.1671861111111115cm" n="1001" rend="inline" url="Pictures/88e19b8c3cf7226b73ce9923beeb30e2.png" width="14.816666666666666cm"/>
+            <head>Figure 1</head>
+            <p style="text-align: left; ">The JDH infrastructure</p></figure>
+            
             <p style="text-align: left; ">The reader will experiment with multilayered articles thanks to an interface that crosses the different layers in different ways. When arriving on the landing page of the article, the reader will first see the narrative layer (figure 2) and can open the hermeneutic cells to punctually see the methods or the code written (figure 3). Another possibility is to choose the ‘hermeneutics first’ layout (figure 4). The last option is to launch the notebook in the myBinder service from the submenu ‘Data’ (figure 5), where readers may interact with the code (and hence with the dataset) which is also a way to question the article’s hypotheses.</p>
             <figure>
-                <graphic n="1002" width="14.816666666666666cm" height="7.810013888888889cm" url="Pictures/54c167fb1e8ac1f6b0c394c805dec39e.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Figure 2 – The narrative layer</p>
+                <graphic height="7.810013888888889cm" n="1002" rend="inline" url="Pictures/54c167fb1e8ac1f6b0c394c805dec39e.png" width="14.816666666666666cm"/>
+            <head style="text-align: left; ">Figure 2</head><p>The narrative layer</p></figure>
+            
             <figure>
-                <graphic n="1003" width="14.816666666666666cm" height="7.789094444444444cm" url="Pictures/3105c706c9c91fd6c52d8a470a449212.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Figure 3 – Hermeneutics cells through the narrative layer</p>
+                <graphic height="7.789094444444444cm" n="1003" rend="inline" url="Pictures/3105c706c9c91fd6c52d8a470a449212.png" width="14.816666666666666cm"/>
+            <head style="text-align: left; ">Figure 3</head><p>Hermeneutics cells through the narrative layer</p></figure>
+            
             <figure>
-                <graphic n="1004" width="14.816666666666666cm" height="7.848019444444445cm" url="Pictures/2aa93142b47947f358a7328fa166feb9.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Figure 4 – The hermeneutics layer</p>
+                <graphic height="7.848019444444445cm" n="1004" rend="inline" url="Pictures/2aa93142b47947f358a7328fa166feb9.png" width="14.816666666666666cm"/>
+            <head style="text-align: left; ">Figure 4</head><p>The hermeneutics layer</p></figure>
+            
             <figure>
-                <graphic n="1005" width="14.816666666666666cm" height="7.822669444444444cm" url="Pictures/0809986732ed5248acaf4e85ac525419.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Figure 5 – Interacting with the article through myBinder</p>
+                <graphic height="7.822669444444444cm" n="1005" rend="inline" url="Pictures/0809986732ed5248acaf4e85ac525419.png" width="14.816666666666666cm"/>
+            <head style="text-align: left; ">Figure 5</head><p>Interacting with the article through myBinder</p></figure>
+            
             <p style="text-align: left; ">All along the process of designing and developing the infrastructure, we entered a process of co-building the journal’s infrastructure with authors through the organisation of workshops. The idea to use notebooks, for instance, has been discussed with authors during one of those. When abstracts are submitted, individual meetings with authors allowed us to adapt to their needs. </p>
             <p style="text-align: left; ">The interdisciplinarity of the JDH’s team at the C<hi rend="superscript">2</hi>DH and its horizontal functioning have also been a strong strength: the cumulative competences of designers (2), developers (2), server admin (1), copy editors (1) and historians (2) allowed us to build a publishing infrastructure within 18 months, from the use of open source bricks.
             </p>

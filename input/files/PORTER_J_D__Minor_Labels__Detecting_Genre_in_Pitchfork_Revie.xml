@@ -48,20 +48,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Popular music</term>
                     <term>genre</term>
                     <term>networks</term>
                     <term>modularity class</term>
                     <term>data visualization</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>English</term>
                     <term>North America</term>
                     <term>Contemporary</term>
@@ -83,46 +83,48 @@
             </p>
             <p>Though they often cite an extraordinary number of genres, sub-genres, and sub-sub-genres in their reporting, they stick to a very conservative list of nine official genre tags for most of their reviews.</p>
             <figure>
-                <graphic n="1001" width="16.51cm" height="6.773333333333333cm" url="Pictures/01f557090c6310b474de745fb5046532.jpg" rend="inline"/>
-            </figure>
-            <p>
-                <hi style="font-size:9pt" xml:space="preserve">Figure 1: Reviews by genre in </hi>
-                <hi rend="italic" style="font-size:9pt">Pitchfork</hi>. Note that one review may have several genres, each of which would be counted in this graph. The “Null” category describes a small subset of reviews that had no genre tags.
+                <graphic height="6.773333333333333cm" n="1001" rend="inline" url="Pictures/01f557090c6310b474de745fb5046532.jpg" width="16.51cm"/>
+            <head>
+                <hi xml:space="preserve" style="font-size:9pt">Figure 1:  </hi>
+                </head>
+            <p>Reviews by genre in
+                <hi rend="normal" style="font-size:9pt">Pitchfork</hi>. Note that one review may have several genres, each of which would be counted in this graph. The “Null” category describes a small subset of reviews that had no genre tags.
             </p>
+            </figure>
             <p>Debates over the function of genre are common in music as well as literature, film, and culture studies generally (Sanneh, 2021; Lena, 2012; Brackett, 2016). For an outlet like 
                 <hi rend="italic">Pitchfork</hi>, they function, at least in part, to set expectations for readers. Yet, given the scale and the breadth of the types of music covered by 
                 <hi rend="italic">Pitchfork</hi>, these nine highly unevenly distributed tags are somewhat uninformative. While the genre tags alone may do little to set expectations, the reviews themselves do this work in at least one highly characteristic way: by comparing the artist under review to other artists who share similar qualities. Fortunately for us, 
                 <hi rend="italic" xml:space="preserve">Pitchfork </hi>does this in an easily minable fashion by maintaining individual pages for several thousand artists, and then using links to these pages when the artists are mentioned in reviews.
             </p>
             <figure>
-                <graphic n="1002" width="9.68375cm" height="5.08cm" url="Pictures/ec23ab4689cc9056a4b7dbe1eb835d7b.jpg" rend="inline"/>
-            </figure>
-            <p>Figure 2</p>
+                <graphic height="5.08cm" n="1002" rend="inline" url="Pictures/ec23ab4689cc9056a4b7dbe1eb835d7b.jpg" width="9.68375cm"/>
+            <head>Figure 2</head></figure>
+            
             <p>Figure 2 is a screenshot from a review. Clicking on “The Meters” or “Dr. John”, indicated by red underlining, will take you to the individual pages for each respective artist. We scraped all of the reviews and relevant metadata, including the artist links. With that data set, we created networks of artists where edges are drawn between any artists who have links in the same review.</p>
             <figure>
-                <graphic n="1003" width="11.1125cm" height="11.1125cm" url="Pictures/ea0773e0641dcd6aefe65754242d39fa.jpg" rend="inline"/>
-            </figure>
-            <p>
-                Figure 3. Nodes are artists; edges reflect co-presence in reviews. Node size shows edge count. Color shows detected community.
-            </p>
+                <graphic height="11.1125cm" n="1003" rend="inline" url="Pictures/ea0773e0641dcd6aefe65754242d39fa.jpg" width="11.1125cm"/>
+            <head>Figure 3. </head><p>
+                Nodes are artists; edges reflect co-presence in reviews. Node size shows edge count. Color shows detected community.
+            </p></figure>
+            
             <p>Tools like Gephi can depict sub-groups in a network like the one we created via community detection (calculated in Gephi using the Louvain method (Blondel et al, 2008)). However, there are important limitations to this method. Because it is non-deterministic, the precise membership of each group, and even the total number of groups, can vary each time the algorithm is run. To work around this, we introduce a method we call “metamodularity”. We simply ran Louvain community detection on the artist network 10,000 times.
-                <note place="foot" xml:id="ftn1" n="1">
+                <note xml:id="ftn1" n="1" place="foot">
                     <p rend="footnote text"> We used the NetworkX and Community libraries in Python. Some artists had no links, because they were never mentioned in an article with anyone else. To avoid very small communities and improve the legibility of results, we also filtered out 34 artists not connected to the main network. This left us with 7,524 unique artists.</p>
                 </note> Though there are many other possibilities that would achieve similar ends, including examining the communities detected during the “passes” from which the Louvain method constructs its final groups, our approach has several key advantages: It is simple to run, easy to understand, and eschews a non-deterministic approximation in favor of data about the probability of particular groupings.
             </p>
             <p>Using this method, we can show how often any two artists were sorted into the same group. For instance, the jazz musician Alice Coltrane was grouped with John Coltrane 10,000 times, with Sly and the Family Stone 4,939 times, and with Guns n’ Roses one time. This gives us a more reliable and comprehensible picture of the level of connection between the artists.</p>
             <figure>
-                <graphic n="1004" width="16.50647222222222cm" height="7.309555555555556cm" url="Pictures/fc91520b52bc3b7e5c0b00afc4a54ab7.png" rend="inline"/>
-            </figure>
-            <p>
-                Figure 4: Showing the top artists (sorted by number of total connections with other artists) who group with Bon Iver at increasing thresholds of connectedness
-            </p>
+                <graphic height="7.309555555555556cm" n="1004" rend="inline" url="Pictures/fc91520b52bc3b7e5c0b00afc4a54ab7.png" width="16.50647222222222cm"/>
+            <head>Figure 4: </head><p>
+                Showing the top artists (sorted by number of total connections with other artists) who group with Bon Iver at increasing thresholds of connectedness
+            </p></figure>
+            
             <p>Using the results from this method, we examined every group of at least 25 artists at six different thresholds and renamed the groups to reflect our assessment of the underlying artistic community. For instance, we called the rightmost group in Figure 4 “00’s Indie Rock”.</p>
             <p>It is worth underscoring that our group names are subjective. Nonetheless, they help to show the relationship between groups at different tiers. The Sankey diagram, Figure 5, makes clear the branching of closely-knit artist communities from larger, more loosely connected groups.</p>
             <figure>
-                <graphic n="1005" width="16.50647222222222cm" height="9.90423611111111cm" url="Pictures/865d67c1734babf0b3bf8fe444f2ad2d.png" rend="inline"/>
-            </figure>
-            <p>Figure 5</p>
+                <graphic height="9.90423611111111cm" n="1005" rend="inline" url="Pictures/865d67c1734babf0b3bf8fe444f2ad2d.png" width="16.50647222222222cm"/>
+            <head>Figure 5</head></figure>
+            
             <p>The richness of these results points to many interesting findings about the operation of genre in 
                 <hi rend="italic">Pitchfork</hi>; we will mention just one here. Some of the genres suggested by Figure 5 are incredibly specific—e.g., our names for groupings of metal artists include classic, goth, punk, grüv, and crossover. One notable exception is a group of predominately African American musicians, which is remarkably large and stable up until the 9,000 threshold. The artists within it range from instrumental hip hop composer Flying Lotus to Motown legend Marvin Gaye to trap rapper Young Thug to R&amp;B singer-songwriter Sade to funk innovators Funkadelic to crossover hip hop star Cardi B. This is a far more capacious group along aesthetic, market, and even historic grounds than we see in, e.g., the heavy metal clusters at the same metamodularity threshold. This may reflect real-world connections, since many artists in this group have worked together in various ways, perhaps more often than metal bands have. Or this may reflect a structural difference in the way that writers at 
                 <hi rend="italic">Pitchfork</hi> have covered Black artists relative to their reviews of white musicians, particularly in the early years of the publication. In any case, it is a noteworthy difference in the shape of genre in this corpus.
@@ -134,7 +136,7 @@
                 <listBibl>
                     <head>Bibliography</head>
                     <bibl style="text-align: left; ">
-                        <hi style="font-size:12pt" xml:space="preserve">Blondel, V., Guillaume, J., Lambiotte, R. and Lefebvre, E. (2008). Fast Unfolding of Communities in Large Networks. </hi>
+                        <hi xml:space="preserve" style="font-size:12pt">Blondel, V., Guillaume, J., Lambiotte, R. and Lefebvre, E. (2008). Fast Unfolding of Communities in Large Networks. </hi>
                         <hi rend="italic" style="font-size:12pt">Journal of Statistical Mechanics: Theory and Experiment</hi>. 2008: 10. 9.
                     </bibl>
                     <bibl style="text-align: left; ">
@@ -146,11 +148,11 @@
                         <hi rend="italic" style="font-size:12pt">Banding Together: How Communities Create Genres in Popular Music</hi>. Princeton: Princeton University Press.
                     </bibl>
                     <bibl style="text-align: left; ">
-                        <hi style="font-size:12pt" xml:space="preserve">Miller, C. (1984). Genre as Social Action. </hi>
+                        <hi xml:space="preserve" style="font-size:12pt">Miller, C. (1984). Genre as Social Action. </hi>
                         <hi rend="italic" style="font-size:12pt">Quarterly Journal of Speech</hi>. Vol 70, 2; 151-76.
                     </bibl>
                     <bibl rend="footnote description">
-                        <hi style="font-size:12pt" xml:space="preserve">Sanneh, K. (2021). </hi>
+                        <hi xml:space="preserve" style="font-size:12pt">Sanneh, K. (2021). </hi>
                         <hi rend="italic" style="font-size:12pt">Major Labels: A History of Popular Music in Seven Genres</hi>. New York: Penguin Press.
                     </bibl>
                 </listBibl>

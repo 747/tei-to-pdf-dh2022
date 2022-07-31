@@ -72,19 +72,19 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Short Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Hyperfiction</term>
                     <term>Network Analysis</term>
                     <term>Link Extraction</term>
                     <term>Hypertext</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>North America</term>
@@ -105,14 +105,12 @@
             </p>
             <p>The extracted reference information can be understood as the graph structure of an archived web object. We visualize this structure as a network showing each resource as a node and the references between resources as edges. Graph data analytics provide different measures that can be used to gain insights into the object’s structure, e.g. in order to describe the functional role of certain nodes in the network. The network thus provides a structural overview of the hypertext work, which opens up new possibilities for reading hyperfiction, which, by the nature of its medium often defies the rules of linearity: Besides the sequential connection of network nodes, the graph data analysis e.g. reveals possible end points of the story line(s), which can be manifold in hypertext. It is also possible to detect central passages that can be crucial for the decisions the reader has to make, as she finds her own way through the text, since it is likely that these passages are represented by nodes that show characteristic patterns.</p>
             <figure>
-                <graphic n="1001" width="10.662708333333333cm" height="10.662708333333333cm" url="Pictures/570da5ff38777c668df0e5ba4bd195af.png" rend="inline"/>
+                <graphic height="10.662708333333333cm" n="1001" rend="inline" url="Pictures/570da5ff38777c668df0e5ba4bd195af.png" width="10.662708333333333cm"/>
             <head>Figure 1:</head><p>Internal reference structure of 
                 <hi rend="normal">The Unknown,</hi> node size pertaining to degree
-            </p>
-            </figure>
+            </p></figure>
             <p>Figure 1 shows such a network of 
-                <hi rend="italic">The Unknown</hi>.
-                <note place="foot" xml:id="ftn1" n="1">
+                <hi rend="italic">The Unknown</hi>.<note xml:id="ftn1" n="1" place="foot">
                     <p rend="footnote text"> We provide the extracted network data together with a copy of the Warc2graph software package via Zenodo, DOI: 10.5281/zenodo.5773099</p>
                 </note> The nodes are sized according to their degree, revealing pages that appear of central importance for the site as well as clusters of interlinked documents. The network thus establishes a spatial text-view, which seems particularly apt for 
                 <hi rend="italic">The Unknown</hi>, a text that very explicitly emphasizes its status as a non-linear hypertext (Rettberg, 2019: 80-83). By sketching out the fictional narrative of a book tour of the authors through the US the novel itself becomes a road trip through the unknown territory of hypertext, an “encyclopedic novel in a network environment” that evokes “worlds that never quite attain or even aspire to a coherent ‘entirety’” (Ciccoricco, 2007: 129). Whereas these ‘worlds’ can be related to the clusters of the network, the graph metrics also seem to be instructive for the characterization of single nodes: E.g., one of the nodes with the highest degree refers to the page ‘default.html’, which contains an ironic metafictional discussion on the unsuitability of the concept of a home page for hypertext literature, which, strictly speaking, as a single starting point contradicts the principle of nonlinearity. Revealingly, the node of default.html has 129 outgoing edges, which reflects the fact that the page is ironically interspersed with links that in fact could make the site apt to serve as an explanatory starting page for the novel. However, the authors have deliberately undermined this function by ‘hiding’ the page in the jumble of HTML-documents, since only five ingoing links refer to the node.  

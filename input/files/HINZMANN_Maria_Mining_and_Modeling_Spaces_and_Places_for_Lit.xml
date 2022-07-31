@@ -96,20 +96,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Short Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Literary History</term>
                     <term>Linked Open Data</term>
                     <term>French Enlightenment Novel</term>
                     <term>Information Retrieval</term>
                     <term>Data Modeling</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>18th Century</term>
@@ -124,114 +124,114 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Introduction</head>
                 <p style="text-align: left; ">In literary history and historiography, places and spaces play an important role – not least in the context of the ‘spatial turn’ (Lafon, 1997; Piatti et al., 2009; Dennerlein, 2009; Weber, 2014). In literary works, narrative locations are particularly relevant, but places of publication as well as further spatial dimensions can also be taken into account (Curran 2018; Burrows et al. 2016). Our contribution presents how we obtained spatial statements from three different information sources and combined them in a knowledge network based on the Linked Open Data (LOD) paradigm (Berners-Lee, 2006; Hooland und Verbough, 2014; Hitzler, 2021).</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Project context</head>
-                <p style="text-align: left; ">The aim of the project Mining and Modeling Text is to establish an information network for the humanities built from various sources.<note place="foot" xml:id="ftn1" n="1">
+                <p style="text-align: left; ">The aim of the project Mining and Modeling Text is to establish an information network for the humanities built from various sources.<note xml:id="ftn1" n="1" place="foot">
                         <p style="text-align: left; "> See https://mimotext.uni-trier.de/en/.</p>
                     </note> This aim is closely linked to the finding that, considering the steadily growing digital cultural heritage, the acquisition of knowledge from large amounts of text and data can no longer be handled by individuals. In representing knowledge as LOD, we see untapped potential that we are exploring in the current project phase on the French Enlightenment novel (Delon/Malandain, 1996; Mylne, 1981).
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Creating spatial statements</head>
                 <p style="text-align: left; ">Information on spatial statements relevant to our domain is extracted from three different types of sources: 1. bibliographic metadata, 2. primary sources, 3. scholarly publications. After focusing on thematic statements in an earlier phase of our project (Schöch et. al., 2022; Röttgermann et al., 2022), we are currently addressing spatial statements.</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Mining</head>
                 <p style="text-align: left; ">Bibliographic metadata: For our domain, the Bibliographie du genre romanesque français 1751-1800 (BGRF, Mylne et al., 1977) is central, as it defines the population of about 2000 French Enlightenment novels. The BGRF has been extensively analysed and modeled (Lüschow 2020) and contains rich metadata (including places of publication, narrative locations, narrative form, characters, themes, style).</p>
                 <p style="text-align: left; ">Primary sources: The Collection of Eighteenth-Century French Novels (Röttgermann, 2021) is analysed via SpaCy’s (Honnibal und Montani, 2017) named entity recognition and reconciliation pipeline supported by OpenRefine (Huynh, [2012] 2010). Our pipeline requires human intervention (Hinzmann et al., 2022) concerning the challenges of ambiguity, fictionality and historicity (Heuser et al., 2016; Jockers, 2016; Nielsen, 2016).</p>
                 <figure>
-                    <graphic n="1001" width="16.002cm" height="5.823997222222222cm" url="Pictures/81e77fdf146eb2b5e324012ea44c7b77.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 1: Reconciliation of narrative locations with OpenRefine</p>
+                    <graphic height="5.823997222222222cm" n="1001" rend="inline" url="Pictures/81e77fdf146eb2b5e324012ea44c7b77.png" width="16.002cm"/>
+                <head style="text-align: left; ">Figure 1: </head><p>Reconciliation of narrative locations with OpenRefine</p></figure>
+                
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Modeling</head>
                 <p style="text-align: left; ">Our approach relies on importing both the text strings as found in the information source (green) and the abstract spatial items (blue) into our Wikibase instance. Combined with the fact that we reference all statements uniquely via the "stated in" property (orange), this ensures a high degree of verifiability of our data (see fig. 2).</p>
                 <figure>
-                    <graphic n="1002" width="16.002cm" height="9.361cm" url="Pictures/7bb7fdf73b81fbd2a67ab93b66b10c82.jpg" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 2: ‘Narrative locations’ of Diderots La religieuse from NER and BGRF data</p>
+                    <graphic height="9.361cm" n="1002" rend="inline" url="Pictures/7bb7fdf73b81fbd2a67ab93b66b10c82.jpg" width="16.002cm"/>
+                <head style="text-align: left; ">Figure 2: </head><p>‘Narrative locations’ of Diderots La religieuse from NER and BGRF data</p></figure>
+                
                 <p style="text-align: left; ">Our spatial vocabulary was built up incrementally and provides items (=spatial concepts) for 7 properties, of which 5 are currently mapped with Wikidata (see fig. 3).
                     <hi rend="Footnote_Symbol">
-                        <note place="foot" xml:id="ftn2" n="2">
+                        <note xml:id="ftn2" n="2" place="foot">
                             <p style="text-align: left; "> See for the vocabulary: https://github.com/MiMoText/vocabularies/blob/main/spatial_vocabulary.tsv.</p>
                         </note>
                     </hi>
                 </p>
                 <figure>
-                    <graphic n="1003" width="16.002cm" height="7.068cm" url="Pictures/eff996f6a2e71439c2c2cbf74b3e4c29.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 3: Ontology of ‘spatial statements’ within the domain of literary history/historiography</p>
+                    <graphic height="7.068cm" n="1003" rend="inline" url="Pictures/eff996f6a2e71439c2c2cbf74b3e4c29.png" width="16.002cm"/>
+                <head style="text-align: left; ">Figure 3: </head><p>Ontology of ‘spatial statements’ within the domain of literary history/historiography</p></figure>
+                
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Infrastructure</head>
                 <p style="text-align: left; ">For the provision of data, we follow Open Science principles, such as the publication of FAIR data in open access as well as the use of open source software – in particular Wikibase (see fig.4).
-                    <note place="foot" xml:id="ftn3" n="3">
+                    <note xml:id="ftn3" n="3" place="foot">
                         <p style="text-align: left; "> Generally, see Suber 2012 and Wilkinson et al. 2016; related to the project, see Röttgermann and Schöch 2020 and Schöch, 2021. We expect the Wikibase instance to become publicly available in mid-2022: https://www.mimotext.uni-trier.de/en</p>
                     </note> We created a custom bot using the Python library Pywikibot to import and update the RDF triples into our Wikibase instance from TSV files.
                     <hi rend="Footnote_Symbol">
-                        <note place="foot" xml:id="ftn4" n="4">
+                        <note xml:id="ftn4" n="4" place="foot">
                             <p style="text-align: left; "> See https://github.com/MiMoText/Wikibase-Bot.</p>
                         </note>
                     </hi>
                 </p>
                 <figure>
-                    <graphic n="1004" width="16.002cm" height="7.957cm" url="Pictures/b83328ca8676dd0ab0ea1646514e19fb.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Fig. 4: Local Wikibase instance</p>
+                    <graphic height="7.957cm" n="1004" rend="inline" url="Pictures/b83328ca8676dd0ab0ea1646514e19fb.png" width="16.002cm"/>
+                <head style="text-align: left; ">Fig. 4: </head><p>Local Wikibase instance</p></figure>
+                
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Spatial Querying</head>
                 <p style="text-align: left; ">Having all the spatial triples stored in our Wikibase allows us to query and visualize them using the DockerWikibaseQueryService interface. We can gain an overview of the entire set of metadata (see fig. 5, query 1), see places of publication appearing and disappearing over time (see fig. 6, query 2) or explore narrative locations linked to specific thematic concepts such as ‘miracle’ (see fig. 7, query 3). Via 'federated queries' (see fig. 8, query 4), information from other knowledge bases (here Wikidata) can be used.</p>
                 <figure>
-                    <graphic n="1005" width="16.002cm" height="9.989cm" url="Pictures/9ab1e0bb477aa27418f29764a35f0aab.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 5: Overview of the most frequent places of publication</p>
+                    <graphic height="9.989cm" n="1005" rend="inline" url="Pictures/9ab1e0bb477aa27418f29764a35f0aab.png" width="16.002cm"/>
+                <head style="text-align: left; ">Figure 5: </head><p>Overview of the most frequent places of publication</p></figure>
+                
                 <figure>
-                    <graphic n="1006" width="16.002cm" height="6.311cm" url="Pictures/e5e4f70800435de49e0827122d82b4f5.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 6: Places of publication over time</p>
+                    <graphic height="6.311cm" n="1006" rend="inline" url="Pictures/e5e4f70800435de49e0827122d82b4f5.png" width="16.002cm"/>
+                <head style="text-align: left; ">Figure 6: </head><p>Places of publication over time</p></figure>
+                
                 <figure>
-                    <graphic n="1007" width="16.002cm" height="8.451cm" url="Pictures/f4f91d886a861b89a322cc39339ce70f.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 7: Narrative locations linked to the thematic concept ‘miracle’ (excerpt)</p>
+                    <graphic height="8.451cm" n="1007" rend="inline" url="Pictures/f4f91d886a861b89a322cc39339ce70f.png" width="16.002cm"/>
+                <head style="text-align: left; ">Figure 7: </head><p>Narrative locations linked to the thematic concept ‘miracle’ (excerpt)</p></figure>
+                
                 <figure>
-                    <graphic n="1008" width="16.002cm" height="7.864997222222223cm" url="Pictures/507035e65a9dc7915402ff9e3d4ea18c.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 8: Cluster of dominant publication places based on a federated query (Wikidata)</p>
+                    <graphic height="7.864997222222223cm" n="1008" rend="inline" url="Pictures/507035e65a9dc7915402ff9e3d4ea18c.png" width="16.002cm"/>
+                <head style="text-align: left; ">Figure 8: </head><p>Cluster of dominant publication places based on a federated query (Wikidata)</p></figure>
+                
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Conclusion</head>
                 <p style="text-align: left; ">We showcase key aspects of spatial information extraction and modeling in our project. Our presentation will show how we link spatial statements from three sources into a multilingual knowledge network. Triples on publication dates, themes, locations and authors can be combined and be differentiated by their source, something which allows new perspectives for literary history, book history and other domains. Future work concerns extracting and adding statements from scholarly publications to the Wikibase instance.</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Appendix</head>
-                <div type="div2" rend="DH-Heading2">
+                <div rend="DH-Heading2" type="div2">
                     <head>Query 1: Items (novels) and their place of publication (fig. 5)</head>
                     <figure>
-                        <graphic n="1009" width="16.002cm" height="6.578cm" url="Pictures/ff645e3c54fd0485d1e8daca006aa664.png" rend="inline"/>
+                        <graphic height="6.578cm" n="1009" rend="inline" url="Pictures/ff645e3c54fd0485d1e8daca006aa664.png" width="16.002cm"/>
                     </figure>
                 </div>
-                <div type="div2" rend="DH-Heading2">
+                <div rend="DH-Heading2" type="div2">
                     <head>Query 2: Places of publication over time (fig. 6)</head>
                     <figure>
-                        <graphic n="10010" width="16.002cm" height="6.361cm" url="Pictures/980cec3f5043c18bae18416fbc5bcd5f.png" rend="inline"/>
+                        <graphic height="6.361cm" n="10010" rend="inline" url="Pictures/980cec3f5043c18bae18416fbc5bcd5f.png" width="16.002cm"/>
                     </figure>
                 </div>
-                <div type="div2" rend="DH-Heading2">
+                <div rend="DH-Heading2" type="div2">
                     <head>Query 3: Narrative location of novels with theme “miracle” (fig. 7)</head>
                     <figure>
-                        <graphic n="10011" width="16.002cm" height="5.868cm" url="Pictures/8d05476351226f98c195a3c183272c32.png" rend="inline"/>
+                        <graphic height="5.868cm" n="10011" rend="inline" url="Pictures/8d05476351226f98c195a3c183272c32.png" width="16.002cm"/>
                     </figure>
                 </div>
-                <div type="div2" rend="DH-Heading2">
+                <div rend="DH-Heading2" type="div2">
                     <head>Query 4: Places of publication with geocoordinate location via federated query (fig. 8)</head>
                     <figure>
-                        <graphic n="10012" width="16.002cm" height="6.135cm" url="Pictures/e2d98fdb93df36c6a533b605acc5db8c.png" rend="inline"/>
+                        <graphic height="6.135cm" n="10012" rend="inline" url="Pictures/e2d98fdb93df36c6a533b605acc5db8c.png" width="16.002cm"/>
                     </figure>
                 </div>
             </div>

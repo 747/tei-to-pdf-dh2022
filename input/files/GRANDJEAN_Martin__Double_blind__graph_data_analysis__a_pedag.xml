@@ -48,18 +48,18 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Electronic Poster</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Network analysis</term>
                     <term>Data visualization</term>
                     <term>Critical data analysis</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Global</term>
                     <term>English</term>
                     <term>Contemporary</term>
@@ -73,27 +73,27 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Preamble</head>
                 <p style="text-align: left; ">Due to the hybrid nature of the conference and the uncertainty as to what the 'electronic posters' will ultimately be, we are intentionally proposing a format that takes advantage of the digital nature of the event: thus, the reflection around a means of presentation including interactive online elements and filmed content is an integral part of our approach. We are aware that this experiment goes beyond the framework of a standard conference paper, but we believe that the current pandemic must be an opportunity to rethink our remote collaboration and presentation formats.</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Introduction</head>
                 <p style="text-align: left; ">In this paper, we propose an experimental process of 'double blind' comparison which consists of giving the same dataset to two network analysts and to confront their methodological choices, results and interpretations. Recently tested in a format that combines recorded footage and live analysis (Jacomy and Grandjean, 2021), this ‘double blind’ approach makes it possible to make the intersubjectivity of the process visible and provide empirical material to discuss how the eyes of specialists from different disciplines influence the interpretation of the data. We believe that producing and making explicit such interpretive pathways can help researchers, designers and students understand the diversity of possible approaches.</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>The subjectivity of network interpretation in the humanities</head>
                 <p style="text-align: left; ">If network analysis is a method now very widely diffused in the field of digital humanities (Ahnert et al., 2020), often because the metaphor and lexical field of ‘network’ are very effective in describing the objects of study of the humanities, there is no definitive interpretation procedure. Indeed, describing a network entails the recontextualization of graph-theoretical elements (e.g., the “betweenness centrality” metric) into the language of the discipline (e.g., “knowledge brokers” or simply “bridges”) through a methodological “translation” (Grandjean and Jacomy, 2019). This hermeneutic process is subjective by nature, especially in the humanities where visual network analysis is often privileged, which may seem paradoxical considering that the method is supposed to objectify historical or literary sources (this is more generally true for all digital methods). Yet as Popper argued, descriptive statements necessarily draw their validity from “intersubjective agreement” (Freeman, 1973). How much agreement does network analysis offer? </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Experimental process</head>
                 <p style="text-align: left; ">To ensure comparability, the phase of individual experimentation is framed by strict constraints in terms of time and tools. A network dataset is prepared upstream and duplicated: the two participants get a time budget to explore the data and produce an annotated network visualization of their choice, possibly including other tables and visualizations, as well as a list of hypotheses on the structure of the graph (fig. 1). This phase is filmed and screencasted. Then the two people discover each other's work and compare their interpretations.</p>
                 <figure>
-                    <graphic n="1001" width="16.002cm" height="23.935972222222222cm" url="Pictures/8c5eb203104ac88e6f549f06814ad3ce.jpg" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 1. Diagram of the process, the result is the window located at the bottom of the image, representing a web page comparing the interpretive paths by means of visualizations, texts and videos.</p>
+                    <graphic height="23.935972222222222cm" n="1001" rend="inline" url="Pictures/8c5eb203104ac88e6f549f06814ad3ce.jpg" width="16.002cm"/>
+                <head style="text-align: left; ">Figure 1. </head><p>Diagram of the process, the result is the window located at the bottom of the image, representing a web page comparing the interpretive paths by means of visualizations, texts and videos.</p></figure>
+                
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Results</head>
                 <p style="text-align: left; ">The result of these parallel interpretations will consist of an interactive poster presenting the iterations of the two processes of analysis and interpretation. These two paths will be presented and compared by means of an online document integrating the data set, interactive and/or composite visualizations, descriptive text and video sequences making it possible to follow the reasoning. In the end, the data set itself is only a pretext for an educational experiment, the aim of which is as much to confront us with the subjectivity of the interpretation as to show the interest of such an exercise of replication.</p>
             </div>

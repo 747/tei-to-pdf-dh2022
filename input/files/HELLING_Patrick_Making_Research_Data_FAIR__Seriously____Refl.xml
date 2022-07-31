@@ -56,20 +56,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Computational Literary Studies</term>
                     <term>CLS</term>
                     <term>Research Data Mananagement</term>
                     <term>RDM</term>
                     <term>FAIR</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Global</term>
                     <term>Europe</term>
                     <term>English</term>
@@ -87,10 +87,10 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Introduction</head>
                 <p style="text-align: left; ">Computational Literary Studies (CLS) are an evolving, interdisciplinary field of research combining research questions from the traditional field of Literary Studies with methods and technologies from Computer Sciences and Computational Linguistics. The German Research Foundation (DFG) is funding a priority program to foster the ongoing evolution of the field and the development and establishment of innovative computational methods in literary studies:
-                    <note place="foot" xml:id="ftn1" n="1">
+                    <note xml:id="ftn1" n="1" place="foot">
                         <p style="text-align: left; ">
                             <ref target="https://dfg-spp-cls.github.io/">https://dfg-spp-cls.github.io/</ref> [last request: 24th of November 2021]. 
                         </p>
@@ -99,21 +99,21 @@
                 <p style="text-align: left; ">Research data produced within the CLS is, similarly to many other disciplines in the humanities, heterogeneous (Pempe 2012). The management of this research data is a key element of scientific progress (Bryant, Lavoie &amp; Malpas 2017) and a substantial aspect of good research practice (DFG 2019); in this respect, a major landmark are the FAIR Principles (Wilkinson et al. 2016). Within the central project of the program, we interviewed all projects (Helling et al. 2020) with regard to their discipline specific methods and approaches as well as the data and software they both use and produce during their research. We analysed the interviews qualitatively and quantitatively. The results of the survey (Helling et al. 2021) are used to develop and establish a common RDM strategy for the whole priority program to meet the FAIR Principles and enhance the sustainable findability, accessibility, interoperability and reusability of the data and outcomes of the projects.</p>
                 <p style="text-align: left; ">In this paper we present our experience in RDM within the program. We will illustrate both pragmatic RDM solutions and major barriers in making research data FAIR. We will show that these barriers are intrinsic in the discipline itself.</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Pragmatic Solutions and Barriers in Making Research Data FAIR in the CLS </head>
                 <p style="text-align: left; ">We recommended Zenodo, which meets the FAIR principles, as a fallback solution for storing the outputs of the projects within the program, because overarching domain-specific infrastructures within the CLS are very rare. In fact, most of our projects were already using Zenodo for publishing outputs that do not fit into other infrastructures. However, the research data of the program is also stored and published in institutional, generic and domain-specific repositories (see Figure 1 and 2).</p>
                 <figure>
-                    <graphic n="1001" width="15.926152777777778cm" height="8.434916666666666cm" url="Pictures/d2d94aa9fd222b94994412fdfb510e7b.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 1: Used infrastructures for archiving within the program.</p>
+                    <graphic height="8.434916666666666cm" n="1001" rend="inline" url="Pictures/d2d94aa9fd222b94994412fdfb510e7b.png" width="15.926152777777778cm"/>
+                <head style="text-align: left; ">Figure 1: </head><p>Used infrastructures for archiving within the program.</p></figure>
+                
                 <figure>
-                    <graphic n="1002" width="15.926152777777778cm" height="8.863541666666666cm" url="Pictures/490b95e810039b6ae510e53b0a1ae681.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 2: Used infrastructures for publication within the program.</p>
-                <div type="div2" rend="DH-Heading2">
+                    <graphic height="8.863541666666666cm" n="1002" rend="inline" url="Pictures/490b95e810039b6ae510e53b0a1ae681.png" width="15.926152777777778cm"/>
+                <head style="text-align: left; ">Figure 2: </head><p>Used infrastructures for publication within the program.</p></figure>
+                
+                <div rend="DH-Heading2" type="div2">
                     <head>Technical Perspectives on FAIR</head>
                     <p style="text-align: left; ">From a technical perspective, repositories used within the program address the FAIR Principles fairly well. Regarding the findability and accessibility of research data, outputs of the program are usually registered or indexed in searchable resources (F4), which are accessible via standardized, open, and universally implementable protocols (A1/A1.2). Besides Zenodo, some of the used infrastructures support the assignment of a persistent identifier (PID) (F1). Moreover, supplied metadata is often based on the generic DataCite scheme (F2).
-                        <note place="foot" xml:id="ftn2" n="2">
+                        <note xml:id="ftn2" n="2" place="foot">
                             <p style="text-align: left; "> DataCite Metadata Schema 4.4, 
                                 <ref target="https://schema.datacite.org/meta/kernel-4.4/">
                                     <hi rend="underline color(0000FF)">https://schema.datacite.org/meta/kernel-4.4/</hi>
@@ -122,11 +122,11 @@
                         </note> In addition, most of the repositories and infrastructures offer the definition of generic licenses and the possibility of making the research data gradationally accessible (R1.1).
                     </p>
                 </div>
-                <div type="div2" rend="DH-Heading2">
+                <div rend="DH-Heading2" type="div2">
                     <head>Domain-Specific Perspectives on FAIR</head>
                     <p style="text-align: left; ">A large set of primary data in the priority program is beyond copyright by age, thus licenses for reuse in research and education are unproblematic. The remaining smaller set of data can be restricted by personal rights (studies) or individual copyright negotiations with authors, publishers, or libraries. In the community, there is a large interest to make data as accessible as possible and provide secure licenses (R1.1). Still for some aspects there are no clear solutions or test cases, such as the context necessary in derived formats (Schöch et al. 2020). The matter is regularly discussed in a working group on copyright within the program. </p>
                     <p style="text-align: left; ">Schemes to capture provenance metadata (R1.2) are still evolving in the DH domains (cf. Gärtner et al. 2018). In contrast to e.g., the life sciences the objective is not a fully automatically reproducible workflow, but an equal treatment of automatic and manual steps which pose the domain-specific challenge. Individual documentation is available as well as commit histories from GitHub repositories.
-                        <note place="foot" xml:id="ftn3" n="3">
+                        <note xml:id="ftn3" n="3" place="foot">
                             <p style="text-align: left; "> GitHub, 
                                 <ref target="https://github.com/">
                                     <hi rend="underline color(0000FF)">https://github.com</hi>
@@ -135,17 +135,17 @@
                         </note> So overall these aspects are evolving along the lines of FAIR. 
                     </p>
                     <p style="text-align: left; ">Regarding interoperability (I1/2/3) and the relevance of attributes (R1) and standards (R1.3) the CLS requires to distinguish between resource-related metadata, content-related metadata, and data from annotations. Resource-related metadata is and can be based on DataCite (cf. F2 above), whereas more domain-specific metadata ranges from information on time period, genre and author uncertainty over technical settings like encoding (e.g., TEI variants) to the overall application of very different methodologies (see Figure 3) which comprises the existence of specific annotation layers as well as different segmentation schemes. Thereby neither content-related metadata nor annotation categories can come with a fixed, agreed on, common vocabulary since these categories are an integral part of the research (outcome) itself.
-                        <note place="foot" xml:id="ftn4" n="4">
+                        <note xml:id="ftn4" n="4" place="foot">
                             <p style="text-align: left; "> Regarding annotations, Eckart and Heid (2014) argue for a separation of content-related interoperability and representation format-related interoperability. For the latter we found the projects in the priority program to agree on CATMA (Gius et al. 2018-2021) using its own TEI Export Format.</p>
                         </note> Still this vocabulary poses the basis for search, exploration and the FAIRness of the built resources.
                     </p>
                     <figure>
-                        <graphic n="1003" width="15.926152777777778cm" height="10.36813888888889cm" url="Pictures/79fde69aa44a9c0dcae7e3eb5ca74744.png" rend="inline"/>
-                    </figure>
-                    <p style="text-align: left; ">Figure 3: Used methods and tools within the program.</p>
+                        <graphic height="10.36813888888889cm" n="1003" rend="inline" url="Pictures/79fde69aa44a9c0dcae7e3eb5ca74744.png" width="15.926152777777778cm"/>
+                    <head style="text-align: left; ">Figure 3: </head><p>Used methods and tools within the program.</p></figure>
+                    
                 </div>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Conclusion</head>
                 <p style="text-align: left; ">While different domain-specific as well as generic/institutional repositories meet the FAIR principles at least partially, Zenodo (also in combination with GitHub) is the closest infrastructure to the FAIR principles which is used in the context of the program. Nevertheless, it is still difficult to make research data stored in generic/institutional repositories findable for specific research communities, especially since a domain-specific metadata scheme is missing. Moreover, a common vocabulary for such a scheme possibly cannot exist without losing relevant content, differing between research fields within the domain. This problem is of course addressed by some more domain-specific infrastructures but still a comprehensive and domain-specific description model for the CLS is not existing.</p>
                 <p style="text-align: left; ">In sum, without domain-specific metadata schemes, sustainable infrastructures and guiding legal implementations of copyright handling for the CLS, the FAIR principles can hardly be addressed in their entirety in this research domain.</p>

@@ -72,18 +72,18 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Asian studies</term>
                     <term>intangible cultural heritage</term>
                     <term>Knowledge organization</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Asia</term>
                     <term>English</term>
                     <term>20th Century</term>
@@ -99,26 +99,26 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Introduction</head>
                 <p style="text-align: left; ">Since the 2003 UNESCO convention stated the importance of preserving intangible cultural heritage (ICH), numerous efforts were undertaken to expand traditional cultural heritage to encompass immaterial aspects. However, the boundaries of what should be intended as ICH are not set: the intangible element can be found in such areas as the aesthetics (e.g. performing arts), epistemology (style, semiotics) and transmission (oral history) of culture.</p>
                 <p style="text-align: left; ">Treating martial arts as cultural heritage potentially incorporates all these categories of immateriality 
                     <ref target="#bookmark10">(Hou, Picca, Egloff, &amp; Adamou,</ref>
                     <ref target="#bookmark10">2021).</ref> The Hong Kong Martial Arts Living Archive (HKMALA) 
                     <ref target="#bookmark8">(Chao, Delbridge, Kenderdine,</ref>
-                    <ref target="#bookmark8" xml:space="preserve">Nicholson, &amp; Shaw, </ref>
-                    <ref target="#bookmark8" xml:space="preserve">2018), </ref>as a testimony of arts, styles and methods that are passed down onto small communities, is a prominent example of multiple degrees of ICH occurring together. Whilst gathering a mass of audio-visual and motion capture content to visually preserve endangered Southern Chinese cultures (see Figure 
+                    <ref xml:space="preserve" target="#bookmark8">Nicholson, &amp; Shaw, </ref>
+                    <ref xml:space="preserve" target="#bookmark8">2018), </ref>as a testimony of arts, styles and methods that are passed down onto small communities, is a prominent example of multiple degrees of ICH occurring together. Whilst gathering a mass of audio-visual and motion capture content to visually preserve endangered Southern Chinese cultures (see Figure 
                     <ref target="#bookmark0">1),</ref> it offers an opportunity to turn it into structured knowledge, being originally organized around its past run of exhibitions.
                 </p>
                 <p style="text-align: left; ">We present an ongoing endeavor to extract and formalize Hakka martial arts knowledge out of HKMALA content into a knowledge graph of linked datasets, thus offering a ground truth for future research questions on the understanding of cultural contact across martial arts communities. </p>
                 <figure>
-                    <graphic n="1001" width="15.195291666666666cm" height="5.102930555555556cm" url="Pictures/84b15235e21bbd7201ca783660f529c2.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 1: 
-                    <anchor xml:id="bookmark0"/>Overview of HKMALA content types.
-                </p>
+                    <graphic height="5.102930555555556cm" n="1001" rend="inline" url="Pictures/84b15235e21bbd7201ca783660f529c2.png" width="15.195291666666666cm"/>
+                <head style="text-align: left; ">Figure 1: 
+                    </head><p><anchor xml:id="bookmark0"/>Overview of HKMALA content types.
+                </p></figure>
+                
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>A basic ontological framework for martial arts</head>
                 <p style="text-align: left; ">Barring sports or military contexts, no known ontology presents a unified theory of the martial discipline, to form the basis of such a knowledge organization of archival content. As an initial task, this project built one such framework. This is modelled as an ontology network grounded on foundational ontologies, rather than cultural heritage models, but whose modularity reflects the intent to highlight the aesthetic, epistemic and social traits of martial arts (Figure 
                     <ref target="#bookmark1">2).</ref> The identification of which traits to be considered culturally relevant will subsequently be delegated to inference models (rule systems, reasoners) combining domain ontologies with cultural ones like CIDOC-CRM and ArCo 
@@ -129,30 +129,30 @@
                     <ref target="#bookmark7">2021)</ref> for details on our ontology engineering work.
                 </p>
                 <figure>
-                    <graphic n="1002" width="15.522222222222222cm" height="6.766277777777778cm" url="Pictures/b7b7c777c5954034dc9f23490a447ff3.jpg" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 2: 
-                    <anchor xml:id="bookmark1"/>Documented ontology at 
+                    <graphic height="6.766277777777778cm" n="1002" rend="inline" url="Pictures/b7b7c777c5954034dc9f23490a447ff3.jpg" width="15.522222222222222cm"/>
+                <head style="text-align: left; ">Figure 2: 
+                    </head><p><anchor xml:id="bookmark1"/>Documented ontology at 
                     <ref target="https://crossings.github.io/ont/">https://crossings.github.io/ont/</ref>
-                </p>
+                </p></figure>
+                
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Instantiation on the HKMALA content</head>
                 <p style="text-align: left; ">A knowledge organization of HKMALA involves (1) annotating media content of technique demonstrations, MoCap segments and interviews to masters, and (2) indexing these media so that they can be consumed using computational methods like ontology-based data access and semantic query languages like SPARQL. The above ontologies offer a basic framework for a martial arts data domain, yet do not specifically model HKMALA’s Hakka Kung Fu domain: therefore, an instantiation effort is required. This is accomplished, as per Figure 
-                    <ref target="#bookmark2" xml:space="preserve">3, </ref>by:
+                    <ref xml:space="preserve" target="#bookmark2">3, </ref>by:
                 </p>
                 <figure>
-                    <graphic n="1003" width="15.522222222222222cm" height="7.563555555555555cm" url="Pictures/7cf76b5bd5ae0cdfc121e72e0288fb70.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 3: 
-                    <anchor xml:id="bookmark2"/>Pipeline of HKMALA knowledge organization.
-                </p>
+                    <graphic height="7.563555555555555cm" n="1003" rend="inline" url="Pictures/7cf76b5bd5ae0cdfc121e72e0288fb70.png" width="15.522222222222222cm"/>
+                <head style="text-align: left; ">Figure 3: 
+                    </head><p><anchor xml:id="bookmark2"/>Pipeline of HKMALA knowledge organization.
+                </p></figure>
+                
                 <list type="ordered">
                     <item>Constructing the Hakka martial arts dataset from selected sources.</item>
                     <item>Semantically annotating HKMALA media content using terminology lifted from the dataset in question.</item>
                     <item>Iteratively refining our martial arts ontologies to satisfy the versatility required by the media annotation schema.</item>
                     <item>Continuously publishing the knowledge graph resulting from datasets (1,2) as FAIR data 
-                        <ref target="#bookmark9" xml:space="preserve">(Groth &amp; Dumontier, </ref>
+                        <ref xml:space="preserve" target="#bookmark9">(Groth &amp; Dumontier, </ref>
                         <ref target="#bookmark9">2020).</ref>
                     </item>
                 </list>
@@ -167,36 +167,36 @@
                     FlowTransmissionType should be formalized.
                 </p>
                 <p style="text-align: left; ">The dataset and annotations (4) are published in formats compliant with the Linked Data standards (i.e. Turtle, N-Triples and JSON-LD), both on GitHub
-                    <note place="foot" xml:id="ftn1" n="1">
+                    <note xml:id="ftn1" n="1" place="foot">
                         <p rend="footnote text"> CROSSINGS knowledge graph sources, 
                             <ref target="https://github.com/CROSSINGS/kg">https://github.com/CROSSINGS/kg</ref>
                         </p>
                     </note> and on Zenodo
-                    <note place="foot" xml:id="ftn2" n="2">
+                    <note xml:id="ftn2" n="2" place="foot">
                         <p rend="footnote text"> DOI for data citation: 
                             <ref target="https://doi.org/10.5281/zenodo.5886867">https://doi.org/10.5281/zenodo.5886867</ref>
                         </p>
                     </note>
-                    <ref target="#bookmark4" xml:space="preserve"> </ref>and following a rolling release / continuous update model. The choice of representation formats and publishing channels was driven by the need to a) ensure data FAIRness and the ability to load them onto any triple store for querying; b) ease of availability for programming libraries to download and use the data in client code, as exemplified in the concluding section.
+                    <ref xml:space="preserve" target="#bookmark4"> </ref>and following a rolling release / continuous update model. The choice of representation formats and publishing channels was driven by the need to a) ensure data FAIRness and the ability to load them onto any triple store for querying; b) ease of availability for programming libraries to download and use the data in client code, as exemplified in the concluding section.
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Conclusions</head>
                 <p style="text-align: left; ">Aiming at creating a gold standard for building knowledge graphs on martial arts, we offer data and annotations for a subset of the HKMALA content that was originally made publicly available
-                    <note place="foot" xml:id="ftn3" n="3">
+                    <note xml:id="ftn3" n="3" place="foot">
                         <p rend="footnote text"> Hakka Kung Fu portal, 
                             <ref target="http://www.hakkakungfu.com/">http://www.hakkakungfu.com/</ref>
                         </p>
                     </note>,
-                    <ref target="#bookmark5" xml:space="preserve"> </ref>with a view on extending it to the entire archive in the future.
+                    <ref xml:space="preserve" target="#bookmark5"> </ref>with a view on extending it to the entire archive in the future.
                 </p>
                 <p style="text-align: left; ">The next step is to align our datasets with the open data cloud: although full third-party coverage is not expected for our domain, Wikidata offers limited authority coverage for some masters, techniques and most importantly geographical and ethnological coordinates.</p>
                 <p style="text-align: left; ">The project will provide a way to programmatically consume public HKMALA media through an extension of the DHTK Python library, an ontology- based computational model for Humanities data access 
-                    <ref target="#bookmark11" xml:space="preserve">(Picca &amp; Egloff, </ref>
+                    <ref xml:space="preserve" target="#bookmark11">(Picca &amp; Egloff, </ref>
                     <ref target="#bookmark11">2017).</ref>
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Acknowledgement </head>
                 <p style="text-align: left; ">This work was supported by CROSSINGS - Computational Interoperability for Intangible and Tangible Cultural Heritage, a project in Collaborative Research on Science and Society (CROSS 2021). The authors also acknowledge the 
                     <hi rend="italic">Hong Kong Martial Arts Living Archive</hi>, a research collaboration between the International Guoshu Association, City University of Hong Kong, and the Laboratory of Experimental Museology at EPFL.

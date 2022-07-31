@@ -92,37 +92,39 @@
             </p>
             <p>While language identification is a common task in natural language processing, most of the available software casts this as a multi-class classification task, where only a single language can be assigned to a textual document. In the present case, involving code-switching as a signature feature, multiple languages can be simultaneously present in a document, thus turning this task effectively into a multilabel classification problem. We finetuned a bespoke multilabel classifier on top of a pretrained BERT (Devlin et al., 2019) feature extractor (the ‘bert-base-multilingual-uncased’ model). We only considered messages where the target language(s) could be identified and divided these into a train, validation and test set of 10,000 social media messages (containing 7,304, and 2 x 913 instances respectively). We manually annotated for the presence/absence of Tagalog/Filipino, Cebuano, and English respectively. We compared the performance of this SOTA approach to a simpler baseline, consisting of a conventional multitarget classifier in the form of a random forest (RF) (Pedregosa et al., 2011) of 16,156 manually annotated entries (with a train, validation and test set of 12,998 entries, and 2 x 2,294 instances), trained on top of a TF-IDF representation of a vocabulary character n-grams (for 2 ≤ n ≤ 6) (see details Table 2 below). Finally, we applied the BERT language detector (with the weights that optimized the validation performance) to the unseen data.</p>
             <figure>
-                <graphic n="1001" width="16.51cm" height="12.767027777777777cm" url="Pictures/a78132cd8e7aedacc7882e711a4a99a2.jpg" rend="inline"/>
-            </figure>
+                <graphic height="12.767027777777777cm" n="1001" rend="inline" url="Pictures/a78132cd8e7aedacc7882e711a4a99a2.jpg" width="16.51cm"/>
+            <head>Table 1</head>
             <p style="text-align: center;">
-                <hi rend="italic">Table 1</hi> – Number of entries per language in Test, Train and Validation Sets
+                Number of entries per language in Test, Train and Validation Sets
             </p>
+            </figure>
             <figure>
-                <graphic n="1002" width="16.51cm" height="6.058958333333333cm" url="Pictures/d4f50e63a4596d8df7d73984fb711076.jpg" rend="inline"/>
-            </figure>
+                <graphic height="6.058958333333333cm" n="1002" rend="inline" url="Pictures/d4f50e63a4596d8df7d73984fb711076.jpg" width="16.51cm"/>
+            <head>Table 2</head>
             <p style="text-align: center;">
-                <hi rend="italic" xml:space="preserve">Table 2 </hi>– Test Accuracies
+                Test Accuracies
             </p>
+            </figure>
             <p rend="DH-Heading1">Findings</p>
             <p>Both classifiers were able to demonstrate similar general trends: Tagalog/Filipino entries were the most common overall (Figures 1 and 2). Regionally, more diverse language use is noticeable. Cebuano comments were prominent in at least two Cebu-based newspapers, while the Mindanao Times and Sun Star Davao featured Tagalog/Filipino as the most-used language, followed by English and Cebuano (Figures 3 and 4), suggesting the usage of Tagalog/Filipino even where Visayan languages are prominent. Despite the presence of monolingual English-language newspapers, the fact that current events are 
                 <hi rend="bold">written about</hi> and responded to by a multilingual Philippine public sphere is often obscured. Social media thus offers opportunities not only for re-thinking monolingual norms in media, but may also act as a forum for revitalizing written forms of regional languages, while acting as a potent corpus and resource for codeswitching and informal written language for automatic language identifiers. 
             </p>
             <figure>
-                <graphic n="1003" width="16.002cm" height="10.16cm" url="Pictures/2cdae206e88ba36526f21f63f66ed5b2.jpg" rend="inline"/>
-            </figure>
-            <p style="text-align: center;">Fig. 1 – Language Use (BERT)</p>
+                <graphic height="10.16cm" n="1003" rend="inline" url="Pictures/2cdae206e88ba36526f21f63f66ed5b2.jpg" width="16.002cm"/>
+            <head style="text-align: center;">Fig. 1 </head><p>Language Use (BERT)</p></figure>
+            
             <figure>
-                <graphic n="1004" width="16.002cm" height="9.958916666666667cm" url="Pictures/388e0103a0f2124ffa217b7df18d7abe.jpg" rend="inline"/>
-            </figure>
-            <p style="text-align: center;">Fig. 2 – Language Use (RF)</p>
+                <graphic height="9.958916666666667cm" n="1004" rend="inline" url="Pictures/cruz-figure-2.jpg" width="16.002cm"/>
+            <head style="text-align: center;">Fig. 2 </head><p>Language Use (RF)</p></figure>
+            
             <figure>
-                <graphic n="1005" width="16.51cm" height="7.796388888888889cm" url="Pictures/79a7b5790618d78eef70d453f8a45b22.jpg" rend="inline"/>
-            </figure>
-            <p style="text-align: center;">Fig. 3 – Languages per Newspaper (BERT)</p>
+                <graphic height="7.796388888888889cm" n="1005" rend="inline" url="Pictures/79a7b5790618d78eef70d453f8a45b22.jpg" width="16.51cm"/>
+            <head style="text-align: center;">Fig. 3 </head><p>Languages per Newspaper (BERT)</p></figure>
+            
             <figure>
-                <graphic n="1006" width="16.51cm" height="7.549444444444444cm" url="Pictures/e1a12a1c363b4b20a5323f8e72d50c48.jpg" rend="inline"/>
-            </figure>
-            <p style="text-align: center;">Fig. 4 – Languages per Newspaper (RF)</p>
+                <graphic height="7.549444444444444cm" n="1006" rend="inline" url="Pictures/e1a12a1c363b4b20a5323f8e72d50c48.jpg" width="16.51cm"/>
+            <head style="text-align: center;">Fig. 4 </head><p>Languages per Newspaper (RF)</p></figure>
+            
         </body>
         <back>
             <div type="bibliogr">

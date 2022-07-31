@@ -410,8 +410,8 @@
                         <cell style="text-align: left;" rend="DH-Default center">334</cell>
                         <cell style="text-align: left;" rend="DH-Default center">1</cell>
                     </row>
+                <head style="text-align: left; ">Table 1: Summary of the corpus containing works of Lu Xun, Zhou Zuoren, “Du Ying”, and “Du”. Four distinct validation samples of Zhou are combined to make two longer texts.</head>
                 </table>
-                <p style="text-align: left; ">Table 1: Summary of the corpus containing works of Lu Xun, Zhou Zuoren, “Du Ying”, and “Du”. Four distinct validation samples of Zhou are combined to make two longer texts.</p>
                 <p style="text-align: left; ">We then search for texts which we are certain give us information about the brothers’ classical writing styles. The texts gathered are written using classical non-fictional prose and were published roughly at the same time relative to the disputed works. With these controls in place, we mitigate concerns about the possible influence on writing style of time (Glover and Hirst,1996), genre (Kestemont et al., 2012), and register (Wang et al., 2021). With the exception of six essays reserved for validation, these texts are used for training. Validation texts are chosen such that they have somewhat different topics than the training samples. Classification accuracy on the validation texts should give us some rough sense of how well the classifier performs. The training and validating texts are from self-edited collections of the authors. Hence their authorship is not in question.</p>
                 <div type="div2" rend="DH-Heading2">
                     <head>Preprocessing</head>
@@ -587,8 +587,8 @@
                         <cell style="text-align: left;" rend="DH-Default">uncertain</cell>
                         <cell style="text-align: left;" rend="DH-Default">low confidence</cell>
                     </row>
+                <head style="text-align: left; ">Table 2: Summary of the authorship attribution results.</head>
                 </table>
-                <p style="text-align: left; ">Table 2: Summary of the authorship attribution results.</p>
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Discussion</head>

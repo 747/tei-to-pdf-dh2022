@@ -75,20 +75,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Object Detection</term>
                     <term>Smell</term>
                     <term>Digital Heritage</term>
                     <term>Computer Vision</term>
                     <term>Transfer Learning</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Global</term>
                     <term>Europe</term>
                     <term>English</term>
@@ -106,19 +106,19 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>Introduction</head>
                 <p>Smells are an important, yet overlooked part of cultural heritage (Bembibre and Strlič, 2017). TheOdeuropa project
-                    <note xml:id="ftn1" place="foot" n="1">https://odeuropa.eu</note> analyzes large amounts of visual and textual corpora toinvestigate the cultural dimensions of smell in 16th – 20th century Europe.The study of pictorial representations bears a specific challenge: the substrate of smell is usually invisible (Marx, 2021). Object detection is a well-researched computer vision technique, and sowe start with the recognition of objects, which may then serve as a basisfor the indirect recognition of more complex, and possibly more meaningful,smell references such as gestures, spaces, or iconographic allusions (Zinnen, 2021).
+                    <note xml:id="ftn1" n="1" place="foot">https://odeuropa.eu</note> analyzes large amounts of visual and textual corpora toinvestigate the cultural dimensions of smell in 16th – 20th century Europe.The study of pictorial representations bears a specific challenge: the substrate of smell is usually invisible (Marx, 2021). Object detection is a well-researched computer vision technique, and sowe start with the recognition of objects, which may then serve as a basisfor the indirect recognition of more complex, and possibly more meaningful,smell references such as gestures, spaces, or iconographic allusions (Zinnen, 2021).
                 </p>
                 <p>
                     <figure>
                         <graphic url="Pictures/9fe30b6001764fc21d5cad2cfca0f9cd.jpg"/>
-                        <head>Figure 1: Smell. The Five Senses. 1558 – 1617. Jan Pietersz Saenredam. National Gallery of Art.</head>
-                    </figure>However, the detection of olfactory objects in historical artworks is achallenging task. The visual representation of objects differs significantlybetween artworks and photographs (Hall et al., 2015). Since state-of-the-art object detectionalgorithms are trained and evaluated on large-scale photographic datasetssuch as ImageNet (Russakovsky et al., 2015), MS COCO (Lin et al., 2014), or OpenImages (Kuznetsova et al., 2020), their performancedrops significantly when applied to artistic data. This domain gap betweenstandard object detection datasets and artistic imagery can be mitigatedby training directly on artworks, either by using existing datasets or bycreating an annotated dataset for the target domain. Another challengeis the mismatch between object categories present in modern datasets andhistorical olfactory objects, caused by historical diachrony on the one hand (Marinescu et al., 2020), and the particularity of some smell-relevant objects on the other (Ehrich et al., 2021).
+                        <head>Figure 1: </head>
+                    <p>Smell. The Five Senses. 1558 – 1617. Jan Pietersz Saenredam. National Gallery of Art.</p></figure>However, the detection of olfactory objects in historical artworks is achallenging task. The visual representation of objects differs significantlybetween artworks and photographs (Hall et al., 2015). Since state-of-the-art object detectionalgorithms are trained and evaluated on large-scale photographic datasetssuch as ImageNet (Russakovsky et al., 2015), MS COCO (Lin et al., 2014), or OpenImages (Kuznetsova et al., 2020), their performancedrops significantly when applied to artistic data. This domain gap betweenstandard object detection datasets and artistic imagery can be mitigatedby training directly on artworks, either by using existing datasets or bycreating an annotated dataset for the target domain. Another challengeis the mismatch between object categories present in modern datasets andhistorical olfactory objects, caused by historical diachrony on the one hand (Marinescu et al., 2020), and the particularity of some smell-relevant objects on the other (Ehrich et al., 2021).
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>Methodology</head>
                 <p>To overcome the domain gap and category mismatch between our applicationand the existing datasets, we apply transfer learning – a training strategy where machine learning algorithms are pre-trained in one domain and then
                     fine-tuned in another, greatly decreasing the amount of required training
@@ -133,8 +133,8 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/4c8fb31c075f7647a94543e810231196.jpg"/>
-                        <head>Figure 2: Category overlap between Odeuropa &amp; OpenImages categories</head>
-                    </figure>
+                        <head>Figure 2: </head>
+                    <p>Category overlap between Odeuropa &amp; OpenImages categories</p></figure>
                     A common transfer learning procedure is to use detection backbones that
                     have been pre-trained on ImageNet and fine-tune them for object detection
                     (Zhuang et al., 2020). We expand this strategy by an additional pre-training step, where we
@@ -146,9 +146,9 @@
                 <p>For pre-training, we use three
                     <figure>
                         <graphic url="Pictures/d73bbd40f2d9f33c98b7a32f85748003.jpg"/>
-                        <head>Figure 3: Category overlap between Odeuropa &amp; OpenImages categories</head>
-                    </figure>different datasets, deviating to varying
-                    amounts from our olfactory artworks dataset in terms of categories and style(table 1): a) Same Categories, Different Styles - A subset of OpenImages (OI)
+                        <head>Figure 3: </head>
+                    <p>Category overlap between Odeuropa &amp; OpenImages categories</p></figure>different datasets, deviating to varying
+                    amounts from our olfactory artworks dataset in terms of categories and style (table 1): a) Same Categories, Different Styles - A subset of OpenImages (OI)
                     containing only odor objects results in a complete category match (fig. 2);
                     however, since OpenImages contains only photographs, there is a considerable
                     style difference. b) Different Categories, Same Styles - We apply two object
@@ -156,7 +156,7 @@
                     style but contain different object categories, namely IconArt (IA,Gonthier et al., 2018) and
                     PeopleArt (PA,Westlake et al., 2016).
                 </p>
-                <table rend="frame" xml:id="Table3">
+                <table xml:id="Table3" rend="frame">
                     <head>Table 2: Evaluation of object detection performance. The best performing model pre-trained with OI achieves an improvement of 6.5% pascal VOC mAP, and 3.4% COCO mAP over the baseline method without intermediate training. We report the evaluation for each pre-training dataset, averaged over five models, fine-tuned for 50 epochs on our olfactory artworks datasets. Best evaluation results are highlighted in bold. The merge of two datasets D1 and D2 is written as D1 <hi rend="math">∪</hi> D2.</head>
                     <row>
                         <cell rend="start color(#000000)">Dataset</cell>
@@ -184,7 +184,7 @@
                     </row>
                 </table>
             </div>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>Results</head>
                 <p>To ensure a fair comparison between the different pre-training datasets, we
                     reduce each of the datasets to the same size, train three models, and select
@@ -200,7 +200,7 @@
                     the first, we fine-tune the whole network, including the backbone, to assess
                     the detection performance under realistic conditions (table 2).
                 </p>
-                <table rend="frame" xml:id="Table1">
+                <table xml:id="Table1" rend="frame">
                     <head>Table 3: Evaluation of object detection performance for fine-tuning of thedetection heads only. All pre-training schemes increase the detection perfor-mance, while pre-training with OI leads to the best results with an increaseof 7.7% mAP 50 or 4% COCO mAP. For every pre-training dataset, we report the evaluation averaged over five models, fine-tuned for 50 epochs onour olfactory artworks datasets each. Best evaluation results are marked in bold. The merge of two datasets D1 and D2 is written as D1 <hi rend="math">∪</hi> D2.</head>
                     <row>
                         <cell rend="start color(#000000)">Pretraining Dataset</cell>
@@ -268,8 +268,8 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/639e1dd8be249c00d9297c2c541f2c3b.jpg"/>
-                        <head>Figure 4: Figure 4: Exemplary object predictions for a detection model without intermediate training (left), with PeopleArt pretraining (middle), and ground truth bounding boxes (right). Painting: Boy holding a pewter tankard, by a still life of a duck, cheeses, bread and a herring. 1625 – 1674. Gerard van Honthorst. RKD Digital Collection (https://rkd.nl/explore/images/287165).</head>
-                    </figure>We observe
+                        <head>Figure 4: </head>
+                    <p>Exemplary object predictions for a detection model without intermediate training (left), with PeopleArt pretraining (middle), and ground truth bounding boxes (right). Painting: Boy holding a pewter tankard, by a still life of a duck, cheeses, bread and a herring. 1625 – 1674. Gerard van Honthorst. RKD Digital Collection (https://rkd.nl/explore/images/287165).</p></figure>We observe
                     a performance increase for all used pre-training datasets, with an increase
                     of 6.5%/3,4% boost in mAP 50 and COCO mAP, respectively, for the best
                     performing pre-training scheme, which was achieved using the OI dataset.
@@ -280,7 +280,7 @@
                     representations that have been learned using the different pre-training schemes
                     (table 3).
                 </p>
-                <table rend="frame" xml:id="Table2">
+                <table xml:id="Table2" rend="frame">
                     <row>
                         <cell rend="start color(#000000)">Pretraining Dataset</cell>
                         <cell rend="start color(#000000)">Pascal mAP (%)</cell>

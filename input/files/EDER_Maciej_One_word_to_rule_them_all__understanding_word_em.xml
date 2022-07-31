@@ -203,22 +203,22 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/ec05d02e1327a0fa9c8111dc9b4c4f45.png"/>
-                        <head>Fig. 1: UMAP projection of the sponge-vectors “the” with their 20 immediate contextual neighbors (cosine similarity, repeated neighbors were represented only once).</head>
-                    </figure>
+                        <head>Fig. 1: </head>
+                    <p>UMAP projection of the sponge-vectors “the” with their 20 immediate contextual neighbors (cosine similarity, repeated neighbors were represented only once).</p></figure>
                 </p>
                 <p>Secondly, we notice that performance is strongly related to the frequencies of quasi-tokens (Fig. 2), suggesting that the more access to parts of target text we have, the better. However, the position of the tokens themselves did not matter: best dummy-sponge performance was at the level of best MFW-sponges performance.</p>
                 <p>
                     <figure>
                         <graphic url="Pictures/c80aad387ead2b09b4a6f707e42b0bcd.png"/>
-                        <head>Fig. 2: Linear model that predicts decrease in accuracy with increase in log-frequency rank. Increase in each log-unit in quasi-token frequency rank results in ~18% accuracy drop. Points are showing original accuracy scores from cross-validation</head>
-                    </figure>
+                        <head>Fig. 2: </head>
+                    <p>Linear model that predicts decrease in accuracy with increase in log-frequency rank. Increase in each log-unit in quasi-token frequency rank results in ~18% accuracy drop. Points are showing original accuracy scores from cross-validation</p></figure>
                 </p>
                 <p>Thirdly, it turned out that the position of tokens didn’t affect the classification results, and the same could be said about the original structure of the text, suggesting that the word order (and thus the context) is neglectable for attribution. If all the words across all the novels were randomly shuffled, the performance of dummy-sponges stayed at the same level. Representation of word semantics became meaningless, but the attribution task was still brute-forced by the information retained by the sponges.</p>
                 <p>
                     <figure>
                         <graphic url="Pictures/931e3cf8e5d29e2de66a4a9c0cc5b89f.png"/>
-                        <head>Fig. 3: Results for dummy-sponges in original texts (left). Results for dummy sponges that “soak context” in randomly shuffled pools of words (right).</head>
-                    </figure>
+                        <head>Fig. 3: </head>
+                    <p>Results for dummy-sponges in original texts (left). Results for dummy sponges that “soak context” in randomly shuffled pools of words (right).</p></figure>
                 </p>
                 <p>Furthermore, in a scenario when only 500 most frequent words were left in the original texts, while the remaining words were replaced by flat fillers (e.g. “DUMMY DUMMY DUMMY was DUMMY in the DUMMY DUMMY”), our sponge approach was still able to produce accurate attributions (albeit worse, with median accuracy at 0.81).</p>
             </div>

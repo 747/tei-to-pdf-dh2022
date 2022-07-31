@@ -43,19 +43,19 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>drama</term>
                     <term>social network analysis</term>
                     <term>co-reference</term>
                     <term>computational literary studies</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>18th Century</term>
@@ -71,7 +71,7 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>
                     <anchor xml:id="id__x8l393ydst2t"/>Introduction
                 </head>
@@ -84,22 +84,22 @@
                 </p>
                 <p>We therefore focus on the social event of characters mentioning each other, while the mentioned character is not present on stage.
                     <hi rend="sup">
-                        <note xml:id="ftn1" place="foot" n="1">Called “Cognition Event” in Agarwal et al. (2010).</note>
+                        <note xml:id="ftn1" n="1" place="foot">Called “Cognition Event” in Agarwal et al. (2010).</note>
                     </hi> In order to access this information, we make use of a corpus of annotated co-references and speaker tags.
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>
                     <anchor xml:id="id__p1x6hissgxz1"/>Application of Co-reference Networks
                 </head>
                 <p>The following networks are constructed on data from 31 plays annotated for co-reference (Pagel &amp; Reiter, 2020).
                     <hi rend="sup">
-                        <note xml:id="ftn2" place="foot" n="2">The data used in this paper is available at 
+                        <note xml:id="ftn2" n="2" place="foot">The data used in this paper is available at 
                             <ptr target="https://doi.org/10.5281/zenodo.4792311"/>.
                         </note>
                     </hi> These annotations build upon the TEI-annotations of the DraCor initiative (Fischer et al., 2019), which provides the co-presence information.
                     <hi rend="sup">
-                        <note xml:id="ftn3" place="foot" n="3">TEI-XML available from 
+                        <note xml:id="ftn3" n="3" place="foot">TEI-XML available from 
                             <ptr target="https://github.com/dracor-org/gerdracor"/>
                         </note>
                     </hi>
@@ -108,10 +108,10 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/0df970efe5fb1c2c8c2cade7697af274.png"/>
-                    </figure>
-                </p>
-                <p>Fig. 1: Network of
-                    <hi rend="italic">Miß Sara Sampson</hi> with co-reference information. Node size is scaled according to weighted degree.
+                <head>Fig. 1: </head>
+                    <p>Network of
+                        <hi rend="normal">Miß Sara Sampson</hi> with co-reference information. Node size is scaled according to weighted degree.
+                </p></figure>
                 </p>
                 <p>play 
                     <hi rend="italic">Miß Sara Sampson</hi>. Each node represents a character in the play and each edge represents a mention made by one character about another character. The direction of the
@@ -122,7 +122,7 @@
                     <hi rend="italic">Marwood</hi> receive a higher weighted degree compared to the other characters, showing that the network models character importance to a certain degree, just like a co-presence network would.
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>
                     <anchor xml:id="id__1flbchmjbc9w"/>Comparison to Co-presence Networks
                 </head>
@@ -134,10 +134,10 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/822f627804278372c96742a0da6561ca.png"/>
-                    </figure>
-                </p>
-                <p>Fig. 2: Network of 
-                    <hi rend="italic">Miß Sara Sampson</hi> with co-presence information. Node size according to weighted degree.
+                <head>Fig. 2: </head>
+                    <p>Network of 
+                        <hi rend="normal">Miß Sara Sampson</hi> with co-presence information. Node size according to weighted degree.
+                </p></figure>
                 </p>
                 <p>A reader of the play will be able to make several observations: Sir William is often not present on stage, but plays an important role in the plot and in the decision making of Sara and Mellefont. Furthermore, Marwood plays a more important role in the overall plot of the play than Betty does. However, quantitatively, this only really becomes apparent when comparing and juxtaposing the two different networks.</p>
                 <p>We can also see this complementary nature when abstracting away from looking at the pure networks and comparing the development of weighted degree during the course of the play.</p>
@@ -146,23 +146,22 @@
                     <hi rend="italic">Mellefont</hi> and 
                     <hi rend="italic">Marwood</hi> when constructed from information available for each scene of the play. For example, for Scene 1, a co-presence network with all co-presences of the character in this scene is constructed and the weighted degree is computed based on this network. The same is done for all further scenes and separately for all coreferent mentions of a character. We can clearly see that especially Marwood and Sara are frequently mentioned in scenes from which they are physically absent.
                     <hi rend="sup">
-                        <note xml:id="ftn4" place="foot" n="4">This type of observation can also be explored in a comparison of active and passive stage presence, see for example Willand et al. (2020).</note>
+                        <note xml:id="ftn4" n="4" place="foot">This type of observation can also be explored in a comparison of active and passive stage presence, see for example Willand et al. (2020).</note>
                     </hi>
                 </p>
                 <p>
                     <figure>
                         <graphic url="Pictures/6144336a823ef27bd53db33c42fd658f.png"/>
-                    </figure>
-                </p>
-                <p>Fig. 3: Development of weighted degree per scene for co-presence and co-reference in 
-                    <hi rend="italic">Miß Sara Sampson</hi>.
+                    <head>Fig. 3: </head><p>Development of weighted degree per scene for co-presence and co-reference in 
+                        <hi rend="normal">Miß Sara Sampson</hi>.
+                </p></figure>
                 </p>
                 <p>Lastly, when looking at a comparison of all annotated 31 plays, seen in Table 1, the overall averaged values for different centrality measures, namely degree, betweenness, closeness and eigenvector centrality (cf. Newman, 2010, chap. 7), are higher for co-reference networks than for co-presence networks, except for closeness
                     <hi rend="sup">
-                        <note xml:id="ftn5" place="foot" n="5">The fact that closeness is lower for co-reference networks when compared to co-presence networks is to be expected, since networks with a fewer number of edges have a higher chance to receive higher closeness values per node. However, as the difference is rather small, it is difficult to make generalisations about the differences between the two network types with regards to closeness and based on the data.</note>
+                        <note xml:id="ftn5" n="5" place="foot">The fact that closeness is lower for co-reference networks when compared to co-presence networks is to be expected, since networks with a fewer number of edges have a higher chance to receive higher closeness values per node. However, as the difference is rather small, it is difficult to make generalisations about the differences between the two network types with regards to closeness and based on the data.</note>
                     </hi>. At the same time, the standard deviations for the measures are comparable. This shows that while capturing the same phenomenon, which is the importance of characters in the social constellations of the plays, individual characters receive higher importance depending on co-presence or co-reference, and as such, the complementary information that both approaches provide can also be seen on a larger scale.
                 </p>
-                <table rend="frame" xml:id="Table1">
+                <table xml:id="Table1" rend="frame">
                     <row>
                         <cell/>
                         <cell>Centrality Measure</cell>
@@ -211,10 +210,10 @@
                         <cell>0.47</cell>
                         <cell>0.33</cell>
                     </row>
+                <head>Tab. 1: Mean values for different centrality measures in either the co-presence or co-reference networks and standard deviation.</head>
                 </table>
-                <p>Tab. 1: Mean values for different centrality measures in either the co-presence or co-reference networks and standard deviation.</p>
             </div>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>
                     <anchor xml:id="id__na4avn9dk4bs"/>Conclusion
                 </head>

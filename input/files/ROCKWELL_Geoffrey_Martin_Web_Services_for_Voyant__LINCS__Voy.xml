@@ -107,20 +107,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Text Analysis</term>
                     <term>Text Visualization</term>
                     <term>Named Entity Recognition</term>
                     <term>Web Services</term>
                     <term>Infrastructure</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>English</term>
                     <term>North America</term>
                     <term>20th Century</term>
@@ -138,7 +138,7 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Introduction</head>
                 <p style="text-align: left; ">It is difficult to identify named entities like people and places in long texts and even more difficult to connect the entities that you find to the rich network of information available on the web. In this paper we describe work supported by the LINCS (Linked Infrastructure for Networked Cultural Scholarship) project to make named entity recognition available to scholars through Voyant and its extension Spyral. In this talk we will:</p>
                 <p style="text-align: left; ">First, describe the development of NSSI, a set of named entity recognition (NER) tools that are also available as web services for other tools like Voyant to use.</p>
@@ -149,29 +149,29 @@
                 <p style="text-align: left; ">Humanists tend to be interested in named people, named places and particular organizations over time. NER tools let humanists identify mentions in text referring to the people, places, organizations and other entities discussed in large collections without having to manually comb through them. Good tools like the Stanford Named Entity Recognizer (Finkel et al. 2005) have been available for some time, but are difficult to use if you are not familiar with command line tools and not connected with other resources.</p>
                 <p style="text-align: left; ">The LINCS project, led by Susan Brown at the University of Guelph, is funded by the Canadian Foundation for Innovation to develop shared infrastructure for linked open data. To that end LINCS is working with teams at the University of Alberta and McGill University to develop new NER tools and to connect them to easy-to-use text analysis environments like Voyant.</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>NSSI</head>
                 <p style="text-align: left; ">NSSI, or NERVE Secure Scalable Infrastructure, is an application that bundles natural language processing tools, making them simple to use and combine into workflows common to the digital humanities (Zafar 2021). This framework was developed as part of the LINCS project, with the intent to decouple the backend NER tools from the existing Named Entity Recognition Vetting Environment (NERVE) user interface developed by the Canadian Writing Research Collaboratory. This separation allows us to continue using those NER services for NERVE, while making them accessible to other tools such as Voyant and Spyral.</p>
                 <p style="text-align: left; ">NSSI’s design focuses on modularity, with each tool connected as a service that can be used individually or within a larger set of steps. For NER in particular, we have integrated Stanford NER which otherwise requires programming knowledge to use, since it does not come with its own API. With NSSI, a tool such as Spyral can make an API call that includes input text or XML and retrieve the named entities when processing completes. In the presentation we will briefly describe the NSSI infrastructure.</p>
                 <figure>
-                    <graphic n="1001" width="16.002cm" height="10.100027777777777cm" url="Pictures/3f40d77e17c9bd0bbd421b51e7b72b5c.png" rend="inline"/>
-                    <head>Figure 1: Experimental RezoViz NER Interface in Voyant</head>
-                </figure>
+                    <graphic height="10.100027777777777cm" n="1001" rend="inline" url="Pictures/3f40d77e17c9bd0bbd421b51e7b72b5c.png" width="16.002cm"/>
+                    <head>Figure 1: </head>
+                <p>Experimental RezoViz NER Interface in Voyant</p></figure>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Voyant and Spyral</head>
                 <p style="text-align: left; ">Voyant Tools is a suite of text analysis and visualization tools that are widely used with over 100,000 users in the last six months. The tools are available in the browser so they don’t need to be installed, though you can download them and run them locally (Rockwell &amp; Sinclair 2016). In the presentation we will show how Voyant can call the NER tools in NSSI and display the found entities as a list for further use. We will also describe the usability testing conducted on ResoViz through the LINCS project.</p>
                 <figure>
-                    <graphic n="1002" width="16.002cm" height="10.100027777777777cm" url="Pictures/cd500b7e6df44dca3c7896f1864d715a.png" rend="inline"/>
-                    <head>Figure 2: ResoViz Social Network Visualization</head>
-                </figure>
+                    <graphic height="10.100027777777777cm" n="1002" rend="inline" url="Pictures/cd500b7e6df44dca3c7896f1864d715a.png" width="16.002cm"/>
+                    <head>Figure 2: </head>
+                <p>ResoViz Social Network Visualization</p></figure>
                 <p style="text-align: left; ">Voyant is also being extended with a notebook programming environment called Spyral (Land et al. 2021; Rockwell et al. 2021). Spyral is, like Observable, an in-browser notebook programming environment that uses JavaScript as the programming language. The difference between Spyral and other notebook environments like Mathematica or Google Colab is that a) the notebooks are maintained on the server so that, again, there is no installation needed and b) Spyral is an extension to Voyant. This means that you can save what you see in Voyant as a notebook with an interactive panel of results embedded in the notebook. Then you can document your results, add more interactive panels, and process the results. In the presentation we will show how Spyral can be used to extend the work with NSSI possible with Voyant and to edit and document results.</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Next Steps</head>
                 <p style="text-align: left; ">The paper will conclude by describing the next steps in the larger project, and those are to allow users to connect named entities in their texts to other data about the entities available through the LINCS triple store and other open data resources like Wikidata (Vrandečić 2012). The ultimate goal is to provide scholars with linked infrastructure where data about entities like people or novels can be annotated and connected with that of other projects.</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Links</head>
                 <p style="text-align: left; ">Google Colaboratory (Colab): https://colab.research.google.com/ </p>
                 <p style="text-align: left; ">LINCS project: https://lincsproject.ca/</p>

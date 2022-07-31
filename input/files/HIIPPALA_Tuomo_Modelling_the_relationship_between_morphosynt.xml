@@ -48,19 +48,19 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Short Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>multimodality</term>
                     <term>diagrams</term>
                     <term>corpora</term>
                     <term>discourse structure</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Global</term>
                     <term>English</term>
                     <term>Contemporary</term>
@@ -83,9 +83,9 @@
             <p style="text-align: left; ">In contrast to the manual analysis in Watanabe and Nagao (1998), we adopt a corpus-driven approach to examine discourse relations between textual and pictorial elements. We extract 2580 discourse relations from the AI2D-RST corpus that hold between pictorial and textual elements, focusing on relations that name entire objects (“identification”) or describe part-whole relations (“elaboration”). We extract the following features for each pair of elements: (1) whether the textual element consists of a nominal, clause, modifier or numeral, (2) the distance between elements in the layout, (3) the angle between pictorial and textual elements, and (4) whether the elements are connected using a line.</p>
             <p style="text-align: left; ">We use the aforementioned features to train a random forest classifier with 10 decision trees to predict whether the textual element names or describes a pictorial element. We use 10-fold cross-validation to evaluate the classifier, which achieves an average macro F1-score of 0.86 (standard deviation: 0.06). An analysis of how much each feature contributes to classification decisions reveals that apart from numerals, linguistic information is largely irrelevant. The distance between the pictorial and textual elements and whether they are connected using a line are the most important features for determining the function of a text element (see Figure below).</p>
             <figure>
-                <graphic n="1001" width="10.7151cm" height="7.1434cm" url="Pictures/bbfb62db0e9187a8e3d4b601779783db.png" rend="inline"/>
-                <head>Figure 1: The importance of each input feature, averaged over ten decision trees. The bars show standard deviation for each feature.</head>
-            </figure>
+                <graphic height="7.1434cm" n="1001" rend="inline" url="Pictures/bbfb62db0e9187a8e3d4b601779783db.png" width="10.7151cm"/>
+                <head>Figure 1: </head>
+            <p>The importance of each input feature, averaged over ten decision trees. The bars show standard deviation for each feature.</p></figure>
             <p style="text-align: left; ">Our results suggest that layout and diagrammatic elements such as arrows and lines are crucial for making inferences about the multimodal discourse structure of diagrams. Detecting textual elements and lines may thus help to unpack the structure of diagrams. This has broader implications to emerging work in digital humanities, particularly within the paradigm of “distant viewing” (Arnold and Tilton 2019) and the growing interest in applying computational methods to multimodal data (Wevers and Smits 2020; Smits and Kestemont 2021). Compared to purely linguistic data, computational treatment of multimodal data in digital humanities rarely addresses fundamental questions such as how to identify basic units of analysis and the discourse relations that hold between them. Understanding the structure of multimodal discourse is a prerequisite for performing more complex analyses that are now regularly pursued using linguistic data, such as tracking semantic shifts. Achieving a similar capability for multimodal data requires a deeper understanding of discourse structures within individual modes of communication, such as the diagrammatic semiotic mode, and how individual modes are combined in multimodal artefacts.</p>
         </body>
         <back>

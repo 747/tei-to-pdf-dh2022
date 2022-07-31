@@ -43,19 +43,19 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Electronic Poster</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>corpus</term>
                     <term>prestige</term>
                     <term>cultural relevance</term>
                     <term>metadata</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>German</term>
@@ -88,12 +88,12 @@
                 <item>Using different forms of visualization, the poster demonstrates the impact of cultural relevance beyond prestige based on a genuine new corpus.</item>
             </list>
             <p>As this corpus includes more than 700 mostly forgotten novellas that were relevant in their contemporary contexts with a wide variety of historical metadata, it overcomes both weaknesses mentioned above.
-                <note xml:id="ftn0" place="foot" n="1"> The corpus is described and can be explored in 
+                <note xml:id="ftn0" n="1" place="foot"> The corpus is described and can be explored in 
                     <ptr target="https://github.com/julianschroeter/19CproseCorpus"/>. 
                 </note>
             </p>
             <p>On the first issue (I), two aspects can be distinguished, the epistemic aspect of criteria for detecting prestige and different concepts of prestige. Table 1 outlines both aspects as two dimensions and provides a new view on prestige. On the poster, this table will be extended to the whole field of relevant research.</p>
-            <table rend="frame" xml:id="Table1">
+            <table xml:id="Table1" rend="frame">
                 <row>
                     <cell rend="bold">concept of relevance</cell>
                     <cell rend="bold">epistemic dimension</cell>
@@ -129,13 +129,13 @@
                     <cell>Expert decision</cell>
                     <cell>ordinal scale of canon status: low, medium, high</cell>
                     <cell>ELTeC-Korpus
-                        <note xml:id="ftn1" place="foot" n="2">Cf. the cost-action project, URL: 
+                        <note xml:id="ftn1" n="2" place="foot">Cf. the cost-action project, URL: 
                             <ref target="https://www.distant-reading.net/">https://www.distant-reading.net/</ref>(accessed December 8, 2022).
                         </note>
                     </cell>
                 </row>
+            <head>Table 1: Conceptual and epistemic dimensions of modeling prestige</head>
             </table>
-            <p>Table 1: Conceptual and epistemic dimensions of modeling prestige</p>
             <p>On the second issue (II), models for representing prestige are presented based on two conceptual dimensions: On the first dimension of context-sensitivity, there are two types of models: The context-insensitive model directly links a specific aspect of prestige to each literary work. The context-sensitive type of model, in contrast, links a specific aspect of prestige relative to a historical situation where the respective aspect of prestige was assigned to the work. The latter model carries the advantage that it facilitates investigating the assignment of prestige as a contingent social practice rather than interpreting prestige as eternal literary value.</p>
             <p>The second dimension is that of a diversity of prestige. Three options are relevant: It is common practice to use only one concept and one epistemic aspect from table 1 as the ›best‹ proxy to cultural relevance. Another practice would be that of merging different epistemic dimensions into one encompassing idea of relevance. This strategy has the advantage that it takes into account different dimensions and provides only one resulting ratio that can be used in downstream tasks as one singular feature. Several shortcomings have to be considered, such as the issue of scaling different epistemic aspects. Finally, there is an option of modeling a multi-dimensional space of relevance that preserves all different aspects.</p>
             <p>On the third issue (III), the historical situation becomes more complex by the fact that historical relevance is not only a matter of prestige but also a matter of circulation. Three more dimensions have to be taken into account:</p>
@@ -148,8 +148,8 @@
             <p>
                 <figure>
                     <graphic url="Pictures/2afb22932a2d225edfece91262e13d2e.png"/>
-                    <head>Figure 1: Circulation volumes for different media</head>
-                </figure>
+                    <head>Figure 1: </head>
+                <p>Circulation volumes for different media</p></figure>
             </p>
             <p>The poster is intended to encourage scholars who are interested in historical insights into literary cultures to discuss the ›next generation‹ of context-sensitive metadata acquisition and representation. Based on a specific historiographical interest in the dependency between media and genre, it aims to provide data-driven ground and methodological reasoning for discussing different options of generating context-sensitive corpora and to provide an argument for the desirability of such corpora in literary studies.</p>
         </body>

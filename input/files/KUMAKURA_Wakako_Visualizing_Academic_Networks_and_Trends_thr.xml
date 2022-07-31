@@ -48,19 +48,19 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Short Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Network analysis</term>
                     <term>acknowledgement analysis</term>
                     <term>Gephi</term>
                     <term>Islam-related Studies</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Asia</term>
                     <term>English</term>
                     <term>Contemporary</term>
@@ -78,15 +78,15 @@
             <p style="text-align: left; ">The source materials used for this study are 120 Islam-related doctoral theses submitted to Japanese universities from the 1950s through the 2010s, as recorded in the CiNii Dissertations database (<ref target="https://ci.nii.ac.jp/d/">https://ci.nii.ac.jp/d/</ref>). The number of Islam-related doctoral theses in Japan began to rise in the 1980s and continued climbing into the 2010s (Fig. 1). Behind this increase in Islam-related doctoral theses seen from the 1990s onward was the introduction of an innovative research platform that transcended the boundaries of the university. In the 2000s, five leading Japanese universities and institutions launched a large-scale collaborative research project with many young researchers participating in both the research and administrative aspects. Moreover, university-level Islam-related studies—previously centered on history courses—shifted to inter-disciplinary studies under this project’s “Islamic Area Studies” framework, a phenomenon reflected by increases in area studies and multi-disciplinary research (Miura, 2004).
             </p>
             <figure>
-                <graphic n="1001" width="16.002288888888888cm" height="7.666cm" url="Pictures/aa3368de1f73a5ff7e0ba9f09852104b.png" rend="block"/>
-            </figure>
-            <p style="text-align: left; text-align: center;">Fig. 1: Number of doctoral theses in Japan (by religion studied)</p>
+                <graphic height="7.666cm" n="1001" rend="block" url="Pictures/aa3368de1f73a5ff7e0ba9f09852104b.png" width="16.002288888888888cm"/>
+            <head style="text-align: left; text-align: center;">Fig. 1: </head><p>Number of doctoral theses in Japan (by religion studied)</p></figure>
+            
             <p style="text-align: left; ">To visualize these social network connections, a graph is created displaying an “acknowledgement network,” placing authors and the scholars acknowledged by those authors as nodes, with edges extending from the acknowledgee to the author (Tian et al., 2021). The area of specialization for each person was taken from records in the KAKEN database of Japanese researchers (<ref target="https://nrid.nii.ac.jp/index/">https://nrid.nii.ac.jp/index/</ref>). This makes it possible to visualize trends for separate academic fields.
             </p>
             <figure>
-                <graphic n="1002" width="16.002cm" height="16.831025cm" url="Pictures/20151f88c33f6ac14483a844af75e60f.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; text-align: center;">Fig. 2: Acknowledgement network since the 2010s</p>
+                <graphic height="16.831025cm" n="1002" rend="inline" url="Pictures/20151f88c33f6ac14483a844af75e60f.png" width="16.002cm"/>
+            <head style="text-align: left; text-align: center;">Fig. 2: </head><p>Acknowledgement network since the 2010s</p></figure>
+            
             <p style="text-align: left; ">Figure 2 shows the resulting acknowledgement network, created using Gephi network visualization software (<ref target="https://gephi.org/">https://gephi.org/</ref>). The number in each node is ID. This visualization of the acknowledgement network based on the doctoral theses since 2010 shows the presence of area studies (in blue) in addition to the history studies (in red) that were considered to be the mainstay of academic circles. Some acknowledgees are connected to multiple authors, indicating that these researchers are considered influential in their academic circle. These acknowledgees comprise the generation of researchers that contributed to the growth of Japan’s “Islamic Area Studies” network in the 2000s and have some formal or informal teacher-student connection to the authors. From the above, we can say there is a definite validity in using an acknowledgement network to visualize academic networks and the steps in establishing and developing academic connectivities. Also, the acknowledgements in the theses, which previously cited mainly the author’s family and academic advisors, have since the 2010s grown to list the names of as many as 10 or more researchers on average. These quantifiable trends reflect not only the increased opportunities for academic interactions as well as more researchers contributing to the completion of doctoral theses but also the given author’s intention to develop ever more public associations with other researchers. This is likely indicative of their aim to enhance their academic reputation by connecting with a larger number of prominent researchers.
             </p>
         </body>

@@ -114,22 +114,18 @@
                 </p>
                 <figure>
                     <graphic n="1001" width="16.51cm" height="13.155083333333334cm" url="Pictures/0f052b2c2b815d1307b767f893086f59.png" rend="inline"/>
+                    <head rend="italic bold">Table 1.</head>
+                    <p rend="italic" xml:space="preserve">PDNC: Tokens, quotations, speakers, total # of addressees recorded, total # of mentions</p>
                 </figure>
-                <p style="text-align: left; ">
-                    <hi rend="italic bold">Table 1.</hi>
-                    <hi rend="italic" xml:space="preserve"> PDNC: Tokens, quotations, speakers, total # of addressees recorded, total # of mentions</hi> 
-                </p>
                 <figure>
                     <graphic n="1002" width="15.158861111111111cm" height="7.701138888888889cm" url="Pictures/1e00a7f855cb2d08fcba044fce104e46.png" rend="inline"/>
                     <head>Screen shot from our custom annotation software.</head>
                 </figure>
                 <figure>
                     <graphic n="1003" width="16.525875cm" height="4.005791666666667cm" url="Pictures/9d6bc40b9f707960c75fceb638518a82.png" rend="inline"/>
+                    <head rend="italic bold">Table 2.</head>
+                    <p rend="italic" xml:space="preserve">Comparison of PDNC with previous quotation attribution corpora</p>
                 </figure>
-                <p style="text-align: left; ">
-                    <hi rend="italic bold">Table 2.</hi>
-                    <hi rend="italic" xml:space="preserve"> Comparison of PDNC with previous quotation attribution corpora</hi>
-                </p>
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Research Applications</head>
@@ -137,11 +133,9 @@
                 <p style="text-align: left; ">We began developing the PDNC primarily to test our quote attribution system (Hammond et al. 2020). The corpus has proven essential to this work, allowing us to compare our systems against state-of-the-art systems like QuoteLi and the BERT-based system in the latest release of BookNLP (see Table 3).</p>
                 <figure>
                     <graphic n="1004" width="15.483416666666667cm" height="12.407194444444444cm" url="Pictures/711166c97c16160c2121a81596e06f7a.png" rend="inline"/>
+                    <head rend="italic bold">Table 3.</head>
+                    <p rend="italic" xml:space="preserve">A comparison of performance of our latest quote attribution system vs. QuoteLi vs. BookNLP. Numbers reported are accuracy scores; best scores are bolded.</p>
                 </figure>
-                <p style="text-align: left; ">
-                    <hi rend="italic bold">Table 3.</hi>
-                    <hi rend="italic" xml:space="preserve"> A comparison of performance of our latest quote attribution system vs. QuoteLi vs. BookNLP. Numbers reported are accuracy scores; best scores are bolded.</hi>
-                </p>
                 <p style="text-align: left; "> Perhaps the largest aim of PDNC is to reorient computational work away from conceiving novels as undifferentiated lumps of text attributed solely to their authors — but rather as complex fabrics of differentiated voices speaking to and about one another, mediated by a narrator. In the paper introducing the tool GutenTag (Hammond and Brooke 2017), one of our authors used a rudimentary version of PDNC to rebut Matthew Jockers’s (2013) claim that female novelists generally write about stereotypically feminine themes. By looking at character voices 
                     <hi rend="italic" xml:space="preserve">within </hi>novels, however, rather than attributing all the novel’s text to its author, we demonstrated that it was female 
                     <hi rend="italic" xml:space="preserve">characters </hi>who discussed these themes — and that Jockers’s results were a secondary consequence of the fact that female authors tended to include far more female characters in their works. By allowing researchers to look 

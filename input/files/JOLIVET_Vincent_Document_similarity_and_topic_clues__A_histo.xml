@@ -89,7 +89,8 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/939965e15c30bd197a0d6756feccdf4b.png"/>
-                    </figure>Figure 1: Three steps for document similarity computing
+                        <head>Figure 1: </head><p>Three steps for document similarity computing</p>
+                    </figure>
                 </p>
                 <p>1. We extract lexical and semantic features: (a) named entities (names, persons and organizations), using a French Spacy (Honnibal, M., Montani, I., 2017: 411) named entity extraction model based on CamemBert (Martin et al., 2019) language-model; and (b) keywords describing each abstract at a section level using KeyBert (Grootendorst, M., 2020), a keyword extractor based on the multilingual DistilBert (Sanh, V. et al., 2019) sentence embeddings library. To do so we apply embedding functions to our texts, mapping raw input data to low-dimensional vector representations. We then calculate the vector distance between the full-text embedding and candidate features embeddings to find the 
                     <hi rend="italic">top-k</hi> candidates (the keywords) that are closest to the full text.
@@ -103,7 +104,9 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/7efe2e7e71430afb5ae86b4c8ed1b90a.png"/>
-                    </figure>Figure 2: Cosine distance statistics in an all vs all (≈ 9M matrix) scheme comparing three embedding methods: our key-distilbert method using the keywords (81 words on average) vs doc2vec and distilbert using the entire document (2013 words on average). var: variance, stdev: standard deviation
+                        <head>Figure 2: </head>
+                        <p>Cosine distance statistics in an all vs all (≈ 9M matrix) scheme comparing three embedding methods: our key-distilbert method using the keywords (81 words on average) vs doc2vec and distilbert using the entire document (2013 words on average). var: variance, stdev: standard deviation</p>
+                    </figure>
                 </p>
                 <p>The statistics (median, mean, variance, standard deviation) indicate that in general the keyword approach, using 25x less amount of text, generates a similarity score very close (± 0.08 - 0.15) to the ones obtained using the full text (see Figure 2) on both methods, also proposing a time calculation 5x faster. This confirmation opens perspectives for the processing of very large corpora insofar as for close similarity scores.</p>
                 <p>Our method has another advantage, which was our initial goal: we provide for each pair of abstracts, in addition to a similarity score, a lexicon of the shared features (keywords and/or named entities) that we believe is useful for interpreting the score. For example, for two given abstracts, their high similarity score of 0.83 is enhanced by the lexicon of shared keywords "library", "manuscript", and "abbey"; these shared features seem to be clues for the semantic interpretation of the similarity. Not all cases are so obvious and the question of the relevance of these lexical clues for interpreting thematic similarities between documents is strongly raised.</p>

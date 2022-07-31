@@ -59,18 +59,18 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Distant Viewing</term>
                     <term>Visualization</term>
                     <term>Object Detection</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Global</term>
                     <term>Europe</term>
                     <term>English</term>
@@ -86,45 +86,45 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>INTRODUCTION</head>
                 <p>Digital humanities have had a strong focus on algorithmic reading of textual data, which has been brought together with visualization for comparing and analyzing results (Jänicke et al., 2017). In recent years, this textual focus has grown to include other modalities such as audio-visual data (Arnold and Tiltion, 2019; Wevers and Smits, 2020). In turn, methods in computer vision (Arnold and Tiltion, 2019) have been proposed for the specificities of audio-visual corpora. As a starting point for distant viewing of medieval illumination, we applied computer vision methods to a dataset of images from manuscripts of the French Marco Polo textual tradition, images that demonstrate a strong visual coherency. Extant in some 15 manuscripts, the Devisement du monde is famous for descriptions of extra-European travel and the depiction of the exotic wonders of Asian cities (Cruse, 2019). We set out to see if repeated visual features across this image corpus are detectable using object detection, what visualization would allow us both to understand better Polo’s depiction of the exotic and how modern image hierarchies might be adapted to the specificities of medieval manuscripts.</p>
                 <p>For image classification and object detection of images, large datasets with class hierarchies exist like ImageNet (Deng et al., 2009) and Open Images (Kuznetsova et al., 2020). These datasets and their underlying hierarchies are neither particularly effective at identifying the wide variety of entities depicted in medieval manuscripts, nor do they detect entities well given the representational density of medieval illumination. Furthermore, there is insufficient data for training these neural networks. In our work, we argue that networks trained on natural image datasets can provide both a first impression (Crowley and Zisserman, 2014), and a convenient starting point for building new classes and hierarchies and they can be even used to extract some initial training samples from small- to medium-sized image corpora.</p>
                 <p>We applied computer vision methods on a dataset of some 700 medieval illuminations from seven manuscripts and built a visual interface to explore and annotate the results. We were interested in the possibility of editing the classes of contemporary hierarchies, replacing them with categories more appropriate for the period and the corpus.</p>
             </div>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>DATA &amp; IMAGE PROCESSING</head>
                 <p>Each image shows a page with a visual scene depicting different aspects of Polo's description. We applied object detection by using the Faster R-CNN (Ren et al., 2015) trained on Open Images. The label hierarchy of Open Images consists of 600 different classes including parent and child relations. The object detection extracts 100 bounding boxes for each image with a confidence score and a label for the detected entity. The result was 71,400 bounding boxes. Furthermore, we extracted image embeddings for each bounding box detected with an EfficientNet (Tan and Le, 2019) trained on ImageNet. For the image embeddings, we use faiss (Johnson et al., 2019) to query the most similar bounding boxes for each example based on the Euclidean distance between the embeddings. This allows us to see the most similar parts of another image to an image of interest.</p>
             </div>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>VISUAL INTERFACE</head>
                 <p>The design of the visual interface facilitates exploration of the image dataset and comparison with different depictions of specific entities. For this, the object classes can be accessed through a Tag Cloud where frequency is encoded by font size, or through a tree that visualizes the Open Images hierarchy with all classes found in the Marco Polo dataset. Such interfaces for visual exploration and annotation allow the professional viewer/reader to focus on a given interest to annotate new areas or investigate the objects found inside the image, delete them or even edit their labels (Siemens et al., 2009). To prevent visual clutter, they can filter by confidence value and select or deselect specific classes. When focusing on one specific bounding box, it is also possible to display the bounding boxes that intersect, that are inside or outside the box of interest. Figure 1 shows a page of the dataset with the entities found by the neural network. For a given object class, all depictions are displayed in a 2D grid ordered by the confidence score assigned by the neural network. Examples can be seen in Figures 2 and 3. The interface is designed for both discovery and revision by clicking on a bounding box of interest, which leads us to see the most similar bounding boxes. It is also possible to select multiple bounding boxes and delete or re-label them in case of an imprecise classification. Furthermore, the expert viewer is able to annotate areas in the image with new classes, thereby contributing to a new category in the Tag Cloud (Annotated) and transforming it into a TagPie (Jänicke et al., 2018), seen in Figure 4.</p>
                 <p>
                     <figure>
                         <graphic url="Pictures/5622946c8799854dea863d5f10f05275.png"/>
-                    </figure>
+                    <head>Figure 1: </head><p>A page of the dataset with entities found by a neural network in an illumination from BnF Arsenal ms 5219</p></figure>
                 </p>
-                <p>Figure 1: A page of the dataset with entities found by a neural network in an illumination from BnF Arsenal ms 5219</p>
+                
                 <p>
                     <figure>
                         <graphic url="Pictures/4584837c65c34801e210b0c6b4977ebf.png"/>
-                    </figure>
+                    <head>Figure 2: </head><p>An overview of samples of faces marked by the highest confidence scores</p></figure>
                 </p>
-                <p>Figure 2: An overview of samples of faces marked by the highest confidence scores</p>
+                
                 <p>
                     <figure>
                         <graphic url="Pictures/e2c0efdae35d6574d01dc8951789d100.png"/>
-                    </figure>
+                    <head>Figure 3: </head><p>An overview of samples of human figures found in the corpus with the highest confidence scores</p></figure>
                 </p>
-                <p>Figure 3: An overview of samples of human figures found in the corpus with the highest confidence scores</p>
+                
                 <p>
                     <figure>
                         <graphic url="Pictures/976280370da9e524da616c574567eccd.png"/>
-                    </figure>
+                    <head>Figure 4: </head><p>The TagPie gives an overview of the classes found by the neural network (green) and those from human annotations (purple)</p></figure>
                 </p>
-                <p>Figure 4: The TagPie gives an overview of the classes found by the neural network (green) and those from human annotations (purple)</p>
+                
             </div>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>DISCUSSION</head>
                 <p>Whereas some anachronistic categories were persistent throughout the output of the initial system, other objects such as those mentioned in Figures 1 - 3 led to rather convincing recognition. Furthermore, the summary views of the visual interface proved particularly effective at demonstrating the tensions found between the codified visual languages of medieval French manuscripts and the diachronic innovative attempts at representing the "unprecedented images of the world beyond Europe's borders" as well as domains in which patterns in those tensions were particularly pronounced (Keene, 2019: 196).</p>
                 <p>On the other hand, the interface created to explore, revise and manipulate features in the Marco Polo visual corpus provides us with a stepping stone for working with larger visual corpora built from across the global middle ages. As our inquiry evolves, finding ways to guide the viewer from the extracted objects and their computed confidence levels back to full images and relevant metadata will be crucial for allowing for sufficient contextualization to facilitate interpretation. Furthermore, our current method for revision and addition of labels is open-ended, but in future work, we intend to lead the annotation toward established art historical vocabularies to ensure future discoverability. Future work will also focus on ways to achieve the "best of both worlds," allowing research to move from the modern to the medieval, that is, for current day hierarchies to be adjusted and augmented by domain- and period-specific terminology with the support of expert knowledge.</p>

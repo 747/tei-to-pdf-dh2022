@@ -40,19 +40,19 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>BERT</term>
                     <term>USE</term>
                     <term>ML</term>
                     <term>AI</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Comparative (2 or more geographical areas)</term>
                     <term>English</term>
                     <term>18th Century</term>
@@ -69,166 +69,164 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Introduction</head>
                 <p>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve">Using one of the most adapted texts in history, </hi>
-                    <hi rend="italic color(262626)" style="font-size:12pt" xml:space="preserve">Robinson Crusoe, </hi>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve">I ask whether or not a computer can find adaptations that scholars have yet to identify. Through testing the effectiveness of different machine learning techniques for text embedding on small groups of full-length texts, I determine the best model for our task, the </hi>
-                    <hi rend="color(212121) background(white)" style="font-size:12pt" xml:space="preserve">universal sentence encoder, and then use it to build a deep neural network based binary classifier trained on a large dataset of adaptation and random texts. I attempt to </hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt">Using one of the most adapted texts in history, </hi>
+                    <hi rend="italic color(262626)" xml:space="preserve" style="font-size:12pt">Robinson Crusoe, </hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt">I ask whether or not a computer can find adaptations that scholars have yet to identify. Through testing the effectiveness of different machine learning techniques for text embedding on small groups of full-length texts, I determine the best model for our task, the </hi>
+                    <hi rend="color(212121) background(white)" xml:space="preserve" style="font-size:12pt">universal sentence encoder, and then use it to build a deep neural network based binary classifier trained on a large dataset of adaptation and random texts. I attempt to </hi>
                     <hi rend="italic color(212121) background(white)" style="font-size:12pt">implicitly</hi>
-                    <hi rend="color(212121) background(white)" style="font-size:12pt" xml:space="preserve"> teach the computer the plot of Crusoe, instead of making decisions based on stylistic details, as is a pitfall of traditional techniques. It is my hope that this novel pipeline will help other scholars work with large units of text at the plot level. </hi>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve">Works like, Daniel Shore’s </hi>
-                    <hi rend="italic color(262626)" style="font-size:12pt" xml:space="preserve">Cyberformalism: Histories of Linguistic Forms in the Digital Archive, </hi>
-                    <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">Andrew Piper’s. </hi>
+                    <hi rend="color(212121) background(white)" xml:space="preserve" style="font-size:12pt"> teach the computer the plot of Crusoe, instead of making decisions based on stylistic details, as is a pitfall of traditional techniques. It is my hope that this novel pipeline will help other scholars work with large units of text at the plot level. </hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt">Works like, Daniel Shore’s </hi>
+                    <hi rend="italic color(262626)" xml:space="preserve" style="font-size:12pt">Cyberformalism: Histories of Linguistic Forms in the Digital Archive, </hi>
+                    <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">Andrew Piper’s. </hi>
                     <hi rend="italic color(222222)" style="font-size:12pt">Enumerations: data and literary study</hi>
-                    <hi rend="italic color(222222) background(white)" style="font-size:12pt" xml:space="preserve">, </hi>
-                    <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">and Ted Underwood’s </hi>
+                    <hi rend="italic color(222222) background(white)" xml:space="preserve" style="font-size:12pt">, </hi>
+                    <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">and Ted Underwood’s </hi>
                     <hi rend="italic color(222222) background(white)" style="font-size:12pt">Distant horizons: digital evidence and literary change</hi>
-                    <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve"> all have </hi>
+                    <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt"> all have </hi>
                     <hi rend="color(262626)" style="font-size:12pt">attempted to change the literary methodology by using algorithms to find patterns and features in texts. While these methodologies utilize many machine learning techniques, these methods have met with massive pushback from the larger humanities community.</hi>
-                    <note place="foot" xml:id="ftn1" n="1">
+                    <note xml:id="ftn1" n="1" place="foot">
                         <p>
-                            <hi style="font-size:10pt" xml:space="preserve"> See </hi>
-                            <hi rend="color(222222) background(white)" style="font-size:10pt" xml:space="preserve">Da, Nan Z. "The computational case against computational literary studies." </hi>
+                            <hi xml:space="preserve" style="font-size:10pt"> See </hi>
+                            <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:10pt">Da, Nan Z. "The computational case against computational literary studies." </hi>
                             <hi rend="italic color(222222)" style="font-size:10pt">Critical inquiry</hi>
-                            <hi rend="color(222222) background(white)" style="font-size:10pt" xml:space="preserve"> 45.3 (2019): 601-639.</hi>
+                            <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:10pt"> 45.3 (2019): 601-639.</hi>
                         </p>
                     </note>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve"> At the same time, these new methodologies force scholars to think about modeling and conceiving of literary texts differently (McCarty).  In this shift of modeling literary text, the question that often comes up is how we can frame these literary questions in a format that a machine learning algorithm can understand.</hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt"> At the same time, these new methodologies force scholars to think about modeling and conceiving of literary texts differently (McCarty).  In this shift of modeling literary text, the question that often comes up is how we can frame these literary questions in a format that a machine learning algorithm can understand.</hi>
                 </p>
                 <p>
                     This problem might be best considered against Daniel Defoe’s
-                    <hi rend="italic" style="font-size:12pt" xml:space="preserve"> The Life and Surprising Adventures of Robinson Crusoe</hi>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve">, which has never been out of print in its over three-hundred year print history and has amassed thousands of editions – not to mention the plethora of movies and T.V. shows. Using this text allows us to gain enough material to make these machine learning algorithms viable. Teaching a machine learning algorithm the story of Crusoe (by feeding it different adaptations) we could ask if it could start to distinguish between a random story and a Crusoe like story? Could it identify new adaptations of Crusoe that have yet to be discovered? </hi>
+                    <hi rend="italic" xml:space="preserve" style="font-size:12pt"> The Life and Surprising Adventures of Robinson Crusoe</hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt">, which has never been out of print in its over three-hundred year print history and has amassed thousands of editions – not to mention the plethora of movies and T.V. shows. Using this text allows us to gain enough material to make these machine learning algorithms viable. Teaching a machine learning algorithm the story of Crusoe (by feeding it different adaptations) we could ask if it could start to distinguish between a random story and a Crusoe like story? Could it identify new adaptations of Crusoe that have yet to be discovered? </hi>
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Data Description</head>
                 <p>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve">In early experiments to determine the suitable text embedding technique, I used four different texts: the “Original Text” which is the 1719 first edition of </hi>
-                    <hi rend="italic color(262626)" style="font-size:12pt" xml:space="preserve">Robinson Crusoe </hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt">In early experiments to determine the suitable text embedding technique, I used four different texts: the “Original Text” which is the 1719 first edition of </hi>
+                    <hi rend="italic color(262626)" xml:space="preserve" style="font-size:12pt">Robinson Crusoe </hi>
                     <hi rend="color(262626)" style="font-size:12pt">by Daniel Defoe, a “close” adaptation</hi>
-                    <note place="foot" xml:id="ftn2" n="2">
+                    <note xml:id="ftn2" n="2" place="foot">
                         <p>
-                            <hi style="font-size:10pt" xml:space="preserve">“Close” refers to the similarity in setting, characters, and plot to the original. </hi>
+                            <hi xml:space="preserve" style="font-size:10pt">“Close” refers to the similarity in setting, characters, and plot to the original. </hi>
                         </p>
                     </note>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve"> of Jenichiro Oyabe’s </hi>
-                    <hi rend="italic color(262626)" style="font-size:12pt" xml:space="preserve">A Japanese Robinson Crusoe, </hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt"> of Jenichiro Oyabe’s </hi>
+                    <hi rend="italic color(262626)" xml:space="preserve" style="font-size:12pt">A Japanese Robinson Crusoe, </hi>
                     <hi rend="color(262626)" style="font-size:12pt">a “far” science fiction adaptation</hi>
-                    <note place="foot" xml:id="ftn3" n="3">
+                    <note xml:id="ftn3" n="3" place="foot">
                         <p>
-                            <hi style="font-size:10pt" xml:space="preserve">“Far” refers to only the plot being loosely similar to the original text. </hi>
+                            <hi xml:space="preserve" style="font-size:10pt">“Far” refers to only the plot being loosely similar to the original text. </hi>
                         </p>
                     </note>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve"> called </hi>
-                    <hi rend="italic color(262626)" style="font-size:12pt" xml:space="preserve">The Happy Castaway </hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt"> called </hi>
+                    <hi rend="italic color(262626)" xml:space="preserve" style="font-size:12pt">The Happy Castaway </hi>
                     <hi rend="color(262626)" style="font-size:12pt">(1965)</hi>
-                    <hi rend="italic color(262626)" style="font-size:12pt" xml:space="preserve">, </hi>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve">and a random text, </hi>
-                    <hi rend="italic color(262626)" style="font-size:12pt" xml:space="preserve">Pride and Prejudice </hi>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve">by Jane Austen (1813). I chose the text based on my own scholarship of Robinson Crusoe: the “close” adaptation is one that follows the exact storyline, but reimagines the story as a Japanese man in America, the far adaptation takes the same plot, but everything about the text is changed, and the random text is something similar stylistically, but has no character or plot similarity to Crusoe. </hi>
+                    <hi rend="italic color(262626)" xml:space="preserve" style="font-size:12pt">, </hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt">and a random text, </hi>
+                    <hi rend="italic color(262626)" xml:space="preserve" style="font-size:12pt">Pride and Prejudice </hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt">by Jane Austen (1813). I chose the text based on my own scholarship of Robinson Crusoe: the “close” adaptation is one that follows the exact storyline, but reimagines the story as a Japanese man in America, the far adaptation takes the same plot, but everything about the text is changed, and the random text is something similar stylistically, but has no character or plot similarity to Crusoe. </hi>
                 </p>
                 <p>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve">The final project utilized two different large datasets, the first corpus of which was a random pooling of 2,188 texts from the </hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt">The final project utilized two different large datasets, the first corpus of which was a random pooling of 2,188 texts from the </hi>
                     <hi rend="color(222222)" style="font-size:12pt">Eighteenth Century Collections Online (ECCO) Text Creation Partnership (TCP)</hi>
-                    <note place="foot" xml:id="ftn4" n="4">
+                    <note xml:id="ftn4" n="4" place="foot">
                         <p>
                             <ref target="https://textcreationpartnership.org/tcp-texts/ecco-tcp-eighteenth-century-collections-online/">
                                 <hi rend="underline color(1155CC)" style="font-size:10pt">https://textcreationpartnership.org/tcp-texts/ecco-tcp-eighteenth-century-collections-online/</hi>
                             </ref>
-                            <hi style="font-size:10pt" xml:space="preserve"> see </hi>
+                            <hi xml:space="preserve" style="font-size:10pt"> see </hi>
                             <hi rend="color(222222) background(white)" style="font-size:10pt">Welzenbach, Rebecca. "Making the Most of Free, Unrestricted Texts: a first look at the promise of the Text Creation Partnership.</hi>
-                            <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">" </hi>
+                            <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">" </hi>
                         </p>
                     </note>
-                    <hi rend="color(222222)" style="font-size:12pt" xml:space="preserve">. This data is freely available through the ECCO-TCP website and was verified through the corresponding CSV file, a preview of which is included in Table 1. </hi>
+                    <hi rend="color(222222)" xml:space="preserve" style="font-size:12pt">. This data is freely available through the ECCO-TCP website and was verified through the corresponding CSV file, a preview of which is included in Table 1. </hi>
                 </p>
                 <figure>
-                    <graphic n="1001" width="16.51cm" height="8.89cm" url="Pictures/eb7917ff5b9bb2de119e88d568fa28c5.png" rend="inline"/>
-                    <head>Table 1: ECCO-TCP CSV File describing all the data in the corpus.</head>
-                </figure>
+                    <graphic height="8.89cm" n="1001" rend="inline" url="Pictures/eb7917ff5b9bb2de119e88d568fa28c5.png" width="16.51cm"/>
+                    <head>Table 1: </head>
+                <p>ECCO-TCP CSV File describing all the data in the corpus.</p></figure>
                 <p>
-                    <hi rend="color(222222)" style="font-size:12pt" xml:space="preserve">The next corpus included 1,484 texts drawn from a variety of variations of </hi>
-                    <hi rend="italic color(222222)" style="font-size:12pt" xml:space="preserve">Robinson Crusoe, </hi>
+                    <hi rend="color(222222)" xml:space="preserve" style="font-size:12pt">The next corpus included 1,484 texts drawn from a variety of variations of </hi>
+                    <hi rend="italic color(222222)" xml:space="preserve" style="font-size:12pt">Robinson Crusoe, </hi>
                     <hi rend="color(222222)" style="font-size:12pt">pulled from HathiTrust</hi>
-                    <note place="foot" xml:id="ftn5" n="5">
+                    <note xml:id="ftn5" n="5" place="foot">
                         <p>
                             <ref target="https://www.hathitrust.org">
                                 <hi rend="underline color(1155CC)" style="font-size:10pt">https://www.hathitrust.org</hi>
                             </ref>
-                            <hi style="font-size:10pt" xml:space="preserve"> see </hi>
+                            <hi xml:space="preserve" style="font-size:10pt"> see </hi>
                             <hi rend="color(222222) background(white)" style="font-size:10pt">Christenson, Heather, "HathiTrust.”</hi>
                         </p>
                     </note>
-                    <hi rend="color(222222)" style="font-size:12pt" xml:space="preserve"> using Hathitrust’s Rsync. </hi>
+                    <hi rend="color(222222)" xml:space="preserve" style="font-size:12pt"> using Hathitrust’s Rsync. </hi>
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Core Methodology</head>
                 <p>
                     <hi rend="color(262626)" style="font-size:12pt">The first experiment to determine which method would generate the best text embeddings for this task was with the sklearn TfidfVectorizer to build the embeddings of our training data</hi>
-                    <note place="foot" xml:id="ftn6" n="6">
+                    <note xml:id="ftn6" n="6" place="foot">
                         <p>
                             <ref target="https://scikit-learn.org/stable/modules/classes.html#module-sklearn.feature_extraction.text">
                                 <hi rend="underline color(1155CC)" style="font-size:10pt">https://scikit-learn.org/stable/modules/classes.html#module-sklearn.feature_extraction.text</hi>
                             </ref>
-                            <hi style="font-size:10pt" xml:space="preserve"> We used the S</hi>
+                            <hi xml:space="preserve" style="font-size:10pt"> We used the S</hi>
                         </p>
                     </note>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve">. I calculated the cosine similarity scores for each of the texts to the reference text (i.e. the Original Text) </hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt">. I calculated the cosine similarity scores for each of the texts to the reference text (i.e. the Original Text) </hi>
                     <hi rend="color(212121) background(white)" style="font-size:12pt">using sklearn’s metrics-pairwise package</hi>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve">. Then I experimented with </hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt">. Then I experimented with </hi>
                     <hi rend="color(212121)" style="font-size:12pt">Google Research’s Universal Sentence Encoder (USE)</hi>
-                    <note place="foot" xml:id="ftn7" n="7">
+                    <note xml:id="ftn7" n="7" place="foot">
                         <p>
                             <ref target="https://tfhub.dev/google/universal-sentence-encoder/4">
                                 <hi rend="underline color(1155CC)" style="font-size:10pt">https://tfhub.dev/google/universal-sentence-encoder/4</hi>
                             </ref>
                             <hi rend="color(212121)" style="font-size:12pt">-</hi>
-                            <hi rend="color(212121)" style="font-size:10pt" xml:space="preserve">the latest pretrained model available, updated 2020. See </hi>
+                            <hi rend="color(212121)" xml:space="preserve" style="font-size:10pt">the latest pretrained model available, updated 2020. See </hi>
                             <hi rend="color(222222) background(white)" style="font-size:10pt">Yang, Yinfei, et al. "Improving multilingual sentence embedding using bi-directional dual encoder with additive margin softmax."</hi>
                         </p>
                     </note>
-                    <hi rend="color(212121)" style="font-size:12pt" xml:space="preserve">. While originally meant for generation of sentence-level embeddings, the model does not actually require a set maximum sequence length, which is a useful functionality that allows us to represent full-length texts of varying lengths as a fixed-dimensional embedding layer. </hi>
-                    <hi rend="color(212121) background(white)" style="font-size:12pt" xml:space="preserve">In the end, I chose to work with the USE embeddings because it gave more context-aware, and as a result, discriminatory embeddings than the other candidates. Notice (in Figure 1) that the text determined as 'close' to the reference text by me (human expert), while indeed the closest, still showed a cosine similarity of only 0.528. Further, the texts determined as 'random'  and 'far' were also significantly further from 'close' as well as the reference text, but very close to each other - which is what we might expect from a model which has learnt semantic relationships particularly well (after all, why should </hi>
+                    <hi rend="color(212121)" xml:space="preserve" style="font-size:12pt">. While originally meant for generation of sentence-level embeddings, the model does not actually require a set maximum sequence length, which is a useful functionality that allows us to represent full-length texts of varying lengths as a fixed-dimensional embedding layer. </hi>
+                    <hi rend="color(212121) background(white)" xml:space="preserve" style="font-size:12pt">In the end, I chose to work with the USE embeddings because it gave more context-aware, and as a result, discriminatory embeddings than the other candidates. Notice (in Figure 1) that the text determined as 'close' to the reference text by me (human expert), while indeed the closest, still showed a cosine similarity of only 0.528. Further, the texts determined as 'random'  and 'far' were also significantly further from 'close' as well as the reference text, but very close to each other - which is what we might expect from a model which has learnt semantic relationships particularly well (after all, why should </hi>
                     <hi rend="italic color(212121) background(white)" style="font-size:12pt">Pride and Prejudice</hi>
-                    <hi rend="color(212121) background(white)" style="font-size:12pt" xml:space="preserve"> be closer to </hi>
+                    <hi rend="color(212121) background(white)" xml:space="preserve" style="font-size:12pt"> be closer to </hi>
                     <hi rend="italic color(212121) background(white)" style="font-size:12pt">Robinson Cruso</hi>
-                    <hi rend="color(212121) background(white)" style="font-size:12pt" xml:space="preserve">e than </hi>
+                    <hi rend="color(212121) background(white)" xml:space="preserve" style="font-size:12pt">e than </hi>
                     <hi rend="italic color(262626)" style="font-size:12pt">The Happy Castaway</hi>
-                    <hi rend="color(212121) background(white)" style="font-size:12pt" xml:space="preserve"> - both are unrelated by plot). Note that the BERT embeddings, </hi>
-                    <hi rend="italic color(212121) background(white)" style="font-size:12pt" xml:space="preserve">Pride and Prejudice </hi>
-                    <hi rend="color(212121) background(white)" style="font-size:12pt" xml:space="preserve">turned out to be closer to </hi>
+                    <hi rend="color(212121) background(white)" xml:space="preserve" style="font-size:12pt"> - both are unrelated by plot). Note that the BERT embeddings, </hi>
+                    <hi rend="italic color(212121) background(white)" xml:space="preserve" style="font-size:12pt">Pride and Prejudice </hi>
+                    <hi rend="color(212121) background(white)" xml:space="preserve" style="font-size:12pt">turned out to be closer to </hi>
                     <hi rend="italic color(212121) background(white)" style="font-size:12pt">Robinson Cruso</hi>
-                    <hi rend="color(212121) background(white)" style="font-size:12pt" xml:space="preserve">e which we posit is due to the nature of the sentence-level embeddings - the representation learnt is more about the similarity in the stylistic/linguistic/grammatical/lexical sense than about the plot. </hi>
+                    <hi rend="color(212121) background(white)" xml:space="preserve" style="font-size:12pt">e which we posit is due to the nature of the sentence-level embeddings - the representation learnt is more about the similarity in the stylistic/linguistic/grammatical/lexical sense than about the plot. </hi>
                 </p>
                 <figure>
-                    <graphic n="1002" width="16.126355555555556cm" height="8.116930555555555cm" url="Pictures/e9d67e43c5d88f15ba309e7300083c04.png" rend="inline"/>
-                    <head>
-                        <hi rend="bold color(222222)" style="font-size:12pt">Figure 1: Results of Initial Method Across Different Texts (1.0 being closest to the original text) USE-Universal Sentence Encoder.</hi>
-                    </head>
+                    <graphic height="8.116930555555555cm" n="1002" rend="inline" url="Pictures/e9d67e43c5d88f15ba309e7300083c04.png" width="16.126355555555556cm"/>
+                    <head>Figure 1: </head>
+                        <p rend=" color(222222)" style="font-size:12pt">Results of Initial Method Across Different Texts (1.0 being closest to the original text) USE-Universal Sentence Encoder.</p>
                 </figure>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Final Results</head>
                 <p>The model performs exceptionally well on the validation and test sets, identifying the adaptations (denoted by class 1 in Figure 2) with near perfect precision and recall.</p>
                 <figure>
-                    <graphic n="1003" width="15.980833333333333cm" height="3.8946666666666667cm" url="Pictures/9c3785581c8c787921715b4a21b44225.png" rend="inline"/>
-                    <head>
-                        <hi rend="bold color(212121) background(white)" style="font-size:12pt">Figure 2: The classification results from the mode. 0 denotes non-adaptations and 1 denotes adaptations</hi>
-                    </head>
+                    <graphic height="3.8946666666666667cm" n="1003" rend="inline" url="Pictures/9c3785581c8c787921715b4a21b44225.png" width="15.980833333333333cm"/>
+                    <head>Figure 2: </head>
+                        <p rend=" color(212121) background(white)" style="font-size:12pt">The classification results from the mode. 0 denotes non-adaptations and 1 denotes adaptations</p>
                 </figure>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>
                     <lb/>Current Conclusions and Future Work
                 </head>
                 <p>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve">The potential pitfall with this technique is that I will not be able to measure how similar a text is to </hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt">The potential pitfall with this technique is that I will not be able to measure how similar a text is to </hi>
                     <hi rend="italic color(262626)" style="font-size:12pt">Robinson Crusoe</hi>
-                    <hi rend="color(262626)" style="font-size:12pt" xml:space="preserve">, on a more textual level, but I have already attempted this in previous work using doc2vec. By using this new technique to look at a larger window of text than a sentence, we can find works that share a similar plot, which would begin to make a new model of adaptation centered around plot rather than setting or characters. The challenge becomes where exactly the plot gets figured out, what unit of text can tell us that? If we can begin to think about where the plot gets encoded in the text and we can make the window of analysis the same, then we can begin to move forward to other machine learning problems. </hi>
+                    <hi rend="color(262626)" xml:space="preserve" style="font-size:12pt">, on a more textual level, but I have already attempted this in previous work using doc2vec. By using this new technique to look at a larger window of text than a sentence, we can find works that share a similar plot, which would begin to make a new model of adaptation centered around plot rather than setting or characters. The challenge becomes where exactly the plot gets figured out, what unit of text can tell us that? If we can begin to think about where the plot gets encoded in the text and we can make the window of analysis the same, then we can begin to move forward to other machine learning problems. </hi>
                 </p>
             </div>
         </body>
@@ -237,75 +235,75 @@
                 <listBibl>
                     <head>Bibliography</head>
                     <bibl>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">Chaudhary, Vishrav, et al. "Low-Resource Corpus Filtering using Multilingual Sentence Embeddings." </hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">Chaudhary, Vishrav, et al. "Low-Resource Corpus Filtering using Multilingual Sentence Embeddings." </hi>
                         <hi rend="italic color(222222) background(white)" style="font-size:12pt">arXiv preprint arXiv:1906.08885</hi>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve"> (2019).</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt"> (2019).</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">Christenson, Heather. "HathiTrust." </hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">Christenson, Heather. "HathiTrust." </hi>
                         <hi rend="italic color(222222) background(white)" style="font-size:12pt">Library Resources &amp; Technical Services</hi>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve"> 55.2 (2011): 93-102</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt"> 55.2 (2011): 93-102</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">Devlin, Jacob, et al. "Bert: Pre-training of deep bidirectional transformers for language understanding." </hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">Devlin, Jacob, et al. "Bert: Pre-training of deep bidirectional transformers for language understanding." </hi>
                         <hi rend="italic color(222222) background(white)" style="font-size:12pt">arXiv preprint arXiv:1810.04805</hi>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve"> (2018).</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt"> (2018).</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">Foster, Thomas C., David De Vries, and © 2012 by Harper Collins Publishers. </hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">Foster, Thomas C., David De Vries, and © 2012 by Harper Collins Publishers. </hi>
                         <hi rend="italic color(222222) background(white)" style="font-size:12pt">How to read literature like a professor</hi>
                         <hi rend="color(222222) background(white)" style="font-size:12pt">. Harper Collins Publishers, 2012.</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">Frye, Northrop. </hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">Frye, Northrop. </hi>
                         <hi rend="italic color(222222) background(white)" style="font-size:12pt">Anatomy of criticism: Four essays</hi>
                         <hi rend="color(222222) background(white)" style="font-size:12pt">. Princeton University Press, 2020.</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">McCarty, Willard. </hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">McCarty, Willard. </hi>
                         <hi rend="italic color(222222) background(white)" style="font-size:12pt">Humanities computing</hi>
                         <hi rend="color(222222) background(white)" style="font-size:12pt">. 2014.</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">Moretti, Franco. </hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">Moretti, Franco. </hi>
                         <hi rend="italic color(222222) background(white)" style="font-size:12pt">Distant reading</hi>
                         <hi rend="color(222222) background(white)" style="font-size:12pt">. Verso Books, 2013.</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">Piper, Andrew. </hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">Piper, Andrew. </hi>
                         <hi rend="italic color(222222) background(white)" style="font-size:12pt">Enumerations: data and literary study</hi>
                         <hi rend="color(222222) background(white)" style="font-size:12pt">. University of Chicago Press, 2018.</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">Rae, Jack W., et al. "Compressive transformers for long-range sequence modelling." </hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">Rae, Jack W., et al. "Compressive transformers for long-range sequence modelling." </hi>
                         <hi rend="italic color(222222) background(white)" style="font-size:12pt">arXiv preprint arXiv:1911.05507</hi>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve"> (2019).</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt"> (2019).</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">Sanders, Julie. "Adaptation/Appropriation." </hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">Sanders, Julie. "Adaptation/Appropriation." </hi>
                         <hi rend="italic color(222222) background(white)" style="font-size:12pt">The Encyclopedia of the Novel</hi>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve"> (2010).</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt"> (2010).</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">Shore, Daniel. </hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">Shore, Daniel. </hi>
                         <hi rend="italic color(222222)" style="font-size:12pt">Cyberformalism: Histories of Linguistic Forms in the Digital Archive</hi>
                         <hi rend="color(222222) background(white)" style="font-size:12pt">. JHU Press, 2018.</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">Underwood, Ted. </hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">Underwood, Ted. </hi>
                         <hi rend="italic color(222222) background(white)" style="font-size:12pt">Distant horizons: digital evidence and literary change</hi>
                         <hi rend="color(222222) background(white)" style="font-size:12pt">. University of Chicago Press, 2019.</hi>
                     </bibl>
                     <bibl>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">Watt, Ian. </hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">Watt, Ian. </hi>
                         <hi rend="italic color(222222) background(white)" style="font-size:12pt">The rise of the novel</hi>
                         <hi rend="color(222222) background(white)" style="font-size:12pt">. Univ of California Press, 2001.</hi>
                     </bibl>
                     <bibl>Welzenbach, Rebecca. "Making the Most of Free, Unrestricted Texts: a first look at the promise of the Text Creation Partnership." (2011).</bibl>
                     <bibl>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve">Yang, Yinfei, et al. "Improving multilingual sentence embedding using bi-directional dual encoder with additive margin softmax." </hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt">Yang, Yinfei, et al. "Improving multilingual sentence embedding using bi-directional dual encoder with additive margin softmax." </hi>
                         <hi rend="italic color(222222) background(white)" style="font-size:12pt">arXiv preprint arXiv:1902.08564</hi>
-                        <hi rend="color(222222) background(white)" style="font-size:12pt" xml:space="preserve"> (2019).</hi>
+                        <hi rend="color(222222) background(white)" xml:space="preserve" style="font-size:12pt"> (2019).</hi>
                     </bibl>
                 </listBibl>
             </div>

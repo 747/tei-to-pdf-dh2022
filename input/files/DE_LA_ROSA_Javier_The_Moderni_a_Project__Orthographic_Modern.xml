@@ -147,8 +147,8 @@
                         <cell>80.66</cell>
                         <cell>4.20%</cell>
                     </row>
+                <head>Table 1. Scores for baseline and the best models on the test set.</head>
                 </table>
-                <p>Table 1. Scores for baseline and the best models on the test set.</p>
                 <p>
                     <hi rend="color(#000000)">While both models perform modernization reasonably well, ByT5 seems to be outperforming baseline and T5. We applied our best model to an unseen play (</hi>
                     <hi rend="color(#000000) italic">Castelvines y Monteses</hi>

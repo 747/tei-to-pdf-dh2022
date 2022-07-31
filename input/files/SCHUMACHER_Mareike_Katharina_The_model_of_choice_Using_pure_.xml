@@ -56,19 +56,19 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Natural language processing</term>
                     <term>Machine Learning</term>
                     <term>German fantasy fiction</term>
                     <term>gender classification</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>19th Century</term>
@@ -85,34 +85,34 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Training a gender classifier for German literature</head>
                 <p style="text-align: left;">
                     In several (Digital) Humanities studies, it has been shown that character analysis with a scope on gender can give interesting insides into literary history (cf. Underwood 2019: 111-142, Piper 2018: 133-138). With BookNLP (Bamann 2021) there is a well-performing tool including referential gender inference in the domain of English literary fiction (cf. Underwood 2019: 114). Here, we present a classification tool that is optimized for German fiction and which does not focus on pronouns used for fictional characters but on the ascribed gendered roles (which is referred to as gender identity by Butler 2003). As a starting point, we trained the classifier to annotate the binary (and often stereotyped) gender categories “feminine”, “masculine”, and “neutral”. It is planned to include more categories for gender roles in the future. To reach high accuracy on different literary genres it was trained in an iterative domain adaptation process, which can be roughly split up into three phases (cf. phases 1–3 in table 1). 
                 </p>
                 <figure>
-                    <graphic n="1001" width="13.231027777777777cm" height="8.043333333333333cm" url="Pictures/231de1e1d1b16b5d5f192e85dd697d11.png" rend="inline"/>
-                </figure>
-                <p style="text-align: center;">
-                    Table 1: Domain adaptation phases, datasets and performance values (set 1–3: CRF; set 4–6: gBERT)
-                </p>
+                    <graphic height="8.043333333333333cm" n="1001" rend="inline" url="Pictures/231de1e1d1b16b5d5f192e85dd697d11.png" width="13.231027777777777cm"/>
+                <head style="text-align: center;">Table 1: </head><p>
+                    Domain adaptation phases, datasets and performance values (set 1–3: CRF; set 4–6: gBERT)
+                </p></figure>
+                
                 <p style="text-align: left;">
                     387.000 tokens, as well as an annotated list consisting of about 7.000 names taken from dramatis personae archived in the GerDraCor-repository (cf. Fischer et al. 2019), have been included in the training corpus. Training data has been manually annotated from scratch, meaning that names and gendered roles have been tagged as either feminine, masculine or neutral. Adding genre-specific training data first leads to an optimization of classification on the specific genre the training data is taken from and second to higher accuracy in the other genres (cf. fig. 1). In the end, our classifier trained with pure CRF algorithms reached 0.86 on novellas, 0.73 on novels and 0.76 on plays. On average the classifier reaches an overall F1 score of 0.78 (Schumacher 2021). The information on gendered roles mentioned in fiction can be combined with other aspects of the analysis of fictional characters such as described features (Schumacher/Flüh 2020), emotions (Schumacher/Flüh 2020, Flüh/Schumacher 2022, Flüh/Horstmann/Schumacher forthcoming) and power structures (Schumacher/Flüh forthcoming). 
                 </p>
                 <figure>
-                    <graphic n="1002" width="15.663333333333334cm" height="9.659055555555556cm" url="Pictures/d4cd042d6145d7958f08f9bc816bebb8.png" rend="inline"/>
-                </figure>
-                <p style="text-align: center;">Figure 1: Training of a generic gender classifier</p>
+                    <graphic height="9.659055555555556cm" n="1002" rend="inline" url="Pictures/d4cd042d6145d7958f08f9bc816bebb8.png" width="15.663333333333334cm"/>
+                <head style="text-align: center;">Figure 1: </head><p>Training of a generic gender classifier</p></figure>
+                
                 <p style="text-align: left;">To adapt recognition and classification to youth fantasy fiction, we tried the implementation of neural networks following a transfer learning approach (cf. phases 4–6 in table 1).</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Creating neural net-based Gender Classifiers</head>
                 <p style="text-align: left;">
-                    <hi style="font-size:12pt" xml:space="preserve">We used the software </hi>
-                    <hi rend="italic" style="font-size:12pt" xml:space="preserve">Neiss TEI Entity Enricher (NTEE), </hi>
-                    <hi style="font-size:12pt" xml:space="preserve">an implementation of a Transfer Learning (Kamath et al., 2019) approach, to create a neural net-based classifier. Large-scale language models, which are built according to a Bidirectional Encoder Representations from Transformers (BERT) architecture (Devlin et al., 2019) can be fine-tuned using ground truth data for particular NER tasks. In this process, a CRF layer is added to the models (cf. Zöllner et al, 2021: 9–10). For our investigation, we use </hi>
+                    <hi xml:space="preserve" style="font-size:12pt">We used the software </hi>
+                    <hi rend="italic" xml:space="preserve" style="font-size:12pt">Neiss TEI Entity Enricher (NTEE), </hi>
+                    <hi xml:space="preserve" style="font-size:12pt">an implementation of a Transfer Learning (Kamath et al., 2019) approach, to create a neural net-based classifier. Large-scale language models, which are built according to a Bidirectional Encoder Representations from Transformers (BERT) architecture (Devlin et al., 2019) can be fine-tuned using ground truth data for particular NER tasks. In this process, a CRF layer is added to the models (cf. Zöllner et al, 2021: 9–10). For our investigation, we use </hi>
                     <hi rend="italic" style="font-size:12pt">gbert-base</hi>
-                    <hi style="font-size:12pt" xml:space="preserve"> (cf. Chan, Schweter, Möller 2021), which is pre-trained with data from the 20th and 21st centuries. </hi>
+                    <hi xml:space="preserve" style="font-size:12pt"> (cf. Chan, Schweter, Möller 2021), which is pre-trained with data from the 20th and 21st centuries. </hi>
                 </p>
                 <p style="text-align: left;">Using sets 4, 5 and 6 (cf. table 1) as ground truth datasets, we compared the performances of classifiers, trained on either generic data, genre-specific data or a combined dataset. Comparing the performance values of the differently designed models shows two things: </p>
                 <list rend="numbered">
@@ -125,11 +125,11 @@
                 </list>
                 <p style="text-align: left;">One can also see a slight difference between the training of the pure CRF-classifier and the fine-tuning of the BERT model (cf. fig. 2). For this implementation, the combination of genre-specific and generic data clearly works best (F1-score of 0.92 tested on fantasy novels). </p>
                 <figure>
-                    <graphic n="1003" width="15.539861111111112cm" height="9.58291388888889cm" url="Pictures/eae2a84eca8a6f363629557260a84316.png" rend="inline"/>
-                </figure>
-                <p style="text-align: center;">
-                    Figure 2: Average performances of  the CRF-based and the gBERT-based classifiers
-                </p>
+                    <graphic height="9.58291388888889cm" n="1003" rend="inline" url="Pictures/eae2a84eca8a6f363629557260a84316.png" width="15.539861111111112cm"/>
+                <head style="text-align: center;">Figure 2: </head><p>
+                    Average performances of  the CRF-based and the gBERT-based classifiers
+                </p></figure>
+                
             </div>
         </body>
         <back>
@@ -190,7 +190,7 @@
                     <bibl style="text-align: justify;">Piper, Andrew (2018): Enumerations. Chicago: The University of Chicago Press.</bibl>
                     <bibl>Schumacher, Mareike, Marie Flüh (2020): “Figurengender zwischen Stereotypisierung und literarischen und theoretischen Spielräumen: Genderstereotypen und -bewertungen in der Literatur des 19. Jahrhundert”. In: Christof Schöch (Hg.): 
                         <hi rend="italic">DHd2020: Digital Humanities zwischen Modellierung und Interpretation</hi>. Konferenzabstracts. o.O. 2020, S. 162–167,
-                        <ref target="https://zenodo.org/record/3666690#.X37-FFlCTus" xml:space="preserve"> https://zenodo.org/record/3666690#.X37-FFlCTus</ref> [Access: 26. November 2021].
+                        <ref xml:space="preserve" target="https://zenodo.org/record/3666690#.X37-FFlCTus"> https://zenodo.org/record/3666690#.X37-FFlCTus</ref> [Access: 26. November 2021].
                     </bibl>
                     <bibl>Schumacher, Mareike (2021): 
                         <hi rend="italic">StanfordNER Gender-Classifier.</hi> DOI: 10.5281/zenodo.5555952.

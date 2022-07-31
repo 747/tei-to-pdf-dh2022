@@ -51,20 +51,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Electronic Poster</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>literature</term>
                     <term>incipits</term>
                     <term>corpus</term>
                     <term>analysis</term>
                     <term>classification</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>15th-17th Century</term>
@@ -83,79 +83,67 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>Idea</head>
                 <p>In literary and linguistic studies, the first sentence of a narratological context is a regularly studied object (on this, among others, Alt 2020, Haubrichs 1995, Hirdt 1974, Queng 2019, Miller 1965, Neuhaus 2019, Raulff 2019, Retsch 2000, Selbmann 2019). This is hardly surprising, since the first sentence has been regarded since Wolfgang Iser's study The Act of Reading as the entrance into the text through reading, as the key point of interaction between text and reader (1976: 38). In the richness of its various forms, the first sentence reveals “the treasures of literature in nuce” (Alt 2020: 18) and, with Alain Robbe-Grillet, it could be put forward that literary history is to be written from the study of its opening sentences (1992: 38).</p>
                 <p>A systematic, digitally supported study of “first sentences” has yet to be carried out. Occasionally, corpora of first sentences in German have been collected by hand (Beck 1992, Beck 1993, Wolkersdorf 1994) and attempts have been made to draw up a typology of the first sentence in literature on the basis of selected individual analyses (most recently Alt 2020). A systematic categorisation on the basis of a semi-automated, larger corpus of research – as presented here – seems helpful. There are similar studies that inquire into the quintessence of the poetic in literature through its countability (cf. for example Moretti 2009, also Fischer/Strötgen 2015, Fischer/Jäschke 2018a/b); a single quantifying study dealing decidedly with German-language narrative beginnings (not first sentences) can be found in the work of Herrmann 2018.</p>
                 <p>The aim of the corpus “First Sentences in German-Language Literature” is to address the “lack of an overall view” (Alt 2020: 246) of all previous studies on first sentences. To this end, a data corpus is created and published, on which an initial evaluation will be undertaken in an interlocking of quantitative and text-analytical approaches.</p>
             </div>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>Project</head>
                 <p>Several full-text, open access corpora (<hi rend="italic">Deutsches Textarchiv</hi>, 
                     <hi rend="italic">Zeno</hi>, etc.), from which texts were extracted according to genre, serve as source material. It is clear that although the existing full-text offerings provide varying degrees of structural information about the respective document, the automatic delimitation of closed text units is often non-trivial and not possible reliably without individual examination (e.g. in the case of anthologies, texts with several chapters, texts in several volumes). However, this is the prerequisite for extracting the first sentences. In addition, the beginning of the "poetic text" cannot always be clearly localised automatically, e.g. due to prefaces, dedication texts or introductions.
                 </p>
                 <p>Furthermore, the delimitation of “first sentences” is a semantic problem. Sentences can be understood as grammatical-analytical units that are separated from each other by certain punctuation marks, which accommodates machine processing. However, the signs used to delimit a sentence differ and change considerably. The absolute selectivity of some punctuation marks is also questionable depending on the context, which is why sentences are sometimes to be understood as units of meaning in which punctuation marks have a structuring but not interrupting function (cf. fig. 2a/b). Should we therefore rather speak of a flowing “beginning” or “start”? Thus, areas of vagueness play into the determination of "first sentences", which in turn can affect corpus consistency and comparability.</p>
             </div>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>Evaluation</head>
                 <p>The currently created corpuses of novels, novellas and fairytales is completely encoded in TEI, including metadata and source information, including positional information (available at 
                     <ptr target="https://github.com/satzomat/corpus"/>). Depending on the genre, the number of first sentences ranges between 100 and 1,000 entries. With the help of the manually and automatically created annotations, the corpus can be analysed and visualised according to various parameters, such as date of publication, text genre, gender of author, references to persons, places or time in the text (cf. Fig. 1c) or length of the entire text. In addition, it is documented which selection criteria the respective data sources were subject to and how this should be taken into account in the evaluation with regard to the balance of the corpus (cf. Hug/Boenig 2021). To disseminate the corpus, the Twitter project 
                     <ref target="https://twitter.com/satzomat">@satzomat</ref> was launched in 2021, which sends two first sentences daily (cf. Figures 1–3).
                 </p>
                 <p>The aim is to create a “typology of incipits” with the help of computer-philological evaluation methods and to ask to what extent genres determined certain types of first sentences in the course of history (e.g. landscape image, frame story) and whether further correlations can be determined with the help of the metadata and annotations (see the project page 
-                    <ptr target="http://satzomat.de/"/>for more information).
+                    <ptr target="http://satzomat.de/"/> for more information).
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading">
+            <div rend="DH-Heading" type="div1">
                 <head>Figures</head>
-                <p>
+                <figure>
                     <figure>
                         <graphic url="Pictures/ae90af34ce85d1faef04b07006c56452.png"/>
                     </figure>
-                </p>
-                <p>
                     <figure>
                         <graphic url="Pictures/5ec6ce09037a7a7c73c51d056cacfb15.png"/>
                     </figure>
-                </p>
-                <p>
                     <figure>
                         <graphic url="Pictures/de93487cbf6e6778d157968392dc8bcb.png"/>
                     </figure>
-                </p>
-                <p>Fig. 1a/b/c: Novella beginnings</p>
-                <p>
+                <head>Fig. 1 a/b/c: </head><p>Novella beginnings</p></figure>
+                
+                <figure>
                     <figure>
                         <graphic url="Pictures/81eb9b011ed87213dbd5a7116cba6008.png"/>
                     </figure>
-                </p>
-                <p>
                     <figure>
                         <graphic url="Pictures/e5b018cafcecf2c5d4b1fba09716c439.png"/>
                     </figure>
-                </p>
-                <p>
                     <figure>
                         <graphic url="Pictures/c0a605ec19cd60c0615f038292e39a16.png"/>
                     </figure>
-                </p>
-                <p>Fig. 2a/b/c: Novel beginnings</p>
-                <p>
+                <head>Fig. 2 a/b/c: </head><p>Novel beginnings</p></figure>
+                
+                <figure>
                     <figure>
                         <graphic url="Pictures/5f3716a4396165b7f6afa539116d8324.png"/>
                     </figure>
-                </p>
-                <p>
                     <figure>
                         <graphic url="Pictures/d04d8f258769ae70356fd51b36a5c91d.png"/>
                     </figure>
-                </p>
-                <p>
                     <figure>
                         <graphic url="Pictures/609c65163cf34d3a5f76d5e605aa980b.png"/>
                     </figure>
-                </p>
-                <p>Fig. 3a/b/c: Fairy tale beginnings</p>
+                <head>Fig. 3 a/b/c: </head><p>Fairy tale beginnings</p></figure>
+                
             </div>
         </body>
         <back>
@@ -167,13 +155,11 @@
                         <hi rend="italic">‘Jemand musste Josef K. verleumdet haben …’ Erste Sätze der Weltliteratur und was sie uns verraten.</hi> München: Beck.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Beck, Harald </hi>(1992)
-                        <hi rend="bold">:</hi>
+                        <hi rend="bold">Beck, Harald </hi>(1992)<hi rend="bold">:</hi>
                         <hi rend="italic">Roman-Anfänge. Rund 500 erste Sätze</hi>. Zürich: Haffmans.
                     </bibl>
                     <bibl>
-                        <hi rend="bold">Beck, Harald </hi>(1993)
-                        <hi rend="bold">:</hi>
+                        <hi rend="bold">Beck, Harald </hi>(1993)<hi rend="bold">:</hi>
                         <hi rend="italic">Romanenden. Rund 500 letzte Sätze</hi>. Zürich: Haffmans.
                     </bibl>
                     <bibl>

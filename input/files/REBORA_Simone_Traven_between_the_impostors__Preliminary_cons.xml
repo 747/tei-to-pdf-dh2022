@@ -51,18 +51,18 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Short Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>B. Traven</term>
                     <term>stylometry</term>
                     <term>impostors method</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>North America</term>
@@ -100,22 +100,22 @@
             <p>
                 <figure>
                     <graphic url="Pictures/08b3f8fbc9ae4d9d9c2e8bac4a9a0e88.png"/>
-            <head>Table 1. Corpus overview</head>
-                </figure>
+            <head>Table 1. </head>
+                <p>Corpus overview</p></figure>
             </p>
             <p>
                 <figure>
                     <graphic url="Pictures/3757769ccf1b362b2a3b3e437152c161.png"/>
-            <head>Table 2. Imposters corpora</head>
-                </figure>
+            <head>Table 2. </head>
+                <p>Imposters corpora</p></figure>
             </p>
             <p>Main idea behind the whole procedure was that of verifying if the impostors could produce high scores when comparing texts written by the same author (e.g. Feige with Feige) and low scores when comparing texts written by different authors (e.g. Traven with Musil). Analyses were performed by combining the 11 distance measures available in the stylo package, 20 different selections of most frequent words (from 50 to 1,000 MFW), 5 culling percentages (0%, 25%, 50%, 75%, 100%), and 8 selections of the number of impostors (from 5 to 40). Computation was repeated 20 times in each condition with the two impostors corpora, thus resulting in a total of 352,000 analyses.</p>
             <p>Figure 1 shows a first overview of the results, confirming how in most of the cases impostors work efficiently (with a relatively lower efficiency for Feige). </p>
             <p>
                 <figure>
                     <graphic url="Pictures/e8ff33459f0548e0d92da8f1e2e66e74.png"/>
-            <head>Figure 1. Testing results</head>
-                </figure>
+            <head>Figure 1. </head>
+                <p>Testing results</p></figure>
             </p>
             <p>
                 <hi rend="color(#000000)">Table 3 confirms how high culling helps overcome the genre differences in Kolimo, while Figure 2 shows how efficiency increases with MFW selections, but soon reaches a plateau (even at 150 MFW for the Kolimo corpus, 100% culling). Finally, Figure 3 shows how a low number of imposters causes a substantial drop in efficiency (especially for high MFW selections), while more than 10 impostors do not improve the results. Full documentation can be found here: </hi>
@@ -125,20 +125,20 @@
             <p>
                 <figure>
                     <graphic url="Pictures/34b597c2453e0c9b652e81c443077ed0.png"/>
-                    <head>Table 3. Culling results</head>
-                </figure>
+                    <head>Table 3. </head>
+                <p>Culling results</p></figure>
             </p>
             <p>
                 <figure>
                     <graphic url="Pictures/6984779bc84185b56d13c5d50c5f9884.png"/>
-            <head>Figure 2. MFW/culling results</head>
-                </figure>
+            <head>Figure 2. </head>
+                <p>MFW/culling results</p></figure>
             </p>
             <p>
                 <figure>
                     <graphic url="Pictures/242e40a51e2e6073231c2cbd942cac36.png"/>
-            <head>Figure 3. MFW/impostors number results</head>
-                </figure>
+            <head>Figure 3. </head>
+                <p>MFW/impostors number results</p></figure>
             </p>
             <p>The results of this paper will be used for setting up an analysis that needs extensive verification before being put into place, in order to at least minimize the dangers in the application of the impostors method to authorship verification cases like that of B. Traven.</p>
         </body>

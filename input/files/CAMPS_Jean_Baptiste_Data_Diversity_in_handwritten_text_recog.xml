@@ -504,8 +504,8 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/bf361bc87947c63ed7be3441d089a420.png"/>
-                        <head>Figure 1: Matrix of the cross evaluation of models</head>
-                    </figure>
+                        <head>Figure 1: </head>
+                    <p>Matrix of the cross evaluation of models</p></figure>
                 </p>
                 <p>
                     <figure>
@@ -513,8 +513,8 @@
                     </figure>
                     <figure>
                         <graphic url="Pictures/7040e6d3a9b271a6c89240da1edc841a.png"/>
-                        <head>Figure 2: Distribution of character error rates per page in the test sets; histograms (top) and boxplots (with outliers above 25% removed)</head>
-                    </figure>
+                        <head>Figure 2: </head>
+                    <p>Distribution of character error rates per page in the test sets; histograms (top) and boxplots (with outliers above 25% removed)</p></figure>
                 </p>
                 <p>Current results show, perhaps counter intuitively, a better performance for expanded models, at least for Latin (fig. 1 and table 3), while, for French, the abbreviated model seem to perform slightly better (fig. 1). Perhaps more importantly, they show important variation in the distribution of the character error rates per page inside each test set and between test sets (fig. 3). Apart from a few strong outliers on the Latin corpora, with CER between 40 and 90% (due to issues in the test material), they show a situation that varies according mostly to the origin of the data. For some subcorpora, the CERs display very limited variation, with a very small interquartile range (CREMMA corpora for instance), while the results obtained for corpora such as ECMEN could reflect the larger variety of material they contain.</p>
                 <p>Nevertheless, among various observations, the following cases can be noted. On the one hand, on LAT-Exp predictions, the efficiency of the model is especially linked to the script used. Thus, the particularly angular 

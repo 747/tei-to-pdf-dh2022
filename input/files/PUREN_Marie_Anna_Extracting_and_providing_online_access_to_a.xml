@@ -113,13 +113,13 @@
             <p>We will also present the first analyses we have carried out on this corpus with "bag-of-words" techniques - these being not too sensitive to the quality of the OCR. We first used topic modelling, an unsupervised learning method that allows us to discover the latent semantic structures of a corpus of texts, without using semantic and lexical resources (Blei et al., 2003). This method is well suited to study parliamentary debates (Bourgeois et al., 2022).</p>
             <figure>
                 <graphic n="1001" width="16.002cm" height="10.759722222222223cm" url="Pictures/47c5da5ce3f9377487ba1a7b2c6dc146.png" rend="inline"/>
+            <head style="text-align: center;">Distribution of four different topics over time</head>
             </figure>
-            <p style="text-align: center;">Distribution of four different topics over time</p>
             <p>Alternatively, we can use word embeddings to reduce the dimension of the original space from several tens of thousands of forms to a hundred axes, and then apply classical data science tools such as clustering or correlation analysis on the reduced space (Mikolov et al., 2013). Word embedding has thus shown its interest in the study of parliamentary debates (Rheault and Cochrane, 2020). We used a continuous bag-of-words model for dimension reduction and an unsupervised classification algorithm - in this case DBSCAN - to group words into clusters.</p>
             <figure>
                 <graphic n="1002" width="16.002cm" height="10.759722222222223cm" url="Pictures/47c5da5ce3f9377487ba1a7b2c6dc146.png" rend="inline"/>
+            <head style="text-align: center;">t-SNE projection of the centroïds of the clusters</head>
             </figure>
-            <p style="text-align: center;">t-SNE projection of the centroïds of the clusters</p>
         </body>
         <back>
             <div type="bibliogr">

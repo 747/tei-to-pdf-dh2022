@@ -56,20 +56,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>gazetteer</term>
                     <term>linked open data</term>
                     <term>place</term>
                     <term>reconciliation</term>
                     <term>infrastructure</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Comparative (2 or more geographical areas)</term>
                     <term>Global</term>
                     <term>English</term>
@@ -92,12 +92,12 @@
             <p style="text-align: left; ">The 
                 <ref target="https://whgazetteer.org/">World Historical Gazetteer</ref> (WHG) project (Grossner, Mostern 2021), launched in mid-2021, aggregates information about historical places contributed by researchers working in numerous fields within the humanities and social sciences. We aim for the WHG web software platform to become an essential and permanent component of global Digital Humanities infrastructure. At this writing the system holds nearly 2 million records for about 1.6 million distinct places. Of these, roughly 60,000 are temporally scoped. The remainder are drawn from modern sources, and form a core that will increasingly develop temporal depth as new contributions are received. Many additional contributions are now in queue at various stages of accessioning. The WHG provides reconciliation services useful in the creation and enhancement of specialist gazetteers, and serves as a publication venue for smaller projects wishing to provide dynamic access to their place data. This paper summarizes the project’s approach to linking gazetteer datasets as collections, briefly describes the underlying data model and workflow, and outlines those attributes making it a distinctive resource for humanities scholarship.
             </p>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Gazetteers from Historical Sources</head>
                 <p style="text-align: left; ">One of the primary use cases driving WHG development has been supporting the increasingly common scholarly activities of mapping and spatially analyzing phenomena recorded in historical source material. Texts of all kinds, and tabular data resources like birth records and ship logs, typically reference named places, but resolving names to locations is often difficult and time-consuming: toponyms normally have numerous variants that change over time; smaller settlements are frequently missing from modern gazetteer resources; places may have been abandoned, or even relocated. The WHG platform provides reconciliation services for Wikidata and the Getty Thesaurus of Geographic Names (TGN) to facilitate this geolocation task. It also serves as a place where the results of that activity can be stored, managed, published as specialist gazetteers, linked to datasets with overlapping spatial coverage, and freely accessed by others so that the work need never be repeated. As WHG content grows, researchers will be more readily able to resolve the place references in their sources. </p>
                 <p style="text-align: left; ">Teaching is another important use case for aggregated historical place information. The WHG team is collaborating with schoolteachers who are developing classroom activities using rich, linked, and temporally scoped records from the WHG that concern places with complex and multilingual histories. </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Collections of gazetteers in WHG</head>
                 <p style="text-align: left; ">The WHG platform provides a publication venue for individual project gazetteers of any size, as well as a 
                     <hi rend="italic">Collections</hi> feature that can be used to link multiple gazetteer datasets relevant to a region, period, or theme. Over the past fifteen years the 
@@ -106,9 +106,9 @@
                     <ref target="https://recogito.pelagios.org/">Recogito</ref>.
                 </p>
                 <figure>
-                    <graphic n="1001" width="16.002cm" height="7.727461111111111cm" url="Pictures/3c54402c2925544862915daebd939095.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 3 - The Dutch History collection in WHG, showing an emerging footprint of Dutch colonial history</p>
+                    <graphic height="7.727461111111111cm" n="1001" rend="inline" url="Pictures/3c54402c2925544862915daebd939095.png" width="16.002cm"/>
+                <head style="text-align: left; ">Figure 3 </head><p>The Dutch History collection in WHG, showing an emerging footprint of Dutch colonial history</p></figure>
+                
                 <p style="text-align: left; ">At this writing, two collections are in development and visible in the WHG and a third is in the planning stages. The 
                     <hi rend="italic">Dutch History</hi> collection has so far linked six disparate datasets that together have begun to trace the spatial footprint of Dutch colonial history. The 
                     <hi rend="italic">HGIS de las Indias</hi> collection includes over 15,000 settlements (<hi rend="italic">lugares</hi>) and 900+ administrative 
@@ -117,7 +117,7 @@
                     <ref target="https://github.com/Hist-ME">Historical Middle East Data Alliance</ref> (Hist-ME) has begun planning the formation of a large WHG collection to include data from many of its 35 members. Similar initiatives for Central Eurasia and Central and Eastern Europe are at earlier stages of development.
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Contributing to WHG</head>
                 <p style="text-align: left; ">The WHG requires contributed data to arrive in 
                     <ref target="https://github.com/LinkedPasts/linked-places-format">Linked Places format</ref> (LPF), developed in collaboration with the 
@@ -125,28 +125,28 @@
                     <ref target="https://github.com/LinkedPasts/linked-places-format/blob/master/tsv_0.4.md">LP-TSV</ref>, is an alternative for relatively simple records.
                 </p>
                 <figure>
-                    <graphic n="1002" width="11.758308333333334cm" height="6.604cm" url="Pictures/4b9c3d2befb680a758d2349437395ae0.png" rend="inline"/>
-                    <head>Figure 1 - Conceptual model of a place attestation in Linked Places format</head>
-                </figure>
+                    <graphic height="6.604cm" n="1002" rend="inline" url="Pictures/4b9c3d2befb680a758d2349437395ae0.png" width="11.758308333333334cm"/>
+                    <head>Figure 1 </head>
+                <p>Conceptual model of a place attestation in Linked Places format</p></figure>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Pipeline and Workflow</head>
                 <p style="text-align: left; ">The WHG performs place data aggregation at a few levels. The entire contribution pipeline is as follows: 1) registered users create new WHG datasets by uploading LPF or LP-TSV files into their private workspace, and can assign ‘co-owner’ or ‘member’ roles to other registered users; 2) dataset owners use the WHG reconciliation services for Wikidata and 
                     <ref target="http://www.getty.edu/research/tools/vocabularies/tgn/">Getty TGN</ref> to augment a dataset’s records with additional geometry and concordance identifiers; 3) once a dataset has been enriched in this way it can be flagged as public, making it visible, searchable, and, in one sense, aggregated with other public datasets; 4) the further step of accessioning allows contributors to reconcile a dataset’s records against the WHG’s union index. A record closely matching an existing index record is linked to it, effectively growing a named graph for each distinct place. An incoming record with no prospective matches in the WHG index automatically becomes a new “seed” for that place. In all cases of reconciliation, dataset owners decide which prospective matches are valid, using a 
                     <hi rend="italic">Review</hi> screen that presents a significant level of context to aid the decision.
                 </p>
                 <figure>
-                    <graphic n="1003" width="15.24cm" height="2.8900694444444444cm" url="Pictures/b9b9ea064baba81a87d74771e20e997a.png" rend="inline"/>
-                    <head>Figure 2 - Contribution pipeline in the WHG</head>
-                </figure>
+                    <graphic height="2.8900694444444444cm" n="1003" rend="inline" url="Pictures/b9b9ea064baba81a87d74771e20e997a.png" width="15.24cm"/>
+                    <head>Figure 2 </head>
+                <p>Contribution pipeline in the WHG</p></figure>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>The WHG as Digital Humanities infrastructure</head>
                 <p style="text-align: left; ">There are a number of existing place name resources
-                    <note place="foot" xml:id="ftn1" n="1">
+                    <note xml:id="ftn1" n="1" place="foot">
                         <p rend="footnote text"> For example, GeoNames, Getty TGN, VIAF, Bibliothèque Nationale de France (BnF), VIAF</p>
                     </note>, and some are explicitly historical
-                    <note place="foot" xml:id="ftn2" n="2">
+                    <note xml:id="ftn2" n="2" place="foot">
                         <p rend="footnote text"> For example, Pleiades, Vision of Britain, Trismegistos, Syriaca.org</p>
                     </note>, but World Historical Gazetteer is distinctive in having the following attributes 
                     <hi rend="italic">in combination</hi>:
@@ -170,7 +170,7 @@
                     <bibl style="text-align: left; ">
                         Grossner, K
                         <hi rend="bold" style="font-size:10pt">.</hi>, Mostern, R. (2021). Linked Places in World Historical Gazetteer. In
-                        <hi rend="italic" style="font-size:10pt" xml:space="preserve"> 5th ACM SIGSPATIAL International Workshop on Geospatial Humanities (GeoHumanities’21), Beijing, China. </hi>
+                        <hi rend="italic" xml:space="preserve" style="font-size:10pt"> 5th ACM SIGSPATIAL International Workshop on Geospatial Humanities (GeoHumanities’21), Beijing, China. </hi>
                         ACM, New York, USA. Retrieved from: http://kgeographer.org/pubs/Grossner-Mostern_LinkedPlacesInWHG_final.pdf
                     </bibl>
                 </listBibl>

@@ -72,20 +72,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Mapping</term>
                     <term>Urban History</term>
                     <term>Demography</term>
                     <term>Railway</term>
                     <term>Infrastructure</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>19th Century</term>
@@ -116,9 +116,9 @@
             <p style="text-align: left; "> Triangulating three datasets allows us to investigate the social effects of rail as a key facet of industrialisation. We quantify the spatial relationships between railway infrastructure, street-level socio-demographic data (e.g. the percentage of residents working in particular economic sectors, or of households with servants), and proximity/access to railway stations (e.g. as a means of access to work). In addition, by calculating the density of ‘railspace’ per street, we categorise individuals based on their proximity to substantial railway infrastructure (see fig.1). These metrics suggest how rail could operate as an ‘amenity’ (e.g. a station with little accompanying rail infrastructure) and/or a ‘disamenity’ in different communities. For instance, we find contrasting proximities to stations among wealthy households (professional/finance workers; multiple servant-keeping; low room occupancy) depending on whether they were in urban or rural areas. </p>
             <p style="text-align: left; "> Structuring historically-rich digital sources so that they can be integrated in novel and flexible ways promises to open new perspectives on the social history of industrialization and urbanization. Our method allows scholars to shift easily between big-picture macro analysis, and the fine-grained, human-scale exploration of social context.</p>
             <figure>
-                <graphic n="1001" width="16.002cm" height="13.49375cm" url="Pictures/cc8a7afd33d47a1a5535f08a9deeb282.png" rend="inline"/>
-            </figure>
-            <p>Fig. 1. Streets in Leeds in 1901 coloured according to their proximity to dense railspace (from yellow to dark red; MapReader railspace patch-centroids shaded grey). Map data courtesy of NLS.</p>
+                <graphic height="13.49375cm" n="1001" rend="inline" url="Pictures/cc8a7afd33d47a1a5535f08a9deeb282.png" width="16.002cm"/>
+            <head>Fig. 1.</head><p> Streets in Leeds in 1901 coloured according to their proximity to dense railspace (from yellow to dark red; MapReader railspace patch-centroids shaded grey). Map data courtesy of NLS.</p></figure>
+            
         </body>
         <back>
             <div type="bibliogr">

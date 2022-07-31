@@ -101,8 +101,8 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/07d42222aa0b0e650ac3538e74625a50.png"/>
-                        <head>Figure 1: Infrastructure developed at the École nationale des chartes</head>
-                    </figure>
+                        <head>Figure 1: </head>
+                    <p>Infrastructure developed at the École nationale des chartes</p></figure>
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
@@ -112,10 +112,10 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/cbbbe4f73bb50f4eeddd43dbf215f9bf.png"/>
-                        <head>Figure 2: Rolling average of the number of checked tokens per hour. Checking a token includes verifying its correctness and correcting it if necessary. Three waves of correction are visible, the first corpus was completely out-of-domain compared to the lemmatizer (Classical Latin), with the end of the corpus being very different from the rest of the corpus in terms of spelling (letters K and W appeared), themes and syntax. The second and third wave benefits of a new model, retrained on the data produced in wave 1: as a result, there is less corrections and a faster checking rate on waves 2 and 3. Wave 3 is composed of two blocs: one is Thomas More's 
-                            <hi rend="italic">Utopia</hi> (beginning of W3) and the other the Legenda Aurea which was nearly 100% correct, hence the effectiveness. Each wave / corpus was corrected and proofread on all categories that Pyrrha allows: Lemma, POS and morphological tags.
-                        </head>
-                    </figure>
+                        <head>Figure 2: </head>
+                    <p>Rolling average of the number of checked tokens per hour. Checking a token includes verifying its correctness and correcting it if necessary. Three waves of correction are visible, the first corpus was completely out-of-domain compared to the lemmatizer (Classical Latin), with the end of the corpus being very different from the rest of the corpus in terms of spelling (letters K and W appeared), themes and syntax. The second and third wave benefits of a new model, retrained on the data produced in wave 1: as a result, there is less corrections and a faster checking rate on waves 2 and 3. Wave 3 is composed of two blocs: one is Thomas More&apos;s 
+                            <hi rend="normal">Utopia</hi> (beginning of W3) and the other the Legenda Aurea which was nearly 100% correct, hence the effectiveness. Each wave / corpus was corrected and proofread on all categories that Pyrrha allows: Lemma, POS and morphological tags.
+                        </p></figure>
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">
@@ -152,15 +152,14 @@
                         <hi rend="italic">E.g.</hi> in our Latin dataset shared with us by the LASLA, there was no punctuation. Unknown character can trigger weird behaviors in neural networks system, from our experience, creating issues for both the context of other lemma and its own lemmatization.
                     </note>. It also provides features such as token
                     <note xml:id="ftn3" place="foot" n="3">
-                        <hi rend="italic">E</hi>
-                        <hi rend="italic">.g.</hi> metadata token with text identifiers.
+                        <hi rend="italic">E.g.</hi> metadata token with text identifiers.
                     </note> passthrough (<hi rend="italic">cf.</hi> Figure 3).
                 </p>
                 <p>
                     <figure>
                         <graphic url="Pictures/2c360bb474c50c2604f4b2b6d15f5444.png"/>
-                        <head>Figure 3: Steps for token pass-through in Pie-Extended</head>
-                    </figure>
+                        <head>Figure 3: </head>
+                    <p>Steps for token pass-through in Pie-Extended</p></figure>
                 </p>
                 <p>Finally, as not everyone knows how to install and run a python program in a shell, we produced the Deucalion interface (Clérice, 2020a), meant both for documenting (with complete bibliography for each model and software) and tagging. It is a software layer allowing to use Pie-Extended on the web. This Deucalion interface can be used as a stand-alone web application or an API.</p>
             </div>

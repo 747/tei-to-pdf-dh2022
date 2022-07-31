@@ -40,18 +40,18 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>palaeography</term>
                     <term>modelling</term>
                     <term>manuscripts</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Comparative (2 or more geographical areas)</term>
                     <term>Global</term>
                     <term>English</term>
@@ -73,11 +73,11 @@
         <body>
             <p>A number of papers have been given at the ADHO conferences and elsewhere regarding the modelling of writing, one of which is the Archetype model for palaeographical analysis (Diehr et al., 2018; Stokes, 2012; Stokes, 2018). As well as its implementation in the Archetype framework, this model has also been aligned to the CIDOC-CRM and CRMtex extension and then implemented in OWL (based on the Erlangen version 7.1.1), an extract of which is shown below. Although useful, this model (and indeed most others) treat the signs in written communication as distinct entities: they address the selection of a particular sign amongst a set of possible options, but they pay little or no explicit attention to the relationships between signs in a given piece of writing. In Structuralist terms, they focus primarily or exclusively on the paradigmatic aspect, but do not address the syntagmatic relations. This paper will therefore discuss some use cases and possible responses.</p>
             <figure>
-                <graphic n="1001" width="15.991416666666666cm" height="7.378347222222223cm" url="Pictures/67e9a9341ab9619a7295b928d2dded8c.png" rend="inline"/>
+                <graphic height="7.378347222222223cm" n="1001" rend="inline" url="Pictures/67e9a9341ab9619a7295b928d2dded8c.png" width="15.991416666666666cm"/>
                 <head>Extract of the Archetype model of handwriting aligned to CIDOC-CRM and CRMtex (Stokes, 2021; Stokes, forthcoming).</head>
             </figure>
             <p>For Archetype, the system is designed primarily for palaeographical analysis such as the distribution of allographs by a given scribe (Brookes et al., 2015), but the choice of allographs is largely or even entirely determined by context such as the position in a word or the formality of the script (Morison, 1972), and the way in which a letter is written will often be influenced by that which immediately precedes or follows it, so an effective model should take this into account.
-                <note place="foot" xml:id="ftn1" n="1">
+                <note xml:id="ftn1" n="1" place="foot">
                     <p rend="footnote text"> For the use of ‘allograph’, ‘idiograph’ and ‘graph’ in this discussion, see Stokes (2012) drawing on Davis (2007).</p>
                 </note>
             </p>
@@ -85,7 +85,7 @@
                 <hi rend="bold">i</hi> in medieval manuscripts do not comprise ‘a line with a dot over it’, but we recognise it anyway; however, this recognition depends in part on the linguistic context, and because we compare it with other nearby signs and adjust our expectations accordingly. This ambiguity is relatively common in practice, particularly in multigraphic contexts (for examples and discussion see e.g. Coueignoux, 1983: 61; Bugarski, 1993; Pierazzo, 2015; Stokes, 2018) and again suggests the need to model syntagmatic relationships. 
             </p>
             <figure>
-                <graphic n="1002" width="7.337777777777778cm" height="2.046111111111111cm" url="Pictures/e696e70abe1584b18e1ffd043e28b5d2.jpg" rend="inline"/>
+                <graphic height="2.046111111111111cm" n="1002" rend="inline" url="Pictures/e696e70abe1584b18e1ffd043e28b5d2.jpg" width="7.337777777777778cm"/>
                 <head>Ambiguity in script: the word reads 'indecatur', but the 
                     <hi rend="bold">a</hi> is indistinguishable from two 
                     <hi rend="bold">c</hi>s (Pierazzo, 2015: 87). St Gallen Stiftsbibliothek MS 189, p. 76 (detail).
@@ -100,9 +100,9 @@
                 <hi rend="italic">kanji</hi>, the pronunciation and meaning of a sign can change dramatically depending on its context.
             </p>
             <figure>
-                <graphic n="1003" width="4.686480555555556cm" height="3.4663305555555555cm" url="Pictures/01c4e090a1b1be70e67e577368beaaad.jpg" rend="inline"/>
-                <head>Figure 3: Determinatives in Egyptian hieroglyphics (Klinkenberg, 2005: 178). The two words have the same pronunciation, but different determinatives (‘human’ and ‘enemy’).</head>
-            </figure>
+                <graphic height="3.4663305555555555cm" n="1003" rend="inline" url="Pictures/01c4e090a1b1be70e67e577368beaaad.jpg" width="4.686480555555556cm"/>
+                <head>Figure 3: </head>
+            <p>Determinatives in Egyptian hieroglyphics (Klinkenberg, 2005: 178). The two words have the same pronunciation, but different determinatives (‘human’ and ‘enemy’).</p></figure>
             <p>Finally, the cases so far all assume linear or ‘chronosyntactic’ writing, but one also finds ‘toposyntactic’ cases where meaning is determined in part by the spatial relationship between signs (Klinkenberg, 1996; Klinkenberg, 2005: esp. 190-95). This is particularly the case in Egyptian hieroglyphs (Polis, 2018) but can be found even in alphabetic scripts, tables being an obvious example (see Pierazzo and Stokes, 2011, for some others).</p>
             <p>The question, then, is how to model these relationships. The most obvious is through graph or network models, where relationships can be explicitly recorded. For Archetype, this would comprise different types of relationships between instances of arch:Ontograph (essentially generalised graphemes: see Stokes, 2021). For instance an arch:Ontograph 
                 <hi rend="italic" xml:space="preserve">modifies phonology of </hi>other arch:Ontographs; a determinant arch:Ontograph 

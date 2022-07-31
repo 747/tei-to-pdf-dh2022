@@ -48,20 +48,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Short Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Geographic information</term>
                     <term>City image</term>
                     <term>Data portal</term>
                     <term>Tourism</term>
                     <term>Japan</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Asia</term>
                     <term>English</term>
                     <term>15th-17th Century</term>
@@ -101,33 +101,33 @@
                 <hi rend="italic">Hachiro Kiyokawa</hi> in Edo, achieved by linking geographic information with his narrated activities [7]. Furthermore, GeoLOD allowed us to not only link activities and geographic information but also to integrate and compare diary descriptions and information in publications.
             </p>
             <figure>
-                <graphic n="1001" width="15.000111111111112cm" height="11.114263888888889cm" url="Pictures/478e02757397973d54f09a6e186c7dd6.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Fig.1 Linking 
-                <hi rend="italic">Hachiro Kiyokawa</hi>’s movement with a modern-day map
-            </p>
+                <graphic height="11.114263888888889cm" n="1001" rend="inline" url="Pictures/478e02757397973d54f09a6e186c7dd6.png" width="15.000111111111112cm"/>
+            <head style="text-align: left; ">Fig.1 </head><p>Linking 
+                <hi rend="normal">Hachiro Kiyokawa</hi>’s movement with a modern-day map
+            </p></figure>
+            
             <p style="text-align: left; ">By comparing descriptions, we found that all three people with different attributes visited the most famous places of the time, such as 
                 <hi rend="italic">Atagoyama</hi> (<hi rend="Japanese">愛宕山</hi>) and 
                 <hi rend="italic" xml:space="preserve">Sensoji </hi>Temple (<hi rend="Japanese">浅草寺</hi>). Furthermore, by linking materials using GeoLOD, we could compare the diary descriptions with the illustrations of famous places in guidebooks. Thus, we could clarify the difference between the situation of the famous places that each traveler paid attention to and the general image depicted in the publication. We noted various situations in Edo by finding the differences between the basic stereotyped images and individual observations (Fig. 2). Furthermore, by using identifiers, we could easily add and compare information.
             </p>
             <figure>
                 <figure>
-                    <graphic n="1002" width="14.975416666666666cm" height="3.981977777777778cm" url="Pictures/624bac7b15ef98ab6b958ed1b9e413a3.png" rend="inline"/>
+                    <graphic height="3.981977777777778cm" n="1002" rend="inline" url="Pictures/624bac7b15ef98ab6b958ed1b9e413a3.png" width="14.975416666666666cm"/>
                 </figure>
                 <figure>
-                    <graphic n="1003" width="10.027708333333333cm" height="7.831666666666667cm" url="Pictures/b373afe405726a20d9b90e40b0607890.jpeg" rend="inline"/>
+                    <graphic height="7.831666666666667cm" n="1003" rend="inline" url="Pictures/b373afe405726a20d9b90e40b0607890.jpeg" width="10.027708333333333cm"/>
                 </figure>
-            </figure>
-            <p style="text-align: left; ">Fig. 2 Schliemann’s description of 
-                <hi rend="italic" xml:space="preserve">Sensoji </hi>Temple in an original French version (above) and the illustration of a Japanese guidebook of the same period (bottom). The products of the stalls are described in detail, reinforcing the general image. Meanwhile, no description is given of the large lantern that represents 
-                <hi rend="italic">Sensoji</hi> Temple.
-            </p>
+            <head style="text-align: left; ">Fig. 2 </head><p>Schliemann’s description of 
+                <hi rend="normal" xml:space="preserve">Sensoji </hi>Temple in an original French version (above) and the illustration of a Japanese guidebook of the same period (bottom). The products of the stalls are described in detail, reinforcing the general image. Meanwhile, no description is given of the large lantern that represents 
+                <hi rend="normal">Sensoji</hi> Temple.
+            </p></figure>
+            
             <p style="text-align: left; ">By developing connections with geographic information, we could collect data on the movements and behaviors of people described in historical materials as historical activity records. Future work may link various data extracted from historical materials, such as historical activity records, with spatiotemporal information.</p>
             <p style="text-align: left; ">We further utilized GeoLOD to publish “edomi” [8] by linking the databases with geographic information. “edomi” is a data portal site that offers a panoramic view of the city of Edo and various information on the Edo period. Users can search and utilize historical information across categories based on the current perspective (Fig. 3). By linking the movement of the three people with edomi, we plan, in a future work, to not only present geographic information but also clarify the relation between tourists and famous places in Edo.</p>
             <figure>
-                <graphic n="1004" width="15.000111111111112cm" height="8.013347222222222cm" url="Pictures/1cc8e5ad49ca46e638baaaecb006c9cc.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Fig. 3 Category list of content available on edomi: travel, shopping, map, gourmet, politics, economy, disaster, and learning (Japanese only as of November 2021)</p>
+                <graphic height="8.013347222222222cm" n="1004" rend="inline" url="Pictures/1cc8e5ad49ca46e638baaaecb006c9cc.png" width="15.000111111111112cm"/>
+            <head style="text-align: left; ">Fig. 3 </head><p>Category list of content available on edomi: travel, shopping, map, gourmet, politics, economy, disaster, and learning (Japanese only as of November 2021)</p></figure>
+            
         </body>
         <back>
             <div type="bibliogr">

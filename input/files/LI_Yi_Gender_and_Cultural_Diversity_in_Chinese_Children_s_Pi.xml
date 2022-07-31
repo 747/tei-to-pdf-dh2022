@@ -56,20 +56,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Keywords Diversity</term>
                     <term>Children's Picture Books</term>
                     <term>Term Frequency</term>
                     <term>Topic Modelling</term>
                     <term>China</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Asia</term>
                     <term>English</term>
                     <term>Contemporary</term>
@@ -83,68 +83,69 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Introduction</head>
                 <p>Picture books are a main source for pre-schoolers to learn about the wider world; it is important for children to see themselves in books and be aware of differences (Johnston and Bainbridge, 2017; Latima, 2020). Male dominance in children’s books, such as the dominance of male characters has long been problematic (Gooden and Gooden, 2001; Kim, 2016; Terras, 2018), it is important therefore to consider gender (as a protected characteristic) when considering diversity in the Chinese children’s book market. </p>
                 <p>Picture books in different countries reflect diverse cultural preferences (Saxby &amp; Winch, 1987; Wee et al., 2015). With a large, growing children’s picture book market (Johnson, 2018), China has translated children’s titles from countries including US, UK, Japan, etc (Li et al., 2020). This study examines the diversity in gender and popular themes in Chinese children’s picture books, by analysing the book authorship, titles, and blurbs of 2,000 bestselling children’s picture books from Dangdang, the major Chinese online bookseller. It provides a general reflection of topics in children’s books from different countries, including Asian, Western countries and other regions. </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Method</head>
-                <div type="div2" rend="DH-Heading2">
+                <div rend="DH-Heading2" type="div2">
                     <head>Data Corpus</head>
                     <p>We conducted an experimental approach from publicly available information online. Metadata from 2,000 best-selling pre-school picture books were scraped from Dangdang.com, using Python. All data, including book title, blurbs, author introductions were collected on 24
                         <hi rend="superscript">th</hi> September 2020 and filtered by sales, the earliest title was published in 2003. Data was allocated to four separate corpora regarding original language and region of publication including Chinese local, East Asian (Japan, South Korea, etc), English (US, UK, Canada, etc) European, and multiregional books (French, Germany, South Africa, etc).
                     </p>
                 </div>
-                <div type="div2" rend="DH-Heading2">
+                <div rend="DH-Heading2" type="div2">
                     <head>Data Analysis</head>
                     <p>This study firstly matched all authors with their sex and nationality by analysing authors’ introductions, as well as searching for official authorial information online, then compiling a statistical breakdown. Secondly, we tokenized book titles and blurbs using the Jieba package in Python, calculated the top 1,000 word list for each corpus. We then identified gendered words, classified them into five groups: pronouns (he/she); gender roles (mum/dad); nouns (princess/witch); animals (cow/cock); name of character (Carmela/Tintin); calculated frequency and compared them. </p>
                     <p>Thirdly, we adopted topic modelling, a text mining method for understanding contents of a corpus through a group of topics (Heidarysafa et al., 2019), to investigate how book topics differ. We used Bertopic, which supports English and Chinese, and tested different parameters for each corpus. We finally modified the number of topics to 3 and 30 topic words, with a value for each word showing its centrality to the topic. </p>
                     <p>All data was collected in Chinese with Chinese-style narratives. We analysed data in Chinese then translated the results into English, as presented below. Finally, we tried to match characters’ names with their original versions and present English names (if there were any).</p>
                 </div>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Results</head>
-                <div type="div2" rend="DH-Heading2">
+                <div rend="DH-Heading2" type="div2">
                     <head>Comparison of Authors</head>
                     <p>China had imported picture books from 34 countries and areas, with a male dominance among authors (see in Fig1&amp;2). There are 519 East Asian titles, 730 English titles and 332 multilingual titles. </p>
                     <figure>
                         <anchor xml:id="OLE_LINK1"/>
                         <anchor xml:id="OLE_LINK2"/>
-                        <graphic n="1001" width="16.002cm" height="5.505097222222222cm" url="Pictures/0d3a8c5769123c4f8b9e6c142e5f2c1a.png" rend="inline"/>
-                    </figure>
-                    <p>Fig 1 Nationality of Authors</p>
+                        <graphic height="5.505097222222222cm" n="1001" rend="inline" url="Pictures/0d3a8c5769123c4f8b9e6c142e5f2c1a.png" width="16.002cm"/>
+                    <head>Fig 1 </head><p>Nationality of Authors</p></figure>
+                    
                     <figure>
-                        <graphic n="1002" width="14.11111111111111cm" height="7.267222222222222cm" url="Pictures/415afbc8658fb827796afaf3a91b2c6d.png" rend="inline"/>
-                    </figure>
-                    <p>Fig 2 Gender of Authors
-                        <note place="foot" xml:id="ftn1" n="1">
+                        <graphic height="7.267222222222222cm" n="1002" rend="inline" url="Pictures/415afbc8658fb827796afaf3a91b2c6d.png" width="14.11111111111111cm"/>
+                    <head>Fig 2</head>
+                    <p>Gender of Authors
+                        <note xml:id="ftn1" n="1" place="foot">
                             <p rend="footnote text"> There are some titles were written by a group of editors, it is difficult to confirm their sex information, so we classified them into the none group.</p>
                         </note>
                     </p>
+                    </figure>
                 </div>
-                <div type="div2" rend="DH-Heading2">
+                <div rend="DH-Heading2" type="div2">
                     <head>Gender representation in books </head>
                     <p>A gendered keyword list compared the gender representation in books. There are more male characters in all corpora, however, mum/mom weighed more than dad in all books. Chinese and Asian titles have fewer gendered words, while more characters were portrayed in English books, correspondingly more pronouns are used. </p>
                     <figure>
-                        <graphic n="1003" width="14.908694444444444cm" height="12.986172222222223cm" url="Pictures/9202f9691dc5fb86ffd5065de5794df6.png" rend="inline"/>
+                        <graphic height="12.986172222222223cm" n="1003" rend="inline" url="Pictures/9202f9691dc5fb86ffd5065de5794df6.png" width="14.908694444444444cm"/>
                     </figure>
                     <p>* Numbers in every blank respectively represent the number of different words in this type and the total frequency of all words in this type.</p>
                 </div>
-                <div type="div2" rend="DH-Heading2">
+                <div rend="DH-Heading2" type="div2">
                     <head>Topic clustering between corpora of different regions</head>
                     <p>Topics from each dataset were presented in word clouds (Fig 3-14). Chinese culture, children’s education and books resulting from corporate franchises are three main topics in Chinese local titles. Similar topics can be found in East Asian titles, but there are more local topics. Big brands such as Disney, family education and animal stories are important aspects in English titles. </p>
                     <figure>
-                        <graphic n="1004" width="16.51cm" height="6.152444444444445cm" url="Pictures/235a10b0a2f686d14e694e08cdb1a5f6.png" rend="inline"/>
-                        <graphic n="1005" width="16.51cm" height="6.309430555555555cm" url="Pictures/93ef7ed85b6978e5a3160c5d3e03adda.png" rend="inline"/>
+                        <graphic height="6.152444444444445cm" n="1004" rend="inline" url="Pictures/235a10b0a2f686d14e694e08cdb1a5f6.png" width="16.51cm"/>
+                        <graphic height="6.309430555555555cm" n="1005" rend="inline" url="Pictures/93ef7ed85b6978e5a3160c5d3e03adda.png" width="16.51cm"/>
                     </figure>
                     <figure>
-                        <graphic n="1006" width="16.51cm" height="6.397625cm" url="Pictures/71bd7b32050ff18d7525bf4496a089ff.png" rend="inline"/>
-                        <graphic n="1007" width="16.51cm" height="6.3129583333333334cm" url="Pictures/7a007275b824d4a4e0b5dc3d7ccb3f25.png" rend="inline"/>
+                        <graphic height="6.397625cm" n="1006" rend="inline" url="Pictures/71bd7b32050ff18d7525bf4496a089ff.png" width="16.51cm"/>
+                        <graphic height="6.3129583333333334cm" n="1007" rend="inline" url="Pictures/7a007275b824d4a4e0b5dc3d7ccb3f25.png" width="16.51cm"/>
                     </figure>
                 </div>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Discussion</head>
                 <p>The data-driven analysis of book authors and blurbs indicates publishing, purchasing, and reading preferences and showed an overall male dominance the Chinese children’s picture book market. Chinese and East Asian titles emphasise cultural contents and are more education-oriented, while books from Western countries portray more characters and focus on storytelling and children’s emotions. However, this study is a partial reflection of the Chinese children’s book market due to limited data collected for popular titles. All translated titles were chosen under the publishing censorship in China, and they might not be proper representatives of diverse picture books. Further studies can expand the dataset, include more languages and book genres, as well as adopting other methods such as network analysis.</p>
             </div>

@@ -83,11 +83,9 @@
             </p>
             <figure>
                 <graphic n="1001" width="15.004813888888888cm" height="22.50722222222222cm" url="Pictures/5689f31ff49e1594637c91b6807c7c89.png" rend="inline"/>
+                <head rend="bold" style="font-size:10pt">Figure 1.</head>
+                <p style="font-size:10pt" xml:space="preserve">Pose similarities of 15 short cover dances on TikTok to the original choreography (keypose heatmap on line 1) of BTS’s “Permission to Dance”</p>
             </figure>
-            <p style="text-align: left;">
-                <hi rend="bold" style="font-size:10pt">Figure 1.</hi>
-                <hi style="font-size:10pt" xml:space="preserve"> Pose similarities of 15 short cover dances on TikTok to the original choreography (keypose heatmap on line 1) of BTS’s “Permission to Dance”</hi>
-            </p>
             <p style="text-align: left;">Neural deep learning-based image processing models that can locate with sufficient accuracy the individual appendages of human poses enable analyses of the interrelationships of dance cover videos at a representative scale. Running such pose estimation tools on dance videos enables both “distant viewing” studies that combine observations from more videos than human observers could reasonably view and annotate, and also “close viewing” analyses that incorporate subtle details of position and motion that would be indiscernible to observers in real time.</p>
             <p style="text-align: left;">
                 For this study, we identified a set of recent high-profile K-pop dance challenges; for each, we ran a pose estimation model optimized for single-figure videos from smartphone cameras, which can interpolate the positions of obscured appendages, on a dozen or so short-form cover dance videos from TikTok as well as on a full-length instructional video demonstrating the song’s complete choreography. The model estimates the two-dimensional coordinates of the 17 standard pose keypoints for each frame of a video, which we normalized within a unit space (L2-norm) to cancel out differences in camera distance and body size. We also augmented each pose with the positions of its 17 keypoints flipped across the horizontal axis so that dances presenting the mirror-image of the choreography—a common occurrence in dance videos—are scored as similar. The similarity between two poses was quantified as the cosine similarity of their normalized keypoint vectors.
@@ -97,11 +95,9 @@
             </p>
             <figure>
                 <graphic n="1002" width="16.002cm" height="24.003cm" url="Pictures/e0f6d1d62815c2b27f7d13fdb7776aff.png" rend="inline"/>
+                <head rend="bold" style="font-size:10pt">Figure 2.</head>
+                <p style="font-size:10pt" xml:space="preserve">Plots as in Figure 1 for the dance demonstration video and 16 short cover dances from TikTok for TWICE’s “I Can’t Stop Me”</p>
             </figure>
-            <p style="text-align: left;">
-                <hi rend="bold" style="font-size:10pt">Figure 2.</hi>
-                <hi style="font-size:10pt" xml:space="preserve"> Plots as in Figure 1 for the dance demonstration video and 16 short cover dances from TikTok for TWICE’s “I Can’t Stop Me”</hi>
-            </p>
             <p style="text-align: left;">
                 Our analytical results (Figures 1 and 2) revealed that most individuated deviations from the indexical and consensus choreography tended to occur at the beginnings and especially the endings of the cover dances, as well as during the most dynamic dance moves (jumping, crouching). Comparing the latter cases to the pose estimation confidence levels indicates that these are not just artifacts of the model “losing track” of keypoints during such moves, but rather, the disruptive nature of the move seems to give the dancers license to deviate from the norm. Similarly, having already established their mimetic proficiency in the earlier sections of a cover dance, performers appear to feel more freedom to introduce personalized variations in the closing portion.
             </p>

@@ -64,19 +64,19 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>portal site</term>
                     <term>GIS</term>
                     <term>Japanese old maps</term>
                     <term>georeference</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Asia</term>
                     <term>English</term>
                     <term>18th Century</term>
@@ -122,9 +122,9 @@
             </p>
             <p>Through this framework, it is now possible even for GIS novices to work with data or old maps they themselves or other users have georeferenced easily, through the Internet—as well as to conduct analysis using a variety of maps and data. Establishing this sort of environment should lead to further advancements in historical GIS research and education. Future issues include making the three systems multilingual and streamlining the transfer of data between them. In addition, we plan to expand the system into applied research, such as comparative analysis using geo-referenced old maps and automatic extraction of place names.</p>
             <figure>
-                <graphic n="1001" width="16.003763888888887cm" height="11.997972222222222cm" url="Pictures/ec816ce9dc9e5b59b1317451d9b624c4.jpeg" rend="inline"/>
-            </figure>
-            <p>Figure 1 Framework of Japanese Old Maps Online</p>
+                <graphic height="11.997972222222222cm" n="1001" rend="inline" url="Pictures/ec816ce9dc9e5b59b1317451d9b624c4.jpeg" width="16.003763888888887cm"/>
+            <head>Figure 1 </head><p>Framework of Japanese Old Maps Online</p></figure>
+            
         </body>
     </text>
 </TEI>

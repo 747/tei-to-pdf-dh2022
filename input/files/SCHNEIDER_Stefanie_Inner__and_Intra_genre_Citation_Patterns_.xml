@@ -292,13 +292,13 @@
                     <hi rend="italic">giallo</hi>.
                 </p>
                 <figure>
-                    <graphic n="1004" width="15.980833333333333cm" height="6.752166666666667cm" url="Pictures/289f5759fdc8ffa07d668168906b1fe7.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Fig. 1: (A) Number of films by genre, subdivided by total number of genres stored for films of that genre. (B) Group-dependent metrics over time: 
+                    <graphic height="6.752166666666667cm" n="1004" rend="inline" url="Pictures/289f5759fdc8ffa07d668168906b1fe7.png" width="15.980833333333333cm"/>
+                <head style="text-align: left; ">Fig. 1: </head><p>(A) Number of films by genre, subdivided by total number of genres stored for films of that genre. (B) Group-dependent metrics over time: 
                     <hi rend="italic">group in-degree centrality</hi> (blue), 
                     <hi rend="italic">out-degree centrality</hi> (orange), and 
                     <hi rend="italic">triangle participation ratio</hi> (green); with Monte Carlo generated standard deviation bands in lighter colors.
-                </p>
+                </p></figure>
+                
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>Results</head>
@@ -324,9 +324,9 @@
                     <hi rend="italic">out-degree centrality</hi> confirm. Three citation phases can be verified: gothic horror (<hi rend="italic">Frankenstein</hi>, 1931), superseded by psychological and occult topoi (<hi rend="italic">Rosemary’s Baby</hi>, 1968) that are increasingly accompanied by slasher films (<hi rend="italic">The Texas Chain Saw Massacre</hi>, 1974).
                 </p>
                 <figure>
-                    <graphic n="1005" width="15.998472222222222cm" height="13.098638888888889cm" url="Pictures/335c7a0ffa9f06408f0162849e33f4d3.png" rend="inline"/>
+                    <graphic height="13.098638888888889cm" n="1005" rend="inline" url="Pictures/335c7a0ffa9f06408f0162849e33f4d3.png" width="15.998472222222222cm"/>
+                <head>Tab. 1: </head><p style="text-align: left; ">Films by in-degree, with ratio of intra-genre citations in percent.</p>
                 </figure>
-                <p style="text-align: left; ">Tab. 1: Films by in-degree, with ratio of intra-genre citations in percent.</p>
             </div>
         </body>
         <back>

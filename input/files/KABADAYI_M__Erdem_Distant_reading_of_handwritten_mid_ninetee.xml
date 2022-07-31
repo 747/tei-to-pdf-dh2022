@@ -48,18 +48,18 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>computer vision</term>
                     <term>handwritten text recognition</term>
                     <term>handwritten digit recognition</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Asia</term>
                     <term>Europe</term>
                     <term>English</term>
@@ -77,42 +77,42 @@
         <body>
             <p>We propose an interdisciplinary paper in the fields of historical demography and computer vision based upon distant reading of mid-nineteenth century Ottoman population registers. Produced between the 1840s and the 1860s, these registers provide detailed demographic information on members of the households, i.e. names, family relations, ages, and occupations. The registers became available for research at the Ottoman state archives in Turkey, as recently as 2011. Their total number is around 11,000. Until now they have not been subject to any systematic study. Only individual registers were manually transliterated on a piecemeal manner. Source material for our case study consists of three population registers (NFS.d. 1865, 1866, 1867) belonging to the city of Manisa (See Fig 1). </p>
             <figure>
-                <graphic n="1001" width="15.980833333333333cm" height="10.503958333333333cm" url="Pictures/b8809777b0a70735fdeee864ef7c58fa.png" rend="inline"/>
-            </figure>
-            <p>Figure 1: A sample register page and a household object are shown. The individual and household numbers are written at the top (line 1) of the individual data and ages are written in the last lines (line 4). Line 1: physical appearance (<hi rend="italic">uzun boylu kır sakallı</hi>: tall, greybeard). Line 2: occupational title 
-                <hi rend="italic">bezci</hi>: clothier), name (Mehmed son of Mehmed).
-            </p>
+                <graphic height="10.503958333333333cm" n="1001" rend="inline" url="Pictures/b8809777b0a70735fdeee864ef7c58fa.png" width="15.980833333333333cm"/>
+            <head>Figure 1: </head><p>A sample register page and a household object are shown. The individual and household numbers are written at the top (line 1) of the individual data and ages are written in the last lines (line 4). Line 1: physical appearance (<hi rend="normal">uzun boylu kır sakallı</hi>: tall, greybeard). Line 2: occupational title 
+                <hi rend="normal">bezci</hi>: clothier), name (Mehmed son of Mehmed).
+            </p></figure>
+            
             <p>In our ongoing multi-disciplinary research project, which has already started to contribute to digital and geospatial humanities with publications, we reached an unprecedented scale of manual data entry of Ottoman handwritten archival documents and data annotation possibilities for distant reading. Our project team located, read and entered data from a total of around 70 population registers belonging to around 100 locations. The total number and the order of individuals in registered on specific pages are also manually entered to our databases. Therefore, we could match automatically detected individual pixel positions in the page images to a large extent. From these registers our team of experts manually entered historical demographic information of a total of around 170,000 individuals living in around 70,000 households (see Fig. 2).</p>
             <figure>
-                <graphic n="1002" width="16.075905555555554cm" height="9.155813888888888cm" url="Pictures/155a65b10dceb3a650ab4589818dbbb8.png" rend="inline"/>
-            </figure>
-            <p>Figure 2: Sample data entry and the manual annotation process for Ottoman population registers from Bursa.</p>
+                <graphic height="9.155813888888888cm" n="1002" rend="inline" url="Pictures/155a65b10dceb3a650ab4589818dbbb8.png" width="16.075905555555554cm"/>
+            <head>Figure 2: </head><p>Sample data entry and the manual annotation process for Ottoman population registers from Bursa.</p></figure>
+            
             <p>We use this manually entered ground truth data to assess the effectiveness of our distant reading methods and calculate exact error rates. Our aim is to develop efficient distant reading methods based upon state-of-art computer vision technologies. Our work can be summarized in three steps. First, we segmented demographic information for each individual and, auto-counted persons in the city of Manisa. Then, we created a public Arabic handwritten digit dataset by manually spotting and cropping a selection of digits from the registers. Afterward, we automatically spotted the digits in our registers and recognized them using this dataset as training data. Lastly, we manually annotated occupations pixel-wise from the registers and created another publicly available dataset, comprising 400 handwritten occupational titles of 40 different occupations. We then spotted and identified the handwritten occupations automatically by using deep transfer learning (DTL). To the best of our knowledge, this is the first study to apply DTL on Arabic keyword and digit spotting.</p>
             <p>With this paper we want to present not only our computing achievements to the DH community, but also problems we encountered in the process. Furthermore, we would like to underline implications of our new methodology in conducting research in digital history, historical demography and economic history. </p>
             <p>The steps of our methodology: First, we developed a deep learning algorithm for detecting individuals in the population registers. We created a manually labeled dataset by using several registers and trained CNN models by using the dhSegment tool (Fig. 3, [Oliveira, SA, Benoit S,and Frederic K. "dhSegment: A generic deep-learning approach for document segmentation." 2018 16th ICFHR, IEEE]).</p>
             <figure>
-                <graphic n="1003" width="9.450777777777779cm" height="8.238427777777778cm" url="Pictures/32dcdc22c9e1bc81e5b5b91c81de74b0.png" rend="inline"/>
-            </figure>
-            <p>Figure 3: The original page of a register is shown on the left side. The annotated label image is shown on the right side.</p>
+                <graphic height="8.238427777777778cm" n="1003" rend="inline" url="Pictures/32dcdc22c9e1bc81e5b5b91c81de74b0.png" width="9.450777777777779cm"/>
+            <head>Figure 3: </head><p>The original page of a register is shown on the left side. The annotated label image is shown on the right side.</p></figure>
+            
             <p>We trained different models for different types of layouts. The first model was trained for registers with tightly placed individuals. The second model was trained for registers with loosely placed individuals. We used the former model for Manisa registers of this study. After we detected the individual objects in these registers, by using the pixelwise locations, we cropped the demographic data of individuals to be used for line detection algorithms (Fig. 4).</p>
             <figure>
-                <graphic n="1004" width="4.997097222222222cm" height="7.075713888888889cm" url="Pictures/77306e2065cca79d33a1acaee399e0b3.jpeg" rend="inline"/>
-            </figure>
-            <p>Figure 4: Automatically detected individuals on a sample page.</p>
+                <graphic height="7.075713888888889cm" n="1004" rend="inline" url="Pictures/77306e2065cca79d33a1acaee399e0b3.jpeg" width="4.997097222222222cm"/>
+            <head>Figure 4: </head><p>Automatically detected individuals on a sample page.</p></figure>
+            
             <p>In the Ottoman population registers series, the ages are written in the last line of each entry. Therefore, we applied a peak detection algorithm for detecting the last peak to separate the age information in the last line. As we are searching for the last line, we crop everything under the last and largest peak in the reverse HPP, which provides us the age of individuals (Fig. 5).</p>
             <figure>
-                <graphic n="1005" width="10.248605555555555cm" height="4.319369444444445cm" url="Pictures/fc47e3bb83f2a2e7121f903d26d93894.png" rend="inline"/>
-            </figure>
-            <p>Figure 5: A sample segmented individual in the left and corresponding valleys in HPP in the right are shown.</p>
+                <graphic height="4.319369444444445cm" n="1005" rend="inline" url="Pictures/fc47e3bb83f2a2e7121f903d26d93894.png" width="10.248605555555555cm"/>
+            <head>Figure 5: </head><p>A sample segmented individual in the left and corresponding valleys in HPP in the right are shown.</p></figure>
+            
             <p>After line segmentation, we detected the digits, recognized them and directly assigned the digit value if there is only one digit. If there are two digits, we combined the digits into two-digit numbers by making necessary calculations. After predicting the ages, we retrieved the ground truth age of individuals from our databases, and then we draw the histogram of ages and compared it with ground truth distribution (Fig. 6). </p>
             <figure>
-                <graphic n="1006" width="7.778752777777778cm" height="5.425838888888889cm" url="Pictures/7608a1892a27e060f4bf8e23a252cda1.jpg" rend="inline"/>
-            </figure>
-            <p>Figure 6: The age distributions of ground truth ages and predictions are demonstrated.</p>
+                <graphic height="5.425838888888889cm" n="1006" rend="inline" url="Pictures/7608a1892a27e060f4bf8e23a252cda1.jpg" width="7.778752777777778cm"/>
+            <head>Figure 6: </head><p>The age distributions of ground truth ages and predictions are demonstrated.</p></figure>
+            
             <figure>
-                <graphic n="1007" width="6.856236111111111cm" height="3.6918194444444445cm" url="Pictures/4365dd521a20ed93e4b457e4c693cd66.jpg" rend="inline"/>
-            </figure>
-            <p>Figure 7: An original cropped individual and the manually labeled occupational title are shown.</p>
+                <graphic height="3.6918194444444445cm" n="1007" rend="inline" url="Pictures/4365dd521a20ed93e4b457e4c693cd66.jpg" width="6.856236111111111cm"/>
+            <head>Figure 7: </head><p>An original cropped individual and the manually labeled occupational title are shown.</p></figure>
+            
             <p>Lastly, we tried to identify occupational titles by creating an annotated public dataset including 400 handwritten occupational titles of 40 types (Fig. 7). To identify the occupational titles by using QbE (Query-by-Example), we applied DTL-based method in which we first trained a CNN network and used it to extract features from a pretrained Resnet-50 architecture and then identified the query images by applying k-nearest neighbor (kNN) algorithm on these features. In total, we extracted valuable information about number of people, age and occupational title information from these historical registers.</p>
             <p>Implications for historical demography and economic history: </p>
             <p>Our multi-stepped procedure can count total number of registered persons in given locations to a very high level of accuracy. The Ottoman population registers claims to cover entire male populace in the places they were conducted. The scribes did not reliably count the registered persons. Just to be able to automatically count total numbers of registered persons has huge potential for historical population studies using Ottoman archival documentation. Furthermore, we can now also count total number of households automatically. This feature has exploratory value for assessing household sizes for large parts of the mid-nineteenth century Ottoman Empire. Lastly distant reading of ages of individuals opens untapped possibilities for historical demography studies for around a dozen countries, territories of which were under the Ottoman rule in the mid-nineteenth century. Typically, several such countries such as Bulgaria, Greece and Serbia conducted their first population censuses after their independence and historical demography of these countries cannot reach back to pre-independence Ottoman era. Hence, making Ottoman population registers available on large scale via distant reading would revolutionize historical demography of not only Turkey, but also substantial part of Southeast Europe. Finally, sectoral coding of occupations and calculating their concentrations among major sectors (i.e. agriculture, industry, and services) provide economic historians with valuable proxy data to study the level of economic development. Therefore, methods of distant reading of occupations in large scale, such as are working on currently, will allow new in-depth studies on structural change of employment in the field of economic history again for substantial regions covered by the mid-nineteenth century Ottoman population registers.</p>

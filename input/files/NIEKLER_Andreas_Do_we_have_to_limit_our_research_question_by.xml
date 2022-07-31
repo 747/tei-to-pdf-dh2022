@@ -51,20 +51,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Electronic Poster</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Tool</term>
                     <term>Text Mining</term>
                     <term>NLP</term>
                     <term>Research Software</term>
                     <term>Text</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Global</term>
                     <term>English</term>
                     <term>20th Century</term>
@@ -96,9 +96,9 @@
             <p>
                 <figure>
                     <graphic url="Pictures/59c42f9e6357db64c7bbfd9d2278e844.png"/>
-                </figure>
+                <head>Figure 1: </head><p>The view shows the interface of the iLCM in which an editing interface for the scripts has been integrated. The example of a co-occurrence analysis shows that the underlying standard process, which can also be used via the graphical user interface, is customizable. The edited process can then be integrated again with a custom process name and is also usable for all users of the graphical interface.</p></figure>
             </p>
-            <p>Figure 1: The view shows the interface of the iLCM in which an editing interface for the scripts has been integrated. The example of a co-occurrence analysis shows that the underlying standard process, which can also be used via the graphical user interface, is customizable. The edited process can then be integrated again with a custom process name and is also usable for all users of the graphical interface.</p>
+            
         </body>
         <back>
             <div type="bibliogr">

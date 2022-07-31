@@ -67,17 +67,17 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>encyclopedias</term>
                     <term>gender bias</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>19th Century</term>
@@ -91,34 +91,31 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Introduction</head>
-                <p>This paper quantifies textual patterns relating to gendered assumptions in a fairly unique text, an entire “women’s encyclopedia” from 1830’s Germany, which at 10 volumes and 1,461,000 word tokens was of comparable size to contemporary general encyclopedias, but written and marketed for a female audience. We perform experiments on classifying gender of biographical entries and querying a specific textual feature, calendar dates, with context from comparison 19
-                    <hi rend="sup">th</hi>-20
-                    <hi rend="sup">th</hi> century encyclopedias from the EncycNet corpus.<note xml:id="ftn1" place="foot" n="1"><ptr target="https://encycnet.github.io/"/></note>
+                <p>This paper quantifies textual patterns relating to gendered assumptions in a fairly unique text, an entire “women’s encyclopedia” from 1830’s Germany, which at 10 volumes and 1,461,000 word tokens was of comparable size to contemporary general encyclopedias, but written and marketed for a female audience. We perform experiments on classifying gender of biographical entries and querying a specific textual feature, calendar dates, with context from comparison 19<hi rend="sup">th</hi>-20<hi rend="sup">th</hi> century encyclopedias from the EncycNet corpus.<note xml:id="ftn1" n="1" place="foot"><ptr target="https://encycnet.github.io/"/></note>
                 </p>
                 <p>Encyclopedias in the European tradition were “an element of culture and peoples’ lives” (Loveland, 2019), but while encyclopedias invite interpretation (Einbinder, 1966), their length challenges non-digital scholarship; digital humanities thus “holds promise for the study of encyclopedias” (Loveland, 2019). </p>
                 <p>The 
                     <hi rend="italic">Damen Conversations Lexikon</hi> (“Ladies’ Conversations Encyclopedia,” hereafter 
                     <hi rend="italic">DamenLex</hi>) has been the subject of little scholarly analysis. Roßbach (2015) writes that the first edition of the 
-                    <hi rend="italic">DamenLex</hi> “primarily aims to act as a behavioral guide for virtuous women,”<note xml:id="ftn2" place="foot" n="2"> Translation of quotations by Roßbach (2015) and Schaser (2016) in this paragraph are by us.</note> but Schaser (2016) asserts that this “little known” encyclopedia is “a treasure trove for questions of cultural history.” 
+                    <hi rend="italic">DamenLex</hi> “primarily aims to act as a behavioral guide for virtuous women,”<note xml:id="ftn2" n="2" place="foot"> Translation of quotations by Roßbach (2015) and Schaser (2016) in this paragraph are by us.</note> but Schaser (2016) asserts that this “little known” encyclopedia is “a treasure trove for questions of cultural history.” 
                     <hi rend="italic">DamenLex </hi>editor Carl Herloßsohn (1804-1849) explained its content selection in gendered assumptions and value judgments, and the extent to which the 
                     <hi rend="italic">DamenLex</hi> actually followed Herloßsohn’s stated goals is the starting point of our research questions. 
                 </p>
                 <p>
                     <figure>
                         <graphic url="Pictures/96ddd0e8c561b0058b8f1fbe3611044d.png"/>
-                        <head>Figure 1. A sample page and illustration from the 
-                            <hi rend="italic">Damen Conversations Lexikon</hi>
-                        </head>
-                    </figure>
+                        <head>Figure 1. </head>
+                    <p>A sample page and illustration from the 
+                        <hi rend="italic">Damen Conversations Lexikon</hi>
+                        </p></figure>
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Related work</head>
                 <p>Distant reading the 
-                    <hi rend="italic">DamenLex</hi> for ideological traces relates to issues of women and gender in 19
-                    <hi rend="sup">th</hi>-century Europe, women’s education and achievement, and the history of books not 
+                    <hi rend="italic">DamenLex</hi> for ideological traces relates to issues of women and gender in 19<hi rend="sup">th</hi>-century Europe, women’s education and achievement, and the history of books not 
                     <hi rend="bold">by</hi>, but marketed 
                     <hi rend="bold">for</hi> women, in which women’s access to the written word, by controlling literacy and access to reading material, has been a source of anxiety (Jack, 2012). We would thus expect the 
                     <hi rend="italic">DamenLex</hi> to display evidence of two opposing forces: women’s education and controlling ideology through explicit or implicit gender presumptions within the content, stylistics, and selection of topics.
@@ -129,19 +126,18 @@
                     <hi rend="italic">DamenLex</hi> was published was “a golden age for reading, and for women’s reading in particular,” per Jack (2012), as the growth of industrialization, printing and publishing were “accompanied by wide-ranging debates about what women [...] should be encouraged to read, or discouraged — even prevented — from reading.”
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Gendered assumptions</head>
-                <p>Gender bias in biographical entry subjects is an unfortunate theme in the history of the encyclopedia, with the 11
-                    <hi rend="sup">th</hi> Britannica, for instance, including an entry on Pierre Curie but not Marie Curie (Thomas, 1992), and Bamman and Smith (2014) estimated that only 14.8% of biographical entries in Wikipedia have women as subjects.
+                <p>Gender bias in biographical entry subjects is an unfortunate theme in the history of the encyclopedia, with the 11<hi rend="sup">th</hi> Britannica, for instance, including an entry on Pierre Curie but not Marie Curie (Thomas, 1992), and Bamman and Smith (2014) estimated that only 14.8% of biographical entries in Wikipedia have women as subjects.
                 </p>
                 <p>The 
                     <hi rend="italic">DamenLex</hi>’s editor explicitly included many biographies of women to appeal to women readers, suggesting experiments to classify the gender of the ~800 biographical entries in the 
-                    <hi rend="italic">DamenLex</hi> and almost 44,000 in comparison encyclopedias.<note xml:id="ftn3" place="foot" n="3"> The encyclopedias for our experiments are part of a larger set of historical reference works converted to TEI (Hagen et al., 2020): <ptr target="http://dx.doi.org/10.5281/zenodo.4039569"/>.</note> To classify biographical entries, we trained a bag-of-words-based SVM classifier to label entries as either biography, place, object or abstract concept (with an accuracy of 0.92 for biographies). To classify the gender of each biographical entry, a rule-based approach based on Reagle and Rhue (2011) compares the ratios of male and female personal pronouns in the entry (e.g. sein/his, ihr/her). Only entries longer than 20 tokens were classified, and we only proceeded with entries for which a gender was identified. The amount of unclassified entries is low for 
+                    <hi rend="italic">DamenLex</hi> and almost 44,000 in comparison encyclopedias.<note xml:id="ftn3" n="3" place="foot"> The encyclopedias for our experiments are part of a larger set of historical reference works converted to TEI (Hagen et al., 2020): <ptr target="http://dx.doi.org/10.5281/zenodo.4039569"/>.</note> To classify biographical entries, we trained a bag-of-words-based SVM classifier to label entries as either biography, place, object or abstract concept (with an accuracy of 0.92 for biographies). To classify the gender of each biographical entry, a rule-based approach based on Reagle and Rhue (2011) compares the ratios of male and female personal pronouns in the entry (e.g. sein/his, ihr/her). Only entries longer than 20 tokens were classified, and we only proceeded with entries for which a gender was identified. The amount of unclassified entries is low for 
                     <hi rend="italic">Brockhaus 1837</hi> (about 1%), where entries tend to be relatively long, but higher in 
                     <hi rend="italic">Brockhaus 1911</hi> (about 37%), for example.
                 </p>
                     <figure n="span_all">
-                        <table rend="frame" xml:id="Tabelle1">
+                        <table xml:id="Tabelle1" rend="frame">
                             <row>
                                 <cell/>
                                 <cell rend="center">
@@ -199,14 +195,14 @@
                                 <cell rend="center">14.80%</cell>
                                 <cell rend="center">15.50%</cell>
                             </row>
+                        <head>Table 1. Estimate of male and female biographies in historical German encyclopedias. Wikipedia results reported by Bamman and Schmith (2014) and Graells-Garrido et al. (2015)</head>
                         </table>
-                        <p>Table 1. Estimate of male and female biographies in historical German encyclopedias. Wikipedia results reported by Bamman and Schmith (2014) and Graells-Garrido et al. (2015)</p>
                     </figure>
                 <p>
                     <figure>
                         <graphic url="Pictures/affd6ce6f6dca69db4e8d591b327d700.png"/>
-                        <head>Figure 2. Boxplot visualizing the entry lengths of female biographies in tokens in all encyclopedias. The solid, orange line marks the median. Additionally, the median of male biography entry lengths (dotted, blue line) and the median of all entry lengths, including biographies, (dashed, green line) are given</head>
-                    </figure>
+                        <head>Figure 2. </head>
+                    <p>Boxplot visualizing the entry lengths of female biographies in tokens in all encyclopedias. The solid, orange line marks the median. Additionally, the median of male biography entry lengths (dotted, blue line) and the median of all entry lengths, including biographies, (dashed, green line) are given</p></figure>
                 </p>
                 <p>From these results, 
                     <hi rend="italic">DamenLex</hi> contains a much higher percentage of female biographies than all other comparison texts (Table 1) including Wikipedia, with female biographies around 40%. Two chi-squared tests (Table 4 in the appendix) reveal that there is a highly significant relationship between encyclopedia and the amount of entries on women only when the 
@@ -223,12 +219,12 @@
                     <hi rend="italic">DamenLex</hi> biographical entries provide insight into content differences. Among the 15 most frequent nouns in female biographies are role labels such “daughter,” “wife,” and “mother,” and family relations such as “husband” and “child.” In male biographies, in contrast, only “father” and “son” appear in the 20 most frequent nouns, while references to artistic production such as “poet,” “poem,” “opera,” and “writing” fill out the rest. Such artistic terms can also be found in female biographies, only at lower frequency ranks. Among the 50 most frequent adjectives in male entries, only a handful do not appear in the 100 most frequent adjectives in female entries: “tremendous,” “glowing,” “musical,” and “exquisite.” The first two words are typical terms to describe sublime aesthetic experiences, which aligns with contemporary gendered assumptions about aesthetics.
                 </p>
                 <p>Herloßsohn wrote that a “romantic representation” of the subjects in the 
-                    <hi rend="italic">DamenLex</hi> was desired: “not a tiresome enumeration of facts and the course of time, but a lively, rapidly gliding painting [...] should be given.” We thus hypothesize that the amount of calendar dates will be far lower in its entries. To investigate, we tagged encyclopedia entries with heideltime,<note xml:id="ftn4" place="foot" n="4"><ptr target="https://github.com/HeidelTime/heideltime"/></note> a multilingual temponym tagger. As Table 2 shows, the amount of dates is indeed far lower in 
+                    <hi rend="italic">DamenLex</hi> was desired: “not a tiresome enumeration of facts and the course of time, but a lively, rapidly gliding painting [...] should be given.” We thus hypothesize that the amount of calendar dates will be far lower in its entries. To investigate, we tagged encyclopedia entries with heideltime,<note xml:id="ftn4" n="4" place="foot"><ptr target="https://github.com/HeidelTime/heideltime"/></note> a multilingual temponym tagger. As Table 2 shows, the amount of dates is indeed far lower in 
                     <hi rend="italic">DamenLex</hi> than comparison encyclopedias, confirming the gendered assumption that hard facts such as calendar dates were considered undesirable for women readers. Verification via the chi-squared test (Table 4 in the appendix) results that there is no statistical difference between the encyclopedias concerning the amount of dates, however.
                 </p>
                 <p>
                     <figure>
-                        <table rend="frame" xml:id="Tabelle2" n="text_smaller">
+                        <table xml:id="Tabelle2" n="text_smaller" rend="frame">
                             <note type="direction">
                                 <width unit="pt">21</width>
                                 <width unit="pt">37</width>
@@ -274,23 +270,23 @@
                                 <cell rend="center">3.81%</cell>
                                 <cell rend="center">4.32%</cell>
                             </row>
+                        <head>Table 2. Relative amount of dates found in a sample of 256 entries of similar length (about 100,000 tokens overall) per encyclopedia</head>
                         </table>
-                        <p>Table 2. Relative amount of dates found in a sample of 256 entries of similar length (about 100,000 tokens overall) per encyclopedia</p>
                     </figure>
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Conclusion</head>
                 <p>By quantifying the ratios of male/female biographical entries in the 
                     <hi rend="italic">DamenLex</hi> and comparison encyclopedias, comparative length of biographical entries, and a query of calendar dates in the texts, we provide new knowledge and add historical context to vibrant ongoing research on gender bias in encyclopedias (including Wikipedia). We agree with Schaser (2006) that the “little known” encyclopedia of the 
                     <hi rend="italic">DamenLex</hi> is “a treasure trove for questions of cultural history,” and have presented evidence that distant reading of gender distribution in biographical entries and content presentation can reveal gendered assumptions in the text. This paper will include these and other experiments to quantify gendered assumptions in encyclopedia texts, and could support future work in gender bias in not only historical but also contemporary encyclopedias.
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Appendix</head>
                 <p>
                     <figure>
-                        <table rend="frame" xml:id="Tabelle3">
+                        <table xml:id="Tabelle3" rend="frame">
                             <row>
                                 <cell>Brockhaus 1809</cell>
                                 <cell rend="center">
@@ -345,14 +341,14 @@
                                     <hi rend="italic">p</hi> = 0.93
                                 </cell>
                             </row>
+                        <head>Table 3. Results of the one-sided Mann-Whitney U tests (<hi rend="italic">p</hi>&lt;.01) to confirm or reject the hypothesis whether male biography entries are significantly longer than female biography entries per encyclopedia
+                        </head>
                         </table>
-                        <p>Table 3. Results of the one-sided Mann-Whitney U tests (<hi rend="italic">p</hi>&lt;.01) to confirm or reject the hypothesis whether male biography entries are significantly longer than female biography entries per encyclopedia
-                        </p>
                     </figure>
                 </p>
                 <p>
                     <figure>
-                        <table rend="frame" xml:id="Tabelle4">
+                        <table xml:id="Tabelle4" rend="frame">
                             <row>
                                 <cell>Number of entries (incl. DamenLex)</cell>
                                 <cell rend="center">χ2 (5, 
@@ -374,9 +370,9 @@
                                     <hi rend="italic">p</hi> = .41
                                 </cell>
                             </row>
+                        <head>Table 4. Results for the chi-squared tests (<hi rend="italic">p</hi>&lt;.01) for the amount of entries on men and women as well as the amount of dates (and non-dates, in percent) per encyclopedia. For the dates, we opted for choosing the percentages over the raw counts, as the sample size makes the interpretation of the otherwise very low p-values difficult
+                        </head>
                         </table>
-                        <p>Table 4. Results for the chi-squared tests (<hi rend="italic">p</hi>&lt;.01) for the amount of entries on men and women as well as the amount of dates (and non-dates, in percent) per encyclopedia. For the dates, we opted for choosing the percentages over the raw counts, as the sample size makes the interpretation of the otherwise very low p-values difficult
-                        </p>
                     </figure>
                 </p>
             </div>
@@ -399,14 +395,12 @@
                     </bibl>
                     <bibl>
                         <hi rend="bold">Graells-Garrido, E., Lalmas, M. and Menczer, F.</hi> (2015), First Women, Second Sex: Gender Bias in Wikipedia. 
-                        <hi rend="italic">Proceedings of the 26</hi>
-                        <hi rend="sup italic">th</hi>
+                        <hi rend="italic">Proceedings of the 26</hi><hi rend="sup italic">th</hi>
                         <hi rend="italic"> ACM Conference on Hypertext &amp; Social Media</hi>, pp. 165-74.
                     </bibl>
                     <bibl>
                         <hi rend="bold">Hagen, T., Ketzan, E., Jannidis, F. and Witt, A.</hi> (2020). Twenty-two Historical Encyclopedias encoded in TEI: a new Resource for the Digital Humanities. 
-                        <hi rend="italic">Proceedings of the 4</hi>
-                        <hi rend="sup italic">th</hi>
+                        <hi rend="italic">Proceedings of the 4</hi><hi rend="sup italic">th</hi>
                         <hi rend="italic"> joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature</hi>, pp. 112-20.
                     </bibl>
                     <bibl>

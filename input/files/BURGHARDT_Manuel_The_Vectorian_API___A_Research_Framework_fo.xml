@@ -78,7 +78,7 @@
         <body>
             <p>In the humanities, texts are often quoted, referenced or alluded to (see Bamman &amp; Crane, 2008). In order to automatically detect complex cases of so-called intertextual references, it is not enough to match two texts on the purely lexical level, but rather to also take into account the semantic level (see Fig. 1).</p>
             <figure>
-                <graphic n="1001" width="14.338947222222222cm" height="3.114261111111111cm" url="Pictures/dd98be3142f5da70ef32e4f2802d6cba.png" rend="inline"/>
+                <graphic height="3.114261111111111cm" n="1001" rend="inline" url="Pictures/dd98be3142f5da70ef32e4f2802d6cba.png" width="14.338947222222222cm"/>
                 <head>Example for an intertextual reference to Shakespeare’s “Macbeth”. </head>
             </figure>
             <p>The task at hand is typically referred to as 
@@ -97,7 +97,7 @@
                 </note>.
             </p>
             <figure>
-                <graphic n="1002" width="15.92cm" height="9.383888888888889cm" url="Pictures/9d79290fb7a087f69041022d1feebec4.jpg" rend="inline"/>
+                <graphic height="9.383888888888889cm" n="1002" rend="inline" url="Pictures/9d79290fb7a087f69041022d1feebec4.jpg" width="15.92cm"/>
                 <head>The Vectorian workflow and core elements of the API.</head>
             </figure>
             <p>First, the
@@ -122,7 +122,7 @@
                 <hi rend="bold">Query</hi> can be searched in the previously created corpus. Figure 3 shows an example query for the Shakespeare phrase “old men’s crotchets”. Two example results that were retrieved by the Vectorian are also provided. These results illustrate how the Vectorian evaluates every word according to the selected embeddings and then provides a score for its match to the original query.
             </p>
             <figure>
-                <graphic n="1003" width="12.946944444444444cm" height="6.856830555555556cm" url="Pictures/03b455a766ec34c147d968f418a773e0.png" rend="inline"/>
+                <graphic height="6.856830555555556cm" n="1003" rend="inline" url="Pictures/03b455a766ec34c147d968f418a773e0.png" width="12.946944444444444cm"/>
                 <head>Example results for a query that is matched with the predefined corpus through the Vectorian API.</head>
             </figure>
             <p>With our poster, we hope to spark some discussion with the DH community on how to apply and further develop the Vectorian API, which we believe will be a useful resource for any kind of intertextuality research in the DH.</p>

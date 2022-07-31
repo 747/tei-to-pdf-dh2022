@@ -56,20 +56,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Electronic Poster</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>IDS</term>
                     <term>Hanzi</term>
                     <term>Kanji</term>
                     <term>CHISE</term>
                     <term>GlyphWiki</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Asia</term>
                     <term>English</term>
                     <term>5th-14th Century</term>
@@ -92,17 +92,17 @@
         <body>
             <p style="text-align: left; ">In recent years, given that the Unicode Standard has been updated, the number of Chinese character (Hanzi/Kanji) codes available for text databases of historical documents written in Chinese and Japanese has increased significantly. With the addition of the CJK Unified Ideographs Extension G in 2020, the current Unicode Standard now contains a total of more than 93,000 Chinese characters (Lunde, 2021). To maximize reproduction of the content in historical documents, it is desirable to use Chinese characters that can be displayed in a form that is as close to the original glyphs as possible.</p>
             <p style="text-align: left; ">TEI-encoded
-                <note place="foot" xml:id="ftn1" n="1">
+                <note xml:id="ftn1" n="1" place="foot">
                     <p rend="footnote text"> https://tei-c.org/</p>
                 </note> text databases are also becoming increasingly common. However, there are still few examples of the use of these extended Chinese characters in publicly available text databases. Possible causes are the difficulty of checking whether a character can be represented in Unicode and determining how to input those newly included characters in Unicode without input method support.
             </p>
             <p style="text-align: left; ">The most common computer-based Chinese character input method entails reading the character. If the reading is inconclusive or if the character has not yet been incorporated into an input method, Ideographic Description Sequence (IDS) can be used to search for the input (The Unicode Consortium, 2021).</p>
             <p style="text-align: left; ">IDS describes Chinese characters according to their mechanism and components. For example, <hi rend="Chinese">紅</hi>(red) can be described as 
                 <hi rend="Chinese">⿰糸工</hi> (Figure 1). Tools such as CHISE
-                <note place="foot" xml:id="ftn2" n="2">
+                <note xml:id="ftn2" n="2" place="foot">
                     <p rend="footnote text"> https://www.chise.org/</p>
                 </note> (Morioka, 2008) and GlyphWiki
-                <note place="foot" xml:id="ftn3" n="3">
+                <note xml:id="ftn3" n="3" place="foot">
                     <p rend="footnote text"> https://www.glyphwiki.org/</p>
                 </note> (<hi rend="Japanese">上地</hi>, 2018) are useful to search for Chinese characters (in Japanese), but no existing tools specialize in inputting Chinese characters and allow TEI-encoded output data in a format suitable for reprinting. Regarding actual reprinting, there are three issues that need to be addressed.
             </p>
@@ -112,18 +112,18 @@
                 <item>Application: Searching should be fast and accurate. Given that it is necessary to search for all Chinese characters in Unicode, deal those data may takes a lot of time before the results are displayed.</item>
             </list>
             <figure>
-                <graphic n="1001" width="10.519097222222221cm" height="8.941cm" url="Pictures/994f59543956b5019b008fd4ed3d1a6b.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; text-align: center;">Figure 1: a sample of IDS</p>
+                <graphic height="8.941cm" n="1001" rend="inline" url="Pictures/994f59543956b5019b008fd4ed3d1a6b.png" width="10.519097222222221cm"/>
+            <head style="text-align: left; text-align: center;">Figure 1: </head><p>a sample of IDS</p></figure>
+            
             <p style="text-align: left; ">To solve the above issues, we have developed a tool for searching and inputting Chinese characters that cannot be input via ordinary input methods using Chinese character components and stroke numbers. The tool has the following features, and the corresponding issue is given in parentheses:</p>
             <list type="ordered">
                 <item>With data on characters’ components from CHISE. IDS
-                    <note place="foot" xml:id="ftn4" n="4">
+                    <note xml:id="ftn4" n="4" place="foot">
                         <p rend="footnote text"> https://gitlab.chise.org/CHISE/ids</p>
                     </note>, can search up to 93,000 characters based on the newest Unicode Standard. [Searching]
                 </item>
                 <item>Filter results by the number of strokes remaining. The data stroke number is from Unihan
-                    <note place="foot" xml:id="ftn5" n="5">
+                    <note xml:id="ftn5" n="5" place="foot">
                         <p rend="footnote text"> https://www.unicode.org/Public/UCD/latest/ucd/Unihan.zip</p>
                     </note>. [Searching]
                 </item>
@@ -136,19 +136,19 @@
             </list>
             <p style="text-align: left; ">The tool uses IDS data from CHISE and glyph images from GlyphWiki. Compared to both, users can search and input Chinese characters more efficiently by filtering according to the number of strokes remaining (Figure 2). Furthermore, it is easy to select and copy the result in one click, offering a fast response. It is also possible to copy the Chinese characters you want to input as a block of TEI-encoded XML to create a text database. This saves database creators’ time. Here is an example (Figure 4).</p>
             <figure>
-                <graphic n="1002" width="15.472669444444444cm" height="9.298608333333334cm" url="Pictures/223dcc49daa01ec20d51b47c8e9f6644.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; text-align: center;">Figure 2: interface of the tool</p>
+                <graphic height="9.298608333333334cm" n="1002" rend="inline" url="Pictures/223dcc49daa01ec20d51b47c8e9f6644.png" width="15.472669444444444cm"/>
+            <head style="text-align: left; text-align: center;">Figure 2: </head><p>interface of the tool</p></figure>
+            
             <figure>
-                <graphic n="1003" width="11.04916388888889cm" height="10.171425cm" url="Pictures/4a67ae43e63622e20a65cf8ba16de830.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; text-align: center;">Figure 3: customizable XML block template</p>
+                <graphic height="10.171425cm" n="1003" rend="inline" url="Pictures/4a67ae43e63622e20a65cf8ba16de830.png" width="11.04916388888889cm"/>
+            <head style="text-align: left; text-align: center;">Figure 3: </head><p>customizable XML block template</p></figure>
+            
             <figure>
-                <graphic n="1004" width="9.784522222222222cm" height="3.0132777777777777cm" url="Pictures/5486061cc1a84394c0a591acb0f9b81a.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; text-align: center;">Figure 4: TEI-encoded sample</p>
+                <graphic height="3.0132777777777777cm" n="1004" rend="inline" url="Pictures/5486061cc1a84394c0a591acb0f9b81a.png" width="9.784522222222222cm"/>
+            <head style="text-align: left; text-align: center;">Figure 4: </head><p>TEI-encoded sample</p></figure>
+            
             <p style="text-align: left; ">This tool has been applied to the creation of TEI-encoded text databases at the Historiographical Institute, University of Tokyo
-                <note place="foot" xml:id="ftn6" n="6">
+                <note xml:id="ftn6" n="6" place="foot">
                     <p rend="footnote text"> https://www.hi.u-tokyo.ac.jp/en/</p>
                 </note>. Details will be presented in the poster.
             </p>

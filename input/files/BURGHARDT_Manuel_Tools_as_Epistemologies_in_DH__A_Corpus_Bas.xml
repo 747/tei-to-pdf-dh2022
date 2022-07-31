@@ -119,7 +119,7 @@
                     </note>. Figure 1 shows the most frequent 25 tools in the overall corpus.
                 </p>
                 <figure>
-                    <graphic n="1001" width="16.002cm" height="7.1025527777777775cm" url="Pictures/e92813ac55266a286227df4dbc4b88a0.png" rend="inline"/>
+                    <graphic height="7.1025527777777775cm" n="1001" rend="inline" url="Pictures/e92813ac55266a286227df4dbc4b88a0.png" width="16.002cm"/>
                     <head>Top 25 tools mentioned in the corpus.</head>
                 </figure>
                 <p>It is noticeable that among the top 25 DH tools we find many tools for text and data analysis, but also a large proportion of high-level programming languages. This is certainly a bias of the early days of humanities computing. Taking a closer look at the diachronic development reveals the natural rise and fall of programming languages, with the steady rise of 
@@ -131,7 +131,7 @@
                     </note>.
                 </p>
                 <figure>
-                    <graphic n="1002" width="15.689394444444444cm" height="9.24718888888889cm" url="Pictures/b96b8146f77bd4a8788f1838ba3b52c1.png" rend="inline"/>
+                    <graphic height="9.24718888888889cm" n="1002" rend="inline" url="Pictures/b96b8146f77bd4a8788f1838ba3b52c1.png" width="15.689394444444444cm"/>
                     <head>The rise and fall of programming languages in DH.</head>
                 </figure>
                 <p>To provide some more high-level insights, we also did a cooccurrence analysis of the most frequent 150 tools, i.e. tools that are mentioned together in an article (see Figure 3). Such cooccurrence analyses could yield insights into typical tool combinations and more complex workflows, for instance the use of 
@@ -143,7 +143,7 @@
                     <hi rend="italic">spaCy</hi> or transformer architectures clearly shows large gaps in the TAPoR list.
                 </p>
                 <figure>
-                    <graphic n="1003" width="14.969422222222223cm" height="12.357430555555556cm" url="Pictures/7a34892832ba371901e8d49c1f52f2b3.png" rend="inline"/>
+                    <graphic height="12.357430555555556cm" n="1003" rend="inline" url="Pictures/7a34892832ba371901e8d49c1f52f2b3.png" width="14.969422222222223cm"/>
                     <head>UMAP 2D projection of the top 150 most-frequent tools and their nPMI cooccurrence scores (point size indicates numbers of occurrences).</head>
                 </figure>
             </div>
@@ -153,7 +153,7 @@
                     <hi style="font-family:Palatino Linotype" xml:space="preserve">To fill these gaps, we conducted a second experiment in which we used BERT embeddings to expand our list of tools, as proposed by Wevers &amp; Koolen (2020). We created embeddings for the 25 most frequent tools (see Figure 1) and looked for their nearest neighbors, i.e. words that have similar embedding vectors as the 25 most frequent tools (see Figure 4). </hi>
                 </p>
                 <figure>
-                    <graphic n="1004" width="16.002cm" height="5.7785cm" url="Pictures/da2e277c30a285788622f40306684536.png" rend="inline"/>
+                    <graphic height="5.7785cm" n="1004" rend="inline" url="Pictures/da2e277c30a285788622f40306684536.png" width="16.002cm"/>
                     <head>Ten nearest neighbors for the embeddings of “python”, “rstudio” and “fortran”, ranked by their cosine similarity.</head>
                 </figure>
                 <p>This approach allows us to identify tools that are not listed in the TAPoR directory directly, but that are mentioned in similar article contexts as the TAPoR-listed tools. Obviously, not all the nearest neighbors identified in this way are actual tools, but if we rank the results according to the number of nearest neighborhoods for the top 25 tools, there are indeed many promising results in the higher ranks

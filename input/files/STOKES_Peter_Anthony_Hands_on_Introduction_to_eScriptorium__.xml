@@ -108,16 +108,16 @@
             <p> </p>
             <figure>
                 <graphic n="1001" width="16.002cm" height="9.241013888888888cm" url="Pictures/d05da62527573fb05a90fbc943762137.jpg" rend="inline"/>
-            </figure>
             <p style="text-align: center;">
                 <hi rend="italic" style="font-size:11pt">Transcription (transliteration) of Old Javanese palm-leaf books with eScriptorium (courtesy of Marine Schoettel, École Française d’Extrême-Orient)</hi>
             </p>
+            </figure>
             <figure>
                 <graphic n="1002" width="16.002cm" height="9.001125cm" url="Pictures/c9c40c6681cf44dad1445b042343079f.png" rend="inline"/>
-            </figure>
             <p style="text-align: center;">
                 <hi rend="italic" style="font-size:11pt">The interface showing a complex page layout: page image with lines and regions (left panel); transcription aligned to the page layout (centre panel); transcription in ‘regular’ lines (right panel).</hi>
             </p>
+            </figure>
             <p>
                 Participants will be introduced to eScriptorium and kraken, focussing particularly on the key design decisions that distinguish them from other HTR systems. One is that the system should be as independent as possible of any assumptions about language or script. For instance, writing can be left-to-right, right-to-left, top-to-bottom then right to left (as in Japanese), or top to bottom then left to right (as in Mongolian). The writing can be on a baseline (as in English), from a top-line (as in Hebrew) or in a column (as in Chinese), and the lines can be oriented at any angle, including upside-down and therefore ‘reversed’ from the normal direction relative to the page image (so upside-down Arabic reads from left to right relative to the page orientation, and so on). Participants are therefore strongly encouraged to bring their own materials in different scripts and languages, and will learn the possibilities and limits of eScriptorium and kraken for these different cases.
             </p>
@@ -126,22 +126,22 @@
             </p>
             <figure>
                 <graphic n="1003" width="16.002cm" height="10.449277777777779cm" url="Pictures/171322a13e9e2a456d6a71e8e572df97.png" rend="inline"/>
-            </figure>
             <p style="text-align: center;">
                 <hi rend="italic" style="font-size:11pt">Uncorrected results of automatic line detection in a previously unseen scroll (writing in Chinese from top to bottom then right to left).</hi>
             </p>
+            </figure>
             <figure>
                 <graphic n="1004" width="11.712222222222222cm" height="8.113888888888889cm" url="Pictures/d5c4e77d6bd63ee2a2025501b10aedf1.jpg" rend="inline"/>
-            </figure>
             <p style="text-align: center;">
                 <hi rend="italic" style="font-size:11pt">Manually transcribing Chinese (top to bottom then right to left)</hi>
             </p>
+            </figure>
             <figure>
                 <graphic n="1005" width="16.002cm" height="9.371541666666667cm" url="Pictures/c495a2f5259506f57b52691838359754.png" rend="inline"/>
-            </figure>
             <p style="text-align: center;">
                 <hi rend="italic" style="font-size:11pt">The eScriptorium interface showing lines showing mixed Hebrew (right to left) and Chinese (top to bottom or right to left). Numbers indicate the order of reading (detected automatically but correctable manually).</hi>
             </p>
+            </figure>
             <p>
                 eScriptorium and kraken are also designed to be as open as possible, including that data should be interchangeable and that users should not be locked into any one instance of the framework. Participants will therefore learn how to import and export images, page layout data and transcriptions in a variety of standard formats (plain text, ALTO, PAGE XML; import from IIIF manifests; transformation of export to TEI). We will also briefly discuss the strengths and limitations of these formats, particularly for the wide range of different scripts.
             </p>
@@ -150,10 +150,10 @@
             </p>
             <figure>
                 <graphic n="1006" width="16.002cm" height="5.886097222222222cm" url="Pictures/b523cdb2875cc0d0f3731286b83a2237.png" rend="inline"/>
-            </figure>
             <p style="text-align: center;">
                 <hi rend="italic" style="font-size:11pt">Model management in eScriptorium, including export, import, sharing and basic version control. Models shown are for manuscripts written in Hebrew</hi>
             </p>
+            </figure>
             <p>
                 eScriptorium also provides a web API to allow for automated execution of project-specific processes, and so a brief introduction to this will also be provided, depending on time and the interest of participants.
             </p>

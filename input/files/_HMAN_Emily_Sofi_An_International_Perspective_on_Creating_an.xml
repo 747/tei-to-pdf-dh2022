@@ -91,11 +91,11 @@
                 As is common with humanities-focused programming courses there is a significant skill gap between students (see e.g. Öhman, 2019) and this too shows in the evaluations. In 2022 the question “What was the level of this week’s content?” was asked of students after their first week of the “Python Programming for Digital Humanities” course. With 107 respondents, the distribution of responses shows normal distribution with most students (69%) feeling that the level was just right, and the rest almost evenly split between “I struggled a bit” and “Too easy” (Table 1).
             </p>
             <figure>
-                <graphic n="1001" width="14.110338888888888cm" height="8.089491666666667cm" url="Pictures/d4fc085bd208be9b0bd88851bb47e03b.png" rend="inline"/>
-            </figure>
-            <p style="text-align: center;">
-                Table 1. Results of poll regarding content difficulty
-            </p>
+                <graphic height="8.089491666666667cm" n="1001" rend="inline" url="Pictures/d4fc085bd208be9b0bd88851bb47e03b.png" width="14.110338888888888cm"/>
+            <head style="text-align: center;">Table 1. </head><p>
+                Results of poll regarding content difficulty
+            </p></figure>
+            
             <p>
                 In the Finnish data, the question “Was the level of the course appropriate?” the answers have the greatest spread as well, suggesting that ideally perhaps students should either be placed in different groups based on initial skill level or that some students could really benefit from a pre-introduction course or extra tutoring where they could gain confidence in the most basic of programming concepts. This is especially true in the light that there does not seem to be a correlation between struggling students and below average final grades as long as the students do not drop out. A correlation matrix of evaluation questions and results (Figure 1.) show that there are high correlations between how students experience the speed of the course and the workload and the level of the course. If one of these parameters are adjusted it will likely affect the others, e.g., if the speed that new topics are introduced is slowed down, the workload will feel more manageable and the contents easier to digest.
             </p>
@@ -104,9 +104,9 @@
             </p>
             <p>Overall, student satisfaction ratings are very high for both courses as are enrollment numbers. Ramsay (2012) referred to teaching humanities students programming as raising an army of hacker-scholars, and it certainly seems that the interest is there from the student side once they get past the initial hurdle of enrolling in the course.</p>
             <figure>
-                <graphic n="1002" width="16.002cm" height="13.387916666666667cm" url="Pictures/814059a297135ca189aecabd107ddeb5.png" rend="inline"/>
-            </figure>
-            <p style="text-align: center;">Figure 1. Correlation matrix of feedback responses</p>
+                <graphic height="13.387916666666667cm" n="1002" rend="inline" url="Pictures/814059a297135ca189aecabd107ddeb5.png" width="16.002cm"/>
+            <head style="text-align: center;">Figure 1. </head><p>Correlation matrix of feedback responses</p></figure>
+            
         </body>
         <back>
             <div type="bibliogr">

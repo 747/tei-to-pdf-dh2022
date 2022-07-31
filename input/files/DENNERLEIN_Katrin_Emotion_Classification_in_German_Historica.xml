@@ -118,26 +118,26 @@
                 <p style="text-align: left; text-align: justify;">We analyze the frequency of emotion annotations and the computational classifications throughout the plot of the drama. For that goal each drama is divided into five equal parts (quintiles) because it allows for normalized comparisons. We calculated the average number of annotations (for 11 plays) and computational emotion classifications (for 226 plays) per quintile for each genre.</p>
                 <p style="text-align: left; text-align: justify;">Fig. 1 shows the distribution of the emotion 'suffering' in the plot of the annotated dramas. The emotion was annotated on average exactly twice as often in tragedies as in comedies (on average 27-32 passages with suffering in the comedy, 45-60 in the tragedy). </p>
                 <figure>
-                    <graphic n="1002" width="16.002cm" height="8.001cm" url="Pictures/25ea64726a95280bfa5f558168772801.jpeg" rend="inline"/>
-                </figure>
-                <p style="text-align: left; text-align: center;">Fig. 1: Development of 'suffering’ as measured in annotations for tragedies and comedies.</p>
+                    <graphic height="8.001cm" n="1002" rend="inline" url="Pictures/25ea64726a95280bfa5f558168772801.jpeg" width="16.002cm"/>
+                <head style="text-align: left; text-align: center;">Fig. 1: </head><p>Development of &apos;suffering’ as measured in annotations for tragedies and comedies.</p></figure>
+                
                 <p style="text-align: left; text-align: justify;">Moreover, one can see in fig. 1 that suffering is clustered at the beginning and end of tragedies. In the middle of the tragedies, however, there is obviously hope for an improvement of the situation and the characters feel less suffering. In comedies, on the other hand, after a brief decrease in suffering, we recognize a suffering climax, which can be interpreted as the turning point towards a good ending. In fig. 2, we visualize the average amount of sentences classified as suffering by the computational emotion classification throughout the 5 quintiles of the plays. Fig. 3 illustrates the opposite emotion joy for the 1,619 annotations in the annotated plays.</p>
                 <figure>
-                    <graphic n="1003" width="16.002cm" height="8.001cm" url="Pictures/d0dcf7f3487ccb69a854f78a7c50d847.jpeg" rend="inline"/>
-                </figure>
-                <p style="text-align: left; text-align: center;">Fig. 2: Development of 'suffering’ as measured by the emotion classification in tragedies and comedies.</p>
+                    <graphic height="8.001cm" n="1003" rend="inline" url="Pictures/d0dcf7f3487ccb69a854f78a7c50d847.jpeg" width="16.002cm"/>
+                <head style="text-align: left; text-align: center;">Fig. 2: </head><p>Development of &apos;suffering’ as measured by the emotion classification in tragedies and comedies.</p></figure>
+                
                 <figure>
-                    <graphic n="1004" width="16.002cm" height="8.001cm" url="Pictures/633cb16247a3b59e1a09421236ab6248.jpeg" rend="inline"/>
-                </figure>
-                <p style="text-align: left; text-align: center;">Fig. 3: Development of 'joy‘ as measured by the annotations in tragedies and comedies.</p>
+                    <graphic height="8.001cm" n="1004" rend="inline" url="Pictures/633cb16247a3b59e1a09421236ab6248.jpeg" width="16.002cm"/>
+                <head style="text-align: left; text-align: center;">Fig. 3: </head><p>Development of &apos;joy‘ as measured by the annotations in tragedies and comedies.</p></figure>
+                
                 <p style="text-align: left; text-align: justify;">In comedies, joy is least annotated in the middle of the plot, when confusion and problems accumulate; towards the end, the values rise again almost to the level of the beginning (fig. 3). In tragedies, on the other hand, the most joyful statements by characters are found shortly before the middle of the plot (fig. 3). This finding of a sudden drop in joy correlates with the dramaturgical concept of 
                     <hi rend="italic">peripetia</hi>, the change of happiness. According to the ideal-typical Aristotelian definition, the change of action inevitably leads to a bad ending. The results of our annotation analysis show a matching steady decline of joy in tragedy. 
                 </p>
                 <p style="text-align: left; ">Fig. 4, however, shows that the emotion classification model produces different results.</p>
                 <figure>
-                    <graphic n="1005" width="16.002cm" height="8.001cm" url="Pictures/aef4ce2dc3945ab04e4b1c4fa201f26a.jpeg" rend="inline"/>
-                </figure>
-                <p style="text-align: left; text-align: center;">Fig. 4: Development of ‘joy‘ as measured by the emotion classification in tragedies and comedies.</p>
+                    <graphic height="8.001cm" n="1005" rend="inline" url="Pictures/aef4ce2dc3945ab04e4b1c4fa201f26a.jpeg" width="16.002cm"/>
+                <head style="text-align: left; text-align: center;">Fig. 4: </head><p>Development of ‘joy‘ as measured by the emotion classification in tragedies and comedies.</p></figure>
+                
                 <p style="text-align: left; text-align: justify;">Particularly interesting in fig. 4 is the fact that the absolute number of joy sentences is higher in the tragedies than in the comedies. However, it is clear that joy then decreases much more in tragedies than in comedies, which increases the tragic effect of the tragedies. Compared to the annotated comedies, the curve for joy in the comedies shows little change. In our presentation, we will discuss whether we are dealing with the larger deviations between figs. 3 and 4 as an indication of the still insufficient quality of the prediction, or whether the results are rather related to the specific tragedy and comedy subgenres that predominate in our corpus and that have less ideal-typical developments than the annotated dramas.</p>
             </div>
         </body>

@@ -570,7 +570,7 @@
     <xsl:template name="figure_head">
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute>
-        
+        <xsl:attribute name="keep-with-previous.within-column">always</xsl:attribute><!-- DH2022 mod -->
     </xsl:template>
     
     <xsl:template name="figure_p">
@@ -591,20 +591,29 @@
     </xsl:template>
 
     <xsl:template name="table">
-        <!-- <xsl:attribute name="space-before">.2in</xsl:attribute> --><!-- DH2022 mod -->
-        <xsl:attribute name="space-after">.2in</xsl:attribute>
+        <!-- <xsl:attribute name="space-before">.2in</xsl:attribute>
+        <xsl:attribute name="space-after">.2in</xsl:attribute> --><!-- DH2022 mod -->
         <!-- <xsl:attribute name="keep-together.within-column">1</xsl:attribute> -->
         <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute>
     </xsl:template>
 
     <xsl:template name="table_no_head"><!-- DH2022 mod -->
         <xsl:attribute name="space-before">.2in</xsl:attribute>
+        <xsl:attribute name="space-after">.2in</xsl:attribute>
     </xsl:template>
 
     <xsl:template name="table_head"><!-- DH2022 mod -->
         <xsl:attribute name="space-before">.2in</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute>
+        <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute><!-- DH2022 mod -->
+    </xsl:template>
+
+    <xsl:template name="table_head_bottom"><!-- DH2022 mod -->
+        <xsl:attribute name="space-after">.2in</xsl:attribute>
+        <xsl:attribute name="font-weight">bold</xsl:attribute>
+        <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute>
+        <xsl:attribute name="keep-with-previous.within-column">always</xsl:attribute>
     </xsl:template>
     
     <xsl:template name="cell">
@@ -2147,13 +2156,22 @@
 
     <xsl:template name="table_main">
     <!-- DH2022: this was originally match="table" -->
-      <xsl:for-each select="head">
-          <!-- <fo:block><xsl:call-template name="subsubhead"/><xsl:apply-templates select="."/></fo:block> -->
+      <!-- <xsl:for-each select="head">
+          <fo:block><xsl:call-template name="subsubhead"/><xsl:apply-templates select="."/></fo:block> -->
+      <xsl:for-each select="node()[not(position()=last())]/self::head">
           <fo:block><xsl:call-template name="table_head"/><xsl:apply-templates select="."/></fo:block><!-- DH2022 mod -->
       </xsl:for-each>
         
         <fo:table>
-            <xsl:if test="not(head)"><xsl:call-template name="table_no_head"/></xsl:if>
+            <xsl:choose><!-- DH2022 mod -->
+                <xsl:when test="node()[not(position()=last())]/self::head">
+                    <xsl:attribute name="space-after">.2in</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="node()[position()=last()]/self::head">
+                    <xsl:attribute name="space-before">.2in</xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise><xsl:call-template name="table_no_head"/></xsl:otherwise>
+            </xsl:choose>
             <xsl:choose>
                 <xsl:when test="@n='text_smaller'">
                     <xsl:call-template name="table_smaller"/>
@@ -2196,7 +2214,9 @@
                     </xsl:for-each>
                 </fo:table-body> 
             </fo:table>
-        
+        <xsl:if test="node()[position()=last()]/self::head"><!-- DH2022 mod -->
+            <fo:block><xsl:call-template name="table_head_bottom"/><xsl:apply-templates select="node()[position()=last()]/self::head"/></fo:block>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="quote">

@@ -106,9 +106,9 @@
                     <hi rend="italic">person</hi>, instead attributing statements to a researcher’s interpretation of a historical 
                     <hi rend="italic">source </hi>(Figure 1). This enables contradictory statements, made by distinct sources, to be recorded. As Baillie (2021) argues, this is not always desirable, some historical sources being more trustworthy than others; nevertheless, it is a requirement for an open ecosystem without any single ‘guiding hand’ that contradiction be permitted. 
                 </p>
-                <p>FIGURE 1: THE IPIF DATA MODEL </p>
                 <p>
                     <figure>
+                <head>FIGURE 1: </head><p>THE IPIF DATA MODEL </p>
                         <graphic url="Pictures/0d13151114d7b379e26cd4ebe98ffa33.png"/>
                     </figure>
                 </p>
@@ -117,10 +117,8 @@
                     <hi rend="italic">statementType </hi>field allows arbitrary extension beyond these standard statement types. 
                 </p>
                 <p>
-                    <hi rend="background-color(#ffffff) bold">FIGURE 2: API EXAMPLES </hi>
-                </p>
-                <p>
                     <figure>
+                        <head rend="background-color(#ffffff) bold">FIGURE 2: </head><p>API EXAMPLES </p>
                         <graphic url="Pictures/0a6d88bd04f06ddf07876de329afc8bd.png"/>
                     </figure>
                 </p>

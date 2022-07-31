@@ -150,8 +150,8 @@
                     <cell rend="start italic">Critique of Judgment</cell>
                     <cell rend="start bold">127,939</cell>
                 </row>
+            <head>Tab. 1 number of tokens per work and subcorpus</head>
             </table>
-            <p>Tab. 1 number of tokens per work and subcorpus</p>
             <p>The digital edition we used employs modernised orthography which increases the reliability of verb identification through POS-tagging. The texts were tagged and lemmatized with the Stanza POS tagger (Qi et al. 2020) with some manual post processing. We then calculated the key verbs (Culpeper/Demmen 2015) for each subcorpus in contrast to the complete critical writings as reference corpus. We used log-likelihood ratio (Dunning 1993) as keyness measure which can handle the differences in the subcorpus sizes and results in a list of verbs that are used significantly more often in a subcorpus than would be expected from a hypothetical equal distribution</p>
             <div type="div1">
                 <head>

@@ -101,11 +101,9 @@
                 </p>
                 <figure>
                     <graphic n="1001" width="15.926152777777778cm" height="14.931319444444444cm" url="Pictures/8794ed1c8183da0b0d8d1c88de0191c7.png" rend="inline"/>
+                    <head rend="bold" style="font-size:9pt">Fig. 1</head>
+                    <p style="font-size:9pt" xml:space="preserve">There are ten people named Siang-Lin in the MQANAD database. Siang-Lin in this text refers to this historical figure with ID 0079695</p>
                 </figure>
-                <p style="text-align: left; ">
-                    <hi rend="bold" style="font-size:9pt">Fig. 1</hi>
-                    <hi style="font-size:9pt" xml:space="preserve"> There are ten people named Siang-Lin in the MQANAD database. Siang-Lin in this text refers to this historical figure with ID 0079695</hi>
-                </p>
                 <p style="text-align: left; text-align: justify;">
                     <hi rend="color(0E101A)" xml:space="preserve">Therefore, we select </hi>
                     <hi rend="italic color(0E101A)">Qing Shi-Lu</hi>
@@ -149,20 +147,15 @@
                 </p>
                 <figure>
                     <graphic n="1002" width="15.926152777777778cm" height="13.774208333333334cm" url="Pictures/938dfc79f674589dadabf2872b146005.png" rend="inline"/>
+                    <head rend="bold color(1E1E1E)" style="font-size:9pt">Table 1</head>
+                    <p rend="color(1E1E1E)" style="font-size:9pt" xml:space="preserve">An official
+                    Wang An-Kuo’s profile</p>
                 </figure>
-                <p style="text-align: left; ">
-                    <hi rend="bold color(1E1E1E)" style="font-size:9pt">Table 1</hi>
-                    <hi rend="color(1E1E1E)" style="font-size:9pt" xml:space="preserve"> An official </hi>
-                    Wang An-Kuo’s
-                    <hi rend="color(1E1E1E)" style="font-size:9pt" xml:space="preserve"> profile</hi>
-                </p>
                 <figure>
                     <graphic n="1003" width="15.926152777777778cm" height="8.516055555555555cm" url="Pictures/065e6ba15b75cf13e488482c36bce3a6.png" rend="inline"/>
+                    <head rend="bold" style="font-size:9pt">Table 2</head>
+                    <p style="font-size:9pt" xml:space="preserve">An example instance</p>
                 </figure>
-                <p style="text-align: left; text-align: justify;">
-                    <hi rend="bold" style="font-size:9pt">Table 2</hi>
-                    <hi style="font-size:9pt" xml:space="preserve"> An example instance</hi>
-                </p>
                 <p style="text-align: left; text-align: justify;">We formulate this NED task as a text classification problem. Given an instance whose name field is m and a profile whose name field is also m, classify them as positive (matched) or negative (not matched). Matched means the person mentioned in the instance’s paragraph field is just the official in the profile.</p>
                 <p style="text-align: left; text-align: justify;">
                     <hi rend="color(1E1E1E)">T</hi>sai et al. was the first work to propose the procedures that compare instances and profiles to automatically generate labeled data to train the model 
@@ -172,15 +165,13 @@
                 <p style="text-align: left; text-align: justify;">First, we replace the officials’ names mentioned in personal profiles and instances with the symbol [unused_token], as shown in Fig. 2. This allows our model to focus on more information from the context and can be more robust to various person names.</p>
                 <figure>
                     <graphic n="1004" width="15.998472222222222cm" height="3.922888888888889cm" url="Pictures/c44a382bff65f6cdf64eb7901b0c4a5f.jpeg" rend="inline"/>
-                </figure>
-                <p style="text-align: left; text-align: justify;">
-                    <hi rend="bold" style="font-size:9pt">Fig. 2</hi>
-                    <hi style="font-size:9pt" xml:space="preserve"> Cherin-Dorji, the official’s name mentioned in personal profiles and instances, is replaced with the symbol [unused_token] </hi>
+                    <head rend="bold" style="font-size:9pt">Fig. 2</head>
+                    <p style="font-size:9pt" xml:space="preserve"> Cherin-Dorji, the official’s name mentioned in personal profiles and instances, is replaced with the symbol [unused_token] 
                     <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"MxoXLWPV","properties":{"formattedCitation":"(Hucker, 2008)","plainCitation":"(Hucker, 2008)","noteIndex":0},"citationItems":[{"id":34,"uris":["http://zotero.org/users/local/vcLMdXJg/items/GZTCGD5E"],"itemData":{"id":34,"type":"book","abstract":"《中国古代官名辞典》横跨从周代到晚清的历史时期,不仅关注名词本身的翻译,更把职官本身的功能,历史变迁及其在更广大的组织系统中所居的位置纳入视野,使本书不仅是一部编排得体、方便适用的工具书,更是凝聚着一位杰出历史学家学术心血的研究著作。","language":"en","note":"Google-Books-ID: tjRbPwAACAAJ","publisher":"Peking University Press","source":"Google Books","title":"A Dictionary of Official Titles in Imperial China","author":[{"family":"Hucker","given":"Charles O."}],"issued":{"date-parts":[["2008"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
-                    <hi style="font-size:9pt" xml:space="preserve">(Hucker, 2008, </hi>
+                    (Hucker, 2008,
                     <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"LByWIpCN","properties":{"formattedCitation":"(Zhang et al., 2017)","plainCitation":"(Zhang et al., 2017)","noteIndex":0},"citationItems":[{"id":29,"uris":["http://zotero.org/users/local/vcLMdXJg/items/BR9SK2MT"],"itemData":{"id":29,"type":"article-journal","abstract":"This bilingual dictionary is developed through a crowd-translation project that was funded by CEAL-Mellon. This is the first edition. The project team would encourage scholars to use it and to send us revision suggestions, if any. We will update the dictionary based upon your suggestions. Note that this version comes with a navigation menu. However, to be able to see and use the menu, one has to download the PDF file and open it up in Adobe.","language":"en","source":"escholarship.org","title":"明代職官中英辭典 Chinese-English Dictionary of Ming Government Official Titles","author":[{"family":"Zhang","given":"Ying"},{"family":"Xue","given":"Susan"},{"family":"Xue","given":"Zhaohui"},{"family":"Ni","given":"Li"}],"accessed":{"date-parts":[["2022",4,18]]},"issued":{"date-parts":[["2017"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>
-                    Zhang et al., 2017)
-                </p>
+                    Zhang et al., 2017)</p>
+                </figure>
                 <p style="text-align: left; text-align: justify;">Second, we have found many examples in the text where a person’s name is the same as a location name. For example, Guilin (<hi rend="Chinese">桂林</hi>) can be the name of a city or a minister’s name. Therefore, we use a self-developed NER 
                     <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"j2Ua2QWQ","properties":{"formattedCitation":"(Lin et al., 2020)","plainCitation":"(Lin et al., 2020)","noteIndex":0},"citationItems":[{"id":36,"uris":["http://zotero.org/users/local/vcLMdXJg/items/UYFFN2GN"],"itemData":{"id":36,"type":"article-journal","abstract":"Training neural models for named entity recognition (NER) in a new domain often requires additional human annotations (e.g., tens of thousands of labeled instances) that are usually expensive and time-consuming to collect. Thus, a crucial research question is how to obtain supervision in a cost-effective way. In this paper, we introduce \"entity triggers,\" an effective proxy of human explanations for facilitating label-efficient learning of NER models. An entity trigger is defined as a group of words in a sentence that helps to explain why humans would recognize an entity in the sentence. We crowd-sourced 14k entity triggers for two well-studied NER datasets. Our proposed model, Trigger Matching Network, jointly learns trigger representations and soft matching module with self-attention such that can generalize to unseen sentences easily for tagging. Our framework is significantly more cost-effective than the traditional neural NER frameworks. Experiments show that using only 20% of the trigger-annotated sentences results in a comparable performance as using 70% of conventional annotated sentences.","container-title":"arXiv:2004.07493 [cs]","note":"arXiv: 2004.07493","source":"arXiv.org","title":"TriggerNER: Learning with Entity Triggers as Explanations for Named Entity Recognition","title-short":"TriggerNER","author":[{"family":"Lin","given":"Bill Yuchen"},{"family":"Lee","given":"Dong-Ho"},{"family":"Shen","given":"Ming"},{"family":"Moreno","given":"Ryan"},{"family":"Huang","given":"Xiao"},{"family":"Shiralkar","given":"Prashant"},{"family":"Ren","given":"Xiang"}],"issued":{"date-parts":[["2020"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Lin et al., 2020) system to process the texts. We use Flair as the NER model for this paper, the training data is from 
                     <hi rend="italic">MSL</hi> and the test data is 
@@ -189,11 +180,9 @@
                 </p>
                 <figure>
                     <graphic n="1005" width="15.926152777777778cm" height="4.295069444444445cm" url="Pictures/4b25b5d0946f78fd29353d3fb4072d11.png" rend="inline"/>
+                    <head rend="bold" style="font-size:9pt">Fig. 3</head>
+                    <p style="font-size:9pt" xml:space="preserve"> Guilin (<hi rend="Chinese">桂林</hi>) is considered a location name by our NER system, therefore, it is generated as a negative instance</p>
                 </figure>
-                <p style="text-align: left; ">
-                    <hi rend="bold" style="font-size:9pt">Fig. 3</hi>
-                    <hi style="font-size:9pt" xml:space="preserve"> Guilin (<hi rend="Chinese">桂林</hi>) is considered a location name by our NER system, therefore, it is generated as a negative instance</hi>
-                </p>
                 <p style="text-align: left; text-align: justify;">Lastly, since the text processed by 
                     <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"KBhBNj29","properties":{"formattedCitation":"(Tsai et al., 2020)","plainCitation":"(Tsai et al., 2020)","noteIndex":0},"citationItems":[{"id":16,"uris":["http://zotero.org/users/local/vcLMdXJg/items/QEX3UL4P"],"itemData":{"id":16,"type":"paper-conference","event":"ADHO 2020 - Ottawa","language":"en","source":"dh-abstracts.library.cmu.edu","title":"Automatic Labeled Data Generation for Person Named Entity Disambiguation on the Ming Shilu","author":[{"family":"Tsai","given":"Richard Tzong-Han"},{"family":"Wu","given":"Cheng-Han"},{"family":"Pai","given":"Pi-Ling"},{"family":"Fan","given":"I.-Chun"}],"accessed":{"date-parts":[["2022",4,18]]},"issued":{"date-parts":[["2020"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Tsai et al., 2020) is the Ming Dynasty, the text processed by this study is the Qing Dynasty, and the contents of 
                     <hi rend="italic">MSL</hi> and 
@@ -201,23 +190,17 @@
                 </p>
                 <figure>
                     <graphic n="1006" width="15.926152777777778cm" height="4.2350972222222225cm" url="Pictures/6999be5411db5aaff8370db23dc8e9c1.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">
-                    <hi rend="bold" style="font-size:9pt">Fig</hi>
-                    <hi rend="bold" style="font-family:PMingLiU;font-size:9pt">.</hi>
-                    <hi rend="bold" style="font-size:9pt" xml:space="preserve"> 4</hi>
-                    <hi style="font-size:9pt" xml:space="preserve"> Procedure one is modified for writing-style difference between </hi>
-                    <hi rend="italic" style="font-size:9pt">MSL</hi>
+                    <head rend="bold" style="font-size:9pt">Fig. 4</head>
+                    <p style="font-size:9pt" xml:space="preserve">Procedure one is modified for writing-style difference between 
+                    <hi rend="normal" style="font-size:9pt">MSL</hi>
                     <hi style="font-size:9pt" xml:space="preserve"> and </hi>
-                    <hi rend="italic" style="font-size:9pt">QSL</hi>
-                </p>
+                    <hi rend="normal" style="font-size:9pt">QSL</hi></p>
+                </figure>
                 <figure>
                     <graphic n="1007" width="11.651747222222221cm" height="9.972833333333334cm" url="Pictures/9b6daea9aa78803a87c4b609140b9839.png" rend="inline"/>
+                    <head rend="bold" style="font-size:9pt">Fig. 5</head>
+                    <p style="font-size:9pt" xml:space="preserve"> Our BERT-based NED model</p>
                 </figure>
-                <p style="text-align: left; ">
-                    <hi rend="bold" style="font-size:9pt">Fig. 5</hi>
-                    <hi style="font-size:9pt" xml:space="preserve"> Our BERT-based NED model</hi>
-                </p>
                 <p style="text-align: left; text-align: justify;">After automatically labeling the training data, we use BERT 
                     <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"ILJbdfaA","properties":{"formattedCitation":"(Vaswani et al., 2017)","plainCitation":"(Vaswani et al., 2017)","noteIndex":0},"citationItems":[{"id":40,"uris":["http://zotero.org/users/local/vcLMdXJg/items/ZV56T3AL"],"itemData":{"id":40,"type":"article-journal","abstract":"The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.","container-title":"arXiv:1706.03762 [cs]","note":"arXiv: 1706.03762","source":"arXiv.org","title":"Attention Is All You Need","author":[{"family":"Vaswani","given":"Ashish"},{"family":"Shazeer","given":"Noam"},{"family":"Parmar","given":"Niki"},{"family":"Uszkoreit","given":"Jakob"},{"family":"Jones","given":"Llion"},{"family":"Gomez","given":"Aidan N."},{"family":"Kaiser","given":"Lukasz"},{"family":"Polosukhin","given":"Illia"}],"issued":{"date-parts":[["2017"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Vaswani et al., 2017, 
                     <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"eCZBmrxl","properties":{"formattedCitation":"(Devlin et al., 2019)","plainCitation":"(Devlin et al., 2019)","noteIndex":0},"citationItems":[{"id":5,"uris":["http://zotero.org/users/local/vcLMdXJg/items/EPWG4B42"],"itemData":{"id":5,"type":"article-journal","abstract":"We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models, BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement).","container-title":"arXiv:1810.04805 [cs]","source":"arXiv.org","title":"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding","title-short":"BERT","author":[{"family":"Devlin","given":"Jacob"},{"family":"Chang","given":"Ming-Wei"},{"family":"Lee","given":"Kenton"},{"family":"Toutanova","given":"Kristina"}],"issued":{"date-parts":[["2019",5,24]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>Devlin et al., 2019), the state-of-the-art natural language understanding model, to perform text classification. We use the model pre-trained on the Chinese Wikipedia. As shown in Fig. 5, for each pair of profile and instance, we concatenate the cls symbol, the profile, the sep symbol, the instance as the input. The BERT model will output all label probabilities at the output position corresponding to the cls symbol.

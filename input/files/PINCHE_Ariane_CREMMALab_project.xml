@@ -102,8 +102,8 @@
             <p>In the future, we hope to increase the number and diversity of our training data to improve the genericity of the model and its robustness. We also hope to determine its breakpoints and to delimit contexts in which a generic model is enough and those in which it is relevant to create a personalization or another model from scratch.</p>
             <div type="div1" rend="DH-Heading">
                 <head>Annexes </head>
-                <p>Table 1 : Cremma medieval corpus</p>
                 <table rend="frame" xml:id="Tableau1">
+                <head>Table 1 : Cremma medieval corpus</head>
                     <row>
                         <cell>Manuscript</cell>
                         <cell>Date</cell>
@@ -177,6 +177,7 @@
                         <graphic url="Pictures/dc1b09947c8753bb7d50e5e2ca32629f.png"/>
                         <head>Finetuned model prediction on Chantilly, ms. 734</head>
                     </figure>
+                </p><p>
                     <figure>
                         <graphic url="Pictures/5c851d18b11de2f8c4325134fa123634.png"/>
                         <head>Finetuned model prediction on Philadelphy, university of pennsylvania, ms codex 909</head>

@@ -110,9 +110,7 @@
                 <p style="text-align: left; ">Calculating the SI for 100 novels taken from 4 centuries is a good starting point for a diachronic analysis of the representation of space in narratives. As can be seen from figure 1, the representation of space takes up a nearly constant portion of novels from the 18th–21st century with a very slight tendency to rise towards contemporary times. </p>
                 <figure>
                     <graphic n="1002" width="15.980833333333333cm" height="9.477002777777777cm" url="Pictures/b9667830d8773fb4a03dd0847d46c883.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">
-                    <hi rend="bold" style="font-size:9pt">Figure 1: Spatial indexes in 100 novels from 18th–21st century</hi>
+                    <head rend="bold" style="font-size:9pt">Figure 1: </head><p>Spatial indexes in 100 novels from 18th–21st century
                     <note place="foot" xml:id="ftn4" n="4">
                         <p>
                             Not all novels in the corpus are shown and abbreviations are used. For a full list see the github-repository complementing this work
@@ -120,8 +118,8 @@
                                 <hi rend="color(1155CC)" style="font-size:9pt">https://github.com/M-K-Schumacher/Forschungsdaten-Orte-und-Raeume-im-Roman/tree/main/Datenbasis_der_Analysen/Raum-Index-Werte</hi>
                             </ref>
                         </p>
-                    </note>
-                </p>
+                    </note></p>
+                </figure>
                 <p style="text-align: left; ">What is also striking here is that there is not one single novel without representations of space – in all novels, at least 5% of words carry spatial information. On the other side, there is no novel showing an SI of more than 18. The novel showing the lowest SI (6.66) is 
                     <hi rend="italic">Agathon</hi> by Wieland, the one with the highest (17.29) is 
                     <hi rend="italic">Ahnung und Gegenwart</hi> by Eichendorff. Interestingly in both novels, the protagonists travel, but whereas Wieland’s 

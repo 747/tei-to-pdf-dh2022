@@ -72,20 +72,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Historic Musical Storage Media</term>
                     <term>Visual Analysis</term>
                     <term>Musicological Analysis</term>
                     <term>Digitization</term>
                     <term>MIDI</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Global</term>
                     <term>Europe</term>
                     <term>English</term>
@@ -107,7 +107,7 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Introduction </head>
                 <p>Between 2018 and 2020, the digitization project TASTEN, funded by the German
                     government, digitized 3200 piano rolls for self-playing pianos preserved at the
@@ -125,7 +125,7 @@
                     for preservation, also.
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Related Work </head>
                 <p>We found a lack of publications dealing with challenges, issues, and processing of MSM in general. This may be due to most of such projects being on a small scale in
                     private settings (pianola.co.nz, 2021; IAMMP, 2021). Scientific publications are
@@ -138,11 +138,11 @@
                     cardboard plates and their digitization.
                 </p>
                 <figure>
-                    <graphic n="1001" width="15.980833333333333cm" height="9.233958333333334cm" url="Pictures/6892e6f7baf681be247f60f5399a989f.png" rend="inline"/>
-                </figure>
-                <p rend="Subtitle" style="text-align: center; ">Figure 1: Pipeline of the digitizing of piano rolls and plates through different processing steps and manual input of a Musicologist</p>
+                    <graphic height="9.233958333333334cm" n="1001" rend="inline" url="Pictures/6892e6f7baf681be247f60f5399a989f.png" width="15.980833333333333cm"/>
+                <head rend="Subtitle" style="text-align: center; ">Figure 1: </head><p>Pipeline of the digitizing of piano rolls and plates through different processing steps and manual input of a Musicologist</p></figure>
+                
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Digitizing MSM</head>
                 <p>While prior projects show great results in digitizing piano rolls, processes capable of
                     dealing with multiple formats of piano rolls and plates in general are non-existent.
@@ -168,7 +168,7 @@
                     musiXplora.
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Technical Details</head>
                 <p>Starting with the preprocessing of the backlit images the actual process labels
                     connected components (musical notes) on the image and applies filtering to keep
@@ -195,7 +195,7 @@
                     instruments.
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Limitations</head>
                 <p>As we are in the first of three project years, some challenges still exist: The image
                     processing results are highly dependable on a suitable preprocessing, which differs
@@ -207,7 +207,7 @@
                     and piano rolls of specific formats, but are aware of needed improvements.
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Conclusion</head>
                 <p>Even with the best preservation techniques, most materials deteriorate from
                     humidity and stress through time. Hence, valuable information stored on analog
@@ -228,45 +228,45 @@
                     <head>Bibliography</head>
                     <bibl style="text-align: left; ">
                         <hi rend="bold" style="font-size:13.5pt">pianola.co.nz</hi>
-                        <hi style="font-size:13.5pt" xml:space="preserve">(2021): Saving the Music of Yesterday. </hi>
+                        <hi xml:space="preserve" style="font-size:13.5pt">(2021): Saving the Music of Yesterday. </hi>
                         <hi rend="italic" style="font-size:13.5pt">http://www.pianola.co.nz/public/index.php</hi> (Accessed: 01 January 2022)
                         </bibl><bibl>
-                        <hi rend="bold" style="font-size:13.5pt" xml:space="preserve">Comaniciu, D., &amp; Meer, P. </hi>
-                        <hi style="font-size:13.5pt" xml:space="preserve">(2002). Mean shift: A robust approach toward feature space analysis. </hi>
+                        <hi rend="bold" xml:space="preserve" style="font-size:13.5pt">Comaniciu, D., &amp; Meer, P. </hi>
+                        <hi xml:space="preserve" style="font-size:13.5pt">(2002). Mean shift: A robust approach toward feature space analysis. </hi>
                         <hi rend="italic" style="font-size:13.5pt">IEEE Transactions on Pattern Analysis and Machine Intelligence</hi>, 24(5), 603–619. https://doi.org/10.1109/34.1000236
                         </bibl><bibl>
                         <hi rend="bold" style="font-size:13.5pt">Debrunner, D.</hi>
-                        <hi style="font-size:13.5pt" xml:space="preserve"> (2013). Von der Welte-Rolle zu parametrisierbaren Wiedergabe auf synthetischen Instrumenten und MIDI-fähigen Selbstspielklavieren. </hi>
+                        <hi xml:space="preserve" style="font-size:13.5pt"> (2013). Von der Welte-Rolle zu parametrisierbaren Wiedergabe auf synthetischen Instrumenten und MIDI-fähigen Selbstspielklavieren. </hi>
                         <hi rend="italic" style="font-size:13.5pt">In C. E. Hänggi &amp; Köpp (Eds.), Recording the Soul of Music: Welte-Künstlerrollen für Orgel und Klavier als authentische Interpretationsdokumente.</hi>
                         </bibl><bibl>
                         <hi rend="bold" style="font-size:13.5pt">Focht, J.</hi>
-                        <hi style="font-size:13.5pt" xml:space="preserve"> (2020). </hi>
+                        <hi xml:space="preserve" style="font-size:13.5pt"> (2020). </hi>
                         <hi rend="italic" style="font-size:13.5pt">MusiXplora</hi>. https://musixplora.de/mxp/2002522 (Accessed 01 January 2022)
                         </bibl><bibl>
                         <hi rend="bold" style="font-size:13.5pt">Focht, J.</hi>
-                        <hi style="font-size:13.5pt" xml:space="preserve"> (2021). </hi>
+                        <hi xml:space="preserve" style="font-size:13.5pt"> (2021). </hi>
                         <hi rend="italic" style="font-size:13.5pt">MusiXplora.</hi>
                         https://musixplora.de/mxp/2003518 (Accessed 01 January 2022)
                         </bibl><bibl>
                         <hi rend="bold" style="font-size:13.5pt">IAMMP</hi>
-                        <hi style="font-size:13.5pt" xml:space="preserve">(2021). </hi>
+                        <hi xml:space="preserve" style="font-size:13.5pt">(2021). </hi>
                         <hi rend="italic" style="font-size:13.5pt">International Association of Mechanical Music Preservationalists</hi>. http://www.iammp.org/ (Accessed 01 January 2022)
                         </bibl><bibl>
                         <hi rend="bold" style="font-size:13.5pt">Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., Duchesnay, E.</hi>
-                        <hi style="font-size:13.5pt" xml:space="preserve"> (2011). Scikit-learn: Machine Learning in Python. </hi>
+                        <hi xml:space="preserve" style="font-size:13.5pt"> (2011). Scikit-learn: Machine Learning in Python. </hi>
                         <hi rend="italic" style="font-size:13.5pt">Journal of Machine Learning Research</hi>, 12, 2825–2830.
                         </bibl><bibl>
                         <hi rend="bold" style="font-size:13.5pt">Shi, Z., Sapp, C. S., Arul, K., McBride, J., &amp; Smith III, J. O.</hi>
-                        <hi style="font-size:13.5pt" xml:space="preserve"> (2019). Supra: Digitizing the Stanford University Piano Roll Archive. </hi>
+                        <hi xml:space="preserve" style="font-size:13.5pt"> (2019). Supra: Digitizing the Stanford University Piano Roll Archive. </hi>
                         <hi rend="italic" style="font-size:13.5pt">In A. Flexer, G. Peeters, J. Urbano, &amp; A. Volk (Chairs), ISMIR, Delft</hi>.
                         </bibl><bibl>
                         <hi rend="bold" style="font-size:13.5pt">van der Walt, S., L. Schönberger, J., Nunez-Iglesias, J., Boulogne, F., D. Warner, J., Yager, N., Gouillart, E., Yu, T.</hi>
-                        <hi style="font-size:13.5pt" xml:space="preserve"> (2014). scikit-image: Image processing in Python.</hi>
+                        <hi xml:space="preserve" style="font-size:13.5pt"> (2014). scikit-image: Image processing in Python.</hi>
                         <hi rend="italic" style="font-size:13.5pt">PeerJ</hi>
-                        <hi style="font-size:13.5pt" xml:space="preserve"> 2:e453 https://doi.org/10.7717/peerj.453</hi>
+                        <hi xml:space="preserve" style="font-size:13.5pt"> 2:e453 https://doi.org/10.7717/peerj.453</hi>
                         </bibl><bibl>
                         <hi rend="bold" style="font-size:13.5pt">The ImageMagick Development Team.</hi>
-                        <hi style="font-size:13.5pt" xml:space="preserve">(2021). </hi>
+                        <hi xml:space="preserve" style="font-size:13.5pt">(2021). </hi>
                         <hi rend="italic" style="font-size:13.5pt">ImageMagick</hi>. Retrieved from https://imagemagick.org (Accessed 01 January 2022)
                     </bibl>
                 </listBibl>

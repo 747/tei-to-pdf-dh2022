@@ -86,18 +86,25 @@
                 <head>Pipeline of the speaker identification systems for the annotation of raw text.</head>
             </figure>
             <p>4. Results</p>
-            <figure>
                 <table rend="rules">
+                    <note type="direction">
+                        <width unit="pt">40.5</width>
+                        <width unit="pt">51</width>
+                        <width unit="pt">35</width>
+                        <width unit="pt">35.5</width>
+                        <width unit="pt">40</width>
+                        <width unit="pt">40</width>
+                    </note>
                     <row>
                         <cell style="text-align: left;" rend="DH-Default">Author</cell>
                         <cell style="text-align: left;" rend="DH-Default">STW type</cell>
                         <cell style="text-align: left;" rend="DH-Default">
-                            <p>Performance</p>
-                            <p>Range</p>
+                            Per&#173;for&#173;mance<lb/>
+                            Range
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">
-                            <p>STW</p>
-                            <p>medium</p>
+                            STW<lb/>
+                            medium
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">Domain</cell>
                         <cell style="text-align: left;" rend="DH-Default">Language</cell>
@@ -105,16 +112,16 @@
                     <row>
                         <cell style="text-align: left;" rend="DH-Default">Pareti et al. (2013)</cell>
                         <cell style="text-align: left;" rend="DH-Default">
-                            <p>Direct</p>
-                            <p>Indirect</p>
-                            <p>Mixed</p>
+                            Direct<lb/>
+                            Indirect<lb/>
+                            Mixed
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">
-                            <p>
-                                <hi rend="bold">85 – 91</hi>
-                            </p>
-                            <p>74 – 79</p>
-                            <p>65 – 81</p>
+                            
+                                <hi rend="bold">85 – 91</hi><lb/>
+                            
+                            74 – 79<lb/>
+                            65 – 81
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">Speech</cell>
                         <cell style="text-align: left;" rend="DH-Default">News</cell>
@@ -138,33 +145,32 @@
                     </row>
                     <row>
                         <cell style="text-align: left;" rend="DH-Default">
-                            <p>This work</p>
-                            <p>with gold</p>
-                            <p>STW annotations</p>
+                            This work<lb/>
+                            with gold<lb/>
+                            STW an&#173;no&#173;ta&#173;tions
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">
-                            <p>Direct</p>
-                            <p>Indirect</p>
-                            <p>Reported</p>
-                            <p>Free indirect</p>
+                            Direct<lb/>
+                            Indirect<lb/>
+                            Reported<lb/>
+                            Free indirect
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">
-                            <p>63.91</p>
-                            <p>82.2</p>
-                            <p>71.38</p>
-                            <p>50.0</p>
+                            63.91<lb/>
+                            82.2<lb/>
+                            71.38<lb/>
+                            50.0
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">
-                            <p>Speech,</p>
-                            <p>Thought,</p>
-                            <p>Writing</p>
+                            Speech,<lb/>
+                            Thought,<lb/>
+                            Writing
                         </cell>
                         <cell style="text-align: left;" rend="DH-Default">Literature</cell>
                         <cell style="text-align: left;" rend="DH-Default">German</cell>
                     </row>
-                </table>
                 <head>Comparison of the accuracies of speaker attribution systems that were used in setups comparable to this work. Accuracy ranges are indicated as some systems were applied to different data sets with varying success. Maximum values are marked in bold.</head>
-            </figure>
+                </table>
             <p>As shown in figure 02 our systems achieve the best performance for attributing indirect, reported and free indirect STW. The direct system could be improved, for example when handling conversational patterns. The full pipeline achieves a comparable performance.</p>
             <p>5. Future Work </p>
             <p>The pipeline itself could be improved (e.g. by extending the predefined word lists) and the systems could be tested on and eventually adapted to another domain. For comparative purposes, neural networks that use semantic word representations could be trained for the task of speaker identification. Finally, the systems could be extended to also resolve speakers. The systems can be used as is to perform analyses in the field of Computational Literary Studies e.g. to address gender related research questions (cf. Schumacher and Flüh, 2020).</p>

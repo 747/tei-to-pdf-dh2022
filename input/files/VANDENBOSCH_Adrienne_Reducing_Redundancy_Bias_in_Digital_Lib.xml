@@ -56,19 +56,19 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>digital libraries</term>
                     <term>text mining</term>
                     <term>natural language processing</term>
                     <term>classification</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>English</term>
                     <term>North America</term>
                     <term>Contemporary</term>
@@ -85,37 +85,37 @@
         <body>
             <p style="text-align: left; ">The continued growth of digital libraries as primary sources for text analysis makes the issues created by duplicating and repeated texts in these collections even more apparent. The Similarities and Duplication in Digital Libraries project (SaDDL) identifies complex relationships of digitized works in large-scale digital libraries using content-based machine learning approaches. It is unique in its approach to relationship classification: where such work is traditionally limited to metadata-based inferences, the availability of book content, collected through the HathiTrust Research Center’s Extracted Features dataset (Jett et al., 2020; Organisciak et al., 2017), enabled a content-based approach for comparing book by the language used within them. It was evaluated on 8.7 million English-language works in the HathiTrust (HT) collection. Tagging these relationships helps identify duplicate and partially overlapping works in digital libraries more accurately, allowing for scholars studying historic collections using computational text mining to work with less-biased collections. This paper introduces the challenges of working with collections of such scale, the machine learning methods employed to address these challenges, and the overall implications of the project. SaDDL’s outcomes include datasets that digital humanists can use to better identify works of interest and their variants in the HathiTrust and overlapping collections, as well as recommendations for most representative copies of duplicate works.</p>
             <p style="text-align: left; ">The pursuit of content-based corpus analysis is longstanding in the study of culture at scale (Manovich, 2018), analysis of texts and literature at scale (Moretti, 2013), and the study of potential patterns from corpus-wide analysis (Michel et al., 2011). The contents of large-scale digital libraries provide incredible opportunities for study in the computational examination of historical texts to identify patterns within society and culture. Duplicate and repeating text within collections can significantly impact the effectiveness of semantic models and introduce unintentional bias in analysis (Schofield et al., 2017). With the ability to accurately identify and account for duplications within corpora, these biases can be addressed in analysis and machine learning.</p>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Outputs</head>
                 <p style="text-align: left; ">Duplication in bibliographic materials is not a trivial issue, as both content and format often change, evolve, or are reconfigured. Items identified as identical works, different versions or editions, and those with whole-part relationships (i.e., anthologies or multi-part works) are all distinguished in the SaDDL dataset. In addition to tags identifying whole or partial relationships between published books, SaDDL also suggests the best representation of a work from multiple versions. The best representation of a work was determined based on the real work that most resembles an averaged view of all the copies. Recommendations of different-but-similar books are also included, trained up from an alignment of HathiTrust works with Goodreads data (Wan &amp; McAuley, 2018; Wan et al., 2019).</p>
                 <p style="text-align: left; ">The web application of the dataset is available at https://saddl.du.edu and provides an accessible interface for browsing on the volume, work, and manifestation levels. As shown in Figure 1, the web interface displays the item metadata, HathiTrust ID number, and metadata for items identified as the same work. Following the initial item information are the additional types of identified relationships grouped by type, like items that are identified as the same book but different printings or versions, as seen in Figure 1 under 
                     <hi rend="italic">Other Books With this Work</hi>.
                 </p>
                 <figure>
-                    <graphic n="1001" width="14.393333333333333cm" height="16.36888888888889cm" url="Pictures/9febac72475a9a1a20bbb1d3222b418e.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 1: 
-                    <hi rend="italic">The History of Sir Charles Grandison</hi> in the SaDDL web interface
-                </p>
+                    <graphic height="16.36888888888889cm" n="1001" rend="inline" url="Pictures/9febac72475a9a1a20bbb1d3222b418e.png" width="14.393333333333333cm"/>
+                <head style="text-align: left; ">Figure 1: 
+                     </head><p><hi rend="normal">The History of Sir Charles Grandison</hi> in the SaDDL web interface
+                </p></figure>
+                
                 <p style="text-align: left; ">Recommendations of related works are also included on the website. The website gives context to the data, helping to ensure informed use in future applications, and offers downloads of JSON files for individual books, as shown in Figure 2, and links to the full dataset. Project code and instructions for accessing the dataset are made available at the University of Denver’s Massive Text Lab Github organization. Future work will deduplicate the corpus and further scholarly work over large-scale digital libraries, with implications for use across other collections.</p>
                 <figure>
-                    <graphic n="1002" width="15.24cm" height="10.018888888888888cm" url="Pictures/6e569619a18f54929c57d200bf9c817d.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 2: A portion of the JSON file for 
-                    <hi rend="italic" xml:space="preserve">The History of Sir Charles Grandison </hi>from the SaDDL web interface
-                </p>
+                    <graphic height="10.018888888888888cm" n="1002" rend="inline" url="Pictures/6e569619a18f54929c57d200bf9c817d.png" width="15.24cm"/>
+                <head style="text-align: left; ">Figure 2: </head><p>A portion of the JSON file for 
+                    <hi rend="normal">The History of Sir Charles Grandison </hi>from the SaDDL web interface
+                </p></figure>
+                
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Approach</head>
                 <p style="text-align: left; ">To fully realize the completed SaDDL dataset, books in the HathiTrust EF Dataset were modeled using GloVe word embedding models (Pennington et al., 2014). These were chosen over newer contextual language models, such as BERT (Devlin et al., 2018) for performance and access reasons. First, their language space is linear, allowing for embeddings to be compared directly and quickly with geometric distance metrics. This choice was further motivated by the scale considerations – a large corpus comprised of texts that are much longer than typically handled in text mining applications – and the fact that the book representations that the EF Dataset provides publicly are in bag-of-word format. For document representation, book in the EF Dataset were split into similar-length chunks and projected to vectors, resulting in approximately 108 million book chunks.</p>
                 <p style="text-align: left; ">To account for scale, a two-pass approach was employed for relationship evaluation: first an approximate nearest neighbor process to narrow the comparison space to candidate relationships, then a deep neural network classifier to perform relationship tagging. The SaDDL relationship classifier for full book-to-book comparison works on two inputs: a chunk-to-chunk similarity matrix, which is parsed using a convolutional neural network, and a difference vector derived from the overall book-level embeddings. Using a one-hot encoded classifier, class inferences were trained on relationships known from cataloguing metadata as well as artificially generated training examples. </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Conclusion</head>
                 <p style="text-align: left; ">The SaDDL dataset offers scholars a way to pursue computational text analysis over massive digital library collections while avoiding the challenges of repeating or closely redundant text. Further, it offers recommendations for choosing the most appropriate copy of a work, as well as topically-related book recommendations which may be used for developing domain-specific subcorpora. To aid in scholarly use of this data, the SaDDL dataset is accessible both in a raw format and accessible, easy-to-use website. </p>
                 <p style="text-align: left; ">The present work demonstrates these products and their value for future scholars. Further, the methods for creating this work are described, which demonstrate a use of deep neural networks that is more effective than traditional feature extraction and classification workflows. The developed methods allow relationships between works that are more complicated than exact duplicates to be identified from content and can be applied to other large-scale collections. De-duplication that accounts for the complexities of publishing history and practice can be applied to all digital libraries to reduce bias and improve the results of computational analysis of historical texts.</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Acknowledgements</head>
                 <p style="text-align: left; ">This work was funded by IMLS #LG-86-18-0061-18.</p>
             </div>

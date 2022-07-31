@@ -132,9 +132,9 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/27cd5817c23bd18ce57d4877e31c0b0a.jpg"/>
-                    </figure>
+                    <head>Figure 1: </head><p>Composition of the corpus by decade</p></figure>
                 </p>
-                <p>Figure 1: Composition of the corpus by decade</p>
+                
                 <p>Such high coverage seems to alleviate most concerns related to the representativeness of digital corpora: it becomes less likely that important genres or themas are neglected. Yet the novels registered on the French National Library catalog do not encompass the total sum of literary fiction published or circulated on the period. The comparison with Google Books showed that numerous editions were not recorded by Gallica. In the context of the project, we only checked novels recorded on the catalogue, but this discrepancy shows that some published novels could definitely have been overlooked, although by definition these documents are not necessarily expected to belong to those with the largest impact, as they failed to be noticed by bibliographic records. After the 19th century, nearly all published monographs are expected to be indexed in the catalogue of the French National Library due to progress in the implementation of the policy of legal deposit (<hi rend="italic">dépôt légal</hi>, established in 1537). Yet, at this time, a large amount of literature was increasingly being published in periodicals and newspapers.
                 </p>
                 <p>In short as representativeness of existing library catalogues becomes less of a concern, digital collections are bound to raise more complex issues and address a more critical perspective on existing bibliographic resources: what is a “novel”? what is a “publication”? what about piracy edition or periodical fictions?</p>
@@ -175,8 +175,8 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/24443f5c2785ff4a976fff1598d6bc72.png"/>
-                        <head>Table 1. Top 10 works classified as fantasy in the corpus of 19th century novel digitized by Gallica</head>
-                    </figure>Most of these works are poorly attested in literary history. In comparison, the results from Science-fiction yields much more expected and “canonic” works (especially from Jules Verne).
+                        <head>Table 1. </head>
+                    <p>Top 10 works classified as fantasy in the corpus of 19th century novel digitized by Gallica</p></figure>Most of these works are poorly attested in literary history. In comparison, the results from Science-fiction yields much more expected and “canonic” works (especially from Jules Verne).
                 </p>
                 <p>The early modern model (or “Fresnoy” model) has been made possible by an exceptional historical source on literary genre classification: the second volumes of 
                     <hi rend="italic">De l’usage des romans, où l’on fait voir leur utilité &amp; leurs différens caractères</hi> by Nicolas Lenglet du Fresnoy (first published in 1731 under the pseudonym of Gordon de Percel). It is a catalog of a large among of French, Spanish and Italian novels published since 1731 broken down by genres according to the prevalent taxonomy of the time: 
@@ -192,9 +192,9 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/17b025b524f277cd0f71b446eb1fd9ad.jpg"/>
-                    </figure>
+                    <head>Figure 2: </head><p>Main words used in the four categories of the Fresnoy model</p></figure>
                 </p>
-                <p>Figure 2: Main words used in the four categories of the Fresnoy model</p>
+                
                 <p>A this stage, the expansion of the corpus and the re-digitization of available documents with historical models for OCR will be crucial to move beyond an exploratory phase and design a more systematic examination of the metamorphosis of literary genre.</p>
             </div>
         </body>

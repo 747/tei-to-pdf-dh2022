@@ -56,18 +56,18 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Short Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Text encoding</term>
                     <term>History of Accounting</term>
                     <term>Economic history of early modern Europe</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>15th-17th Century</term>
@@ -82,34 +82,34 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Introduction: The Purpose of Research</head>
                 <p style="text-align: left; ">We have been analyzing accounting books in order to understand the economic history of the early Spanish empire. This presentation focuses on the double-entry accounting books of the Salamanca company in Burgos, a city in northern Spain, in the mid-sixteenth century. This paper reports our materials, analytical framework, progress, and prospect. In this research, data mining from the accounting book, structured with the Text Encoding Initiative /DEPCHA, has enabled historical insights into the unique terminology of accounting, the balance of payments, and the tendency of abbreviation.</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Materials</head>
                 <p style="text-align: left; ">Our materials are found among the accounting books in the Archive of Burgos Provincial Congress (Table 1). We picked out as an example a pair of accounting books based on the double-entry method (classified as CM32 and CM108). In this method, two types of books are required. One is the journal (diario in Spanish), in which all transactions are recorded chronologically. The other is the ledger (libro mayor), where each transaction in the journal must be transcribed twice, one on the left page as a debit transaction, and the other as a credit on the right (cf. Figure 1). This double transcription, a quintessential characteristic of the method, must be encoded with TEI. </p>
                 <p style="text-align: left; ">Each transcription in the ledger has at least two sections: the detail of the transaction on the left; the value of the transaction on the right. On average, the left section contains information such as the name of the debtor, date and place of transaction, merchandise and its price and quantity, names of other parties involved, terms of the transaction, and page number of the corresponding transcription. As of March 2022, we have marked up 12 folios of the ledger, which contains 197 entries.</p>
                 <figure>
-                    <graphic n="1001" width="15.000111111111112cm" height="5.880805555555556cm" url="Pictures/7a2f887d29c801ec5ac3d3b29482ab05.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Table 1: List of Accounting Books kept in ADPB</p>
+                    <graphic height="5.880805555555556cm" n="1001" rend="inline" url="Pictures/7a2f887d29c801ec5ac3d3b29482ab05.png" width="15.000111111111112cm"/>
+                <head style="text-align: left; ">Table 1: </head><p>List of Accounting Books kept in ADPB</p></figure>
+                
                 <figure>
-                    <graphic n="1002" width="15.000111111111112cm" height="11.237736111111111cm" url="Pictures/6b260f3901a8ad30b56f3a805c1db5b0.jpeg" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 1: Credit and debit entries in the ledger</p>
+                    <graphic height="11.237736111111111cm" n="1002" rend="inline" url="Pictures/6b260f3901a8ad30b56f3a805c1db5b0.jpeg" width="15.000111111111112cm"/>
+                <head style="text-align: left; ">Figure 1: </head><p>Credit and debit entries in the ledger</p></figure>
+                
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Analytical Framework</head>
                 <p style="text-align: left; ">For the markup of accounting records, XBRL might be a possible candidate framework (Anderson et al. 2016). However, this modern framework seems to be not suitable enough to capture all the elements of the historical records, not present in the contemporary ones. Instead, we have chosen DEPCHA, an extended TEI schema. DEPCHA has developed a domain ontology, based on the concept of ‘Transactiongraphy’ (Tomasek and Bauman, 2013), for extracting machine-readable data in RDF format from transactional information in accounting records in the TEI or CSV format. A member of the DEPCHA, states that their future challenge is to normalize the vocabulary of words such as "currency" and "item" in accounting records that emerge from various case studies and to build an interoperable data model for open data (Pollin, 2019), but at present, there are not so many case studies. Furthermore, concrete examples of double-entry books, which are considered as the basis of accounting practice in the modern world, have not sufficiently been marked up using the DEPCHA scheme. Our research will contribute to filling this gap and giving practical feedback to DEPCHA. We also think that more normalized TEI/DEPCHA can make the analysis of historical financial data more efficient, when the scale of data becomes bigger.</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Progress and prospect</head>
                 <p style="text-align: left; ">Let us explain our markup policy. As mentioned earlier in the materials section, the correspondence between transactions is displayed across each of the left and right pages, so the facing page needs to be structured as a coherent space when marking up. (cf. Markup 1). While following DEPCHA's recommended policy of using &lt;table&gt; tags to structure the transaction information in a tabular form, we ensure that the @ana attribute value is entered in a human-readable form—though it is not completely machine-processable at the moment—, so that the correspondence between the left and right pages is clearly indicated. In addition, the reference relationships between the diary and ledger are also structured (cf. Markup 1).</p>
                 <figure>
-                    <graphic n="1003" width="15.000111111111112cm" height="10.937875cm" url="Pictures/087dadc365b1a322f8a92689590cbe1a.png" rend="inline"/>
+                    <graphic height="10.937875cm" n="1003" rend="inline" url="Pictures/087dadc365b1a322f8a92689590cbe1a.png" width="15.000111111111112cm"/>
+                <head>Markup 1: </head><p style="text-align: left; ">Tagging an Entry in the Ledger</p>
                 </figure>
-                <p style="text-align: left; ">Markup 1: Tagging an Entry in the Ledger</p>
                 <p style="text-align: left; ">We will demonstrate our achievements using the above-mentioned mark-up files to conduct analyses, as follows: (1) identification of abbreviated person names, (2) accounting terms and abbreviations, and (3) checking the balance of payments; all of them is available to browse at our page .</p>
                 <p style="text-align: left; ">We prospect to mark up more accounting books kept in the same archive, and launch trend and network analyses using metadata, e.g. time, name of person/company, place, commodity, and price. And we will also investigate more proper way of displaying our analysis. We would like to share our framework with the researchers pursuing similar themes to improve the analytical frameworks and tools for the study of economic history.</p>
             </div>

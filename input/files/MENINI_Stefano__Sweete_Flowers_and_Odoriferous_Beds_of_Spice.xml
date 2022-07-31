@@ -89,8 +89,7 @@
                 <hi rend="italic">Odeuropa</hi> project takes another turn, as it works with historical text and image collections from European digital heritage collections. Here, we find rich data on
                 <hi rend="italic" xml:space="preserve"> historical scent perceptions </hi>and
                 <hi rend="italic" xml:space="preserve"> scent classifications</hi>. How did people, both expert ‘noses’ and laymen, describe and classify scents in the period between 1600 and 1900? Here we present the first results of the NLP phase of the Odeuropa project, focusing on one specifically interesting ‘class’ of scents: 
-                <hi rend="color(212121)">‘</hi>oriental
-                <hi rend="color(212121)">’</hi>.
+                <hi rend="color(212121)">‘</hi>oriental<hi rend="color(212121)">’</hi>.
             </p>
             <p>Since the early twentieth century 
                 <hi rend="color(212121)">“</hi>oriental
@@ -109,11 +108,8 @@
                 <hi rend="italic">etc</hi>.). From the corpora we extracted the passages containing at least one word affine to the ‘oriental’ topic and at the same time a term related to smell. We extracted then the nouns and adjectives close to the smell related words (limiting the range to 5 words before and after to reduce data noise), that may refer and describe the smells and the sources of smell related to the Orient, and that, associated with the year of the document, can provide insights into how smells related the Orient change over the time.
             </p>
             <p>For example, it is clear that in the early 1600s many of the key scents that were associated with the ‘oriental’ perfume category from the 1920s onwards were already part of how Europeans imagined the olfactory Orient, including amber, musk, rose, civet, and general references to ‘spice’. These scents remained common throughout the time period. In the late 1700s jasmine and resins and in the first half of the nineteenth century woods, spices, and opium were then added into the imagined bouquet. This parallels the emergence of orientalising stereotypes in French cosmetic and perfume advertising during the late eighteenth and early nineteenth century. The spaces and feelings evoked by these scents also changed: earlier descriptions emphasize fragrant, odoriferous, and sweet scents that are linked to tales about fragrant Arabian coasts or biblical incense. However, beginning in the seventeenth century the Oriental associations with sensuality and eroticism that ‘Oriental’ perfume advertising would play on - most famously in the case of Yves Saint Laurent’s ‘Opium’ - clearly appear as terms such as ‘ravishing’ and later ‘intoxicating’ become prominent in the data. This matches the importance of the harem in literary and visual evocations of the Orient - as in Delacroix’s painting of the 
-                <hi rend="italic color(212121)">“</hi>
-                <hi rend="italic">Women of Algiers</hi>
-                <hi rend="italic color(212121)">“</hi>, which was said by Baulelaire to 
-                <hi rend="color(212121)">“</hi>exhale the heady scent of a house of ill repute
-                <hi rend="color(212121)">“</hi>. 
+                <hi rend="italic color(212121)">“Women of Algiers>“</hi>, which was said by Baulelaire to 
+                <hi rend="color(212121)">“</hi>exhale the heady scent of a house of ill repute<hi rend="color(212121)">“</hi>. 
             </p>
             <p>In this contribution we present our results and discuss what conclusions we can derive from this exploration. We aim to show that both the smells linked to the ‘Orient’ and the feelings, atmosphere, and spaces they evoked had a long history before it consolidated as a perfume group, but that the population of this class and its evaluation changed over time. Our plea is that Digital Humanities technologies for mining scent perception can bring a new perspective to the field of odor informatics.</p>
         </body>

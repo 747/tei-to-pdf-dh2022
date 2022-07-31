@@ -97,7 +97,9 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/56b6a947bfe756e025c1425372e3ec63.png"/>
-                    </figure>Fig. 1 Excerpt from a transaction text: “For 8 gan2 (~2.8 ha) [of acre] 7 gur (~2,100 l) rations and beer, first time, and for 18 gan2 (~6.5 ha) [of acre] 31.5 gur (~9,450 l), second time, for Ur-Enlilla.” (P101040)
+                        <head>Fig. 1 </head>
+                        <p>Excerpt from a transaction text: “For 8 gan2 (~2.8 ha) [of acre] 7 gur (~2,100 l) rations and beer, first time, and for 18 gan2 (~6.5 ha) [of acre] 31.5 gur (~9,450 l), second time, for Ur-Enlilla.” (P101040)</p>
+                    </figure>
                 </p>
                 <p>Overall, ETCSANS syntax annotation is largely derived from manual annotation or translations rather than directly manually created. Given the amount of data and the high degree of specialization required for doing the annotation, this is unavoidable, but from a methodological view, it presents a challenge that we would like to discuss with the wider DH audience, as we deal with (and delineate) different levels of trust and reliability, the possibilities (and limitations) for manual corrections and editorial decisions regarding the annotation, and, finally, the development of communication strategies to clarify potential and pitfalls of semiautomated annotations and their usage for future research in the humanities in a way that is transparent to scholars and laymen alike. At the time of writing, evaluation is still on-going. Preliminary results indicate that the different strategies we employed for bootstrapping annotations (two different approaches on rule-based annotation over manual morphology, annotation projection, ensemble combination of several such methods) differ greatly in the types of errors they produce, so that the focus of our current work is on developing methods to provide context-sensitive confidence scores for our annotations.</p>
             </div>

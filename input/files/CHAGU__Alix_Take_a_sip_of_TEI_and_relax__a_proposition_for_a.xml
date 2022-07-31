@@ -171,21 +171,11 @@
                     </p>
                 </note> and documents, the text and layout information generated during the transcription, and any further editorial layer added to the raw transcription.
             </p>
-            <table rend="rules">
-                <row>
-                    <cell rend="center">
                         <figure>
                             <anchor xml:id="w9p4ioeaonwg"/>
                             <graphic n="1001" width="8.466683333333334cm" height="6.773347222222222cm" url="Pictures/ab528cf602216654bc3102ca32fc9f32.png" rend="inline"/>
+                        <head>Fig. 1: </head><p rend="bold">TEI as a threefold structure.</p>
                         </figure>
-                    </cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;">
-                        <hi rend="bold">Fig. 1: TEI as a threefold structure.</hi>
-                    </cell>
-                </row>
-            </table>
             <p>We imagine a configuration capable of processing a large family of TEI customizations as long as the file follows a structure (Fig. 1) in which:</p>
             <list type="unordered">
                 <item>“teiHeader” stores the metadata,</item>
@@ -207,21 +197,11 @@
             <p>Editorial operations can include preprocessing tasks such as post-HTR corrections (spell-checking) and text normalization, as well as information extraction (text mining). When the volume of data increases, extracting and linking named entities with indexes quickly risks becoming a laborious task. Instead, natural language processing tools can automate the process (Ehrmann et al., 2020; Frontini et al., 2015) all the while relying on the analysis of the sentences and words within their context. We developed 
                 <hi rend="italic">Semantic@</hi>, a proof of concept utilizing deep learning models, to extract named entities which are then cycled back into the TEI tree (Fig. 2). The extraction of named entities (i.e. names of people, places, or dates, etc.) is a crucial step before disambiguation which further permits to build links with open general or domain-specific knowledge bases. These steps allow for later explorations of the text with data mining technologies.
             </p>
-            <table rend="rules">
-                <row>
-                    <cell rend="center">
                         <figure>
                             <anchor xml:id="vw6wiftzr5mh"/>
                             <graphic n="1002" width="8.466683333333334cm" height="6.773347222222222cm" url="Pictures/ab528cf602216654bc3102ca32fc9f32.png" rend="inline"/>
+                        <head>Fig. 2: </head><p rend="bold">Virtuous circle for the enriched TEI document.</p>
                         </figure>
-                    </cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;">
-                        <hi rend="bold">Fig. 2: Virtuous circle for the enriched TEI document.</hi>
-                    </cell>
-                </row>
-            </table>
             <p>Once all the layers of an edition are connected into the same TEI file, edited documents can be posted online with softwares like 
                 <hi rend="italic">TEI Publisher</hi> (Turska et al., 2016; Chiffoleau et al., 2021). It provides a fully customizable environment where templates generate “views” based on the content of the XML files. With the aforementioned TEI structure, we propose an edition template containing:
             </p>
@@ -241,37 +221,17 @@
                 <item>a diplomatic edition of the source document, based on the content of the body element, and</item>
                 <item>a facsimile, using the IIIF protocol (Fig. 3).</item>
             </list>
-            <table rend="rules">
-                <row>
-                    <cell style="text-align: left;">
                         <figure>
                             <anchor xml:id="u2c6jdtzl3ua"/>
                             <graphic n="1003" width="15.573375cm" height="6.166555555555555cm" url="Pictures/98520059aeabe3a55ab1b763764bb94f.png" rend="inline"/>
+                        <head>Fig. 3: </head><p rend="bold">A mock-up showing the four different views potentially available in an application like TEI-Publisher.</p>
                         </figure>
-                    </cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;">
-                        <hi rend="bold">Fig. 3: A mock-up showing the four different views potentially available in an application like TEI-Publisher.</hi>
-                    </cell>
-                </row>
-            </table>
             <p>We would like to take the opportunity of presenting a short paper during the DH2022 international conference to subject our framework (Fig. 4) -and its robustness to different writing systems- to the scrutiny of the DH community. In particular, we believe that our proposition addresses challenges raised by Open Science, primarily the necessity to gain better control over every step within complex pipelines that involve various tools, thus facilitating reproducibility. A paradigm revolving around a pivotal element, like a TEI file grouping the different results, frees us from the constraint of a linear progression by maintaining multiple entry points in the workflow.</p>
-            <table rend="rules">
-                <row>
-                    <cell rend="center">
                         <figure>
                             <anchor xml:id="ujktn2vz6rmo"/>
                             <graphic n="1004" width="8.466683333333334cm" height="5.926677777777778cm" url="Pictures/0f92db4d335c32d62aad91c344402bb2.png" rend="inline"/>
+                        <head>Fig. 4: </head><p rend="bold">Simplifying the workflow by using TEI from the beginning.</p>
                         </figure>
-                    </cell>
-                </row>
-                <row>
-                    <cell style="text-align: left;">
-                        <hi rend="bold">Fig. 4: Simplifying the workflow by using TEI from the beginning.</hi>
-                    </cell>
-                </row>
-            </table>
         </body>
         <back>
             <div type="bibliogr">

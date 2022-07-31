@@ -40,20 +40,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Digital heritage</term>
                     <term>heritage visualisation</term>
                     <term>interface design</term>
                     <term>data ambiguity</term>
                     <term>network analysis</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>North America</term>
@@ -92,27 +92,25 @@
                     <head>INFORMATION RETRIEVAL</head>
                     <p>DeXTER’s interface allows users to carry out efficient information retrieval. As said earlier, NA visualisations are typically static, and nodes and edges remain unchanged no matter their relation. In DeXTER it is always possible to explore the changing relationships between entities over time or at specific intervals; this is done by swiping the time bar on the top left of the interface which reflects the collection’s timespan, i.e., 1897-1936 (Figure 1). This allows users to obtain a more realistic representation of how the modelled entities were mentioned by migrants over time or at specific points in history. Users can also select/deselect specific titles and observe how entities of interest were mentioned by migrants in titles of different political orientation and geographical location.</p>
                     <figure>
-                        <head>Figure 1: DeXTER default landing interface for NA. The red oval highlights the time bar</head>
-                        <graphic n="1001" width="16.002cm" height="7.665269444444444cm" url="Pictures/16207147a4999144b3e7c5bd70a950b7.jpeg" rend="inline"/>
-                    </figure>
+                        <head>Figure 1: </head>
+                        <graphic height="7.665269444444444cm" n="1001" rend="inline" url="Pictures/16207147a4999144b3e7c5bd70a950b7.jpeg" width="16.002cm"/>
+                    <p>DeXTER default landing interface for NA. The red oval highlights the time bar</p></figure>
                 </div>
                 <div>
                     <head>DATA MULTI-DIMENSIONALITY</head>
                     <p>DeXTER exposes the data multi-dimensional complexity by allowing users to explore three types of networks: two entity-focused graphs and one issue-focused network. In the entity-focused graph (i.e., ego-network), users start from a selected entity of their choice (i.e., the ego) to explore the net of entities (i.e., the alters) most frequently mentioned in the same sentence as the selected entity. The network also displays the number of times entities were mentioned together, the titles in which they were mentioned and the prevailing emotional attitude of the sentence in which they were mentioned. If ego-network is not selected, the graph displays also the relations among the alters. Figures 2 and 3 show the different entity-focused displays of the same entity/ego when selecting/deselecting the ego-network option. Finally, it is possible to obtain additional points of view by starting from a specific issue (i.e., issue-focused network) so as to research which actors were mostly mentioned on a specific day (or days) by a specific newspaper or several (Figure 4).</p>
                     <figure>
-                        <head>Figure 2: DeXTER entity-focused NA - egocentric network</head>
-                        <graphic n="1002" width="12.697319444444444cm" height="6.205786111111111cm" url="Pictures/1f4408975e188ec46df1b5fec054300c.jpeg" rend="inline"/>
-                        <head>Figure 3: DeXTER entity-focused NA</head>
-                    </figure>
+                        <head>Figure 2: </head>
+                        <graphic height="6.205786111111111cm" n="1002" rend="inline" url="Pictures/1f4408975e188ec46df1b5fec054300c.jpeg" width="12.697319444444444cm"/>
+                    <p>DeXTER entity-focused NA - egocentric network</p></figure>
                     <figure>
-                        <head>Figure 3: DeXTER entity-focused NA</head>
-                        <graphic n="1003" width="13.27325cm" height="6.3993cm" url="Pictures/8a7c7f1fa61d03aa0b5a0bd66d0dcb34.jpeg" rend="inline"/>
-                        <head>Figure 4: DeXTER issue-focused NA</head>
-                    </figure>
+                        <head>Figure 3: </head>
+                        <graphic height="6.3993cm" n="1003" rend="inline" url="Pictures/8a7c7f1fa61d03aa0b5a0bd66d0dcb34.jpeg" width="13.27325cm"/>
+                    <p>DeXTER entity-focused NA</p></figure>
                     <figure>
-                        <head>Figure 4: DeXTER issue-focused NA</head>
-                        <graphic n="1004" width="13.08496388888889cm" height="6.269530555555556cm" url="Pictures/a19dfd667d2715240bcdbee0776cb3ee.jpeg" rend="inline"/>
-                    </figure>
+                        <head>Figure 4: </head>
+                        <graphic height="6.269530555555556cm" n="1004" rend="inline" url="Pictures/a19dfd667d2715240bcdbee0776cb3ee.jpeg" width="13.08496388888889cm"/>
+                    <p>DeXTER issue-focused NA</p></figure>
                 </div>
                 <div>
                     <head>SENTIMENT ANALYSIS</head>

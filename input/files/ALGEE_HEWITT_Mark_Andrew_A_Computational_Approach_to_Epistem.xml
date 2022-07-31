@@ -83,28 +83,31 @@
             <div type="div1" rend="DH-Heading1">
                 <head>Analysis</head>
                 <p style="text-align: left; ">To explore the relationship between the use of object-nouns and concept-nouns in poetry across the long eighteenth and early nineteenth centuries, I first assess whether there is a difference between how these two classes of words are distributed within the poems of the period and whether this relationship changes over time. To compare the distribution of each word set, I calculated the dispersion index (variance/mean) for each word set in each poem (figure 1).</p>
+                <figure>
+                <figure>
                 <p style="text-align: left; ">a. object words</p>
-                <figure>
-                    <graphic n="1001" width="15.66351388888889cm" height="9.355247222222221cm" url="Pictures/5faf4382410bd053e023fcb360f557c0.png" rend="inline"/>
+                    <graphic height="9.355247222222221cm" n="1001" rend="inline" url="Pictures/5faf4382410bd053e023fcb360f557c0.png" width="15.66351388888889cm"/>
                 </figure>
+                <figure>
                 <p style="text-align: left; ">b. concept words</p>
-                <figure>
-                    <graphic n="1002" width="15.659908333333334cm" height="9.556436111111111cm" url="Pictures/f8179194bc3634d7839e2a6f0e0a03fe.png" rend="inline"/>
+                    <graphic height="9.556436111111111cm" n="1002" rend="inline" url="Pictures/f8179194bc3634d7839e2a6f0e0a03fe.png" width="15.659908333333334cm"/>
                 </figure>
-                <p style="text-align: left; ">Figure 1: a. dispersion index of object words in poems written between 1700 and 1834; b. dispersion index of concept words in poems written between 1700 and 1834 (individual poems are jittered on the x-axis for legibility within each period)</p>
+                <head style="text-align: left; ">Figure 1: </head><p>a. dispersion index of object words in poems written between 1700 and 1834; b. dispersion index of concept words in poems written between 1700 and 1834 (individual poems are jittered on the x-axis for legibility within each period)</p></figure>
+                
                 <p style="text-align: left; ">As the figures indicate, object words evidence significantly (pairwise Wilcoxon p-value of 2.2 e-16; Cohen’s d of 0.8) lower dispersion in poems written earlier in the eighteenth century than in the later eighteenth or nineteenth centuries. Conversely, concept words are much more significantly distributed (p-value 2.2 e-16, Cohen’s d of 0.7) throughout earlier poems. In other words, poems written during the Enlightenment distribute concept words throughout the poem, but cluster objects together, while poems written in the early nineteenth century cluster object words less, but cluster concept words to a greater extent. This potentially offers evidence that eighteenth-century poetic epistemology relied on empirical evidence (representing clusters of direct objects) more than nineteenth-century poetry. </p>
                 <p style="text-align: left; ">To explore how these clusters playout within the poems themselves, I aggregated the number of object and concept nouns within each 50
                     <hi rend="superscript">th</hi> (using overlapping windows) of poems written during each of the three periods (figure 2). 
                 </p>
+                <figure>
+                <figure>
                 <p style="text-align: left; ">a. object nouns</p>
-                <figure>
-                    <graphic n="1003" width="16.002cm" height="7.958258333333333cm" url="Pictures/68b77b5b5d36b7ad0289129b981d0bde.png" rend="inline"/>
+                    <graphic height="7.958258333333333cm" n="1003" rend="inline" url="Pictures/68b77b5b5d36b7ad0289129b981d0bde.png" width="16.002cm"/>
                 </figure>
+                <figure>
                 <p style="text-align: left; ">b. concept nouns</p>
-                <figure>
-                    <graphic n="1004" width="16.002cm" height="7.958258333333333cm" url="Pictures/a2283c509dba1db8c29d275ddf0f6545.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 2: Aggregate position of a. object nouns and b. concept nouns within poems written during the early eighteenth century, the later eighteenth century and the early nineteenth century</p>
+                    <graphic height="7.958258333333333cm" n="1004" rend="inline" url="Pictures/a2283c509dba1db8c29d275ddf0f6545.png" width="16.002cm"/>
+                </figure><head style="text-align: left; ">Figure 2: </head><p>Aggregate position of a. object nouns and b. concept nouns within poems written during the early eighteenth century, the later eighteenth century and the early nineteenth century</p></figure>
+                
                 <p style="text-align: left; ">Once again, the differences between both object and concept nouns, as well as between each time period, is apparent. Across all three time periods, object nouns fall across the poems, while in the two later periods, concept nouns are strongly clustered at the beginning and the end of their respective poems. This effect is similar for early eighteenth-century poetry, however the fall is much more dramatic, and the nadir occurs later in the poem. This suggests that concept words cluster within the frame of the poems from later periods, while they are more evenly used throughout poems from the earlier period. </p>
                 <p style="text-align: left; ">As a final step, I calculate the most frequent verbs associated with all objects and all ideas (extracted from a dependency parse of the poetry). These associated verbs, I argue, can aid us in understanding how the changing dispersal and frequency of both ideas and concepts correlate with their use in the poems. The data reveals that across the eighteenth century objects become less the objects of “doing” and “knowing,” and more the objects of “seeing,” “hearing,” and “feeling.” Concept nouns remain more stable in relation to “thinking” and “knowing,” but become the objects of “being.” </p>
             </div>

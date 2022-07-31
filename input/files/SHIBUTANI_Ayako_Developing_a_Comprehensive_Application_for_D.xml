@@ -64,20 +64,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Electronic Poster</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>classification and annotation for image data (caid)</term>
                     <term>data management</term>
                     <term>historical materials</term>
                     <term>image data</term>
                     <term>open science</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Asia</term>
                     <term>English</term>
                     <term>15th-17th Century</term>
@@ -101,13 +101,13 @@
             <p style="text-align: left; ">Scientific studies of historical materials have developed over the last decade using sophisticated analytical approaches (Shibutani, 2022). In particular, USB digital cameras for microscopy and megapixel camera lenses have been upgraded, and researchers can easily obtain distortion-free and high-definition images (Shibutani &amp; Goto, 2020). Most scientific data, including microscopic images, are now available in the digital format. However, preliminary analysis data cannot be shared for comparison processes because these analyses are conducted by ‘specialised’ researchers (Shibutani, 2020; Shibutani et al., 2021). Image data are usually rich data files because they present various parameters in a multidimensional space and are acquired using complex microscopy instruments. The real benefit of the easy sharing and reuse of digital data is that they aid data provenance and reproducibility of results. International standardisation of observational data modelling approaches is needed. With more openly accessible resource data, researchers can enhance and accelerate scientific advances in history. This study aims to develop the use of open science in history using an image data management tool. This aim is accomplished through the following three objectives: 1) conduct data provenance and lineage in history; 2) assess the impact of this new application in the science of historical materials; and 3) formulate recommendations to researchers on the appropriate strategy to promote reproducibility.</p>
             <p style="text-align: left; ">Within the analyst community, the image data management process is challenging, time-consuming, and difficult to scale. Researchers and analysts are seeking ways to manage image data effortlessly, quickly, and in higher quality. Our tool, ‘classification and annotation for image data’ (caid), is a new comprehensive application for image data management. Its main function is to manage research data provenance and lineage of multi-layered information of historical materials (Figure 1). The users of caid can preserve any resource data and update content easily. The application can be operated both online and offline.</p>
             <figure>
-                <graphic n="1001" width="15.429022222222223cm" height="8.782569444444444cm" url="Pictures/60490a19cc37024bf037239d53637839.jpg" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Figure 1. Main window of caid</p>
+                <graphic height="8.782569444444444cm" n="1001" rend="inline" url="Pictures/60490a19cc37024bf037239d53637839.jpg" width="15.429022222222223cm"/>
+            <head style="text-align: left; ">Figure 1. </head><p>Main window of caid</p></figure>
+            
             <figure>
-                <graphic n="1002" width="15.22818611111111cm" height="9.191969444444444cm" url="Pictures/c1912ad0101267df00b8dc2c78fcf554.jpg" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Figure 2. Image data list and annotation and node windows of caid</p>
+                <graphic height="9.191969444444444cm" n="1002" rend="inline" url="Pictures/c1912ad0101267df00b8dc2c78fcf554.jpg" width="15.22818611111111cm"/>
+            <head style="text-align: left; ">Figure 2. </head><p>Image data list and annotation and node windows of caid</p></figure>
+            
             <p style="text-align: left; ">Another function caid provides is fast and easy image annotation (Figure 2). Images require multiple labels for specifying contextual similarities during image retrieval. The caid provides an easy and comfortable method to label and edit metadata. Users can, thus, easily describe their notes during and after each survey. The labelling data will be connected to our institution’s image digitalisation management system, which follows the Reference Model for an Open Archival Information System (OAIS). In addition, all input forms can be customised via content configuration and load specifications. Full descriptions of the surveyed materials can be added or replaced by the user during metadata collection. The temporal usability of our tool in a real survey shows the relevance of such technology in the field.</p>
             <p style="text-align: left; ">In scientific analyses, reproducibility, comparison, and sometimes integration of results are required. All the metadata in the caid can be saved and reloaded by the user for reuse and adaptation. This functionality allows the current survey data to easily compare with analytical results of/from other historical materials. The addition of different interpretations and annotations by different users to the same image data leads to conflicts, but their comparison on the caid refers to appropriate datasets. This comparison environment can support the study of the science of historical materials. Our presentation focuses on some cases showcasing the analytical ability of this application.</p>
             <p style="text-align: left; ">The caid seeks to improve research process by linking it to information infrastructure. It can solve the technological and sociological challenges that have limited open access to resource data worldwide. The explosion of artificial intelligence technology has made breakthroughs in image processing of scientific analyses (e.g. Haenlein &amp; Kaplan, 2019; Savadjiev, et al., 2018). We will examine the applications of this system in the future. In doing so, our application can accelerate the digital transformation (DX) of historical materials.</p>

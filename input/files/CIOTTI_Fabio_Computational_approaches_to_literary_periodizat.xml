@@ -114,7 +114,7 @@
                 </list>
                 <p style="text-align: left; ">Fort the first experiment I have adopted the popular stylometric R package 
                     <hi rend="italic">Stylo</hi>
-                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"DOw0LjCA","properties":{"formattedCitation":"(Eder et al., 2016)","plainCitation":"(Eder et al., 2016)","noteIndex":0},"citationItems":[{"id":21620,"uris":["http://zotero.org/groups/1624882/items/BUVWB3VR"],"uri":["http://zotero.org/groups/1624882/items/BUVWB3VR"],"itemData":{"id":21620,"type":"article-journal","container-title":"The R Journal","ISSN":"2073-4859","issue":"1","language":"en","page":"107-121","title":"Stylometry with R: A Package for Computational Text Analysis","volume":"8","author":[{"family":"Eder","given":"Maciej"},{"family":"Rybicki","given":"Jan"},{"family":"Kestemont","given":"Mike"}],"issued":{"date-parts":[["2016"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Eder et al., 2016) to generate the consensus network dataset, conflating ten hierarchical clusterings generated comparing from 100 to 1000 most frequent words. The resulting output dataset is imported into the network analysis tool Gephi 
+                    <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"DOw0LjCA","properties":{"formattedCitation":"(Eder et al., 2016)","plainCitation":"(Eder et al., 2016)","noteIndex":0},"citationItems":[{"id":21620,"uris":["http://zotero.org/groups/1624882/items/BUVWB3VR"],"uri":["http://zotero.org/groups/1624882/items/BUVWB3VR"],"itemData":{"id":21620,"type":"article-journal","container-title":"The R Journal","ISSN":"2073-4859","issue":"1","language":"en","page":"107-121","title":"Stylometry with R: A Package for Computational Text Analysis","volume":"8","author":[{"family":"Eder","given":"Maciej"},{"family":"Rybicki","given":"Jan"},{"family":"Kestemont","given":"Mike"}],"issued":{"date-parts":[["2016"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?> (Eder et al., 2016) to generate the consensus network dataset, conflating ten hierarchical clusterings generated comparing from 100 to 1000 most frequent words. The resulting output dataset is imported into the network analysis tool Gephi 
                     <?biblio ADDIN ZOTERO_ITEM CSL_CITATION {"citationID":"dKwsbgCF","properties":{"formattedCitation":"(Bastian et al., 2009)","plainCitation":"(Bastian et al., 2009)","noteIndex":0},"citationItems":[{"id":21501,"uris":["http://zotero.org/groups/1624882/items/NUL5XE72"],"uri":["http://zotero.org/groups/1624882/items/NUL5XE72"],"itemData":{"id":21501,"type":"webpage","language":"en","title":"Gephi - The Open Graph Viz Platform","URL":"https://gephi.org/","author":[{"family":"Bastian","given":"Mathieu"},{"family":"Heymann","given":"Sebastien"},{"family":"Jacomy","given":"Mathieu"}],"accessed":{"date-parts":[["2018",11,26]]},"issued":{"date-parts":[["2009"]]}}}],"schema":"https://github.com/citation-style-language/schema/raw/master/csl-citation.json"}?>(Bastian et al., 2009) and each node is associated with an attribute that specifies its decade of composition. Then modularity is calculated with a resolution set at 4, resulting in 10 modules, and the final layout is generated applying the layout algorithm Force Atlas 2.
                 </p>
                 <p style="text-align: left; ">The second approach is based on the text analysis of the corpus with the tool 
@@ -134,7 +134,7 @@
                     <hi rend="superscript">th</hi> are not clearly separated, with the exception of the island in the upper right part of the graph, which is mostly composed of canonical Italian modernist texts.
                 </p>
                 <figure>
-                    <graphic n="1001" width="12.319cm" height="12.319cm" url="Pictures/f514364a2180618c1abff11b98f948cf.png" rend="inline"/>
+                    <graphic height="12.319cm" n="1001" rend="inline" url="Pictures/f514364a2180618c1abff11b98f948cf.png" width="12.319cm"/>
                     <head>Consensus Network of the corpus: red 1810-1860; green 1860-1900; yellow 1900-1940; blue 1940-2010</head>
                 </figure>
                 <p style="text-align: left; ">This overall result is confirmed by the K-Means approach. For my analysis I have produced two matrices using the LIWC dictionary for Italian 
@@ -148,7 +148,7 @@
                     <hi rend="superscript">th</hi> century.
                 </p>
                 <figure>
-                    <graphic n="1002" width="13.399322222222223cm" height="9.051636111111112cm" url="Pictures/7ba82f17121d4aa77bfcec9b222cb72f.png" rend="inline"/>
+                    <graphic height="9.051636111111112cm" n="1002" rend="inline" url="Pictures/7ba82f17121d4aa77bfcec9b222cb72f.png" width="13.399322222222223cm"/>
                     <head>K-Means clusters in the document matrix restricted to the cognitive/emotional lexicon</head>
                 </figure>
                 <p style="text-align: left; ">In conclusion, the first analysis in general confirms for Italian literature the limited role of the time dimension for clustering texts on a purely stylometric base already observed by 

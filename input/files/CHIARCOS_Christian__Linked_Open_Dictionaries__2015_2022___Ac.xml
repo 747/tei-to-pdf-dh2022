@@ -108,8 +108,10 @@
             <p>
                 <figure>
                     <graphic url="Pictures/b07b2eebc29c57403afa4f5d4584bf0e.gif"/>
-                </figure>Fig. 1. The ACoLi Dictionary graph: 3000+ bi-dictionaries (edges in the diagram) for more than 400 languages (nodes in the diagram) in machine-readable formats (OntoLex-Lemon) and published as open source, source: 
-                <ptr target="https://github.com/acoli-repo/acoli-dicts"/>. Colors indicate language families or regions.
+                    <head>Fig. 1. </head>
+                    <p>The ACoLi Dictionary graph: 3000+ bi-dictionaries (edges in the diagram) for more than 400 languages (nodes in the diagram) in machine-readable formats (OntoLex-Lemon) and published as open source, source: 
+                <ptr target="https://github.com/acoli-repo/acoli-dicts"/>. Colors indicate language families or regions.</p>
+                </figure>
             </p>
             <p>Furthermore, a main contribution of the project lay in documentation and dissemination of LOD technology in linguistics, language technology and philologies. On an international level, this includes the first text book on the topic (Cimiano et al. 2020), the organization of workshops and conferences, and four summer schools/datathons (SD-LLOD 2017, 2019, 2022; EUROLAN 2021). In particular, our datathons proved highly effective in disseminating LOD expertise into other LOD-affine projects and contributed to the conception of novel projects by third parties. This includes the use of LOD in academic publishing (Nordhoff 2020, Ligt), infrastructure projects and community portals (Page-Perron et al. 2017 for cuneiform: CoNLL-RDF; Mambrini and Passarotti 2018, Pellegrini et al. 2021 for Latin: OntoLex-Morph, CoNLL-RDF) and projects for digital edition and lexicography (Mondaca and Rau 2020: OntoLex and TEI+RDFa; Chiarcos et al., accepted: TEI+RDFa).</p>
             <p>As for key experiences, there are three main conclusions we arrived at at the end of the project:</p>

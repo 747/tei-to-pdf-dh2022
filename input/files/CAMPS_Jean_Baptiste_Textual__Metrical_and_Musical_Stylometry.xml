@@ -105,10 +105,10 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/494b7aebf85cc3486ad7b2f76273e3fc.jpg"/>
-                        <head>Figure 1: BnF, fr. 844, fol. 29 (manuscrit du roi), beginning of
-                            <lb/>the section for the texts of the count of Bar.
-                        </head>
-                    </figure>
+                        <head>Figure 1: </head>
+                    <p>BnF, fr. 844, fol. 29 (manuscrit du roi), beginning of
+                            the section for the texts of the count of Bar.
+                        </p></figure>
                 </p>
                 <p>In the landscape of medieval French texts’ authorship, the lyrical poetry of the 
                     <hi rend="italic">trouveres</hi> and 
@@ -479,15 +479,15 @@
                     <hi rend="italic">amo(u)rs</hi>, use of ‹u›, not ‹v› at the beginning of words (this last feature being even of a more graphetic nature).
                 </p>
                 <p>To bypass this inconvenient, analyses were repeated, using lemmas, part-of-speech 3-grams and lemmatised function words. Results actually were found to be less accurate (Table 2), which can either point to a less informative nature of these features (i.e., excessive suppression of information and noise generation through lemmatisation, tagging and function words selection), or to the fact that some of the performance of the 3-grams model is due to correlation between scribal practice and authorial units. If that were true, normalisations could both potentially decrease the performance of the model and increase the authorial nature of the features it uses. The relative better performance of lemmas (function and content words) in comparison to part-of-speech or function lemmas could also point towards the importance of lexical choices to discriminate between authors in the training material.</p>
-                <p>
+                <figure>
                     <figure>
                         <graphic url="Pictures/e3f35d2181caff5998aeff98d53f8233.png"/>
                     </figure>
                     <figure>
                         <graphic url="Pictures/473d97de924ec9cc332a8cb2b4430cd3.png"/>
                     </figure>
-                </p>
-                <p>Figure 2: Features with the 10 highest positive and negative coefficients in the linear SVM models for Gace Brulé and Thibaut de Champagne; the higher the coefficient, the more the feature would contribute to a placement on one side of the separating hyperplane or the other</p>
+                <head>Figure 2: </head><p>Features with the 10 highest positive and negative coefficients in the linear SVM models for Gace Brulé and Thibaut de Champagne; the higher the coefficient, the more the feature would contribute to a placement on one side of the separating hyperplane or the other</p></figure>
+                
             </div>
             <div type="div1" rend="DH-Heading1">
                 <head>
@@ -585,15 +585,15 @@
                 <p>Intervals or notes bigrams have proved to be the most efficient on the smaller set, while results on the larger set remain more difficult to interpret. A visualisation on the smaller set shows how these features can structure a vector space of partly authorial data clouds (fig. 
                     <ref target="#fig:pca">4</ref>), yet a benchmark of the various types of features for supervised learning gives results whose interpretation is more elusive (Table 3), apart from the obvious impact of availability of training samples (Table 3).
                 </p>
-                <p>
+                <figure>
                     <figure>
                         <graphic url="Pictures/aec5296a890e1e2b65414432a6f0b484.png"/>
                     </figure>
                     <figure>
                         <graphic url="Pictures/219b182481125b8d5794f56cf72c3f86.png"/>
                     </figure>
-                </p>
-                <p>Figure 3: First factor plane from principal component analysis of notes and intervals bigrams (smaller set)</p>
+                <head>Figure 3: </head><p>First factor plane from principal component analysis of notes and intervals bigrams (smaller set)</p></figure>
+                
                 <table rend="frame" xml:id="Table8">
                     <head>Table 4: Detailed leave-one-out evaluation of the SVM linear models on intervals bigrams from the larger set (with random downsampling)</head>
                     <row role="label">

@@ -104,8 +104,8 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/19e05013b3a7f59fe7d6d54481bb106a.png"/>
-                        <head>Figure 1: The performance (F1 scores) for a benchmark corpus of English novels and Cosine Delta as a classifier. The results depend on the MFW vector (y axis) and the size of the semantic space (x axis). Classifier used: Classic Delta.</head>
-                    </figure>
+                        <head>Figure 1: </head>
+                    <p>The performance (F1 scores) for a benchmark corpus of English novels and Cosine Delta as a classifier. The results depend on the MFW vector (y axis) and the size of the semantic space (x axis). Classifier used: Classic Delta.</p></figure>
                 </p>
                 <p>The obtained results clearly suggest that the new method outperforms the classical relative frequencies solution. In agreement with several previous studies, longer MFW vectors worked better than, say, 100 MFWs. Less intuitive was the fact that the best performing word frequencies were the ones relative to ca. 50 neighboring words (Fig. 1). A recipe for a robust authorship attribution setup seems to be as follows: take 1,000 MFWs, and compute their frequencies using, for each word, the occurrences of their 50 semantic neighbors.</p>
                 <p>Since authorship attribution results are proven to be unevenly distributed across different MFW vectors, Fig. 2 shows the performance of the model as the gain (in percentage points) over the standard solution. While the overall best performance is obtained for 1,000 MFWs and the space of 50 words, the biggest gain over the baseline (more than 5 percentage points) is produced by the vector of 100 MFWs, each of them computed as a frequency relative to its 80 neighboring words. Interestingly, the new method proves to be 
@@ -114,8 +114,8 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/3a7d85aaafe1f3779d6c76287f905044.png"/>
-                        <head>Figure 2: The gain (in percentage points) over the classical relative frequencies, for different MFW vectors (y axis) and the size of the semantic space (x axis). Classifier used: Classic Delta.</head>
-                    </figure>
+                        <head>Figure 2: </head>
+                    <p>The gain (in percentage points) over the classical relative frequencies, for different MFW vectors (y axis) and the size of the semantic space (x axis). Classifier used: Classic Delta.</p></figure>
                 </p>
             </div>
             <div type="div1" rend="DH-Heading1">

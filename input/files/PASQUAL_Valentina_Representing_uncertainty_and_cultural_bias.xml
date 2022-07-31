@@ -131,8 +131,8 @@
             <p style="text-align: left; ">For example, statements on Dawo’s series would be represented as follows (in Trig syntax):</p>
             <figure>
                 <graphic n="1001" width="16.506611111111113cm" height="4.0569444444444445cm" url="Pictures/e05da7d1c8f94f9801d00e5fb24df517.png" rend="inline"/>
+            <head>Listing 1. </head><p style="text-align: left; ">Conjectures in Trig syntax</p>
             </figure>
-            <p style="text-align: left; ">Listing 1. Conjectures in Trig syntax</p>
             <p style="text-align: left; ">In the example, the addition of the prefix 
                 CONJECTURE to the graph definition allows one to express the statement without asserting it. When querying for meanings associated with Ce (in SPARQL, 
                 SELECT * WHERE { :Da-wo-miao-mo :style ?style }), results would include an empty set of assertions. Instead, when asking for uncertain meanings (in SPARQL, 

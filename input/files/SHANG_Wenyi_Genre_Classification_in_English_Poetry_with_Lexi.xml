@@ -48,20 +48,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Short Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>poetry</term>
                     <term>prosody</term>
                     <term>genre</term>
                     <term>classification</term>
                     <term>machine learning</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Comparative (2 or more geographical areas)</term>
                     <term>Europe</term>
                     <term>English</term>
@@ -84,20 +84,20 @@
             <p style="text-align: left; ">We collected all 37,700 English poems that are tagged with a certain “genre” from the Chadwyck-Healey Literature Collections (http://collections.chadwyck.com). (Note that our use of the term “genre” is drawn from our source; scholars might well characterize some of these genres as “forms” or “modes.”) Since many of the 44 total genres only have a few cases, we kept the poems of the top 8 genres only, which consist of 30,704 (81.44%) poems. Next, we trained a lexical classifier and a prosodic classifier and extracted features for each of them. For the lexical classifier, the features were extracted by transforming the texts into an array of word frequencies, and a grid search was conducted to select the algorithm and number of features used for classification. Optimization is achieved when the random forest algorithm and top 500 features are used. As for the prosodic classifier, we used the Python library “Poesy” (https://github.com/quadrismegistus/poesy) to obtain “foot type”, “feet number”, and “rhyme style” of each poem. Once again, the best performance is achieved when the random forest algorithm is used.</p>
             <p style="text-align: left; ">We then conducted classification experiments based on a random train-test split (70% training vs 30% testing) and compared the performances of the two classifiers on an 8-genre classification task and a 2-class classification task, where we classified each of the top 8 forms against all others (e.g., “sonnet” vs “non-sonnet”, “ballad” vs “non-ballad”).</p>
             <figure>
-                <graphic n="1001" width="15cm" height="7.129411111111111cm" url="Pictures/4a2cf17902fefa29c613179a1f24d9c5.jpg" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Figure 1. Confusion matrix of models trained with different feature sets (8-genre classification)</p>
+                <graphic height="7.129411111111111cm" n="1001" rend="inline" url="Pictures/4a2cf17902fefa29c613179a1f24d9c5.jpg" width="15cm"/>
+            <head style="text-align: left; ">Figure 1. </head><p>Confusion matrix of models trained with different feature sets (8-genre classification)</p></figure>
+            
             <p style="text-align: left; ">In the 8-genre classification experiment, while the lexical and the prosodic classifier have similar overall performances, their results on different genres significantly differ: the lexical classifier classifies ballads and metrical psalms very well, but easily confuses heroic couplets with sonnets and epigrams, while the prosodic classifier classifies heroic couplets very well but easily confuses ballads and metrical psalms with lyrics.</p>
             <figure>
-                <graphic n="1002" width="15cm" height="10.005883333333333cm" url="Pictures/2024eb3f894f8d285c5e5b73f4272d10.jpg" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Figure 2. F1 score of the classification experiments of different genres trained with different feature sets (2-class classification)</p>
+                <graphic height="10.005883333333333cm" n="1002" rend="inline" url="Pictures/2024eb3f894f8d285c5e5b73f4272d10.jpg" width="15cm"/>
+            <head style="text-align: left; ">Figure 2. </head><p>F1 score of the classification experiments of different genres trained with different feature sets (2-class classification)</p></figure>
+            
             <p style="text-align: left; ">The results of 2-class classification demonstrate a similar pattern: sonnets and heroic couplets are better distinguished from other forms when using classifiers trained with prosodic features, while ballads and metrical psalms are better distinguished from other forms when using classifiers trained with lexical features. These results preliminarily suggest that different genres are distinguished with different features: while ballads and metrical psalms are distinguished by the diction they use, sonnets and heroic couplets are defined by prosodic features.</p>
             <p style="text-align: left; ">We also examined the performance of both classifiers on poems by different authors. Here, we used the “hold-out-one” strategy: we selected all poems by authors with at least 30 poems in the dataset and trained the classifiers with all poems except those written by an author, and tested the results on the poems written by that author.</p>
             <figure>
-                <graphic n="1003" width="15cm" height="6.953211111111111cm" url="Pictures/51ccec6cc6a8f2445bd7db5fa1f41292.jpg" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Figure 3. Performances of classifiers on poems of different poets</p>
+                <graphic height="6.953211111111111cm" n="1003" rend="inline" url="Pictures/51ccec6cc6a8f2445bd7db5fa1f41292.jpg" width="15cm"/>
+            <head style="text-align: left; ">Figure 3. </head><p>Performances of classifiers on poems of different poets</p></figure>
+            
             <p style="text-align: left; ">In figure 3, most authors of translated works are in the bottom of the figure (their works cannot be easily classified by prosodic features). We also see preliminary evidence that there might be a correlation between poetic prominence and prosodic regularity: the prominent poets mostly appear in the upper half (their works can be well classified by prosodic features). It is likely that the prominent poets continuously stick to certain prosody conventions for each genre, while the translated poems use very different prosody in the same genre, which is understandable as prosodic pattens are easily lost in translation. The accuracy of classification with lexical features does not show a consistent pattern. However, two influential early modern authors, Spencer and Shakespeare, appear in the top-right corner (their works can be very well classified by both lexical and prosodic features), perhaps indicating that they set the standard for following authors in both the diction and prosody used in different genres.</p>
             <p style="text-align: left; ">To further explore these observations, in the future we will further investigate the relationships between the accuracy of prediction and factors such as the date of the poem, the poets’ canonicity, and their nationality. Additionally, we will also take word order into consideration and use N-gram in supplement of single-word frequencies.</p>
             <p style="text-align: left; ">The findings above already tell us a lot of things about the history of English poetry like the roles of lexical and prosodic features in poetry genre classification, and how such roles differ in different genres. However, the most important potential contribution of this project is to distinguish the concepts of “genre” and “form”: if some poetic categories are best identified by prosody, and others by “content” (represented by lexical features), it might be possible to disentangle “form” from other aspects of “genre.” For example, it is observed that heroic couplets and epigrams use similar diction, what distinguish them as two “genres” is their “forms”; in contrast, ballads and lyrics are in similar “forms”, and they are considered as different “genres” because of the words they use.</p>

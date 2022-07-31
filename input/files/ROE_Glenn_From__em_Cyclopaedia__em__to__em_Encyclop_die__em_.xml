@@ -56,20 +56,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>machine translation</term>
                     <term>multilingual alignment</term>
                     <term>sequence alignment</term>
                     <term>intertextual studies</term>
                     <term>encyclopaedias</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>18th Century</term>
@@ -104,17 +104,17 @@
             <p style="text-align: left; ">Once settled on the optimal parameters, we then used Text-PAIR to generate both an alignment database, for interactive examination, and a set of static results tables. The alignment database contains some 7,304 aligned passage pairs. The system allows queries on metadata, such as author and article title as well as words or phrases found in the aligned passages. Each aligned passage is presented as a facing page representation and the user can toggle a display of the variations between the two aligned passages. As seen below, the variations between the texts can be extensive (<hi rend="italic">fig. 1</hi>).
             </p>
             <figure>
-                <graphic n="1001" width="15.920861111111112cm" height="10.567458333333333cm" url="Pictures/12597ed0ddc2a5d2557c1ef73d3670b4.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; text-align: center;">Figure 1. Text-PAIR interface showing differences in the article “Air”.</p>
+                <graphic height="10.567458333333333cm" n="1001" rend="inline" url="Pictures/12597ed0ddc2a5d2557c1ef73d3670b4.png" width="15.920861111111112cm"/>
+            <head style="text-align: left; text-align: center;">Figure 1. </head><p>Text-PAIR interface showing differences in the article “Air”.</p></figure>
+            
             <p style="text-align: left; ">Text-PAIR also contextualises results back to the original document(s). For example, the following is the article “Almanach” by d'Alembert, showing the aligned passage from Chambers in blue (<hi rend="italic">fig. 2</hi>).  
             </p>
             <figure>
-                <graphic n="1002" width="15.920861111111112cm" height="9.03111111111111cm" url="Pictures/c2f10e8edcdd0f78c556bf1858a7cbe5.png" rend="inline"/>
+                <graphic height="9.03111111111111cm" n="1002" rend="inline" url="Pictures/c2f10e8edcdd0f78c556bf1858a7cbe5.png" width="15.920861111111112cm"/>
+            <head style="text-align: left; text-align: center;">Figure 2. 
+            </head>
+                <p rend="italic">Article “Almanach” with shared Chambers passages in blue.</p>
             </figure>
-            <p style="text-align: left; text-align: center;">
-                <hi rend="italic">Figure 2. Article “Almanach” with shared Chambers passages in blue.</hi>
-            </p>
             <p style="text-align: left; ">In this instance, d'Alembert reused almost all of Chambers’ original article “Almanac”, with some minor variations, but does not to appear to have indicated the source of the first part of his article.  </p>
             <p style="text-align: left; ">To accumulate results and to refine their assessment, we developed an evaluation algorithm for each alignment, with parameters based on the length of the matching passages and the degree to which the headwords were close matches. This simple evaluation model eliminated a significant number of false positives, which we found were typically short text matches between articles with different headwords. The output of this algorithm resulted in two tables, one for matches that were likely to be valid and one that was less likely to be valid, based on these simple heuristics.</p>
             <p style="text-align: left; ">In all, we found some 3,778 articles in the 
@@ -123,7 +123,7 @@
                 <hi rend="italic">encyclopédistes</hi> based on this limited experiment [3]. What we can say, however, is that of the 1,081 articles that include a ‘Chambers’ reference in the 
                 <hi rend="italic">Encyclopédie</hi>, we only found 689 with at least one matching passage, although even here, the recall may in fact be higher than the numbers suggest, given that some citations function more like cross-references. Nonetheless, beyond testing this ground truth, we are also left with the rather astounding fact of 3,089 articles with no reference to Chambers whatsoever, all of which seem to be at least somewhat related to their English predecessor.
             </p>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Notes:</head>
                 <p style="text-align: left; ">[1] Our two comparison datasets are the ARTFL 
                     <hi rend="italic">Encyclopédie</hi> and the recently digitised ARTFL edition of the 1741 Chambers 
@@ -135,7 +135,7 @@
                     <ref target="https://github.com/ARTFL-Project/text-pair">https://github.com/ARTFL-Project/text-pair</ref>.
                 </p>
                 <p style="text-align: left; ">[2] See Clovis Gladstone, Russ Horton, and Mark Olsen, "<ref target="https://github.com/ARTFL-Project/text-pair/blob/master/REFERENCES.md">TextPAIR</ref>
-                    <ref target="https://github.com/ARTFL-Project/text-pair/blob/master/REFERENCES.md" xml:space="preserve"> (Pairwise Alignment for Intertextual Relations)</ref>", ARTFL Project, University of Chicago, 2008-2021, and, more specifically, (Olsen, Horton and Roe, 2011).
+                    <ref xml:space="preserve" target="https://github.com/ARTFL-Project/text-pair/blob/master/REFERENCES.md"> (Pairwise Alignment for Intertextual Relations)</ref>", ARTFL Project, University of Chicago, 2008-2021, and, more specifically, (Olsen, Horton and Roe, 2011).
                 </p>
                 <p style="text-align: left; ">[3] The question of the 
                     <hi rend="italic">Dictionnaire de Trévoux</hi> is one such factor, as it is known that both Chambers and the 

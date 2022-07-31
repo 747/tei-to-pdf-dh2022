@@ -117,24 +117,19 @@
                 </p>
                 <figure>
                     <graphic n="1001" width="16.002cm" height="10.992555555555555cm" url="Pictures/0b7bbfb1ba5539a62a6392894b65d153.png" rend="inline"/>
+                    <head>Figure 1: </head><p rend="italic">Flow of contextual date information across a fragment of text. Indicated in blue boxes are explicit references to eras; pink boxes are references to dates. English text in green glosses show the literal content of the annotated text circled. The correct annotation for the last highlighted date reference (which in the text literally contains only numerical content meaning “1st in a cycle of 60”) supplements this with a reference to the era entity, a specific year and month, and indicates that the numerical content refers to a day (as opposed to a year). Note that the flow of information is non-trivial, because the reference to year 8 is parenthetical and does not alter the year of the subsequent date references, which still refer to year 9.</p>
                 </figure>
-                <p style="text-align: left; ">
-                    <hi rend="italic">Figure 1: Flow of contextual date information across a fragment of text. Indicated in blue boxes are explicit references to eras; pink boxes are references to dates. English text in green glosses show the literal content of the annotated text circled. The correct annotation for the last highlighted date reference (which in the text literally contains only numerical content meaning “1st in a cycle of 60”) supplements this with a reference to the era entity, a specific year and month, and indicates that the numerical content refers to a day (as opposed to a year). Note that the flow of information is non-trivial, because the reference to year 8 is parenthetical and does not alter the year of the subsequent date references, which still refer to year 9.</hi>
-                </p>
                 <figure>
                     <graphic n="1002" width="16.002cm" height="7.33425cm" url="Pictures/2ad2daa0606dda6ef96bbe81daf175f2.png" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">
-                    <hi rend="italic">Figure 2: Entity annotation interface, showing linked data in the 15</hi>
-                    <hi rend="italic superscript">th</hi>
+                <head>Figure 2: </head><p style="text-align: left; ">
+                    <hi rend="italic">Entity annotation interface, showing linked data in the 15</hi><hi rend="italic superscript">th</hi>
                     <hi rend="italic" xml:space="preserve"> chapter of the History of the Song Dynasty (<hi rend="Chinese">宋史</hi>).</hi>
                 </p>
+                </figure>
                 <figure>
                     <graphic n="1003" width="16.002cm" height="5.7820277777777775cm" url="Pictures/cd85fb8b224bde14961004ded4ebbd7b.png" rend="inline"/>
+                    <head>Figure 3: </head><p rend="italic">Automatic suggestions during manual knowledge claim input. An entity representing the office of <hi rend="Chinese">樞密使</hi> has been suggested as the object of the verb “held-office”; a machine-readable date incorporating textual context corresponding to “<hi rend="Chinese">明道元年十二月壬寅</hi>” (Mingdao era, year 1, month 12, day 39 [sexagenary]), and resolving to 8 January 1033 AD (Julian) has been suggested as the value for the “from-date” qualifier for this claim based on existing annotations in the text.</p>
                 </figure>
-                <p style="text-align: left; ">
-                    <hi rend="italic">Figure 3: Automatic suggestions during manual knowledge claim input. An entity representing the office of <hi rend="Chinese">樞密使</hi> has been suggested as the object of the verb “held-office”; a machine-readable date incorporating textual context corresponding to “<hi rend="Chinese">明道元年十二月壬寅</hi>” (Mingdao era, year 1, month 12, day 39 [sexagenary]), and resolving to 8 January 1033 AD (Julian) has been suggested as the value for the “from-date” qualifier for this claim based on existing annotations in the text.</hi>
-                </p>
             </div>
         </body>
         <back>

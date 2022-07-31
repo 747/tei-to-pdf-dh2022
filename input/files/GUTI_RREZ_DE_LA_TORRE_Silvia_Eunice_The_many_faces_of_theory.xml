@@ -298,11 +298,10 @@
                         <cell rend="center">13</cell>
                         <cell rend="center">12</cell>
                     </row>
+                <head>
+                    <hi rend="color(#000000) bold">Table 1</hi><hi rend="color(#000000)">: Term and document frequency of the 20 most frequent persons with a full name match in our corpus.</hi>
+                </head>
                 </table>
-                <p>
-                    <hi rend="color(#000000) bold">Table 1</hi>
-                    <hi rend="color(#000000)">: Term and document frequency of the 20 most frequent persons with a full name match in our corpus.</hi>
-                </p>
                 <p>
                     <hi rend="color(#000000)">By looking to every possible n-gram representation of the reference name (i.e. “Schulz von Thun”, “von Thun”, “Thun”) we got 1,216 matches that correspond to 53.5 % of humans in the dictionary.</hi>
                     <hi rend="sup color(#000000)">13 </hi>
@@ -354,8 +353,7 @@
                 </p>
                 <p>
                     <hi rend="color(#000000)">9. </hi>
-                    <hi rend="color(#000000)">See the complete database here</hi>
-                    <hi rend="color(#000000)">:</hi>
+                    <hi rend="color(#000000)">See the complete database here</hi><hi rend="color(#000000)">:</hi>
                 </p>
                 <p>
                     <ptr target="https://github.com/theory-in-dh/conceptual_forays/blob/main/data/2_wikipediacategoriesfromquery.csv"/>

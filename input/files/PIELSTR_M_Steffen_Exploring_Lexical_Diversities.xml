@@ -83,20 +83,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>text complexity</term>
                     <term>lexical diversity</term>
                     <term>vocabulary richness</term>
                     <term>natural language processing</term>
                     <term>computational literary studies</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>Contemporary</term>
@@ -155,8 +155,8 @@
                     <p>TTR depends systematically on sample size. Among the solutions proposed for this problem, standardized TTRs (STTR) calculated from fixed-length text chunks provide a practical and intuitive solution (Fig. 1).</p>
                                     <figure>
                                         <graphic url="Pictures/a09166bd92d41ef059ecc6a4c7751706.png"/>
-                                <head rend="justify color(#000000)">Figure 1: STTR in GEO and GEOlino</head>
-                                    </figure>
+                                <head rend="justify color(#000000)">Figure 1: </head>
+                                    <p>STTR in GEO and GEOlino</p></figure>
                 </div>
                 <div type="div2">
                     <head>Rarity</head>
@@ -165,9 +165,11 @@
                                         <graphic url="Pictures/b8fd11ba6bb92fcfe05d0da24dddda2c.png"/>
                                 <head rend="justify">
                                     <hi rend="color(#000000)">Figure 2: </hi>
+                                </head>
+                                <p>
                                     <hi rend="color(#000000) italic">Rarity </hi>
                                     <hi rend="color(#000000)">in GEO and GEOlino</hi>
-                                </head>
+                                </p>
                         </figure>
 
                 </div>
@@ -176,8 +178,8 @@
                     <p>According to Jarvis (2013b), the perceived lexical diversity is higher if the occurrences of a particular type are more dispersed, whereas a more clustered pattern produces an impression of redundancy. To measure this effect, we again use a window-based approach (Fig. 3). Inside a window, we calculate a dispersion score based on the Gini coefficient (Gini 1912) for each type and use the arithmetic mean of this score over all types with a frequency greater than one as dispersion measure for the whole text (see Blombach et al. in preparation for a detailed description).</p>
                                     <figure>
                                         <graphic url="Pictures/9f6953e66d3ba830110b213de51b58f3.png"/>
-                                <head rend="justify color(#000000)">Figure 3: Dispersion in GEO and GEOlino</head>
-                                    </figure>
+                                <head rend="justify color(#000000)">Figure 3: </head>
+                                    <p>Dispersion in GEO and GEOlino</p></figure>
                 </div>
                 <div type="div2">
                     <head>Disparity</head>
@@ -189,16 +191,16 @@
                     </p>
                                     <figure>
                                         <graphic url="Pictures/d4a7e07e910d6bbe58550c38fb895711.png"/>
-                                <head rend="justify color(#000000)">Figure 4: Disparity in GEO and GEOlino</head>
-                                    </figure>
+                                <head rend="justify color(#000000)">Figure 4: </head>
+                                    <p>Disparity in GEO and GEOlino</p></figure>
                 </div>
                 <div type="div2">
                     <head>Density</head>
                     <p>A text containing a higher proportion of content words can be considered denser and therefore more complex (Fig. 5).</p>
                                     <figure>
                                         <graphic url="Pictures/abe836b410db577e5d49fd27da5e46cb.png"/>
-                                <head rend="justify color(#000000)">Figure 5: Density in GEO and GEOlino</head>
-                                    </figure>
+                                <head rend="justify color(#000000)">Figure 5: </head>
+                                    <p>Density in GEO and GEOlino</p></figure>
                 </div>
                 <div type="div2">
                     <head>Tools</head>
@@ -223,12 +225,12 @@
                 <p>Fig. 7 shows that genre similarities can be perceived immediately using this kind of representation. A multi-dimensional model of lexical complexity allows a clearer understanding of genre differences.</p>
                                 <figure>
                                     <graphic url="Pictures/ec4098325dae2ba9b78f400a5f9385a3.png"/>
-                            <head rend="color(#000000)">Figure 6: Diversity per aspect. All dimensions have been scaled to values between 0 and 1</head>
-                                </figure>
+                            <head rend="color(#000000)">Figure 6: </head>
+                                <p>Diversity per aspect. All dimensions have been scaled to values between 0 and 1</p></figure>
                     <figure>
                         <graphic url="Pictures/8f4f7e3a4b57e8fabb6795e24de47402.png"/>
-                <head>Figure 7: Radarplots, highlighting the similarities between genres</head>
-                    </figure>
+                <head>Figure 7: </head>
+                    <p>Radarplots, highlighting the similarities between genres</p></figure>
             </div>
         </body>
         <back>

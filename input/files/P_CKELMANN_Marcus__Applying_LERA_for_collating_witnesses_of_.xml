@@ -111,11 +111,9 @@
                 <p>The text was written in Nôm script. It follows the traditional Vietnamese verse form Lục bát according to which lines of six Nôm characters (respectively syllables) alternate with lines of eight. The text is organized in pages whose amount of lines varies among the witnesses. The writing direction is top-to-bottom and right-to-left.</p>
                 <p>
                     <figure>
-                        <graphic url="Pictures/f8dabc64a6a8896a4cb0100da181646d.jpg"/>
+                        <graphic url="Pictures/f8dabc64a6a8896a4cb0100da181646d.jpg"/><head rend="bold">Fig. 1: </head><p>Facsimile of the first page of Truyện Kiều (1866), adopted from Balaban et. al (2001). </p>
                     </figure>
-                </p>
-                <p>
-                    <hi rend="bold">Fig. 1</hi>: Facsimile of the first page of Truyện Kiều (1866), adopted from Balaban et. al (2001). 
+                    
                 </p>
                 <p>The data includes philological commentaries and a translation of the text in
                     <hi rend="color(#ff4000) italic"> </hi>Quốc Ngữ, the modern writing system of Vietnam. There is no one-to-one mapping between the original Nôm script and its translation, although the verse structure is the same in both scripts. This is due to synonyms (e.g., <hi rend="Chinese">劄</hi> → chép or ghi), the not normalized placement of diacritics (e.g., <hi rend="Chinese">鎖</hi> → khoá or khóa), regional preferences of translators in the choice of words (e.g., <hi rend="Chinese">改</hi> → gửi or gởi), and occasional spelling errors (e.g., <hi rend="Chinese">色</hi> → sắo instead of sắc).
@@ -131,14 +129,15 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/7923b6303d4e91ca068a2fb7891d729b.png"/>
+                    <head rend="bold">Fig. 2: </head><p>Left: the original plain text format in Nôm script
+                        (<hi rend="normal">hn</hi>) and Quốc Ngữ
+                        (<hi rend="normal">qn</hi>) including the commentary
+                        (<hi rend="normal">hw1</hi> and
+                        <hi rend="normal">nt1</hi>) for the first two lines of Truyện Kiều (1866). Right: excerpt of the data transformed into a XML-format readable by LERA, where the two lines have been merged into one segment. The philological commentary was transformed to a &lt;note&gt;-tag.
+                    </p>
                     </figure>
                 </p>
                 <p>
-                    <hi rend="bold">Fig. 2</hi>: Left: the original plain text format in Nôm script
-                    (<hi rend="italic">hn</hi>) and Quốc Ngữ
-                    (<hi rend="italic">qn</hi>) including the commentary
-                    (<hi rend="italic">hw1</hi> and 
-                    <hi rend="italic">nt1</hi>) for the first two lines of Truyện Kiều (1866). Right: excerpt of the data transformed into a XML-format readable by LERA, where the two lines have been merged into one segment. The philological commentary was transformed to a &lt;note&gt;-tag.
                 </p>
             </div>
             <div type="div1" rend="DH-Heading">
@@ -152,10 +151,8 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/44acfb35055c2d57f350460032d3a12e.png"/>
+                    <head rend="bold">Fig. 3: </head><p>Representation of a text segment of Truyện Kiều in LERAs full text visualization. Philological commentaries are indicated by consecutive numbers, with their text fading in via mouse-over.</p>
                     </figure>
-                </p>
-                <p>
-                    <hi rend="bold">Fig. 3</hi>: Representation of a text segment of Truyện Kiều in LERAs full text visualization. Philological commentaries are indicated by consecutive numbers, with their text fading in via mouse-over.
                 </p>
                 <p>LERA uses a two-step approach for collation (Pöckelmann et. al 2022), both applied to the four-line segments: an alignment of text segments according to their similarity and a detailed comparison of the aligned segments.</p>
                 <p>For the first step the manual assignment already encoded via line numbers into the data can be used for Truyện Kiều. However, the algorithm for alignment integrated in LERA produces nearly the same alignment.</p>
@@ -167,10 +164,8 @@
                 <p>
                     <figure>
                         <graphic url="Pictures/b8027d18e6382989da7c725817202eb1.png"/>
+                    <head rend="bold">Fig. 4: </head><p>Screenshot of LERA showing an excerpt of the five collated version of Truyện Kiều. The navigation bar shows a very similar structure for all witnesses (with the exception of 1866, recognizable by the gaps at the top), while the density of the blue highlightings indicate textual variance within all aligned segments (the darker the more different the aligned segments are).</p>
                     </figure>
-                </p>
-                <p>
-                    <hi rend="bold">Fig. 4</hi>: Screenshot of LERA showing an excerpt of the five collated version of Truyện Kiều. The navigation bar shows a very similar structure for all witnesses (with the exception of 1866, recognizable by the gaps at the top), while the density of the blue highlightings indicate textual variance within all aligned segments (the darker the more different the aligned segments are).
                 </p>
             </div>
             <div type="div1" rend="DH-Heading">

@@ -48,19 +48,19 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Short Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>structural balance</term>
                     <term>elite network</term>
                     <term>Chinese history</term>
                     <term>network analysis</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Asia</term>
                     <term>English</term>
                     <term>BCE-4th Century</term>
@@ -78,9 +78,9 @@
             <p style="text-align: left; ">Negative ties, especially when studied in tandem with positive ones, are instrumental for understanding political culture in history. How likely was it for political adversaries to have an amicable relationship with some third party? Were enemies of an enemy always friends? Different answers to these questions reflect different political cultures and dynamics of each given moment in history. Although recent works on premodern Chinese political networks have benefited immensely from the method of social network analysis, they have focused mainly on positive relations and rarely looks at negative political ties (e.g., Chen, 2016). The only known study in the field that takes negative ties into consideration (Yan &amp; Wang, 2018) investigates merely the proportion of balanced and unbalanced triadic structures, but fails to provide a more nuanced discussion of the historical significance of different types of balanced or unbalanced triads.</p>
             <p style="text-align: left; ">This study studies triads in historical Chinese political networks by applying the concept of structural balance (Heider, 1946; Cartwright &amp; Harary, 1956) to three moments of Chinese history. Following the structural balance theory, we classify the triads in an undirected signed graph into four distinct types based on the number of positive ties in each triad, and a triad with an odd number of positive ties is considered “balanced”:</p>
             <figure>
-                <graphic n="1001" width="15cm" height="9.569191666666667cm" url="Pictures/8ae22339c34ea4444f21a9cee9f8d2f3.jpg" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Figure 1. Structural balance (positive ties are in blue, and negative ties in red)</p>
+                <graphic height="9.569191666666667cm" n="1001" rend="inline" url="Pictures/8ae22339c34ea4444f21a9cee9f8d2f3.jpg" width="15cm"/>
+            <head style="text-align: left; ">Figure 1. </head><p>Structural balance (positive ties are in blue, and negative ties in red)</p></figure>
+            
             <p style="text-align: left; ">We further interpret each type of triad as follows:</p>
             <list type="ordered">
                 <item>A triad where all ties are positive, denoted by “+++”, indicates “political collegiality” (two actors who have a shared friend are also friends with each other);</item>
@@ -91,9 +91,9 @@
             <p style="text-align: left; ">We applied the above concepts to the sociopolitical networks in three periods of Chinese history: Eastern Jin (317–420), the Qingli (1041–1048) and Xining-Yuanfeng eras (1068–1085, hereinafter XiFeng) of the Song dynasty (960–1279). Eastern Jin marks the peak of aristocratic dominance when political actors came preponderantly from a small number of status-conscious, endogamous “great clans” (Lewis, 2009, p. 51), whereas the two periods of Song are both known for political reforms and attendant factional struggles. Network data on the Eastern Jin political elite were extracted from A New Account of the Tales of the World (Liu, 2002), a collection of anecdotes providing the richest extant account of elite interactions in the fourth century. Here, whenever a single anecdote demonstrates a relationship between two people, a tie is created between them and is manually classified as positive (e.g., bureaucratic appointment, gift-giving) or negative (e.g., attacking, hostility). Data of positive and negative ties on the two eras of the Song are exported from China Biographical Database (CBDB) (Harvard University et al., 2021), supplemented by negative ties manually gleaned from the section on bureaucratic dismissals and demotions in Song huiyao jigao [Collected Administrative Documents of the Song] (Xu, 1957). In all three networks, it is not rare for a pair of actors to have relationships of different nature at different times and are thus connected by both positive and negative ties. Each of these dyads is counted twice, first as one linked by a positive tie and then by a negative tie.</p>
             <p style="text-align: left; ">Our results show that the Song-Qingli network has the highest triadic balance score (0.79), followed by the Song-XiFeng network (0.63), whereas the Eastern Jin network has the lowest (0.53). The proportion of dyads with a mix of positive and negative ties in each network has a reversed rank: highest in Eastern Jin (8.7%), followed by the Song-XiFeng (2.3%) and the Song-Qingli (0.8%) networks. Both calculations suggest—in congruence with findings in the existing scholarship (e.g., Zhu 1985)—that the political world in Eastern Jin was the most fluid and that political actors in Eastern Jin could not be classified into two neatly demarcated opposing groups.</p>
             <figure>
-                <graphic n="1002" width="15cm" height="8.664705555555555cm" url="Pictures/3d544f90f390fdbea42e55d87de0372e.jpg" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Figure 2. Measurements of the three different networks</p>
+                <graphic height="8.664705555555555cm" n="1002" rend="inline" url="Pictures/3d544f90f390fdbea42e55d87de0372e.jpg" width="15cm"/>
+            <head style="text-align: left; ">Figure 2. </head><p>Measurements of the three different networks</p></figure>
+            
             <p style="text-align: left; ">A comparison between two Song networks also paints a more complicated picture of eleventh-century court politics than what the conventional narrative of reformers versus conservatives has made us believe (e.g., Liu, 1959). On the one hand, a higher degree of political tolerance in the Qingli era, measured by “++−” triads as a percentage of all triads with one or more negative ties (0.71 in Song-Qingli vs. 0.62 in Song-XiFeng), indicates a higher likelihood for political adversaries to have common friends. On the other hand, the Song-XiFeng network has a higher plurality score (computed as the percentage of the “−−−” triads in all triads with two or more negative ties) than the Song-Qingli network (0.18 in Song-Xifeng vs. 0.10 in Song-Qingli), implying a more pluralistic and dynamic political scene in the Xining-Yuanfeng era characterized by shifting alliances and more frequent discord among both reformers and their opponents. </p>
             <p style="text-align: left; ">These explorations generate a fresh insight into pre-modern Chinese political culture to be pursued in greater depths in future work. We plan to improve the quality of our data, employ new analytical methods (e.g., balance theory-based blockmodeling), and combine it with more conventional textual studies.</p>
         </body>
@@ -127,6 +127,10 @@
                     <bibl style="text-align: left; ">
                         <hi rend="bold">Liu, I.</hi> (2002). 
                         <hi rend="italic">Shih-shuo Hsin-yü: A New Account of Tales of the World</hi> (R. B. Mather, Trans.; Second Edition). Ann Arbor: Center for Chinese Studies, The University of Michigan.
+                    </bibl>
+                    <bibl style="text-align: left; ">
+                        <hi rend="bold">Liu, J.</hi> (1959). 
+                        <hi rend="italic">Reform in Sung China: Wang An-shih (1021–1086) and His New Policies</hi>. Cambridge: Harvard University Press.
                     </bibl>
                     <bibl style="text-align: left; ">
                         <hi rend="bold">Xu, S.</hi> (1957). 

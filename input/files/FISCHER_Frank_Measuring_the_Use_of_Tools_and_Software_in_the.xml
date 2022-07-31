@@ -193,8 +193,8 @@
             <div type="div1" rend="DH-Heading1">
                 <head>Results</head>
                 <p>The performance of the three trained models is shown in Table 1.</p>
-                <p>Table 1: Results of different Tool Entity recognition models.</p>
                 <table rend="frame" xml:id="Tabelle1">
+                <head>Table 1: Results of different Tool Entity recognition models.</head>
                     <row>
                         <cell rend="center color(#000000) bold">Model</cell>
                         <cell rend="center color(#000000) bold">Precision</cell>

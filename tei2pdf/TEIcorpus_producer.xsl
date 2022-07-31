@@ -358,6 +358,11 @@
                 
                 <revisionDesc>
                     <change>
+                        <date when="2022-07-31"></date>
+                        <name>Wang Yifan</name>
+                        <desc>Public release</desc>
+                    </change>
+                    <change>
                         <date when="2022-07-26"></date>
                         <name>Wang Yifan</name>
                         <desc>First release</desc>

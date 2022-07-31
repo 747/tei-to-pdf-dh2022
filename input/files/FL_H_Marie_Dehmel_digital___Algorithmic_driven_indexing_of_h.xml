@@ -48,18 +48,18 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Electronic Poster</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Letters</term>
                     <term>Literary Studies</term>
                     <term>Machine Learning</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>20th Century</term>
@@ -81,35 +81,35 @@
             <p style="text-align: left; ">On our poster, we present the 
                 <hi rend="italic">Dehmel digital</hi> project (Hamburg University and Hamburg State and University Library; cf. Nantke, 2022) and its automatisation-oriented workflow for indexing historical letters. The project aims to digitise and index the letters of the correspondence network of Ida and Richard Dehmel, consisting of approximately 35,000 original handwritten letters. To be able to manage this huge amount of material, manual, semi-automatic and automatic/algorithm-driven work steps are interlinked in the project's workflow. Therefore, different machine learning techniques that belong to the methodological repertoire of the Digital Humanities are combined with each other. The goal is a digital network scholarly edition of the letters that makes the personal, cultural, and social dynamics contained in the correspondences tangible and explorable (cf. Nantke et al., 2022). There, the users can choose from various medial perspectives on the documents, from facsimiles and transcriptions to registers and visualizations, to pursue their diverse (research) interests.
             </p>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>The workflow</head>
                 <p style="text-align: left; ">The process of converting the handwritten originals into machine-readable representations is divided into a series of successive work stages that produce different data. Each result of the respective work steps is another layer of abstraction from the original material (see fig. 1).</p>
                 <figure>
-                    <graphic n="1001" width="16.002cm" height="15.053027777777778cm" url="Pictures/66294d687269d9c4afd50a1ba7ad32d4.jpg" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 1: Different results of the worklow</p>
+                    <graphic height="15.053027777777778cm" n="1001" rend="inline" url="Pictures/66294d687269d9c4afd50a1ba7ad32d4.jpg" width="16.002cm"/>
+                <head style="text-align: left; ">Figure 1: </head><p>Different results of the worklow</p></figure>
+                
                 <p style="text-align: left; ">In order to establish a procedure that enables the indexing of such large manuscript corpora, but also keeps a philological standard of scholarly editions in mind, we combine several procedures already established within the Digital Humanities and modify them for the use in a digital edition (see fig. 2).</p>
                 <figure>
-                    <graphic n="1002" width="16.002cm" height="8.52663888888889cm" url="Pictures/4f5267a1d403483686162b85c3a23d47.jpg" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 2: The individual work steps in in the Dehmel digital project</p>
+                    <graphic height="8.52663888888889cm" n="1002" rend="inline" url="Pictures/4f5267a1d403483686162b85c3a23d47.jpg" width="16.002cm"/>
+                <head style="text-align: left; ">Figure 2: </head><p>The individual work steps in in the Dehmel digital project</p></figure>
+                
                 <p style="text-align: left; ">After the original letters have been translated into high-resolution image digitisations and enriched with basic metadata, we transcribe about fifty handwritten document pages of one writer manually using Transkribus (cf. READ-COOP, 2021) until the data basis for training a Handwritten Text Recognition (HTR) model has been created. Following the successful training, further transcription is carried out in iterative alternation between automated transcription and manual post-correction, whereby the corrected letters are again fed into the HTR workflow as training data for a new model.</p>
                 <p style="text-align: left; ">An XML processing chain converts these transcripts into a TEI-based format and applies a classifier of the Stanford Named Entity Recognizer (cf. Manning et al., 2014) to tag persons, places, institutions and artworks. The NER-classifier is adapted to the project’s material base since it is trained manually to recognise these four different types of entities in letters from artists from the period around 1900. Recognised entities are introduced inline while retaining the references to the layout and structure of the document. For this purpose, a simplified implementation of the Separated Markup API for XML (cf. Verwer, 2020) is used (cf. Maus, 2021) which integrates classified tokens of NER and annotations of textual characteristics. The entities recognised in this way are used as the basis for the semi-automated generation of registers. These enlist all of the included people, places, institutions, and artworks and direct them back to the relevant documents. To convert the entities into stable register entries, a machine-supported data reconciliation is carried out with norm data systems and local knowledge bases. For reconciliation, we use OpenRefine (cf. OpenRefine, 2022) and the Gemeinsame Normdatei (GND) (cf. Deutsche Nationalbibliothek, 2022) as a norm data system.</p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>The output</head>
                 <p style="text-align: left; ">The computer-assisted disambiguation of entity types with OpenRefine (cf. OpenRefine, 2022) forms the basis for registers as well as for manually created macro comments on the central actors, institutions, and artworks of the corpus (see fig. 3).</p>
                 <figure>
-                    <graphic n="1003" width="16.002cm" height="8.821208333333333cm" url="Pictures/3c93204135d48ce8ae94f547b3f9b1ef.jpg" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 3: The homepage of the 
-                    <hi rend="italic">Dehmel digital</hi> project
-                </p>
+                    <graphic height="8.821208333333333cm" n="1003" rend="inline" url="Pictures/3c93204135d48ce8ae94f547b3f9b1ef.jpg" width="16.002cm"/>
+                <head style="text-align: left; ">Figure 3: </head><p>The homepage of the 
+                    <hi rend="normal">Dehmel digital</hi> project
+                </p></figure>
+                
                 <p style="text-align: left; ">The algorithm-driven approach explained above ultimately enables both a basic overview of the entire corpus and partial correspondences. These are visualized as a dynamic, interactive network, which includes the letter’s senders, recipients, as well as everyone mentioned within the letters, and directs back to the respective documents (see fig. 4). By linking central entities, visualisations, and digitised letters, it becomes possible to gain precise insights into the extensive corpus and use it as a scholarly edited historical source.</p>
                 <figure>
-                    <graphic n="1004" width="16.002cm" height="10.57275cm" url="Pictures/ce574143e82a59d1849d4b0080a9b8cb.jpg" rend="inline"/>
-                </figure>
-                <p style="text-align: left; ">Figure 4: Dynamic network visualisation of the correspondences as a network created with Graph Commons (cf. Arıkan et al., 2016)</p>
+                    <graphic height="10.57275cm" n="1004" rend="inline" url="Pictures/ce574143e82a59d1849d4b0080a9b8cb.jpg" width="16.002cm"/>
+                <head style="text-align: left; ">Figure 4: </head><p>Dynamic network visualisation of the correspondences as a network created with Graph Commons (cf. Arıkan et al., 2016)</p></figure>
+                
             </div>
         </body>
         <back>

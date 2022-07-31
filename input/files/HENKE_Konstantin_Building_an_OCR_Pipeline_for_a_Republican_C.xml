@@ -51,20 +51,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Long Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>OCR</term>
                     <term>Chinese character recognition</term>
                     <term>Chinese character segmentation</term>
                     <term>historical Chinese newspapers</term>
                     <term>republican period</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Asia</term>
                     <term>English</term>
                     <term>20th Century</term>
@@ -80,24 +80,24 @@
         <body>
             <p>
                 <anchor xml:id="id_docs-internal-guid-e0290427-7fff-e493-e32c-95350b2da4ba"/>
-                In recent years, the digitisation of newspapers has made a lot of progress, and large national and international initiatives like Trove<note xml:id="ftn0" place="foot" n="1">
+                In recent years, the digitisation of newspapers has made a lot of progress, and large national and international initiatives like Trove<note xml:id="ftn0" n="1" place="foot">
                         <anchor xml:id="id_docs-internal-guid-3acdbfd7-7fff-0323-4436-a7b63f044029"/> https://trove.nla.gov.au/newspaper/
-                    </note>, Chronicling America<note xml:id="ftn1" place="foot" n="2">
+                    </note>, Chronicling America<note xml:id="ftn1" n="2" place="foot">
                         <anchor xml:id="id_docs-internal-guid-644e1fd9-7fff-40cb-23b5-1a19ae1dc6ed"/> https://chroniclingamerica.loc.gov/newspapers/
-                    </note>, Europeana Newspapers<note xml:id="ftn2" place="foot" n="3">
+                    </note>, Europeana Newspapers<note xml:id="ftn2" n="3" place="foot">
                         <anchor xml:id="id_docs-internal-guid-f599eda0-7fff-8309-ee28-ea7a5c1e8ccb"/> http://www.europeana-newspapers.eu/
-                    </note>, Impresso<note xml:id="ftn3" place="foot" n="4">
+                    </note>, Impresso<note xml:id="ftn3" n="4" place="foot">
                         <anchor xml:id="id_docs-internal-guid-b4ba9880-7fff-d09f-70d2-79c66eac3f2f"/> https://impresso-project.ch/
-                    </note>, NewsEye<note xml:id="ftn4" place="foot" n="5">
+                    </note>, NewsEye<note xml:id="ftn4" n="5" place="foot">
                         <anchor xml:id="id_docs-internal-guid-ff07e3a6-7fff-0276-5464-28d401e5a4e2"/> https://www.newseye.eu/
-                    </note>, Oceanic Exchanges<note xml:id="ftn5" place="foot" n="6">
+                    </note>, Oceanic Exchanges<note xml:id="ftn5" n="6" place="foot">
                         <anchor xml:id="id_docs-internal-guid-08248c4e-7fff-30ef-091e-296b471b6cfa"/> https://oceanicexchanges.org/
-                    </note>, OCR-D<note xml:id="ftn6" place="foot" n="7">
+                    </note>, OCR-D<note xml:id="ftn6" n="7" place="foot">
                         <anchor xml:id="id_docs-internal-guid-779bcbf0-7fff-751e-ad1c-2b68b4baf9a1"/> https://ocr-d.de/en/
-                    </note>, Deutsches Zeitungsportal<note xml:id="ftn7" place="foot" n="8">
+                    </note>, Deutsches Zeitungsportal<note xml:id="ftn7" n="8" place="foot">
                         <anchor xml:id="id_docs-internal-guid-cb953ccd-7fff-af71-0c81-e6358a1a67ac"/> https://www.deutsche-digitale-bibliothek.de/newspaper
                     </note>, 
-                and Living with Machines<note xml:id="ftn8" place="foot" n="9">
+                and Living with Machines<note xml:id="ftn8" n="9" place="foot">
                         <anchor xml:id="id_docs-internal-guid-fafb278d-7fff-ea09-b19a-6ce4928e7f59"/> https://livingwithmachines.ac.uk/
                     </note> emerged that are building up on and going beyond sheer digitisation, venturing into various areas of content analysis (Oberbichler et al, 2021). Also, the outcomes of these initiatives are usually provided online with open access, and publications increasingly follow the FAIR principles (Wilkinson et al, 2016). However, most of the textual content covered is printed in Latin script languages, and to a large degree the analytical systems rely on linguistic features like word boundaries, digital lexica, or tagged corpora.
             </p>
@@ -112,11 +112,12 @@
             <p>
                 <figure>
                     <graphic url="Pictures/ee25818bb70b244c1d7cc83576a4cd28.jpg"/>
-                </figure>
+            <head>Fig. 1: </head>
+            <p>One of the 9385 fold scans of 
+                <hi rend="normal">Jing bao</hi>
+                
             </p>
-            <p>
-                <hi rend="color(#000000) italic">Fig. 1: One of the 9385 fold scans of </hi>
-                Jing bao
+                </figure>
             </p>
             <p>
                 Looking closer at 
@@ -130,9 +131,9 @@
             <p>
                 <figure>
                     <graphic url="Pictures/b50eec755eb52b2afe34ae74f1604d29.png"/>
-                </figure>
+                <head>Fig. 2: </head><p>Automatic page segmentation results. Blocks with text content are shown in yellow.</p></figure>
             </p>
-            <p>Fig. 2: Automatic page segmentation results. Blocks with text content are shown in yellow.</p>
+            
             <p>
                 Additionally, we created a text GT that not only covers all text in a machine readable local XML format, but also contains information about reading sequence running direction of the text. Based on this GT we were able to process a first set of manual crops, introducing a character segmentation method for grid-based printing layouts which produces over 90,000 labeled images of single characters (Henke, 2021). In this work, a GoogLeNet is trained as an OCR classifier on said character images after extensive pre-training on synthetical character image data created from font files. Additional error correction using language models yields an accuracy of 97.44%.
             </p>
@@ -168,14 +169,15 @@
                 for character detection, and crop the bounding boxes to feed them into the GoogLeNet trained in Henke (2021).
                  However, while our crops have a great variety of aspect ratios, the HRCenterNet expects at least nearly-squared rectangles. Hence, we cut the original images into 250x250 px tiles with a 50 px overlap (both horizontally and vertically, Fig. 3c). Bounding boxes (Fig. 3d) found in the overlapping sections are filtered during the non-maximum suppression (NMS) operation already included in the HRCenterNet pipeline (Fig. 3e).
             </p>
-            <table rend="frame" xml:id="Table1"><note type="direction">
+            <figure>
+            <table xml:id="Table1" rend="frame"><note type="direction">
                     <width unit="pt">12</width>
                     <width unit="pt">231</width><!-- 3.375in - 12pt -->
                 </note><row>
                     <cell rend="end color(#000000)">a </cell>
                     <cell rend="color(#000000)">
                         <figure>
-                            <graphic url="Pictures/f431abbd0582765c87d36f5ee79ab461.png" height="1in"/>
+                            <graphic height="1in" url="Pictures/f431abbd0582765c87d36f5ee79ab461.png"/>
                         </figure>
                     </cell>
                 </row>
@@ -183,7 +185,7 @@
                     <cell rend="end color(#000000)">b </cell>
                     <cell rend="color(#000000)">
                         <figure>
-                            <graphic url="Pictures/2bcd7873638f561912eb93d4a35356ff.png" height="1in"/>
+                            <graphic height="1in" url="Pictures/2bcd7873638f561912eb93d4a35356ff.png"/>
                         </figure>
                     </cell>
                 </row>
@@ -191,7 +193,7 @@
                     <cell rend="end color(#000000)">c </cell>
                     <cell rend="color(#000000)">
                         <figure>
-                            <graphic url="Pictures/c86e0fdabcae3b2dad97ed5369366be4.png" height="1in"/>
+                            <graphic height="1in" url="Pictures/c86e0fdabcae3b2dad97ed5369366be4.png"/>
                         </figure>
                     </cell>
                 </row>
@@ -199,7 +201,7 @@
                     <cell rend="end color(#000000)">d </cell>
                     <cell rend="color(#000000)">
                         <figure>
-                            <graphic url="Pictures/f088e4707a71f7c12f0a0c177e3c9d67.png" height="1in"/>
+                            <graphic height="1in" url="Pictures/f088e4707a71f7c12f0a0c177e3c9d67.png"/>
                         </figure>
                     </cell>
                 </row>
@@ -207,14 +209,16 @@
                     <cell rend="end color(#000000)">e </cell>
                     <cell rend="color(#000000)">
                         <figure>
-                            <graphic url="Pictures/0a5d82f98d6b62cd7f84566ac555f366.png" height="1in"/>
+                            <graphic height="1in" url="Pictures/0a5d82f98d6b62cd7f84566ac555f366.png"/>
                         </figure>
                     </cell>
                 </row>
             </table>
-            <p>Fig 3: a) original image, b) image after contrast enhancing, c) tiling with overlap, d) bounding boxes found by HRCenterNet before NMS, e) final result after reconnection of tiles and NMS</p>
+            <head>Fig 3: </head>
+            <p>a) original image, b) image after contrast enhancing, c) tiling with overlap, d) bounding boxes found by HRCenterNet before NMS, e) final result after reconnection of tiles and NMS</p></figure>
             <p>In addition, Fig. 4 shows how the HRCenterNet largely profits from contrast-enhancement (Fig 3b) during image pre-processing, especially for low-contrast input images.</p>
-            <table rend="frame" xml:id="Table2">
+            <figure>
+            <table xml:id="Table2" rend="frame">
                 <row>
                     <cell rend="center">
                         <figure>
@@ -228,9 +232,11 @@
                     </cell>
                 </row>
             </table>
-            <p>
-                <hi rend="color(#000000) italic">Fig 4: Effects of contrast enhancement on character detection using HRCenterNet</hi>
-            </p>
+            <head>
+                Fig 4: 
+            </head>
+            <p>Effects of contrast enhancement on character detection using HRCenterNet</p>
+            </figure>
             <p>
                 Using the above method, the CER on the test set of Henke (2021) is reduced to 
                 <hi rend="color(#000000) bold">5.64%</hi>.

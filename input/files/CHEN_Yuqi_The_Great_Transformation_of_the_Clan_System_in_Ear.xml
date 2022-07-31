@@ -100,10 +100,8 @@
                 <figure>
                     <graphic n="1002" width="15.979069444444445cm" height="6.009569444444445cm" url="Pictures/b2e40ecf5a35083ad940a45614518a58.png" rend="inline"/>
                 </figure>
+                <head rend="bold">Figure 1.</head><p>Bronzes with different clan signs unearthed from Shigushan(<hi rend="Chinese">石鼓山</hi>) M1</p>
             </figure>
-            <p style="text-align: center;">
-                <hi rend="bold">Figure 1.</hi> Bronzes with different clan signs unearthed from Shigushan(<hi rend="Chinese">石鼓山</hi>) M1
-            </p>
             <p>
                 <hi rend="bold" style="font-size:12pt">2</hi>
                 <hi rend="bold" style="font-size:12pt">RELATED WORK</hi>
@@ -123,35 +121,27 @@
             <p>(2) Treating the archaeological phenomenon that different clan signs appeared in the same tomb as a kind of co-occurrence, the co-occurrence networks of clan signs in the two periods (1300 BC – 1046 BC and 1046 BC – 900 BC) were constructed to examine the interrelationships of these clans.</p>
             <figure>
                 <graphic n="1003" width="13.43121111111111cm" height="7.1231cm" url="Pictures/98163b59aa4b6a722977ae37ce5fff9f.png" rend="inline"/>
+                <hi rend="bold">Figure 2.</hi><p>Clan sign frequency in the Shang and Western Zhou dynasty</p>
             </figure>
-            <p style="text-align: center;">
-                <hi rend="bold">Figure 2.</hi> Clan sign frequency in the Shang and Western Zhou dynasty
-            </p>
             <figure>
                 <graphic n="1004" width="16.016111111111112cm" height="9.70138888888889cm" url="Pictures/e109aec4b25ca9fbaba7596f977564aa.png" rend="inline"/>
+                <hi rend="bold">Figure 3.</hi><p>Co-occurrence network of clan signs in the late Shang dynasty (1300 BC – 1046 BC)</p>
             </figure>
-            <p style="text-align: center;">
-                <anchor xml:id="OLE_LINK12"/>
-                <hi rend="bold">Figure 3.</hi> Co-occurrence network of clan signs in the late Shang dynasty (1300 BC – 1046 BC)
-            </p>
             <figure>
                 <graphic n="1005" width="15.984361111111111cm" height="9.766652777777777cm" url="Pictures/f01f77c6a2380471fc9878395cc62908.png" rend="inline"/>
+                <head rend="bold">Figure 4.</head><p>
+                    Co-occurrence network of clan signs in the early Zhou dynasty
+                    <anchor xml:id="OLE_LINK15"/>(1046 BC – 900 BC)
+                </p>
             </figure>
-            <p style="text-align: center;">
-                <hi rend="bold">Figure 4.</hi> Co-occurrence network of clan signs in the early Zhou dynasty 
-                <anchor xml:id="OLE_LINK15"/>(1046 BC – 900 BC)
-            </p>
-            <p style="text-align: center;">
-                <anchor xml:id="OLE_LINK1"/>
-                <hi rend="bold">Table 1.</hi> Clan groups in the late Shang dynasty (1300 BC – 1046 BC)
-            </p>
             <figure>
+                <head rend="bold">Table 1.</head><p>Clan groups in the late Shang dynasty (1300 BC – 1046 BC)</p>
                 <graphic n="1006" width="14.993055555555555cm" height="8.784166666666666cm" url="Pictures/5c3c91d17c6752408ae5010c8eef5786.png" rend="inline"/>
             </figure>
             <p style="text-align: center;">
-                <hi rend="bold">Table 2.</hi> Clan groups in the early Zhou dynasty (1046 BC – 900 BC)
             </p>
             <figure>
+                <head rend="bold">Table 2.</head> <p>Clan groups in the early Zhou dynasty (1046 BC – 900 BC)</p>
                 <graphic n="1007" width="15.063611111111111cm" height="11.006666666666666cm" url="Pictures/d6688010a3c32600423589902aa2ba50.png" rend="inline"/>
             </figure>
             <p>
@@ -164,10 +154,10 @@
                 <hi rend="bold">Changes of the networks over time</hi>
             </p>
             <p>The network in the early Western Zhou dynasty (1046 – 900 BC) is denser than the network in the late Shang dynasty (1300 – 1046 BC), although the size of nodes in the two networks are almost the same. More frequent co-occurrences of clan signs reflect more frequent associations between clans. </p>
-            <p style="text-align: center;">
-                <hi rend="bold" xml:space="preserve">Table 3. </hi>Metrics of the co-occurrence networks of clan signs
-            </p>
             <table rend="rules" n="span_all">
+            <head style="text-align: center;">
+                <hi rend="bold" xml:space="preserve">Table 3. </hi>Metrics of the co-occurrence networks of clan signs
+            </head>
                 <row>
                     <cell rend="center">
                         Period
@@ -251,10 +241,10 @@
             <p>Besides, we used the Kulczynski distance (Cha, 2007; Shang, 2021) to
                 <anchor xml:id="OLE_LINK19"/> measure the similarity between groups in different periods. There is no similarity score higher than 0.2, proving that the heterogeneity of the two networks is very strong.
             </p>
-            <p style="text-align: center;">
-                <hi rend="bold" xml:space="preserve">Table 4. </hi>Kulczynski similarity between the clan groups in different periods
-            </p>
             <table rend="rules" n="span_all">
+            <head style="text-align: center;">
+                <hi rend="bold" xml:space="preserve">Table 4. </hi>Kulczynski similarity between the clan groups in different periods
+            </head>
                 <row>
                     <cell rend="center"/>
                     <cell rend="center">

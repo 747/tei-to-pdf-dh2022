@@ -121,8 +121,8 @@
                 <figure>
                     <graphic n="1001" width="16.002cm" height="8.200319444444444cm" url="Pictures/d07cb664d746dee79113a8b75d7b65f4.jpeg" rend="inline"/>
                     <head>Figure 1 
-                        <hi rend="italic color(474747)" style="font-family:Open Sans;font-size:10pt">Some of the built-in analysis and visualization tools in PRISMS. Voyant-Tools is shown alongside a relation being made between two editions, and some highlighted annotations</hi>
                     </head>
+                    <p><hi rend="italic color(474747)" style="font-family:Open Sans;font-size:10pt">Some of the built-in analysis and visualization tools in PRISMS. Voyant-Tools is shown alongside a relation being made between two editions, and some highlighted annotations</hi></p>
                 </figure>
                 <p style="text-align: left; ">The former category of tools is useful for any type of close scholarly work, and in PRISMS these tools include a bookmarking tool, an annotation tool (initially focussing on texts and images, but with a vision to extend annotation capabilities across all media types), the ability to keep research records (and other forms of note-taking, e.g. transcriptions, translations etc.) in the form of notebooks, and integration of Voyant Tools
                     <note place="foot" xml:id="ftn5" n="5">
@@ -134,8 +134,8 @@
                 <figure>
                     <graphic n="1002" width="16.002cm" height="8.200319444444444cm" url="Pictures/a59b90da3ac111e8830619980ef05599.jpeg" rend="inline"/>
                     <head>Figure 2 
-                        <hi rend="italic color(474747)" style="font-family:Open Sans;font-size:10pt">Modelling both the material legacies and digital remediation processes with Linked Data technologies and Cytoscape.js</hi>
                     </head>
+                    <p><hi rend="italic color(474747)" style="font-family:Open Sans;font-size:10pt">Modelling both the material legacies and digital remediation processes with Linked Data technologies and Cytoscape.js</hi></p>
                 </figure>
                 <p style="text-align: left; ">All semantic modelling work, e.g. with regard to the provenance of the material and digital manifestations of an edition, can be performed both directly in a visual representation of the graph using Cytoscape.js or via a set of customizable HTML forms. All resulting triples are stored in an RDF-native graph database (using the abovementioned ontologies) for long-term preservation, collaboration, and re-use. Every user of PRISMS has both read access to this global graph that underpins the platform and unlimited access (via SPARQL Update operations) to a private graph. By default, everything in PRISMS is private. Everything contributors add is immediately visible to them, and they can conduct their scholarship in complete privacy, without delay or interference. Only when the user decides to publish their contributions will they be made available to everyone. Depending on the type of contribution made, there are options to share, download, and/or publish them. All contributions made to the PRISMS platform are stored in standard formats, e.g. the W3C Web Annotation Data Model for annotations and relations.</p>
             </div>
@@ -171,8 +171,8 @@
                 <figure>
                     <graphic n="1003" width="16.002cm" height="8.19326388888889cm" url="Pictures/ddf3b307349c15c53eafbeda53a58283.jpeg" rend="inline"/>
                     <head>Figure 3 
-                        <hi rend="italic color(474747)" style="font-family:Open Sans;font-size:10pt">A view of the PRISMS workbench, with three editions of Faust loaded, and an aggregation of primary and research materials in support of a performance analysis, with a facsimile, two videos, and an audio book</hi>
                     </head>
+                    <p><hi rend="italic color(474747)" style="font-family:Open Sans;font-size:10pt">A view of the PRISMS workbench, with three editions of Faust loaded, and an aggregation of primary and research materials in support of a performance analysis, with a facsimile, two videos, and an audio book</hi></p>
                 </figure>
                 <p style="text-align: left; ">Moving forward, we will continue to work on integrating the digital research and tools important to PRISMS’ users (e.g. reference manager, images taken in reading rooms, items deposited in institutional repositories). With end of the beta phase, the project also intends to provide access to the entire PRISMS knowledge graph through regular data dumps and a public SPARQL endpoint. We envision that over time, PRISMS will evolve both as a powerful discovery tool and a personal research tool.</p>
             </div>

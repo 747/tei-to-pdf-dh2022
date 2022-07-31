@@ -64,20 +64,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Short Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>prosopography</term>
                     <term>Linked Data</term>
                     <term>political history</term>
                     <term>costume</term>
                     <term>fancy dress</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>English</term>
                     <term>Australia/Oceania</term>
                     <term>19th Century</term>
@@ -105,16 +105,16 @@
             <p style="text-align: left; "><hi rend="bold">Bespoke UI</hi></p>
             <p style="text-align: left; ">The SPARQL Explorer (Figure 1) consists of the Suggestion Generator (SG); Canvas, and Graph-to-SPARQL compiler. It is a single-page web application made using React, hosted on an Apache web server, utilising an Blazegraph-mandated API.</p>
             <figure>
-                <graphic n="1001" width="15.980833333333333cm" height="8.43138888888889cm" url="Pictures/11195781aad35f452b6996905eca60d0.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Figure 1: The LMB SPARQL Explorer</p>
+                <graphic height="8.43138888888889cm" n="1001" rend="inline" url="Pictures/11195781aad35f452b6996905eca60d0.png" width="15.980833333333333cm"/>
+            <head style="text-align: left; ">Figure 1: </head><p>The LMB SPARQL Explorer</p></figure>
+            
             <p style="text-align: left; ">A deliberate design feature was ontology-agnosticism: it should work equally well with any ontology. The SG enforces syntactic integrity through querying the triplestore for (any) ontologies; when found, they are cached locally and deconstructed into constituent Classes and properties whilst retaining metadata (e.g. comments, notes). Semantically useful queries are generated through the detection of each domain and range. The Canvas converts the query into a set of .SVG elements and displays it as a graph stored in two arrays, one for the state of nodes and the other for edges. A 1-1 mapping between the graph format and query language syntax ensures that every valid graph is a valid SPARQL query.</p>
             <p style="text-align: left; "><hi rend="bold">Example Query </hi></p>
             <p style="text-align: left; ">Figure 2 illustrates the function of the SPARQL Explorer. The graph has been created by the user dragging suggested Classes and properties from the grey panel on the far right into the white space. Behind the scenes, a SPARQL query is generated.</p>
             <figure>
-                <graphic n="1002" width="15.980833333333333cm" height="4.092222222222222cm" url="Pictures/ed37a48a2f185ec5366b4ce1f641dbd9.png" rend="inline"/>
-            </figure>
-            <p style="text-align: left; ">Figure 2: Query and its representation in the LMB SPARQL Explorer</p>
+                <graphic height="4.092222222222222cm" n="1002" rend="inline" url="Pictures/ed37a48a2f185ec5366b4ce1f641dbd9.png" width="15.980833333333333cm"/>
+            <head style="text-align: left; ">Figure 2: </head><p>Query and its representation in the LMB SPARQL Explorer</p></figure>
+            
             <p style="text-align: left; ">This query (left, Figure 2) produces a result set of 32 individuals who have the title of “Mr” and a costume categorised as “royal”. It is small enough to enable domain experts to use tacit prior knowledge to infer further knowledge about who among them were royalists, dressed in homage to their monarchical ideals, and how many, in turn, donned royal garbs as a form of satire.</p>
             <p style="text-align: left; "><hi rend="bold">Preliminary Evaluation </hi></p>
             <p style="text-align: left; ">The SPARQL Explorer was preliminarily tested with bespoke (JazzCats ontology, the LMB ontology) and ISO-standard ontologies (CIDOC-CRM and FOAF). For three out of the four, every possible path was representable: there was 100% coverage. The JazzCats ontology had 84% coverage: properties and Classes that had blank nodes as domains and/or ranges were inaccessible. </p>

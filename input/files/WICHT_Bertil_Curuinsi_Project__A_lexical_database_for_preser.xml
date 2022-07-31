@@ -106,8 +106,8 @@
                 </list>
                 <figure>
                     <graphic n="1001" width="10.830277777777777cm" height="6.067777777777778cm" url="Pictures/60ea08158b1c80070d379ab6a4baa528.png" rend="inline"/>
+                <head>Illustration 1: </head><p style="text-align: left; ">The 4 sequential steps of the text processing</p>
                 </figure>
-                <p style="text-align: left; ">Illustration 1: The 4 sequential steps of the text processing</p>
                 <p style="text-align: left; text-align: justify;">For the conversion of the PDF file we employed the Adobe Acrobat OCR converter
                     <note place="foot" xml:id="ftn2" n="2">
                         <p style="text-align: left; "> The Adobe OCR can be obtained at : https://www.adobe.com/acrobat/how-to/ocr-software-convert-pdf-to-text.html</p>
@@ -118,8 +118,8 @@
                 </p>
                 <figure>
                     <graphic n="1002" width="13.229166666666666cm" height="5.185833333333333cm" url="Pictures/3627bbea46a656a62523804c107e1ee5.png" rend="inline"/>
+                <head>Illustration 2: </head><p style="text-align: left; ">Vizualisation of the text segmentation and labelling </p>
                 </figure>
-                <p style="text-align: left; ">Illustration 2: Vizualisation of the text segmentation and labelling </p>
                 <p style="text-align: left; text-align: justify;">After the above mentioned segmentation process, we classified the synsets in four categories based on the number of synsets provided per Tikuna tokens and the number of POS tags per synsets as shown in Table 1.</p>
                 <table rend="rules">
                     <row>
@@ -138,8 +138,8 @@
                         <cell style="text-align: left;" rend="DH-Default">Polysemic with multiple POS tag</cell>
                         <cell style="text-align: left;" rend="DH-Default">42</cell>
                     </row>
+                <head style="text-align: left; ">Table 1: Overview of classified entries from the initial document</head>
                 </table>
-                <p style="text-align: left; ">Table 1: Overview of classified entries from the initial document</p>
                 <p style="text-align: left; text-align: justify;">Lastly, as shown in Table 2, we assessed the data loss during the process and the missing data from the database. The only missing data regards translations and encompass all entries that did not have a word for translation but rather an explanation of the word.</p>
                 <table rend="rules">
                     <row>
@@ -158,8 +158,8 @@
                         <cell style="text-align: left;" rend="DH-Default">Translation</cell>
                         <cell style="text-align: left;" rend="DH-Default">26</cell>
                     </row>
+                <head style="text-align: left; ">Table 2: Data quality assessment</head>
                 </table>
-                <p style="text-align: left; ">Table 2: Data quality assessment</p>
                 <p style="text-align: left; text-align: justify;">The database is freely exploitable through an interactive web application, user-friendly and ready-to-use
                     <note place="foot" xml:id="ftn4" n="4">
                         <p style="text-align: left; "> The application is available upon request contacting the first author</p>

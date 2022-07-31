@@ -83,20 +83,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Short Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>literature analysis</term>
                     <term>narrativity</term>
                     <term>hermeneutics</term>
                     <term>relevance</term>
                     <term>annotation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>19th Century</term>
@@ -113,40 +113,40 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>A combined approach to the relevance of text passages</head>
                 <p>In this contribution, we want to outline insights that arise from combining two distinct approaches to literary texts that analyse the relevance of specific text passages. We have been working on the identification of the 
                     <hi rend="bold">narrativity</hi> represented in literary texts as well as on the 
                     <hi rend="bold">quotation</hi> of the texts in research to identify passages especially relevant from a hermeneutical perspective. This now allows us to explore whether the structures and patterns that are emerging from these two approaches can be related to each other in a meaningful way.
                 </p>
-                <div type="div2" rend="DH-Heading2">
+                <div rend="DH-Heading2" type="div2">
                     <head>Narrativity as textual relevance criterion</head>
                     <p>Our identification of narrativity of literary prose texts is based on the annotation of events. By considering the core features of events in narrative theory (i.e., being a state, a process in time and change of state) we classify each verbal phrase in a text as change of state, process event, stative event or non-event.
                         <hi rend="sup">
-                            <note xml:id="ftn1" place="foot" n="1">For a detailed explanation of the manual annotation on which the data used in this contribution is based cf. Vauth and Gius, 2021.</note>
+                            <note xml:id="ftn1" n="1" place="foot">For a detailed explanation of the manual annotation on which the data used in this contribution is based cf. Vauth and Gius, 2021.</note>
                         </hi>
                         <hi rend="sup">,</hi>
                         <hi rend="sup">
-                            <note xml:id="ftn2" place="foot" n="2">For a description of classification of events as well as the automation approach and results cf. Vauth et al., 2021. </note>
+                            <note xml:id="ftn2" n="2" place="foot">For a description of classification of events as well as the automation approach and results cf. Vauth et al., 2021. </note>
                         </hi> To enable measuring narrativity, this categorical scaling is transposed into a numerical scaling reflecting the degree of narrativity of the event categories. In accordance with a narrative theory understanding of events, we determine the narrativity of the annotation categories with the values 7 (change of state), 5 (process event), 2 (stative event), and 0 (non-event). By additionally smoothing the narrativity value we are able to model the narrativity of a text as a graph.
                         <hi rend="sup">
-                            <note xml:id="ftn3" place="foot" n="3">For a discussion of the adequacy of this implementation for literary studies, especially with regard to intersubjectivity, cf. Gius and Vauth, 2022.</note>
+                            <note xml:id="ftn3" n="3" place="foot">For a discussion of the adequacy of this implementation for literary studies, especially with regard to intersubjectivity, cf. Gius and Vauth, 2022.</note>
                         </hi> Figure 1 shows the narrativity graph for the novella 
                         <hi rend="italic">Die Judenbuche</hi> by Annette von Droste-Hülshoff which serves as an example for our approach.
                     </p>
                     <p>
                         <figure>
                             <graphic url="Pictures/5b427b46663d4966e7f1babd6838fed2.png"/>
-                            <head>Figure 1. Narrativity score</head>
-                        </figure>
+                            <head>Figure 1. </head>
+                        <p>Narrativity score</p></figure>
                     </p>
                 </div>
-                <div type="div2" rend="DH-Heading2">
+                <div rend="DH-Heading2" type="div2">
                     <head>Key passages: quotation as textual relevance criterion</head>
                     <p>
                         <hi rend="background-color(#ffffff)">We consider key passages as parts of a literary text that are especially relevant for interpretation and can differ in length from only a few words to one or more paragraphs. To learn which parts of a text are more relevant than others, we rely on expert knowledge, which we obtain from numerous interpretations of a literary work containing quoted passages. This is a new approach in text and literature studies, that has not been theoretically founded yet; though the term “Schlüsselstelle” (key passage) and equivalents are used regularly in text interpretations in German language.</hi>
                         <hi rend="sup background-color(#ffffff)">
-                            <note xml:id="ftn4" place="foot" n="4">For more details on key passages and the aim of the project cf. Arnold and Fiechter, 2022.</note>
+                            <note xml:id="ftn4" n="4" place="foot">For more details on key passages and the aim of the project cf. Arnold and Fiechter, 2022.</note>
                         </hi>
                     </p>
                     <p>
@@ -154,32 +154,32 @@
                         <hi rend="background-color(#ffffff) italic">Die Judenbuche</hi>
                         <hi rend="background-color(#ffffff)">, all in German language, published between 1995 and 2015 and identified quoted passages with a Python tool for quotation detection in fictional texts.</hi>
                         <hi rend="sup background-color(#ffffff)">
-                            <note xml:id="ftn5" place="foot" n="5">For a detailed explanation, cf. Arnold and Jäschke (accepted). Source code available at: 
+                            <note xml:id="ftn5" n="5" place="foot">For a detailed explanation, cf. Arnold and Jäschke (accepted). Source code available at: 
                                 <ptr target="https://scm.cms.hu-berlin.de/schluesselstellen/lotte"/>.
                             </note>
                         </hi>
                         <hi rend="background-color(#ffffff)"> Figure</hi> 2 
-                        <hi rend="background-color(#ffffff)">visualises the identified quotations over the course of the text; the histogram shows quotation frequency and the graph the smoothed frequency for each verbal phrase identified during the event annotation (cf. Section 1.1). Notably, the beginning and the end are quoted most frequently, together with three other frequently quoted passages. </hi>
+                        <hi rend="background-color(#ffffff)">visualises the identified quotations over the course of the text; the histogram shows quotation frequency and the graph the smoothed frequency for each verbal phrase identified during the event annotation. Notably, the beginning and the end are quoted most frequently, together with three other frequently quoted passages. </hi>
                     </p>
                     <p>
                         <figure>
                             <graphic url="Pictures/e274101ed46c355d8590797e9011c1aa.png"/>
-                            <head>Figure 2. Quotation frequency</head>
-                        </figure>
+                            <head>Figure 2. </head>
+                        <p>Quotation frequency</p></figure>
                     </p>
                 </div>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Combining the approaches: frequently quoted (key) passages and narrativity</head>
                 <p>By combining exploration of narrativity and quotation frequency (cf. Figure 3) we can explore whether a passage is referred to as one that is mainly interesting for the storyline or for the interpretation. Passages with a high narrativity score are particularly important for the plot and the comprehension of the plot, while passages with a low narrativity value more often contain dialogue or narrator comments in which interpretation proposals are already made that are taken up in literary studies texts. For passages with a medium narrativity value, potential interdependencies are difficult to determine on the basis of only one text, but we are aiming to obtain more detailed knowledge on this in the future, including also non-frequency based analyses of references. Also, the beginning and the end of the text seem to be quoted in a different manner. Here quotation frequency and narrativity seem to be connected only loosely. Instead, these borders of the text seem to be used mostly to provide a framework for interpretations, in which the interpreters select the most interesting passages for their intent. </p>
                 <p>
                     <figure>
                         <graphic url="Pictures/e6e11955724c95fea58c4381ae39f107.png"/>
-                        <head>Figure 3. Narrativity score and quotation frequency </head>
-                    </figure>
+                        <head>Figure 3. </head>
+                    <p>Narrativity score and quotation frequency </p></figure>
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Outlook</head>
                 <p>While these findings point out how the quotation of text passages may relate to their narrativity, they should be evaluated against a broader corpus of texts. There, the classification of functions of 
                     <hi rend="background-color(#ffffff)">quotations</hi> is the most interesting aspect. We assume that plot-orientated 

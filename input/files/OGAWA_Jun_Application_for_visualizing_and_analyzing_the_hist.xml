@@ -64,20 +64,20 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Electronic Poster</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>linked (open) data</term>
                     <term>digital history</term>
                     <term>ontology</term>
                     <term>context-centric model</term>
                     <term>user interface</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Europe</term>
                     <term>English</term>
                     <term>BCE-4th Century</term>
@@ -94,13 +94,13 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Introduction</head>
                 <p>We develop the application useful for visualizing and analyzing the historical RDF data constructed on the context-centric data model, which, by introducing the new concept of 
                     <hi rend="italic">PersonInContext</hi> (Ogawa et al., 2020), makes it possible to represent historical actors not as a unique entity, but as a collection of contextual entities.
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Data Model</head>
                 <p>The basic concept is that the persons (or any other historical actors like places or organizations) should not be thought of as a single entity, being identical all the time, but as "a collection of contextual entities (Akoka et al., 2021)". Thus, we characterize our model as context-centric. </p>
                 <p>To bring this basic concept into practical use, we proposed 
@@ -111,12 +111,12 @@
                     <hi rend="italic">PersonInContext</hi>, which represents the temporal context not necessarily limited to a single event. 
                 </p>
                 <figure>
-                    <graphic n="1001" width="11.911541666666666cm" height="5.374569444444444cm" url="Pictures/bd6cadeabed673bf9dc8204c21cf1f1b.png" rend="inline"/>
-                </figure>
-                <p style="text-align: center;">Fig.1. Overview of our model (right)</p>
+                    <graphic height="5.374569444444444cm" n="1001" rend="inline" url="Pictures/bd6cadeabed673bf9dc8204c21cf1f1b.png" width="11.911541666666666cm"/>
+                <head style="text-align: center;">Fig.1. </head><p>Overview of our model (right)</p></figure>
+                
                 <p>In our model, each actor is no longer directly connected to a non-contextual entity (green square), but to a contextual one (red square). We are now able to ask a question as follows: in the context where Person_Y has a relationship with Person_X, what other relationships does Person_Y have? </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Application</head>
                 <p>Based on this model, we converted the first volume of Caesar's 
                     <hi rend="italic">De Bello Gallico</hi> to RDF data and developed an application for visualization and analysis (Data available at: 
@@ -126,24 +126,24 @@
                     <hi rend="italic">PersonInContext</hi> entity representing Caesar from his arrival in the territory of Segusiavi until the end of the war against Helvetians. 
                 </p>
                 <figure>
-                    <graphic n="1002" width="15.000111111111112cm" height="8.41198611111111cm" url="Pictures/7d0b02adeb836f430de555d4c837c18f.png" rend="inline"/>
-                </figure>
-                <p style="text-align: center;">Fig. 2. Caesar's network in different contexts</p>
+                    <graphic height="8.41198611111111cm" n="1002" rend="inline" url="Pictures/7d0b02adeb836f430de555d4c837c18f.png" width="15.000111111111112cm"/>
+                <head style="text-align: center;">Fig. 2. </head><p>Caesar&apos;s network in different contexts</p></figure>
+                
                 <p>All the persons appearing in this network have their own contexts, even if this network itself represents the relationships Caesar has in one specific context. For example, if you click one blue circle node representing Dumnorix, the new window as follows pops up. </p>
                 <figure>
-                    <graphic n="1003" width="9.689041666666666cm" height="6.115402777777778cm" url="Pictures/41ff26d97316212828c15dfe7a29088b.png" rend="inline"/>
-                </figure>
-                <p style="text-align: center;">Fig. 3. Context information of Dumnorix</p>
+                    <graphic height="6.115402777777778cm" n="1003" rend="inline" url="Pictures/41ff26d97316212828c15dfe7a29088b.png" width="9.689041666666666cm"/>
+                <head style="text-align: center;">Fig. 3. </head><p>Context information of Dumnorix</p></figure>
+                
                 <p>Two options shown are made of 
                     <hi rend="italic">PersonInContext</hi> entities representing Dumnorix (although these messages are now described in the data itself as character strings, it is also possible to be generated automatically). This shows that, though Caesar has several contacts with Dumnorix in his one coherent context, in terms of Dumnorix's context, he is not always the same, but is in two different contexts. Then, choosing the second option, we will move to the other network centered by Dumnorix in a certain context. 
                 </p>
                 <figure>
-                    <graphic n="1004" width="15.000111111111112cm" height="5.064125cm" url="Pictures/b64c0446a0567f6c0ff77952808c4687.png" rend="inline"/>
-                </figure>
-                <p style="text-align: center;">Fig. 4. Dumnorix's network in a context</p>
+                    <graphic height="5.064125cm" n="1004" rend="inline" url="Pictures/b64c0446a0567f6c0ff77952808c4687.png" width="15.000111111111112cm"/>
+                <head style="text-align: center;">Fig. 4. </head><p>Dumnorix&apos;s network in a context</p></figure>
+                
                 <p>Considering this network and the previous one together, we can see the fact that, at the time Caesar had some contacts with Dumnorix during the war against Helvetians, Dumnorix had relationships with the multitude and Diviciacus in his own context. Contextual entities for Dumnorix by the way can be more than two as the definition of contexts may differ depending on the historical interpretations. </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Conclusion</head>
                 <p>The application enables to visualize and analyze the change of relationships based not on the date information, which has already been applied in previous network analysis methods (Bissières, 2021), but on the contexts of historical actors mentioned in sources. Since the connectivity among historical actors is generally not clear-cut with precise dates but is highly dependent on the successive and sometimes overlapping contexts, it is necessary to deal with such contextual information in an effective way. </p>
                 <p>In this perspective, our context-centric model must introduce a useful way of representing historical information. </p>

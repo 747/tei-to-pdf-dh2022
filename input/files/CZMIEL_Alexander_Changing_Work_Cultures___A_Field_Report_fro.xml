@@ -96,9 +96,9 @@
                 <head>Project workflow</head>
                 <p>Since the beginning of 2020, the development work of the above-mentioned teams has been carried out according to the 'development blocks' model (Fig. 1). Based on the concept of 'sprints' from the Agile methodology (Rubin 2012). The intermediate goals are defined iteratively, in each case before a development block. In contrast to the classic Scrum sprint, which is designed according to features and as small-scale as possible, development blocks are work packages that group together a set of features or tasks that are processed according to a jointly determined prioritization. Due to this approach, the development blocks with a duration of 4-12 weeks also last significantly longer than classic Scrum sprints of about 2-4 weeks.</p>
                 <figure>
-                    <graphic n="1001" width="15.927916666666667cm" height="8.960555555555555cm" url="Pictures/18c7758ea25251e10b41d52f0169cc91.png" rend="inline"/>
-                </figure>
-                <p>Figure 1: Sequence of a development block at TELOTA.</p>
+                    <graphic height="8.960555555555555cm" n="1001" rend="inline" url="Pictures/18c7758ea25251e10b41d52f0169cc91.png" width="15.927916666666667cm"/>
+                <head>Figure 1: </head><p>Sequence of a development block at TELOTA.</p></figure>
+                
                 <p>Even though the classical Scrum model of 'sprints' is not feasible in all consistency at TELOTA due to human resources, the research software engineering and the parallel humanities research can benefit from some principles of the method. For example, the concept of 'time-boxes', the intensive processing of sub-goals and immediate releases have the effect of increasing motivation, because one is heading for concrete results or 'visible' results from the beginning. At the same time, frequent releases allow problems to be identified at an early stage and course corrections to be made. Finally, the regular meetings, the moment of success at release, and the feedback culture generate a feeling of togetherness among all project participants that dissolves the "us" and "them" that often exists in the collaboration between research software engineers and humanities scholars.</p>
             </div>
             <div type="div1" rend="DH-Heading1">

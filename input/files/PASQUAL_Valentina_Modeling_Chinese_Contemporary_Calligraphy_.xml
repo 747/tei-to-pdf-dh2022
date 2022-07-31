@@ -72,19 +72,19 @@
         </encodingDesc>
         <profileDesc>
             <textClass>
-                <keywords scheme="ConfTool" n="category">
+                <keywords n="category" scheme="ConfTool">
                     <term>Paper</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="subcategory">
+                <keywords n="subcategory" scheme="ConfTool">
                     <term>Short Presentation</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="keywords">
+                <keywords n="keywords" scheme="ConfTool">
                     <term>Linked Open Data</term>
                     <term>WRITE</term>
                     <term>Chinese contemporary calligraphy</term>
                     <term>data modeling</term>
                 </keywords>
-                <keywords scheme="ConfTool" n="topics">
+                <keywords n="topics" scheme="ConfTool">
                     <term>Asia</term>
                     <term>Europe</term>
                     <term>English</term>
@@ -100,21 +100,21 @@
     </teiHeader>
     <text>
         <body>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Introduction</head>
                 <p>
                     <hi rend="color(0E101A)">Calligraphy has always been the “chief of all Chinese arts” and a central tenet of Chinese civilization. Today, calligraphy is still extremely pervasive in Chinese society. In recent years, many new forms of calligraphy have emerged (in all fields of visual and performing arts) as it has never happened before (Iezzi, 2013). “WRITE” ERC funded project</hi>
-                    <note place="foot" xml:id="ftn1" n="1">
+                    <note xml:id="ftn1" n="1" place="foot">
                         <p rend="footnote text">
-                            <hi style="font-size:10pt" xml:space="preserve">See </hi>
+                            <hi xml:space="preserve" style="font-size:10pt">See </hi>
                             <ref target="https://writecalligraphyproject.eu/">
                                 <hi rend="color(1155CC)" style="font-size:10pt">https://writecalligraphyproject.eu/</hi>
                             </ref>
                         </p>
                     </note>
-                    <note place="foot" xml:id="ftn2" n="2">
+                    <note xml:id="ftn2" n="2" place="foot">
                         <p rend="footnote text">
-                            <hi style="font-size:10pt" xml:space="preserve">The project WRITE - </hi>
+                            <hi xml:space="preserve" style="font-size:10pt">The project WRITE - </hi>
                             <hi rend="italic" style="font-size:10pt">New Forms of Calligraphy in China: A Contemporary Culture Mirror</hi>
                             is an European Research Council (ERC) Starting Grant funded project based in the Department of Interpreting and Translation of the Alma Mater Studiorum – University of Bologna (GA n. 949645).
                         </p>
@@ -125,13 +125,13 @@
                     <hi rend="color(0E101A)">This contribution aims to advance scholarly knowledge and provide new tools for a deeper understanding of Chinese contemporary calligraphy through semantic technologies. WRITE dataset collects, structures and preserves the multifaceted domain of Chinese contemporary calligraphic data composed of artistic, linguistic and socio-political contents. WRITE will examine the innovative ways in which these new forms of calligraphy have responded to, subverted or reinterpreted traditional idioms to define a modern artistic identity that exists comfortably within the global art world while remaining indelibly Chinese (Iezzi, 2015).</hi>
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>State of the art</head>
                 <p>
                     <hi rend="color(0E101A)">Linked Open Data has been nowadays a standard in the GLAM domain to increase the value and discoverability of their metadata, fostering reuse and alignment from and to external sources. A growing interest has been expressed towards Chinese asset by outstanding LOD datasets as Pagode Project in Europeana (Bianchi, 2020), Rijks Museum (Dijkshoorn, 2018), British Museum</hi>
-                    <note place="foot" xml:id="ftn3" n="3">
+                    <note xml:id="ftn3" n="3" place="foot">
                         <p rend="footnote text">
-                            <hi style="font-size:10pt" xml:space="preserve">See </hi>
+                            <hi xml:space="preserve" style="font-size:10pt">See </hi>
                             <ref target="https://www.britishmuseum.org/search?search_api_fulltext=chinese+calligraphy">
                                 <hi rend="color(1155CC)" style="font-size:10pt">https://www.britishmuseum.org/search?search_api_fulltext=chinese+calligraphy</hi>
                             </ref>
@@ -140,48 +140,49 @@
                     <hi rend="color(0E101A)">. As aggregators, they provide general metadata excluding a deeper scholar's analysis. In general, many conceptual models have been designed to represent the museal domain, for instance EDM (Charles, 2015), Wikidata (Erxleben et al., 2014). CIDOC CRM (Doerr et al., 2007) and FRBRoo (Bekiari et al., 2015) also broaden the domain to new forms of analysis (e.g. linguistic/textual and artistic analysis).</hi>
                 </p>
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Method</head>
                 <p>
                     <hi rend="color(0E101A)">The WRITE dataset has been designed with the domain experts, by reusing the Wikidata model</hi>
-                    <note place="foot" xml:id="ftn4" n="4">
+                    <note xml:id="ftn4" n="4" place="foot">
                         <p rend="footnote text">
-                            <hi style="font-size:10pt" xml:space="preserve">See </hi>
+                            <hi xml:space="preserve" style="font-size:10pt">See </hi>
                             <ref target="https://www.mediawiki.org/wiki/Wikibase/DataModel">
                                 <hi rend="color(1155CC)" style="font-size:10pt">https://www.mediawiki.org/wiki/Wikibase/DataModel</hi>
                             </ref>
                         </p>
                     </note>
                     <hi rend="color(0E101A)" xml:space="preserve"> - a slim yet expressive model, fitting the project requirements and OmekaS templating structure - and extending it for representing WRITE domain information (e.g. calligraphic features as shown in figure 1). An instance of OmekaS</hi>
-                    <note place="foot" xml:id="ftn5" n="5">
+                    <note xml:id="ftn5" n="5" place="foot">
                         <p rend="footnote text"> OmekaS is a web publishing platform to collaboratively create collections with a shared pool of online resources.</p>
                     </note>
                     <hi rend="color(0E101A)" xml:space="preserve"> (Li, 2020) carrying WRITE data model has been built and shared with domain experts for the collaborative data entry activity. OmekaS has been used as the data registry for WRITE metadata and media.</hi>
                 </p>
                 <figure>
-                    <graphic n="1001" width="13.906605555555556cm" height="6.067777777777778cm" url="Pictures/00150aa8cac38c7b3e74099d65e51456.png" rend="inline"/>
-                </figure>
-                <p>Figure 1: a summary of the WRITE data model overview</p>
+                    <graphic height="6.067777777777778cm" n="1001" rend="inline" url="Pictures/00150aa8cac38c7b3e74099d65e51456.png" width="13.906605555555556cm"/>
+                <head>Figure 1: </head><p>a summary of the WRITE data model overview</p></figure>
+                
             </div>
-            <div type="div1" rend="DH-Heading1">
+            <div rend="DH-Heading1" type="div1">
                 <head>Results</head>
                 <p>
                     <hi rend="color(0E101A)">WRITE multilingual (English, Chinese and Pinyin Chinese) dataset stores a set of artworks organized in the four above mentioned collections. Each artwork carries one or more “calli-writing unit(s)”, representing content units with calligraphic features, to store relative artistic and linguistic/textual metadata. Considering the reshaping process of traditional calligraphy in modern production (Iezzi, 2015), such units cannot be categorized as calligraphy as an a-priori assumption. Then, artistic and linguistic/textual metadata over the “calli-writing units” are recorded to classify shared and diverging characteristics with traditional calligraphy as in figure 2.</hi>
                 </p>
                 <figure>
-                    <graphic n="1002" width="10.530416666666667cm" height="8.678333333333333cm" url="Pictures/33789ea1eb4f4c81902ae0dbe11519e2.png" rend="inline"/>
-                </figure>
-                <p>
-                    <hi rend="color(0E101A)">Figure 2. OmekaS Item visualization of Calli-Writing Unit with artistic and linguistic metadata of “The Mountains are Breaking Up”, Gu Gan (1985).</hi>
+                    <graphic height="8.678333333333333cm" n="1002" rend="inline" url="Pictures/33789ea1eb4f4c81902ae0dbe11519e2.png" width="10.530416666666667cm"/>
+                <head>Figure 2. </head>
+                    <p>
+                    <hi rend="color(0E101A)">OmekaS Item visualization of Calli-Writing Unit with artistic and linguistic metadata of “The Mountains are Breaking Up”, Gu Gan (1985).</hi>
                 </p>
+                </figure>
                 <p>
                     <hi rend="color(0E101A)" xml:space="preserve">Additionally, the collections are enhanced through a network of domain and contextual information as exhibitions, artworks series, literary works and agents in their main life events, roles, places, and dates. </hi>
                 </p>
                 <p>
                     <hi rend="color(0E101A)">WRITE data model documentation</hi>
-                    <note place="foot" xml:id="ftn6" n="6">
+                    <note xml:id="ftn6" n="6" place="foot">
                         <p rend="footnote text">
-                            <hi style="font-size:10pt" xml:space="preserve">See </hi>
+                            <hi xml:space="preserve" style="font-size:10pt">See </hi>
                             <ref target="https://write-dataset.github.io/documentation/">
                                 <hi rend="color(1155CC)" style="font-size:10pt">https://write-dataset.github.io/documentation/</hi>
                             </ref>
