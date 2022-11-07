@@ -13,7 +13,7 @@
     <!--<xsl:preserve-space elements="bibl"/>-->
     
     <!-- Two outputs are: print or pdf. This adjusts colors (for headers), margins, and a few other small things -->
-    <xsl:variable name="output">pdf</xsl:variable>
+    <xsl:variable name="output">print</xsl:variable>
     
     <!-- Print paper ID's: yes or no -->
     <xsl:variable name="id">no</xsl:variable>
@@ -206,14 +206,18 @@
     <!-- headers and footers -->
     <!-- static level -->
     <xsl:template name="header_and_footer-even">
+        <xsl:if test="$output = 'pdf'"><!-- DH2022 mod -->
         <xsl:attribute name="color">#aaa</xsl:attribute>
+        </xsl:if>
         <xsl:if test="$output = 'pdf'">
             <xsl:attribute name="text-align">right</xsl:attribute>
         </xsl:if>
     </xsl:template>
     
     <xsl:template name="header_and_footer-odd">
+        <xsl:if test="$output = 'pdf'"><!-- DH2022 mod -->
         <xsl:attribute name="color">#aaa</xsl:attribute>
+        </xsl:if>
         <xsl:attribute name="text-align">right</xsl:attribute>
         
     </xsl:template>
@@ -221,13 +225,17 @@
     <!-- block level -->
     <xsl:template name="page_header">
         <xsl:attribute name="border-bottom">solid</xsl:attribute> 
+        <xsl:if test="$output = 'pdf'"><!-- DH2022 mod -->
         <xsl:attribute name="border-color">#aaaaaa</xsl:attribute> 
         <xsl:attribute name="color">#aaaaaa</xsl:attribute>
+        </xsl:if>
         <xsl:attribute name="font-family"><xsl:value-of select="$header_font"/></xsl:attribute>
     </xsl:template>
     
     <xsl:template name="page_footer"> 
+        <xsl:if test="$output = 'pdf'"><!-- DH2022 mod -->
         <xsl:attribute name="color">#aaaaaa</xsl:attribute>
+        </xsl:if>
         <xsl:attribute name="padding-top">.25in</xsl:attribute>
         <xsl:attribute name="font-family"><xsl:value-of select="$main_font"/></xsl:attribute>
     </xsl:template>
@@ -629,8 +637,10 @@
 
     <!-- DH2022 mod -->
     <xsl:template name="link">
-        <xsl:attribute name="color">blue</xsl:attribute>
-        <xsl:attribute name="text-decoration">underline</xsl:attribute>
+        <xsl:if test="$output = 'pdf'">
+            <xsl:attribute name="color">blue</xsl:attribute>
+            <xsl:attribute name="text-decoration">underline</xsl:attribute>
+        </xsl:if>
     </xsl:template>
     
     <!-- =================================================================================
